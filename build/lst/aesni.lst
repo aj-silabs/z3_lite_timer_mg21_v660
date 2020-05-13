@@ -1,0 +1,645 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:02
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\aesni.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW93A2.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\aesni.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"aesni.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\aesni.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\aesni.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\aesni.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  AES-NI support functions
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          /*
+     35           * [AES-WP] http://software.intel.com/en-us/articles/intel-advanced-encryption-standard-aes-instructions-set
+     36           * [CLMUL-WP] http://software.intel.com/en-us/articles/intel-carry-less-multiplication-instruction-and-its-usage-for-computing-the-gcm-mode/
+     37           */
+     38          
+     39          #if !defined(MBEDTLS_CONFIG_FILE)
+     40          #include "mbedtls/config.h"
+     41          #else
+     42          #include MBEDTLS_CONFIG_FILE
+     43          #endif
+     44          
+     45          #if defined(MBEDTLS_AESNI_C)
+     46          
+     47          #include "mbedtls/aesni.h"
+     48          
+     49          #include <string.h>
+     50          
+     51          #ifndef asm
+     52          #define asm __asm
+     53          #endif
+     54          
+     55          #if defined(MBEDTLS_HAVE_X86_64)
+     56          
+     57          /*
+     58           * AES-NI support detection routine
+     59           */
+     60          int mbedtls_aesni_has_support( unsigned int what )
+     61          {
+     62              static int done = 0;
+     63              static unsigned int c = 0;
+     64          
+     65              if( ! done )
+     66              {
+     67                  asm( "movl  $1, %%eax   \n\t"
+     68                       "cpuid             \n\t"
+     69                       : "=c" (c)
+     70                       :
+     71                       : "eax", "ebx", "edx" );
+     72                  done = 1;
+     73              }
+     74          
+     75              return( ( c & what ) != 0 );
+     76          }
+     77          
+     78          /*
+     79           * Binutils needs to be at least 2.19 to support AES-NI instructions.
+     80           * Unfortunately, a lot of users have a lower version now (2014-04).
+     81           * Emit bytecode directly in order to support "old" version of gas.
+     82           *
+     83           * Opcodes from the Intel architecture reference manual, vol. 3.
+     84           * We always use registers, so we don't need prefixes for memory operands.
+     85           * Operand macros are in gas order (src, dst) as opposed to Intel order
+     86           * (dst, src) in order to blend better into the surrounding assembly code.
+     87           */
+     88          #define AESDEC      ".byte 0x66,0x0F,0x38,0xDE,"
+     89          #define AESDECLAST  ".byte 0x66,0x0F,0x38,0xDF,"
+     90          #define AESENC      ".byte 0x66,0x0F,0x38,0xDC,"
+     91          #define AESENCLAST  ".byte 0x66,0x0F,0x38,0xDD,"
+     92          #define AESIMC      ".byte 0x66,0x0F,0x38,0xDB,"
+     93          #define AESKEYGENA  ".byte 0x66,0x0F,0x3A,0xDF,"
+     94          #define PCLMULQDQ   ".byte 0x66,0x0F,0x3A,0x44,"
+     95          
+     96          #define xmm0_xmm0   "0xC0"
+     97          #define xmm0_xmm1   "0xC8"
+     98          #define xmm0_xmm2   "0xD0"
+     99          #define xmm0_xmm3   "0xD8"
+    100          #define xmm0_xmm4   "0xE0"
+    101          #define xmm1_xmm0   "0xC1"
+    102          #define xmm1_xmm2   "0xD1"
+    103          
+    104          /*
+    105           * AES-NI AES-ECB block en(de)cryption
+    106           */
+    107          int mbedtls_aesni_crypt_ecb( mbedtls_aes_context *ctx,
+    108                               int mode,
+    109                               const unsigned char input[16],
+    110                               unsigned char output[16] )
+    111          {
+    112              asm( "movdqu    (%3), %%xmm0    \n\t" // load input
+    113                   "movdqu    (%1), %%xmm1    \n\t" // load round key 0
+    114                   "pxor      %%xmm1, %%xmm0  \n\t" // round 0
+    115                   "add       $16, %1         \n\t" // point to next round key
+    116                   "subl      $1, %0          \n\t" // normal rounds = nr - 1
+    117                   "test      %2, %2          \n\t" // mode?
+    118                   "jz        2f              \n\t" // 0 = decrypt
+    119          
+    120                   "1:                        \n\t" // encryption loop
+    121                   "movdqu    (%1), %%xmm1    \n\t" // load round key
+    122                   AESENC     xmm1_xmm0      "\n\t" // do round
+    123                   "add       $16, %1         \n\t" // point to next round key
+    124                   "subl      $1, %0          \n\t" // loop
+    125                   "jnz       1b              \n\t"
+    126                   "movdqu    (%1), %%xmm1    \n\t" // load round key
+    127                   AESENCLAST xmm1_xmm0      "\n\t" // last round
+    128                   "jmp       3f              \n\t"
+    129          
+    130                   "2:                        \n\t" // decryption loop
+    131                   "movdqu    (%1), %%xmm1    \n\t"
+    132                   AESDEC     xmm1_xmm0      "\n\t" // do round
+    133                   "add       $16, %1         \n\t"
+    134                   "subl      $1, %0          \n\t"
+    135                   "jnz       2b              \n\t"
+    136                   "movdqu    (%1), %%xmm1    \n\t" // load round key
+    137                   AESDECLAST xmm1_xmm0      "\n\t" // last round
+    138          
+    139                   "3:                        \n\t"
+    140                   "movdqu    %%xmm0, (%4)    \n\t" // export output
+    141                   :
+    142                   : "r" (ctx->nr), "r" (ctx->rk), "r" (mode), "r" (input), "r" (output)
+    143                   : "memory", "cc", "xmm0", "xmm1" );
+    144          
+    145          
+    146              return( 0 );
+    147          }
+    148          
+    149          /*
+    150           * GCM multiplication: c = a times b in GF(2^128)
+    151           * Based on [CLMUL-WP] algorithms 1 (with equation 27) and 5.
+    152           */
+    153          void mbedtls_aesni_gcm_mult( unsigned char c[16],
+    154                               const unsigned char a[16],
+    155                               const unsigned char b[16] )
+    156          {
+    157              unsigned char aa[16], bb[16], cc[16];
+    158              size_t i;
+    159          
+    160              /* The inputs are in big-endian order, so byte-reverse them */
+    161              for( i = 0; i < 16; i++ )
+    162              {
+    163                  aa[i] = a[15 - i];
+    164                  bb[i] = b[15 - i];
+    165              }
+    166          
+    167              asm( "movdqu (%0), %%xmm0               \n\t" // a1:a0
+    168                   "movdqu (%1), %%xmm1               \n\t" // b1:b0
+    169          
+    170                   /*
+    171                    * Caryless multiplication xmm2:xmm1 = xmm0 * xmm1
+    172                    * using [CLMUL-WP] algorithm 1 (p. 13).
+    173                    */
+    174                   "movdqa %%xmm1, %%xmm2             \n\t" // copy of b1:b0
+    175                   "movdqa %%xmm1, %%xmm3             \n\t" // same
+    176                   "movdqa %%xmm1, %%xmm4             \n\t" // same
+    177                   PCLMULQDQ xmm0_xmm1 ",0x00         \n\t" // a0*b0 = c1:c0
+    178                   PCLMULQDQ xmm0_xmm2 ",0x11         \n\t" // a1*b1 = d1:d0
+    179                   PCLMULQDQ xmm0_xmm3 ",0x10         \n\t" // a0*b1 = e1:e0
+    180                   PCLMULQDQ xmm0_xmm4 ",0x01         \n\t" // a1*b0 = f1:f0
+    181                   "pxor %%xmm3, %%xmm4               \n\t" // e1+f1:e0+f0
+    182                   "movdqa %%xmm4, %%xmm3             \n\t" // same
+    183                   "psrldq $8, %%xmm4                 \n\t" // 0:e1+f1
+    184                   "pslldq $8, %%xmm3                 \n\t" // e0+f0:0
+    185                   "pxor %%xmm4, %%xmm2               \n\t" // d1:d0+e1+f1
+    186                   "pxor %%xmm3, %%xmm1               \n\t" // c1+e0+f1:c0
+    187          
+    188                   /*
+    189                    * Now shift the result one bit to the left,
+    190                    * taking advantage of [CLMUL-WP] eq 27 (p. 20)
+    191                    */
+    192                   "movdqa %%xmm1, %%xmm3             \n\t" // r1:r0
+    193                   "movdqa %%xmm2, %%xmm4             \n\t" // r3:r2
+    194                   "psllq $1, %%xmm1                  \n\t" // r1<<1:r0<<1
+    195                   "psllq $1, %%xmm2                  \n\t" // r3<<1:r2<<1
+    196                   "psrlq $63, %%xmm3                 \n\t" // r1>>63:r0>>63
+    197                   "psrlq $63, %%xmm4                 \n\t" // r3>>63:r2>>63
+    198                   "movdqa %%xmm3, %%xmm5             \n\t" // r1>>63:r0>>63
+    199                   "pslldq $8, %%xmm3                 \n\t" // r0>>63:0
+    200                   "pslldq $8, %%xmm4                 \n\t" // r2>>63:0
+    201                   "psrldq $8, %%xmm5                 \n\t" // 0:r1>>63
+    202                   "por %%xmm3, %%xmm1                \n\t" // r1<<1|r0>>63:r0<<1
+    203                   "por %%xmm4, %%xmm2                \n\t" // r3<<1|r2>>62:r2<<1
+    204                   "por %%xmm5, %%xmm2                \n\t" // r3<<1|r2>>62:r2<<1|r1>>63
+    205          
+    206                   /*
+    207                    * Now reduce modulo the GCM polynomial x^128 + x^7 + x^2 + x + 1
+    208                    * using [CLMUL-WP] algorithm 5 (p. 20).
+    209                    * Currently xmm2:xmm1 holds x3:x2:x1:x0 (already shifted).
+    210                    */
+    211                   /* Step 2 (1) */
+    212                   "movdqa %%xmm1, %%xmm3             \n\t" // x1:x0
+    213                   "movdqa %%xmm1, %%xmm4             \n\t" // same
+    214                   "movdqa %%xmm1, %%xmm5             \n\t" // same
+    215                   "psllq $63, %%xmm3                 \n\t" // x1<<63:x0<<63 = stuff:a
+    216                   "psllq $62, %%xmm4                 \n\t" // x1<<62:x0<<62 = stuff:b
+    217                   "psllq $57, %%xmm5                 \n\t" // x1<<57:x0<<57 = stuff:c
+    218          
+    219                   /* Step 2 (2) */
+    220                   "pxor %%xmm4, %%xmm3               \n\t" // stuff:a+b
+    221                   "pxor %%xmm5, %%xmm3               \n\t" // stuff:a+b+c
+    222                   "pslldq $8, %%xmm3                 \n\t" // a+b+c:0
+    223                   "pxor %%xmm3, %%xmm1               \n\t" // x1+a+b+c:x0 = d:x0
+    224          
+    225                   /* Steps 3 and 4 */
+    226                   "movdqa %%xmm1,%%xmm0              \n\t" // d:x0
+    227                   "movdqa %%xmm1,%%xmm4              \n\t" // same
+    228                   "movdqa %%xmm1,%%xmm5              \n\t" // same
+    229                   "psrlq $1, %%xmm0                  \n\t" // e1:x0>>1 = e1:e0'
+    230                   "psrlq $2, %%xmm4                  \n\t" // f1:x0>>2 = f1:f0'
+    231                   "psrlq $7, %%xmm5                  \n\t" // g1:x0>>7 = g1:g0'
+    232                   "pxor %%xmm4, %%xmm0               \n\t" // e1+f1:e0'+f0'
+    233                   "pxor %%xmm5, %%xmm0               \n\t" // e1+f1+g1:e0'+f0'+g0'
+    234                   // e0'+f0'+g0' is almost e0+f0+g0, ex\tcept for some missing
+    235                   // bits carried from d. Now get those\t bits back in.
+    236                   "movdqa %%xmm1,%%xmm3              \n\t" // d:x0
+    237                   "movdqa %%xmm1,%%xmm4              \n\t" // same
+    238                   "movdqa %%xmm1,%%xmm5              \n\t" // same
+    239                   "psllq $63, %%xmm3                 \n\t" // d<<63:stuff
+    240                   "psllq $62, %%xmm4                 \n\t" // d<<62:stuff
+    241                   "psllq $57, %%xmm5                 \n\t" // d<<57:stuff
+    242                   "pxor %%xmm4, %%xmm3               \n\t" // d<<63+d<<62:stuff
+    243                   "pxor %%xmm5, %%xmm3               \n\t" // missing bits of d:stuff
+    244                   "psrldq $8, %%xmm3                 \n\t" // 0:missing bits of d
+    245                   "pxor %%xmm3, %%xmm0               \n\t" // e1+f1+g1:e0+f0+g0
+    246                   "pxor %%xmm1, %%xmm0               \n\t" // h1:h0
+    247                   "pxor %%xmm2, %%xmm0               \n\t" // x3+h1:x2+h0
+    248          
+    249                   "movdqu %%xmm0, (%2)               \n\t" // done
+    250                   :
+    251                   : "r" (aa), "r" (bb), "r" (cc)
+    252                   : "memory", "cc", "xmm0", "xmm1", "xmm2", "xmm3", "xmm4", "xmm5" );
+    253          
+    254              /* Now byte-reverse the outputs */
+    255              for( i = 0; i < 16; i++ )
+    256                  c[i] = cc[15 - i];
+    257          
+    258              return;
+    259          }
+    260          
+    261          /*
+    262           * Compute decryption round keys from encryption round keys
+    263           */
+    264          void mbedtls_aesni_inverse_key( unsigned char *invkey,
+    265                                  const unsigned char *fwdkey, int nr )
+    266          {
+    267              unsigned char *ik = invkey;
+    268              const unsigned char *fk = fwdkey + 16 * nr;
+    269          
+    270              memcpy( ik, fk, 16 );
+    271          
+    272              for( fk -= 16, ik += 16; fk > fwdkey; fk -= 16, ik += 16 )
+    273                  asm( "movdqu (%0), %%xmm0       \n\t"
+    274                       AESIMC  xmm0_xmm0         "\n\t"
+    275                       "movdqu %%xmm0, (%1)       \n\t"
+    276                       :
+    277                       : "r" (fk), "r" (ik)
+    278                       : "memory", "xmm0" );
+    279          
+    280              memcpy( ik, fk, 16 );
+    281          }
+    282          
+    283          /*
+    284           * Key expansion, 128-bit case
+    285           */
+    286          static void aesni_setkey_enc_128( unsigned char *rk,
+    287                                            const unsigned char *key )
+    288          {
+    289              asm( "movdqu (%1), %%xmm0               \n\t" // copy the original key
+    290                   "movdqu %%xmm0, (%0)               \n\t" // as round key 0
+    291                   "jmp 2f                            \n\t" // skip auxiliary routine
+    292          
+    293                   /*
+    294                    * Finish generating the next round key.
+    295                    *
+    296                    * On entry xmm0 is r3:r2:r1:r0 and xmm1 is X:stuff:stuff:stuff
+    297                    * with X = rot( sub( r3 ) ) ^ RCON.
+    298                    *
+    299                    * On exit, xmm0 is r7:r6:r5:r4
+    300                    * with r4 = X + r0, r5 = r4 + r1, r6 = r5 + r2, r7 = r6 + r3
+    301                    * and those are written to the round key buffer.
+    302                    */
+    303                   "1:                                \n\t"
+    304                   "pshufd $0xff, %%xmm1, %%xmm1      \n\t" // X:X:X:X
+    305                   "pxor %%xmm0, %%xmm1               \n\t" // X+r3:X+r2:X+r1:r4
+    306                   "pslldq $4, %%xmm0                 \n\t" // r2:r1:r0:0
+    307                   "pxor %%xmm0, %%xmm1               \n\t" // X+r3+r2:X+r2+r1:r5:r4
+    308                   "pslldq $4, %%xmm0                 \n\t" // etc
+    309                   "pxor %%xmm0, %%xmm1               \n\t"
+    310                   "pslldq $4, %%xmm0                 \n\t"
+    311                   "pxor %%xmm1, %%xmm0               \n\t" // update xmm0 for next time!
+    312                   "add $16, %0                       \n\t" // point to next round key
+    313                   "movdqu %%xmm0, (%0)               \n\t" // write it
+    314                   "ret                               \n\t"
+    315          
+    316                   /* Main "loop" */
+    317                   "2:                                \n\t"
+    318                   AESKEYGENA xmm0_xmm1 ",0x01        \n\tcall 1b \n\t"
+    319                   AESKEYGENA xmm0_xmm1 ",0x02        \n\tcall 1b \n\t"
+    320                   AESKEYGENA xmm0_xmm1 ",0x04        \n\tcall 1b \n\t"
+    321                   AESKEYGENA xmm0_xmm1 ",0x08        \n\tcall 1b \n\t"
+    322                   AESKEYGENA xmm0_xmm1 ",0x10        \n\tcall 1b \n\t"
+    323                   AESKEYGENA xmm0_xmm1 ",0x20        \n\tcall 1b \n\t"
+    324                   AESKEYGENA xmm0_xmm1 ",0x40        \n\tcall 1b \n\t"
+    325                   AESKEYGENA xmm0_xmm1 ",0x80        \n\tcall 1b \n\t"
+    326                   AESKEYGENA xmm0_xmm1 ",0x1B        \n\tcall 1b \n\t"
+    327                   AESKEYGENA xmm0_xmm1 ",0x36        \n\tcall 1b \n\t"
+    328                   :
+    329                   : "r" (rk), "r" (key)
+    330                   : "memory", "cc", "0" );
+    331          }
+    332          
+    333          /*
+    334           * Key expansion, 192-bit case
+    335           */
+    336          static void aesni_setkey_enc_192( unsigned char *rk,
+    337                                            const unsigned char *key )
+    338          {
+    339              asm( "movdqu (%1), %%xmm0   \n\t" // copy original round key
+    340                   "movdqu %%xmm0, (%0)   \n\t"
+    341                   "add $16, %0           \n\t"
+    342                   "movq 16(%1), %%xmm1   \n\t"
+    343                   "movq %%xmm1, (%0)     \n\t"
+    344                   "add $8, %0            \n\t"
+    345                   "jmp 2f                \n\t" // skip auxiliary routine
+    346          
+    347                   /*
+    348                    * Finish generating the next 6 quarter-keys.
+    349                    *
+    350                    * On entry xmm0 is r3:r2:r1:r0, xmm1 is stuff:stuff:r5:r4
+    351                    * and xmm2 is stuff:stuff:X:stuff with X = rot( sub( r3 ) ) ^ RCON.
+    352                    *
+    353                    * On exit, xmm0 is r9:r8:r7:r6 and xmm1 is stuff:stuff:r11:r10
+    354                    * and those are written to the round key buffer.
+    355                    */
+    356                   "1:                            \n\t"
+    357                   "pshufd $0x55, %%xmm2, %%xmm2  \n\t" // X:X:X:X
+    358                   "pxor %%xmm0, %%xmm2           \n\t" // X+r3:X+r2:X+r1:r4
+    359                   "pslldq $4, %%xmm0             \n\t" // etc
+    360                   "pxor %%xmm0, %%xmm2           \n\t"
+    361                   "pslldq $4, %%xmm0             \n\t"
+    362                   "pxor %%xmm0, %%xmm2           \n\t"
+    363                   "pslldq $4, %%xmm0             \n\t"
+    364                   "pxor %%xmm2, %%xmm0           \n\t" // update xmm0 = r9:r8:r7:r6
+    365                   "movdqu %%xmm0, (%0)           \n\t"
+    366                   "add $16, %0                   \n\t"
+    367                   "pshufd $0xff, %%xmm0, %%xmm2  \n\t" // r9:r9:r9:r9
+    368                   "pxor %%xmm1, %%xmm2           \n\t" // stuff:stuff:r9+r5:r10
+    369                   "pslldq $4, %%xmm1             \n\t" // r2:r1:r0:0
+    370                   "pxor %%xmm2, %%xmm1           \n\t" // xmm1 = stuff:stuff:r11:r10
+    371                   "movq %%xmm1, (%0)             \n\t"
+    372                   "add $8, %0                    \n\t"
+    373                   "ret                           \n\t"
+    374          
+    375                   "2:                            \n\t"
+    376                   AESKEYGENA xmm1_xmm2 ",0x01    \n\tcall 1b \n\t"
+    377                   AESKEYGENA xmm1_xmm2 ",0x02    \n\tcall 1b \n\t"
+    378                   AESKEYGENA xmm1_xmm2 ",0x04    \n\tcall 1b \n\t"
+    379                   AESKEYGENA xmm1_xmm2 ",0x08    \n\tcall 1b \n\t"
+    380                   AESKEYGENA xmm1_xmm2 ",0x10    \n\tcall 1b \n\t"
+    381                   AESKEYGENA xmm1_xmm2 ",0x20    \n\tcall 1b \n\t"
+    382                   AESKEYGENA xmm1_xmm2 ",0x40    \n\tcall 1b \n\t"
+    383                   AESKEYGENA xmm1_xmm2 ",0x80    \n\tcall 1b \n\t"
+    384          
+    385                   :
+    386                   : "r" (rk), "r" (key)
+    387                   : "memory", "cc", "0" );
+    388          }
+    389          
+    390          /*
+    391           * Key expansion, 256-bit case
+    392           */
+    393          static void aesni_setkey_enc_256( unsigned char *rk,
+    394                                            const unsigned char *key )
+    395          {
+    396              asm( "movdqu (%1), %%xmm0           \n\t"
+    397                   "movdqu %%xmm0, (%0)           \n\t"
+    398                   "add $16, %0                   \n\t"
+    399                   "movdqu 16(%1), %%xmm1         \n\t"
+    400                   "movdqu %%xmm1, (%0)           \n\t"
+    401                   "jmp 2f                        \n\t" // skip auxiliary routine
+    402          
+    403                   /*
+    404                    * Finish generating the next two round keys.
+    405                    *
+    406                    * On entry xmm0 is r3:r2:r1:r0, xmm1 is r7:r6:r5:r4 and
+    407                    * xmm2 is X:stuff:stuff:stuff with X = rot( sub( r7 )) ^ RCON
+    408                    *
+    409                    * On exit, xmm0 is r11:r10:r9:r8 and xmm1 is r15:r14:r13:r12
+    410                    * and those have been written to the output buffer.
+    411                    */
+    412                   "1:                                \n\t"
+    413                   "pshufd $0xff, %%xmm2, %%xmm2      \n\t"
+    414                   "pxor %%xmm0, %%xmm2               \n\t"
+    415                   "pslldq $4, %%xmm0                 \n\t"
+    416                   "pxor %%xmm0, %%xmm2               \n\t"
+    417                   "pslldq $4, %%xmm0                 \n\t"
+    418                   "pxor %%xmm0, %%xmm2               \n\t"
+    419                   "pslldq $4, %%xmm0                 \n\t"
+    420                   "pxor %%xmm2, %%xmm0               \n\t"
+    421                   "add $16, %0                       \n\t"
+    422                   "movdqu %%xmm0, (%0)               \n\t"
+    423          
+    424                   /* Set xmm2 to stuff:Y:stuff:stuff with Y = subword( r11 )
+    425                    * and proceed to generate next round key from there */
+    426                   AESKEYGENA xmm0_xmm2 ",0x00        \n\t"
+    427                   "pshufd $0xaa, %%xmm2, %%xmm2      \n\t"
+    428                   "pxor %%xmm1, %%xmm2               \n\t"
+    429                   "pslldq $4, %%xmm1                 \n\t"
+    430                   "pxor %%xmm1, %%xmm2               \n\t"
+    431                   "pslldq $4, %%xmm1                 \n\t"
+    432                   "pxor %%xmm1, %%xmm2               \n\t"
+    433                   "pslldq $4, %%xmm1                 \n\t"
+    434                   "pxor %%xmm2, %%xmm1               \n\t"
+    435                   "add $16, %0                       \n\t"
+    436                   "movdqu %%xmm1, (%0)               \n\t"
+    437                   "ret                               \n\t"
+    438          
+    439                   /*
+    440                    * Main "loop" - Generating one more key than necessary,
+    441                    * see definition of mbedtls_aes_context.buf
+    442                    */
+    443                   "2:                                \n\t"
+    444                   AESKEYGENA xmm1_xmm2 ",0x01        \n\tcall 1b \n\t"
+    445                   AESKEYGENA xmm1_xmm2 ",0x02        \n\tcall 1b \n\t"
+    446                   AESKEYGENA xmm1_xmm2 ",0x04        \n\tcall 1b \n\t"
+    447                   AESKEYGENA xmm1_xmm2 ",0x08        \n\tcall 1b \n\t"
+    448                   AESKEYGENA xmm1_xmm2 ",0x10        \n\tcall 1b \n\t"
+    449                   AESKEYGENA xmm1_xmm2 ",0x20        \n\tcall 1b \n\t"
+    450                   AESKEYGENA xmm1_xmm2 ",0x40        \n\tcall 1b \n\t"
+    451                   :
+    452                   : "r" (rk), "r" (key)
+    453                   : "memory", "cc", "0" );
+    454          }
+    455          
+    456          /*
+    457           * Key expansion, wrapper
+    458           */
+    459          int mbedtls_aesni_setkey_enc( unsigned char *rk,
+    460                                const unsigned char *key,
+    461                                size_t bits )
+    462          {
+    463              switch( bits )
+    464              {
+    465                  case 128: aesni_setkey_enc_128( rk, key ); break;
+    466                  case 192: aesni_setkey_enc_192( rk, key ); break;
+    467                  case 256: aesni_setkey_enc_256( rk, key ); break;
+    468                  default : return( MBEDTLS_ERR_AES_INVALID_KEY_LENGTH );
+    469              }
+    470          
+    471              return( 0 );
+    472          }
+    473          
+    474          #endif /* MBEDTLS_HAVE_X86_64 */
+    475          
+    476          #endif /* MBEDTLS_AESNI_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

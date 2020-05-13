@@ -1,0 +1,935 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:18
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\memory_buffer_alloc.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWBEC7.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\memory_buffer_alloc.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"memory_buffer_alloc.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\memory_buffer_alloc.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\memory_buffer_alloc.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\memory_buffer_alloc.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Buffer-based memory allocator
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_MEMORY_BUFFER_ALLOC_C)
+     41          #include "mbedtls/memory_buffer_alloc.h"
+     42          
+     43          /* No need for the header guard as MBEDTLS_MEMORY_BUFFER_ALLOC_C
+     44             is dependent upon MBEDTLS_PLATFORM_C */
+     45          #include "mbedtls/platform.h"
+     46          
+     47          #include <string.h>
+     48          
+     49          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+     50          #include <execinfo.h>
+     51          #endif
+     52          
+     53          #if defined(MBEDTLS_THREADING_C)
+     54          #include "mbedtls/threading.h"
+     55          #endif
+     56          
+     57          /* Implementation that should never be optimized out by the compiler */
+     58          static void mbedtls_zeroize( void *v, size_t n ) {
+     59              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     60          }
+     61          
+     62          #define MAGIC1       0xFF00AA55
+     63          #define MAGIC2       0xEE119966
+     64          #define MAX_BT 20
+     65          
+     66          typedef struct _memory_header memory_header;
+     67          struct _memory_header
+     68          {
+     69              size_t          magic1;
+     70              size_t          size;
+     71              size_t          alloc;
+     72              memory_header   *prev;
+     73              memory_header   *next;
+     74              memory_header   *prev_free;
+     75              memory_header   *next_free;
+     76          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+     77              char            **trace;
+     78              size_t          trace_count;
+     79          #endif
+     80              size_t          magic2;
+     81          };
+     82          
+     83          typedef struct
+     84          {
+     85              unsigned char   *buf;
+     86              size_t          len;
+     87              memory_header   *first;
+     88              memory_header   *first_free;
+     89              int             verify;
+     90          #if defined(MBEDTLS_MEMORY_DEBUG)
+     91              size_t          alloc_count;
+     92              size_t          free_count;
+     93              size_t          total_used;
+     94              size_t          maximum_used;
+     95              size_t          header_count;
+     96              size_t          maximum_header_count;
+     97          #endif
+     98          #if defined(MBEDTLS_THREADING_C)
+     99              mbedtls_threading_mutex_t   mutex;
+    100          #endif
+    101          }
+    102          buffer_alloc_ctx;
+    103          
+    104          static buffer_alloc_ctx heap;
+    105          
+    106          #if defined(MBEDTLS_MEMORY_DEBUG)
+    107          static void debug_header( memory_header *hdr )
+    108          {
+    109          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    110              size_t i;
+    111          #endif
+    112          
+    113              mbedtls_fprintf( stderr, "HDR:  PTR(%10zu), PREV(%10zu), NEXT(%10zu), "
+    114                                        "ALLOC(%zu), SIZE(%10zu)\n",
+    115                                (size_t) hdr, (size_t) hdr->prev, (size_t) hdr->next,
+    116                                hdr->alloc, hdr->size );
+    117              mbedtls_fprintf( stderr, "      FPREV(%10zu), FNEXT(%10zu)\n",
+    118                                (size_t) hdr->prev_free, (size_t) hdr->next_free );
+    119          
+    120          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    121              mbedtls_fprintf( stderr, "TRACE: \n" );
+    122              for( i = 0; i < hdr->trace_count; i++ )
+    123                  mbedtls_fprintf( stderr, "%s\n", hdr->trace[i] );
+    124              mbedtls_fprintf( stderr, "\n" );
+    125          #endif
+    126          }
+    127          
+    128          static void debug_chain()
+    129          {
+    130              memory_header *cur = heap.first;
+    131          
+    132              mbedtls_fprintf( stderr, "\nBlock list\n" );
+    133              while( cur != NULL )
+    134              {
+    135                  debug_header( cur );
+    136                  cur = cur->next;
+    137              }
+    138          
+    139              mbedtls_fprintf( stderr, "Free list\n" );
+    140              cur = heap.first_free;
+    141          
+    142              while( cur != NULL )
+    143              {
+    144                  debug_header( cur );
+    145                  cur = cur->next_free;
+    146              }
+    147          }
+    148          #endif /* MBEDTLS_MEMORY_DEBUG */
+    149          
+    150          static int verify_header( memory_header *hdr )
+    151          {
+    152              if( hdr->magic1 != MAGIC1 )
+    153              {
+    154          #if defined(MBEDTLS_MEMORY_DEBUG)
+    155                  mbedtls_fprintf( stderr, "FATAL: MAGIC1 mismatch\n" );
+    156          #endif
+    157                  return( 1 );
+    158              }
+    159          
+    160              if( hdr->magic2 != MAGIC2 )
+    161              {
+    162          #if defined(MBEDTLS_MEMORY_DEBUG)
+    163                  mbedtls_fprintf( stderr, "FATAL: MAGIC2 mismatch\n" );
+    164          #endif
+    165                  return( 1 );
+    166              }
+    167          
+    168              if( hdr->alloc > 1 )
+    169              {
+    170          #if defined(MBEDTLS_MEMORY_DEBUG)
+    171                  mbedtls_fprintf( stderr, "FATAL: alloc has illegal value\n" );
+    172          #endif
+    173                  return( 1 );
+    174              }
+    175          
+    176              if( hdr->prev != NULL && hdr->prev == hdr->next )
+    177              {
+    178          #if defined(MBEDTLS_MEMORY_DEBUG)
+    179                  mbedtls_fprintf( stderr, "FATAL: prev == next\n" );
+    180          #endif
+    181                  return( 1 );
+    182              }
+    183          
+    184              if( hdr->prev_free != NULL && hdr->prev_free == hdr->next_free )
+    185              {
+    186          #if defined(MBEDTLS_MEMORY_DEBUG)
+    187                  mbedtls_fprintf( stderr, "FATAL: prev_free == next_free\n" );
+    188          #endif
+    189                  return( 1 );
+    190              }
+    191          
+    192              return( 0 );
+    193          }
+    194          
+    195          static int verify_chain()
+    196          {
+    197              memory_header *prv = heap.first, *cur;
+    198          
+    199              if( prv == NULL || verify_header( prv ) != 0 )
+    200              {
+    201          #if defined(MBEDTLS_MEMORY_DEBUG)
+    202                  mbedtls_fprintf( stderr, "FATAL: verification of first header "
+    203                                            "failed\n" );
+    204          #endif
+    205                  return( 1 );
+    206              }
+    207          
+    208              if( heap.first->prev != NULL )
+    209              {
+    210          #if defined(MBEDTLS_MEMORY_DEBUG)
+    211                  mbedtls_fprintf( stderr, "FATAL: verification failed: "
+    212                                            "first->prev != NULL\n" );
+    213          #endif
+    214                  return( 1 );
+    215              }
+    216          
+    217              cur = heap.first->next;
+    218          
+    219              while( cur != NULL )
+    220              {
+    221                  if( verify_header( cur ) != 0 )
+    222                  {
+    223          #if defined(MBEDTLS_MEMORY_DEBUG)
+    224                      mbedtls_fprintf( stderr, "FATAL: verification of header "
+    225                                                "failed\n" );
+    226          #endif
+    227                      return( 1 );
+    228                  }
+    229          
+    230                  if( cur->prev != prv )
+    231                  {
+    232          #if defined(MBEDTLS_MEMORY_DEBUG)
+    233                      mbedtls_fprintf( stderr, "FATAL: verification failed: "
+    234                                                "cur->prev != prv\n" );
+    235          #endif
+    236                      return( 1 );
+    237                  }
+    238          
+    239                  prv = cur;
+    240                  cur = cur->next;
+    241              }
+    242          
+    243              return( 0 );
+    244          }
+    245          
+    246          static void *buffer_alloc_calloc( size_t n, size_t size )
+    247          {
+    248              memory_header *new, *cur = heap.first_free;
+    249              unsigned char *p;
+    250              void *ret;
+    251              size_t original_len, len;
+    252          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    253              void *trace_buffer[MAX_BT];
+    254              size_t trace_cnt;
+    255          #endif
+    256          
+    257              if( heap.buf == NULL || heap.first == NULL )
+    258                  return( NULL );
+    259          
+    260              original_len = len = n * size;
+    261          
+    262              if( n == 0 || size == 0 || len / n != size )
+    263                  return( NULL );
+    264              else if( len > (size_t)-MBEDTLS_MEMORY_ALIGN_MULTIPLE )
+    265                  return( NULL );
+    266          
+    267              if( len % MBEDTLS_MEMORY_ALIGN_MULTIPLE )
+    268              {
+    269                  len -= len % MBEDTLS_MEMORY_ALIGN_MULTIPLE;
+    270                  len += MBEDTLS_MEMORY_ALIGN_MULTIPLE;
+    271              }
+    272          
+    273              // Find block that fits
+    274              //
+    275              while( cur != NULL )
+    276              {
+    277                  if( cur->size >= len )
+    278                      break;
+    279          
+    280                  cur = cur->next_free;
+    281              }
+    282          
+    283              if( cur == NULL )
+    284                  return( NULL );
+    285          
+    286              if( cur->alloc != 0 )
+    287              {
+    288          #if defined(MBEDTLS_MEMORY_DEBUG)
+    289                  mbedtls_fprintf( stderr, "FATAL: block in free_list but allocated "
+    290                                            "data\n" );
+    291          #endif
+    292                  mbedtls_exit( 1 );
+    293              }
+    294          
+    295          #if defined(MBEDTLS_MEMORY_DEBUG)
+    296              heap.alloc_count++;
+    297          #endif
+    298          
+    299              // Found location, split block if > memory_header + 4 room left
+    300              //
+    301              if( cur->size - len < sizeof(memory_header) +
+    302                                    MBEDTLS_MEMORY_ALIGN_MULTIPLE )
+    303              {
+    304                  cur->alloc = 1;
+    305          
+    306                  // Remove from free_list
+    307                  //
+    308                  if( cur->prev_free != NULL )
+    309                      cur->prev_free->next_free = cur->next_free;
+    310                  else
+    311                      heap.first_free = cur->next_free;
+    312          
+    313                  if( cur->next_free != NULL )
+    314                      cur->next_free->prev_free = cur->prev_free;
+    315          
+    316                  cur->prev_free = NULL;
+    317                  cur->next_free = NULL;
+    318          
+    319          #if defined(MBEDTLS_MEMORY_DEBUG)
+    320                  heap.total_used += cur->size;
+    321                  if( heap.total_used > heap.maximum_used )
+    322                      heap.maximum_used = heap.total_used;
+    323          #endif
+    324          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    325                  trace_cnt = backtrace( trace_buffer, MAX_BT );
+    326                  cur->trace = backtrace_symbols( trace_buffer, trace_cnt );
+    327                  cur->trace_count = trace_cnt;
+    328          #endif
+    329          
+    330                  if( ( heap.verify & MBEDTLS_MEMORY_VERIFY_ALLOC ) && verify_chain() != 0 )
+    331                      mbedtls_exit( 1 );
+    332          
+    333                  ret = (unsigned char *) cur + sizeof( memory_header );
+    334                  memset( ret, 0, original_len );
+    335          
+    336                  return( ret );
+    337              }
+    338          
+    339              p = ( (unsigned char *) cur ) + sizeof(memory_header) + len;
+    340              new = (memory_header *) p;
+    341          
+    342              new->size = cur->size - len - sizeof(memory_header);
+    343              new->alloc = 0;
+    344              new->prev = cur;
+    345              new->next = cur->next;
+    346          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    347              new->trace = NULL;
+    348              new->trace_count = 0;
+    349          #endif
+    350              new->magic1 = MAGIC1;
+    351              new->magic2 = MAGIC2;
+    352          
+    353              if( new->next != NULL )
+    354                  new->next->prev = new;
+    355          
+    356              // Replace cur with new in free_list
+    357              //
+    358              new->prev_free = cur->prev_free;
+    359              new->next_free = cur->next_free;
+    360              if( new->prev_free != NULL )
+    361                  new->prev_free->next_free = new;
+    362              else
+    363                  heap.first_free = new;
+    364          
+    365              if( new->next_free != NULL )
+    366                  new->next_free->prev_free = new;
+    367          
+    368              cur->alloc = 1;
+    369              cur->size = len;
+    370              cur->next = new;
+    371              cur->prev_free = NULL;
+    372              cur->next_free = NULL;
+    373          
+    374          #if defined(MBEDTLS_MEMORY_DEBUG)
+    375              heap.header_count++;
+    376              if( heap.header_count > heap.maximum_header_count )
+    377                  heap.maximum_header_count = heap.header_count;
+    378              heap.total_used += cur->size;
+    379              if( heap.total_used > heap.maximum_used )
+    380                  heap.maximum_used = heap.total_used;
+    381          #endif
+    382          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    383              trace_cnt = backtrace( trace_buffer, MAX_BT );
+    384              cur->trace = backtrace_symbols( trace_buffer, trace_cnt );
+    385              cur->trace_count = trace_cnt;
+    386          #endif
+    387          
+    388              if( ( heap.verify & MBEDTLS_MEMORY_VERIFY_ALLOC ) && verify_chain() != 0 )
+    389                  mbedtls_exit( 1 );
+    390          
+    391              ret = (unsigned char *) cur + sizeof( memory_header );
+    392              memset( ret, 0, original_len );
+    393          
+    394              return( ret );
+    395          }
+    396          
+    397          static void buffer_alloc_free( void *ptr )
+    398          {
+    399              memory_header *hdr, *old = NULL;
+    400              unsigned char *p = (unsigned char *) ptr;
+    401          
+    402              if( ptr == NULL || heap.buf == NULL || heap.first == NULL )
+    403                  return;
+    404          
+    405              if( p < heap.buf || p >= heap.buf + heap.len )
+    406              {
+    407          #if defined(MBEDTLS_MEMORY_DEBUG)
+    408                  mbedtls_fprintf( stderr, "FATAL: mbedtls_free() outside of managed "
+    409                                            "space\n" );
+    410          #endif
+    411                  mbedtls_exit( 1 );
+    412              }
+    413          
+    414              p -= sizeof(memory_header);
+    415              hdr = (memory_header *) p;
+    416          
+    417              if( verify_header( hdr ) != 0 )
+    418                  mbedtls_exit( 1 );
+    419          
+    420              if( hdr->alloc != 1 )
+    421              {
+    422          #if defined(MBEDTLS_MEMORY_DEBUG)
+    423                  mbedtls_fprintf( stderr, "FATAL: mbedtls_free() on unallocated "
+    424                                            "data\n" );
+    425          #endif
+    426                  mbedtls_exit( 1 );
+    427              }
+    428          
+    429              hdr->alloc = 0;
+    430          
+    431          #if defined(MBEDTLS_MEMORY_DEBUG)
+    432              heap.free_count++;
+    433              heap.total_used -= hdr->size;
+    434          #endif
+    435          
+    436          #if defined(MBEDTLS_MEMORY_BACKTRACE)
+    437              free( hdr->trace );
+    438              hdr->trace = NULL;
+    439              hdr->trace_count = 0;
+    440          #endif
+    441          
+    442              // Regroup with block before
+    443              //
+    444              if( hdr->prev != NULL && hdr->prev->alloc == 0 )
+    445              {
+    446          #if defined(MBEDTLS_MEMORY_DEBUG)
+    447                  heap.header_count--;
+    448          #endif
+    449                  hdr->prev->size += sizeof(memory_header) + hdr->size;
+    450                  hdr->prev->next = hdr->next;
+    451                  old = hdr;
+    452                  hdr = hdr->prev;
+    453          
+    454                  if( hdr->next != NULL )
+    455                      hdr->next->prev = hdr;
+    456          
+    457                  memset( old, 0, sizeof(memory_header) );
+    458              }
+    459          
+    460              // Regroup with block after
+    461              //
+    462              if( hdr->next != NULL && hdr->next->alloc == 0 )
+    463              {
+    464          #if defined(MBEDTLS_MEMORY_DEBUG)
+    465                  heap.header_count--;
+    466          #endif
+    467                  hdr->size += sizeof(memory_header) + hdr->next->size;
+    468                  old = hdr->next;
+    469                  hdr->next = hdr->next->next;
+    470          
+    471                  if( hdr->prev_free != NULL || hdr->next_free != NULL )
+    472                  {
+    473                      if( hdr->prev_free != NULL )
+    474                          hdr->prev_free->next_free = hdr->next_free;
+    475                      else
+    476                          heap.first_free = hdr->next_free;
+    477          
+    478                      if( hdr->next_free != NULL )
+    479                          hdr->next_free->prev_free = hdr->prev_free;
+    480                  }
+    481          
+    482                  hdr->prev_free = old->prev_free;
+    483                  hdr->next_free = old->next_free;
+    484          
+    485                  if( hdr->prev_free != NULL )
+    486                      hdr->prev_free->next_free = hdr;
+    487                  else
+    488                      heap.first_free = hdr;
+    489          
+    490                  if( hdr->next_free != NULL )
+    491                      hdr->next_free->prev_free = hdr;
+    492          
+    493                  if( hdr->next != NULL )
+    494                      hdr->next->prev = hdr;
+    495          
+    496                  memset( old, 0, sizeof(memory_header) );
+    497              }
+    498          
+    499              // Prepend to free_list if we have not merged
+    500              // (Does not have to stay in same order as prev / next list)
+    501              //
+    502              if( old == NULL )
+    503              {
+    504                  hdr->next_free = heap.first_free;
+    505                  if( heap.first_free != NULL )
+    506                      heap.first_free->prev_free = hdr;
+    507                  heap.first_free = hdr;
+    508              }
+    509          
+    510              if( ( heap.verify & MBEDTLS_MEMORY_VERIFY_FREE ) && verify_chain() != 0 )
+    511                  mbedtls_exit( 1 );
+    512          }
+    513          
+    514          void mbedtls_memory_buffer_set_verify( int verify )
+    515          {
+    516              heap.verify = verify;
+    517          }
+    518          
+    519          int mbedtls_memory_buffer_alloc_verify()
+    520          {
+    521              return verify_chain();
+    522          }
+    523          
+    524          #if defined(MBEDTLS_MEMORY_DEBUG)
+    525          void mbedtls_memory_buffer_alloc_status()
+    526          {
+    527              mbedtls_fprintf( stderr,
+    528                                "Current use: %zu blocks / %zu bytes, max: %zu blocks / "
+    529                                "%zu bytes (total %zu bytes), alloc / free: %zu / %zu\n",
+    530                                heap.header_count, heap.total_used,
+    531                                heap.maximum_header_count, heap.maximum_used,
+    532                                heap.maximum_header_count * sizeof( memory_header )
+    533                                + heap.maximum_used,
+    534                                heap.alloc_count, heap.free_count );
+    535          
+    536              if( heap.first->next == NULL )
+    537              {
+    538                  mbedtls_fprintf( stderr, "All memory de-allocated in stack buffer\n" );
+    539              }
+    540              else
+    541              {
+    542                  mbedtls_fprintf( stderr, "Memory currently allocated:\n" );
+    543                  debug_chain();
+    544              }
+    545          }
+    546          
+    547          void mbedtls_memory_buffer_alloc_max_get( size_t *max_used, size_t *max_blocks )
+    548          {
+    549              *max_used   = heap.maximum_used;
+    550              *max_blocks = heap.maximum_header_count;
+    551          }
+    552          
+    553          void mbedtls_memory_buffer_alloc_max_reset( void )
+    554          {
+    555              heap.maximum_used = 0;
+    556              heap.maximum_header_count = 0;
+    557          }
+    558          
+    559          void mbedtls_memory_buffer_alloc_cur_get( size_t *cur_used, size_t *cur_blocks )
+    560          {
+    561              *cur_used   = heap.total_used;
+    562              *cur_blocks = heap.header_count;
+    563          }
+    564          #endif /* MBEDTLS_MEMORY_DEBUG */
+    565          
+    566          #if defined(MBEDTLS_THREADING_C)
+    567          static void *buffer_alloc_calloc_mutexed( size_t n, size_t size )
+    568          {
+    569              void *buf;
+    570              if( mbedtls_mutex_lock( &heap.mutex ) != 0 )
+    571                  return( NULL );
+    572              buf = buffer_alloc_calloc( n, size );
+    573              if( mbedtls_mutex_unlock( &heap.mutex ) )
+    574                  return( NULL );
+    575              return( buf );
+    576          }
+    577          
+    578          static void buffer_alloc_free_mutexed( void *ptr )
+    579          {
+    580              /* We have to good option here, but corrupting the heap seems
+    581               * worse than loosing memory. */
+    582              if( mbedtls_mutex_lock( &heap.mutex ) )
+    583                  return;
+    584              buffer_alloc_free( ptr );
+    585              (void) mbedtls_mutex_unlock( &heap.mutex );
+    586          }
+    587          #endif /* MBEDTLS_THREADING_C */
+    588          
+    589          void mbedtls_memory_buffer_alloc_init( unsigned char *buf, size_t len )
+    590          {
+    591              memset( &heap, 0, sizeof( buffer_alloc_ctx ) );
+    592          
+    593          #if defined(MBEDTLS_THREADING_C)
+    594              mbedtls_mutex_init( &heap.mutex );
+    595              mbedtls_platform_set_calloc_free( buffer_alloc_calloc_mutexed,
+    596                                        buffer_alloc_free_mutexed );
+    597          #else
+    598              mbedtls_platform_set_calloc_free( buffer_alloc_calloc, buffer_alloc_free );
+    599          #endif
+    600          
+    601              if( len < sizeof( memory_header ) + MBEDTLS_MEMORY_ALIGN_MULTIPLE )
+    602                  return;
+    603              else if( (size_t)buf % MBEDTLS_MEMORY_ALIGN_MULTIPLE )
+    604              {
+    605                  /* Adjust len first since buf is used in the computation */
+    606                  len -= MBEDTLS_MEMORY_ALIGN_MULTIPLE
+    607                       - (size_t)buf % MBEDTLS_MEMORY_ALIGN_MULTIPLE;
+    608                  buf += MBEDTLS_MEMORY_ALIGN_MULTIPLE
+    609                       - (size_t)buf % MBEDTLS_MEMORY_ALIGN_MULTIPLE;
+    610              }
+    611          
+    612              memset( buf, 0, len );
+    613          
+    614              heap.buf = buf;
+    615              heap.len = len;
+    616          
+    617              heap.first = (memory_header *)buf;
+    618              heap.first->size = len - sizeof( memory_header );
+    619              heap.first->magic1 = MAGIC1;
+    620              heap.first->magic2 = MAGIC2;
+    621              heap.first_free = heap.first;
+    622          }
+    623          
+    624          void mbedtls_memory_buffer_alloc_free()
+    625          {
+    626          #if defined(MBEDTLS_THREADING_C)
+    627              mbedtls_mutex_free( &heap.mutex );
+    628          #endif
+    629              mbedtls_zeroize( &heap, sizeof(buffer_alloc_ctx) );
+    630          }
+    631          
+    632          #if defined(MBEDTLS_SELF_TEST)
+    633          static int check_pointer( void *p )
+    634          {
+    635              if( p == NULL )
+    636                  return( -1 );
+    637          
+    638              if( (size_t) p % MBEDTLS_MEMORY_ALIGN_MULTIPLE != 0 )
+    639                  return( -1 );
+    640          
+    641              return( 0 );
+    642          }
+    643          
+    644          static int check_all_free( )
+    645          {
+    646              if(
+    647          #if defined(MBEDTLS_MEMORY_DEBUG)
+    648                  heap.total_used != 0 ||
+    649          #endif
+    650                  heap.first != heap.first_free ||
+    651                  (void *) heap.first != (void *) heap.buf )
+    652              {
+    653                  return( -1 );
+    654              }
+    655          
+    656              return( 0 );
+    657          }
+    658          
+    659          #define TEST_ASSERT( condition )            \
+    660              if( ! (condition) )                     \
+    661              {                                       \
+    662                  if( verbose != 0 )                  \
+    663                      mbedtls_printf( "failed\n" );  \
+    664                                                      \
+    665                  ret = 1;                            \
+    666                  goto cleanup;                       \
+    667              }
+    668          
+    669          int mbedtls_memory_buffer_alloc_self_test( int verbose )
+    670          {
+    671              unsigned char buf[1024];
+    672              unsigned char *p, *q, *r, *end;
+    673              int ret = 0;
+    674          
+    675              if( verbose != 0 )
+    676                  mbedtls_printf( "  MBA test #1 (basic alloc-free cycle): " );
+    677          
+    678              mbedtls_memory_buffer_alloc_init( buf, sizeof( buf ) );
+    679          
+    680              p = mbedtls_calloc( 1, 1 );
+    681              q = mbedtls_calloc( 1, 128 );
+    682              r = mbedtls_calloc( 1, 16 );
+    683          
+    684              TEST_ASSERT( check_pointer( p ) == 0 &&
+    685                           check_pointer( q ) == 0 &&
+    686                           check_pointer( r ) == 0 );
+    687          
+    688              mbedtls_free( r );
+    689              mbedtls_free( q );
+    690              mbedtls_free( p );
+    691          
+    692              TEST_ASSERT( check_all_free( ) == 0 );
+    693          
+    694              /* Memorize end to compare with the next test */
+    695              end = heap.buf + heap.len;
+    696          
+    697              mbedtls_memory_buffer_alloc_free( );
+    698          
+    699              if( verbose != 0 )
+    700                  mbedtls_printf( "passed\n" );
+    701          
+    702              if( verbose != 0 )
+    703                  mbedtls_printf( "  MBA test #2 (buf not aligned): " );
+    704          
+    705              mbedtls_memory_buffer_alloc_init( buf + 1, sizeof( buf ) - 1 );
+    706          
+    707              TEST_ASSERT( heap.buf + heap.len == end );
+    708          
+    709              p = mbedtls_calloc( 1, 1 );
+    710              q = mbedtls_calloc( 1, 128 );
+    711              r = mbedtls_calloc( 1, 16 );
+    712          
+    713              TEST_ASSERT( check_pointer( p ) == 0 &&
+    714                           check_pointer( q ) == 0 &&
+    715                           check_pointer( r ) == 0 );
+    716          
+    717              mbedtls_free( r );
+    718              mbedtls_free( q );
+    719              mbedtls_free( p );
+    720          
+    721              TEST_ASSERT( check_all_free( ) == 0 );
+    722          
+    723              mbedtls_memory_buffer_alloc_free( );
+    724          
+    725              if( verbose != 0 )
+    726                  mbedtls_printf( "passed\n" );
+    727          
+    728              if( verbose != 0 )
+    729                  mbedtls_printf( "  MBA test #3 (full): " );
+    730          
+    731              mbedtls_memory_buffer_alloc_init( buf, sizeof( buf ) );
+    732          
+    733              p = mbedtls_calloc( 1, sizeof( buf ) - sizeof( memory_header ) );
+    734          
+    735              TEST_ASSERT( check_pointer( p ) == 0 );
+    736              TEST_ASSERT( mbedtls_calloc( 1, 1 ) == NULL );
+    737          
+    738              mbedtls_free( p );
+    739          
+    740              p = mbedtls_calloc( 1, sizeof( buf ) - 2 * sizeof( memory_header ) - 16 );
+    741              q = mbedtls_calloc( 1, 16 );
+    742          
+    743              TEST_ASSERT( check_pointer( p ) == 0 && check_pointer( q ) == 0 );
+    744              TEST_ASSERT( mbedtls_calloc( 1, 1 ) == NULL );
+    745          
+    746              mbedtls_free( q );
+    747          
+    748              TEST_ASSERT( mbedtls_calloc( 1, 17 ) == NULL );
+    749          
+    750              mbedtls_free( p );
+    751          
+    752              TEST_ASSERT( check_all_free( ) == 0 );
+    753          
+    754              mbedtls_memory_buffer_alloc_free( );
+    755          
+    756              if( verbose != 0 )
+    757                  mbedtls_printf( "passed\n" );
+    758          
+    759          cleanup:
+    760              mbedtls_memory_buffer_alloc_free( );
+    761          
+    762              return( ret );
+    763          }
+    764          #endif /* MBEDTLS_SELF_TEST */
+    765          
+    766          #endif /* MBEDTLS_MEMORY_BUFFER_ALLOC_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,954 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:25
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\stack\framework\ccm-star.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWEAB8.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\stack\framework\ccm-star.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"ccm-star.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\stack\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\ccm-star.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\ccm-star.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\stack\framework\ccm-star.c
+      1          /****************************************************************************
+      2           * @file ccm-star.c
+      3           * @brief implements the CCM* API, providing both software and mbedtls versions
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          #ifdef PLATFORM_HEADER
+     18            #include PLATFORM_HEADER
+     19          #else
+     20            #include "hal/micro/unix/compiler/gcc.h"
+     21          #endif
+     22          
+     23          // TODO: EMZIGBEE-3712
+     24          void emStandAloneEncryptBlock(uint8_t* block);
+     25          
+     26          #include "stack/include/ember-types.h"
+     27          #include "stack/include/ccm-star.h"
+     28          
+     29          #define ENCRYPTION_BLOCK_SIZE 16
+     30          
+     31          // This implements the CCM* encryption algorithm, using AES-128 as the
+     32          // underlying block cipher.  AES-128 is essentially a hash function
+     33          // controlled by 128-bit (16 byte) keys.  The AES-128 algorithm takes a key
+     34          // and a 16-byte block of data and produces a 16-byte block of noise.
+     35          //
+     36          // The em250 implements AES-128 in hardware.  The hardware can also handle
+     37          // some of the other CCM* calculations, but at this point we only use the
+     38          // basic AES-128 functionality.
+     39          //
+     40          // CCM* uses AES-128 for authentication and encryption.  In authentication,
+     41          // AES-128 is used create a hash number from a message, called a MIC.
+     42          // The MIC is appended to the message before transmission.  The recipient
+     43          // hashes the message and verifies that it obtains the same MIC.  Changes
+     44          // to either the body of the message or the appended MIC will result in
+     45          // the recipient's MIC differing from the appended MIC.
+     46          //
+     47          // For encryption, AES-128 is used to create a series of pseudo-random
+     48          // blocks which are xor-ed with the message to produce the encrypted
+     49          // version.  The recipient performs the same operation, which results in
+     50          // the original message.  It is important that each message be encrypted
+     51          // with a different psuedo-random sequence.  If two messages used the
+     52          // same sequence, xor-ing the encrypted messages would produce the xor
+     53          // of the unencrypted messages.
+     54          //
+     55          // Both authentication and encryption begin by encrypting a special block
+     56          // of data called a 'nonce' (as in 'for the nonce').  The goal is that each
+     57          // use of a particular key will use a different nonce.  The nonce is:
+     58          //
+     59          // Offset Size
+     60          //   0     1    flags
+     61          //   1     8    source EUI64
+     62          //   9     4    frame counter
+     63          //  13     1    control byte
+     64          //  14     2    block count
+     65          //
+     66          // The frame counter is incremented for each message and the block count is
+     67          // incremented for each encryption block.  The flags and control byte ensure
+     68          // that different operations on the same message, such as MIC generation and
+     69          // encryption, do not use the same nonce.
+     70          
+     71          #if defined(USE_MBEDTLS_CCM)
+     72          
+     73          // -----------------------------------------------------------------
+     74          // mbedTLS Implementation
+     75          // -----------------------------------------------------------------
+     76          
+     77          #ifdef MBEDTLS_CONFIG_FILE
+     78            #include MBEDTLS_CONFIG_FILE
+     79          #else
+     80            #include "mbedtls/config.h"
+     81          #endif
+     82          
+     83          #include "mbedtls/ccm.h"
+     84          
+     85          #if !defined(MBEDTLS_AES_C) || !defined(MBEDTLS_CCM_C)
+     86            #error Must enable mbedTLS AES and CCM modules
+     87          #endif
+     88          
+     89          #define AES_CIPHER_ID MBEDTLS_CIPHER_ID_AES
+     90          #define ENCRYPTION_KEYBITS ENCRYPTION_BLOCK_SIZE * 8
+     91          #define OUTPUT_BUFFER_SIZE
+     92          
+     93          mbedtls_ccm_context ccmCtx;
+     94          static uint8_t aesKey[ENCRYPTION_BLOCK_SIZE];
+     95          static uint8_t ccmOutput[256];
+     96          static uint8_t ccmMicBuffer[MIC_LENGTH];
+     97          
+     98          static void prepCcmContext()
+     99          {
+    100            int status;
+    101            emGetKeyFromCore(aesKey);
+    102            status = mbedtls_ccm_setkey(&ccmCtx, AES_CIPHER_ID, aesKey, ENCRYPTION_KEYBITS);
+    103            assert(status == 0);
+    104          }
+    105          
+    106          EmberStatus emberCcmEncryptAndTag(uint8_t *nonce,
+    107                                            uint8_t *authData, uint16_t authlen,
+    108                                            uint8_t *encryptData, uint16_t encryptlen,
+    109                                            uint8_t *micResult)
+    110          {
+    111            int status;
+    112            prepCcmContext();
+    113            status = mbedtls_ccm_encrypt_and_tag(&ccmCtx,
+    114                                                 encryptlen,
+    115                                                 nonce,
+    116                                                 NONCE_LENGTH,
+    117                                                 authData,
+    118                                                 authlen,
+    119                                                 encryptData,
+    120                                                 encryptData,
+    121                                                 micResult,
+    122                                                 MIC_LENGTH);
+    123            if (status != 0) {
+    124              return EMBER_BAD_ARGUMENT;
+    125            } else {
+    126              return EMBER_SUCCESS;
+    127            }
+    128          }
+    129          
+    130          EmberStatus emberCcmAuthDecrypt(uint8_t *nonce,
+    131                                          uint8_t *authData, uint16_t authlen,
+    132                                          uint8_t *encryptData, uint16_t encryptlen,
+    133                                          uint8_t *mic)
+    134          {
+    135            int status;
+    136            prepCcmContext();
+    137            status = mbedtls_ccm_auth_decrypt(&ccmCtx,
+    138                                              encryptlen,
+    139                                              nonce,
+    140                                              NONCE_LENGTH,
+    141                                              authData,
+    142                                              authlen,
+    143                                              encryptData,
+    144                                              encryptData,
+    145                                              mic,
+    146                                              MIC_LENGTH);
+    147            if (status != 0) {
+    148              return EMBER_AUTH_FAILURE;
+    149            } else {
+    150              return EMBER_SUCCESS;
+    151            }
+    152          }
+    153          
+    154          EmberStatus emberCcmEncryptAndTagPacket(uint8_t *nonce,
+    155                                                  uint8_t *packet, uint16_t authlen,
+    156                                                  uint16_t encryptlen)
+    157          {
+    158            int status;
+    159            prepCcmContext();
+    160            status = mbedtls_ccm_encrypt_and_tag(&ccmCtx,
+    161                                                 encryptlen,
+    162                                                 nonce,
+    163                                                 NONCE_LENGTH,
+    164                                                 packet,
+    165                                                 authlen,
+    166                                                 packet + authlen,
+    167                                                 packet + authlen,
+    168                                                 packet + authlen + encryptlen,
+    169                                                 MIC_LENGTH);
+    170            if (status != 0) {
+    171              return EMBER_BAD_ARGUMENT;
+    172            } else {
+    173              return EMBER_SUCCESS;
+    174            }
+    175          }
+    176          
+    177          EmberStatus emberCcmAuthDecryptPacket(uint8_t *nonce,
+    178                                                uint8_t *packet, uint16_t authlen,
+    179                                                uint16_t encryptlen)
+    180          {
+    181            int status;
+    182            prepCcmContext();
+    183            status = mbedtls_ccm_auth_decrypt(&ccmCtx,
+    184                                              encryptlen,
+    185                                              nonce,
+    186                                              NONCE_LENGTH,
+    187                                              packet,
+    188                                              authlen,
+    189                                              packet + authlen,
+    190                                              packet + authlen,
+    191                                              packet + authlen + encryptlen,
+    192                                              MIC_LENGTH);
+    193            if (status != 0) {
+    194              return EMBER_AUTH_FAILURE;
+    195            } else {
+    196              return EMBER_SUCCESS;
+    197            }
+    198          }
+    199          
+    200          void emberCcmCalculateAndEncryptMic(uint8_t *nonce,
+    201                                              uint8_t *authData, uint16_t authlen,
+    202                                              uint8_t *payload, uint16_t payloadlen,
+    203                                              uint8_t *micResult)
+    204          {
+    205            prepCcmContext();
+    206            mbedtls_ccm_encrypt_and_tag(&ccmCtx,
+    207                                        payloadlen,
+    208                                        nonce,
+    209                                        NONCE_LENGTH,
+    210                                        authData,
+    211                                        authlen,
+    212                                        payload,
+    213                                        ccmOutput,
+    214                                        micResult,
+    215                                        MIC_LENGTH);
+    216          }
+    217          
+    218          void emberCcmEncryptBytes(uint8_t *bytes,
+    219                                    uint16_t length,
+    220                                    uint8_t blockCount,
+    221                                    uint8_t *nonce)
+    222          {
+    223            prepCcmContext();
+    224            mbedtls_ccm_encrypt_and_tag(&ccmCtx,
+    225                                        length,
+    226                                        nonce,
+    227                                        NONCE_LENGTH,
+    228                                        NULL,
+    229                                        0,
+    230                                        bytes,
+    231                                        bytes,
+    232                                        ccmMicBuffer,
+    233                                        MIC_LENGTH);
+    234          }
+    235          
+    236          #else // DEFAULT - use software ccm
+    237          
+    238          // -----------------------------------------------------------------
+    239          // Software Implementation
+    240          // -----------------------------------------------------------------
+    241          
+    242          // Handy macro.  This is unsafe because it duplicates its arguments.
+    243          #define min(x, y) ((x) < (y) ? (x) : (y))
+    244          
+    245          //----------------------------------------------------------------
+    246          // MIC encryption flags
+    247          
+    248          // For authentication, the flags byte has the following form:
+    249          //  <reserved:1> <adata:1> <M:3> <L:3>
+    250          // Where
+    251          //  <reserved:1> = 0   Reserved for future expansion.
+    252          //  <adata:1>          0 for zero-length messages, 1 for non-zero-length
+    253          //  <M:3>              MIC length, encoded as (micLength - 2)/2
+    254          //  <L:3>              Number of bytes used to represent the length
+    255          //                     of the message, - 1.
+    256          
+    257          #if MESSAGE_LENGTH_FIELD_SIZE > 0
+    258            #define MIC_FLAG_ADATA_FIELD 0x40
+    259            #define FLAG_L_FIELD ((MESSAGE_LENGTH_FIELD_SIZE - 1) & 0x07)
+    260          #else
+    261            #define MIC_FLAG_ADATA_FIELD 0x00
+    262            #define FLAG_L_FIELD 0x00
+    263          #endif
+    264          
+    265          #ifdef USE_8_BYTE_MIC
+    266            #define MIC_FLAG_M_FIELD 0x18
+    267          #else
+    268            #define MIC_FLAG_M_FIELD 0x08
+    269          #endif
+    270          
+    271          #define MIC_FLAG_MASK \
+    272            (MIC_FLAG_ADATA_FIELD | MIC_FLAG_M_FIELD | FLAG_L_FIELD)
+    273          #define ENCRYPTION_FLAG_MASK (0x00 | FLAG_L_FIELD)
+    274          
+    275          // Performs an actual nonce encryption, after first setting the fields
+    276          // specific to this block.  We do a copy to avoid clobbering the (shared)
+    277          // nonce.
+    278          
+    279          #define encryptMicBlock0(nonce, variableField, result) \
+    280            (encryptNonce((nonce), MIC_FLAG_MASK, (variableField), (result)))
+    281          
+    282          #define encryptBlock0(nonce, variableField, result) \
+    283            (encryptNonce((nonce), ENCRYPTION_FLAG_MASK, (variableField), (result)))
+    284          
+
+   \                                 In section .text, align 2, keep-with-next
+    285          static void encryptNonce(uint8_t *nonce,
+    286                                   uint8_t flagsMask,
+    287                                   uint16_t variableField,
+    288                                   uint8_t block[ENCRYPTION_BLOCK_SIZE])
+    289          {
+   \                     encryptNonce: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460C             MOV      R4,R1
+   \        0x4   0x4615             MOV      R5,R2
+   \        0x6   0x461E             MOV      R6,R3
+    290            MEMCOPY(block + STANDALONE_NONCE_INDEX, nonce, NONCE_LENGTH);
+   \        0x8   0x4601             MOV      R1,R0
+   \        0xA   0x220D             MOVS     R2,#+13
+   \        0xC   0x1C70             ADDS     R0,R6,#+1
+   \        0xE   0x....'....        BL       halCommonMemMove
+    291          
+    292            block[STANDALONE_FLAGS_INDEX] = flagsMask;
+   \       0x12   0x7034             STRB     R4,[R6, #+0]
+    293            block[STANDALONE_VARIABLE_FIELD_INDEX_HIGH] = HIGH_BYTE(variableField);
+   \       0x14   0x0A29             LSRS     R1,R5,#+8
+   \       0x16   0x73B1             STRB     R1,[R6, #+14]
+    294            block[STANDALONE_VARIABLE_FIELD_INDEX_LOW] = LOW_BYTE(variableField);
+   \       0x18   0x73F5             STRB     R5,[R6, #+15]
+    295          
+    296            emStandAloneEncryptBlock(block);
+   \       0x1A   0x4630             MOV      R0,R6
+   \       0x1C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x20   0x....'....        B.W      emStandAloneEncryptBlock
+    297          }
+    298          
+    299          //----------------------------------------------------------------
+    300          // This performs the core of the MIC calculation.  'Count' bytes from
+    301          // 'bytes' are xor-ed into 'block' and then encrypted.  We start at
+    302          // 'blockIndex' in the block.
+    303          //
+    304          // The final blockIndex is returned.
+    305          
+    306          static uint8_t xorBytesIntoBlock(uint8_t *block,
+    307                                           uint8_t blockIndex,
+    308                                           const uint8_t *bytes,
+    309                                           uint16_t count)
+    310          {
+    311            uint16_t i;
+    312          
+    313            for (i = 0; i < count; ) {
+    314              uint16_t needed = ENCRYPTION_BLOCK_SIZE - blockIndex;
+    315              uint16_t todo = count - i;
+    316              uint16_t copied = min(todo, needed);
+    317              uint16_t j;
+    318          
+    319              for (j = 0; j < copied; j++, blockIndex++) {
+    320                block[blockIndex] ^= *bytes++;
+    321              }
+    322              i += copied;
+    323          
+    324              if (blockIndex == ENCRYPTION_BLOCK_SIZE) {
+    325                emStandAloneEncryptBlock(block);
+    326                blockIndex = 0;
+    327              }
+    328            }
+    329            return blockIndex;
+    330          }
+    331          
+    332          // The MIC gets encrypted as block zero of the message.
+    333          #define emEncryptMic(mic, nonce) \
+    334            (emberCcmEncryptBytes((mic), MIC_LENGTH, 0, (nonce)))
+    335          
+    336          // static buffer to hold blocks of data for AES encryption
+
+   \                                 In section .bss, align 4
+    337          static uint8_t encryptionBlock[ENCRYPTION_BLOCK_SIZE];
+   \                     encryptionBlock:
+   \        0x0                      DS8 16
+    338          
+    339          // Calculate the MIC by hashing first the authenticated portion of the
+    340          // packet and then the encrypted portion (which hasn't been encrypted yet).
+    341          //
+    342          // The encrypted bytes are processed on a block boundary, so we finish off
+    343          // the block at the end of the authenticated bytes.
+    344          //
+    345          // The 'for' loop goes around two times (authenticated bytes, encrypted bytes).
+
+   \                                 In section .text, align 2, keep-with-next
+    346          void emberCcmCalculateAndEncryptMic(uint8_t *nonce,
+    347                                              uint8_t *authData,
+    348                                              uint16_t authlen,
+    349                                              uint8_t *payload,
+    350                                              uint16_t payloadlen,
+    351                                              uint8_t *micResult)
+    352          {
+   \                     emberCcmCalculateAndEncryptMic: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xF8DD 0x8028      LDR      R8,[SP, #+40]
+   \        0x8   0x4615             MOV      R5,R2
+   \        0xA   0x469A             MOV      R10,R3
+    353            uint8_t blockIndex = 2;     // skip over frame length field
+    354            uint8_t *chunk = authData;
+   \        0xC   0x468B             MOV      R11,R1
+    355            uint16_t chunklen;
+    356            uint8_t phase;
+    357          
+    358            chunklen = authlen;
+    359            encryptMicBlock0(nonce, payloadlen, encryptionBlock);
+   \        0xE   0x....             LDR.N    R6,??DataTable3
+   \       0x10   0x4681             MOV      R9,R0
+   \       0x12   0x4633             MOV      R3,R6
+   \       0x14   0x4642             MOV      R2,R8
+   \       0x16   0x2149             MOVS     R1,#+73
+   \       0x18   0x....'....        BL       encryptNonce
+    360          
+    361            // first two bytes are the 16-bit representation of the frame length,
+    362            // high byte first
+    363            encryptionBlock[0] ^= HIGH_BYTE(authlen);
+   \       0x1C   0x7832             LDRB     R2,[R6, #+0]
+   \       0x1E   0x2702             MOVS     R7,#+2
+    364            encryptionBlock[1] ^= LOW_BYTE(authlen);
+    365          
+    366            // phase 0: go over authenticated data
+    367            // phase 1: go over the payload
+    368            for (phase = 0; phase < 2; phase++) {
+   \       0x20   0x2402             MOVS     R4,#+2
+   \       0x22   0xEA82 0x2215      EOR      R2,R2,R5, LSR #+8
+   \       0x26   0x7032             STRB     R2,[R6, #+0]
+   \       0x28   0x7871             LDRB     R1,[R6, #+1]
+   \       0x2A   0x4069             EORS     R1,R5,R1
+   \       0x2C   0x7071             STRB     R1,[R6, #+1]
+    369              blockIndex = xorBytesIntoBlock(encryptionBlock,
+    370                                             blockIndex,
+    371                                             chunk,
+    372                                             chunklen);
+   \                     ??emberCcmCalculateAndEncryptMic_0: (+1)
+   \       0x2E   0x4638             MOV      R0,R7
+   \       0x30   0x2700             MOVS     R7,#+0
+   \       0x32   0xE016             B.N      ??emberCcmCalculateAndEncryptMic_1
+   \                     ??emberCcmCalculateAndEncryptMic_2: (+1)
+   \       0x34   0xB2C3             UXTB     R3,R0
+   \       0x36   0xF816 0xC003      LDRB     R12,[R6, R3]
+   \       0x3A   0xF81B 0xEB01      LDRB     LR,[R11], #+1
+   \       0x3E   0x1C52             ADDS     R2,R2,#+1
+   \       0x40   0x1C40             ADDS     R0,R0,#+1
+   \       0x42   0xEA8E 0x0C0C      EOR      R12,LR,R12
+   \       0x46   0xF806 0xC003      STRB     R12,[R6, R3]
+   \                     ??emberCcmCalculateAndEncryptMic_3: (+1)
+   \       0x4A   0xB293             UXTH     R3,R2
+   \       0x4C   0x428B             CMP      R3,R1
+   \       0x4E   0xDBF1             BLT.N    ??emberCcmCalculateAndEncryptMic_2
+   \       0x50   0x19CF             ADDS     R7,R1,R7
+   \       0x52   0xB2C1             UXTB     R1,R0
+   \       0x54   0xB2BF             UXTH     R7,R7
+   \       0x56   0x2910             CMP      R1,#+16
+   \       0x58   0xD103             BNE.N    ??emberCcmCalculateAndEncryptMic_1
+   \       0x5A   0x4630             MOV      R0,R6
+   \       0x5C   0x....'....        BL       emStandAloneEncryptBlock
+   \       0x60   0x2000             MOVS     R0,#+0
+   \                     ??emberCcmCalculateAndEncryptMic_1: (+1)
+   \       0x62   0x42AF             CMP      R7,R5
+   \       0x64   0xDA0C             BGE.N    ??emberCcmCalculateAndEncryptMic_4
+   \       0x66   0xB2C1             UXTB     R1,R0
+   \       0x68   0xF1C1 0x0110      RSB      R1,R1,#+16
+   \       0x6C   0x1BEA             SUBS     R2,R5,R7
+   \       0x6E   0xB293             UXTH     R3,R2
+   \       0x70   0xFA1F 0xFC81      UXTH     R12,R1
+   \       0x74   0x4563             CMP      R3,R12
+   \       0x76   0xBF34             ITE      CC 
+   \       0x78   0xB291             UXTHCC   R1,R2
+   \       0x7A   0xB289             UXTHCS   R1,R1
+   \       0x7C   0x2200             MOVS     R2,#+0
+   \       0x7E   0xE7E4             B.N      ??emberCcmCalculateAndEncryptMic_3
+   \                     ??emberCcmCalculateAndEncryptMic_4: (+1)
+   \       0x80   0x4607             MOV      R7,R0
+    373              chunk = payload;
+   \       0x82   0x46D3             MOV      R11,R10
+    374              chunklen = payloadlen;
+   \       0x84   0x4645             MOV      R5,R8
+    375          
+    376              // finish off authData if not on an encryption block boundary
+    377              if (blockIndex > 0) {
+   \       0x86   0xB2C0             UXTB     R0,R0
+   \       0x88   0xB118             CBZ.N    R0,??emberCcmCalculateAndEncryptMic_5
+    378                emStandAloneEncryptBlock(encryptionBlock);
+   \       0x8A   0x4630             MOV      R0,R6
+   \       0x8C   0x....'....        BL       emStandAloneEncryptBlock
+    379                blockIndex = 0;
+   \       0x90   0x2700             MOVS     R7,#+0
+    380              }
+    381            }
+   \                     ??emberCcmCalculateAndEncryptMic_5: (+1)
+   \       0x92   0x1E64             SUBS     R4,R4,#+1
+   \       0x94   0xD1CB             BNE.N    ??emberCcmCalculateAndEncryptMic_0
+   \       0x96   0x9C0B             LDR      R4,[SP, #+44]
+    382          
+    383            MEMCOPY(micResult, encryptionBlock, MIC_LENGTH);
+   \       0x98   0x2204             MOVS     R2,#+4
+   \       0x9A   0x4631             MOV      R1,R6
+   \       0x9C   0x4620             MOV      R0,R4
+   \       0x9E   0x....'....        BL       halCommonMemMove
+    384            emEncryptMic(micResult, nonce);
+   \       0xA2   0x464B             MOV      R3,R9
+   \       0xA4   0x4620             MOV      R0,R4
+   \       0xA6   0xB001             ADD      SP,SP,#+4
+   \       0xA8   0x2200             MOVS     R2,#+0
+   \       0xAA   0x2104             MOVS     R1,#+4
+   \       0xAC   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \       0xB0                      REQUIRE emberCcmEncryptBytes
+   \       0xB0                      ;; // Fall through to label emberCcmEncryptBytes
+    385          }
+    386          
+    387          // Encrypt an array of bytes by xor-ing with a series of AES encrypted nonces
+
+   \                                 In section .text, align 2, keep-with-next
+    388          void emberCcmEncryptBytes(uint8_t *bytes,
+    389                                    uint16_t length,
+    390                                    uint8_t blockCount,
+    391                                    uint8_t *nonce)
+    392          {
+   \                     emberCcmEncryptBytes: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4606             MOV      R6,R0
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x4615             MOV      R5,R2
+   \        0xA   0x4698             MOV      R8,R3
+   \        0xC   0x....'....        LDR.W    R9,??DataTable3
+   \       0x10   0xE00A             B.N      ??emberCcmEncryptBytes_0
+    393            while (length > 0) {
+    394              uint8_t todo = min(length, ENCRYPTION_BLOCK_SIZE);
+    395              uint8_t i;
+    396              encryptBlock0(nonce, blockCount, encryptionBlock);
+    397              blockCount += 1;
+    398          
+    399              for (i = 0; i < todo; i++) {
+    400                *bytes++ ^= encryptionBlock[i];
+   \                     ??emberCcmEncryptBytes_1: (+1)
+   \       0x12   0x7832             LDRB     R2,[R6, #+0]
+   \       0x14   0xF819 0x0000      LDRB     R0,[R9, R0]
+    401              }
+   \       0x18   0x1C49             ADDS     R1,R1,#+1
+   \       0x1A   0x4042             EORS     R2,R0,R2
+   \       0x1C   0xF806 0x2B01      STRB     R2,[R6], #+1
+   \                     ??emberCcmEncryptBytes_2: (+1)
+   \       0x20   0xB2C8             UXTB     R0,R1
+   \       0x22   0x42B8             CMP      R0,R7
+   \       0x24   0xDBF5             BLT.N    ??emberCcmEncryptBytes_1
+    402          
+    403              length -= todo;
+   \       0x26   0x1BE4             SUBS     R4,R4,R7
+   \                     ??emberCcmEncryptBytes_0: (+1)
+   \       0x28   0xB2A0             UXTH     R0,R4
+   \       0x2A   0xB160             CBZ.N    R0,??emberCcmEncryptBytes_3
+   \       0x2C   0x2810             CMP      R0,#+16
+   \       0x2E   0x464B             MOV      R3,R9
+   \       0x30   0xB2EA             UXTB     R2,R5
+   \       0x32   0xBFB4             ITE      LT 
+   \       0x34   0xB2E7             UXTBLT   R7,R4
+   \       0x36   0x2710             MOVGE    R7,#+16
+   \       0x38   0x2101             MOVS     R1,#+1
+   \       0x3A   0x4640             MOV      R0,R8
+   \       0x3C   0x....'....        BL       encryptNonce
+   \       0x40   0x1C6D             ADDS     R5,R5,#+1
+   \       0x42   0x2100             MOVS     R1,#+0
+   \       0x44   0xE7EC             B.N      ??emberCcmEncryptBytes_2
+    404            }
+    405          }
+   \                     ??emberCcmEncryptBytes_3: (+1)
+   \       0x46   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}    ;; return
+    406          
+    407          //----------------------------------------------------------------
+    408          // The core encryption/decrytion functions
+    409          
+
+   \                                 In section .text, align 2, keep-with-next
+    410          EmberStatus emberCcmEncryptAndTag(uint8_t *nonce,
+    411                                            uint8_t *authData,
+    412                                            uint16_t authlen,
+    413                                            uint8_t *encryptData,
+    414                                            uint16_t encryptlen,
+    415                                            uint8_t *micResult)
+    416          {
+   \                     emberCcmEncryptAndTag: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x4605             MOV      R5,R0
+   \        0x4   0x9807             LDR      R0,[SP, #+28]
+   \        0x6   0x9C06             LDR      R4,[SP, #+24]
+   \        0x8   0x461E             MOV      R6,R3
+    417            emberCcmCalculateAndEncryptMic(nonce,
+    418                                           authData,
+    419                                           authlen,
+    420                                           encryptData,
+    421                                           encryptlen,
+    422                                           micResult);
+   \        0xA   0x9001             STR      R0,[SP, #+4]
+   \        0xC   0x9400             STR      R4,[SP, #+0]
+   \        0xE   0x4628             MOV      R0,R5
+   \       0x10   0x....'....        BL       emberCcmCalculateAndEncryptMic
+    423          
+    424            if (encryptlen > 0) {
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0xD005             BEQ.N    ??emberCcmEncryptAndTag_0
+    425              emberEncryptPayload(encryptData, encryptlen, nonce);
+   \       0x18   0x462B             MOV      R3,R5
+   \       0x1A   0x2201             MOVS     R2,#+1
+   \       0x1C   0x4621             MOV      R1,R4
+   \       0x1E   0x4630             MOV      R0,R6
+   \       0x20   0x....'....        BL       emberCcmEncryptBytes
+    426            }
+    427            return EMBER_SUCCESS;
+   \                     ??emberCcmEncryptAndTag_0: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    428          }
+    429          
+
+   \                                 In section .bss, align 4
+    430          static uint8_t rxMic[MIC_LENGTH];
+   \                     rxMic:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    431          static uint8_t calcMic[MIC_LENGTH];
+   \                     calcMic:
+   \        0x0                      DS8 4
+    432          
+
+   \                                 In section .text, align 2, keep-with-next
+    433          EmberStatus emberCcmAuthDecrypt(uint8_t *nonce,
+    434                                          uint8_t *authData,
+    435                                          uint16_t authlen,
+    436                                          uint8_t *encryptData,
+    437                                          uint16_t encryptlen,
+    438                                          uint8_t *mic)
+    439          {
+   \                     emberCcmAuthDecrypt: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x9C0A             LDR      R4,[SP, #+40]
+   \        0x6   0x4605             MOV      R5,R0
+   \        0x8   0x4689             MOV      R9,R1
+   \        0xA   0x4692             MOV      R10,R2
+   \        0xC   0x4698             MOV      R8,R3
+   \        0xE   0x9E0B             LDR      R6,[SP, #+44]
+    440            bool authenticated;
+    441            emberEncryptPayload(encryptData, encryptlen, nonce);
+   \       0x10   0x462B             MOV      R3,R5
+   \       0x12   0x2201             MOVS     R2,#+1
+   \       0x14   0x4621             MOV      R1,R4
+   \       0x16   0x4640             MOV      R0,R8
+   \       0x18   0x....'....        BL       emberCcmEncryptBytes
+    442          
+    443            emberCcmCalculateAndEncryptMic(nonce,
+    444                                           authData,
+    445                                           authlen,
+    446                                           encryptData,
+    447                                           encryptlen,
+    448                                           calcMic);
+   \       0x1C   0x....             LDR.N    R7,??DataTable3_1
+   \       0x1E   0x9701             STR      R7,[SP, #+4]
+   \       0x20   0x9400             STR      R4,[SP, #+0]
+   \       0x22   0x4643             MOV      R3,R8
+   \       0x24   0x4652             MOV      R2,R10
+   \       0x26   0x4649             MOV      R1,R9
+   \       0x28   0x4628             MOV      R0,R5
+   \       0x2A   0x....'....        BL       emberCcmCalculateAndEncryptMic
+    449            authenticated = MEMCOMPARE(mic, calcMic, MIC_LENGTH) == 0;
+   \       0x2E   0x2204             MOVS     R2,#+4
+   \       0x30   0x4639             MOV      R1,R7
+   \       0x32   0x4630             MOV      R0,R6
+   \       0x34   0x....'....        BL       halCommonMemCompare
+   \       0x38   0xB100             CBZ.N    R0,??emberCcmAuthDecrypt_0
+    450            if (authenticated) {
+    451              return EMBER_SUCCESS;
+    452            } else {
+    453              return EMBER_AUTH_FAILURE;
+   \       0x3A   0x207E             MOVS     R0,#+126
+   \                     ??emberCcmAuthDecrypt_0: (+1)
+   \       0x3C   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}  ;; return
+    454            }
+    455          }
+    456          
+    457          // encryption / decryption on flat packets with an implicit ordering
+    458          
+
+   \                                 In section .text, align 2, keep-with-next
+    459          EmberStatus emberCcmEncryptAndTagPacket(uint8_t *nonce,
+    460                                                  uint8_t *packet,
+    461                                                  uint16_t authlen,
+    462                                                  uint16_t encryptlen)
+    463          {
+   \                     emberCcmEncryptAndTagPacket: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+    464            return emberCcmEncryptAndTag(nonce,
+    465                                         packet,
+    466                                         authlen,
+    467                                         packet + authlen,
+    468                                         encryptlen,
+    469                                         packet + authlen + encryptlen);
+   \        0x2   0x188C             ADDS     R4,R1,R2
+   \        0x4   0x18E5             ADDS     R5,R4,R3
+   \        0x6   0x9300             STR      R3,[SP, #+0]
+   \        0x8   0x9501             STR      R5,[SP, #+4]
+   \        0xA   0x4623             MOV      R3,R4
+   \        0xC   0x....'....        BL       emberCcmEncryptAndTag
+   \       0x10   0xBD3E             POP      {R1-R5,PC}       ;; return
+    470          }
+    471          
+
+   \                                 In section .text, align 2, keep-with-next
+    472          EmberStatus emberCcmAuthDecryptPacket(uint8_t *nonce,
+    473                                                uint8_t *packet,
+    474                                                uint16_t authlen,
+    475                                                uint16_t encryptlen)
+    476          {
+   \                     emberCcmAuthDecryptPacket: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+   \        0x8   0x4680             MOV      R8,R0
+   \        0xA   0x461F             MOV      R7,R3
+    477            MEMCOPY(rxMic, packet + authlen + encryptlen, MIC_LENGTH);
+   \        0xC   0x19AC             ADDS     R4,R5,R6
+   \        0xE   0x....'....        LDR.W    R9,??DataTable3_2
+   \       0x12   0x2204             MOVS     R2,#+4
+   \       0x14   0x19E1             ADDS     R1,R4,R7
+   \       0x16   0x4648             MOV      R0,R9
+   \       0x18   0x....'....        BL       halCommonMemMove
+    478            return emberCcmAuthDecrypt(nonce,
+    479                                       packet,
+    480                                       authlen,
+    481                                       packet + authlen,
+    482                                       encryptlen,
+    483                                       rxMic);
+   \       0x1C   0xF8CD 0x9004      STR      R9,[SP, #+4]
+   \       0x20   0x9700             STR      R7,[SP, #+0]
+   \       0x22   0x4623             MOV      R3,R4
+   \       0x24   0x4632             MOV      R2,R6
+   \       0x26   0x4629             MOV      R1,R5
+   \       0x28   0x4640             MOV      R0,R8
+   \       0x2A   0x....'....        BL       emberCcmAuthDecrypt
+   \       0x2E   0xE8BD 0x83FE      POP      {R1-R9,PC}       ;; return
+    484          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     encryptionBlock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     calcMic
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     rxMic
+    485          
+    486          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   emberCcmAuthDecrypt
+        40   -> emberCcmCalculateAndEncryptMic
+        40   -> emberCcmEncryptBytes
+        40   -> halCommonMemCompare
+      40   emberCcmAuthDecryptPacket
+        40   -> emberCcmAuthDecrypt
+        40   -> halCommonMemMove
+      40   emberCcmCalculateAndEncryptMic
+        40   -> emStandAloneEncryptBlock
+         0   -> emberCcmEncryptBytes
+        40   -> encryptNonce
+        40   -> halCommonMemMove
+      24   emberCcmEncryptAndTag
+        24   -> emberCcmCalculateAndEncryptMic
+        24   -> emberCcmEncryptBytes
+      24   emberCcmEncryptAndTagPacket
+        24   -> emberCcmEncryptAndTag
+      32   emberCcmEncryptBytes
+        32   -> encryptNonce
+      16   encryptNonce
+         0   -> emStandAloneEncryptBlock
+        16   -> halCommonMemMove
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  calcMic
+      64  emberCcmAuthDecrypt
+      50  emberCcmAuthDecryptPacket
+     176  emberCcmCalculateAndEncryptMic
+      40  emberCcmEncryptAndTag
+      18  emberCcmEncryptAndTagPacket
+      74  emberCcmEncryptBytes
+      36  encryptNonce
+      16  encryptionBlock
+       4  rxMic
+
+ 
+  24 bytes in section .bss
+ 470 bytes in section .text
+ 
+ 470 bytes of CODE memory
+  24 bytes of DATA memory
+
+Errors: none
+Warnings: none

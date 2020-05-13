@@ -1,0 +1,1547 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:37
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\process-global-message.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW347.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\process-global-message.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"process-global-message.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\process-global-message.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\process-global-message.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\process-global-message.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief This file contains function that processes global ZCL message.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "../include/af.h"
+     19          #include "common.h"
+     20          #include "../plugin/ias-zone-client/ias-zone-client.h"
+     21          #include "../plugin/key-establishment/key-establishment.h"
+     22          #include "../plugin/smart-energy-registration/smart-energy-registration.h"
+     23          #include "../plugin/trust-center-keepalive/trust-center-keepalive.h"
+     24          #include "../plugin/test-harness/test-harness.h"
+     25          #ifdef EMBER_AF_PLUGIN_WWAH_SERVER_SILABS
+     26            #include "../plugin/wwah-server-silabs/wwah-server-silabs.h"
+     27          #endif
+     28          #include "../plugin/simple-metering-server/simple-metering-server.h"
+     29          #include "znet-bookkeeping.h" // emAfRetrieveAttributeAndCraftResponse
+     30          
+     31          #ifdef EMBER_AF_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ
+     32            #include "app/framework/plugin/comms-hub-function-sub-ghz/comms-hub-function-sub-ghz.h"
+     33          #endif
+     34          
+     35          // flag to keep track of the fact that we just sent a read attr for time and
+     36          // we should set our time to the result of the read attr response.
+
+   \                                 In section .bss, align 1
+     37          bool emAfSyncingTime = false;
+   \                     emAfSyncingTime:
+   \        0x0                      DS8 1
+     38          
+     39          #ifdef EMBER_AF_GBCS_COMPATIBLE
+     40          // Some GBCS use cases (e.g. GCS15e, GCS21f) require that ReadAttributesResponse
+     41          // should be send back with Disable Default Response flag set. The only pattern
+     42          // is that the decision is based on the cluster and attribute IDs requested.
+     43          // To reduce the possibility of false positives, we disable default response
+     44          // only for responses containing at least the specified minimum of attributes.
+     45          #define MIN_MATCHING_ATTR_IDS_TO_DISABLE_DEFAULT_RESPONSE       3
+     46          #endif
+     47          
+     48          #define DISC_ATTR_RSP_MAX_ATTRIBUTES                                         \
+     49            (((EMBER_AF_MAXIMUM_APS_PAYLOAD_LENGTH                                     \
+     50               - EMBER_AF_ZCL_MANUFACTURER_SPECIFIC_OVERHEAD /* max ZCL header size */ \
+     51               - 1)       /* discovery is complete boolean */                          \
+     52              / 3)        /* size of one discover attributes response entry */         \
+     53             % UINT8_MAX) /* make count fit in an 8 bit integer */
+     54          #define DISC_ATTR_EXT_RSP_MAX_ATTRIBUTES                                      \
+     55            (((EMBER_AF_MAXIMUM_APS_PAYLOAD_LENGTH                                      \
+     56               - EMBER_AF_ZCL_MANUFACTURER_SPECIFIC_OVERHEAD /* max ZCL header size */  \
+     57               - 1)       /* discovery is complete boolean */                           \
+     58              / 4)        /* size of one discover attributes extended response entry */ \
+     59             % UINT8_MAX) /* make count fit in an 8 bit integer */
+     60          
+     61          #if defined(EMBER_AF_SUPPORT_COMMAND_DISCOVERY)
+
+   \                                 In section .text, align 2, keep-with-next
+     62          static void printDiscoverCommandsResponse(bool generated,
+     63                                                    uint16_t clusterId,
+     64                                                    bool discoveryComplete,
+     65                                                    uint8_t* buffer,
+     66                                                    uint16_t length)
+     67          {
+   \                     printDiscoverCommandsResponse: (+1)
+   \        0x0   0x9800             LDR      R0,[SP, #+0]
+     68            uint8_t i;
+     69            emberAfServiceDiscoveryPrint("Discover Commands response (complete: %c), %p IDs: ",
+     70                                         (discoveryComplete
+     71                                          ? 'y'
+     72                                          : 'n'),
+     73                                         (generated
+     74                                          ? "Generated"
+     75                                          : "Received"));
+     76            for (i = 0; i < length; i++) {
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0xE000             B.N      ??printDiscoverCommandsResponse_0
+   \                     ??printDiscoverCommandsResponse_1: (+1)
+   \        0x6   0x1C49             ADDS     R1,R1,#+1
+   \                     ??printDiscoverCommandsResponse_0: (+1)
+   \        0x8   0xB2CA             UXTB     R2,R1
+   \        0xA   0x4282             CMP      R2,R0
+   \        0xC   0xD3FB             BCC.N    ??printDiscoverCommandsResponse_1
+     77              emberAfServiceDiscoveryPrint("0x%X ", buffer[i]);
+     78            }
+     79            emberAfServiceDiscoveryPrintln("");
+     80          }
+   \        0xE   0x4770             BX       LR               ;; return
+     81          #endif
+     82          
+
+   \                                 In section .text, align 4, keep-with-next
+     83          bool emAfProcessGlobalCommand(EmberAfClusterCommand *cmd)
+     84          {
+   \                     emAfProcessGlobalCommand: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB087             SUB      SP,SP,#+28
+   \        0x6   0x4604             MOV      R4,R0
+     85            uint16_t attrId;
+     86            uint8_t frameControl;
+     87            // This is a little clumsy but easier to read and port
+     88            // from earlier implementation.
+     89            EmberAfClusterId clusterId = cmd->apsFrame->clusterId;
+   \        0x8   0x6821             LDR      R1,[R4, #+0]
+     90            uint8_t zclCmd = cmd->commandId;
+   \        0xA   0x7CE0             LDRB     R0,[R4, #+19]
+   \        0xC   0xF8B1 0x9002      LDRH     R9,[R1, #+2]
+   \       0x10   0x9004             STR      R0,[SP, #+16]
+     91            uint8_t *message = cmd->buffer;
+     92            uint16_t msgLen = cmd->bufLen;
+     93            uint16_t msgIndex = cmd->payloadStartIndex;
+     94            uint8_t clientServerMask = (cmd->direction == ZCL_DIRECTION_CLIENT_TO_SERVER
+     95                                        ? CLUSTER_MASK_SERVER
+     96                                        : CLUSTER_MASK_CLIENT);
+   \       0x12   0x7D60             LDRB     R0,[R4, #+21]
+   \       0x14   0xF8D4 0x8008      LDR      R8,[R4, #+8]
+   \       0x18   0x89A6             LDRH     R6,[R4, #+12]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0x7D27             LDRB     R7,[R4, #+20]
+   \       0x1E   0xBF07             ITTEE    EQ 
+   \       0x20   0x2240             MOVEQ    R2,#+64
+   \       0x22   0xF88D 0x200C      STRBEQ   R2,[SP, #+12]
+   \       0x26   0x2380             MOVNE    R3,#+128
+   \       0x28   0xF88D 0x300C      STRBNE   R3,[SP, #+12]
+     97          
+     98            // If we are disabled then we can only respond to read or write commands
+     99            // or identify cluster (see device enabled attr of basic cluster)
+    100            if (!emberAfIsDeviceEnabled(cmd->apsFrame->destinationEndpoint)
+    101                && zclCmd != ZCL_READ_ATTRIBUTES_COMMAND_ID
+    102                && zclCmd != ZCL_WRITE_ATTRIBUTES_COMMAND_ID
+    103                && zclCmd != ZCL_WRITE_ATTRIBUTES_UNDIVIDED_COMMAND_ID
+    104                && zclCmd != ZCL_WRITE_ATTRIBUTES_NO_RESPONSE_COMMAND_ID
+    105                && clusterId != ZCL_IDENTIFY_CLUSTER_ID) {
+   \       0x2C   0x7948             LDRB     R0,[R1, #+5]
+   \       0x2E   0x....'....        BL       emberAfIsDeviceEnabled
+   \       0x32   0xB988             CBNZ.N   R0,??emAfProcessGlobalCommand_1
+   \       0x34   0x9804             LDR      R0,[SP, #+16]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xBF18             IT       NE 
+   \       0x3A   0x2802             CMPNE    R0,#+2
+   \       0x3C   0xD00C             BEQ.N    ??emAfProcessGlobalCommand_1
+   \       0x3E   0x2803             CMP      R0,#+3
+   \       0x40   0xBF1C             ITT      NE 
+   \       0x42   0x2805             CMPNE    R0,#+5
+   \       0x44   0xF1B9 0x0F03      CMPNE    R9,#+3
+   \       0x48   0xD006             BEQ.N    ??emAfProcessGlobalCommand_1
+    106              emberAfCorePrintln("disabled");
+   \       0x4A   0x....'....        LDR.W    R1,??DataTable1
+   \       0x4E   0x2001             MOVS     R0,#+1
+   \       0x50   0x....'....        BL       emberAfPrintln
+    107              emberAfDebugPrintln("%pd, dropping global cmd:%x", "disable", zclCmd);
+    108              emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_FAILURE);
+   \       0x54   0x2101             MOVS     R1,#+1
+   \       0x56   0xE1E9             B.N      ??emAfProcessGlobalCommand_2
+    109              return true;
+    110            }
+    111          
+    112            // If a manufacturer-specific command arrives using our special internal "not
+    113            // manufacturer specific" code, we need to reject it outright without letting
+    114            // it pass through to the rest of the code.  The internal read and write APIs
+    115            // would interpret it as a standard attribute or cluster and return incorrect
+    116            // results.
+    117            if (cmd->mfgSpecific && cmd->mfgCode == EMBER_AF_NULL_MANUFACTURER_CODE) {
+   \                     ??emAfProcessGlobalCommand_1: (+1)
+   \       0x58   0x7BE0             LDRB     R0,[R4, #+15]
+   \       0x5A   0xB118             CBZ.N    R0,??emAfProcessGlobalCommand_3
+   \       0x5C   0x8A21             LDRH     R1,[R4, #+16]
+   \       0x5E   0x2900             CMP      R1,#+0
+   \       0x60   0xF000 0x8137      BEQ.W    ??emAfProcessGlobalCommand_4
+    118              goto kickout;
+    119            }
+    120          
+    121            // Clear out the response buffer by setting its length to zero
+    122            appResponseLength = 0;
+   \                     ??emAfProcessGlobalCommand_3: (+1)
+   \       0x64   0x2200             MOVS     R2,#+0
+   \       0x66   0x....'....        LDR.W    R3,??DataTable1_1
+   \       0x6A   0x801A             STRH     R2,[R3, #+0]
+    123          
+    124            // Make the ZCL header for the response
+    125            // note: cmd byte is set below
+    126            frameControl = (ZCL_GLOBAL_COMMAND
+    127                            | (cmd->direction == ZCL_DIRECTION_CLIENT_TO_SERVER
+    128                               ? ZCL_FRAME_CONTROL_SERVER_TO_CLIENT
+    129                               | EMBER_AF_DEFAULT_RESPONSE_POLICY_RESPONSES
+    130                               : ZCL_FRAME_CONTROL_CLIENT_TO_SERVER
+    131                               | EMBER_AF_DEFAULT_RESPONSE_POLICY_RESPONSES));
+   \       0x6C   0x7D61             LDRB     R1,[R4, #+21]
+   \       0x6E   0x2900             CMP      R1,#+0
+   \       0x70   0xBF0C             ITE      EQ 
+   \       0x72   0x2108             MOVEQ    R1,#+8
+   \       0x74   0x2100             MOVNE    R1,#+0
+    132            if (cmd->mfgSpecific) {
+   \       0x76   0xB108             CBZ.N    R0,??emAfProcessGlobalCommand_5
+    133              frameControl |= ZCL_MANUFACTURER_SPECIFIC_MASK;
+   \       0x78   0xF041 0x0104      ORR      R1,R1,#0x4
+    134            }
+    135            emberAfPutInt8uInResp(frameControl);
+   \                     ??emAfProcessGlobalCommand_5: (+1)
+   \       0x7C   0x4608             MOV      R0,R1
+   \       0x7E   0x....'....        BL       emberAfPutInt8uInResp
+    136            if (cmd->mfgSpecific) {
+   \       0x82   0x7BE0             LDRB     R0,[R4, #+15]
+   \       0x84   0xB110             CBZ.N    R0,??emAfProcessGlobalCommand_6
+    137              emberAfPutInt16uInResp(cmd->mfgCode);
+   \       0x86   0x8A20             LDRH     R0,[R4, #+16]
+   \       0x88   0x....'....        BL       emberAfPutInt16uInResp
+    138            }
+    139            emberAfPutInt8uInResp(cmd->seqNum);
+   \                     ??emAfProcessGlobalCommand_6: (+1)
+   \       0x8C   0x7CA0             LDRB     R0,[R4, #+18]
+   \       0x8E   0x1BF5             SUBS     R5,R6,R7
+   \       0x90   0xEB08 0x0A07      ADD      R10,R8,R7
+   \       0x94   0x....'....        BL       emberAfPutInt8uInResp
+    140          
+    141            switch (zclCmd) {
+   \       0x98   0x9A04             LDR      R2,[SP, #+16]
+   \       0x9A   0x1C79             ADDS     R1,R7,#+1
+   \       0x9C   0xB288             UXTH     R0,R1
+   \       0x9E   0x....'....        LDR.W    R11,??DataTable1_2
+   \       0xA2   0x2A16             CMP      R2,#+22
+   \       0xA4   0xF200 0x8111      BHI.W    ??emAfProcessGlobalCommand_7
+   \       0xA8   0xE8DF 0xF012      TBH      [PC, R2, LSL #+1]
+   \                     ??emAfProcessGlobalCommand_0:
+   \       0xAC   0x0017 0x011B      DC16     0x17,0x11B,0x83,0x34
+   \               0x0083 0x003
+   \              4            
+   \       0xB4   0x0146 0x0083      DC16     0x146,0x83,0x10A,0x14B
+   \               0x010A 0x014
+   \              B            
+   \       0xBC   0x0115 0x0150      DC16     0x115,0x150,0x155,0x15A
+   \               0x0155 0x015
+   \              A            
+   \       0xC4   0x00D2 0x0171      DC16     0xD2,0x171,0x10F,0x10F
+   \               0x010F 0x010
+   \              F            
+   \       0xCC   0x010F 0x0182      DC16     0x10F,0x182,0x1AB,0x182
+   \               0x01AB 0x018
+   \              2            
+   \       0xD4   0x01B5 0x00D2      DC16     0x1B5,0xD2,0x171
+   \               0x0171      
+    142              // The format of the read attributes cmd is:
+    143              // ([attr ID:2]) * N
+    144              // The format of the read attributes response is:
+    145              // ([attr ID:2] [status:1] [data type:0/1] [data:0/N]) * N
+    146              case ZCL_READ_ATTRIBUTES_COMMAND_ID:
+    147              {
+    148                emberAfAttributesPrintln("%p: clus %2x", "READ_ATTR", clusterId);
+    149                // Set the cmd byte - this is byte 3 index 2, but since we have
+    150                // already incremented past the 3 byte ZCL header (our index is at 3),
+    151                // this gets written to "-1" since 3 - 1 = 2.
+    152                emberAfPutInt8uInResp(ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID);
+   \                     ??emAfProcessGlobalCommand_8: (+1)
+   \       0xDA   0x2001             MOVS     R0,#+1
+   \       0xDC   0x....'....        BL       emberAfPutInt8uInResp
+   \       0xE0   0x....'....        LDR.W    R5,??DataTable1_1
+   \       0xE4   0xF89D 0xA00C      LDRB     R10,[SP, #+12]
+    153          
+    154                // This message contains N 2-byte attr IDs after the 3 byte ZCL header,
+    155                // for each one we need to look it up and make a response
+    156                while (msgIndex + 2 <= msgLen) {
+   \                     ??emAfProcessGlobalCommand_9: (+1)
+   \       0xE8   0xB2B8             UXTH     R0,R7
+   \       0xEA   0x1C80             ADDS     R0,R0,#+2
+   \       0xEC   0x4286             CMP      R6,R0
+   \       0xEE   0xF2C0 0x80AC      BLT.W    ??emAfProcessGlobalCommand_10
+    157                  // Get the attribute ID and store it in the response buffer
+    158                  // least significant byte is first OTA
+    159                  attrId = emberAfGetInt16u(message, msgIndex, msgLen);
+   \       0xF2   0x4632             MOV      R2,R6
+   \       0xF4   0xB2B9             UXTH     R1,R7
+   \       0xF6   0x4640             MOV      R0,R8
+   \       0xF8   0x....'....        BL       emberAfGetInt16u
+   \       0xFC   0x4683             MOV      R11,R0
+    160          
+    161          #ifdef EMBER_AF_GBCS_COMPATIBLE
+    162                  // GBCS explicitly lists some commands that need to be sent with "disable
+    163                  // default response" flag set, including some ReadAttributes responses.
+    164                  // We make it conditional on GBCS so it does not affect standard SE apps.
+    165                  {
+    166                    static const struct {
+    167                      EmberAfClusterId clusterId;
+    168                      uint16_t attrId;
+    169                    } noDefaultResponseSet[] = {
+    170                      { ZCL_PRICE_CLUSTER_ID, ZCL_THRESHOLD_MULTIPLIER_ATTRIBUTE_ID },
+    171                      { ZCL_PRICE_CLUSTER_ID, ZCL_THRESHOLD_DIVISOR_ATTRIBUTE_ID },
+    172                      { ZCL_PRICE_CLUSTER_ID, ZCL_STANDING_CHARGE_ATTRIBUTE_ID },
+    173                      { ZCL_PRICE_CLUSTER_ID, ZCL_TARIFF_UNIT_OF_MEASURE_ATTRIBUTE_ID },
+    174                      { ZCL_SIMPLE_METERING_CLUSTER_ID, ZCL_UNIT_OF_MEASURE_ATTRIBUTE_ID },
+    175                      { ZCL_SIMPLE_METERING_CLUSTER_ID, ZCL_MULTIPLIER_ATTRIBUTE_ID },
+    176                      { ZCL_SIMPLE_METERING_CLUSTER_ID, ZCL_DIVISOR_ATTRIBUTE_ID },
+    177                    };
+    178                    uint8_t i;
+    179                    uint8_t foundMatchingAttrIdsCount = 0;
+    180          
+    181                    for (i = 0; i < sizeof noDefaultResponseSet / sizeof noDefaultResponseSet[0]; ++i) {
+    182                      if (noDefaultResponseSet[i].clusterId == clusterId
+    183                          && noDefaultResponseSet[i].attrId == attrId) {
+    184                        if (++foundMatchingAttrIdsCount >= MIN_MATCHING_ATTR_IDS_TO_DISABLE_DEFAULT_RESPONSE) {
+    185                          emberAfSetDisableDefaultResponse(EMBER_AF_DISABLE_DEFAULT_RESPONSE_ONE_SHOT);
+    186                          break;
+    187                        }
+    188                      }
+    189                    }
+    190                  }
+    191          
+    192            #ifdef EMBER_AF_PLUGIN_COMMS_HUB_FUNCTION_SUB_GHZ
+    193                  // This plugin sets channel change notification flags and needs to know
+    194                  // when those flags have been read.
+    195                  if (clientServerMask == CLUSTER_MASK_SERVER) {
+    196                    emAfCommsHubFunctionSubGhzReadAttributeNotification(cmd->source,
+    197                                                                        clusterId,
+    198                                                                        attrId);
+    199                  }
+    200            #endif
+    201          #endif
+    202          
+    203                  // This function reads the attribute and creates the correct response
+    204                  // in the response buffer
+    205                  if (!emAfRetrieveAttributeAndCraftResponse(cmd->apsFrame->destinationEndpoint,
+    206                                                             clusterId,
+    207                                                             attrId,
+    208                                                             clientServerMask,
+    209                                                             cmd->mfgCode,
+    210                                                             (EMBER_AF_RESPONSE_BUFFER_LEN
+    211                                                              - appResponseLength))) {
+   \       0xFE   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \      0x102   0x....'....        BL       emAfRetrieveAttributeAndCraftResponse
+   \      0x106   0xB918             CBNZ.N   R0,??emAfProcessGlobalCommand_11
+    212                    emberAfRetrieveAttributeAndCraftResponse(cmd->apsFrame->destinationEndpoint,
+    213                                                             clusterId,
+    214                                                             attrId,
+    215                                                             clientServerMask,
+    216                                                             cmd->mfgCode,
+    217                                                             (EMBER_AF_RESPONSE_BUFFER_LEN
+    218                                                              - appResponseLength));
+   \      0x108   0x....'....        BL       ?Subroutine0
+    219                  }
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \      0x10C   0x....'....        BL       emberAfRetrieveAttributeAndCraftResponse
+    220          
+    221                  // Go to next attrID
+    222                  msgIndex += 2;
+   \                     ??emAfProcessGlobalCommand_11: (+1)
+   \      0x110   0x1CBF             ADDS     R7,R7,#+2
+   \      0x112   0xE7E9             B.N      ??emAfProcessGlobalCommand_9
+    223                }
+    224              }
+    225          
+    226                emberAfSendResponse();
+    227                return true;
+    228          
+    229              // Write undivided means all attributes must be written in order to write
+    230              // any of them. So first do a check. If the check fails, send back a fail
+    231              // response. If it works, fall through to the normal write attr code.
+    232              // write attr responses are the same for undivided and normal writes.
+    233              case ZCL_WRITE_ATTRIBUTES_UNDIVIDED_COMMAND_ID:
+    234              {
+    235                uint8_t numFailures = 0;
+    236                uint8_t dataType;
+    237                uint8_t dataSize;
+    238                EmberAfStatus status;
+    239          
+    240                emberAfPutInt8uInResp(ZCL_WRITE_ATTRIBUTES_RESPONSE_COMMAND_ID);
+   \                     ??emAfProcessGlobalCommand_12: (+1)
+   \      0x114   0x2004             MOVS     R0,#+4
+   \      0x116   0x....'....        BL       emberAfPutInt8uInResp
+   \      0x11A   0x2500             MOVS     R5,#+0
+   \      0x11C   0xF8AD 0x900E      STRH     R9,[SP, #+14]
+   \      0x120   0xE02B             B.N      ??emAfProcessGlobalCommand_13
+    241          
+    242                // Go through the message until there are no more attrID/type/data
+    243                while (msgLen >= msgIndex + 3) {
+    244                  attrId = emberAfGetInt16u(message, msgIndex, msgLen);
+    245                  dataType = emberAfGetInt8u(message, msgIndex + 2, msgLen);
+    246          
+    247                  // For strings, the data size is the length of the string (specified by
+    248                  // the first byte of data) plus one for the length byte itself.  For
+    249                  // everything else, the size is just the size of the data type.
+    250                  dataSize = (emberAfIsThisDataTypeAStringType(dataType)
+    251                              ? emberAfStringLength(message + msgIndex + 3) + 1
+    252                              : emberAfGetDataSize(dataType));
+    253          
+    254                  // Check to see if there are dataSize bytes left in the message if it is a string
+    255                  if (emberAfIsThisDataTypeAStringType(dataType)
+    256                      && ((msgLen - (msgIndex + dataSize + 3)) < 0)) {
+    257                    // This command is malformed
+    258                    status = EMBER_ZCL_STATUS_MALFORMED_COMMAND;
+    259                  } else {
+    260                    status = emberAfVerifyAttributeWrite(cmd->apsFrame->destinationEndpoint,
+    261                                                         clusterId,
+    262                                                         attrId,
+    263                                                         clientServerMask,
+    264                                                         cmd->mfgCode,
+    265                                                         &(message[msgIndex + 3]),
+    266                                                         dataType);
+   \                     ??emAfProcessGlobalCommand_14: (+1)
+   \      0x122   0x9805             LDR      R0,[SP, #+20]
+   \      0x124   0xF8CD 0xB008      STR      R11,[SP, #+8]
+   \      0x128   0xF89D 0x300C      LDRB     R3,[SP, #+12]
+   \      0x12C   0x9001             STR      R0,[SP, #+4]
+   \      0x12E   0x8A21             LDRH     R1,[R4, #+16]
+   \      0x130   0x464A             MOV      R2,R9
+   \      0x132   0x9100             STR      R1,[SP, #+0]
+   \      0x134   0x6820             LDR      R0,[R4, #+0]
+   \      0x136   0xF8BD 0x100E      LDRH     R1,[SP, #+14]
+   \      0x13A   0x7940             LDRB     R0,[R0, #+5]
+   \      0x13C   0x....'....        BL       emberAfVerifyAttributeWrite
+    267                  }
+    268          
+    269                  if (status != EMBER_ZCL_STATUS_SUCCESS) {
+   \      0x140   0x0001             MOVS     R1,R0
+   \      0x142   0xD017             BEQ.N    ??emAfProcessGlobalCommand_15
+   \      0x144   0xE010             B.N      ??emAfProcessGlobalCommand_16
+   \                     ??emAfProcessGlobalCommand_17: (+1)
+   \      0x146   0x4658             MOV      R0,R11
+   \      0x148   0x....'....        BL       emberAfGetDataSize
+   \      0x14C   0x4682             MOV      R10,R0
+   \                     ??emAfProcessGlobalCommand_18: (+1)
+   \      0x14E   0x4658             MOV      R0,R11
+   \      0x150   0x....'....        BL       emberAfIsThisDataTypeAStringType
+   \      0x154   0xFA5F 0xFA8A      UXTB     R10,R10
+   \      0x158   0x2800             CMP      R0,#+0
+   \      0x15A   0xD0E2             BEQ.N    ??emAfProcessGlobalCommand_14
+   \      0x15C   0x1BF0             SUBS     R0,R6,R7
+   \      0x15E   0xEBA0 0x000A      SUB      R0,R0,R10
+   \      0x162   0x1EC0             SUBS     R0,R0,#+3
+   \      0x164   0xD5DD             BPL.N    ??emAfProcessGlobalCommand_14
+   \      0x166   0x2080             MOVS     R0,#+128
+    270                    numFailures++;
+    271                    // Write to the response buffer - status and then attrID
+    272                    emberAfPutInt8uInResp(status);
+   \                     ??emAfProcessGlobalCommand_16: (+1)
+   \      0x168   0x....'....        BL       emberAfPutInt8uInResp
+    273                    emberAfPutInt16uInResp(attrId);
+   \      0x16C   0x4648             MOV      R0,R9
+   \      0x16E   0x1C6D             ADDS     R5,R5,#+1
+   \      0x170   0x....'....        BL       emberAfPutInt16uInResp
+    274          
+    275                    emberAfAttributesPrintln("WRITE: clus %2x attr %2x ", clusterId, attrId);
+    276                    emberAfAttributesPrintln("FAIL %x", status);
+    277                    emberAfCoreFlush();
+    278                  }
+    279          
+    280                  // Increment past the attribute id (two bytes), the type (one byte), and
+    281                  // the data (N bytes, including the length byte for strings).
+    282                  msgIndex += 3 + dataSize;
+   \                     ??emAfProcessGlobalCommand_15: (+1)
+   \      0x174   0x4457             ADD      R7,R10,R7
+   \      0x176   0x1CFF             ADDS     R7,R7,#+3
+   \      0x178   0xB2BF             UXTH     R7,R7
+   \                     ??emAfProcessGlobalCommand_13: (+1)
+   \      0x17A   0x1CF8             ADDS     R0,R7,#+3
+   \      0x17C   0x4286             CMP      R6,R0
+   \      0x17E   0xF2C0 0x815E      BLT.W    ??emAfProcessGlobalCommand_19
+   \      0x182   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \      0x186   0x4681             MOV      R9,R0
+   \      0x188   0xF108 0x0002      ADD      R0,R8,#+2
+   \      0x18C   0xF108 0x0103      ADD      R1,R8,#+3
+   \      0x190   0xF810 0xB007      LDRB     R11,[R0, R7]
+   \      0x194   0x4439             ADD      R1,R1,R7
+   \      0x196   0x9105             STR      R1,[SP, #+20]
+   \      0x198   0x4658             MOV      R0,R11
+   \      0x19A   0x....'....        BL       emberAfIsThisDataTypeAStringType
+   \      0x19E   0x2800             CMP      R0,#+0
+   \      0x1A0   0xD0D1             BEQ.N    ??emAfProcessGlobalCommand_17
+   \      0x1A2   0x9805             LDR      R0,[SP, #+20]
+   \      0x1A4   0x....'....        BL       emberAfStringLength
+   \      0x1A8   0xF100 0x0A01      ADD      R10,R0,#+1
+   \      0x1AC   0xE7CF             B.N      ??emAfProcessGlobalCommand_18
+    283                }
+    284                // If there are any failures, send the response and exit
+    285                if (numFailures > 0) {
+    286                  emberAfSendResponse();
+    287                  return true;
+    288                }
+    289              }
+    290                // Reset message back to start
+    291                msgIndex = cmd->payloadStartIndex;
+    292                appResponseLength = (cmd->mfgSpecific ? 4 : 2);
+   \                     ??emAfProcessGlobalCommand_20: (+1)
+   \      0x1AE   0x....             LDR.N    R1,??DataTable1_1
+   \      0x1B0   0x8008             STRH     R0,[R1, #+0]
+    293              // DO NOT BREAK from this case
+    294          
+    295              // the format of the write attributes cmd is:
+    296              // ([attr ID:2] [data type:1] [data:N]) * N
+    297              // the format of the write attributes response is:
+    298              // ([status 1] [attr ID 2]) * n
+    299              // ONLY errors are reported unless all are successful then a single success
+    300              // is sent. write attr no response is handled by just executing the same
+    301              // code but not setting the flag that sends the response at the end.
+    302              case ZCL_WRITE_ATTRIBUTES_NO_RESPONSE_COMMAND_ID:
+    303              case ZCL_WRITE_ATTRIBUTES_COMMAND_ID:
+    304              {
+    305                uint8_t numFailures = 0;
+    306                uint8_t numSuccess = 0;
+    307                uint8_t dataType;
+    308                uint8_t dataSize;
+    309          #if (BIGENDIAN_CPU)
+    310                uint8_t writeData[ATTRIBUTE_LARGEST];
+    311          #endif //(BIGENDIAN_CPU)
+    312                EmberAfStatus status;
+    313          
+    314                // set the cmd byte - this is byte 3 index 2, but since we have
+    315                // already incremented past the 3 byte ZCL header (our index is at 3),
+    316                // this gets written to "-1" since 3 - 1 = 2.
+    317                emberAfPutInt8uInResp(ZCL_WRITE_ATTRIBUTES_RESPONSE_COMMAND_ID);
+   \                     ??emAfProcessGlobalCommand_21: (+1)
+   \      0x1B2   0x2004             MOVS     R0,#+4
+   \      0x1B4   0x....'....        BL       emberAfPutInt8uInResp
+   \      0x1B8   0x2500             MOVS     R5,#+0
+   \      0x1BA   0xF8AD 0x900E      STRH     R9,[SP, #+14]
+   \      0x1BE   0xF8CD 0x8014      STR      R8,[SP, #+20]
+   \      0x1C2   0x46AA             MOV      R10,R5
+   \      0x1C4   0x9606             STR      R6,[SP, #+24]
+   \      0x1C6   0xE021             B.N      ??emAfProcessGlobalCommand_22
+    318          
+    319                // go through the message until there are no more attrID/type/data
+    320                while (msgLen > msgIndex + 3) {
+    321                  attrId = emberAfGetInt16u(message, msgIndex, msgLen);
+    322                  dataType = emberAfGetInt8u(message, msgIndex + 2, msgLen);
+    323          
+    324                  // For strings, the data size is the length of the string (specified by
+    325                  // the first byte of data) plus one for the length byte itself.  For
+    326                  // everything else, the size is just the size of the data type.
+    327                  dataSize = (emberAfIsThisDataTypeAStringType(dataType)
+    328                              ? emberAfStringLength(message + msgIndex + 3) + 1
+    329                              : emberAfGetDataSize(dataType));
+    330          
+    331                  // the data is sent little endian over-the-air, it needs to be
+    332                  // inserted into the table big endian for the EM250 and little
+    333                  // endian for the EZSP hosts. This means for the EM250 the data
+    334                  // needs to be reversed before sending to writeAttributes
+    335          #if (BIGENDIAN_CPU)
+    336                  // strings go over the air as length byte and then in human
+    337                  // readable format. These should not be flipped.
+    338                  if (emberAfIsThisDataTypeAStringType(dataType)) {
+    339                    MEMMOVE(writeData, message + msgIndex + 3, dataSize);
+    340                  } else {
+    341                    // the data is sent little endian over-the-air, it needs to be
+    342                    // inserted into the table big endian
+    343                    uint8_t i;
+    344                    for (i = 0; i < dataSize; i++) {
+    345                      writeData[i] = message[msgIndex + 3 + dataSize - i - 1];
+    346                    }
+    347                  }
+    348          #endif //(BIGENDIAN_CPU)
+    349          
+    350                  status = emberAfWriteAttributeExternal(cmd->apsFrame->destinationEndpoint,
+    351                                                         clusterId,
+    352                                                         attrId,
+    353                                                         clientServerMask,
+    354                                                         cmd->mfgCode,
+    355          #if (BIGENDIAN_CPU)
+    356                                                         writeData,
+    357          #else //(BIGENDIAN_CPU)
+    358                                                         &(message[msgIndex + 3]),
+    359          #endif //(BIGENDIAN_CPU)
+    360                                                         dataType);
+    361                  emberAfAttributesPrint("WRITE: clus %2x attr %2x ",
+    362                                         clusterId,
+    363                                         attrId);
+    364                  if (status == EMBER_ZCL_STATUS_SUCCESS) {
+    365                    numSuccess++;
+    366                    emberAfAttributesPrintln("OK");
+    367                  } else {
+    368                    numFailures++;
+    369                    // write to the response buffer - status and then attrID
+    370                    emberAfPutInt8uInResp(status);
+   \                     ??emAfProcessGlobalCommand_23: (+1)
+   \      0x1C8   0x....'....        BL       emberAfPutInt8uInResp
+    371                    emberAfPutInt16uInResp(attrId);
+   \      0x1CC   0x4640             MOV      R0,R8
+   \      0x1CE   0x1C6D             ADDS     R5,R5,#+1
+   \      0x1D0   0x....'....        BL       emberAfPutInt16uInResp
+   \      0x1D4   0xE015             B.N      ??emAfProcessGlobalCommand_24
+    372                    emberAfAttributesPrintln("FAIL %x", status);
+    373                  }
+   \                     ??emAfProcessGlobalCommand_25: (+1)
+   \      0x1D6   0x4630             MOV      R0,R6
+   \      0x1D8   0x....'....        BL       emberAfGetDataSize
+   \      0x1DC   0x4681             MOV      R9,R0
+   \                     ??emAfProcessGlobalCommand_26: (+1)
+   \      0x1DE   0x9602             STR      R6,[SP, #+8]
+   \      0x1E0   0xF8CD 0xB004      STR      R11,[SP, #+4]
+   \      0x1E4   0x8A20             LDRH     R0,[R4, #+16]
+   \      0x1E6   0xF89D 0x300C      LDRB     R3,[SP, #+12]
+   \      0x1EA   0xF8BD 0x100E      LDRH     R1,[SP, #+14]
+   \      0x1EE   0x9000             STR      R0,[SP, #+0]
+   \      0x1F0   0x6820             LDR      R0,[R4, #+0]
+   \      0x1F2   0x4642             MOV      R2,R8
+   \      0x1F4   0x7940             LDRB     R0,[R0, #+5]
+   \      0x1F6   0x....'....        BL       emberAfWriteAttributeExternal
+   \      0x1FA   0x0001             MOVS     R1,R0
+   \      0x1FC   0xD1E4             BNE.N    ??emAfProcessGlobalCommand_23
+   \      0x1FE   0xF10A 0x0A01      ADD      R10,R10,#+1
+    374                  emberAfCoreFlush();
+    375          
+    376                  // Increment past the attribute id (two bytes), the type (one byte), and
+    377                  // the data (N bytes, including the length byte for strings).
+    378                  msgIndex += 3 + dataSize;
+   \                     ??emAfProcessGlobalCommand_24: (+1)
+   \      0x202   0xFA5F 0xF089      UXTB     R0,R9
+   \      0x206   0x4407             ADD      R7,R0,R7
+   \      0x208   0x1CFF             ADDS     R7,R7,#+3
+   \      0x20A   0xB2BF             UXTH     R7,R7
+   \                     ??emAfProcessGlobalCommand_22: (+1)
+   \      0x20C   0x9906             LDR      R1,[SP, #+24]
+   \      0x20E   0x1CF8             ADDS     R0,R7,#+3
+   \      0x210   0x4288             CMP      R0,R1
+   \      0x212   0xF280 0x8120      BGE.W    ??emAfProcessGlobalCommand_27
+   \      0x216   0x9805             LDR      R0,[SP, #+20]
+   \      0x218   0xB28A             UXTH     R2,R1
+   \      0x21A   0x4639             MOV      R1,R7
+   \      0x21C   0x....'....        BL       emberAfGetInt16u
+   \      0x220   0x4680             MOV      R8,R0
+   \      0x222   0x9805             LDR      R0,[SP, #+20]
+   \      0x224   0x1C81             ADDS     R1,R0,#+2
+   \      0x226   0x5DCE             LDRB     R6,[R1, R7]
+   \      0x228   0x1CC1             ADDS     R1,R0,#+3
+   \      0x22A   0xEB01 0x0B07      ADD      R11,R1,R7
+   \      0x22E   0x4630             MOV      R0,R6
+   \      0x230   0x....'....        BL       emberAfIsThisDataTypeAStringType
+   \      0x234   0x2800             CMP      R0,#+0
+   \      0x236   0xD0CE             BEQ.N    ??emAfProcessGlobalCommand_25
+   \      0x238   0x4658             MOV      R0,R11
+   \      0x23A   0x....'....        BL       emberAfStringLength
+   \      0x23E   0xF100 0x0901      ADD      R9,R0,#+1
+   \      0x242   0xE7CC             B.N      ??emAfProcessGlobalCommand_26
+    379                }
+    380          
+    381                // always send a response unless the cmd requested no response
+    382                if (zclCmd == ZCL_WRITE_ATTRIBUTES_NO_RESPONSE_COMMAND_ID) {
+    383                  return true;
+    384                }
+    385          
+    386                if (numFailures == 0) {
+    387                  // if no failures and no success this means the packet was too short
+    388                  // print an error message but still return true as we consumed the
+    389                  // message
+    390                  if (numSuccess == 0) {
+    391                    emberAfAttributesPrintln("WRITE: too short");
+    392                    emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_MALFORMED_COMMAND);
+    393                    return true;
+    394                  }
+    395                  // if no failures and at least one success, write a success status
+    396                  // that means everything worked
+    397                  else {
+    398                    emberAfPutInt8uInResp(EMBER_ZCL_STATUS_SUCCESS);
+   \                     ??emAfProcessGlobalCommand_28: (+1)
+   \      0x244   0x2000             MOVS     R0,#+0
+   \      0x246   0x....'....        BL       emberAfPutInt8uInResp
+    399                  }
+    400                }
+    401                emberAfSendResponse();
+   \                     ??emAfProcessGlobalCommand_10: (+1)
+   \      0x24A   0x....'....        BL       emberAfSendResponse
+   \                     ??emAfProcessGlobalCommand_29: (+1)
+   \      0x24E   0xE0F0             B.N      ??emAfProcessGlobalCommand_30
+    402                return true;
+    403              }
+    404          
+    405              // the format of discover is: [start attr ID:2] [max attr IDs:1]
+    406              // the format of the response is: [done:1] ([attrID:2] [type:1]) * N
+    407              case ZCL_DISCOVER_ATTRIBUTES_COMMAND_ID:
+    408              case ZCL_DISCOVER_ATTRIBUTES_EXTENDED_COMMAND_ID:
+    409              {
+    410                EmberAfAttributeId startingAttributeId;
+    411                uint8_t numberAttributes;
+    412                uint8_t *complete;
+    413          
+    414                emberAfAttributesPrintln("%p%p: clus %2x", "DISC_ATTR",
+    415                                         (zclCmd == ZCL_DISCOVER_ATTRIBUTES_EXTENDED_COMMAND_ID ? "_EXT" : ""),
+    416                                         clusterId);
+    417          
+    418                // set the cmd byte - this is byte 3 index 2, but since we have
+    419                // already incremented past the 3 byte ZCL header (our index is at 3),
+    420                // this gets written to "-1" since 3 - 1 = 2.
+    421                emberAfPutInt8uInResp(
+    422                  (zclCmd == ZCL_DISCOVER_ATTRIBUTES_COMMAND_ID
+    423                   ? ZCL_DISCOVER_ATTRIBUTES_RESPONSE_COMMAND_ID
+    424                   : ZCL_DISCOVER_ATTRIBUTES_EXTENDED_RESPONSE_COMMAND_ID));
+   \                     ??emAfProcessGlobalCommand_31: (+1)
+   \      0x250   0x2A0C             CMP      R2,#+12
+   \      0x252   0xBF0C             ITE      EQ 
+   \      0x254   0x200D             MOVEQ    R0,#+13
+   \      0x256   0x2016             MOVNE    R0,#+22
+   \      0x258   0x....'....        BL       emberAfPutInt8uInResp
+    425          
+    426                // get the attrId to start on and the max count
+    427                startingAttributeId = emberAfGetInt16u(message, msgIndex, msgLen);
+   \      0x25C   0x....'....        BL       ?Subroutine1
+    428                numberAttributes = emberAfGetInt8u(message, msgIndex + 2, msgLen);
+    429          
+    430                // BUGZID: EMAPPFWKV2-828, EMAPPFWKV2-1401
+    431                if (zclCmd == ZCL_DISCOVER_ATTRIBUTES_COMMAND_ID
+    432                    && numberAttributes > DISC_ATTR_RSP_MAX_ATTRIBUTES) {
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \      0x260   0x9904             LDR      R1,[SP, #+16]
+   \      0x262   0x4605             MOV      R5,R0
+   \      0x264   0xF108 0x0002      ADD      R0,R8,#+2
+   \      0x268   0xF810 0x8007      LDRB     R8,[R0, R7]
+   \      0x26C   0x290C             CMP      R1,#+12
+   \      0x26E   0xD105             BNE.N    ??emAfProcessGlobalCommand_32
+   \      0x270   0xF1B8 0x0F1A      CMP      R8,#+26
+   \      0x274   0xDB09             BLT.N    ??emAfProcessGlobalCommand_33
+    433                  numberAttributes = DISC_ATTR_RSP_MAX_ATTRIBUTES;
+   \      0x276   0xF04F 0x0819      MOV      R8,#+25
+   \      0x27A   0xE006             B.N      ??emAfProcessGlobalCommand_33
+    434                } else if (zclCmd == ZCL_DISCOVER_ATTRIBUTES_EXTENDED_COMMAND_ID
+    435                           && numberAttributes > DISC_ATTR_EXT_RSP_MAX_ATTRIBUTES) {
+   \                     ??emAfProcessGlobalCommand_32: (+1)
+   \      0x27C   0x2915             CMP      R1,#+21
+   \      0x27E   0xD104             BNE.N    ??emAfProcessGlobalCommand_33
+   \      0x280   0xF1B8 0x0F14      CMP      R8,#+20
+   \      0x284   0xBFA8             IT       GE 
+   \      0x286   0xF04F 0x0813      MOVGE    R8,#+19
+    436                  numberAttributes = DISC_ATTR_EXT_RSP_MAX_ATTRIBUTES;
+    437                } else {
+    438                  // MISRA requires ..else if.. to have terminating else.
+    439                }
+    440          
+    441                // The response has a one-byte field indicating whether discovery is
+    442                // complete.  We can't populate that field until we've finished going
+    443                // through all the attributes, so save a placeholder, write a temporary
+    444                // value for now (so that the offset moves forward), and write the real
+    445                // value when we're done.
+    446                complete = &(appResponseData[appResponseLength]);
+   \                     ??emAfProcessGlobalCommand_33: (+1)
+   \      0x28A   0x....             LDR.N    R0,??DataTable1_1
+   \      0x28C   0x8801             LDRH     R1,[R0, #+0]
+    447                emberAfPutInt8uInResp(false);
+   \      0x28E   0x2000             MOVS     R0,#+0
+   \      0x290   0xEB0B 0x0701      ADD      R7,R11,R1
+   \      0x294   0x....'....        BL       emberAfPutInt8uInResp
+    448                *complete = emberAfReadSequentialAttributesAddToResponse(
+    449                  cmd->apsFrame->destinationEndpoint,
+    450                  clusterId,
+    451                  startingAttributeId,
+    452                  clientServerMask,
+    453                  cmd->mfgCode,
+    454                  numberAttributes,
+    455                  (zclCmd == ZCL_DISCOVER_ATTRIBUTES_EXTENDED_COMMAND_ID));
+   \      0x298   0x9804             LDR      R0,[SP, #+16]
+   \      0x29A   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \      0x29E   0xF89D 0x300C      LDRB     R3,[SP, #+12]
+   \      0x2A2   0x2815             CMP      R0,#+21
+   \      0x2A4   0x462A             MOV      R2,R5
+   \      0x2A6   0x4649             MOV      R1,R9
+   \      0x2A8   0xBF0C             ITE      EQ 
+   \      0x2AA   0x2001             MOVEQ    R0,#+1
+   \      0x2AC   0x2000             MOVNE    R0,#+0
+   \      0x2AE   0x9002             STR      R0,[SP, #+8]
+   \      0x2B0   0x8A20             LDRH     R0,[R4, #+16]
+   \      0x2B2   0x9000             STR      R0,[SP, #+0]
+   \      0x2B4   0x6824             LDR      R4,[R4, #+0]
+   \      0x2B6   0x7960             LDRB     R0,[R4, #+5]
+   \      0x2B8   0x....'....        BL       emberAfReadSequentialAttributesAddToResponse
+   \      0x2BC   0x7038             STRB     R0,[R7, #+0]
+   \      0x2BE   0xE7C4             B.N      ??emAfProcessGlobalCommand_10
+    456                emberAfSendResponse();
+    457                return true;
+    458              }
+    459          
+    460              case ZCL_CONFIGURE_REPORTING_COMMAND_ID:
+    461                if (emberAfConfigureReportingCommandCallback(cmd)) {
+   \                     ??emAfProcessGlobalCommand_34: (+1)
+   \      0x2C0   0x4620             MOV      R0,R4
+   \      0x2C2   0x....'....        BL       emberAfConfigureReportingCommandCallback
+   \      0x2C6   0x2800             CMP      R0,#+0
+   \      0x2C8   0xD1C1             BNE.N    ??emAfProcessGlobalCommand_29
+    462                  return true;
+    463                }
+    464                break;
+    465          
+    466              case ZCL_READ_REPORTING_CONFIGURATION_COMMAND_ID:
+    467                if (emberAfReadReportingConfigurationCommandCallback(cmd)) {
+    468                  return true;
+    469                }
+    470                break;
+    471          
+    472              // ([attribute id:2] [status:1] [type:0/1] [value:0/V])+
+    473              case ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID:
+    474                // The "timesync" command in the CLI sends a Read Attributes command for the
+    475                // Time attribute on another device and then sets a flag.  If that flag is
+    476                // set and a Read Attributes Response command for the time comes in, we set
+    477                // the time to the value in the message.
+    478                if (clusterId == ZCL_TIME_CLUSTER_ID) {
+    479                  if (emAfSyncingTime
+    480                      && !cmd->mfgSpecific
+    481                      && msgLen - msgIndex == 8 // attr:2 status:1 type:1 data:4
+    482                      && (emberAfGetInt16u(message, msgIndex, msgLen)
+    483                          == ZCL_TIME_ATTRIBUTE_ID)
+    484                      && (emberAfGetInt8u(message, msgIndex + 2, msgLen)
+    485                          == EMBER_ZCL_STATUS_SUCCESS)
+    486                      && (emberAfGetInt8u(message, msgIndex + 3, msgLen)
+    487                          == ZCL_UTC_TIME_ATTRIBUTE_TYPE)) {
+    488                    emberAfSetTime(emberAfGetInt32u(message, msgIndex + 4, msgLen));
+    489                    emberAfDebugPrintln("time sync ok, time: %4x", emberAfGetCurrentTime());
+    490                    emAfSyncingTime = false;
+    491                  }
+    492          #ifdef EMBER_AF_PLUGIN_SMART_ENERGY_REGISTRATION_TIME_SOURCE_REQUIRED
+    493                  emAfPluginSmartEnergyRegistrationReadAttributesResponseCallback(message + msgIndex,
+    494                                                                                  msgLen - msgIndex);
+    495          #endif //EMBER_AF_PLUGIN_SMART_ENERGY_REGISTRATION_TIME_SOURCE_REQUIRED
+    496          #ifdef EMBER_AF_PLUGIN_WWAH_SERVER_SILABS
+    497                  emAfPluginSlWwahReadAttributesResponseCallback(clusterId, message, msgLen);
+    498          #endif
+    499                }
+    500          
+    501          #ifdef EMBER_AF_PLUGIN_TRUST_CENTER_KEEPALIVE
+    502                if (clusterId == ZCL_KEEPALIVE_CLUSTER_ID
+    503                    && !cmd->mfgSpecific) {
+    504                  emAfPluginTrustCenterKeepaliveReadAttributesResponseCallback(message + msgIndex,
+    505                                                                               msgLen - msgIndex);
+    506                }
+    507          #endif //EMBER_AF_PLUGIN_TRUST_CENTER_KEEPALIVE
+    508          
+    509          #if defined(EMBER_AF_PLUGIN_KEY_ESTABLISHMENT)
+    510                if (clusterId == ZCL_KEY_ESTABLISHMENT_CLUSTER_ID
+    511                    && !cmd->mfgSpecific
+    512                    && msgLen - msgIndex == 6 //attr:2 status:1 type:1 data:2
+    513                    && (emberAfGetInt16u(message, msgIndex, msgLen)
+    514                        == ZCL_KEY_ESTABLISHMENT_SUITE_CLIENT_ATTRIBUTE_ID)
+    515                    && (emberAfGetInt8u(message, msgIndex + 2, msgLen)
+    516                        == EMBER_ZCL_STATUS_SUCCESS)
+    517                    && ((emberAfGetInt8u(message, msgIndex + 3, msgLen) == ZCL_ENUM16_ATTRIBUTE_TYPE)
+    518                        || (emberAfGetInt8u(message, msgIndex + 3, msgLen) == ZCL_BITMAP16_ATTRIBUTE_TYPE))) {
+    519                  uint16_t suite = emberAfGetInt16u(message, msgIndex + 4, msgLen);
+    520                  emberAfPluginKeyEstablishmentReadAttributesCallback(suite);
+    521                }
+    522          #endif
+    523          
+    524          #if defined(EMBER_AF_PLUGIN_TEST_HARNESS)
+    525                emberAfPluginTestHarnessReadAttributesResponseCallback(clusterId,
+    526                                                                       message + msgIndex,
+    527                                                                       msgLen - msgIndex);
+    528          #endif
+    529          
+    530          #if defined(EMBER_AF_PLUGIN_IAS_ZONE_CLIENT)
+    531                emberAfPluginIasZoneClientReadAttributesResponseCallback(clusterId,
+    532                                                                         message + msgIndex,
+    533                                                                         msgLen - msgIndex);
+    534          #endif
+    535          
+    536          #if defined(EMBER_AF_PLUGIN_SIMPLE_METERING_SERVER)
+    537                emberAfPluginSimpleMeteringClusterReadAttributesResponseCallback(clusterId,
+    538                                                                                 message + msgIndex,
+    539                                                                                 msgLen - msgIndex);
+    540          #endif
+    541          
+    542                if (!emAfReadAttributesResponse(clusterId,
+    543                                                message + msgIndex,
+    544                                                msgLen - msgIndex)) {
+    545                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    546                }
+    547                return true;
+    548          
+    549              // ([status:1] [attribute id:2])+
+    550              case ZCL_WRITE_ATTRIBUTES_RESPONSE_COMMAND_ID:
+    551          
+    552            #if defined(EMBER_AF_PLUGIN_TEST_HARNESS)
+    553                emberAfPluginTestHarnessWriteAttributesResponseCallback(clusterId,
+    554                                                                        message + msgIndex,
+    555                                                                        msgLen - msgIndex);
+    556            #endif
+    557          
+    558            #if defined(EMBER_AF_PLUGIN_IAS_ZONE_CLIENT)
+    559                emberAfPluginIasZoneClientWriteAttributesResponseCallback(clusterId,
+    560                                                                          message + msgIndex,
+    561                                                                          msgLen - msgIndex);
+    562            #endif
+    563          
+    564                if (!emberAfWriteAttributesResponseCallback(clusterId,
+    565                                                            message + msgIndex,
+    566                                                            msgLen - msgIndex)) {
+    567                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    568                }
+    569                return true;
+    570          
+    571              // ([status:1] [direction:1] [attribute id:2])+
+    572              case ZCL_CONFIGURE_REPORTING_RESPONSE_COMMAND_ID:
+    573                if (!emberAfConfigureReportingResponseCallback(clusterId,
+    574                                                               message + msgIndex,
+    575                                                               msgLen - msgIndex)) {
+    576                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    577                }
+    578                return true;
+    579          
+    580              // ([status:1] [direction:1] [attribute id:2] [type:0/1] ...
+    581              // ... [min interval:0/2] [max interval:0/2] [reportable change:0/V] ...
+    582              // ... [timeout:0/2])+
+    583              case ZCL_READ_REPORTING_CONFIGURATION_RESPONSE_COMMAND_ID:
+    584                if (!emberAfReadReportingConfigurationResponseCallback(clusterId,
+    585                                                                       message + msgIndex,
+    586                                                                       msgLen - msgIndex)) {
+    587                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    588                }
+    589                return true;
+    590          
+    591              // ([attribute id:2] [type:1] [data:V])+
+    592              case ZCL_REPORT_ATTRIBUTES_COMMAND_ID:
+    593                if (!emAfReportAttributes(clusterId,
+    594                                          message + msgIndex,
+    595                                          msgLen - msgIndex)) {
+    596                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    597                }
+    598                return true;
+    599          
+    600              // [command id:1] [status:1]
+    601              case ZCL_DEFAULT_RESPONSE_COMMAND_ID:
+    602              {
+    603                EmberAfStatus status;
+    604                uint8_t commandId;
+    605                commandId = emberAfGetInt8u(message, msgIndex, msgLen);
+    606                msgIndex++;
+    607                status = (EmberAfStatus)emberAfGetInt8u(message, msgIndex, msgLen);
+    608          
+    609                emberAfClusterDefaultResponseWithMfgCodeCallback(cmd->apsFrame->destinationEndpoint,
+    610                                                                 clusterId,
+    611                                                                 commandId,
+    612                                                                 status,
+    613                                                                 clientServerMask,
+    614                                                                 cmd->mfgCode);
+    615                emberAfDefaultResponseCallback(clusterId, commandId, status);
+    616                return true;
+    617              }
+    618          
+    619              // [discovery complete:1] ([attribute id:2] [type:1])*
+    620              case ZCL_DISCOVER_ATTRIBUTES_RESPONSE_COMMAND_ID:
+    621              case ZCL_DISCOVER_ATTRIBUTES_EXTENDED_RESPONSE_COMMAND_ID:
+    622              {
+    623                bool discoveryComplete = emberAfGetInt8u(message, msgIndex, msgLen);
+    624                msgIndex++;
+    625                if (!emberAfDiscoverAttributesResponseCallback(clusterId,
+    626                                                               discoveryComplete,
+    627                                                               message + msgIndex,
+    628                                                               msgLen - msgIndex,
+    629                                                               (zclCmd
+    630                                                                == ZCL_DISCOVER_ATTRIBUTES_EXTENDED_RESPONSE_COMMAND_ID))) {
+    631                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    632                }
+    633                return true;
+    634              }
+    635          
+    636          #ifdef EMBER_AF_SUPPORT_COMMAND_DISCOVERY
+    637              // Command discovery takes a bit of flash because we need to add structs
+    638              // for commands into the generated hader. Hence it's all configurable.
+    639              case ZCL_DISCOVER_COMMANDS_RECEIVED_COMMAND_ID:
+    640              case ZCL_DISCOVER_COMMANDS_GENERATED_COMMAND_ID:
+    641              {
+    642                uint8_t startCommandIdentifier = emberAfGetInt8u(message, msgIndex, msgLen);
+    643                uint8_t maximumCommandIdentifiers = emberAfGetInt8u(message, msgIndex + 1, msgLen);
+    644                uint16_t savedIndex;
+    645                bool flag;
+    646          
+    647                // Ok. This is the command that matters.
+    648                if ( zclCmd == ZCL_DISCOVER_COMMANDS_RECEIVED_COMMAND_ID ) {
+    649                  emberAfPutInt8uInResp(ZCL_DISCOVER_COMMANDS_RECEIVED_RESPONSE_COMMAND_ID);
+    650                  flag = false;
+    651                } else {
+    652                  emberAfPutInt8uInResp(ZCL_DISCOVER_COMMANDS_GENERATED_RESPONSE_COMMAND_ID);
+    653                  flag = true;
+    654                }
+    655                savedIndex = appResponseLength;
+    656                flag = emberAfExtractCommandIds(flag,
+    657                                                cmd,
+    658                                                clusterId,
+    659                                                appResponseData + appResponseLength + 1,
+    660                                                EMBER_AF_RESPONSE_BUFFER_LEN - appResponseLength - 1,
+    661                                                &appResponseLength,
+    662                                                startCommandIdentifier,
+    663                                                maximumCommandIdentifiers);
+    664                appResponseData[savedIndex] = (flag ? 1 : 0);
+    665                appResponseLength++;
+    666                emberAfSendResponse();
+    667                return true;
+    668              }
+    669              case ZCL_DISCOVER_COMMANDS_RECEIVED_RESPONSE_COMMAND_ID:
+    670              {
+    671                bool discoveryComplete = emberAfGetInt8u(message, msgIndex, msgLen);
+    672                msgIndex++;
+    673                printDiscoverCommandsResponse(false,  // is ZCL command generated?
+    674                                              clusterId,
+    675                                              discoveryComplete,
+    676                                              message + msgIndex,
+    677                                              msgLen - msgIndex);
+    678                if (!emberAfDiscoverCommandsReceivedResponseCallback(clusterId,
+    679                                                                     cmd->mfgCode,
+    680                                                                     discoveryComplete,
+    681                                                                     message + msgIndex,
+    682                                                                     msgLen - msgIndex)) {
+    683                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    684                }
+    685                return true;
+    686              }
+    687              case ZCL_DISCOVER_COMMANDS_GENERATED_RESPONSE_COMMAND_ID:
+    688              {
+    689                bool discoveryComplete = emberAfGetInt8u(message, msgIndex, msgLen);
+    690                msgIndex++;
+    691                printDiscoverCommandsResponse(true,  // is ZCL command generated?
+    692                                              clusterId,
+    693                                              discoveryComplete,
+    694                                              message + msgIndex,
+    695                                              msgLen - msgIndex);
+    696                if (!emberAfDiscoverCommandsGeneratedResponseCallback(clusterId,
+    697                                                                      cmd->mfgCode,
+    698                                                                      discoveryComplete,
+    699                                                                      message + msgIndex,
+    700                                                                      msgLen - msgIndex)) {
+    701                  emberAfSendDefaultResponse(cmd, EMBER_ZCL_STATUS_SUCCESS);
+    702                }
+    703                return true;
+    704              }
+    705          
+    706          #endif
+    707              default:
+    708                // MISRA requires default case.
+    709                break;
+    710            }
+    711          
+    712            kickout:
+    713            emberAfSendDefaultResponse(cmd,
+    714                                       (cmd->mfgSpecific
+    715                                        ? EMBER_ZCL_STATUS_UNSUP_MANUF_GENERAL_COMMAND
+    716                                        : EMBER_ZCL_STATUS_UNSUP_GENERAL_COMMAND));
+   \                     ??emAfProcessGlobalCommand_7: (+1)
+   \      0x2CA   0x7BE0             LDRB     R0,[R4, #+15]
+   \      0x2CC   0x2800             CMP      R0,#+0
+   \      0x2CE   0xF000 0x80B4      BEQ.W    ??emAfProcessGlobalCommand_35
+   \                     ??emAfProcessGlobalCommand_4: (+1)
+   \      0x2D2   0x2184             MOVS     R1,#+132
+   \      0x2D4   0xE0AA             B.N      ??emAfProcessGlobalCommand_2
+   \                     ??emAfProcessGlobalCommand_36: (+1)
+   \      0x2D6   0x4620             MOV      R0,R4
+   \      0x2D8   0x....'....        BL       emberAfReadReportingConfigurationCommandCallback
+   \      0x2DC   0x2800             CMP      R0,#+0
+   \      0x2DE   0xD1B6             BNE.N    ??emAfProcessGlobalCommand_29
+   \      0x2E0   0xE7F3             B.N      ??emAfProcessGlobalCommand_7
+   \                     ??emAfProcessGlobalCommand_37: (+1)
+   \      0x2E2   0xF1B9 0x0F0A      CMP      R9,#+10
+   \      0x2E6   0xD122             BNE.N    ??emAfProcessGlobalCommand_38
+   \      0x2E8   0x....'....        LDR.W    R11,??DataTable1_3
+   \      0x2EC   0xF89B 0x0000      LDRB     R0,[R11, #+0]
+   \      0x2F0   0xB1E8             CBZ.N    R0,??emAfProcessGlobalCommand_38
+   \      0x2F2   0x7BE0             LDRB     R0,[R4, #+15]
+   \      0x2F4   0x2800             CMP      R0,#+0
+   \      0x2F6   0xBF04             ITT      EQ 
+   \      0x2F8   0x1BF0             SUBEQ    R0,R6,R7
+   \      0x2FA   0x2808             CMPEQ    R0,#+8
+   \      0x2FC   0xD117             BNE.N    ??emAfProcessGlobalCommand_38
+   \      0x2FE   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \      0x302   0x2800             CMP      R0,#+0
+   \      0x304   0xBF02             ITTT     EQ 
+   \      0x306   0xF108 0x0102      ADDEQ    R1,R8,#+2
+   \      0x30A   0x5DC8             LDRBEQ   R0,[R1, R7]
+   \      0x30C   0x2800             CMPEQ    R0,#+0
+   \      0x30E   0xBF04             ITT      EQ 
+   \      0x310   0xF89A 0x0003      LDRBEQ   R0,[R10, #+3]
+   \      0x314   0x28E2             CMPEQ    R0,#+226
+   \      0x316   0xD10A             BNE.N    ??emAfProcessGlobalCommand_38
+   \      0x318   0x1D3F             ADDS     R7,R7,#+4
+   \      0x31A   0x4632             MOV      R2,R6
+   \      0x31C   0xB2B9             UXTH     R1,R7
+   \      0x31E   0x4640             MOV      R0,R8
+   \      0x320   0x....'....        BL       emberAfGetInt32u
+   \      0x324   0x....'....        BL       emberAfSetTime
+   \      0x328   0x2000             MOVS     R0,#+0
+   \      0x32A   0xF88B 0x0000      STRB     R0,[R11, #+0]
+   \                     ??emAfProcessGlobalCommand_38: (+1)
+   \      0x32E   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \      0x332   0x....'....        BL       emAfReadAttributesResponse
+   \      0x336   0xE077             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_40: (+1)
+   \      0x338   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \      0x33C   0x....'....        BL       emberAfWriteAttributesResponseCallback
+   \      0x340   0xE072             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_41: (+1)
+   \      0x342   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \      0x346   0x....'....        BL       emberAfConfigureReportingResponseCallback
+   \      0x34A   0xE06D             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_42: (+1)
+   \      0x34C   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \      0x350   0x....'....        BL       emberAfReadReportingConfigurationResponseCallback
+   \      0x354   0xE068             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_43: (+1)
+   \      0x356   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \      0x35A   0x....'....        BL       emAfReportAttributes
+   \      0x35E   0xE063             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_44: (+1)
+   \      0x360   0x8A20             LDRH     R0,[R4, #+16]
+   \      0x362   0xB289             UXTH     R1,R1
+   \      0x364   0xF89A 0x7000      LDRB     R7,[R10, #+0]
+   \      0x368   0xF818 0x5001      LDRB     R5,[R8, R1]
+   \      0x36C   0x9001             STR      R0,[SP, #+4]
+   \      0x36E   0xF89D 0x100C      LDRB     R1,[SP, #+12]
+   \      0x372   0x462B             MOV      R3,R5
+   \      0x374   0x463A             MOV      R2,R7
+   \      0x376   0x9100             STR      R1,[SP, #+0]
+   \      0x378   0x6824             LDR      R4,[R4, #+0]
+   \      0x37A   0x4649             MOV      R1,R9
+   \      0x37C   0x7960             LDRB     R0,[R4, #+5]
+   \      0x37E   0x....'....        BL       emberAfClusterDefaultResponseWithMfgCodeCallback
+   \      0x382   0x462A             MOV      R2,R5
+   \      0x384   0x4639             MOV      R1,R7
+   \      0x386   0x4648             MOV      R0,R9
+   \      0x388   0x....'....        BL       emberAfDefaultResponseCallback
+   \      0x38C   0xE051             B.N      ??emAfProcessGlobalCommand_30
+   \                     ??emAfProcessGlobalCommand_45: (+1)
+   \      0x38E   0xF89A 0x1000      LDRB     R1,[R10, #+0]
+   \      0x392   0xB101             CBZ.N    R1,??emAfProcessGlobalCommand_46
+   \      0x394   0x2101             MOVS     R1,#+1
+   \                     ??emAfProcessGlobalCommand_46: (+1)
+   \      0x396   0x2A16             CMP      R2,#+22
+   \      0x398   0xBF0C             ITE      EQ 
+   \      0x39A   0x2201             MOVEQ    R2,#+1
+   \      0x39C   0x2200             MOVNE    R2,#+0
+   \      0x39E   0x9200             STR      R2,[SP, #+0]
+   \      0x3A0   0x1A36             SUBS     R6,R6,R0
+   \      0x3A2   0xEB08 0x0200      ADD      R2,R8,R0
+   \      0x3A6   0xB2B3             UXTH     R3,R6
+   \      0x3A8   0x4648             MOV      R0,R9
+   \      0x3AA   0x....'....        BL       emberAfDiscoverAttributesResponseCallback
+   \      0x3AE   0xE03B             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_47: (+1)
+   \      0x3B0   0xF89A 0x8000      LDRB     R8,[R10, #+0]
+   \      0x3B4   0xF89A 0x7001      LDRB     R7,[R10, #+1]
+   \      0x3B8   0x2A11             CMP      R2,#+17
+   \      0x3BA   0xD104             BNE.N    ??emAfProcessGlobalCommand_48
+   \      0x3BC   0x2012             MOVS     R0,#+18
+   \      0x3BE   0x....'....        BL       emberAfPutInt8uInResp
+   \      0x3C2   0x2000             MOVS     R0,#+0
+   \      0x3C4   0xE003             B.N      ??emAfProcessGlobalCommand_49
+   \                     ??emAfProcessGlobalCommand_48: (+1)
+   \      0x3C6   0x2014             MOVS     R0,#+20
+   \      0x3C8   0x....'....        BL       emberAfPutInt8uInResp
+   \      0x3CC   0x2001             MOVS     R0,#+1
+   \                     ??emAfProcessGlobalCommand_49: (+1)
+   \      0x3CE   0x....             LDR.N    R5,??DataTable1_1
+   \      0x3D0   0x8829             LDRH     R1,[R5, #+0]
+   \      0x3D2   0x9703             STR      R7,[SP, #+12]
+   \      0x3D4   0xF8CD 0x8008      STR      R8,[SP, #+8]
+   \      0x3D8   0x460E             MOV      R6,R1
+   \      0x3DA   0xF1C1 0x0151      RSB      R1,R1,#+81
+   \      0x3DE   0x9501             STR      R5,[SP, #+4]
+   \      0x3E0   0xB289             UXTH     R1,R1
+   \      0x3E2   0x9100             STR      R1,[SP, #+0]
+   \      0x3E4   0xEB0B 0x0106      ADD      R1,R11,R6
+   \      0x3E8   0x1C4B             ADDS     R3,R1,#+1
+   \      0x3EA   0x464A             MOV      R2,R9
+   \      0x3EC   0x4621             MOV      R1,R4
+   \      0x3EE   0x....'....        BL       emberAfExtractCommandIds
+   \      0x3F2   0xB100             CBZ.N    R0,??emAfProcessGlobalCommand_50
+   \      0x3F4   0x2001             MOVS     R0,#+1
+   \                     ??emAfProcessGlobalCommand_50: (+1)
+   \      0x3F6   0xF80B 0x0006      STRB     R0,[R11, R6]
+   \      0x3FA   0x8828             LDRH     R0,[R5, #+0]
+   \      0x3FC   0x1C40             ADDS     R0,R0,#+1
+   \      0x3FE   0x8028             STRH     R0,[R5, #+0]
+   \                     ??emAfProcessGlobalCommand_51: (+1)
+   \      0x400   0xE723             B.N      ??emAfProcessGlobalCommand_10
+   \                     ??emAfProcessGlobalCommand_52: (+1)
+   \      0x402   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \      0x406   0x2000             MOVS     R0,#+0
+   \      0x408   0x....'....        BL       printDiscoverCommandsResponse
+   \      0x40C   0x....'....        BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \      0x410   0x....'....        BL       emberAfDiscoverCommandsReceivedResponseCallback
+   \      0x414   0xE008             B.N      ??emAfProcessGlobalCommand_39
+   \                     ??emAfProcessGlobalCommand_53: (+1)
+   \      0x416   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \      0x41A   0x2001             MOVS     R0,#+1
+   \      0x41C   0x....'....        BL       printDiscoverCommandsResponse
+   \      0x420   0x....'....        BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \      0x424   0x....'....        BL       emberAfDiscoverCommandsGeneratedResponseCallback
+   \                     ??emAfProcessGlobalCommand_39: (+1)
+   \      0x428   0xB918             CBNZ.N   R0,??emAfProcessGlobalCommand_30
+   \      0x42A   0x2100             MOVS     R1,#+0
+   \                     ??emAfProcessGlobalCommand_2: (+1)
+   \      0x42C   0x4620             MOV      R0,R4
+   \                     ??emAfProcessGlobalCommand_54: (+1)
+   \      0x42E   0x....'....        BL       emberAfSendDefaultResponse
+   \                     ??emAfProcessGlobalCommand_30: (+1)
+   \      0x432   0x2001             MOVS     R0,#+1
+   \      0x434   0xB007             ADD      SP,SP,#+28
+   \      0x436   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+   \                     ??emAfProcessGlobalCommand_35: (+1)
+   \      0x43A   0x2182             MOVS     R1,#+130
+   \      0x43C   0xE7F6             B.N      ??emAfProcessGlobalCommand_2
+   \                     ??emAfProcessGlobalCommand_19: (+1)
+   \      0x43E   0xB2ED             UXTB     R5,R5
+   \      0x440   0xF8BD 0x900E      LDRH     R9,[SP, #+14]
+   \      0x444   0x2D00             CMP      R5,#+0
+   \      0x446   0xD1DB             BNE.N    ??emAfProcessGlobalCommand_51
+   \      0x448   0x7BE0             LDRB     R0,[R4, #+15]
+   \      0x44A   0x7D27             LDRB     R7,[R4, #+20]
+   \      0x44C   0x2800             CMP      R0,#+0
+   \      0x44E   0xBF14             ITE      NE 
+   \      0x450   0x2004             MOVNE    R0,#+4
+   \      0x452   0x2002             MOVEQ    R0,#+2
+   \      0x454   0xE6AB             B.N      ??emAfProcessGlobalCommand_20
+   \                     ??emAfProcessGlobalCommand_27: (+1)
+   \      0x456   0x9904             LDR      R1,[SP, #+16]
+   \      0x458   0x4620             MOV      R0,R4
+   \      0x45A   0x2905             CMP      R1,#+5
+   \      0x45C   0xD0E9             BEQ.N    ??emAfProcessGlobalCommand_30
+   \      0x45E   0xB2ED             UXTB     R5,R5
+   \      0x460   0x2D00             CMP      R5,#+0
+   \      0x462   0xD1CD             BNE.N    ??emAfProcessGlobalCommand_51
+   \      0x464   0xFA5F 0xF18A      UXTB     R1,R10
+   \      0x468   0x2900             CMP      R1,#+0
+   \      0x46A   0xF47F 0xAEEB      BNE.W    ??emAfProcessGlobalCommand_28
+   \      0x46E   0x2180             MOVS     R1,#+128
+   \      0x470   0xE7DD             B.N      ??emAfProcessGlobalCommand_54
+    717            return true;
+    718          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0xB2B6             UXTH     R6,R6
+   \        0x2   0x9600             STR      R6,[SP, #+0]
+   \        0x4   0x8A21             LDRH     R1,[R4, #+16]
+   \        0x6   0x4643             MOV      R3,R8
+   \        0x8   0x463A             MOV      R2,R7
+   \        0xA   0x4648             MOV      R0,R9
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0xB2AA             UXTH     R2,R5
+   \        0x2   0x4651             MOV      R1,R10
+   \        0x4   0x4648             MOV      R0,R9
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0xF89A 0x7000      LDRB     R7,[R10, #+0]
+   \        0x4   0xB107             CBZ.N    R7,??Subroutine2_0
+   \        0x6   0x2701             MOVS     R7,#+1
+   \                     ??Subroutine2_0: (+1)
+   \        0x8   0x4480             ADD      R8,R8,R0
+   \        0xA   0x1A36             SUBS     R6,R6,R0
+   \        0xC   0xB2B0             UXTH     R0,R6
+   \        0xE   0x9000             STR      R0,[SP, #+0]
+   \       0x10   0x4643             MOV      R3,R8
+   \       0x12   0x463A             MOV      R2,R7
+   \       0x14   0x4649             MOV      R1,R9
+   \       0x16   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4632             MOV      R2,R6
+   \        0x2   0x4639             MOV      R1,R7
+   \        0x4   0x4640             MOV      R0,R8
+   \        0x6   0x....'....        B.W      emberAfGetInt16u
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x8828             LDRH     R0,[R5, #+0]
+   \        0x2   0x4653             MOV      R3,R10
+   \        0x4   0x465A             MOV      R2,R11
+   \        0x6   0xF1C0 0x0052      RSB      R0,R0,#+82
+   \        0xA   0xB280             UXTH     R0,R0
+   \        0xC   0x9001             STR      R0,[SP, #+4]
+   \        0xE   0x8A21             LDRH     R1,[R4, #+16]
+   \       0x10   0x9100             STR      R1,[SP, #+0]
+   \       0x12   0xF8D4 0xC000      LDR      R12,[R4, #+0]
+   \       0x16   0x4649             MOV      R1,R9
+   \       0x18   0xF89C 0x0005      LDRB     R0,[R12, #+5]
+   \       0x1C   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     appResponseLength
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     appResponseData
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0x....'....        DC32     emAfSyncingTime
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x64 0x69          DC8 "disabled"
+   \              0x73 0x61    
+   \              0x62 0x6C    
+   \              0x65 0x64    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      64   emAfProcessGlobalCommand
+        64   -> emAfReadAttributesResponse
+        64   -> emAfReportAttributes
+        64   -> emAfRetrieveAttributeAndCraftResponse
+        64   -> emberAfClusterDefaultResponseWithMfgCodeCallback
+        64   -> emberAfConfigureReportingCommandCallback
+        64   -> emberAfConfigureReportingResponseCallback
+        64   -> emberAfDefaultResponseCallback
+        64   -> emberAfDiscoverAttributesResponseCallback
+        64   -> emberAfDiscoverCommandsGeneratedResponseCallback
+        64   -> emberAfDiscoverCommandsReceivedResponseCallback
+        64   -> emberAfExtractCommandIds
+        64   -> emberAfGetDataSize
+        64   -> emberAfGetInt16u
+        64   -> emberAfGetInt32u
+        64   -> emberAfIsDeviceEnabled
+        64   -> emberAfIsThisDataTypeAStringType
+        64   -> emberAfPrintln
+        64   -> emberAfPutInt16uInResp
+        64   -> emberAfPutInt8uInResp
+        64   -> emberAfReadReportingConfigurationCommandCallback
+        64   -> emberAfReadReportingConfigurationResponseCallback
+        64   -> emberAfReadSequentialAttributesAddToResponse
+        64   -> emberAfRetrieveAttributeAndCraftResponse
+        64   -> emberAfSendDefaultResponse
+        64   -> emberAfSendResponse
+        64   -> emberAfSetTime
+        64   -> emberAfStringLength
+        64   -> emberAfVerifyAttributeWrite
+        64   -> emberAfWriteAttributeExternal
+        64   -> emberAfWriteAttributesResponseCallback
+        64   -> printDiscoverCommandsResponse
+       0   printDiscoverCommandsResponse
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+      30  ?Subroutine0
+      10  ?Subroutine1
+      24  ?Subroutine2
+       8  ?Subroutine3
+      14  ?Subroutine4
+      12  ?_0
+    1138  emAfProcessGlobalCommand
+       1  emAfSyncingTime
+      16  printDiscoverCommandsResponse
+
+ 
+     1 byte  in section .bss
+    12 bytes in section .rodata
+ 1 256 bytes in section .text
+ 
+ 1 256 bytes of CODE  memory
+    12 bytes of CONST memory
+     1 byte  of DATA  memory
+
+Errors: none
+Warnings: none

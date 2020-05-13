@@ -1,0 +1,1653 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:50
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_i2c.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW4F70.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_i2c.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_i2c.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_i2c.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_i2c.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_i2c.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Inter-integrated Circuit (I2C) Peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_i2c.h"
+     33          #if defined(I2C_COUNT) && (I2C_COUNT > 0)
+     34          
+     35          #include "em_cmu.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void BUS_RegBitWrite(uint32_t volatile *, unsigned int, unsigned int)
+   \                     BUS_RegBitWrite: (+1)
+   \        0x0   0x2A00             CMP      R2,#+0
+   \        0x2   0xBF14             ITE      NE 
+   \        0x4   0xF500 0x5080      ADDNE    R0,R0,#+4096
+   \        0x8   0xF500 0x5000      ADDEQ    R0,R0,#+8192
+   \        0xC   0x2201             MOVS     R2,#+1
+   \        0xE   0xFA02 0xF101      LSL      R1,R2,R1
+   \       0x12   0x6001             STR      R1,[R0, #+0]
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void BUS_RegMaskedWrite(uint32_t volatile *, uint32_t, uint32_t)
+   \                     BUS_RegMaskedWrite: (+1)
+   \        0x0   0xF500 0x5300      ADD      R3,R0,#+8192
+   \        0x4   0x6019             STR      R1,[R3, #+0]
+   \        0x6   0xF500 0x5080      ADD      R0,R0,#+4096
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+   \        0xC   0x4770             BX       LR               ;; return
+     36          #include "em_bus.h"
+     37          #include "em_assert.h"
+     38          
+     39           #include <limits.h>
+     40          
+     41          /***************************************************************************//**
+     42           * @addtogroup emlib
+     43           * @{
+     44           ******************************************************************************/
+     45          
+     46          /***************************************************************************//**
+     47           * @addtogroup I2C
+     48           * @brief Inter-integrated Circuit (I2C) Peripheral API
+     49           * @details
+     50           *  This module contains functions to control the I2C peripheral of Silicon
+     51           *  Labs 32-bit MCUs and SoCs. The I2C interface allows communication on I2C
+     52           *  buses with the lowest energy consumption possible.
+     53           * @{
+     54           ******************************************************************************/
+     55          
+     56          /*******************************************************************************
+     57           *******************************   DEFINES   ***********************************
+     58           ******************************************************************************/
+     59          
+     60          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     61          
+     62          /** Validation of the I2C register block pointer reference for assert statements. */
+     63          #if (I2C_COUNT == 1)
+     64          #define I2C_REF_VALID(ref)    ((ref) == I2C0)
+     65          #elif (I2C_COUNT == 2)
+     66          #define I2C_REF_VALID(ref)    (((ref) == I2C0) || ((ref) == I2C1))
+     67          #elif (I2C_COUNT == 3)
+     68          #define I2C_REF_VALID(ref)    (((ref) == I2C0) || ((ref) == I2C1) || ((ref) == I2C2))
+     69          #endif
+     70          
+     71          /** Error flags indicating that the I2C transfer has failed. */
+     72          /* Notice that I2C_IF_TXOF (transmit overflow) is not really possible with */
+     73          /* the software-supporting master mode. Likewise, for I2C_IF_RXUF (receive underflow) */
+     74          /* RXUF is only likely to occur with the software if using a debugger peeking into */
+     75          /* the RXDATA register. Therefore, those types of faults are ignored. */
+     76          #define I2C_IF_ERRORS    (I2C_IF_BUSERR | I2C_IF_ARBLOST)
+     77          #define I2C_IEN_ERRORS   (I2C_IEN_BUSERR | I2C_IEN_ARBLOST)
+     78          
+     79          /* Maximum I2C transmission rate constant.  */
+     80          #if defined(_SILICON_LABS_32B_SERIES_0)
+     81          #define I2C_CR_MAX       4
+     82          #elif defined(_SILICON_LABS_32B_SERIES_1)
+     83          #define I2C_CR_MAX       8
+     84          #elif defined(_SILICON_LABS_32B_SERIES_2)
+     85          #define I2C_CR_MAX       8
+     86          #else
+     87          #warning "Max I2C transmission rate constant is not defined"
+     88          #endif
+     89          
+     90          /** @endcond */
+     91          
+     92          /*******************************************************************************
+     93           ********************************   ENUMS   ************************************
+     94           ******************************************************************************/
+     95          
+     96          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     97          
+     98          /** Master mode transfer states. */
+     99          typedef enum {
+    100            i2cStateStartAddrSend,       /**< Send start + (first part of) address. */
+    101            i2cStateAddrWFAckNack,       /**< Wait for ACK/NACK on (the first part of) address. */
+    102            i2cStateAddrWF2ndAckNack,    /**< Wait for ACK/NACK on the second part of a 10 bit address. */
+    103            i2cStateRStartAddrSend,      /**< Send a repeated start + (first part of) address. */
+    104            i2cStateRAddrWFAckNack,      /**< Wait for ACK/NACK on an address sent after a repeated start. */
+    105            i2cStateDataSend,            /**< Send data. */
+    106            i2cStateDataWFAckNack,       /**< Wait for ACK/NACK on data sent. */
+    107            i2cStateWFData,              /**< Wait for data. */
+    108            i2cStateWFStopSent,          /**< Wait for STOP to have been transmitted. */
+    109            i2cStateDone                 /**< Transfer completed successfully. */
+    110          } I2C_TransferState_TypeDef;
+    111          
+    112          /** @endcond */
+    113          
+    114          /*******************************************************************************
+    115           *******************************   STRUCTS   ***********************************
+    116           ******************************************************************************/
+    117          
+    118          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    119          
+    120          /** Structure used to store state information on an ongoing master mode transfer. */
+    121          typedef struct {
+    122            /** Current state. */
+    123            I2C_TransferState_TypeDef  state;
+    124          
+    125            /** Result return code. */
+    126            I2C_TransferReturn_TypeDef result;
+    127          
+    128            /** Offset in the current sequence buffer. */
+    129            uint16_t                   offset;
+    130          
+    131            /* Index to the current sequence buffer in use. */
+    132            uint8_t                    bufIndx;
+    133          
+    134            /** Reference to the I2C transfer sequence definition provided by the user. */
+    135            I2C_TransferSeq_TypeDef    *seq;
+    136          } I2C_Transfer_TypeDef;
+    137          
+    138          /** @endcond */
+    139          
+    140          /*******************************************************************************
+    141           *****************************   LOCAL DATA   *******^**************************
+    142           ******************************************************************************/
+    143          
+    144          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    145          
+    146          /**
+    147           * Lookup table for Nlow + Nhigh setting defined by CLHR. Set the undefined
+    148           * index (0x3) to reflect a default setting just in case.
+    149           */
+
+   \                                 In section .rodata, align 4
+    150          static const uint8_t i2cNSum[] = { 4 + 4, 6 + 3, 11 + 6, 4 + 4 };
+   \                     i2cNSum:
+   \        0x0   0x08 0x09          DC8 8, 9, 17, 8
+   \              0x11 0x08    
+    151          
+    152          /** A transfer state information for an ongoing master mode transfer. */
+
+   \                                 In section .bss, align 4
+    153          static I2C_Transfer_TypeDef i2cTransfer[I2C_COUNT];
+   \                     i2cTransfer:
+   \        0x0                      DS8 24
+    154          
+    155          /** @endcond */
+    156          
+    157          /*******************************************************************************
+    158           **************************   LOCAL FUNCTIONS   *******************************
+    159           ******************************************************************************/
+    160          
+    161          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    162          
+    163          /***************************************************************************//**
+    164           * @brief
+    165           *   Empty received data buffer.
+    166           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    167          static void flushRx(I2C_TypeDef *i2c)
+    168          {
+   \                     flushRx: (+1)
+   \        0x0   0xE000             B.N      ??flushRx_0
+    169            while (i2c->STATUS & I2C_STATUS_RXDATAV) {
+    170              i2c->RXDATA;
+   \                     ??flushRx_1: (+1)
+   \        0x2   0x6A41             LDR      R1,[R0, #+36]
+    171            }
+   \                     ??flushRx_0: (+1)
+   \        0x4   0x6942             LDR      R2,[R0, #+20]
+   \        0x6   0x05D1             LSLS     R1,R2,#+23
+   \        0x8   0xD4FB             BMI.N    ??flushRx_1
+    172          
+    173          #if defined(_SILICON_LABS_32B_SERIES_2)
+    174            /* SW needs to clear RXDATAV IF on Series 2 devices.
+    175               Flag is kept high by HW if buffer is not empty. */
+    176            I2C_IntClear(i2c, I2C_IF_RXDATAV);
+   \        0xA   0x2220             MOVS     R2,#+32
+   \        0xC   0xF242 0x033C      MOVW     R3,#+8252
+   \       0x10   0x50C2             STR      R2,[R0, R3]
+    177          #endif
+    178          }
+   \       0x12   0x4770             BX       LR               ;; return
+    179          
+    180          /** @endcond */
+    181          
+    182          /*******************************************************************************
+    183           **************************   GLOBAL FUNCTIONS   *******************************
+    184           ******************************************************************************/
+    185          
+    186          /***************************************************************************//**
+    187           * @brief
+    188           *   Get the current configured I2C bus frequency.
+    189           *
+    190           * @details
+    191           *   This frequency is only relevant when acting as master.
+    192           *
+    193           * @note
+    194           *   The actual frequency is a real number, this function returns a rounded
+    195           *   down (truncated) integer value.
+    196           *
+    197           * @param[in] i2c
+    198           *   A pointer to the I2C peripheral register block.
+    199           *
+    200           * @return
+    201           *   The current I2C frequency in Hz.
+    202           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    203          uint32_t I2C_BusFreqGet(I2C_TypeDef *i2c)
+    204          {
+   \                     I2C_BusFreqGet: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    205            uint32_t freqHfper = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+    206            uint32_t n;
+    207          
+    208            /* Maximum frequency is given by freqScl = freqHfper/((Nlow + Nhigh)(DIV + 1) + I2C_CR_MAX)
+    209             * For more details, see the reference manual
+    210             * I2C Clock Generation chapter. */
+    211            if (i2c == I2C0) {
+   \        0x6   0x....'....        LDR.W    R1,??DataTable6  ;; 0x4a010000
+   \        0xA   0x428C             CMP      R4,R1
+   \        0xC   0xBF08             IT       EQ 
+   \        0xE   0x2015             MOVEQ    R0,#+21
+    212              freqHfper = CMU_ClockFreqGet(cmuClock_I2C0);
+   \       0x10   0xD004             BEQ.N    ??I2C_BusFreqGet_0
+    213          #if defined(I2C1)
+    214            } else if (i2c == I2C1) {
+   \       0x12   0x....'....        LDR.W    R1,??DataTable6_1  ;; 0x40068000
+   \       0x16   0x428C             CMP      R4,R1
+   \       0x18   0xD102             BNE.N    ??I2C_BusFreqGet_1
+    215              freqHfper = CMU_ClockFreqGet(cmuClock_I2C1);
+   \       0x1A   0x2016             MOVS     R0,#+22
+   \                     ??I2C_BusFreqGet_0: (+1)
+   \       0x1C   0x....'....        BL       CMU_ClockFreqGet
+    216          #endif
+    217          #if defined(I2C2)
+    218            } else if (i2c == I2C2) {
+    219              freqHfper = CMU_ClockFreqGet(cmuClock_I2C2);
+    220          #endif
+    221            } else {
+    222              EFM_ASSERT(false);
+    223            }
+    224          
+    225            /* n = Nlow + Nhigh */
+    226            n = (uint32_t)i2cNSum[(i2c->CTRL & _I2C_CTRL_CLHR_MASK)
+    227                                  >> _I2C_CTRL_CLHR_SHIFT];
+   \                     ??I2C_BusFreqGet_1: (+1)
+   \       0x20   0x68A1             LDR      R1,[R4, #+8]
+    228            return freqHfper / ((n * (i2c->CLKDIV + 1)) + I2C_CR_MAX);
+   \       0x22   0x....'....        LDR.W    R2,??DataTable6_2
+   \       0x26   0xF3C1 0x2101      UBFX     R1,R1,#+8,#+2
+   \       0x2A   0x5C51             LDRB     R1,[R2, R1]
+   \       0x2C   0x69A2             LDR      R2,[R4, #+24]
+   \       0x2E   0x1C52             ADDS     R2,R2,#+1
+   \       0x30   0x4351             MULS     R1,R2,R1
+   \       0x32   0x3108             ADDS     R1,R1,#+8
+   \       0x34   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \       0x38   0xBD10             POP      {R4,PC}          ;; return
+    229          }
+    230          
+    231          /***************************************************************************//**
+    232           * @brief
+    233           *   Set the I2C bus frequency.
+    234           *
+    235           * @details
+    236           *   The bus frequency is only relevant when acting as master. The bus
+    237           *   frequency should not be set higher than the maximum frequency accepted by the
+    238           *   slowest device on the bus.
+    239           *
+    240           *   Notice that, due to asymmetric requirements on low and high I2C clock
+    241           *   cycles in the I2C specification, the maximum frequency allowed
+    242           *   to comply with the specification may be somewhat lower than expected.
+    243           *
+    244           *   See the reference manual, details on I2C clock generation,
+    245           *   for maximum allowed theoretical frequencies for different modes.
+    246           *
+    247           * @param[in] i2c
+    248           *   A pointer to the I2C peripheral register block.
+    249           *
+    250           * @param[in] freqRef
+    251           *   An I2C reference clock frequency in Hz that will be used. If set to 0,
+    252           *   HFPERCLK / HFPERCCLK clock is used. Setting it to a higher than actual
+    253           *   configured value has the consequence of reducing the real I2C frequency.
+    254           *
+    255           * @param[in] freqScl
+    256           *   A bus frequency to set (bus speed may be lower due to integer
+    257           *   prescaling). Safe (according to the I2C specification) maximum frequencies for
+    258           *   standard fast and fast+ modes are available using I2C_FREQ_ defines.
+    259           *   (Using I2C_FREQ_ defines requires corresponding setting of @p type.)
+    260           *   The slowest slave device on a bus must always be considered.
+    261           *
+    262           * @param[in] i2cMode
+    263           *   A clock low-to-high ratio type to use. If not using i2cClockHLRStandard,
+    264           *   make sure all devices on the bus support the specified mode. Using a
+    265           *   non-standard ratio is useful to achieve a higher bus clock in fast and
+    266           *   fast+ modes.
+    267           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    268          void I2C_BusFreqSet(I2C_TypeDef *i2c,
+    269                              uint32_t freqRef,
+    270                              uint32_t freqScl,
+    271                              I2C_ClockHLR_TypeDef i2cMode)
+    272          {
+   \                     I2C_BusFreqSet: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4606             MOV      R6,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x0014             MOVS     R4,R2
+    273            uint32_t n, minFreq, denominator;
+    274            int32_t div;
+    275          
+    276            /* Avoid dividing by 0. */
+    277            EFM_ASSERT(freqScl);
+    278            if (!freqScl) {
+   \        0x8   0xD02E             BEQ.N    ??I2C_BusFreqSet_0
+    279              return;
+    280            }
+    281          
+    282            /* Ensure mode is valid */
+    283            i2cMode &= _I2C_CTRL_CLHR_MASK >> _I2C_CTRL_CLHR_SHIFT;
+    284          
+    285            /* Set the CLHR (clock low-to-high ratio). */
+    286            i2c->CTRL &= ~_I2C_CTRL_CLHR_MASK;
+   \        0xA   0x68B0             LDR      R0,[R6, #+8]
+   \        0xC   0xF003 0x0703      AND      R7,R3,#0x3
+    287            BUS_RegMaskedWrite(&i2c->CTRL,
+    288                               _I2C_CTRL_CLHR_MASK,
+    289                               i2cMode << _I2C_CTRL_CLHR_SHIFT);
+   \       0x10   0x023A             LSLS     R2,R7,#+8
+   \       0x12   0xF420 0x7040      BIC      R0,R0,#0x300
+   \       0x16   0x60B0             STR      R0,[R6, #+8]
+   \       0x18   0xF44F 0x7140      MOV      R1,#+768
+   \       0x1C   0xF106 0x0008      ADD      R0,R6,#+8
+   \       0x20   0x....'....        BL       BUS_RegMaskedWrite
+    290          
+    291            if (freqRef == 0) {
+   \       0x24   0xB96D             CBNZ.N   R5,??I2C_BusFreqSet_1
+    292              if (i2c == I2C0) {
+   \       0x26   0x....'....        LDR.W    R0,??DataTable6  ;; 0x4a010000
+   \       0x2A   0x4286             CMP      R6,R0
+   \       0x2C   0xBF08             IT       EQ 
+   \       0x2E   0x2015             MOVEQ    R0,#+21
+    293                freqRef = CMU_ClockFreqGet(cmuClock_I2C0);
+   \       0x30   0xD004             BEQ.N    ??I2C_BusFreqSet_2
+    294          #if defined(I2C1)
+    295              } else if (i2c == I2C1) {
+   \       0x32   0x....'....        LDR.W    R0,??DataTable6_1  ;; 0x40068000
+   \       0x36   0x4286             CMP      R6,R0
+   \       0x38   0xD103             BNE.N    ??I2C_BusFreqSet_1
+    296                freqRef = CMU_ClockFreqGet(cmuClock_I2C1);
+   \       0x3A   0x2016             MOVS     R0,#+22
+   \                     ??I2C_BusFreqSet_2: (+1)
+   \       0x3C   0x....'....        BL       CMU_ClockFreqGet
+   \       0x40   0x4605             MOV      R5,R0
+    297          #endif
+    298          #if defined(I2C2)
+    299              } else if (i2c == I2C2) {
+    300                freqRef = CMU_ClockFreqGet(cmuClock_I2C2);
+    301          #endif
+    302              } else {
+    303                EFM_ASSERT(false);
+    304              }
+    305            }
+    306          
+    307            /* Check the minumum HF peripheral clock. */
+    308            minFreq = UINT_MAX;
+    309            if (i2c->CTRL & I2C_CTRL_SLAVE) {
+   \                     ??I2C_BusFreqSet_1: (+1)
+   \       0x42   0x68B0             LDR      R0,[R6, #+8]
+    310              switch (i2cMode) {
+    311                case i2cClockHLRStandard:
+    312          #if defined(_SILICON_LABS_32B_SERIES_0)
+    313                  minFreq = 4200000; break;
+    314          #elif defined(_SILICON_LABS_32B_SERIES_1)
+    315                  minFreq = 2000000; break;
+    316          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    317                  minFreq = 2000000; break;
+    318          #endif
+    319                case i2cClockHLRAsymetric:
+    320          #if defined(_SILICON_LABS_32B_SERIES_0)
+    321                  minFreq = 11000000; break;
+    322          #elif defined(_SILICON_LABS_32B_SERIES_1)
+    323                  minFreq = 5000000; break;
+    324          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    325                  minFreq = 5000000; break;
+    326          #endif
+    327                case i2cClockHLRFast:
+    328          #if defined(_SILICON_LABS_32B_SERIES_0)
+    329                  minFreq = 24400000; break;
+    330          #elif defined(_SILICON_LABS_32B_SERIES_1)
+    331                  minFreq = 14000000; break;
+    332          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    333                  minFreq = 14000000; break;
+    334          #endif
+    335                default:
+    336                  /* MISRA requires the default case. */
+    337                  break;
+    338              }
+    339            } else {
+    340              /* For master mode, platform 1 and 2 share the same
+    341                 minimum frequencies. */
+    342              switch (i2cMode) {
+    343                case i2cClockHLRStandard:
+    344                  minFreq = 2000000; break;
+    345                case i2cClockHLRAsymetric:
+    346                  minFreq = 9000000; break;
+    347                case i2cClockHLRFast:
+    348                  minFreq = 20000000; break;
+    349                default:
+    350                  /* MISRA requires default case */
+    351                  break;
+    352              }
+    353            }
+    354          
+    355            /* Frequency most be larger-than. */
+    356            EFM_ASSERT(freqRef > minFreq);
+    357          
+    358            /* SCL frequency is given by:
+    359             * freqScl = freqRef/((Nlow + Nhigh) * (DIV + 1) + I2C_CR_MAX)
+    360             *
+    361             * Therefore,
+    362             * DIV = ((freqRef - (I2C_CR_MAX * freqScl))/((Nlow + Nhigh) * freqScl)) - 1
+    363             *
+    364             * For more details, see the reference manual
+    365             * I2C Clock Generation chapter.  */
+    366          
+    367            /* n = Nlow + Nhigh */
+    368            n = (uint32_t)i2cNSum[i2cMode];
+    369            denominator = n * freqScl;
+   \       0x44   0x....'....        LDR.W    R1,??DataTable6_2
+   \       0x48   0x5DC8             LDRB     R0,[R1, R7]
+   \       0x4A   0x4360             MULS     R0,R4,R0
+    370          
+    371            /* Explicitly ensure denominator is never zero. */
+    372            if (denominator == 0) {
+   \       0x4C   0xD00C             BEQ.N    ??I2C_BusFreqSet_0
+    373              EFM_ASSERT(0);
+    374              return;
+    375            }
+    376            /* Perform integer division so that div is rounded up. */
+    377            div = ((freqRef - (I2C_CR_MAX * freqScl) + denominator - 1)
+    378                   / denominator) - 1;
+   \       0x4E   0xEBA5 0x05C4      SUB      R5,R5,R4, LSL #+3
+   \       0x52   0x1945             ADDS     R5,R0,R5
+   \       0x54   0x1E6D             SUBS     R5,R5,#+1
+   \       0x56   0xFBB5 0xF0F0      UDIV     R0,R5,R0
+    379            EFM_ASSERT(div >= 0);
+    380            EFM_ASSERT((uint32_t)div <= _I2C_CLKDIV_DIV_MASK);
+    381          
+    382            /* The clock divisor must be at least 1 in slave mode according to the reference */
+    383            /* manual (in which case there is normally no need to set the bus frequency). */
+    384            if ((i2c->CTRL & I2C_CTRL_SLAVE) && (div == 0)) {
+   \       0x5A   0x68B1             LDR      R1,[R6, #+8]
+   \       0x5C   0x1E40             SUBS     R0,R0,#+1
+   \       0x5E   0x078A             LSLS     R2,R1,#+30
+   \       0x60   0xD501             BPL.N    ??I2C_BusFreqSet_3
+   \       0x62   0xB900             CBNZ.N   R0,??I2C_BusFreqSet_3
+    385              div = 1;
+   \       0x64   0x2001             MOVS     R0,#+1
+    386            }
+    387            i2c->CLKDIV = (uint32_t)div;
+   \                     ??I2C_BusFreqSet_3: (+1)
+   \       0x66   0x61B0             STR      R0,[R6, #+24]
+    388          }
+   \                     ??I2C_BusFreqSet_0: (+1)
+   \       0x68   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    389          
+    390          /***************************************************************************//**
+    391           * @brief
+    392           *   Enable/disable I2C.
+    393           *
+    394           * @note
+    395           *   After enabling the I2C (from being disabled), the I2C is in BUSY state.
+    396           *
+    397           * @param[in] i2c
+    398           *   A pointer to the I2C peripheral register block.
+    399           *
+    400           * @param[in] enable
+    401           *   True to enable counting, false to disable.
+    402           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    403          void I2C_Enable(I2C_TypeDef *i2c, bool enable)
+    404          {
+   \                     I2C_Enable: (+1)
+   \        0x0   0x460A             MOV      R2,R1
+    405            EFM_ASSERT(I2C_REF_VALID(i2c));
+    406          
+    407          #if defined (_I2C_EN_MASK)
+    408            BUS_RegBitWrite(&(i2c->EN), _I2C_EN_EN_SHIFT, enable);
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x1D00             ADDS     R0,R0,#+4
+   \        0x6   0x....             B.N      BUS_RegBitWrite
+    409          #else
+    410            BUS_RegBitWrite(&(i2c->CTRL), _I2C_CTRL_EN_SHIFT, enable);
+    411          #endif
+    412          }
+    413          
+    414          /***************************************************************************//**
+    415           * @brief
+    416           *   Initialize I2C.
+    417           *
+    418           * @param[in] i2c
+    419           *   A pointer to the I2C peripheral register block.
+    420           *
+    421           * @param[in] init
+    422           *   A pointer to the I2C initialization structure.
+    423           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    424          void I2C_Init(I2C_TypeDef *i2c, const I2C_Init_TypeDef *init)
+    425          {
+   \                     I2C_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    426            EFM_ASSERT(I2C_REF_VALID(i2c));
+    427          
+    428            i2c->IEN = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x6420             STR      R0,[R4, #+64]
+    429            I2C_IntClear(i2c, _I2C_IF_MASK);
+   \        0xA   0x....             LDR.N    R1,??DataTable6_3  ;; 0x1fffff
+   \        0xC   0xF242 0x023C      MOVW     R2,#+8252
+   \       0x10   0x50A1             STR      R1,[R4, R2]
+    430          
+    431            /* Set SLAVE select mode. */
+    432            BUS_RegBitWrite(&(i2c->CTRL), _I2C_CTRL_SLAVE_SHIFT, init->master ? 0 : 1);
+   \       0x12   0x7868             LDRB     R0,[R5, #+1]
+   \       0x14   0x1E42             SUBS     R2,R0,#+1
+   \       0x16   0x4192             SBCS     R2,R2,R2
+   \       0x18   0x0FD2             LSRS     R2,R2,#+31
+   \       0x1A   0x2101             MOVS     R1,#+1
+   \       0x1C   0xF104 0x0008      ADD      R0,R4,#+8
+   \       0x20   0x....'....        BL       BUS_RegBitWrite
+    433          
+    434            I2C_BusFreqSet(i2c, init->refFreq, init->freq, init->clhr);
+   \       0x24   0x7B2B             LDRB     R3,[R5, #+12]
+   \       0x26   0x68AA             LDR      R2,[R5, #+8]
+   \       0x28   0x6869             LDR      R1,[R5, #+4]
+   \       0x2A   0x4620             MOV      R0,R4
+   \       0x2C   0x....'....        BL       I2C_BusFreqSet
+    435          
+    436            I2C_Enable(i2c, init->enable);
+   \       0x30   0x7829             LDRB     R1,[R5, #+0]
+   \       0x32   0x4620             MOV      R0,R4
+   \       0x34   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \       0x38   0x....             B.N      I2C_Enable
+    437          }
+    438          
+    439          /***************************************************************************//**
+    440           * @brief
+    441           *   Reset I2C to the same state that it was in after a hardware reset.
+    442           *
+    443           * @note
+    444           *   The ROUTE register is NOT reset by this function to allow for
+    445           *   centralized setup of this feature.
+    446           *
+    447           * @param[in] i2c
+    448           *   A pointer to the I2C peripheral register block.
+    449           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    450          void I2C_Reset(I2C_TypeDef *i2c)
+    451          {
+   \                     I2C_Reset: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    452            // Cancel ongoing operations and clear TX buffer
+    453            i2c->CMD       = I2C_CMD_CLEARPC | I2C_CMD_CLEARTX | I2C_CMD_ABORT;
+   \        0x4   0x20E0             MOVS     R0,#+224
+   \        0x6   0x60E0             STR      R0,[R4, #+12]
+    454            i2c->CTRL      = _I2C_CTRL_RESETVALUE;
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x60A1             STR      R1,[R4, #+8]
+    455            i2c->CLKDIV    = _I2C_CLKDIV_RESETVALUE;
+   \        0xC   0x61A1             STR      R1,[R4, #+24]
+    456            i2c->SADDR     = _I2C_SADDR_RESETVALUE;
+   \        0xE   0x61E1             STR      R1,[R4, #+28]
+    457            i2c->SADDRMASK = _I2C_SADDRMASK_RESETVALUE;
+   \       0x10   0x6221             STR      R1,[R4, #+32]
+    458            i2c->IEN       = _I2C_IEN_RESETVALUE;
+   \       0x12   0x6421             STR      R1,[R4, #+64]
+    459          #if defined (_I2C_EN_EN_MASK)
+    460            i2c->EN      = _I2C_EN_RESETVALUE;
+   \       0x14   0x6061             STR      R1,[R4, #+4]
+    461          #endif
+    462          
+    463            // Empty received data buffer
+    464            flushRx(i2c);
+   \       0x16   0x4620             MOV      R0,R4
+   \       0x18   0x....'....        BL       flushRx
+    465            I2C_IntClear(i2c, _I2C_IF_MASK);
+   \       0x1C   0x....             LDR.N    R1,??DataTable6_3  ;; 0x1fffff
+   \       0x1E   0xF242 0x003C      MOVW     R0,#+8252
+   \       0x22   0x5021             STR      R1,[R4, R0]
+    466            /* Do not reset the route register; setting should be done independently. */
+    467          }
+   \       0x24   0xBD10             POP      {R4,PC}          ;; return
+    468          
+    469          /***************************************************************************//**
+    470           * @brief
+    471           *   Continue an initiated I2C transfer (single master mode only).
+    472           *
+    473           * @details
+    474           *   This function is used repeatedly after a I2C_TransferInit() to
+    475           *   complete a transfer. It may be used in polled mode as the below example
+    476           *   shows:
+    477           * @verbatim
+    478           * I2C_TransferReturn_TypeDef ret;
+    479           *
+    480           * // Do a polled transfer
+    481           * ret = I2C_TransferInit(I2C0, seq);
+    482           * while (ret == i2cTransferInProgress)
+    483           * {
+    484           *   ret = I2C_Transfer(I2C0);
+    485           * }
+    486           * @endverbatim
+    487           *  It may also be used in interrupt driven mode, where this function is invoked
+    488           *  from the interrupt handler. Notice that, if used in interrupt mode, NVIC
+    489           *  interrupts must be configured and enabled for the I2C bus used. I2C
+    490           *  peripheral specific interrupts are managed by this software.
+    491           *
+    492           * @note
+    493           *   Only single master mode is supported.
+    494           *
+    495           * @param[in] i2c
+    496           *   A pointer to the I2C peripheral register block.
+    497           *
+    498           * @return
+    499           *   Returns status for an ongoing transfer.
+    500           *   @li #i2cTransferInProgress - indicates that transfer not finished.
+    501           *   @li #i2cTransferDone - transfer completed successfully.
+    502           *   @li otherwise some sort of error has occurred.
+    503           *
+    504           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    505          I2C_TransferReturn_TypeDef I2C_Transfer(I2C_TypeDef *i2c)
+    506          {
+   \                     I2C_Transfer: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    507            uint32_t                tmp;
+    508            uint32_t                pending;
+    509            I2C_Transfer_TypeDef    *transfer;
+    510            I2C_TransferSeq_TypeDef *seq;
+    511          
+    512            EFM_ASSERT(I2C_REF_VALID(i2c));
+    513          
+    514            /* Support up to 2 I2C buses. */
+    515            if (i2c == I2C0) {
+   \        0x2   0x....             LDR.N    R0,??DataTable6  ;; 0x4a010000
+   \        0x4   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x6   0x....             LDR.N    R2,??DataTable6_4
+   \        0x8   0x4281             CMP      R1,R0
+   \        0xA   0xD105             BNE.N    ??I2C_Transfer_1
+    516              transfer = i2cTransfer;
+    517            }
+    518          #if (I2C_COUNT > 1)
+    519            else if (i2c == I2C1) {
+    520              transfer = i2cTransfer + 1;
+    521            }
+    522          #endif
+    523          #if (I2C_COUNT > 2)
+    524            else if (i2c == I2C2) {
+    525              transfer = i2cTransfer + 2;
+    526            }
+    527          #endif
+    528            else {
+    529              return i2cTransferUsageFault;
+    530            }
+    531          
+    532            seq = transfer->seq;
+   \                     ??I2C_Transfer_2: (+1)
+   \        0xC   0x6893             LDR      R3,[R2, #+8]
+   \        0xE   0xF242 0x043C      MOVW     R4,#+8252
+   \       0x12   0xF103 0x0708      ADD      R7,R3,#+8
+   \       0x16   0xE021             B.N      ??I2C_Transfer_3
+   \                     ??I2C_Transfer_1: (+1)
+   \       0x18   0x....             LDR.N    R0,??DataTable6_1  ;; 0x40068000
+   \       0x1A   0x4281             CMP      R1,R0
+   \       0x1C   0xBF08             IT       EQ 
+   \       0x1E   0x320C             ADDEQ    R2,R2,#+12
+   \       0x20   0xD0F4             BEQ.N    ??I2C_Transfer_2
+   \       0x22   0xF06F 0x0003      MVN      R0,#+3
+   \       0x26   0xBDF0             POP      {R4-R7,PC}
+    533            for (;; ) {
+    534              pending = i2c->IF;
+    535          
+    536              /* If some sort of fault, abort transfer. */
+    537              if (pending & I2C_IF_ERRORS) {
+    538                if (pending & I2C_IF_ARBLOST) {
+    539                  /* If an arbitration fault, indicates either a slave device */
+    540                  /* not responding as expected, or other master which is not */
+    541                  /* supported by this software. */
+    542                  transfer->result = i2cTransferArbLost;
+    543                } else if (pending & I2C_IF_BUSERR) {
+    544                  /* A bus error indicates a misplaced start or stop, which should */
+    545                  /* not occur in master mode controlled by this software. */
+    546                  transfer->result = i2cTransferBusErr;
+    547                }
+    548          
+    549                /* Ifan error occurs, it is difficult to know */
+    550                /* an exact cause and how to resolve. It will be up to a wrapper */
+    551                /* to determine how to handle a fault/recovery if possible. */
+    552                transfer->state = i2cStateDone;
+    553                goto done;
+    554              }
+    555          
+    556              switch (transfer->state) {
+   \                     ??I2C_Transfer_4: (+1)
+   \       0x28   0x7816             LDRB     R6,[R2, #+0]
+   \       0x2A   0xF005 0x0040      AND      R0,R5,#0x40
+   \       0x2E   0x2E08             CMP      R6,#+8
+   \       0x30   0xF200 0x80E0      BHI.W    ??I2C_Transfer_5
+   \       0x34   0xE8DF 0xF006      TBB      [PC, R6]
+   \                     ??I2C_Transfer_0:
+   \       0x38   0x23 0x05          DC8      0x23,0x5,0x54,0xAB
+   \              0x54 0xAB    
+   \       0x3C   0x6B 0x7D          DC8      0x6B,0x7D,0x93,0xB7
+   \              0x93 0xB7    
+   \       0x40   0xD6 0x00          DC8      0xD6,0x0
+    557                /***************************************************/
+    558                /* Send the first start+address (first byte if 10 bit). */
+    559                /***************************************************/
+    560                case i2cStateStartAddrSend:
+    561                  if (seq->flags & I2C_FLAG_10BIT_ADDR) {
+    562                    tmp = (((uint32_t)(seq->addr) >> 8) & 0x06) | 0xf0;
+    563          
+    564                    /* In 10 bit address mode, the address following the first */
+    565                    /* start always indicates write. */
+    566                  } else {
+    567                    tmp = (uint32_t)(seq->addr) & 0xfe;
+    568          
+    569                    if (seq->flags & I2C_FLAG_READ) {
+    570                      /* Indicate read request */
+    571                      tmp |= 1;
+    572                    }
+    573                  }
+    574          
+    575                  transfer->state = i2cStateAddrWFAckNack;
+    576                  i2c->TXDATA     = tmp;/* Data not transmitted until the START is sent. */
+    577                  i2c->CMD        = I2C_CMD_START;
+    578                  goto done;
+    579          
+    580                /*******************************************************/
+    581                /* Wait for ACK/NACK on the address (first byte if 10 bit). */
+    582                /*******************************************************/
+    583                case i2cStateAddrWFAckNack:
+    584                  if (pending & I2C_IF_NACK) {
+   \                     ??I2C_Transfer_6: (+1)
+   \       0x42   0x062D             LSLS     R5,R5,#+24
+   \       0x44   0xD465             BMI.N    ??I2C_Transfer_7
+    585                    I2C_IntClear(i2c, I2C_IF_NACK);
+    586                    transfer->result = i2cTransferNack;
+    587                    transfer->state  = i2cStateWFStopSent;
+    588                    i2c->CMD         = I2C_CMD_STOP;
+    589                  } else if (pending & I2C_IF_ACK) {
+   \       0x46   0x2800             CMP      R0,#+0
+   \       0x48   0xD071             BEQ.N    ??I2C_Transfer_8
+    590                    I2C_IntClear(i2c, I2C_IF_ACK);
+   \       0x4A   0x2040             MOVS     R0,#+64
+   \       0x4C   0x5108             STR      R0,[R1, R4]
+    591          
+    592                    /* If a 10 bit address, send the 2nd byte of the address. */
+    593                    if (seq->flags & I2C_FLAG_10BIT_ADDR) {
+   \       0x4E   0x8858             LDRH     R0,[R3, #+2]
+   \       0x50   0x06C5             LSLS     R5,R0,#+27
+   \       0x52   0xD435             BMI.N    ??I2C_Transfer_9
+    594                      transfer->state = i2cStateAddrWF2ndAckNack;
+    595                      i2c->TXDATA     = (uint32_t)(seq->addr) & 0xff;
+    596                    } else {
+    597                      /* Determine whether receiving or sending data. */
+    598                      if (seq->flags & I2C_FLAG_READ) {
+   \       0x54   0x0780             LSLS     R0,R0,#+30
+   \       0x56   0xD438             BMI.N    ??I2C_Transfer_10
+    599                        transfer->state = i2cStateWFData;
+    600                        if (seq->buf[transfer->bufIndx].len == 1) {
+    601                          i2c->CMD  = I2C_CMD_NACK;
+    602                        }
+    603                      } else {
+    604                        transfer->state = i2cStateDataSend;
+   \                     ??I2C_Transfer_11: (+1)
+   \       0x58   0x2505             MOVS     R5,#+5
+   \                     ??I2C_Transfer_12: (+1)
+   \       0x5A   0x7015             STRB     R5,[R2, #+0]
+    605                        continue;
+    606                      }
+   \                     ??I2C_Transfer_3: (+1)
+   \       0x5C   0x6BCD             LDR      R5,[R1, #+60]
+   \       0x5E   0xF415 0x6FC0      TST      R5,#0x600
+   \       0x62   0xD0E1             BEQ.N    ??I2C_Transfer_4
+   \       0x64   0x05A8             LSLS     R0,R5,#+22
+   \       0x66   0xBF48             IT       MI 
+   \       0x68   0xF06F 0x0302      MVNMI    R3,#+2
+   \       0x6C   0xD403             BMI.N    ??I2C_Transfer_13
+   \       0x6E   0x0568             LSLS     R0,R5,#+21
+   \       0x70   0xD502             BPL.N    ??I2C_Transfer_14
+   \       0x72   0xF06F 0x0301      MVN      R3,#+1
+   \                     ??I2C_Transfer_13: (+1)
+   \       0x76   0x7053             STRB     R3,[R2, #+1]
+   \                     ??I2C_Transfer_14: (+1)
+   \       0x78   0x2009             MOVS     R0,#+9
+   \       0x7A   0x7010             STRB     R0,[R2, #+0]
+   \       0x7C   0xE016             B.N      ??I2C_Transfer_15
+   \                     ??I2C_Transfer_16: (+1)
+   \       0x7E   0x8858             LDRH     R0,[R3, #+2]
+   \       0x80   0x881B             LDRH     R3,[R3, #+0]
+   \       0x82   0x06C4             LSLS     R4,R0,#+27
+   \       0x84   0xD505             BPL.N    ??I2C_Transfer_17
+   \       0x86   0x0A1B             LSRS     R3,R3,#+8
+   \       0x88   0xF003 0x0306      AND      R3,R3,#0x6
+   \       0x8C   0xF043 0x03F0      ORR      R3,R3,#0xF0
+   \       0x90   0xE005             B.N      ??I2C_Transfer_18
+   \                     ??I2C_Transfer_17: (+1)
+   \       0x92   0xF003 0x03FE      AND      R3,R3,#0xFE
+   \       0x96   0x0780             LSLS     R0,R0,#+30
+   \       0x98   0xBF48             IT       MI 
+   \       0x9A   0xF043 0x0301      ORRMI    R3,R3,#0x1
+   \                     ??I2C_Transfer_18: (+1)
+   \       0x9E   0x2001             MOVS     R0,#+1
+   \       0xA0   0x7010             STRB     R0,[R2, #+0]
+   \       0xA2   0x634B             STR      R3,[R1, #+52]
+   \                     ??I2C_Transfer_19: (+1)
+   \       0xA4   0x60C8             STR      R0,[R1, #+12]
+    607                    }
+    608                  }
+    609                  goto done;
+    610          
+    611                /******************************************************/
+    612                /* Wait for ACK/NACK on the second byte of a 10 bit address. */
+    613                /******************************************************/
+    614                case i2cStateAddrWF2ndAckNack:
+    615                  if (pending & I2C_IF_NACK) {
+    616                    I2C_IntClear(i2c, I2C_IF_NACK);
+    617                    transfer->result = i2cTransferNack;
+    618                    transfer->state  = i2cStateWFStopSent;
+    619                    i2c->CMD         = I2C_CMD_STOP;
+    620                  } else if (pending & I2C_IF_ACK) {
+    621                    I2C_IntClear(i2c, I2C_IF_ACK);
+    622          
+    623                    /* If using a plain read sequence with a 10 bit address, switch to send */
+    624                    /* a repeated start. */
+    625                    if (seq->flags & I2C_FLAG_READ) {
+    626                      transfer->state = i2cStateRStartAddrSend;
+    627                    }
+    628                    /* Otherwise, expected to write 0 or more bytes. */
+    629                    else {
+    630                      transfer->state = i2cStateDataSend;
+    631                    }
+    632                    continue;
+    633                  }
+    634                  goto done;
+    635          
+    636                /*******************************/
+    637                /* Send a repeated start+address */
+    638                /*******************************/
+    639                case i2cStateRStartAddrSend:
+    640                  if (seq->flags & I2C_FLAG_10BIT_ADDR) {
+    641                    tmp = ((seq->addr >> 8) & 0x06) | 0xf0;
+    642                  } else {
+    643                    tmp = seq->addr & 0xfe;
+    644                  }
+    645          
+    646                  /* If this is a write+read combined sequence, read is about to start. */
+    647                  if (seq->flags & I2C_FLAG_WRITE_READ) {
+    648                    /* Indicate a read request. */
+    649                    tmp |= 1;
+    650                  }
+    651          
+    652                  transfer->state = i2cStateRAddrWFAckNack;
+    653                  /* The START command has to be written first since repeated start. Otherwise, */
+    654                  /* data would be sent first. */
+    655                  i2c->CMD    = I2C_CMD_START;
+    656                  i2c->TXDATA = tmp;
+    657                  goto done;
+    658          
+    659                /**********************************************************************/
+    660                /* Wait for ACK/NACK on the repeated start+address (first byte if 10 bit) */
+    661                /**********************************************************************/
+    662                case i2cStateRAddrWFAckNack:
+    663                  if (pending & I2C_IF_NACK) {
+    664                    I2C_IntClear(i2c, I2C_IF_NACK);
+    665                    transfer->result = i2cTransferNack;
+    666                    transfer->state  = i2cStateWFStopSent;
+    667                    i2c->CMD         = I2C_CMD_STOP;
+    668                  } else if (pending & I2C_IF_ACK) {
+    669                    I2C_IntClear(i2c, I2C_IF_ACK);
+    670          
+    671                    /* Determine whether receiving or sending data. */
+    672                    if (seq->flags & I2C_FLAG_WRITE_READ) {
+    673                      transfer->state = i2cStateWFData;
+    674                    } else {
+    675                      transfer->state = i2cStateDataSend;
+    676                      continue;
+    677                    }
+    678                  }
+    679                  goto done;
+    680          
+    681                /*****************************/
+    682                /* Send a data byte to the slave */
+    683                /*****************************/
+    684                case i2cStateDataSend:
+    685                  /* Reached end of data buffer. */
+    686                  if (transfer->offset >= seq->buf[transfer->bufIndx].len) {
+    687                    /* Move to the next message part. */
+    688                    transfer->offset = 0;
+    689                    transfer->bufIndx++;
+    690          
+    691                    /* Send a repeated start when switching to read mode on the 2nd buffer. */
+    692                    if (seq->flags & I2C_FLAG_WRITE_READ) {
+    693                      transfer->state = i2cStateRStartAddrSend;
+    694                      continue;
+    695                    }
+    696          
+    697                    /* Only writing from one buffer or finished both buffers. */
+    698                    if ((seq->flags & I2C_FLAG_WRITE) || (transfer->bufIndx > 1)) {
+    699                      transfer->state = i2cStateWFStopSent;
+    700                      i2c->CMD        = I2C_CMD_STOP;
+    701                      goto done;
+    702                    }
+    703          
+    704                    /* Reprocess in case the next buffer is empty. */
+    705                    continue;
+    706                  }
+    707          
+    708                  /* Send byte. */
+    709                  i2c->TXDATA     = (uint32_t)(seq->buf[transfer->bufIndx].data[transfer->offset++]);
+    710                  transfer->state = i2cStateDataWFAckNack;
+    711                  goto done;
+    712          
+    713                /*********************************************************/
+    714                /* Wait for ACK/NACK from the slave after sending data to it. */
+    715                /*********************************************************/
+    716                case i2cStateDataWFAckNack:
+    717                  if (pending & I2C_IF_NACK) {
+    718                    I2C_IntClear(i2c, I2C_IF_NACK);
+    719                    transfer->result = i2cTransferNack;
+    720                    transfer->state  = i2cStateWFStopSent;
+    721                    i2c->CMD         = I2C_CMD_STOP;
+    722                  } else if (pending & I2C_IF_ACK) {
+    723                    I2C_IntClear(i2c, I2C_IF_ACK);
+    724                    transfer->state = i2cStateDataSend;
+    725                    continue;
+    726                  }
+    727                  goto done;
+    728          
+    729                /****************************/
+    730                /* Wait for data from slave */
+    731                /****************************/
+    732                case i2cStateWFData:
+    733                  if (pending & I2C_IF_RXDATAV) {
+    734                    uint8_t       data;
+    735                    unsigned int  rxLen = seq->buf[transfer->bufIndx].len;
+    736          
+    737                    /* Must read out data not to block further progress. */
+    738                    data = (uint8_t)(i2c->RXDATA);
+    739          
+    740                    /* SW needs to clear RXDATAV IF on Series 2 devices.
+    741                       Flag is kept high by HW if buffer is not empty. */
+    742          #if defined(_SILICON_LABS_32B_SERIES_2)
+    743                    I2C_IntClear(i2c, I2C_IF_RXDATAV);
+    744          #endif
+    745          
+    746                    /* Make sure that there is no storing beyond the end of the buffer (just in case). */
+    747                    if (transfer->offset < rxLen) {
+    748                      seq->buf[transfer->bufIndx].data[transfer->offset++] = data;
+    749                    }
+    750          
+    751                    /* If all requested data is read, the sequence should end. */
+    752                    if (transfer->offset >= rxLen) {
+    753                      /* If receiving only one byte, transmit
+    754                         the NACK now before stopping. */
+    755                      if (1 == rxLen) {
+    756                        i2c->CMD  = I2C_CMD_NACK;
+    757                      }
+    758          
+    759                      transfer->state = i2cStateWFStopSent;
+    760                      i2c->CMD        = I2C_CMD_STOP;
+    761                    } else {
+    762                      /* Send ACK and wait for the next byte. */
+    763                      i2c->CMD = I2C_CMD_ACK;
+    764          
+    765                      if ( (1 < rxLen) && (transfer->offset == (rxLen - 1)) ) {
+    766                        /* If receiving more than one byte and this is the next
+    767                           to last byte, transmit the NACK now before receiving
+    768                           the last byte. */
+    769                        i2c->CMD  = I2C_CMD_NACK;
+    770                      }
+    771                    }
+    772                  }
+    773                  goto done;
+    774          
+    775                /***********************************/
+    776                /* Wait for STOP to have been sent */
+    777                /***********************************/
+    778                case i2cStateWFStopSent:
+    779                  if (pending & I2C_IF_MSTOP) {
+    780                    I2C_IntClear(i2c, I2C_IF_MSTOP);
+    781                    transfer->state = i2cStateDone;
+    782                  }
+    783                  goto done;
+    784          
+    785                /******************************/
+    786                /* An unexpected state, software fault */
+    787                /******************************/
+    788                default:
+    789                  transfer->result = i2cTransferSwFault;
+    790                  transfer->state  = i2cStateDone;
+    791                  goto done;
+    792              }
+    793            }
+    794          
+    795            done:
+    796          
+    797            if (transfer->state == i2cStateDone) {
+   \                     ??I2C_Transfer_20: (+1)
+   \       0xA6   0x7810             LDRB     R0,[R2, #+0]
+   \       0xA8   0x2809             CMP      R0,#+9
+   \       0xAA   0xD140             BNE.N    ??I2C_Transfer_8
+    798              /* Disable interrupt sources when done. */
+    799              i2c->IEN = 0;
+   \                     ??I2C_Transfer_15: (+1)
+   \       0xAC   0x2300             MOVS     R3,#+0
+   \       0xAE   0x640B             STR      R3,[R1, #+64]
+    800          
+    801              /* Update the result unless a fault has already occurred. */
+    802              if (transfer->result == i2cTransferInProgress) {
+   \       0xB0   0xF992 0x0001      LDRSB    R0,[R2, #+1]
+   \       0xB4   0x2801             CMP      R0,#+1
+   \       0xB6   0xBF08             IT       EQ 
+   \       0xB8   0x7053             STRBEQ   R3,[R2, #+1]
+    803                transfer->result = i2cTransferDone;
+    804              }
+    805            }
+    806            /* Until transfer is done, keep returning i2cTransferInProgress. */
+    807            else {
+    808              return i2cTransferInProgress;
+    809            }
+    810          
+    811            return transfer->result;
+   \       0xBA   0xF992 0x0001      LDRSB    R0,[R2, #+1]
+   \       0xBE   0xBDF0             POP      {R4-R7,PC}
+   \                     ??I2C_Transfer_9: (+1)
+   \       0xC0   0x2002             MOVS     R0,#+2
+   \       0xC2   0x7010             STRB     R0,[R2, #+0]
+   \       0xC4   0x781B             LDRB     R3,[R3, #+0]
+   \       0xC6   0x634B             STR      R3,[R1, #+52]
+   \       0xC8   0xE7ED             B.N      ??I2C_Transfer_20
+   \                     ??I2C_Transfer_10: (+1)
+   \       0xCA   0x2007             MOVS     R0,#+7
+   \       0xCC   0x7010             STRB     R0,[R2, #+0]
+   \       0xCE   0x7914             LDRB     R4,[R2, #+4]
+   \       0xD0   0x3308             ADDS     R3,R3,#+8
+   \       0xD2   0xF833 0x0034      LDRH     R0,[R3, R4, LSL #+3]
+   \       0xD6   0x2801             CMP      R0,#+1
+   \       0xD8   0xD129             BNE.N    ??I2C_Transfer_8
+   \       0xDA   0x2308             MOVS     R3,#+8
+   \       0xDC   0x60CB             STR      R3,[R1, #+12]
+   \       0xDE   0xE7E2             B.N      ??I2C_Transfer_20
+   \                     ??I2C_Transfer_21: (+1)
+   \       0xE0   0x062D             LSLS     R5,R5,#+24
+   \       0xE2   0xD416             BMI.N    ??I2C_Transfer_7
+   \       0xE4   0xB318             CBZ.N    R0,??I2C_Transfer_8
+   \       0xE6   0x2040             MOVS     R0,#+64
+   \       0xE8   0x5108             STR      R0,[R1, R4]
+   \       0xEA   0x789D             LDRB     R5,[R3, #+2]
+   \       0xEC   0x07A8             LSLS     R0,R5,#+30
+   \       0xEE   0xBF48             IT       MI 
+   \       0xF0   0x2503             MOVMI    R5,#+3
+   \       0xF2   0xD4B2             BMI.N    ??I2C_Transfer_12
+   \                     ??I2C_Transfer_22: (+1)
+   \       0xF4   0x2005             MOVS     R0,#+5
+   \                     ??I2C_Transfer_23: (+1)
+   \       0xF6   0x7010             STRB     R0,[R2, #+0]
+   \                     ??I2C_Transfer_24: (+1)
+   \       0xF8   0xE7B0             B.N      ??I2C_Transfer_3
+   \                     ??I2C_Transfer_25: (+1)
+   \       0xFA   0x0763             LSLS     R3,R4,#+29
+   \       0xFC   0xBF48             IT       MI 
+   \       0xFE   0xF040 0x0001      ORRMI    R0,R0,#0x1
+   \      0x102   0x2304             MOVS     R3,#+4
+   \      0x104   0x7013             STRB     R3,[R2, #+0]
+   \      0x106   0x2401             MOVS     R4,#+1
+   \      0x108   0x60CC             STR      R4,[R1, #+12]
+   \      0x10A   0x6348             STR      R0,[R1, #+52]
+   \      0x10C   0xE7CB             B.N      ??I2C_Transfer_20
+   \                     ??I2C_Transfer_26: (+1)
+   \      0x10E   0x062D             LSLS     R5,R5,#+24
+   \      0x110   0xD505             BPL.N    ??I2C_Transfer_27
+   \                     ??I2C_Transfer_7: (+1)
+   \      0x112   0x2080             MOVS     R0,#+128
+   \      0x114   0x5108             STR      R0,[R1, R4]
+   \      0x116   0xF04F 0x33FF      MOV      R3,#-1
+   \      0x11A   0x7053             STRB     R3,[R2, #+1]
+   \      0x11C   0xE05E             B.N      ??I2C_Transfer_28
+   \                     ??I2C_Transfer_27: (+1)
+   \      0x11E   0xB130             CBZ.N    R0,??I2C_Transfer_8
+   \      0x120   0x2040             MOVS     R0,#+64
+   \      0x122   0x5108             STR      R0,[R1, R4]
+   \      0x124   0x789D             LDRB     R5,[R3, #+2]
+   \      0x126   0x0768             LSLS     R0,R5,#+29
+   \      0x128   0xD5E4             BPL.N    ??I2C_Transfer_22
+   \      0x12A   0x2107             MOVS     R1,#+7
+   \                     ??I2C_Transfer_29: (+1)
+   \      0x12C   0x7011             STRB     R1,[R2, #+0]
+   \                     ??I2C_Transfer_8: (+1)
+   \      0x12E   0x2001             MOVS     R0,#+1
+   \      0x130   0xBDF0             POP      {R4-R7,PC}       ;; return
+   \                     ??I2C_Transfer_30: (+1)
+   \      0x132   0x7910             LDRB     R0,[R2, #+4]
+   \      0x134   0x8856             LDRH     R6,[R2, #+2]
+   \      0x136   0x4605             MOV      R5,R0
+   \      0x138   0xF837 0xC035      LDRH     R12,[R7, R5, LSL #+3]
+   \      0x13C   0x4566             CMP      R6,R12
+   \      0x13E   0xD35F             BCC.N    ??I2C_Transfer_31
+   \      0x140   0x2500             MOVS     R5,#+0
+   \      0x142   0x1C40             ADDS     R0,R0,#+1
+   \      0x144   0x8055             STRH     R5,[R2, #+2]
+   \      0x146   0x7110             STRB     R0,[R2, #+4]
+   \      0x148   0x885D             LDRH     R5,[R3, #+2]
+   \      0x14A   0x076E             LSLS     R6,R5,#+29
+   \      0x14C   0xBF48             IT       MI 
+   \      0x14E   0x2003             MOVMI    R0,#+3
+   \      0x150   0xD4D1             BMI.N    ??I2C_Transfer_23
+   \      0x152   0x07ED             LSLS     R5,R5,#+31
+   \      0x154   0xD442             BMI.N    ??I2C_Transfer_28
+   \      0x156   0xB2C0             UXTB     R0,R0
+   \      0x158   0x2802             CMP      R0,#+2
+   \      0x15A   0xDBCD             BLT.N    ??I2C_Transfer_24
+   \      0x15C   0xE03E             B.N      ??I2C_Transfer_28
+   \                     ??I2C_Transfer_32: (+1)
+   \      0x15E   0x062D             LSLS     R5,R5,#+24
+   \      0x160   0xD406             BMI.N    ??I2C_Transfer_33
+   \      0x162   0x2800             CMP      R0,#+0
+   \      0x164   0xBF1C             ITT      NE 
+   \      0x166   0x2040             MOVNE    R0,#+64
+   \      0x168   0x5108             STRNE    R0,[R1, R4]
+   \      0x16A   0xF47F 0xAF75      BNE.W    ??I2C_Transfer_11
+   \      0x16E   0xE7DE             B.N      ??I2C_Transfer_8
+   \                     ??I2C_Transfer_33: (+1)
+   \      0x170   0x2380             MOVS     R3,#+128
+   \      0x172   0x510B             STR      R3,[R1, R4]
+   \      0x174   0xF04F 0x30FF      MOV      R0,#-1
+   \      0x178   0x7050             STRB     R0,[R2, #+1]
+   \      0x17A   0xE02F             B.N      ??I2C_Transfer_28
+   \                     ??I2C_Transfer_34: (+1)
+   \      0x17C   0x2404             MOVS     R4,#+4
+   \      0x17E   0x60CC             STR      R4,[R1, #+12]
+   \      0x180   0x2802             CMP      R0,#+2
+   \      0x182   0xD390             BCC.N    ??I2C_Transfer_20
+   \      0x184   0x1E40             SUBS     R0,R0,#+1
+   \      0x186   0x4283             CMP      R3,R0
+   \      0x188   0xD18D             BNE.N    ??I2C_Transfer_20
+   \      0x18A   0x2008             MOVS     R0,#+8
+   \      0x18C   0xE78A             B.N      ??I2C_Transfer_19
+   \                     ??I2C_Transfer_35: (+1)
+   \      0x18E   0x885C             LDRH     R4,[R3, #+2]
+   \      0x190   0x8818             LDRH     R0,[R3, #+0]
+   \      0x192   0x06E3             LSLS     R3,R4,#+27
+   \      0x194   0xBF43             ITTTE    MI 
+   \      0x196   0x0A00             LSRMI    R0,R0,#+8
+   \      0x198   0xF000 0x0006      ANDMI    R0,R0,#0x6
+   \      0x19C   0xF040 0x00F0      ORRMI    R0,R0,#0xF0
+   \      0x1A0   0xF000 0x00FE      ANDPL    R0,R0,#0xFE
+   \      0x1A4   0xE7A9             B.N      ??I2C_Transfer_25
+   \                     ??I2C_Transfer_36: (+1)
+   \      0x1A6   0x06A8             LSLS     R0,R5,#+26
+   \      0x1A8   0xD5C1             BPL.N    ??I2C_Transfer_8
+   \      0x1AA   0x7910             LDRB     R0,[R2, #+4]
+   \      0x1AC   0xF103 0x0508      ADD      R5,R3,#+8
+   \      0x1B0   0x2620             MOVS     R6,#+32
+   \      0x1B2   0xF835 0x0030      LDRH     R0,[R5, R0, LSL #+3]
+   \      0x1B6   0x6A4D             LDR      R5,[R1, #+36]
+   \      0x1B8   0x510E             STR      R6,[R1, R4]
+   \      0x1BA   0x8854             LDRH     R4,[R2, #+2]
+   \      0x1BC   0x4284             CMP      R4,R0
+   \      0x1BE   0xD206             BCS.N    ??I2C_Transfer_37
+   \      0x1C0   0x1C66             ADDS     R6,R4,#+1
+   \      0x1C2   0x8056             STRH     R6,[R2, #+2]
+   \      0x1C4   0x7916             LDRB     R6,[R2, #+4]
+   \      0x1C6   0x1D1B             ADDS     R3,R3,#+4
+   \      0x1C8   0xF853 0x3036      LDR      R3,[R3, R6, LSL #+3]
+   \      0x1CC   0x551D             STRB     R5,[R3, R4]
+   \                     ??I2C_Transfer_37: (+1)
+   \      0x1CE   0x8853             LDRH     R3,[R2, #+2]
+   \      0x1D0   0x4283             CMP      R3,R0
+   \      0x1D2   0xD3D3             BCC.N    ??I2C_Transfer_34
+   \      0x1D4   0x2801             CMP      R0,#+1
+   \      0x1D6   0xBF04             ITT      EQ 
+   \      0x1D8   0x2008             MOVEQ    R0,#+8
+   \      0x1DA   0x60C8             STREQ    R0,[R1, #+12]
+   \                     ??I2C_Transfer_28: (+1)
+   \      0x1DC   0x2308             MOVS     R3,#+8
+   \      0x1DE   0x7013             STRB     R3,[R2, #+0]
+   \      0x1E0   0x2002             MOVS     R0,#+2
+   \      0x1E2   0xE75F             B.N      ??I2C_Transfer_19
+   \                     ??I2C_Transfer_38: (+1)
+   \      0x1E4   0x05E8             LSLS     R0,R5,#+23
+   \      0x1E6   0xD5A2             BPL.N    ??I2C_Transfer_8
+   \      0x1E8   0xF44F 0x7380      MOV      R3,#+256
+   \      0x1EC   0x510B             STR      R3,[R1, R4]
+   \      0x1EE   0x2409             MOVS     R4,#+9
+   \      0x1F0   0x7014             STRB     R4,[R2, #+0]
+   \      0x1F2   0xE75B             B.N      ??I2C_Transfer_15
+   \                     ??I2C_Transfer_5: (+1)
+   \      0x1F4   0xF06F 0x0004      MVN      R0,#+4
+   \      0x1F8   0x7050             STRB     R0,[R2, #+1]
+   \      0x1FA   0x2309             MOVS     R3,#+9
+   \      0x1FC   0x7013             STRB     R3,[R2, #+0]
+   \      0x1FE   0xE755             B.N      ??I2C_Transfer_15
+   \                     ??I2C_Transfer_31: (+1)
+   \      0x200   0x1C70             ADDS     R0,R6,#+1
+   \      0x202   0x8050             STRH     R0,[R2, #+2]
+   \      0x204   0x1D1B             ADDS     R3,R3,#+4
+   \      0x206   0xF853 0x0035      LDR      R0,[R3, R5, LSL #+3]
+   \      0x20A   0x5D84             LDRB     R4,[R0, R6]
+   \      0x20C   0x634C             STR      R4,[R1, #+52]
+   \      0x20E   0x2106             MOVS     R1,#+6
+   \      0x210   0xE78C             B.N      ??I2C_Transfer_29
+    812          }
+    813          
+    814          /***************************************************************************//**
+    815           * @brief
+    816           *   Prepare and start an I2C transfer (single master mode only).
+    817           *
+    818           * @details
+    819           *   This function must be invoked to start an I2C transfer
+    820           *   sequence. To complete the transfer, I2C_Transfer() must
+    821           *   be used either in polled mode or by adding a small driver wrapper using
+    822           *   interrupts.
+    823           *
+    824           * @note
+    825           *   Only single master mode is supported.
+    826           *
+    827           * @param[in] i2c
+    828           *   A pointer to the I2C peripheral register block.
+    829           *
+    830           * @param[in] seq
+    831           *   A pointer to the sequence structure defining the I2C transfer to take place. The
+    832           *   referenced structure must exist until the transfer has fully completed.
+    833           *
+    834           * @return
+    835           *   Returns the status for an ongoing transfer:
+    836           *   @li #i2cTransferInProgress - indicates that the transfer is not finished.
+    837           *   @li Otherwise, an error has occurred.
+    838           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    839          I2C_TransferReturn_TypeDef I2C_TransferInit(I2C_TypeDef *i2c,
+    840                                                      I2C_TransferSeq_TypeDef *seq)
+    841          {
+   \                     I2C_TransferInit: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    842            I2C_Transfer_TypeDef *transfer;
+    843          
+    844            EFM_ASSERT(I2C_REF_VALID(i2c));
+    845            EFM_ASSERT(seq);
+    846          
+    847            /* Support up to 2 I2C buses. */
+    848            if (i2c == I2C0) {
+   \        0x4   0x....             LDR.N    R0,??DataTable6  ;; 0x4a010000
+   \        0x6   0x....             LDR.N    R2,??DataTable6_4
+   \        0x8   0x4284             CMP      R4,R0
+   \        0xA   0xD003             BEQ.N    ??I2C_TransferInit_0
+    849              transfer = i2cTransfer;
+    850            }
+    851          #if (I2C_COUNT > 1)
+    852            else if (i2c == I2C1) {
+   \        0xC   0x....             LDR.N    R3,??DataTable6_1  ;; 0x40068000
+   \        0xE   0x429C             CMP      R4,R3
+   \       0x10   0xD10E             BNE.N    ??I2C_TransferInit_1
+    853              transfer = i2cTransfer + 1;
+   \       0x12   0x320C             ADDS     R2,R2,#+12
+    854            }
+    855          #endif
+    856          #if (I2C_COUNT > 2)
+    857            else if (i2c == I2C2) {
+    858              transfer = i2cTransfer + 2;
+    859            }
+    860          #endif
+    861            else {
+    862              return i2cTransferUsageFault;
+    863            }
+    864          
+    865            /* Check if in a busy state. Since this software assumes a single master, */
+    866            /* issue an abort. The BUSY state is normal after a reset. */
+    867            if (i2c->STATE & I2C_STATE_BUSY) {
+   \                     ??I2C_TransferInit_0: (+1)
+   \       0x14   0x6920             LDR      R0,[R4, #+16]
+   \       0x16   0x07C3             LSLS     R3,R0,#+31
+   \       0x18   0xBF44             ITT      MI 
+   \       0x1A   0x2020             MOVMI    R0,#+32
+   \       0x1C   0x60E0             STRMI    R0,[R4, #+12]
+    868              i2c->CMD = I2C_CMD_ABORT;
+    869            }
+    870          
+    871            /* Do not try to read 0 bytes. It is not */
+    872            /* possible according to the I2C spec, since the slave will always start */
+    873            /* sending the first byte ACK on an address. The read operation can */
+    874            /* only be stopped by NACKing a received byte, i.e., minimum 1 byte. */
+    875            if (((seq->flags & I2C_FLAG_READ) && !(seq->buf[0].len))
+    876                || ((seq->flags & I2C_FLAG_WRITE_READ) && !(seq->buf[1].len))
+    877                ) {
+   \       0x1E   0x884B             LDRH     R3,[R1, #+2]
+   \       0x20   0x079D             LSLS     R5,R3,#+30
+   \       0x22   0xD501             BPL.N    ??I2C_TransferInit_2
+   \       0x24   0x8908             LDRH     R0,[R1, #+8]
+   \       0x26   0xB118             CBZ.N    R0,??I2C_TransferInit_1
+   \                     ??I2C_TransferInit_2: (+1)
+   \       0x28   0x075B             LSLS     R3,R3,#+29
+   \       0x2A   0xD504             BPL.N    ??I2C_TransferInit_3
+   \       0x2C   0x8A08             LDRH     R0,[R1, #+16]
+   \       0x2E   0xB910             CBNZ.N   R0,??I2C_TransferInit_3
+    878              return i2cTransferUsageFault;
+   \                     ??I2C_TransferInit_1: (+1)
+   \       0x30   0xF06F 0x0003      MVN      R0,#+3
+   \       0x34   0xBD32             POP      {R1,R4,R5,PC}
+    879            }
+    880          
+    881            /* Prepare for a transfer. */
+    882            transfer->state   = i2cStateStartAddrSend;
+   \                     ??I2C_TransferInit_3: (+1)
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x7010             STRB     R0,[R2, #+0]
+    883            transfer->result  = i2cTransferInProgress;
+   \       0x3A   0x2301             MOVS     R3,#+1
+    884            transfer->offset  = 0;
+    885            transfer->bufIndx = 0;
+    886            transfer->seq     = seq;
+   \       0x3C   0x6091             STR      R1,[R2, #+8]
+   \       0x3E   0x7053             STRB     R3,[R2, #+1]
+   \       0x40   0x8050             STRH     R0,[R2, #+2]
+   \       0x42   0x7110             STRB     R0,[R2, #+4]
+    887          
+    888            /* Ensure buffers are empty. */
+    889            i2c->CMD = I2C_CMD_CLEARPC | I2C_CMD_CLEARTX;
+   \       0x44   0x21C0             MOVS     R1,#+192
+   \       0x46   0x60E1             STR      R1,[R4, #+12]
+    890            flushRx(i2c);
+   \       0x48   0x4620             MOV      R0,R4
+   \       0x4A   0x....'....        BL       flushRx
+    891          
+    892            /* Clear all pending interrupts prior to starting a transfer. */
+    893            I2C_IntClear(i2c, _I2C_IF_MASK);
+   \       0x4E   0x....             LDR.N    R0,??DataTable6_3  ;; 0x1fffff
+   \       0x50   0xF242 0x013C      MOVW     R1,#+8252
+   \       0x54   0x5060             STR      R0,[R4, R1]
+    894          
+    895            /* Enable relevant interrupts. */
+    896            /* Notice that the I2C interrupt must also be enabled in the NVIC, but */
+    897            /* that is left for an additional driver wrapper. */
+    898            i2c->IEN |= I2C_IEN_NACK | I2C_IEN_ACK | I2C_IEN_MSTOP
+    899                        | I2C_IEN_RXDATAV | I2C_IEN_ERRORS;
+   \       0x56   0x6C22             LDR      R2,[R4, #+64]
+    900          
+    901            /* Start a transfer. */
+    902            return I2C_Transfer(i2c);
+   \       0x58   0x4620             MOV      R0,R4
+   \       0x5A   0xF442 0x62FC      ORR      R2,R2,#0x7E0
+   \       0x5E   0x6422             STR      R2,[R4, #+64]
+   \       0x60   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x64   0x....             B.N      I2C_Transfer
+    903          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x4A01'0000        DC32     0x4a010000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x4006'8000        DC32     0x40068000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     i2cNSum
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x001F'FFFF        DC32     0x1fffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     i2cTransfer
+    904          
+    905          /** @} (end addtogroup I2C) */
+    906          /** @} (end addtogroup emlib) */
+    907          #endif /* defined(I2C_COUNT) && (I2C_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BUS_RegBitWrite
+       0   BUS_RegMaskedWrite
+       8   I2C_BusFreqGet
+         8   -> CMU_ClockFreqGet
+      24   I2C_BusFreqSet
+        24   -> BUS_RegMaskedWrite
+        24   -> CMU_ClockFreqGet
+       0   I2C_Enable
+         0   -> BUS_RegBitWrite
+      16   I2C_Init
+        16   -> BUS_RegBitWrite
+        16   -> I2C_BusFreqSet
+         0   -> I2C_Enable
+       8   I2C_Reset
+         8   -> flushRx
+      20   I2C_Transfer
+      16   I2C_TransferInit
+         0   -> I2C_Transfer
+        16   -> flushRx
+       0   flushRx
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+      22  BUS_RegBitWrite
+      14  BUS_RegMaskedWrite
+      58  I2C_BusFreqGet
+     106  I2C_BusFreqSet
+       8  I2C_Enable
+      58  I2C_Init
+      38  I2C_Reset
+     530  I2C_Transfer
+     102  I2C_TransferInit
+      20  flushRx
+       4  i2cNSum
+      24  i2cTransfer
+
+ 
+  24 bytes in section .bss
+   4 bytes in section .rodata
+ 976 bytes in section .text
+ 
+ 976 bytes of CODE  memory
+   4 bytes of CONST memory
+  24 bytes of DATA  memory
+
+Errors: none
+Warnings: none

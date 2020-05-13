@@ -1,0 +1,462 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:20:06
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\xtea.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW7733.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\xtea.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"xtea.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\xtea.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\xtea.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\xtea.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  An 32-bit implementation of the XTEA algorithm
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_XTEA_C)
+     41          
+     42          #include "mbedtls/xtea.h"
+     43          
+     44          #include <string.h>
+     45          
+     46          #if defined(MBEDTLS_SELF_TEST)
+     47          #if defined(MBEDTLS_PLATFORM_C)
+     48          #include "mbedtls/platform.h"
+     49          #else
+     50          #include <stdio.h>
+     51          #define mbedtls_printf printf
+     52          #endif /* MBEDTLS_PLATFORM_C */
+     53          #endif /* MBEDTLS_SELF_TEST */
+     54          
+     55          #if !defined(MBEDTLS_XTEA_ALT)
+     56          
+     57          /* Implementation that should never be optimized out by the compiler */
+     58          static void mbedtls_zeroize( void *v, size_t n ) {
+     59              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     60          }
+     61          
+     62          /*
+     63           * 32-bit integer manipulation macros (big endian)
+     64           */
+     65          #ifndef GET_UINT32_BE
+     66          #define GET_UINT32_BE(n,b,i)                            \
+     67          {                                                       \
+     68              (n) = ( (uint32_t) (b)[(i)    ] << 24 )             \
+     69                  | ( (uint32_t) (b)[(i) + 1] << 16 )             \
+     70                  | ( (uint32_t) (b)[(i) + 2] <<  8 )             \
+     71                  | ( (uint32_t) (b)[(i) + 3]       );            \
+     72          }
+     73          #endif
+     74          
+     75          #ifndef PUT_UINT32_BE
+     76          #define PUT_UINT32_BE(n,b,i)                            \
+     77          {                                                       \
+     78              (b)[(i)    ] = (unsigned char) ( (n) >> 24 );       \
+     79              (b)[(i) + 1] = (unsigned char) ( (n) >> 16 );       \
+     80              (b)[(i) + 2] = (unsigned char) ( (n) >>  8 );       \
+     81              (b)[(i) + 3] = (unsigned char) ( (n)       );       \
+     82          }
+     83          #endif
+     84          
+     85          void mbedtls_xtea_init( mbedtls_xtea_context *ctx )
+     86          {
+     87              memset( ctx, 0, sizeof( mbedtls_xtea_context ) );
+     88          }
+     89          
+     90          void mbedtls_xtea_free( mbedtls_xtea_context *ctx )
+     91          {
+     92              if( ctx == NULL )
+     93                  return;
+     94          
+     95              mbedtls_zeroize( ctx, sizeof( mbedtls_xtea_context ) );
+     96          }
+     97          
+     98          /*
+     99           * XTEA key schedule
+    100           */
+    101          void mbedtls_xtea_setup( mbedtls_xtea_context *ctx, const unsigned char key[16] )
+    102          {
+    103              int i;
+    104          
+    105              memset( ctx, 0, sizeof(mbedtls_xtea_context) );
+    106          
+    107              for( i = 0; i < 4; i++ )
+    108              {
+    109                  GET_UINT32_BE( ctx->k[i], key, i << 2 );
+    110              }
+    111          }
+    112          
+    113          /*
+    114           * XTEA encrypt function
+    115           */
+    116          int mbedtls_xtea_crypt_ecb( mbedtls_xtea_context *ctx, int mode,
+    117                              const unsigned char input[8], unsigned char output[8])
+    118          {
+    119              uint32_t *k, v0, v1, i;
+    120          
+    121              k = ctx->k;
+    122          
+    123              GET_UINT32_BE( v0, input, 0 );
+    124              GET_UINT32_BE( v1, input, 4 );
+    125          
+    126              if( mode == MBEDTLS_XTEA_ENCRYPT )
+    127              {
+    128                  uint32_t sum = 0, delta = 0x9E3779B9;
+    129          
+    130                  for( i = 0; i < 32; i++ )
+    131                  {
+    132                      v0 += (((v1 << 4) ^ (v1 >> 5)) + v1) ^ (sum + k[sum & 3]);
+    133                      sum += delta;
+    134                      v1 += (((v0 << 4) ^ (v0 >> 5)) + v0) ^ (sum + k[(sum>>11) & 3]);
+    135                  }
+    136              }
+    137              else /* MBEDTLS_XTEA_DECRYPT */
+    138              {
+    139                  uint32_t delta = 0x9E3779B9, sum = delta * 32;
+    140          
+    141                  for( i = 0; i < 32; i++ )
+    142                  {
+    143                      v1 -= (((v0 << 4) ^ (v0 >> 5)) + v0) ^ (sum + k[(sum>>11) & 3]);
+    144                      sum -= delta;
+    145                      v0 -= (((v1 << 4) ^ (v1 >> 5)) + v1) ^ (sum + k[sum & 3]);
+    146                  }
+    147              }
+    148          
+    149              PUT_UINT32_BE( v0, output, 0 );
+    150              PUT_UINT32_BE( v1, output, 4 );
+    151          
+    152              return( 0 );
+    153          }
+    154          
+    155          #if defined(MBEDTLS_CIPHER_MODE_CBC)
+    156          /*
+    157           * XTEA-CBC buffer encryption/decryption
+    158           */
+    159          int mbedtls_xtea_crypt_cbc( mbedtls_xtea_context *ctx, int mode, size_t length,
+    160                              unsigned char iv[8], const unsigned char *input,
+    161                              unsigned char *output)
+    162          {
+    163              int i;
+    164              unsigned char temp[8];
+    165          
+    166              if( length % 8 )
+    167                  return( MBEDTLS_ERR_XTEA_INVALID_INPUT_LENGTH );
+    168          
+    169              if( mode == MBEDTLS_XTEA_DECRYPT )
+    170              {
+    171                  while( length > 0 )
+    172                  {
+    173                      memcpy( temp, input, 8 );
+    174                      mbedtls_xtea_crypt_ecb( ctx, mode, input, output );
+    175          
+    176                      for( i = 0; i < 8; i++ )
+    177                          output[i] = (unsigned char)( output[i] ^ iv[i] );
+    178          
+    179                      memcpy( iv, temp, 8 );
+    180          
+    181                      input  += 8;
+    182                      output += 8;
+    183                      length -= 8;
+    184                  }
+    185              }
+    186              else
+    187              {
+    188                  while( length > 0 )
+    189                  {
+    190                      for( i = 0; i < 8; i++ )
+    191                          output[i] = (unsigned char)( input[i] ^ iv[i] );
+    192          
+    193                      mbedtls_xtea_crypt_ecb( ctx, mode, output, output );
+    194                      memcpy( iv, output, 8 );
+    195          
+    196                      input  += 8;
+    197                      output += 8;
+    198                      length -= 8;
+    199                  }
+    200              }
+    201          
+    202              return( 0 );
+    203          }
+    204          #endif /* MBEDTLS_CIPHER_MODE_CBC */
+    205          #endif /* !MBEDTLS_XTEA_ALT */
+    206          
+    207          #if defined(MBEDTLS_SELF_TEST)
+    208          
+    209          /*
+    210           * XTEA tests vectors (non-official)
+    211           */
+    212          
+    213          static const unsigned char xtea_test_key[6][16] =
+    214          {
+    215             { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b,
+    216               0x0c, 0x0d, 0x0e, 0x0f },
+    217             { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b,
+    218               0x0c, 0x0d, 0x0e, 0x0f },
+    219             { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b,
+    220               0x0c, 0x0d, 0x0e, 0x0f },
+    221             { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    222               0x00, 0x00, 0x00, 0x00 },
+    223             { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    224               0x00, 0x00, 0x00, 0x00 },
+    225             { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    226               0x00, 0x00, 0x00, 0x00 }
+    227          };
+    228          
+    229          static const unsigned char xtea_test_pt[6][8] =
+    230          {
+    231              { 0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48 },
+    232              { 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41 },
+    233              { 0x5a, 0x5b, 0x6e, 0x27, 0x89, 0x48, 0xd7, 0x7f },
+    234              { 0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48 },
+    235              { 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41 },
+    236              { 0x70, 0xe1, 0x22, 0x5d, 0x6e, 0x4e, 0x76, 0x55 }
+    237          };
+    238          
+    239          static const unsigned char xtea_test_ct[6][8] =
+    240          {
+    241              { 0x49, 0x7d, 0xf3, 0xd0, 0x72, 0x61, 0x2c, 0xb5 },
+    242              { 0xe7, 0x8f, 0x2d, 0x13, 0x74, 0x43, 0x41, 0xd8 },
+    243              { 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41 },
+    244              { 0xa0, 0x39, 0x05, 0x89, 0xf8, 0xb8, 0xef, 0xa5 },
+    245              { 0xed, 0x23, 0x37, 0x5a, 0x82, 0x1a, 0x8c, 0x2d },
+    246              { 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41 }
+    247          };
+    248          
+    249          /*
+    250           * Checkup routine
+    251           */
+    252          int mbedtls_xtea_self_test( int verbose )
+    253          {
+    254              int i, ret = 0;
+    255              unsigned char buf[8];
+    256              mbedtls_xtea_context ctx;
+    257          
+    258              mbedtls_xtea_init( &ctx );
+    259              for( i = 0; i < 6; i++ )
+    260              {
+    261                  if( verbose != 0 )
+    262                      mbedtls_printf( "  XTEA test #%d: ", i + 1 );
+    263          
+    264                  memcpy( buf, xtea_test_pt[i], 8 );
+    265          
+    266                  mbedtls_xtea_setup( &ctx, xtea_test_key[i] );
+    267                  mbedtls_xtea_crypt_ecb( &ctx, MBEDTLS_XTEA_ENCRYPT, buf, buf );
+    268          
+    269                  if( memcmp( buf, xtea_test_ct[i], 8 ) != 0 )
+    270                  {
+    271                      if( verbose != 0 )
+    272                          mbedtls_printf( "failed\n" );
+    273          
+    274                      ret = 1;
+    275                      goto exit;
+    276                  }
+    277          
+    278                  if( verbose != 0 )
+    279                      mbedtls_printf( "passed\n" );
+    280              }
+    281          
+    282              if( verbose != 0 )
+    283                  mbedtls_printf( "\n" );
+    284          
+    285          exit:
+    286              mbedtls_xtea_free( &ctx );
+    287          
+    288              return( ret );
+    289          }
+    290          
+    291          #endif /* MBEDTLS_SELF_TEST */
+    292          
+    293          #endif /* MBEDTLS_XTEA_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

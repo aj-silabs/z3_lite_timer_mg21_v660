@@ -1,0 +1,660 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:24
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ccm.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWEB07.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ccm.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"ccm.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\ccm.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\ccm.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ccm.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  NIST SP800-38C compliant CCM implementation
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          /*
+     35           * Definition of CCM:
+     36           * http://csrc.nist.gov/publications/nistpubs/800-38C/SP800-38C_updated-July20_2007.pdf
+     37           * RFC 3610 "Counter with CBC-MAC (CCM)"
+     38           *
+     39           * Related:
+     40           * RFC 5116 "An Interface and Algorithms for Authenticated Encryption"
+     41           */
+     42          
+     43          #if !defined(MBEDTLS_CONFIG_FILE)
+     44          #include "mbedtls/config.h"
+     45          #else
+     46          #include MBEDTLS_CONFIG_FILE
+     47          #endif
+     48          
+     49          #if defined(MBEDTLS_CCM_C)
+     50          
+     51          #include "mbedtls/ccm.h"
+     52          
+     53          #include <string.h>
+     54          
+     55          #if defined(MBEDTLS_SELF_TEST) && defined(MBEDTLS_AES_C)
+     56          #if defined(MBEDTLS_PLATFORM_C)
+     57          #include "mbedtls/platform.h"
+     58          #else
+     59          #include <stdio.h>
+     60          #define mbedtls_printf printf
+     61          #endif /* MBEDTLS_PLATFORM_C */
+     62          #endif /* MBEDTLS_SELF_TEST && MBEDTLS_AES_C */
+     63          
+     64          #if !defined(MBEDTLS_CCM_ALT)
+     65          
+     66          /* Implementation that should never be optimized out by the compiler */
+     67          static void mbedtls_zeroize( void *v, size_t n ) {
+     68              volatile unsigned char *p = (unsigned char*)v; while( n-- ) *p++ = 0;
+     69          }
+     70          
+     71          #define CCM_ENCRYPT 0
+     72          #define CCM_DECRYPT 1
+     73          
+     74          /*
+     75           * Initialize context
+     76           */
+     77          void mbedtls_ccm_init( mbedtls_ccm_context *ctx )
+     78          {
+     79              memset( ctx, 0, sizeof( mbedtls_ccm_context ) );
+     80          }
+     81          
+     82          int mbedtls_ccm_setkey( mbedtls_ccm_context *ctx,
+     83                                  mbedtls_cipher_id_t cipher,
+     84                                  const unsigned char *key,
+     85                                  unsigned int keybits )
+     86          {
+     87              int ret;
+     88              const mbedtls_cipher_info_t *cipher_info;
+     89          
+     90              cipher_info = mbedtls_cipher_info_from_values( cipher, keybits, MBEDTLS_MODE_ECB );
+     91              if( cipher_info == NULL )
+     92                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+     93          
+     94              if( cipher_info->block_size != 16 )
+     95                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+     96          
+     97              mbedtls_cipher_free( &ctx->cipher_ctx );
+     98          
+     99              if( ( ret = mbedtls_cipher_setup( &ctx->cipher_ctx, cipher_info ) ) != 0 )
+    100                  return( ret );
+    101          
+    102              if( ( ret = mbedtls_cipher_setkey( &ctx->cipher_ctx, key, keybits,
+    103                                         MBEDTLS_ENCRYPT ) ) != 0 )
+    104              {
+    105                  return( ret );
+    106              }
+    107          
+    108              return( 0 );
+    109          }
+    110          
+    111          /*
+    112           * Free context
+    113           */
+    114          void mbedtls_ccm_free( mbedtls_ccm_context *ctx )
+    115          {
+    116              mbedtls_cipher_free( &ctx->cipher_ctx );
+    117              mbedtls_zeroize( ctx, sizeof( mbedtls_ccm_context ) );
+    118          }
+    119          
+    120          /*
+    121           * Macros for common operations.
+    122           * Results in smaller compiled code than static inline functions.
+    123           */
+    124          
+    125          /*
+    126           * Update the CBC-MAC state in y using a block in b
+    127           * (Always using b as the source helps the compiler optimise a bit better.)
+    128           */
+    129          #define UPDATE_CBC_MAC                                                      \
+    130              for( i = 0; i < 16; i++ )                                               \
+    131                  y[i] ^= b[i];                                                       \
+    132                                                                                      \
+    133              if( ( ret = mbedtls_cipher_update( &ctx->cipher_ctx, y, 16, y, &olen ) ) != 0 ) \
+    134                  return( ret );
+    135          
+    136          /*
+    137           * Encrypt or decrypt a partial block with CTR
+    138           * Warning: using b for temporary storage! src and dst must not be b!
+    139           * This avoids allocating one more 16 bytes buffer while allowing src == dst.
+    140           */
+    141          #define CTR_CRYPT( dst, src, len  )                                            \
+    142              if( ( ret = mbedtls_cipher_update( &ctx->cipher_ctx, ctr, 16, b, &olen ) ) != 0 )  \
+    143                  return( ret );                                                         \
+    144                                                                                         \
+    145              for( i = 0; i < len; i++ )                                                 \
+    146                  dst[i] = src[i] ^ b[i];
+    147          
+    148          /*
+    149           * Authenticated encryption or decryption
+    150           */
+    151          static int ccm_auth_crypt( mbedtls_ccm_context *ctx, int mode, size_t length,
+    152                                     const unsigned char *iv, size_t iv_len,
+    153                                     const unsigned char *add, size_t add_len,
+    154                                     const unsigned char *input, unsigned char *output,
+    155                                     unsigned char *tag, size_t tag_len )
+    156          {
+    157              int ret;
+    158              unsigned char i;
+    159              unsigned char q;
+    160              size_t len_left, olen;
+    161              unsigned char b[16];
+    162              unsigned char y[16];
+    163              unsigned char ctr[16];
+    164              const unsigned char *src;
+    165              unsigned char *dst;
+    166          
+    167              /*
+    168               * Check length requirements: SP800-38C A.1
+    169               * Additional requirement: a < 2^16 - 2^8 to simplify the code.
+    170               * 'length' checked later (when writing it to the first block)
+    171               */
+    172              if( tag_len < 4 || tag_len > 16 || tag_len % 2 != 0 )
+    173                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    174          
+    175              /* Also implies q is within bounds */
+    176              if( iv_len < 7 || iv_len > 13 )
+    177                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    178          
+    179              if( add_len > 0xFF00 )
+    180                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    181          
+    182              q = 16 - 1 - (unsigned char) iv_len;
+    183          
+    184              /*
+    185               * First block B_0:
+    186               * 0        .. 0        flags
+    187               * 1        .. iv_len   nonce (aka iv)
+    188               * iv_len+1 .. 15       length
+    189               *
+    190               * With flags as (bits):
+    191               * 7        0
+    192               * 6        add present?
+    193               * 5 .. 3   (t - 2) / 2
+    194               * 2 .. 0   q - 1
+    195               */
+    196              b[0] = 0;
+    197              b[0] |= ( add_len > 0 ) << 6;
+    198              b[0] |= ( ( tag_len - 2 ) / 2 ) << 3;
+    199              b[0] |= q - 1;
+    200          
+    201              memcpy( b + 1, iv, iv_len );
+    202          
+    203              for( i = 0, len_left = length; i < q; i++, len_left >>= 8 )
+    204                  b[15-i] = (unsigned char)( len_left & 0xFF );
+    205          
+    206              if( len_left > 0 )
+    207                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    208          
+    209          
+    210              /* Start CBC-MAC with first block */
+    211              memset( y, 0, 16 );
+    212              UPDATE_CBC_MAC;
+    213          
+    214              /*
+    215               * If there is additional data, update CBC-MAC with
+    216               * add_len, add, 0 (padding to a block boundary)
+    217               */
+    218              if( add_len > 0 )
+    219              {
+    220                  size_t use_len;
+    221                  len_left = add_len;
+    222                  src = add;
+    223          
+    224                  memset( b, 0, 16 );
+    225                  b[0] = (unsigned char)( ( add_len >> 8 ) & 0xFF );
+    226                  b[1] = (unsigned char)( ( add_len      ) & 0xFF );
+    227          
+    228                  use_len = len_left < 16 - 2 ? len_left : 16 - 2;
+    229                  memcpy( b + 2, src, use_len );
+    230                  len_left -= use_len;
+    231                  src += use_len;
+    232          
+    233                  UPDATE_CBC_MAC;
+    234          
+    235                  while( len_left > 0 )
+    236                  {
+    237                      use_len = len_left > 16 ? 16 : len_left;
+    238          
+    239                      memset( b, 0, 16 );
+    240                      memcpy( b, src, use_len );
+    241                      UPDATE_CBC_MAC;
+    242          
+    243                      len_left -= use_len;
+    244                      src += use_len;
+    245                  }
+    246              }
+    247          
+    248              /*
+    249               * Prepare counter block for encryption:
+    250               * 0        .. 0        flags
+    251               * 1        .. iv_len   nonce (aka iv)
+    252               * iv_len+1 .. 15       counter (initially 1)
+    253               *
+    254               * With flags as (bits):
+    255               * 7 .. 3   0
+    256               * 2 .. 0   q - 1
+    257               */
+    258              ctr[0] = q - 1;
+    259              memcpy( ctr + 1, iv, iv_len );
+    260              memset( ctr + 1 + iv_len, 0, q );
+    261              ctr[15] = 1;
+    262          
+    263              /*
+    264               * Authenticate and {en,de}crypt the message.
+    265               *
+    266               * The only difference between encryption and decryption is
+    267               * the respective order of authentication and {en,de}cryption.
+    268               */
+    269              len_left = length;
+    270              src = input;
+    271              dst = output;
+    272          
+    273              while( len_left > 0 )
+    274              {
+    275                  size_t use_len = len_left > 16 ? 16 : len_left;
+    276          
+    277                  if( mode == CCM_ENCRYPT )
+    278                  {
+    279                      memset( b, 0, 16 );
+    280                      memcpy( b, src, use_len );
+    281                      UPDATE_CBC_MAC;
+    282                  }
+    283          
+    284                  CTR_CRYPT( dst, src, use_len );
+    285          
+    286                  if( mode == CCM_DECRYPT )
+    287                  {
+    288                      memset( b, 0, 16 );
+    289                      memcpy( b, dst, use_len );
+    290                      UPDATE_CBC_MAC;
+    291                  }
+    292          
+    293                  dst += use_len;
+    294                  src += use_len;
+    295                  len_left -= use_len;
+    296          
+    297                  /*
+    298                   * Increment counter.
+    299                   * No need to check for overflow thanks to the length check above.
+    300                   */
+    301                  for( i = 0; i < q; i++ )
+    302                      if( ++ctr[15-i] != 0 )
+    303                          break;
+    304              }
+    305          
+    306              /*
+    307               * Authentication: reset counter and crypt/mask internal tag
+    308               */
+    309              for( i = 0; i < q; i++ )
+    310                  ctr[15-i] = 0;
+    311          
+    312              CTR_CRYPT( y, y, 16 );
+    313              memcpy( tag, y, tag_len );
+    314          
+    315              return( 0 );
+    316          }
+    317          
+    318          /*
+    319           * Authenticated encryption
+    320           */
+    321          int mbedtls_ccm_encrypt_and_tag( mbedtls_ccm_context *ctx, size_t length,
+    322                                   const unsigned char *iv, size_t iv_len,
+    323                                   const unsigned char *add, size_t add_len,
+    324                                   const unsigned char *input, unsigned char *output,
+    325                                   unsigned char *tag, size_t tag_len )
+    326          {
+    327              return( ccm_auth_crypt( ctx, CCM_ENCRYPT, length, iv, iv_len,
+    328                                      add, add_len, input, output, tag, tag_len ) );
+    329          }
+    330          
+    331          /*
+    332           * Authenticated decryption
+    333           */
+    334          int mbedtls_ccm_auth_decrypt( mbedtls_ccm_context *ctx, size_t length,
+    335                                const unsigned char *iv, size_t iv_len,
+    336                                const unsigned char *add, size_t add_len,
+    337                                const unsigned char *input, unsigned char *output,
+    338                                const unsigned char *tag, size_t tag_len )
+    339          {
+    340              int ret;
+    341              unsigned char check_tag[16];
+    342              unsigned char i;
+    343              int diff;
+    344          
+    345              if( ( ret = ccm_auth_crypt( ctx, CCM_DECRYPT, length,
+    346                                          iv, iv_len, add, add_len,
+    347                                          input, output, check_tag, tag_len ) ) != 0 )
+    348              {
+    349                  return( ret );
+    350              }
+    351          
+    352              /* Check tag in "constant-time" */
+    353              for( diff = 0, i = 0; i < tag_len; i++ )
+    354                  diff |= tag[i] ^ check_tag[i];
+    355          
+    356              if( diff != 0 )
+    357              {
+    358                  mbedtls_zeroize( output, length );
+    359                  return( MBEDTLS_ERR_CCM_AUTH_FAILED );
+    360              }
+    361          
+    362              return( 0 );
+    363          }
+    364          
+    365          #endif /* !MBEDTLS_CCM_ALT */
+    366          
+    367          #if defined(MBEDTLS_SELF_TEST) && defined(MBEDTLS_AES_C)
+    368          /*
+    369           * Examples 1 to 3 from SP800-38C Appendix C
+    370           */
+    371          
+    372          #define NB_TESTS 3
+    373          #define CCM_SELFTEST_PT_MAX_LEN 24
+    374          #define CCM_SELFTEST_CT_MAX_LEN 32
+    375          /*
+    376           * The data is the same for all tests, only the used length changes
+    377           */
+    378          static const unsigned char key[] = {
+    379              0x40, 0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47,
+    380              0x48, 0x49, 0x4a, 0x4b, 0x4c, 0x4d, 0x4e, 0x4f
+    381          };
+    382          
+    383          static const unsigned char iv[] = {
+    384              0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+    385              0x18, 0x19, 0x1a, 0x1b
+    386          };
+    387          
+    388          static const unsigned char ad[] = {
+    389              0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+    390              0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+    391              0x10, 0x11, 0x12, 0x13
+    392          };
+    393          
+    394          static const unsigned char msg[CCM_SELFTEST_PT_MAX_LEN] = {
+    395              0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x27,
+    396              0x28, 0x29, 0x2a, 0x2b, 0x2c, 0x2d, 0x2e, 0x2f,
+    397              0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37,
+    398          };
+    399          
+    400          static const size_t iv_len [NB_TESTS] = { 7, 8,  12 };
+    401          static const size_t add_len[NB_TESTS] = { 8, 16, 20 };
+    402          static const size_t msg_len[NB_TESTS] = { 4, 16, 24 };
+    403          static const size_t tag_len[NB_TESTS] = { 4, 6,  8  };
+    404          
+    405          static const unsigned char res[NB_TESTS][CCM_SELFTEST_CT_MAX_LEN] = {
+    406              {   0x71, 0x62, 0x01, 0x5b, 0x4d, 0xac, 0x25, 0x5d },
+    407              {   0xd2, 0xa1, 0xf0, 0xe0, 0x51, 0xea, 0x5f, 0x62,
+    408                  0x08, 0x1a, 0x77, 0x92, 0x07, 0x3d, 0x59, 0x3d,
+    409                  0x1f, 0xc6, 0x4f, 0xbf, 0xac, 0xcd },
+    410              {   0xe3, 0xb2, 0x01, 0xa9, 0xf5, 0xb7, 0x1a, 0x7a,
+    411                  0x9b, 0x1c, 0xea, 0xec, 0xcd, 0x97, 0xe7, 0x0b,
+    412                  0x61, 0x76, 0xaa, 0xd9, 0xa4, 0x42, 0x8a, 0xa5,
+    413                  0x48, 0x43, 0x92, 0xfb, 0xc1, 0xb0, 0x99, 0x51 }
+    414          };
+    415          
+    416          int mbedtls_ccm_self_test( int verbose )
+    417          {
+    418              mbedtls_ccm_context ctx;
+    419              /*
+    420               * Some hardware accelerators require the input and output buffers
+    421               * would be in RAM, because the flash is not accessible.
+    422               * Use buffers on the stack to hold the test vectors data.
+    423               */
+    424              unsigned char plaintext[CCM_SELFTEST_PT_MAX_LEN];
+    425              unsigned char ciphertext[CCM_SELFTEST_CT_MAX_LEN];
+    426              size_t i;
+    427              int ret;
+    428          
+    429              mbedtls_ccm_init( &ctx );
+    430          
+    431              if( mbedtls_ccm_setkey( &ctx, MBEDTLS_CIPHER_ID_AES, key, 8 * sizeof key ) != 0 )
+    432              {
+    433                  if( verbose != 0 )
+    434                      mbedtls_printf( "  CCM: setup failed" );
+    435          
+    436                  return( 1 );
+    437              }
+    438          
+    439              for( i = 0; i < NB_TESTS; i++ )
+    440              {
+    441                  if( verbose != 0 )
+    442                      mbedtls_printf( "  CCM-AES #%u: ", (unsigned int) i + 1 );
+    443          
+    444                  memset( plaintext, 0, CCM_SELFTEST_PT_MAX_LEN );
+    445                  memset( ciphertext, 0, CCM_SELFTEST_CT_MAX_LEN );
+    446                  memcpy( plaintext, msg, msg_len[i] );
+    447          
+    448                  ret = mbedtls_ccm_encrypt_and_tag( &ctx, msg_len[i],
+    449                                                     iv, iv_len[i], ad, add_len[i],
+    450                                                     plaintext, ciphertext,
+    451                                                     ciphertext + msg_len[i], tag_len[i] );
+    452          
+    453                  if( ret != 0 ||
+    454                      memcmp( ciphertext, res[i], msg_len[i] + tag_len[i] ) != 0 )
+    455                  {
+    456                      if( verbose != 0 )
+    457                          mbedtls_printf( "failed\n" );
+    458          
+    459                      return( 1 );
+    460                  }
+    461                  memset( plaintext, 0, CCM_SELFTEST_PT_MAX_LEN );
+    462          
+    463                  ret = mbedtls_ccm_auth_decrypt( &ctx, msg_len[i],
+    464                                                  iv, iv_len[i], ad, add_len[i],
+    465                                                  ciphertext, plaintext,
+    466                                                  ciphertext + msg_len[i], tag_len[i] );
+    467          
+    468                  if( ret != 0 ||
+    469                      memcmp( plaintext, msg, msg_len[i] ) != 0 )
+    470                  {
+    471                      if( verbose != 0 )
+    472                          mbedtls_printf( "failed\n" );
+    473          
+    474                      return( 1 );
+    475                  }
+    476          
+    477                  if( verbose != 0 )
+    478                      mbedtls_printf( "passed\n" );
+    479              }
+    480          
+    481              mbedtls_ccm_free( &ctx );
+    482          
+    483              if( verbose != 0 )
+    484                  mbedtls_printf( "\n" );
+    485          
+    486              return( 0 );
+    487          }
+    488          
+    489          #endif /* MBEDTLS_SELF_TEST && MBEDTLS_AES_C */
+    490          
+    491          #endif /* MBEDTLS_CCM_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

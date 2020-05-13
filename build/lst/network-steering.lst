@@ -1,0 +1,2617 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:28
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\network-steering.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWDFAD.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\network-steering.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"network-steering.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\network-steering.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\network-steering.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\network-steering.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief General Procedure
+      4           *
+      5           * 1. Setup stack security with an Install code key (if available)
+      6           *    If not available, skip to step 9.
+      7           * 2. Set the channel mask to the Primary set of channels.
+      8           * 3. Perform a scan of open networks on a single channel.
+      9           * 4. For all beacons collected on that channel, filter out PAN IDs that are not open
+     10           *    for joining or don't have the right stack profile (2), or are duplicates.
+     11           * 5. For each discovered network, try to join.
+     12           * 6. Repeat steps 3-5 until all channels in the mask are tried.
+     13           * 7. If no networks are successfully joined, setup secondary channel mask
+     14           *    (all channels) and repeat steps 3-6 with.
+     15           * 8. If no networks are successfully joined, change the security
+     16           *    to use the default well-known "ZigbeeAlliance09" key.
+     17           * 9. Repeat steps 2-7
+     18           *    (This will again try primary channel mask first, then secondary).
+     19           * 10. If no networks are successsully joined, setup security to use
+     20           *     distributed link key.
+     21           * 11. Repeat steps 2.7.
+     22           * 12. If no networks are joined successfully fail the whole process and return
+     23           *     control to the application.
+     24           *******************************************************************************
+     25           * # License
+     26           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+     27           *******************************************************************************
+     28           *
+     29           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     30           * software is governed by the terms of Silicon Labs Master Software License
+     31           * Agreement (MSLA) available at
+     32           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     33           * software is distributed to you in Source Code format and is governed by the
+     34           * sections of the MSLA applicable to Source Code.
+     35           *
+     36           ******************************************************************************/
+     37          
+     38          #ifndef EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIMIZE_SCANS
+     39          
+     40          #include "app/framework/include/af.h"
+     41          #include "app/framework/security/af-security.h" // emAfClearLinkKeyTable()
+     42          #include "app/framework/plugin/network-steering/network-steering.h"
+     43          #include "app/framework/plugin/network-steering/network-steering-internal.h"
+     44          
+     45          #if defined(EMBER_AF_API_SCAN_DISPATCH)
+     46            #include EMBER_AF_API_SCAN_DISPATCH
+     47          #elif defined(EMBER_TEST)
+     48            #include "../scan-dispatch/scan-dispatch.h"
+     49          #endif
+     50          
+     51          #if defined(EMBER_AF_API_UPDATE_TC_LINK_KEY)
+     52            #include EMBER_AF_API_UPDATE_TC_LINK_KEY
+     53          #elif defined(EMBER_TEST)
+     54            #include "../update-tc-link-key/update-tc-link-key.h"
+     55          #endif
+     56          
+     57          #ifdef EMBER_TEST
+     58            #define HIDDEN
+     59            #define EMBER_AF_PLUGIN_NETWORK_STEERING_RADIO_TX_POWER 3
+     60          #else
+     61            #define HIDDEN static
+     62          #endif
+     63          
+     64          //============================================================================
+     65          // Globals
+     66          
+     67          #if !defined(EMBER_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK)
+     68            #define EMBER_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK \
+     69            (BIT32(11) | BIT32(14))
+     70          #endif
+     71          
+     72          #if !defined(EMBER_AF_PLUGIN_NETWORK_STEERING_SCAN_DURATION)
+     73            #define EMBER_AF_PLUGIN_NETWORK_STEERING_SCAN_DURATION 5
+     74          #endif
+     75          
+     76          #if !defined(EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S)
+     77            #define EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S (180)
+     78          #endif
+     79          
+     80          #ifdef  EMBER_AF_PLUGIN_NETWORK_STEERING_RADIO_TX_CALLBACK
+     81            #define GET_RADIO_TX_POWER(channel) emberAfPluginNetworkSteeringGetPowerForRadioChannelCallback(channel)
+     82          #else
+     83            #define GET_RADIO_TX_POWER(channel) EMBER_AF_PLUGIN_NETWORK_STEERING_RADIO_TX_POWER
+     84          #endif
+     85          
+
+   \                                 In section .data, align 4
+     86          const char * emAfPluginNetworkSteeringStateNames[] = {
+   \                     emAfPluginNetworkSteeringStateNames:
+   \        0x0   0x....'....        DC32 ?_0, ?_1, ?_2, ?_3, ?_4, ?_5, ?_6, ?_7, ?_8
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+     87            "None",
+     88            // These next two states are only run if explicitly configured to do so
+     89            // See emAfPluginNetworkSteeringSetConfiguredKey()
+     90            "Scan Primary Channels and use Configured Key",
+     91            "Scan Secondary Channels and use Configured Key",
+     92            "Scan Primary Channels and use Install Code",
+     93            "Scan Secondary Channels and use Install Code",
+     94            "Scan Primary Channels and Use Centralized Key",
+     95            "Scan Secondary Channels and Use Centralized Key",
+     96            "Scan Primary Channels and Use Distributed Key",
+     97            "Scan Secondary Channels and Use Distributed Key",
+     98          };
+     99          
+    100          #define LAST_JOINING_STATE \
+    101            EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_SECONDARY_DISTRIBUTED
+    102          
+
+   \                                 In section .bss, align 1
+    103          EmberAfPluginNetworkSteeringJoiningState emAfPluginNetworkSteeringState
+   \                     emAfPluginNetworkSteeringState:
+   \        0x0                      DS8 1
+    104            = EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE;
+    105          
+
+   \                                 In section .rodata, align 4
+    106          const uint8_t emAfNetworkSteeringPluginName[] = "NWK Steering";
+   \                     emAfNetworkSteeringPluginName:
+   \        0x0   0x4E 0x57          DC8 "NWK Steering"
+   \              0x4B 0x20    
+   \              0x53 0x74    
+   \              0x65 0x65    
+   \              0x72 0x69    
+   \              0x6E 0x67    
+   \              0x00         
+   \        0xD   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    107          #define PLUGIN_NAME emAfNetworkSteeringPluginName
+    108          
+    109          // #define PLUGIN_DEBUG
+    110          #if defined(PLUGIN_DEBUG)
+    111            #define debugPrintln(...) emberAfCorePrintln(__VA_ARGS__)
+    112            #define debugPrint(...)   emberAfCorePrint(__VA_ARGS__)
+    113            #define debugExec(x) do { x; } while (0)
+    114          #else
+    115            #define debugPrintln(...)
+    116            #define debugPrint(...)
+    117            #define debugExec(x)
+    118          #endif
+    119          
+    120          #define SECONDARY_CHANNEL_MASK EMBER_ALL_802_15_4_CHANNELS_MASK
+    121          
+    122          #define REQUIRED_STACK_PROFILE 2
+    123          
+
+   \                                 In section .rodata, align 4
+    124          static const EmberKeyData defaultLinkKey = {
+   \                     defaultLinkKey:
+   \        0x0   0x5A 0x69          DC8 90, 105, 103, 66, 101, 101, 65, 108, 108, 105, 97, 110, 99, 101, 48
+   \              0x67 0x42    
+   \              0x65 0x65    
+   \              0x41 0x6C    
+   \              0x6C 0x69    
+   \              0x61 0x6E    
+   \              0x63 0x65    
+   \              0x30         
+   \        0xF   0x39               DC8 57
+    125            { 0x5A, 0x69, 0x67, 0x42, 0x65, 0x65, 0x41, 0x6C,
+    126              0x6C, 0x69, 0x61, 0x6E, 0x63, 0x65, 0x30, 0x39 }
+    127          };
+
+   \                                 In section .rodata, align 4
+    128          static const EmberKeyData distributedTestKey = {
+   \                     distributedTestKey:
+   \        0x0   0xD0 0xD1          DC8 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220
+   \              0xD2 0xD3    
+   \              0xD4 0xD5    
+   \              0xD6 0xD7    
+   \              0xD8 0xD9    
+   \              0xDA 0xDB    
+   \              0xDC         
+   \        0xD   0xDD 0xDE          DC8 221, 222, 223
+   \              0xDF         
+    129            { 0xD0, 0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7,
+    130              0xD8, 0xD9, 0xDA, 0xDB, 0xDC, 0xDD, 0xDE, 0xDF }
+    131          };
+    132          
+    133          // These parameters allow for filtering which networks to find or which specific
+    134          // key to use
+
+   \                                 In section .bss, align 1
+    135          static bool gFilterByExtendedPanId = false;
+   \                     gFilterByExtendedPanId:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    136          static uint8_t gExtendedPanIdToFilterOn[8];
+   \                     gExtendedPanIdToFilterOn:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 1
+    137          static bool gUseConfiguredKey = false;
+   \                     gUseConfiguredKey:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    138          static EmberKeyData gConfiguredKey = {
+   \                     gConfiguredKey:
+   \        0x0                      DS8 16
+    139            { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    140              0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }
+    141          };
+    142          
+
+   \                                 In section .bss, align 1
+    143          static bool printedMaxPanIdsWarning = false;
+   \                     printedMaxPanIdsWarning:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    144          uint8_t emAfPluginNetworkSteeringPanIdIndex = 0;
+   \                     emAfPluginNetworkSteeringPanIdIndex:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    145          uint8_t emAfPluginNetworkSteeringCurrentChannel;
+   \                     emAfPluginNetworkSteeringCurrentChannel:
+   \        0x0                      DS8 1
+    146          
+    147          // We make these into variables so that they can be changed at run time.
+    148          // This is very useful for unit and interop tests.
+
+   \                                 In section .data, align 4
+    149          uint32_t emAfPluginNetworkSteeringPrimaryChannelMask
+   \                     emAfPluginNetworkSteeringPrimaryChannelMask:
+   \        0x0   0x0318'C800        DC32 51955712
+    150            = EMBER_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK;
+
+   \                                 In section .data, align 4
+    151          uint32_t emAfPluginNetworkSteeringSecondaryChannelMask
+   \                     emAfPluginNetworkSteeringSecondaryChannelMask:
+   \        0x0   0x07FF'F800        DC32 134215680
+    152            = SECONDARY_CHANNEL_MASK;
+    153          
+
+   \                                 In section .bss, align 1
+    154          uint8_t emAfPluginNetworkSteeringTotalBeacons = 0;
+   \                     emAfPluginNetworkSteeringTotalBeacons:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    155          uint8_t emAfPluginNetworkSteeringJoinAttempts = 0;
+   \                     emAfPluginNetworkSteeringJoinAttempts:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    156          EmberKeyData emberPluginNetworkSteeringDistributedKey;
+   \                     emberPluginNetworkSteeringDistributedKey:
+   \        0x0                      DS8 16
+    157          
+
+   \                                 In section .bss, align 4
+    158          static uint32_t currentChannelMask = 0;
+   \                     currentChannelMask:
+   \        0x0                      DS8 4
+    159          
+
+   \                                 In section .bss, align 4
+    160          EmberEventControl emberAfPluginNetworkSteeringFinishSteeringEventControl;
+   \                     emberAfPluginNetworkSteeringFinishSteeringEventControl:
+   \        0x0                      DS8 8
+    161          #define finishSteeringEvent (emberAfPluginNetworkSteeringFinishSteeringEventControl)
+    162          
+    163          // TODO: good value for this?
+    164          // Let's try jittering our TCLK update and permit join broadcast to cut down
+    165          // on commission-time traffic.
+    166          #define FINISH_STEERING_JITTER_MIN_MS (MILLISECOND_TICKS_PER_SECOND << 1)
+    167          #define FINISH_STEERING_JITTER_MAX_MS (MILLISECOND_TICKS_PER_SECOND << 2)
+    168          #define randomJitterMS()                                               \
+    169            ((emberGetPseudoRandomNumber()                                       \
+    170              % (FINISH_STEERING_JITTER_MAX_MS - FINISH_STEERING_JITTER_MIN_MS)) \
+    171             + FINISH_STEERING_JITTER_MIN_MS)
+    172          #define UPDATE_TC_LINK_KEY_JITTER_MIN_MS (MILLISECOND_TICKS_PER_SECOND * 10)
+    173          #define UPDATE_TC_LINK_KEY_JITTER_MAX_MS (MILLISECOND_TICKS_PER_SECOND * 40)
+    174          
+    175          // This is an attribute specified in the BDB.
+    176          #define VERIFY_KEY_TIMEOUT_MS (5 * MILLISECOND_TICKS_PER_SECOND)
+    177          
+
+   \                                 In section .bss, align 1
+    178          EmberAfPluginNetworkSteeringOptions emAfPluginNetworkSteeringOptionsMask
+   \                     emAfPluginNetworkSteeringOptionsMask:
+   \        0x0                      DS8 1
+    179            = EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIONS_NONE;
+    180          
+    181          //============================================================================
+    182          // Forward Declarations
+    183          
+    184          static void cleanupAndStop(EmberStatus status);
+    185          static EmberStatus stateMachineRun(void);
+    186          static uint8_t getNextChannel(void);
+    187          static EmberStatus tryNextMethod(void);
+    188          static EmberStatus setupSecurity(void);
+    189          static uint32_t jitterTimeDelayMs();
+    190          HIDDEN void scanResultsHandler(EmberAfPluginScanDispatchScanResults *results);
+    191          bool emIsWellKnownKey(EmberKeyData key);
+    192          
+    193          // Callback declarations for the sake of the compiler during unit tests.
+    194          int8_t emberAfPluginNetworkSteeringGetPowerForRadioChannelCallback(uint8_t channel);
+    195          bool emberAfPluginNetworkSteeringGetDistributedKeyCallback(EmberKeyData * key);
+    196          EmberNodeType emberAfPluginNetworkSteeringGetNodeTypeCallback(EmberAfPluginNetworkSteeringJoiningState state);
+    197          
+    198          //============================================================================
+    199          // State Machine
+    200          
+    201          static bool addPanIdCandidate(uint16_t panId)
+    202          {
+    203            uint16_t* panIdPointer = emAfPluginNetworkSteeringGetStoredPanIdPointer(0);
+    204            if (panIdPointer == NULL) {
+    205              emberAfCorePrintln("Error: %p could not get memory pointer for stored PAN IDs",
+    206                                 PLUGIN_NAME);
+    207              return false;
+    208            }
+    209            uint8_t maxNetworks = emAfPluginNetworkSteeringGetMaxPossiblePanIds();
+    210            uint8_t i;
+    211            for (i = 0; i < maxNetworks; i++) {
+    212              if (panId == *panIdPointer) {
+    213                // We already know about this PAN, no point in recording it twice.
+    214                debugPrintln("Ignoring duplicate PAN ID 0x%2X", panId);
+    215                return true;
+    216              } else if (*panIdPointer == EMBER_AF_INVALID_PAN_ID) {
+    217                *panIdPointer = panId;
+    218                debugPrintln("Stored PAN ID 0x%2X", *panIdPointer);
+    219                return true;
+    220              }
+    221              panIdPointer++;
+    222            }
+    223          
+    224            if (!printedMaxPanIdsWarning) {
+    225              emberAfCorePrintln("Warning: %p Max PANs reached (%d)",
+    226                                 PLUGIN_NAME,
+    227                                 maxNetworks);
+    228              printedMaxPanIdsWarning = true;
+    229            }
+    230            return true;
+    231          }
+    232          
+    233          static void clearPanIdCandidates(void)
+    234          {
+    235            printedMaxPanIdsWarning = false;
+    236            emAfPluginNetworkSteeringClearStoredPanIds();
+    237            emAfPluginNetworkSteeringPanIdIndex = 0;
+    238          }
+    239          
+    240          static uint16_t getNextCandidate(void)
+    241          {
+    242            debugPrintln("Getting candidate at index %d", emAfPluginNetworkSteeringPanIdIndex);
+    243            uint16_t* pointer =
+    244              emAfPluginNetworkSteeringGetStoredPanIdPointer(emAfPluginNetworkSteeringPanIdIndex);
+    245            if (pointer == NULL) {
+    246              debugPrintln("Error: %p could not get pointer to stored PANs", PLUGIN_NAME);
+    247              return EMBER_AF_INVALID_PAN_ID;
+    248            }
+    249            emAfPluginNetworkSteeringPanIdIndex++;
+    250            return *pointer;
+    251          }
+    252          
+
+   \                                 In section .text, align 2, keep-with-next
+    253          void gotoNextChannel(void)
+    254          {
+   \                     gotoNextChannel: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+    255            EmberAfPluginScanDispatchScanData scanData;
+    256            EmberStatus status;
+    257          
+    258            emAfPluginNetworkSteeringCurrentChannel = getNextChannel();
+   \        0x2   0x....'....        LDR.W    R4,??DataTable17
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0xB928             CBNZ.N   R0,??gotoNextChannel_0
+   \        0xA   0x....'....        BL       halCommonGetRandom
+   \        0xE   0xF000 0x000F      AND      R0,R0,#0xF
+   \       0x12   0x300B             ADDS     R0,R0,#+11
+   \       0x14   0xE000             B.N      ??gotoNextChannel_1
+   \                     ??gotoNextChannel_0: (+1)
+   \       0x16   0x1C40             ADDS     R0,R0,#+1
+   \                     ??gotoNextChannel_1: (+1)
+   \       0x18   0x7020             STRB     R0,[R4, #+0]
+   \       0x1A   0x....'....        LDR.W    R2,??DataTable17_1
+   \       0x1E   0x6810             LDR      R0,[R2, #+0]
+   \       0x20   0x2501             MOVS     R5,#+1
+   \       0x22   0xB968             CBNZ.N   R0,??gotoNextChannel_2
+   \       0x24   0x2300             MOVS     R3,#+0
+   \                     ??gotoNextChannel_3: (+1)
+   \       0x26   0x7023             STRB     R3,[R4, #+0]
+    259            if (emAfPluginNetworkSteeringCurrentChannel == 0) {
+   \       0x28   0x7820             LDRB     R0,[R4, #+0]
+   \       0x2A   0xB998             CBNZ.N   R0,??gotoNextChannel_4
+    260              debugPrintln("No more channels");
+    261              tryNextMethod();
+   \       0x2C   0x....'....        BL       tryNextMethod
+    262              return;
+   \       0x30   0xBD7F             POP      {R0-R6,PC}
+   \                     ??gotoNextChannel_5: (+1)
+   \       0x32   0x1C5B             ADDS     R3,R3,#+1
+   \       0x34   0x7023             STRB     R3,[R4, #+0]
+   \       0x36   0xB2DB             UXTB     R3,R3
+   \       0x38   0x2B1B             CMP      R3,#+27
+   \       0x3A   0xBFA4             ITT      GE 
+   \       0x3C   0x210B             MOVGE    R1,#+11
+   \       0x3E   0x7021             STRBGE   R1,[R4, #+0]
+   \                     ??gotoNextChannel_2: (+1)
+   \       0x40   0x7823             LDRB     R3,[R4, #+0]
+   \       0x42   0xFA20 0xF603      LSR      R6,R0,R3
+   \       0x46   0x07F1             LSLS     R1,R6,#+31
+   \       0x48   0xD5F3             BPL.N    ??gotoNextChannel_5
+   \       0x4A   0xFA05 0xF103      LSL      R1,R5,R3
+   \       0x4E   0x4388             BICS     R0,R0,R1
+   \       0x50   0x6010             STR      R0,[R2, #+0]
+   \       0x52   0xE7E8             B.N      ??gotoNextChannel_3
+    263            }
+    264            clearPanIdCandidates();
+   \                     ??gotoNextChannel_4: (+1)
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0x....'....        LDR.W    R2,??DataTable17_2
+   \       0x5A   0x7010             STRB     R0,[R2, #+0]
+   \       0x5C   0x....'....        BL       emAfPluginNetworkSteeringClearStoredPanIds
+   \       0x60   0x2100             MOVS     R1,#+0
+   \       0x62   0x....'....        LDR.W    R2,??DataTable17_3
+   \       0x66   0x7011             STRB     R1,[R2, #+0]
+    265          
+    266            scanData.scanType = EMBER_ACTIVE_SCAN;
+    267            scanData.channelMask = BIT32(emAfPluginNetworkSteeringCurrentChannel);
+   \       0x68   0x7821             LDRB     R1,[R4, #+0]
+   \       0x6A   0xF88D 0x5000      STRB     R5,[SP, #+0]
+    268            scanData.duration = EMBER_AF_PLUGIN_NETWORK_STEERING_SCAN_DURATION;
+   \       0x6E   0x2205             MOVS     R2,#+5
+   \       0x70   0x408D             LSLS     R5,R5,R1
+    269            scanData.handler = scanResultsHandler;
+   \       0x72   0x....'....        ADR.W    R1,scanResultsHandler
+   \       0x76   0x9501             STR      R5,[SP, #+4]
+   \       0x78   0xF88D 0x2008      STRB     R2,[SP, #+8]
+   \       0x7C   0x9103             STR      R1,[SP, #+12]
+    270            status = emberAfPluginScanDispatchScheduleScan(&scanData);
+   \       0x7E   0x4668             MOV      R0,SP
+   \       0x80   0x....'....        BL       emberAfPluginScanDispatchScheduleScan
+   \       0x84   0x0005             MOVS     R5,R0
+    271          
+    272            if (EMBER_SUCCESS != status) {
+   \       0x86   0xD00A             BEQ.N    ??gotoNextChannel_6
+    273              emberAfCorePrintln("Error: %p start scan failed: 0x%X", PLUGIN_NAME, status);
+   \       0x88   0x462B             MOV      R3,R5
+   \       0x8A   0x....'....        LDR.W    R2,??DataTable17_4
+   \       0x8E   0x....'....        LDR.W    R1,??DataTable17_5
+   \       0x92   0x....'....        BL       ?Subroutine0
+    274              cleanupAndStop(status);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x96   0x4628             MOV      R0,R5
+   \       0x98   0x....'....        BL       cleanupAndStop
+   \       0x9C   0xBD7F             POP      {R0-R6,PC}
+    275            } else {
+    276              emberAfCorePrintln("Starting scan on channel %d",
+    277                                 emAfPluginNetworkSteeringCurrentChannel);
+   \                     ??gotoNextChannel_6: (+1)
+   \       0x9E   0x7822             LDRB     R2,[R4, #+0]
+   \       0xA0   0x....'....        LDR.W    R1,??DataTable17_6
+   \       0xA4   0x....'....        BL       ?Subroutine2
+    278            }
+    279          }
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0xA8   0xBD7F             POP      {R0-R6,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....'....        B.W      emberAfPrintln
+    280          
+
+   \                                 In section .text, align 2, keep-with-next
+    281          void tryToJoinNetwork(void)
+    282          {
+   \                     tryToJoinNetwork: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+    283            EmberNetworkParameters networkParams;
+    284            EmberStatus status;
+    285            EmberNodeType nodeType;
+    286          
+    287            MEMSET(&networkParams, 0, sizeof(EmberNetworkParameters));
+   \        0x4   0x2218             MOVS     R2,#+24
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x....'....        BL       halCommonMemSet
+    288          
+    289            networkParams.panId = getNextCandidate();
+   \        0xE   0x....'....        LDR.W    R4,??DataTable17_3
+   \       0x12   0x7820             LDRB     R0,[R4, #+0]
+   \       0x14   0x....'....        BL       emAfPluginNetworkSteeringGetStoredPanIdPointer
+   \       0x18   0xF64F 0x71FF      MOVW     R1,#+65535
+   \       0x1C   0xB908             CBNZ.N   R0,??tryToJoinNetwork_0
+   \       0x1E   0x4608             MOV      R0,R1
+   \       0x20   0xE003             B.N      ??tryToJoinNetwork_1
+   \                     ??tryToJoinNetwork_0: (+1)
+   \       0x22   0x7822             LDRB     R2,[R4, #+0]
+   \       0x24   0x1C52             ADDS     R2,R2,#+1
+   \       0x26   0x7022             STRB     R2,[R4, #+0]
+   \       0x28   0x8800             LDRH     R0,[R0, #+0]
+   \                     ??tryToJoinNetwork_1: (+1)
+   \       0x2A   0xF8AD 0x0008      STRH     R0,[SP, #+8]
+    290            if (networkParams.panId == EMBER_AF_INVALID_PAN_ID) {
+   \       0x2E   0xF8BD 0x3008      LDRH     R3,[SP, #+8]
+   \       0x32   0x428B             CMP      R3,R1
+   \       0x34   0xD102             BNE.N    ??tryToJoinNetwork_2
+    291              debugPrintln("No networks to join on channel %d", emAfPluginNetworkSteeringCurrentChannel);
+    292              gotoNextChannel();
+   \       0x36   0x....'....        BL       gotoNextChannel
+    293              return;
+   \       0x3A   0xE027             B.N      ??tryToJoinNetwork_3
+    294            }
+    295          
+    296            emberAfCorePrintln("%p joining 0x%2x", PLUGIN_NAME, networkParams.panId);
+   \                     ??tryToJoinNetwork_2: (+1)
+   \       0x3C   0x....'....        LDR.W    R4,??DataTable17_4
+   \       0x40   0x4622             MOV      R2,R4
+   \       0x42   0x....'....        LDR.W    R1,??DataTable17_7
+   \       0x46   0x....'....        BL       ?Subroutine0
+    297            networkParams.radioChannel = emAfPluginNetworkSteeringCurrentChannel;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x4A   0x....'....        LDR.W    R1,??DataTable17
+   \       0x4E   0x780A             LDRB     R2,[R1, #+0]
+    298            networkParams.radioTxPower = GET_RADIO_TX_POWER(emAfPluginNetworkSteeringCurrentChannel);
+    299            nodeType = emberAfPluginNetworkSteeringGetNodeTypeCallback(emAfPluginNetworkSteeringState);
+   \       0x50   0x....'....        LDR.W    R0,??DataTable17_8
+   \       0x54   0x7800             LDRB     R0,[R0, #+0]
+   \       0x56   0x2103             MOVS     R1,#+3
+   \       0x58   0xF88D 0x200B      STRB     R2,[SP, #+11]
+   \       0x5C   0xF88D 0x100A      STRB     R1,[SP, #+10]
+   \       0x60   0x....'....        BL       emberAfPluginNetworkSteeringGetNodeTypeCallback
+    300            status = emberJoinNetwork(nodeType, &networkParams);
+   \       0x64   0x4669             MOV      R1,SP
+   \       0x66   0x....'....        BL       emberJoinNetwork
+   \       0x6A   0x4605             MOV      R5,R0
+    301            emAfPluginNetworkSteeringJoinAttempts++;
+   \       0x6C   0x....'....        LDR.W    R0,??DataTable17_9
+   \       0x70   0x7801             LDRB     R1,[R0, #+0]
+   \       0x72   0x1C49             ADDS     R1,R1,#+1
+   \       0x74   0x7001             STRB     R1,[R0, #+0]
+    302            if (EMBER_SUCCESS != status) {
+   \       0x76   0x0028             MOVS     R0,R5
+   \       0x78   0xD008             BEQ.N    ??tryToJoinNetwork_3
+    303              emberAfCorePrintln("Error: %p could not attempt join: 0x%X",
+    304                                 PLUGIN_NAME,
+    305                                 status);
+   \       0x7A   0x462B             MOV      R3,R5
+   \       0x7C   0x4622             MOV      R2,R4
+   \       0x7E   0x....'....        LDR.W    R1,??DataTable17_10
+   \       0x82   0x....'....        BL       ?Subroutine0
+    306              cleanupAndStop(status);
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x86   0x4628             MOV      R0,R5
+   \       0x88   0x....'....        BL       cleanupAndStop
+    307              return;
+    308            }
+    309          }
+   \                     ??tryToJoinNetwork_3: (+1)
+   \       0x8C   0xB007             ADD      SP,SP,#+28
+   \       0x8E   0xBD30             POP      {R4,R5,PC}       ;; return
+    310          
+    311          //Description: Generates a random number between 10000-40000.
+    312          static uint32_t jitterTimeDelayMs()
+    313          {
+    314            uint16_t seed;
+    315            halStackSeedRandom((uint32_t)&seed);
+    316            uint32_t jitterDelayMs = (emberGetPseudoRandomNumber() % (UPDATE_TC_LINK_KEY_JITTER_MAX_MS - UPDATE_TC_LINK_KEY_JITTER_MIN_MS + 1)) + UPDATE_TC_LINK_KEY_JITTER_MIN_MS;
+    317            return jitterDelayMs;
+    318          }
+    319          
+
+   \                                 In section .text, align 2, keep-with-next
+    320          void emberAfPluginNetworkSteeringStackStatusCallback(EmberStatus status)
+    321          {
+   \                     emberAfPluginNetworkSteeringStackStatusCallback: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    322            if (emAfPluginNetworkSteeringState
+    323                == EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE) {
+   \        0x4   0x....'....        LDR.W    R5,??DataTable17_8
+   \        0x8   0x7828             LDRB     R0,[R5, #+0]
+   \        0xA   0xB08E             SUB      SP,SP,#+56
+   \        0xC   0xBB50             CBNZ.N   R0,??emberAfPluginNetworkSteeringStackStatusCallba_0
+    324              EmberKeyStruct entry;
+    325              EmberStatus keystatus = emberGetKey(EMBER_TRUST_CENTER_LINK_KEY, &entry);
+    326              if (keystatus == EMBER_SUCCESS && emIsWellKnownKey(entry.key) && status == EMBER_NETWORK_UP) {
+   \        0xE   0xA904             ADD      R1,SP,#+16
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x....'....        BL       emberGetKey
+   \       0x16   0xBB00             CBNZ.N   R0,??emberAfPluginNetworkSteeringStackStatusCallba_1
+   \       0x18   0x4668             MOV      R0,SP
+   \       0x1A   0xF10D 0x0113      ADD      R1,SP,#+19
+   \       0x1E   0x2210             MOVS     R2,#+16
+   \       0x20   0x....'....        BL       __aeabi_memcpy
+   \       0x24   0x466D             MOV      R5,SP
+   \       0x26   0xE895 0x000F      LDM      R5,{R0-R3}
+   \       0x2A   0x....'....        BL       emIsWellKnownKey
+   \       0x2E   0xB1A0             CBZ.N    R0,??emberAfPluginNetworkSteeringStackStatusCallba_1
+   \       0x30   0x2C90             CMP      R4,#+144
+   \       0x32   0xD112             BNE.N    ??emberAfPluginNetworkSteeringStackStatusCallba_1
+    327                emberAfPluginUpdateTcLinkKeySetDelay(jitterTimeDelayMs());
+   \       0x34   0x4668             MOV      R0,SP
+   \       0x36   0x....'....        BL       halStackSeedRandom
+   \       0x3A   0x....'....        BL       halCommonGetRandom
+    328              } else if (status == EMBER_NETWORK_DOWN) {
+   \       0x3E   0xF247 0x5231      MOVW     R2,#+30001
+   \       0x42   0xFBB0 0xF2F2      UDIV     R2,R0,R2
+   \       0x46   0xF247 0x5131      MOVW     R1,#+30001
+   \       0x4A   0xFB01 0x0012      MLS      R0,R1,R2,R0
+   \       0x4E   0xF500 0x501C      ADD      R0,R0,#+9984
+   \       0x52   0x3010             ADDS     R0,R0,#+16
+   \       0x54   0x....'....        BL       emberAfPluginUpdateTcLinkKeySetDelay
+   \       0x58   0xE026             B.N      ??emberAfPluginNetworkSteeringStackStatusCallba_2
+   \                     ??emberAfPluginNetworkSteeringStackStatusCallba_1: (+1)
+   \       0x5A   0x2C91             CMP      R4,#+145
+   \       0x5C   0xD124             BNE.N    ??emberAfPluginNetworkSteeringStackStatusCallba_2
+    329                emberAfPluginUpdateTcLinkKeySetInactive();
+   \       0x5E   0x....'....        BL       emberAfPluginUpdateTcLinkKeySetInactive
+    330              }
+    331              return;
+   \       0x62   0xE021             B.N      ??emberAfPluginNetworkSteeringStackStatusCallba_2
+    332            } else if (status == EMBER_NETWORK_UP) {
+   \                     ??emberAfPluginNetworkSteeringStackStatusCallba_0: (+1)
+   \       0x64   0x2C90             CMP      R4,#+144
+   \       0x66   0xD11D             BNE.N    ??emberAfPluginNetworkSteeringStackStatusCallba_3
+    333              emberAfCorePrintln("%p network joined.", PLUGIN_NAME);
+   \       0x68   0x....'....        LDR.W    R2,??DataTable17_4
+   \       0x6C   0x....'....        LDR.W    R1,??DataTable17_11
+   \       0x70   0x....'....        BL       ?Subroutine2
+    334              if (!emAfPluginNetworkSteeringStateUsesDistributedKey()
+    335                  && !(emAfPluginNetworkSteeringOptionsMask
+    336                       & EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIONS_NO_TCLK_UPDATE)) {
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x74   0x7828             LDRB     R0,[R5, #+0]
+   \       0x76   0x2807             CMP      R0,#+7
+   \       0x78   0xBF18             IT       NE 
+   \       0x7A   0x2808             CMPNE    R0,#+8
+   \       0x7C   0xD007             BEQ.N    ??emberAfPluginNetworkSteeringStackStatusCallba_4
+   \       0x7E   0x....'....        LDR.W    R1,??DataTable17_12
+   \       0x82   0x780A             LDRB     R2,[R1, #+0]
+   \       0x84   0x07D3             LSLS     R3,R2,#+31
+   \       0x86   0xBF5C             ITT      PL 
+   \       0x88   0xF040 0x0010      ORRPL    R0,R0,#0x10
+   \       0x8C   0x7028             STRBPL   R0,[R5, #+0]
+    337                emAfPluginNetworkSteeringStateSetUpdateTclk();
+    338              }
+    339              emberEventControlSetDelayMS(finishSteeringEvent, randomJitterMS());
+   \                     ??emberAfPluginNetworkSteeringStackStatusCallba_4: (+1)
+   \       0x8E   0x....'....        BL       halCommonGetRandom
+   \       0x92   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x96   0x....'....        LDR.W    R0,??DataTable17_13
+   \       0x9A   0xF501 0x61FA      ADD      R1,R1,#+2000
+   \       0x9E   0x....'....        BL       emEventControlSetDelayMS
+    340              return;
+   \       0xA2   0xE001             B.N      ??emberAfPluginNetworkSteeringStackStatusCallba_2
+    341            }
+    342          
+    343            tryToJoinNetwork();
+   \                     ??emberAfPluginNetworkSteeringStackStatusCallba_3: (+1)
+   \       0xA4   0x....'....        BL       tryToJoinNetwork
+    344          }
+   \                     ??emberAfPluginNetworkSteeringStackStatusCallba_2: (+1)
+   \       0xA8   0xB00F             ADD      SP,SP,#+60
+   \       0xAA   0xBD30             POP      {R4,R5,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xF44F 0x62FA      MOV      R2,#+2000
+   \        0x6   0xFBB1 0xF2F2      UDIV     R2,R1,R2
+   \        0xA   0xF44F 0x60FA      MOV      R0,#+2000
+   \        0xE   0xFB00 0x1112      MLS      R1,R0,R2,R1
+   \       0x12   0x4770             BX       LR
+    345          
+    346          // Returns true if the key value is equal to defaultLinkKey
+
+   \                                 In section .text, align 2, keep-with-next
+    347          bool emIsWellKnownKey(EmberKeyData key)
+    348          {
+   \                     emIsWellKnownKey: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+    349            for (uint8_t i = 0; i < EMBER_ENCRYPTION_KEY_SIZE; i++) {
+   \        0x2   0x466E             MOV      R6,SP
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x....'....        LDR.W    R5,??DataTable17_14
+   \        0xA   0xE886 0x000F      STM      R6,{R0-R3}
+    350              if (key.contents[i] != defaultLinkKey.contents[i]) {
+   \                     ??emIsWellKnownKey_0: (+1)
+   \        0xE   0xF81D 0x1004      LDRB     R1,[SP, R4]
+   \       0x12   0x5D2A             LDRB     R2,[R5, R4]
+   \       0x14   0x4291             CMP      R1,R2
+   \       0x16   0xD105             BNE.N    ??emIsWellKnownKey_1
+   \       0x18   0x1C64             ADDS     R4,R4,#+1
+   \       0x1A   0x2C10             CMP      R4,#+16
+   \       0x1C   0xDBF7             BLT.N    ??emIsWellKnownKey_0
+    351                return false;
+    352              }
+    353            }
+    354            return true;
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \                     ??emIsWellKnownKey_2: (+1)
+   \       0x20   0xB004             ADD      SP,SP,#+16
+   \       0x22   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??emIsWellKnownKey_1: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xE7FB             B.N      ??emIsWellKnownKey_2
+    355          }
+    356          
+    357          static void scanCompleteCallback(uint8_t channel, EmberStatus status)
+    358          {
+    359            if (status != EMBER_SUCCESS) {
+    360              emberAfCorePrintln("Error: Scan complete handler returned 0x%X", status);
+    361            }
+    362          
+    363            // EMAPPFWKV2-1462 - make sure we didn't cleanupAndStop() above.
+    364            if (emAfPluginNetworkSteeringState
+    365                != EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE) {
+    366              tryToJoinNetwork();
+    367            }
+    368          }
+    369          
+
+   \                                 In section .text, align 2, keep-with-next
+    370          static void networkFoundCallback(EmberZigbeeNetwork *networkFound,
+    371                                           uint8_t lqi,
+    372                                           int8_t rssi)
+    373          {
+   \                     networkFoundCallback: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    374            emAfPluginNetworkSteeringTotalBeacons++;
+   \        0x4   0x....'....        LDR.W    R0,??DataTable17_15
+   \        0x8   0x7801             LDRB     R1,[R0, #+0]
+   \        0xA   0x1C49             ADDS     R1,R1,#+1
+   \        0xC   0x7001             STRB     R1,[R0, #+0]
+    375          
+    376            if (!(networkFound->allowingJoin
+    377                  && networkFound->stackProfile == REQUIRED_STACK_PROFILE)) {
+   \        0xE   0x78E0             LDRB     R0,[R4, #+3]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD040             BEQ.N    ??networkFoundCallback_0
+   \       0x14   0x7B20             LDRB     R0,[R4, #+12]
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD13D             BNE.N    ??networkFoundCallback_0
+    378              return;
+    379            }
+    380          
+    381            debugPrint("%p nwk found ch: %d, panID 0x%2X, xpan: ",
+    382                       PLUGIN_NAME,
+    383                       networkFound->channel,
+    384                       networkFound->panId);
+    385            debugExec(emberAfPrintBigEndianEui64(networkFound->extendedPanId));
+    386          
+    387            // If we were told to filter by extended PAN ID, do so now
+    388            if (gFilterByExtendedPanId) {
+   \       0x1A   0x....'....        LDR.W    R1,??DataTable17_16
+   \       0x1E   0x7808             LDRB     R0,[R1, #+0]
+   \       0x20   0xB130             CBZ.N    R0,??networkFoundCallback_1
+    389              if (0 != MEMCOMPARE(networkFound->extendedPanId,
+    390                                  gExtendedPanIdToFilterOn,
+    391                                  COUNTOF(gExtendedPanIdToFilterOn))) {
+   \       0x22   0x2208             MOVS     R2,#+8
+   \       0x24   0x....'....        LDR.W    R1,??DataTable17_17
+   \       0x28   0x1D20             ADDS     R0,R4,#+4
+   \       0x2A   0x....'....        BL       halCommonMemCompare
+   \       0x2E   0xBB90             CBNZ.N   R0,??networkFoundCallback_0
+    392                debugPrint(". Skipping since we are looking for xpan: ");
+    393                debugExec(emberAfPrintBigEndianEui64(gExtendedPanIdToFilterOn));
+    394                debugPrintln("");
+    395                return;
+    396              }
+    397            }
+    398          
+    399            debugPrintln("");
+    400          
+    401            if (!addPanIdCandidate(networkFound->panId)) {
+   \                     ??networkFoundCallback_1: (+1)
+   \       0x30   0x8826             LDRH     R6,[R4, #+0]
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x....'....        BL       emAfPluginNetworkSteeringGetStoredPanIdPointer
+   \       0x38   0x0004             MOVS     R4,R0
+   \       0x3A   0x....'....        LDR.W    R5,??DataTable17_4
+   \       0x3E   0xD10D             BNE.N    ??networkFoundCallback_2
+   \       0x40   0x462A             MOV      R2,R5
+   \       0x42   0x....'....        LDR.W    R1,??DataTable17_18
+   \       0x46   0x....'....        BL       ?Subroutine2
+    402              emberAfCorePrintln("Error: %p could not add candidate network.",
+    403                                 PLUGIN_NAME);
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x4A   0x462A             MOV      R2,R5
+   \       0x4C   0x....'....        LDR.W    R1,??DataTable17_19
+   \       0x50   0x....'....        BL       ?Subroutine2
+    404              cleanupAndStop(EMBER_ERR_FATAL);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x54   0x2001             MOVS     R0,#+1
+   \       0x56   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x5A   0x....             B.N      cleanupAndStop
+    405              return;
+    406            }
+   \                     ??networkFoundCallback_2: (+1)
+   \       0x5C   0x....'....        BL       emAfPluginNetworkSteeringGetMaxPossiblePanIds
+   \       0x60   0x4603             MOV      R3,R0
+   \       0x62   0x2000             MOVS     R0,#+0
+   \       0x64   0xF64F 0x72FF      MOVW     R2,#+65535
+   \       0x68   0xE001             B.N      ??networkFoundCallback_3
+   \                     ??networkFoundCallback_4: (+1)
+   \       0x6A   0x1CA4             ADDS     R4,R4,#+2
+   \       0x6C   0x1C40             ADDS     R0,R0,#+1
+   \                     ??networkFoundCallback_3: (+1)
+   \       0x6E   0xB2C1             UXTB     R1,R0
+   \       0x70   0x4299             CMP      R1,R3
+   \       0x72   0xDA06             BGE.N    ??networkFoundCallback_5
+   \       0x74   0x8821             LDRH     R1,[R4, #+0]
+   \       0x76   0x428E             CMP      R6,R1
+   \       0x78   0xD00D             BEQ.N    ??networkFoundCallback_0
+   \       0x7A   0x4291             CMP      R1,R2
+   \       0x7C   0xD1F5             BNE.N    ??networkFoundCallback_4
+   \       0x7E   0x8026             STRH     R6,[R4, #+0]
+   \       0x80   0xBD70             POP      {R4-R6,PC}
+   \                     ??networkFoundCallback_5: (+1)
+   \       0x82   0x....             LDR.N    R4,??DataTable17_2
+   \       0x84   0x7820             LDRB     R0,[R4, #+0]
+   \       0x86   0xB930             CBNZ.N   R0,??networkFoundCallback_0
+   \       0x88   0x462A             MOV      R2,R5
+   \       0x8A   0x....'....        LDR.W    R1,??DataTable17_20
+   \       0x8E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x92   0x2001             MOVS     R0,#+1
+   \       0x94   0x7020             STRB     R0,[R4, #+0]
+    407          }
+   \                     ??networkFoundCallback_0: (+1)
+   \       0x96   0xBD70             POP      {R4-R6,PC}       ;; return
+    408          
+
+   \                                 In section .text, align 4, keep-with-next
+    409          HIDDEN void scanResultsHandler(EmberAfPluginScanDispatchScanResults *results)
+    410          {
+   \                     scanResultsHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    411            if (emberAfPluginScanDispatchScanResultsAreComplete(results)
+    412                || emberAfPluginScanDispatchScanResultsAreFailure(results)) {
+   \        0x2   0x8901             LDRH     R1,[R0, #+8]
+   \        0x4   0xF411 0x7F40      TST      R1,#0x300
+   \        0x8   0xD00C             BEQ.N    ??scanResultsHandler_0
+    413              scanCompleteCallback(results->channel, results->status);
+   \        0xA   0x7802             LDRB     R2,[R0, #+0]
+   \        0xC   0x0010             MOVS     R0,R2
+   \        0xE   0xD003             BEQ.N    ??CrossCallReturnLabel_14
+   \       0x10   0x....'....        LDR.W    R1,??DataTable17_21
+   \       0x14   0x....'....        BL       ?Subroutine2
+    414            } else {
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x18   0x....             LDR.N    R1,??DataTable17_8
+   \       0x1A   0x7808             LDRB     R0,[R1, #+0]
+   \       0x1C   0xB148             CBZ.N    R0,??scanResultsHandler_1
+   \       0x1E   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x22   0x....             B.N      tryToJoinNetwork
+    415              networkFoundCallback(results->network,
+    416                                   results->lqi,
+    417                                   results->rssi);
+   \                     ??scanResultsHandler_0: (+1)
+   \       0x24   0xF990 0x2001      LDRSB    R2,[R0, #+1]
+   \       0x28   0x78C1             LDRB     R1,[R0, #+3]
+   \       0x2A   0x6840             LDR      R0,[R0, #+4]
+   \       0x2C   0xE8BD 0x4008      POP      {R3,LR}
+   \       0x30   0x....             B.N      networkFoundCallback
+    418            }
+    419          }
+   \                     ??scanResultsHandler_1: (+1)
+   \       0x32   0xBD01             POP      {R0,PC}          ;; return
+    420          
+
+   \                                 In section .text, align 2, keep-with-next
+    421          static EmberStatus tryNextMethod(void)
+    422          {
+   \                     tryNextMethod: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    423            emAfPluginNetworkSteeringState++;
+   \        0x2   0x....             LDR.N    R0,??DataTable17_8
+   \        0x4   0x7801             LDRB     R1,[R0, #+0]
+   \        0x6   0x1C49             ADDS     R1,R1,#+1
+   \        0x8   0x7001             STRB     R1,[R0, #+0]
+    424            if (emAfPluginNetworkSteeringState > LAST_JOINING_STATE) {
+   \        0xA   0xB2C9             UXTB     R1,R1
+   \        0xC   0x2909             CMP      R1,#+9
+   \        0xE   0xDB0A             BLT.N    ??tryNextMethod_0
+    425              EmberStatus status = (emAfPluginNetworkSteeringTotalBeacons > 0
+    426                                    ? EMBER_JOIN_FAILED
+    427                                    : EMBER_NO_BEACONS);
+   \       0x10   0x....             LDR.N    R1,??DataTable17_15
+   \       0x12   0x7808             LDRB     R0,[R1, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xBF14             ITE      NE 
+   \       0x18   0x2494             MOVNE    R4,#+148
+   \       0x1A   0x24AB             MOVEQ    R4,#+171
+    428              cleanupAndStop(status);
+   \       0x1C   0x4620             MOV      R0,R4
+   \       0x1E   0x....'....        BL       cleanupAndStop
+    429              return status;
+   \       0x22   0x4620             MOV      R0,R4
+   \       0x24   0xBD10             POP      {R4,PC}
+    430            }
+    431            return stateMachineRun();
+   \                     ??tryNextMethod_0: (+1)
+   \       0x26   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x2A   0x....             B.N      stateMachineRun
+    432          }
+    433          
+
+   \                                 In section .text, align 2, keep-with-next
+    434          static void cleanupAndStop(EmberStatus status)
+    435          {
+   \                     cleanupAndStop: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    436            emberAfCorePrintln("%p Stop.  Cleaning up.", PLUGIN_NAME);
+   \        0x4   0x....             LDR.N    R2,??DataTable17_4
+   \        0x6   0x....             LDR.N    R1,??DataTable17_22
+   \        0x8   0x....'....        BL       ?Subroutine2
+    437            emberAfPluginNetworkSteeringCompleteCallback(status,
+    438                                                         emAfPluginNetworkSteeringTotalBeacons,
+    439                                                         emAfPluginNetworkSteeringJoinAttempts,
+    440                                                         emAfPluginNetworkSteeringState);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \        0xC   0x....             LDR.N    R4,??DataTable17_15
+   \        0xE   0x....             LDR.N    R6,??DataTable17_9
+   \       0x10   0x....             LDR.N    R7,??DataTable17_8
+   \       0x12   0x783B             LDRB     R3,[R7, #+0]
+   \       0x14   0x7832             LDRB     R2,[R6, #+0]
+   \       0x16   0x7821             LDRB     R1,[R4, #+0]
+   \       0x18   0x4628             MOV      R0,R5
+   \       0x1A   0x....'....        BL       emberAfPluginNetworkSteeringCompleteCallback
+    441            emAfPluginNetworkSteeringClearStoredPanIds();
+   \       0x1E   0x....'....        BL       emAfPluginNetworkSteeringClearStoredPanIds
+    442            emAfPluginNetworkSteeringState = EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x7038             STRB     R0,[R7, #+0]
+    443            emAfPluginNetworkSteeringPanIdIndex = 0;
+   \       0x26   0x....             LDR.N    R2,??DataTable17_3
+   \       0x28   0x7010             STRB     R0,[R2, #+0]
+    444            emAfPluginNetworkSteeringJoinAttempts = 0;
+   \       0x2A   0x7030             STRB     R0,[R6, #+0]
+    445            emAfPluginNetworkSteeringTotalBeacons = 0;
+   \       0x2C   0x7020             STRB     R0,[R4, #+0]
+    446          }
+   \       0x2E   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    447          
+    448          static uint8_t getNextChannel(void)
+    449          {
+    450            if (emAfPluginNetworkSteeringCurrentChannel == 0) {
+    451              emAfPluginNetworkSteeringCurrentChannel = (emberGetPseudoRandomNumber() & 0x0F)
+    452                                                        + EMBER_MIN_802_15_4_CHANNEL_NUMBER;
+    453              debugPrintln("Randomly choosing a starting channel %d.", emAfPluginNetworkSteeringCurrentChannel);
+    454            } else {
+    455              emAfPluginNetworkSteeringCurrentChannel++;
+    456            }
+    457            while (currentChannelMask != 0) {
+    458              if (BIT32(emAfPluginNetworkSteeringCurrentChannel) & currentChannelMask) {
+    459                currentChannelMask &= ~(BIT32(emAfPluginNetworkSteeringCurrentChannel));
+    460                return emAfPluginNetworkSteeringCurrentChannel;
+    461              }
+    462              emAfPluginNetworkSteeringCurrentChannel++;
+    463              if (emAfPluginNetworkSteeringCurrentChannel > EMBER_MAX_802_15_4_CHANNEL_NUMBER) {
+    464                emAfPluginNetworkSteeringCurrentChannel = EMBER_MIN_802_15_4_CHANNEL_NUMBER;
+    465              }
+    466            }
+    467            return 0;
+    468          }
+    469          
+
+   \                                 In section .text, align 2, keep-with-next
+    470          static EmberStatus stateMachineRun(void)
+    471          {
+   \                     stateMachineRun: (+1)
+   \        0x0   0xB578             PUSH     {R3-R6,LR}
+    472            EmberStatus status = EMBER_SUCCESS;
+    473            emberAfCorePrintln("%p State: %p",
+    474                               PLUGIN_NAME,
+    475                               emAfPluginNetworkSteeringStateNames[emAfPluginNetworkSteeringState]);
+   \        0x2   0x....             LDR.N    R5,??DataTable17_8
+   \        0x4   0x782E             LDRB     R6,[R5, #+0]
+   \        0x6   0xB08B             SUB      SP,SP,#+44
+   \        0x8   0x....             LDR.N    R0,??DataTable17_23
+   \        0xA   0x....             LDR.N    R4,??DataTable17_4
+   \        0xC   0xF850 0x3026      LDR      R3,[R0, R6, LSL #+2]
+   \       0x10   0x4622             MOV      R2,R4
+   \       0x12   0x....             LDR.N    R1,??DataTable17_24
+   \       0x14   0x....'....        BL       ?Subroutine0
+    476          
+    477            if ((status = setupSecurity()) != EMBER_SUCCESS) {
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x18   0x7828             LDRB     R0,[R5, #+0]
+   \       0x1A   0x2803             CMP      R0,#+3
+   \       0x1C   0xD102             BNE.N    ??stateMachineRun_0
+   \                     ??stateMachineRun_1: (+1)
+   \       0x1E   0xF44F 0x5100      MOV      R1,#+8192
+   \       0x22   0xE006             B.N      ??stateMachineRun_2
+   \                     ??stateMachineRun_0: (+1)
+   \       0x24   0x2804             CMP      R0,#+4
+   \       0x26   0xD0FA             BEQ.N    ??stateMachineRun_1
+   \       0x28   0x2100             MOVS     R1,#+0
+   \       0x2A   0x2807             CMP      R0,#+7
+   \       0x2C   0xBF18             IT       NE 
+   \       0x2E   0x2808             CMPNE    R0,#+8
+   \       0x30   0xD001             BEQ.N    ??stateMachineRun_3
+   \                     ??stateMachineRun_2: (+1)
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0xE000             B.N      ??stateMachineRun_4
+   \                     ??stateMachineRun_3: (+1)
+   \       0x36   0x2002             MOVS     R0,#+2
+   \                     ??stateMachineRun_4: (+1)
+   \       0x38   0x4301             ORRS     R1,R0,R1
+   \       0x3A   0xF441 0x51C8      ORR      R1,R1,#0x1900
+   \       0x3E   0xF041 0x0104      ORR      R1,R1,#0x4
+   \       0x42   0x....             LDR.N    R6,??DataTable17_25
+   \       0x44   0xF8AD 0x1000      STRH     R1,[SP, #+0]
+   \       0x48   0x4630             MOV      R0,R6
+   \       0x4A   0x....'....        BL       emberAfPluginNetworkSteeringGetDistributedKeyCallback
+   \       0x4E   0xB920             CBNZ.N   R0,??stateMachineRun_5
+   \       0x50   0x2210             MOVS     R2,#+16
+   \       0x52   0x....             LDR.N    R1,??DataTable17_26
+   \       0x54   0x4630             MOV      R0,R6
+   \       0x56   0x....'....        BL       halCommonMemMove
+   \                     ??stateMachineRun_5: (+1)
+   \       0x5A   0x....             LDR.N    R1,??DataTable17_27
+   \       0x5C   0x7808             LDRB     R0,[R1, #+0]
+   \       0x5E   0xB108             CBZ.N    R0,??stateMachineRun_6
+   \       0x60   0x....             LDR.N    R6,??DataTable17_28
+   \       0x62   0xE004             B.N      ??stateMachineRun_7
+   \                     ??stateMachineRun_6: (+1)
+   \       0x64   0x7828             LDRB     R0,[R5, #+0]
+   \       0x66   0x2807             CMP      R0,#+7
+   \       0x68   0xBF1C             ITT      NE 
+   \       0x6A   0x2808             CMPNE    R0,#+8
+   \       0x6C   0x....             LDRNE.N  R6,??DataTable17_14
+   \                     ??stateMachineRun_7: (+1)
+   \       0x6E   0x2210             MOVS     R2,#+16
+   \       0x70   0x4631             MOV      R1,R6
+   \       0x72   0xF10D 0x0002      ADD      R0,SP,#+2
+   \       0x76   0x....'....        BL       halCommonMemMove
+   \       0x7A   0x4668             MOV      R0,SP
+   \       0x7C   0x....'....        BL       emberSetInitialSecurityState
+   \       0x80   0x0003             MOVS     R3,R0
+   \       0x82   0xD112             BNE.N    ??stateMachineRun_8
+   \       0x84   0x2030             MOVS     R0,#+48
+   \       0x86   0x....'....        BL       emberSetExtendedSecurityBitmask
+   \       0x8A   0x0003             MOVS     R3,R0
+   \       0x8C   0xD10D             BNE.N    ??stateMachineRun_8
+   \       0x8E   0x....'....        BL       emAfClearLinkKeyTable
+    478              emberAfCorePrintln("Error: %p could not setup security: 0x%X",
+    479                                 PLUGIN_NAME,
+    480                                 status);
+    481              return tryNextMethod();
+    482            }
+    483          
+    484            switch (emAfPluginNetworkSteeringState) {
+   \                     ??stateMachineRun_9: (+1)
+   \       0x92   0x7828             LDRB     R0,[R5, #+0]
+   \       0x94   0x2801             CMP      R0,#+1
+   \       0x96   0xBF18             IT       NE 
+   \       0x98   0x2803             CMPNE    R0,#+3
+   \       0x9A   0xD003             BEQ.N    ??stateMachineRun_10
+   \       0x9C   0x2805             CMP      R0,#+5
+   \       0x9E   0xBF18             IT       NE 
+   \       0xA0   0x2807             CMPNE    R0,#+7
+   \       0xA2   0xD10B             BNE.N    ??stateMachineRun_11
+    485              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_CONFIGURED:
+    486              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_INSTALL_CODE:
+    487              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_CENTRALIZED:
+    488              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_DISTRIBUTED:
+    489                currentChannelMask = emAfPluginNetworkSteeringPrimaryChannelMask;
+   \                     ??stateMachineRun_10: (+1)
+   \       0xA4   0x....             LDR.N    R1,??DataTable17_29
+   \       0xA6   0x6808             LDR      R0,[R1, #+0]
+    490                break;
+   \       0xA8   0xE00A             B.N      ??stateMachineRun_12
+   \                     ??stateMachineRun_8: (+1)
+   \       0xAA   0x0018             MOVS     R0,R3
+   \       0xAC   0xD0F1             BEQ.N    ??stateMachineRun_9
+   \       0xAE   0x4622             MOV      R2,R4
+   \       0xB0   0x....             LDR.N    R1,??DataTable17_30
+   \       0xB2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0xB6   0x....'....        BL       tryNextMethod
+   \       0xBA   0xE006             B.N      ??stateMachineRun_13
+    491              default:
+    492                currentChannelMask = emAfPluginNetworkSteeringSecondaryChannelMask;
+   \                     ??stateMachineRun_11: (+1)
+   \       0xBC   0x....             LDR.N    R0,??DataTable17_31
+   \       0xBE   0x6800             LDR      R0,[R0, #+0]
+    493                break;
+   \                     ??stateMachineRun_12: (+1)
+   \       0xC0   0x....             LDR.N    R1,??DataTable17_1
+   \       0xC2   0x6008             STR      R0,[R1, #+0]
+    494            }
+    495          
+    496            debugPrintln("Channel Mask: 0x%4X", currentChannelMask);
+    497            gotoNextChannel();
+   \       0xC4   0x....'....        BL       gotoNextChannel
+    498            return status;
+   \       0xC8   0x2000             MOVS     R0,#+0
+   \                     ??stateMachineRun_13: (+1)
+   \       0xCA   0xB00C             ADD      SP,SP,#+48
+   \       0xCC   0xBD70             POP      {R4-R6,PC}       ;; return
+    499          }
+    500          
+    501          static EmberStatus setupSecurity(void)
+    502          {
+    503            EmberStatus status;
+    504            EmberInitialSecurityState state;
+    505            EmberExtendedSecurityBitmask extended;
+    506          
+    507            state.bitmask = (EMBER_TRUST_CENTER_GLOBAL_LINK_KEY
+    508                             | EMBER_HAVE_PRECONFIGURED_KEY
+    509                             | EMBER_REQUIRE_ENCRYPTED_KEY
+    510                             | EMBER_NO_FRAME_COUNTER_RESET
+    511                             | (emAfPluginNetworkSteeringStateUsesInstallCodes()
+    512                                ? EMBER_GET_PRECONFIGURED_KEY_FROM_INSTALL_CODE
+    513                                : 0)
+    514                             | (emAfPluginNetworkSteeringStateUsesDistributedKey()
+    515                                ? EMBER_DISTRIBUTED_TRUST_CENTER_MODE
+    516                                : 0)
+    517                             );
+    518          
+    519            if (!emberAfPluginNetworkSteeringGetDistributedKeyCallback(&emberPluginNetworkSteeringDistributedKey)) {
+    520              MEMMOVE(emberKeyContents(&emberPluginNetworkSteeringDistributedKey),
+    521                      emberKeyContents(&distributedTestKey),
+    522                      EMBER_ENCRYPTION_KEY_SIZE);
+    523            }
+    524            MEMMOVE(emberKeyContents(&(state.preconfiguredKey)),
+    525                    gUseConfiguredKey ? emberKeyContents(&(gConfiguredKey))
+    526                    : (emAfPluginNetworkSteeringStateUsesDistributedKey()
+    527                       ? emberKeyContents(&emberPluginNetworkSteeringDistributedKey)
+    528                       : emberKeyContents(&defaultLinkKey)),
+    529                    EMBER_ENCRYPTION_KEY_SIZE);
+    530          
+    531            if ((status = emberSetInitialSecurityState(&state))
+    532                != EMBER_SUCCESS) {
+    533              goto done;
+    534            }
+    535          
+    536            extended = (EMBER_JOINER_GLOBAL_LINK_KEY
+    537                        | EMBER_EXT_NO_FRAME_COUNTER_RESET);
+    538          
+    539            if ((status = emberSetExtendedSecurityBitmask(extended)) != EMBER_SUCCESS) {
+    540              goto done;
+    541            }
+    542          
+    543            emAfClearLinkKeyTable();
+    544          
+    545            done:
+    546            return status;
+    547          }
+    548          
+
+   \                                 In section .text, align 2, keep-with-next
+    549          EmberStatus emberAfPluginNetworkSteeringStart(void)
+    550          {
+    551            EmberStatus status = EMBER_INVALID_CALL;
+    552          
+    553            if (emAfProIsCurrentNetwork()
+    554                && (emAfPluginNetworkSteeringState
+    555                    == EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE)) {
+   \                     emberAfPluginNetworkSteeringStart: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable17_32
+   \        0x2   0xB538             PUSH     {R3-R5,LR}
+   \        0x4   0x6808             LDR      R0,[R1, #+0]
+   \        0x6   0x2470             MOVS     R4,#+112
+   \        0x8   0xB1B0             CBZ.N    R0,??emberAfPluginNetworkSteeringStart_0
+   \        0xA   0x....             LDR.N    R5,??DataTable17_8
+   \        0xC   0x7828             LDRB     R0,[R5, #+0]
+   \        0xE   0xB998             CBNZ.N   R0,??emberAfPluginNetworkSteeringStart_0
+    556              if (emberAfNetworkState() == EMBER_NO_NETWORK) {
+   \       0x10   0x....'....        BL       emberAfNetworkState
+   \       0x14   0xB958             CBNZ.N   R0,??emberAfPluginNetworkSteeringStart_1
+    557                emAfPluginNetworkSteeringState = gUseConfiguredKey
+    558                                                 ? EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_CONFIGURED
+    559                                                 : EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_INSTALL_CODE;
+   \       0x16   0x....             LDR.N    R1,??DataTable17_27
+   \       0x18   0x7808             LDRB     R0,[R1, #+0]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xBF14             ITE      NE 
+   \       0x1E   0x2001             MOVNE    R0,#+1
+   \       0x20   0x2003             MOVEQ    R0,#+3
+   \       0x22   0x7028             STRB     R0,[R5, #+0]
+    560          
+    561                // Stop any previous trust center link key update.
+    562                emberAfPluginUpdateTcLinkKeyStop();
+   \       0x24   0x....'....        BL       emberAfPluginUpdateTcLinkKeyStop
+    563          
+    564                status = stateMachineRun();
+   \       0x28   0x....'....        BL       stateMachineRun
+   \       0x2C   0xE003             B.N      ??emberAfPluginNetworkSteeringStart_2
+    565              } else {
+    566                status = emberAfPermitJoin(EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S,
+    567                                           true); // Broadcast permit join?
+   \                     ??emberAfPluginNetworkSteeringStart_1: (+1)
+   \       0x2E   0x2101             MOVS     R1,#+1
+   \       0x30   0x20B4             MOVS     R0,#+180
+   \       0x32   0x....'....        BL       emberAfPermitJoin
+   \                     ??emberAfPluginNetworkSteeringStart_2: (+1)
+   \       0x36   0x4604             MOV      R4,R0
+    568              }
+    569            }
+    570          
+    571            emberAfCorePrintln("%p: %p: 0x%X",
+    572                               emAfNetworkSteeringPluginName,
+    573                               "Start",
+    574                               status);
+   \                     ??emberAfPluginNetworkSteeringStart_0: (+1)
+   \       0x38   0x9400             STR      R4,[SP, #+0]
+   \       0x3A   0x....             LDR.N    R3,??DataTable17_33
+   \       0x3C   0x....'....        BL       ?Subroutine1
+    575          
+    576            return status;
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x40   0x4620             MOV      R0,R4
+   \       0x42   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    577          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable17_4
+   \        0x2   0x....             LDR.N    R1,??DataTable17_37
+   \        0x4   0x2001             MOVS     R0,#+1
+   \        0x6   0x....'....        B.W      emberAfPrintln
+    578          
+
+   \                                 In section .text, align 2, keep-with-next
+    579          EmberStatus emberAfPluginNetworkSteeringStop(void)
+    580          {
+   \                     emberAfPluginNetworkSteeringStop: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    581            if (emAfPluginNetworkSteeringState
+    582                == EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE) {
+   \        0x2   0x....             LDR.N    R1,??DataTable17_8
+   \        0x4   0x7808             LDRB     R0,[R1, #+0]
+   \        0x6   0xB908             CBNZ.N   R0,??emberAfPluginNetworkSteeringStop_0
+    583              return EMBER_INVALID_CALL;
+   \        0x8   0x2070             MOVS     R0,#+112
+   \        0xA   0xBD02             POP      {R1,PC}
+    584            }
+    585            cleanupAndStop(EMBER_JOIN_FAILED);
+   \                     ??emberAfPluginNetworkSteeringStop_0: (+1)
+   \        0xC   0x2094             MOVS     R0,#+148
+   \        0xE   0x....'....        BL       cleanupAndStop
+    586            return EMBER_SUCCESS;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xBD02             POP      {R1,PC}          ;; return
+    587          }
+    588          
+    589          // =============================================================================
+    590          // Finish Steering
+    591          
+    592          // At the end of the network steering process, we need to update the
+    593          // trust center link key (if we are in a centralized network) and broadcast
+    594          // a permit join to extend the network. This process needs to happen after
+    595          // we send our device announce and possibly our network timeout request if we
+    596          // are an end device.
+    597          
+
+   \                                 In section .text, align 2, keep-with-next
+    598          void emberAfPluginNetworkSteeringFinishSteeringEventHandler(void)
+    599          {
+   \                     emberAfPluginNetworkSteeringFinishSteeringEventHandler: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    600            EmberStatus status;
+    601          
+    602            emberEventControlSetInactive(finishSteeringEvent);
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....             LDR.N    R1,??DataTable17_13
+   \        0x6   0x7008             STRB     R0,[R1, #+0]
+    603          
+    604            if (emAfPluginNetworkSteeringStateVerifyTclk()) {
+   \        0x8   0x....             LDR.N    R2,??DataTable17_8
+   \        0xA   0x7810             LDRB     R0,[R2, #+0]
+   \        0xC   0x....             LDR.N    R4,??DataTable17_4
+   \        0xE   0x0681             LSLS     R1,R0,#+26
+   \       0x10   0xD50A             BPL.N    ??emberAfPluginNetworkSteeringFinishSteeringEve_0
+    605              // If we get here, then we have failed to verify the TCLK. Therefore,
+    606              // we leave the network.
+    607              emberAfPluginUpdateTcLinkKeyStop();
+   \       0x12   0x....'....        BL       emberAfPluginUpdateTcLinkKeyStop
+    608              emberLeaveNetwork();
+   \       0x16   0x....'....        BL       emberLeaveNetwork
+    609              emberAfCorePrintln("%p: %p",
+    610                                 PLUGIN_NAME,
+    611                                 "Key verification failed. Leaving network");
+   \       0x1A   0x....             LDR.N    R3,??DataTable17_34
+   \       0x1C   0x4622             MOV      R2,R4
+   \       0x1E   0x....             LDR.N    R1,??DataTable17_35
+   \       0x20   0x....'....        BL       ?Subroutine0
+    612              cleanupAndStop(EMBER_ERR_FATAL);
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0xE013             B.N      ??emberAfPluginNetworkSteeringFinishSteeringEve_1
+    613            } else if (emAfPluginNetworkSteeringStateUpdateTclk()) {
+   \                     ??emberAfPluginNetworkSteeringFinishSteeringEve_0: (+1)
+   \       0x28   0x06C0             LSLS     R0,R0,#+27
+   \       0x2A   0xD504             BPL.N    ??emberAfPluginNetworkSteeringFinishSteeringEve_2
+    614              // Start the process to update the TC link key. We will set another event
+    615              // for the broadcast permit join.
+    616              // Attempt a TC link key update now.
+    617              emberAfPluginUpdateTcLinkKeySetDelay(0);
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \       0x2E   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x32   0x....'....        B.W      emberAfPluginUpdateTcLinkKeySetDelay
+    618            } else {
+    619              // Broadcast permit join to extend the network.
+    620              // We are done!
+    621              status = emberAfPermitJoin(EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S,
+    622                                         true); // Broadcast permit join?
+   \                     ??emberAfPluginNetworkSteeringFinishSteeringEve_2: (+1)
+   \       0x36   0x2101             MOVS     R1,#+1
+   \       0x38   0x20B4             MOVS     R0,#+180
+   \       0x3A   0x....'....        BL       emberAfPermitJoin
+   \       0x3E   0x4605             MOV      R5,R0
+    623              emberAfCorePrintln("%p: %p: 0x%X",
+    624                                 PLUGIN_NAME,
+    625                                 "Broadcasting permit join",
+    626                                 status);
+   \       0x40   0x9000             STR      R0,[SP, #+0]
+   \       0x42   0x....             LDR.N    R3,??DataTable17_36
+   \       0x44   0x4622             MOV      R2,R4
+   \       0x46   0x....             LDR.N    R1,??DataTable17_37
+   \       0x48   0x2001             MOVS     R0,#+1
+   \       0x4A   0x....'....        BL       emberAfPrintln
+    627              cleanupAndStop(status);
+   \       0x4E   0x4628             MOV      R0,R5
+   \                     ??emberAfPluginNetworkSteeringFinishSteeringEve_1: (+1)
+   \       0x50   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x54   0x....             B.N      cleanupAndStop
+    628            }
+    629          }
+    630          
+
+   \                                 In section .text, align 2, keep-with-next
+    631          void emberAfPluginUpdateTcLinkKeyStatusCallback(EmberKeyStatus keyStatus)
+    632          {
+   \                     emberAfPluginUpdateTcLinkKeyStatusCallback: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    633            if (emAfPluginNetworkSteeringStateUpdateTclk()) {
+   \        0x4   0x....             LDR.N    R4,??DataTable17_8
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0x06C1             LSLS     R1,R0,#+27
+   \        0xA   0xD52C             BPL.N    ??emberAfPluginUpdateTcLinkKeyStatusCallback_0
+    634              emberAfCorePrintln("%p: %p: 0x%X",
+    635                                 PLUGIN_NAME,
+    636                                 "Trust center link key update status",
+    637                                 keyStatus);
+   \        0xC   0x9500             STR      R5,[SP, #+0]
+   \        0xE   0x....             LDR.N    R3,??DataTable17_38
+   \       0x10   0x....'....        BL       ?Subroutine1
+    638              switch (keyStatus) {
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x14   0x7820             LDRB     R0,[R4, #+0]
+   \       0x16   0x....             LDR.N    R6,??DataTable17_13
+   \       0x18   0x2D03             CMP      R5,#+3
+   \       0x1A   0xD004             BEQ.N    ??emberAfPluginUpdateTcLinkKeyStatusCallback_1
+   \       0x1C   0x2D1E             CMP      R5,#+30
+   \       0x1E   0xBF18             IT       NE 
+   \       0x20   0x2D65             CMPNE    R5,#+101
+   \       0x22   0xD00A             BEQ.N    ??emberAfPluginUpdateTcLinkKeyStatusCallback_2
+   \       0x24   0xE016             B.N      ??emberAfPluginUpdateTcLinkKeyStatusCallback_3
+    639                case EMBER_TRUST_CENTER_LINK_KEY_ESTABLISHED:
+    640                  // Success! But we should still wait to make sure we verify the key.
+    641                  emAfPluginNetworkSteeringStateSetVerifyTclk();
+   \                     ??emberAfPluginUpdateTcLinkKeyStatusCallback_1: (+1)
+   \       0x26   0xF040 0x0020      ORR      R0,R0,#0x20
+   \       0x2A   0x7020             STRB     R0,[R4, #+0]
+    642                  emberEventControlSetDelayMS(finishSteeringEvent, VERIFY_KEY_TIMEOUT_MS);
+   \       0x2C   0x4630             MOV      R0,R6
+   \       0x2E   0xF241 0x3188      MOVW     R1,#+5000
+   \       0x32   0xE8BD 0x407C      POP      {R2-R6,LR}
+   \       0x36   0x....'....        B.W      emEventControlSetDelayMS
+    643                  return;
+    644                case EMBER_TRUST_CENTER_IS_PRE_R21:
+    645                case EMBER_VERIFY_LINK_KEY_SUCCESS:
+    646                  // If the trust center is pre-r21, then we don't update the link key.
+    647                  // If the key status is that the link key has been verified, then we
+    648                  // have successfully updated our trust center link key and we are done!
+    649                  emAfPluginNetworkSteeringStateClearVerifyTclk();
+   \                     ??emberAfPluginUpdateTcLinkKeyStatusCallback_2: (+1)
+   \       0x3A   0xF000 0x00DF      AND      R0,R0,#0xDF
+   \       0x3E   0x7020             STRB     R0,[R4, #+0]
+    650                  emberEventControlSetDelayMS(finishSteeringEvent, randomJitterMS());
+   \       0x40   0x....'....        BL       halCommonGetRandom
+   \       0x44   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x48   0x4630             MOV      R0,R6
+   \       0x4A   0xF501 0x61FA      ADD      R1,R1,#+2000
+   \       0x4E   0x....'....        BL       emEventControlSetDelayMS
+    651                  break;
+   \       0x52   0xE004             B.N      ??emberAfPluginUpdateTcLinkKeyStatusCallback_4
+    652                default:
+    653                  // Failure!
+    654                  emberLeaveNetwork();
+   \                     ??emberAfPluginUpdateTcLinkKeyStatusCallback_3: (+1)
+   \       0x54   0x....'....        BL       emberLeaveNetwork
+    655                  cleanupAndStop(EMBER_NO_LINK_KEY_RECEIVED);
+   \       0x58   0x20AE             MOVS     R0,#+174
+   \       0x5A   0x....'....        BL       cleanupAndStop
+    656              }
+    657              emAfPluginNetworkSteeringStateClearUpdateTclk();
+   \                     ??emberAfPluginUpdateTcLinkKeyStatusCallback_4: (+1)
+   \       0x5E   0x7820             LDRB     R0,[R4, #+0]
+   \       0x60   0xF000 0x00EF      AND      R0,R0,#0xEF
+   \       0x64   0x7020             STRB     R0,[R4, #+0]
+    658            }
+    659          
+    660            return;
+   \                     ??emberAfPluginUpdateTcLinkKeyStatusCallback_0: (+1)
+   \       0x66   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+    661          }
+    662          
+
+   \                                 In section .text, align 2, keep-with-next
+    663          void emAfPluginNetworkSteeringSetChannelMask(uint32_t mask, bool secondaryMask)
+    664          {
+    665            if (secondaryMask) {
+   \                     emAfPluginNetworkSteeringSetChannelMask: (+1)
+   \        0x0   0xB111             CBZ.N    R1,??emAfPluginNetworkSteeringSetChannelMask_0
+    666              emAfPluginNetworkSteeringSecondaryChannelMask = mask;
+   \        0x2   0x....             LDR.N    R1,??DataTable17_31
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+   \        0x6   0x4770             BX       LR
+    667            } else {
+    668              emAfPluginNetworkSteeringPrimaryChannelMask = mask;
+   \                     ??emAfPluginNetworkSteeringSetChannelMask_0: (+1)
+   \        0x8   0x....             LDR.N    R2,??DataTable17_29
+   \        0xA   0x6010             STR      R0,[R2, #+0]
+    669            }
+    670          }
+   \        0xC   0x4770             BX       LR               ;; return
+    671          
+
+   \                                 In section .text, align 2, keep-with-next
+    672          void emAfPluginNetworkSteeringSetExtendedPanIdFilter(uint8_t* extendedPanId,
+    673                                                               bool turnFilterOn)
+    674          {
+   \                     emAfPluginNetworkSteeringSetExtendedPanIdFilter: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    675            if (!extendedPanId) {
+   \        0x4   0xB130             CBZ.N    R0,??emAfPluginNetworkSteeringSetExtendedPanIdFilt_0
+    676              return;
+    677            }
+    678            MEMCOPY(gExtendedPanIdToFilterOn,
+    679                    extendedPanId,
+    680                    COUNTOF(gExtendedPanIdToFilterOn));
+   \        0x6   0x4601             MOV      R1,R0
+   \        0x8   0x2208             MOVS     R2,#+8
+   \        0xA   0x....             LDR.N    R0,??DataTable17_17
+   \        0xC   0x....'....        BL       halCommonMemMove
+    681            gFilterByExtendedPanId = turnFilterOn;
+   \       0x10   0x....             LDR.N    R1,??DataTable17_16
+   \       0x12   0x700C             STRB     R4,[R1, #+0]
+    682          }
+   \                     ??emAfPluginNetworkSteeringSetExtendedPanIdFilt_0: (+1)
+   \       0x14   0xBD10             POP      {R4,PC}          ;; return
+    683          
+
+   \                                 In section .text, align 2, keep-with-next
+    684          void emAfPluginNetworkSteeringSetConfiguredKey(uint8_t *key,
+    685                                                         bool useConfiguredKey)
+    686          {
+   \                     emAfPluginNetworkSteeringSetConfiguredKey: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    687            if (!key) {
+   \        0x4   0xB130             CBZ.N    R0,??emAfPluginNetworkSteeringSetConfiguredKey_0
+    688              return;
+    689            }
+    690            MEMCOPY(gConfiguredKey.contents, key, EMBER_ENCRYPTION_KEY_SIZE);
+   \        0x6   0x4601             MOV      R1,R0
+   \        0x8   0x2210             MOVS     R2,#+16
+   \        0xA   0x....             LDR.N    R0,??DataTable17_28
+   \        0xC   0x....'....        BL       halCommonMemMove
+    691            gUseConfiguredKey = useConfiguredKey;
+   \       0x10   0x....             LDR.N    R1,??DataTable17_27
+   \       0x12   0x700C             STRB     R4,[R1, #+0]
+    692          }
+   \                     ??emAfPluginNetworkSteeringSetConfiguredKey_0: (+1)
+   \       0x14   0xBD10             POP      {R4,PC}          ;; return
+    693          
+
+   \                                 In section .text, align 2, keep-with-next
+    694          void emAfPluginNetworkSteeringCleanup(EmberStatus status)
+    695          {
+    696            cleanupAndStop(status);
+   \                     emAfPluginNetworkSteeringCleanup: (+1)
+   \        0x0   0x....             B.N      cleanupAndStop
+    697          }
+    698          
+
+   \                                 In section .text, align 2, keep-with-next
+    699          uint8_t emAfPluginNetworkSteeringGetCurrentChannel()
+    700          {
+    701            return emAfPluginNetworkSteeringCurrentChannel;
+   \                     emAfPluginNetworkSteeringGetCurrentChannel: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable17
+   \        0x2   0x7800             LDRB     R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+    702          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringCurrentChannel
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_1:
+   \        0x0   0x....'....        DC32     currentChannelMask
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_2:
+   \        0x0   0x....'....        DC32     printedMaxPanIdsWarning
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_3:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringPanIdIndex
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_4:
+   \        0x0   0x....'....        DC32     emAfNetworkSteeringPluginName
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_5:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_6:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_7:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_8:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_9:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringJoinAttempts
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_10:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_11:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_12:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringOptionsMask
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_13:
+   \        0x0   0x....'....        DC32     emberAfPluginNetworkSteeringFinishSteeringEventControl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_14:
+   \        0x0   0x....'....        DC32     defaultLinkKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_15:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringTotalBeacons
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_16:
+   \        0x0   0x....'....        DC32     gFilterByExtendedPanId
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_17:
+   \        0x0   0x....'....        DC32     gExtendedPanIdToFilterOn
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_18:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_19:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_20:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_21:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_22:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_23:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringStateNames
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_24:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_25:
+   \        0x0   0x....'....        DC32     emberPluginNetworkSteeringDistributedKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_26:
+   \        0x0   0x....'....        DC32     distributedTestKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_27:
+   \        0x0   0x....'....        DC32     gUseConfiguredKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_28:
+   \        0x0   0x....'....        DC32     gConfiguredKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_29:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringPrimaryChannelMask
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_30:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_31:
+   \        0x0   0x....'....        DC32     emAfPluginNetworkSteeringSecondaryChannelMask
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_32:
+   \        0x0   0x....'....        DC32     emAfCurrentZigbeeProNetwork
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_33:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_34:
+   \        0x0   0x....'....        DC32     ?_24
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_35:
+   \        0x0   0x....'....        DC32     ?_23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_36:
+   \        0x0   0x....'....        DC32     ?_25
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_37:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_38:
+   \        0x0   0x....'....        DC32     ?_26
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x4E 0x6F          DC8 "None"
+   \              0x6E 0x65    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x53 0x63          DC8 "Scan Primary Channels and use Configured Key"
+   \              0x61 0x6E    
+   \              0x20 0x50    
+   \              0x72 0x69    
+   \              0x6D 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x75 0x73    
+   \              0x65 0x20    
+   \              0x43 0x6F    
+   \              0x6E 0x66    
+   \              0x69 0x67    
+   \              0x75 0x72    
+   \              0x65 0x64    
+   \              0x20 0x4B    
+   \              0x65 0x79    
+   \              0x00         
+   \       0x2D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x53 0x63          DC8 "Scan Secondary Channels and use Configured Key"
+   \              0x61 0x6E    
+   \              0x20 0x53    
+   \              0x65 0x63    
+   \              0x6F 0x6E    
+   \              0x64 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x75 0x73    
+   \              0x65 0x20    
+   \              0x43 0x6F    
+   \              0x6E 0x66    
+   \              0x69 0x67    
+   \              0x75 0x72    
+   \              0x65 0x64    
+   \              0x20 0x4B    
+   \              0x65 0x79    
+   \              0x00         
+   \       0x2F   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x53 0x63          DC8 "Scan Primary Channels and use Install Code"
+   \              0x61 0x6E    
+   \              0x20 0x50    
+   \              0x72 0x69    
+   \              0x6D 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x75 0x73    
+   \              0x65 0x20    
+   \              0x49 0x6E    
+   \              0x73 0x74    
+   \              0x61 0x6C    
+   \              0x6C 0x20    
+   \              0x43 0x6F    
+   \              0x64 0x65    
+   \              0x00         
+   \       0x2B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x53 0x63          DC8 "Scan Secondary Channels and use Install Code"
+   \              0x61 0x6E    
+   \              0x20 0x53    
+   \              0x65 0x63    
+   \              0x6F 0x6E    
+   \              0x64 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x75 0x73    
+   \              0x65 0x20    
+   \              0x49 0x6E    
+   \              0x73 0x74    
+   \              0x61 0x6C    
+   \              0x6C 0x20    
+   \              0x43 0x6F    
+   \              0x64 0x65    
+   \              0x00         
+   \       0x2D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x53 0x63          DC8 "Scan Primary Channels and Use Centralized Key"
+   \              0x61 0x6E    
+   \              0x20 0x50    
+   \              0x72 0x69    
+   \              0x6D 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x55 0x73    
+   \              0x65 0x20    
+   \              0x43 0x65    
+   \              0x6E 0x74    
+   \              0x72 0x61    
+   \              0x6C 0x69    
+   \              0x7A 0x65    
+   \              0x64 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x00    
+   \       0x2E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x53 0x63          DC8 "Scan Secondary Channels and Use Centralized Key"
+   \              0x61 0x6E    
+   \              0x20 0x53    
+   \              0x65 0x63    
+   \              0x6F 0x6E    
+   \              0x64 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x55 0x73    
+   \              0x65 0x20    
+   \              0x43 0x65    
+   \              0x6E 0x74    
+   \              0x72 0x61    
+   \              0x6C 0x69    
+   \              0x7A 0x65    
+   \              0x64 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x53 0x63          DC8 "Scan Primary Channels and Use Distributed Key"
+   \              0x61 0x6E    
+   \              0x20 0x50    
+   \              0x72 0x69    
+   \              0x6D 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x55 0x73    
+   \              0x65 0x20    
+   \              0x44 0x69    
+   \              0x73 0x74    
+   \              0x72 0x69    
+   \              0x62 0x75    
+   \              0x74 0x65    
+   \              0x64 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x00    
+   \       0x2E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x53 0x63          DC8 "Scan Secondary Channels and Use Distributed Key"
+   \              0x61 0x6E    
+   \              0x20 0x53    
+   \              0x65 0x63    
+   \              0x6F 0x6E    
+   \              0x64 0x61    
+   \              0x72 0x79    
+   \              0x20 0x43    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x55 0x73    
+   \              0x65 0x20    
+   \              0x44 0x69    
+   \              0x73 0x74    
+   \              0x72 0x69    
+   \              0x62 0x75    
+   \              0x74 0x65    
+   \              0x64 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x45 0x72          DC8 45H, 72H, 72H, 6FH, 72H, 3AH, 20H, 25H
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x25    
+   \        0x8   0x70 0x20          DC8 70H, 20H, 63H, 6FH, 75H, 6CH, 64H, 20H
+   \              0x63 0x6F    
+   \              0x75 0x6C    
+   \              0x64 0x20    
+   \       0x10   0x6E 0x6F          DC8 6EH, 6FH, 74H, 20H, 67H, 65H, 74H, 20H
+   \              0x74 0x20    
+   \              0x67 0x65    
+   \              0x74 0x20    
+   \       0x18   0x6D 0x65          DC8 6DH, 65H, 6DH, 6FH, 72H, 79H, 20H, 70H
+   \              0x6D 0x6F    
+   \              0x72 0x79    
+   \              0x20 0x70    
+   \       0x20   0x6F 0x69          DC8 6FH, 69H, 6EH, 74H, 65H, 72H, 20H, 66H
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x20 0x66    
+   \       0x28   0x6F 0x72          DC8 6FH, 72H, 20H, 73H, 74H, 6FH, 72H, 65H
+   \              0x20 0x73    
+   \              0x74 0x6F    
+   \              0x72 0x65    
+   \       0x30   0x64 0x20          DC8 64H, 20H, 50H, 41H, 4EH, 20H, 49H, 44H
+   \              0x50 0x41    
+   \              0x4E 0x20    
+   \              0x49 0x44    
+   \       0x38   0x73 0x00          DC8 73H, 0
+   \       0x3A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x57 0x61          DC8 "Warning: %p Max PANs reached (%d)"
+   \              0x72 0x6E    
+   \              0x69 0x6E    
+   \              0x67 0x3A    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x4D 0x61    
+   \              0x78 0x20    
+   \              0x50 0x41    
+   \              0x4E 0x73    
+   \              0x20 0x72    
+   \              0x65 0x61    
+   \              0x63 0x68    
+   \              0x65 0x64    
+   \              0x20 0x28    
+   \              0x25 0x64    
+   \              0x29 0x00    
+   \       0x22   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x45 0x72          DC8 "Error: %p start scan failed: 0x%X"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x73 0x74    
+   \              0x61 0x72    
+   \              0x74 0x20    
+   \              0x73 0x63    
+   \              0x61 0x6E    
+   \              0x20 0x66    
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x58 0x00    
+   \       0x22   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x53 0x74          DC8 "Starting scan on channel %d"
+   \              0x61 0x72    
+   \              0x74 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x73    
+   \              0x63 0x61    
+   \              0x6E 0x20    
+   \              0x6F 0x6E    
+   \              0x20 0x63    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x20 0x25    
+   \              0x64 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x25 0x70          DC8 "%p joining 0x%2x"
+   \              0x20 0x6A    
+   \              0x6F 0x69    
+   \              0x6E 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x00         
+   \       0x11   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x45 0x72          DC8 "Error: %p could not attempt join: 0x%X"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x63 0x6F    
+   \              0x75 0x6C    
+   \              0x64 0x20    
+   \              0x6E 0x6F    
+   \              0x74 0x20    
+   \              0x61 0x74    
+   \              0x74 0x65    
+   \              0x6D 0x70    
+   \              0x74 0x20    
+   \              0x6A 0x6F    
+   \              0x69 0x6E    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x27   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x25 0x70          DC8 "%p network joined."
+   \              0x20 0x6E    
+   \              0x65 0x74    
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x20 0x6A    
+   \              0x6F 0x69    
+   \              0x6E 0x65    
+   \              0x64 0x2E    
+   \              0x00         
+   \       0x13   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x45 0x72          DC8 "Error: Scan complete handler returned 0x%X"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x53    
+   \              0x63 0x61    
+   \              0x6E 0x20    
+   \              0x63 0x6F    
+   \              0x6D 0x70    
+   \              0x6C 0x65    
+   \              0x74 0x65    
+   \              0x20 0x68    
+   \              0x61 0x6E    
+   \              0x64 0x6C    
+   \              0x65 0x72    
+   \              0x20 0x72    
+   \              0x65 0x74    
+   \              0x75 0x72    
+   \              0x6E 0x65    
+   \              0x64 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x2B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x45 0x72          DC8 "Error: %p could not add candidate network."
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x63 0x6F    
+   \              0x75 0x6C    
+   \              0x64 0x20    
+   \              0x6E 0x6F    
+   \              0x74 0x20    
+   \              0x61 0x64    
+   \              0x64 0x20    
+   \              0x63 0x61    
+   \              0x6E 0x64    
+   \              0x69 0x64    
+   \              0x61 0x74    
+   \              0x65 0x20    
+   \              0x6E 0x65    
+   \              0x74 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x2E    
+   \              0x00         
+   \       0x2B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x25 0x70          DC8 "%p Stop.  Cleaning up."
+   \              0x20 0x53    
+   \              0x74 0x6F    
+   \              0x70 0x2E    
+   \              0x20 0x20    
+   \              0x43 0x6C    
+   \              0x65 0x61    
+   \              0x6E 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x75    
+   \              0x70 0x2E    
+   \              0x00         
+   \       0x17   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x25 0x70          DC8 "%p State: %p"
+   \              0x20 0x53    
+   \              0x74 0x61    
+   \              0x74 0x65    
+   \              0x3A 0x20    
+   \              0x25 0x70    
+   \              0x00         
+   \        0xD   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x45 0x72          DC8 "Error: %p could not setup security: 0x%X"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x63 0x6F    
+   \              0x75 0x6C    
+   \              0x64 0x20    
+   \              0x6E 0x6F    
+   \              0x74 0x20    
+   \              0x73 0x65    
+   \              0x74 0x75    
+   \              0x70 0x20    
+   \              0x73 0x65    
+   \              0x63 0x75    
+   \              0x72 0x69    
+   \              0x74 0x79    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x29   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x25 0x70          DC8 "%p: %p: 0x%X"
+   \              0x3A 0x20    
+   \              0x25 0x70    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \        0xD   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x53 0x74          DC8 "Start"
+   \              0x61 0x72    
+   \              0x74 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_23:
+   \        0x0   0x25 0x70          DC8 "%p: %p"
+   \              0x3A 0x20    
+   \              0x25 0x70    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_24:
+   \        0x0   0x4B 0x65          DC8 "Key verification failed. Leaving network"
+   \              0x79 0x20    
+   \              0x76 0x65    
+   \              0x72 0x69    
+   \              0x66 0x69    
+   \              0x63 0x61    
+   \              0x74 0x69    
+   \              0x6F 0x6E    
+   \              0x20 0x66    
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x2E    
+   \              0x20 0x4C    
+   \              0x65 0x61    
+   \              0x76 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x6E    
+   \              0x65 0x74    
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x00         
+   \       0x29   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_25:
+   \        0x0   0x42 0x72          DC8 "Broadcasting permit join"
+   \              0x6F 0x61    
+   \              0x64 0x63    
+   \              0x61 0x73    
+   \              0x74 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x70    
+   \              0x65 0x72    
+   \              0x6D 0x69    
+   \              0x74 0x20    
+   \              0x6A 0x6F    
+   \              0x69 0x6E    
+   \              0x00         
+   \       0x19   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_26:
+   \        0x0   0x54 0x72          DC8 "Trust center link key update status"
+   \              0x75 0x73    
+   \              0x74 0x20    
+   \              0x63 0x65    
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x20 0x6C    
+   \              0x69 0x6E    
+   \              0x6B 0x20    
+   \              0x6B 0x65    
+   \              0x79 0x20    
+   \              0x75 0x70    
+   \              0x64 0x61    
+   \              0x74 0x65    
+   \              0x20 0x73    
+   \              0x74 0x61    
+   \              0x74 0x75    
+   \              0x73 0x00    
+    703          
+    704          #endif // #ifndef EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIMIZE_SCANS
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   cleanupAndStop
+        24   -> emAfPluginNetworkSteeringClearStoredPanIds
+        24   -> emberAfPluginNetworkSteeringCompleteCallback
+        24   -> emberAfPrintln
+       0   emAfPluginNetworkSteeringCleanup
+         0   -> cleanupAndStop
+       0   emAfPluginNetworkSteeringGetCurrentChannel
+       0   emAfPluginNetworkSteeringSetChannelMask
+       8   emAfPluginNetworkSteeringSetConfiguredKey
+         8   -> halCommonMemMove
+       8   emAfPluginNetworkSteeringSetExtendedPanIdFilter
+         8   -> halCommonMemMove
+      32   emIsWellKnownKey
+      16   emberAfPluginNetworkSteeringFinishSteeringEventHandler
+         0   -> cleanupAndStop
+        16   -> emberAfPermitJoin
+         0   -> emberAfPluginUpdateTcLinkKeySetDelay
+        16   -> emberAfPluginUpdateTcLinkKeyStop
+        16   -> emberAfPrintln
+        16   -> emberLeaveNetwork
+      72   emberAfPluginNetworkSteeringStackStatusCallback
+        72   -> __aeabi_memcpy
+        72   -> emEventControlSetDelayMS
+        72   -> emIsWellKnownKey
+        72   -> emberAfPluginUpdateTcLinkKeySetDelay
+        72   -> emberAfPluginUpdateTcLinkKeySetInactive
+        72   -> emberAfPrintln
+        72   -> emberGetKey
+        72   -> halCommonGetRandom
+        72   -> halStackSeedRandom
+        72   -> tryToJoinNetwork
+      16   emberAfPluginNetworkSteeringStart
+        16   -> emberAfNetworkState
+        16   -> emberAfPermitJoin
+        16   -> emberAfPluginUpdateTcLinkKeyStop
+        16   -> emberAfPrintln
+        16   -> stateMachineRun
+       8   emberAfPluginNetworkSteeringStop
+         8   -> cleanupAndStop
+      24   emberAfPluginUpdateTcLinkKeyStatusCallback
+        24   -> cleanupAndStop
+         0   -> emEventControlSetDelayMS
+        24   -> emEventControlSetDelayMS
+        24   -> emberAfPrintln
+        24   -> emberLeaveNetwork
+        24   -> halCommonGetRandom
+      32   gotoNextChannel
+        32   -> cleanupAndStop
+        32   -> emAfPluginNetworkSteeringClearStoredPanIds
+        32   -> emberAfPluginScanDispatchScheduleScan
+        32   -> emberAfPrintln
+        32   -> halCommonGetRandom
+        32   -> tryNextMethod
+      16   networkFoundCallback
+         0   -> cleanupAndStop
+        16   -> emAfPluginNetworkSteeringGetMaxPossiblePanIds
+        16   -> emAfPluginNetworkSteeringGetStoredPanIdPointer
+        16   -> emberAfPrintln
+        16   -> halCommonMemCompare
+       8   scanResultsHandler
+         8   -> emberAfPrintln
+         0   -> networkFoundCallback
+         0   -> tryToJoinNetwork
+      64   stateMachineRun
+        64   -> emAfClearLinkKeyTable
+        64   -> emberAfPluginNetworkSteeringGetDistributedKeyCallback
+        64   -> emberAfPrintln
+        64   -> emberSetExtendedSecurityBitmask
+        64   -> emberSetInitialSecurityState
+        64   -> gotoNextChannel
+        64   -> halCommonMemMove
+        64   -> tryNextMethod
+       8   tryNextMethod
+         8   -> cleanupAndStop
+         0   -> stateMachineRun
+      40   tryToJoinNetwork
+        40   -> cleanupAndStop
+        40   -> emAfPluginNetworkSteeringGetStoredPanIdPointer
+        40   -> emberAfPluginNetworkSteeringGetNodeTypeCallback
+        40   -> emberAfPrintln
+        40   -> emberJoinNetwork
+        40   -> gotoNextChannel
+        40   -> halCommonMemSet
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable17
+       4  ??DataTable17_1
+       4  ??DataTable17_10
+       4  ??DataTable17_11
+       4  ??DataTable17_12
+       4  ??DataTable17_13
+       4  ??DataTable17_14
+       4  ??DataTable17_15
+       4  ??DataTable17_16
+       4  ??DataTable17_17
+       4  ??DataTable17_18
+       4  ??DataTable17_19
+       4  ??DataTable17_2
+       4  ??DataTable17_20
+       4  ??DataTable17_21
+       4  ??DataTable17_22
+       4  ??DataTable17_23
+       4  ??DataTable17_24
+       4  ??DataTable17_25
+       4  ??DataTable17_26
+       4  ??DataTable17_27
+       4  ??DataTable17_28
+       4  ??DataTable17_29
+       4  ??DataTable17_3
+       4  ??DataTable17_30
+       4  ??DataTable17_31
+       4  ??DataTable17_32
+       4  ??DataTable17_33
+       4  ??DataTable17_34
+       4  ??DataTable17_35
+       4  ??DataTable17_36
+       4  ??DataTable17_37
+       4  ??DataTable17_38
+       4  ??DataTable17_4
+       4  ??DataTable17_5
+       4  ??DataTable17_6
+       4  ??DataTable17_7
+       4  ??DataTable17_8
+       4  ??DataTable17_9
+       6  ?Subroutine0
+      10  ?Subroutine1
+       6  ?Subroutine2
+      20  ?Subroutine3
+       8  ?_0
+      48  ?_1
+      36  ?_10
+      36  ?_11
+      28  ?_12
+      20  ?_13
+      40  ?_14
+      20  ?_15
+      44  ?_16
+      44  ?_17
+      24  ?_18
+      16  ?_19
+      48  ?_2
+      44  ?_20
+      16  ?_21
+       8  ?_22
+       8  ?_23
+      44  ?_24
+      28  ?_25
+      36  ?_26
+      44  ?_3
+      48  ?_4
+      48  ?_5
+      48  ?_6
+      48  ?_7
+      48  ?_8
+      60  ?_9
+      48  cleanupAndStop
+       4  currentChannelMask
+      16  defaultLinkKey
+      16  distributedTestKey
+      16  emAfNetworkSteeringPluginName
+       2  emAfPluginNetworkSteeringCleanup
+       1  emAfPluginNetworkSteeringCurrentChannel
+       6  emAfPluginNetworkSteeringGetCurrentChannel
+       1  emAfPluginNetworkSteeringJoinAttempts
+       1  emAfPluginNetworkSteeringOptionsMask
+       1  emAfPluginNetworkSteeringPanIdIndex
+       4  emAfPluginNetworkSteeringPrimaryChannelMask
+       4  emAfPluginNetworkSteeringSecondaryChannelMask
+      14  emAfPluginNetworkSteeringSetChannelMask
+      22  emAfPluginNetworkSteeringSetConfiguredKey
+      22  emAfPluginNetworkSteeringSetExtendedPanIdFilter
+       1  emAfPluginNetworkSteeringState
+      36  emAfPluginNetworkSteeringStateNames
+       1  emAfPluginNetworkSteeringTotalBeacons
+      40  emIsWellKnownKey
+       8  emberAfPluginNetworkSteeringFinishSteeringEventControl
+      86  emberAfPluginNetworkSteeringFinishSteeringEventHandler
+     172  emberAfPluginNetworkSteeringStackStatusCallback
+      68  emberAfPluginNetworkSteeringStart
+      22  emberAfPluginNetworkSteeringStop
+     104  emberAfPluginUpdateTcLinkKeyStatusCallback
+      16  emberPluginNetworkSteeringDistributedKey
+      16  gConfiguredKey
+       8  gExtendedPanIdToFilterOn
+       1  gFilterByExtendedPanId
+       1  gUseConfiguredKey
+     170  gotoNextChannel
+     152  networkFoundCallback
+       1  printedMaxPanIdsWarning
+      52  scanResultsHandler
+     206  stateMachineRun
+      44  tryNextMethod
+     144  tryToJoinNetwork
+
+ 
+    61 bytes in section .bss
+    44 bytes in section .data
+   988 bytes in section .rodata
+ 1 572 bytes in section .text
+ 
+ 1 572 bytes of CODE  memory
+   988 bytes of CONST memory
+   105 bytes of DATA  memory
+
+Errors: none
+Warnings: none

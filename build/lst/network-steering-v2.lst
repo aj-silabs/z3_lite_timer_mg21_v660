@@ -1,0 +1,808 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:26
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\network-steering-v2.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWDF4F.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\network-steering-v2.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"network-steering-v2.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\network-steering-v2.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\network-steering-v2.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\network-steering\network-steering-v2.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief This file implements the Zigbee 3.0 network steering procedure using
+      4           * only one 15.4 scan.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     11           * software is governed by the terms of Silicon Labs Master Software License
+     12           * Agreement (MSLA) available at
+     13           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     14           * software is distributed to you in Source Code format and is governed by the
+     15           * sections of the MSLA applicable to Source Code.
+     16           *
+     17           ******************************************************************************/
+     18          
+     19          #ifdef EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIMIZE_SCANS
+     20          
+     21          #include "app/framework/include/af.h"
+     22          #include "app/framework/security/af-security.h" // emAfClearLinkKeyTable()
+     23          #include "app/framework/plugin/network-steering/network-steering.h"
+     24          #include "app/framework/plugin/network-steering/network-steering-internal.h"
+     25          #include "stack/include/network-formation.h"
+     26          
+     27          #if defined(EMBER_AF_API_SCAN_DISPATCH)
+     28            #include EMBER_AF_API_SCAN_DISPATCH
+     29          #elif defined(EMBER_TEST)
+     30            #include "../scan-dispatch/scan-dispatch.h"
+     31          #endif
+     32          
+     33          #if defined(EMBER_AF_API_UPDATE_TC_LINK_KEY)
+     34            #include EMBER_AF_API_UPDATE_TC_LINK_KEY
+     35          #elif defined(EMBER_TEST)
+     36            #include "../update-tc-link-key/update-tc-link-key.h"
+     37          #endif
+     38          
+     39          #ifdef EMBER_TEST
+     40            #define HIDDEN
+     41            #define EMBER_AF_PLUGIN_NETWORK_STEERING_RADIO_TX_POWER 3
+     42          #else
+     43            #define HIDDEN static
+     44          #endif
+     45          
+     46          //============================================================================
+     47          // Globals
+     48          
+     49          #if !defined(EMBER_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK)
+     50            #define EMBER_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK \
+     51            (BIT32(11) | BIT32(14))
+     52          #endif
+     53          
+     54          #if !defined(EMBER_AF_PLUGIN_NETWORK_STEERING_SCAN_DURATION)
+     55            #define EMBER_AF_PLUGIN_NETWORK_STEERING_SCAN_DURATION 5
+     56          #endif
+     57          
+     58          #if !defined(EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S)
+     59            #define EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S (180)
+     60          #endif
+     61          
+     62          #ifdef  EMBER_AF_PLUGIN_NETWORK_STEERING_RADIO_TX_CALLBACK
+     63            #define GET_RADIO_TX_POWER(channel) emberAfPluginNetworkSteeringGetPowerForRadioChannelCallback(channel)
+     64          #else
+     65            #define GET_RADIO_TX_POWER(channel) EMBER_AF_PLUGIN_NETWORK_STEERING_RADIO_TX_POWER
+     66          #endif
+     67          
+     68          const char * emAfPluginNetworkSteeringStateNames[] = {
+     69            "None",
+     70            // These next two states are only run if explicitly configured to do so
+     71            // See emAfPluginNetworkSteeringSetConfiguredKey()
+     72            "Scan Primary Channels and use Configured Key",
+     73            "Scan Secondary Channels and use Configured Key",
+     74            "Scan Primary Channels and use Install Code",
+     75            "Scan Secondary Channels and use Install Code",
+     76            "Scan Primary Channels and Use Centralized Key",
+     77            "Scan Secondary Channels and Use Centralized Key",
+     78            "Scan Primary Channels and Use Distributed Key",
+     79            "Scan Secondary Channels and Use Distributed Key",
+     80          };
+     81          
+     82          #define LAST_JOINING_STATE \
+     83            EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_SECONDARY_DISTRIBUTED
+     84          
+     85          EmberAfPluginNetworkSteeringJoiningState emAfPluginNetworkSteeringState
+     86            = EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE;
+     87          
+     88          const uint8_t emAfNetworkSteeringPluginName[] = "NWK Steering";
+     89          #define PLUGIN_NAME emAfNetworkSteeringPluginName
+     90          
+     91          // #define PLUGIN_DEBUG
+     92          #if defined(PLUGIN_DEBUG)
+     93            #define debugPrintln(...) emberAfCorePrintln(__VA_ARGS__)
+     94            #define debugPrint(...)   emberAfCorePrint(__VA_ARGS__)
+     95            #define debugExec(x) do { x; } while (0)
+     96          #else
+     97            #define debugPrintln(...)
+     98            #define debugPrint(...)
+     99            #define debugExec(x)
+    100          #endif
+    101          
+    102          #define SECONDARY_CHANNEL_MASK EMBER_ALL_802_15_4_CHANNELS_MASK
+    103          
+    104          static const EmberKeyData defaultLinkKey = {
+    105            { 0x5A, 0x69, 0x67, 0x42, 0x65, 0x65, 0x41, 0x6C,
+    106              0x6C, 0x69, 0x61, 0x6E, 0x63, 0x65, 0x30, 0x39 }
+    107          };
+    108          static const EmberKeyData distributedTestKey = {
+    109            { 0xD0, 0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7,
+    110              0xD8, 0xD9, 0xDA, 0xDB, 0xDC, 0xDD, 0xDE, 0xDF }
+    111          };
+    112          
+    113          // These parameters allow for filtering which networks to find or which specific
+    114          // key to use
+    115          static bool gFilterByExtendedPanId = false;
+    116          static uint8_t gExtendedPanIdToFilterOn[8];
+    117          static bool gUseConfiguredKey = false;
+    118          static EmberKeyData gConfiguredKey = {
+    119            { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    120              0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }
+    121          };
+    122          
+    123          // We make these into variables so that they can be changed at run time.
+    124          // This is very useful for unit and interop tests.
+    125          uint32_t emAfPluginNetworkSteeringPrimaryChannelMask
+    126            = EMBER_AF_PLUGIN_NETWORK_STEERING_CHANNEL_MASK;
+    127          uint32_t emAfPluginNetworkSteeringSecondaryChannelMask
+    128            = SECONDARY_CHANNEL_MASK;
+    129          
+    130          uint8_t emAfPluginNetworkSteeringTotalBeacons = 0;
+    131          uint8_t emAfPluginNetworkSteeringJoinAttempts = 0;
+    132          EmberKeyData emberPluginNetworkSteeringDistributedKey;
+    133          
+    134          NetworkSteeringState steeringState = { 0 };
+    135          // Shorthand names
+    136          #define BEACON_ITERATOR         steeringState.beaconIterator
+    137          #define CURRENT_CHANNEL_MASK    steeringState.currentChannelMask
+    138          
+    139          EmberEventControl emberAfPluginNetworkSteeringFinishSteeringEventControl;
+    140          #define finishSteeringEvent (emberAfPluginNetworkSteeringFinishSteeringEventControl)
+    141          
+    142          // TODO: good value for this?
+    143          // Let's try jittering our TCLK update and permit join broadcast to cut down
+    144          // on commission-time traffic.
+    145          #define FINISH_STEERING_JITTER_MIN_MS (MILLISECOND_TICKS_PER_SECOND << 1)
+    146          #define FINISH_STEERING_JITTER_MAX_MS (MILLISECOND_TICKS_PER_SECOND << 2)
+    147          #define randomJitterMS()                                               \
+    148            ((emberGetPseudoRandomNumber()                                       \
+    149              % (FINISH_STEERING_JITTER_MAX_MS - FINISH_STEERING_JITTER_MIN_MS)) \
+    150             + FINISH_STEERING_JITTER_MIN_MS)
+    151          #define UPDATE_TC_LINK_KEY_JITTER_MIN_MS (MILLISECOND_TICKS_PER_SECOND * 10)
+    152          #define UPDATE_TC_LINK_KEY_JITTER_MAX_MS (MILLISECOND_TICKS_PER_SECOND * 40)
+    153          
+    154          // This is an attribute specified in the BDB.
+    155          #define VERIFY_KEY_TIMEOUT_MS (5 * MILLISECOND_TICKS_PER_SECOND)
+    156          
+    157          EmberAfPluginNetworkSteeringOptions emAfPluginNetworkSteeringOptionsMask
+    158            = EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIONS_NONE;
+    159          
+    160          //============================================================================
+    161          // Externs
+    162          
+    163          #ifdef EZSP_HOST
+    164           #define setMaxBeaconsToStore(n)  { \
+    165              uint8_t val = n;                \
+    166              (void)ezspSetValue(EZSP_VALUE_MAX_BEACONS_TO_STORE, 1, &val); }
+    167          #else // EZSP_HOST
+    168           #define setMaxBeaconsToStore(n)  { \
+    169              (void)emberSetNumBeaconsToStore(n); }
+    170          #endif // EZSP_HOST
+    171          
+    172          //============================================================================
+    173          // Forward Declarations
+    174          
+    175          static void cleanupAndStop(EmberStatus status);
+    176          static void stateMachineRun(void);
+    177          static void tryToJoinNetwork(void);
+    178          static EmberStatus goToNextState(void);
+    179          static EmberStatus setupSecurity(void);
+    180          static uint32_t jitterTimeDelayMs();
+    181          HIDDEN void scanResultsHandler(EmberAfPluginScanDispatchScanResults *results);
+    182          bool emIsWellKnownKey(EmberKeyData key);
+    183          
+    184          // Callback declarations for the sake of the compiler during unit tests.
+    185          int8_t emberAfPluginNetworkSteeringGetPowerForRadioChannelCallback(uint8_t channel);
+    186          bool emberAfPluginNetworkSteeringGetDistributedKeyCallback(EmberKeyData * key);
+    187          EmberNodeType emberAfPluginNetworkSteeringGetNodeTypeCallback(EmberAfPluginNetworkSteeringJoiningState state);
+    188          
+    189          //============================================================================
+    190          // State Machine
+    191          
+    192          void tryToJoinNetwork()
+    193          {
+    194            EmberStatus status = EMBER_SUCCESS;
+    195            EmberNodeType nodeType;
+    196            int8_t radioTxPower;
+    197          
+    198            emberAfCorePrintln("Examining beacon on channel %d with panId 0x%2X",
+    199                               BEACON_ITERATOR.beacon.channel,
+    200                               BEACON_ITERATOR.beacon.panId);
+    201          
+    202            if (!(CURRENT_CHANNEL_MASK & BIT32(BEACON_ITERATOR.beacon.channel))) {
+    203              emberAfCorePrintln("This beacon is not part of the current "
+    204                                 "channel mask (0x%4X)."
+    205                                 " Getting next beacon whose channel bitmask is set.",
+    206                                 CURRENT_CHANNEL_MASK);
+    207            }
+    208          
+    209            // If the retrieved beacon channel is not set in the mask, get the next
+    210            // beacon whose channel is set in the channel mask
+    211            while ((status == EMBER_SUCCESS)
+    212                   && !(CURRENT_CHANNEL_MASK & BIT32(BEACON_ITERATOR.beacon.channel))) {
+    213              status = emberGetNextBeacon(&(BEACON_ITERATOR.beacon));
+    214            }
+    215          
+    216            if (status != EMBER_SUCCESS) {
+    217              emberAfCorePrintln("No beacons left on current mask. Moving to next state");
+    218          
+    219              status = goToNextState();
+    220              if (status != EMBER_SUCCESS) {
+    221                return;
+    222              }
+    223          
+    224              return stateMachineRun();
+    225            }
+    226          
+    227            emberAfCorePrintln("%p joining 0x%2x on channel %d",
+    228                               PLUGIN_NAME,
+    229                               BEACON_ITERATOR.beacon.panId,
+    230                               BEACON_ITERATOR.beacon.channel);
+    231          
+    232            nodeType = emberAfPluginNetworkSteeringGetNodeTypeCallback(emAfPluginNetworkSteeringState);
+    233            radioTxPower = GET_RADIO_TX_POWER(BEACON_ITERATOR.beacon.channel);
+    234            status = emberJoinNetworkDirectly(nodeType,
+    235                                              &BEACON_ITERATOR.beacon,
+    236                                              radioTxPower,
+    237                                              true);  // clearBeaconsAfterNetworkUp
+    238            emAfPluginNetworkSteeringJoinAttempts++;
+    239            if (EMBER_SUCCESS != status) {
+    240              emberAfCorePrintln("Error: %p could not attempt join: 0x%X",
+    241                                 PLUGIN_NAME,
+    242                                 status);
+    243              cleanupAndStop(status);
+    244              return;
+    245            }
+    246          }
+    247          
+    248          //Description: Generates a random number between 10000-40000.
+    249          static uint32_t jitterTimeDelayMs()
+    250          {
+    251            uint16_t seed;
+    252            halStackSeedRandom((uint32_t)&seed);
+    253            uint32_t jitterDelayMs = (emberGetPseudoRandomNumber() % (UPDATE_TC_LINK_KEY_JITTER_MAX_MS - UPDATE_TC_LINK_KEY_JITTER_MIN_MS + 1)) + UPDATE_TC_LINK_KEY_JITTER_MIN_MS;
+    254            return jitterDelayMs;
+    255          }
+    256          
+    257          void emberAfPluginNetworkSteeringStackStatusCallback(EmberStatus status)
+    258          {
+    259            emberAfCorePrintln("%p stack status 0x%X", PLUGIN_NAME, status);
+    260          
+    261            if (emAfPluginNetworkSteeringState
+    262                == EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE) {
+    263              EmberKeyStruct entry;
+    264              EmberStatus keystatus = emberGetKey(EMBER_TRUST_CENTER_LINK_KEY, &entry);
+    265              if (keystatus == EMBER_SUCCESS && emIsWellKnownKey(entry.key) && status == EMBER_NETWORK_UP) {
+    266                emberAfPluginUpdateTcLinkKeySetDelay(jitterTimeDelayMs());
+    267              } else if (status == EMBER_NETWORK_DOWN) {
+    268                emberAfPluginUpdateTcLinkKeySetInactive();
+    269              }
+    270              return;
+    271            } else {
+    272              if (status == EMBER_NETWORK_UP) {
+    273                emberAfCorePrintln("%p network joined.", PLUGIN_NAME);
+    274                if (!emAfPluginNetworkSteeringStateUsesDistributedKey()
+    275                    && !(emAfPluginNetworkSteeringOptionsMask
+    276                         & EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIONS_NO_TCLK_UPDATE)) {
+    277                  emAfPluginNetworkSteeringStateSetUpdateTclk();
+    278                }
+    279                emberEventControlSetDelayMS(finishSteeringEvent, randomJitterMS());
+    280              } else {
+    281                if (emAfPluginNetworkSteeringState > EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE
+    282                    && emAfPluginNetworkSteeringState <= EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_SECONDARY_DISTRIBUTED) {
+    283                  emberAfCorePrintln("%p trying next network.", PLUGIN_NAME);
+    284          
+    285                  status = emberGetNextBeacon(&(BEACON_ITERATOR.beacon));
+    286                  if (status != EMBER_SUCCESS) {
+    287                    emberAfCorePrintln("No beacons left on current mask. "
+    288                                       "Moving to next state");
+    289          
+    290                    status = goToNextState();
+    291                    if (status != EMBER_SUCCESS) {
+    292                      return;
+    293                    }
+    294          
+    295                    stateMachineRun();
+    296                  } else {
+    297                    tryToJoinNetwork();
+    298                  }
+    299                } else {
+    300                  cleanupAndStop(EMBER_NO_LINK_KEY_RECEIVED);
+    301                }
+    302              }
+    303            }
+    304          }
+    305          
+    306          // Returns true if the key value is equal to defaultLinkKey
+    307          bool emIsWellKnownKey(EmberKeyData key)
+    308          {
+    309            for (uint8_t i = 0; i < EMBER_ENCRYPTION_KEY_SIZE; i++) {
+    310              if (key.contents[i] != defaultLinkKey.contents[i]) {
+    311                return false;
+    312              }
+    313            }
+    314            return true;
+    315          }
+    316          
+    317          // This function is called after all channels have been scanned
+    318          HIDDEN void scanResultsHandler(EmberAfPluginScanDispatchScanResults *results)
+    319          {
+    320            if (emberAfPluginScanDispatchScanResultsAreComplete(results)
+    321                || emberAfPluginScanDispatchScanResultsAreFailure(results)) {
+    322              if (results->status != EMBER_SUCCESS) {
+    323                emberAfCorePrintln("Error: Scan complete handler returned 0x%X",
+    324                                   results->status);
+    325                cleanupAndStop(results->status);
+    326                return;
+    327              }
+    328          
+    329              emAfPluginNetworkSteeringTotalBeacons = emberGetNumStoredBeacons();
+    330          
+    331              emberAfCorePrintln("%s scan complete. Beacons heard: %d",
+    332                                 PLUGIN_NAME,
+    333                                 emAfPluginNetworkSteeringTotalBeacons);
+    334          
+    335              if (emAfPluginNetworkSteeringTotalBeacons) {
+    336                stateMachineRun();
+    337              } else {
+    338                cleanupAndStop(EMBER_NO_BEACONS);
+    339              }
+    340            }
+    341          }
+    342          
+    343          static EmberStatus goToNextState(void)
+    344          {
+    345            emAfPluginNetworkSteeringState++;
+    346            if (emAfPluginNetworkSteeringState > LAST_JOINING_STATE) {
+    347              EmberStatus status = (emAfPluginNetworkSteeringTotalBeacons > 0
+    348                                    ? EMBER_JOIN_FAILED
+    349                                    : EMBER_NO_BEACONS);
+    350              cleanupAndStop(status);
+    351              return status;
+    352            }
+    353            return EMBER_SUCCESS;
+    354          }
+    355          
+    356          static void cleanupAndStop(EmberStatus status)
+    357          {
+    358            emberAfCorePrintln("%p Stop.  Cleaning up.", PLUGIN_NAME);
+    359            emberAfPluginNetworkSteeringCompleteCallback(status,
+    360                                                         emAfPluginNetworkSteeringTotalBeacons,
+    361                                                         emAfPluginNetworkSteeringJoinAttempts,
+    362                                                         emAfPluginNetworkSteeringState);
+    363            emAfPluginNetworkSteeringState = EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE;
+    364            emAfPluginNetworkSteeringJoinAttempts = 0;
+    365            emAfPluginNetworkSteeringTotalBeacons = 0;
+    366            emberEventControlSetInactive(finishSteeringEvent);
+    367          }
+    368          
+    369          // This function is called only on state transitions. This function sets up
+    370          // security, configures parameters, and then makes a call to start joining
+    371          // networks
+    372          static void stateMachineRun(void)
+    373          {
+    374            EmberStatus status;
+    375            emberAfCorePrintln("%p State: %p",
+    376                               PLUGIN_NAME,
+    377                               emAfPluginNetworkSteeringStateNames[emAfPluginNetworkSteeringState]);
+    378          
+    379            status = setupSecurity();
+    380          
+    381            while (status != EMBER_SUCCESS) {
+    382              emberAfCorePrintln("Error: %p could not setup security: 0x%X",
+    383                                 PLUGIN_NAME,
+    384                                 status);
+    385          
+    386              status = goToNextState();
+    387              if (status != EMBER_SUCCESS) {
+    388                return;
+    389              }
+    390          
+    391              status = setupSecurity();
+    392            }
+    393          
+    394            // Set CURRENT_CHANNEL_MASK properly so that we can iterate over beacons
+    395            // correctly
+    396            switch (emAfPluginNetworkSteeringState) {
+    397              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_CONFIGURED:
+    398              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_INSTALL_CODE:
+    399              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_CENTRALIZED:
+    400              case EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_DISTRIBUTED:
+    401                CURRENT_CHANNEL_MASK = emAfPluginNetworkSteeringPrimaryChannelMask;
+    402                break;
+    403              default:
+    404                CURRENT_CHANNEL_MASK = emAfPluginNetworkSteeringSecondaryChannelMask;
+    405                break;
+    406            }
+    407          
+    408            // Clear our stored beacon so we can iterate from the start
+    409            status = emberGetFirstBeacon(&BEACON_ITERATOR);
+    410          
+    411            if (status != EMBER_SUCCESS) {
+    412              cleanupAndStop(EMBER_ERR_FATAL);
+    413              return;
+    414            }
+    415          
+    416            tryToJoinNetwork();
+    417          }
+    418          
+    419          static EmberStatus setupSecurity(void)
+    420          {
+    421            EmberStatus status;
+    422            EmberInitialSecurityState state;
+    423            EmberExtendedSecurityBitmask extended;
+    424          
+    425            state.bitmask = (EMBER_TRUST_CENTER_GLOBAL_LINK_KEY
+    426                             | EMBER_HAVE_PRECONFIGURED_KEY
+    427                             | EMBER_REQUIRE_ENCRYPTED_KEY
+    428                             | EMBER_NO_FRAME_COUNTER_RESET
+    429                             | (emAfPluginNetworkSteeringStateUsesInstallCodes()
+    430                                ? EMBER_GET_PRECONFIGURED_KEY_FROM_INSTALL_CODE
+    431                                : 0)
+    432                             | (emAfPluginNetworkSteeringStateUsesDistributedKey()
+    433                                ? EMBER_DISTRIBUTED_TRUST_CENTER_MODE
+    434                                : 0)
+    435                             );
+    436          
+    437            if (!emberAfPluginNetworkSteeringGetDistributedKeyCallback(&emberPluginNetworkSteeringDistributedKey)) {
+    438              MEMMOVE(emberKeyContents(&emberPluginNetworkSteeringDistributedKey),
+    439                      emberKeyContents(&distributedTestKey),
+    440                      EMBER_ENCRYPTION_KEY_SIZE);
+    441            }
+    442            MEMMOVE(emberKeyContents(&(state.preconfiguredKey)),
+    443                    gUseConfiguredKey ? emberKeyContents(&(gConfiguredKey))
+    444                    : (emAfPluginNetworkSteeringStateUsesDistributedKey()
+    445                       ? emberKeyContents(&emberPluginNetworkSteeringDistributedKey)
+    446                       : emberKeyContents(&defaultLinkKey)),
+    447                    EMBER_ENCRYPTION_KEY_SIZE);
+    448          
+    449            if ((status = emberSetInitialSecurityState(&state))
+    450                != EMBER_SUCCESS) {
+    451              goto done;
+    452            }
+    453          
+    454            extended = (EMBER_JOINER_GLOBAL_LINK_KEY
+    455                        | EMBER_EXT_NO_FRAME_COUNTER_RESET);
+    456          
+    457            if ((status = emberSetExtendedSecurityBitmask(extended)) != EMBER_SUCCESS) {
+    458              goto done;
+    459            }
+    460          
+    461            emAfClearLinkKeyTable();
+    462          
+    463            done:
+    464            return status;
+    465          }
+    466          
+    467          EmberStatus emberAfPluginNetworkSteeringStart(void)
+    468          {
+    469            EmberStatus status = EMBER_INVALID_CALL;
+    470            EmberAfPluginScanDispatchScanData scanData;
+    471          
+    472            if (emAfProIsCurrentNetwork()
+    473                && (emAfPluginNetworkSteeringState
+    474                    == EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE)) {
+    475              if (emberAfNetworkState() == EMBER_NO_NETWORK) {
+    476                emAfPluginNetworkSteeringState = gUseConfiguredKey
+    477                                                 ? EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_CONFIGURED
+    478                                                 : EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_SCAN_PRIMARY_INSTALL_CODE;
+    479          
+    480                // Stop any previous trust center link key update.
+    481                emberAfPluginUpdateTcLinkKeyStop();
+    482          
+    483                // Kick off a scan and record beacons
+    484                setMaxBeaconsToStore(EMBER_MAX_BEACONS_TO_STORE);
+    485          
+    486                MEMSET(&steeringState, 0, sizeof(steeringState));
+    487          
+    488                scanData.scanType = EMBER_ACTIVE_SCAN;
+    489                scanData.channelMask = emAfPluginNetworkSteeringPrimaryChannelMask
+    490                                       | emAfPluginNetworkSteeringSecondaryChannelMask;
+    491                scanData.duration = EMBER_AF_PLUGIN_NETWORK_STEERING_SCAN_DURATION;
+    492                scanData.handler = scanResultsHandler;
+    493                status = emberAfPluginScanDispatchScheduleScan(&scanData);
+    494                emberAfCorePrintln("%s: issuing scan on primary and secondary channels "
+    495                                   "(combined channel mask 0x%4X)",
+    496                                   PLUGIN_NAME,
+    497                                   emAfPluginNetworkSteeringPrimaryChannelMask
+    498                                   | emAfPluginNetworkSteeringSecondaryChannelMask);
+    499              } else {
+    500                status = emberAfPermitJoin(EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S,
+    501                                           true); // Broadcast permit join?
+    502              }
+    503            }
+    504          
+    505            emberAfCorePrintln("%p: %p: 0x%X",
+    506                               emAfNetworkSteeringPluginName,
+    507                               "Start",
+    508                               status);
+    509          
+    510            return status;
+    511          }
+    512          
+    513          EmberStatus emberAfPluginNetworkSteeringStop(void)
+    514          {
+    515            if (emAfPluginNetworkSteeringState
+    516                == EMBER_AF_PLUGIN_NETWORK_STEERING_STATE_NONE) {
+    517              return EMBER_INVALID_CALL;
+    518            }
+    519            cleanupAndStop(EMBER_JOIN_FAILED);
+    520            return EMBER_SUCCESS;
+    521          }
+    522          
+    523          // =============================================================================
+    524          // Finish Steering
+    525          
+    526          // At the end of the network steering process, we need to update the
+    527          // trust center link key (if we are in a centralized network) and broadcast
+    528          // a permit join to extend the network. This process needs to happen after
+    529          // we send our device announce and possibly our network timeout request if we
+    530          // are an end device.
+    531          
+    532          void emberAfPluginNetworkSteeringFinishSteeringEventHandler(void)
+    533          {
+    534            EmberStatus status;
+    535          
+    536            emberEventControlSetInactive(finishSteeringEvent);
+    537          
+    538            if (emAfPluginNetworkSteeringStateVerifyTclk()) {
+    539              // If we get here, then we have failed to verify the TCLK. Therefore,
+    540              // we leave the network.
+    541              emberAfPluginUpdateTcLinkKeyStop();
+    542              emberLeaveNetwork();
+    543              emberAfCorePrintln("%p: %p",
+    544                                 PLUGIN_NAME,
+    545                                 "Key verification failed. Leaving network");
+    546              cleanupAndStop(EMBER_ERR_FATAL);
+    547            } else if (emAfPluginNetworkSteeringStateUpdateTclk()) {
+    548              // Start the process to update the TC link key. We will set another event
+    549              // for the broadcast permit join.
+    550              // Attempt a TC link key update now.
+    551              emberAfPluginUpdateTcLinkKeySetDelay(0);
+    552            } else {
+    553              // Broadcast permit join to extend the network.
+    554              // We are done!
+    555              status = emberAfPermitJoin(EMBER_AF_PLUGIN_NETWORK_STEERING_COMMISSIONING_TIME_S,
+    556                                         true); // Broadcast permit join?
+    557              emberAfCorePrintln("%p: %p: 0x%X",
+    558                                 PLUGIN_NAME,
+    559                                 "Broadcasting permit join",
+    560                                 status);
+    561              cleanupAndStop(status);
+    562            }
+    563          }
+    564          
+    565          void emberAfPluginUpdateTcLinkKeyStatusCallback(EmberKeyStatus keyStatus)
+    566          {
+    567            if (emAfPluginNetworkSteeringStateUpdateTclk()) {
+    568              emberAfCorePrintln("%p: %p: 0x%X",
+    569                                 PLUGIN_NAME,
+    570                                 "Trust center link key update status",
+    571                                 keyStatus);
+    572              switch (keyStatus) {
+    573                case EMBER_TRUST_CENTER_LINK_KEY_ESTABLISHED:
+    574                  // Success! But we should still wait to make sure we verify the key.
+    575                  emAfPluginNetworkSteeringStateSetVerifyTclk();
+    576                  emberEventControlSetDelayMS(finishSteeringEvent, VERIFY_KEY_TIMEOUT_MS);
+    577                  return;
+    578                case EMBER_TRUST_CENTER_IS_PRE_R21:
+    579                case EMBER_VERIFY_LINK_KEY_SUCCESS:
+    580                  // If the trust center is pre-r21, then we don't update the link key.
+    581                  // If the key status is that the link key has been verified, then we
+    582                  // have successfully updated our trust center link key and we are done!
+    583                  emAfPluginNetworkSteeringStateClearVerifyTclk();
+    584                  uint32_t ms = randomJitterMS();
+    585                  emberEventControlSetDelayMS(finishSteeringEvent, ms);
+    586                  break;
+    587                default:
+    588                  // Failure!
+    589                  emberLeaveNetwork();
+    590                  cleanupAndStop(EMBER_NO_LINK_KEY_RECEIVED);
+    591              }
+    592              emAfPluginNetworkSteeringStateClearUpdateTclk();
+    593            }
+    594          
+    595            return;
+    596          }
+    597          
+    598          void emAfPluginNetworkSteeringSetChannelMask(uint32_t mask, bool secondaryMask)
+    599          {
+    600            if (secondaryMask) {
+    601              emAfPluginNetworkSteeringSecondaryChannelMask = mask;
+    602            } else {
+    603              emAfPluginNetworkSteeringPrimaryChannelMask = mask;
+    604            }
+    605          }
+    606          
+    607          void emAfPluginNetworkSteeringSetExtendedPanIdFilter(uint8_t* extendedPanId,
+    608                                                               bool turnFilterOn)
+    609          {
+    610            if (!extendedPanId) {
+    611              return;
+    612            }
+    613            MEMCOPY(gExtendedPanIdToFilterOn,
+    614                    extendedPanId,
+    615                    COUNTOF(gExtendedPanIdToFilterOn));
+    616            gFilterByExtendedPanId = turnFilterOn;
+    617          }
+    618          
+    619          void emAfPluginNetworkSteeringSetConfiguredKey(uint8_t *key,
+    620                                                         bool useConfiguredKey)
+    621          {
+    622            if (!key) {
+    623              return;
+    624            }
+    625            MEMCOPY(gConfiguredKey.contents, key, EMBER_ENCRYPTION_KEY_SIZE);
+    626            gUseConfiguredKey = useConfiguredKey;
+    627          }
+    628          
+    629          void emAfPluginNetworkSteeringCleanup(EmberStatus status)
+    630          {
+    631            cleanupAndStop(status);
+    632          }
+    633          
+    634          uint8_t emAfPluginNetworkSteeringGetCurrentChannel()
+    635          {
+    636            return BEACON_ITERATOR.beacon.channel;
+    637          }
+    638          
+    639          #endif // #ifdef EMBER_AF_PLUGIN_NETWORK_STEERING_OPTIMIZE_SCANS
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

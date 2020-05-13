@@ -1,0 +1,844 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:44
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\dhm.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW364C.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\dhm.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"dhm.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\dhm.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\dhm.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\dhm.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Diffie-Hellman-Merkle key exchange
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          /*
+     34           *  The following sources were referenced in the design of this implementation
+     35           *  of the Diffie-Hellman-Merkle algorithm:
+     36           *
+     37           *  [1] Handbook of Applied Cryptography - 1997, Chapter 12
+     38           *      Menezes, van Oorschot and Vanstone
+     39           *
+     40           */
+     41          
+     42          #if !defined(MBEDTLS_CONFIG_FILE)
+     43          #include "mbedtls/config.h"
+     44          #else
+     45          #include MBEDTLS_CONFIG_FILE
+     46          #endif
+     47          
+     48          #if defined(MBEDTLS_DHM_C)
+     49          
+     50          #include "mbedtls/dhm.h"
+     51          
+     52          #include <string.h>
+     53          
+     54          #if defined(MBEDTLS_PEM_PARSE_C)
+     55          #include "mbedtls/pem.h"
+     56          #endif
+     57          
+     58          #if defined(MBEDTLS_ASN1_PARSE_C)
+     59          #include "mbedtls/asn1.h"
+     60          #endif
+     61          
+     62          #if defined(MBEDTLS_PLATFORM_C)
+     63          #include "mbedtls/platform.h"
+     64          #else
+     65          #include <stdlib.h>
+     66          #include <stdio.h>
+     67          #define mbedtls_printf     printf
+     68          #define mbedtls_calloc    calloc
+     69          #define mbedtls_free       free
+     70          #endif
+     71          
+     72          #if !defined(MBEDTLS_DHM_ALT)
+     73          /* Implementation that should never be optimized out by the compiler */
+     74          static void mbedtls_zeroize( void *v, size_t n ) {
+     75              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     76          }
+     77          
+     78          /*
+     79           * helper to validate the mbedtls_mpi size and import it
+     80           */
+     81          static int dhm_read_bignum( mbedtls_mpi *X,
+     82                                      unsigned char **p,
+     83                                      const unsigned char *end )
+     84          {
+     85              int ret, n;
+     86          
+     87              if( end - *p < 2 )
+     88                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+     89          
+     90              n = ( (*p)[0] << 8 ) | (*p)[1];
+     91              (*p) += 2;
+     92          
+     93              if( (int)( end - *p ) < n )
+     94                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+     95          
+     96              if( ( ret = mbedtls_mpi_read_binary( X, *p, n ) ) != 0 )
+     97                  return( MBEDTLS_ERR_DHM_READ_PARAMS_FAILED + ret );
+     98          
+     99              (*p) += n;
+    100          
+    101              return( 0 );
+    102          }
+    103          
+    104          /*
+    105           * Verify sanity of parameter with regards to P
+    106           *
+    107           * Parameter should be: 2 <= public_param <= P - 2
+    108           *
+    109           * This means that we need to return an error if
+    110           *              public_param < 2 or public_param > P-2
+    111           *
+    112           * For more information on the attack, see:
+    113           *  http://www.cl.cam.ac.uk/~rja14/Papers/psandqs.pdf
+    114           *  http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-2643
+    115           */
+    116          static int dhm_check_range( const mbedtls_mpi *param, const mbedtls_mpi *P )
+    117          {
+    118              mbedtls_mpi L, U;
+    119              int ret = 0;
+    120          
+    121              mbedtls_mpi_init( &L ); mbedtls_mpi_init( &U );
+    122          
+    123              MBEDTLS_MPI_CHK( mbedtls_mpi_lset( &L, 2 ) );
+    124              MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &U, P, 2 ) );
+    125          
+    126              if( mbedtls_mpi_cmp_mpi( param, &L ) < 0 ||
+    127                  mbedtls_mpi_cmp_mpi( param, &U ) > 0 )
+    128              {
+    129                  ret = MBEDTLS_ERR_DHM_BAD_INPUT_DATA;
+    130              }
+    131          
+    132          cleanup:
+    133              mbedtls_mpi_free( &L ); mbedtls_mpi_free( &U );
+    134              return( ret );
+    135          }
+    136          
+    137          void mbedtls_dhm_init( mbedtls_dhm_context *ctx )
+    138          {
+    139              memset( ctx, 0, sizeof( mbedtls_dhm_context ) );
+    140          }
+    141          
+    142          /*
+    143           * Parse the ServerKeyExchange parameters
+    144           */
+    145          int mbedtls_dhm_read_params( mbedtls_dhm_context *ctx,
+    146                               unsigned char **p,
+    147                               const unsigned char *end )
+    148          {
+    149              int ret;
+    150          
+    151              if( ( ret = dhm_read_bignum( &ctx->P,  p, end ) ) != 0 ||
+    152                  ( ret = dhm_read_bignum( &ctx->G,  p, end ) ) != 0 ||
+    153                  ( ret = dhm_read_bignum( &ctx->GY, p, end ) ) != 0 )
+    154                  return( ret );
+    155          
+    156              if( ( ret = dhm_check_range( &ctx->GY, &ctx->P ) ) != 0 )
+    157                  return( ret );
+    158          
+    159              ctx->len = mbedtls_mpi_size( &ctx->P );
+    160          
+    161              return( 0 );
+    162          }
+    163          
+    164          /*
+    165           * Setup and write the ServerKeyExchange parameters
+    166           */
+    167          int mbedtls_dhm_make_params( mbedtls_dhm_context *ctx, int x_size,
+    168                               unsigned char *output, size_t *olen,
+    169                               int (*f_rng)(void *, unsigned char *, size_t),
+    170                               void *p_rng )
+    171          {
+    172              int ret, count = 0;
+    173              size_t n1, n2, n3;
+    174              unsigned char *p;
+    175          
+    176              if( mbedtls_mpi_cmp_int( &ctx->P, 0 ) == 0 )
+    177                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+    178          
+    179              /*
+    180               * Generate X as large as possible ( < P )
+    181               */
+    182              do
+    183              {
+    184                  MBEDTLS_MPI_CHK( mbedtls_mpi_fill_random( &ctx->X, x_size, f_rng, p_rng ) );
+    185          
+    186                  while( mbedtls_mpi_cmp_mpi( &ctx->X, &ctx->P ) >= 0 )
+    187                      MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &ctx->X, 1 ) );
+    188          
+    189                  if( count++ > 10 )
+    190                      return( MBEDTLS_ERR_DHM_MAKE_PARAMS_FAILED );
+    191              }
+    192              while( dhm_check_range( &ctx->X, &ctx->P ) != 0 );
+    193          
+    194              /*
+    195               * Calculate GX = G^X mod P
+    196               */
+    197              MBEDTLS_MPI_CHK( mbedtls_mpi_exp_mod( &ctx->GX, &ctx->G, &ctx->X,
+    198                                    &ctx->P , &ctx->RP ) );
+    199          
+    200              if( ( ret = dhm_check_range( &ctx->GX, &ctx->P ) ) != 0 )
+    201                  return( ret );
+    202          
+    203              /*
+    204               * export P, G, GX
+    205               */
+    206          #define DHM_MPI_EXPORT( X, n )                                          \
+    207              do {                                                                \
+    208                  MBEDTLS_MPI_CHK( mbedtls_mpi_write_binary( ( X ),               \
+    209                                                             p + 2,               \
+    210                                                             ( n ) ) );           \
+    211                  *p++ = (unsigned char)( ( n ) >> 8 );                           \
+    212                  *p++ = (unsigned char)( ( n )      );                           \
+    213                  p += ( n );                                                     \
+    214              } while( 0 )
+    215          
+    216              n1 = mbedtls_mpi_size( &ctx->P  );
+    217              n2 = mbedtls_mpi_size( &ctx->G  );
+    218              n3 = mbedtls_mpi_size( &ctx->GX );
+    219          
+    220              p = output;
+    221              DHM_MPI_EXPORT( &ctx->P , n1 );
+    222              DHM_MPI_EXPORT( &ctx->G , n2 );
+    223              DHM_MPI_EXPORT( &ctx->GX, n3 );
+    224          
+    225              *olen = p - output;
+    226          
+    227              ctx->len = n1;
+    228          
+    229          cleanup:
+    230          
+    231              if( ret != 0 )
+    232                  return( MBEDTLS_ERR_DHM_MAKE_PARAMS_FAILED + ret );
+    233          
+    234              return( 0 );
+    235          }
+    236          
+    237          /*
+    238           * Set prime modulus and generator
+    239           */
+    240          int mbedtls_dhm_set_group( mbedtls_dhm_context *ctx,
+    241                                     const mbedtls_mpi *P,
+    242                                     const mbedtls_mpi *G )
+    243          {
+    244              int ret;
+    245          
+    246              if( ctx == NULL || P == NULL || G == NULL )
+    247                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+    248          
+    249              if( ( ret = mbedtls_mpi_copy( &ctx->P, P ) ) != 0 ||
+    250                  ( ret = mbedtls_mpi_copy( &ctx->G, G ) ) != 0 )
+    251              {
+    252                  return( MBEDTLS_ERR_DHM_SET_GROUP_FAILED + ret );
+    253              }
+    254          
+    255              ctx->len = mbedtls_mpi_size( &ctx->P );
+    256              return( 0 );
+    257          }
+    258          
+    259          /*
+    260           * Import the peer's public value G^Y
+    261           */
+    262          int mbedtls_dhm_read_public( mbedtls_dhm_context *ctx,
+    263                               const unsigned char *input, size_t ilen )
+    264          {
+    265              int ret;
+    266          
+    267              if( ctx == NULL || ilen < 1 || ilen > ctx->len )
+    268                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+    269          
+    270              if( ( ret = mbedtls_mpi_read_binary( &ctx->GY, input, ilen ) ) != 0 )
+    271                  return( MBEDTLS_ERR_DHM_READ_PUBLIC_FAILED + ret );
+    272          
+    273              return( 0 );
+    274          }
+    275          
+    276          /*
+    277           * Create own private value X and export G^X
+    278           */
+    279          int mbedtls_dhm_make_public( mbedtls_dhm_context *ctx, int x_size,
+    280                               unsigned char *output, size_t olen,
+    281                               int (*f_rng)(void *, unsigned char *, size_t),
+    282                               void *p_rng )
+    283          {
+    284              int ret, count = 0;
+    285          
+    286              if( ctx == NULL || olen < 1 || olen > ctx->len )
+    287                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+    288          
+    289              if( mbedtls_mpi_cmp_int( &ctx->P, 0 ) == 0 )
+    290                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+    291          
+    292              /*
+    293               * generate X and calculate GX = G^X mod P
+    294               */
+    295              do
+    296              {
+    297                  MBEDTLS_MPI_CHK( mbedtls_mpi_fill_random( &ctx->X, x_size, f_rng, p_rng ) );
+    298          
+    299                  while( mbedtls_mpi_cmp_mpi( &ctx->X, &ctx->P ) >= 0 )
+    300                      MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &ctx->X, 1 ) );
+    301          
+    302                  if( count++ > 10 )
+    303                      return( MBEDTLS_ERR_DHM_MAKE_PUBLIC_FAILED );
+    304              }
+    305              while( dhm_check_range( &ctx->X, &ctx->P ) != 0 );
+    306          
+    307              MBEDTLS_MPI_CHK( mbedtls_mpi_exp_mod( &ctx->GX, &ctx->G, &ctx->X,
+    308                                    &ctx->P , &ctx->RP ) );
+    309          
+    310              if( ( ret = dhm_check_range( &ctx->GX, &ctx->P ) ) != 0 )
+    311                  return( ret );
+    312          
+    313              MBEDTLS_MPI_CHK( mbedtls_mpi_write_binary( &ctx->GX, output, olen ) );
+    314          
+    315          cleanup:
+    316          
+    317              if( ret != 0 )
+    318                  return( MBEDTLS_ERR_DHM_MAKE_PUBLIC_FAILED + ret );
+    319          
+    320              return( 0 );
+    321          }
+    322          
+    323          /*
+    324           * Use the blinding method and optimisation suggested in section 10 of:
+    325           *  KOCHER, Paul C. Timing attacks on implementations of Diffie-Hellman, RSA,
+    326           *  DSS, and other systems. In : Advances in Cryptology-CRYPTO'96. Springer
+    327           *  Berlin Heidelberg, 1996. p. 104-113.
+    328           */
+    329          static int dhm_update_blinding( mbedtls_dhm_context *ctx,
+    330                              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    331          {
+    332              int ret, count;
+    333          
+    334              /*
+    335               * Don't use any blinding the first time a particular X is used,
+    336               * but remember it to use blinding next time.
+    337               */
+    338              if( mbedtls_mpi_cmp_mpi( &ctx->X, &ctx->pX ) != 0 )
+    339              {
+    340                  MBEDTLS_MPI_CHK( mbedtls_mpi_copy( &ctx->pX, &ctx->X ) );
+    341                  MBEDTLS_MPI_CHK( mbedtls_mpi_lset( &ctx->Vi, 1 ) );
+    342                  MBEDTLS_MPI_CHK( mbedtls_mpi_lset( &ctx->Vf, 1 ) );
+    343          
+    344                  return( 0 );
+    345              }
+    346          
+    347              /*
+    348               * Ok, we need blinding. Can we re-use existing values?
+    349               * If yes, just update them by squaring them.
+    350               */
+    351              if( mbedtls_mpi_cmp_int( &ctx->Vi, 1 ) != 0 )
+    352              {
+    353                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &ctx->Vi, &ctx->Vi, &ctx->Vi ) );
+    354                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &ctx->Vi, &ctx->Vi, &ctx->P ) );
+    355          
+    356                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &ctx->Vf, &ctx->Vf, &ctx->Vf ) );
+    357                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &ctx->Vf, &ctx->Vf, &ctx->P ) );
+    358          
+    359                  return( 0 );
+    360              }
+    361          
+    362              /*
+    363               * We need to generate blinding values from scratch
+    364               */
+    365          
+    366              /* Vi = random( 2, P-1 ) */
+    367              count = 0;
+    368              do
+    369              {
+    370                  MBEDTLS_MPI_CHK( mbedtls_mpi_fill_random( &ctx->Vi, mbedtls_mpi_size( &ctx->P ), f_rng, p_rng ) );
+    371          
+    372                  while( mbedtls_mpi_cmp_mpi( &ctx->Vi, &ctx->P ) >= 0 )
+    373                      MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &ctx->Vi, 1 ) );
+    374          
+    375                  if( count++ > 10 )
+    376                      return( MBEDTLS_ERR_MPI_NOT_ACCEPTABLE );
+    377              }
+    378              while( mbedtls_mpi_cmp_int( &ctx->Vi, 1 ) <= 0 );
+    379          
+    380              /* Vf = Vi^-X mod P */
+    381              MBEDTLS_MPI_CHK( mbedtls_mpi_inv_mod( &ctx->Vf, &ctx->Vi, &ctx->P ) );
+    382              MBEDTLS_MPI_CHK( mbedtls_mpi_exp_mod( &ctx->Vf, &ctx->Vf, &ctx->X, &ctx->P, &ctx->RP ) );
+    383          
+    384          cleanup:
+    385              return( ret );
+    386          }
+    387          
+    388          /*
+    389           * Derive and export the shared secret (G^Y)^X mod P
+    390           */
+    391          int mbedtls_dhm_calc_secret( mbedtls_dhm_context *ctx,
+    392                               unsigned char *output, size_t output_size, size_t *olen,
+    393                               int (*f_rng)(void *, unsigned char *, size_t),
+    394                               void *p_rng )
+    395          {
+    396              int ret;
+    397              mbedtls_mpi GYb;
+    398          
+    399              if( ctx == NULL || output_size < ctx->len )
+    400                  return( MBEDTLS_ERR_DHM_BAD_INPUT_DATA );
+    401          
+    402              if( ( ret = dhm_check_range( &ctx->GY, &ctx->P ) ) != 0 )
+    403                  return( ret );
+    404          
+    405              mbedtls_mpi_init( &GYb );
+    406          
+    407              /* Blind peer's value */
+    408              if( f_rng != NULL )
+    409              {
+    410                  MBEDTLS_MPI_CHK( dhm_update_blinding( ctx, f_rng, p_rng ) );
+    411                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &GYb, &ctx->GY, &ctx->Vi ) );
+    412                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &GYb, &GYb, &ctx->P ) );
+    413              }
+    414              else
+    415                  MBEDTLS_MPI_CHK( mbedtls_mpi_copy( &GYb, &ctx->GY ) );
+    416          
+    417              /* Do modular exponentiation */
+    418              MBEDTLS_MPI_CHK( mbedtls_mpi_exp_mod( &ctx->K, &GYb, &ctx->X,
+    419                                    &ctx->P, &ctx->RP ) );
+    420          
+    421              /* Unblind secret value */
+    422              if( f_rng != NULL )
+    423              {
+    424                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &ctx->K, &ctx->K, &ctx->Vf ) );
+    425                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &ctx->K, &ctx->K, &ctx->P ) );
+    426              }
+    427          
+    428              *olen = mbedtls_mpi_size( &ctx->K );
+    429          
+    430              MBEDTLS_MPI_CHK( mbedtls_mpi_write_binary( &ctx->K, output, *olen ) );
+    431          
+    432          cleanup:
+    433              mbedtls_mpi_free( &GYb );
+    434          
+    435              if( ret != 0 )
+    436                  return( MBEDTLS_ERR_DHM_CALC_SECRET_FAILED + ret );
+    437          
+    438              return( 0 );
+    439          }
+    440          
+    441          /*
+    442           * Free the components of a DHM key
+    443           */
+    444          void mbedtls_dhm_free( mbedtls_dhm_context *ctx )
+    445          {
+    446              mbedtls_mpi_free( &ctx->pX ); mbedtls_mpi_free( &ctx->Vf );
+    447              mbedtls_mpi_free( &ctx->Vi ); mbedtls_mpi_free( &ctx->RP );
+    448              mbedtls_mpi_free( &ctx->K  ); mbedtls_mpi_free( &ctx->GY );
+    449              mbedtls_mpi_free( &ctx->GX ); mbedtls_mpi_free( &ctx->X  );
+    450              mbedtls_mpi_free( &ctx->G  ); mbedtls_mpi_free( &ctx->P  );
+    451          
+    452              mbedtls_zeroize( ctx, sizeof( mbedtls_dhm_context ) );
+    453          }
+    454          
+    455          #if defined(MBEDTLS_ASN1_PARSE_C)
+    456          /*
+    457           * Parse DHM parameters
+    458           */
+    459          int mbedtls_dhm_parse_dhm( mbedtls_dhm_context *dhm, const unsigned char *dhmin,
+    460                             size_t dhminlen )
+    461          {
+    462              int ret;
+    463              size_t len;
+    464              unsigned char *p, *end;
+    465          #if defined(MBEDTLS_PEM_PARSE_C)
+    466              mbedtls_pem_context pem;
+    467          
+    468              mbedtls_pem_init( &pem );
+    469          
+    470              /* Avoid calling mbedtls_pem_read_buffer() on non-null-terminated string */
+    471              if( dhminlen == 0 || dhmin[dhminlen - 1] != '\0' )
+    472                  ret = MBEDTLS_ERR_PEM_NO_HEADER_FOOTER_PRESENT;
+    473              else
+    474                  ret = mbedtls_pem_read_buffer( &pem,
+    475                                         "-----BEGIN DH PARAMETERS-----",
+    476                                         "-----END DH PARAMETERS-----",
+    477                                         dhmin, NULL, 0, &dhminlen );
+    478          
+    479              if( ret == 0 )
+    480              {
+    481                  /*
+    482                   * Was PEM encoded
+    483                   */
+    484                  dhminlen = pem.buflen;
+    485              }
+    486              else if( ret != MBEDTLS_ERR_PEM_NO_HEADER_FOOTER_PRESENT )
+    487                  goto exit;
+    488          
+    489              p = ( ret == 0 ) ? pem.buf : (unsigned char *) dhmin;
+    490          #else
+    491              p = (unsigned char *) dhmin;
+    492          #endif /* MBEDTLS_PEM_PARSE_C */
+    493              end = p + dhminlen;
+    494          
+    495              /*
+    496               *  DHParams ::= SEQUENCE {
+    497               *      prime              INTEGER,  -- P
+    498               *      generator          INTEGER,  -- g
+    499               *      privateValueLength INTEGER OPTIONAL
+    500               *  }
+    501               */
+    502              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    503                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    504              {
+    505                  ret = MBEDTLS_ERR_DHM_INVALID_FORMAT + ret;
+    506                  goto exit;
+    507              }
+    508          
+    509              end = p + len;
+    510          
+    511              if( ( ret = mbedtls_asn1_get_mpi( &p, end, &dhm->P  ) ) != 0 ||
+    512                  ( ret = mbedtls_asn1_get_mpi( &p, end, &dhm->G ) ) != 0 )
+    513              {
+    514                  ret = MBEDTLS_ERR_DHM_INVALID_FORMAT + ret;
+    515                  goto exit;
+    516              }
+    517          
+    518              if( p != end )
+    519              {
+    520                  /* This might be the optional privateValueLength.
+    521                   * If so, we can cleanly discard it */
+    522                  mbedtls_mpi rec;
+    523                  mbedtls_mpi_init( &rec );
+    524                  ret = mbedtls_asn1_get_mpi( &p, end, &rec );
+    525                  mbedtls_mpi_free( &rec );
+    526                  if ( ret != 0 )
+    527                  {
+    528                      ret = MBEDTLS_ERR_DHM_INVALID_FORMAT + ret;
+    529                      goto exit;
+    530                  }
+    531                  if ( p != end )
+    532                  {
+    533                      ret = MBEDTLS_ERR_DHM_INVALID_FORMAT +
+    534                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH;
+    535                      goto exit;
+    536                  }
+    537              }
+    538          
+    539              ret = 0;
+    540          
+    541              dhm->len = mbedtls_mpi_size( &dhm->P );
+    542          
+    543          exit:
+    544          #if defined(MBEDTLS_PEM_PARSE_C)
+    545              mbedtls_pem_free( &pem );
+    546          #endif
+    547              if( ret != 0 )
+    548                  mbedtls_dhm_free( dhm );
+    549          
+    550              return( ret );
+    551          }
+    552          
+    553          #if defined(MBEDTLS_FS_IO)
+    554          /*
+    555           * Load all data from a file into a given buffer.
+    556           *
+    557           * The file is expected to contain either PEM or DER encoded data.
+    558           * A terminating null byte is always appended. It is included in the announced
+    559           * length only if the data looks like it is PEM encoded.
+    560           */
+    561          static int load_file( const char *path, unsigned char **buf, size_t *n )
+    562          {
+    563              FILE *f;
+    564              long size;
+    565          
+    566              if( ( f = fopen( path, "rb" ) ) == NULL )
+    567                  return( MBEDTLS_ERR_DHM_FILE_IO_ERROR );
+    568          
+    569              fseek( f, 0, SEEK_END );
+    570              if( ( size = ftell( f ) ) == -1 )
+    571              {
+    572                  fclose( f );
+    573                  return( MBEDTLS_ERR_DHM_FILE_IO_ERROR );
+    574              }
+    575              fseek( f, 0, SEEK_SET );
+    576          
+    577              *n = (size_t) size;
+    578          
+    579              if( *n + 1 == 0 ||
+    580                  ( *buf = mbedtls_calloc( 1, *n + 1 ) ) == NULL )
+    581              {
+    582                  fclose( f );
+    583                  return( MBEDTLS_ERR_DHM_ALLOC_FAILED );
+    584              }
+    585          
+    586              if( fread( *buf, 1, *n, f ) != *n )
+    587              {
+    588                  fclose( f );
+    589          
+    590                  mbedtls_zeroize( *buf, *n + 1 );
+    591                  mbedtls_free( *buf );
+    592          
+    593                  return( MBEDTLS_ERR_DHM_FILE_IO_ERROR );
+    594              }
+    595          
+    596              fclose( f );
+    597          
+    598              (*buf)[*n] = '\0';
+    599          
+    600              if( strstr( (const char *) *buf, "-----BEGIN " ) != NULL )
+    601                  ++*n;
+    602          
+    603              return( 0 );
+    604          }
+    605          
+    606          /*
+    607           * Load and parse DHM parameters
+    608           */
+    609          int mbedtls_dhm_parse_dhmfile( mbedtls_dhm_context *dhm, const char *path )
+    610          {
+    611              int ret;
+    612              size_t n;
+    613              unsigned char *buf;
+    614          
+    615              if( ( ret = load_file( path, &buf, &n ) ) != 0 )
+    616                  return( ret );
+    617          
+    618              ret = mbedtls_dhm_parse_dhm( dhm, buf, n );
+    619          
+    620              mbedtls_zeroize( buf, n );
+    621              mbedtls_free( buf );
+    622          
+    623              return( ret );
+    624          }
+    625          #endif /* MBEDTLS_FS_IO */
+    626          #endif /* MBEDTLS_ASN1_PARSE_C */
+    627          #endif /* MBEDTLS_DHM_ALT */
+    628          
+    629          #if defined(MBEDTLS_SELF_TEST)
+    630          
+    631          static const char mbedtls_test_dhm_params[] =
+    632          "-----BEGIN DH PARAMETERS-----\r\n"
+    633          "MIGHAoGBAJ419DBEOgmQTzo5qXl5fQcN9TN455wkOL7052HzxxRVMyhYmwQcgJvh\r\n"
+    634          "1sa18fyfR9OiVEMYglOpkqVoGLN7qd5aQNNi5W7/C+VBdHTBJcGZJyyP5B3qcz32\r\n"
+    635          "9mLJKudlVudV0Qxk5qUJaPZ/xupz0NyoVpviuiBOI1gNi8ovSXWzAgEC\r\n"
+    636          "-----END DH PARAMETERS-----\r\n";
+    637          
+    638          static const size_t mbedtls_test_dhm_params_len = sizeof( mbedtls_test_dhm_params );
+    639          
+    640          /*
+    641           * Checkup routine
+    642           */
+    643          int mbedtls_dhm_self_test( int verbose )
+    644          {
+    645              int ret;
+    646              mbedtls_dhm_context dhm;
+    647          
+    648              mbedtls_dhm_init( &dhm );
+    649          
+    650              if( verbose != 0 )
+    651                  mbedtls_printf( "  DHM parameter load: " );
+    652          
+    653              if( ( ret = mbedtls_dhm_parse_dhm( &dhm,
+    654                              (const unsigned char *) mbedtls_test_dhm_params,
+    655                              mbedtls_test_dhm_params_len ) ) != 0 )
+    656              {
+    657                  if( verbose != 0 )
+    658                      mbedtls_printf( "failed\n" );
+    659          
+    660                  ret = 1;
+    661                  goto exit;
+    662              }
+    663          
+    664              if( verbose != 0 )
+    665                  mbedtls_printf( "passed\n\n" );
+    666          
+    667          exit:
+    668              mbedtls_dhm_free( &dhm );
+    669          
+    670              return( ret );
+    671          }
+    672          
+    673          #endif /* MBEDTLS_SELF_TEST */
+    674          
+    675          #endif /* MBEDTLS_DHM_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

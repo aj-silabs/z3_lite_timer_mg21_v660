@@ -1,0 +1,940 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:45
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\se_jpake.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW2886.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\se_jpake.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"se_jpake.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\se_jpake.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\se_jpake.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\se_jpake.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief ECC J-PAKE accelerated implementation
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: APACHE-2.0
+     10           *
+     11           * This software is subject to an open source license and is distributed by
+     12           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     13           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     14           * Such terms and conditions may be further supplemented by the Silicon Labs
+     15           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     16           * sections applicable to open source software.
+     17           *
+     18           ******************************************************************************/
+     19          /*
+     20           * This file includes an alternative implementation of the standard
+     21           * mbedtls/libary/ecjpake.c using the secure element incorporated in (W)MCU
+     22           * devices from Silicon Laboratories.
+     23           */
+     24          
+     25          #if !defined(MBEDTLS_CONFIG_FILE)
+     26          #include "mbedtls/config.h"
+     27          #else
+     28          #include MBEDTLS_CONFIG_FILE
+     29          #endif
+     30          
+     31          #include "mbedtls/ecjpake.h"
+     32          
+     33          #if defined(MBEDTLS_ECJPAKE_ALT) && defined(MBEDTLS_ECJPAKE_C)
+     34          
+     35          #include "em_device.h"
+     36          
+     37          #if defined(SEMAILBOX_PRESENT)
+     38          #include "em_se.h"
+     39          #include "se_management.h"
+     40          #include <string.h>
+     41          
+     42          static const char * const ecjpake_id[] = {
+     43              "client",
+     44              "server"
+     45          };
+     46          
+     47          static int parse_tls_point(const uint8_t **ibuf, size_t *ilen, size_t *rlen,
+     48                                     uint8_t **obuf, size_t *olen)
+     49          {
+     50              if (ilen == NULL || ibuf == NULL || obuf == NULL || olen == NULL) {
+     51                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+     52              }
+     53          
+     54              if (*ilen == 0 || *ibuf == NULL || *obuf == NULL) {
+     55                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+     56              }
+     57          
+     58              // consume first byte, length of what follows
+     59              size_t field_length = **ibuf;
+     60              *ibuf += 1;
+     61              *ilen -= 1;
+     62              if (rlen != NULL) {
+     63                  *rlen += 1;
+     64              }
+     65          
+     66              if (field_length > *ilen) {
+     67                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+     68              }
+     69          
+     70              // consume second byte, point type
+     71              uint8_t point_type = **ibuf;
+     72              size_t point_length = field_length - 1;
+     73              *ibuf += 1;
+     74              *ilen -= 1;
+     75          
+     76              switch (point_type) {
+     77                  case 0x0:
+     78                      // Why would we ever get a zero-point?
+     79                      return MBEDTLS_ERR_ECP_INVALID_KEY;
+     80                  case 0x04:
+     81                      break;
+     82                  case 0x05:
+     83                      // We don't support compressed points...
+     84                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+     85                  default:
+     86                      return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+     87              }
+     88          
+     89              // copy out binary point
+     90              if (point_length > *olen) {
+     91                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+     92              }
+     93          
+     94              memcpy(*obuf, *ibuf, point_length);
+     95              *ibuf += point_length;
+     96              *ilen -= point_length;
+     97              *obuf += point_length;
+     98              *olen -= point_length;
+     99              if (rlen != NULL) {
+    100                  *rlen += field_length;
+    101              }
+    102          
+    103              return 0;
+    104          }
+    105          
+    106          static int parse_tls_zkp(const uint8_t **ibuf, size_t *ilen, size_t *rlen,
+    107                                   uint8_t **obuf, size_t *olen)
+    108          {
+    109              if (ilen == NULL || ibuf == NULL || obuf == NULL || olen == NULL) {
+    110                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    111              }
+    112          
+    113              if (*ilen == 0 || *ibuf == NULL || *obuf == NULL || *olen < 96) {
+    114                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    115              }
+    116          
+    117              int ret = parse_tls_point(ibuf, ilen, rlen, obuf, olen);
+    118              if (ret != 0) {
+    119                  return ret;
+    120              }
+    121          
+    122              if (*ilen < 1) {
+    123                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    124              }
+    125          
+    126              // consume first byte, length of what follows
+    127              size_t field_length = **ibuf;
+    128              *ibuf += 1;
+    129              *ilen -= 1;
+    130              if (rlen != NULL) {
+    131                  *rlen += 1;
+    132              }
+    133          
+    134              if (field_length > *ilen || field_length > *olen) {
+    135                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    136              }
+    137          
+    138              if (field_length == 0) {
+    139                  // scalar cannot be zero
+    140                  return MBEDTLS_ERR_ECP_INVALID_KEY;
+    141              }
+    142          
+    143              // right-adjust
+    144              size_t adjust_length = 32 - field_length;
+    145              memset(*obuf, 0, adjust_length);
+    146              *obuf += adjust_length;
+    147              *olen -= adjust_length;
+    148          
+    149              // Consume field
+    150              memcpy(*obuf, *ibuf, field_length);
+    151              *obuf += field_length;
+    152              *olen -= field_length;
+    153              *ibuf += field_length;
+    154              *ilen -= field_length;
+    155          
+    156              if (rlen != NULL) {
+    157                  *rlen += field_length;
+    158              }
+    159          
+    160              return 0;
+    161          }
+    162          
+    163          static int write_tls_point(uint8_t **obuf, size_t *olen, size_t *wlen,
+    164                                     const uint8_t **ibuf, size_t *ilen, size_t point_length)
+    165          {
+    166              if (ibuf == NULL || obuf == NULL || olen == NULL || ilen == NULL) {
+    167                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    168              }
+    169          
+    170              if (*obuf == NULL || *ibuf == NULL) {
+    171                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    172              }
+    173          
+    174              // We can only output uncompressed points here
+    175              if (*olen < point_length + 2) {
+    176                  return MBEDTLS_ERR_ECP_BUFFER_TOO_SMALL;
+    177              }
+    178          
+    179              if (*ilen < point_length) {
+    180                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    181              }
+    182          
+    183              **obuf = point_length + 1;
+    184              *obuf += 1;
+    185              *olen -= 1;
+    186          
+    187              **obuf = 0x04;
+    188              *obuf += 1;
+    189              *olen -= 1;
+    190          
+    191              memcpy(*obuf, *ibuf, point_length);
+    192          
+    193              *obuf += point_length;
+    194              *olen -= point_length;
+    195              *ibuf += point_length;
+    196              *ilen -= point_length;
+    197          
+    198              if (wlen != NULL) {
+    199                  *wlen += point_length + 2;
+    200              }
+    201          
+    202              return 0;
+    203          }
+    204          
+    205          static int write_tls_zkp(uint8_t **obuf, size_t *olen, size_t *wlen,
+    206                                   const uint8_t **ibuf, size_t *ilen, size_t point_length)
+    207          {
+    208              int ret = 0;
+    209          
+    210              if (ibuf == NULL || obuf == NULL || olen == NULL || ilen == NULL) {
+    211                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    212              }
+    213          
+    214              if (*obuf == NULL || *ibuf == NULL) {
+    215                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    216              }
+    217          
+    218              ret = write_tls_point(obuf, olen, wlen, ibuf, ilen, point_length);
+    219          
+    220              if (ret != 0) {
+    221                  return ret;
+    222              }
+    223          
+    224              size_t zkp_length = 32;
+    225          
+    226              if (*olen < zkp_length + 1 || *ilen < zkp_length) {
+    227                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    228              }
+    229          
+    230              **obuf = zkp_length;
+    231              *obuf += 1;
+    232              *olen -= 1;
+    233          
+    234              memcpy(*obuf, *ibuf, zkp_length);
+    235          
+    236              *obuf += zkp_length;
+    237              *olen -= zkp_length;
+    238              *ibuf += zkp_length;
+    239              *ilen -= zkp_length;
+    240          
+    241              if (wlen != NULL) {
+    242                  *wlen += zkp_length + 1;
+    243              }
+    244          
+    245              return 0;
+    246          }
+    247          
+    248          void mbedtls_ecjpake_init( mbedtls_ecjpake_context *ctx )
+    249          {
+    250              if (ctx == NULL) {
+    251                  return;
+    252              }
+    253          
+    254              memset(ctx, 0, sizeof(*ctx));
+    255          }
+    256          
+    257          int mbedtls_ecjpake_setup( mbedtls_ecjpake_context *ctx,
+    258                                     mbedtls_ecjpake_role role,
+    259                                     mbedtls_md_type_t hash,
+    260                                     mbedtls_ecp_group_id curve,
+    261                                     const unsigned char *secret,
+    262                                     size_t len )
+    263          {
+    264              if (ctx == NULL || (len > 0 && secret == NULL)) {
+    265                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    266              }
+    267          
+    268              // SE only supports passphrases of maximum 32 bytes
+    269              if (len > 32) {
+    270                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    271              }
+    272          
+    273              // SE currently only supports SHA256 as JPAKE hashing mechanism
+    274              if (hash != MBEDTLS_MD_SHA256) {
+    275                  return MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE;
+    276              }
+    277          
+    278              // SE currently only supports ECDSA secp256r1 as curve
+    279              if (curve != MBEDTLS_ECP_DP_SECP256R1) {
+    280                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    281              }
+    282          
+    283              ctx->curve_flags = 0x8000001FUL;
+    284              ctx->role = role;
+    285              ctx->pwd_len = len;
+    286              memcpy(ctx->pwd, secret, len);
+    287          
+    288              return 0;
+    289          }
+    290          
+    291          int mbedtls_ecjpake_check( const mbedtls_ecjpake_context *ctx )
+    292          {
+    293              if (ctx == NULL) {
+    294                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    295              }
+    296          
+    297              if (ctx->curve_flags == 0 || (ctx->pwd_len > 0 && ctx->pwd == NULL)) {
+    298                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    299              }
+    300          
+    301              return 0;
+    302          }
+    303          
+    304          int mbedtls_ecjpake_write_round_one( mbedtls_ecjpake_context *ctx,
+    305                                      unsigned char *buf, size_t len, size_t *olen,
+    306                                      int (*f_rng)(void *, unsigned char *, size_t),
+    307                                      void *p_rng )
+    308          {
+    309              // SE has internal RNG
+    310              (void)f_rng;
+    311              (void)p_rng;
+    312          
+    313              int ret = 0;
+    314              *olen = 0;
+    315          
+    316              if (ctx == NULL || buf == NULL || olen == NULL) {
+    317                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    318              }
+    319          
+    320              // local storage for ZKPs
+    321              uint8_t zkp1[32+64];
+    322              uint8_t zkp2[32+64];
+    323          
+    324              // SE command structures
+    325              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_JPAKE_R1_GENERATE);
+    326              SE_DataTransfer_t domain_in = SE_DATATRANSFER_DEFAULT(NULL, 0);
+    327              SE_DataTransfer_t userid = SE_DATATRANSFER_DEFAULT((void*)ecjpake_id[ctx->role], strlen(ecjpake_id[ctx->role]));
+    328              SE_DataTransfer_t r_out = SE_DATATRANSFER_DEFAULT(ctx->r, 32);
+    329              SE_DataTransfer_t Xm1_out = SE_DATATRANSFER_DEFAULT(ctx->Xm1, 64);
+    330              SE_DataTransfer_t zkp1_out = SE_DATATRANSFER_DEFAULT(zkp1, sizeof(zkp1));
+    331              SE_DataTransfer_t Xm2_out = SE_DATATRANSFER_DEFAULT(ctx->Xm2, 64);
+    332              SE_DataTransfer_t zkp2_out = SE_DATATRANSFER_DEFAULT(zkp2, sizeof(zkp2));
+    333          
+    334              SE_addDataInput(&command, &domain_in);
+    335              SE_addDataInput(&command, &userid);
+    336              SE_addDataOutput(&command, &r_out);
+    337              SE_addDataOutput(&command, &Xm1_out);
+    338              SE_addDataOutput(&command, &zkp1_out);
+    339              SE_addDataOutput(&command, &Xm2_out);
+    340              SE_addDataOutput(&command, &zkp2_out);
+    341          
+    342              SE_addParameter(&command, ctx->curve_flags);
+    343              SE_addParameter(&command, strlen(ecjpake_id[ctx->role]));
+    344          
+    345              int status = se_management_acquire();
+    346              if (status != 0) {
+    347                  return status;
+    348              }
+    349          
+    350              SE_executeCommand(&command);
+    351              SE_Response_t res = SE_readCommandResponse();
+    352          
+    353              se_management_release();
+    354          
+    355              if ( res == SE_RESPONSE_OK ) {
+    356                  // To write TLS structures of ECJ-PAKE, we need to write:
+    357                  // * Xm1
+    358                  // * zkp1
+    359                  // * Xm2
+    360                  // * zkp2
+    361                  uint8_t *obuf = buf;
+    362                  const uint8_t *ibuf = ctx->Xm1;
+    363                  size_t ilen = 64;
+    364          
+    365                  ret = write_tls_point(&obuf, &len, olen, &ibuf, &ilen, 64);
+    366                  if (ret != 0) {
+    367                      return ret;
+    368                  }
+    369          
+    370                  ibuf = zkp1;
+    371                  ilen = 96;
+    372                  ret = write_tls_zkp(&obuf, &len, olen, &ibuf, &ilen, 64);
+    373                  if (ret != 0) {
+    374                      return ret;
+    375                  }
+    376          
+    377                  ibuf = ctx->Xm2;
+    378                  ilen = 64;
+    379                  ret = write_tls_point(&obuf, &len, olen, &ibuf, &ilen, 64);
+    380                  if (ret != 0) {
+    381                      return ret;
+    382                  }
+    383          
+    384                  ibuf = zkp2;
+    385                  ilen = 96;
+    386                  ret = write_tls_zkp(&obuf, &len, olen, &ibuf, &ilen, 64);
+    387                  if (ret != 0) {
+    388                      return ret;
+    389                  }
+    390          
+    391                  return 0;
+    392              } else {
+    393                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    394              }
+    395          }
+    396          
+    397          int mbedtls_ecjpake_read_round_one( mbedtls_ecjpake_context *ctx,
+    398                                              const unsigned char *buf,
+    399                                              size_t len )
+    400          {
+    401              int ret = 0;
+    402          
+    403              if (ctx == NULL || buf == NULL) {
+    404                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    405              }
+    406          
+    407              // Should receive 2 binary points and 2 ZKPs
+    408          
+    409              // local storage for ZKPs
+    410              uint8_t zkp1[32+64] = {0};
+    411              uint8_t zkp2[32+64] = {0};
+    412          
+    413              uint8_t *obuf = ctx->Xp1;
+    414              size_t olen = 64;
+    415          
+    416              // Parse structures
+    417              ret = parse_tls_point(&buf, &len, NULL, &obuf, &olen);
+    418              if (ret != 0) {
+    419                  return ret;
+    420              }
+    421          
+    422              obuf = zkp1;
+    423              olen = 96;
+    424              ret = parse_tls_zkp(&buf, &len, NULL, &obuf, &olen);
+    425              if (ret != 0) {
+    426                  return ret;
+    427              }
+    428          
+    429              obuf = ctx->Xp2;
+    430              olen = 64;
+    431              ret = parse_tls_point(&buf, &len, NULL, &obuf, &olen);
+    432              if (ret != 0) {
+    433                  return ret;
+    434              }
+    435          
+    436              obuf = zkp2;
+    437              olen = 96;
+    438              ret = parse_tls_zkp(&buf, &len, NULL, &obuf, &olen);
+    439              if (ret != 0) {
+    440                  return ret;
+    441              }
+    442          
+    443              if (len > 0) {
+    444                  // Too much input
+    445                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    446              }
+    447          
+    448              // SE command structures
+    449              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_JPAKE_R1_VERIFY);
+    450              SE_DataTransfer_t domain_in = SE_DATATRANSFER_DEFAULT(NULL, 0);
+    451              SE_DataTransfer_t userid_mine = SE_DATATRANSFER_DEFAULT((void*)ecjpake_id[ctx->role], strlen(ecjpake_id[ctx->role]));
+    452              SE_DataTransfer_t userid_peer = SE_DATATRANSFER_DEFAULT((void*)ecjpake_id[1-ctx->role], strlen(ecjpake_id[1-ctx->role]));
+    453          
+    454              SE_DataTransfer_t Xp1_in = SE_DATATRANSFER_DEFAULT(ctx->Xp1, 64);
+    455              SE_DataTransfer_t zkp1_in = SE_DATATRANSFER_DEFAULT(zkp1, sizeof(zkp1));
+    456              SE_DataTransfer_t Xp2_in = SE_DATATRANSFER_DEFAULT(ctx->Xp2, 64);
+    457              SE_DataTransfer_t zkp2_in = SE_DATATRANSFER_DEFAULT(zkp2, sizeof(zkp2));
+    458          
+    459              SE_addDataInput(&command, &domain_in);
+    460              SE_addDataInput(&command, &userid_mine);
+    461              SE_addDataInput(&command, &userid_peer);
+    462          
+    463              SE_addDataInput(&command, &Xp1_in);
+    464              SE_addDataInput(&command, &zkp1_in);
+    465              SE_addDataInput(&command, &Xp2_in);
+    466              SE_addDataInput(&command, &zkp2_in);
+    467          
+    468              SE_addParameter(&command, ctx->curve_flags);
+    469              SE_addParameter(&command, strlen(ecjpake_id[ctx->role]));
+    470              SE_addParameter(&command, strlen(ecjpake_id[1-ctx->role]));
+    471          
+    472              int status = se_management_acquire();
+    473              if (status != 0) {
+    474                  return status;
+    475              }
+    476          
+    477              SE_executeCommand(&command);
+    478              SE_Response_t res = SE_readCommandResponse();
+    479          
+    480              se_management_release();
+    481          
+    482              if ( res == SE_RESPONSE_OK ) {
+    483                  return 0;
+    484              } else {
+    485                  return MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    486              }
+    487          }
+    488          
+    489          int mbedtls_ecjpake_write_round_two( mbedtls_ecjpake_context *ctx,
+    490                                      unsigned char *buf, size_t len, size_t *olen,
+    491                                      int (*f_rng)(void *, unsigned char *, size_t),
+    492                                      void *p_rng )
+    493          {
+    494              // SE has internal RNG
+    495              (void)f_rng;
+    496              (void)p_rng;
+    497          
+    498              int ret = 0;
+    499          
+    500              if (ctx == NULL || buf == NULL || olen == NULL) {
+    501                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    502              }
+    503          
+    504              *olen = 0;
+    505          
+    506              uint8_t zkpA[32+64];
+    507              uint8_t xA[64];
+    508          
+    509              // SE command structures
+    510              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_JPAKE_R2_GENERATE);
+    511              SE_DataTransfer_t domain_in = SE_DATATRANSFER_DEFAULT(NULL, 0);
+    512              SE_DataTransfer_t pwd_in = SE_DATATRANSFER_DEFAULT(ctx->pwd, ctx->pwd_len);
+    513              SE_DataTransfer_t userid = SE_DATATRANSFER_DEFAULT((void*)ecjpake_id[ctx->role], strlen(ecjpake_id[ctx->role]));
+    514              SE_DataTransfer_t r_in = SE_DATATRANSFER_DEFAULT(ctx->r, 32);
+    515              SE_DataTransfer_t Xm1_in = SE_DATATRANSFER_DEFAULT(ctx->Xm1, 64);
+    516              SE_DataTransfer_t Xp1_in = SE_DATATRANSFER_DEFAULT(ctx->Xp1, 64);
+    517              SE_DataTransfer_t Xp2_in = SE_DATATRANSFER_DEFAULT(ctx->Xp2, 64);
+    518          
+    519              SE_DataTransfer_t xA_out = SE_DATATRANSFER_DEFAULT(xA, sizeof(xA));
+    520              SE_DataTransfer_t zkpA_out = SE_DATATRANSFER_DEFAULT(zkpA, sizeof(zkpA));
+    521          
+    522              SE_addDataInput(&command, &domain_in);
+    523              SE_addDataInput(&command, &pwd_in);
+    524              SE_addDataInput(&command, &userid);
+    525              SE_addDataInput(&command, &r_in);
+    526              SE_addDataInput(&command, &Xm1_in);
+    527              SE_addDataInput(&command, &Xp1_in);
+    528              SE_addDataInput(&command, &Xp2_in);
+    529          
+    530              SE_addDataOutput(&command, &xA_out);
+    531              SE_addDataOutput(&command, &zkpA_out);
+    532          
+    533              SE_addParameter(&command, ctx->curve_flags);
+    534              SE_addParameter(&command, ctx->pwd_len);
+    535              SE_addParameter(&command, strlen(ecjpake_id[ctx->role]));
+    536          
+    537              int status = se_management_acquire();
+    538              if (status != 0) {
+    539                  return status;
+    540              }
+    541          
+    542              SE_executeCommand(&command);
+    543              SE_Response_t res = SE_readCommandResponse();
+    544          
+    545              se_management_release();
+    546          
+    547              if ( res == SE_RESPONSE_OK ) {
+    548                  // If we are the server, we need to write out the ECParams
+    549                  if( ctx->role == MBEDTLS_ECJPAKE_SERVER )
+    550                  {
+    551                      if( len < 3 + 66 + 66 + 33)
+    552                      {
+    553                          return MBEDTLS_ERR_ECP_BUFFER_TOO_SMALL;
+    554                      }
+    555                      const mbedtls_ecp_curve_info *curve_info;
+    556          
+    557                      if( ( curve_info = mbedtls_ecp_curve_info_from_grp_id( MBEDTLS_ECP_DP_SECP256R1 ) ) == NULL ) {
+    558                          return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    559                      }
+    560          
+    561                      // First byte is curve_type, always named_curve
+    562                      *(buf++) = MBEDTLS_ECP_TLS_NAMED_CURVE;
+    563          
+    564                      // Next two bytes are the namedcurve value
+    565                      *(buf++) = curve_info->tls_id >> 8;
+    566                      *(buf++) = curve_info->tls_id & 0xFF;
+    567          
+    568                      *olen += 3;
+    569                      len -= 3;
+    570                  }
+    571          
+    572                  // To write TLS structures of ECJ-PAKE, we need to write:
+    573                  // * XA in uncompressed form
+    574                  // * zkpA in uncompressed form
+    575                  uint8_t *obuf = buf;
+    576                  const uint8_t *ibuf = xA;
+    577                  size_t ilen = 64;
+    578          
+    579                  ret = write_tls_point(&obuf, &len, olen, &ibuf, &ilen, 64);
+    580                  if (ret != 0) {
+    581                      return ret;
+    582                  }
+    583          
+    584                  ibuf = zkpA;
+    585                  ilen = 96;
+    586                  ret = write_tls_zkp(&obuf, &len, olen, &ibuf, &ilen, 64);
+    587                  if (ret != 0) {
+    588                      return ret;
+    589                  }
+    590          
+    591                  return 0;
+    592              } else {
+    593                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    594              }
+    595          }
+    596          
+    597          int mbedtls_ecjpake_read_round_two( mbedtls_ecjpake_context *ctx,
+    598                                              const unsigned char *buf,
+    599                                              size_t len )
+    600          {
+    601              if (ctx == NULL || buf == NULL) {
+    602                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    603              }
+    604          
+    605              int ret = 0;
+    606          
+    607              // local storage for ZKP
+    608              uint8_t zkpB[32+64];
+    609          
+    610              if( ctx->role == MBEDTLS_ECJPAKE_CLIENT )
+    611              {
+    612                  const mbedtls_ecp_curve_info *curve_info;
+    613                  uint16_t tls_id;
+    614          
+    615                  if( len < 3 ) {
+    616                      return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    617                  }
+    618          
+    619                  // First byte is curve_type; only named_curve is handled
+    620                  if( *(buf++) != MBEDTLS_ECP_TLS_NAMED_CURVE ) {
+    621                      return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    622                  }
+    623          
+    624                  // Next two bytes are the namedcurve value
+    625                  tls_id = *(buf++);
+    626                  tls_id <<= 8;
+    627                  tls_id |= *(buf++);
+    628          
+    629                  if( ( curve_info = mbedtls_ecp_curve_info_from_tls_id( tls_id ) ) == NULL ) {
+    630                      return( MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE );
+    631                  }
+    632          
+    633                  if (curve_info->grp_id != MBEDTLS_ECP_DP_SECP256R1) {
+    634                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    635                  }
+    636          
+    637                  len -= 3;
+    638              }
+    639          
+    640              // Should receive 1 binary point and 1 ZKP
+    641              uint8_t *obuf = ctx->Xp;
+    642              size_t olen = 64;
+    643          
+    644              // Parse structures
+    645              ret = parse_tls_point(&buf, &len, NULL, &obuf, &olen);
+    646              if (ret != 0) {
+    647                  return ret;
+    648              }
+    649          
+    650              obuf = zkpB;
+    651              olen = sizeof(zkpB);
+    652              ret = parse_tls_zkp(&buf, &len, NULL, &obuf, &olen);
+    653              if (ret != 0) {
+    654                  return ret;
+    655              }
+    656          
+    657              if (len > 0) {
+    658                  // Too much input
+    659                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    660              }
+    661          
+    662              // SE command structures
+    663              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_JPAKE_R2_VERIFY);
+    664              SE_DataTransfer_t domain_in = SE_DATATRANSFER_DEFAULT(NULL, 0);
+    665              SE_DataTransfer_t userid_peer = SE_DATATRANSFER_DEFAULT((void*)ecjpake_id[1-ctx->role], strlen(ecjpake_id[1-ctx->role]));
+    666          
+    667              SE_DataTransfer_t Xm1_in = SE_DATATRANSFER_DEFAULT(ctx->Xm1, 64);
+    668              SE_DataTransfer_t Xm2_in = SE_DATATRANSFER_DEFAULT(ctx->Xm2, 64);
+    669              SE_DataTransfer_t Xp1_in = SE_DATATRANSFER_DEFAULT(ctx->Xp1, 64);
+    670              SE_DataTransfer_t Xp_in = SE_DATATRANSFER_DEFAULT(ctx->Xp, 64);
+    671              SE_DataTransfer_t zkpB_in = SE_DATATRANSFER_DEFAULT(zkpB, sizeof(zkpB));
+    672          
+    673              SE_addDataInput(&command, &domain_in);
+    674              SE_addDataInput(&command, &userid_peer);
+    675          
+    676              SE_addDataInput(&command, &Xm1_in);
+    677              SE_addDataInput(&command, &Xm2_in);
+    678              SE_addDataInput(&command, &Xp1_in);
+    679              SE_addDataInput(&command, &Xp_in);
+    680              SE_addDataInput(&command, &zkpB_in);
+    681          
+    682              SE_addParameter(&command, ctx->curve_flags);
+    683              SE_addParameter(&command, strlen(ecjpake_id[1-ctx->role]));
+    684          
+    685              int status = se_management_acquire();
+    686              if (status != 0) {
+    687                  return status;
+    688              }
+    689          
+    690              SE_executeCommand(&command);
+    691              SE_Response_t res = SE_readCommandResponse();
+    692          
+    693              se_management_release();
+    694          
+    695              if ( res == SE_RESPONSE_OK ) {
+    696                  return 0;
+    697              } else {
+    698                  return MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    699              }
+    700          }
+    701          
+    702          int mbedtls_ecjpake_derive_secret( mbedtls_ecjpake_context *ctx,
+    703                                      unsigned char *buf, size_t len, size_t *olen,
+    704                                      int (*f_rng)(void *, unsigned char *, size_t),
+    705                                      void *p_rng )
+    706          {
+    707              // SE has internal RNG
+    708              (void)f_rng;
+    709              (void)p_rng;
+    710          
+    711              if (len < 32) {
+    712                  return MBEDTLS_ERR_ECP_BUFFER_TOO_SMALL;
+    713              }
+    714          
+    715              // Generated session key needs to come out unprotected
+    716              uint32_t gen_key_flags = 32;
+    717          
+    718              // SE command structures
+    719              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_JPAKE_GEN_SESSIONKEY | SE_COMMAND_OPTION_HASH_SHA256);
+    720              SE_DataTransfer_t domain_in = SE_DATATRANSFER_DEFAULT(NULL, 0);
+    721              SE_DataTransfer_t pwd_in = SE_DATATRANSFER_DEFAULT(ctx->pwd, ctx->pwd_len);
+    722          
+    723              SE_DataTransfer_t r_in = SE_DATATRANSFER_DEFAULT(ctx->r, 32);
+    724              SE_DataTransfer_t Xp2_in = SE_DATATRANSFER_DEFAULT(ctx->Xp2, 64);
+    725              SE_DataTransfer_t Xp_in = SE_DATATRANSFER_DEFAULT(ctx->Xp, 64);
+    726              SE_DataTransfer_t key_out = SE_DATATRANSFER_DEFAULT(buf, 32);
+    727          
+    728              SE_addDataInput(&command, &domain_in);
+    729              SE_addDataInput(&command, &pwd_in);
+    730          
+    731              SE_addDataInput(&command, &r_in);
+    732              SE_addDataInput(&command, &Xp2_in);
+    733              SE_addDataInput(&command, &Xp_in);
+    734          
+    735              SE_addDataOutput(&command, &key_out);
+    736          
+    737              SE_addParameter(&command, ctx->curve_flags);
+    738              SE_addParameter(&command, ctx->pwd_len);
+    739              SE_addParameter(&command, gen_key_flags);
+    740          
+    741              int status = se_management_acquire();
+    742              if (status != 0) {
+    743                  return status;
+    744              }
+    745          
+    746              SE_executeCommand(&command);
+    747              SE_Response_t res = SE_readCommandResponse();
+    748          
+    749              se_management_release();
+    750          
+    751              if ( res == SE_RESPONSE_OK ) {
+    752                  *olen = 32;
+    753                  return 0;
+    754              } else {
+    755                  *olen = 0;
+    756                  return MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    757              }
+    758          }
+    759          
+    760          void mbedtls_ecjpake_free( mbedtls_ecjpake_context *ctx )
+    761          {
+    762              if (ctx == NULL) {
+    763                  return;
+    764              }
+    765          
+    766              memset(ctx, 0, sizeof(*ctx));
+    767          }
+    768          
+    769          #endif /* #if defined(SEMAILBOX_PRESENT) */
+    770          
+    771          #endif /* #if defined(MBEDTLS_ECJPAKE_ALT) && defined(MBEDTLS_ECJPAKE_C) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

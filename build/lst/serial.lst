@@ -1,0 +1,2063 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:49
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\serial\serial.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW3454.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\serial\serial.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"serial.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\serial\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\serial.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\serial.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\serial\serial.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Serial Layer, legacy support
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          #include PLATFORM_HEADER
+     18          #include "stack/include/ember-types.h"
+     19          #include "stack/include/error.h"
+     20          
+     21          //Host processors do not use Ember Message Buffers.
+     22          #ifndef EZSP_HOST
+     23            #include "stack/include/packet-buffer.h"
+     24          #endif
+     25          
+     26          #include "hal/hal.h"
+     27          #include "serial.h"
+     28          #ifdef CORTEXM3_EFM32_MICRO
+     29            #include "com.h"
+     30            #include "com_config.h"
+     31          #endif
+     32          #include "ember-printf.h"
+     33          
+     34          #include <stdarg.h>
+     35          
+     36          #ifdef EMBER_SERIAL_USE_STDIO
+     37          #include <stdio.h>
+     38          #endif //EMBER_SERIAL_USE_STDIO
+     39          
+     40          #ifdef EMBER_SERIAL_CUSTOM_STDIO
+     41          #include EMBER_SERIAL_CUSTOM_STDIO
+     42          #define EMBER_SERIAL_USE_STDIO
+     43          #endif // EMBER_SERIAL_CUSTOM_STDIO
+     44          
+     45          // AppBuilder and Afv2 will define the characteristics of the Serial ports here.
+     46          #if defined(ZA_GENERATED_HEADER)
+     47            #include ZA_GENERATED_HEADER
+     48          #endif
+     49          
+     50          // Crude method of mashing together com and serial layers before all the drivers
+     51          // are properly ported over into ember world. NT 2014-09-16
+     52          #ifdef CORTEXM3_EFM32_MICRO
+     53          //------------------------------------------------------
+     54          // Serial initialization
+     55          
+
+   \                                 In section .text, align 2, keep-with-next
+     56          EmberStatus emberSerialInit(uint8_t port,
+     57                                      SerialBaudRate rate,
+     58                                      SerialParity parity,
+     59                                      uint8_t stopBits)
+     60          {
+   \                     emberSerialInit: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+     61            EmberStatus status = EMBER_ERR_FATAL;
+   \        0x6   0x2501             MOVS     R5,#+1
+     62            COM_Init_t initdata;
+     63            switch (port) {
+   \        0x8   0x2C01             CMP      R4,#+1
+   \        0xA   0xB08A             SUB      SP,SP,#+40
+   \        0xC   0x460F             MOV      R7,R1
+   \        0xE   0x4690             MOV      R8,R2
+   \       0x10   0xBF18             IT       NE 
+   \       0x12   0x2C20             CMPNE    R4,#+32
+   \       0x14   0x461E             MOV      R6,R3
+   \       0x16   0xD119             BNE.N    ??emberSerialInit_0
+     64          #ifdef COM_VCP_ENABLE
+     65              case COM_VCP:
+     66              case comPortVcp:
+     67                status = COM_Init((COM_Port_t) port, NULL);
+     68                break;
+     69          #endif
+     70          #ifdef COM_USART0_ENABLE
+     71              case COM_USART0:
+     72              case comPortUsart0:
+     73                initdata = (COM_Init_t) COM_USART0_DEFAULT;
+   \       0x18   0x4668             MOV      R0,SP
+   \       0x1A   0x....             LDR.N    R1,??DataTable2
+   \       0x1C   0x2228             MOVS     R2,#+40
+   \       0x1E   0x....'....        BL       __aeabi_memcpy4
+     74                break;
+     75          #endif
+     76          #ifdef COM_USART1_ENABLE
+     77              case COM_USART1:
+     78              case comPortUsart1:
+     79                initdata = (COM_Init_t) COM_USART1_DEFAULT;
+     80                break;
+     81          #endif
+     82          #ifdef COM_USART2_ENABLE
+     83              case COM_USART2:
+     84              case comPortUsart2:
+     85                initdata = (COM_Init_t) COM_USART2_DEFAULT;
+     86                break;
+     87          #endif
+     88          #ifdef COM_USART3_ENABLE
+     89              case comPortUsart3:
+     90                initdata = (COM_Init_t) COM_USART3_DEFAULT;
+     91                break;
+     92          #endif
+     93          #ifdef COM_LEUART0_ENABLE
+     94              case COM_LEUART0:
+     95              case comPortLeuart0:
+     96                initdata = (COM_Init_t) COM_LEUART0_DEFAULT;
+     97                break;
+     98          #endif
+     99          #ifdef COM_LEUART1_ENABLE
+    100              case COM_LEUART1:
+    101              case comPortLeuart1:
+    102                initdata = (COM_Init_t) COM_LEUART1_DEFAULT;
+    103                break;
+    104          #endif
+    105              default:
+    106                return status;
+    107            }
+    108          #if defined(COM_USART0_ENABLE) || defined (COM_USART1_ENABLE) || defined (COM_USART2_ENABLE) || defined (COM_USART3_ENABLE)
+    109            if ((port == COM_USART0) || (port == comPortUsart0)
+    110                || (port == COM_USART1) || (port == comPortUsart1)
+    111                || (port == COM_USART2) || (port == comPortUsart2)
+    112                || (port == comPortUsart3)) {
+   \       0x22   0x2C01             CMP      R4,#+1
+   \       0x24   0xBF18             IT       NE 
+   \       0x26   0x2C20             CMPNE    R4,#+32
+   \       0x28   0xD008             BEQ.N    ??emberSerialInit_1
+   \       0x2A   0x2C02             CMP      R4,#+2
+   \       0x2C   0xBF18             IT       NE 
+   \       0x2E   0x2C21             CMPNE    R4,#+33
+   \       0x30   0xD004             BEQ.N    ??emberSerialInit_1
+   \       0x32   0x2C03             CMP      R4,#+3
+   \       0x34   0xBF1C             ITT      NE 
+   \       0x36   0x2C22             CMPNE    R4,#+34
+   \       0x38   0x2C23             CMPNE    R4,#+35
+   \       0x3A   0xD114             BNE.N    ??emberSerialInit_2
+    113              initdata.uartdrvinit.uartinit.baudRate = rate;
+   \                     ??emberSerialInit_1: (+1)
+   \       0x3C   0x9701             STR      R7,[SP, #+4]
+    114              initdata.uartdrvinit.uartinit.parity = (USART_Parity_TypeDef)parity;
+   \       0x3E   0xF8AD 0x8010      STRH     R8,[SP, #+16]
+    115              if (stopBits == 1) {
+   \       0x42   0x2E01             CMP      R6,#+1
+   \       0x44   0xD104             BNE.N    ??emberSerialInit_3
+    116                initdata.uartdrvinit.uartinit.stopBits = usartStopbits1;
+   \       0x46   0xF44F 0x5080      MOV      R0,#+4096
+   \       0x4A   0xE005             B.N      ??emberSerialInit_4
+    117              } else if (stopBits == 2) {
+   \                     ??emberSerialInit_0: (+1)
+   \       0x4C   0x2001             MOVS     R0,#+1
+   \       0x4E   0xE00B             B.N      ??emberSerialInit_5
+   \                     ??emberSerialInit_3: (+1)
+   \       0x50   0x2E02             CMP      R6,#+2
+   \       0x52   0xD103             BNE.N    ??emberSerialInit_6
+    118                initdata.uartdrvinit.uartinit.stopBits = usartStopbits2;
+   \       0x54   0xF44F 0x5040      MOV      R0,#+12288
+   \                     ??emberSerialInit_4: (+1)
+   \       0x58   0xF8AD 0x000E      STRH     R0,[SP, #+14]
+    119              }
+    120              status = COM_Init((COM_Port_t) port, &initdata);
+   \                     ??emberSerialInit_6: (+1)
+   \       0x5C   0x4669             MOV      R1,SP
+   \       0x5E   0x4620             MOV      R0,R4
+   \       0x60   0x....'....        BL       COM_Init
+   \       0x64   0x4605             MOV      R5,R0
+    121            }
+    122          #endif
+    123          #if defined (COM_LEUART0_ENABLE) || defined (COM_LEUART1_ENABLE)
+    124            if ((port == COM_LEUART0) || (port == comPortLeuart0)
+    125                || (port == COM_LEUART1) || (port == comPortLeuart0)
+    126                ) {
+    127              initdata.uartdrvinit.leuartinit.baudRate = rate;
+    128              initdata.uartdrvinit.leuartinit.parity = (LEUART_Parity_TypeDef)parity;
+    129              if (stopBits == 1) {
+    130                initdata.uartdrvinit.leuartinit.stopBits = leuartStopbits1;
+    131              } else if (stopBits == 2) {
+    132                initdata.uartdrvinit.leuartinit.stopBits = leuartStopbits2;
+    133              }
+    134              status = COM_Init((COM_Port_t) port, &initdata);
+    135            }
+    136          #endif
+    137            return status;
+   \                     ??emberSerialInit_2: (+1)
+   \       0x66   0xB2E8             UXTB     R0,R5
+   \                     ??emberSerialInit_5: (+1)
+   \       0x68   0xB00A             ADD      SP,SP,#+40
+   \       0x6A   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    138          }
+    139          
+    140          //------------------------------------------------------
+    141          // Serial Input
+    142          
+    143          // returns # bytes available for reading
+
+   \                                 In section .text, align 2, keep-with-next
+    144          uint16_t emberSerialReadAvailable(uint8_t port)
+    145          {
+    146            return COM_ReadAvailable((COM_Port_t) port);
+   \                     emberSerialReadAvailable: (+1)
+   \        0x0   0x....'....        B.W      COM_ReadAvailable
+    147          }
+    148          
+
+   \                                 In section .text, align 2, keep-with-next
+    149          EmberStatus emberSerialReadByte(uint8_t port, uint8_t *dataByte)
+    150          {
+   \                     emberSerialReadByte: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    151            return COM_ReadByte((COM_Port_t) port, dataByte);
+   \        0x2   0x....'....        BL       COM_ReadByte
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+    152          }
+    153          
+
+   \                                 In section .text, align 2, keep-with-next
+    154          EmberStatus emberSerialReadData(uint8_t port,
+    155                                          uint8_t *data,
+    156                                          uint16_t length,
+    157                                          uint16_t *bytesRead)
+    158          {
+   \                     emberSerialReadData: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4605             MOV      R5,R0
+   \        0x6   0x460E             MOV      R6,R1
+   \        0x8   0x4690             MOV      R8,R2
+   \        0xA   0x461C             MOV      R4,R3
+    159            uint16_t bytesReadInternal = 0;
+   \        0xC   0x2700             MOVS     R7,#+0
+   \        0xE   0xE001             B.N      ??emberSerialReadData_0
+    160            EmberStatus status;
+    161          
+    162            while (bytesReadInternal < length) {
+    163              status = emberSerialReadByte(port, data);
+    164          
+    165              switch (status) {
+    166                case EMBER_SUCCESS:
+    167                  ++data;
+   \                     ??emberSerialReadData_1: (+1)
+   \       0x10   0x1C76             ADDS     R6,R6,#+1
+    168                  ++bytesReadInternal;
+   \       0x12   0x1C7F             ADDS     R7,R7,#+1
+    169                  break;
+   \                     ??emberSerialReadData_0: (+1)
+   \       0x14   0xB2B8             UXTH     R0,R7
+   \       0x16   0x4540             CMP      R0,R8
+   \       0x18   0xD20A             BCS.N    ??emberSerialReadData_2
+   \       0x1A   0x4631             MOV      R1,R6
+   \       0x1C   0x4628             MOV      R0,R5
+   \       0x1E   0x....'....        BL       emberSerialReadByte
+   \       0x22   0x0001             MOVS     R1,R0
+   \       0x24   0xD0F4             BEQ.N    ??emberSerialReadData_1
+   \       0x26   0x2826             CMP      R0,#+38
+   \       0x28   0xD0F4             BEQ.N    ??emberSerialReadData_0
+    170          
+    171                case EMBER_SERIAL_RX_EMPTY:
+    172                  // empty queue is not an error for us, we just want to keep waiting
+    173                  break;
+    174          
+    175                default:
+    176                  // only store number of bytes read if the caller provided a non-NULL pointer
+    177                  if (bytesRead) {
+   \       0x2A   0xB124             CBZ.N    R4,??emberSerialReadData_3
+    178                    *bytesRead = bytesReadInternal;
+   \       0x2C   0x8027             STRH     R7,[R4, #+0]
+    179                  }
+    180                  return status;
+   \       0x2E   0xE002             B.N      ??emberSerialReadData_3
+    181              }
+    182            }
+    183          
+    184            // only store number of bytes read if the caller provided a non-NULL pointer
+    185            if (bytesRead) {
+   \                     ??emberSerialReadData_2: (+1)
+   \       0x30   0xB104             CBZ.N    R4,??emberSerialReadData_4
+    186              *bytesRead = bytesReadInternal;
+   \       0x32   0x8027             STRH     R7,[R4, #+0]
+    187            }
+    188          
+    189            return EMBER_SUCCESS;
+   \                     ??emberSerialReadData_4: (+1)
+   \       0x34   0x2000             MOVS     R0,#+0
+   \                     ??emberSerialReadData_3: (+1)
+   \       0x36   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    190          }
+    191          
+    192          #ifndef EMBER_TEST
+
+   \                                 In section .text, align 2, keep-with-next
+    193          EmberStatus emberSerialReadDataTimeout(uint8_t port,
+    194                                                 uint8_t *data,
+    195                                                 uint16_t length,
+    196                                                 uint16_t *bytesRead,
+    197                                                 uint16_t firstByteTimeout,
+    198                                                 uint16_t subsequentByteTimeout)
+    199          {
+   \                     emberSerialReadDataTimeout: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4691             MOV      R9,R2
+   \        0xA   0x461C             MOV      R4,R3
+   \        0xC   0xF8DD 0xB028      LDR      R11,[SP, #+40]
+   \       0x10   0x9F0B             LDR      R7,[SP, #+44]
+    200            uint16_t bytesReadInternal = 0;
+    201            EmberStatus status;
+    202            uint16_t timeout = firstByteTimeout;
+    203            uint16_t startTime = halCommonGetInt16uMillisecondTick();
+   \       0x12   0x....'....        BL       halCommonGetInt16uMillisecondTick
+   \       0x16   0x2600             MOVS     R6,#+0
+   \       0x18   0x4682             MOV      R10,R0
+   \       0x1A   0xE005             B.N      ??emberSerialReadDataTimeout_0
+    204          
+    205            // loop until we read the max number of bytes or the timeout elapses
+    206            while (bytesReadInternal < length
+    207                   && elapsedTimeInt16u(startTime, halCommonGetInt16uMillisecondTick()) < timeout) {
+    208              status = emberSerialReadByte(port, data);
+    209          
+    210              switch (status) {
+    211                case EMBER_SUCCESS:
+    212                  ++data;
+    213                  ++bytesReadInternal;
+    214                  // reset timer and timeout for next character
+    215                  startTime = halCommonGetInt16uMillisecondTick();
+   \                     ??emberSerialReadDataTimeout_1: (+1)
+   \       0x1C   0x....'....        BL       halCommonGetInt16uMillisecondTick
+   \       0x20   0x1C6D             ADDS     R5,R5,#+1
+   \       0x22   0x1C76             ADDS     R6,R6,#+1
+   \       0x24   0x4682             MOV      R10,R0
+    216                  timeout = subsequentByteTimeout;
+   \       0x26   0x46BB             MOV      R11,R7
+    217                  break;
+   \                     ??emberSerialReadDataTimeout_0: (+1)
+   \       0x28   0xB2B0             UXTH     R0,R6
+   \       0x2A   0x4548             CMP      R0,R9
+   \       0x2C   0xD212             BCS.N    ??emberSerialReadDataTimeout_2
+   \       0x2E   0x....'....        BL       halCommonGetInt16uMillisecondTick
+   \       0x32   0xEBA0 0x000A      SUB      R0,R0,R10
+   \       0x36   0xB280             UXTH     R0,R0
+   \       0x38   0x4558             CMP      R0,R11
+   \       0x3A   0xD20B             BCS.N    ??emberSerialReadDataTimeout_2
+   \       0x3C   0x4629             MOV      R1,R5
+   \       0x3E   0x4640             MOV      R0,R8
+   \       0x40   0x....'....        BL       emberSerialReadByte
+   \       0x44   0x0001             MOVS     R1,R0
+   \       0x46   0xD0E9             BEQ.N    ??emberSerialReadDataTimeout_1
+   \       0x48   0x2826             CMP      R0,#+38
+   \       0x4A   0xD0ED             BEQ.N    ??emberSerialReadDataTimeout_0
+    218          
+    219                case EMBER_SERIAL_RX_EMPTY:
+    220                  // empty queue is not an error for us, we just want to keep waiting
+    221                  break;
+    222          
+    223                default:
+    224                  // only store number of bytes read if the caller provided a non-NULL pointer
+    225                  if (bytesRead) {
+   \       0x4C   0xB104             CBZ.N    R4,??emberSerialReadDataTimeout_3
+    226                    *bytesRead = bytesReadInternal;
+   \       0x4E   0x8026             STRH     R6,[R4, #+0]
+    227                  }
+    228                  return status;
+   \                     ??emberSerialReadDataTimeout_3: (+1)
+   \       0x50   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+    229              }
+    230            }
+    231          
+    232            // only store number of bytes read if the caller provided a non-NULL pointer
+    233            if (bytesRead) {
+   \                     ??emberSerialReadDataTimeout_2: (+1)
+   \       0x54   0xB104             CBZ.N    R4,??emberSerialReadDataTimeout_4
+    234              *bytesRead = bytesReadInternal;
+   \       0x56   0x8026             STRH     R6,[R4, #+0]
+    235            }
+    236          
+    237            return bytesReadInternal == length ? EMBER_SUCCESS : EMBER_SERIAL_RX_EMPTY;
+   \                     ??emberSerialReadDataTimeout_4: (+1)
+   \       0x58   0xB2B6             UXTH     R6,R6
+   \       0x5A   0x454E             CMP      R6,R9
+   \       0x5C   0xBF0C             ITE      EQ 
+   \       0x5E   0x2000             MOVEQ    R0,#+0
+   \       0x60   0x2026             MOVNE    R0,#+38
+   \       0x62   0xE7F5             B.N      ??emberSerialReadDataTimeout_3
+    238          }
+    239          
+    240          #endif // EMBER_TEST
+    241          
+
+   \                                 In section .text, align 2, keep-with-next
+    242          EmberStatus emberSerialReadPartialLine(uint8_t port, char *data, uint8_t max, uint8_t *index)
+    243          {
+   \                     emberSerialReadPartialLine: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    244            return COM_ReadPartialLine((COM_Port_t) port, data, max, index);
+   \        0x2   0x....'....        BL       COM_ReadPartialLine
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+    245          }
+    246          
+
+   \                                 In section .text, align 2, keep-with-next
+    247          EmberStatus emberSerialReadLine(uint8_t port, char *data, uint8_t max)
+    248          {
+   \                     emberSerialReadLine: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    249            uint8_t index = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \        0xE   0xE001             B.N      ??emberSerialReadLine_0
+    250          
+    251            while (emberSerialReadPartialLine(port, data, max, &index) != EMBER_SUCCESS) {
+    252              halResetWatchdog();
+   \                     ??emberSerialReadLine_1: (+1)
+   \       0x10   0x....'....        BL       halInternalResetWatchDog
+    253            }
+   \                     ??emberSerialReadLine_0: (+1)
+   \       0x14   0x466B             MOV      R3,SP
+   \       0x16   0x4632             MOV      R2,R6
+   \       0x18   0x4629             MOV      R1,R5
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x....'....        BL       emberSerialReadPartialLine
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD1F5             BNE.N    ??emberSerialReadLine_1
+    254            return EMBER_SUCCESS;
+   \       0x24   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    255          }
+    256          
+    257          //------------------------------------------------------
+    258          // Serial Output
+    259          
+    260          // returns # bytes (if fifo mode)/messages (if buffer mode) that can be written
+
+   \                                 In section .text, align 2, keep-with-next
+    261          uint16_t emberSerialWriteAvailable(uint8_t port)
+    262          {
+    263            return COM_WriteAvailable((COM_Port_t) port);
+   \                     emberSerialWriteAvailable: (+1)
+   \        0x0   0x....'....        B.W      COM_WriteAvailable
+    264          }
+    265          
+
+   \                                 In section .text, align 2, keep-with-next
+    266          uint16_t emberSerialWriteUsed(uint8_t port)
+    267          {
+    268            return COM_WriteUsed((COM_Port_t) port);
+   \                     emberSerialWriteUsed: (+1)
+   \        0x0   0x....'....        B.W      COM_WriteUsed
+    269          }
+    270          
+
+   \                                 In section .text, align 2, keep-with-next
+    271          EmberStatus emberSerialWriteByte(uint8_t port, uint8_t dataByte)
+    272          {
+   \                     emberSerialWriteByte: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    273            return COM_WriteByte((COM_Port_t) port, dataByte);
+   \        0x2   0x....'....        BL       COM_WriteByte
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+    274          }
+    275          
+
+   \                                 In section .text, align 2, keep-with-next
+    276          EmberStatus emberSerialWriteString(uint8_t port, PGM_P string)
+    277          {
+   \                     emberSerialWriteString: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    278            return COM_WriteString((COM_Port_t) port, string);
+   \        0x2   0x....'....        BL       COM_WriteString
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+    279          }
+    280          
+
+   \                                 In section .text, align 2, keep-with-next
+    281          EmberStatus emberSerialWriteData(uint8_t port, uint8_t *data, uint8_t length)
+    282          {
+   \                     emberSerialWriteData: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    283            return COM_WriteData((COM_Port_t) port, data, length);
+   \        0x2   0x....'....        BL       COM_WriteData
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+    284          }
+    285          
+
+   \                                 In section .text, align 2, keep-with-next
+    286          EmberStatus emberSerialWriteBuffer(uint8_t port,
+    287                                             EmberMessageBuffer buffer,
+    288                                             uint8_t start,
+    289                                             uint8_t length)
+    290          {
+   \                     emberSerialWriteBuffer: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x460F             MOV      R7,R1
+   \        0x8   0x4614             MOV      R4,R2
+   \        0xA   0x461D             MOV      R5,R3
+   \        0xC   0x....             LDR.N    R6,??DataTable2_1
+   \        0xE   0xE002             B.N      ??emberSerialWriteBuffer_0
+    291            for (; PACKET_BUFFER_SIZE <= start; start -= PACKET_BUFFER_SIZE) {
+    292              buffer = emberStackBufferLink(buffer);
+   \                     ??emberSerialWriteBuffer_1: (+1)
+   \       0x10   0x6830             LDR      R0,[R6, #+0]
+    293            }
+   \       0x12   0x3C20             SUBS     R4,R4,#+32
+   \       0x14   0x5DC7             LDRB     R7,[R0, R7]
+   \                     ??emberSerialWriteBuffer_0: (+1)
+   \       0x16   0xB2E0             UXTB     R0,R4
+   \       0x18   0x2820             CMP      R0,#+32
+   \       0x1A   0xDAF9             BGE.N    ??emberSerialWriteBuffer_1
+    294            while (0 < length) {
+   \                     ??emberSerialWriteBuffer_2: (+1)
+   \       0x1C   0xB2E8             UXTB     R0,R5
+   \       0x1E   0xB1B0             CBZ.N    R0,??emberSerialWriteBuffer_3
+    295              uint8_t remainingInBuffer = PACKET_BUFFER_SIZE - start;
+   \       0x20   0xF1C4 0x0020      RSB      R0,R4,#+32
+    296              uint8_t bytes = (length < remainingInBuffer
+    297                               ? length
+    298                               : remainingInBuffer);
+   \       0x24   0xFA5F 0xF985      UXTB     R9,R5
+   \       0x28   0xB2C0             UXTB     R0,R0
+   \       0x2A   0x4581             CMP      R9,R0
+    299              emberSerialWriteData(port,
+    300                                   emberMessageBufferContents(buffer) + start,
+    301                                   bytes);
+   \       0x2C   0xB2E4             UXTB     R4,R4
+   \       0x2E   0xBF88             IT       HI 
+   \       0x30   0x4681             MOVHI    R9,R0
+   \       0x32   0x4638             MOV      R0,R7
+   \       0x34   0x....'....        BL       emberMessageBufferContents
+   \       0x38   0x1901             ADDS     R1,R0,R4
+   \       0x3A   0x464A             MOV      R2,R9
+   \       0x3C   0x4640             MOV      R0,R8
+   \       0x3E   0x....'....        BL       emberSerialWriteData
+    302              length -= bytes;
+    303              start = 0;
+    304              buffer = emberStackBufferLink(buffer);
+   \       0x42   0x6830             LDR      R0,[R6, #+0]
+   \       0x44   0xEBA5 0x0509      SUB      R5,R5,R9
+   \       0x48   0x2400             MOVS     R4,#+0
+   \       0x4A   0x5DC7             LDRB     R7,[R0, R7]
+   \       0x4C   0xE7E6             B.N      ??emberSerialWriteBuffer_2
+    305            }
+    306            return EMBER_SUCCESS;
+   \                     ??emberSerialWriteBuffer_3: (+1)
+   \       0x4E   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    307          }
+    308          
+
+   \                                 In section .text, align 2, keep-with-next
+    309          EmberStatus emberSerialWaitSend(uint8_t port)  // waits for all byte to be written out of a port
+    310          {
+   \                     emberSerialWaitSend: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    311            return COM_WaitSend((COM_Port_t) port);
+   \        0x2   0x....'....        BL       COM_WaitSend
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xBD02             POP      {R1,PC}          ;; return
+    312          }
+    313          
+    314          //------------------------------------------------------
+    315          // Guaranteed output
+    316          
+    317          // The _only_ Guaranteed API:  The usage model for this api
+    318          //   Does not require efficiency
+    319          
+    320          #if !defined(EMBER_AF_PLUGIN_STANDARD_PRINTF_SUPPORT)
+    321          
+
+   \                                 In section .text, align 2, keep-with-next
+    322          EmberStatus emberSerialGuaranteedPrintf(uint8_t port, PGM_P formatString, ...)
+    323          {
+   \                     emberSerialGuaranteedPrintf: (+1)
+   \        0x0   0xB40C             PUSH     {R2,R3}
+   \        0x2   0x460A             MOV      R2,R1
+   \        0x4   0xB580             PUSH     {R7,LR}
+    324            va_list ap;
+    325            va_start(ap, formatString);
+    326            (void) emPrintfInternal(COM_ForceWriteData, (COM_Port_t) port, formatString, ap);
+   \        0x6   0x4601             MOV      R1,R0
+   \        0x8   0xAB02             ADD      R3,SP,#+8
+   \        0xA   0x....             LDR.N    R0,??DataTable2_2
+   \        0xC   0x....'....        BL       emPrintfInternal
+    327            va_end(ap);
+    328            return EMBER_SUCCESS;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xBC02             POP      {R1}
+   \       0x14   0xF85D 0xFB0C      LDR      PC,[SP], #+12    ;; return
+    329          }
+    330          
+    331          #endif
+    332          
+    333          //------------------------------------------------------
+    334          // Serial buffer maintenance
+
+   \                                 In section .text, align 2, keep-with-next
+    335          void emberSerialFlushRx(uint8_t port)
+    336          {
+    337            COM_FlushRx((COM_Port_t) port);
+   \                     emberSerialFlushRx: (+1)
+   \        0x0   0x....'....        B.W      COM_FlushRx
+    338          }
+    339          
+
+   \                                 In section .text, align 2, keep-with-next
+    340          void emberSerialBufferTick(void)
+    341          {
+    342          }
+   \                     emberSerialBufferTick: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    343          
+
+   \                                 In section .text, align 2, keep-with-next
+    344          bool emberSerialUnused(uint8_t port)
+    345          {
+    346          #ifdef EMBER_SERIAL_USE_STDIO
+    347            return false;
+    348          #else //EMBER_SERIAL_USE_STDIO
+    349            return COM_Unused((COM_Port_t) port);
+   \                     emberSerialUnused: (+1)
+   \        0x0   0x....'....        B.W      COM_Unused
+    350          #endif //EMBER_SERIAL_USE_STDIO
+    351          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     emPacketBufferLinks
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     COM_ForceWriteData
+    352          
+    353          #else //CORTEXM3_EFM32_MICRO
+    354          
+    355          //Documentary comments:
+    356          // To conserve precious flash, there is very little validity checking
+    357          //  on the given parameters.  Be sure not to use an invalid port number
+    358          //  or a port that is unused.
+    359          // Blocking routines will always wait for room (but not buffers - if buffers
+    360          //  cannot be allocated, no part of the message will be sent)
+    361          // Non-blocking routines will never wait for room, and may cause partial
+    362          //  messages to be sent.  If a contiguous message needs to be sent, available
+    363          //  space should be checked _before_ calling the appropriate write API.
+    364          
+    365          //------------------------------------------------------
+    366          // Determine if blocking code needs to be enabled
+    367          #if defined(EMBER_SERIAL0_BLOCKING)  \
+    368            || defined(EMBER_SERIAL1_BLOCKING) \
+    369            || defined(EMBER_SERIAL2_BLOCKING) \
+    370            || defined(EMBER_SERIAL3_BLOCKING) \
+    371            || defined(EMBER_SERIAL4_BLOCKING)
+    372            #define EM_ENABLE_SERIAL_BLOCKING
+    373          #endif
+    374          #ifdef EMBER_SERIAL0_BLOCKING
+    375            #define EM_SERIAL0_BLOCKSTATE true
+    376          #else
+    377            #define EM_SERIAL0_BLOCKSTATE false
+    378          #endif
+    379          #ifdef EMBER_SERIAL1_BLOCKING
+    380            #define EM_SERIAL1_BLOCKSTATE true
+    381          #else
+    382            #define EM_SERIAL1_BLOCKSTATE false
+    383          #endif
+    384          #ifdef EMBER_SERIAL2_BLOCKING
+    385            #define EM_SERIAL2_BLOCKSTATE true
+    386          #else
+    387            #define EM_SERIAL2_BLOCKSTATE false
+    388          #endif
+    389          #ifdef EMBER_SERIAL3_BLOCKING
+    390            #define EM_SERIAL3_BLOCKSTATE true
+    391          #else
+    392            #define EM_SERIAL3_BLOCKSTATE false
+    393          #endif
+    394          #ifdef EMBER_SERIAL4_BLOCKING
+    395            #define EM_SERIAL4_BLOCKSTATE true
+    396          #else
+    397            #define EM_SERIAL4_BLOCKSTATE false
+    398          #endif
+    399          
+    400          #ifndef EMBER_SERIAL_USE_STDIO
+    401          //------------------------------------------------------
+    402          // Memory allocations for Queue data structures
+    403          
+    404          //Macros to define fifo and buffer queues, can't use a typedef becuase the size
+    405          // of the fifo array in the queues can change
+    406          #define DEFINE_FIFO_QUEUE(qSize, qName)          \
+    407            static struct {                                \
+    408              /*! Indexes of next byte to send*/           \
+    409              uint16_t head;                               \
+    410              /*! Index of where to enqueue next message*/ \
+    411              uint16_t tail;                               \
+    412              /*! Number of bytes queued*/                 \
+    413              volatile uint16_t used;                      \
+    414              /*! FIFO of queue data*/                     \
+    415              uint8_t fifo[qSize];                         \
+    416            } qName;
+    417          
+    418          #define DEFINE_BUFFER_QUEUE(qSize, qName)        \
+    419            static struct {                                \
+    420              /*! Indexes of next message to send*/        \
+    421              uint8_t head;                                \
+    422              /*! Index of where to enqueue next message*/ \
+    423              uint8_t tail;                                \
+    424              /*! Number of messages queued*/              \
+    425              volatile uint8_t used;                       \
+    426              uint8_t dead;                                \
+    427              EmberMessageBuffer currentBuffer;            \
+    428              uint8_t *nextByte, *lastByte;                \
+    429              /*! FIFO of messages*/                       \
+    430              EmSerialBufferQueueEntry fifo[qSize];        \
+    431            } qName;
+    432          
+    433          // Allocate Appropriate TX Queue for port 0
+    434          #if EMBER_SERIAL0_MODE == EMBER_SERIAL_FIFO
+    435          DEFINE_FIFO_QUEUE(EMBER_SERIAL0_TX_QUEUE_SIZE, emSerial0TxQueue)
+    436            #define EM_SERIAL0_TX_QUEUE_ADDR (&emSerial0TxQueue)
+    437          #elif EMBER_SERIAL0_MODE == EMBER_SERIAL_BUFFER
+    438          DEFINE_BUFFER_QUEUE(EMBER_SERIAL0_TX_QUEUE_SIZE, emSerial0TxQueue)
+    439            #define EM_SERIAL0_TX_QUEUE_ADDR (&emSerial0TxQueue)
+    440          #elif EMBER_SERIAL0_MODE == EMBER_SERIAL_UNUSED \
+    441            || EMBER_SERIAL0_MODE == EMBER_SERIAL_LOWLEVEL
+    442            #define EM_SERIAL0_TX_QUEUE_ADDR (NULL)
+    443            #define EMBER_SERIAL0_TX_QUEUE_SIZE 0
+    444            #define EMBER_SERIAL0_RX_QUEUE_SIZE 0
+    445          #endif
+    446          
+    447          // Allocate Appropriate TX Queue for port 1
+    448          #if EMBER_SERIAL1_MODE == EMBER_SERIAL_FIFO
+    449          DEFINE_FIFO_QUEUE(EMBER_SERIAL1_TX_QUEUE_SIZE, emSerial1TxQueue)
+    450            #define EM_SERIAL1_TX_QUEUE_ADDR (&emSerial1TxQueue)
+    451          #elif EMBER_SERIAL1_MODE == EMBER_SERIAL_BUFFER
+    452          DEFINE_BUFFER_QUEUE(EMBER_SERIAL1_TX_QUEUE_SIZE, emSerial1TxQueue)
+    453            #define EM_SERIAL1_TX_QUEUE_ADDR (&emSerial1TxQueue)
+    454          #elif EMBER_SERIAL1_MODE == EMBER_SERIAL_UNUSED \
+    455            || EMBER_SERIAL1_MODE == EMBER_SERIAL_LOWLEVEL
+    456            #define EM_SERIAL1_TX_QUEUE_ADDR (NULL)
+    457            #define EMBER_SERIAL1_TX_QUEUE_SIZE 0
+    458            #define EMBER_SERIAL1_RX_QUEUE_SIZE 0
+    459          #endif
+    460          
+    461          // Allocate Appropriate TX Queue for port 2
+    462          #if EMBER_SERIAL2_MODE == EMBER_SERIAL_FIFO
+    463          DEFINE_FIFO_QUEUE(EMBER_SERIAL2_TX_QUEUE_SIZE, emSerial2TxQueue)
+    464            #define EM_SERIAL2_TX_QUEUE_ADDR (&emSerial2TxQueue)
+    465          #elif EMBER_SERIAL2_MODE == EMBER_SERIAL_BUFFER
+    466          DEFINE_BUFFER_QUEUE(EMBER_SERIAL2_TX_QUEUE_SIZE, emSerial2TxQueue)
+    467            #define EM_SERIAL2_TX_QUEUE_ADDR (&emSerial2TxQueue)
+    468          #elif EMBER_SERIAL2_MODE == EMBER_SERIAL_UNUSED \
+    469            || EMBER_SERIAL2_MODE == EMBER_SERIAL_LOWLEVEL
+    470            #define EM_SERIAL2_TX_QUEUE_ADDR (NULL)
+    471            #define EMBER_SERIAL2_TX_QUEUE_SIZE 0
+    472            #define EMBER_SERIAL2_RX_QUEUE_SIZE 0
+    473          #endif
+    474          
+    475          // Allocate Appropriate TX Queue for port 3
+    476          #if EMBER_SERIAL3_MODE == EMBER_SERIAL_FIFO
+    477          DEFINE_FIFO_QUEUE(EMBER_SERIAL3_TX_QUEUE_SIZE, emSerial3TxQueue)
+    478            #define EM_SERIAL3_TX_QUEUE_ADDR (&emSerial3TxQueue)
+    479          #elif EMBER_SERIAL3_MODE == EMBER_SERIAL_BUFFER
+    480          DEFINE_BUFFER_QUEUE(EMBER_SERIAL3_TX_QUEUE_SIZE, emSerial3TxQueue)
+    481            #define EM_SERIAL3_TX_QUEUE_ADDR (&emSerial3TxQueue)
+    482          #elif EMBER_SERIAL3_MODE == EMBER_SERIAL_UNUSED \
+    483            || EMBER_SERIAL3_MODE == EMBER_SERIAL_LOWLEVEL
+    484            #define EM_SERIAL3_TX_QUEUE_ADDR (NULL)
+    485            #define EMBER_SERIAL3_TX_QUEUE_SIZE 0
+    486            #define EMBER_SERIAL3_RX_QUEUE_SIZE 0
+    487          #endif
+    488          
+    489          // Allocate Appropriate TX Queue for port 4
+    490          #if EMBER_SERIAL4_MODE == EMBER_SERIAL_FIFO
+    491          DEFINE_FIFO_QUEUE(EMBER_SERIAL4_TX_QUEUE_SIZE, emSerial4TxQueue)
+    492            #define EM_SERIAL4_TX_QUEUE_ADDR (&emSerial4TxQueue)
+    493          #elif EMBER_SERIAL4_MODE == EMBER_SERIAL_BUFFER
+    494          DEFINE_BUFFER_QUEUE(EMBER_SERIAL4_TX_QUEUE_SIZE, emSerial4TxQueue)
+    495            #define EM_SERIAL4_TX_QUEUE_ADDR (&emSerial4TxQueue)
+    496          #elif EMBER_SERIAL4_MODE == EMBER_SERIAL_UNUSED \
+    497            || EMBER_SERIAL4_MODE == EMBER_SERIAL_LOWLEVEL
+    498            #define EM_SERIAL4_TX_QUEUE_ADDR (NULL)
+    499            #define EMBER_SERIAL4_TX_QUEUE_SIZE 0
+    500            #define EMBER_SERIAL4_RX_QUEUE_SIZE 0
+    501          #endif
+    502          
+    503          // Allocate RX Queues (Always FIFOs)
+    504          #if EMBER_SERIAL0_MODE != EMBER_SERIAL_UNUSED
+    505          DEFINE_FIFO_QUEUE(EMBER_SERIAL0_RX_QUEUE_SIZE, emSerial0RxQueue)
+    506            #define EM_SERIAL0_RX_QUEUE_ADDR (&emSerial0RxQueue)
+    507          #else
+    508            #define EM_SERIAL0_RX_QUEUE_ADDR (NULL)
+    509          #endif
+    510          
+    511          #if EMBER_SERIAL1_MODE != EMBER_SERIAL_UNUSED
+    512          DEFINE_FIFO_QUEUE(EMBER_SERIAL1_RX_QUEUE_SIZE, emSerial1RxQueue)
+    513            #define EM_SERIAL1_RX_QUEUE_ADDR (&emSerial1RxQueue)
+    514          #else
+    515            #define EM_SERIAL1_RX_QUEUE_ADDR (NULL)
+    516            #define emSerial1RxQueue (NULL)
+    517          #endif
+    518          
+    519          #if EMBER_SERIAL2_MODE != EMBER_SERIAL_UNUSED
+    520          DEFINE_FIFO_QUEUE(EMBER_SERIAL2_RX_QUEUE_SIZE, emSerial2RxQueue)
+    521            #define EM_SERIAL2_RX_QUEUE_ADDR (&emSerial2RxQueue)
+    522          #else
+    523            #define EM_SERIAL2_RX_QUEUE_ADDR (NULL)
+    524            #define emSerial2RxQueue (NULL)
+    525          #endif
+    526          
+    527          #if EMBER_SERIAL3_MODE != EMBER_SERIAL_UNUSED
+    528          DEFINE_FIFO_QUEUE(EMBER_SERIAL3_RX_QUEUE_SIZE, emSerial3RxQueue)
+    529            #define EM_SERIAL3_RX_QUEUE_ADDR (&emSerial3RxQueue)
+    530          #else
+    531            #define EM_SERIAL3_RX_QUEUE_ADDR (NULL)
+    532            #define emSerial3RxQueue (NULL)
+    533          #endif
+    534          
+    535          #if EMBER_SERIAL4_MODE != EMBER_SERIAL_UNUSED
+    536          DEFINE_FIFO_QUEUE(EMBER_SERIAL4_RX_QUEUE_SIZE, emSerial4RxQueue)
+    537            #define EM_SERIAL4_RX_QUEUE_ADDR (&emSerial4RxQueue)
+    538          #else
+    539            #define EM_SERIAL4_RX_QUEUE_ADDR (NULL)
+    540            #define emSerial4RxQueue (NULL)
+    541          #endif
+    542          
+    543          //------------------------------------------------------
+    544          // Easy access to data structures for a particular port
+    545          
+    546          // The FOR_EACH_PORT(CAST,PREFIX_,_SUFFIX) macro will expand in to something like:
+    547          //    CAST(PREFIX_0_SUFFIX),
+    548          //    CAST(PREFIX_1_SUFFIX)
+    549          // with a line & number for each port of EM_NUM_SERIAL_PORTS
+    550          
+    551          // Data structure for referencing TX Queues
+    552          //  (allows for different modes and queue sizes)
+    553          void *emSerialTxQueues[EM_NUM_SERIAL_PORTS] =
+    554          { FOR_EACH_PORT((void *), EM_SERIAL, _TX_QUEUE_ADDR) };
+    555          
+    556          uint16_t PGM emSerialTxQueueSizes[EM_NUM_SERIAL_PORTS] =
+    557          { FOR_EACH_PORT((uint16_t), EMBER_SERIAL, _TX_QUEUE_SIZE) };
+    558          
+    559          uint16_t PGM emSerialTxQueueMasks[EM_NUM_SERIAL_PORTS] =
+    560          { FOR_EACH_PORT((uint16_t), EMBER_SERIAL, _TX_QUEUE_SIZE - 1) };
+    561          
+    562          // Data structure for referencing RX Queues
+    563          //  (allows for different queue sizes)
+    564          EmSerialFifoQueue *emSerialRxQueues[EM_NUM_SERIAL_PORTS] =
+    565          { FOR_EACH_PORT((EmSerialFifoQueue *), EM_SERIAL, _RX_QUEUE_ADDR) };
+    566          
+    567          uint16_t PGM emSerialRxQueueSizes[EM_NUM_SERIAL_PORTS] =
+    568          { FOR_EACH_PORT((uint16_t), EMBER_SERIAL, _RX_QUEUE_SIZE) };
+    569          
+    570          // In-flash data structure for determined port mode
+    571          uint8_t PGM emSerialPortModes[EM_NUM_SERIAL_PORTS] =
+    572          { FOR_EACH_PORT((uint8_t), EMBER_SERIAL, _MODE) };
+    573          
+    574          //Compatibility code for the AVR Atmega
+    575          //If an AVR Atmega is used, then emSerialTx(/Rx)QueueWraps map to
+    576          //emSerialTx(/Rx)QueueMasks, otherwise they map to emSerialTx(/Rx)QueueSizes
+    577          #ifdef AVR_ATMEGA
+    578          uint8_t PGM emSerialTxQueueWraps[EM_NUM_SERIAL_PORTS] =
+    579          { FOR_EACH_PORT((uint8_t), EMBER_SERIAL, _TX_QUEUE_SIZE - 1) };
+    580          uint8_t PGM emSerialRxQueueWraps[EM_NUM_SERIAL_PORTS] =
+    581          { FOR_EACH_PORT((uint8_t), EMBER_SERIAL, _RX_QUEUE_SIZE - 1) };
+    582          #else
+    583          uint16_t PGM emSerialTxQueueWraps[EM_NUM_SERIAL_PORTS] =
+    584          { FOR_EACH_PORT((uint16_t), EMBER_SERIAL, _TX_QUEUE_SIZE) };
+    585          uint16_t PGM emSerialRxQueueWraps[EM_NUM_SERIAL_PORTS] =
+    586          { FOR_EACH_PORT((uint16_t), EMBER_SERIAL, _RX_QUEUE_SIZE) };
+    587          #endif
+    588          
+    589          #ifdef EM_ENABLE_SERIAL_BLOCKING
+    590          // In-flash data structure for blocking mode
+    591          bool PGM emSerialBlocking[EM_NUM_SERIAL_PORTS] =
+    592          { FOR_EACH_PORT((bool), EM_SERIAL, _BLOCKSTATE) };
+    593          #endif
+    594          
+    595          uint8_t emSerialRxError[EM_NUM_SERIAL_PORTS] = { EMBER_SUCCESS, };
+    596          uint16_t emSerialRxErrorIndex[EM_NUM_SERIAL_PORTS] = { 0, };
+    597          #endif //EMBER_SERIAL_USE_STDIO
+    598          
+    599          //------------------------------------------------------
+    600          // Buffered Serial utility APIs
+    601          
+    602          #ifdef EM_ENABLE_SERIAL_BUFFER
+    603          // always executed in interrupt context
+    604          void emSerialBufferNextMessageIsr(EmSerialBufferQueue *q)
+    605          {
+    606            EmSerialBufferQueueEntry *e = &q->fifo[q->tail];
+    607          
+    608            q->currentBuffer = e->buffer;
+    609            q->nextByte = emberLinkedBufferContents(q->currentBuffer) + e->startIndex;
+    610            if ((e->length + e->startIndex) > PACKET_BUFFER_SIZE) {
+    611              q->lastByte = q->nextByte + ((PACKET_BUFFER_SIZE - 1) - e->startIndex);
+    612              e->length -= PACKET_BUFFER_SIZE - e->startIndex;
+    613            } else {
+    614              q->lastByte = q->nextByte + e->length - 1;
+    615              e->length = 0;
+    616            }
+    617          }
+    618          
+    619          #endif
+    620          
+    621          #ifdef EM_ENABLE_SERIAL_BUFFER
+    622          // always executed in interrupt context
+    623          void emSerialBufferNextBlockIsr(EmSerialBufferQueue *q, uint8_t port)
+    624          {
+    625            EmSerialBufferQueueEntry *e = &q->fifo[q->tail];
+    626          
+    627            if (e->length != 0) {
+    628              q->currentBuffer = emberStackBufferLink(q->currentBuffer);
+    629              q->nextByte = emberLinkedBufferContents(q->currentBuffer);
+    630              if (e->length > PACKET_BUFFER_SIZE) {
+    631                q->lastByte = q->nextByte + 31;
+    632                e->length -= PACKET_BUFFER_SIZE;
+    633              } else {
+    634                q->lastByte = q->nextByte + e->length - 1;
+    635                e->length = 0;
+    636              }
+    637            } else {
+    638              #ifdef AVR_ATMEGA
+    639              //If we are using an AVR host, non power-of-2 queue sizes are NOT
+    640              //supported and therefore we use a mask
+    641              q->tail = ((q->tail + 1) & emSerialTxQueueMasks[port]);
+    642              #else // AVR_ATMEGA
+    643              //If we are using the xap2b/cortexm3, non power-of-2 queue sizes are
+    644              //supported and therefore we use a mod with the queue size
+    645              q->tail = ((q->tail + 1) % emSerialTxQueueSizes[port]);
+    646              #endif // !AVR_ATMEGA
+    647              q->dead++;
+    648              q->used--;
+    649              if (q->used) {
+    650                emSerialBufferNextMessageIsr(q);
+    651              } else {
+    652                q->nextByte = NULL;
+    653              }
+    654            }
+    655          }
+    656          
+    657          #endif
+    658          
+    659          //------------------------------------------------------
+    660          // Serial initialization
+    661          
+    662          EmberStatus emberSerialInit(uint8_t port,
+    663                                      SerialBaudRate rate,
+    664                                      SerialParity parity,
+    665                                      uint8_t stopBits)
+    666          {
+    667          #ifdef EMBER_SERIAL_USE_STDIO
+    668            //When using stdio, bypass the serial library initialization
+    669            //and just initialize the low level UART driver.
+    670            return halInternalUartInit(port, rate, parity, stopBits);
+    671          #else //EMBER_SERIAL_USE_STDIO
+    672          
+    673            if (emberSerialUnused(port)) {
+    674              return EMBER_SERIAL_INVALID_PORT;
+    675            }
+    676          
+    677            switch (emSerialPortModes[port]) {
+    678          #ifdef EM_ENABLE_SERIAL_FIFO
+    679              case EMBER_SERIAL_FIFO: {
+    680                EmSerialFifoQueue *q = (EmSerialFifoQueue *)emSerialTxQueues[port];
+    681                {
+    682                  DECLARE_INTERRUPT_STATE_LITE;
+    683                  DISABLE_INTERRUPTS_LITE();
+    684                  q->used = 0;
+    685                  q->head = 0;
+    686                  q->tail = 0;
+    687                  RESTORE_INTERRUPTS_LITE();
+    688                }
+    689                break;
+    690              }
+    691          #endif
+    692          #ifdef EM_ENABLE_SERIAL_BUFFER
+    693              case EMBER_SERIAL_BUFFER: {
+    694                EmSerialBufferQueue *q = (EmSerialBufferQueue *)emSerialTxQueues[port];
+    695                {
+    696                  DECLARE_INTERRUPT_STATE_LITE;
+    697                  DISABLE_INTERRUPTS_LITE();
+    698                  q->used = 0;
+    699                  q->head = 0;
+    700                  q->tail = 0;
+    701                  q->dead = 0;
+    702                  q->currentBuffer = EMBER_NULL_MESSAGE_BUFFER;
+    703                  q->nextByte = NULL;
+    704                  q->lastByte = NULL;
+    705                  RESTORE_INTERRUPTS_LITE();
+    706                }
+    707                break;
+    708              }
+    709          #endif
+    710              default:
+    711                return EMBER_SERIAL_INVALID_PORT;
+    712                //break;  //statement is unreachable
+    713            }
+    714          
+    715          #if     (defined(EM_ENABLE_SERIAL_FIFO) || defined(EM_ENABLE_SERIAL_BUFFER))
+    716            EmSerialFifoQueue *rq = emSerialRxQueues[port];
+    717            {
+    718              DECLARE_INTERRUPT_STATE_LITE;
+    719              DISABLE_INTERRUPTS_LITE();
+    720              rq->used = 0;
+    721              rq->head = 0;
+    722              rq->tail = 0;
+    723              emSerialRxError[port] = EMBER_SUCCESS;
+    724              RESTORE_INTERRUPTS_LITE();
+    725            }
+    726          
+    727            return halInternalUartInit(port, rate, parity, stopBits);
+    728          #endif//(defined(EM_ENABLE_SERIAL_FIFO) || defined(EM_ENABLE_SERIAL_BUFFER))
+    729          #endif //EMBER_SERIAL_USE_STDIO
+    730          }
+    731          
+    732          //------------------------------------------------------
+    733          // Serial Input
+    734          
+    735          // returns # bytes available for reading
+    736          uint16_t emberSerialReadAvailable(uint8_t port)
+    737          {
+    738          #ifdef EMBER_SERIAL_USE_STDIO
+    739            return halInternalPrintfReadAvailable();
+    740          #else //EMBER_SERIAL_USE_STDIO
+    741            halInternalUartRxPump(port);
+    742            return emSerialRxQueues[port]->used;
+    743          #endif //EMBER_SERIAL_USE_STDIO
+    744          }
+    745          
+    746          EmberStatus emberSerialReadByte(uint8_t port, uint8_t *dataByte)
+    747          {
+    748          #ifdef EMBER_SERIAL_USE_STDIO
+    749            int ch = -1;
+    750            ch = getchar();
+    751            if (ch < 0) {
+    752              return EMBER_SERIAL_RX_EMPTY;
+    753            }
+    754            *dataByte = (uint8_t)ch;
+    755            return EMBER_SUCCESS;
+    756          #else //EMBER_SERIAL_USE_STDIO
+    757            uint8_t retval;
+    758            EmSerialFifoQueue *q = emSerialRxQueues[port];
+    759          
+    760            if (emberSerialUnused(port)) {
+    761              return EMBER_ERR_FATAL;
+    762            }
+    763          
+    764            if (emSerialRxError[port] != EMBER_SUCCESS) {
+    765              if (emSerialRxErrorIndex[port] == q->tail) {
+    766                {
+    767                  DECLARE_INTERRUPT_STATE_LITE;
+    768                  DISABLE_INTERRUPTS_LITE();
+    769                  retval = emSerialRxError[port];
+    770                  emSerialRxError[port] = EMBER_SUCCESS;
+    771                  RESTORE_INTERRUPTS_LITE();
+    772                }
+    773                return retval;
+    774              }
+    775            }
+    776          
+    777            halInternalUartRxPump(port);
+    778            halInternalUartFlowControl(port);
+    779          
+    780            if ((q->used > 0) && (emSerialRxQueueWraps[port] > 0)) {
+    781              {
+    782                DECLARE_INTERRUPT_STATE_LITE;
+    783                DISABLE_INTERRUPTS_LITE();
+    784                *dataByte = FIFO_DEQUEUE(q, emSerialRxQueueWraps[port]);
+    785                RESTORE_INTERRUPTS_LITE();
+    786              }
+    787              if (emSerialRxError[port] != EMBER_SUCCESS) {
+    788                //This index is used when there is an error when the FIFO is full.
+    789                if (emSerialRxErrorIndex[port] == RX_FIFO_FULL) {
+    790                  //q->tail has advanced by one, we can now mark the head as the error
+    791                  emSerialRxErrorIndex[port] = q->head;
+    792                }
+    793              }
+    794              return EMBER_SUCCESS;
+    795            } else {
+    796              return EMBER_SERIAL_RX_EMPTY;
+    797            }
+    798          #endif //EMBER_SERIAL_USE_STDIO
+    799          }
+    800          
+    801          EmberStatus emberSerialReadData(uint8_t port,
+    802                                          uint8_t *data,
+    803                                          uint16_t length,
+    804                                          uint16_t *bytesRead)
+    805          {
+    806            uint16_t bytesReadInternal = 0;
+    807            EmberStatus status;
+    808          
+    809            while (bytesReadInternal < length) {
+    810              status = emberSerialReadByte(port, data);
+    811          
+    812              switch (status) {
+    813                case EMBER_SUCCESS:
+    814                  ++data;
+    815                  ++bytesReadInternal;
+    816                  break;
+    817          
+    818                case EMBER_SERIAL_RX_EMPTY:
+    819                  // empty queue is not an error for us, we just want to keep waiting
+    820                  break;
+    821          
+    822                default:
+    823                  // only store number of bytes read if the caller provided a non-NULL pointer
+    824                  if (bytesRead != NULL) {
+    825                    *bytesRead = bytesReadInternal;
+    826                  }
+    827                  return status;
+    828              }
+    829            }
+    830          
+    831            // only store number of bytes read if the caller provided a non-NULL pointer
+    832            if (bytesRead != NULL) {
+    833              *bytesRead = bytesReadInternal;
+    834            }
+    835          
+    836            return EMBER_SUCCESS;
+    837          }
+    838          
+    839          #ifndef EMBER_TEST
+    840          EmberStatus emberSerialReadDataTimeout(uint8_t port,
+    841                                                 uint8_t *data,
+    842                                                 uint16_t length,
+    843                                                 uint16_t *bytesRead,
+    844                                                 uint16_t firstByteTimeout,
+    845                                                 uint16_t subsequentByteTimeout)
+    846          {
+    847            uint16_t bytesReadInternal = 0;
+    848            EmberStatus status;
+    849            uint16_t timeout = firstByteTimeout;
+    850            uint16_t startTime = halCommonGetInt16uMillisecondTick();
+    851          
+    852            // loop until we read the max number of bytes or the timeout elapses
+    853            while (bytesReadInternal < length
+    854                   && elapsedTimeInt16u(startTime, halCommonGetInt16uMillisecondTick()) < timeout) {
+    855              status = emberSerialReadByte(port, data);
+    856          
+    857              switch (status) {
+    858                case EMBER_SUCCESS:
+    859                  ++data;
+    860                  ++bytesReadInternal;
+    861                  // reset timer and timeout for next character
+    862                  startTime = halCommonGetInt16uMillisecondTick();
+    863                  timeout = subsequentByteTimeout;
+    864                  break;
+    865          
+    866                case EMBER_SERIAL_RX_EMPTY:
+    867                  // empty queue is not an error for us, we just want to keep waiting
+    868                  break;
+    869          
+    870                default:
+    871                  // only store number of bytes read if the caller provided a non-NULL pointer
+    872                  if (bytesRead != 0U) {
+    873                    *bytesRead = bytesReadInternal;
+    874                  }
+    875                  return status;
+    876              }
+    877            }
+    878          
+    879            // only store number of bytes read if the caller provided a non-NULL pointer
+    880            if (bytesRead != 0U) {
+    881              *bytesRead = bytesReadInternal;
+    882            }
+    883          
+    884            return bytesReadInternal == length ? EMBER_SUCCESS : EMBER_SERIAL_RX_EMPTY;
+    885          }
+    886          
+    887          #endif // EMBER_TEST
+    888          
+    889          EmberStatus emberSerialReadPartialLine(uint8_t port, char *data, uint8_t max, uint8_t * index)
+    890          {
+    891            EmberStatus err;
+    892            uint8_t ch;
+    893          
+    894            if (((*index) == 0) || ((*index) >= max)) {
+    895              data[0] = '\0';
+    896            }
+    897          
+    898            for (;; ) {
+    899              err = emberSerialReadByte(port, &ch);
+    900          
+    901              // no new serial port char?, keep looping
+    902              if (err != EMBER_SUCCESS) {
+    903                return err;
+    904              }
+    905          
+    906              // handle bogus characters
+    907              if ( ch > 0x7F ) {
+    908                continue;
+    909              }
+    910          
+    911              // handle leading newline - fogBUGZ # 584
+    912              if (((*index) == 0)
+    913                  && ((ch == '\n') || (ch == 0))) {
+    914                continue;
+    915              }
+    916          
+    917              // Drop the CR, or NULL that is part of EOL sequence.
+    918              if ((*index) >= max) {
+    919                *index = 0;
+    920                if ((ch == '\r') || (ch == 0)) {
+    921                  continue;
+    922                }
+    923              }
+    924          
+    925              // handle backspace
+    926              if ( ch == 0x8 || ch == 0x7F ) {
+    927                if ((*index) > 0 ) {
+    928                  // delete the last character from our string
+    929                  (*index)--;
+    930                  data[*index] = '\0';
+    931                  // echo backspace
+    932                  emberSerialWriteString(port, "\b \b");
+    933                }
+    934                // don't add or process this character
+    935                continue;
+    936              }
+    937          
+    938              //if the string is about to overflow, fake in a CR
+    939              if ((*index) + 2 > max ) {
+    940                ch = '\r';
+    941              }
+    942          
+    943              emberSerialWriteByte(port, ch);  // term char echo
+    944          
+    945              //upcase that char
+    946              if ( ch >= 'a' && ch <= 'z') {
+    947                ch = ch - ('a' - 'A');
+    948              }
+    949          
+    950              // build a string until we press enter
+    951              if ((ch == '\r') || (ch == '\n')) {
+    952                data[*index] = '\0';
+    953          
+    954                if (ch == '\r') {
+    955                  emberSerialWriteByte(port, '\n');  // "append" LF
+    956                  *index = 0;                       // Reset for next line; \n next
+    957                } else {
+    958                  emberSerialWriteByte(port, '\r');  // "append" CR
+    959                  *index = max;                     // Reset for next line; \r,\0 next
+    960                }
+    961          
+    962                return EMBER_SUCCESS;
+    963              }
+    964          
+    965              data[(*index)++] = ch;
+    966            }
+    967          }
+    968          
+    969          EmberStatus emberSerialReadLine(uint8_t port, char *data, uint8_t max)
+    970          {
+    971            uint8_t index = 0;
+    972          
+    973            while (emberSerialReadPartialLine(port, data, max, &index) != EMBER_SUCCESS) {
+    974              halResetWatchdog();
+    975            }
+    976            return EMBER_SUCCESS;
+    977          }
+    978          
+    979          //------------------------------------------------------
+    980          // Serial Output
+    981          
+    982          // returns # bytes (if fifo mode)/messages (if buffer mode) that can be written
+    983          uint16_t emberSerialWriteAvailable(uint8_t port)
+    984          {
+    985          #ifdef EMBER_SERIAL_USE_STDIO
+    986            return halInternalPrintfWriteAvailable();
+    987          #else //EMBER_SERIAL_USE_STDIO
+    988            switch (emSerialPortModes[port]) {
+    989          #ifdef EM_ENABLE_SERIAL_FIFO
+    990              case EMBER_SERIAL_FIFO:
+    991                return emSerialTxQueueSizes[port]
+    992                       - ((EmSerialFifoQueue*)emSerialTxQueues[port])->used;
+    993          #endif
+    994          #ifdef EM_ENABLE_SERIAL_BUFFER
+    995              case EMBER_SERIAL_BUFFER: {
+    996                EmSerialBufferQueue *q = (EmSerialBufferQueue *)emSerialTxQueues[port];
+    997                uint8_t elementsUsed;
+    998                uint8_t elementsDead;
+    999                {
+   1000                  DECLARE_INTERRUPT_STATE_LITE;
+   1001                  DISABLE_INTERRUPTS_LITE(); // To clarify the volatile access.
+   1002                  elementsUsed = q->used;
+   1003                  elementsDead = q->dead;
+   1004                  RESTORE_INTERRUPTS_LITE();
+   1005                }
+   1006                return emSerialTxQueueSizes[port] - (elementsUsed + elementsDead);
+   1007              }
+   1008          #endif
+   1009              default: {
+   1010              }
+   1011            }
+   1012            return 0;
+   1013          #endif //EMBER_SERIAL_USE_STDIO
+   1014          }
+   1015          
+   1016          uint16_t emberSerialWriteUsed(uint8_t port)
+   1017          {
+   1018          #ifdef EMBER_SERIAL_USE_STDIO
+   1019            return 0;
+   1020          #else
+   1021            return emSerialTxQueueSizes[port] - emberSerialWriteAvailable(port);
+   1022          #endif //EMBER_SERIAL_USE_STDIO
+   1023          }
+   1024          
+   1025          EmberStatus emberSerialWriteByte(uint8_t port, uint8_t dataByte)
+   1026          {
+   1027            return emberSerialWriteData(port, &dataByte, 1);
+   1028          }
+   1029          
+   1030          #ifndef EMBER_SERIAL_USE_STDIO
+   1031          #ifdef EM_ENABLE_SERIAL_FIFO
+   1032          static bool getOutputFifoSpace(EmSerialFifoQueue *q,
+   1033                                         uint8_t port,
+   1034                                         uint16_t extraByteCount)
+   1035          {
+   1036            return (q->used < emSerialTxQueueSizes[port] - extraByteCount);
+   1037          }
+   1038          
+   1039          #endif
+   1040          #endif //EMBER_SERIAL_USE_STDIO
+   1041          
+   1042          EmberStatus emberSerialWriteString(uint8_t port, PGM_P string)
+   1043          {
+   1044          #ifdef EMBER_SERIAL_USE_STDIO
+   1045            while (*string != '\0') {
+   1046              putchar(*string);
+   1047              string++;
+   1048            }
+   1049            return EMBER_SUCCESS;
+   1050          #else //EMBER_SERIAL_USE_STDIO
+   1051            switch (emSerialPortModes[port]) {
+   1052          #ifdef EM_ENABLE_SERIAL_FIFO
+   1053              case EMBER_SERIAL_FIFO:
+   1054              {
+   1055                EmSerialFifoQueue *q = (EmSerialFifoQueue *)emSerialTxQueues[port];
+   1056                bool kickStartTx = false;
+   1057          
+   1058                while (*string != '\0') {
+   1059                  while (!getOutputFifoSpace(q, port, 0)) {
+   1060                    if (kickStartTx) {
+   1061                      halInternalStartUartTx(port);
+   1062                      kickStartTx = false;
+   1063                    }
+   1064                    #ifdef EM_ENABLE_SERIAL_BLOCKING
+   1065                    if (emSerialBlocking[port]) {
+   1066                      simulatedSerialTimePasses();
+   1067                      // Pet the watchdog here?
+   1068                      continue;
+   1069                    }
+   1070                    #endif
+   1071                    return EMBER_SERIAL_TX_OVERFLOW;
+   1072                  }
+   1073                  {
+   1074                    DECLARE_INTERRUPT_STATE_LITE;
+   1075                    DISABLE_INTERRUPTS_LITE();
+   1076                    if (q->used == 0) {
+   1077                      kickStartTx = true;
+   1078                    }
+   1079                    if (emSerialTxQueueWraps[port] > 0) {
+   1080                      FIFO_ENQUEUE(q, *string, emSerialTxQueueWraps[port]);
+   1081                    }
+   1082                    RESTORE_INTERRUPTS_LITE();
+   1083                  }
+   1084                  string++;
+   1085                }
+   1086                // make sure the interrupt is enabled so it will be sent
+   1087                halInternalStartUartTx(port);
+   1088                return EMBER_SUCCESS;
+   1089              }
+   1090          #endif
+   1091          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1092              case EMBER_SERIAL_BUFFER:
+   1093              {
+   1094                EmberMessageBuffer buff = emberAllocateStackBuffer();
+   1095                if (buff != EMBER_NULL_MESSAGE_BUFFER) {
+   1096                  EmberStatus stat;
+   1097                  if ((stat = emberAppendPgmStringToLinkedBuffers(buff, string))
+   1098                      == EMBER_SUCCESS) {
+   1099                    stat = emberSerialWriteBuffer(port, buff, 0, emberMessageBufferLength(buff));
+   1100                  }
+   1101                  // Refcounts may be manipulated in ISR if DMA used
+   1102                  {
+   1103                    DECLARE_INTERRUPT_STATE;
+   1104                    DISABLE_INTERRUPTS();
+   1105                    emberReleaseMessageBuffer(buff);
+   1106                    RESTORE_INTERRUPTS();
+   1107                  }
+   1108                  return stat;
+   1109                }
+   1110                return EMBER_NO_BUFFERS;
+   1111              }
+   1112          #endif
+   1113              default:
+   1114                return EMBER_ERR_FATAL;
+   1115            }
+   1116          #endif //EMBER_SERIAL_USE_STDIO
+   1117          }
+   1118          
+   1119          EmberStatus emberSerialWriteData(uint8_t port, uint8_t *data, uint8_t length)
+   1120          {
+   1121          #ifdef EMBER_SERIAL_USE_STDIO
+   1122            while (length--) {
+   1123              putchar(*data);
+   1124              data++;
+   1125            }
+   1126            return EMBER_SUCCESS;
+   1127          #else //EMBER_SERIAL_USE_STDIO
+   1128            switch (emSerialPortModes[port]) {
+   1129          #ifdef EM_ENABLE_SERIAL_FIFO
+   1130              case EMBER_SERIAL_FIFO:
+   1131              {
+   1132                EmSerialFifoQueue *q = (EmSerialFifoQueue *)emSerialTxQueues[port];
+   1133                bool kickStartTx = false;
+   1134          
+   1135                while (length-- != 0U) {
+   1136                  while (!getOutputFifoSpace(q, port, 0)) {
+   1137                    if (kickStartTx) {
+   1138                      halInternalStartUartTx(port);
+   1139                      kickStartTx = false;
+   1140                    }
+   1141                    #ifdef EM_ENABLE_SERIAL_BLOCKING
+   1142                    if (emSerialBlocking[port]) {
+   1143                      simulatedSerialTimePasses();
+   1144                      // Pet the watchdog here?
+   1145                      continue;
+   1146                    }
+   1147                    #endif
+   1148                    return EMBER_SERIAL_TX_OVERFLOW;
+   1149                  }
+   1150                  {
+   1151                    DECLARE_INTERRUPT_STATE_LITE;
+   1152                    DISABLE_INTERRUPTS_LITE();
+   1153                    if (q->used == 0) {
+   1154                      kickStartTx = true;
+   1155                    }
+   1156                    if (emSerialTxQueueWraps[port] > 0) {
+   1157                      FIFO_ENQUEUE(q, *data, emSerialTxQueueWraps[port]);
+   1158                    }
+   1159                    RESTORE_INTERRUPTS_LITE();
+   1160                  }
+   1161                  data++;
+   1162                }
+   1163                // make sure the interrupt is enabled so it will be sent
+   1164                halInternalStartUartTx(port);
+   1165                return EMBER_SUCCESS;
+   1166              }
+   1167          #endif
+   1168          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1169              case EMBER_SERIAL_BUFFER:
+   1170              {
+   1171                // Note: We must always copy this, even in buffer mode
+   1172                //  since it is ram based data and there are no reference counts
+   1173                //  or indication of when it is actually written out the serial
+   1174                //  we cannot trust that the data won't be changed after this call
+   1175                //  but before it was actually written out.
+   1176                EmberMessageBuffer buff = emberFillLinkedBuffers(data, length);
+   1177                if (buff != EMBER_NULL_MESSAGE_BUFFER) {
+   1178                  EmberStatus stat = emberSerialWriteBuffer(port, buff, 0, emberMessageBufferLength(buff));
+   1179                  // Refcounts may be manipulated in ISR if DMA used
+   1180                  {
+   1181                    DECLARE_INTERRUPT_STATE;
+   1182                    DISABLE_INTERRUPTS();
+   1183                    emberReleaseMessageBuffer(buff);
+   1184                    RESTORE_INTERRUPTS();
+   1185                  }
+   1186                  return stat;
+   1187                } else {
+   1188                  return EMBER_NO_BUFFERS;
+   1189                }
+   1190              }
+   1191          #endif
+   1192              default:
+   1193                return EMBER_ERR_FATAL;
+   1194            }
+   1195          #endif //EMBER_SERIAL_USE_STDIO
+   1196          }
+   1197          
+   1198          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1199          EmberStatus emberSerialWriteBuffer(uint8_t port,
+   1200                                             EmberMessageBuffer buffer,
+   1201                                             uint8_t start,
+   1202                                             uint8_t length)
+   1203          {
+   1204          //Host processors do not use Ember Message Buffers.
+   1205          #if defined(EZSP_HOST) || defined(EMBER_SERIAL_USE_STDIO)
+   1206            return EMBER_ERR_FATAL;  //This function is invalid.
+   1207          #else// !EZSP_HOST && !EMBER_SERIAL_USE_STDIO
+   1208          
+   1209            if (buffer == EMBER_NULL_MESSAGE_BUFFER) {
+   1210              return EMBER_ERR_FATAL;
+   1211            }
+   1212            if (length == 0) {
+   1213              return EMBER_SUCCESS;
+   1214            }
+   1215          
+   1216            switch (emSerialPortModes[port]) {
+   1217          #ifdef   EM_ENABLE_SERIAL_FIFO
+   1218              case EMBER_SERIAL_FIFO:
+   1219              {
+   1220                for (; PACKET_BUFFER_SIZE <= start; start -= PACKET_BUFFER_SIZE) {
+   1221                  buffer = emberStackBufferLink(buffer);
+   1222                }
+   1223          
+   1224                while (0 < length) {
+   1225                  uint8_t remainingInBuffer = PACKET_BUFFER_SIZE - start;
+   1226                  uint8_t bytes = (length < remainingInBuffer
+   1227                                   ? length
+   1228                                   : remainingInBuffer);
+   1229                  emberSerialWriteData(port,
+   1230                                       emberMessageBufferContents(buffer) + start,
+   1231                                       bytes);
+   1232                  length -= bytes;
+   1233                  start = 0;
+   1234                  buffer = emberStackBufferLink(buffer);
+   1235                }
+   1236                // make sure the interrupt is enabled so it will be sent
+   1237                halInternalStartUartTx(port);
+   1238                break;
+   1239              }
+   1240          #endif// EM_ENABLE_SERIAL_FIFO
+   1241          #ifdef   EM_ENABLE_SERIAL_BUFFER
+   1242              case EMBER_SERIAL_BUFFER:
+   1243              {
+   1244                EmSerialBufferQueue *q = (EmSerialBufferQueue *)emSerialTxQueues[port];
+   1245                EmSerialBufferQueueEntry *e;
+   1246                uint8_t elementsUsed;
+   1247                uint8_t elementsDead;
+   1248          
+   1249                {
+   1250                  DECLARE_INTERRUPT_STATE_LITE;
+   1251                  DISABLE_INTERRUPTS_LITE(); // To clarify volatile access.
+   1252                  elementsUsed = q->used;
+   1253                  elementsDead = q->dead;
+   1254                  RESTORE_INTERRUPTS_LITE();
+   1255                }
+   1256          
+   1257                #ifdef   EM_ENABLE_SERIAL_BLOCKING
+   1258                if (emSerialBlocking[port]) {
+   1259                  while ((elementsUsed + elementsDead) >= emSerialTxQueueSizes[port]) {
+   1260                    emberSerialBufferTick();
+   1261                    //re-read the element counters after clocking the serial buffers
+   1262                    {
+   1263                      DECLARE_INTERRUPT_STATE_LITE;
+   1264                      DISABLE_INTERRUPTS_LITE(); // To clarify volatile access.
+   1265                      elementsUsed = q->used;
+   1266                      elementsDead = q->dead;
+   1267                      RESTORE_INTERRUPTS_LITE();
+   1268                    }
+   1269                  }
+   1270                } else
+   1271                #endif// EM_ENABLE_SERIAL_BLOCKING
+   1272                if ((elementsUsed + elementsDead) >= emSerialTxQueueSizes[port]) {
+   1273                  if (elementsDead) {
+   1274                    emberSerialBufferTick();
+   1275                  } else {
+   1276                    return EMBER_SERIAL_TX_OVERFLOW;
+   1277                  }
+   1278                }
+   1279          
+   1280                for (; PACKET_BUFFER_SIZE <= start; start -= PACKET_BUFFER_SIZE) {
+   1281                  buffer = emberStackBufferLink(buffer);
+   1282                }
+   1283                emberHoldMessageBuffer(buffer);
+   1284          
+   1285                e = &q->fifo[q->head];
+   1286                e->length = length;
+   1287                e->buffer = buffer;
+   1288                e->startIndex = start;
+   1289                #ifdef AVR_ATMEGA
+   1290                //If we are using an AVR host, non power-of-2 queue sizes are NOT
+   1291                //supported and therefore we use a mask
+   1292                q->head = ((q->head + 1) & emSerialTxQueueMasks[port]);
+   1293                #else // AVR_ATMEGA
+   1294                //If we are using the xap2b/cortexm3, non power-of-2 queue sizes are
+   1295                //supported and therefore we use a mod with the queue size
+   1296                q->head = ((q->head + 1) % emSerialTxQueueSizes[port]);
+   1297                #endif // !AVR_ATMEGA
+   1298                {
+   1299                  DECLARE_INTERRUPT_STATE_LITE;
+   1300                  DISABLE_INTERRUPTS_LITE();
+   1301                  q->used++;
+   1302                  RESTORE_INTERRUPTS_LITE();
+   1303                }
+   1304                halInternalStartUartTx(port);
+   1305                break;
+   1306              }
+   1307          #endif// EM_ENABLE_SERIAL_BUFFER
+   1308              default:
+   1309                return EMBER_ERR_FATAL;
+   1310            }
+   1311            return EMBER_SUCCESS;
+   1312          #endif// !EZSP_HOST && !EMBER_SERIAL_USE_STDIO
+   1313          }
+   1314          
+   1315          #endif// EM_ENABLE_SERIAL_BUFFER
+   1316          
+   1317          EmberStatus emberSerialWaitSend(uint8_t port)  // waits for all byte to be written out of a port
+   1318          {
+   1319          #ifdef EMBER_SERIAL_USE_STDIO
+   1320            fflush(stdout);
+   1321          #else //EMBER_SERIAL_USE_STDIO
+   1322            switch (emSerialPortModes[port]) {
+   1323          #ifdef EM_ENABLE_SERIAL_FIFO
+   1324              case EMBER_SERIAL_FIFO: {
+   1325                EmSerialFifoQueue *q = (EmSerialFifoQueue *)emSerialTxQueues[port];
+   1326                while (q->used != 0U) {
+   1327                  simulatedSerialTimePasses();
+   1328                }
+   1329                break;
+   1330              }
+   1331          #endif
+   1332          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1333              case EMBER_SERIAL_BUFFER: {
+   1334                EmSerialBufferQueue *q = (EmSerialBufferQueue *)emSerialTxQueues[port];
+   1335                while (q->used) {
+   1336                  simulatedSerialTimePasses();
+   1337                }
+   1338                break;
+   1339              }
+   1340          #endif
+   1341              default: {
+   1342              }
+   1343            } // close switch.
+   1344            halInternalWaitUartTxComplete(port);
+   1345          #endif //EMBER_SERIAL_USE_STDIO
+   1346            return EMBER_SUCCESS;
+   1347          }
+   1348          
+   1349          //------------------------------------------------------
+   1350          // Guaranteed output
+   1351          
+   1352          // The _only_ Guaranteed API:  The usage model for this api
+   1353          //   Does not require efficiency
+   1354          
+   1355          #if !defined(EMBER_AF_PLUGIN_STANDARD_PRINTF_SUPPORT)
+   1356          
+   1357          EmberStatus emberSerialGuaranteedPrintf(uint8_t port, PGM_P formatString, ...)
+   1358          {
+   1359          #ifdef EMBER_SERIAL_USE_STDIO
+   1360            //TODO: This function might have to break stdio abstraction to operate
+   1361            //      with interrupts off and guarantee a print.
+   1362            //NOTE: The following code is the same code found in emberSerialPrintf
+   1363            EmberStatus stat;
+   1364            halInternalForcePrintf(true);
+   1365            va_list ap;
+   1366            va_start(ap, formatString);
+   1367            stat = emberSerialPrintfVarArg(port, formatString, ap);
+   1368            va_end(ap);
+   1369            halInternalForcePrintf(false);
+   1370            return stat;
+   1371          #else //EMBER_SERIAL_USE_STDIO
+   1372            va_list ap;
+   1373          
+   1374            // prevent interrupt driven transmission from intermixing
+   1375            halInternalStopUartTx(port);
+   1376            va_start(ap, formatString);
+   1377            emPrintfInternal(halInternalForceWriteUartData, port, formatString, ap);
+   1378            va_end(ap);
+   1379          
+   1380            // re-enable interrupt driven transmission if needed
+   1381            switch (emSerialPortModes[port]) {
+   1382          #ifdef EM_ENABLE_SERIAL_FIFO
+   1383              case EMBER_SERIAL_FIFO: {
+   1384                EmSerialFifoQueue *q = (EmSerialFifoQueue *)emSerialTxQueues[port];
+   1385                if (q->used != 0U) {
+   1386                  halInternalStartUartTx(port);
+   1387                }
+   1388                break;
+   1389              }
+   1390          #endif
+   1391          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1392              case EMBER_SERIAL_BUFFER: {
+   1393                EmSerialBufferQueue *q = (EmSerialBufferQueue *)emSerialTxQueues[port];
+   1394                if (q->used != 0U) {
+   1395                  halInternalStartUartTx(port);
+   1396                }
+   1397                break;
+   1398              }
+   1399          #endif
+   1400              default: {
+   1401              }
+   1402            } //close switch.
+   1403          
+   1404            return EMBER_SUCCESS;
+   1405          #endif //EMBER_SERIAL_USE_STDIO
+   1406          }
+   1407          
+   1408          #endif
+   1409          
+   1410          //------------------------------------------------------
+   1411          // Serial buffer maintenance
+   1412          void emberSerialFlushRx(uint8_t port)
+   1413          {
+   1414          #ifdef EMBER_SERIAL_USE_STDIO
+   1415            {
+   1416              DECLARE_INTERRUPT_STATE;
+   1417              DISABLE_INTERRUPTS();
+   1418              while (halInternalPrintfReadAvailable()) {
+   1419                (int)getchar();
+   1420              }
+   1421              RESTORE_INTERRUPTS();
+   1422            }
+   1423          #else //EMBER_SERIAL_USE_STDIO
+   1424            EmSerialFifoQueue *q = (EmSerialFifoQueue *)emSerialRxQueues[port];
+   1425          
+   1426            {
+   1427              DECLARE_INTERRUPT_STATE_LITE;
+   1428              DISABLE_INTERRUPTS_LITE();
+   1429              q->used = 0;
+   1430              q->head = 0;
+   1431              q->tail = 0;
+   1432              RESTORE_INTERRUPTS_LITE();
+   1433            }
+   1434          #endif //EMBER_SERIAL_USE_STDIO
+   1435          }
+   1436          
+   1437          //------------------------------------------------------
+   1438          // Serial Buffer Cleanup Tick
+   1439          
+   1440          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1441          //Helper function to calculate deadIndex since ifdefs cannot exist in the
+   1442          //ATOMIC_LITE block
+   1443          uint8_t calculateDeadIndex(uint8_t port, uint8_t tail, uint8_t numDead)
+   1444          {
+   1445            uint8_t deadIndex;
+   1446          
+   1447            #ifdef AVR_ATMEGA
+   1448            //If we are using an AVR host, non power-of-2 queue sizes are NOT
+   1449            //supported and therefore we use a mask
+   1450            deadIndex = (tail - numDead) & emSerialTxQueueMasks[port];
+   1451            #else // AVR_ATMEGA
+   1452            //If we are using the xap2b/cortexm3, non power-of-2 queue sizes are
+   1453            //supported and therefore we need to use a conditional to figure
+   1454            //out the deadIndex
+   1455            if (numDead > tail) {
+   1456              //Since subtracting numDead from tail would cause deadIndex to
+   1457              //wrap, we add the tail to the queue size and then subtract
+   1458              //numDead
+   1459              deadIndex = (emSerialTxQueueSizes[port] + tail) - numDead;
+   1460            } else {
+   1461              deadIndex = tail - numDead;
+   1462            }
+   1463            #endif // !AVR_ATMEGA
+   1464          
+   1465            return deadIndex;
+   1466          }
+   1467          
+   1468          #endif //EM_ENABLE_SERIAL_BUFFER
+   1469          
+   1470          void emberSerialBufferTick(void)
+   1471          {
+   1472          #ifdef EM_ENABLE_SERIAL_BUFFER
+   1473            uint8_t port;
+   1474            EmSerialBufferQueue *q;
+   1475            uint8_t numDead, deadIndex;
+   1476          
+   1477            for (port = 0; port < EM_NUM_SERIAL_PORTS; port++) {
+   1478              if (emSerialPortModes[port] == EMBER_SERIAL_BUFFER) {
+   1479                q = (EmSerialBufferQueue *)emSerialTxQueues[port];
+   1480          
+   1481                if (q->dead) {
+   1482                  {
+   1483                    DECLARE_INTERRUPT_STATE_LITE;
+   1484                    DISABLE_INTERRUPTS_LITE();
+   1485                    numDead = q->dead;
+   1486                    q->dead = 0;
+   1487                    deadIndex = calculateDeadIndex(port, q->tail, numDead);
+   1488                    RESTORE_INTERRUPTS_LITE();
+   1489                  }
+   1490                  for (; numDead; numDead--) {
+   1491                    // Refcounts may be manipulated in ISR if DMA used
+   1492                    {
+   1493                      DECLARE_INTERRUPT_STATE;
+   1494                      DISABLE_INTERRUPTS();
+   1495                      emberReleaseMessageBuffer(q->fifo[deadIndex].buffer);
+   1496                      RESTORE_INTERRUPTS();
+   1497                    }
+   1498                    #ifdef AVR_ATMEGA
+   1499                    //If we are using an AVR host, non power-of-2 queue sizes are NOT
+   1500                    //supported and therefore we use a mask
+   1501                    deadIndex = (deadIndex + 1) & emSerialTxQueueMasks[port];
+   1502                    #else // AVR_ATMEGA
+   1503                    //If we are using the xap2b/cortexm3, non power-of-2 queue sizes are
+   1504                    //supported and therefore we use a mod with the queue size
+   1505                    deadIndex = (deadIndex + 1) % emSerialTxQueueSizes[port];
+   1506                    #endif // !AVR_ATMEGA
+   1507                  }
+   1508                }
+   1509              }
+   1510            }
+   1511          
+   1512            simulatedSerialTimePasses();
+   1513          #endif
+   1514          }
+   1515          
+   1516          bool emberSerialUnused(uint8_t port)
+   1517          {
+   1518          #ifdef EMBER_SERIAL_USE_STDIO
+   1519            return false;
+   1520          #else //EMBER_SERIAL_USE_STDIO
+   1521            return (EM_NUM_SERIAL_PORTS <= port
+   1522                    || emSerialPortModes[port] == EMBER_SERIAL_UNUSED);
+   1523          #endif //EMBER_SERIAL_USE_STDIO
+   1524          }
+   1525          
+   1526          #endif //CORTEXM3_EFM32_MICRO
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   emberSerialBufferTick
+       0   emberSerialFlushRx
+         0   -> COM_FlushRx
+      16   emberSerialGuaranteedPrintf
+        16   -> emPrintfInternal
+      64   emberSerialInit
+        64   -> COM_Init
+        64   -> __aeabi_memcpy4
+       0   emberSerialReadAvailable
+         0   -> COM_ReadAvailable
+       8   emberSerialReadByte
+         8   -> COM_ReadByte
+      24   emberSerialReadData
+        24   -> emberSerialReadByte
+      40   emberSerialReadDataTimeout
+        40   -> emberSerialReadByte
+        40   -> halCommonGetInt16uMillisecondTick
+      24   emberSerialReadLine
+        24   -> emberSerialReadPartialLine
+        24   -> halInternalResetWatchDog
+       8   emberSerialReadPartialLine
+         8   -> COM_ReadPartialLine
+       0   emberSerialUnused
+         0   -> COM_Unused
+       8   emberSerialWaitSend
+         8   -> COM_WaitSend
+       0   emberSerialWriteAvailable
+         0   -> COM_WriteAvailable
+      32   emberSerialWriteBuffer
+        32   -> emberMessageBufferContents
+        32   -> emberSerialWriteData
+       8   emberSerialWriteByte
+         8   -> COM_WriteByte
+       8   emberSerialWriteData
+         8   -> COM_WriteData
+       8   emberSerialWriteString
+         8   -> COM_WriteString
+       0   emberSerialWriteUsed
+         0   -> COM_WriteUsed
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       2  emberSerialBufferTick
+       4  emberSerialFlushRx
+      24  emberSerialGuaranteedPrintf
+     110  emberSerialInit
+       4  emberSerialReadAvailable
+      10  emberSerialReadByte
+      58  emberSerialReadData
+     100  emberSerialReadDataTimeout
+      38  emberSerialReadLine
+      10  emberSerialReadPartialLine
+       4  emberSerialUnused
+      10  emberSerialWaitSend
+       4  emberSerialWriteAvailable
+      82  emberSerialWriteBuffer
+      10  emberSerialWriteByte
+      10  emberSerialWriteData
+      10  emberSerialWriteString
+       4  emberSerialWriteUsed
+      40  -- Other
+
+ 
+  40 bytes in section .rodata
+ 506 bytes in section .text
+ 
+ 506 bytes of CODE  memory
+  40 bytes of CONST memory
+
+Errors: none
+Warnings: none

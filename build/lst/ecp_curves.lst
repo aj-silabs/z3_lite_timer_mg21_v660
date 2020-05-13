@@ -1,0 +1,1510 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:47
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ecp_curves.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW4305.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ecp_curves.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"ecp_curves.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\ecp_curves.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\ecp_curves.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ecp_curves.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Elliptic curves over GF(p): curve-specific data and functions
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_ECP_C)
+     41          
+     42          #include "mbedtls/ecp.h"
+     43          
+     44          #include <string.h>
+     45          
+     46          #if !defined(MBEDTLS_ECP_ALT)
+     47          
+     48          #if ( defined(__ARMCC_VERSION) || defined(_MSC_VER) ) && \
+     49              !defined(inline) && !defined(__cplusplus)
+     50          #define inline __inline
+     51          #endif
+     52          
+     53          /*
+     54           * Conversion macros for embedded constants:
+     55           * build lists of mbedtls_mpi_uint's from lists of unsigned char's grouped by 8, 4 or 2
+     56           */
+     57          #if defined(MBEDTLS_HAVE_INT32)
+     58          
+     59          #define BYTES_TO_T_UINT_4( a, b, c, d )             \
+     60              ( (mbedtls_mpi_uint) a <<  0 ) |                          \
+     61              ( (mbedtls_mpi_uint) b <<  8 ) |                          \
+     62              ( (mbedtls_mpi_uint) c << 16 ) |                          \
+     63              ( (mbedtls_mpi_uint) d << 24 )
+     64          
+     65          #define BYTES_TO_T_UINT_2( a, b )                   \
+     66              BYTES_TO_T_UINT_4( a, b, 0, 0 )
+     67          
+     68          #define BYTES_TO_T_UINT_8( a, b, c, d, e, f, g, h ) \
+     69              BYTES_TO_T_UINT_4( a, b, c, d ),                \
+     70              BYTES_TO_T_UINT_4( e, f, g, h )
+     71          
+     72          #else /* 64-bits */
+     73          
+     74          #define BYTES_TO_T_UINT_8( a, b, c, d, e, f, g, h ) \
+     75              ( (mbedtls_mpi_uint) a <<  0 ) |                          \
+     76              ( (mbedtls_mpi_uint) b <<  8 ) |                          \
+     77              ( (mbedtls_mpi_uint) c << 16 ) |                          \
+     78              ( (mbedtls_mpi_uint) d << 24 ) |                          \
+     79              ( (mbedtls_mpi_uint) e << 32 ) |                          \
+     80              ( (mbedtls_mpi_uint) f << 40 ) |                          \
+     81              ( (mbedtls_mpi_uint) g << 48 ) |                          \
+     82              ( (mbedtls_mpi_uint) h << 56 )
+     83          
+     84          #define BYTES_TO_T_UINT_4( a, b, c, d )             \
+     85              BYTES_TO_T_UINT_8( a, b, c, d, 0, 0, 0, 0 )
+     86          
+     87          #define BYTES_TO_T_UINT_2( a, b )                   \
+     88              BYTES_TO_T_UINT_8( a, b, 0, 0, 0, 0, 0, 0 )
+     89          
+     90          #endif /* bits in mbedtls_mpi_uint */
+     91          
+     92          /*
+     93           * Note: the constants are in little-endian order
+     94           * to be directly usable in MPIs
+     95           */
+     96          
+     97          /*
+     98           * Domain parameters for secp192r1
+     99           */
+    100          #if defined(MBEDTLS_ECP_DP_SECP192R1_ENABLED)
+    101          static const mbedtls_mpi_uint secp192r1_p[] = {
+    102              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    103              BYTES_TO_T_UINT_8( 0xFE, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    104              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    105          };
+    106          static const mbedtls_mpi_uint secp192r1_b[] = {
+    107              BYTES_TO_T_UINT_8( 0xB1, 0xB9, 0x46, 0xC1, 0xEC, 0xDE, 0xB8, 0xFE ),
+    108              BYTES_TO_T_UINT_8( 0x49, 0x30, 0x24, 0x72, 0xAB, 0xE9, 0xA7, 0x0F ),
+    109              BYTES_TO_T_UINT_8( 0xE7, 0x80, 0x9C, 0xE5, 0x19, 0x05, 0x21, 0x64 ),
+    110          };
+    111          static const mbedtls_mpi_uint secp192r1_gx[] = {
+    112              BYTES_TO_T_UINT_8( 0x12, 0x10, 0xFF, 0x82, 0xFD, 0x0A, 0xFF, 0xF4 ),
+    113              BYTES_TO_T_UINT_8( 0x00, 0x88, 0xA1, 0x43, 0xEB, 0x20, 0xBF, 0x7C ),
+    114              BYTES_TO_T_UINT_8( 0xF6, 0x90, 0x30, 0xB0, 0x0E, 0xA8, 0x8D, 0x18 ),
+    115          };
+    116          static const mbedtls_mpi_uint secp192r1_gy[] = {
+    117              BYTES_TO_T_UINT_8( 0x11, 0x48, 0x79, 0x1E, 0xA1, 0x77, 0xF9, 0x73 ),
+    118              BYTES_TO_T_UINT_8( 0xD5, 0xCD, 0x24, 0x6B, 0xED, 0x11, 0x10, 0x63 ),
+    119              BYTES_TO_T_UINT_8( 0x78, 0xDA, 0xC8, 0xFF, 0x95, 0x2B, 0x19, 0x07 ),
+    120          };
+    121          static const mbedtls_mpi_uint secp192r1_n[] = {
+    122              BYTES_TO_T_UINT_8( 0x31, 0x28, 0xD2, 0xB4, 0xB1, 0xC9, 0x6B, 0x14 ),
+    123              BYTES_TO_T_UINT_8( 0x36, 0xF8, 0xDE, 0x99, 0xFF, 0xFF, 0xFF, 0xFF ),
+    124              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    125          };
+    126          #endif /* MBEDTLS_ECP_DP_SECP192R1_ENABLED */
+    127          
+    128          /*
+    129           * Domain parameters for secp224r1
+    130           */
+    131          #if defined(MBEDTLS_ECP_DP_SECP224R1_ENABLED)
+    132          static const mbedtls_mpi_uint secp224r1_p[] = {
+    133              BYTES_TO_T_UINT_8( 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 ),
+    134              BYTES_TO_T_UINT_8( 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF ),
+    135              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    136              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00 ),
+    137          };
+    138          static const mbedtls_mpi_uint secp224r1_b[] = {
+    139              BYTES_TO_T_UINT_8( 0xB4, 0xFF, 0x55, 0x23, 0x43, 0x39, 0x0B, 0x27 ),
+    140              BYTES_TO_T_UINT_8( 0xBA, 0xD8, 0xBF, 0xD7, 0xB7, 0xB0, 0x44, 0x50 ),
+    141              BYTES_TO_T_UINT_8( 0x56, 0x32, 0x41, 0xF5, 0xAB, 0xB3, 0x04, 0x0C ),
+    142              BYTES_TO_T_UINT_4( 0x85, 0x0A, 0x05, 0xB4 ),
+    143          };
+    144          static const mbedtls_mpi_uint secp224r1_gx[] = {
+    145              BYTES_TO_T_UINT_8( 0x21, 0x1D, 0x5C, 0x11, 0xD6, 0x80, 0x32, 0x34 ),
+    146              BYTES_TO_T_UINT_8( 0x22, 0x11, 0xC2, 0x56, 0xD3, 0xC1, 0x03, 0x4A ),
+    147              BYTES_TO_T_UINT_8( 0xB9, 0x90, 0x13, 0x32, 0x7F, 0xBF, 0xB4, 0x6B ),
+    148              BYTES_TO_T_UINT_4( 0xBD, 0x0C, 0x0E, 0xB7 ),
+    149          };
+    150          static const mbedtls_mpi_uint secp224r1_gy[] = {
+    151              BYTES_TO_T_UINT_8( 0x34, 0x7E, 0x00, 0x85, 0x99, 0x81, 0xD5, 0x44 ),
+    152              BYTES_TO_T_UINT_8( 0x64, 0x47, 0x07, 0x5A, 0xA0, 0x75, 0x43, 0xCD ),
+    153              BYTES_TO_T_UINT_8( 0xE6, 0xDF, 0x22, 0x4C, 0xFB, 0x23, 0xF7, 0xB5 ),
+    154              BYTES_TO_T_UINT_4( 0x88, 0x63, 0x37, 0xBD ),
+    155          };
+    156          static const mbedtls_mpi_uint secp224r1_n[] = {
+    157              BYTES_TO_T_UINT_8( 0x3D, 0x2A, 0x5C, 0x5C, 0x45, 0x29, 0xDD, 0x13 ),
+    158              BYTES_TO_T_UINT_8( 0x3E, 0xF0, 0xB8, 0xE0, 0xA2, 0x16, 0xFF, 0xFF ),
+    159              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    160              BYTES_TO_T_UINT_4( 0xFF, 0xFF, 0xFF, 0xFF ),
+    161          };
+    162          #endif /* MBEDTLS_ECP_DP_SECP224R1_ENABLED */
+    163          
+    164          /*
+    165           * Domain parameters for secp256r1
+    166           */
+    167          #if defined(MBEDTLS_ECP_DP_SECP256R1_ENABLED)
+    168          static const mbedtls_mpi_uint secp256r1_p[] = {
+    169              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    170              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00 ),
+    171              BYTES_TO_T_UINT_8( 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 ),
+    172              BYTES_TO_T_UINT_8( 0x01, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF ),
+    173          };
+    174          static const mbedtls_mpi_uint secp256r1_b[] = {
+    175              BYTES_TO_T_UINT_8( 0x4B, 0x60, 0xD2, 0x27, 0x3E, 0x3C, 0xCE, 0x3B ),
+    176              BYTES_TO_T_UINT_8( 0xF6, 0xB0, 0x53, 0xCC, 0xB0, 0x06, 0x1D, 0x65 ),
+    177              BYTES_TO_T_UINT_8( 0xBC, 0x86, 0x98, 0x76, 0x55, 0xBD, 0xEB, 0xB3 ),
+    178              BYTES_TO_T_UINT_8( 0xE7, 0x93, 0x3A, 0xAA, 0xD8, 0x35, 0xC6, 0x5A ),
+    179          };
+    180          static const mbedtls_mpi_uint secp256r1_gx[] = {
+    181              BYTES_TO_T_UINT_8( 0x96, 0xC2, 0x98, 0xD8, 0x45, 0x39, 0xA1, 0xF4 ),
+    182              BYTES_TO_T_UINT_8( 0xA0, 0x33, 0xEB, 0x2D, 0x81, 0x7D, 0x03, 0x77 ),
+    183              BYTES_TO_T_UINT_8( 0xF2, 0x40, 0xA4, 0x63, 0xE5, 0xE6, 0xBC, 0xF8 ),
+    184              BYTES_TO_T_UINT_8( 0x47, 0x42, 0x2C, 0xE1, 0xF2, 0xD1, 0x17, 0x6B ),
+    185          };
+    186          static const mbedtls_mpi_uint secp256r1_gy[] = {
+    187              BYTES_TO_T_UINT_8( 0xF5, 0x51, 0xBF, 0x37, 0x68, 0x40, 0xB6, 0xCB ),
+    188              BYTES_TO_T_UINT_8( 0xCE, 0x5E, 0x31, 0x6B, 0x57, 0x33, 0xCE, 0x2B ),
+    189              BYTES_TO_T_UINT_8( 0x16, 0x9E, 0x0F, 0x7C, 0x4A, 0xEB, 0xE7, 0x8E ),
+    190              BYTES_TO_T_UINT_8( 0x9B, 0x7F, 0x1A, 0xFE, 0xE2, 0x42, 0xE3, 0x4F ),
+    191          };
+    192          static const mbedtls_mpi_uint secp256r1_n[] = {
+    193              BYTES_TO_T_UINT_8( 0x51, 0x25, 0x63, 0xFC, 0xC2, 0xCA, 0xB9, 0xF3 ),
+    194              BYTES_TO_T_UINT_8( 0x84, 0x9E, 0x17, 0xA7, 0xAD, 0xFA, 0xE6, 0xBC ),
+    195              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    196              BYTES_TO_T_UINT_8( 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF ),
+    197          };
+    198          #endif /* MBEDTLS_ECP_DP_SECP256R1_ENABLED */
+    199          
+    200          /*
+    201           * Domain parameters for secp384r1
+    202           */
+    203          #if defined(MBEDTLS_ECP_DP_SECP384R1_ENABLED)
+    204          static const mbedtls_mpi_uint secp384r1_p[] = {
+    205              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00 ),
+    206              BYTES_TO_T_UINT_8( 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF ),
+    207              BYTES_TO_T_UINT_8( 0xFE, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    208              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    209              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    210              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    211          };
+    212          static const mbedtls_mpi_uint secp384r1_b[] = {
+    213              BYTES_TO_T_UINT_8( 0xEF, 0x2A, 0xEC, 0xD3, 0xED, 0xC8, 0x85, 0x2A ),
+    214              BYTES_TO_T_UINT_8( 0x9D, 0xD1, 0x2E, 0x8A, 0x8D, 0x39, 0x56, 0xC6 ),
+    215              BYTES_TO_T_UINT_8( 0x5A, 0x87, 0x13, 0x50, 0x8F, 0x08, 0x14, 0x03 ),
+    216              BYTES_TO_T_UINT_8( 0x12, 0x41, 0x81, 0xFE, 0x6E, 0x9C, 0x1D, 0x18 ),
+    217              BYTES_TO_T_UINT_8( 0x19, 0x2D, 0xF8, 0xE3, 0x6B, 0x05, 0x8E, 0x98 ),
+    218              BYTES_TO_T_UINT_8( 0xE4, 0xE7, 0x3E, 0xE2, 0xA7, 0x2F, 0x31, 0xB3 ),
+    219          };
+    220          static const mbedtls_mpi_uint secp384r1_gx[] = {
+    221              BYTES_TO_T_UINT_8( 0xB7, 0x0A, 0x76, 0x72, 0x38, 0x5E, 0x54, 0x3A ),
+    222              BYTES_TO_T_UINT_8( 0x6C, 0x29, 0x55, 0xBF, 0x5D, 0xF2, 0x02, 0x55 ),
+    223              BYTES_TO_T_UINT_8( 0x38, 0x2A, 0x54, 0x82, 0xE0, 0x41, 0xF7, 0x59 ),
+    224              BYTES_TO_T_UINT_8( 0x98, 0x9B, 0xA7, 0x8B, 0x62, 0x3B, 0x1D, 0x6E ),
+    225              BYTES_TO_T_UINT_8( 0x74, 0xAD, 0x20, 0xF3, 0x1E, 0xC7, 0xB1, 0x8E ),
+    226              BYTES_TO_T_UINT_8( 0x37, 0x05, 0x8B, 0xBE, 0x22, 0xCA, 0x87, 0xAA ),
+    227          };
+    228          static const mbedtls_mpi_uint secp384r1_gy[] = {
+    229              BYTES_TO_T_UINT_8( 0x5F, 0x0E, 0xEA, 0x90, 0x7C, 0x1D, 0x43, 0x7A ),
+    230              BYTES_TO_T_UINT_8( 0x9D, 0x81, 0x7E, 0x1D, 0xCE, 0xB1, 0x60, 0x0A ),
+    231              BYTES_TO_T_UINT_8( 0xC0, 0xB8, 0xF0, 0xB5, 0x13, 0x31, 0xDA, 0xE9 ),
+    232              BYTES_TO_T_UINT_8( 0x7C, 0x14, 0x9A, 0x28, 0xBD, 0x1D, 0xF4, 0xF8 ),
+    233              BYTES_TO_T_UINT_8( 0x29, 0xDC, 0x92, 0x92, 0xBF, 0x98, 0x9E, 0x5D ),
+    234              BYTES_TO_T_UINT_8( 0x6F, 0x2C, 0x26, 0x96, 0x4A, 0xDE, 0x17, 0x36 ),
+    235          };
+    236          static const mbedtls_mpi_uint secp384r1_n[] = {
+    237              BYTES_TO_T_UINT_8( 0x73, 0x29, 0xC5, 0xCC, 0x6A, 0x19, 0xEC, 0xEC ),
+    238              BYTES_TO_T_UINT_8( 0x7A, 0xA7, 0xB0, 0x48, 0xB2, 0x0D, 0x1A, 0x58 ),
+    239              BYTES_TO_T_UINT_8( 0xDF, 0x2D, 0x37, 0xF4, 0x81, 0x4D, 0x63, 0xC7 ),
+    240              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    241              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    242              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    243          };
+    244          #endif /* MBEDTLS_ECP_DP_SECP384R1_ENABLED */
+    245          
+    246          /*
+    247           * Domain parameters for secp521r1
+    248           */
+    249          #if defined(MBEDTLS_ECP_DP_SECP521R1_ENABLED)
+    250          static const mbedtls_mpi_uint secp521r1_p[] = {
+    251              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    252              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    253              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    254              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    255              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    256              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    257              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    258              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    259              BYTES_TO_T_UINT_2( 0xFF, 0x01 ),
+    260          };
+    261          static const mbedtls_mpi_uint secp521r1_b[] = {
+    262              BYTES_TO_T_UINT_8( 0x00, 0x3F, 0x50, 0x6B, 0xD4, 0x1F, 0x45, 0xEF ),
+    263              BYTES_TO_T_UINT_8( 0xF1, 0x34, 0x2C, 0x3D, 0x88, 0xDF, 0x73, 0x35 ),
+    264              BYTES_TO_T_UINT_8( 0x07, 0xBF, 0xB1, 0x3B, 0xBD, 0xC0, 0x52, 0x16 ),
+    265              BYTES_TO_T_UINT_8( 0x7B, 0x93, 0x7E, 0xEC, 0x51, 0x39, 0x19, 0x56 ),
+    266              BYTES_TO_T_UINT_8( 0xE1, 0x09, 0xF1, 0x8E, 0x91, 0x89, 0xB4, 0xB8 ),
+    267              BYTES_TO_T_UINT_8( 0xF3, 0x15, 0xB3, 0x99, 0x5B, 0x72, 0xDA, 0xA2 ),
+    268              BYTES_TO_T_UINT_8( 0xEE, 0x40, 0x85, 0xB6, 0xA0, 0x21, 0x9A, 0x92 ),
+    269              BYTES_TO_T_UINT_8( 0x1F, 0x9A, 0x1C, 0x8E, 0x61, 0xB9, 0x3E, 0x95 ),
+    270              BYTES_TO_T_UINT_2( 0x51, 0x00 ),
+    271          };
+    272          static const mbedtls_mpi_uint secp521r1_gx[] = {
+    273              BYTES_TO_T_UINT_8( 0x66, 0xBD, 0xE5, 0xC2, 0x31, 0x7E, 0x7E, 0xF9 ),
+    274              BYTES_TO_T_UINT_8( 0x9B, 0x42, 0x6A, 0x85, 0xC1, 0xB3, 0x48, 0x33 ),
+    275              BYTES_TO_T_UINT_8( 0xDE, 0xA8, 0xFF, 0xA2, 0x27, 0xC1, 0x1D, 0xFE ),
+    276              BYTES_TO_T_UINT_8( 0x28, 0x59, 0xE7, 0xEF, 0x77, 0x5E, 0x4B, 0xA1 ),
+    277              BYTES_TO_T_UINT_8( 0xBA, 0x3D, 0x4D, 0x6B, 0x60, 0xAF, 0x28, 0xF8 ),
+    278              BYTES_TO_T_UINT_8( 0x21, 0xB5, 0x3F, 0x05, 0x39, 0x81, 0x64, 0x9C ),
+    279              BYTES_TO_T_UINT_8( 0x42, 0xB4, 0x95, 0x23, 0x66, 0xCB, 0x3E, 0x9E ),
+    280              BYTES_TO_T_UINT_8( 0xCD, 0xE9, 0x04, 0x04, 0xB7, 0x06, 0x8E, 0x85 ),
+    281              BYTES_TO_T_UINT_2( 0xC6, 0x00 ),
+    282          };
+    283          static const mbedtls_mpi_uint secp521r1_gy[] = {
+    284              BYTES_TO_T_UINT_8( 0x50, 0x66, 0xD1, 0x9F, 0x76, 0x94, 0xBE, 0x88 ),
+    285              BYTES_TO_T_UINT_8( 0x40, 0xC2, 0x72, 0xA2, 0x86, 0x70, 0x3C, 0x35 ),
+    286              BYTES_TO_T_UINT_8( 0x61, 0x07, 0xAD, 0x3F, 0x01, 0xB9, 0x50, 0xC5 ),
+    287              BYTES_TO_T_UINT_8( 0x40, 0x26, 0xF4, 0x5E, 0x99, 0x72, 0xEE, 0x97 ),
+    288              BYTES_TO_T_UINT_8( 0x2C, 0x66, 0x3E, 0x27, 0x17, 0xBD, 0xAF, 0x17 ),
+    289              BYTES_TO_T_UINT_8( 0x68, 0x44, 0x9B, 0x57, 0x49, 0x44, 0xF5, 0x98 ),
+    290              BYTES_TO_T_UINT_8( 0xD9, 0x1B, 0x7D, 0x2C, 0xB4, 0x5F, 0x8A, 0x5C ),
+    291              BYTES_TO_T_UINT_8( 0x04, 0xC0, 0x3B, 0x9A, 0x78, 0x6A, 0x29, 0x39 ),
+    292              BYTES_TO_T_UINT_2( 0x18, 0x01 ),
+    293          };
+    294          static const mbedtls_mpi_uint secp521r1_n[] = {
+    295              BYTES_TO_T_UINT_8( 0x09, 0x64, 0x38, 0x91, 0x1E, 0xB7, 0x6F, 0xBB ),
+    296              BYTES_TO_T_UINT_8( 0xAE, 0x47, 0x9C, 0x89, 0xB8, 0xC9, 0xB5, 0x3B ),
+    297              BYTES_TO_T_UINT_8( 0xD0, 0xA5, 0x09, 0xF7, 0x48, 0x01, 0xCC, 0x7F ),
+    298              BYTES_TO_T_UINT_8( 0x6B, 0x96, 0x2F, 0xBF, 0x83, 0x87, 0x86, 0x51 ),
+    299              BYTES_TO_T_UINT_8( 0xFA, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    300              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    301              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    302              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    303              BYTES_TO_T_UINT_2( 0xFF, 0x01 ),
+    304          };
+    305          #endif /* MBEDTLS_ECP_DP_SECP521R1_ENABLED */
+    306          
+    307          #if defined(MBEDTLS_ECP_DP_SECP192K1_ENABLED)
+    308          static const mbedtls_mpi_uint secp192k1_p[] = {
+    309              BYTES_TO_T_UINT_8( 0x37, 0xEE, 0xFF, 0xFF, 0xFE, 0xFF, 0xFF, 0xFF ),
+    310              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    311              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    312          };
+    313          static const mbedtls_mpi_uint secp192k1_a[] = {
+    314              BYTES_TO_T_UINT_2( 0x00, 0x00 ),
+    315          };
+    316          static const mbedtls_mpi_uint secp192k1_b[] = {
+    317              BYTES_TO_T_UINT_2( 0x03, 0x00 ),
+    318          };
+    319          static const mbedtls_mpi_uint secp192k1_gx[] = {
+    320              BYTES_TO_T_UINT_8( 0x7D, 0x6C, 0xE0, 0xEA, 0xB1, 0xD1, 0xA5, 0x1D ),
+    321              BYTES_TO_T_UINT_8( 0x34, 0xF4, 0xB7, 0x80, 0x02, 0x7D, 0xB0, 0x26 ),
+    322              BYTES_TO_T_UINT_8( 0xAE, 0xE9, 0x57, 0xC0, 0x0E, 0xF1, 0x4F, 0xDB ),
+    323          };
+    324          static const mbedtls_mpi_uint secp192k1_gy[] = {
+    325              BYTES_TO_T_UINT_8( 0x9D, 0x2F, 0x5E, 0xD9, 0x88, 0xAA, 0x82, 0x40 ),
+    326              BYTES_TO_T_UINT_8( 0x34, 0x86, 0xBE, 0x15, 0xD0, 0x63, 0x41, 0x84 ),
+    327              BYTES_TO_T_UINT_8( 0xA7, 0x28, 0x56, 0x9C, 0x6D, 0x2F, 0x2F, 0x9B ),
+    328          };
+    329          static const mbedtls_mpi_uint secp192k1_n[] = {
+    330              BYTES_TO_T_UINT_8( 0x8D, 0xFD, 0xDE, 0x74, 0x6A, 0x46, 0x69, 0x0F ),
+    331              BYTES_TO_T_UINT_8( 0x17, 0xFC, 0xF2, 0x26, 0xFE, 0xFF, 0xFF, 0xFF ),
+    332              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    333          };
+    334          #endif /* MBEDTLS_ECP_DP_SECP192K1_ENABLED */
+    335          
+    336          #if defined(MBEDTLS_ECP_DP_SECP224K1_ENABLED)
+    337          static const mbedtls_mpi_uint secp224k1_p[] = {
+    338              BYTES_TO_T_UINT_8( 0x6D, 0xE5, 0xFF, 0xFF, 0xFE, 0xFF, 0xFF, 0xFF ),
+    339              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    340              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    341              BYTES_TO_T_UINT_4( 0xFF, 0xFF, 0xFF, 0xFF ),
+    342          };
+    343          static const mbedtls_mpi_uint secp224k1_a[] = {
+    344              BYTES_TO_T_UINT_2( 0x00, 0x00 ),
+    345          };
+    346          static const mbedtls_mpi_uint secp224k1_b[] = {
+    347              BYTES_TO_T_UINT_2( 0x05, 0x00 ),
+    348          };
+    349          static const mbedtls_mpi_uint secp224k1_gx[] = {
+    350              BYTES_TO_T_UINT_8( 0x5C, 0xA4, 0xB7, 0xB6, 0x0E, 0x65, 0x7E, 0x0F ),
+    351              BYTES_TO_T_UINT_8( 0xA9, 0x75, 0x70, 0xE4, 0xE9, 0x67, 0xA4, 0x69 ),
+    352              BYTES_TO_T_UINT_8( 0xA1, 0x28, 0xFC, 0x30, 0xDF, 0x99, 0xF0, 0x4D ),
+    353              BYTES_TO_T_UINT_4( 0x33, 0x5B, 0x45, 0xA1 ),
+    354          };
+    355          static const mbedtls_mpi_uint secp224k1_gy[] = {
+    356              BYTES_TO_T_UINT_8( 0xA5, 0x61, 0x6D, 0x55, 0xDB, 0x4B, 0xCA, 0xE2 ),
+    357              BYTES_TO_T_UINT_8( 0x59, 0xBD, 0xB0, 0xC0, 0xF7, 0x19, 0xE3, 0xF7 ),
+    358              BYTES_TO_T_UINT_8( 0xD6, 0xFB, 0xCA, 0x82, 0x42, 0x34, 0xBA, 0x7F ),
+    359              BYTES_TO_T_UINT_4( 0xED, 0x9F, 0x08, 0x7E ),
+    360          };
+    361          static const mbedtls_mpi_uint secp224k1_n[] = {
+    362              BYTES_TO_T_UINT_8( 0xF7, 0xB1, 0x9F, 0x76, 0x71, 0xA9, 0xF0, 0xCA ),
+    363              BYTES_TO_T_UINT_8( 0x84, 0x61, 0xEC, 0xD2, 0xE8, 0xDC, 0x01, 0x00 ),
+    364              BYTES_TO_T_UINT_8( 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 ),
+    365              BYTES_TO_T_UINT_8( 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00 ),
+    366          };
+    367          #endif /* MBEDTLS_ECP_DP_SECP224K1_ENABLED */
+    368          
+    369          #if defined(MBEDTLS_ECP_DP_SECP256K1_ENABLED)
+    370          static const mbedtls_mpi_uint secp256k1_p[] = {
+    371              BYTES_TO_T_UINT_8( 0x2F, 0xFC, 0xFF, 0xFF, 0xFE, 0xFF, 0xFF, 0xFF ),
+    372              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    373              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    374              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    375          };
+    376          static const mbedtls_mpi_uint secp256k1_a[] = {
+    377              BYTES_TO_T_UINT_2( 0x00, 0x00 ),
+    378          };
+    379          static const mbedtls_mpi_uint secp256k1_b[] = {
+    380              BYTES_TO_T_UINT_2( 0x07, 0x00 ),
+    381          };
+    382          static const mbedtls_mpi_uint secp256k1_gx[] = {
+    383              BYTES_TO_T_UINT_8( 0x98, 0x17, 0xF8, 0x16, 0x5B, 0x81, 0xF2, 0x59 ),
+    384              BYTES_TO_T_UINT_8( 0xD9, 0x28, 0xCE, 0x2D, 0xDB, 0xFC, 0x9B, 0x02 ),
+    385              BYTES_TO_T_UINT_8( 0x07, 0x0B, 0x87, 0xCE, 0x95, 0x62, 0xA0, 0x55 ),
+    386              BYTES_TO_T_UINT_8( 0xAC, 0xBB, 0xDC, 0xF9, 0x7E, 0x66, 0xBE, 0x79 ),
+    387          };
+    388          static const mbedtls_mpi_uint secp256k1_gy[] = {
+    389              BYTES_TO_T_UINT_8( 0xB8, 0xD4, 0x10, 0xFB, 0x8F, 0xD0, 0x47, 0x9C ),
+    390              BYTES_TO_T_UINT_8( 0x19, 0x54, 0x85, 0xA6, 0x48, 0xB4, 0x17, 0xFD ),
+    391              BYTES_TO_T_UINT_8( 0xA8, 0x08, 0x11, 0x0E, 0xFC, 0xFB, 0xA4, 0x5D ),
+    392              BYTES_TO_T_UINT_8( 0x65, 0xC4, 0xA3, 0x26, 0x77, 0xDA, 0x3A, 0x48 ),
+    393          };
+    394          static const mbedtls_mpi_uint secp256k1_n[] = {
+    395              BYTES_TO_T_UINT_8( 0x41, 0x41, 0x36, 0xD0, 0x8C, 0x5E, 0xD2, 0xBF ),
+    396              BYTES_TO_T_UINT_8( 0x3B, 0xA0, 0x48, 0xAF, 0xE6, 0xDC, 0xAE, 0xBA ),
+    397              BYTES_TO_T_UINT_8( 0xFE, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    398              BYTES_TO_T_UINT_8( 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF ),
+    399          };
+    400          #endif /* MBEDTLS_ECP_DP_SECP256K1_ENABLED */
+    401          
+    402          /*
+    403           * Domain parameters for brainpoolP256r1 (RFC 5639 3.4)
+    404           */
+    405          #if defined(MBEDTLS_ECP_DP_BP256R1_ENABLED)
+    406          static const mbedtls_mpi_uint brainpoolP256r1_p[] = {
+    407              BYTES_TO_T_UINT_8( 0x77, 0x53, 0x6E, 0x1F, 0x1D, 0x48, 0x13, 0x20 ),
+    408              BYTES_TO_T_UINT_8( 0x28, 0x20, 0x26, 0xD5, 0x23, 0xF6, 0x3B, 0x6E ),
+    409              BYTES_TO_T_UINT_8( 0x72, 0x8D, 0x83, 0x9D, 0x90, 0x0A, 0x66, 0x3E ),
+    410              BYTES_TO_T_UINT_8( 0xBC, 0xA9, 0xEE, 0xA1, 0xDB, 0x57, 0xFB, 0xA9 ),
+    411          };
+    412          static const mbedtls_mpi_uint brainpoolP256r1_a[] = {
+    413              BYTES_TO_T_UINT_8( 0xD9, 0xB5, 0x30, 0xF3, 0x44, 0x4B, 0x4A, 0xE9 ),
+    414              BYTES_TO_T_UINT_8( 0x6C, 0x5C, 0xDC, 0x26, 0xC1, 0x55, 0x80, 0xFB ),
+    415              BYTES_TO_T_UINT_8( 0xE7, 0xFF, 0x7A, 0x41, 0x30, 0x75, 0xF6, 0xEE ),
+    416              BYTES_TO_T_UINT_8( 0x57, 0x30, 0x2C, 0xFC, 0x75, 0x09, 0x5A, 0x7D ),
+    417          };
+    418          static const mbedtls_mpi_uint brainpoolP256r1_b[] = {
+    419              BYTES_TO_T_UINT_8( 0xB6, 0x07, 0x8C, 0xFF, 0x18, 0xDC, 0xCC, 0x6B ),
+    420              BYTES_TO_T_UINT_8( 0xCE, 0xE1, 0xF7, 0x5C, 0x29, 0x16, 0x84, 0x95 ),
+    421              BYTES_TO_T_UINT_8( 0xBF, 0x7C, 0xD7, 0xBB, 0xD9, 0xB5, 0x30, 0xF3 ),
+    422              BYTES_TO_T_UINT_8( 0x44, 0x4B, 0x4A, 0xE9, 0x6C, 0x5C, 0xDC, 0x26 ),
+    423          };
+    424          static const mbedtls_mpi_uint brainpoolP256r1_gx[] = {
+    425              BYTES_TO_T_UINT_8( 0x62, 0x32, 0xCE, 0x9A, 0xBD, 0x53, 0x44, 0x3A ),
+    426              BYTES_TO_T_UINT_8( 0xC2, 0x23, 0xBD, 0xE3, 0xE1, 0x27, 0xDE, 0xB9 ),
+    427              BYTES_TO_T_UINT_8( 0xAF, 0xB7, 0x81, 0xFC, 0x2F, 0x48, 0x4B, 0x2C ),
+    428              BYTES_TO_T_UINT_8( 0xCB, 0x57, 0x7E, 0xCB, 0xB9, 0xAE, 0xD2, 0x8B ),
+    429          };
+    430          static const mbedtls_mpi_uint brainpoolP256r1_gy[] = {
+    431              BYTES_TO_T_UINT_8( 0x97, 0x69, 0x04, 0x2F, 0xC7, 0x54, 0x1D, 0x5C ),
+    432              BYTES_TO_T_UINT_8( 0x54, 0x8E, 0xED, 0x2D, 0x13, 0x45, 0x77, 0xC2 ),
+    433              BYTES_TO_T_UINT_8( 0xC9, 0x1D, 0x61, 0x14, 0x1A, 0x46, 0xF8, 0x97 ),
+    434              BYTES_TO_T_UINT_8( 0xFD, 0xC4, 0xDA, 0xC3, 0x35, 0xF8, 0x7E, 0x54 ),
+    435          };
+    436          static const mbedtls_mpi_uint brainpoolP256r1_n[] = {
+    437              BYTES_TO_T_UINT_8( 0xA7, 0x56, 0x48, 0x97, 0x82, 0x0E, 0x1E, 0x90 ),
+    438              BYTES_TO_T_UINT_8( 0xF7, 0xA6, 0x61, 0xB5, 0xA3, 0x7A, 0x39, 0x8C ),
+    439              BYTES_TO_T_UINT_8( 0x71, 0x8D, 0x83, 0x9D, 0x90, 0x0A, 0x66, 0x3E ),
+    440              BYTES_TO_T_UINT_8( 0xBC, 0xA9, 0xEE, 0xA1, 0xDB, 0x57, 0xFB, 0xA9 ),
+    441          };
+    442          #endif /* MBEDTLS_ECP_DP_BP256R1_ENABLED */
+    443          
+    444          /*
+    445           * Domain parameters for brainpoolP384r1 (RFC 5639 3.6)
+    446           */
+    447          #if defined(MBEDTLS_ECP_DP_BP384R1_ENABLED)
+    448          static const mbedtls_mpi_uint brainpoolP384r1_p[] = {
+    449              BYTES_TO_T_UINT_8( 0x53, 0xEC, 0x07, 0x31, 0x13, 0x00, 0x47, 0x87 ),
+    450              BYTES_TO_T_UINT_8( 0x71, 0x1A, 0x1D, 0x90, 0x29, 0xA7, 0xD3, 0xAC ),
+    451              BYTES_TO_T_UINT_8( 0x23, 0x11, 0xB7, 0x7F, 0x19, 0xDA, 0xB1, 0x12 ),
+    452              BYTES_TO_T_UINT_8( 0xB4, 0x56, 0x54, 0xED, 0x09, 0x71, 0x2F, 0x15 ),
+    453              BYTES_TO_T_UINT_8( 0xDF, 0x41, 0xE6, 0x50, 0x7E, 0x6F, 0x5D, 0x0F ),
+    454              BYTES_TO_T_UINT_8( 0x28, 0x6D, 0x38, 0xA3, 0x82, 0x1E, 0xB9, 0x8C ),
+    455          };
+    456          static const mbedtls_mpi_uint brainpoolP384r1_a[] = {
+    457              BYTES_TO_T_UINT_8( 0x26, 0x28, 0xCE, 0x22, 0xDD, 0xC7, 0xA8, 0x04 ),
+    458              BYTES_TO_T_UINT_8( 0xEB, 0xD4, 0x3A, 0x50, 0x4A, 0x81, 0xA5, 0x8A ),
+    459              BYTES_TO_T_UINT_8( 0x0F, 0xF9, 0x91, 0xBA, 0xEF, 0x65, 0x91, 0x13 ),
+    460              BYTES_TO_T_UINT_8( 0x87, 0x27, 0xB2, 0x4F, 0x8E, 0xA2, 0xBE, 0xC2 ),
+    461              BYTES_TO_T_UINT_8( 0xA0, 0xAF, 0x05, 0xCE, 0x0A, 0x08, 0x72, 0x3C ),
+    462              BYTES_TO_T_UINT_8( 0x0C, 0x15, 0x8C, 0x3D, 0xC6, 0x82, 0xC3, 0x7B ),
+    463          };
+    464          static const mbedtls_mpi_uint brainpoolP384r1_b[] = {
+    465              BYTES_TO_T_UINT_8( 0x11, 0x4C, 0x50, 0xFA, 0x96, 0x86, 0xB7, 0x3A ),
+    466              BYTES_TO_T_UINT_8( 0x94, 0xC9, 0xDB, 0x95, 0x02, 0x39, 0xB4, 0x7C ),
+    467              BYTES_TO_T_UINT_8( 0xD5, 0x62, 0xEB, 0x3E, 0xA5, 0x0E, 0x88, 0x2E ),
+    468              BYTES_TO_T_UINT_8( 0xA6, 0xD2, 0xDC, 0x07, 0xE1, 0x7D, 0xB7, 0x2F ),
+    469              BYTES_TO_T_UINT_8( 0x7C, 0x44, 0xF0, 0x16, 0x54, 0xB5, 0x39, 0x8B ),
+    470              BYTES_TO_T_UINT_8( 0x26, 0x28, 0xCE, 0x22, 0xDD, 0xC7, 0xA8, 0x04 ),
+    471          };
+    472          static const mbedtls_mpi_uint brainpoolP384r1_gx[] = {
+    473              BYTES_TO_T_UINT_8( 0x1E, 0xAF, 0xD4, 0x47, 0xE2, 0xB2, 0x87, 0xEF ),
+    474              BYTES_TO_T_UINT_8( 0xAA, 0x46, 0xD6, 0x36, 0x34, 0xE0, 0x26, 0xE8 ),
+    475              BYTES_TO_T_UINT_8( 0xE8, 0x10, 0xBD, 0x0C, 0xFE, 0xCA, 0x7F, 0xDB ),
+    476              BYTES_TO_T_UINT_8( 0xE3, 0x4F, 0xF1, 0x7E, 0xE7, 0xA3, 0x47, 0x88 ),
+    477              BYTES_TO_T_UINT_8( 0x6B, 0x3F, 0xC1, 0xB7, 0x81, 0x3A, 0xA6, 0xA2 ),
+    478              BYTES_TO_T_UINT_8( 0xFF, 0x45, 0xCF, 0x68, 0xF0, 0x64, 0x1C, 0x1D ),
+    479          };
+    480          static const mbedtls_mpi_uint brainpoolP384r1_gy[] = {
+    481              BYTES_TO_T_UINT_8( 0x15, 0x53, 0x3C, 0x26, 0x41, 0x03, 0x82, 0x42 ),
+    482              BYTES_TO_T_UINT_8( 0x11, 0x81, 0x91, 0x77, 0x21, 0x46, 0x46, 0x0E ),
+    483              BYTES_TO_T_UINT_8( 0x28, 0x29, 0x91, 0xF9, 0x4F, 0x05, 0x9C, 0xE1 ),
+    484              BYTES_TO_T_UINT_8( 0x64, 0x58, 0xEC, 0xFE, 0x29, 0x0B, 0xB7, 0x62 ),
+    485              BYTES_TO_T_UINT_8( 0x52, 0xD5, 0xCF, 0x95, 0x8E, 0xEB, 0xB1, 0x5C ),
+    486              BYTES_TO_T_UINT_8( 0xA4, 0xC2, 0xF9, 0x20, 0x75, 0x1D, 0xBE, 0x8A ),
+    487          };
+    488          static const mbedtls_mpi_uint brainpoolP384r1_n[] = {
+    489              BYTES_TO_T_UINT_8( 0x65, 0x65, 0x04, 0xE9, 0x02, 0x32, 0x88, 0x3B ),
+    490              BYTES_TO_T_UINT_8( 0x10, 0xC3, 0x7F, 0x6B, 0xAF, 0xB6, 0x3A, 0xCF ),
+    491              BYTES_TO_T_UINT_8( 0xA7, 0x25, 0x04, 0xAC, 0x6C, 0x6E, 0x16, 0x1F ),
+    492              BYTES_TO_T_UINT_8( 0xB3, 0x56, 0x54, 0xED, 0x09, 0x71, 0x2F, 0x15 ),
+    493              BYTES_TO_T_UINT_8( 0xDF, 0x41, 0xE6, 0x50, 0x7E, 0x6F, 0x5D, 0x0F ),
+    494              BYTES_TO_T_UINT_8( 0x28, 0x6D, 0x38, 0xA3, 0x82, 0x1E, 0xB9, 0x8C ),
+    495          };
+    496          #endif /* MBEDTLS_ECP_DP_BP384R1_ENABLED */
+    497          
+    498          /*
+    499           * Domain parameters for brainpoolP512r1 (RFC 5639 3.7)
+    500           */
+    501          #if defined(MBEDTLS_ECP_DP_BP512R1_ENABLED)
+    502          static const mbedtls_mpi_uint brainpoolP512r1_p[] = {
+    503              BYTES_TO_T_UINT_8( 0xF3, 0x48, 0x3A, 0x58, 0x56, 0x60, 0xAA, 0x28 ),
+    504              BYTES_TO_T_UINT_8( 0x85, 0xC6, 0x82, 0x2D, 0x2F, 0xFF, 0x81, 0x28 ),
+    505              BYTES_TO_T_UINT_8( 0xE6, 0x80, 0xA3, 0xE6, 0x2A, 0xA1, 0xCD, 0xAE ),
+    506              BYTES_TO_T_UINT_8( 0x42, 0x68, 0xC6, 0x9B, 0x00, 0x9B, 0x4D, 0x7D ),
+    507              BYTES_TO_T_UINT_8( 0x71, 0x08, 0x33, 0x70, 0xCA, 0x9C, 0x63, 0xD6 ),
+    508              BYTES_TO_T_UINT_8( 0x0E, 0xD2, 0xC9, 0xB3, 0xB3, 0x8D, 0x30, 0xCB ),
+    509              BYTES_TO_T_UINT_8( 0x07, 0xFC, 0xC9, 0x33, 0xAE, 0xE6, 0xD4, 0x3F ),
+    510              BYTES_TO_T_UINT_8( 0x8B, 0xC4, 0xE9, 0xDB, 0xB8, 0x9D, 0xDD, 0xAA ),
+    511          };
+    512          static const mbedtls_mpi_uint brainpoolP512r1_a[] = {
+    513              BYTES_TO_T_UINT_8( 0xCA, 0x94, 0xFC, 0x77, 0x4D, 0xAC, 0xC1, 0xE7 ),
+    514              BYTES_TO_T_UINT_8( 0xB9, 0xC7, 0xF2, 0x2B, 0xA7, 0x17, 0x11, 0x7F ),
+    515              BYTES_TO_T_UINT_8( 0xB5, 0xC8, 0x9A, 0x8B, 0xC9, 0xF1, 0x2E, 0x0A ),
+    516              BYTES_TO_T_UINT_8( 0xA1, 0x3A, 0x25, 0xA8, 0x5A, 0x5D, 0xED, 0x2D ),
+    517              BYTES_TO_T_UINT_8( 0xBC, 0x63, 0x98, 0xEA, 0xCA, 0x41, 0x34, 0xA8 ),
+    518              BYTES_TO_T_UINT_8( 0x10, 0x16, 0xF9, 0x3D, 0x8D, 0xDD, 0xCB, 0x94 ),
+    519              BYTES_TO_T_UINT_8( 0xC5, 0x4C, 0x23, 0xAC, 0x45, 0x71, 0x32, 0xE2 ),
+    520              BYTES_TO_T_UINT_8( 0x89, 0x3B, 0x60, 0x8B, 0x31, 0xA3, 0x30, 0x78 ),
+    521          };
+    522          static const mbedtls_mpi_uint brainpoolP512r1_b[] = {
+    523              BYTES_TO_T_UINT_8( 0x23, 0xF7, 0x16, 0x80, 0x63, 0xBD, 0x09, 0x28 ),
+    524              BYTES_TO_T_UINT_8( 0xDD, 0xE5, 0xBA, 0x5E, 0xB7, 0x50, 0x40, 0x98 ),
+    525              BYTES_TO_T_UINT_8( 0x67, 0x3E, 0x08, 0xDC, 0xCA, 0x94, 0xFC, 0x77 ),
+    526              BYTES_TO_T_UINT_8( 0x4D, 0xAC, 0xC1, 0xE7, 0xB9, 0xC7, 0xF2, 0x2B ),
+    527              BYTES_TO_T_UINT_8( 0xA7, 0x17, 0x11, 0x7F, 0xB5, 0xC8, 0x9A, 0x8B ),
+    528              BYTES_TO_T_UINT_8( 0xC9, 0xF1, 0x2E, 0x0A, 0xA1, 0x3A, 0x25, 0xA8 ),
+    529              BYTES_TO_T_UINT_8( 0x5A, 0x5D, 0xED, 0x2D, 0xBC, 0x63, 0x98, 0xEA ),
+    530              BYTES_TO_T_UINT_8( 0xCA, 0x41, 0x34, 0xA8, 0x10, 0x16, 0xF9, 0x3D ),
+    531          };
+    532          static const mbedtls_mpi_uint brainpoolP512r1_gx[] = {
+    533              BYTES_TO_T_UINT_8( 0x22, 0xF8, 0xB9, 0xBC, 0x09, 0x22, 0x35, 0x8B ),
+    534              BYTES_TO_T_UINT_8( 0x68, 0x5E, 0x6A, 0x40, 0x47, 0x50, 0x6D, 0x7C ),
+    535              BYTES_TO_T_UINT_8( 0x5F, 0x7D, 0xB9, 0x93, 0x7B, 0x68, 0xD1, 0x50 ),
+    536              BYTES_TO_T_UINT_8( 0x8D, 0xD4, 0xD0, 0xE2, 0x78, 0x1F, 0x3B, 0xFF ),
+    537              BYTES_TO_T_UINT_8( 0x8E, 0x09, 0xD0, 0xF4, 0xEE, 0x62, 0x3B, 0xB4 ),
+    538              BYTES_TO_T_UINT_8( 0xC1, 0x16, 0xD9, 0xB5, 0x70, 0x9F, 0xED, 0x85 ),
+    539              BYTES_TO_T_UINT_8( 0x93, 0x6A, 0x4C, 0x9C, 0x2E, 0x32, 0x21, 0x5A ),
+    540              BYTES_TO_T_UINT_8( 0x64, 0xD9, 0x2E, 0xD8, 0xBD, 0xE4, 0xAE, 0x81 ),
+    541          };
+    542          static const mbedtls_mpi_uint brainpoolP512r1_gy[] = {
+    543              BYTES_TO_T_UINT_8( 0x92, 0x08, 0xD8, 0x3A, 0x0F, 0x1E, 0xCD, 0x78 ),
+    544              BYTES_TO_T_UINT_8( 0x06, 0x54, 0xF0, 0xA8, 0x2F, 0x2B, 0xCA, 0xD1 ),
+    545              BYTES_TO_T_UINT_8( 0xAE, 0x63, 0x27, 0x8A, 0xD8, 0x4B, 0xCA, 0x5B ),
+    546              BYTES_TO_T_UINT_8( 0x5E, 0x48, 0x5F, 0x4A, 0x49, 0xDE, 0xDC, 0xB2 ),
+    547              BYTES_TO_T_UINT_8( 0x11, 0x81, 0x1F, 0x88, 0x5B, 0xC5, 0x00, 0xA0 ),
+    548              BYTES_TO_T_UINT_8( 0x1A, 0x7B, 0xA5, 0x24, 0x00, 0xF7, 0x09, 0xF2 ),
+    549              BYTES_TO_T_UINT_8( 0xFD, 0x22, 0x78, 0xCF, 0xA9, 0xBF, 0xEA, 0xC0 ),
+    550              BYTES_TO_T_UINT_8( 0xEC, 0x32, 0x63, 0x56, 0x5D, 0x38, 0xDE, 0x7D ),
+    551          };
+    552          static const mbedtls_mpi_uint brainpoolP512r1_n[] = {
+    553              BYTES_TO_T_UINT_8( 0x69, 0x00, 0xA9, 0x9C, 0x82, 0x96, 0x87, 0xB5 ),
+    554              BYTES_TO_T_UINT_8( 0xDD, 0xDA, 0x5D, 0x08, 0x81, 0xD3, 0xB1, 0x1D ),
+    555              BYTES_TO_T_UINT_8( 0x47, 0x10, 0xAC, 0x7F, 0x19, 0x61, 0x86, 0x41 ),
+    556              BYTES_TO_T_UINT_8( 0x19, 0x26, 0xA9, 0x4C, 0x41, 0x5C, 0x3E, 0x55 ),
+    557              BYTES_TO_T_UINT_8( 0x70, 0x08, 0x33, 0x70, 0xCA, 0x9C, 0x63, 0xD6 ),
+    558              BYTES_TO_T_UINT_8( 0x0E, 0xD2, 0xC9, 0xB3, 0xB3, 0x8D, 0x30, 0xCB ),
+    559              BYTES_TO_T_UINT_8( 0x07, 0xFC, 0xC9, 0x33, 0xAE, 0xE6, 0xD4, 0x3F ),
+    560              BYTES_TO_T_UINT_8( 0x8B, 0xC4, 0xE9, 0xDB, 0xB8, 0x9D, 0xDD, 0xAA ),
+    561          };
+    562          #endif /* MBEDTLS_ECP_DP_BP512R1_ENABLED */
+    563          
+    564          /*
+    565           * Create an MPI from embedded constants
+    566           * (assumes len is an exact multiple of sizeof mbedtls_mpi_uint)
+    567           */
+    568          static inline void ecp_mpi_load( mbedtls_mpi *X, const mbedtls_mpi_uint *p, size_t len )
+    569          {
+    570              X->s = 1;
+    571              X->n = len / sizeof( mbedtls_mpi_uint );
+    572              X->p = (mbedtls_mpi_uint *) p;
+    573          }
+    574          
+    575          /*
+    576           * Set an MPI to static value 1
+    577           */
+    578          static inline void ecp_mpi_set1( mbedtls_mpi *X )
+    579          {
+    580              static mbedtls_mpi_uint one[] = { 1 };
+    581              X->s = 1;
+    582              X->n = 1;
+    583              X->p = one;
+    584          }
+    585          
+    586          /*
+    587           * Make group available from embedded constants
+    588           */
+    589          static int ecp_group_load( mbedtls_ecp_group *grp,
+    590                                     const mbedtls_mpi_uint *p,  size_t plen,
+    591                                     const mbedtls_mpi_uint *a,  size_t alen,
+    592                                     const mbedtls_mpi_uint *b,  size_t blen,
+    593                                     const mbedtls_mpi_uint *gx, size_t gxlen,
+    594                                     const mbedtls_mpi_uint *gy, size_t gylen,
+    595                                     const mbedtls_mpi_uint *n,  size_t nlen)
+    596          {
+    597              ecp_mpi_load( &grp->P, p, plen );
+    598              if( a != NULL )
+    599                  ecp_mpi_load( &grp->A, a, alen );
+    600              ecp_mpi_load( &grp->B, b, blen );
+    601              ecp_mpi_load( &grp->N, n, nlen );
+    602          
+    603              ecp_mpi_load( &grp->G.X, gx, gxlen );
+    604              ecp_mpi_load( &grp->G.Y, gy, gylen );
+    605              ecp_mpi_set1( &grp->G.Z );
+    606          
+    607              grp->pbits = mbedtls_mpi_bitlen( &grp->P );
+    608              grp->nbits = mbedtls_mpi_bitlen( &grp->N );
+    609          
+    610              grp->h = 1;
+    611          
+    612              return( 0 );
+    613          }
+    614          
+    615          #if defined(MBEDTLS_ECP_NIST_OPTIM)
+    616          /* Forward declarations */
+    617          #if defined(MBEDTLS_ECP_DP_SECP192R1_ENABLED)
+    618          static int ecp_mod_p192( mbedtls_mpi * );
+    619          #endif
+    620          #if defined(MBEDTLS_ECP_DP_SECP224R1_ENABLED)
+    621          static int ecp_mod_p224( mbedtls_mpi * );
+    622          #endif
+    623          #if defined(MBEDTLS_ECP_DP_SECP256R1_ENABLED)
+    624          static int ecp_mod_p256( mbedtls_mpi * );
+    625          #endif
+    626          #if defined(MBEDTLS_ECP_DP_SECP384R1_ENABLED)
+    627          static int ecp_mod_p384( mbedtls_mpi * );
+    628          #endif
+    629          #if defined(MBEDTLS_ECP_DP_SECP521R1_ENABLED)
+    630          static int ecp_mod_p521( mbedtls_mpi * );
+    631          #endif
+    632          
+    633          #define NIST_MODP( P )      grp->modp = ecp_mod_ ## P;
+    634          #else
+    635          #define NIST_MODP( P )
+    636          #endif /* MBEDTLS_ECP_NIST_OPTIM */
+    637          
+    638          /* Additional forward declarations */
+    639          #if defined(MBEDTLS_ECP_DP_CURVE25519_ENABLED)
+    640          static int ecp_mod_p255( mbedtls_mpi * );
+    641          #endif
+    642          #if defined(MBEDTLS_ECP_DP_SECP192K1_ENABLED)
+    643          static int ecp_mod_p192k1( mbedtls_mpi * );
+    644          #endif
+    645          #if defined(MBEDTLS_ECP_DP_SECP224K1_ENABLED)
+    646          static int ecp_mod_p224k1( mbedtls_mpi * );
+    647          #endif
+    648          #if defined(MBEDTLS_ECP_DP_SECP256K1_ENABLED)
+    649          static int ecp_mod_p256k1( mbedtls_mpi * );
+    650          #endif
+    651          
+    652          #define LOAD_GROUP_A( G )   ecp_group_load( grp,            \
+    653                                      G ## _p,  sizeof( G ## _p  ),   \
+    654                                      G ## _a,  sizeof( G ## _a  ),   \
+    655                                      G ## _b,  sizeof( G ## _b  ),   \
+    656                                      G ## _gx, sizeof( G ## _gx ),   \
+    657                                      G ## _gy, sizeof( G ## _gy ),   \
+    658                                      G ## _n,  sizeof( G ## _n  ) )
+    659          
+    660          #define LOAD_GROUP( G )     ecp_group_load( grp,            \
+    661                                      G ## _p,  sizeof( G ## _p  ),   \
+    662                                      NULL,     0,                    \
+    663                                      G ## _b,  sizeof( G ## _b  ),   \
+    664                                      G ## _gx, sizeof( G ## _gx ),   \
+    665                                      G ## _gy, sizeof( G ## _gy ),   \
+    666                                      G ## _n,  sizeof( G ## _n  ) )
+    667          
+    668          #if defined(MBEDTLS_ECP_DP_CURVE25519_ENABLED)
+    669          /*
+    670           * Specialized function for creating the Curve25519 group
+    671           */
+    672          static int ecp_use_curve25519( mbedtls_ecp_group *grp )
+    673          {
+    674              int ret;
+    675          
+    676              /* Actually ( A + 2 ) / 4 */
+    677              MBEDTLS_MPI_CHK( mbedtls_mpi_read_string( &grp->A, 16, "01DB42" ) );
+    678          
+    679              /* P = 2^255 - 19 */
+    680              MBEDTLS_MPI_CHK( mbedtls_mpi_lset( &grp->P, 1 ) );
+    681              MBEDTLS_MPI_CHK( mbedtls_mpi_shift_l( &grp->P, 255 ) );
+    682              MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &grp->P, &grp->P, 19 ) );
+    683              grp->pbits = mbedtls_mpi_bitlen( &grp->P );
+    684          
+    685              /* Y intentionaly not set, since we use x/z coordinates.
+    686               * This is used as a marker to identify Montgomery curves! */
+    687              MBEDTLS_MPI_CHK( mbedtls_mpi_lset( &grp->G.X, 9 ) );
+    688              MBEDTLS_MPI_CHK( mbedtls_mpi_lset( &grp->G.Z, 1 ) );
+    689              mbedtls_mpi_free( &grp->G.Y );
+    690          
+    691              /* Actually, the required msb for private keys */
+    692              grp->nbits = 254;
+    693          
+    694          cleanup:
+    695              if( ret != 0 )
+    696                  mbedtls_ecp_group_free( grp );
+    697          
+    698              return( ret );
+    699          }
+    700          #endif /* MBEDTLS_ECP_DP_CURVE25519_ENABLED */
+    701          
+    702          /*
+    703           * Set a group using well-known domain parameters
+    704           */
+    705          int mbedtls_ecp_group_load( mbedtls_ecp_group *grp, mbedtls_ecp_group_id id )
+    706          {
+    707              mbedtls_ecp_group_free( grp );
+    708          
+    709              grp->id = id;
+    710          
+    711              switch( id )
+    712              {
+    713          #if defined(MBEDTLS_ECP_DP_SECP192R1_ENABLED)
+    714                  case MBEDTLS_ECP_DP_SECP192R1:
+    715                      NIST_MODP( p192 );
+    716                      return( LOAD_GROUP( secp192r1 ) );
+    717          #endif /* MBEDTLS_ECP_DP_SECP192R1_ENABLED */
+    718          
+    719          #if defined(MBEDTLS_ECP_DP_SECP224R1_ENABLED)
+    720                  case MBEDTLS_ECP_DP_SECP224R1:
+    721                      NIST_MODP( p224 );
+    722                      return( LOAD_GROUP( secp224r1 ) );
+    723          #endif /* MBEDTLS_ECP_DP_SECP224R1_ENABLED */
+    724          
+    725          #if defined(MBEDTLS_ECP_DP_SECP256R1_ENABLED)
+    726                  case MBEDTLS_ECP_DP_SECP256R1:
+    727                      NIST_MODP( p256 );
+    728                      return( LOAD_GROUP( secp256r1 ) );
+    729          #endif /* MBEDTLS_ECP_DP_SECP256R1_ENABLED */
+    730          
+    731          #if defined(MBEDTLS_ECP_DP_SECP384R1_ENABLED)
+    732                  case MBEDTLS_ECP_DP_SECP384R1:
+    733                      NIST_MODP( p384 );
+    734                      return( LOAD_GROUP( secp384r1 ) );
+    735          #endif /* MBEDTLS_ECP_DP_SECP384R1_ENABLED */
+    736          
+    737          #if defined(MBEDTLS_ECP_DP_SECP521R1_ENABLED)
+    738                  case MBEDTLS_ECP_DP_SECP521R1:
+    739                      NIST_MODP( p521 );
+    740                      return( LOAD_GROUP( secp521r1 ) );
+    741          #endif /* MBEDTLS_ECP_DP_SECP521R1_ENABLED */
+    742          
+    743          #if defined(MBEDTLS_ECP_DP_SECP192K1_ENABLED)
+    744                  case MBEDTLS_ECP_DP_SECP192K1:
+    745                      grp->modp = ecp_mod_p192k1;
+    746                      return( LOAD_GROUP_A( secp192k1 ) );
+    747          #endif /* MBEDTLS_ECP_DP_SECP192K1_ENABLED */
+    748          
+    749          #if defined(MBEDTLS_ECP_DP_SECP224K1_ENABLED)
+    750                  case MBEDTLS_ECP_DP_SECP224K1:
+    751                      grp->modp = ecp_mod_p224k1;
+    752                      return( LOAD_GROUP_A( secp224k1 ) );
+    753          #endif /* MBEDTLS_ECP_DP_SECP224K1_ENABLED */
+    754          
+    755          #if defined(MBEDTLS_ECP_DP_SECP256K1_ENABLED)
+    756                  case MBEDTLS_ECP_DP_SECP256K1:
+    757                      grp->modp = ecp_mod_p256k1;
+    758                      return( LOAD_GROUP_A( secp256k1 ) );
+    759          #endif /* MBEDTLS_ECP_DP_SECP256K1_ENABLED */
+    760          
+    761          #if defined(MBEDTLS_ECP_DP_BP256R1_ENABLED)
+    762                  case MBEDTLS_ECP_DP_BP256R1:
+    763                      return( LOAD_GROUP_A( brainpoolP256r1 ) );
+    764          #endif /* MBEDTLS_ECP_DP_BP256R1_ENABLED */
+    765          
+    766          #if defined(MBEDTLS_ECP_DP_BP384R1_ENABLED)
+    767                  case MBEDTLS_ECP_DP_BP384R1:
+    768                      return( LOAD_GROUP_A( brainpoolP384r1 ) );
+    769          #endif /* MBEDTLS_ECP_DP_BP384R1_ENABLED */
+    770          
+    771          #if defined(MBEDTLS_ECP_DP_BP512R1_ENABLED)
+    772                  case MBEDTLS_ECP_DP_BP512R1:
+    773                      return( LOAD_GROUP_A( brainpoolP512r1 ) );
+    774          #endif /* MBEDTLS_ECP_DP_BP512R1_ENABLED */
+    775          
+    776          #if defined(MBEDTLS_ECP_DP_CURVE25519_ENABLED)
+    777                  case MBEDTLS_ECP_DP_CURVE25519:
+    778                      grp->modp = ecp_mod_p255;
+    779                      return( ecp_use_curve25519( grp ) );
+    780          #endif /* MBEDTLS_ECP_DP_CURVE25519_ENABLED */
+    781          
+    782                  default:
+    783                      mbedtls_ecp_group_free( grp );
+    784                      return( MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE );
+    785              }
+    786          }
+    787          
+    788          #if defined(MBEDTLS_ECP_NIST_OPTIM)
+    789          /*
+    790           * Fast reduction modulo the primes used by the NIST curves.
+    791           *
+    792           * These functions are critical for speed, but not needed for correct
+    793           * operations. So, we make the choice to heavily rely on the internals of our
+    794           * bignum library, which creates a tight coupling between these functions and
+    795           * our MPI implementation.  However, the coupling between the ECP module and
+    796           * MPI remains loose, since these functions can be deactivated at will.
+    797           */
+    798          
+    799          #if defined(MBEDTLS_ECP_DP_SECP192R1_ENABLED)
+    800          /*
+    801           * Compared to the way things are presented in FIPS 186-3 D.2,
+    802           * we proceed in columns, from right (least significant chunk) to left,
+    803           * adding chunks to N in place, and keeping a carry for the next chunk.
+    804           * This avoids moving things around in memory, and uselessly adding zeros,
+    805           * compared to the more straightforward, line-oriented approach.
+    806           *
+    807           * For this prime we need to handle data in chunks of 64 bits.
+    808           * Since this is always a multiple of our basic mbedtls_mpi_uint, we can
+    809           * use a mbedtls_mpi_uint * to designate such a chunk, and small loops to handle it.
+    810           */
+    811          
+    812          /* Add 64-bit chunks (dst += src) and update carry */
+    813          static inline void add64( mbedtls_mpi_uint *dst, mbedtls_mpi_uint *src, mbedtls_mpi_uint *carry )
+    814          {
+    815              unsigned char i;
+    816              mbedtls_mpi_uint c = 0;
+    817              for( i = 0; i < 8 / sizeof( mbedtls_mpi_uint ); i++, dst++, src++ )
+    818              {
+    819                  *dst += c;      c  = ( *dst < c );
+    820                  *dst += *src;   c += ( *dst < *src );
+    821              }
+    822              *carry += c;
+    823          }
+    824          
+    825          /* Add carry to a 64-bit chunk and update carry */
+    826          static inline void carry64( mbedtls_mpi_uint *dst, mbedtls_mpi_uint *carry )
+    827          {
+    828              unsigned char i;
+    829              for( i = 0; i < 8 / sizeof( mbedtls_mpi_uint ); i++, dst++ )
+    830              {
+    831                  *dst += *carry;
+    832                  *carry  = ( *dst < *carry );
+    833              }
+    834          }
+    835          
+    836          #define WIDTH       8 / sizeof( mbedtls_mpi_uint )
+    837          #define A( i )      N->p + i * WIDTH
+    838          #define ADD( i )    add64( p, A( i ), &c )
+    839          #define NEXT        p += WIDTH; carry64( p, &c )
+    840          #define LAST        p += WIDTH; *p = c; while( ++p < end ) *p = 0
+    841          
+    842          /*
+    843           * Fast quasi-reduction modulo p192 (FIPS 186-3 D.2.1)
+    844           */
+    845          static int ecp_mod_p192( mbedtls_mpi *N )
+    846          {
+    847              int ret;
+    848              mbedtls_mpi_uint c = 0;
+    849              mbedtls_mpi_uint *p, *end;
+    850          
+    851              /* Make sure we have enough blocks so that A(5) is legal */
+    852              MBEDTLS_MPI_CHK( mbedtls_mpi_grow( N, 6 * WIDTH ) );
+    853          
+    854              p = N->p;
+    855              end = p + N->n;
+    856          
+    857              ADD( 3 ); ADD( 5 );             NEXT; // A0 += A3 + A5
+    858              ADD( 3 ); ADD( 4 ); ADD( 5 );   NEXT; // A1 += A3 + A4 + A5
+    859              ADD( 4 ); ADD( 5 );             LAST; // A2 += A4 + A5
+    860          
+    861          cleanup:
+    862              return( ret );
+    863          }
+    864          
+    865          #undef WIDTH
+    866          #undef A
+    867          #undef ADD
+    868          #undef NEXT
+    869          #undef LAST
+    870          #endif /* MBEDTLS_ECP_DP_SECP192R1_ENABLED */
+    871          
+    872          #if defined(MBEDTLS_ECP_DP_SECP224R1_ENABLED) ||   \
+    873              defined(MBEDTLS_ECP_DP_SECP256R1_ENABLED) ||   \
+    874              defined(MBEDTLS_ECP_DP_SECP384R1_ENABLED)
+    875          /*
+    876           * The reader is advised to first understand ecp_mod_p192() since the same
+    877           * general structure is used here, but with additional complications:
+    878           * (1) chunks of 32 bits, and (2) subtractions.
+    879           */
+    880          
+    881          /*
+    882           * For these primes, we need to handle data in chunks of 32 bits.
+    883           * This makes it more complicated if we use 64 bits limbs in MPI,
+    884           * which prevents us from using a uniform access method as for p192.
+    885           *
+    886           * So, we define a mini abstraction layer to access 32 bit chunks,
+    887           * load them in 'cur' for work, and store them back from 'cur' when done.
+    888           *
+    889           * While at it, also define the size of N in terms of 32-bit chunks.
+    890           */
+    891          #define LOAD32      cur = A( i );
+    892          
+    893          #if defined(MBEDTLS_HAVE_INT32)  /* 32 bit */
+    894          
+    895          #define MAX32       N->n
+    896          #define A( j )      N->p[j]
+    897          #define STORE32     N->p[i] = cur;
+    898          
+    899          #else                               /* 64-bit */
+    900          
+    901          #define MAX32       N->n * 2
+    902          #define A( j ) j % 2 ? (uint32_t)( N->p[j/2] >> 32 ) : (uint32_t)( N->p[j/2] )
+    903          #define STORE32                                   \
+    904              if( i % 2 ) {                                 \
+    905                  N->p[i/2] &= 0x00000000FFFFFFFF;          \
+    906                  N->p[i/2] |= ((mbedtls_mpi_uint) cur) << 32;        \
+    907              } else {                                      \
+    908                  N->p[i/2] &= 0xFFFFFFFF00000000;          \
+    909                  N->p[i/2] |= (mbedtls_mpi_uint) cur;                \
+    910              }
+    911          
+    912          #endif /* sizeof( mbedtls_mpi_uint ) */
+    913          
+    914          /*
+    915           * Helpers for addition and subtraction of chunks, with signed carry.
+    916           */
+    917          static inline void add32( uint32_t *dst, uint32_t src, signed char *carry )
+    918          {
+    919              *dst += src;
+    920              *carry += ( *dst < src );
+    921          }
+    922          
+    923          static inline void sub32( uint32_t *dst, uint32_t src, signed char *carry )
+    924          {
+    925              *carry -= ( *dst < src );
+    926              *dst -= src;
+    927          }
+    928          
+    929          #define ADD( j )    add32( &cur, A( j ), &c );
+    930          #define SUB( j )    sub32( &cur, A( j ), &c );
+    931          
+    932          /*
+    933           * Helpers for the main 'loop'
+    934           * (see fix_negative for the motivation of C)
+    935           */
+    936          #define INIT( b )                                           \
+    937              int ret;                                                \
+    938              signed char c = 0, cc;                                  \
+    939              uint32_t cur;                                           \
+    940              size_t i = 0, bits = b;                                 \
+    941              mbedtls_mpi C;                                                  \
+    942              mbedtls_mpi_uint Cp[ b / 8 / sizeof( mbedtls_mpi_uint) + 1 ];               \
+    943                                                                      \
+    944              C.s = 1;                                                \
+    945              C.n = b / 8 / sizeof( mbedtls_mpi_uint) + 1;                      \
+    946              C.p = Cp;                                               \
+    947              memset( Cp, 0, C.n * sizeof( mbedtls_mpi_uint ) );                \
+    948                                                                      \
+    949              MBEDTLS_MPI_CHK( mbedtls_mpi_grow( N, b * 2 / 8 / sizeof( mbedtls_mpi_uint ) ) ); \
+    950              LOAD32;
+    951          
+    952          #define NEXT                    \
+    953              STORE32; i++; LOAD32;       \
+    954              cc = c; c = 0;              \
+    955              if( cc < 0 )                \
+    956                  sub32( &cur, -cc, &c ); \
+    957              else                        \
+    958                  add32( &cur, cc, &c );  \
+    959          
+    960          #define LAST                                    \
+    961              STORE32; i++;                               \
+    962              cur = c > 0 ? c : 0; STORE32;               \
+    963              cur = 0; while( ++i < MAX32 ) { STORE32; }  \
+    964              if( c < 0 ) fix_negative( N, c, &C, bits );
+    965          
+    966          /*
+    967           * If the result is negative, we get it in the form
+    968           * c * 2^(bits + 32) + N, with c negative and N positive shorter than 'bits'
+    969           */
+    970          static inline int fix_negative( mbedtls_mpi *N, signed char c, mbedtls_mpi *C, size_t bits )
+    971          {
+    972              int ret;
+    973          
+    974              /* C = - c * 2^(bits + 32) */
+    975          #if !defined(MBEDTLS_HAVE_INT64)
+    976              ((void) bits);
+    977          #else
+    978              if( bits == 224 )
+    979                  C->p[ C->n - 1 ] = ((mbedtls_mpi_uint) -c) << 32;
+    980              else
+    981          #endif
+    982                  C->p[ C->n - 1 ] = (mbedtls_mpi_uint) -c;
+    983          
+    984              /* N = - ( C - N ) */
+    985              MBEDTLS_MPI_CHK( mbedtls_mpi_sub_abs( N, C, N ) );
+    986              N->s = -1;
+    987          
+    988          cleanup:
+    989          
+    990              return( ret );
+    991          }
+    992          
+    993          #if defined(MBEDTLS_ECP_DP_SECP224R1_ENABLED)
+    994          /*
+    995           * Fast quasi-reduction modulo p224 (FIPS 186-3 D.2.2)
+    996           */
+    997          static int ecp_mod_p224( mbedtls_mpi *N )
+    998          {
+    999              INIT( 224 );
+   1000          
+   1001              SUB(  7 ); SUB( 11 );               NEXT; // A0 += -A7 - A11
+   1002              SUB(  8 ); SUB( 12 );               NEXT; // A1 += -A8 - A12
+   1003              SUB(  9 ); SUB( 13 );               NEXT; // A2 += -A9 - A13
+   1004              SUB( 10 ); ADD(  7 ); ADD( 11 );    NEXT; // A3 += -A10 + A7 + A11
+   1005              SUB( 11 ); ADD(  8 ); ADD( 12 );    NEXT; // A4 += -A11 + A8 + A12
+   1006              SUB( 12 ); ADD(  9 ); ADD( 13 );    NEXT; // A5 += -A12 + A9 + A13
+   1007              SUB( 13 ); ADD( 10 );               LAST; // A6 += -A13 + A10
+   1008          
+   1009          cleanup:
+   1010              return( ret );
+   1011          }
+   1012          #endif /* MBEDTLS_ECP_DP_SECP224R1_ENABLED */
+   1013          
+   1014          #if defined(MBEDTLS_ECP_DP_SECP256R1_ENABLED)
+   1015          /*
+   1016           * Fast quasi-reduction modulo p256 (FIPS 186-3 D.2.3)
+   1017           */
+   1018          static int ecp_mod_p256( mbedtls_mpi *N )
+   1019          {
+   1020              INIT( 256 );
+   1021          
+   1022              ADD(  8 ); ADD(  9 );
+   1023              SUB( 11 ); SUB( 12 ); SUB( 13 ); SUB( 14 );             NEXT; // A0
+   1024          
+   1025              ADD(  9 ); ADD( 10 );
+   1026              SUB( 12 ); SUB( 13 ); SUB( 14 ); SUB( 15 );             NEXT; // A1
+   1027          
+   1028              ADD( 10 ); ADD( 11 );
+   1029              SUB( 13 ); SUB( 14 ); SUB( 15 );                        NEXT; // A2
+   1030          
+   1031              ADD( 11 ); ADD( 11 ); ADD( 12 ); ADD( 12 ); ADD( 13 );
+   1032              SUB( 15 ); SUB(  8 ); SUB(  9 );                        NEXT; // A3
+   1033          
+   1034              ADD( 12 ); ADD( 12 ); ADD( 13 ); ADD( 13 ); ADD( 14 );
+   1035              SUB(  9 ); SUB( 10 );                                   NEXT; // A4
+   1036          
+   1037              ADD( 13 ); ADD( 13 ); ADD( 14 ); ADD( 14 ); ADD( 15 );
+   1038              SUB( 10 ); SUB( 11 );                                   NEXT; // A5
+   1039          
+   1040              ADD( 14 ); ADD( 14 ); ADD( 15 ); ADD( 15 ); ADD( 14 ); ADD( 13 );
+   1041              SUB(  8 ); SUB(  9 );                                   NEXT; // A6
+   1042          
+   1043              ADD( 15 ); ADD( 15 ); ADD( 15 ); ADD( 8 );
+   1044              SUB( 10 ); SUB( 11 ); SUB( 12 ); SUB( 13 );             LAST; // A7
+   1045          
+   1046          cleanup:
+   1047              return( ret );
+   1048          }
+   1049          #endif /* MBEDTLS_ECP_DP_SECP256R1_ENABLED */
+   1050          
+   1051          #if defined(MBEDTLS_ECP_DP_SECP384R1_ENABLED)
+   1052          /*
+   1053           * Fast quasi-reduction modulo p384 (FIPS 186-3 D.2.4)
+   1054           */
+   1055          static int ecp_mod_p384( mbedtls_mpi *N )
+   1056          {
+   1057              INIT( 384 );
+   1058          
+   1059              ADD( 12 ); ADD( 21 ); ADD( 20 );
+   1060              SUB( 23 );                                              NEXT; // A0
+   1061          
+   1062              ADD( 13 ); ADD( 22 ); ADD( 23 );
+   1063              SUB( 12 ); SUB( 20 );                                   NEXT; // A2
+   1064          
+   1065              ADD( 14 ); ADD( 23 );
+   1066              SUB( 13 ); SUB( 21 );                                   NEXT; // A2
+   1067          
+   1068              ADD( 15 ); ADD( 12 ); ADD( 20 ); ADD( 21 );
+   1069              SUB( 14 ); SUB( 22 ); SUB( 23 );                        NEXT; // A3
+   1070          
+   1071              ADD( 21 ); ADD( 21 ); ADD( 16 ); ADD( 13 ); ADD( 12 ); ADD( 20 ); ADD( 22 );
+   1072              SUB( 15 ); SUB( 23 ); SUB( 23 );                        NEXT; // A4
+   1073          
+   1074              ADD( 22 ); ADD( 22 ); ADD( 17 ); ADD( 14 ); ADD( 13 ); ADD( 21 ); ADD( 23 );
+   1075              SUB( 16 );                                              NEXT; // A5
+   1076          
+   1077              ADD( 23 ); ADD( 23 ); ADD( 18 ); ADD( 15 ); ADD( 14 ); ADD( 22 );
+   1078              SUB( 17 );                                              NEXT; // A6
+   1079          
+   1080              ADD( 19 ); ADD( 16 ); ADD( 15 ); ADD( 23 );
+   1081              SUB( 18 );                                              NEXT; // A7
+   1082          
+   1083              ADD( 20 ); ADD( 17 ); ADD( 16 );
+   1084              SUB( 19 );                                              NEXT; // A8
+   1085          
+   1086              ADD( 21 ); ADD( 18 ); ADD( 17 );
+   1087              SUB( 20 );                                              NEXT; // A9
+   1088          
+   1089              ADD( 22 ); ADD( 19 ); ADD( 18 );
+   1090              SUB( 21 );                                              NEXT; // A10
+   1091          
+   1092              ADD( 23 ); ADD( 20 ); ADD( 19 );
+   1093              SUB( 22 );                                              LAST; // A11
+   1094          
+   1095          cleanup:
+   1096              return( ret );
+   1097          }
+   1098          #endif /* MBEDTLS_ECP_DP_SECP384R1_ENABLED */
+   1099          
+   1100          #undef A
+   1101          #undef LOAD32
+   1102          #undef STORE32
+   1103          #undef MAX32
+   1104          #undef INIT
+   1105          #undef NEXT
+   1106          #undef LAST
+   1107          
+   1108          #endif /* MBEDTLS_ECP_DP_SECP224R1_ENABLED ||
+   1109                    MBEDTLS_ECP_DP_SECP256R1_ENABLED ||
+   1110                    MBEDTLS_ECP_DP_SECP384R1_ENABLED */
+   1111          
+   1112          #if defined(MBEDTLS_ECP_DP_SECP521R1_ENABLED)
+   1113          /*
+   1114           * Here we have an actual Mersenne prime, so things are more straightforward.
+   1115           * However, chunks are aligned on a 'weird' boundary (521 bits).
+   1116           */
+   1117          
+   1118          /* Size of p521 in terms of mbedtls_mpi_uint */
+   1119          #define P521_WIDTH      ( 521 / 8 / sizeof( mbedtls_mpi_uint ) + 1 )
+   1120          
+   1121          /* Bits to keep in the most significant mbedtls_mpi_uint */
+   1122          #define P521_MASK       0x01FF
+   1123          
+   1124          /*
+   1125           * Fast quasi-reduction modulo p521 (FIPS 186-3 D.2.5)
+   1126           * Write N as A1 + 2^521 A0, return A0 + A1
+   1127           */
+   1128          static int ecp_mod_p521( mbedtls_mpi *N )
+   1129          {
+   1130              int ret;
+   1131              size_t i;
+   1132              mbedtls_mpi M;
+   1133              mbedtls_mpi_uint Mp[P521_WIDTH + 1];
+   1134              /* Worst case for the size of M is when mbedtls_mpi_uint is 16 bits:
+   1135               * we need to hold bits 513 to 1056, which is 34 limbs, that is
+   1136               * P521_WIDTH + 1. Otherwise P521_WIDTH is enough. */
+   1137          
+   1138              if( N->n < P521_WIDTH )
+   1139                  return( 0 );
+   1140          
+   1141              /* M = A1 */
+   1142              M.s = 1;
+   1143              M.n = N->n - ( P521_WIDTH - 1 );
+   1144              if( M.n > P521_WIDTH + 1 )
+   1145                  M.n = P521_WIDTH + 1;
+   1146              M.p = Mp;
+   1147              memcpy( Mp, N->p + P521_WIDTH - 1, M.n * sizeof( mbedtls_mpi_uint ) );
+   1148              MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &M, 521 % ( 8 * sizeof( mbedtls_mpi_uint ) ) ) );
+   1149          
+   1150              /* N = A0 */
+   1151              N->p[P521_WIDTH - 1] &= P521_MASK;
+   1152              for( i = P521_WIDTH; i < N->n; i++ )
+   1153                  N->p[i] = 0;
+   1154          
+   1155              /* N = A0 + A1 */
+   1156              MBEDTLS_MPI_CHK( mbedtls_mpi_add_abs( N, N, &M ) );
+   1157          
+   1158          cleanup:
+   1159              return( ret );
+   1160          }
+   1161          
+   1162          #undef P521_WIDTH
+   1163          #undef P521_MASK
+   1164          #endif /* MBEDTLS_ECP_DP_SECP521R1_ENABLED */
+   1165          
+   1166          #endif /* MBEDTLS_ECP_NIST_OPTIM */
+   1167          
+   1168          #if defined(MBEDTLS_ECP_DP_CURVE25519_ENABLED)
+   1169          
+   1170          /* Size of p255 in terms of mbedtls_mpi_uint */
+   1171          #define P255_WIDTH      ( 255 / 8 / sizeof( mbedtls_mpi_uint ) + 1 )
+   1172          
+   1173          /*
+   1174           * Fast quasi-reduction modulo p255 = 2^255 - 19
+   1175           * Write N as A0 + 2^255 A1, return A0 + 19 * A1
+   1176           */
+   1177          static int ecp_mod_p255( mbedtls_mpi *N )
+   1178          {
+   1179              int ret;
+   1180              size_t i;
+   1181              mbedtls_mpi M;
+   1182              mbedtls_mpi_uint Mp[P255_WIDTH + 2];
+   1183          
+   1184              if( N->n < P255_WIDTH )
+   1185                  return( 0 );
+   1186          
+   1187              /* M = A1 */
+   1188              M.s = 1;
+   1189              M.n = N->n - ( P255_WIDTH - 1 );
+   1190              if( M.n > P255_WIDTH + 1 )
+   1191                  M.n = P255_WIDTH + 1;
+   1192              M.p = Mp;
+   1193              memset( Mp, 0, sizeof Mp );
+   1194              memcpy( Mp, N->p + P255_WIDTH - 1, M.n * sizeof( mbedtls_mpi_uint ) );
+   1195              MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &M, 255 % ( 8 * sizeof( mbedtls_mpi_uint ) ) ) );
+   1196              M.n++; /* Make room for multiplication by 19 */
+   1197          
+   1198              /* N = A0 */
+   1199              MBEDTLS_MPI_CHK( mbedtls_mpi_set_bit( N, 255, 0 ) );
+   1200              for( i = P255_WIDTH; i < N->n; i++ )
+   1201                  N->p[i] = 0;
+   1202          
+   1203              /* N = A0 + 19 * A1 */
+   1204              MBEDTLS_MPI_CHK( mbedtls_mpi_mul_int( &M, &M, 19 ) );
+   1205              MBEDTLS_MPI_CHK( mbedtls_mpi_add_abs( N, N, &M ) );
+   1206          
+   1207          cleanup:
+   1208              return( ret );
+   1209          }
+   1210          #endif /* MBEDTLS_ECP_DP_CURVE25519_ENABLED */
+   1211          
+   1212          #if defined(MBEDTLS_ECP_DP_SECP192K1_ENABLED) ||   \
+   1213              defined(MBEDTLS_ECP_DP_SECP224K1_ENABLED) ||   \
+   1214              defined(MBEDTLS_ECP_DP_SECP256K1_ENABLED)
+   1215          /*
+   1216           * Fast quasi-reduction modulo P = 2^s - R,
+   1217           * with R about 33 bits, used by the Koblitz curves.
+   1218           *
+   1219           * Write N as A0 + 2^224 A1, return A0 + R * A1.
+   1220           * Actually do two passes, since R is big.
+   1221           */
+   1222          #define P_KOBLITZ_MAX   ( 256 / 8 / sizeof( mbedtls_mpi_uint ) )  // Max limbs in P
+   1223          #define P_KOBLITZ_R     ( 8 / sizeof( mbedtls_mpi_uint ) )        // Limbs in R
+   1224          static inline int ecp_mod_koblitz( mbedtls_mpi *N, mbedtls_mpi_uint *Rp, size_t p_limbs,
+   1225                                             size_t adjust, size_t shift, mbedtls_mpi_uint mask )
+   1226          {
+   1227              int ret;
+   1228              size_t i;
+   1229              mbedtls_mpi M, R;
+   1230              mbedtls_mpi_uint Mp[P_KOBLITZ_MAX + P_KOBLITZ_R + 1];
+   1231          
+   1232              if( N->n < p_limbs )
+   1233                  return( 0 );
+   1234          
+   1235              /* Init R */
+   1236              R.s = 1;
+   1237              R.p = Rp;
+   1238              R.n = P_KOBLITZ_R;
+   1239          
+   1240              /* Common setup for M */
+   1241              M.s = 1;
+   1242              M.p = Mp;
+   1243          
+   1244              /* M = A1 */
+   1245              M.n = N->n - ( p_limbs - adjust );
+   1246              if( M.n > p_limbs + adjust )
+   1247                  M.n = p_limbs + adjust;
+   1248              memset( Mp, 0, sizeof Mp );
+   1249              memcpy( Mp, N->p + p_limbs - adjust, M.n * sizeof( mbedtls_mpi_uint ) );
+   1250              if( shift != 0 )
+   1251                  MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &M, shift ) );
+   1252              M.n += R.n; /* Make room for multiplication by R */
+   1253          
+   1254              /* N = A0 */
+   1255              if( mask != 0 )
+   1256                  N->p[p_limbs - 1] &= mask;
+   1257              for( i = p_limbs; i < N->n; i++ )
+   1258                  N->p[i] = 0;
+   1259          
+   1260              /* N = A0 + R * A1 */
+   1261              MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &M, &M, &R ) );
+   1262              MBEDTLS_MPI_CHK( mbedtls_mpi_add_abs( N, N, &M ) );
+   1263          
+   1264              /* Second pass */
+   1265          
+   1266              /* M = A1 */
+   1267              M.n = N->n - ( p_limbs - adjust );
+   1268              if( M.n > p_limbs + adjust )
+   1269                  M.n = p_limbs + adjust;
+   1270              memset( Mp, 0, sizeof Mp );
+   1271              memcpy( Mp, N->p + p_limbs - adjust, M.n * sizeof( mbedtls_mpi_uint ) );
+   1272              if( shift != 0 )
+   1273                  MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &M, shift ) );
+   1274              M.n += R.n; /* Make room for multiplication by R */
+   1275          
+   1276              /* N = A0 */
+   1277              if( mask != 0 )
+   1278                  N->p[p_limbs - 1] &= mask;
+   1279              for( i = p_limbs; i < N->n; i++ )
+   1280                  N->p[i] = 0;
+   1281          
+   1282              /* N = A0 + R * A1 */
+   1283              MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &M, &M, &R ) );
+   1284              MBEDTLS_MPI_CHK( mbedtls_mpi_add_abs( N, N, &M ) );
+   1285          
+   1286          cleanup:
+   1287              return( ret );
+   1288          }
+   1289          #endif /* MBEDTLS_ECP_DP_SECP192K1_ENABLED) ||
+   1290                    MBEDTLS_ECP_DP_SECP224K1_ENABLED) ||
+   1291                    MBEDTLS_ECP_DP_SECP256K1_ENABLED) */
+   1292          
+   1293          #if defined(MBEDTLS_ECP_DP_SECP192K1_ENABLED)
+   1294          /*
+   1295           * Fast quasi-reduction modulo p192k1 = 2^192 - R,
+   1296           * with R = 2^32 + 2^12 + 2^8 + 2^7 + 2^6 + 2^3 + 1 = 0x0100001119
+   1297           */
+   1298          static int ecp_mod_p192k1( mbedtls_mpi *N )
+   1299          {
+   1300              static mbedtls_mpi_uint Rp[] = {
+   1301                  BYTES_TO_T_UINT_8( 0xC9, 0x11, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00 ) };
+   1302          
+   1303              return( ecp_mod_koblitz( N, Rp, 192 / 8 / sizeof( mbedtls_mpi_uint ), 0, 0, 0 ) );
+   1304          }
+   1305          #endif /* MBEDTLS_ECP_DP_SECP192K1_ENABLED */
+   1306          
+   1307          #if defined(MBEDTLS_ECP_DP_SECP224K1_ENABLED)
+   1308          /*
+   1309           * Fast quasi-reduction modulo p224k1 = 2^224 - R,
+   1310           * with R = 2^32 + 2^12 + 2^11 + 2^9 + 2^7 + 2^4 + 2 + 1 = 0x0100001A93
+   1311           */
+   1312          static int ecp_mod_p224k1( mbedtls_mpi *N )
+   1313          {
+   1314              static mbedtls_mpi_uint Rp[] = {
+   1315                  BYTES_TO_T_UINT_8( 0x93, 0x1A, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00 ) };
+   1316          
+   1317          #if defined(MBEDTLS_HAVE_INT64)
+   1318              return( ecp_mod_koblitz( N, Rp, 4, 1, 32, 0xFFFFFFFF ) );
+   1319          #else
+   1320              return( ecp_mod_koblitz( N, Rp, 224 / 8 / sizeof( mbedtls_mpi_uint ), 0, 0, 0 ) );
+   1321          #endif
+   1322          }
+   1323          
+   1324          #endif /* MBEDTLS_ECP_DP_SECP224K1_ENABLED */
+   1325          
+   1326          #if defined(MBEDTLS_ECP_DP_SECP256K1_ENABLED)
+   1327          /*
+   1328           * Fast quasi-reduction modulo p256k1 = 2^256 - R,
+   1329           * with R = 2^32 + 2^9 + 2^8 + 2^7 + 2^6 + 2^4 + 1 = 0x01000003D1
+   1330           */
+   1331          static int ecp_mod_p256k1( mbedtls_mpi *N )
+   1332          {
+   1333              static mbedtls_mpi_uint Rp[] = {
+   1334                  BYTES_TO_T_UINT_8( 0xD1, 0x03, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00 ) };
+   1335              return( ecp_mod_koblitz( N, Rp, 256 / 8 / sizeof( mbedtls_mpi_uint ), 0, 0, 0 ) );
+   1336          }
+   1337          #endif /* MBEDTLS_ECP_DP_SECP256K1_ENABLED */
+   1338          
+   1339          #endif /* !MBEDTLS_ECP_ALT */
+   1340          
+   1341          #endif /* MBEDTLS_ECP_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

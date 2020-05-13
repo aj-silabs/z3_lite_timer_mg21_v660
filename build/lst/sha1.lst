@@ -1,0 +1,732 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:50
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\sha1.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW3B0E.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\sha1.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"sha1.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\sha1.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\sha1.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\sha1.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  FIPS-180-1 compliant SHA-1 implementation
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          /*
+     34           *  The SHA-1 standard was published by NIST in 1993.
+     35           *
+     36           *  http://www.itl.nist.gov/fipspubs/fip180-1.htm
+     37           */
+     38          
+     39          #if !defined(MBEDTLS_CONFIG_FILE)
+     40          #include "mbedtls/config.h"
+     41          #else
+     42          #include MBEDTLS_CONFIG_FILE
+     43          #endif
+     44          
+     45          #if defined(MBEDTLS_SHA1_C)
+     46          
+     47          #include "mbedtls/sha1.h"
+     48          
+     49          #include <string.h>
+     50          
+     51          #if defined(MBEDTLS_SELF_TEST)
+     52          #if defined(MBEDTLS_PLATFORM_C)
+     53          #include "mbedtls/platform.h"
+     54          #else
+     55          #include <stdio.h>
+     56          #define mbedtls_printf printf
+     57          #endif /* MBEDTLS_PLATFORM_C */
+     58          #endif /* MBEDTLS_SELF_TEST */
+     59          
+     60          #if !defined(MBEDTLS_SHA1_ALT)
+     61          
+     62          /* Implementation that should never be optimized out by the compiler */
+     63          static void mbedtls_zeroize( void *v, size_t n ) {
+     64              volatile unsigned char *p = (unsigned char*)v; while( n-- ) *p++ = 0;
+     65          }
+     66          
+     67          /*
+     68           * 32-bit integer manipulation macros (big endian)
+     69           */
+     70          #ifndef GET_UINT32_BE
+     71          #define GET_UINT32_BE(n,b,i)                            \
+     72          {                                                       \
+     73              (n) = ( (uint32_t) (b)[(i)    ] << 24 )             \
+     74                  | ( (uint32_t) (b)[(i) + 1] << 16 )             \
+     75                  | ( (uint32_t) (b)[(i) + 2] <<  8 )             \
+     76                  | ( (uint32_t) (b)[(i) + 3]       );            \
+     77          }
+     78          #endif
+     79          
+     80          #ifndef PUT_UINT32_BE
+     81          #define PUT_UINT32_BE(n,b,i)                            \
+     82          {                                                       \
+     83              (b)[(i)    ] = (unsigned char) ( (n) >> 24 );       \
+     84              (b)[(i) + 1] = (unsigned char) ( (n) >> 16 );       \
+     85              (b)[(i) + 2] = (unsigned char) ( (n) >>  8 );       \
+     86              (b)[(i) + 3] = (unsigned char) ( (n)       );       \
+     87          }
+     88          #endif
+     89          
+     90          void mbedtls_sha1_init( mbedtls_sha1_context *ctx )
+     91          {
+     92              memset( ctx, 0, sizeof( mbedtls_sha1_context ) );
+     93          }
+     94          
+     95          void mbedtls_sha1_free( mbedtls_sha1_context *ctx )
+     96          {
+     97              if( ctx == NULL )
+     98                  return;
+     99          
+    100              mbedtls_zeroize( ctx, sizeof( mbedtls_sha1_context ) );
+    101          }
+    102          
+    103          void mbedtls_sha1_clone( mbedtls_sha1_context *dst,
+    104                                   const mbedtls_sha1_context *src )
+    105          {
+    106              *dst = *src;
+    107          }
+    108          
+    109          /*
+    110           * SHA-1 context setup
+    111           */
+    112          int mbedtls_sha1_starts_ret( mbedtls_sha1_context *ctx )
+    113          {
+    114              ctx->total[0] = 0;
+    115              ctx->total[1] = 0;
+    116          
+    117              ctx->state[0] = 0x67452301;
+    118              ctx->state[1] = 0xEFCDAB89;
+    119              ctx->state[2] = 0x98BADCFE;
+    120              ctx->state[3] = 0x10325476;
+    121              ctx->state[4] = 0xC3D2E1F0;
+    122          
+    123              return( 0 );
+    124          }
+    125          
+    126          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    127          void mbedtls_sha1_starts( mbedtls_sha1_context *ctx )
+    128          {
+    129              mbedtls_sha1_starts_ret( ctx );
+    130          }
+    131          #endif
+    132          
+    133          #if !defined(MBEDTLS_SHA1_PROCESS_ALT)
+    134          int mbedtls_internal_sha1_process( mbedtls_sha1_context *ctx,
+    135                                             const unsigned char data[64] )
+    136          {
+    137              uint32_t temp, W[16], A, B, C, D, E;
+    138          
+    139              GET_UINT32_BE( W[ 0], data,  0 );
+    140              GET_UINT32_BE( W[ 1], data,  4 );
+    141              GET_UINT32_BE( W[ 2], data,  8 );
+    142              GET_UINT32_BE( W[ 3], data, 12 );
+    143              GET_UINT32_BE( W[ 4], data, 16 );
+    144              GET_UINT32_BE( W[ 5], data, 20 );
+    145              GET_UINT32_BE( W[ 6], data, 24 );
+    146              GET_UINT32_BE( W[ 7], data, 28 );
+    147              GET_UINT32_BE( W[ 8], data, 32 );
+    148              GET_UINT32_BE( W[ 9], data, 36 );
+    149              GET_UINT32_BE( W[10], data, 40 );
+    150              GET_UINT32_BE( W[11], data, 44 );
+    151              GET_UINT32_BE( W[12], data, 48 );
+    152              GET_UINT32_BE( W[13], data, 52 );
+    153              GET_UINT32_BE( W[14], data, 56 );
+    154              GET_UINT32_BE( W[15], data, 60 );
+    155          
+    156          #define S(x,n) ((x << n) | ((x & 0xFFFFFFFF) >> (32 - n)))
+    157          
+    158          #define R(t)                                            \
+    159          (                                                       \
+    160              temp = W[( t -  3 ) & 0x0F] ^ W[( t - 8 ) & 0x0F] ^ \
+    161                     W[( t - 14 ) & 0x0F] ^ W[  t       & 0x0F],  \
+    162              ( W[t & 0x0F] = S(temp,1) )                         \
+    163          )
+    164          
+    165          #define P(a,b,c,d,e,x)                                  \
+    166          {                                                       \
+    167              e += S(a,5) + F(b,c,d) + K + x; b = S(b,30);        \
+    168          }
+    169          
+    170              A = ctx->state[0];
+    171              B = ctx->state[1];
+    172              C = ctx->state[2];
+    173              D = ctx->state[3];
+    174              E = ctx->state[4];
+    175          
+    176          #define F(x,y,z) (z ^ (x & (y ^ z)))
+    177          #define K 0x5A827999
+    178          
+    179              P( A, B, C, D, E, W[0]  );
+    180              P( E, A, B, C, D, W[1]  );
+    181              P( D, E, A, B, C, W[2]  );
+    182              P( C, D, E, A, B, W[3]  );
+    183              P( B, C, D, E, A, W[4]  );
+    184              P( A, B, C, D, E, W[5]  );
+    185              P( E, A, B, C, D, W[6]  );
+    186              P( D, E, A, B, C, W[7]  );
+    187              P( C, D, E, A, B, W[8]  );
+    188              P( B, C, D, E, A, W[9]  );
+    189              P( A, B, C, D, E, W[10] );
+    190              P( E, A, B, C, D, W[11] );
+    191              P( D, E, A, B, C, W[12] );
+    192              P( C, D, E, A, B, W[13] );
+    193              P( B, C, D, E, A, W[14] );
+    194              P( A, B, C, D, E, W[15] );
+    195              P( E, A, B, C, D, R(16) );
+    196              P( D, E, A, B, C, R(17) );
+    197              P( C, D, E, A, B, R(18) );
+    198              P( B, C, D, E, A, R(19) );
+    199          
+    200          #undef K
+    201          #undef F
+    202          
+    203          #define F(x,y,z) (x ^ y ^ z)
+    204          #define K 0x6ED9EBA1
+    205          
+    206              P( A, B, C, D, E, R(20) );
+    207              P( E, A, B, C, D, R(21) );
+    208              P( D, E, A, B, C, R(22) );
+    209              P( C, D, E, A, B, R(23) );
+    210              P( B, C, D, E, A, R(24) );
+    211              P( A, B, C, D, E, R(25) );
+    212              P( E, A, B, C, D, R(26) );
+    213              P( D, E, A, B, C, R(27) );
+    214              P( C, D, E, A, B, R(28) );
+    215              P( B, C, D, E, A, R(29) );
+    216              P( A, B, C, D, E, R(30) );
+    217              P( E, A, B, C, D, R(31) );
+    218              P( D, E, A, B, C, R(32) );
+    219              P( C, D, E, A, B, R(33) );
+    220              P( B, C, D, E, A, R(34) );
+    221              P( A, B, C, D, E, R(35) );
+    222              P( E, A, B, C, D, R(36) );
+    223              P( D, E, A, B, C, R(37) );
+    224              P( C, D, E, A, B, R(38) );
+    225              P( B, C, D, E, A, R(39) );
+    226          
+    227          #undef K
+    228          #undef F
+    229          
+    230          #define F(x,y,z) ((x & y) | (z & (x | y)))
+    231          #define K 0x8F1BBCDC
+    232          
+    233              P( A, B, C, D, E, R(40) );
+    234              P( E, A, B, C, D, R(41) );
+    235              P( D, E, A, B, C, R(42) );
+    236              P( C, D, E, A, B, R(43) );
+    237              P( B, C, D, E, A, R(44) );
+    238              P( A, B, C, D, E, R(45) );
+    239              P( E, A, B, C, D, R(46) );
+    240              P( D, E, A, B, C, R(47) );
+    241              P( C, D, E, A, B, R(48) );
+    242              P( B, C, D, E, A, R(49) );
+    243              P( A, B, C, D, E, R(50) );
+    244              P( E, A, B, C, D, R(51) );
+    245              P( D, E, A, B, C, R(52) );
+    246              P( C, D, E, A, B, R(53) );
+    247              P( B, C, D, E, A, R(54) );
+    248              P( A, B, C, D, E, R(55) );
+    249              P( E, A, B, C, D, R(56) );
+    250              P( D, E, A, B, C, R(57) );
+    251              P( C, D, E, A, B, R(58) );
+    252              P( B, C, D, E, A, R(59) );
+    253          
+    254          #undef K
+    255          #undef F
+    256          
+    257          #define F(x,y,z) (x ^ y ^ z)
+    258          #define K 0xCA62C1D6
+    259          
+    260              P( A, B, C, D, E, R(60) );
+    261              P( E, A, B, C, D, R(61) );
+    262              P( D, E, A, B, C, R(62) );
+    263              P( C, D, E, A, B, R(63) );
+    264              P( B, C, D, E, A, R(64) );
+    265              P( A, B, C, D, E, R(65) );
+    266              P( E, A, B, C, D, R(66) );
+    267              P( D, E, A, B, C, R(67) );
+    268              P( C, D, E, A, B, R(68) );
+    269              P( B, C, D, E, A, R(69) );
+    270              P( A, B, C, D, E, R(70) );
+    271              P( E, A, B, C, D, R(71) );
+    272              P( D, E, A, B, C, R(72) );
+    273              P( C, D, E, A, B, R(73) );
+    274              P( B, C, D, E, A, R(74) );
+    275              P( A, B, C, D, E, R(75) );
+    276              P( E, A, B, C, D, R(76) );
+    277              P( D, E, A, B, C, R(77) );
+    278              P( C, D, E, A, B, R(78) );
+    279              P( B, C, D, E, A, R(79) );
+    280          
+    281          #undef K
+    282          #undef F
+    283          
+    284              ctx->state[0] += A;
+    285              ctx->state[1] += B;
+    286              ctx->state[2] += C;
+    287              ctx->state[3] += D;
+    288              ctx->state[4] += E;
+    289          
+    290              return( 0 );
+    291          }
+    292          
+    293          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    294          void mbedtls_sha1_process( mbedtls_sha1_context *ctx,
+    295                                     const unsigned char data[64] )
+    296          {
+    297              mbedtls_internal_sha1_process( ctx, data );
+    298          }
+    299          #endif
+    300          #endif /* !MBEDTLS_SHA1_PROCESS_ALT */
+    301          
+    302          /*
+    303           * SHA-1 process buffer
+    304           */
+    305          int mbedtls_sha1_update_ret( mbedtls_sha1_context *ctx,
+    306                                       const unsigned char *input,
+    307                                       size_t ilen )
+    308          {
+    309              int ret;
+    310              size_t fill;
+    311              uint32_t left;
+    312          
+    313              if( ilen == 0 )
+    314                  return( 0 );
+    315          
+    316              left = ctx->total[0] & 0x3F;
+    317              fill = 64 - left;
+    318          
+    319              ctx->total[0] += (uint32_t) ilen;
+    320              ctx->total[0] &= 0xFFFFFFFF;
+    321          
+    322              if( ctx->total[0] < (uint32_t) ilen )
+    323                  ctx->total[1]++;
+    324          
+    325              if( left && ilen >= fill )
+    326              {
+    327                  memcpy( (void *) (ctx->buffer + left), input, fill );
+    328          
+    329                  if( ( ret = mbedtls_internal_sha1_process( ctx, ctx->buffer ) ) != 0 )
+    330                      return( ret );
+    331          
+    332                  input += fill;
+    333                  ilen  -= fill;
+    334                  left = 0;
+    335              }
+    336          
+    337              while( ilen >= 64 )
+    338              {
+    339                  if( ( ret = mbedtls_internal_sha1_process( ctx, input ) ) != 0 )
+    340                      return( ret );
+    341          
+    342                  input += 64;
+    343                  ilen  -= 64;
+    344              }
+    345          
+    346              if( ilen > 0 )
+    347                  memcpy( (void *) (ctx->buffer + left), input, ilen );
+    348          
+    349              return( 0 );
+    350          }
+    351          
+    352          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    353          void mbedtls_sha1_update( mbedtls_sha1_context *ctx,
+    354                                    const unsigned char *input,
+    355                                    size_t ilen )
+    356          {
+    357              mbedtls_sha1_update_ret( ctx, input, ilen );
+    358          }
+    359          #endif
+    360          
+    361          /*
+    362           * SHA-1 final digest
+    363           */
+    364          int mbedtls_sha1_finish_ret( mbedtls_sha1_context *ctx,
+    365                                       unsigned char output[20] )
+    366          {
+    367              int ret;
+    368              uint32_t used;
+    369              uint32_t high, low;
+    370          
+    371              /*
+    372               * Add padding: 0x80 then 0x00 until 8 bytes remain for the length
+    373               */
+    374              used = ctx->total[0] & 0x3F;
+    375          
+    376              ctx->buffer[used++] = 0x80;
+    377          
+    378              if( used <= 56 )
+    379              {
+    380                  /* Enough room for padding + length in current block */
+    381                  memset( ctx->buffer + used, 0, 56 - used );
+    382              }
+    383              else
+    384              {
+    385                  /* We'll need an extra block */
+    386                  memset( ctx->buffer + used, 0, 64 - used );
+    387          
+    388                  if( ( ret = mbedtls_internal_sha1_process( ctx, ctx->buffer ) ) != 0 )
+    389                      return( ret );
+    390          
+    391                  memset( ctx->buffer, 0, 56 );
+    392              }
+    393          
+    394              /*
+    395               * Add message length
+    396               */
+    397              high = ( ctx->total[0] >> 29 )
+    398                   | ( ctx->total[1] <<  3 );
+    399              low  = ( ctx->total[0] <<  3 );
+    400          
+    401              PUT_UINT32_BE( high, ctx->buffer, 56 );
+    402              PUT_UINT32_BE( low,  ctx->buffer, 60 );
+    403          
+    404              if( ( ret = mbedtls_internal_sha1_process( ctx, ctx->buffer ) ) != 0 )
+    405                  return( ret );
+    406          
+    407              /*
+    408               * Output final state
+    409               */
+    410              PUT_UINT32_BE( ctx->state[0], output,  0 );
+    411              PUT_UINT32_BE( ctx->state[1], output,  4 );
+    412              PUT_UINT32_BE( ctx->state[2], output,  8 );
+    413              PUT_UINT32_BE( ctx->state[3], output, 12 );
+    414              PUT_UINT32_BE( ctx->state[4], output, 16 );
+    415          
+    416              return( 0 );
+    417          }
+    418          
+    419          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    420          void mbedtls_sha1_finish( mbedtls_sha1_context *ctx,
+    421                                    unsigned char output[20] )
+    422          {
+    423              mbedtls_sha1_finish_ret( ctx, output );
+    424          }
+    425          #endif
+    426          
+    427          #endif /* !MBEDTLS_SHA1_ALT */
+    428          
+    429          /*
+    430           * output = SHA-1( input buffer )
+    431           */
+    432          int mbedtls_sha1_ret( const unsigned char *input,
+    433                                size_t ilen,
+    434                                unsigned char output[20] )
+    435          {
+    436              int ret;
+    437              mbedtls_sha1_context ctx;
+    438          
+    439              mbedtls_sha1_init( &ctx );
+    440          
+    441              if( ( ret = mbedtls_sha1_starts_ret( &ctx ) ) != 0 )
+    442                  goto exit;
+    443          
+    444              if( ( ret = mbedtls_sha1_update_ret( &ctx, input, ilen ) ) != 0 )
+    445                  goto exit;
+    446          
+    447              if( ( ret = mbedtls_sha1_finish_ret( &ctx, output ) ) != 0 )
+    448                  goto exit;
+    449          
+    450          exit:
+    451              mbedtls_sha1_free( &ctx );
+    452          
+    453              return( ret );
+    454          }
+    455          
+    456          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    457          void mbedtls_sha1( const unsigned char *input,
+    458                             size_t ilen,
+    459                             unsigned char output[20] )
+    460          {
+    461              mbedtls_sha1_ret( input, ilen, output );
+    462          }
+    463          #endif
+    464          
+    465          #if defined(MBEDTLS_SELF_TEST)
+    466          /*
+    467           * FIPS-180-1 test vectors
+    468           */
+    469          static const unsigned char sha1_test_buf[3][57] =
+    470          {
+    471              { "abc" },
+    472              { "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq" },
+    473              { "" }
+    474          };
+    475          
+    476          static const size_t sha1_test_buflen[3] =
+    477          {
+    478              3, 56, 1000
+    479          };
+    480          
+    481          static const unsigned char sha1_test_sum[3][20] =
+    482          {
+    483              { 0xA9, 0x99, 0x3E, 0x36, 0x47, 0x06, 0x81, 0x6A, 0xBA, 0x3E,
+    484                0x25, 0x71, 0x78, 0x50, 0xC2, 0x6C, 0x9C, 0xD0, 0xD8, 0x9D },
+    485              { 0x84, 0x98, 0x3E, 0x44, 0x1C, 0x3B, 0xD2, 0x6E, 0xBA, 0xAE,
+    486                0x4A, 0xA1, 0xF9, 0x51, 0x29, 0xE5, 0xE5, 0x46, 0x70, 0xF1 },
+    487              { 0x34, 0xAA, 0x97, 0x3C, 0xD4, 0xC4, 0xDA, 0xA4, 0xF6, 0x1E,
+    488                0xEB, 0x2B, 0xDB, 0xAD, 0x27, 0x31, 0x65, 0x34, 0x01, 0x6F }
+    489          };
+    490          
+    491          /*
+    492           * Checkup routine
+    493           */
+    494          int mbedtls_sha1_self_test( int verbose )
+    495          {
+    496              int i, j, buflen, ret = 0;
+    497              unsigned char buf[1024];
+    498              unsigned char sha1sum[20];
+    499              mbedtls_sha1_context ctx;
+    500          
+    501              mbedtls_sha1_init( &ctx );
+    502          
+    503              /*
+    504               * SHA-1
+    505               */
+    506              for( i = 0; i < 3; i++ )
+    507              {
+    508                  if( verbose != 0 )
+    509                      mbedtls_printf( "  SHA-1 test #%d: ", i + 1 );
+    510          
+    511                  if( ( ret = mbedtls_sha1_starts_ret( &ctx ) ) != 0 )
+    512                      goto fail;
+    513          
+    514                  if( i == 2 )
+    515                  {
+    516                      memset( buf, 'a', buflen = 1000 );
+    517          
+    518                      for( j = 0; j < 1000; j++ )
+    519                      {
+    520                          ret = mbedtls_sha1_update_ret( &ctx, buf, buflen );
+    521                          if( ret != 0 )
+    522                              goto fail;
+    523                      }
+    524                  }
+    525                  else
+    526                  {
+    527                      ret = mbedtls_sha1_update_ret( &ctx, sha1_test_buf[i],
+    528                                                     sha1_test_buflen[i] );
+    529                      if( ret != 0 )
+    530                          goto fail;
+    531                  }
+    532          
+    533                  if( ( ret = mbedtls_sha1_finish_ret( &ctx, sha1sum ) ) != 0 )
+    534                      goto fail;
+    535          
+    536                  if( memcmp( sha1sum, sha1_test_sum[i], 20 ) != 0 )
+    537                  {
+    538                      ret = 1;
+    539                      goto fail;
+    540                  }
+    541          
+    542                  if( verbose != 0 )
+    543                      mbedtls_printf( "passed\n" );
+    544              }
+    545          
+    546              if( verbose != 0 )
+    547                  mbedtls_printf( "\n" );
+    548          
+    549              goto exit;
+    550          
+    551          fail:
+    552              if( verbose != 0 )
+    553                  mbedtls_printf( "failed\n" );
+    554          
+    555          exit:
+    556              mbedtls_sha1_free( &ctx );
+    557          
+    558              return( ret );
+    559          }
+    560          
+    561          #endif /* MBEDTLS_SELF_TEST */
+    562          
+    563          #endif /* MBEDTLS_SHA1_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

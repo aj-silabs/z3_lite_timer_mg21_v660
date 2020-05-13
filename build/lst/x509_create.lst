@@ -1,0 +1,521 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:20:04
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509_create.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW7057.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509_create.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"x509_create.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\x509_create.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\x509_create.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509_create.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  X.509 base functions for creating certificates / CSRs
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_X509_CREATE_C)
+     41          
+     42          #include "mbedtls/x509.h"
+     43          #include "mbedtls/asn1write.h"
+     44          #include "mbedtls/oid.h"
+     45          
+     46          #include <string.h>
+     47          
+     48          typedef struct {
+     49              const char *name;
+     50              size_t name_len;
+     51              const char*oid;
+     52          } x509_attr_descriptor_t;
+     53          
+     54          #define ADD_STRLEN( s )     s, sizeof( s ) - 1
+     55          
+     56          static const x509_attr_descriptor_t x509_attrs[] =
+     57          {
+     58              { ADD_STRLEN( "CN" ),                       MBEDTLS_OID_AT_CN },
+     59              { ADD_STRLEN( "commonName" ),               MBEDTLS_OID_AT_CN },
+     60              { ADD_STRLEN( "C" ),                        MBEDTLS_OID_AT_COUNTRY },
+     61              { ADD_STRLEN( "countryName" ),              MBEDTLS_OID_AT_COUNTRY },
+     62              { ADD_STRLEN( "O" ),                        MBEDTLS_OID_AT_ORGANIZATION },
+     63              { ADD_STRLEN( "organizationName" ),         MBEDTLS_OID_AT_ORGANIZATION },
+     64              { ADD_STRLEN( "L" ),                        MBEDTLS_OID_AT_LOCALITY },
+     65              { ADD_STRLEN( "locality" ),                 MBEDTLS_OID_AT_LOCALITY },
+     66              { ADD_STRLEN( "R" ),                        MBEDTLS_OID_PKCS9_EMAIL },
+     67              { ADD_STRLEN( "OU" ),                       MBEDTLS_OID_AT_ORG_UNIT },
+     68              { ADD_STRLEN( "organizationalUnitName" ),   MBEDTLS_OID_AT_ORG_UNIT },
+     69              { ADD_STRLEN( "ST" ),                       MBEDTLS_OID_AT_STATE },
+     70              { ADD_STRLEN( "stateOrProvinceName" ),      MBEDTLS_OID_AT_STATE },
+     71              { ADD_STRLEN( "emailAddress" ),             MBEDTLS_OID_PKCS9_EMAIL },
+     72              { ADD_STRLEN( "serialNumber" ),             MBEDTLS_OID_AT_SERIAL_NUMBER },
+     73              { ADD_STRLEN( "postalAddress" ),            MBEDTLS_OID_AT_POSTAL_ADDRESS },
+     74              { ADD_STRLEN( "postalCode" ),               MBEDTLS_OID_AT_POSTAL_CODE },
+     75              { ADD_STRLEN( "dnQualifier" ),              MBEDTLS_OID_AT_DN_QUALIFIER },
+     76              { ADD_STRLEN( "title" ),                    MBEDTLS_OID_AT_TITLE },
+     77              { ADD_STRLEN( "surName" ),                  MBEDTLS_OID_AT_SUR_NAME },
+     78              { ADD_STRLEN( "SN" ),                       MBEDTLS_OID_AT_SUR_NAME },
+     79              { ADD_STRLEN( "givenName" ),                MBEDTLS_OID_AT_GIVEN_NAME },
+     80              { ADD_STRLEN( "GN" ),                       MBEDTLS_OID_AT_GIVEN_NAME },
+     81              { ADD_STRLEN( "initials" ),                 MBEDTLS_OID_AT_INITIALS },
+     82              { ADD_STRLEN( "pseudonym" ),                MBEDTLS_OID_AT_PSEUDONYM },
+     83              { ADD_STRLEN( "generationQualifier" ),      MBEDTLS_OID_AT_GENERATION_QUALIFIER },
+     84              { ADD_STRLEN( "domainComponent" ),          MBEDTLS_OID_DOMAIN_COMPONENT },
+     85              { ADD_STRLEN( "DC" ),                       MBEDTLS_OID_DOMAIN_COMPONENT },
+     86              { NULL, 0, NULL }
+     87          };
+     88          
+     89          static const char *x509_at_oid_from_name( const char *name, size_t name_len )
+     90          {
+     91              const x509_attr_descriptor_t *cur;
+     92          
+     93              for( cur = x509_attrs; cur->name != NULL; cur++ )
+     94                  if( cur->name_len == name_len &&
+     95                      strncmp( cur->name, name, name_len ) == 0 )
+     96                      break;
+     97          
+     98              return( cur->oid );
+     99          }
+    100          
+    101          int mbedtls_x509_string_to_names( mbedtls_asn1_named_data **head, const char *name )
+    102          {
+    103              int ret = 0;
+    104              const char *s = name, *c = s;
+    105              const char *end = s + strlen( s );
+    106              const char *oid = NULL;
+    107              int in_tag = 1;
+    108              char data[MBEDTLS_X509_MAX_DN_NAME_SIZE];
+    109              char *d = data;
+    110          
+    111              /* Clear existing chain if present */
+    112              mbedtls_asn1_free_named_data_list( head );
+    113          
+    114              while( c <= end )
+    115              {
+    116                  if( in_tag && *c == '=' )
+    117                  {
+    118                      if( ( oid = x509_at_oid_from_name( s, c - s ) ) == NULL )
+    119                      {
+    120                          ret = MBEDTLS_ERR_X509_UNKNOWN_OID;
+    121                          goto exit;
+    122                      }
+    123          
+    124                      s = c + 1;
+    125                      in_tag = 0;
+    126                      d = data;
+    127                  }
+    128          
+    129                  if( !in_tag && *c == '\\' && c != end )
+    130                  {
+    131                      c++;
+    132          
+    133                      /* Check for valid escaped characters */
+    134                      if( c == end || *c != ',' )
+    135                      {
+    136                          ret = MBEDTLS_ERR_X509_INVALID_NAME;
+    137                          goto exit;
+    138                      }
+    139                  }
+    140                  else if( !in_tag && ( *c == ',' || c == end ) )
+    141                  {
+    142                      if( mbedtls_asn1_store_named_data( head, oid, strlen( oid ),
+    143                                                 (unsigned char *) data,
+    144                                                 d - data ) == NULL )
+    145                      {
+    146                          return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    147                      }
+    148          
+    149                      while( c < end && *(c + 1) == ' ' )
+    150                          c++;
+    151          
+    152                      s = c + 1;
+    153                      in_tag = 1;
+    154                  }
+    155          
+    156                  if( !in_tag && s != c + 1 )
+    157                  {
+    158                      *(d++) = *c;
+    159          
+    160                      if( d - data == MBEDTLS_X509_MAX_DN_NAME_SIZE )
+    161                      {
+    162                          ret = MBEDTLS_ERR_X509_INVALID_NAME;
+    163                          goto exit;
+    164                      }
+    165                  }
+    166          
+    167                  c++;
+    168              }
+    169          
+    170          exit:
+    171          
+    172              return( ret );
+    173          }
+    174          
+    175          /* The first byte of the value in the mbedtls_asn1_named_data structure is reserved
+    176           * to store the critical boolean for us
+    177           */
+    178          int mbedtls_x509_set_extension( mbedtls_asn1_named_data **head, const char *oid, size_t oid_len,
+    179                                  int critical, const unsigned char *val, size_t val_len )
+    180          {
+    181              mbedtls_asn1_named_data *cur;
+    182          
+    183              if( ( cur = mbedtls_asn1_store_named_data( head, oid, oid_len,
+    184                                                 NULL, val_len + 1 ) ) == NULL )
+    185              {
+    186                  return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    187              }
+    188          
+    189              cur->val.p[0] = critical;
+    190              memcpy( cur->val.p + 1, val, val_len );
+    191          
+    192              return( 0 );
+    193          }
+    194          
+    195          /*
+    196           *  RelativeDistinguishedName ::=
+    197           *    SET OF AttributeTypeAndValue
+    198           *
+    199           *  AttributeTypeAndValue ::= SEQUENCE {
+    200           *    type     AttributeType,
+    201           *    value    AttributeValue }
+    202           *
+    203           *  AttributeType ::= OBJECT IDENTIFIER
+    204           *
+    205           *  AttributeValue ::= ANY DEFINED BY AttributeType
+    206           */
+    207          static int x509_write_name( unsigned char **p, unsigned char *start,
+    208                                      const char *oid, size_t oid_len,
+    209                                      const unsigned char *name, size_t name_len )
+    210          {
+    211              int ret;
+    212              size_t len = 0;
+    213          
+    214              // Write PrintableString for all except MBEDTLS_OID_PKCS9_EMAIL
+    215              //
+    216              if( MBEDTLS_OID_SIZE( MBEDTLS_OID_PKCS9_EMAIL ) == oid_len &&
+    217                  memcmp( oid, MBEDTLS_OID_PKCS9_EMAIL, oid_len ) == 0 )
+    218              {
+    219                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_ia5_string( p, start,
+    220                                                            (const char *) name,
+    221                                                            name_len ) );
+    222              }
+    223              else
+    224              {
+    225                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_printable_string( p, start,
+    226                                                                  (const char *) name,
+    227                                                                  name_len ) );
+    228              }
+    229          
+    230              // Write OID
+    231              //
+    232              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_oid( p, start, oid, oid_len ) );
+    233          
+    234              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, len ) );
+    235              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_CONSTRUCTED |
+    236                                                           MBEDTLS_ASN1_SEQUENCE ) );
+    237          
+    238              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, len ) );
+    239              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_CONSTRUCTED |
+    240                                                           MBEDTLS_ASN1_SET ) );
+    241          
+    242              return( (int) len );
+    243          }
+    244          
+    245          int mbedtls_x509_write_names( unsigned char **p, unsigned char *start,
+    246                                mbedtls_asn1_named_data *first )
+    247          {
+    248              int ret;
+    249              size_t len = 0;
+    250              mbedtls_asn1_named_data *cur = first;
+    251          
+    252              while( cur != NULL )
+    253              {
+    254                  MBEDTLS_ASN1_CHK_ADD( len, x509_write_name( p, start, (char *) cur->oid.p,
+    255                                                      cur->oid.len,
+    256                                                      cur->val.p, cur->val.len ) );
+    257                  cur = cur->next;
+    258              }
+    259          
+    260              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, len ) );
+    261              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_CONSTRUCTED |
+    262                                                           MBEDTLS_ASN1_SEQUENCE ) );
+    263          
+    264              return( (int) len );
+    265          }
+    266          
+    267          int mbedtls_x509_write_sig( unsigned char **p, unsigned char *start,
+    268                              const char *oid, size_t oid_len,
+    269                              unsigned char *sig, size_t size )
+    270          {
+    271              int ret;
+    272              size_t len = 0;
+    273          
+    274              if( *p < start || (size_t)( *p - start ) < size )
+    275                  return( MBEDTLS_ERR_ASN1_BUF_TOO_SMALL );
+    276          
+    277              len = size;
+    278              (*p) -= len;
+    279              memcpy( *p, sig, len );
+    280          
+    281              if( *p - start < 1 )
+    282                  return( MBEDTLS_ERR_ASN1_BUF_TOO_SMALL );
+    283          
+    284              *--(*p) = 0;
+    285              len += 1;
+    286          
+    287              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, len ) );
+    288              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_BIT_STRING ) );
+    289          
+    290              // Write OID
+    291              //
+    292              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_algorithm_identifier( p, start, oid,
+    293                                                                  oid_len, 0 ) );
+    294          
+    295              return( (int) len );
+    296          }
+    297          
+    298          static int x509_write_extension( unsigned char **p, unsigned char *start,
+    299                                           mbedtls_asn1_named_data *ext )
+    300          {
+    301              int ret;
+    302              size_t len = 0;
+    303          
+    304              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_raw_buffer( p, start, ext->val.p + 1,
+    305                                                        ext->val.len - 1 ) );
+    306              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, ext->val.len - 1 ) );
+    307              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_OCTET_STRING ) );
+    308          
+    309              if( ext->val.p[0] != 0 )
+    310              {
+    311                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_bool( p, start, 1 ) );
+    312              }
+    313          
+    314              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_raw_buffer( p, start, ext->oid.p,
+    315                                                        ext->oid.len ) );
+    316              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, ext->oid.len ) );
+    317              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_OID ) );
+    318          
+    319              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, len ) );
+    320              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_CONSTRUCTED |
+    321                                                           MBEDTLS_ASN1_SEQUENCE ) );
+    322          
+    323              return( (int) len );
+    324          }
+    325          
+    326          /*
+    327           * Extension  ::=  SEQUENCE  {
+    328           *     extnID      OBJECT IDENTIFIER,
+    329           *     critical    BOOLEAN DEFAULT FALSE,
+    330           *     extnValue   OCTET STRING
+    331           *                 -- contains the DER encoding of an ASN.1 value
+    332           *                 -- corresponding to the extension type identified
+    333           *                 -- by extnID
+    334           *     }
+    335           */
+    336          int mbedtls_x509_write_extensions( unsigned char **p, unsigned char *start,
+    337                                     mbedtls_asn1_named_data *first )
+    338          {
+    339              int ret;
+    340              size_t len = 0;
+    341              mbedtls_asn1_named_data *cur_ext = first;
+    342          
+    343              while( cur_ext != NULL )
+    344              {
+    345                  MBEDTLS_ASN1_CHK_ADD( len, x509_write_extension( p, start, cur_ext ) );
+    346                  cur_ext = cur_ext->next;
+    347              }
+    348          
+    349              return( (int) len );
+    350          }
+    351          
+    352          #endif /* MBEDTLS_X509_CREATE_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

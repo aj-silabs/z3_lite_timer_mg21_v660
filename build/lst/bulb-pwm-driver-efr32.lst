@@ -1,0 +1,652 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         13/Jun/2019  15:39:43
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\plugin\plugin-common\bulb-pwm-driver\bulb-pwm-driver-efr32.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW9480.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\plugin\plugin-common\bulb-pwm-driver\bulb-pwm-driver-efr32.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"bulb-pwm-driver-efr32.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\plugin\plugin-common\bulb-pwm-driver\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\bulb-pwm-driver-efr32.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\bulb-pwm-driver-efr32.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\plugin\plugin-common\bulb-pwm-driver\bulb-pwm-driver-efr32.c
+      1          // Copyright 2016 Silicon Laboratories, Inc.                                *80*
+      2          
+      3          #include PLATFORM_HEADER
+      4          #include CONFIGURATION_HEADER
+      5          #include "stack/include/ember-types.h"
+      6          #include "stack/include/event.h"
+      7          #include "hal/hal.h"
+      8          
+      9          #include EMBER_AF_API_BULB_PWM_DRIVER
+     10          
+     11          // EFR headers
+     12          #include "em_cmu.h"
+     13          #include "em_gpio.h"
+     14          #include "em_timer.h"
+     15          
+     16          // ---------- MACRO DEFINITIONS ----------
+     17          #if HAL_BULBPWM_ENABLE == 1
+     18          
+     19          // ---------- HWCONFIG Section -----------
+     20          // To support HWCONFIG, we needed to change the names of different macros.  We
+     21          // also needed to define certain settings based on which channels are available.
+     22          // Note:  in order to simplify the code, we decided to assume white will be on
+     23          // timer 0 channel 0, lowtemp will be on timer 0 channel 1, and so forth.
+     24          // This doesn't impose a huge constraint, but it greatly simplifies the code.
+     25          
+     26          #define BULB_PWM_USING_TIMER0
+     27          
+     28          #define BULB_PWM_WHITE_TIMER      BSP_BULBPWM_TIMER
+     29          #define BULB_PWM_WHITE_CHANNEL    0
+     30          #define BULB_PWM_LOWTEMP_TIMER    BSP_BULBPWM_TIMER
+     31          #define BULB_PWM_LOWTEMP_CHANNEL  1
+     32          #define BULB_PWM_STATUS_TIMER     BSP_BULBPWM_TIMER
+     33          #define BULB_PWM_STATUS_CHANNEL   2
+     34          
+     35          #if HAL_BULBPWM_COLOR_ENABLE == 1
+     36            #define BULB_PWM_USING_TIMER1
+     37            #define BULB_PWM_RED_TIMER        BSP_BULBPWM_COLOR_TIMER
+     38            #define BULB_PWM_RED_CHANNEL      0
+     39            #define BULB_PWM_GREEN_TIMER      BSP_BULBPWM_COLOR_TIMER
+     40            #define BULB_PWM_GREEN_CHANNEL    1
+     41            #define BULB_PWM_BLUE_TIMER       BSP_BULBPWM_COLOR_TIMER
+     42            #define BULB_PWM_BLUE_CHANNEL     2
+     43            #define BULB_PWM_AMBER_TIMER      BSP_BULBPWM_COLOR_TIMER
+     44            #define BULB_PWM_AMBER_CHANNEL    3
+     45          #endif
+     46          
+     47          // ---------- End of HWCONFIG Section -----------
+     48          
+     49          #define CLOCK_FREQUENCY         38400000
+     50          
+     51          #if defined(EMBER_AF_PLUGIN_PWM_CONTROL_PWM_POLARITY)
+     52          #if EMBER_AF_PLUGIN_PWM_CONTROL_PWM_POLARITY == 0
+     53          #define PWM_INVERT_OUTPUT       true
+     54          #else
+     55          #define PWM_INVERT_OUTPUT       false
+     56          #endif
+     57          #else
+     58          #define PWM_INVERT_OUTPUT       false
+     59          #endif
+     60          
+     61          #define TIMER_DEFAULT_INIT            \
+     62            {                                   \
+     63              .eventCtrl = timerEventEveryEdge, \
+     64              .edge = timerEdgeBoth,            \
+     65              .prsSel = timerPRSSELCh0,         \
+     66              .cufoa = timerOutputActionNone,   \
+     67              .cofoa = timerOutputActionNone,   \
+     68              .cmoa = timerOutputActionToggle,  \
+     69              .mode = timerCCModePWM,           \
+     70              .filter = false,                  \
+     71              .prsInput = false,                \
+     72              .coist = false,                   \
+     73              .outInvert = PWM_INVERT_OUTPUT,   \
+     74            }
+     75          
+     76          // ---------- GLOBAL VARIABLES ----------
+
+   \                                 In section .bss, align 2
+     77          static uint16_t ticksPerPeriod;
+   \                     ticksPerPeriod:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+   \        0x0                      DS8 2
+     78          static uint16_t pwmFrequency;
+     79          
+     80          // ---------- Predeclared callbacks ----------
+     81          uint16_t halBulbPwmDriverFrequencyCallback(void);
+     82          void halBulbPwmDriverInitCompleteCallback(void);
+     83          
+     84          // Funciton to initialize the blink code datastructures.
+     85          void halBulbPwmDriverBlinkInit(void);
+     86          
+     87          // ----------- function definitions
+     88          static void initGpio(void)
+     89          {
+     90            // GPIO setup
+     91            CMU_ClockEnable(cmuClock_GPIO, true);
+     92          
+     93          #if HAL_BULBPWM_WHITE_ENABLE == 1
+     94            GPIO_PinModeSet(BSP_BULBPWM_CC0_PORT,
+     95                            BSP_BULBPWM_CC0_PIN,
+     96                            gpioModePushPull,
+     97                            0);
+     98          #endif
+     99          #if HAL_BULBPWM_LOWTEMP_ENABLE == 1
+    100            GPIO_PinModeSet(BSP_BULBPWM_CC1_PORT,
+    101                            BSP_BULBPWM_CC1_PIN,
+    102                            gpioModePushPull,
+    103                            0);
+    104          #endif
+    105          #if HAL_BULBPWM_STATUS_ENABLE == 1
+    106            GPIO_PinModeSet(BSP_BULBPWM_CC2_PORT,
+    107                            BSP_BULBPWM_CC2_PIN,
+    108                            gpioModePushPull,
+    109                            0);
+    110          #endif
+    111          #if HAL_BULBPWM_RED_ENABLE == 1
+    112            GPIO_PinModeSet(BSP_BULBPWM_COLOR_CC0_PORT,
+    113                            BSP_BULBPWM_COLOR_CC0_PIN,
+    114                            gpioModePushPull,
+    115                            0);
+    116          #endif
+    117          #if HAL_BULBPWM_GREEN_ENABLE == 1
+    118            GPIO_PinModeSet(BSP_BULBPWM_COLOR_CC1_PORT,
+    119                            BSP_BULBPWM_COLOR_CC1_PIN,
+    120                            gpioModePushPull,
+    121                            0);
+    122          #endif
+    123          #if HAL_BULBPWM_BLUE_ENABLE == 1
+    124            GPIO_PinModeSet(BSP_BULBPWM_COLOR_CC2_PORT,
+    125                            BSP_BULBPWM_COLOR_CC2_PIN,
+    126                            gpioModePushPull,
+    127                            0);
+    128          #endif
+    129          #if HAL_BULBPWM_AMBER_ENABLE == 1
+    130            GPIO_PinModeSet(BSP_BULBPWM_COLOR_CC3_PORT,
+    131                            BSP_BULBPWM_COLOR_CC3_PIN,
+    132                            gpioModePushPull,
+    133                            0);
+    134          #endif
+    135          }
+    136          
+    137          static void initFrequency(void)
+    138          {
+    139            TIMER_InitCC_TypeDef timerCCInit = TIMER_DEFAULT_INIT;
+                                        ^
+Warning[Pe177]: variable "timerCCInit" was declared but never referenced
+    140          
+    141            /* Select timer parameters */
+
+   \                                 In section .rodata, align 4
+    142            TIMER_Init_TypeDef timerInit = {
+   \                     ?_1:
+   \        0x0   0x01 0x01          DC8 1, 1
+   \        0x2   0x0000             DC16 0
+   \        0x4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    143              .enable = true,
+    144              .debugRun = true,
+    145              .prescale = timerPrescale1,
+    146              .clkSel = timerClkSelHFPerClk,
+    147              .fallAction = timerInputActionNone,
+    148              .riseAction = timerInputActionNone,
+    149              .mode = timerModeUp,
+    150              .dmaClrAct = false,
+    151              .quadModeX4 = false,
+    152              .oneShot = false,
+    153              .sync = false,
+    154            };
+    155          
+    156            uint32_t ticksPerPeriod32;
+    157          
+    158            pwmFrequency = halBulbPwmDriverFrequencyCallback();
+    159          
+    160            if (pwmFrequency == HAL_BULB_PWM_DRIVER_USE_DEFAULT_FREQUENCY) {
+    161              pwmFrequency = HAL_BULBPWM_FREQUENCY;
+    162            }
+    163          
+    164            ticksPerPeriod32 = (uint32_t) CLOCK_FREQUENCY;
+    165            ticksPerPeriod32 /= (uint32_t) pwmFrequency;
+    166          
+    167            ticksPerPeriod = (uint16_t) ticksPerPeriod32;
+    168          
+    169          #ifdef BULB_PWM_USING_TIMER0
+    170            CMU_ClockEnable(cmuClock_TIMER0, true);
+    171          
+    172          #if HAL_BULBPWM_WHITE_ENABLE == 1
+    173            TIMER_InitCC(TIMER0, 0, &timerCCInit);
+    174            TIMER0->ROUTEPEN |= TIMER_ROUTEPEN_CC0PEN;
+    175            TIMER0->ROUTELOC0 |= (BSP_BULBPWM_CC0_LOC << _TIMER_ROUTELOC0_CC0LOC_SHIFT);
+    176            TIMER_CompareBufSet(TIMER0, 0, 0);
+    177          #endif
+    178          
+    179          #if HAL_BULBPWM_LOWTEMP_ENABLE == 1
+    180            TIMER_InitCC(TIMER0, 1, &timerCCInit);
+    181            TIMER0->ROUTEPEN |= TIMER_ROUTEPEN_CC1PEN;
+    182            TIMER0->ROUTELOC0 |= (BSP_BULBPWM_CC1_LOC << _TIMER_ROUTELOC0_CC1LOC_SHIFT);
+    183            TIMER_CompareBufSet(TIMER0, 1, 0);
+    184          #endif
+    185          
+    186          #if HAL_BULBPWM_STATUS_ENABLE == 1
+    187            TIMER_InitCC(TIMER0, 2, &timerCCInit);
+    188            TIMER0->ROUTEPEN |= TIMER_ROUTEPEN_CC2PEN;
+    189            TIMER0->ROUTELOC0 |= (BSP_BULBPWM_CC2_LOC << _TIMER_ROUTELOC0_CC2LOC_SHIFT);
+    190            TIMER_CompareBufSet(TIMER0, 2, 0);
+    191          #endif
+    192          
+    193            // Set Top Value
+    194            TIMER_TopSet(TIMER0, ticksPerPeriod);
+    195          
+    196            // Set compare value starting at 0 - it will be incremented in the interrupt
+    197            // handler
+    198            TIMER_Init(TIMER0, &timerInit);
+    199          #endif
+    200          
+    201          #ifdef BULB_PWM_USING_TIMER1
+    202            CMU_ClockEnable(cmuClock_TIMER1, true);
+    203          
+    204          #if HAL_BULBPWM_RED_ENABLE == 1
+    205            TIMER_InitCC(TIMER1, 0, &timerCCInit);
+    206            TIMER1->ROUTEPEN |= TIMER_ROUTEPEN_CC0PEN;
+    207            TIMER1->ROUTELOC0 |= (BSP_BULBPWM_COLOR_CC0_LOC << _TIMER_ROUTELOC0_CC0LOC_SHIFT);
+    208            TIMER_CompareBufSet(TIMER1, 0, 0);
+    209          #endif
+    210          
+    211          #if HAL_BULBPWM_GREEN_ENABLE == 1
+    212            TIMER_InitCC(TIMER1, 1, &timerCCInit);
+    213            TIMER1->ROUTEPEN |= TIMER_ROUTEPEN_CC1PEN;
+    214            TIMER1->ROUTELOC0 |= (BSP_BULBPWM_COLOR_CC1_LOC << _TIMER_ROUTELOC0_CC1LOC_SHIFT);
+    215            TIMER_CompareBufSet(TIMER1, 1, 0);
+    216          #endif
+    217          
+    218          #if HAL_BULBPWM_BLUE_ENABLE == 1
+    219            TIMER_InitCC(TIMER1, 2, &timerCCInit);
+    220            TIMER1->ROUTEPEN |= TIMER_ROUTEPEN_CC2PEN;
+    221            TIMER1->ROUTELOC0 |= (BSP_BULBPWM_COLOR_CC2_LOC << _TIMER_ROUTELOC0_CC2LOC_SHIFT);
+    222            TIMER_CompareBufSet(TIMER1, 2, 0);
+    223          #endif
+    224          #if HAL_BULBPWM_AMBER_ENABLE == 1
+    225            TIMER_InitCC(TIMER1, 3, &timerCCInit);
+    226            TIMER1->ROUTEPEN |= TIMER_ROUTEPEN_CC3PEN;
+    227            TIMER1->ROUTELOC0 |= (BSP_BULBPWM_COLOR_CC3_LOC << _TIMER_ROUTELOC0_CC3LOC_SHIFT);
+    228            TIMER_CompareBufSet(TIMER1, 3, 0);
+    229          #endif
+    230            // Set Top Value
+    231            TIMER_TopSet(TIMER1, ticksPerPeriod);
+    232          
+    233            // Set compare value starting at 0 - it will be incremented in the interrupt
+    234            // handler
+    235            TIMER_Init(TIMER1, &timerInit);
+    236          #endif
+    237          }
+    238          
+
+   \                                 In section .text, align 2, keep-with-next
+    239          void halBulbPwmDriverInitialize(void)
+    240          {
+   \                     halBulbPwmDriverInitialize: (+1)
+   \        0x0   0xB51F             PUSH     {R0-R4,LR}
+    241            initGpio();
+    242          
+    243            initFrequency();
+   \        0x2   0x4668             MOV      R0,SP
+   \        0x4   0x....             LDR.N    R1,??DataTable2
+   \        0x6   0x2210             MOVS     R2,#+16
+   \        0x8   0x....'....        BL       __aeabi_memcpy4
+   \        0xC   0x....'....        BL       halBulbPwmDriverFrequencyCallback
+   \       0x10   0xF64F 0x74FF      MOVW     R4,#+65535
+   \       0x14   0x42A0             CMP      R0,R4
+   \       0x16   0x....             LDR.N    R2,??DataTable2_1  ;; 0x249f000
+   \       0x18   0x....             LDR.N    R1,??DataTable2_2
+   \       0x1A   0xBF08             IT       EQ 
+   \       0x1C   0xF44F 0x707A      MOVEQ    R0,#+1000
+   \       0x20   0xFBB2 0xF0F0      UDIV     R0,R2,R0
+   \       0x24   0x8008             STRH     R0,[R1, #+0]
+   \       0x26   0x....             LDR.N    R0,??DataTable2_3  ;; 0x40048000
+   \       0x28   0x6B03             LDR      R3,[R0, #+48]
+   \       0x2A   0x8809             LDRH     R1,[R1, #+0]
+   \       0x2C   0x61C1             STR      R1,[R0, #+28]
+   \       0x2E   0x4669             MOV      R1,SP
+   \       0x30   0x....'....        BL       TIMER_Init
+    244          
+    245            halBulbPwmDriverBlinkInit();
+   \       0x34   0x....'....        BL       halBulbPwmDriverBlinkInit
+    246          
+    247            halBulbPwmDriverInitCompleteCallback();
+   \       0x38   0x....'....        BL       halBulbPwmDriverInitCompleteCallback
+    248          }
+   \       0x3C   0xBD1F             POP      {R0-R4,PC}       ;; return
+    249          
+
+   \                                 In section .text, align 2, keep-with-next
+    250          uint16_t halBulbPwmDriverTicksPerPeriod(void)
+    251          {
+    252            return ticksPerPeriod;
+   \                     halBulbPwmDriverTicksPerPeriod: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable2_2
+   \        0x2   0x8800             LDRH     R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+    253          }
+    254          
+
+   \                                 In section .text, align 2, keep-with-next
+    255          uint16_t halBulbPwmDriverTicksPerMicrosecond(void)
+    256          {
+    257            return (uint16_t) (CLOCK_FREQUENCY / 1000000);
+   \                     halBulbPwmDriverTicksPerMicrosecond: (+1)
+   \        0x0   0x2026             MOVS     R0,#+38
+   \        0x2   0x4770             BX       LR               ;; return
+    258          }
+    259          
+
+   \                                 In section .text, align 2, keep-with-next
+    260          void halBulbPwmDriverSetPwmLevel(uint16_t value, uint8_t pwm)
+    261          {
+    262            switch (pwm) {
+    263          #if HAL_BULBPWM_WHITE_ENABLE == 1
+    264              case HAL_BULBPWM_WHITE_ID:
+    265                TIMER_CompareBufSet(BULB_PWM_WHITE_TIMER, BULB_PWM_WHITE_CHANNEL, value);
+    266                break;
+    267          #endif
+    268          #if HAL_BULBPWM_LOWTEMP_ENABLE == 1
+    269              case HAL_BULBPWM_LOWTEMP_ID:
+    270                TIMER_CompareBufSet(BULB_PWM_LOWTEMP_TIMER, BULB_PWM_LOWTEMP_CHANNEL,
+    271                                    value);
+    272                break;
+    273          #endif
+    274          #if HAL_BULBPWM_STATUS_ENABLE == 1
+    275              case HAL_BULBPWM_STATUS_ID:
+    276                TIMER_CompareBufSet(BULB_PWM_STATUS_TIMER, BULB_PWM_STATUS_CHANNEL, value);
+    277                break;
+    278          #endif
+    279          #if HAL_BULBPWM_RED_ENABLE == 1
+    280              case HAL_BULBPWM_RED_ID:
+    281                TIMER_CompareBufSet(BULB_PWM_RED_TIMER, BULB_PWM_RED_CHANNEL, value);
+    282                break;
+    283          #endif
+    284          #if HAL_BULBPWM_GREEN_ENABLE == 1
+    285              case HAL_BULBPWM_GREEN_ID:
+    286                TIMER_CompareBufSet(BULB_PWM_GREEN_TIMER, BULB_PWM_GREEN_CHANNEL, value);
+    287                break;
+    288          #endif
+    289          #if HAL_BULBPWM_BLUE_ENABLE == 1
+    290              case HAL_BULBPWM_BLUE_ID:
+    291                TIMER_CompareBufSet(BULB_PWM_BLUE_TIMER, BULB_PWM_BLUE_CHANNEL, value);
+    292                break;
+    293          #endif
+    294          #if HAL_BULBPWM_AMBER_ENABLE == 1
+    295              case HAL_BULBPWM_AMBER_ID:
+    296                TIMER_CompareBufSet(BULB_PWM_AMBER_TIMER, BULB_PWM_AMBER_CHANNEL, value);
+    297                break;
+    298          #endif
+    299              default:
+    300                assert(0);
+   \                     halBulbPwmDriverSetPwmLevel: (+1)
+   \        0x0   0xF44F 0x7196      MOV      R1,#+300
+   \        0x4   0x....             LDR.N    R0,??DataTable2_4
+   \        0x6   0x....'....        B.W      halInternalAssertFailed
+    301                break;
+    302            }
+    303          }
+    304          
+    305          // Required for AFv2 support
+
+   \                                 In section .text, align 2, keep-with-next
+    306          void emberAfPluginBulbPwmDriverInitCallback()
+    307          {
+    308            halBulbPwmDriverInitialize();
+   \                     emberAfPluginBulbPwmDriverInitCallback: (+1)
+   \        0x0   0x....             B.N      halBulbPwmDriverInitialize
+    309          }
+    310          
+
+   \                                 In section .text, align 2, keep-with-next
+    311          void halBulbPwmDriverStatusLedOn(void)
+    312          {
+    313          #if HAL_BULBPWM_STATUS_ENABLE == 1
+    314            halBulbPwmDriverSetPwmLevel(halBulbPwmDriverTicksPerPeriod(),
+    315                                        HAL_BULBPWM_STATUS_ID);
+    316          #endif
+    317          }
+   \                     halBulbPwmDriverStatusLedOn: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    318          
+
+   \                                 In section .text, align 2, keep-with-next
+    319          void halBulbPwmDriverStatusLedOff(void)
+    320          {
+    321          #if HAL_BULBPWM_STATUS_ENABLE == 1
+    322            halBulbPwmDriverSetPwmLevel(0, HAL_BULBPWM_STATUS_ID);
+    323          #endif
+    324          }
+   \                     halBulbPwmDriverStatusLedOff: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x0249'F000        DC32     0x249f000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     ticksPerPeriod
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x4004'8000        DC32     0x40048000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x62 0x75          DC8 "bulb-pwm-driver-efr32.c"
+   \              0x6C 0x62    
+   \              0x2D 0x70    
+   \              0x77 0x6D    
+   \              0x2D 0x64    
+   \              0x72 0x69    
+   \              0x76 0x65    
+   \              0x72 0x2D    
+   \              0x65 0x66    
+   \              0x72 0x33    
+   \              0x32 0x2E    
+   \              0x63 0x00    
+    325          
+    326          #else // HAL_BULBPWM_ENABLE
+    327            #error "Must HAL_BULBPWM_ENABLE and set it to 1 to use bulb pwm plugin."
+    328          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   emberAfPluginBulbPwmDriverInitCallback
+         0   -> halBulbPwmDriverInitialize
+      24   halBulbPwmDriverInitialize
+        24   -> TIMER_Init
+        24   -> __aeabi_memcpy4
+        24   -> halBulbPwmDriverBlinkInit
+        24   -> halBulbPwmDriverFrequencyCallback
+        24   -> halBulbPwmDriverInitCompleteCallback
+       0   halBulbPwmDriverSetPwmLevel
+         0   -> halInternalAssertFailed
+       0   halBulbPwmDriverStatusLedOff
+       0   halBulbPwmDriverStatusLedOn
+       0   halBulbPwmDriverTicksPerMicrosecond
+       0   halBulbPwmDriverTicksPerPeriod
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+      24  ?_0
+      16  ?_1
+       2  emberAfPluginBulbPwmDriverInitCallback
+      62  halBulbPwmDriverInitialize
+      10  halBulbPwmDriverSetPwmLevel
+       2  halBulbPwmDriverStatusLedOff
+       2  halBulbPwmDriverStatusLedOn
+       4  halBulbPwmDriverTicksPerMicrosecond
+       6  halBulbPwmDriverTicksPerPeriod
+       2  pwmFrequency
+       2  ticksPerPeriod
+
+ 
+   4 bytes in section .bss
+  40 bytes in section .rodata
+ 108 bytes in section .text
+ 
+ 108 bytes of CODE  memory
+  40 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

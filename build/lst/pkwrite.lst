@@ -1,0 +1,696 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:33
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\pkwrite.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWF72C.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\pkwrite.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"pkwrite.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\pkwrite.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\pkwrite.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\pkwrite.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Public Key layer for writing key files and structures
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_PK_WRITE_C)
+     41          
+     42          #include "mbedtls/pk.h"
+     43          #include "mbedtls/asn1write.h"
+     44          #include "mbedtls/oid.h"
+     45          
+     46          #include <string.h>
+     47          
+     48          #if defined(MBEDTLS_RSA_C)
+     49          #include "mbedtls/rsa.h"
+     50          #endif
+     51          #if defined(MBEDTLS_ECP_C)
+     52          #include "mbedtls/ecp.h"
+     53          #endif
+     54          #if defined(MBEDTLS_ECDSA_C)
+     55          #include "mbedtls/ecdsa.h"
+     56          #endif
+     57          #if defined(MBEDTLS_PEM_WRITE_C)
+     58          #include "mbedtls/pem.h"
+     59          #endif
+     60          
+     61          #if defined(MBEDTLS_PLATFORM_C)
+     62          #include "mbedtls/platform.h"
+     63          #else
+     64          #include <stdlib.h>
+     65          #define mbedtls_calloc    calloc
+     66          #define mbedtls_free       free
+     67          #endif
+     68          
+     69          #if defined(MBEDTLS_RSA_C)
+     70          /*
+     71           *  RSAPublicKey ::= SEQUENCE {
+     72           *      modulus           INTEGER,  -- n
+     73           *      publicExponent    INTEGER   -- e
+     74           *  }
+     75           */
+     76          static int pk_write_rsa_pubkey( unsigned char **p, unsigned char *start,
+     77                                          mbedtls_rsa_context *rsa )
+     78          {
+     79              int ret;
+     80              size_t len = 0;
+     81              mbedtls_mpi T;
+     82          
+     83              mbedtls_mpi_init( &T );
+     84          
+     85              /* Export E */
+     86              if ( ( ret = mbedtls_rsa_export( rsa, NULL, NULL, NULL, NULL, &T ) ) != 0 ||
+     87                   ( ret = mbedtls_asn1_write_mpi( p, start, &T ) ) < 0 )
+     88                  goto end_of_export;
+     89              len += ret;
+     90          
+     91              /* Export N */
+     92              if ( ( ret = mbedtls_rsa_export( rsa, &T, NULL, NULL, NULL, NULL ) ) != 0 ||
+     93                   ( ret = mbedtls_asn1_write_mpi( p, start, &T ) ) < 0 )
+     94                  goto end_of_export;
+     95              len += ret;
+     96          
+     97          end_of_export:
+     98          
+     99              mbedtls_mpi_free( &T );
+    100              if( ret < 0 )
+    101                  return( ret );
+    102          
+    103              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( p, start, len ) );
+    104              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( p, start, MBEDTLS_ASN1_CONSTRUCTED |
+    105                                                           MBEDTLS_ASN1_SEQUENCE ) );
+    106          
+    107              return( (int) len );
+    108          }
+    109          #endif /* MBEDTLS_RSA_C */
+    110          
+    111          #if defined(MBEDTLS_ECP_C)
+    112          /*
+    113           * EC public key is an EC point
+    114           */
+    115          static int pk_write_ec_pubkey( unsigned char **p, unsigned char *start,
+    116                                         mbedtls_ecp_keypair *ec )
+    117          {
+    118              int ret;
+    119              size_t len = 0;
+    120              unsigned char buf[MBEDTLS_ECP_MAX_PT_LEN];
+    121          
+    122              if( ( ret = mbedtls_ecp_point_write_binary( &ec->grp, &ec->Q,
+    123                                                  MBEDTLS_ECP_PF_UNCOMPRESSED,
+    124                                                  &len, buf, sizeof( buf ) ) ) != 0 )
+    125              {
+    126                  return( ret );
+    127              }
+    128          
+    129              if( *p < start || (size_t)( *p - start ) < len )
+    130                  return( MBEDTLS_ERR_ASN1_BUF_TOO_SMALL );
+    131          
+    132              *p -= len;
+    133              memcpy( *p, buf, len );
+    134          
+    135              return( (int) len );
+    136          }
+    137          
+    138          /*
+    139           * ECParameters ::= CHOICE {
+    140           *   namedCurve         OBJECT IDENTIFIER
+    141           * }
+    142           */
+    143          static int pk_write_ec_param( unsigned char **p, unsigned char *start,
+    144                                        mbedtls_ecp_keypair *ec )
+    145          {
+    146              int ret;
+    147              size_t len = 0;
+    148              const char *oid;
+    149              size_t oid_len;
+    150          
+    151              if( ( ret = mbedtls_oid_get_oid_by_ec_grp( ec->grp.id, &oid, &oid_len ) ) != 0 )
+    152                  return( ret );
+    153          
+    154              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_oid( p, start, oid, oid_len ) );
+    155          
+    156              return( (int) len );
+    157          }
+    158          #endif /* MBEDTLS_ECP_C */
+    159          
+    160          int mbedtls_pk_write_pubkey( unsigned char **p, unsigned char *start,
+    161                                       const mbedtls_pk_context *key )
+    162          {
+    163              int ret;
+    164              size_t len = 0;
+    165          
+    166          #if defined(MBEDTLS_RSA_C)
+    167              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_RSA )
+    168                  MBEDTLS_ASN1_CHK_ADD( len, pk_write_rsa_pubkey( p, start, mbedtls_pk_rsa( *key ) ) );
+    169              else
+    170          #endif
+    171          #if defined(MBEDTLS_ECP_C)
+    172              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_ECKEY )
+    173                  MBEDTLS_ASN1_CHK_ADD( len, pk_write_ec_pubkey( p, start, mbedtls_pk_ec( *key ) ) );
+    174              else
+    175          #endif
+    176                  return( MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE );
+    177          
+    178              return( (int) len );
+    179          }
+    180          
+    181          int mbedtls_pk_write_pubkey_der( mbedtls_pk_context *key, unsigned char *buf, size_t size )
+    182          {
+    183              int ret;
+    184              unsigned char *c;
+    185              size_t len = 0, par_len = 0, oid_len;
+    186              const char *oid;
+    187          
+    188              c = buf + size;
+    189          
+    190              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_pk_write_pubkey( &c, buf, key ) );
+    191          
+    192              if( c - buf < 1 )
+    193                  return( MBEDTLS_ERR_ASN1_BUF_TOO_SMALL );
+    194          
+    195              /*
+    196               *  SubjectPublicKeyInfo  ::=  SEQUENCE  {
+    197               *       algorithm            AlgorithmIdentifier,
+    198               *       subjectPublicKey     BIT STRING }
+    199               */
+    200              *--c = 0;
+    201              len += 1;
+    202          
+    203              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( &c, buf, len ) );
+    204              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( &c, buf, MBEDTLS_ASN1_BIT_STRING ) );
+    205          
+    206              if( ( ret = mbedtls_oid_get_oid_by_pk_alg( mbedtls_pk_get_type( key ),
+    207                                                 &oid, &oid_len ) ) != 0 )
+    208              {
+    209                  return( ret );
+    210              }
+    211          
+    212          #if defined(MBEDTLS_ECP_C)
+    213              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_ECKEY )
+    214              {
+    215                  MBEDTLS_ASN1_CHK_ADD( par_len, pk_write_ec_param( &c, buf, mbedtls_pk_ec( *key ) ) );
+    216              }
+    217          #endif
+    218          
+    219              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_algorithm_identifier( &c, buf, oid, oid_len,
+    220                                                                  par_len ) );
+    221          
+    222              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( &c, buf, len ) );
+    223              MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( &c, buf, MBEDTLS_ASN1_CONSTRUCTED |
+    224                                                          MBEDTLS_ASN1_SEQUENCE ) );
+    225          
+    226              return( (int) len );
+    227          }
+    228          
+    229          int mbedtls_pk_write_key_der( mbedtls_pk_context *key, unsigned char *buf, size_t size )
+    230          {
+    231              int ret;
+    232              unsigned char *c = buf + size;
+    233              size_t len = 0;
+    234          
+    235          #if defined(MBEDTLS_RSA_C)
+    236              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_RSA )
+    237              {
+    238                  mbedtls_mpi T; /* Temporary holding the exported parameters */
+    239                  mbedtls_rsa_context *rsa = mbedtls_pk_rsa( *key );
+    240          
+    241                  /*
+    242                   * Export the parameters one after another to avoid simultaneous copies.
+    243                   */
+    244          
+    245                  mbedtls_mpi_init( &T );
+    246          
+    247                  /* Export QP */
+    248                  if( ( ret = mbedtls_rsa_export_crt( rsa, NULL, NULL, &T ) ) != 0 ||
+    249                      ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    250                      goto end_of_export;
+    251                  len += ret;
+    252          
+    253                  /* Export DQ */
+    254                  if( ( ret = mbedtls_rsa_export_crt( rsa, NULL, &T, NULL ) ) != 0 ||
+    255                      ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    256                      goto end_of_export;
+    257                  len += ret;
+    258          
+    259                  /* Export DP */
+    260                  if( ( ret = mbedtls_rsa_export_crt( rsa, &T, NULL, NULL ) ) != 0 ||
+    261                      ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    262                      goto end_of_export;
+    263                  len += ret;
+    264          
+    265                  /* Export Q */
+    266                  if ( ( ret = mbedtls_rsa_export( rsa, NULL, NULL,
+    267                                                   &T, NULL, NULL ) ) != 0 ||
+    268                       ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    269                      goto end_of_export;
+    270                  len += ret;
+    271          
+    272                  /* Export P */
+    273                  if ( ( ret = mbedtls_rsa_export( rsa, NULL, &T,
+    274                                                   NULL, NULL, NULL ) ) != 0 ||
+    275                       ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    276                      goto end_of_export;
+    277                  len += ret;
+    278          
+    279                  /* Export D */
+    280                  if ( ( ret = mbedtls_rsa_export( rsa, NULL, NULL,
+    281                                                   NULL, &T, NULL ) ) != 0 ||
+    282                       ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    283                      goto end_of_export;
+    284                  len += ret;
+    285          
+    286                  /* Export E */
+    287                  if ( ( ret = mbedtls_rsa_export( rsa, NULL, NULL,
+    288                                                   NULL, NULL, &T ) ) != 0 ||
+    289                       ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    290                      goto end_of_export;
+    291                  len += ret;
+    292          
+    293                  /* Export N */
+    294                  if ( ( ret = mbedtls_rsa_export( rsa, &T, NULL,
+    295                                                   NULL, NULL, NULL ) ) != 0 ||
+    296                       ( ret = mbedtls_asn1_write_mpi( &c, buf, &T ) ) < 0 )
+    297                      goto end_of_export;
+    298                  len += ret;
+    299          
+    300              end_of_export:
+    301          
+    302                  mbedtls_mpi_free( &T );
+    303                  if( ret < 0 )
+    304                      return( ret );
+    305          
+    306                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_int( &c, buf, 0 ) );
+    307                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( &c, buf, len ) );
+    308                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( &c,
+    309                                                         buf, MBEDTLS_ASN1_CONSTRUCTED |
+    310                                                         MBEDTLS_ASN1_SEQUENCE ) );
+    311              }
+    312              else
+    313          #endif /* MBEDTLS_RSA_C */
+    314          #if defined(MBEDTLS_ECP_C)
+    315              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_ECKEY )
+    316              {
+    317                  mbedtls_ecp_keypair *ec = mbedtls_pk_ec( *key );
+    318                  size_t pub_len = 0, par_len = 0;
+    319          
+    320                  /*
+    321                   * RFC 5915, or SEC1 Appendix C.4
+    322                   *
+    323                   * ECPrivateKey ::= SEQUENCE {
+    324                   *      version        INTEGER { ecPrivkeyVer1(1) } (ecPrivkeyVer1),
+    325                   *      privateKey     OCTET STRING,
+    326                   *      parameters [0] ECParameters {{ NamedCurve }} OPTIONAL,
+    327                   *      publicKey  [1] BIT STRING OPTIONAL
+    328                   *    }
+    329                   */
+    330          
+    331                  /* publicKey */
+    332                  MBEDTLS_ASN1_CHK_ADD( pub_len, pk_write_ec_pubkey( &c, buf, ec ) );
+    333          
+    334                  if( c - buf < 1 )
+    335                      return( MBEDTLS_ERR_ASN1_BUF_TOO_SMALL );
+    336                  *--c = 0;
+    337                  pub_len += 1;
+    338          
+    339                  MBEDTLS_ASN1_CHK_ADD( pub_len, mbedtls_asn1_write_len( &c, buf, pub_len ) );
+    340                  MBEDTLS_ASN1_CHK_ADD( pub_len, mbedtls_asn1_write_tag( &c, buf, MBEDTLS_ASN1_BIT_STRING ) );
+    341          
+    342                  MBEDTLS_ASN1_CHK_ADD( pub_len, mbedtls_asn1_write_len( &c, buf, pub_len ) );
+    343                  MBEDTLS_ASN1_CHK_ADD( pub_len, mbedtls_asn1_write_tag( &c, buf,
+    344                                      MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | 1 ) );
+    345                  len += pub_len;
+    346          
+    347                  /* parameters */
+    348                  MBEDTLS_ASN1_CHK_ADD( par_len, pk_write_ec_param( &c, buf, ec ) );
+    349          
+    350                  MBEDTLS_ASN1_CHK_ADD( par_len, mbedtls_asn1_write_len( &c, buf, par_len ) );
+    351                  MBEDTLS_ASN1_CHK_ADD( par_len, mbedtls_asn1_write_tag( &c, buf,
+    352                                      MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | 0 ) );
+    353                  len += par_len;
+    354          
+    355                  /* privateKey: write as MPI then fix tag */
+    356                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_mpi( &c, buf, &ec->d ) );
+    357                  *c = MBEDTLS_ASN1_OCTET_STRING;
+    358          
+    359                  /* version */
+    360                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_int( &c, buf, 1 ) );
+    361          
+    362                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_len( &c, buf, len ) );
+    363                  MBEDTLS_ASN1_CHK_ADD( len, mbedtls_asn1_write_tag( &c, buf, MBEDTLS_ASN1_CONSTRUCTED |
+    364                                                              MBEDTLS_ASN1_SEQUENCE ) );
+    365              }
+    366              else
+    367          #endif /* MBEDTLS_ECP_C */
+    368                  return( MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE );
+    369          
+    370              return( (int) len );
+    371          }
+    372          
+    373          #if defined(MBEDTLS_PEM_WRITE_C)
+    374          
+    375          #define PEM_BEGIN_PUBLIC_KEY    "-----BEGIN PUBLIC KEY-----\n"
+    376          #define PEM_END_PUBLIC_KEY      "-----END PUBLIC KEY-----\n"
+    377          
+    378          #define PEM_BEGIN_PRIVATE_KEY_RSA   "-----BEGIN RSA PRIVATE KEY-----\n"
+    379          #define PEM_END_PRIVATE_KEY_RSA     "-----END RSA PRIVATE KEY-----\n"
+    380          #define PEM_BEGIN_PRIVATE_KEY_EC    "-----BEGIN EC PRIVATE KEY-----\n"
+    381          #define PEM_END_PRIVATE_KEY_EC      "-----END EC PRIVATE KEY-----\n"
+    382          
+    383          /*
+    384           * Max sizes of key per types. Shown as tag + len (+ content).
+    385           */
+    386          
+    387          #if defined(MBEDTLS_RSA_C)
+    388          /*
+    389           * RSA public keys:
+    390           *  SubjectPublicKeyInfo  ::=  SEQUENCE  {          1 + 3
+    391           *       algorithm            AlgorithmIdentifier,  1 + 1 (sequence)
+    392           *                                                + 1 + 1 + 9 (rsa oid)
+    393           *                                                + 1 + 1 (params null)
+    394           *       subjectPublicKey     BIT STRING }          1 + 3 + (1 + below)
+    395           *  RSAPublicKey ::= SEQUENCE {                     1 + 3
+    396           *      modulus           INTEGER,  -- n            1 + 3 + MPI_MAX + 1
+    397           *      publicExponent    INTEGER   -- e            1 + 3 + MPI_MAX + 1
+    398           *  }
+    399           */
+    400          #define RSA_PUB_DER_MAX_BYTES   38 + 2 * MBEDTLS_MPI_MAX_SIZE
+    401          
+    402          /*
+    403           * RSA private keys:
+    404           *  RSAPrivateKey ::= SEQUENCE {                    1 + 3
+    405           *      version           Version,                  1 + 1 + 1
+    406           *      modulus           INTEGER,                  1 + 3 + MPI_MAX + 1
+    407           *      publicExponent    INTEGER,                  1 + 3 + MPI_MAX + 1
+    408           *      privateExponent   INTEGER,                  1 + 3 + MPI_MAX + 1
+    409           *      prime1            INTEGER,                  1 + 3 + MPI_MAX / 2 + 1
+    410           *      prime2            INTEGER,                  1 + 3 + MPI_MAX / 2 + 1
+    411           *      exponent1         INTEGER,                  1 + 3 + MPI_MAX / 2 + 1
+    412           *      exponent2         INTEGER,                  1 + 3 + MPI_MAX / 2 + 1
+    413           *      coefficient       INTEGER,                  1 + 3 + MPI_MAX / 2 + 1
+    414           *      otherPrimeInfos   OtherPrimeInfos OPTIONAL  0 (not supported)
+    415           *  }
+    416           */
+    417          #define MPI_MAX_SIZE_2          MBEDTLS_MPI_MAX_SIZE / 2 + \
+    418                                          MBEDTLS_MPI_MAX_SIZE % 2
+    419          #define RSA_PRV_DER_MAX_BYTES   47 + 3 * MBEDTLS_MPI_MAX_SIZE \
+    420                                             + 5 * MPI_MAX_SIZE_2
+    421          
+    422          #else /* MBEDTLS_RSA_C */
+    423          
+    424          #define RSA_PUB_DER_MAX_BYTES   0
+    425          #define RSA_PRV_DER_MAX_BYTES   0
+    426          
+    427          #endif /* MBEDTLS_RSA_C */
+    428          
+    429          #if defined(MBEDTLS_ECP_C)
+    430          /*
+    431           * EC public keys:
+    432           *  SubjectPublicKeyInfo  ::=  SEQUENCE  {      1 + 2
+    433           *    algorithm         AlgorithmIdentifier,    1 + 1 (sequence)
+    434           *                                            + 1 + 1 + 7 (ec oid)
+    435           *                                            + 1 + 1 + 9 (namedCurve oid)
+    436           *    subjectPublicKey  BIT STRING              1 + 2 + 1               [1]
+    437           *                                            + 1 (point format)        [1]
+    438           *                                            + 2 * ECP_MAX (coords)    [1]
+    439           *  }
+    440           */
+    441          #define ECP_PUB_DER_MAX_BYTES   30 + 2 * MBEDTLS_ECP_MAX_BYTES
+    442          
+    443          /*
+    444           * EC private keys:
+    445           * ECPrivateKey ::= SEQUENCE {                  1 + 2
+    446           *      version        INTEGER ,                1 + 1 + 1
+    447           *      privateKey     OCTET STRING,            1 + 1 + ECP_MAX
+    448           *      parameters [0] ECParameters OPTIONAL,   1 + 1 + (1 + 1 + 9)
+    449           *      publicKey  [1] BIT STRING OPTIONAL      1 + 2 + [1] above
+    450           *    }
+    451           */
+    452          #define ECP_PRV_DER_MAX_BYTES   29 + 3 * MBEDTLS_ECP_MAX_BYTES
+    453          
+    454          #else /* MBEDTLS_ECP_C */
+    455          
+    456          #define ECP_PUB_DER_MAX_BYTES   0
+    457          #define ECP_PRV_DER_MAX_BYTES   0
+    458          
+    459          #endif /* MBEDTLS_ECP_C */
+    460          
+    461          #define PUB_DER_MAX_BYTES   RSA_PUB_DER_MAX_BYTES > ECP_PUB_DER_MAX_BYTES ? \
+    462                                      RSA_PUB_DER_MAX_BYTES : ECP_PUB_DER_MAX_BYTES
+    463          #define PRV_DER_MAX_BYTES   RSA_PRV_DER_MAX_BYTES > ECP_PRV_DER_MAX_BYTES ? \
+    464                                      RSA_PRV_DER_MAX_BYTES : ECP_PRV_DER_MAX_BYTES
+    465          
+    466          int mbedtls_pk_write_pubkey_pem( mbedtls_pk_context *key, unsigned char *buf, size_t size )
+    467          {
+    468              int ret;
+    469              unsigned char output_buf[PUB_DER_MAX_BYTES];
+    470              size_t olen = 0;
+    471          
+    472              if( ( ret = mbedtls_pk_write_pubkey_der( key, output_buf,
+    473                                               sizeof(output_buf) ) ) < 0 )
+    474              {
+    475                  return( ret );
+    476              }
+    477          
+    478              if( ( ret = mbedtls_pem_write_buffer( PEM_BEGIN_PUBLIC_KEY, PEM_END_PUBLIC_KEY,
+    479                                            output_buf + sizeof(output_buf) - ret,
+    480                                            ret, buf, size, &olen ) ) != 0 )
+    481              {
+    482                  return( ret );
+    483              }
+    484          
+    485              return( 0 );
+    486          }
+    487          
+    488          int mbedtls_pk_write_key_pem( mbedtls_pk_context *key, unsigned char *buf, size_t size )
+    489          {
+    490              int ret;
+    491              unsigned char output_buf[PRV_DER_MAX_BYTES];
+    492              const char *begin, *end;
+    493              size_t olen = 0;
+    494          
+    495              if( ( ret = mbedtls_pk_write_key_der( key, output_buf, sizeof(output_buf) ) ) < 0 )
+    496                  return( ret );
+    497          
+    498          #if defined(MBEDTLS_RSA_C)
+    499              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_RSA )
+    500              {
+    501                  begin = PEM_BEGIN_PRIVATE_KEY_RSA;
+    502                  end = PEM_END_PRIVATE_KEY_RSA;
+    503              }
+    504              else
+    505          #endif
+    506          #if defined(MBEDTLS_ECP_C)
+    507              if( mbedtls_pk_get_type( key ) == MBEDTLS_PK_ECKEY )
+    508              {
+    509                  begin = PEM_BEGIN_PRIVATE_KEY_EC;
+    510                  end = PEM_END_PRIVATE_KEY_EC;
+    511              }
+    512              else
+    513          #endif
+    514                  return( MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE );
+    515          
+    516              if( ( ret = mbedtls_pem_write_buffer( begin, end,
+    517                                            output_buf + sizeof(output_buf) - ret,
+    518                                            ret, buf, size, &olen ) ) != 0 )
+    519              {
+    520                  return( ret );
+    521              }
+    522          
+    523              return( 0 );
+    524          }
+    525          #endif /* MBEDTLS_PEM_WRITE_C */
+    526          
+    527          #endif /* MBEDTLS_PK_WRITE_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

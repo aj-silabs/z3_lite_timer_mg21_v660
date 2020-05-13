@@ -1,0 +1,1276 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:20:03
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW6DF5.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"x509.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\x509.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\x509.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  X.509 common functions for parsing and verification
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          /*
+     34           *  The ITU-T X.509 standard defines a certificate format for PKI.
+     35           *
+     36           *  http://www.ietf.org/rfc/rfc5280.txt (Certificates and CRLs)
+     37           *  http://www.ietf.org/rfc/rfc3279.txt (Alg IDs for CRLs)
+     38           *  http://www.ietf.org/rfc/rfc2986.txt (CSRs, aka PKCS#10)
+     39           *
+     40           *  http://www.itu.int/ITU-T/studygroups/com17/languages/X.680-0207.pdf
+     41           *  http://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf
+     42           */
+     43          
+     44          #if !defined(MBEDTLS_CONFIG_FILE)
+     45          #include "mbedtls/config.h"
+     46          #else
+     47          #include MBEDTLS_CONFIG_FILE
+     48          #endif
+     49          
+     50          #if defined(MBEDTLS_X509_USE_C)
+     51          
+     52          #include "mbedtls/x509.h"
+     53          #include "mbedtls/asn1.h"
+     54          #include "mbedtls/oid.h"
+     55          
+     56          #include <stdio.h>
+     57          #include <string.h>
+     58          
+     59          #if defined(MBEDTLS_PEM_PARSE_C)
+     60          #include "mbedtls/pem.h"
+     61          #endif
+     62          
+     63          #if defined(MBEDTLS_PLATFORM_C)
+     64          #include "mbedtls/platform.h"
+     65          #else
+     66          #include <stdio.h>
+     67          #include <stdlib.h>
+     68          #define mbedtls_free      free
+     69          #define mbedtls_calloc    calloc
+     70          #define mbedtls_printf    printf
+     71          #define mbedtls_snprintf  snprintf
+     72          #endif
+     73          
+     74          
+     75          #if defined(MBEDTLS_HAVE_TIME)
+     76          #include "mbedtls/platform_time.h"
+     77          #endif
+     78          
+     79          #if defined(_WIN32) && !defined(EFIX64) && !defined(EFI32)
+     80          #include <windows.h>
+     81          #else
+     82          #include <time.h>
+     83          #endif
+     84          
+     85          #define CHECK(code) if( ( ret = code ) != 0 ){ return( ret ); }
+     86          #define CHECK_RANGE(min, max, val) if( val < min || val > max ){ return( ret ); }
+     87          
+     88          /*
+     89           *  CertificateSerialNumber  ::=  INTEGER
+     90           */
+     91          int mbedtls_x509_get_serial( unsigned char **p, const unsigned char *end,
+     92                               mbedtls_x509_buf *serial )
+     93          {
+     94              int ret;
+     95          
+     96              if( ( end - *p ) < 1 )
+     97                  return( MBEDTLS_ERR_X509_INVALID_SERIAL +
+     98                          MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+     99          
+    100              if( **p != ( MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_PRIMITIVE | 2 ) &&
+    101                  **p !=   MBEDTLS_ASN1_INTEGER )
+    102                  return( MBEDTLS_ERR_X509_INVALID_SERIAL +
+    103                          MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    104          
+    105              serial->tag = *(*p)++;
+    106          
+    107              if( ( ret = mbedtls_asn1_get_len( p, end, &serial->len ) ) != 0 )
+    108                  return( MBEDTLS_ERR_X509_INVALID_SERIAL + ret );
+    109          
+    110              serial->p = *p;
+    111              *p += serial->len;
+    112          
+    113              return( 0 );
+    114          }
+    115          
+    116          /* Get an algorithm identifier without parameters (eg for signatures)
+    117           *
+    118           *  AlgorithmIdentifier  ::=  SEQUENCE  {
+    119           *       algorithm               OBJECT IDENTIFIER,
+    120           *       parameters              ANY DEFINED BY algorithm OPTIONAL  }
+    121           */
+    122          int mbedtls_x509_get_alg_null( unsigned char **p, const unsigned char *end,
+    123                                 mbedtls_x509_buf *alg )
+    124          {
+    125              int ret;
+    126          
+    127              if( ( ret = mbedtls_asn1_get_alg_null( p, end, alg ) ) != 0 )
+    128                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    129          
+    130              return( 0 );
+    131          }
+    132          
+    133          /*
+    134           * Parse an algorithm identifier with (optional) paramaters
+    135           */
+    136          int mbedtls_x509_get_alg( unsigned char **p, const unsigned char *end,
+    137                            mbedtls_x509_buf *alg, mbedtls_x509_buf *params )
+    138          {
+    139              int ret;
+    140          
+    141              if( ( ret = mbedtls_asn1_get_alg( p, end, alg, params ) ) != 0 )
+    142                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    143          
+    144              return( 0 );
+    145          }
+    146          
+    147          #if defined(MBEDTLS_X509_RSASSA_PSS_SUPPORT)
+    148          /*
+    149           * HashAlgorithm ::= AlgorithmIdentifier
+    150           *
+    151           * AlgorithmIdentifier  ::=  SEQUENCE  {
+    152           *      algorithm               OBJECT IDENTIFIER,
+    153           *      parameters              ANY DEFINED BY algorithm OPTIONAL  }
+    154           *
+    155           * For HashAlgorithm, parameters MUST be NULL or absent.
+    156           */
+    157          static int x509_get_hash_alg( const mbedtls_x509_buf *alg, mbedtls_md_type_t *md_alg )
+    158          {
+    159              int ret;
+    160              unsigned char *p;
+    161              const unsigned char *end;
+    162              mbedtls_x509_buf md_oid;
+    163              size_t len;
+    164          
+    165              /* Make sure we got a SEQUENCE and setup bounds */
+    166              if( alg->tag != ( MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) )
+    167                  return( MBEDTLS_ERR_X509_INVALID_ALG +
+    168                          MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    169          
+    170              p = (unsigned char *) alg->p;
+    171              end = p + alg->len;
+    172          
+    173              if( p >= end )
+    174                  return( MBEDTLS_ERR_X509_INVALID_ALG +
+    175                          MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    176          
+    177              /* Parse md_oid */
+    178              md_oid.tag = *p;
+    179          
+    180              if( ( ret = mbedtls_asn1_get_tag( &p, end, &md_oid.len, MBEDTLS_ASN1_OID ) ) != 0 )
+    181                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    182          
+    183              md_oid.p = p;
+    184              p += md_oid.len;
+    185          
+    186              /* Get md_alg from md_oid */
+    187              if( ( ret = mbedtls_oid_get_md_alg( &md_oid, md_alg ) ) != 0 )
+    188                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    189          
+    190              /* Make sure params is absent of NULL */
+    191              if( p == end )
+    192                  return( 0 );
+    193          
+    194              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len, MBEDTLS_ASN1_NULL ) ) != 0 || len != 0 )
+    195                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    196          
+    197              if( p != end )
+    198                  return( MBEDTLS_ERR_X509_INVALID_ALG +
+    199                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    200          
+    201              return( 0 );
+    202          }
+    203          
+    204          /*
+    205           *    RSASSA-PSS-params  ::=  SEQUENCE  {
+    206           *       hashAlgorithm     [0] HashAlgorithm DEFAULT sha1Identifier,
+    207           *       maskGenAlgorithm  [1] MaskGenAlgorithm DEFAULT mgf1SHA1Identifier,
+    208           *       saltLength        [2] INTEGER DEFAULT 20,
+    209           *       trailerField      [3] INTEGER DEFAULT 1  }
+    210           *    -- Note that the tags in this Sequence are explicit.
+    211           *
+    212           * RFC 4055 (which defines use of RSASSA-PSS in PKIX) states that the value
+    213           * of trailerField MUST be 1, and PKCS#1 v2.2 doesn't even define any other
+    214           * option. Enfore this at parsing time.
+    215           */
+    216          int mbedtls_x509_get_rsassa_pss_params( const mbedtls_x509_buf *params,
+    217                                          mbedtls_md_type_t *md_alg, mbedtls_md_type_t *mgf_md,
+    218                                          int *salt_len )
+    219          {
+    220              int ret;
+    221              unsigned char *p;
+    222              const unsigned char *end, *end2;
+    223              size_t len;
+    224              mbedtls_x509_buf alg_id, alg_params;
+    225          
+    226              /* First set everything to defaults */
+    227              *md_alg = MBEDTLS_MD_SHA1;
+    228              *mgf_md = MBEDTLS_MD_SHA1;
+    229              *salt_len = 20;
+    230          
+    231              /* Make sure params is a SEQUENCE and setup bounds */
+    232              if( params->tag != ( MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) )
+    233                  return( MBEDTLS_ERR_X509_INVALID_ALG +
+    234                          MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    235          
+    236              p = (unsigned char *) params->p;
+    237              end = p + params->len;
+    238          
+    239              if( p == end )
+    240                  return( 0 );
+    241          
+    242              /*
+    243               * HashAlgorithm
+    244               */
+    245              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    246                              MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | 0 ) ) == 0 )
+    247              {
+    248                  end2 = p + len;
+    249          
+    250                  /* HashAlgorithm ::= AlgorithmIdentifier (without parameters) */
+    251                  if( ( ret = mbedtls_x509_get_alg_null( &p, end2, &alg_id ) ) != 0 )
+    252                      return( ret );
+    253          
+    254                  if( ( ret = mbedtls_oid_get_md_alg( &alg_id, md_alg ) ) != 0 )
+    255                      return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    256          
+    257                  if( p != end2 )
+    258                      return( MBEDTLS_ERR_X509_INVALID_ALG +
+    259                              MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    260              }
+    261              else if( ret != MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    262                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    263          
+    264              if( p == end )
+    265                  return( 0 );
+    266          
+    267              /*
+    268               * MaskGenAlgorithm
+    269               */
+    270              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    271                              MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | 1 ) ) == 0 )
+    272              {
+    273                  end2 = p + len;
+    274          
+    275                  /* MaskGenAlgorithm ::= AlgorithmIdentifier (params = HashAlgorithm) */
+    276                  if( ( ret = mbedtls_x509_get_alg( &p, end2, &alg_id, &alg_params ) ) != 0 )
+    277                      return( ret );
+    278          
+    279                  /* Only MFG1 is recognised for now */
+    280                  if( MBEDTLS_OID_CMP( MBEDTLS_OID_MGF1, &alg_id ) != 0 )
+    281                      return( MBEDTLS_ERR_X509_FEATURE_UNAVAILABLE +
+    282                              MBEDTLS_ERR_OID_NOT_FOUND );
+    283          
+    284                  /* Parse HashAlgorithm */
+    285                  if( ( ret = x509_get_hash_alg( &alg_params, mgf_md ) ) != 0 )
+    286                      return( ret );
+    287          
+    288                  if( p != end2 )
+    289                      return( MBEDTLS_ERR_X509_INVALID_ALG +
+    290                              MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    291              }
+    292              else if( ret != MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    293                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    294          
+    295              if( p == end )
+    296                  return( 0 );
+    297          
+    298              /*
+    299               * salt_len
+    300               */
+    301              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    302                              MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | 2 ) ) == 0 )
+    303              {
+    304                  end2 = p + len;
+    305          
+    306                  if( ( ret = mbedtls_asn1_get_int( &p, end2, salt_len ) ) != 0 )
+    307                      return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    308          
+    309                  if( p != end2 )
+    310                      return( MBEDTLS_ERR_X509_INVALID_ALG +
+    311                              MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    312              }
+    313              else if( ret != MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    314                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    315          
+    316              if( p == end )
+    317                  return( 0 );
+    318          
+    319              /*
+    320               * trailer_field (if present, must be 1)
+    321               */
+    322              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    323                              MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | 3 ) ) == 0 )
+    324              {
+    325                  int trailer_field;
+    326          
+    327                  end2 = p + len;
+    328          
+    329                  if( ( ret = mbedtls_asn1_get_int( &p, end2, &trailer_field ) ) != 0 )
+    330                      return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    331          
+    332                  if( p != end2 )
+    333                      return( MBEDTLS_ERR_X509_INVALID_ALG +
+    334                              MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    335          
+    336                  if( trailer_field != 1 )
+    337                      return( MBEDTLS_ERR_X509_INVALID_ALG );
+    338              }
+    339              else if( ret != MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    340                  return( MBEDTLS_ERR_X509_INVALID_ALG + ret );
+    341          
+    342              if( p != end )
+    343                  return( MBEDTLS_ERR_X509_INVALID_ALG +
+    344                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    345          
+    346              return( 0 );
+    347          }
+    348          #endif /* MBEDTLS_X509_RSASSA_PSS_SUPPORT */
+    349          
+    350          /*
+    351           *  AttributeTypeAndValue ::= SEQUENCE {
+    352           *    type     AttributeType,
+    353           *    value    AttributeValue }
+    354           *
+    355           *  AttributeType ::= OBJECT IDENTIFIER
+    356           *
+    357           *  AttributeValue ::= ANY DEFINED BY AttributeType
+    358           */
+    359          static int x509_get_attr_type_value( unsigned char **p,
+    360                                               const unsigned char *end,
+    361                                               mbedtls_x509_name *cur )
+    362          {
+    363              int ret;
+    364              size_t len;
+    365              mbedtls_x509_buf *oid;
+    366              mbedtls_x509_buf *val;
+    367          
+    368              if( ( ret = mbedtls_asn1_get_tag( p, end, &len,
+    369                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    370                  return( MBEDTLS_ERR_X509_INVALID_NAME + ret );
+    371          
+    372              if( ( end - *p ) < 1 )
+    373                  return( MBEDTLS_ERR_X509_INVALID_NAME +
+    374                          MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    375          
+    376              oid = &cur->oid;
+    377              oid->tag = **p;
+    378          
+    379              if( ( ret = mbedtls_asn1_get_tag( p, end, &oid->len, MBEDTLS_ASN1_OID ) ) != 0 )
+    380                  return( MBEDTLS_ERR_X509_INVALID_NAME + ret );
+    381          
+    382              oid->p = *p;
+    383              *p += oid->len;
+    384          
+    385              if( ( end - *p ) < 1 )
+    386                  return( MBEDTLS_ERR_X509_INVALID_NAME +
+    387                          MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    388          
+    389              if( **p != MBEDTLS_ASN1_BMP_STRING && **p != MBEDTLS_ASN1_UTF8_STRING      &&
+    390                  **p != MBEDTLS_ASN1_T61_STRING && **p != MBEDTLS_ASN1_PRINTABLE_STRING &&
+    391                  **p != MBEDTLS_ASN1_IA5_STRING && **p != MBEDTLS_ASN1_UNIVERSAL_STRING &&
+    392                  **p != MBEDTLS_ASN1_BIT_STRING )
+    393                  return( MBEDTLS_ERR_X509_INVALID_NAME +
+    394                          MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    395          
+    396              val = &cur->val;
+    397              val->tag = *(*p)++;
+    398          
+    399              if( ( ret = mbedtls_asn1_get_len( p, end, &val->len ) ) != 0 )
+    400                  return( MBEDTLS_ERR_X509_INVALID_NAME + ret );
+    401          
+    402              val->p = *p;
+    403              *p += val->len;
+    404          
+    405              cur->next = NULL;
+    406          
+    407              return( 0 );
+    408          }
+    409          
+    410          /*
+    411           *  Name ::= CHOICE { -- only one possibility for now --
+    412           *       rdnSequence  RDNSequence }
+    413           *
+    414           *  RDNSequence ::= SEQUENCE OF RelativeDistinguishedName
+    415           *
+    416           *  RelativeDistinguishedName ::=
+    417           *    SET OF AttributeTypeAndValue
+    418           *
+    419           *  AttributeTypeAndValue ::= SEQUENCE {
+    420           *    type     AttributeType,
+    421           *    value    AttributeValue }
+    422           *
+    423           *  AttributeType ::= OBJECT IDENTIFIER
+    424           *
+    425           *  AttributeValue ::= ANY DEFINED BY AttributeType
+    426           *
+    427           * The data structure is optimized for the common case where each RDN has only
+    428           * one element, which is represented as a list of AttributeTypeAndValue.
+    429           * For the general case we still use a flat list, but we mark elements of the
+    430           * same set so that they are "merged" together in the functions that consume
+    431           * this list, eg mbedtls_x509_dn_gets().
+    432           */
+    433          int mbedtls_x509_get_name( unsigned char **p, const unsigned char *end,
+    434                             mbedtls_x509_name *cur )
+    435          {
+    436              int ret;
+    437              size_t set_len;
+    438              const unsigned char *end_set;
+    439          
+    440              /* don't use recursion, we'd risk stack overflow if not optimized */
+    441              while( 1 )
+    442              {
+    443                  /*
+    444                   * parse SET
+    445                   */
+    446                  if( ( ret = mbedtls_asn1_get_tag( p, end, &set_len,
+    447                          MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SET ) ) != 0 )
+    448                      return( MBEDTLS_ERR_X509_INVALID_NAME + ret );
+    449          
+    450                  end_set  = *p + set_len;
+    451          
+    452                  while( 1 )
+    453                  {
+    454                      if( ( ret = x509_get_attr_type_value( p, end_set, cur ) ) != 0 )
+    455                          return( ret );
+    456          
+    457                      if( *p == end_set )
+    458                          break;
+    459          
+    460                      /* Mark this item as being no the only one in a set */
+    461                      cur->next_merged = 1;
+    462          
+    463                      cur->next = mbedtls_calloc( 1, sizeof( mbedtls_x509_name ) );
+    464          
+    465                      if( cur->next == NULL )
+    466                          return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    467          
+    468                      cur = cur->next;
+    469                  }
+    470          
+    471                  /*
+    472                   * continue until end of SEQUENCE is reached
+    473                   */
+    474                  if( *p == end )
+    475                      return( 0 );
+    476          
+    477                  cur->next = mbedtls_calloc( 1, sizeof( mbedtls_x509_name ) );
+    478          
+    479                  if( cur->next == NULL )
+    480                      return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    481          
+    482                  cur = cur->next;
+    483              }
+    484          }
+    485          
+    486          static int x509_parse_int( unsigned char **p, size_t n, int *res )
+    487          {
+    488              *res = 0;
+    489          
+    490              for( ; n > 0; --n )
+    491              {
+    492                  if( ( **p < '0') || ( **p > '9' ) )
+    493                      return ( MBEDTLS_ERR_X509_INVALID_DATE );
+    494          
+    495                  *res *= 10;
+    496                  *res += ( *(*p)++ - '0' );
+    497              }
+    498          
+    499              return( 0 );
+    500          }
+    501          
+    502          static int x509_date_is_valid(const mbedtls_x509_time *t )
+    503          {
+    504              int ret = MBEDTLS_ERR_X509_INVALID_DATE;
+    505              int month_len;
+    506          
+    507              CHECK_RANGE( 0, 9999, t->year );
+    508              CHECK_RANGE( 0, 23,   t->hour );
+    509              CHECK_RANGE( 0, 59,   t->min  );
+    510              CHECK_RANGE( 0, 59,   t->sec  );
+    511          
+    512              switch( t->mon )
+    513              {
+    514                  case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+    515                      month_len = 31;
+    516                      break;
+    517                  case 4: case 6: case 9: case 11:
+    518                      month_len = 30;
+    519                      break;
+    520                  case 2:
+    521                      if( ( !( t->year % 4 ) && t->year % 100 ) ||
+    522                          !( t->year % 400 ) )
+    523                          month_len = 29;
+    524                      else
+    525                          month_len = 28;
+    526                      break;
+    527                  default:
+    528                      return( ret );
+    529              }
+    530              CHECK_RANGE( 1, month_len, t->day );
+    531          
+    532              return( 0 );
+    533          }
+    534          
+    535          /*
+    536           * Parse an ASN1_UTC_TIME (yearlen=2) or ASN1_GENERALIZED_TIME (yearlen=4)
+    537           * field.
+    538           */
+    539          static int x509_parse_time( unsigned char **p, size_t len, size_t yearlen,
+    540                                      mbedtls_x509_time *tm )
+    541          {
+    542              int ret;
+    543          
+    544              /*
+    545               * Minimum length is 10 or 12 depending on yearlen
+    546               */
+    547              if ( len < yearlen + 8 )
+    548                  return ( MBEDTLS_ERR_X509_INVALID_DATE );
+    549              len -= yearlen + 8;
+    550          
+    551              /*
+    552               * Parse year, month, day, hour, minute
+    553               */
+    554              CHECK( x509_parse_int( p, yearlen, &tm->year ) );
+    555              if ( 2 == yearlen )
+    556              {
+    557                  if ( tm->year < 50 )
+    558                      tm->year += 100;
+    559          
+    560                  tm->year += 1900;
+    561              }
+    562          
+    563              CHECK( x509_parse_int( p, 2, &tm->mon ) );
+    564              CHECK( x509_parse_int( p, 2, &tm->day ) );
+    565              CHECK( x509_parse_int( p, 2, &tm->hour ) );
+    566              CHECK( x509_parse_int( p, 2, &tm->min ) );
+    567          
+    568              /*
+    569               * Parse seconds if present
+    570               */
+    571              if ( len >= 2 )
+    572              {
+    573                  CHECK( x509_parse_int( p, 2, &tm->sec ) );
+    574                  len -= 2;
+    575              }
+    576              else
+    577                  return ( MBEDTLS_ERR_X509_INVALID_DATE );
+    578          
+    579              /*
+    580               * Parse trailing 'Z' if present
+    581               */
+    582              if ( 1 == len && 'Z' == **p )
+    583              {
+    584                  (*p)++;
+    585                  len--;
+    586              }
+    587          
+    588              /*
+    589               * We should have parsed all characters at this point
+    590               */
+    591              if ( 0 != len )
+    592                  return ( MBEDTLS_ERR_X509_INVALID_DATE );
+    593          
+    594              CHECK( x509_date_is_valid( tm ) );
+    595          
+    596              return ( 0 );
+    597          }
+    598          
+    599          /*
+    600           *  Time ::= CHOICE {
+    601           *       utcTime        UTCTime,
+    602           *       generalTime    GeneralizedTime }
+    603           */
+    604          int mbedtls_x509_get_time( unsigned char **p, const unsigned char *end,
+    605                                     mbedtls_x509_time *tm )
+    606          {
+    607              int ret;
+    608              size_t len, year_len;
+    609              unsigned char tag;
+    610          
+    611              if( ( end - *p ) < 1 )
+    612                  return( MBEDTLS_ERR_X509_INVALID_DATE +
+    613                          MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    614          
+    615              tag = **p;
+    616          
+    617              if( tag == MBEDTLS_ASN1_UTC_TIME )
+    618                  year_len = 2;
+    619              else if( tag == MBEDTLS_ASN1_GENERALIZED_TIME )
+    620                  year_len = 4;
+    621              else
+    622                  return( MBEDTLS_ERR_X509_INVALID_DATE +
+    623                          MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    624          
+    625              (*p)++;
+    626              ret = mbedtls_asn1_get_len( p, end, &len );
+    627          
+    628              if( ret != 0 )
+    629                  return( MBEDTLS_ERR_X509_INVALID_DATE + ret );
+    630          
+    631              return x509_parse_time( p, len, year_len, tm );
+    632          }
+    633          
+    634          int mbedtls_x509_get_sig( unsigned char **p, const unsigned char *end, mbedtls_x509_buf *sig )
+    635          {
+    636              int ret;
+    637              size_t len;
+    638              int tag_type;
+    639          
+    640              if( ( end - *p ) < 1 )
+    641                  return( MBEDTLS_ERR_X509_INVALID_SIGNATURE +
+    642                          MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    643          
+    644              tag_type = **p;
+    645          
+    646              if( ( ret = mbedtls_asn1_get_bitstring_null( p, end, &len ) ) != 0 )
+    647                  return( MBEDTLS_ERR_X509_INVALID_SIGNATURE + ret );
+    648          
+    649              sig->tag = tag_type;
+    650              sig->len = len;
+    651              sig->p = *p;
+    652          
+    653              *p += len;
+    654          
+    655              return( 0 );
+    656          }
+    657          
+    658          /*
+    659           * Get signature algorithm from alg OID and optional parameters
+    660           */
+    661          int mbedtls_x509_get_sig_alg( const mbedtls_x509_buf *sig_oid, const mbedtls_x509_buf *sig_params,
+    662                                mbedtls_md_type_t *md_alg, mbedtls_pk_type_t *pk_alg,
+    663                                void **sig_opts )
+    664          {
+    665              int ret;
+    666          
+    667              if( *sig_opts != NULL )
+    668                  return( MBEDTLS_ERR_X509_BAD_INPUT_DATA );
+    669          
+    670              if( ( ret = mbedtls_oid_get_sig_alg( sig_oid, md_alg, pk_alg ) ) != 0 )
+    671                  return( MBEDTLS_ERR_X509_UNKNOWN_SIG_ALG + ret );
+    672          
+    673          #if defined(MBEDTLS_X509_RSASSA_PSS_SUPPORT)
+    674              if( *pk_alg == MBEDTLS_PK_RSASSA_PSS )
+    675              {
+    676                  mbedtls_pk_rsassa_pss_options *pss_opts;
+    677          
+    678                  pss_opts = mbedtls_calloc( 1, sizeof( mbedtls_pk_rsassa_pss_options ) );
+    679                  if( pss_opts == NULL )
+    680                      return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    681          
+    682                  ret = mbedtls_x509_get_rsassa_pss_params( sig_params,
+    683                                                    md_alg,
+    684                                                    &pss_opts->mgf1_hash_id,
+    685                                                    &pss_opts->expected_salt_len );
+    686                  if( ret != 0 )
+    687                  {
+    688                      mbedtls_free( pss_opts );
+    689                      return( ret );
+    690                  }
+    691          
+    692                  *sig_opts = (void *) pss_opts;
+    693              }
+    694              else
+    695          #endif /* MBEDTLS_X509_RSASSA_PSS_SUPPORT */
+    696              {
+    697                  /* Make sure parameters are absent or NULL */
+    698                  if( ( sig_params->tag != MBEDTLS_ASN1_NULL && sig_params->tag != 0 ) ||
+    699                        sig_params->len != 0 )
+    700                  return( MBEDTLS_ERR_X509_INVALID_ALG );
+    701              }
+    702          
+    703              return( 0 );
+    704          }
+    705          
+    706          /*
+    707           * X.509 Extensions (No parsing of extensions, pointer should
+    708           * be either manually updated or extensions should be parsed!)
+    709           */
+    710          int mbedtls_x509_get_ext( unsigned char **p, const unsigned char *end,
+    711                            mbedtls_x509_buf *ext, int tag )
+    712          {
+    713              int ret;
+    714              size_t len;
+    715          
+    716              if( *p == end )
+    717                  return( 0 );
+    718          
+    719              ext->tag = **p;
+    720          
+    721              if( ( ret = mbedtls_asn1_get_tag( p, end, &ext->len,
+    722                      MBEDTLS_ASN1_CONTEXT_SPECIFIC | MBEDTLS_ASN1_CONSTRUCTED | tag ) ) != 0 )
+    723                  return( ret );
+    724          
+    725              ext->p = *p;
+    726              end = *p + ext->len;
+    727          
+    728              /*
+    729               * Extensions  ::=  SEQUENCE SIZE (1..MAX) OF Extension
+    730               *
+    731               * Extension  ::=  SEQUENCE  {
+    732               *      extnID      OBJECT IDENTIFIER,
+    733               *      critical    BOOLEAN DEFAULT FALSE,
+    734               *      extnValue   OCTET STRING  }
+    735               */
+    736              if( ( ret = mbedtls_asn1_get_tag( p, end, &len,
+    737                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    738                  return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    739          
+    740              if( end != *p + len )
+    741                  return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS +
+    742                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    743          
+    744              return( 0 );
+    745          }
+    746          
+    747          /*
+    748           * Store the name in printable form into buf; no more
+    749           * than size characters will be written
+    750           */
+    751          int mbedtls_x509_dn_gets( char *buf, size_t size, const mbedtls_x509_name *dn )
+    752          {
+    753              int ret;
+    754              size_t i, n;
+    755              unsigned char c, merge = 0;
+    756              const mbedtls_x509_name *name;
+    757              const char *short_name = NULL;
+    758              char s[MBEDTLS_X509_MAX_DN_NAME_SIZE], *p;
+    759          
+    760              memset( s, 0, sizeof( s ) );
+    761          
+    762              name = dn;
+    763              p = buf;
+    764              n = size;
+    765          
+    766              while( name != NULL )
+    767              {
+    768                  if( !name->oid.p )
+    769                  {
+    770                      name = name->next;
+    771                      continue;
+    772                  }
+    773          
+    774                  if( name != dn )
+    775                  {
+    776                      ret = mbedtls_snprintf( p, n, merge ? " + " : ", " );
+    777                      MBEDTLS_X509_SAFE_SNPRINTF;
+    778                  }
+    779          
+    780                  ret = mbedtls_oid_get_attr_short_name( &name->oid, &short_name );
+    781          
+    782                  if( ret == 0 )
+    783                      ret = mbedtls_snprintf( p, n, "%s=", short_name );
+    784                  else
+    785                      ret = mbedtls_snprintf( p, n, "\?\?=" );
+    786                  MBEDTLS_X509_SAFE_SNPRINTF;
+    787          
+    788                  for( i = 0; i < name->val.len; i++ )
+    789                  {
+    790                      if( i >= sizeof( s ) - 1 )
+    791                          break;
+    792          
+    793                      c = name->val.p[i];
+    794                      if( c < 32 || c == 127 || ( c > 128 && c < 160 ) )
+    795                           s[i] = '?';
+    796                      else s[i] = c;
+    797                  }
+    798                  s[i] = '\0';
+    799                  ret = mbedtls_snprintf( p, n, "%s", s );
+    800                  MBEDTLS_X509_SAFE_SNPRINTF;
+    801          
+    802                  merge = name->next_merged;
+    803                  name = name->next;
+    804              }
+    805          
+    806              return( (int) ( size - n ) );
+    807          }
+    808          
+    809          /*
+    810           * Store the serial in printable form into buf; no more
+    811           * than size characters will be written
+    812           */
+    813          int mbedtls_x509_serial_gets( char *buf, size_t size, const mbedtls_x509_buf *serial )
+    814          {
+    815              int ret;
+    816              size_t i, n, nr;
+    817              char *p;
+    818          
+    819              p = buf;
+    820              n = size;
+    821          
+    822              nr = ( serial->len <= 32 )
+    823                  ? serial->len  : 28;
+    824          
+    825              for( i = 0; i < nr; i++ )
+    826              {
+    827                  if( i == 0 && nr > 1 && serial->p[i] == 0x0 )
+    828                      continue;
+    829          
+    830                  ret = mbedtls_snprintf( p, n, "%02X%s",
+    831                          serial->p[i], ( i < nr - 1 ) ? ":" : "" );
+    832                  MBEDTLS_X509_SAFE_SNPRINTF;
+    833              }
+    834          
+    835              if( nr != serial->len )
+    836              {
+    837                  ret = mbedtls_snprintf( p, n, "...." );
+    838                  MBEDTLS_X509_SAFE_SNPRINTF;
+    839              }
+    840          
+    841              return( (int) ( size - n ) );
+    842          }
+    843          
+    844          /*
+    845           * Helper for writing signature algorithms
+    846           */
+    847          int mbedtls_x509_sig_alg_gets( char *buf, size_t size, const mbedtls_x509_buf *sig_oid,
+    848                                 mbedtls_pk_type_t pk_alg, mbedtls_md_type_t md_alg,
+    849                                 const void *sig_opts )
+    850          {
+    851              int ret;
+    852              char *p = buf;
+    853              size_t n = size;
+    854              const char *desc = NULL;
+    855          
+    856              ret = mbedtls_oid_get_sig_alg_desc( sig_oid, &desc );
+    857              if( ret != 0 )
+    858                  ret = mbedtls_snprintf( p, n, "???"  );
+    859              else
+    860                  ret = mbedtls_snprintf( p, n, "%s", desc );
+    861              MBEDTLS_X509_SAFE_SNPRINTF;
+    862          
+    863          #if defined(MBEDTLS_X509_RSASSA_PSS_SUPPORT)
+    864              if( pk_alg == MBEDTLS_PK_RSASSA_PSS )
+    865              {
+    866                  const mbedtls_pk_rsassa_pss_options *pss_opts;
+    867                  const mbedtls_md_info_t *md_info, *mgf_md_info;
+    868          
+    869                  pss_opts = (const mbedtls_pk_rsassa_pss_options *) sig_opts;
+    870          
+    871                  md_info = mbedtls_md_info_from_type( md_alg );
+    872                  mgf_md_info = mbedtls_md_info_from_type( pss_opts->mgf1_hash_id );
+    873          
+    874                  ret = mbedtls_snprintf( p, n, " (%s, MGF1-%s, 0x%02X)",
+    875                                        md_info ? mbedtls_md_get_name( md_info ) : "???",
+    876                                        mgf_md_info ? mbedtls_md_get_name( mgf_md_info ) : "???",
+    877                                        pss_opts->expected_salt_len );
+    878                  MBEDTLS_X509_SAFE_SNPRINTF;
+    879              }
+    880          #else
+    881              ((void) pk_alg);
+    882              ((void) md_alg);
+    883              ((void) sig_opts);
+    884          #endif /* MBEDTLS_X509_RSASSA_PSS_SUPPORT */
+    885          
+    886              return( (int)( size - n ) );
+    887          }
+    888          
+    889          /*
+    890           * Helper for writing "RSA key size", "EC key size", etc
+    891           */
+    892          int mbedtls_x509_key_size_helper( char *buf, size_t buf_size, const char *name )
+    893          {
+    894              char *p = buf;
+    895              size_t n = buf_size;
+    896              int ret;
+    897          
+    898              ret = mbedtls_snprintf( p, n, "%s key size", name );
+    899              MBEDTLS_X509_SAFE_SNPRINTF;
+    900          
+    901              return( 0 );
+    902          }
+    903          
+    904          #if defined(MBEDTLS_HAVE_TIME_DATE)
+    905          /*
+    906           * Set the time structure to the current time.
+    907           * Return 0 on success, non-zero on failure.
+    908           */
+    909          #if defined(_WIN32) && !defined(EFIX64) && !defined(EFI32)
+    910          static int x509_get_current_time( mbedtls_x509_time *now )
+    911          {
+    912              SYSTEMTIME st;
+    913          
+    914              GetSystemTime( &st );
+    915          
+    916              now->year = st.wYear;
+    917              now->mon  = st.wMonth;
+    918              now->day  = st.wDay;
+    919              now->hour = st.wHour;
+    920              now->min  = st.wMinute;
+    921              now->sec  = st.wSecond;
+    922          
+    923              return( 0 );
+    924          }
+    925          #else
+    926          static int x509_get_current_time( mbedtls_x509_time *now )
+    927          {
+    928              struct tm *lt;
+    929              mbedtls_time_t tt;
+    930              int ret = 0;
+    931          
+    932          #if defined(MBEDTLS_THREADING_C)
+    933              if( mbedtls_mutex_lock( &mbedtls_threading_gmtime_mutex ) != 0 )
+    934                  return( MBEDTLS_ERR_THREADING_MUTEX_ERROR );
+    935          #endif
+    936          
+    937              tt = mbedtls_time( NULL );
+    938              lt = gmtime( &tt );
+    939          
+    940              if( lt == NULL )
+    941                  ret = -1;
+    942              else
+    943              {
+    944                  now->year = lt->tm_year + 1900;
+    945                  now->mon  = lt->tm_mon  + 1;
+    946                  now->day  = lt->tm_mday;
+    947                  now->hour = lt->tm_hour;
+    948                  now->min  = lt->tm_min;
+    949                  now->sec  = lt->tm_sec;
+    950              }
+    951          
+    952          #if defined(MBEDTLS_THREADING_C)
+    953              if( mbedtls_mutex_unlock( &mbedtls_threading_gmtime_mutex ) != 0 )
+    954                  return( MBEDTLS_ERR_THREADING_MUTEX_ERROR );
+    955          #endif
+    956          
+    957              return( ret );
+    958          }
+    959          #endif /* _WIN32 && !EFIX64 && !EFI32 */
+    960          
+    961          /*
+    962           * Return 0 if before <= after, 1 otherwise
+    963           */
+    964          static int x509_check_time( const mbedtls_x509_time *before, const mbedtls_x509_time *after )
+    965          {
+    966              if( before->year  > after->year )
+    967                  return( 1 );
+    968          
+    969              if( before->year == after->year &&
+    970                  before->mon   > after->mon )
+    971                  return( 1 );
+    972          
+    973              if( before->year == after->year &&
+    974                  before->mon  == after->mon  &&
+    975                  before->day   > after->day )
+    976                  return( 1 );
+    977          
+    978              if( before->year == after->year &&
+    979                  before->mon  == after->mon  &&
+    980                  before->day  == after->day  &&
+    981                  before->hour  > after->hour )
+    982                  return( 1 );
+    983          
+    984              if( before->year == after->year &&
+    985                  before->mon  == after->mon  &&
+    986                  before->day  == after->day  &&
+    987                  before->hour == after->hour &&
+    988                  before->min   > after->min  )
+    989                  return( 1 );
+    990          
+    991              if( before->year == after->year &&
+    992                  before->mon  == after->mon  &&
+    993                  before->day  == after->day  &&
+    994                  before->hour == after->hour &&
+    995                  before->min  == after->min  &&
+    996                  before->sec   > after->sec  )
+    997                  return( 1 );
+    998          
+    999              return( 0 );
+   1000          }
+   1001          
+   1002          int mbedtls_x509_time_is_past( const mbedtls_x509_time *to )
+   1003          {
+   1004              mbedtls_x509_time now;
+   1005          
+   1006              if( x509_get_current_time( &now ) != 0 )
+   1007                  return( 1 );
+   1008          
+   1009              return( x509_check_time( &now, to ) );
+   1010          }
+   1011          
+   1012          int mbedtls_x509_time_is_future( const mbedtls_x509_time *from )
+   1013          {
+   1014              mbedtls_x509_time now;
+   1015          
+   1016              if( x509_get_current_time( &now ) != 0 )
+   1017                  return( 1 );
+   1018          
+   1019              return( x509_check_time( from, &now ) );
+   1020          }
+   1021          
+   1022          #else  /* MBEDTLS_HAVE_TIME_DATE */
+   1023          
+   1024          int mbedtls_x509_time_is_past( const mbedtls_x509_time *to )
+   1025          {
+   1026              ((void) to);
+   1027              return( 0 );
+   1028          }
+   1029          
+   1030          int mbedtls_x509_time_is_future( const mbedtls_x509_time *from )
+   1031          {
+   1032              ((void) from);
+   1033              return( 0 );
+   1034          }
+   1035          #endif /* MBEDTLS_HAVE_TIME_DATE */
+   1036          
+   1037          #if defined(MBEDTLS_SELF_TEST)
+   1038          
+   1039          #include "mbedtls/x509_crt.h"
+   1040          #include "mbedtls/certs.h"
+   1041          
+   1042          /*
+   1043           * Checkup routine
+   1044           */
+   1045          int mbedtls_x509_self_test( int verbose )
+   1046          {
+   1047          #if defined(MBEDTLS_CERTS_C) && defined(MBEDTLS_SHA256_C)
+   1048              int ret;
+   1049              uint32_t flags;
+   1050              mbedtls_x509_crt cacert;
+   1051              mbedtls_x509_crt clicert;
+   1052          
+   1053              if( verbose != 0 )
+   1054                  mbedtls_printf( "  X.509 certificate load: " );
+   1055          
+   1056              mbedtls_x509_crt_init( &clicert );
+   1057          
+   1058              ret = mbedtls_x509_crt_parse( &clicert, (const unsigned char *) mbedtls_test_cli_crt,
+   1059                                     mbedtls_test_cli_crt_len );
+   1060              if( ret != 0 )
+   1061              {
+   1062                  if( verbose != 0 )
+   1063                      mbedtls_printf( "failed\n" );
+   1064          
+   1065                  return( ret );
+   1066              }
+   1067          
+   1068              mbedtls_x509_crt_init( &cacert );
+   1069          
+   1070              ret = mbedtls_x509_crt_parse( &cacert, (const unsigned char *) mbedtls_test_ca_crt,
+   1071                                    mbedtls_test_ca_crt_len );
+   1072              if( ret != 0 )
+   1073              {
+   1074                  if( verbose != 0 )
+   1075                      mbedtls_printf( "failed\n" );
+   1076          
+   1077                  return( ret );
+   1078              }
+   1079          
+   1080              if( verbose != 0 )
+   1081                  mbedtls_printf( "passed\n  X.509 signature verify: ");
+   1082          
+   1083              ret = mbedtls_x509_crt_verify( &clicert, &cacert, NULL, NULL, &flags, NULL, NULL );
+   1084              if( ret != 0 )
+   1085              {
+   1086                  if( verbose != 0 )
+   1087                      mbedtls_printf( "failed\n" );
+   1088          
+   1089                  return( ret );
+   1090              }
+   1091          
+   1092              if( verbose != 0 )
+   1093                  mbedtls_printf( "passed\n\n");
+   1094          
+   1095              mbedtls_x509_crt_free( &cacert  );
+   1096              mbedtls_x509_crt_free( &clicert );
+   1097          
+   1098              return( 0 );
+   1099          #else
+   1100              ((void) verbose);
+   1101              return( 0 );
+   1102          #endif /* MBEDTLS_CERTS_C && MBEDTLS_SHA1_C */
+   1103          }
+   1104          
+   1105          #endif /* MBEDTLS_SELF_TEST */
+   1106          
+   1107          #endif /* MBEDTLS_X509_USE_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,549 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:42
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\debug.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW3178.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\debug.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"debug.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\debug.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\debug.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\debug.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Debugging routines
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_DEBUG_C)
+     41          
+     42          #if defined(MBEDTLS_PLATFORM_C)
+     43          #include "mbedtls/platform.h"
+     44          #else
+     45          #include <stdlib.h>
+     46          #define mbedtls_calloc      calloc
+     47          #define mbedtls_free        free
+     48          #define mbedtls_time_t      time_t
+     49          #define mbedtls_snprintf    snprintf
+     50          #endif
+     51          
+     52          #include "mbedtls/debug.h"
+     53          
+     54          #include <stdarg.h>
+     55          #include <stdio.h>
+     56          #include <string.h>
+     57          
+     58          #if ( defined(__ARMCC_VERSION) || defined(_MSC_VER) ) && \
+     59              !defined(inline) && !defined(__cplusplus)
+     60          #define inline __inline
+     61          #endif
+     62          
+     63          #define DEBUG_BUF_SIZE      512
+     64          
+     65          static int debug_threshold = 0;
+     66          
+     67          void mbedtls_debug_set_threshold( int threshold )
+     68          {
+     69              debug_threshold = threshold;
+     70          }
+     71          
+     72          /*
+     73           * All calls to f_dbg must be made via this function
+     74           */
+     75          static inline void debug_send_line( const mbedtls_ssl_context *ssl, int level,
+     76                                              const char *file, int line,
+     77                                              const char *str )
+     78          {
+     79              /*
+     80               * If in a threaded environment, we need a thread identifier.
+     81               * Since there is no portable way to get one, use the address of the ssl
+     82               * context instead, as it shouldn't be shared between threads.
+     83               */
+     84          #if defined(MBEDTLS_THREADING_C)
+     85              char idstr[20 + DEBUG_BUF_SIZE]; /* 0x + 16 nibbles + ': ' */
+     86              mbedtls_snprintf( idstr, sizeof( idstr ), "%p: %s", (void*)ssl, str );
+     87              ssl->conf->f_dbg( ssl->conf->p_dbg, level, file, line, idstr );
+     88          #else
+     89              ssl->conf->f_dbg( ssl->conf->p_dbg, level, file, line, str );
+     90          #endif
+     91          }
+     92          
+     93          void mbedtls_debug_print_msg( const mbedtls_ssl_context *ssl, int level,
+     94                                        const char *file, int line,
+     95                                        const char *format, ... )
+     96          {
+     97              va_list argp;
+     98              char str[DEBUG_BUF_SIZE];
+     99              int ret;
+    100          
+    101              if( NULL == ssl || NULL == ssl->conf || NULL == ssl->conf->f_dbg || level > debug_threshold )
+    102                  return;
+    103          
+    104              va_start( argp, format );
+    105          #if defined(_WIN32)
+    106          #if defined(_TRUNCATE) && !defined(__MINGW32__)
+    107              ret = _vsnprintf_s( str, DEBUG_BUF_SIZE, _TRUNCATE, format, argp );
+    108          #else
+    109              ret = _vsnprintf( str, DEBUG_BUF_SIZE, format, argp );
+    110              if( ret < 0 || (size_t) ret == DEBUG_BUF_SIZE )
+    111              {
+    112                  str[DEBUG_BUF_SIZE-1] = '\0';
+    113                  ret = -1;
+    114              }
+    115          #endif
+    116          #else
+    117              ret = vsnprintf( str, DEBUG_BUF_SIZE, format, argp );
+    118          #endif
+    119              va_end( argp );
+    120          
+    121              if( ret >= 0 && ret < DEBUG_BUF_SIZE - 1 )
+    122              {
+    123                  str[ret]     = '\n';
+    124                  str[ret + 1] = '\0';
+    125              }
+    126          
+    127              debug_send_line( ssl, level, file, line, str );
+    128          }
+    129          
+    130          void mbedtls_debug_print_ret( const mbedtls_ssl_context *ssl, int level,
+    131                                const char *file, int line,
+    132                                const char *text, int ret )
+    133          {
+    134              char str[DEBUG_BUF_SIZE];
+    135          
+    136              if( ssl->conf == NULL || ssl->conf->f_dbg == NULL || level > debug_threshold )
+    137                  return;
+    138          
+    139              /*
+    140               * With non-blocking I/O and examples that just retry immediately,
+    141               * the logs would be quickly flooded with WANT_READ, so ignore that.
+    142               * Don't ignore WANT_WRITE however, since is is usually rare.
+    143               */
+    144              if( ret == MBEDTLS_ERR_SSL_WANT_READ )
+    145                  return;
+    146          
+    147              mbedtls_snprintf( str, sizeof( str ), "%s() returned %d (-0x%04x)\n",
+    148                        text, ret, -ret );
+    149          
+    150              debug_send_line( ssl, level, file, line, str );
+    151          }
+    152          
+    153          void mbedtls_debug_print_buf( const mbedtls_ssl_context *ssl, int level,
+    154                                const char *file, int line, const char *text,
+    155                                const unsigned char *buf, size_t len )
+    156          {
+    157              char str[DEBUG_BUF_SIZE];
+    158              char txt[17];
+    159              size_t i, idx = 0;
+    160          
+    161              if( ssl->conf == NULL || ssl->conf->f_dbg == NULL || level > debug_threshold )
+    162                  return;
+    163          
+    164              mbedtls_snprintf( str + idx, sizeof( str ) - idx, "dumping '%s' (%u bytes)\n",
+    165                        text, (unsigned int) len );
+    166          
+    167              debug_send_line( ssl, level, file, line, str );
+    168          
+    169              idx = 0;
+    170              memset( txt, 0, sizeof( txt ) );
+    171              for( i = 0; i < len; i++ )
+    172              {
+    173                  if( i >= 4096 )
+    174                      break;
+    175          
+    176                  if( i % 16 == 0 )
+    177                  {
+    178                      if( i > 0 )
+    179                      {
+    180                          mbedtls_snprintf( str + idx, sizeof( str ) - idx, "  %s\n", txt );
+    181                          debug_send_line( ssl, level, file, line, str );
+    182          
+    183                          idx = 0;
+    184                          memset( txt, 0, sizeof( txt ) );
+    185                      }
+    186          
+    187                      idx += mbedtls_snprintf( str + idx, sizeof( str ) - idx, "%04x: ",
+    188                                       (unsigned int) i );
+    189          
+    190                  }
+    191          
+    192                  idx += mbedtls_snprintf( str + idx, sizeof( str ) - idx, " %02x",
+    193                                   (unsigned int) buf[i] );
+    194                  txt[i % 16] = ( buf[i] > 31 && buf[i] < 127 ) ? buf[i] : '.' ;
+    195              }
+    196          
+    197              if( len > 0 )
+    198              {
+    199                  for( /* i = i */; i % 16 != 0; i++ )
+    200                      idx += mbedtls_snprintf( str + idx, sizeof( str ) - idx, "   " );
+    201          
+    202                  mbedtls_snprintf( str + idx, sizeof( str ) - idx, "  %s\n", txt );
+    203                  debug_send_line( ssl, level, file, line, str );
+    204              }
+    205          }
+    206          
+    207          #if defined(MBEDTLS_ECP_C)
+    208          void mbedtls_debug_print_ecp( const mbedtls_ssl_context *ssl, int level,
+    209                                const char *file, int line,
+    210                                const char *text, const mbedtls_ecp_point *X )
+    211          {
+    212              char str[DEBUG_BUF_SIZE];
+    213          
+    214              if( ssl->conf == NULL || ssl->conf->f_dbg == NULL || level > debug_threshold )
+    215                  return;
+    216          
+    217              mbedtls_snprintf( str, sizeof( str ), "%s(X)", text );
+    218              mbedtls_debug_print_mpi( ssl, level, file, line, str, &X->X );
+    219          
+    220              mbedtls_snprintf( str, sizeof( str ), "%s(Y)", text );
+    221              mbedtls_debug_print_mpi( ssl, level, file, line, str, &X->Y );
+    222          }
+    223          #endif /* MBEDTLS_ECP_C */
+    224          
+    225          #if defined(MBEDTLS_BIGNUM_C)
+    226          void mbedtls_debug_print_mpi( const mbedtls_ssl_context *ssl, int level,
+    227                                const char *file, int line,
+    228                                const char *text, const mbedtls_mpi *X )
+    229          {
+    230              char str[DEBUG_BUF_SIZE];
+    231              int j, k, zeros = 1;
+    232              size_t i, n, idx = 0;
+    233          
+    234              if( ssl->conf == NULL || ssl->conf->f_dbg == NULL || X == NULL || level > debug_threshold )
+    235                  return;
+    236          
+    237              for( n = X->n - 1; n > 0; n-- )
+    238                  if( X->p[n] != 0 )
+    239                      break;
+    240          
+    241              for( j = ( sizeof(mbedtls_mpi_uint) << 3 ) - 1; j >= 0; j-- )
+    242                  if( ( ( X->p[n] >> j ) & 1 ) != 0 )
+    243                      break;
+    244          
+    245              mbedtls_snprintf( str + idx, sizeof( str ) - idx, "value of '%s' (%d bits) is:\n",
+    246                        text, (int) ( ( n * ( sizeof(mbedtls_mpi_uint) << 3 ) ) + j + 1 ) );
+    247          
+    248              debug_send_line( ssl, level, file, line, str );
+    249          
+    250              idx = 0;
+    251              for( i = n + 1, j = 0; i > 0; i-- )
+    252              {
+    253                  if( zeros && X->p[i - 1] == 0 )
+    254                      continue;
+    255          
+    256                  for( k = sizeof( mbedtls_mpi_uint ) - 1; k >= 0; k-- )
+    257                  {
+    258                      if( zeros && ( ( X->p[i - 1] >> ( k << 3 ) ) & 0xFF ) == 0 )
+    259                          continue;
+    260                      else
+    261                          zeros = 0;
+    262          
+    263                      if( j % 16 == 0 )
+    264                      {
+    265                          if( j > 0 )
+    266                          {
+    267                              mbedtls_snprintf( str + idx, sizeof( str ) - idx, "\n" );
+    268                              debug_send_line( ssl, level, file, line, str );
+    269                              idx = 0;
+    270                          }
+    271                      }
+    272          
+    273                      idx += mbedtls_snprintf( str + idx, sizeof( str ) - idx, " %02x", (unsigned int)
+    274                                       ( X->p[i - 1] >> ( k << 3 ) ) & 0xFF );
+    275          
+    276                      j++;
+    277                  }
+    278          
+    279              }
+    280          
+    281              if( zeros == 1 )
+    282                  idx += mbedtls_snprintf( str + idx, sizeof( str ) - idx, " 00" );
+    283          
+    284              mbedtls_snprintf( str + idx, sizeof( str ) - idx, "\n" );
+    285              debug_send_line( ssl, level, file, line, str );
+    286          }
+    287          #endif /* MBEDTLS_BIGNUM_C */
+    288          
+    289          #if defined(MBEDTLS_X509_CRT_PARSE_C)
+    290          static void debug_print_pk( const mbedtls_ssl_context *ssl, int level,
+    291                                      const char *file, int line,
+    292                                      const char *text, const mbedtls_pk_context *pk )
+    293          {
+    294              size_t i;
+    295              mbedtls_pk_debug_item items[MBEDTLS_PK_DEBUG_MAX_ITEMS];
+    296              char name[16];
+    297          
+    298              memset( items, 0, sizeof( items ) );
+    299          
+    300              if( mbedtls_pk_debug( pk, items ) != 0 )
+    301              {
+    302                  debug_send_line( ssl, level, file, line,
+    303                                    "invalid PK context\n" );
+    304                  return;
+    305              }
+    306          
+    307              for( i = 0; i < MBEDTLS_PK_DEBUG_MAX_ITEMS; i++ )
+    308              {
+    309                  if( items[i].type == MBEDTLS_PK_DEBUG_NONE )
+    310                      return;
+    311          
+    312                  mbedtls_snprintf( name, sizeof( name ), "%s%s", text, items[i].name );
+    313                  name[sizeof( name ) - 1] = '\0';
+    314          
+    315                  if( items[i].type == MBEDTLS_PK_DEBUG_MPI )
+    316                      mbedtls_debug_print_mpi( ssl, level, file, line, name, items[i].value );
+    317                  else
+    318          #if defined(MBEDTLS_ECP_C)
+    319                  if( items[i].type == MBEDTLS_PK_DEBUG_ECP )
+    320                      mbedtls_debug_print_ecp( ssl, level, file, line, name, items[i].value );
+    321                  else
+    322          #endif
+    323                      debug_send_line( ssl, level, file, line,
+    324                                        "should not happen\n" );
+    325              }
+    326          }
+    327          
+    328          static void debug_print_line_by_line( const mbedtls_ssl_context *ssl, int level,
+    329                                                const char *file, int line, const char *text )
+    330          {
+    331              char str[DEBUG_BUF_SIZE];
+    332              const char *start, *cur;
+    333          
+    334              start = text;
+    335              for( cur = text; *cur != '\0'; cur++ )
+    336              {
+    337                  if( *cur == '\n' )
+    338                  {
+    339                      size_t len = cur - start + 1;
+    340                      if( len > DEBUG_BUF_SIZE - 1 )
+    341                          len = DEBUG_BUF_SIZE - 1;
+    342          
+    343                      memcpy( str, start, len );
+    344                      str[len] = '\0';
+    345          
+    346                      debug_send_line( ssl, level, file, line, str );
+    347          
+    348                      start = cur + 1;
+    349                  }
+    350              }
+    351          }
+    352          
+    353          void mbedtls_debug_print_crt( const mbedtls_ssl_context *ssl, int level,
+    354                                const char *file, int line,
+    355                                const char *text, const mbedtls_x509_crt *crt )
+    356          {
+    357              char str[DEBUG_BUF_SIZE];
+    358              int i = 0;
+    359          
+    360              if( ssl->conf == NULL || ssl->conf->f_dbg == NULL || crt == NULL || level > debug_threshold )
+    361                  return;
+    362          
+    363              while( crt != NULL )
+    364              {
+    365                  char buf[1024];
+    366          
+    367                  mbedtls_snprintf( str, sizeof( str ), "%s #%d:\n", text, ++i );
+    368                  debug_send_line( ssl, level, file, line, str );
+    369          
+    370                  mbedtls_x509_crt_info( buf, sizeof( buf ) - 1, "", crt );
+    371                  debug_print_line_by_line( ssl, level, file, line, buf );
+    372          
+    373                  debug_print_pk( ssl, level, file, line, "crt->", &crt->pk );
+    374          
+    375                  crt = crt->next;
+    376              }
+    377          }
+    378          #endif /* MBEDTLS_X509_CRT_PARSE_C */
+    379          
+    380          #endif /* MBEDTLS_DEBUG_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

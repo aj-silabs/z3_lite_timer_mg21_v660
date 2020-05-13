@@ -1,0 +1,747 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:51
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\shax.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW3FA5.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\shax.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"shax.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\shax.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\shax.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\shax.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Generic SHA abstraction
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: APACHE-2.0
+     10           *
+     11           * This software is subject to an open source license and is distributed by
+     12           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     13           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     14           * Such terms and conditions may be further supplemented by the Silicon Labs
+     15           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     16           * sections applicable to open source software.
+     17           *
+     18           ******************************************************************************/
+     19          /*
+     20           *  The SHA-1 standard was published by NIST in 1993.
+     21           *
+     22           *  http://www.itl.nist.gov/fipspubs/fip180-1.htm
+     23           *
+     24           *  The SHA-256 Secure Hash Standard was published by NIST in 2002.
+     25           *
+     26           *  http://csrc.nist.gov/publications/fips/fips180-2/fips180-2.pdf
+     27           */
+     28          
+     29          #if !defined(MBEDTLS_CONFIG_FILE)
+     30          #include "mbedtls/config.h"
+     31          #else
+     32          #include MBEDTLS_CONFIG_FILE
+     33          #endif
+     34          
+     35          #include "mbedtls/sha1.h"
+     36          #include "mbedtls/sha256.h"
+     37          #include "mbedtls/sha512.h"
+     38          #include "mbedtls/md.h"
+     39          
+     40          #if (defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)) \
+     41              || (defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)) \
+     42              || (defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C))
+     43          
+     44          #include "shax.h"
+     45          
+     46          /* import memcpy from string.h */
+     47          #include <string.h>
+     48          
+     49          /* Define all init vectors. If we end up not needing a feature, there won't be a reference to the vecotr and it will get thrown out by the linker */
+     50          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+     51          static const uint8_t init_state_sha1[32] =
+     52          {
+     53              0x67, 0x45, 0x23, 0x01,
+     54              0xEF, 0xCD, 0xAB, 0x89,
+     55              0x98, 0xBA, 0xDC, 0xFE,
+     56              0x10, 0x32, 0x54, 0x76,
+     57              0xC3, 0xD2, 0xE1, 0xF0,
+     58              0x00, 0x00, 0x00, 0x00,
+     59              0x00, 0x00, 0x00, 0x00,
+     60              0x00, 0x00, 0x00, 0x00
+     61          };
+     62          #endif
+     63          
+     64          #if defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)
+     65          static const uint8_t init_state_sha224[32] =
+     66          {
+     67              0xC1, 0x05, 0x9E, 0xD8,
+     68              0x36, 0x7C, 0xD5, 0x07,
+     69              0x30, 0x70, 0xDD, 0x17,
+     70              0xF7, 0x0E, 0x59, 0x39,
+     71              0xFF, 0xC0, 0x0B, 0x31,
+     72              0x68, 0x58, 0x15, 0x11,
+     73              0x64, 0xF9, 0x8F, 0xA7,
+     74              0xBE, 0xFA, 0x4F, 0xA4
+     75          };
+     76          
+     77          static const uint8_t init_state_sha256[32] =
+     78          {
+     79              0x6A, 0x09, 0xE6, 0x67,
+     80              0xBB, 0x67, 0xAE, 0x85,
+     81              0x3C, 0x6E, 0xF3, 0x72,
+     82              0xA5, 0x4F, 0xF5, 0x3A,
+     83              0x51, 0x0E, 0x52, 0x7F,
+     84              0x9B, 0x05, 0x68, 0x8C,
+     85              0x1F, 0x83, 0xD9, 0xAB,
+     86              0x5B, 0xE0, 0xCD, 0x19
+     87          };
+     88          #endif
+     89          
+     90          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+     91          static const uint8_t init_state_sha384[64] =
+     92          {
+     93              0xCB, 0xBB, 0x9D, 0x5D, 0xC1, 0x05, 0x9E, 0xD8,
+     94              0x62, 0x9A, 0x29, 0x2A, 0x36, 0x7C, 0xD5, 0x07,
+     95              0x91, 0x59, 0x01, 0x5A, 0x30, 0x70, 0xDD, 0x17,
+     96              0x15, 0x2F, 0xEC, 0xD8, 0xF7, 0x0E, 0x59, 0x39,
+     97              0x67, 0x33, 0x26, 0x67, 0xFF, 0xC0, 0x0B, 0x31,
+     98              0x8E, 0xB4, 0x4A, 0x87, 0x68, 0x58, 0x15, 0x11,
+     99              0xDB, 0x0C, 0x2E, 0x0D, 0x64, 0xF9, 0x8F, 0xA7,
+    100              0x47, 0xB5, 0x48, 0x1D, 0xBE, 0xFA, 0x4F, 0xA4
+    101          };
+    102          
+    103          static const uint8_t init_state_sha512[64] =
+    104          {
+    105              0x6A, 0x09, 0xE6, 0x67, 0xF3, 0xBC, 0xC9, 0x08,
+    106              0xBB, 0x67, 0xAE, 0x85, 0x84, 0xCA, 0xA7, 0x3B,
+    107              0x3C, 0x6E, 0xF3, 0x72, 0xFE, 0x94, 0xF8, 0x2B,
+    108              0xA5, 0x4F, 0xF5, 0x3A, 0x5F, 0x1D, 0x36, 0xF1,
+    109              0x51, 0x0E, 0x52, 0x7F, 0xAD, 0xE6, 0x82, 0xD1,
+    110              0x9B, 0x05, 0x68, 0x8C, 0x2B, 0x3E, 0x6C, 0x1F,
+    111              0x1F, 0x83, 0xD9, 0xAB, 0xFB, 0x41, 0xBD, 0x6B,
+    112              0x5B, 0xE0, 0xCD, 0x19, 0x13, 0x7E, 0x21, 0x79
+    113          };
+    114          #endif
+    115          
+    116          /* Define padding as largest padding we might need */
+    117          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+    118          static const unsigned char shax_padding[128] =
+    119          {
+    120           0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    121              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    122              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    123              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    124              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    125              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    126              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    127              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    128          };
+    129          #elif (defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)) || (defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C))
+    130          static const unsigned char shax_padding[64] =
+    131          {
+    132           0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    133              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    134              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    135              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    136          };
+    137          #endif
+    138          
+    139          int sha_x_update(SHA_Type_t algo, const unsigned char *data, size_t data_len, uint8_t* state, unsigned char *buffer, uint32_t* counter)
+    140          {
+    141              size_t blocksize, countersize, blocks, fill, left;
+    142              uint8_t* state_in = NULL;
+    143          
+    144              switch(algo) {
+    145          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+    146                  case SHA1:
+    147                      blocksize = 64;
+    148                      countersize = 64/32;
+    149                      break;
+    150          #endif
+    151          #if defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)
+    152                  case SHA224:
+    153                  case SHA256:
+    154                      blocksize = 64;
+    155                      countersize = 64/32;
+    156                      break;
+    157          #endif
+    158          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+    159                  case SHA384:
+    160                  case SHA512:
+    161                      blocksize = 128;
+    162                      countersize = 128/32;
+    163                      break;
+    164          #endif
+    165                  default:
+    166                      return MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE;
+    167              }
+    168          
+    169              if( data_len == 0 )
+    170                  return 0;
+    171          
+    172              if(counter[0] < blocksize) {
+    173                  for(size_t i = 1; i < countersize; i++) {
+    174                      if(counter[i] != 0) {
+    175                          state_in = state;
+    176                          break;
+    177                      }
+    178                  }
+    179                  if(state_in == NULL) {
+    180                      switch(algo) {
+    181          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+    182                          case SHA1:
+    183                              state_in = (uint8_t*)init_state_sha1;
+    184                              break;
+    185          #endif
+    186          #if defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)
+    187                          case SHA224:
+    188                              state_in = (uint8_t*)init_state_sha224;
+    189                              break;
+    190                          case SHA256:
+    191                              state_in = (uint8_t*)init_state_sha256;
+    192                              break;
+    193          #endif
+    194          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+    195                          case SHA384:
+    196                              state_in = (uint8_t*)init_state_sha384;
+    197                              break;
+    198                          case SHA512:
+    199                              state_in = (uint8_t*)init_state_sha512;
+    200                              break;
+    201          #endif
+    202                          default:
+    203                              return MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE;
+    204                      }
+    205                  }
+    206              } else {
+    207                  state_in = state;
+    208              }
+    209          
+    210              left = (counter[0] & (blocksize - 1));
+    211              fill = blocksize - left;
+    212          
+    213              counter[0] += data_len;
+    214          
+    215              /* ripple counter */
+    216              if( counter[0] < data_len ) {
+    217                  counter[1] += 1;
+    218                  for(size_t i = 1; i < (countersize - 1); i++) {
+    219                      if( counter[i] == 0 )
+    220                          counter[i+1]++;
+    221                  }
+    222              }
+    223          
+    224              if( ( left > 0 ) && ( data_len >= fill ) )
+    225              {
+    226                  memcpy( (void *) (buffer + left), data, fill );
+    227                  sha_x_process(algo, state_in, buffer, state, 1);
+    228                  state_in = state;
+    229                  data += fill;
+    230                  data_len -= fill;
+    231                  left = 0;
+    232              }
+    233          
+    234              if( data_len >= blocksize )
+    235              {
+    236                  blocks = data_len / blocksize;
+    237                  sha_x_process(algo, state_in, data, state, blocks);
+    238                  state_in = state;
+    239                  data += blocksize * blocks;
+    240                  data_len -= blocksize * blocks;
+    241              }
+    242          
+    243              if( data_len > 0 ) {
+    244                  memcpy( (void *) (buffer + left), data, data_len );
+    245              }
+    246          
+    247              return 0;
+    248          }
+    249          
+    250          int sha_x_finish(SHA_Type_t algo, uint8_t* state, unsigned char *buffer, uint32_t* counter, unsigned char *output)
+    251          {
+    252              size_t last_data_byte, num_pad_bytes, blocksize, countersize, outputsize;
+    253              uint8_t msglen[16];
+    254          
+    255              switch(algo) {
+    256          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+    257                  case SHA1:
+    258                      blocksize = 64;
+    259                      outputsize = 20;
+    260                      countersize = 64/32;
+    261                      break;
+    262          #endif
+    263          #if defined(MBEDTLS_SHA256_C) && defined(MBEDTLS_SHA256_ALT)
+    264                  case SHA224:
+    265                      blocksize = 64;
+    266                      outputsize = 28;
+    267                      countersize = 64/32;
+    268                      break;
+    269                  case SHA256:
+    270                      blocksize = 64;
+    271                      outputsize = 32;
+    272                      countersize = 64/32;
+    273                      break;
+    274          #endif
+    275          #if defined(MBEDTLS_SHA512_C) && defined(MBEDTLS_SHA512_ALT)
+    276                  case SHA384:
+    277                      blocksize = 128;
+    278                      outputsize = 48;
+    279                      countersize = 128/32;
+    280                      break;
+    281                  case SHA512:
+    282                      blocksize = 128;
+    283                      outputsize = 64;
+    284                      countersize = 128/32;
+    285                      break;
+    286          #endif
+    287                  default:
+    288                      return MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE;
+    289              }
+    290          
+    291              /* Convert counter value to bits, and put in big-endian array */
+    292              uint8_t residual = 0;
+    293              for(size_t i = 0; i < countersize; i++) {
+    294                  size_t msglen_index = ( (countersize - i) * sizeof(uint32_t) )- 1;
+    295          
+    296                  msglen[msglen_index - 0] = ((counter[i] << 3) + residual) & 0xFF;
+    297                  msglen[msglen_index - 1] = (counter[i] >> 5) & 0xFF;
+    298                  msglen[msglen_index - 2] = (counter[i] >> 13) & 0xFF;
+    299                  msglen[msglen_index - 3] = (counter[i] >> 21) & 0xFF;
+    300          
+    301                  residual = (counter[i] >> 29) & 0xFF;
+    302              }
+    303          
+    304              last_data_byte = ( counter[0] & (blocksize - 1) );
+    305              num_pad_bytes = ( last_data_byte < (blocksize - (countersize*4)) ) ?
+    306                                ( (blocksize - (countersize*4)) - last_data_byte ) :
+    307                                ( ((2*blocksize) - (countersize*4)) - last_data_byte );
+    308          
+    309              sha_x_update(algo, (uint8_t*)shax_padding, num_pad_bytes, state, buffer, counter);
+    310              sha_x_update(algo, msglen, (countersize * 4), state, buffer, counter);
+    311          
+    312              memcpy(output, state, outputsize);
+    313          
+    314              return 0;
+    315          }
+    316          
+    317          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+    318          
+    319          void mbedtls_sha512_init( mbedtls_sha512_context *ctx )
+    320          {
+    321              if( ctx == NULL ) {
+    322                  return;
+    323              }
+    324          
+    325              memset( ctx, 0, sizeof( mbedtls_sha512_context ) );
+    326          }
+    327          
+    328          void mbedtls_sha512_free( mbedtls_sha512_context *ctx )
+    329          {
+    330              if( ctx == NULL ) {
+    331                  return;
+    332              }
+    333          
+    334              memset( ctx, 0, sizeof( mbedtls_sha512_context ) );
+    335          }
+    336          
+    337          void mbedtls_sha512_clone( mbedtls_sha512_context *dst,
+    338                                     const mbedtls_sha512_context *src )
+    339          {
+    340              if( (dst == NULL) || (src == NULL) ) {
+    341                  return;
+    342              }
+    343          
+    344              *dst = *src;
+    345          }
+    346          
+    347          int mbedtls_sha512_starts_ret( mbedtls_sha512_context *ctx, int is384 )
+    348          {
+    349              ctx->total[0] = 0;
+    350              ctx->total[1] = 0;
+    351              ctx->is384 = (is384 ? true : false);
+    352              return 0;
+    353          }
+    354          
+    355          int mbedtls_sha512_update_ret( mbedtls_sha512_context *ctx, const unsigned char *input,
+    356                              size_t ilen )
+    357          {
+    358              return sha_x_update((ctx->is384 ? SHA384 : SHA512),
+    359                                  input,
+    360                                  ilen,
+    361                                  (uint8_t*)ctx->state,
+    362                                  ctx->buffer,
+    363                                  (uint32_t*)ctx->total);
+    364          }
+    365          
+    366          int mbedtls_internal_sha512_process( mbedtls_sha512_context *ctx, const unsigned char data[128] )
+    367          {
+    368              return mbedtls_sha512_update_ret(ctx, data, 128);
+    369          }
+    370          
+    371          int mbedtls_sha512_finish_ret( mbedtls_sha512_context *ctx, unsigned char output[64] )
+    372          {
+    373              return sha_x_finish((ctx->is384 ? SHA384 : SHA512),
+    374                                  (uint8_t*)ctx->state,
+    375                                  ctx->buffer,
+    376                                  (uint32_t*)ctx->total,
+    377                                  output);
+    378          }
+    379          
+    380          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    381          void mbedtls_sha512_starts( mbedtls_sha512_context *ctx,
+    382                                      int is384 )
+    383          {
+    384              mbedtls_sha512_starts_ret( ctx, is384 );
+    385          }
+    386          
+    387          void mbedtls_sha512_process( mbedtls_sha512_context *ctx, const unsigned char data[128] )
+    388          {
+    389              mbedtls_sha512_update_ret(ctx, data, 128);
+    390          }
+    391          
+    392          void mbedtls_sha512_update( mbedtls_sha512_context *ctx,
+    393                                      const unsigned char *input,
+    394                                      size_t ilen )
+    395          {
+    396              mbedtls_sha512_update_ret( ctx, input, ilen );
+    397          }
+    398          
+    399          void mbedtls_sha512_finish( mbedtls_sha512_context *ctx,
+    400                                      unsigned char output[64] )
+    401          {
+    402              mbedtls_sha512_finish_ret( ctx, output );
+    403          }
+    404          #endif /* !DEPRECATED_REMOVED */
+    405          #endif /* SHA512 acceleration active */
+    406          
+    407          #if defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)
+    408          void mbedtls_sha256_init( mbedtls_sha256_context *ctx )
+    409          {
+    410              if( ctx == NULL ) {
+    411                  return;
+    412              }
+    413          
+    414              memset( ctx, 0, sizeof( mbedtls_sha256_context ) );
+    415          }
+    416          
+    417          void mbedtls_sha256_free( mbedtls_sha256_context *ctx )
+    418          {
+    419              if( ctx == NULL ) {
+    420                  return;
+    421              }
+    422          
+    423              memset( ctx, 0, sizeof( mbedtls_sha256_context ) );
+    424          }
+    425          
+    426          void mbedtls_sha256_clone( mbedtls_sha256_context *dst,
+    427                                     const mbedtls_sha256_context *src )
+    428          {
+    429              if ( dst != NULL && src != NULL ) {
+    430                  *dst = *src;
+    431              }
+    432          }
+    433          
+    434          int mbedtls_sha256_starts_ret( mbedtls_sha256_context *ctx, int is224 )
+    435          {
+    436              ctx->total[0] = 0;
+    437              ctx->total[1] = 0;
+    438              ctx->is224 = (is224 > 0 ? true : false);
+    439          
+    440              return 0;
+    441          }
+    442          
+    443          int mbedtls_sha256_update_ret( mbedtls_sha256_context *ctx, const unsigned char *input,
+    444                              size_t ilen )
+    445          {
+    446              return sha_x_update((ctx->is224 ? SHA224 : SHA256),
+    447                                  input,
+    448                                  ilen,
+    449                                  (uint8_t*)ctx->state,
+    450                                  ctx->buffer,
+    451                                  ctx->total);
+    452          }
+    453          
+    454          int mbedtls_internal_sha256_process( mbedtls_sha256_context *ctx, const unsigned char data[64] )
+    455          {
+    456              return mbedtls_sha256_update_ret(ctx, data, 64);
+    457          }
+    458          
+    459          int mbedtls_sha256_finish_ret( mbedtls_sha256_context *ctx, unsigned char output[32] )
+    460          {
+    461              return sha_x_finish((ctx->is224 ? SHA224 : SHA256),
+    462                                  (uint8_t*)ctx->state,
+    463                                  ctx->buffer,
+    464                                  ctx->total,
+    465                                  output);
+    466          }
+    467          
+    468          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    469          void mbedtls_sha256_starts( mbedtls_sha256_context *ctx,
+    470                                      int is224 )
+    471          {
+    472              mbedtls_sha256_starts_ret( ctx, is224 );
+    473          }
+    474          
+    475          void mbedtls_sha256_process( mbedtls_sha256_context *ctx, const unsigned char data[64] )
+    476          {
+    477              mbedtls_sha256_update_ret(ctx, data, 64);
+    478          }
+    479          
+    480          void mbedtls_sha256_update( mbedtls_sha256_context *ctx,
+    481                                      const unsigned char *input,
+    482                                      size_t ilen )
+    483          {
+    484              mbedtls_sha256_update_ret( ctx, input, ilen );
+    485          }
+    486          
+    487          void mbedtls_sha256_finish( mbedtls_sha256_context *ctx,
+    488                                      unsigned char output[32] )
+    489          {
+    490              mbedtls_sha256_finish_ret( ctx, output );
+    491          }
+    492          #endif /* !DEPRECATED_REMOVED */
+    493          #endif /* SHA256 acceleration active */
+    494          
+    495          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+    496          
+    497          void mbedtls_sha1_init( mbedtls_sha1_context *ctx )
+    498          {
+    499              if( ctx == NULL ) {
+    500                  return;
+    501              }
+    502              memset( ctx, 0, sizeof( mbedtls_sha1_context ) );
+    503          }
+    504          
+    505          void mbedtls_sha1_free( mbedtls_sha1_context *ctx )
+    506          {
+    507              if( ctx == NULL ) {
+    508                  return;
+    509              }
+    510              memset( ctx, 0, sizeof( mbedtls_sha1_context ) );
+    511          }
+    512          
+    513          void mbedtls_sha1_clone( mbedtls_sha1_context *dst,
+    514                                   const mbedtls_sha1_context *src )
+    515          {
+    516              if ( dst != NULL && src != NULL ) {
+    517                  *dst = *src;
+    518              }
+    519          }
+    520          
+    521          int mbedtls_sha1_starts_ret( mbedtls_sha1_context *ctx )
+    522          {
+    523              ctx->total[0] = 0;
+    524              ctx->total[1] = 0;
+    525              return 0;
+    526          }
+    527          
+    528          int mbedtls_sha1_update_ret( mbedtls_sha1_context *ctx, const unsigned char *input, size_t ilen )
+    529          {
+    530              return sha_x_update(SHA1,
+    531                                  input,
+    532                                  ilen,
+    533                                  (uint8_t *)ctx->state,
+    534                                  ctx->buffer,
+    535                                  ctx->total);
+    536          }
+    537          
+    538          int mbedtls_internal_sha1_process( mbedtls_sha1_context *ctx, const unsigned char data[64] )
+    539          {
+    540              return mbedtls_sha1_update_ret(ctx, data, 64);
+    541          }
+    542          
+    543          int mbedtls_sha1_finish_ret( mbedtls_sha1_context *ctx, unsigned char output[20] )
+    544          {
+    545              return sha_x_finish(SHA1,
+    546                                  (uint8_t *)ctx->state,
+    547                                  ctx->buffer,
+    548                                  ctx->total,
+    549                                  output);
+    550          }
+    551          
+    552          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    553          void mbedtls_sha1_starts( mbedtls_sha1_context *ctx )
+    554          {
+    555              mbedtls_sha1_starts_ret( ctx );
+    556          }
+    557          
+    558          void mbedtls_sha1_process( mbedtls_sha1_context *ctx, const unsigned char data[64] )
+    559          {
+    560              mbedtls_sha1_update_ret(ctx, data, 64);
+    561          }
+    562          
+    563          void mbedtls_sha1_update( mbedtls_sha1_context *ctx,
+    564                                    const unsigned char *input,
+    565                                    size_t ilen )
+    566          {
+    567              mbedtls_sha1_update_ret( ctx, input, ilen );
+    568          }
+    569          
+    570          void mbedtls_sha1_finish( mbedtls_sha1_context *ctx,
+    571                                    unsigned char output[20] )
+    572          {
+    573              mbedtls_sha1_finish_ret( ctx, output );
+    574          }
+    575          #endif /* !DEPRECATED_REMOVED */
+    576          #endif /* SHA1 acceleration active */
+    577          
+    578          #endif /* (SHA1 or SHA256 or SHA512) acceleration active */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1309 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:47
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_adc.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW4383.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_adc.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_adc.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_adc.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_adc.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_adc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Analog to Digital Converter (ADC) Peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_adc.h"
+     33          #if defined(ADC_COUNT) && (ADC_COUNT > 0)
+     34          
+     35          #include "em_assert.h"
+     36          #include "em_cmu.h"
+     37          #include <stddef.h>
+     38          
+     39          /***************************************************************************//**
+     40           * @addtogroup emlib
+     41           * @{
+     42           ******************************************************************************/
+     43          
+     44          /***************************************************************************//**
+     45           * @addtogroup ADC
+     46           * @brief Analog to Digital Converter (ADC) Peripheral API
+     47           * @details
+     48           *  This module contains functions to control the ADC peripheral of Silicon
+     49           *  Labs 32-bit MCUs and SoCs. The ADC is used to convert analog signals into a
+     50           *  digital representation.
+     51           * @{
+     52           ******************************************************************************/
+     53          
+     54          /*******************************************************************************
+     55           *******************************   DEFINES   ***********************************
+     56           ******************************************************************************/
+     57          
+     58          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     59          
+     60          /** Validation of ADC register block pointer reference for assert statements. */
+     61          #if (ADC_COUNT == 1)
+     62          #define ADC_REF_VALID(ref)    ((ref) == ADC0)
+     63          #elif (ADC_COUNT == 2)
+     64          #define ADC_REF_VALID(ref)    (((ref) == ADC0) || ((ref) == ADC1))
+     65          #endif
+     66          
+     67          /** Maximum ADC clock */
+     68          #if defined(_SILICON_LABS_32B_SERIES_0)
+     69          #define ADC_MAX_CLOCK    13000000UL
+     70          #else
+     71          #define ADC_MAX_CLOCK    16000000UL
+     72          #endif
+     73          
+     74          /** Minimum ADC clock */
+     75          #define ADC_MIN_CLOCK    32000UL
+     76          
+     77          /** Helper defines for selecting ADC calibration and DEVINFO register fields. */
+     78          #if defined(_DEVINFO_ADC0CAL0_1V25_GAIN_MASK)
+     79          #define DEVINFO_ADC0_GAIN1V25_MASK _DEVINFO_ADC0CAL0_1V25_GAIN_MASK
+     80          #elif defined(_DEVINFO_ADC0CAL0_GAIN1V25_MASK)
+     81          #define DEVINFO_ADC0_GAIN1V25_MASK _DEVINFO_ADC0CAL0_GAIN1V25_MASK
+     82          #endif
+     83          
+     84          #if defined(_DEVINFO_ADC0CAL0_1V25_GAIN_SHIFT)
+     85          #define DEVINFO_ADC0_GAIN1V25_SHIFT _DEVINFO_ADC0CAL0_1V25_GAIN_SHIFT
+     86          #elif defined(_DEVINFO_ADC0CAL0_GAIN1V25_SHIFT)
+     87          #define DEVINFO_ADC0_GAIN1V25_SHIFT _DEVINFO_ADC0CAL0_GAIN1V25_SHIFT
+     88          #endif
+     89          
+     90          #if defined(_DEVINFO_ADC0CAL0_1V25_OFFSET_MASK)
+     91          #define DEVINFO_ADC0_OFFSET1V25_MASK _DEVINFO_ADC0CAL0_1V25_OFFSET_MASK
+     92          #elif defined(_DEVINFO_ADC0CAL0_OFFSET1V25_MASK)
+     93          #define DEVINFO_ADC0_OFFSET1V25_MASK _DEVINFO_ADC0CAL0_OFFSET1V25_MASK
+     94          #endif
+     95          
+     96          #if defined(_DEVINFO_ADC0CAL0_1V25_OFFSET_SHIFT)
+     97          #define DEVINFO_ADC0_OFFSET1V25_SHIFT _DEVINFO_ADC0CAL0_1V25_OFFSET_SHIFT
+     98          #elif defined(_DEVINFO_ADC0CAL0_OFFSET1V25_SHIFT)
+     99          #define DEVINFO_ADC0_OFFSET1V25_SHIFT _DEVINFO_ADC0CAL0_OFFSET1V25_SHIFT
+    100          #endif
+    101          
+    102          #if defined(_DEVINFO_ADC0CAL0_2V5_GAIN_MASK)
+    103          #define DEVINFO_ADC0_GAIN2V5_MASK _DEVINFO_ADC0CAL0_2V5_GAIN_MASK
+    104          #elif defined(_DEVINFO_ADC0CAL0_GAIN2V5_MASK)
+    105          #define DEVINFO_ADC0_GAIN2V5_MASK _DEVINFO_ADC0CAL0_GAIN2V5_MASK
+    106          #endif
+    107          
+    108          #if defined(_DEVINFO_ADC0CAL0_2V5_GAIN_SHIFT)
+    109          #define DEVINFO_ADC0_GAIN2V5_SHIFT _DEVINFO_ADC0CAL0_2V5_GAIN_SHIFT
+    110          #elif defined(_DEVINFO_ADC0CAL0_GAIN2V5_SHIFT)
+    111          #define DEVINFO_ADC0_GAIN2V5_SHIFT _DEVINFO_ADC0CAL0_GAIN2V5_SHIFT
+    112          #endif
+    113          
+    114          #if defined(_DEVINFO_ADC0CAL0_2V5_OFFSET_MASK)
+    115          #define DEVINFO_ADC0_OFFSET2V5_MASK _DEVINFO_ADC0CAL0_2V5_OFFSET_MASK
+    116          #elif defined(_DEVINFO_ADC0CAL0_OFFSET2V5_MASK)
+    117          #define DEVINFO_ADC0_OFFSET2V5_MASK _DEVINFO_ADC0CAL0_OFFSET2V5_MASK
+    118          #endif
+    119          
+    120          #if defined(_DEVINFO_ADC0CAL0_2V5_OFFSET_SHIFT)
+    121          #define DEVINFO_ADC0_OFFSET2V5_SHIFT _DEVINFO_ADC0CAL0_2V5_OFFSET_SHIFT
+    122          #elif defined(_DEVINFO_ADC0CAL0_OFFSET2V5_SHIFT)
+    123          #define DEVINFO_ADC0_OFFSET2V5_SHIFT _DEVINFO_ADC0CAL0_OFFSET2V5_SHIFT
+    124          #endif
+    125          
+    126          #if defined(_DEVINFO_ADC0CAL1_VDD_GAIN_MASK)
+    127          #define DEVINFO_ADC0_GAINVDD_MASK _DEVINFO_ADC0CAL1_VDD_GAIN_MASK
+    128          #elif defined(_DEVINFO_ADC0CAL1_GAINVDD_MASK)
+    129          #define DEVINFO_ADC0_GAINVDD_MASK _DEVINFO_ADC0CAL1_GAINVDD_MASK
+    130          #endif
+    131          
+    132          #if defined(_DEVINFO_ADC0CAL1_VDD_GAIN_SHIFT)
+    133          #define DEVINFO_ADC0_GAINVDD_SHIFT _DEVINFO_ADC0CAL1_VDD_GAIN_SHIFT
+    134          #elif defined(_DEVINFO_ADC0CAL1_GAINVDD_SHIFT)
+    135          #define DEVINFO_ADC0_GAINVDD_SHIFT _DEVINFO_ADC0CAL1_GAINVDD_SHIFT
+    136          #endif
+    137          
+    138          #if defined(_DEVINFO_ADC0CAL1_VDD_OFFSET_MASK)
+    139          #define DEVINFO_ADC0_OFFSETVDD_MASK _DEVINFO_ADC0CAL1_VDD_OFFSET_MASK
+    140          #elif defined(_DEVINFO_ADC0CAL1_OFFSETVDD_MASK)
+    141          #define DEVINFO_ADC0_OFFSETVDD_MASK _DEVINFO_ADC0CAL1_OFFSETVDD_MASK
+    142          #endif
+    143          
+    144          #if defined(_DEVINFO_ADC0CAL1_VDD_OFFSET_SHIFT)
+    145          #define DEVINFO_ADC0_OFFSETVDD_SHIFT _DEVINFO_ADC0CAL1_VDD_OFFSET_SHIFT
+    146          #elif defined(_DEVINFO_ADC0CAL1_OFFSETVDD_SHIFT)
+    147          #define DEVINFO_ADC0_OFFSETVDD_SHIFT _DEVINFO_ADC0CAL1_OFFSETVDD_SHIFT
+    148          #endif
+    149          
+    150          #if defined(_DEVINFO_ADC0CAL1_5VDIFF_GAIN_MASK)
+    151          #define DEVINFO_ADC0_GAIN5VDIFF_MASK _DEVINFO_ADC0CAL1_5VDIFF_GAIN_MASK
+    152          #elif defined(_DEVINFO_ADC0CAL1_GAIN5VDIFF_MASK)
+    153          #define DEVINFO_ADC0_GAIN5VDIFF_MASK _DEVINFO_ADC0CAL1_GAIN5VDIFF_MASK
+    154          #endif
+    155          
+    156          #if defined(_DEVINFO_ADC0CAL1_5VDIFF_GAIN_SHIFT)
+    157          #define DEVINFO_ADC0_GAIN5VDIFF_SHIFT _DEVINFO_ADC0CAL1_5VDIFF_GAIN_SHIFT
+    158          #elif defined(_DEVINFO_ADC0CAL1_GAIN5VDIFF_SHIFT)
+    159          #define DEVINFO_ADC0_GAIN5VDIFF_SHIFT _DEVINFO_ADC0CAL1_GAIN5VDIFF_SHIFT
+    160          #endif
+    161          
+    162          #if defined(_DEVINFO_ADC0CAL1_5VDIFF_OFFSET_MASK)
+    163          #define DEVINFO_ADC0_OFFSET5VDIFF_MASK _DEVINFO_ADC0CAL1_5VDIFF_OFFSET_MASK
+    164          #elif defined(_DEVINFO_ADC0CAL1_OFFSET5VDIFF_MASK)
+    165          #define DEVINFO_ADC0_OFFSET5VDIFF_MASK _DEVINFO_ADC0CAL1_OFFSET5VDIFF_MASK
+    166          #endif
+    167          
+    168          #if defined(_DEVINFO_ADC0CAL1_5VDIFF_OFFSET_SHIFT)
+    169          #define DEVINFO_ADC0_OFFSET5VDIFF_SHIFT _DEVINFO_ADC0CAL1_5VDIFF_OFFSET_SHIFT
+    170          #elif defined(_DEVINFO_ADC0CAL1_OFFSET5VDIFF_SHIFT)
+    171          #define DEVINFO_ADC0_OFFSET5VDIFF_SHIFT _DEVINFO_ADC0CAL1_OFFSET5VDIFF_SHIFT
+    172          #endif
+    173          
+    174          #if defined(_DEVINFO_ADC0CAL2_2XVDDVSS_OFFSET_MASK)
+    175          #define DEVINFO_ADC0_OFFSET2XVDD_MASK _DEVINFO_ADC0CAL2_2XVDDVSS_OFFSET_MASK
+    176          #elif defined(_DEVINFO_ADC0CAL2_OFFSET2XVDD_MASK)
+    177          #define DEVINFO_ADC0_OFFSET2XVDD_MASK _DEVINFO_ADC0CAL2_OFFSET2XVDD_MASK
+    178          #endif
+    179          
+    180          #if defined(_DEVINFO_ADC0CAL2_2XVDDVSS_OFFSET_SHIFT)
+    181          #define DEVINFO_ADC0_OFFSET2XVDD_SHIFT _DEVINFO_ADC0CAL2_2XVDDVSS_OFFSET_SHIFT
+    182          #elif defined(_DEVINFO_ADC0CAL2_OFFSET2XVDD_SHIFT)
+    183          #define DEVINFO_ADC0_OFFSET2XVDD_SHIFT _DEVINFO_ADC0CAL2_OFFSET2XVDD_SHIFT
+    184          #endif
+    185          
+    186          /** @endcond */
+    187          
+    188          /*******************************************************************************
+    189           ***************************   LOCAL FUNCTIONS   *******************************
+    190           ******************************************************************************/
+    191          
+    192          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    193          
+    194          /***************************************************************************//**
+    195           * @brief
+    196           *   Load the ADC calibration register for a selected reference and conversion mode.
+    197           *
+    198           * @details
+    199           *   During production, calibration values are stored in the device
+    200           *   information page for internal references. Notice that, for external references,
+    201           *   calibration values must be determined explicitly. This function
+    202           *   will not modify the calibration register for external references.
+    203           *
+    204           * @param[in] adc
+    205           *   A pointer to ADC peripheral register block.
+    206           *
+    207           * @param[in] ref
+    208           *   A reference to load calibrated values for. No values are loaded for
+    209           *   external references.
+    210           *
+    211           * @param[in] setScanCal
+    212           *   Select scan mode (true) or single mode (false) calibration load.
+    213           ******************************************************************************/
+    214          static void ADC_LoadDevinfoCal(ADC_TypeDef *adc,
+    215                                         ADC_Ref_TypeDef ref,
+    216                                         bool setScanCal)
+    217          {
+    218            uint32_t calReg;
+    219            uint32_t newCal;
+    220            uint32_t mask;
+    221            uint32_t shift;
+    222            __IM uint32_t * diCalReg;
+    223          
+    224            if (setScanCal) {
+    225              shift = _ADC_CAL_SCANOFFSET_SHIFT;
+    226              mask  = ~(_ADC_CAL_SCANOFFSET_MASK
+    227          #if defined(_ADC_CAL_SCANOFFSETINV_MASK)
+    228                        | _ADC_CAL_SCANOFFSETINV_MASK
+    229          #endif
+    230                        | _ADC_CAL_SCANGAIN_MASK);
+    231            } else {
+    232              shift = _ADC_CAL_SINGLEOFFSET_SHIFT;
+    233              mask  = ~(_ADC_CAL_SINGLEOFFSET_MASK
+    234          #if defined(_ADC_CAL_SINGLEOFFSETINV_MASK)
+    235                        | _ADC_CAL_SINGLEOFFSETINV_MASK
+    236          #endif
+    237                        | _ADC_CAL_SINGLEGAIN_MASK);
+    238            }
+    239          
+    240            calReg = adc->CAL & mask;
+    241            newCal = 0;
+    242          
+    243            if (adc == ADC0) {
+    244              diCalReg = &DEVINFO->ADC0CAL0;
+    245            }
+    246          #if defined(ADC1)
+    247            else if (adc == ADC1) {
+    248              diCalReg = &DEVINFO->ADC1CAL0;
+    249            }
+    250          #endif
+    251            else {
+    252              return;
+    253            }
+    254          
+    255            switch (ref) {
+    256              case adcRef1V25:
+    257                newCal |= ((diCalReg[0] & DEVINFO_ADC0_GAIN1V25_MASK)
+    258                           >> DEVINFO_ADC0_GAIN1V25_SHIFT)
+    259                          << _ADC_CAL_SINGLEGAIN_SHIFT;
+    260                newCal |= ((diCalReg[0] & DEVINFO_ADC0_OFFSET1V25_MASK)
+    261                           >> DEVINFO_ADC0_OFFSET1V25_SHIFT)
+    262                          << _ADC_CAL_SINGLEOFFSET_SHIFT;
+    263          #if defined(_ADC_CAL_SINGLEOFFSETINV_MASK)
+    264                newCal |= ((diCalReg[0] & _DEVINFO_ADC0CAL0_NEGSEOFFSET1V25_MASK)
+    265                           >> _DEVINFO_ADC0CAL0_NEGSEOFFSET1V25_SHIFT)
+    266                          << _ADC_CAL_SINGLEOFFSETINV_SHIFT;
+    267          #endif
+    268                break;
+    269          
+    270              case adcRef2V5:
+    271                newCal |= ((diCalReg[0] & DEVINFO_ADC0_GAIN2V5_MASK)
+    272                           >> DEVINFO_ADC0_GAIN2V5_SHIFT)
+    273                          << _ADC_CAL_SINGLEGAIN_SHIFT;
+    274                newCal |= ((diCalReg[0] & DEVINFO_ADC0_OFFSET2V5_MASK)
+    275                           >> DEVINFO_ADC0_OFFSET2V5_SHIFT)
+    276                          << _ADC_CAL_SINGLEOFFSET_SHIFT;
+    277          #if defined(_ADC_CAL_SINGLEOFFSETINV_MASK)
+    278                newCal |= ((diCalReg[0] & _DEVINFO_ADC0CAL0_NEGSEOFFSET2V5_MASK)
+    279                           >> _DEVINFO_ADC0CAL0_NEGSEOFFSET2V5_SHIFT)
+    280                          << _ADC_CAL_SINGLEOFFSETINV_SHIFT;
+    281          #endif
+    282                break;
+    283          
+    284              case adcRefVDD:
+    285                newCal |= ((diCalReg[1] & DEVINFO_ADC0_GAINVDD_MASK)
+    286                           >> DEVINFO_ADC0_GAINVDD_SHIFT)
+    287                          << _ADC_CAL_SINGLEGAIN_SHIFT;
+    288                newCal |= ((diCalReg[1] & DEVINFO_ADC0_OFFSETVDD_MASK)
+    289                           >> DEVINFO_ADC0_OFFSETVDD_SHIFT)
+    290                          << _ADC_CAL_SINGLEOFFSET_SHIFT;
+    291          #if defined(_ADC_CAL_SINGLEOFFSETINV_MASK)
+    292                newCal |= ((diCalReg[1] & _DEVINFO_ADC0CAL1_NEGSEOFFSETVDD_MASK)
+    293                           >> _DEVINFO_ADC0CAL1_NEGSEOFFSETVDD_SHIFT)
+    294                          << _ADC_CAL_SINGLEOFFSETINV_SHIFT;
+    295          #endif
+    296                break;
+    297          
+    298              case adcRef5VDIFF:
+    299                newCal |= ((diCalReg[1] & DEVINFO_ADC0_GAIN5VDIFF_MASK)
+    300                           >> DEVINFO_ADC0_GAIN5VDIFF_SHIFT)
+    301                          << _ADC_CAL_SINGLEGAIN_SHIFT;
+    302                newCal |= ((diCalReg[1] & DEVINFO_ADC0_OFFSET5VDIFF_MASK)
+    303                           >> DEVINFO_ADC0_OFFSET5VDIFF_SHIFT)
+    304                          << _ADC_CAL_SINGLEOFFSET_SHIFT;
+    305          #if defined(_ADC_CAL_SINGLEOFFSETINV_MASK)
+    306                newCal |= ((diCalReg[1] & _DEVINFO_ADC0CAL1_NEGSEOFFSET5VDIFF_MASK)
+    307                           >> _DEVINFO_ADC0CAL1_NEGSEOFFSET5VDIFF_SHIFT)
+    308                          << _ADC_CAL_SINGLEOFFSETINV_SHIFT;
+    309          #endif
+    310                break;
+    311          
+    312              case adcRef2xVDD:
+    313                /* There is no gain calibration for this reference */
+    314                newCal |= ((diCalReg[2] & DEVINFO_ADC0_OFFSET2XVDD_MASK)
+    315                           >> DEVINFO_ADC0_OFFSET2XVDD_SHIFT)
+    316                          << _ADC_CAL_SINGLEOFFSET_SHIFT;
+    317          #if defined(_ADC_CAL_SINGLEOFFSETINV_MASK)
+    318                newCal |= ((diCalReg[2] & _DEVINFO_ADC0CAL2_NEGSEOFFSET2XVDD_MASK)
+    319                           >> _DEVINFO_ADC0CAL2_NEGSEOFFSET2XVDD_SHIFT)
+    320                          << _ADC_CAL_SINGLEOFFSETINV_SHIFT;
+    321          #endif
+    322                break;
+    323          
+    324          #if defined(_ADC_SINGLECTRLX_VREFSEL_VDDXWATT)
+    325              case adcRefVddxAtt:
+    326                newCal |= ((diCalReg[1] & DEVINFO_ADC0_GAINVDD_MASK)
+    327                           >> DEVINFO_ADC0_GAINVDD_SHIFT)
+    328                          << _ADC_CAL_SINGLEGAIN_SHIFT;
+    329                newCal |= ((diCalReg[1] & DEVINFO_ADC0_OFFSETVDD_MASK)
+    330                           >> DEVINFO_ADC0_OFFSETVDD_SHIFT)
+    331                          << _ADC_CAL_SINGLEOFFSET_SHIFT;
+    332                newCal |= ((diCalReg[1] & _DEVINFO_ADC0CAL1_NEGSEOFFSETVDD_MASK)
+    333                           >> _DEVINFO_ADC0CAL1_NEGSEOFFSETVDD_SHIFT)
+    334                          << _ADC_CAL_SINGLEOFFSETINV_SHIFT;
+    335                break;
+    336          #endif
+    337          
+    338              /* For external references, the calibration must be determined for the
+    339                 specific application and set by the user. Calibration data is also not
+    340                 available for the internal references adcRefVBGR, adcRefVEntropy, and
+    341                 adcRefVBGRlow. */
+    342              default:
+    343                newCal = 0;
+    344                break;
+    345            }
+    346          
+    347            adc->CAL = calReg | (newCal << shift);
+    348          }
+    349          
+    350          /** @endcond */
+    351          
+    352          /*******************************************************************************
+    353           **************************   GLOBAL FUNCTIONS   *******************************
+    354           ******************************************************************************/
+    355          
+    356          /***************************************************************************//**
+    357           * @brief
+    358           *   Initialize ADC.
+    359           *
+    360           * @details
+    361           *   Initializes common parts for both single conversion and scan sequence.
+    362           *   In addition, single and/or scan control configuration must be done. See
+    363           *   @ref ADC_InitSingle() and @ref ADC_InitScan() respectively.
+    364           *   For ADC architectures with the ADCn->SCANINPUTSEL register, use
+    365           *   @ref ADC_ScanSingleEndedInputAdd() to configure single-ended scan inputs or
+    366           *   @ref ADC_ScanDifferentialInputAdd() to configure differential scan inputs.
+    367           *   @ref ADC_ScanInputClear() is also provided for applications that need to update
+    368           *   the input configuration.
+    369           *
+    370           * @note
+    371           *   This function will stop any ongoing conversion.
+    372           *
+    373           * @param[in] adc
+    374           *   A pointer to the ADC peripheral register block.
+    375           *
+    376           * @param[in] init
+    377           *   A pointer to the ADC initialization structure.
+    378           ******************************************************************************/
+    379          void ADC_Init(ADC_TypeDef *adc, const ADC_Init_TypeDef *init)
+    380          {
+    381            uint32_t tmp;
+    382            uint8_t presc = init->prescale;
+    383          
+    384            EFM_ASSERT(ADC_REF_VALID(adc));
+    385          
+    386            if (presc == 0U) {
+    387              /* Assume maximum ADC clock for prescaler 0. */
+    388              presc = ADC_PrescaleCalc(ADC_MAX_CLOCK, 0);
+    389            } else {
+    390              /* Check prescaler bounds against ADC_MAX_CLOCK and ADC_MIN_CLOCK. */
+    391          #if defined(_ADC_CTRL_ADCCLKMODE_MASK)
+    392              if ((adc->CTRL & _ADC_CTRL_ADCCLKMODE_MASK) == ADC_CTRL_ADCCLKMODE_SYNC)
+    393          #endif
+    394              {
+    395                EFM_ASSERT(presc >= ADC_PrescaleCalc(ADC_MAX_CLOCK, 0));
+    396                EFM_ASSERT(presc <= ADC_PrescaleCalc(ADC_MIN_CLOCK, 0));
+    397              }
+    398            }
+    399          
+    400            /* Make sure conversion is not in progress. */
+    401            adc->CMD = ADC_CMD_SINGLESTOP | ADC_CMD_SCANSTOP;
+    402          
+    403            tmp = ((uint32_t)(init->ovsRateSel) << _ADC_CTRL_OVSRSEL_SHIFT)
+    404                  | (((uint32_t)(init->timebase) << _ADC_CTRL_TIMEBASE_SHIFT)
+    405                     & _ADC_CTRL_TIMEBASE_MASK)
+    406                  | (((uint32_t)(presc) << _ADC_CTRL_PRESC_SHIFT)
+    407                     & _ADC_CTRL_PRESC_MASK)
+    408          #if defined (_ADC_CTRL_LPFMODE_MASK)
+    409                  | ((uint32_t)(init->lpfMode) << _ADC_CTRL_LPFMODE_SHIFT)
+    410          #endif
+    411                  | ((uint32_t)(init->warmUpMode) << _ADC_CTRL_WARMUPMODE_SHIFT);
+    412          
+    413            if (init->tailgate) {
+    414              tmp |= ADC_CTRL_TAILGATE;
+    415            }
+    416            adc->CTRL = tmp;
+    417          
+    418          #if defined(_ADC_CTRL_ADCCLKMODE_MASK)
+    419            /* Set ADC EM2 clock configuration. */
+    420            BUS_RegMaskedWrite(&adc->CTRL,
+    421                               _ADC_CTRL_ADCCLKMODE_MASK | _ADC_CTRL_ASYNCCLKEN_MASK,
+    422                               (uint32_t)init->em2ClockConfig);
+    423          
+    424          #if defined(_SILICON_LABS_32B_SERIES_1)
+    425            /* In asynch clock mode assert that the ADC clock frequency is
+    426               less or equal to 2/3 of the HFPER/HFPERC clock frequency. */
+    427            if ((adc->CTRL & _ADC_CTRL_ADCCLKMODE_MASK) == ADC_CTRL_ADCCLKMODE_ASYNC) {
+    428              CMU_Clock_TypeDef asyncClk = cmuClock_ADC0ASYNC;
+    429              uint32_t adcClkFreq;
+    430              uint32_t hfperClkFreq = 0;
+    431          #if defined(_CMU_ADCCTRL_ADC1CLKSEL_MASK)
+    432              if ( adc == ADC1 ) {
+    433                asyncClk = cmuClock_ADC1ASYNC;
+    434              }
+    435          #endif
+    436              adcClkFreq = CMU_ClockFreqGet(asyncClk);
+    437              if (adc == ADC0) {
+    438                hfperClkFreq = CMU_ClockFreqGet(cmuClock_ADC0);
+    439          #if defined(ADC1)
+    440              } else if (adc == ADC1) {
+    441                hfperClkFreq = CMU_ClockFreqGet(cmuClock_ADC1);
+    442          #endif
+    443              } else {
+    444                EFM_ASSERT(false);
+    445              }
+    446              EFM_ASSERT(hfperClkFreq >= (adcClkFreq * 3) / 2);
+    447            }
+    448          #endif /* #if defined(_SILICON_LABS_32B_SERIES_1) */
+    449          #endif /* #if defined(_ADC_CTRL_ADCCLKMODE_MASK) */
+    450          
+    451          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+    452            /* A debugger can trigger the SCANUF interrupt on EFM32xG1 or EFR32xG1 */
+    453            ADC_IntClear(adc, ADC_IFC_SCANUF);
+    454          #endif
+    455          }
+    456          
+    457          #if defined(_ADC_SCANINPUTSEL_MASK)
+    458          /***************************************************************************//**
+    459           * @brief
+    460           *   Clear ADC scan input configuration.
+    461           *
+    462           * @param[in] scanInit
+    463           *   Structure to hold the scan configuration and input configuration.
+    464           ******************************************************************************/
+    465          void ADC_ScanInputClear(ADC_InitScan_TypeDef *scanInit)
+    466          {
+    467            /* Clear the input configuration. */
+    468          
+    469            /* Select none. */
+    470            scanInit->scanInputConfig.scanInputSel = ADC_SCANINPUTSEL_NONE;
+    471            scanInit->scanInputConfig.scanInputEn = 0;
+    472          
+    473            /* Default alternative negative inputs. */
+    474            scanInit->scanInputConfig.scanNegSel = _ADC_SCANNEGSEL_RESETVALUE;
+    475          }
+    476          
+    477          /***************************************************************************//**
+    478           * @brief
+    479           *   Initialize ADC scan single-ended input configuration.
+    480           *
+    481           * @details
+    482           *   Set a configuration for ADC scan conversion with single-ended inputs. The
+    483           *   ADC_InitScan_TypeDef structure updated from this function will be passed to
+    484           *   ADC_InitScan().
+    485           *
+    486           * @param[in] inputGroup
+    487           *   ADC scan input group. See section 25.3.4 in the reference manual for
+    488           *   more information.
+    489           *
+    490           * @param[in] singleEndedSel
+    491           *   APORT select.
+    492           *
+    493           * @return
+    494           *   Scan ID of selected ADC input. See section 25.3.4 in the reference manual for
+    495           *   more information. Note that the returned integer represents the bit position
+    496           *   in ADCn_SCANMASK set by this function. The accumulated mask is stored in
+    497           *   scanInit->scanInputConfig->scanInputEn.
+    498           ******************************************************************************/
+    499          uint32_t ADC_ScanSingleEndedInputAdd(ADC_InitScan_TypeDef *scanInit,
+    500                                               ADC_ScanInputGroup_TypeDef inputGroup,
+    501                                               ADC_PosSel_TypeDef singleEndedSel)
+    502          {
+    503            uint32_t currentSel;
+    504            uint32_t newSel;
+    505            uint32_t scanId;
+    506          
+    507            scanInit->diff = false;
+    508          
+    509            /* Check for unsupported APORTs. */
+    510            EFM_ASSERT((singleEndedSel <= adcPosSelAPORT0YCH0)
+    511                       || (singleEndedSel >= adcPosSelAPORT0YCH15));
+    512          
+    513            /* Check for an illegal group. */
+    514            EFM_ASSERT((unsigned)inputGroup < 4U);
+    515          
+    516            /* Decode the input group select by shifting right by 3. */
+    517            newSel = (unsigned)singleEndedSel >> 3;
+    518          
+    519            currentSel = (scanInit->scanInputConfig.scanInputSel
+    520                          >> ((unsigned)inputGroup * 8U)) & 0xFFU;
+    521          
+    522            /* If none selected. */
+    523            if (currentSel == ADC_SCANINPUTSEL_GROUP_NONE) {
+    524              scanInit->scanInputConfig.scanInputSel &=
+    525                ~(0xFFU << ((unsigned)inputGroup * 8U));
+    526              scanInit->scanInputConfig.scanInputSel |=
+    527                newSel << ((unsigned)inputGroup * 8U);
+    528            } else if (currentSel == newSel) {
+    529              /* Ok, but do nothing.  */
+    530            } else {
+    531              /* Invalid channel range. A range is already selected for this group. */
+    532              EFM_ASSERT(false);
+    533            }
+    534          
+    535            /* Update and return scan input enable mask (SCANMASK). */
+    536            scanId = ((unsigned)inputGroup * 8U) + ((unsigned)singleEndedSel & 0x7U);
+    537            EFM_ASSERT(scanId < 32U);
+    538            scanInit->scanInputConfig.scanInputEn |= 0x1UL << scanId;
+    539            return scanId;
+    540          }
+    541          
+    542          /***************************************************************************//**
+    543           * @brief
+    544           *   Initialize the ADC scan differential input configuration.
+    545           *
+    546           * @details
+    547           *   Set a configuration for the ADC scan conversion with differential inputs. The
+    548           *   ADC_InitScan_TypeDef structure updated by this function should be passed to
+    549           *   ADC_InitScan().
+    550           *
+    551           * @param[in] scanInit
+    552           *   Structure to hold the scan and input configuration.
+    553           *
+    554           * @param[in] inputGroup
+    555           *   ADC scan input group. See section 25.3.4 in the reference manual for
+    556           *   more information.
+    557           *
+    558           * @param[in] posSel
+    559           *   APORT bus pair select. The negative terminal is implicitly selected by
+    560           *   the positive terminal.
+    561           *
+    562           * @param[in] negInput
+    563           *   ADC scan alternative negative input. Set to adcScanNegInputDefault to select
+    564           *   a default negative input (implicit from posSel).
+    565           *
+    566           * @return
+    567           *   Scan ID of the selected ADC input. See section 25.3.4 in the reference manual for
+    568           *   more information. Note that the returned integer represents the bit position
+    569           *   in ADCn_SCANMASK set by this function. The accumulated mask is stored in the
+    570           *   scanInit->scanInputConfig->scanInputEn.
+    571           ******************************************************************************/
+    572          uint32_t ADC_ScanDifferentialInputAdd(ADC_InitScan_TypeDef *scanInit,
+    573                                                ADC_ScanInputGroup_TypeDef inputGroup,
+    574                                                ADC_PosSel_TypeDef posSel,
+    575                                                ADC_ScanNegInput_TypeDef negInput)
+    576          {
+    577            uint32_t negInputRegMask = 0;
+    578            uint32_t negInputRegShift = 0;
+    579            uint32_t negInputRegVal = 0;
+    580            uint32_t scanId;
+    581          
+    582            /* Perform a single-ended initialization, then update for differential scan. */
+    583            scanId = ADC_ScanSingleEndedInputAdd(scanInit, inputGroup, posSel);
+    584          
+    585            /* Reset to differential mode. */
+    586            scanInit->diff = true;
+    587          
+    588            /* Set negative ADC input unless the default is selected. */
+    589            if (negInput != adcScanNegInputDefault) {
+    590              if (scanId == 0U) {
+    591                negInputRegMask  = _ADC_SCANNEGSEL_INPUT0NEGSEL_MASK;
+    592                negInputRegShift = _ADC_SCANNEGSEL_INPUT0NEGSEL_SHIFT;
+    593                EFM_ASSERT((unsigned)inputGroup == 0U);
+    594              } else if (scanId == 2U) {
+    595                negInputRegMask  = _ADC_SCANNEGSEL_INPUT2NEGSEL_MASK;
+    596                negInputRegShift = _ADC_SCANNEGSEL_INPUT2NEGSEL_SHIFT;
+    597                EFM_ASSERT((unsigned)inputGroup == 0U);
+    598              } else if (scanId == 4U) {
+    599                negInputRegMask  = _ADC_SCANNEGSEL_INPUT4NEGSEL_MASK;
+    600                negInputRegShift = _ADC_SCANNEGSEL_INPUT4NEGSEL_SHIFT;
+    601                EFM_ASSERT((unsigned)inputGroup == 0U);
+    602              } else if (scanId == 6U) {
+    603                negInputRegMask  = _ADC_SCANNEGSEL_INPUT6NEGSEL_MASK;
+    604                negInputRegShift = _ADC_SCANNEGSEL_INPUT6NEGSEL_SHIFT;
+    605                EFM_ASSERT((unsigned)inputGroup == 0U);
+    606              } else if (scanId == 9U) {
+    607                negInputRegMask  = _ADC_SCANNEGSEL_INPUT9NEGSEL_MASK;
+    608                negInputRegShift = _ADC_SCANNEGSEL_INPUT9NEGSEL_SHIFT;
+    609                EFM_ASSERT((unsigned)inputGroup == 1U);
+    610              } else if (scanId == 11U) {
+    611                negInputRegMask  = _ADC_SCANNEGSEL_INPUT11NEGSEL_MASK;
+    612                negInputRegShift = _ADC_SCANNEGSEL_INPUT11NEGSEL_SHIFT;
+    613                EFM_ASSERT((unsigned)inputGroup == 1U);
+    614              } else if (scanId == 13U) {
+    615                negInputRegMask  = _ADC_SCANNEGSEL_INPUT13NEGSEL_MASK;
+    616                negInputRegShift = _ADC_SCANNEGSEL_INPUT13NEGSEL_SHIFT;
+    617                EFM_ASSERT((unsigned)inputGroup == 1U);
+    618              } else if (scanId == 15U) {
+    619                negInputRegMask  = _ADC_SCANNEGSEL_INPUT15NEGSEL_MASK;
+    620                negInputRegShift = _ADC_SCANNEGSEL_INPUT15NEGSEL_SHIFT;
+    621                EFM_ASSERT((unsigned)inputGroup == 1U);
+    622              } else {
+    623                /* The positive input does not have a negative input option (negInput is posInput + 1). */
+    624                EFM_ASSERT(false);
+    625              }
+    626          
+    627              /* Find ADC_SCANNEGSEL_CHxNSEL value for positive input 0, 2, 4, and 6. */
+    628              if ((unsigned)inputGroup == 0U) {
+    629                switch (negInput) {
+    630                  case adcScanNegInput1:
+    631                    negInputRegVal = _ADC_SCANNEGSEL_INPUT0NEGSEL_INPUT1;
+    632                    break;
+    633          
+    634                  case adcScanNegInput3:
+    635                    negInputRegVal = _ADC_SCANNEGSEL_INPUT0NEGSEL_INPUT3;
+    636                    break;
+    637          
+    638                  case adcScanNegInput5:
+    639                    negInputRegVal = _ADC_SCANNEGSEL_INPUT0NEGSEL_INPUT5;
+    640                    break;
+    641          
+    642                  case adcScanNegInput7:
+    643                    negInputRegVal = _ADC_SCANNEGSEL_INPUT0NEGSEL_INPUT7;
+    644                    break;
+    645          
+    646                  default:
+    647                    /* An invalid selection. Options are input 1, 3, 5 and 7. */
+    648                    EFM_ASSERT(false);
+    649                    break;
+    650                }
+    651              } else { /* inputGroup == 1 */
+    652                /* Find ADC_SCANNEGSEL_CHxNSEL value for positive input 9, 11, 13, and 15. */
+    653                switch (negInput) {
+    654                  case adcScanNegInput8:
+    655                    negInputRegVal = _ADC_SCANNEGSEL_INPUT9NEGSEL_INPUT8;
+    656                    break;
+    657          
+    658                  case adcScanNegInput10:
+    659                    negInputRegVal = _ADC_SCANNEGSEL_INPUT9NEGSEL_INPUT10;
+    660                    break;
+    661          
+    662                  case adcScanNegInput12:
+    663                    negInputRegVal = _ADC_SCANNEGSEL_INPUT9NEGSEL_INPUT12;
+    664                    break;
+    665          
+    666                  case adcScanNegInput14:
+    667                    negInputRegVal = _ADC_SCANNEGSEL_INPUT9NEGSEL_INPUT14;
+    668                    break;
+    669          
+    670                  default:
+    671                    /* Invalid selection. Options are input 8, 10, 12, and 14. */
+    672                    EFM_ASSERT(false);
+    673                    break;
+    674                }
+    675              }
+    676          
+    677              /* Update configuration. */
+    678              scanInit->scanInputConfig.scanNegSel &= ~negInputRegMask;
+    679              scanInit->scanInputConfig.scanNegSel |= negInputRegVal << negInputRegShift;
+    680            }
+    681            return scanId;
+    682          }
+    683          #endif
+    684          
+    685          /***************************************************************************//**
+    686           * @brief
+    687           *   Initialize the ADC scan sequence.
+    688           *
+    689           * @details
+    690           *   See ADC_Start() for starting a scan sequence.
+    691           *
+    692           *   When selecting an external reference, the gain and offset calibration
+    693           *   must be set explicitly (CAL register). For other references, the
+    694           *   calibration is updated with values defined during manufacturing.
+    695           *   For ADC architectures with the ADCn->SCANINPUTSEL register, use
+    696           *   @ref ADC_ScanSingleEndedInputAdd() to configure single-ended scan inputs or
+    697           *   @ref ADC_ScanDifferentialInputAdd() to configure differential scan inputs.
+    698           *   @ref ADC_ScanInputClear() is also provided for applications that need to update
+    699           *   the input configuration.
+    700           *
+    701           * @note
+    702           *   This function will stop any ongoing scan sequence.
+    703           *
+    704           * @param[in] adc
+    705           *   A pointer to the ADC peripheral register block.
+    706           *
+    707           * @param[in] init
+    708           *   A pointer to the ADC initialization structure.
+    709           ******************************************************************************/
+    710          void ADC_InitScan(ADC_TypeDef *adc, const ADC_InitScan_TypeDef *init)
+    711          {
+    712            uint32_t tmp;
+    713          
+    714            EFM_ASSERT(ADC_REF_VALID(adc));
+    715          
+    716            /* Make sure scan sequence is not in progress. */
+    717            adc->CMD = ADC_CMD_SCANSTOP;
+    718          
+    719            /* Load calibration data for a selected reference. */
+    720            ADC_LoadDevinfoCal(adc, init->reference, true);
+    721          
+    722            tmp = 0UL
+    723          #if defined (_ADC_SCANCTRL_PRSSEL_MASK)
+    724                  | ((uint32_t)init->prsSel << _ADC_SCANCTRL_PRSSEL_SHIFT)
+    725          #endif
+    726                  | ((uint32_t)init->acqTime << _ADC_SCANCTRL_AT_SHIFT)
+    727          #if defined (_ADC_SCANCTRL_INPUTMASK_MASK)
+    728                  | init->input
+    729          #endif
+    730                  | ((uint32_t)init->resolution << _ADC_SCANCTRL_RES_SHIFT);
+    731          
+    732            if (init->prsEnable) {
+    733              tmp |= ADC_SCANCTRL_PRSEN;
+    734            }
+    735          
+    736            if (init->leftAdjust) {
+    737              tmp |= ADC_SCANCTRL_ADJ_LEFT;
+    738            }
+    739          
+    740          #if defined(_ADC_SCANCTRL_INPUTMASK_MASK)
+    741            if (init->diff)
+    742          #elif defined(_ADC_SCANINPUTSEL_MASK)
+    743            if (init->diff)
+    744          #endif
+    745            {
+    746              tmp |= ADC_SCANCTRL_DIFF;
+    747            }
+    748          
+    749            if (init->rep) {
+    750          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+    751              /* Scan repeat mode does not work on EFM32JG1, EFM32PG1, or EFR32xG1x devices.
+    752               * The errata is called ADC_E211 in the errata document. */
+    753              EFM_ASSERT(false);
+    754          #endif
+    755              tmp |= ADC_SCANCTRL_REP;
+    756            }
+    757          
+    758            /* Set scan reference. Check if the reference configuration is extended to SCANCTRLX. */
+    759          #if defined (_ADC_SCANCTRLX_VREFSEL_MASK)
+    760            if (((uint32_t)init->reference & ADC_CTRLX_VREFSEL_REG) != 0UL) {
+    761              /* Select the extension register. */
+    762              tmp |= ADC_SCANCTRL_REF_CONF;
+    763            } else {
+    764              tmp |= (uint32_t)init->reference << _ADC_SCANCTRL_REF_SHIFT;
+    765            }
+    766          #else
+    767            tmp |= init->reference << _ADC_SCANCTRL_REF_SHIFT;
+    768          #endif
+    769          
+    770          #if defined(_ADC_SCANCTRL_INPUTMASK_MASK)
+    771            tmp |= init->input;
+    772          #endif
+    773          
+    774            adc->SCANCTRL = tmp;
+    775          
+    776            /* Update SINGLECTRLX for reference select and PRS select. */
+    777          #if defined (_ADC_SCANCTRLX_MASK)
+    778            tmp = adc->SCANCTRLX & ~(_ADC_SCANCTRLX_VREFSEL_MASK
+    779                                     | _ADC_SCANCTRLX_PRSSEL_MASK
+    780                                     | _ADC_SCANCTRLX_FIFOOFACT_MASK);
+    781            if (((uint32_t)init->reference & ADC_CTRLX_VREFSEL_REG) != 0UL) {
+    782              tmp |= ((uint32_t)init->reference & ~ADC_CTRLX_VREFSEL_REG) << _ADC_SCANCTRLX_VREFSEL_SHIFT;
+    783            }
+    784          
+    785            tmp |= (uint32_t)init->prsSel << _ADC_SCANCTRLX_PRSSEL_SHIFT;
+    786          
+    787            if (init->fifoOverwrite) {
+    788              tmp |= ADC_SCANCTRLX_FIFOOFACT_OVERWRITE;
+    789            }
+    790          
+    791            adc->SCANCTRLX = tmp;
+    792          #endif
+    793          
+    794          #if defined(_ADC_CTRL_SCANDMAWU_MASK)
+    795            BUS_RegBitWrite(&adc->CTRL,
+    796                            _ADC_CTRL_SCANDMAWU_SHIFT,
+    797                            (uint32_t)init->scanDmaEm2Wu);
+    798          #endif
+    799          
+    800            /* Write the scan input configuration. */
+    801          #if defined(_ADC_SCANINPUTSEL_MASK)
+    802            /* Check for valid scan input configuration. Use @ref ADC_ScanInputClear(),
+    803               @ref ADC_ScanSingleEndedInputAdd(), and @ref ADC_ScanDifferentialInputAdd() to set
+    804               the scan input configuration.  */
+    805            EFM_ASSERT(init->scanInputConfig.scanInputSel != ADC_SCANINPUTSEL_NONE);
+    806            adc->SCANINPUTSEL = init->scanInputConfig.scanInputSel;
+    807            adc->SCANMASK     = init->scanInputConfig.scanInputEn;
+    808            adc->SCANNEGSEL   = init->scanInputConfig.scanNegSel;
+    809          #endif
+    810          
+    811            /* Assert for any APORT bus conflicts programming errors. */
+    812          #if defined(_ADC_BUSCONFLICT_MASK)
+    813            tmp = adc->BUSREQ;
+    814            EFM_ASSERT(!(tmp & adc->BUSCONFLICT));
+    815            EFM_ASSERT(!(adc->STATUS & _ADC_STATUS_PROGERR_MASK));
+    816          #endif
+    817          }
+    818          
+    819          /***************************************************************************//**
+    820           * @brief
+    821           *   Initialize the single ADC sample conversion.
+    822           *
+    823           * @details
+    824           *   See ADC_Start() for starting a single conversion.
+    825           *
+    826           *   When selecting an external reference, the gain and offset calibration
+    827           *   must be set explicitly (CAL register). For other references, the
+    828           *   calibration is updated with values defined during manufacturing.
+    829           *
+    830           * @note
+    831           *   This function will stop any ongoing single conversion.
+    832           *
+    833           * @cond DOXYDOC_P2_DEVICE
+    834           * @note
+    835           *   This function will set the BIASPROG_GPBIASACC bit when selecting the
+    836           *   internal temperature sensor and clear the bit otherwise. Any
+    837           *   application that depends on the state of the BIASPROG_GPBIASACC bit should
+    838           *   modify it after a call to this function.
+    839           * @endcond
+    840           *
+    841           * @param[in] adc
+    842           *   A pointer to the ADC peripheral register block.
+    843           *
+    844           * @param[in] init
+    845           *   A pointer to the ADC initialization structure.
+    846           ******************************************************************************/
+    847          void ADC_InitSingle(ADC_TypeDef *adc, const ADC_InitSingle_TypeDef *init)
+    848          {
+    849            uint32_t tmp;
+    850          
+    851            EFM_ASSERT(ADC_REF_VALID(adc));
+    852          
+    853            /* Make sure single conversion is not in progress. */
+    854            adc->CMD = ADC_CMD_SINGLESTOP;
+    855          
+    856            /* Load calibration data for selected reference. */
+    857            ADC_LoadDevinfoCal(adc, init->reference, false);
+    858          
+    859            tmp = 0UL
+    860          #if defined(_ADC_SINGLECTRL_PRSSEL_MASK)
+    861                  | ((uint32_t)init->prsSel << _ADC_SINGLECTRL_PRSSEL_SHIFT)
+    862          #endif
+    863                  | ((uint32_t)init->acqTime << _ADC_SINGLECTRL_AT_SHIFT)
+    864          #if defined(_ADC_SINGLECTRL_INPUTSEL_MASK)
+    865                  | (init->input << _ADC_SINGLECTRL_INPUTSEL_SHIFT)
+    866          #endif
+    867          #if defined(_ADC_SINGLECTRL_POSSEL_MASK)
+    868                  | ((uint32_t)init->posSel << _ADC_SINGLECTRL_POSSEL_SHIFT)
+    869          #endif
+    870          #if defined(_ADC_SINGLECTRL_NEGSEL_MASK)
+    871                  | ((uint32_t)init->negSel << _ADC_SINGLECTRL_NEGSEL_SHIFT)
+    872          #endif
+    873                  | ((uint32_t)(init->resolution) << _ADC_SINGLECTRL_RES_SHIFT);
+    874          
+    875            if (init->prsEnable) {
+    876              tmp |= ADC_SINGLECTRL_PRSEN;
+    877            }
+    878          
+    879            if (init->leftAdjust) {
+    880              tmp |= ADC_SINGLECTRL_ADJ_LEFT;
+    881            }
+    882          
+    883            if (init->diff) {
+    884              tmp |= ADC_SINGLECTRL_DIFF;
+    885            }
+    886          
+    887            if (init->rep) {
+    888              tmp |= ADC_SINGLECTRL_REP;
+    889            }
+    890          
+    891          #if defined(_ADC_SINGLECTRL_POSSEL_TEMP)
+    892            /* Force at least 8 cycle acquisition time when reading the internal temperature
+    893             * sensor with 1.25 V reference */
+    894            if ((init->posSel == adcPosSelTEMP)
+    895                && (init->reference == adcRef1V25)
+    896                && (init->acqTime < adcAcqTime8)) {
+    897              tmp = (tmp & ~_ADC_SINGLECTRL_AT_MASK)
+    898                    | ((uint32_t)adcAcqTime8 << _ADC_SINGLECTRL_AT_SHIFT);
+    899            }
+    900          #endif
+    901          
+    902            /* Set a single reference. Check if the reference configuration is extended to SINGLECTRLX. */
+    903          #if defined (_ADC_SINGLECTRLX_MASK)
+    904            if (((uint32_t)init->reference & ADC_CTRLX_VREFSEL_REG) != 0UL) {
+    905              /* Select the extension register. */
+    906              tmp |= ADC_SINGLECTRL_REF_CONF;
+    907            } else {
+    908              tmp |= (uint32_t)init->reference << _ADC_SINGLECTRL_REF_SHIFT;
+    909            }
+    910          #else
+    911            tmp |= (uint32_t)init->reference << _ADC_SINGLECTRL_REF_SHIFT;
+    912          #endif
+    913            adc->SINGLECTRL = tmp;
+    914          
+    915            /* Update SINGLECTRLX for reference select and PRS select. */
+    916          #if defined (_ADC_SINGLECTRLX_VREFSEL_MASK)
+    917            tmp = adc->SINGLECTRLX & ~(_ADC_SINGLECTRLX_VREFSEL_MASK
+    918                                       | _ADC_SINGLECTRLX_PRSSEL_MASK
+    919                                       | _ADC_SINGLECTRLX_FIFOOFACT_MASK);
+    920            if (((uint32_t)init->reference & ADC_CTRLX_VREFSEL_REG) != 0UL) {
+    921              tmp |= ((uint32_t)init->reference & ~ADC_CTRLX_VREFSEL_REG)
+    922                     << _ADC_SINGLECTRLX_VREFSEL_SHIFT;
+    923            }
+    924          
+    925            tmp |= (uint32_t)init->prsSel << _ADC_SINGLECTRLX_PRSSEL_SHIFT;
+    926          
+    927            if (init->fifoOverwrite) {
+    928              tmp |= ADC_SINGLECTRLX_FIFOOFACT_OVERWRITE;
+    929            }
+    930          
+    931            adc->SINGLECTRLX = tmp;
+    932          #endif
+    933          
+    934            /* Set DMA availability in EM2. */
+    935          #if defined(_ADC_CTRL_SINGLEDMAWU_MASK)
+    936            BUS_RegBitWrite(&adc->CTRL,
+    937                            _ADC_CTRL_SINGLEDMAWU_SHIFT,
+    938                            (uint32_t)init->singleDmaEm2Wu);
+    939          #endif
+    940          
+    941          #if defined(_ADC_BIASPROG_GPBIASACC_MASK) && defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+    942            if (init->posSel == adcPosSelTEMP) {
+    943              /* ADC should always use low accuracy setting when reading the internal
+    944               * temperature sensor on EFR32xG1. Using high
+    945               * accuracy setting can introduce a glitch. */
+    946              BUS_RegBitWrite(&adc->BIASPROG, _ADC_BIASPROG_GPBIASACC_SHIFT, 1);
+    947            } else {
+    948              BUS_RegBitWrite(&adc->BIASPROG, _ADC_BIASPROG_GPBIASACC_SHIFT, 0);
+    949            }
+    950          #endif
+    951          
+    952            /* Assert for any APORT bus conflicts programming errors. */
+    953          #if defined(_ADC_BUSCONFLICT_MASK)
+    954            tmp = adc->BUSREQ;
+    955            EFM_ASSERT(!(tmp & adc->BUSCONFLICT));
+    956            EFM_ASSERT(!(adc->STATUS & _ADC_STATUS_PROGERR_MASK));
+    957          #endif
+    958          }
+    959          
+    960          #if defined(_ADC_SCANDATAX_MASK)
+    961          /***************************************************************************//**
+    962           * @brief
+    963           *   Get a scan result and scan select ID.
+    964           *
+    965           * @note
+    966           *   Only use if scan data valid. This function does not check the DV flag.
+    967           *   The return value is meant to be used as an index for the scan select ID.
+    968           *
+    969           * @param[in] adc
+    970           *   A pointer to the ADC peripheral register block.
+    971           *
+    972           * @param[out] scanId
+    973           *   A scan select ID of the first data in the scan FIFO.
+    974           *
+    975           * @return
+    976           *   The first scan data in the scan FIFO.
+    977           ******************************************************************************/
+    978          uint32_t ADC_DataIdScanGet(ADC_TypeDef *adc, uint32_t *scanId)
+    979          {
+    980            uint32_t scanData;
+    981          
+    982            /* Pop data FIFO with scan ID */
+    983            scanData = adc->SCANDATAX;
+    984            *scanId = (scanData & _ADC_SCANDATAX_SCANINPUTID_MASK) >> _ADC_SCANDATAX_SCANINPUTID_SHIFT;
+    985            return (scanData & _ADC_SCANDATAX_DATA_MASK) >> _ADC_SCANDATAX_DATA_SHIFT;
+    986          }
+    987          #endif
+    988          
+    989          /***************************************************************************//**
+    990           * @brief
+    991           *   Calculate the prescaler value used to determine the ADC clock.
+    992           *
+    993           * @details
+    994           *   The ADC clock is given by: (HFPERCLK or HFPERCCLK) / (prescale + 1).
+    995           *
+    996           * @note
+    997           *   The return value is clamped to the maximum prescaler value that the hardware supports.
+    998           *
+    999           * @param[in] adcFreq ADC frequency wanted. The frequency will automatically
+   1000           *   be adjusted to a valid range according to the reference manual.
+   1001           *
+   1002           * @param[in] hfperFreq Frequency in Hz of reference HFPER/HFPERC clock.
+   1003           *   Set to 0 to use currently defined HFPER/HFPERC clock setting.
+   1004           *
+   1005           * @return
+   1006           *   A prescaler value to use for ADC in order to achieve a clock value
+   1007           *   <= @p adcFreq.
+   1008           ******************************************************************************/
+   1009          uint8_t ADC_PrescaleCalc(uint32_t adcFreq, uint32_t hfperFreq)
+   1010          {
+   1011            uint32_t ret;
+   1012          
+   1013            /* Make sure that the selected ADC clock is within a valid range. */
+   1014            if (adcFreq > ADC_MAX_CLOCK) {
+   1015              adcFreq = ADC_MAX_CLOCK;
+   1016            } else if (adcFreq < ADC_MIN_CLOCK) {
+   1017              adcFreq = ADC_MIN_CLOCK;
+   1018            } else {
+   1019              /* Valid frequency. */
+   1020            }
+   1021          
+   1022            /* Use current HFPERCLK / HFPERCCLK frequency. */
+   1023            if (hfperFreq == 0UL) {
+   1024          #if defined(_CMU_HFPERPRESCC_MASK)
+   1025              hfperFreq = CMU_ClockFreqGet(cmuClock_HFPERC);
+   1026          #else
+   1027              hfperFreq = CMU_ClockFreqGet(cmuClock_HFPER);
+   1028          #endif
+   1029            }
+   1030          
+   1031            ret = (hfperFreq + adcFreq - 1U) / adcFreq;
+   1032            if (ret > 0U) {
+   1033              ret--;
+   1034            }
+   1035          
+   1036            if (ret > (_ADC_CTRL_PRESC_MASK >> _ADC_CTRL_PRESC_SHIFT)) {
+   1037              ret = _ADC_CTRL_PRESC_MASK >> _ADC_CTRL_PRESC_SHIFT;
+   1038            }
+   1039          
+   1040            return (uint8_t)ret;
+   1041          }
+   1042          
+   1043          /***************************************************************************//**
+   1044           * @brief
+   1045           *   Reset ADC to a state that it was in after a hardware reset.
+   1046           *
+   1047           * @note
+   1048           *   The ROUTE register is NOT reset by this function to allow
+   1049           *   a centralized setup of this feature.
+   1050           *
+   1051           * @param[in] adc
+   1052           *   A pointer to ADC peripheral register block.
+   1053           ******************************************************************************/
+   1054          void ADC_Reset(ADC_TypeDef *adc)
+   1055          {
+   1056            /* Stop conversions, before resetting other registers. */
+   1057            adc->CMD          = ADC_CMD_SINGLESTOP | ADC_CMD_SCANSTOP;
+   1058            adc->SINGLECTRL   = _ADC_SINGLECTRL_RESETVALUE;
+   1059          #if defined(_ADC_SINGLECTRLX_MASK)
+   1060            adc->SINGLECTRLX  = _ADC_SINGLECTRLX_RESETVALUE;
+   1061          #endif
+   1062            adc->SCANCTRL     = _ADC_SCANCTRL_RESETVALUE;
+   1063          #if defined(_ADC_SCANCTRLX_MASK)
+   1064            adc->SCANCTRLX    = _ADC_SCANCTRLX_RESETVALUE;
+   1065          #endif
+   1066            adc->CTRL         = _ADC_CTRL_RESETVALUE;
+   1067            adc->IEN          = _ADC_IEN_RESETVALUE;
+   1068            adc->IFC          = _ADC_IFC_MASK;
+   1069            adc->BIASPROG     = _ADC_BIASPROG_RESETVALUE;
+   1070          #if defined(_ADC_SCANMASK_MASK)
+   1071            adc->SCANMASK     = _ADC_SCANMASK_RESETVALUE;
+   1072          #endif
+   1073          #if defined(_ADC_SCANINPUTSEL_MASK)
+   1074            adc->SCANINPUTSEL = _ADC_SCANINPUTSEL_RESETVALUE;
+   1075          #endif
+   1076          #if defined(_ADC_SCANNEGSEL_MASK)
+   1077            adc->SCANNEGSEL   = _ADC_SCANNEGSEL_RESETVALUE;
+   1078          #endif
+   1079          
+   1080            /* Clear data FIFOs. */
+   1081          #if defined(_ADC_SINGLEFIFOCLEAR_MASK)
+   1082            adc->SINGLEFIFOCLEAR |= ADC_SINGLEFIFOCLEAR_SINGLEFIFOCLEAR;
+   1083            adc->SCANFIFOCLEAR   |= ADC_SCANFIFOCLEAR_SCANFIFOCLEAR;
+   1084          #endif
+   1085          
+   1086            /* Load calibration values for the 1V25 internal reference. */
+   1087            ADC_LoadDevinfoCal(adc, adcRef1V25, false);
+   1088            ADC_LoadDevinfoCal(adc, adcRef1V25, true);
+   1089          
+   1090          #if defined(_ADC_SCANINPUTSEL_MASK)
+   1091            /* Do not reset route register, setting should be done independently. */
+   1092          #endif
+   1093          }
+   1094          
+   1095          /***************************************************************************//**
+   1096           * @brief
+   1097           *   Calculate a timebase value to get a timebase providing at least 1 us.
+   1098           *
+   1099           * @param[in] hfperFreq Frequency in Hz of the reference HFPER/HFPERC clock.
+   1100           *   Set to 0 to use currently defined HFPER/HFPERC clock setting.
+   1101           *
+   1102           * @return
+   1103           *   A timebase value to use for ADC to achieve at least 1 us.
+   1104           ******************************************************************************/
+   1105          uint8_t ADC_TimebaseCalc(uint32_t hfperFreq)
+   1106          {
+   1107            if (hfperFreq == 0UL) {
+   1108          #if defined(_CMU_HFPERPRESCC_MASK)
+   1109              hfperFreq = CMU_ClockFreqGet(cmuClock_HFPERC);
+   1110          #else
+   1111              hfperFreq = CMU_ClockFreqGet(cmuClock_HFPER);
+   1112          #endif
+   1113          
+   1114              /* Make sure that the frequency is not 0 in below calculation. */
+   1115              if (hfperFreq == 0UL) {
+   1116                hfperFreq = 1UL;
+   1117              }
+   1118            }
+   1119          #if defined(_SILICON_LABS_32B_SERIES_0) \
+   1120            && (defined(_EFM32_GIANT_FAMILY) || defined(_EFM32_WONDER_FAMILY))
+   1121            /* Handle errata on Giant Gecko, maximum TIMEBASE is 5 bits wide or max 0x1F */
+   1122            /* cycles. This will give a warm up time of e.g., 0.645 us, not the       */
+   1123            /* required 1 us when operating at 48 MHz. One must also increase acqTime  */
+   1124            /* to compensate for the missing clock cycles, adding up to 1 us total.*/
+   1125            /* See reference manual for details. */
+   1126            if ( hfperFreq > 32000000UL ) {
+   1127              hfperFreq = 32000000UL;
+   1128            }
+   1129          #endif
+   1130            /* Determine the number of HFPERCLK / HFPERCCLK cycle >= 1 us. */
+   1131            hfperFreq += 999999UL;
+   1132            hfperFreq /= 1000000UL;
+   1133          
+   1134            /* Return timebase value (N+1 format). */
+   1135            return (uint8_t)(hfperFreq - 1UL);
+   1136          }
+   1137          
+   1138          /** @} (end addtogroup ADC) */
+   1139          /** @} (end addtogroup emlib) */
+   1140          #endif /* defined(ADC_COUNT) && (ADC_COUNT > 0) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

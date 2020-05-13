@@ -1,0 +1,737 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:40
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ripemd160.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW1253.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ripemd160.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"ripemd160.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\ripemd160.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\ripemd160.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ripemd160.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  RIPE MD-160 implementation
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          /*
+     35           *  The RIPEMD-160 algorithm was designed by RIPE in 1996
+     36           *  http://homes.esat.kuleuven.be/~bosselae/mbedtls_ripemd160.html
+     37           *  http://ehash.iaik.tugraz.at/wiki/RIPEMD-160
+     38           */
+     39          
+     40          #if !defined(MBEDTLS_CONFIG_FILE)
+     41          #include "mbedtls/config.h"
+     42          #else
+     43          #include MBEDTLS_CONFIG_FILE
+     44          #endif
+     45          
+     46          #if defined(MBEDTLS_RIPEMD160_C)
+     47          
+     48          #include "mbedtls/ripemd160.h"
+     49          
+     50          #include <string.h>
+     51          
+     52          #if defined(MBEDTLS_SELF_TEST)
+     53          #if defined(MBEDTLS_PLATFORM_C)
+     54          #include "mbedtls/platform.h"
+     55          #else
+     56          #include <stdio.h>
+     57          #define mbedtls_printf printf
+     58          #endif /* MBEDTLS_PLATFORM_C */
+     59          #endif /* MBEDTLS_SELF_TEST */
+     60          
+     61          #if !defined(MBEDTLS_RIPEMD160_ALT)
+     62          
+     63          /*
+     64           * 32-bit integer manipulation macros (little endian)
+     65           */
+     66          #ifndef GET_UINT32_LE
+     67          #define GET_UINT32_LE(n,b,i)                            \
+     68          {                                                       \
+     69              (n) = ( (uint32_t) (b)[(i)    ]       )             \
+     70                  | ( (uint32_t) (b)[(i) + 1] <<  8 )             \
+     71                  | ( (uint32_t) (b)[(i) + 2] << 16 )             \
+     72                  | ( (uint32_t) (b)[(i) + 3] << 24 );            \
+     73          }
+     74          #endif
+     75          
+     76          #ifndef PUT_UINT32_LE
+     77          #define PUT_UINT32_LE(n,b,i)                                    \
+     78          {                                                               \
+     79              (b)[(i)    ] = (unsigned char) ( ( (n)       ) & 0xFF );    \
+     80              (b)[(i) + 1] = (unsigned char) ( ( (n) >>  8 ) & 0xFF );    \
+     81              (b)[(i) + 2] = (unsigned char) ( ( (n) >> 16 ) & 0xFF );    \
+     82              (b)[(i) + 3] = (unsigned char) ( ( (n) >> 24 ) & 0xFF );    \
+     83          }
+     84          #endif
+     85          
+     86          /* Implementation that should never be optimized out by the compiler */
+     87          static void mbedtls_zeroize( void *v, size_t n ) {
+     88              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     89          }
+     90          
+     91          void mbedtls_ripemd160_init( mbedtls_ripemd160_context *ctx )
+     92          {
+     93              memset( ctx, 0, sizeof( mbedtls_ripemd160_context ) );
+     94          }
+     95          
+     96          void mbedtls_ripemd160_free( mbedtls_ripemd160_context *ctx )
+     97          {
+     98              if( ctx == NULL )
+     99                  return;
+    100          
+    101              mbedtls_zeroize( ctx, sizeof( mbedtls_ripemd160_context ) );
+    102          }
+    103          
+    104          void mbedtls_ripemd160_clone( mbedtls_ripemd160_context *dst,
+    105                                  const mbedtls_ripemd160_context *src )
+    106          {
+    107              *dst = *src;
+    108          }
+    109          
+    110          /*
+    111           * RIPEMD-160 context setup
+    112           */
+    113          int mbedtls_ripemd160_starts_ret( mbedtls_ripemd160_context *ctx )
+    114          {
+    115              ctx->total[0] = 0;
+    116              ctx->total[1] = 0;
+    117          
+    118              ctx->state[0] = 0x67452301;
+    119              ctx->state[1] = 0xEFCDAB89;
+    120              ctx->state[2] = 0x98BADCFE;
+    121              ctx->state[3] = 0x10325476;
+    122              ctx->state[4] = 0xC3D2E1F0;
+    123          
+    124              return( 0 );
+    125          }
+    126          
+    127          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    128          void mbedtls_ripemd160_starts( mbedtls_ripemd160_context *ctx )
+    129          {
+    130              mbedtls_ripemd160_starts_ret( ctx );
+    131          }
+    132          #endif
+    133          
+    134          #if !defined(MBEDTLS_RIPEMD160_PROCESS_ALT)
+    135          /*
+    136           * Process one block
+    137           */
+    138          int mbedtls_internal_ripemd160_process( mbedtls_ripemd160_context *ctx,
+    139                                                  const unsigned char data[64] )
+    140          {
+    141              uint32_t A, B, C, D, E, Ap, Bp, Cp, Dp, Ep, X[16];
+    142          
+    143              GET_UINT32_LE( X[ 0], data,  0 );
+    144              GET_UINT32_LE( X[ 1], data,  4 );
+    145              GET_UINT32_LE( X[ 2], data,  8 );
+    146              GET_UINT32_LE( X[ 3], data, 12 );
+    147              GET_UINT32_LE( X[ 4], data, 16 );
+    148              GET_UINT32_LE( X[ 5], data, 20 );
+    149              GET_UINT32_LE( X[ 6], data, 24 );
+    150              GET_UINT32_LE( X[ 7], data, 28 );
+    151              GET_UINT32_LE( X[ 8], data, 32 );
+    152              GET_UINT32_LE( X[ 9], data, 36 );
+    153              GET_UINT32_LE( X[10], data, 40 );
+    154              GET_UINT32_LE( X[11], data, 44 );
+    155              GET_UINT32_LE( X[12], data, 48 );
+    156              GET_UINT32_LE( X[13], data, 52 );
+    157              GET_UINT32_LE( X[14], data, 56 );
+    158              GET_UINT32_LE( X[15], data, 60 );
+    159          
+    160              A = Ap = ctx->state[0];
+    161              B = Bp = ctx->state[1];
+    162              C = Cp = ctx->state[2];
+    163              D = Dp = ctx->state[3];
+    164              E = Ep = ctx->state[4];
+    165          
+    166          #define F1( x, y, z )   ( x ^ y ^ z )
+    167          #define F2( x, y, z )   ( ( x & y ) | ( ~x & z ) )
+    168          #define F3( x, y, z )   ( ( x | ~y ) ^ z )
+    169          #define F4( x, y, z )   ( ( x & z ) | ( y & ~z ) )
+    170          #define F5( x, y, z )   ( x ^ ( y | ~z ) )
+    171          
+    172          #define S( x, n ) ( ( x << n ) | ( x >> (32 - n) ) )
+    173          
+    174          #define P( a, b, c, d, e, r, s, f, k )      \
+    175              a += f( b, c, d ) + X[r] + k;           \
+    176              a = S( a, s ) + e;                      \
+    177              c = S( c, 10 );
+    178          
+    179          #define P2( a, b, c, d, e, r, s, rp, sp )   \
+    180              P( a, b, c, d, e, r, s, F, K );         \
+    181              P( a ## p, b ## p, c ## p, d ## p, e ## p, rp, sp, Fp, Kp );
+    182          
+    183          #define F   F1
+    184          #define K   0x00000000
+    185          #define Fp  F5
+    186          #define Kp  0x50A28BE6
+    187              P2( A, B, C, D, E,  0, 11,  5,  8 );
+    188              P2( E, A, B, C, D,  1, 14, 14,  9 );
+    189              P2( D, E, A, B, C,  2, 15,  7,  9 );
+    190              P2( C, D, E, A, B,  3, 12,  0, 11 );
+    191              P2( B, C, D, E, A,  4,  5,  9, 13 );
+    192              P2( A, B, C, D, E,  5,  8,  2, 15 );
+    193              P2( E, A, B, C, D,  6,  7, 11, 15 );
+    194              P2( D, E, A, B, C,  7,  9,  4,  5 );
+    195              P2( C, D, E, A, B,  8, 11, 13,  7 );
+    196              P2( B, C, D, E, A,  9, 13,  6,  7 );
+    197              P2( A, B, C, D, E, 10, 14, 15,  8 );
+    198              P2( E, A, B, C, D, 11, 15,  8, 11 );
+    199              P2( D, E, A, B, C, 12,  6,  1, 14 );
+    200              P2( C, D, E, A, B, 13,  7, 10, 14 );
+    201              P2( B, C, D, E, A, 14,  9,  3, 12 );
+    202              P2( A, B, C, D, E, 15,  8, 12,  6 );
+    203          #undef F
+    204          #undef K
+    205          #undef Fp
+    206          #undef Kp
+    207          
+    208          #define F   F2
+    209          #define K   0x5A827999
+    210          #define Fp  F4
+    211          #define Kp  0x5C4DD124
+    212              P2( E, A, B, C, D,  7,  7,  6,  9 );
+    213              P2( D, E, A, B, C,  4,  6, 11, 13 );
+    214              P2( C, D, E, A, B, 13,  8,  3, 15 );
+    215              P2( B, C, D, E, A,  1, 13,  7,  7 );
+    216              P2( A, B, C, D, E, 10, 11,  0, 12 );
+    217              P2( E, A, B, C, D,  6,  9, 13,  8 );
+    218              P2( D, E, A, B, C, 15,  7,  5,  9 );
+    219              P2( C, D, E, A, B,  3, 15, 10, 11 );
+    220              P2( B, C, D, E, A, 12,  7, 14,  7 );
+    221              P2( A, B, C, D, E,  0, 12, 15,  7 );
+    222              P2( E, A, B, C, D,  9, 15,  8, 12 );
+    223              P2( D, E, A, B, C,  5,  9, 12,  7 );
+    224              P2( C, D, E, A, B,  2, 11,  4,  6 );
+    225              P2( B, C, D, E, A, 14,  7,  9, 15 );
+    226              P2( A, B, C, D, E, 11, 13,  1, 13 );
+    227              P2( E, A, B, C, D,  8, 12,  2, 11 );
+    228          #undef F
+    229          #undef K
+    230          #undef Fp
+    231          #undef Kp
+    232          
+    233          #define F   F3
+    234          #define K   0x6ED9EBA1
+    235          #define Fp  F3
+    236          #define Kp  0x6D703EF3
+    237              P2( D, E, A, B, C,  3, 11, 15,  9 );
+    238              P2( C, D, E, A, B, 10, 13,  5,  7 );
+    239              P2( B, C, D, E, A, 14,  6,  1, 15 );
+    240              P2( A, B, C, D, E,  4,  7,  3, 11 );
+    241              P2( E, A, B, C, D,  9, 14,  7,  8 );
+    242              P2( D, E, A, B, C, 15,  9, 14,  6 );
+    243              P2( C, D, E, A, B,  8, 13,  6,  6 );
+    244              P2( B, C, D, E, A,  1, 15,  9, 14 );
+    245              P2( A, B, C, D, E,  2, 14, 11, 12 );
+    246              P2( E, A, B, C, D,  7,  8,  8, 13 );
+    247              P2( D, E, A, B, C,  0, 13, 12,  5 );
+    248              P2( C, D, E, A, B,  6,  6,  2, 14 );
+    249              P2( B, C, D, E, A, 13,  5, 10, 13 );
+    250              P2( A, B, C, D, E, 11, 12,  0, 13 );
+    251              P2( E, A, B, C, D,  5,  7,  4,  7 );
+    252              P2( D, E, A, B, C, 12,  5, 13,  5 );
+    253          #undef F
+    254          #undef K
+    255          #undef Fp
+    256          #undef Kp
+    257          
+    258          #define F   F4
+    259          #define K   0x8F1BBCDC
+    260          #define Fp  F2
+    261          #define Kp  0x7A6D76E9
+    262              P2( C, D, E, A, B,  1, 11,  8, 15 );
+    263              P2( B, C, D, E, A,  9, 12,  6,  5 );
+    264              P2( A, B, C, D, E, 11, 14,  4,  8 );
+    265              P2( E, A, B, C, D, 10, 15,  1, 11 );
+    266              P2( D, E, A, B, C,  0, 14,  3, 14 );
+    267              P2( C, D, E, A, B,  8, 15, 11, 14 );
+    268              P2( B, C, D, E, A, 12,  9, 15,  6 );
+    269              P2( A, B, C, D, E,  4,  8,  0, 14 );
+    270              P2( E, A, B, C, D, 13,  9,  5,  6 );
+    271              P2( D, E, A, B, C,  3, 14, 12,  9 );
+    272              P2( C, D, E, A, B,  7,  5,  2, 12 );
+    273              P2( B, C, D, E, A, 15,  6, 13,  9 );
+    274              P2( A, B, C, D, E, 14,  8,  9, 12 );
+    275              P2( E, A, B, C, D,  5,  6,  7,  5 );
+    276              P2( D, E, A, B, C,  6,  5, 10, 15 );
+    277              P2( C, D, E, A, B,  2, 12, 14,  8 );
+    278          #undef F
+    279          #undef K
+    280          #undef Fp
+    281          #undef Kp
+    282          
+    283          #define F   F5
+    284          #define K   0xA953FD4E
+    285          #define Fp  F1
+    286          #define Kp  0x00000000
+    287              P2( B, C, D, E, A,  4,  9, 12,  8 );
+    288              P2( A, B, C, D, E,  0, 15, 15,  5 );
+    289              P2( E, A, B, C, D,  5,  5, 10, 12 );
+    290              P2( D, E, A, B, C,  9, 11,  4,  9 );
+    291              P2( C, D, E, A, B,  7,  6,  1, 12 );
+    292              P2( B, C, D, E, A, 12,  8,  5,  5 );
+    293              P2( A, B, C, D, E,  2, 13,  8, 14 );
+    294              P2( E, A, B, C, D, 10, 12,  7,  6 );
+    295              P2( D, E, A, B, C, 14,  5,  6,  8 );
+    296              P2( C, D, E, A, B,  1, 12,  2, 13 );
+    297              P2( B, C, D, E, A,  3, 13, 13,  6 );
+    298              P2( A, B, C, D, E,  8, 14, 14,  5 );
+    299              P2( E, A, B, C, D, 11, 11,  0, 15 );
+    300              P2( D, E, A, B, C,  6,  8,  3, 13 );
+    301              P2( C, D, E, A, B, 15,  5,  9, 11 );
+    302              P2( B, C, D, E, A, 13,  6, 11, 11 );
+    303          #undef F
+    304          #undef K
+    305          #undef Fp
+    306          #undef Kp
+    307          
+    308              C             = ctx->state[1] + C + Dp;
+    309              ctx->state[1] = ctx->state[2] + D + Ep;
+    310              ctx->state[2] = ctx->state[3] + E + Ap;
+    311              ctx->state[3] = ctx->state[4] + A + Bp;
+    312              ctx->state[4] = ctx->state[0] + B + Cp;
+    313              ctx->state[0] = C;
+    314          
+    315              return( 0 );
+    316          }
+    317          
+    318          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    319          void mbedtls_ripemd160_process( mbedtls_ripemd160_context *ctx,
+    320                                          const unsigned char data[64] )
+    321          {
+    322              mbedtls_internal_ripemd160_process( ctx, data );
+    323          }
+    324          #endif
+    325          #endif /* !MBEDTLS_RIPEMD160_PROCESS_ALT */
+    326          
+    327          /*
+    328           * RIPEMD-160 process buffer
+    329           */
+    330          int mbedtls_ripemd160_update_ret( mbedtls_ripemd160_context *ctx,
+    331                                            const unsigned char *input,
+    332                                            size_t ilen )
+    333          {
+    334              int ret;
+    335              size_t fill;
+    336              uint32_t left;
+    337          
+    338              if( ilen == 0 )
+    339                  return( 0 );
+    340          
+    341              left = ctx->total[0] & 0x3F;
+    342              fill = 64 - left;
+    343          
+    344              ctx->total[0] += (uint32_t) ilen;
+    345              ctx->total[0] &= 0xFFFFFFFF;
+    346          
+    347              if( ctx->total[0] < (uint32_t) ilen )
+    348                  ctx->total[1]++;
+    349          
+    350              if( left && ilen >= fill )
+    351              {
+    352                  memcpy( (void *) (ctx->buffer + left), input, fill );
+    353          
+    354                  if( ( ret = mbedtls_internal_ripemd160_process( ctx, ctx->buffer ) ) != 0 )
+    355                      return( ret );
+    356          
+    357                  input += fill;
+    358                  ilen  -= fill;
+    359                  left = 0;
+    360              }
+    361          
+    362              while( ilen >= 64 )
+    363              {
+    364                  if( ( ret = mbedtls_internal_ripemd160_process( ctx, input ) ) != 0 )
+    365                      return( ret );
+    366          
+    367                  input += 64;
+    368                  ilen  -= 64;
+    369              }
+    370          
+    371              if( ilen > 0 )
+    372              {
+    373                  memcpy( (void *) (ctx->buffer + left), input, ilen );
+    374              }
+    375          
+    376              return( 0 );
+    377          }
+    378          
+    379          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    380          void mbedtls_ripemd160_update( mbedtls_ripemd160_context *ctx,
+    381                                         const unsigned char *input,
+    382                                         size_t ilen )
+    383          {
+    384              mbedtls_ripemd160_update_ret( ctx, input, ilen );
+    385          }
+    386          #endif
+    387          
+    388          static const unsigned char ripemd160_padding[64] =
+    389          {
+    390           0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    391              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    392              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    393              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    394          };
+    395          
+    396          /*
+    397           * RIPEMD-160 final digest
+    398           */
+    399          int mbedtls_ripemd160_finish_ret( mbedtls_ripemd160_context *ctx,
+    400                                            unsigned char output[20] )
+    401          {
+    402              int ret;
+    403              uint32_t last, padn;
+    404              uint32_t high, low;
+    405              unsigned char msglen[8];
+    406          
+    407              high = ( ctx->total[0] >> 29 )
+    408                   | ( ctx->total[1] <<  3 );
+    409              low  = ( ctx->total[0] <<  3 );
+    410          
+    411              PUT_UINT32_LE( low,  msglen, 0 );
+    412              PUT_UINT32_LE( high, msglen, 4 );
+    413          
+    414              last = ctx->total[0] & 0x3F;
+    415              padn = ( last < 56 ) ? ( 56 - last ) : ( 120 - last );
+    416          
+    417              ret = mbedtls_ripemd160_update_ret( ctx, ripemd160_padding, padn );
+    418              if( ret != 0 )
+    419                  return( ret );
+    420          
+    421              ret = mbedtls_ripemd160_update_ret( ctx, msglen, 8 );
+    422              if( ret != 0 )
+    423                  return( ret );
+    424          
+    425              PUT_UINT32_LE( ctx->state[0], output,  0 );
+    426              PUT_UINT32_LE( ctx->state[1], output,  4 );
+    427              PUT_UINT32_LE( ctx->state[2], output,  8 );
+    428              PUT_UINT32_LE( ctx->state[3], output, 12 );
+    429              PUT_UINT32_LE( ctx->state[4], output, 16 );
+    430          
+    431              return( 0 );
+    432          }
+    433          
+    434          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    435          void mbedtls_ripemd160_finish( mbedtls_ripemd160_context *ctx,
+    436                                         unsigned char output[20] )
+    437          {
+    438              mbedtls_ripemd160_finish_ret( ctx, output );
+    439          }
+    440          #endif
+    441          
+    442          #endif /* ! MBEDTLS_RIPEMD160_ALT */
+    443          
+    444          /*
+    445           * output = RIPEMD-160( input buffer )
+    446           */
+    447          int mbedtls_ripemd160_ret( const unsigned char *input,
+    448                                     size_t ilen,
+    449                                     unsigned char output[20] )
+    450          {
+    451              int ret;
+    452              mbedtls_ripemd160_context ctx;
+    453          
+    454              mbedtls_ripemd160_init( &ctx );
+    455          
+    456              if( ( ret = mbedtls_ripemd160_starts_ret( &ctx ) ) != 0 )
+    457                  goto exit;
+    458          
+    459              if( ( ret = mbedtls_ripemd160_update_ret( &ctx, input, ilen ) ) != 0 )
+    460                  goto exit;
+    461          
+    462              if( ( ret = mbedtls_ripemd160_finish_ret( &ctx, output ) ) != 0 )
+    463                  goto exit;
+    464          
+    465          exit:
+    466              mbedtls_ripemd160_free( &ctx );
+    467          
+    468              return( ret );
+    469          }
+    470          
+    471          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    472          void mbedtls_ripemd160( const unsigned char *input,
+    473                                  size_t ilen,
+    474                                  unsigned char output[20] )
+    475          {
+    476              mbedtls_ripemd160_ret( input, ilen, output );
+    477          }
+    478          #endif
+    479          
+    480          #if defined(MBEDTLS_SELF_TEST)
+    481          /*
+    482           * Test vectors from the RIPEMD-160 paper and
+    483           * http://homes.esat.kuleuven.be/~bosselae/mbedtls_ripemd160.html#HMAC
+    484           */
+    485          #define TESTS   8
+    486          static const unsigned char ripemd160_test_str[TESTS][81] =
+    487          {
+    488              { "" },
+    489              { "a" },
+    490              { "abc" },
+    491              { "message digest" },
+    492              { "abcdefghijklmnopqrstuvwxyz" },
+    493              { "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq" },
+    494              { "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" },
+    495              { "12345678901234567890123456789012345678901234567890123456789012"
+    496                "345678901234567890" },
+    497          };
+    498          
+    499          static const size_t ripemd160_test_strlen[TESTS] =
+    500          {
+    501              0, 1, 3, 14, 26, 56, 62, 80
+    502          };
+    503          
+    504          static const unsigned char ripemd160_test_md[TESTS][20] =
+    505          {
+    506              { 0x9c, 0x11, 0x85, 0xa5, 0xc5, 0xe9, 0xfc, 0x54, 0x61, 0x28,
+    507                0x08, 0x97, 0x7e, 0xe8, 0xf5, 0x48, 0xb2, 0x25, 0x8d, 0x31 },
+    508              { 0x0b, 0xdc, 0x9d, 0x2d, 0x25, 0x6b, 0x3e, 0xe9, 0xda, 0xae,
+    509                0x34, 0x7b, 0xe6, 0xf4, 0xdc, 0x83, 0x5a, 0x46, 0x7f, 0xfe },
+    510              { 0x8e, 0xb2, 0x08, 0xf7, 0xe0, 0x5d, 0x98, 0x7a, 0x9b, 0x04,
+    511                0x4a, 0x8e, 0x98, 0xc6, 0xb0, 0x87, 0xf1, 0x5a, 0x0b, 0xfc },
+    512              { 0x5d, 0x06, 0x89, 0xef, 0x49, 0xd2, 0xfa, 0xe5, 0x72, 0xb8,
+    513                0x81, 0xb1, 0x23, 0xa8, 0x5f, 0xfa, 0x21, 0x59, 0x5f, 0x36 },
+    514              { 0xf7, 0x1c, 0x27, 0x10, 0x9c, 0x69, 0x2c, 0x1b, 0x56, 0xbb,
+    515                0xdc, 0xeb, 0x5b, 0x9d, 0x28, 0x65, 0xb3, 0x70, 0x8d, 0xbc },
+    516              { 0x12, 0xa0, 0x53, 0x38, 0x4a, 0x9c, 0x0c, 0x88, 0xe4, 0x05,
+    517                0xa0, 0x6c, 0x27, 0xdc, 0xf4, 0x9a, 0xda, 0x62, 0xeb, 0x2b },
+    518              { 0xb0, 0xe2, 0x0b, 0x6e, 0x31, 0x16, 0x64, 0x02, 0x86, 0xed,
+    519                0x3a, 0x87, 0xa5, 0x71, 0x30, 0x79, 0xb2, 0x1f, 0x51, 0x89 },
+    520              { 0x9b, 0x75, 0x2e, 0x45, 0x57, 0x3d, 0x4b, 0x39, 0xf4, 0xdb,
+    521                0xd3, 0x32, 0x3c, 0xab, 0x82, 0xbf, 0x63, 0x32, 0x6b, 0xfb },
+    522          };
+    523          
+    524          /*
+    525           * Checkup routine
+    526           */
+    527          int mbedtls_ripemd160_self_test( int verbose )
+    528          {
+    529              int i, ret = 0;
+    530              unsigned char output[20];
+    531          
+    532              memset( output, 0, sizeof output );
+    533          
+    534              for( i = 0; i < TESTS; i++ )
+    535              {
+    536                  if( verbose != 0 )
+    537                      mbedtls_printf( "  RIPEMD-160 test #%d: ", i + 1 );
+    538          
+    539                  ret = mbedtls_ripemd160_ret( ripemd160_test_str[i],
+    540                                               ripemd160_test_strlen[i], output );
+    541                  if( ret != 0 )
+    542                      goto fail;
+    543          
+    544                  if( memcmp( output, ripemd160_test_md[i], 20 ) != 0 )
+    545                  {
+    546                      ret = 1;
+    547                      goto fail;
+    548                  }
+    549          
+    550                  if( verbose != 0 )
+    551                      mbedtls_printf( "passed\n" );
+    552              }
+    553          
+    554              if( verbose != 0 )
+    555                  mbedtls_printf( "\n" );
+    556          
+    557              return( 0 );
+    558          
+    559          fail:
+    560              if( verbose != 0 )
+    561                  mbedtls_printf( "failed\n" );
+    562          
+    563              return( ret );
+    564          }
+    565          
+    566          #endif /* MBEDTLS_SELF_TEST */
+    567          
+    568          #endif /* MBEDTLS_RIPEMD160_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

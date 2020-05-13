@@ -1,0 +1,426 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:36
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\radioaes.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW3F4.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\radioaes.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"radioaes.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\radioaes.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\radioaes.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\radioaes.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief AES block cipher implementation optimized for Silicon Labs devices
+      4           *        with a Radio AES peripheral.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: APACHE-2.0
+     11           *
+     12           * This software is subject to an open source license and is distributed by
+     13           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     14           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     15           * Such terms and conditions may be further supplemented by the Silicon Labs
+     16           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     17           * sections applicable to open source software.
+     18           *
+     19           ******************************************************************************/
+     20          #include "em_device.h"
+     21          
+     22          #if defined(RADIOAES_PRESENT)
+     23          #include "radioaes.h"
+     24          #include "mbedtls/aes.h"
+     25          #include "em_core.h"
+     26          
+     27          #include <stddef.h>
+     28          #include <stdbool.h>
+     29          
+     30          #if defined( MBEDTLS_THREADING_C )
+     31          #include "mbedtls/threading.h"
+     32          static mbedtls_threading_mutex_t    radioaes_lock;
+     33          static volatile bool                radioaes_lock_initialized = false;
+     34          #endif
+     35          
+
+   \                                 In section .text, align 2, keep-with-next
+     36          int radioaes_acquire ( void )
+     37          {
+     38          #if defined (_CMU_CLKEN0_MASK)
+     39            CMU->CLKEN0 |= CMU_CLKEN0_RADIOAES;
+     40          #endif
+     41            CMU->RADIOCLKCTRL = CMU_RADIOCLKCTRL_EN;
+     42            if ((SCB->ICSR & SCB_ICSR_VECTACTIVE_Msk) != 0U) {
+   \                     radioaes_acquire: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable1  ;; 0xe000ed04
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....             LDR.N    R1,??DataTable1_1  ;; 0x40008280
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+   \        0x8   0x6813             LDR      R3,[R2, #+0]
+   \        0xA   0x....             LDR.N    R0,??DataTable1_2  ;; 0x4400003c
+   \        0xC   0x05D9             LSLS     R1,R3,#+23
+   \        0xE   0xD005             BEQ.N    ??radioaes_acquire_0
+     43              // IRQ: need to store & restore RADIOAES registers
+     44              while (RADIOAES->STATUS & (AES_STATUS_FETCHERBSY | AES_STATUS_PUSHERBSY | AES_STATUS_SOFTRSTBSY));
+   \                     ??radioaes_acquire_1: (+1)
+   \       0x10   0x6802             LDR      R2,[R0, #+0]
+   \       0x12   0xF012 0x0F43      TST      R2,#0x43
+   \       0x16   0xD1FB             BNE.N    ??radioaes_acquire_1
+     45              return 1;
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0x4770             BX       LR
+     46            } else {
+     47          #if defined(MBEDTLS_THREADING_C)
+     48              // Non-IRQ, RTOS available: take mutex
+     49              /* Initialize mutex if that hasn't happened yet */
+     50              CORE_DECLARE_IRQ_STATE;
+     51          
+     52              // Check flag first before going into a critical section, to avoid going into
+     53              // a critical section on every single acquire() call. Since the _initialized
+     54              // flag only transitions false -> true, we can in 99% of the calls avoid the
+     55              // critical section.
+     56              if ( !radioaes_lock_initialized ) {
+     57                CORE_ENTER_CRITICAL();
+     58          
+     59                // Check the flag again after entering the critical section. Now that we're
+     60                // in the critical section, we can be sure that we are the only ones looking
+     61                // at the flag and no-one is interrupting us during its manipulation.
+     62                if ( !radioaes_lock_initialized ) {
+     63                  mbedtls_mutex_init( &radioaes_lock );
+     64                  radioaes_lock_initialized = true;
+     65                }
+     66          
+     67                CORE_EXIT_CRITICAL();
+     68              }
+     69              return mbedtls_mutex_lock(&radioaes_lock);
+     70          #else
+     71              // Non-IRQ, no RTOS: busywait
+     72              while (RADIOAES->STATUS & (AES_STATUS_FETCHERBSY | AES_STATUS_PUSHERBSY | AES_STATUS_SOFTRSTBSY));
+   \                     ??radioaes_acquire_0: (+1)
+   \       0x1C   0x6801             LDR      R1,[R0, #+0]
+   \       0x1E   0xF011 0x0F43      TST      R1,#0x43
+   \       0x22   0xD1FB             BNE.N    ??radioaes_acquire_0
+     73              return 0;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x4770             BX       LR               ;; return
+     74          #endif
+     75            }
+     76          }
+     77          
+
+   \                                 In section .text, align 2, keep-with-next
+     78          int radioaes_release ( void )
+     79          {
+     80            // IRQ: nothing to do
+     81            if ((SCB->ICSR & SCB_ICSR_VECTACTIVE_Msk) != 0U) {
+   \                     radioaes_release: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable1  ;; 0xe000ed04
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+     82              return 0;
+     83            }
+     84          #if defined(MBEDTLS_THREADING_C)
+     85            // Non-IRQ, RTOS available: free mutex
+     86            return mbedtls_mutex_unlock(&radioaes_lock);
+     87          #else
+     88            // Non-IRQ, no RTOS: nothing to do.
+     89            return 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4770             BX       LR               ;; return
+     90          #endif
+     91          }
+     92          
+
+   \                                 In section .text, align 2, keep-with-next
+     93          int radioaes_saveState (radioaes_state_t *ctx)
+     94          {
+   \                     radioaes_saveState: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     95            CORE_DECLARE_IRQ_STATE;
+     96            CORE_ENTER_CRITICAL();
+   \        0x4   0x....'....        BL       CORE_EnterCritical
+     97            ctx->FETCHADDR = RADIOAES->FETCHADDR;
+   \        0x8   0xF04F 0x4188      MOV      R1,#+1140850688
+   \        0xC   0x680A             LDR      R2,[R1, #+0]
+   \        0xE   0x6022             STR      R2,[R4, #+0]
+     98          #if defined(_AES_FETCHDESCR_MASK)
+     99            ctx->FETCHDESCR = RADIOAES->FETCHDESCR;
+   \       0x10   0x684B             LDR      R3,[R1, #+4]
+   \       0x12   0x6063             STR      R3,[R4, #+4]
+    100          #endif
+    101            ctx->FETCHLEN = RADIOAES->FETCHLEN;
+   \       0x14   0x688A             LDR      R2,[R1, #+8]
+   \       0x16   0x60A2             STR      R2,[R4, #+8]
+    102            ctx->FETCHTAG = RADIOAES->FETCHTAG;
+   \       0x18   0x68CB             LDR      R3,[R1, #+12]
+   \       0x1A   0x60E3             STR      R3,[R4, #+12]
+    103            ctx->PUSHADDR = RADIOAES->PUSHADDR;
+   \       0x1C   0x690A             LDR      R2,[R1, #+16]
+   \       0x1E   0x6122             STR      R2,[R4, #+16]
+    104          #if defined(_AES_PUSHDESCR_MASK)
+    105            ctx->PUSHDESCR = RADIOAES->PUSHDESCR;
+   \       0x20   0x694B             LDR      R3,[R1, #+20]
+   \       0x22   0x6163             STR      R3,[R4, #+20]
+    106          #endif
+    107            ctx->PUSHLEN = RADIOAES->PUSHLEN;
+   \       0x24   0x698A             LDR      R2,[R1, #+24]
+   \       0x26   0x61A2             STR      R2,[R4, #+24]
+    108            ctx->CTRL = RADIOAES->CTRL;
+   \       0x28   0x6B49             LDR      R1,[R1, #+52]
+   \       0x2A   0x61E1             STR      R1,[R4, #+28]
+    109            CORE_EXIT_CRITICAL();
+   \       0x2C   0x....             B.N      ?Subroutine0
+    110            return 0;
+    111          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....'....        BL       CORE_ExitCritical
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xBD10             POP      {R4,PC}          ;; return
+    112          
+
+   \                                 In section .text, align 2, keep-with-next
+    113          int radioaes_restoreState (radioaes_state_t *ctx)
+    114          {
+   \                     radioaes_restoreState: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    115            CORE_DECLARE_IRQ_STATE;
+    116            CORE_ENTER_CRITICAL();
+   \        0x4   0x....'....        BL       CORE_EnterCritical
+    117            RADIOAES->FETCHADDR = ctx->FETCHADDR;
+   \        0x8   0x6822             LDR      R2,[R4, #+0]
+   \        0xA   0xF04F 0x4188      MOV      R1,#+1140850688
+   \        0xE   0x600A             STR      R2,[R1, #+0]
+    118          #if defined(_AES_FETCHDESCR_MASK)
+    119            RADIOAES->FETCHDESCR = ctx->FETCHDESCR;
+   \       0x10   0x6863             LDR      R3,[R4, #+4]
+   \       0x12   0x604B             STR      R3,[R1, #+4]
+    120          #endif
+    121            RADIOAES->FETCHLEN = ctx->FETCHLEN;
+   \       0x14   0x68A2             LDR      R2,[R4, #+8]
+   \       0x16   0x608A             STR      R2,[R1, #+8]
+    122            RADIOAES->FETCHTAG = ctx->FETCHTAG;
+   \       0x18   0x68E3             LDR      R3,[R4, #+12]
+   \       0x1A   0x60CB             STR      R3,[R1, #+12]
+    123            RADIOAES->PUSHADDR = ctx->PUSHADDR;
+   \       0x1C   0x6922             LDR      R2,[R4, #+16]
+   \       0x1E   0x610A             STR      R2,[R1, #+16]
+    124          #if defined(_AES_PUSHDESCR_MASK)
+    125            RADIOAES->PUSHDESCR = ctx->PUSHDESCR;
+   \       0x20   0x6963             LDR      R3,[R4, #+20]
+   \       0x22   0x614B             STR      R3,[R1, #+20]
+    126          #endif
+    127            RADIOAES->PUSHLEN = ctx->PUSHLEN;
+   \       0x24   0x69A2             LDR      R2,[R4, #+24]
+   \       0x26   0x618A             STR      R2,[R1, #+24]
+    128            RADIOAES->CTRL = ctx->CTRL;
+   \       0x28   0x69E3             LDR      R3,[R4, #+28]
+   \       0x2A   0x634B             STR      R3,[R1, #+52]
+    129            CORE_EXIT_CRITICAL();
+   \       0x2C                      REQUIRE ?Subroutine0
+   \       0x2C                      ;; // Fall through to label ?Subroutine0
+    130            return 0;
+    131          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0xE000'ED04        DC32     0xe000ed04
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x4000'8280        DC32     0x40008280
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x4400'003C        DC32     0x4400003c
+    132          
+    133          #endif //defined(RADIOAES_PRESENT)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   radioaes_acquire
+       0   radioaes_release
+       8   radioaes_restoreState
+         8   -> CORE_EnterCritical
+         8   -> CORE_ExitCritical
+       8   radioaes_saveState
+         8   -> CORE_EnterCritical
+         8   -> CORE_ExitCritical
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       8  ?Subroutine0
+      40  radioaes_acquire
+       8  radioaes_release
+      44  radioaes_restoreState
+      46  radioaes_saveState
+
+ 
+ 158 bytes in section .text
+ 
+ 158 bytes of CODE memory
+
+Errors: none
+Warnings: none

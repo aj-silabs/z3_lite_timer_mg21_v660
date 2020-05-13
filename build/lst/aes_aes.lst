@@ -1,0 +1,667 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:01
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\aes_aes.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW9065.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\aes_aes.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"aes_aes.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\aes_aes.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\aes_aes.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\aes_aes.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Hardware-accelerated AES implementation for Silicon Labs devices
+      4           *        containing an AES peripheral.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: APACHE-2.0
+     11           *
+     12           * This software is subject to an open source license and is distributed by
+     13           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     14           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     15           * Such terms and conditions may be further supplemented by the Silicon Labs
+     16           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     17           * sections applicable to open source software.
+     18           *
+     19           ******************************************************************************/
+     20          
+     21          #include "mbedtls/aes.h"
+     22          #include "em_device.h"
+     23          
+     24          #if defined(AES_PRESENT) && (AES_COUNT == 1)
+     25          #if defined(MBEDTLS_AES_C)
+     26          #if defined(MBEDTLS_AES_ALT)
+     27          
+     28          #include "em_aes.h"
+     29          #include "em_cmu.h"
+     30          #include "em_bus.h"
+     31          #include <string.h>
+     32          
+     33          #if defined(MBEDTLS_THREADING_C)
+     34          #include "mbedtls/threading.h"
+     35          #include "em_core.h"
+     36          /* Mutex for protecting access to the AES instance */
+     37          static mbedtls_threading_mutex_t aes_mutex;
+     38          static volatile bool aes_mutex_inited = false;
+     39          #endif
+     40          
+     41          static void aes_lock( void )
+     42          {
+     43          #if defined(MBEDTLS_THREADING_C)
+     44              if ( !aes_mutex_inited ) {
+     45                  /* Turn off interrupts that can cause preemption */
+     46                  CORE_irqState_t critical_irq_state = CORE_EnterCritical();
+     47                  if ( !aes_mutex_inited ) {
+     48                      mbedtls_mutex_init(&aes_mutex);
+     49                      aes_mutex_inited = true;
+     50                  }
+     51                  CORE_ExitCritical(critical_irq_state);
+     52              }
+     53              mbedtls_mutex_lock(&aes_mutex);
+     54          #endif
+     55              BUS_RegBitWrite(&(CMU->HFCORECLKEN0), _CMU_HFCORECLKEN0_AES_SHIFT, 1);
+     56              return;
+     57          }
+     58          
+     59          static void aes_unlock( void )
+     60          {
+     61          #if defined(MBEDTLS_THREADING_C)
+     62              if ( aes_mutex_inited ) {
+     63                  mbedtls_mutex_unlock(&aes_mutex);
+     64              }
+     65          #endif
+     66              BUS_RegBitWrite(&(CMU->HFCORECLKEN0), _CMU_HFCORECLKEN0_AES_SHIFT, 0);
+     67              return;
+     68          }
+     69          
+     70          /*
+     71           * Initialize AES context
+     72           */
+     73          void mbedtls_aes_init( mbedtls_aes_context *ctx )
+     74          {
+     75              if( ctx == NULL )
+     76                  return;
+     77          
+     78              memset( ctx, 0, sizeof( mbedtls_aes_context ) );
+     79          }
+     80          
+     81          /*
+     82           * Clear AES context
+     83           */
+     84          void mbedtls_aes_free( mbedtls_aes_context *ctx )
+     85          {
+     86              if( ctx == NULL )
+     87                  return;
+     88          
+     89              memset( ctx, 0, sizeof( mbedtls_aes_context ) );
+     90          }
+     91          
+     92          /*
+     93           * AES key schedule (encryption)
+     94           */
+     95          int mbedtls_aes_setkey_enc( mbedtls_aes_context *ctx,
+     96                                      const unsigned char *key,
+     97                                      unsigned int keybits )
+     98          {
+     99              if ( ( 128 != keybits )
+    100          #if defined(AES_CTRL_AES256)
+    101          	 && ( 256 != keybits )
+    102          #endif
+    103          	 )
+    104              {
+    105                  /* Unsupported key size */
+    106                  return( MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE );
+    107              }
+    108          
+    109              ctx->keybits = keybits;
+    110              memcpy( ctx->key, key, keybits/8 );
+    111          
+    112              return 0;
+    113          }
+    114          
+    115          /*
+    116           * AES key schedule (decryption)
+    117           */
+    118          int mbedtls_aes_setkey_dec( mbedtls_aes_context *ctx,
+    119                                      const unsigned char *key,
+    120                                      unsigned int keybits )
+    121          {
+    122              switch (keybits)
+    123              {
+    124                  case 128:
+    125                      ctx->keybits = keybits;
+    126                      aes_lock();
+    127                      AES_DecryptKey128( ctx->key, key );
+    128                      aes_unlock();
+    129                      break;
+    130          #if defined(AES_CTRL_AES256)
+    131                  case 256:
+    132                      ctx->keybits = keybits;
+    133                      aes_lock();
+    134                      AES_DecryptKey256( ctx->key, key );
+    135                      aes_unlock();
+    136                      break;
+    137          #endif
+    138                  default:
+    139                      return( MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE );
+    140              }
+    141          
+    142              return 0;
+    143          }
+    144          
+    145          /*
+    146           * AES-ECB block encryption
+    147           */
+    148          void mbedtls_aes_encrypt( mbedtls_aes_context *ctx,
+    149                                    const unsigned char input[16],
+    150                                    unsigned char output[16] )
+    151          {
+    152              mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_ENCRYPT, input, output);
+    153          }
+    154          
+    155          /*
+    156           * AES-ECB block decryption
+    157           */
+    158          void mbedtls_aes_decrypt( mbedtls_aes_context *ctx,
+    159                                    const unsigned char input[16],
+    160                                    unsigned char output[16] )
+    161          {
+    162              mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_DECRYPT, input, output);
+    163          }
+    164          
+    165          int mbedtls_internal_aes_encrypt( mbedtls_aes_context *ctx,
+    166                                            const unsigned char input[16],
+    167                                            unsigned char output[16] )
+    168          {
+    169              return mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_ENCRYPT, input, output);
+    170          }
+    171          
+    172          int mbedtls_internal_aes_decrypt( mbedtls_aes_context *ctx,
+    173                                            const unsigned char input[16],
+    174                                            unsigned char output[16] )
+    175          {
+    176              return mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_DECRYPT, input, output);
+    177          }
+    178          
+    179          /*
+    180           * AES-ECB block encryption/decryption
+    181           */
+    182          int mbedtls_aes_crypt_ecb( mbedtls_aes_context *ctx,
+    183                                     int mode,
+    184                                     const unsigned char input[16],
+    185                                     unsigned char output[16] )
+    186          {
+    187              switch ( ctx->keybits )
+    188              {
+    189                  case 128:
+    190                      aes_lock();
+    191                      AES_ECB128( output,
+    192                                  input,
+    193                                  16,
+    194                                  ctx->key,
+    195                                  mode == MBEDTLS_AES_ENCRYPT ? true : false );
+    196                      aes_unlock();
+    197                      break;
+    198          #if defined(AES_CTRL_AES256)
+    199                  case 256:
+    200                      aes_lock();
+    201                      AES_ECB256( output,
+    202                                  input,
+    203                                  16,
+    204                                  ctx->key,
+    205                                  mode == MBEDTLS_AES_ENCRYPT ? true : false );
+    206                      aes_unlock();
+    207                      break;
+    208          #endif
+    209                  default:
+    210                     return( MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE );
+    211              }
+    212          
+    213              return( 0 );
+    214          }
+    215          
+    216          #if defined(MBEDTLS_CIPHER_MODE_CBC)
+    217          /*
+    218           * AES-CBC buffer encryption/decryption
+    219           */
+    220          int mbedtls_aes_crypt_cbc( mbedtls_aes_context *ctx,
+    221                                     int mode,
+    222                                     size_t length,
+    223                                     unsigned char iv[16],
+    224                                     const unsigned char *input,
+    225                                     unsigned char *output )
+    226          {
+    227              uint8_t tmpIv[16];
+    228          
+    229              if( length % 16 )
+    230              {
+    231                  return( MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH );
+    232              }
+    233          
+    234              if ( mode == MBEDTLS_AES_DECRYPT )
+    235              {
+    236                  if ( length >= 16 )
+    237                      memcpy( tmpIv, &input[length-16], 16 );
+    238              }
+    239          
+    240              switch ( ctx->keybits )
+    241              {
+    242                  case 128:
+    243                      aes_lock();
+    244                      AES_CBC128( output,
+    245                                  input,
+    246                                  length,
+    247                                  ctx->key,
+    248                                  iv,
+    249                                  mode == MBEDTLS_AES_ENCRYPT ? true : false );
+    250                      aes_unlock();
+    251                      break;
+    252          #if defined(AES_CTRL_AES256)
+    253                  case 256:
+    254                      aes_lock();
+    255                      AES_CBC256( output,
+    256                                  input,
+    257                                  length,
+    258                                  ctx->key,
+    259                                  iv,
+    260                                  mode == MBEDTLS_AES_ENCRYPT ? true : false );
+    261                      aes_unlock();
+    262                      break;
+    263          #endif
+    264                  default:
+    265                     return( MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE );
+    266              }
+    267          
+    268              if ( length >= 16 )
+    269              {
+    270                  if ( mode == MBEDTLS_AES_ENCRYPT )
+    271                      memcpy( iv, &output[length-16], 16 );
+    272                  else
+    273                      memcpy( iv, tmpIv, 16 );
+    274              }
+    275          
+    276              return( 0 );
+    277          }
+    278          #endif /* MBEDTLS_CIPHER_MODE_CBC */
+    279          
+    280          #if defined(MBEDTLS_CIPHER_MODE_CFB)
+    281          /*
+    282           * AES-CFB128 buffer encryption/decryption
+    283           */
+    284          int mbedtls_aes_crypt_cfb128( mbedtls_aes_context *ctx,
+    285                                        int mode,
+    286                                        size_t length,
+    287                                        size_t *iv_off,
+    288                                        unsigned char iv[16],
+    289                                        const unsigned char *input,
+    290                                        unsigned char *output )
+    291          {
+    292              size_t n = ( iv_off != NULL ) ? *iv_off : 0;
+    293          
+    294              if ( ( n > 0 ) || ( length & 0xf ) )
+    295              {
+    296                  // IV offset or length not aligned to block size
+    297                  int c;
+    298          
+    299                  if( mode == MBEDTLS_AES_DECRYPT )
+    300                  {
+    301                      while( length-- )
+    302                      {
+    303                          if( n == 0 )
+    304                              mbedtls_aes_crypt_ecb( ctx, MBEDTLS_AES_ENCRYPT, iv, iv );
+    305          
+    306                          c = *input++;
+    307                          *output++ = (unsigned char)( c ^ iv[n] );
+    308                          iv[n] = (unsigned char) c;
+    309          
+    310                          n = ( n + 1 ) & 0x0F;
+    311                      }
+    312                  }
+    313                  else
+    314                  {
+    315                      while( length-- )
+    316                      {
+    317                          if( n == 0 )
+    318                              mbedtls_aes_crypt_ecb( ctx, MBEDTLS_AES_ENCRYPT, iv, iv );
+    319          
+    320                          iv[n] = *output++ = (unsigned char)( iv[n] ^ *input++ );
+    321          
+    322                          n = ( n + 1 ) & 0x0F;
+    323                      }
+    324                  }
+    325          
+    326                  if (iv_off)
+    327                  {
+    328                      *iv_off = n;
+    329                  }
+    330                  return( 0 );
+    331              }
+    332              else
+    333              {
+    334                  switch( ctx->keybits )
+    335                  {
+    336                  case 128:
+    337                      aes_lock();
+    338                      AES_CFB128(output,
+    339                                 input,
+    340                                 length,
+    341                                 ctx->key,
+    342                                 iv,
+    343                                 mode == MBEDTLS_AES_ENCRYPT ? true : false );
+    344                      aes_unlock();
+    345                      break;
+    346          
+    347          #if defined(AES_CTRL_AES256)
+    348                  case 256:
+    349                      aes_lock();
+    350                      AES_CFB256(output,
+    351                                 input,
+    352                                 length,
+    353                                 ctx->key,
+    354                                 iv,
+    355                                 mode == MBEDTLS_AES_ENCRYPT ? true : false );
+    356                      aes_unlock();
+    357                      break;
+    358          #endif
+    359                  default:
+    360                      return( MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE );
+    361                  }
+    362          
+    363                  if ( length >= 16 )
+    364                  {
+    365                      if ( mode == MBEDTLS_AES_ENCRYPT )
+    366                          memcpy( iv, &output[length-16], 16 );
+    367                      else
+    368                          memcpy( iv, &input[length-16], 16 );
+    369                  }
+    370          
+    371                  return( 0 );
+    372              }
+    373          }
+    374          
+    375          /*
+    376           * AES-CFB8 buffer encryption/decryption
+    377           */
+    378          int mbedtls_aes_crypt_cfb8( mbedtls_aes_context *ctx,
+    379                                 int mode,
+    380                                 size_t length,
+    381                                 unsigned char iv[16],
+    382                                 const unsigned char *input,
+    383                                 unsigned char *output )
+    384          {
+    385              unsigned char c;
+    386              unsigned char ov[17];
+    387          
+    388              while( length-- )
+    389              {
+    390                  memcpy( ov, iv, 16 );
+    391                  mbedtls_aes_crypt_ecb( ctx, MBEDTLS_AES_ENCRYPT, iv, iv );
+    392          
+    393                  if( mode == MBEDTLS_AES_DECRYPT )
+    394                      ov[16] = *input;
+    395          
+    396                  c = *output++ = (unsigned char)( iv[0] ^ *input++ );
+    397          
+    398                  if( mode == MBEDTLS_AES_ENCRYPT )
+    399                      ov[16] = c;
+    400          
+    401                  memcpy( iv, ov + 1, 16 );
+    402              }
+    403          
+    404              return( 0 );
+    405          }
+    406          #endif /*MBEDTLS_CIPHER_MODE_CFB */
+    407          
+    408          #if defined(MBEDTLS_CIPHER_MODE_CTR)
+    409          /*
+    410           * AES-CTR Nonce update function
+    411           */
+    412          static void aes_ctr_update_nonce( uint8_t *nonce_counter )
+    413          {
+    414              for( size_t i = 16; i > 0; i-- )
+    415                  if( ++nonce_counter[i - 1] != 0 )
+    416                      break;
+    417          }
+    418          
+    419          /*
+    420           * AES-CTR buffer encryption/decryption
+    421           */
+    422          int mbedtls_aes_crypt_ctr( mbedtls_aes_context *ctx,
+    423                                     size_t length,
+    424                                     size_t *nc_off,
+    425                                     unsigned char nonce_counter[16],
+    426                                     unsigned char stream_block[16],
+    427                                     const unsigned char *input,
+    428                                     unsigned char *output )
+    429          {
+    430              size_t n = ( nc_off != NULL ) ? *nc_off : 0;
+    431          
+    432              if ( ( n > 0 ) || ( length & 0xf ) || ctx->keybits == 192 )
+    433              {
+    434                  // IV offset or length not aligned to block size
+    435                  int c, i;
+    436          
+    437                  while( length-- )
+    438                  {
+    439                      if( n == 0 )
+    440                      {
+    441                          mbedtls_aes_crypt_ecb( ctx, MBEDTLS_AES_ENCRYPT, nonce_counter, stream_block );
+    442          
+    443                          for( i = 16; i > 0; i-- )
+    444                              if( ++nonce_counter[i - 1] != 0 )
+    445                                  break;
+    446                      }
+    447                      c = *input++;
+    448                      *output++ = (unsigned char)( c ^ stream_block[n] );
+    449          
+    450                      n = ( n + 1 ) & 0x0F;
+    451                  }
+    452          
+    453                  if (nc_off)
+    454                  {
+    455                      *nc_off = n;
+    456                  }
+    457                  return( 0 );
+    458              }
+    459              else
+    460              {
+    461                  switch( ctx->keybits )
+    462                  {
+    463                  case 128:
+    464                      aes_lock();
+    465                      AES_CTR128( output,
+    466                                  input,
+    467                                  length,
+    468                                  ctx->key,
+    469                                  nonce_counter,
+    470                                  &aes_ctr_update_nonce );
+    471                      aes_unlock();
+    472                  break;
+    473          
+    474          #if defined(AES_CTRL_AES256)
+    475                  case 256:
+    476                      aes_lock();
+    477                      AES_CTR256( output,
+    478                                  input,
+    479                                  length,
+    480                                  ctx->key,
+    481                                  nonce_counter,
+    482                                  &aes_ctr_update_nonce );
+    483                      aes_unlock();
+    484                      break;
+    485          #endif
+    486                  default:
+    487                      return( MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE );
+    488                      break;
+    489                  }
+    490          
+    491                  return( 0 );
+    492              }
+    493          }
+    494          #endif /* MBEDTLS_CIPHER_MODE_CTR */
+    495          
+    496          #endif /* MBEDTLS_AES_ALT */
+    497          #endif /* MBEDTLS_AES_C */
+    498          #endif /* AES_PRESENT && (AES_COUNT == 1) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

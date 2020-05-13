@@ -1,0 +1,589 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:45
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\se_ecp.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW27D9.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\se_ecp.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"se_ecp.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\se_ecp.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\se_ecp.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\se_ecp.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief SE-accelerated elliptic curve (Diffie-Helman) operations
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: APACHE-2.0
+     10           *
+     11           * This software is subject to an open source license and is distributed by
+     12           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     13           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     14           * Such terms and conditions may be further supplemented by the Silicon Labs
+     15           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     16           * sections applicable to open source software.
+     17           *
+     18           ******************************************************************************/
+     19          /*
+     20           * This file includes an alternative implementation of ECDH using the secure
+     21           * element incorporated in MCU devices from Silicon Laboratories.
+     22           */
+     23          
+     24          #if !defined(MBEDTLS_CONFIG_FILE)
+     25          #include "mbedtls/config.h"
+     26          #else
+     27          #include MBEDTLS_CONFIG_FILE
+     28          #endif
+     29          
+     30          #include "mbedtls/ecdh.h"
+     31          #include "mbedtls/ecdsa.h"
+     32          
+     33          #if defined(MBEDTLS_ECP_C)
+     34          
+     35          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) \
+     36              || defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) \
+     37              || defined(MBEDTLS_ECDSA_GENKEY_ALT) \
+     38              || defined(MBEDTLS_ECDSA_VERIFY_ALT) \
+     39              || defined(MBEDTLS_ECDSA_SIGN_ALT)
+     40          
+     41          #include "em_device.h"
+     42          
+     43          #if defined(SEMAILBOX_PRESENT)
+     44          #include "em_se.h"
+     45          #include "se_management.h"
+     46          
+     47          #define SE_ECP_MAX_BYTES ((((MBEDTLS_ECP_MAX_BYTES) + 3) / 4) * 4)
+     48          
+     49          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) \
+     50              || defined(MBEDTLS_ECDSA_GENKEY_ALT)
+     51          static int ecc_keygen(mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q)
+     52          {
+     53              uint32_t pub[SE_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+     54              uint32_t priv[SE_ECP_MAX_BYTES/sizeof(uint32_t)] = {0};
+     55          
+     56              uint32_t keyspec = (1<<14) /* Generate private key */
+     57                               | (1<<13); /* Generate public key */
+     58              uint32_t keylen = 0;
+     59              uint32_t offset = 0;
+     60              bool montgomery = false;
+     61          
+     62              switch(grp->id) {
+     63                  case MBEDTLS_ECP_DP_SECP192R1:
+     64                      keyspec |= 0x80000000; /* Prime curve */
+     65                      keyspec |= 23UL; /* curve byte size - 1 */
+     66                      keylen = 24;
+     67                      break;
+     68                  case MBEDTLS_ECP_DP_SECP256R1:
+     69                      keyspec |= 0x80000000; /* Prime curve */
+     70                      keyspec |= 31UL; /* curve byte size - 1 */
+     71                      keylen = 32;
+     72                      break;
+     73                  case MBEDTLS_ECP_DP_SECP384R1:
+     74                      keyspec |= 0x80000000; /* Prime curve */
+     75                      keyspec |= 47UL; /* curve byte size - 1 */
+     76                      keylen = 48;
+     77                      break;
+     78                  case MBEDTLS_ECP_DP_SECP521R1:
+     79                      keyspec |= 0x80000000; /* Prime curve */
+     80                      keyspec |= 65UL; /* curve byte size - 1 */
+     81                      keylen = 68;
+     82                      offset = 2;
+     83                      break;
+     84                  case MBEDTLS_ECP_DP_CURVE25519:
+     85                      keyspec |= 0xB0000000; /* Montgomery curve */
+     86                      keyspec |= 31UL; /* curve byte size - 1 */
+     87                      keylen = 32;
+     88                      montgomery = true;
+     89                      break;
+     90                  default:
+     91                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+     92              }
+     93          
+     94              if (keylen-offset > (MBEDTLS_ECP_MAX_BITS+7)/8) {
+     95                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+     96              }
+     97          
+     98              /* SE command structures */
+     99              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_CREATE_KEY);
+    100              SE_DataTransfer_t domain_in = SE_DATATRANSFER_DEFAULT(NULL, 0);
+    101              SE_DataTransfer_t pubkey_out = SE_DATATRANSFER_DEFAULT(pub, (montgomery ? keylen : 2*keylen));
+    102              SE_DataTransfer_t privkey_out = SE_DATATRANSFER_DEFAULT(priv, keylen);
+    103          
+    104              SE_addDataInput(&command, &domain_in);
+    105              SE_addDataOutput(&command, &pubkey_out);
+    106              SE_addDataOutput(&command, &privkey_out);
+    107          
+    108              SE_addParameter(&command, keyspec);
+    109          
+    110              int status = se_management_acquire();
+    111              if (status != 0) {
+    112                  return status;
+    113              }
+    114          
+    115              SE_executeCommand(&command);
+    116              SE_Response_t res = SE_readCommandResponse();
+    117          
+    118              se_management_release();
+    119          
+    120              if ( res == SE_RESPONSE_OK ) {
+    121                  mbedtls_mpi_read_binary(d, ((uint8_t*)priv)+offset, keylen-offset);
+    122                  mbedtls_mpi_read_binary(&Q->X, ((uint8_t*)pub)+offset, keylen-offset);
+    123                  if (!montgomery) {
+    124                      mbedtls_mpi_read_binary(&Q->Y, ((uint8_t*)&pub[keylen/sizeof(uint32_t)])+offset, keylen-offset);
+    125                  }
+    126                  mbedtls_mpi_lset(&Q->Z, 1);
+    127                  return 0;
+    128              } else {
+    129                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    130              }
+    131          }
+    132          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)
+    133          	  || defined(MBEDTLS_ECDSA_GENKEY_ALT) */
+    134          
+    135          #if defined(MBEDTLS_ECDSA_GENKEY_ALT)
+    136          /*
+    137           * Generate key pair
+    138           */
+    139          int mbedtls_ecdsa_genkey( mbedtls_ecdsa_context *ctx, mbedtls_ecp_group_id gid,
+    140                            int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    141          {
+    142              /* SE uses internal entropy */
+    143              (void)f_rng;
+    144              (void)p_rng;
+    145          
+    146              mbedtls_ecp_group_load( &ctx->grp, gid );
+    147          
+    148              return ecc_keygen(&ctx->grp, &ctx->d, &ctx->Q);
+    149          }
+    150          #endif /* MBEDTLS_ECDSA_GENKEY_ALT */
+    151          
+    152          #if defined(MBEDTLS_ECDSA_SIGN_ALT)
+    153          int mbedtls_ecdsa_sign( mbedtls_ecp_group *grp, mbedtls_mpi *r, mbedtls_mpi *s,
+    154                          const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
+    155                          int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    156          {
+    157              /* SE uses internal entropy */
+    158              (void)f_rng;
+    159              (void)p_rng;
+    160          
+    161              uint32_t priv[SE_ECP_MAX_BYTES/sizeof(uint32_t)] = {0};
+    162              uint32_t signature[SE_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+    163          
+    164              uint32_t keyspec = (1<<14) | (1 << 10); /* Supply private signing key */
+    165              uint32_t keylen = 0;
+    166              uint32_t offset = 0;
+    167          
+    168              /* Make sure d is in range 1..n-1 */
+    169              if( mbedtls_mpi_cmp_int( d, 1 ) < 0 || mbedtls_mpi_cmp_mpi( d, &grp->N ) >= 0 )
+    170                  return( MBEDTLS_ERR_ECP_INVALID_KEY );
+    171          
+    172              switch(grp->id) {
+    173                  case MBEDTLS_ECP_DP_SECP192R1:
+    174                      keyspec |= 0x80000000; /* Prime curve */
+    175                      keyspec |= 23UL; /* curve byte size - 1 */
+    176                      keylen = 24;
+    177                      break;
+    178                  case MBEDTLS_ECP_DP_SECP256R1:
+    179                      keyspec |= 0x80000000; /* Prime curve */
+    180                      keyspec |= 31UL; /* curve byte size - 1 */
+    181                      keylen = 32;
+    182                      break;
+    183                  case MBEDTLS_ECP_DP_SECP384R1:
+    184                      keyspec |= 0x80000000; /* Prime curve */
+    185                      keyspec |= 47UL; /* curve byte size - 1 */
+    186                      keylen = 48;
+    187                      break;
+    188                  case MBEDTLS_ECP_DP_SECP521R1:
+    189                      keyspec |= 0x80000000; /* Prime curve */
+    190                      keyspec |= 65UL; /* curve byte size - 1 */
+    191                      keylen = 68;
+    192                      offset = 2;
+    193                      break;
+    194                  default:
+    195                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    196              }
+    197          
+    198              /* pull out key info from mbedtls structures */
+    199              mbedtls_mpi_write_binary(d, ((uint8_t*)priv), keylen);
+    200          
+    201              /* SE command structures */
+    202              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_SIGNATURE_SIGN);
+    203              SE_DataTransfer_t privkey_in = SE_DATATRANSFER_DEFAULT(priv, keylen);
+    204              SE_DataTransfer_t hash_in = SE_DATATRANSFER_DEFAULT((void*)buf, blen);
+    205              SE_DataTransfer_t signature_out = SE_DATATRANSFER_DEFAULT(signature, keylen*2);
+    206          
+    207              SE_addDataInput(&command, &privkey_in);
+    208              SE_addDataInput(&command, &hash_in);
+    209              SE_addDataOutput(&command, &signature_out);
+    210          
+    211              SE_addParameter(&command, keyspec);
+    212              SE_addParameter(&command, blen);
+    213          
+    214              int status = se_management_acquire();
+    215              if (status != 0) {
+    216                  return status;
+    217              }
+    218          
+    219              SE_executeCommand(&command);
+    220              SE_Response_t res = SE_readCommandResponse();
+    221          
+    222              se_management_release();
+    223          
+    224              if ( res == SE_RESPONSE_OK ) {
+    225                  mbedtls_mpi_read_binary(r, ((uint8_t*)signature)+offset, keylen-offset);
+    226                  mbedtls_mpi_read_binary(s, ((uint8_t*)&signature[keylen/sizeof(uint32_t)])+offset, keylen-offset);
+    227                  return 0;
+    228              } else {
+    229                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    230              }
+    231          }
+    232          #endif /* MBEDTLS_ECDSA_SIGN_ALT */
+    233          
+    234          #if defined(MBEDTLS_ECDSA_VERIFY_ALT)
+    235          int mbedtls_ecdsa_verify( mbedtls_ecp_group *grp,
+    236                            const unsigned char *buf, size_t blen,
+    237                            const mbedtls_ecp_point *Q, const mbedtls_mpi *r, const mbedtls_mpi *s)
+    238          {
+    239              uint32_t pub[SE_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+    240              uint32_t signature[SE_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+    241          
+    242              uint32_t keyspec = (1<<13) | (1 << 10); /* Supply public signing key */
+    243              uint32_t keylen = 0;
+    244          
+    245              switch(grp->id) {
+    246                  case MBEDTLS_ECP_DP_SECP192R1:
+    247                      keyspec |= 0x80000000; /* Prime curve */
+    248                      keyspec |= 23UL; /* curve byte size - 1 */
+    249                      keylen = 24;
+    250                      break;
+    251                  case MBEDTLS_ECP_DP_SECP256R1:
+    252                      keyspec |= 0x80000000; /* Prime curve */
+    253                      keyspec |= 31UL; /* curve byte size - 1 */
+    254                      keylen = 32;
+    255                      break;
+    256                  case MBEDTLS_ECP_DP_SECP384R1:
+    257                      keyspec |= 0x80000000; /* Prime curve */
+    258                      keyspec |= 47UL; /* curve byte size - 1 */
+    259                      keylen = 48;
+    260                      break;
+    261                  case MBEDTLS_ECP_DP_SECP521R1:
+    262                      keyspec |= 0x80000000; /* Prime curve */
+    263                      keyspec |= 65UL; /* curve byte size - 1 */
+    264                      keylen = 68;
+    265                      break;
+    266                  default:
+    267                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    268              }
+    269          
+    270              /* pull out signature info from mbedtls structures */
+    271              mbedtls_mpi_write_binary(r, ((uint8_t*)signature), keylen);
+    272              mbedtls_mpi_write_binary(s, ((uint8_t*)&signature[keylen/sizeof(uint32_t)]), keylen);
+    273          
+    274              mbedtls_mpi_write_binary(&Q->X, ((uint8_t*)pub), keylen);
+    275              mbedtls_mpi_write_binary(&Q->Y, ((uint8_t*)&pub[keylen/sizeof(uint32_t)]), keylen);
+    276          
+    277              /* SE command structures */
+    278              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_SIGNATURE_VERIFY);
+    279              SE_DataTransfer_t pubkey_in = SE_DATATRANSFER_DEFAULT(pub, keylen*2);
+    280              SE_DataTransfer_t signature_in = SE_DATATRANSFER_DEFAULT(signature, keylen*2);
+    281              SE_DataTransfer_t hash_in = SE_DATATRANSFER_DEFAULT((void*)buf, blen);
+    282          
+    283              SE_addDataInput(&command, &pubkey_in);
+    284              SE_addDataInput(&command, &hash_in);
+    285              SE_addDataInput(&command, &signature_in);
+    286          
+    287              SE_addParameter(&command, keyspec);
+    288              SE_addParameter(&command, blen);
+    289          
+    290              int status = se_management_acquire();
+    291              if (status != 0) {
+    292                  return status;
+    293              }
+    294          
+    295              SE_executeCommand(&command);
+    296              SE_Response_t res = SE_readCommandResponse();
+    297          
+    298              se_management_release();
+    299          
+    300              if ( res == SE_RESPONSE_OK ) {
+    301                  return 0;
+    302              } else if (res == SE_RESPONSE_INVALID_SIGNATURE) {
+    303                  return MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    304              } else {
+    305                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    306              }
+    307          }
+    308          #endif /* MBEDTLS_ECDSA_VERIFY_ALT */
+    309          
+    310          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)
+    311          int mbedtls_ecdh_gen_public( mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q,
+    312                               int (*f_rng)(void *, unsigned char *, size_t),
+    313                               void *p_rng )
+    314          {
+    315              /* SE uses internal entropy */
+    316              (void)f_rng;
+    317              (void)p_rng;
+    318          
+    319              return ecc_keygen(grp, d, Q);
+    320          }
+    321          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) */
+    322          
+    323          #if defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT)
+    324          int mbedtls_ecdh_compute_shared( mbedtls_ecp_group *grp, mbedtls_mpi *z,
+    325                                   const mbedtls_ecp_point *Q, const mbedtls_mpi *d,
+    326                                   int (*f_rng)(void *, unsigned char *, size_t),
+    327                                   void *p_rng )
+    328          {
+    329              /* ECDH key generation through regular keygen command */
+    330          
+    331              /* SE uses internal entropy */
+    332              (void)f_rng;
+    333              (void)p_rng;
+    334          
+    335              uint32_t pub[SE_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+    336              uint32_t priv[SE_ECP_MAX_BYTES/sizeof(uint32_t)] = {0};
+    337          
+    338              uint32_t keyspec = (1<<14); /* Use private key */
+    339              uint32_t keylen = 0;
+    340              uint32_t offset = 0;
+    341              bool montgomery = false;
+    342          
+    343              switch(grp->id) {
+    344                  case MBEDTLS_ECP_DP_SECP192R1:
+    345                      keyspec |= 0x80000000UL; /* Prime curve */
+    346                      keyspec |= 23UL; /* curve byte size - 1 */
+    347                      keylen = 24;
+    348                      break;
+    349                  case MBEDTLS_ECP_DP_SECP256R1:
+    350                      keyspec |= 0x80000000UL; /* Prime curve */
+    351                      keyspec |= 31UL; /* curve byte size - 1 */
+    352                      keylen = 32;
+    353                      break;
+    354                  case MBEDTLS_ECP_DP_SECP384R1:
+    355                      keyspec |= 0x80000000; /* Prime curve */
+    356                      keyspec |= 47UL; /* curve byte size - 1 */
+    357                      keylen = 48;
+    358                      break;
+    359                  case MBEDTLS_ECP_DP_SECP521R1:
+    360                      keyspec |= 0x80000000; /* Prime curve */
+    361                      keyspec |= 65UL; /* curve byte size - 1 */
+    362                      keylen = 68;
+    363                      offset = 2;
+    364                      break;
+    365                  case MBEDTLS_ECP_DP_CURVE25519:
+    366                      keyspec |= 0xB0000000; /* Montgomery curve */
+    367                      keyspec |= 31UL; /* curve byte size - 1 */
+    368                      keylen = 32;
+    369                      montgomery = true;
+    370                      break;
+    371                  default:
+    372                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    373              }
+    374          
+    375              if (keylen-offset > (MBEDTLS_ECP_MAX_BITS+7)/8) {
+    376                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    377              }
+    378          
+    379              /* pull out key info from mbedtls structures */
+    380              mbedtls_mpi_write_binary(d, ((uint8_t*)priv), keylen);
+    381              mbedtls_mpi_write_binary(&Q->X, ((uint8_t*)pub), keylen);
+    382              mbedtls_mpi_write_binary(&Q->Y, ((uint8_t*)pub)+keylen, keylen);
+    383          
+    384              /* SE command structures */
+    385              SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DH);
+    386              SE_DataTransfer_t privkey_in = SE_DATATRANSFER_DEFAULT(priv, keylen);
+    387              SE_DataTransfer_t pubkey_in = SE_DATATRANSFER_DEFAULT(pub, (montgomery ? keylen : 2*keylen));
+    388              SE_DataTransfer_t privkey_out = SE_DATATRANSFER_DEFAULT(pub, (montgomery ? keylen : 2*keylen));
+    389          
+    390              SE_addDataInput(&command, &privkey_in);
+    391              SE_addDataInput(&command, &pubkey_in);
+    392              SE_addDataOutput(&command, &privkey_out);
+    393          
+    394              SE_addParameter(&command, keyspec);
+    395              SE_addParameter(&command, (montgomery ? keylen : 2*keylen)); /* DH key output type must be RAW */
+    396          
+    397              int status = se_management_acquire();
+    398              if (status != 0) {
+    399                  return status;
+    400              }
+    401          
+    402              SE_executeCommand(&command);
+    403              SE_Response_t res = SE_readCommandResponse();
+    404          
+    405              se_management_release();
+    406          
+    407              if ( res == SE_RESPONSE_OK ) {
+    408                  mbedtls_mpi_read_binary(z, ((uint8_t*)pub)+offset, keylen-offset);
+    409                  return 0;
+    410              } else {
+    411                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    412              }
+    413          }
+    414          #endif /* #if defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) */
+    415          
+    416          #endif /* #if defined(SEMAILBOX_PRESENT) */
+    417          
+    418          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) || defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) */
+    419          
+    420          #endif /* #if defined(MBEDTLS_ECP_C) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

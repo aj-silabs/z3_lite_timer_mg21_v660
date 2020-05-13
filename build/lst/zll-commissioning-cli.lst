@@ -1,0 +1,1756 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:20:09
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-common\zll-commissioning-cli.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW83EB.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-common\zll-commissioning-cli.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"zll-commissioning-cli.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\zll-commissioning-cli.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\zll-commissioning-cli.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-common\zll-commissioning-cli.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief CLI for the ZLL Commissioning Common plugin.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "app/framework/include/af.h"
+     19          #include "app/util/serial/command-interpreter2.h"
+     20          #include "app/framework/plugin/zll-commissioning-common/zll-commissioning-common.h"
+     21          #include "app/framework/plugin/zll-commissioning-client/zll-commissioning-client.h"
+     22          #include "app/framework/plugin/zll-commissioning-server/zll-commissioning-server.h"
+     23          
+     24          // ZLL commissioning commands.
+     25          void formNetwork(void);
+     26          void initiateTouchLink(void);
+     27          void scanTouchLink(void);
+     28          void abortTouchLink(void);
+     29          
+     30          // ZLL ZCL commands.
+     31          void endpointInformation(void);
+     32          void getGroupIdentifiersRequest(void);
+     33          void getEndpointListRequest(void);
+     34          
+     35          // ZLL misc commands
+     36          void printChannels(void);
+     37          void printZllTokens(void);
+     38          void setScanChannel(void);
+     39          void setScanMask(void);
+     40          void setIdentifyDuration(void);
+     41          void statusCommand(void);
+     42          
+     43          // ZLL network interoperability commands.
+     44          void joinable(void);
+     45          void unused(void);
+     46          
+     47          // ZLL stealing control commands.
+     48          void disable(void);
+     49          void enable(void);
+     50          void noTouchlinkForNFN(void);
+     51          
+     52          #ifndef EZSP_HOST
+     53          // ZLL rx-on-when-idle commands.
+     54          void setRxOn(void);
+     55          void cancelRxOn(void);
+     56          void rxOnStatus(void);
+     57          #endif
+     58          
+     59          // Internal APIs.
+     60          EmberStatus emAfZllFormNetwork(uint8_t channel, int8_t power, EmberPanId panId);
+     61          
+     62          #ifndef EMBER_AF_GENERATE_CLI
+     63          EmberCommandEntry emberAfPluginZllCommissioningCommands[] = {
+     64            emberCommandEntryAction("form", formNetwork, "usv", "Forms a ZLL network"),
+     65            emberCommandEntryAction("link", initiateTouchLink, "?", "Initiates a touch link"),
+     66            emberCommandEntryAction("abort", abortTouchLink, "", "Aborts a previously initiated touch link"),
+     67            emberCommandEntryAction("info", endpointInformation, "vuu", "Sends an Endpoint Information request"),
+     68            emberCommandEntryAction("groups", getGroupIdentifiersRequest, "vuuu", "Sends a Group Identifier Request"),
+     69            emberCommandEntryAction("endpoints", getEndpointListRequest, "vuuu", "Sends a Get Endpoint List request"),
+     70            emberCommandEntryAction("tokens", printZllTokens, "", "Prints the internal ZLL tokens"),
+     71            emberCommandEntryAction("channel", setScanChannel, "u", "Sets the primary scan channel"),
+     72            emberCommandEntryAction("secondary-channel", setSecondaryScanChannel, "u", "Sets the secondary scan channel"),
+     73            emberCommandEntryAction("mask", setScanMask, "u", "Sets the scan channel mask"),
+     74            emberCommandEntryAction("identify", setIdentifyDuration, "v", "Sets the identify duration"),
+     75            emberCommandEntryAction("status", statusCommand, "", "Prints the ZLL status"),
+     76            emberCommandEntryAction("joinable", joinable, "", "Attempts to join any Zigbee network"),
+     77            emberCommandEntryAction("unused", unused, "", "Attempt to form on an unused PAN ID"),
+     78            emberCommandEntryAction("reset", emberAfZllResetToFactoryNew, "", "Resets the local device to factory new"),
+     79            emberCommandEntryAction("enable", enable, "", "enable touchlinking for target"),
+     80            emberCommandEntryAction("disable", disable, "", "disable touchlinking for target"),
+     81            emberCommandEntryAction("notouchlink-nfn", noTouchlinkForNFN, "", "No touchlinking for NFN for target"),
+     82            emberCommandEntryAction("set-rx-on", setRxOn, "", "Set Rx On When Idle duration"),
+     83            emberCommandEntryAction("cancel-rx-on", cancelRxOn, "", "Cancel Rx On When Idle"),
+     84            emberCommandEntryAction("rx-on-active", rxOnStatus, "", "Get Rx On When Idle status"),
+     85            emberCommandEntryTerminator(),
+     86          };
+     87          #endif //  EMBER_AF_GENERATE_CLI
+     88          
+
+   \                                 In section .data, align 4
+     89          static uint32_t channelMasks[] = {
+   \                     channelMasks:
+   \        0x0   0x0210'8800        DC32 34637824, 69275648, 4857856, 25444352, 134215680
+   \              0x0421'1000  
+   \              0x004A'2000  
+   \              0x0184'4000  
+   \              0x07FF'F800  
+     90            0x02108800UL, // standard (11, 15, 20, 25)
+     91            0x04211000UL, // +1 (12, 16, 21, 26)
+     92            0x004A2000UL, // +2 (13, 17, 22, 19)
+     93            0x01844000UL, // +3 (14, 18, 23, 24)
+     94            0x07FFF800UL, // all (11--26)
+     95          };
+     96          
+     97          // plugin zll-commissioning form <channel:1> <power:1> <pan id:2>
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void formNetwork(void)
+     99          {
+    100          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_NETWORK
+    101            EmberStatus status = emAfZllFormNetwork((uint8_t)emberUnsignedCommandArgument(0),       // channel
+    102                                                    (int8_t)emberSignedCommandArgument(1),         // power
+    103                                                    (EmberPanId)emberUnsignedCommandArgument(2)); // pan id
+    104            emberAfAppPrintln("%p 0x%x", "form", status);
+    105          #else
+    106            emberAfAppPrintln("zll commissioning network plugin not found");
+   \                     formNetwork: (+1)
+   \        0x0   0x....             B.N      ?Subroutine0
+    107          #endif
+    108          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable14_33
+   \                     ??Subroutine0_0: (+1)
+   \        0x2   0x2002             MOVS     R0,#+2
+   \        0x4   0x....'....        B.W      emberAfPrintln
+    109          
+    110          // Leaving intact for legacy CLI purposes, but for generated CLI, the options have been moved to
+    111          // scanTouchLink().
+    112          
+    113          // plugin zll-commissioning link [device|identify|reset]
+
+   \                                 In section .text, align 2, keep-with-next
+    114          void initiateTouchLink(void)
+    115          {
+    116          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    117            EmberStatus status;
+    118            switch (emberCommandArgumentCount()) {
+    119              case 0:
+    120                status = emberAfZllInitiateTouchLink();
+    121                emberAfAppPrintln("%p 0x%x", "touch link", status);
+    122                return;
+    123              case 1:
+    124                // -1 because we're smarter than command-interpreter2.
+    125                switch (emberStringCommandArgument(0, NULL)[-1]) {
+    126                  case 'd':
+    127                    status = emberAfZllDeviceInformationRequest();
+    128                    emberAfAppPrintln("%p 0x%x", "device information", status);
+    129                    return;
+    130                  case 'i':
+    131                    status = emberAfZllIdentifyRequest();
+    132                    emberAfAppPrintln("%p 0x%x", "identify", status);
+    133                    return;
+    134                  case 'r':
+    135                    status = emberAfZllResetToFactoryNewRequest();
+    136                    emberAfAppPrintln("%p 0x%x", "reset to factory new", status);
+    137                    return;
+    138                }
+    139            }
+    140            emberAfAppPrintln("Usage:");
+    141            emberAfAppPrintln("plugin zll-commissioning link");
+    142            emberAfAppPrintln("plugin zll-commissioning link device");
+    143            emberAfAppPrintln("plugin zll-commissioning link identify");
+    144            emberAfAppPrintln("plugin zll-commissioning link reset");
+    145          #else
+    146            emberAfAppPrintln("zll commissioning client plugin not found");
+   \                     initiateTouchLink: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable14_1
+   \        0x2   0x....             B.N      ??Subroutine0_0
+    147          #endif
+    148          }
+    149          
+    150          // Generated CLI version of "link" commands
+    151          
+    152          // plugin zll-commissioning scan [device|identify|reset]
+
+   \                                 In section .text, align 2, keep-with-next
+    153          void scanTouchLink(void)
+    154          {
+    155          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    156            EmberStatus status;
+    157            switch (emberStringCommandArgument(-1, NULL)[0]) {
+    158              case 'd':
+    159                status = emberAfZllDeviceInformationRequest();
+    160                emberAfAppPrintln("%p 0x%x", "device information", status);
+    161                return;
+    162              case 'i':
+    163                status = emberAfZllIdentifyRequest();
+    164                emberAfAppPrintln("%p 0x%x", "identify", status);
+    165                return;
+    166              case 'r':
+    167                status = emberAfZllResetToFactoryNewRequest();
+    168                emberAfAppPrintln("%p 0x%x", "reset to factory new", status);
+    169                return;
+    170            }
+    171          #else
+    172            emberAfAppPrintln("zll commissioning client plugin not found");
+   \                     scanTouchLink: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable14_1
+   \        0x2   0x....             B.N      ??Subroutine0_0
+    173          #endif
+    174          }
+    175          
+    176          // plugin zll-commissioning abort
+
+   \                                 In section .text, align 2, keep-with-next
+    177          void abortTouchLink(void)
+    178          {
+    179          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    180            emberAfZllAbortTouchLink();
+    181            emberAfAppPrintln("%p", "touch link aborted");
+    182          #else
+    183            emberAfAppPrintln("zll commissioning client plugin not found");
+   \                     abortTouchLink: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable14_1
+   \        0x2   0x....             B.N      ??Subroutine0_0
+    184          #endif
+    185          }
+    186          
+    187          // plugin zll-commissioning info <destination:2> <src endpoint:1> <dst endpoint:1>
+
+   \                                 In section .text, align 2, keep-with-next
+    188          void endpointInformation(void)
+    189          {
+   \                     endpointInformation: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB08C             SUB      SP,SP,#+48
+    190            EmberEUI64 eui64;
+    191            EmberStatus status = EMBER_INVALID_ENDPOINT;
+    192            uint8_t endpoint = (uint8_t)emberUnsignedCommandArgument(1);
+   \        0x4   0x2001             MOVS     R0,#+1
+   \        0x6   0x....'....        BL       emberUnsignedCommandArgument
+   \        0xA   0x4604             MOV      R4,R0
+    193            uint8_t index = emberAfIndexFromEndpoint(endpoint);
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x25A3             MOVS     R5,#+163
+   \       0x10   0x....'....        BL       emberAfIndexFromEndpoint
+    194            if (index != 0xFF) {
+   \       0x14   0x28FF             CMP      R0,#+255
+   \       0x16   0xD02D             BEQ.N    ??endpointInformation_0
+    195              // If the profile interop bit in the ZllInformation bitmask is cleared,
+    196              // then we set the profile ID in our response to the ZLL profile ID.
+    197              // If the bit is set, then we use the profile ID specified for the endpoint.
+    198              uint8_t deviceVersion = emberAfDeviceVersionFromIndex(index);
+   \       0x18   0x....             LDR.N    R1,??DataTable14_2
+   \       0x1A   0xEB01 0x1500      ADD      R5,R1,R0, LSL #+4
+    199              EmberTokTypeStackZllData token;
+    200              emberZllGetTokenStackZllData(&token);
+   \       0x1E   0xA808             ADD      R0,SP,#+32
+   \       0x20   0x79AE             LDRB     R6,[R5, #+6]
+   \       0x22   0x....'....        BL       emberZllGetTokenStackZllData
+    201              EmberAfProfileId profileId = (token.bitmask & EMBER_ZLL_STATE_PROFILE_INTEROP
+    202                                            ? emberAfProfileIdFromIndex(index)
+    203                                            : EMBER_ZLL_PROFILE_ID);
+   \       0x26   0x9808             LDR      R0,[SP, #+32]
+   \       0x28   0x0601             LSLS     R1,R0,#+24
+    204              emberAfGetEui64(eui64);
+   \       0x2A   0xA806             ADD      R0,SP,#+24
+   \       0x2C   0xBF4C             ITE      MI 
+   \       0x2E   0x886F             LDRHMI   R7,[R5, #+2]
+   \       0x30   0xF24C 0x075E      MOVWPL   R7,#+49246
+   \       0x34   0x....'....        BL       emberAfGetEui64
+    205              emberAfFillCommandZllCommissioningClusterEndpointInformation(eui64,
+    206                                                                           emberAfGetNodeId(),
+    207                                                                           endpoint,
+    208                                                                           profileId,
+    209                                                                           emberAfDeviceIdFromIndex(index),
+    210                                                                           deviceVersion);
+   \       0x38   0x....'....        BL       emberAfGetNodeId
+   \       0x3C   0x9605             STR      R6,[SP, #+20]
+   \       0x3E   0x88A9             LDRH     R1,[R5, #+4]
+   \       0x40   0x9001             STR      R0,[SP, #+4]
+   \       0x42   0xA806             ADD      R0,SP,#+24
+   \       0x44   0x9104             STR      R1,[SP, #+16]
+   \       0x46   0xB2E1             UXTB     R1,R4
+   \       0x48   0x9102             STR      R1,[SP, #+8]
+   \       0x4A   0x9000             STR      R0,[SP, #+0]
+   \       0x4C   0x9703             STR      R7,[SP, #+12]
+   \       0x4E   0x....             LDR.N    R3,??DataTable14_3
+   \       0x50   0x2240             MOVS     R2,#+64
+   \       0x52   0xF44F 0x5180      MOV      R1,#+4096
+   \       0x56   0x2009             MOVS     R0,#+9
+   \       0x58   0x....'....        BL       emberAfFillExternalBuffer
+    211              emberAfSetCommandEndpoints(endpoint,
+    212                                         (uint8_t)emberUnsignedCommandArgument(2));
+   \       0x5C   0x2002             MOVS     R0,#+2
+   \       0x5E   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x62   0xB2C1             UXTB     R1,R0
+   \       0x64   0xB2E0             UXTB     R0,R4
+   \       0x66   0x....'....        BL       emberAfSetCommandEndpoints
+    213              status = emberAfSendCommandUnicast(EMBER_OUTGOING_DIRECT,
+    214                                                 (uint16_t)emberUnsignedCommandArgument(0));
+   \       0x6A   0x....'....        BL       ?Subroutine5
+    215            }
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x6E   0x....'....        BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x72   0x4605             MOV      R5,R0
+    216            emberAfAppPrintln("%p 0x%x", "endpoint information", status);
+   \                     ??endpointInformation_0: (+1)
+   \       0x74   0x462B             MOV      R3,R5
+   \       0x76   0x....             LDR.N    R2,??DataTable14_4
+   \       0x78   0x....             LDR.N    R1,??DataTable14_5
+   \       0x7A   0x2002             MOVS     R0,#+2
+   \       0x7C   0x....'....        BL       emberAfPrintln
+    217          }
+   \       0x80   0xB00D             ADD      SP,SP,#+52
+   \       0x82   0xBDF0             POP      {R4-R7,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0xB281             UXTH     R1,R0
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        B.W      emberAfSendCommandUnicast
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....'....        B.W      emberUnsignedCommandArgument
+    218          
+    219          // plugin zll-commissioning groups <destination:2> <src endpoint:1> <dst endpoint:1> <startIndex:1>
+
+   \                                 In section .text, align 2, keep-with-next
+    220          void getGroupIdentifiersRequest(void)
+    221          {
+    222            EmberStatus status = EMBER_INVALID_ENDPOINT;
+    223            uint8_t endpoint = (uint8_t)emberUnsignedCommandArgument(1);
+   \                     getGroupIdentifiersRequest: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0xB538             PUSH     {R3-R5,LR}
+   \        0x4   0x....'....        BL       emberUnsignedCommandArgument
+   \        0x8   0x....'....        BL       ?Subroutine9
+    224            uint8_t index = emberAfIndexFromEndpoint(endpoint);
+    225            if (index != 0xFF) {
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \        0xC   0x28FF             CMP      R0,#+255
+   \        0xE   0xD014             BEQ.N    ??getGroupIdentifiersRequest_0
+    226              emberAfFillCommandZllCommissioningClusterGetGroupIdentifiersRequest((uint8_t)emberUnsignedCommandArgument(3));
+   \       0x10   0x2003             MOVS     R0,#+3
+   \       0x12   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x9000             STR      R0,[SP, #+0]
+   \       0x1A   0x....             LDR.N    R3,??DataTable14_6
+   \       0x1C   0x2241             MOVS     R2,#+65
+   \       0x1E   0x....'....        BL       ?Subroutine8
+    227              emberAfSetCommandEndpoints(endpoint,
+    228                                         (uint8_t)emberUnsignedCommandArgument(2));
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x22   0x2002             MOVS     R0,#+2
+   \       0x24   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x28   0xB2C1             UXTB     R1,R0
+   \       0x2A   0xB2E8             UXTB     R0,R5
+   \       0x2C   0x....'....        BL       emberAfSetCommandEndpoints
+    229              status = emberAfSendCommandUnicast(EMBER_OUTGOING_DIRECT,
+    230                                                 (uint16_t)emberUnsignedCommandArgument(0));
+   \       0x30   0x....'....        BL       ?Subroutine5
+    231            }
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x34   0x....'....        BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x38   0x4604             MOV      R4,R0
+    232            emberAfAppPrintln("%p 0x%x", "get group identifiers", status);
+   \                     ??getGroupIdentifiersRequest_0: (+1)
+   \       0x3A   0x4623             MOV      R3,R4
+   \       0x3C   0xB001             ADD      SP,SP,#+4
+   \       0x3E   0x....             LDR.N    R2,??DataTable14_7
+   \       0x40   0x....             B.N      ?Subroutine1
+    233          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable14_5
+   \        0x2   0x2002             MOVS     R0,#+2
+   \        0x4   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \        0x8   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine9: (+1)
+   \        0x0   0x4605             MOV      R5,R0
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x24A3             MOVS     R4,#+163
+   \        0x6   0x....'....        B.W      emberAfIndexFromEndpoint
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine8: (+1)
+   \        0x0   0xF44F 0x5180      MOV      R1,#+4096
+   \        0x4   0x2001             MOVS     R0,#+1
+   \        0x6   0x....'....        B.W      emberAfFillExternalBuffer
+    234          
+    235          // plugin zll-commissioning endpoints <destination:2> <src endpoint:1> <dst endpoint:1> <startIndex:1>
+
+   \                                 In section .text, align 2, keep-with-next
+    236          void getEndpointListRequest(void)
+    237          {
+    238            EmberStatus status = EMBER_INVALID_ENDPOINT;
+    239            uint8_t endpoint = (uint8_t)emberUnsignedCommandArgument(1);
+   \                     getEndpointListRequest: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0xB538             PUSH     {R3-R5,LR}
+   \        0x4   0x....'....        BL       emberUnsignedCommandArgument
+   \        0x8   0x....'....        BL       ?Subroutine9
+    240            uint8_t index = emberAfIndexFromEndpoint(endpoint);
+    241            if (index != 0xFF) {
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \        0xC   0x28FF             CMP      R0,#+255
+   \        0xE   0xD014             BEQ.N    ??getEndpointListRequest_0
+    242              emberAfFillCommandZllCommissioningClusterGetEndpointListRequest((uint8_t)emberUnsignedCommandArgument(3));
+   \       0x10   0x2003             MOVS     R0,#+3
+   \       0x12   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x9000             STR      R0,[SP, #+0]
+   \       0x1A   0x....             LDR.N    R3,??DataTable14_6
+   \       0x1C   0x2242             MOVS     R2,#+66
+   \       0x1E   0x....'....        BL       ?Subroutine8
+    243              emberAfSetCommandEndpoints(endpoint,
+    244                                         (uint8_t)emberUnsignedCommandArgument(2));
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x22   0x2002             MOVS     R0,#+2
+   \       0x24   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x28   0xB2C1             UXTB     R1,R0
+   \       0x2A   0xB2E8             UXTB     R0,R5
+   \       0x2C   0x....'....        BL       emberAfSetCommandEndpoints
+    245              status = emberAfSendCommandUnicast(EMBER_OUTGOING_DIRECT,
+    246                                                 (uint16_t)emberUnsignedCommandArgument(0));
+   \       0x30   0x....'....        BL       ?Subroutine5
+    247            }
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x34   0x....'....        BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x38   0x4604             MOV      R4,R0
+    248            emberAfAppPrintln("%p 0x%x", "get endpoint list", status);
+   \                     ??getEndpointListRequest_0: (+1)
+   \       0x3A   0x4623             MOV      R3,R4
+   \       0x3C   0xB001             ADD      SP,SP,#+4
+   \       0x3E   0x....             LDR.N    R2,??DataTable14_8
+   \       0x40                      REQUIRE ?Subroutine1
+   \       0x40                      ;; // Fall through to label ?Subroutine1
+    249          }
+    250          
+    251          // plugin zll-commissioning set-rx-on <duration:4>
+
+   \                                 In section .text, align 2, keep-with-next
+    252          void setRxOn(void)
+    253          {
+   \                     setRxOn: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    254            uint32_t duration = (uint32_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \        0x6   0x4604             MOV      R4,R0
+    255            emberZllSetRxOnWhenIdle(duration);
+   \        0x8   0x....'....        BL       emberZllSetRxOnWhenIdle
+    256            emberAfAppPrintln("%p %p %d %p", "Rx-On-When-Idle", "set for", duration, "ms");
+   \        0xC   0x....             ADR.N    R0,??DataTable14  ;; 0x6D, 0x73, 0x00, 0x00
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+   \       0x10   0x9400             STR      R4,[SP, #+0]
+   \       0x12   0x....             LDR.N    R3,??DataTable14_9
+   \       0x14   0x....             LDR.N    R2,??DataTable14_10
+   \       0x16   0x....             LDR.N    R1,??DataTable14_11
+   \       0x18   0x2002             MOVS     R0,#+2
+   \       0x1A   0x....'....        BL       emberAfPrintln
+    257          }
+   \       0x1E   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    258          
+    259          // plugin zll-commissioning cancel-rx-on
+
+   \                                 In section .text, align 2, keep-with-next
+    260          void cancelRxOn(void)
+    261          {
+   \                     cancelRxOn: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    262            emberZllCancelRxOnWhenIdle(); // cancel rx on
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        BL       emberZllSetRxOnWhenIdle
+    263            emberAfAppPrintln("%p %p", "Rx-On-When-Idle", "cancelled");
+   \        0x8   0x....             LDR.N    R3,??DataTable14_12
+   \        0xA   0x....             LDR.N    R2,??DataTable14_10
+   \        0xC   0x....             LDR.N    R1,??DataTable14_13
+   \        0xE   0x....             B.N      ?Subroutine2
+    264          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0xE8BD 0x5000      POP      {R12,LR}
+   \        0x6   0x....'....        B.W      emberAfPrintln
+    265          
+    266          // plugin zll-commissioning rx-on-active
+
+   \                                 In section .text, align 2, keep-with-next
+    267          void rxOnStatus(void)
+    268          {
+   \                     rxOnStatus: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    269            bool status = emberZllRxOnWhenIdleGetActive();
+    270            emberAfAppPrintln("%p %p", "Rx-On-When-Idle", status ? "active" : "inactive");
+   \        0x2   0x....'....        BL       emberZllRxOnWhenIdleGetActive
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0x....             LDR.N    R2,??DataTable14_10
+   \        0xA   0x....             LDR.N    R1,??DataTable14_13
+   \        0xC   0xBF14             ITE      NE 
+   \        0xE   0x....             LDRNE.N  R3,??DataTable14_14
+   \       0x10   0x....             LDREQ.N  R3,??DataTable14_15
+   \       0x12                      REQUIRE ?Subroutine2
+   \       0x12                      ;; // Fall through to label ?Subroutine2
+    271          }
+    272          
+
+   \                                 In section .text, align 2, keep-with-next
+    273          void printZllTokens(void)
+    274          {
+   \                     printZllTokens: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB08E             SUB      SP,SP,#+56
+    275            EmberTokTypeStackZllData token;
+    276            EmberTokTypeStackZllSecurity security;
+    277            emberZllGetTokenStackZllData(&token);
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x....'....        BL       emberZllGetTokenStackZllData
+    278            emberZllGetTokenStackZllSecurity(&security);
+   \        0xA   0xA804             ADD      R0,SP,#+16
+   \        0xC   0x....'....        BL       emberZllGetTokenStackZllSecurity
+    279          
+    280            emberAfAppFlush();
+    281            emberAfAppPrintln("ZLL Tokens");
+   \       0x10   0x....             LDR.N    R1,??DataTable14_16
+   \       0x12   0x2002             MOVS     R0,#+2
+   \       0x14   0x....'....        BL       emberAfPrintln
+    282            emberAfAppPrintln("Bitmask: 0x%4x", token.bitmask);
+   \       0x18   0x9A00             LDR      R2,[SP, #+0]
+   \       0x1A   0x....             LDR.N    R1,??DataTable14_17
+   \       0x1C   0x....'....        BL       ?Subroutine6
+    283            emberAfAppPrintln("Free Node IDs,  Min: 0x%2x, Max: 0x%2x",
+    284                              token.freeNodeIdMin,
+    285                              token.freeNodeIdMax);
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x20   0xF8BD 0x3006      LDRH     R3,[SP, #+6]
+   \       0x24   0xF8BD 0x2004      LDRH     R2,[SP, #+4]
+   \       0x28   0x....             LDR.N    R1,??DataTable14_18
+   \       0x2A   0x2002             MOVS     R0,#+2
+   \       0x2C   0x....'....        BL       emberAfPrintln
+    286            emberAfAppFlush();
+    287            emberAfAppPrintln("Free Group IDs, Min: 0x%2x, Max: 0x%2x",
+    288                              token.freeGroupIdMin,
+    289                              token.freeGroupIdMax);
+   \       0x30   0xF8BD 0x300C      LDRH     R3,[SP, #+12]
+   \       0x34   0xF8BD 0x200A      LDRH     R2,[SP, #+10]
+   \       0x38   0x....             LDR.N    R1,??DataTable14_19
+   \       0x3A   0x2002             MOVS     R0,#+2
+   \       0x3C   0x....'....        BL       emberAfPrintln
+    290            emberAfAppFlush();
+    291            emberAfAppPrintln("My Group ID Min: 0x%2x",
+    292                              token.myGroupIdMin);
+   \       0x40   0xF8BD 0x2008      LDRH     R2,[SP, #+8]
+   \       0x44   0x....             LDR.N    R1,??DataTable14_20
+   \       0x46   0x....'....        BL       ?Subroutine6
+    293            emberAfAppFlush();
+    294            emberAfAppPrintln("RSSI Correction: %d",
+    295                              token.rssiCorrection);
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x4A   0xF89D 0x200E      LDRB     R2,[SP, #+14]
+   \       0x4E   0x....             LDR.N    R1,??DataTable14_21
+   \       0x50   0x....'....        BL       ?Subroutine6
+    296            emberAfAppFlush();
+    297          
+    298            emberAfAppPrintln("Security Bitmask: 0x%4x", security.bitmask);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x54   0x9A04             LDR      R2,[SP, #+16]
+   \       0x56   0x....             LDR.N    R1,??DataTable14_22
+   \       0x58   0x....'....        BL       ?Subroutine6
+    299            emberAfAppFlush();
+    300            emberAfAppPrintln("Security Key Index: %d", security.keyIndex);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x5C   0xF89D 0x2014      LDRB     R2,[SP, #+20]
+   \       0x60   0x....             LDR.N    R1,??DataTable14_23
+   \       0x62   0x....'....        BL       ?Subroutine6
+    301            emberAfAppFlush();
+    302            emberAfAppPrint("Security Encryption Key: ");
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x66   0x....             LDR.N    R1,??DataTable14_24
+   \       0x68   0x2002             MOVS     R0,#+2
+   \       0x6A   0x....'....        BL       emberAfPrint
+    303            emberAfAppDebugExec(emberAfPrintZigbeeKey(security.encryptionKey));
+   \       0x6E   0x2002             MOVS     R0,#+2
+   \       0x70   0x....'....        BL       emberAfPrintEnabled
+   \       0x74   0xB118             CBZ.N    R0,??printZllTokens_0
+   \       0x76   0xF10D 0x0015      ADD      R0,SP,#+21
+   \       0x7A   0x....'....        BL       printZigbeeKey
+    304            emberAfAppPrintln("");
+   \                     ??printZllTokens_0: (+1)
+   \       0x7E   0x....             LDR.N    R1,??DataTable14_25
+   \       0x80   0x2002             MOVS     R0,#+2
+   \       0x82   0x....'....        BL       emberAfPrintln
+    305            emberAfAppFlush();
+    306          }
+   \       0x86   0xB00F             ADD      SP,SP,#+60
+   \       0x88   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....'....        B.W      emberAfPrintln
+    307          
+
+   \                                 In section .text, align 2, keep-with-next
+    308          void setScanChannel(void)
+    309          {
+   \                     setScanChannel: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    310            uint8_t channel = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+    311            if (channel > EMBER_MAX_802_15_4_CHANNEL_NUMBER
+    312                || channel < EMBER_MIN_802_15_4_CHANNEL_NUMBER) {
+   \        0x8   0xF1A0 0x010B      SUB      R1,R0,#+11
+   \        0xC   0x2910             CMP      R1,#+16
+   \        0xE   0xD300             BCC.N    ??setScanChannel_0
+    313              emberAfAppPrintln("Invalid channel %d", channel);
+   \       0x10   0x....             B.N      ?Subroutine4
+    314              return;
+    315            }
+    316            emberSetZllPrimaryChannelMask(1 << channel);
+   \                     ??setScanChannel_0: (+1)
+   \       0x12   0x2101             MOVS     R1,#+1
+   \       0x14   0xFA01 0xF000      LSL      R0,R1,R0
+   \       0x18   0x....             B.N      ?Subroutine3
+    317            printChannels();
+    318          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4602             MOV      R2,R0
+   \        0x2   0x....             LDR.N    R1,??DataTable14_26
+   \                     ??Subroutine4_0: (+1)
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0xE8BD 0x4008      POP      {R3,LR}
+   \        0xA   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....'....        BL       emberSetZllPrimaryChannelMask
+   \        0x4                      REQUIRE ??Subroutine10_0
+   \        0x4                      ;; // Fall through to label ??Subroutine10_0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ??Subroutine10_0: (+1)
+   \        0x0   0xE8BD 0x4001      POP      {R0,LR}
+   \        0x4   0x....             B.N      printChannels
+    319          
+
+   \                                 In section .text, align 2, keep-with-next
+    320          void setSecondaryScanChannel(void)
+    321          {
+   \                     setSecondaryScanChannel: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    322            uint8_t channel = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+    323            if (channel > EMBER_MAX_802_15_4_CHANNEL_NUMBER
+    324                || channel < EMBER_MIN_802_15_4_CHANNEL_NUMBER) {
+   \        0x8   0xF1A0 0x010B      SUB      R1,R0,#+11
+   \        0xC   0x2910             CMP      R1,#+16
+   \        0xE   0xD300             BCC.N    ??setSecondaryScanChannel_0
+    325              emberAfAppPrintln("Invalid channel %d", channel);
+   \       0x10   0x....             B.N      ?Subroutine4
+    326              return;
+    327            }
+    328            emberSetZllSecondaryChannelMask(1 << channel);
+   \                     ??setSecondaryScanChannel_0: (+1)
+   \       0x12   0x2101             MOVS     R1,#+1
+   \       0x14   0xFA01 0xF000      LSL      R0,R1,R0
+   \       0x18   0x....'....        BL       emberSetZllSecondaryChannelMask
+    329            printChannels();
+   \       0x1C   0x....             B.N      ??Subroutine10_0
+    330          }
+    331          
+
+   \                                 In section .text, align 2, keep-with-next
+    332          void setScanMask(void)
+    333          {
+   \                     setScanMask: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    334            uint8_t index = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+    335            if (COUNTOF(channelMasks) <= index) {
+   \        0x8   0x2805             CMP      R0,#+5
+   \        0xA   0xD302             BCC.N    ??setScanMask_0
+    336              emberAfAppPrintln("Invalid channel mask index %d", index);
+   \        0xC   0x4602             MOV      R2,R0
+   \        0xE   0x....             LDR.N    R1,??DataTable14_27
+   \       0x10   0x....             B.N      ??Subroutine4_0
+    337              return;
+    338            }
+    339            emberSetZllPrimaryChannelMask(channelMasks[index]);
+   \                     ??setScanMask_0: (+1)
+   \       0x12   0x....             LDR.N    R1,??DataTable14_28
+   \       0x14   0xF851 0x0020      LDR      R0,[R1, R0, LSL #+2]
+   \       0x18                      REQUIRE ?Subroutine3
+   \       0x18                      ;; // Fall through to label ?Subroutine3
+    340            printChannels();
+    341          }
+    342          
+
+   \                                 In section .text, align 2, keep-with-next
+    343          void setIdentifyDuration(void)
+    344          {
+    345          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    346            emAfZllIdentifyDurationSec = (uint16_t)emberUnsignedCommandArgument(0);
+    347          #endif //EMBER_AF_PLUGIN_ZLL_COMMISSIONING_LINK_INITIATOR
+    348          }
+   \                     setIdentifyDuration: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    349          
+
+   \                                 In section .text, align 2, keep-with-next
+    350          void statusCommand(void)
+    351          {
+   \                     statusCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    352            printChannels();
+   \        0x2   0x....'....        BL       printChannels
+    353            printZllTokens();
+   \        0x6   0xE8BD 0x4001      POP      {R0,LR}
+   \        0xA   0x....             B.N      printZllTokens
+    354          }
+    355          
+
+   \                                 In section .text, align 2, keep-with-next
+    356          void printChannels(void)
+    357          {
+   \                     printChannels: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    358            emberAfAppPrint("%p channels: ", "Primary");
+   \        0x2   0x....             LDR.N    R4,??DataTable14_29
+   \        0x4   0x....             LDR.N    R2,??DataTable14_30
+   \        0x6   0x4621             MOV      R1,R4
+   \        0x8   0x2002             MOVS     R0,#+2
+   \        0xA   0x....'....        BL       emberAfPrint
+    359            emberAfAppDebugExec(emberAfPrintChannelListFromMask(emberGetZllPrimaryChannelMask()));
+   \        0xE   0x2002             MOVS     R0,#+2
+   \       0x10   0x....'....        BL       emberAfPrintEnabled
+   \       0x14   0xB118             CBZ.N    R0,??printChannels_0
+   \       0x16   0x....'....        BL       emberGetZllPrimaryChannelMask
+   \       0x1A   0x....'....        BL       emberAfPrintChannelListFromMask
+    360            emberAfAppPrintln(" (0x%4x)", emberGetZllPrimaryChannelMask());
+   \                     ??printChannels_0: (+1)
+   \       0x1E   0x....'....        BL       emberGetZllPrimaryChannelMask
+   \       0x22   0x4602             MOV      R2,R0
+   \       0x24   0x....             LDR.N    R5,??DataTable14_31
+   \       0x26   0x4629             MOV      R1,R5
+   \       0x28   0x....'....        BL       ?Subroutine6
+    361          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_COMMON_SCAN_SECONDARY_CHANNELS
+    362            emberAfAppPrint("%p channels: ", "Secondary");
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x2C   0x....             LDR.N    R2,??DataTable14_32
+   \       0x2E   0x4621             MOV      R1,R4
+   \       0x30   0x2002             MOVS     R0,#+2
+   \       0x32   0x....'....        BL       emberAfPrint
+    363            emberAfAppDebugExec(emberAfPrintChannelListFromMask(emberGetZllSecondaryChannelMask()));
+   \       0x36   0x2002             MOVS     R0,#+2
+   \       0x38   0x....'....        BL       emberAfPrintEnabled
+   \       0x3C   0xB118             CBZ.N    R0,??printChannels_1
+   \       0x3E   0x....'....        BL       emberGetZllSecondaryChannelMask
+   \       0x42   0x....'....        BL       emberAfPrintChannelListFromMask
+    364            emberAfAppPrintln(" (0x%4x)", emberGetZllSecondaryChannelMask());
+   \                     ??printChannels_1: (+1)
+   \       0x46   0x....'....        BL       emberGetZllSecondaryChannelMask
+   \       0x4A   0x4602             MOV      R2,R0
+   \       0x4C   0x4629             MOV      R1,R5
+   \       0x4E   0x2002             MOVS     R0,#+2
+   \       0x50   0xE8BD 0x4038      POP      {R3-R5,LR}
+   \       0x54   0x....'....        B.W      emberAfPrintln
+    365          #endif
+    366          }
+    367          
+
+   \                                 In section .text, align 4, keep-with-next
+    368          void joinable(void)
+    369          {
+    370          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_NETWORK
+    371            EmberStatus status = emberAfStartSearchForJoinableNetworkCallback();
+    372            emberAfAppPrintln("%p 0x%x", "joinable", status);
+    373          #else
+    374            emberAfAppPrintln("zll commissioning network plugin not found");
+   \                     joinable: (+1)
+   \        0x0   0xBF00             Nop      
+   \        0x2                      REQUIRE ?Subroutine0
+   \        0x2                      ;; // Fall through to label ?Subroutine0
+    375          #endif
+    376          }
+    377          
+
+   \                                 In section .text, align 2, keep-with-next
+    378          void unused(void)
+    379          {
+    380          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_NETWORK
+    381            EmberStatus status = emberAfFindUnusedPanIdAndFormCallback();
+    382            emberAfAppPrintln("%p 0x%x", "unused", status);
+    383          #else
+    384            emberAfAppPrintln("zll commissioning network plugin not found");
+   \                     unused: (+1)
+   \        0x0   0x....             B.N      ?Subroutine0
+    385          #endif
+    386          }
+    387          
+
+   \                                 In section .text, align 2, keep-with-next
+    388          void noTouchlinkForNFN(void)
+    389          {
+    390          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER
+    391            emberAfZllNoTouchlinkForNFN();
+   \                     noTouchlinkForNFN: (+1)
+   \        0x0   0x....'....        B.W      emberAfZllNoTouchlinkForNFN
+    392          #else
+    393            emberAfAppPrintln("zll commissioning server plugin not found");
+    394          #endif
+    395          }
+    396          
+
+   \                                 In section .text, align 2, keep-with-next
+    397          void enable(void)
+    398          {
+    399          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER
+    400            emberAfZllEnable();
+   \                     enable: (+1)
+   \        0x0   0x....'....        B.W      emberAfZllEnable
+    401          #else
+    402            emberAfAppPrintln("zll commissioning server plugin not found");
+    403          #endif
+    404          }
+    405          
+
+   \                                 In section .text, align 2, keep-with-next
+    406          void disable(void)
+    407          {
+    408          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER
+    409            emberAfZllDisable();
+   \                     disable: (+1)
+   \        0x0   0x....'....        B.W      emberAfZllDisable
+    410          #else
+    411            emberAfAppPrintln("zll commissioning server plugin not found");
+    412          #endif
+    413          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0x6D 0x73          DC8      0x6D, 0x73, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \        0x0   0x....'....        DC32     emAfEndpoints
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_8:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_9:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_10:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_11:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_12:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_13:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_14:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_15:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_16:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_17:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_18:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_19:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_20:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_21:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_22:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_23:
+   \        0x0   0x....'....        DC32     ?_23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_24:
+   \        0x0   0x....'....        DC32     ?_24
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_25:
+   \        0x0   0x....'....        DC32     ?_25
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_26:
+   \        0x0   0x....'....        DC32     ?_26
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_27:
+   \        0x0   0x....'....        DC32     ?_27
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_28:
+   \        0x0   0x....'....        DC32     channelMasks
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_29:
+   \        0x0   0x....'....        DC32     ?_28
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_30:
+   \        0x0   0x....'....        DC32     ?_29
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_31:
+   \        0x0   0x....'....        DC32     ?_30
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_32:
+   \        0x0   0x....'....        DC32     ?_31
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_33:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x7A 0x6C          DC8 "zll commissioning network plugin not found"
+   \              0x6C 0x20    
+   \              0x63 0x6F    
+   \              0x6D 0x6D    
+   \              0x69 0x73    
+   \              0x73 0x69    
+   \              0x6F 0x6E    
+   \              0x69 0x6E    
+   \              0x67 0x20    
+   \              0x6E 0x65    
+   \              0x74 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x20    
+   \              0x70 0x6C    
+   \              0x75 0x67    
+   \              0x69 0x6E    
+   \              0x20 0x6E    
+   \              0x6F 0x74    
+   \              0x20 0x66    
+   \              0x6F 0x75    
+   \              0x6E 0x64    
+   \              0x00         
+   \       0x2B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x7A 0x6C          DC8 "zll commissioning client plugin not found"
+   \              0x6C 0x20    
+   \              0x63 0x6F    
+   \              0x6D 0x6D    
+   \              0x69 0x73    
+   \              0x73 0x69    
+   \              0x6F 0x6E    
+   \              0x69 0x6E    
+   \              0x67 0x20    
+   \              0x63 0x6C    
+   \              0x69 0x65    
+   \              0x6E 0x74    
+   \              0x20 0x70    
+   \              0x6C 0x75    
+   \              0x67 0x69    
+   \              0x6E 0x20    
+   \              0x6E 0x6F    
+   \              0x74 0x20    
+   \              0x66 0x6F    
+   \              0x75 0x6E    
+   \              0x64 0x00    
+   \       0x2A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x38 0x76          DC8 "8vuvvu"
+   \              0x75 0x76    
+   \              0x76 0x75    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x25 0x70          DC8 "%p 0x%x"
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x78 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x65 0x6E          DC8 "endpoint information"
+   \              0x64 0x70    
+   \              0x6F 0x69    
+   \              0x6E 0x74    
+   \              0x20 0x69    
+   \              0x6E 0x66    
+   \              0x6F 0x72    
+   \              0x6D 0x61    
+   \              0x74 0x69    
+   \              0x6F 0x6E    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 2
+   \                     ?_5:
+   \        0x0   0x75 0x00          DC8 "u"
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x67 0x65          DC8 "get group identifiers"
+   \              0x74 0x20    
+   \              0x67 0x72    
+   \              0x6F 0x75    
+   \              0x70 0x20    
+   \              0x69 0x64    
+   \              0x65 0x6E    
+   \              0x74 0x69    
+   \              0x66 0x69    
+   \              0x65 0x72    
+   \              0x73 0x00    
+   \       0x16   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x67 0x65          DC8 "get endpoint list"
+   \              0x74 0x20    
+   \              0x65 0x6E    
+   \              0x64 0x70    
+   \              0x6F 0x69    
+   \              0x6E 0x74    
+   \              0x20 0x6C    
+   \              0x69 0x73    
+   \              0x74 0x00    
+   \       0x12   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x25 0x70          DC8 "%p %p %d %p"
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x25 0x64    
+   \              0x20 0x25    
+   \              0x70 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x52 0x78          DC8 "Rx-On-When-Idle"
+   \              0x2D 0x4F    
+   \              0x6E 0x2D    
+   \              0x57 0x68    
+   \              0x65 0x6E    
+   \              0x2D 0x49    
+   \              0x64 0x6C    
+   \              0x65 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x73 0x65          DC8 "set for"
+   \              0x74 0x20    
+   \              0x66 0x6F    
+   \              0x72 0x00    
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x6D 0x73          DC8 "ms"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x25 0x70          DC8 "%p %p"
+   \              0x20 0x25    
+   \              0x70 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x63 0x61          DC8 "cancelled"
+   \              0x6E 0x63    
+   \              0x65 0x6C    
+   \              0x6C 0x65    
+   \              0x64 0x00    
+   \        0xA   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x61 0x63          DC8 "active"
+   \              0x74 0x69    
+   \              0x76 0x65    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x69 0x6E          DC8 "inactive"
+   \              0x61 0x63    
+   \              0x74 0x69    
+   \              0x76 0x65    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x5A 0x4C          DC8 "ZLL Tokens"
+   \              0x4C 0x20    
+   \              0x54 0x6F    
+   \              0x6B 0x65    
+   \              0x6E 0x73    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x42 0x69          DC8 "Bitmask: 0x%4x"
+   \              0x74 0x6D    
+   \              0x61 0x73    
+   \              0x6B 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x34 0x78    
+   \              0x00         
+   \        0xF   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x46 0x72          DC8 "Free Node IDs,  Min: 0x%2x, Max: 0x%2x"
+   \              0x65 0x65    
+   \              0x20 0x4E    
+   \              0x6F 0x64    
+   \              0x65 0x20    
+   \              0x49 0x44    
+   \              0x73 0x2C    
+   \              0x20 0x20    
+   \              0x4D 0x69    
+   \              0x6E 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x2C 0x20    
+   \              0x4D 0x61    
+   \              0x78 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x00         
+   \       0x27   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x46 0x72          DC8 "Free Group IDs, Min: 0x%2x, Max: 0x%2x"
+   \              0x65 0x65    
+   \              0x20 0x47    
+   \              0x72 0x6F    
+   \              0x75 0x70    
+   \              0x20 0x49    
+   \              0x44 0x73    
+   \              0x2C 0x20    
+   \              0x4D 0x69    
+   \              0x6E 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x2C 0x20    
+   \              0x4D 0x61    
+   \              0x78 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x00         
+   \       0x27   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x4D 0x79          DC8 "My Group ID Min: 0x%2x"
+   \              0x20 0x47    
+   \              0x72 0x6F    
+   \              0x75 0x70    
+   \              0x20 0x49    
+   \              0x44 0x20    
+   \              0x4D 0x69    
+   \              0x6E 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x00         
+   \       0x17   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x52 0x53          DC8 "RSSI Correction: %d"
+   \              0x53 0x49    
+   \              0x20 0x43    
+   \              0x6F 0x72    
+   \              0x72 0x65    
+   \              0x63 0x74    
+   \              0x69 0x6F    
+   \              0x6E 0x3A    
+   \              0x20 0x25    
+   \              0x64 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x53 0x65          DC8 "Security Bitmask: 0x%4x"
+   \              0x63 0x75    
+   \              0x72 0x69    
+   \              0x74 0x79    
+   \              0x20 0x42    
+   \              0x69 0x74    
+   \              0x6D 0x61    
+   \              0x73 0x6B    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x34    
+   \              0x78 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_23:
+   \        0x0   0x53 0x65          DC8 "Security Key Index: %d"
+   \              0x63 0x75    
+   \              0x72 0x69    
+   \              0x74 0x79    
+   \              0x20 0x4B    
+   \              0x65 0x79    
+   \              0x20 0x49    
+   \              0x6E 0x64    
+   \              0x65 0x78    
+   \              0x3A 0x20    
+   \              0x25 0x64    
+   \              0x00         
+   \       0x17   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_24:
+   \        0x0   0x53 0x65          DC8 "Security Encryption Key: "
+   \              0x63 0x75    
+   \              0x72 0x69    
+   \              0x74 0x79    
+   \              0x20 0x45    
+   \              0x6E 0x63    
+   \              0x72 0x79    
+   \              0x70 0x74    
+   \              0x69 0x6F    
+   \              0x6E 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x3A    
+   \              0x20 0x00    
+   \       0x1A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 1
+   \                     ?_25:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_26:
+   \        0x0   0x49 0x6E          DC8 "Invalid channel %d"
+   \              0x76 0x61    
+   \              0x6C 0x69    
+   \              0x64 0x20    
+   \              0x63 0x68    
+   \              0x61 0x6E    
+   \              0x6E 0x65    
+   \              0x6C 0x20    
+   \              0x25 0x64    
+   \              0x00         
+   \       0x13   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_27:
+   \        0x0   0x49 0x6E          DC8 "Invalid channel mask index %d"
+   \              0x76 0x61    
+   \              0x6C 0x69    
+   \              0x64 0x20    
+   \              0x63 0x68    
+   \              0x61 0x6E    
+   \              0x6E 0x65    
+   \              0x6C 0x20    
+   \              0x6D 0x61    
+   \              0x73 0x6B    
+   \              0x20 0x69    
+   \              0x6E 0x64    
+   \              0x65 0x78    
+   \              0x20 0x25    
+   \              0x64 0x00    
+   \       0x1E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_28:
+   \        0x0   0x25 0x70          DC8 "%p channels: "
+   \              0x20 0x63    
+   \              0x68 0x61    
+   \              0x6E 0x6E    
+   \              0x65 0x6C    
+   \              0x73 0x3A    
+   \              0x20 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_29:
+   \        0x0   0x50 0x72          DC8 "Primary"
+   \              0x69 0x6D    
+   \              0x61 0x72    
+   \              0x79 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_30:
+   \        0x0   0x20 0x28          DC8 " (0x%4x)"
+   \              0x30 0x78    
+   \              0x25 0x34    
+   \              0x78 0x29    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_31:
+   \        0x0   0x53 0x65          DC8 "Secondary"
+   \              0x63 0x6F    
+   \              0x6E 0x64    
+   \              0x61 0x72    
+   \              0x79 0x00    
+   \        0xA   0x00 0x00          DC8 0, 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   abortTouchLink
+         0   -> emberAfPrintln
+       8   cancelRxOn
+         0   -> emberAfPrintln
+         8   -> emberZllSetRxOnWhenIdle
+       0   disable
+         0   -> emberAfZllDisable
+       0   enable
+         0   -> emberAfZllEnable
+      72   endpointInformation
+        72   -> emberAfFillExternalBuffer
+        72   -> emberAfGetEui64
+        72   -> emberAfGetNodeId
+        72   -> emberAfIndexFromEndpoint
+        72   -> emberAfPrintln
+        72   -> emberAfSendCommandUnicast
+        72   -> emberAfSetCommandEndpoints
+        72   -> emberUnsignedCommandArgument
+        72   -> emberZllGetTokenStackZllData
+       0   formNetwork
+         0   -> emberAfPrintln
+      16   getEndpointListRequest
+        16   -> emberAfFillExternalBuffer
+        16   -> emberAfIndexFromEndpoint
+         0   -> emberAfPrintln
+        16   -> emberAfSendCommandUnicast
+        16   -> emberAfSetCommandEndpoints
+        16   -> emberUnsignedCommandArgument
+      16   getGroupIdentifiersRequest
+        16   -> emberAfFillExternalBuffer
+        16   -> emberAfIndexFromEndpoint
+         0   -> emberAfPrintln
+        16   -> emberAfSendCommandUnicast
+        16   -> emberAfSetCommandEndpoints
+        16   -> emberUnsignedCommandArgument
+       0   initiateTouchLink
+         0   -> emberAfPrintln
+       0   joinable
+         0   -> emberAfPrintln
+       0   noTouchlinkForNFN
+         0   -> emberAfZllNoTouchlinkForNFN
+      16   printChannels
+        16   -> emberAfPrint
+        16   -> emberAfPrintChannelListFromMask
+        16   -> emberAfPrintEnabled
+         0   -> emberAfPrintln
+        16   -> emberAfPrintln
+        16   -> emberGetZllPrimaryChannelMask
+        16   -> emberGetZllSecondaryChannelMask
+      64   printZllTokens
+        64   -> emberAfPrint
+        64   -> emberAfPrintEnabled
+        64   -> emberAfPrintln
+        64   -> emberZllGetTokenStackZllData
+        64   -> emberZllGetTokenStackZllSecurity
+        64   -> printZigbeeKey
+       8   rxOnStatus
+         0   -> emberAfPrintln
+         8   -> emberZllRxOnWhenIdleGetActive
+       0   scanTouchLink
+         0   -> emberAfPrintln
+       0   setIdentifyDuration
+      16   setRxOn
+        16   -> emberAfPrintln
+        16   -> emberUnsignedCommandArgument
+        16   -> emberZllSetRxOnWhenIdle
+       8   setScanChannel
+         0   -> emberAfPrintln
+         8   -> emberSetZllPrimaryChannelMask
+         8   -> emberUnsignedCommandArgument
+         0   -> printChannels
+       8   setScanMask
+         0   -> emberAfPrintln
+         8   -> emberSetZllPrimaryChannelMask
+         8   -> emberUnsignedCommandArgument
+         0   -> printChannels
+       8   setSecondaryScanChannel
+         0   -> emberAfPrintln
+         8   -> emberSetZllSecondaryChannelMask
+         8   -> emberUnsignedCommandArgument
+         0   -> printChannels
+       8   statusCommand
+         8   -> printChannels
+         0   -> printZllTokens
+       0   unused
+         0   -> emberAfPrintln
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_15
+       4  ??DataTable14_16
+       4  ??DataTable14_17
+       4  ??DataTable14_18
+       4  ??DataTable14_19
+       4  ??DataTable14_2
+       4  ??DataTable14_20
+       4  ??DataTable14_21
+       4  ??DataTable14_22
+       4  ??DataTable14_23
+       4  ??DataTable14_24
+       4  ??DataTable14_25
+       4  ??DataTable14_26
+       4  ??DataTable14_27
+       4  ??DataTable14_28
+       4  ??DataTable14_29
+       4  ??DataTable14_3
+       4  ??DataTable14_30
+       4  ??DataTable14_31
+       4  ??DataTable14_32
+       4  ??DataTable14_33
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+       6  ??Subroutine10_0
+       8  ?Subroutine0
+      12  ?Subroutine1
+      10  ?Subroutine2
+       4  ?Subroutine3
+      14  ?Subroutine4
+       6  ?Subroutine5
+       6  ?Subroutine6
+       8  ?Subroutine7
+      10  ?Subroutine8
+      10  ?Subroutine9
+      44  ?_0
+      44  ?_1
+       8  ?_10
+       4  ?_11
+       8  ?_12
+      12  ?_13
+       8  ?_14
+      12  ?_15
+      12  ?_16
+      16  ?_17
+      40  ?_18
+      40  ?_19
+       8  ?_2
+      24  ?_20
+      20  ?_21
+      24  ?_22
+      24  ?_23
+      28  ?_24
+       1  ?_25
+      20  ?_26
+      32  ?_27
+      16  ?_28
+       8  ?_29
+       8  ?_3
+      12  ?_30
+      12  ?_31
+      24  ?_4
+       2  ?_5
+      24  ?_6
+      20  ?_7
+      12  ?_8
+      16  ?_9
+       4  abortTouchLink
+      16  cancelRxOn
+      20  channelMasks
+       4  disable
+       4  enable
+     132  endpointInformation
+       2  formNetwork
+      64  getEndpointListRequest
+      66  getGroupIdentifiersRequest
+       4  initiateTouchLink
+       2  joinable
+       4  noTouchlinkForNFN
+      88  printChannels
+     138  printZllTokens
+      18  rxOnStatus
+       4  scanTouchLink
+       2  setIdentifyDuration
+      32  setRxOn
+      26  setScanChannel
+      24  setScanMask
+      30  setSecondaryScanChannel
+      12  statusCommand
+       2  unused
+
+ 
+  20 bytes in section .data
+ 583 bytes in section .rodata
+ 908 bytes in section .text
+ 
+ 908 bytes of CODE  memory
+ 583 bytes of CONST memory
+  20 bytes of DATA  memory
+
+Errors: none
+Warnings: none

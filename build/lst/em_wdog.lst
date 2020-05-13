@@ -1,0 +1,661 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:55
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_wdog.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW613E.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_wdog.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_wdog.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_wdog.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_wdog.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_wdog.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Watchdog (WDOG) peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_wdog.h"
+     33          #if defined(WDOG_COUNT) && (WDOG_COUNT > 0)
+     34          
+     35          #include "em_bus.h"
+     36          #include "em_core.h"
+     37          
+     38          /***************************************************************************//**
+     39           * @addtogroup emlib
+     40           * @{
+     41           ******************************************************************************/
+     42          
+     43          /***************************************************************************//**
+     44           * @addtogroup WDOG
+     45           * @brief Watchdog (WDOG) Peripheral API
+     46           * @details
+     47           *  This module contains functions to control the WDOG peripheral of Silicon
+     48           *  Labs 32-bit MCUs and SoCs. The WDOG resets the system in case of a fault
+     49           *  condition.
+     50           * @{
+     51           ******************************************************************************/
+     52          
+     53          /* In some scenarioes when the watchdog is disabled the synchronization
+     54           * register might be set and not be cleared until the watchdog is enabled
+     55           * again. This will happen when for instance some watchdog register is modified
+     56           * while the watchdog clock is disabled. In these scenarioes we need to make
+     57           * sure that the software does not wait forever. */
+     58          #define WDOG_SYNC_TIMEOUT  30000
+     59          
+     60          /*******************************************************************************
+     61           **************************   GLOBAL FUNCTIONS   *******************************
+     62           ******************************************************************************/
+     63          
+     64          /***************************************************************************//**
+     65           * @brief
+     66           *   Enable/disable the watchdog timer.
+     67           *
+     68           * @note
+     69           *   This function modifies the WDOG CTRL register which requires
+     70           *   synchronization into the low-frequency domain. If this register is modified
+     71           *   before a previous update to the same register has completed, this function
+     72           *   will stall until the previous synchronization has completed.
+     73           *
+     74           * @param[in] wdog
+     75           *   A pointer to the WDOG peripheral register block.
+     76           *
+     77           * @param[in] enable
+     78           *   True to enable Watchdog, false to disable. Watchdog cannot be disabled if
+     79           *   it's been locked.
+     80           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     81          void WDOGn_Enable(WDOG_TypeDef *wdog, bool enable)
+     82          {
+     83            // SYNCBUSY may stall when locked.
+     84          #if defined(_WDOG_STATUS_MASK)
+     85            if ((wdog->STATUS & _WDOG_STATUS_LOCK_MASK) == WDOG_STATUS_LOCK_LOCKED) {
+   \                     WDOGn_Enable: (+1)
+   \        0x0   0x6942             LDR      R2,[R0, #+20]
+   \        0x2   0x2A00             CMP      R2,#+0
+   \        0x4   0xD40C             BMI.N    ??WDOGn_Enable_0
+     86              return;
+     87            }
+     88          #else
+     89            if (wdog->CTRL & WDOG_CTRL_LOCK) {
+     90              return;
+     91            }
+     92          #endif
+     93          
+     94          #if defined(_WDOG_EN_MASK)
+     95            if (!enable) {
+   \        0x6   0xB939             CBNZ.N   R1,??WDOGn_Enable_1
+     96              while (wdog->SYNCBUSY & WDOG_SYNCBUSY_CMD) {
+   \                     ??WDOGn_Enable_2: (+1)
+   \        0x8   0x6A41             LDR      R1,[R0, #+36]
+   \        0xA   0x07CA             LSLS     R2,R1,#+31
+   \        0xC   0xD4FC             BMI.N    ??WDOGn_Enable_2
+     97              }
+     98              wdog->EN_CLR = WDOG_EN_EN;
+   \        0xE   0x2101             MOVS     R1,#+1
+   \       0x10   0xF242 0x0304      MOVW     R3,#+8196
+   \       0x14   0x50C1             STR      R1,[R0, R3]
+   \       0x16   0x4770             BX       LR
+     99            } else {
+    100              wdog->EN_SET = WDOG_EN_EN;
+   \                     ??WDOGn_Enable_1: (+1)
+   \       0x18   0x2201             MOVS     R2,#+1
+   \       0x1A   0xF241 0x0104      MOVW     R1,#+4100
+   \       0x1E   0x5042             STR      R2,[R0, R1]
+    101            }
+    102          #else
+    103            // Wait for previous operations/modifications to complete
+    104            int i = 0;
+    105            while (((wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U)
+    106                   && (i < WDOG_SYNC_TIMEOUT)) {
+    107              i++;
+    108            }
+    109          
+    110            bool wdogState = ((wdog->CTRL & _WDOG_CTRL_EN_MASK) != 0U);
+    111          
+    112            // Make sure to only write to the CTRL register if we are changing mode
+    113            if (wdogState != enable) {
+    114              BUS_RegBitWrite(&wdog->CTRL, _WDOG_CTRL_EN_SHIFT, enable);
+    115            }
+    116          #endif
+    117          }
+   \                     ??WDOGn_Enable_0: (+1)
+   \       0x20   0x4770             BX       LR               ;; return
+    118          
+    119          /***************************************************************************//**
+    120           * @brief
+    121           *   Feed WDOG.
+    122           *
+    123           * @details
+    124           *   When WDOG is activated, it must be fed (i.e., clearing the counter)
+    125           *   before it reaches the defined timeout period. Otherwise, WDOG
+    126           *   will generate a reset.
+    127           *
+    128           * @note
+    129           *   Note that WDOG is an asynchronous peripheral and when calling the
+    130           *   WDOGn_Feed() function the hardware starts the process of clearing the
+    131           *   counter. This process takes some time before it completes depending on the
+    132           *   selected oscillator (up to 4 peripheral clock cycles). When using the
+    133           *   ULFRCO for instance as the oscillator the watchdog runs on a 1 kHz clock
+    134           *   and a watchdog clear operation might take up to 4 ms.
+    135           *
+    136           *   If the device enters EM2 or EM3 while a command is in progress then that
+    137           *   command will be aborted. An application can use @ref WDOGn_SyncWait()
+    138           *   to wait for a command to complete.
+    139           *
+    140           * @param[in] wdog
+    141           *   A pointer to the WDOG peripheral register block.
+    142           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void WDOGn_Feed(WDOG_TypeDef *wdog)
+    144          {
+   \                     WDOGn_Feed: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    145          #if (_SILICON_LABS_32B_SERIES < 2)
+    146          
+    147            // WDOG should not be fed while it is disabled.
+    148            if (!(wdog->CTRL & WDOG_CTRL_EN)) {
+    149              return;
+    150            }
+    151          
+    152            // If a previous clearing is synchronized to the LF domain, there
+    153            // is no point in waiting for it to complete before clearing over again.
+    154            // This avoids stalling the core in the typical use case where some idle loop
+    155            // keeps clearing WDOG.
+    156            if (wdog->SYNCBUSY & WDOG_SYNCBUSY_CMD) {
+    157              return;
+    158            }
+    159            // Before writing to the WDOG_CMD register, make sure that
+    160            // any previous write to the WDOG_CTRL is complete.
+    161            while ( (wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U ) {
+    162            }
+    163          
+    164            wdog->CMD = WDOG_CMD_CLEAR;
+    165          
+    166          #else // Series 2 devices
+    167          
+    168            CORE_DECLARE_IRQ_STATE;
+    169          
+    170            // WDOG should not be fed while it is disabled.
+    171            if ((wdog->EN & WDOG_EN_EN) == 0U) {
+   \        0x4   0x6860             LDR      R0,[R4, #+4]
+   \        0x6   0x07C1             LSLS     R1,R0,#+31
+   \        0x8   0xD50A             BPL.N    ??WDOGn_Feed_0
+    172              return;
+    173            }
+    174          
+    175            // We need an atomic section around the check for sync and the clear command
+    176            // because sending a clear command while a previous command is being synchronized
+    177            // will cause a BusFault.
+    178            CORE_ENTER_ATOMIC();
+   \        0xA   0x....'....        BL       CORE_EnterAtomic
+    179            if ((wdog->SYNCBUSY & WDOG_SYNCBUSY_CMD) == 0U) {
+   \        0xE   0x6A61             LDR      R1,[R4, #+36]
+   \       0x10   0x07CA             LSLS     R2,R1,#+31
+   \       0x12   0xBF5C             ITT      PL 
+   \       0x14   0x2101             MOVPL    R1,#+1
+   \       0x16   0x60E1             STRPL    R1,[R4, #+12]
+    180              wdog->CMD = WDOG_CMD_CLEAR;
+    181            }
+    182            CORE_EXIT_ATOMIC();
+   \       0x18   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x1C   0x....'....        B.W      CORE_ExitAtomic
+   \                     ??WDOGn_Feed_0: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}          ;; return
+    183          
+    184          #endif
+    185          }
+    186          
+    187          /***************************************************************************//**
+    188           * @brief
+    189           *   Initialize WDOG (assuming the WDOG configuration has not been
+    190           *   locked).
+    191           *
+    192           * @note
+    193           *   This function modifies the WDOG CTRL register which requires
+    194           *   synchronization into the low-frequency domain. If this register is modified
+    195           *   before a previous update to the same register has completed, this function
+    196           *   will stall until the previous synchronization has completed.
+    197           *
+    198           * @param[in] wdog
+    199           *   Pointer to the WDOG peripheral register block.
+    200           *
+    201           * @param[in] init
+    202           *   The structure holding the WDOG configuration. A default setting
+    203           *   #WDOG_INIT_DEFAULT is available for initialization.
+    204           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    205          void WDOGn_Init(WDOG_TypeDef *wdog, const WDOG_Init_TypeDef *init)
+    206          {
+   \                     WDOGn_Init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    207          #if defined(_WDOG_CFG_MASK)
+    208            // Handle series-2 devices
+    209          
+    210            if (wdog->EN != 0U) {
+   \        0x4   0x6860             LDR      R0,[R4, #+4]
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0xB130             CBZ.N    R0,??WDOGn_Init_0
+    211              while (wdog->SYNCBUSY != 0U) {
+   \                     ??WDOGn_Init_1: (+1)
+   \        0xA   0x6A60             LDR      R0,[R4, #+36]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD1FC             BNE.N    ??WDOGn_Init_1
+    212                // Wait for any potential synchronization to finish
+    213              }
+    214              wdog->EN_CLR = WDOG_EN_EN;
+   \       0x10   0x2101             MOVS     R1,#+1
+   \       0x12   0xF242 0x0204      MOVW     R2,#+8196
+   \       0x16   0x50A1             STR      R1,[R4, R2]
+    215            }
+    216          
+    217            wdog->CFG = (init->debugRun       ? WDOG_CFG_DEBUGRUN   : 0U)
+    218                        | (init->em2Run       ? WDOG_CFG_EM2RUN     : 0U)
+    219                        | (init->em3Run       ? WDOG_CFG_EM3RUN     : 0U)
+    220                        | (init->em4Block     ? WDOG_CFG_EM4BLOCK   : 0U)
+    221                        | (init->resetDisable ? WDOG_CFG_WDOGRSTDIS : 0U)
+    222                        | ((uint32_t)(init->warnSel) << _WDOG_CFG_WARNSEL_SHIFT)
+    223                        | ((uint32_t)(init->winSel) << _WDOG_CFG_WINSEL_SHIFT)
+    224                        | ((uint32_t)(init->perSel) << _WDOG_CFG_PERSEL_SHIFT);
+   \                     ??WDOGn_Init_0: (+1)
+   \       0x18   0x7868             LDRB     R0,[R5, #+1]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0x78A8             LDRB     R0,[R5, #+2]
+   \       0x1E   0xBF14             ITE      NE 
+   \       0x20   0x2110             MOVNE    R1,#+16
+   \       0x22   0x2100             MOVEQ    R1,#+0
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0x78E8             LDRB     R0,[R5, #+3]
+   \       0x28   0xBF14             ITE      NE 
+   \       0x2A   0x2202             MOVNE    R2,#+2
+   \       0x2C   0x2200             MOVEQ    R2,#+0
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0x7928             LDRB     R0,[R5, #+4]
+   \       0x32   0xBF14             ITE      NE 
+   \       0x34   0x2304             MOVNE    R3,#+4
+   \       0x36   0x2300             MOVEQ    R3,#+0
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0x7A68             LDRB     R0,[R5, #+9]
+   \       0x3C   0xBF14             ITE      NE 
+   \       0x3E   0x2608             MOVNE    R6,#+8
+   \       0x40   0x2600             MOVEQ    R6,#+0
+   \       0x42   0xB108             CBZ.N    R0,??WDOGn_Init_2
+   \       0x44   0xF44F 0x7080      MOV      R0,#+256
+   \                     ??WDOGn_Init_2: (+1)
+   \       0x48   0x4311             ORRS     R1,R2,R1
+   \       0x4A   0x4319             ORRS     R1,R3,R1
+   \       0x4C   0x4331             ORRS     R1,R6,R1
+   \       0x4E   0x4301             ORRS     R1,R0,R1
+   \       0x50   0x79E8             LDRB     R0,[R5, #+7]
+   \       0x52   0x7A2A             LDRB     R2,[R5, #+8]
+   \       0x54   0x79AB             LDRB     R3,[R5, #+6]
+   \       0x56   0xEA41 0x6100      ORR      R1,R1,R0, LSL #+24
+    225          
+    226            WDOGn_Enable(wdog, init->enable);
+   \       0x5A   0x4620             MOV      R0,R4
+   \       0x5C   0xEA41 0x7102      ORR      R1,R1,R2, LSL #+28
+   \       0x60   0xEA41 0x4103      ORR      R1,R1,R3, LSL #+16
+   \       0x64   0x60A1             STR      R1,[R4, #+8]
+   \       0x66   0x7829             LDRB     R1,[R5, #+0]
+   \       0x68   0x....'....        BL       WDOGn_Enable
+    227          
+    228            if (init->lock) {
+   \       0x6C   0x7968             LDRB     R0,[R5, #+5]
+   \       0x6E   0xB108             CBZ.N    R0,??WDOGn_Init_3
+    229              WDOGn_Lock(wdog);
+   \       0x70   0x2100             MOVS     R1,#+0
+   \       0x72   0x6221             STR      R1,[R4, #+32]
+    230            }
+    231          #else
+    232            // Handle series-0 and series-1 devices
+    233            uint32_t setting;
+    234          
+    235            setting = (init->enable       ? WDOG_CTRL_EN         : 0U)
+    236                      | (init->debugRun   ? WDOG_CTRL_DEBUGRUN   : 0U)
+    237                      | (init->em2Run     ? WDOG_CTRL_EM2RUN     : 0U)
+    238                      | (init->em3Run     ? WDOG_CTRL_EM3RUN     : 0U)
+    239                      | (init->em4Block   ? WDOG_CTRL_EM4BLOCK   : 0U)
+    240                      | (init->swoscBlock ? WDOG_CTRL_SWOSCBLOCK : 0U)
+    241                      | (init->lock       ? WDOG_CTRL_LOCK       : 0U)
+    242                      | ((uint32_t)(init->clkSel) << _WDOG_CTRL_CLKSEL_SHIFT)
+    243                      | ((uint32_t)(init->perSel) << _WDOG_CTRL_PERSEL_SHIFT);
+    244          
+    245          #if defined(_WDOG_CTRL_WDOGRSTDIS_MASK)
+    246            setting |= (init->resetDisable ? WDOG_CTRL_WDOGRSTDIS : 0U);
+    247          #endif
+    248          #if defined(_WDOG_CTRL_WARNSEL_MASK)
+    249            setting |= ((uint32_t)(init->warnSel) << _WDOG_CTRL_WARNSEL_SHIFT);
+    250          #endif
+    251          #if defined(_WDOG_CTRL_WINSEL_MASK)
+    252            setting |= ((uint32_t)(init->winSel) << _WDOG_CTRL_WINSEL_SHIFT);
+    253          #endif
+    254          
+    255            // Wait for previous operations/modifications to complete
+    256            int i = 0;
+    257            while (((wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U)
+    258                   && (i < WDOG_SYNC_TIMEOUT)) {
+    259              i++;
+    260            }
+    261            wdog->CTRL = setting;
+    262          #endif
+    263          }
+   \                     ??WDOGn_Init_3: (+1)
+   \       0x74   0xBD70             POP      {R4-R6,PC}       ;; return
+    264          
+    265          /***************************************************************************//**
+    266           * @brief
+    267           *   Lock the WDOG configuration.
+    268           *
+    269           * @details
+    270           *   This prevents errors from overwriting the WDOG configuration, possibly
+    271           *   disabling it. Only a reset can unlock the WDOG configuration once locked.
+    272           *
+    273           *   If the LFRCO or LFXO clocks are used to clock WDOG,
+    274           *   consider using the option of inhibiting those clocks to be disabled.
+    275           *   See the WDOG_Enable() initialization structure.
+    276           *
+    277           * @note
+    278           *   This function modifies the WDOG CTRL register which requires
+    279           *   synchronization into the low-frequency domain. If this register is modified
+    280           *   before a previous update to the same register has completed, this function
+    281           *   will stall until the previous synchronization has completed.
+    282           *
+    283           * @param[in] wdog
+    284           *   A pointer to WDOG peripheral register block.
+    285           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    286          void WDOGn_Lock(WDOG_TypeDef *wdog)
+    287          {
+    288          #if defined(_WDOG_LOCK_MASK)
+    289            wdog->LOCK = _WDOG_LOCK_LOCKKEY_LOCK;
+   \                     WDOGn_Lock: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6201             STR      R1,[R0, #+32]
+    290          #else
+    291            // Wait for any pending previous write operation to have been completed in
+    292            // the low-frequency domain.
+    293            while ( (wdog->SYNCBUSY & WDOG_SYNCBUSY_CTRL) != 0U ) {
+    294            }
+    295          
+    296            // Disable writing to the control register.
+    297            BUS_RegBitWrite(&wdog->CTRL, _WDOG_CTRL_LOCK_SHIFT, 1);
+    298          #endif
+    299          }
+   \        0x4   0x4770             BX       LR               ;; return
+    300          
+    301          /***************************************************************************//**
+    302           * @brief
+    303           *   Wait for the WDOG to complete all synchronization of register changes
+    304           *   and commands.
+    305           *
+    306           * @param[in] wdog
+    307           *   A pointer to WDOG peripheral register block.
+    308           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    309          void WDOGn_SyncWait(WDOG_TypeDef *wdog)
+    310          {
+    311          #if defined(_SILICON_LABS_32B_SERIES_2)
+    312            while ((wdog->EN != 0U) && (wdog->SYNCBUSY != 0U)) {
+   \                     WDOGn_SyncWait: (+1)
+   \                     ??WDOGn_SyncWait_0: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xBF1C             ITT      NE 
+   \        0x6   0x6A41             LDRNE    R1,[R0, #+36]
+   \        0x8   0x2900             CMPNE    R1,#+0
+   \        0xA   0xD1F9             BNE.N    ??WDOGn_SyncWait_0
+    313              // Wait for synchronization to finish
+    314            }
+    315          #else
+    316            while (wdog->SYNCBUSY != 0U) {
+    317              // Wait for synchronization to finish
+    318            }
+    319          #endif
+    320          }
+   \        0xC   0x4770             BX       LR               ;; return
+    321          
+    322          /***************************************************************************//**
+    323           * @brief
+    324           *   Unlock the WDOG configuration.
+    325           *
+    326           * @details
+    327           *   Note that this function will have no effect on devices where a reset is
+    328           *   the only way to unlock the watchdog.
+    329           *
+    330           * @param[in] wdog
+    331           *   A pointer to WDOG peripheral register block.
+    332           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    333          void WDOGn_Unlock(WDOG_TypeDef *wdog)
+    334          {
+    335          #if defined(_WDOG_LOCK_MASK)
+    336            wdog->LOCK = _WDOG_LOCK_LOCKKEY_UNLOCK;
+   \                     WDOGn_Unlock: (+1)
+   \        0x0   0xF64A 0x31E8      MOVW     R1,#+44008
+   \        0x4   0x6201             STR      R1,[R0, #+32]
+    337          #else
+    338            (void) wdog;
+    339          #endif
+    340          }
+   \        0x6   0x4770             BX       LR               ;; return
+    341          
+    342          /** @} (end addtogroup WDOG) */
+    343          /** @} (end addtogroup emlib) */
+    344          #endif /* defined(WDOG_COUNT) && (WDOG_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   WDOGn_Enable
+       8   WDOGn_Feed
+         8   -> CORE_EnterAtomic
+         0   -> CORE_ExitAtomic
+      16   WDOGn_Init
+        16   -> WDOGn_Enable
+       0   WDOGn_Lock
+       0   WDOGn_SyncWait
+       0   WDOGn_Unlock
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      34  WDOGn_Enable
+      34  WDOGn_Feed
+     118  WDOGn_Init
+       6  WDOGn_Lock
+      14  WDOGn_SyncWait
+       8  WDOGn_Unlock
+
+ 
+ 214 bytes in section .text
+ 
+ 214 bytes of CODE memory
+
+Errors: none
+Warnings: none

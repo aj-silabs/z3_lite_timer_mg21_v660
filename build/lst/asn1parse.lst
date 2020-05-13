@@ -1,0 +1,574 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:10
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\asn1parse.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWB155.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\asn1parse.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"asn1parse.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\asn1parse.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\asn1parse.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\asn1parse.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Generic ASN.1 parsing
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_ASN1_PARSE_C)
+     41          
+     42          #include "mbedtls/asn1.h"
+     43          
+     44          #include <string.h>
+     45          
+     46          #if defined(MBEDTLS_BIGNUM_C)
+     47          #include "mbedtls/bignum.h"
+     48          #endif
+     49          
+     50          #if defined(MBEDTLS_PLATFORM_C)
+     51          #include "mbedtls/platform.h"
+     52          #else
+     53          #include <stdlib.h>
+     54          #define mbedtls_calloc    calloc
+     55          #define mbedtls_free       free
+     56          #endif
+     57          
+     58          /* Implementation that should never be optimized out by the compiler */
+     59          static void mbedtls_zeroize( void *v, size_t n ) {
+     60              volatile unsigned char *p = (unsigned char*)v; while( n-- ) *p++ = 0;
+     61          }
+     62          
+     63          /*
+     64           * ASN.1 DER decoding routines
+     65           */
+     66          int mbedtls_asn1_get_len( unsigned char **p,
+     67                            const unsigned char *end,
+     68                            size_t *len )
+     69          {
+     70              if( ( end - *p ) < 1 )
+     71                  return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+     72          
+     73              if( ( **p & 0x80 ) == 0 )
+     74                  *len = *(*p)++;
+     75              else
+     76              {
+     77                  switch( **p & 0x7F )
+     78                  {
+     79                  case 1:
+     80                      if( ( end - *p ) < 2 )
+     81                          return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+     82          
+     83                      *len = (*p)[1];
+     84                      (*p) += 2;
+     85                      break;
+     86          
+     87                  case 2:
+     88                      if( ( end - *p ) < 3 )
+     89                          return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+     90          
+     91                      *len = ( (size_t)(*p)[1] << 8 ) | (*p)[2];
+     92                      (*p) += 3;
+     93                      break;
+     94          
+     95                  case 3:
+     96                      if( ( end - *p ) < 4 )
+     97                          return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+     98          
+     99                      *len = ( (size_t)(*p)[1] << 16 ) |
+    100                             ( (size_t)(*p)[2] << 8  ) | (*p)[3];
+    101                      (*p) += 4;
+    102                      break;
+    103          
+    104                  case 4:
+    105                      if( ( end - *p ) < 5 )
+    106                          return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    107          
+    108                      *len = ( (size_t)(*p)[1] << 24 ) | ( (size_t)(*p)[2] << 16 ) |
+    109                             ( (size_t)(*p)[3] << 8  ) |           (*p)[4];
+    110                      (*p) += 5;
+    111                      break;
+    112          
+    113                  default:
+    114                      return( MBEDTLS_ERR_ASN1_INVALID_LENGTH );
+    115                  }
+    116              }
+    117          
+    118              if( *len > (size_t) ( end - *p ) )
+    119                  return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    120          
+    121              return( 0 );
+    122          }
+    123          
+    124          int mbedtls_asn1_get_tag( unsigned char **p,
+    125                            const unsigned char *end,
+    126                            size_t *len, int tag )
+    127          {
+    128              if( ( end - *p ) < 1 )
+    129                  return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    130          
+    131              if( **p != tag )
+    132                  return( MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    133          
+    134              (*p)++;
+    135          
+    136              return( mbedtls_asn1_get_len( p, end, len ) );
+    137          }
+    138          
+    139          int mbedtls_asn1_get_bool( unsigned char **p,
+    140                             const unsigned char *end,
+    141                             int *val )
+    142          {
+    143              int ret;
+    144              size_t len;
+    145          
+    146              if( ( ret = mbedtls_asn1_get_tag( p, end, &len, MBEDTLS_ASN1_BOOLEAN ) ) != 0 )
+    147                  return( ret );
+    148          
+    149              if( len != 1 )
+    150                  return( MBEDTLS_ERR_ASN1_INVALID_LENGTH );
+    151          
+    152              *val = ( **p != 0 ) ? 1 : 0;
+    153              (*p)++;
+    154          
+    155              return( 0 );
+    156          }
+    157          
+    158          int mbedtls_asn1_get_int( unsigned char **p,
+    159                            const unsigned char *end,
+    160                            int *val )
+    161          {
+    162              int ret;
+    163              size_t len;
+    164          
+    165              if( ( ret = mbedtls_asn1_get_tag( p, end, &len, MBEDTLS_ASN1_INTEGER ) ) != 0 )
+    166                  return( ret );
+    167          
+    168              if( len == 0 || len > sizeof( int ) || ( **p & 0x80 ) != 0 )
+    169                  return( MBEDTLS_ERR_ASN1_INVALID_LENGTH );
+    170          
+    171              *val = 0;
+    172          
+    173              while( len-- > 0 )
+    174              {
+    175                  *val = ( *val << 8 ) | **p;
+    176                  (*p)++;
+    177              }
+    178          
+    179              return( 0 );
+    180          }
+    181          
+    182          #if defined(MBEDTLS_BIGNUM_C)
+    183          int mbedtls_asn1_get_mpi( unsigned char **p,
+    184                            const unsigned char *end,
+    185                            mbedtls_mpi *X )
+    186          {
+    187              int ret;
+    188              size_t len;
+    189          
+    190              if( ( ret = mbedtls_asn1_get_tag( p, end, &len, MBEDTLS_ASN1_INTEGER ) ) != 0 )
+    191                  return( ret );
+    192          
+    193              ret = mbedtls_mpi_read_binary( X, *p, len );
+    194          
+    195              *p += len;
+    196          
+    197              return( ret );
+    198          }
+    199          #endif /* MBEDTLS_BIGNUM_C */
+    200          
+    201          int mbedtls_asn1_get_bitstring( unsigned char **p, const unsigned char *end,
+    202                                  mbedtls_asn1_bitstring *bs)
+    203          {
+    204              int ret;
+    205          
+    206              /* Certificate type is a single byte bitstring */
+    207              if( ( ret = mbedtls_asn1_get_tag( p, end, &bs->len, MBEDTLS_ASN1_BIT_STRING ) ) != 0 )
+    208                  return( ret );
+    209          
+    210              /* Check length, subtract one for actual bit string length */
+    211              if( bs->len < 1 )
+    212                  return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    213              bs->len -= 1;
+    214          
+    215              /* Get number of unused bits, ensure unused bits <= 7 */
+    216              bs->unused_bits = **p;
+    217              if( bs->unused_bits > 7 )
+    218                  return( MBEDTLS_ERR_ASN1_INVALID_LENGTH );
+    219              (*p)++;
+    220          
+    221              /* Get actual bitstring */
+    222              bs->p = *p;
+    223              *p += bs->len;
+    224          
+    225              if( *p != end )
+    226                  return( MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    227          
+    228              return( 0 );
+    229          }
+    230          
+    231          /*
+    232           * Get a bit string without unused bits
+    233           */
+    234          int mbedtls_asn1_get_bitstring_null( unsigned char **p, const unsigned char *end,
+    235                                       size_t *len )
+    236          {
+    237              int ret;
+    238          
+    239              if( ( ret = mbedtls_asn1_get_tag( p, end, len, MBEDTLS_ASN1_BIT_STRING ) ) != 0 )
+    240                  return( ret );
+    241          
+    242              if( (*len)-- < 2 || *(*p)++ != 0 )
+    243                  return( MBEDTLS_ERR_ASN1_INVALID_DATA );
+    244          
+    245              return( 0 );
+    246          }
+    247          
+    248          
+    249          
+    250          /*
+    251           *  Parses and splits an ASN.1 "SEQUENCE OF <tag>"
+    252           */
+    253          int mbedtls_asn1_get_sequence_of( unsigned char **p,
+    254                                    const unsigned char *end,
+    255                                    mbedtls_asn1_sequence *cur,
+    256                                    int tag)
+    257          {
+    258              int ret;
+    259              size_t len;
+    260              mbedtls_asn1_buf *buf;
+    261          
+    262              /* Get main sequence tag */
+    263              if( ( ret = mbedtls_asn1_get_tag( p, end, &len,
+    264                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    265                  return( ret );
+    266          
+    267              if( *p + len != end )
+    268                  return( MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    269          
+    270              while( *p < end )
+    271              {
+    272                  buf = &(cur->buf);
+    273                  buf->tag = **p;
+    274          
+    275                  if( ( ret = mbedtls_asn1_get_tag( p, end, &buf->len, tag ) ) != 0 )
+    276                      return( ret );
+    277          
+    278                  buf->p = *p;
+    279                  *p += buf->len;
+    280          
+    281                  /* Allocate and assign next pointer */
+    282                  if( *p < end )
+    283                  {
+    284                      cur->next = (mbedtls_asn1_sequence*)mbedtls_calloc( 1,
+    285                                                      sizeof( mbedtls_asn1_sequence ) );
+    286          
+    287                      if( cur->next == NULL )
+    288                          return( MBEDTLS_ERR_ASN1_ALLOC_FAILED );
+    289          
+    290                      cur = cur->next;
+    291                  }
+    292              }
+    293          
+    294              /* Set final sequence entry's next pointer to NULL */
+    295              cur->next = NULL;
+    296          
+    297              if( *p != end )
+    298                  return( MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    299          
+    300              return( 0 );
+    301          }
+    302          
+    303          int mbedtls_asn1_get_alg( unsigned char **p,
+    304                            const unsigned char *end,
+    305                            mbedtls_asn1_buf *alg, mbedtls_asn1_buf *params )
+    306          {
+    307              int ret;
+    308              size_t len;
+    309          
+    310              if( ( ret = mbedtls_asn1_get_tag( p, end, &len,
+    311                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    312                  return( ret );
+    313          
+    314              if( ( end - *p ) < 1 )
+    315                  return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    316          
+    317              alg->tag = **p;
+    318              end = *p + len;
+    319          
+    320              if( ( ret = mbedtls_asn1_get_tag( p, end, &alg->len, MBEDTLS_ASN1_OID ) ) != 0 )
+    321                  return( ret );
+    322          
+    323              alg->p = *p;
+    324              *p += alg->len;
+    325          
+    326              if( *p == end )
+    327              {
+    328                  mbedtls_zeroize( params, sizeof(mbedtls_asn1_buf) );
+    329                  return( 0 );
+    330              }
+    331          
+    332              params->tag = **p;
+    333              (*p)++;
+    334          
+    335              if( ( ret = mbedtls_asn1_get_len( p, end, &params->len ) ) != 0 )
+    336                  return( ret );
+    337          
+    338              params->p = *p;
+    339              *p += params->len;
+    340          
+    341              if( *p != end )
+    342                  return( MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    343          
+    344              return( 0 );
+    345          }
+    346          
+    347          int mbedtls_asn1_get_alg_null( unsigned char **p,
+    348                                 const unsigned char *end,
+    349                                 mbedtls_asn1_buf *alg )
+    350          {
+    351              int ret;
+    352              mbedtls_asn1_buf params;
+    353          
+    354              memset( &params, 0, sizeof(mbedtls_asn1_buf) );
+    355          
+    356              if( ( ret = mbedtls_asn1_get_alg( p, end, alg, &params ) ) != 0 )
+    357                  return( ret );
+    358          
+    359              if( ( params.tag != MBEDTLS_ASN1_NULL && params.tag != 0 ) || params.len != 0 )
+    360                  return( MBEDTLS_ERR_ASN1_INVALID_DATA );
+    361          
+    362              return( 0 );
+    363          }
+    364          
+    365          void mbedtls_asn1_free_named_data( mbedtls_asn1_named_data *cur )
+    366          {
+    367              if( cur == NULL )
+    368                  return;
+    369          
+    370              mbedtls_free( cur->oid.p );
+    371              mbedtls_free( cur->val.p );
+    372          
+    373              mbedtls_zeroize( cur, sizeof( mbedtls_asn1_named_data ) );
+    374          }
+    375          
+    376          void mbedtls_asn1_free_named_data_list( mbedtls_asn1_named_data **head )
+    377          {
+    378              mbedtls_asn1_named_data *cur;
+    379          
+    380              while( ( cur = *head ) != NULL )
+    381              {
+    382                  *head = cur->next;
+    383                  mbedtls_asn1_free_named_data( cur );
+    384                  mbedtls_free( cur );
+    385              }
+    386          }
+    387          
+    388          mbedtls_asn1_named_data *mbedtls_asn1_find_named_data( mbedtls_asn1_named_data *list,
+    389                                                 const char *oid, size_t len )
+    390          {
+    391              while( list != NULL )
+    392              {
+    393                  if( list->oid.len == len &&
+    394                      memcmp( list->oid.p, oid, len ) == 0 )
+    395                  {
+    396                      break;
+    397                  }
+    398          
+    399                  list = list->next;
+    400              }
+    401          
+    402              return( list );
+    403          }
+    404          
+    405          #endif /* MBEDTLS_ASN1_PARSE_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

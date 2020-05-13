@@ -1,0 +1,621 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:52
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_rmu.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW56D8.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_rmu.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_rmu.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_rmu.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_rmu.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_rmu.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Reset Management Unit (RMU) peripheral module peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_rmu.h"
+     33          #if (defined(RMU_COUNT) && (RMU_COUNT > 0)) || (_EMU_RSTCTRL_MASK)
+     34          
+     35          #include "em_common.h"
+     36          #include "em_emu.h"
+     37          #include "em_bus.h"
+     38          
+     39          /***************************************************************************//**
+     40           * @addtogroup emlib
+     41           * @{
+     42           ******************************************************************************/
+     43          
+     44          /***************************************************************************//**
+     45           * @addtogroup RMU
+     46           * @brief Reset Management Unit (RMU) Peripheral API
+     47           * @details
+     48           *  This module contains functions to control the RMU peripheral of Silicon
+     49           *  Labs 32-bit MCUs and SoCs. RMU ensures correct reset operation and is
+     50           *  responsible for connecting the different reset sources to the reset lines of
+     51           *  the MCU or SoC.
+     52           * @{
+     53           ******************************************************************************/
+     54          
+     55          /*******************************************************************************
+     56           *****************************     DEFINES     *********************************
+     57           ******************************************************************************/
+     58          
+     59          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     60          
+     61          #if defined(_RMU_RSTCAUSE_MASK)
+     62          
+     63          /** Reset cause XMASKS for series-0 and series-1 devices.
+     64              Reset cause zero and "don't care" bit definitions (XMASKs).
+     65              An XMASK 1 bit marks a bit that must be zero in RMU_RSTCAUSE. A 0 in XMASK
+     66              is a "don't care" bit in RMU_RSTCAUSE if also 0 in resetCauseMask
+     67              in @ref RMU_ResetCauseMasks_Typedef. */
+     68          
+     69          /* EFM32G */
+     70          #if (_RMU_RSTCAUSE_MASK == 0x0000007FUL)
+     71          #define RMU_RSTCAUSE_PORST_XMASK         0x00000000UL /** 0000000000000000  < Power On Reset */
+     72          #define RMU_RSTCAUSE_BODUNREGRST_XMASK   0x00000001UL /** 0000000000000001  < Brown Out Detector Unregulated Domain Reset */
+     73          #define RMU_RSTCAUSE_BODREGRST_XMASK     0x0000001BUL /** 0000000000011011  < Brown Out Detector Regulated Domain Reset */
+     74          #define RMU_RSTCAUSE_EXTRST_XMASK        0x00000003UL /** 0000000000000011  < External Pin Reset */
+     75          #define RMU_RSTCAUSE_WDOGRST_XMASK       0x00000003UL /** 0000000000000011  < Watchdog Reset */
+     76          #define RMU_RSTCAUSE_LOCKUPRST_XMASK     0x0000001FUL /** 0000000000011111  < LOCKUP Reset */
+     77          #define RMU_RSTCAUSE_SYSREQRST_XMASK     0x0000001FUL /** 0000000000011111  < System Request Reset */
+     78          #define NUM_RSTCAUSES                               7
+     79          
+     80          /* EFM32TG, EFM32HG, EZR32HG, EFM32ZG */
+     81          #elif (_RMU_RSTCAUSE_MASK == 0x000007FFUL)
+     82          #define RMU_RSTCAUSE_PORST_XMASK         0x00000000UL /** 0000000000000000  < Power On Reset */
+     83          #define RMU_RSTCAUSE_BODUNREGRST_XMASK   0x00000081UL /** 0000000010000001  < Brown Out Detector Unregulated Domain Reset */
+     84          #define RMU_RSTCAUSE_BODREGRST_XMASK     0x00000091UL /** 0000000010010001  < Brown Out Detector Regulated Domain Reset */
+     85          #define RMU_RSTCAUSE_EXTRST_XMASK        0x00000001UL /** 0000000000000001  < External Pin Reset */
+     86          #define RMU_RSTCAUSE_WDOGRST_XMASK       0x00000003UL /** 0000000000000011  < Watchdog Reset */
+     87          #define RMU_RSTCAUSE_LOCKUPRST_XMASK     0x0000EFDFUL /** 1110111111011111  < LOCKUP Reset */
+     88          #define RMU_RSTCAUSE_SYSREQRST_XMASK     0x0000EF9FUL /** 1110111110011111  < System Request Reset */
+     89          #define RMU_RSTCAUSE_EM4RST_XMASK        0x00000719UL /** 0000011100011001  < EM4 Reset */
+     90          #define RMU_RSTCAUSE_EM4WURST_XMASK      0x00000619UL /** 0000011000011001  < EM4 Wake-up Reset */
+     91          #define RMU_RSTCAUSE_BODAVDD0_XMASK      0x0000041FUL /** 0000010000011111  < AVDD0 Bod Reset. */
+     92          #define RMU_RSTCAUSE_BODAVDD1_XMASK      0x0000021FUL /** 0000001000011111  < AVDD1 Bod Reset. */
+     93          #define NUM_RSTCAUSES                              11
+     94          
+     95          /* EFM32GG, EFM32LG, EZR32LG, EFM32WG, EZR32WG */
+     96          #elif (_RMU_RSTCAUSE_MASK == 0x0000FFFFUL)
+     97          #define RMU_RSTCAUSE_PORST_XMASK         0x00000000UL /** 0000000000000000  < Power On Reset */
+     98          #define RMU_RSTCAUSE_BODUNREGRST_XMASK   0x00000081UL /** 0000000010000001  < Brown Out Detector Unregulated Domain Reset */
+     99          #define RMU_RSTCAUSE_BODREGRST_XMASK     0x00000091UL /** 0000000010010001  < Brown Out Detector Regulated Domain Reset */
+    100          #define RMU_RSTCAUSE_EXTRST_XMASK        0x00000001UL /** 0000000000000001  < External Pin Reset */
+    101          #define RMU_RSTCAUSE_WDOGRST_XMASK       0x00000003UL /** 0000000000000011  < Watchdog Reset */
+    102          #define RMU_RSTCAUSE_LOCKUPRST_XMASK     0x0000EFDFUL /** 1110111111011111  < LOCKUP Reset */
+    103          #define RMU_RSTCAUSE_SYSREQRST_XMASK     0x0000EF9FUL /** 1110111110011111  < System Request Reset */
+    104          #define RMU_RSTCAUSE_EM4RST_XMASK        0x00000719UL /** 0000011100011001  < EM4 Reset */
+    105          #define RMU_RSTCAUSE_EM4WURST_XMASK      0x00000619UL /** 0000011000011001  < EM4 Wake-up Reset */
+    106          #define RMU_RSTCAUSE_BODAVDD0_XMASK      0x0000041FUL /** 0000010000011111  < AVDD0 Bod Reset */
+    107          #define RMU_RSTCAUSE_BODAVDD1_XMASK      0x0000021FUL /** 0000001000011111  < AVDD1 Bod Reset */
+    108          #define RMU_RSTCAUSE_BUBODVDDDREG_XMASK  0x00000001UL /** 0000000000000001  < Backup Brown Out Detector, VDD_DREG */
+    109          #define RMU_RSTCAUSE_BUBODBUVIN_XMASK    0x00000001UL /** 0000000000000001  < Backup Brown Out Detector, BU_VIN */
+    110          #define RMU_RSTCAUSE_BUBODUNREG_XMASK    0x00000001UL /** 0000000000000001  < Backup Brown Out Detector Unregulated Domain */
+    111          #define RMU_RSTCAUSE_BUBODREG_XMASK      0x00000001UL /** 0000000000000001  < Backup Brown Out Detector Regulated Domain */
+    112          #define RMU_RSTCAUSE_BUMODERST_XMASK     0x00000001UL /** 0000000000000001  < Backup mode reset */
+    113          #define NUM_RSTCAUSES                              16
+    114          
+    115          /* EFM32xG1, EFM32xG12, EFM32xG13 */
+    116          #elif ((_RMU_RSTCAUSE_MASK & 0x0FFFFFFF) == 0x00010F1DUL)
+    117          #define RMU_RSTCAUSE_PORST_XMASK         0x00000000UL /** 0000000000000000  < Power On Reset */
+    118          #define RMU_RSTCAUSE_BODAVDD_XMASK       0x00000001UL /** 0000000000000001  < AVDD BOD Reset */
+    119          #define RMU_RSTCAUSE_BODDVDD_XMASK       0x00000001UL /** 0000000000000001  < DVDD BOD Reset */
+    120          #define RMU_RSTCAUSE_BODREGRST_XMASK     0x00000001UL /** 0000000000000001  < Regulated Domain (DEC) BOD Reset */
+    121          #define RMU_RSTCAUSE_EXTRST_XMASK        0x00000001UL /** 0000000000000001  < External Pin Reset */
+    122          #define RMU_RSTCAUSE_LOCKUPRST_XMASK     0x0000001DUL /** 0000000000011101  < LOCKUP Reset */
+    123          #define RMU_RSTCAUSE_SYSREQRST_XMASK     0x0000001DUL /** 0000000000011101  < System Request Reset */
+    124          #define RMU_RSTCAUSE_WDOGRST_XMASK       0x0000001DUL /** 0000000000011101  < Watchdog Reset */
+    125          #define RMU_RSTCAUSE_EM4RST_XMASK        0x0000001DUL /** 0000000000011101  < EM4H/S Reset */
+    126          #define NUM_RSTCAUSES                               9
+    127          
+    128          /* EFM32GG11 */
+    129          #elif ((_RMU_RSTCAUSE_MASK & 0x0FFFFFFF) == 0x00011F1DUL)
+    130          #define RMU_RSTCAUSE_PORST_XMASK         0x00000000UL /** 0000000000000000  < Power On Reset */
+    131          #define RMU_RSTCAUSE_BODAVDD_XMASK       0x00000001UL /** 0000000000000001  < AVDD BOD Reset */
+    132          #define RMU_RSTCAUSE_BODDVDD_XMASK       0x00000001UL /** 0000000000000001  < DVDD BOD Reset */
+    133          #define RMU_RSTCAUSE_BODREGRST_XMASK     0x00000001UL /** 0000000000000001  < Regulated Domain (DEC) BOD Reset */
+    134          #define RMU_RSTCAUSE_EXTRST_XMASK        0x00000001UL /** 0000000000000001  < External Pin Reset */
+    135          #define RMU_RSTCAUSE_LOCKUPRST_XMASK     0x0000001DUL /** 0000000000011101  < LOCKUP Reset */
+    136          #define RMU_RSTCAUSE_SYSREQRST_XMASK     0x0000001DUL /** 0000000000011101  < System Request Reset */
+    137          #define RMU_RSTCAUSE_WDOGRST_XMASK       0x0000001DUL /** 0000000000011101  < Watchdog Reset */
+    138          #define RMU_RSTCAUSE_BUMODERST_XMASK     0x0000001DUL /** 0000000000011101  < Backup mode reset */
+    139          #define RMU_RSTCAUSE_EM4RST_XMASK        0x0000001DUL /** 0000000000011101  < EM4H/S Reset */
+    140          #define NUM_RSTCAUSES                              10
+    141          
+    142          #else
+    143          #error "RMU_RSTCAUSE XMASKs are not defined for this family."
+    144          #endif
+    145          
+    146          /* Pin reset definitions. */
+    147          #define LB_CLW0           (*((volatile uint32_t *)(LOCKBITS_BASE) +122))
+    148          #define LB_CLW0_PINRESETSOFT    (1 << 2)
+    149          
+    150          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+    151          /* Fix for errata EMU_E208 - Occasional Full Reset After Exiting EM4H. */
+    152          #define ERRATA_FIX_EMU_E208_EN
+    153          #endif
+    154          
+    155          #endif /* #if defined(_RMU_RSTCAUSE_MASK) */
+    156          
+    157          /*******************************************************************************
+    158           *******************************   STRUCTS   ***********************************
+    159           ******************************************************************************/
+    160          
+    161          #if defined(_RMU_RSTCAUSE_MASK)
+    162          /** Reset cause mask type for series-0 and series-1 devices. */
+    163          typedef struct {
+    164            /** Reset cause 1 bits. */
+    165            uint32_t resetCauseMask;
+    166            /** Reset cause 0 and "don't care" bits. */
+    167            uint32_t resetCauseZeroXMask;
+    168          } RMU_ResetCauseMasks_Typedef;
+    169          #endif
+    170          
+    171          /*******************************************************************************
+    172           *******************************   TYPEDEFS   **********************************
+    173           ******************************************************************************/
+    174          
+    175          #if defined(_RMU_RSTCAUSE_MASK)
+    176          /** Reset cause mask table. */
+    177          static const RMU_ResetCauseMasks_Typedef  resetCauseMasks[NUM_RSTCAUSES] =
+    178          {
+    179            { RMU_RSTCAUSE_PORST, RMU_RSTCAUSE_PORST_XMASK },
+    180          #if defined(RMU_RSTCAUSE_BODUNREGRST)
+    181            { RMU_RSTCAUSE_BODUNREGRST, RMU_RSTCAUSE_BODUNREGRST_XMASK },
+    182          #endif
+    183          #if defined(RMU_RSTCAUSE_BODREGRST)
+    184            { RMU_RSTCAUSE_BODREGRST, RMU_RSTCAUSE_BODREGRST_XMASK },
+    185          #endif
+    186          #if defined(RMU_RSTCAUSE_AVDDBOD)
+    187            { RMU_RSTCAUSE_AVDDBOD, RMU_RSTCAUSE_BODAVDD_XMASK },
+    188          #endif
+    189          #if defined(RMU_RSTCAUSE_DVDDBOD)
+    190            { RMU_RSTCAUSE_DVDDBOD, RMU_RSTCAUSE_BODDVDD_XMASK },
+    191          #endif
+    192          #if defined(RMU_RSTCAUSE_DECBOD)
+    193            { RMU_RSTCAUSE_DECBOD, RMU_RSTCAUSE_BODREGRST_XMASK },
+    194          #endif
+    195            { RMU_RSTCAUSE_EXTRST, RMU_RSTCAUSE_EXTRST_XMASK },
+    196            { RMU_RSTCAUSE_WDOGRST, RMU_RSTCAUSE_WDOGRST_XMASK },
+    197            { RMU_RSTCAUSE_LOCKUPRST, RMU_RSTCAUSE_LOCKUPRST_XMASK },
+    198            { RMU_RSTCAUSE_SYSREQRST, RMU_RSTCAUSE_SYSREQRST_XMASK },
+    199          #if defined(RMU_RSTCAUSE_EM4RST)
+    200            { RMU_RSTCAUSE_EM4RST, RMU_RSTCAUSE_EM4RST_XMASK },
+    201          #endif
+    202          #if defined(RMU_RSTCAUSE_EM4WURST)
+    203            { RMU_RSTCAUSE_EM4WURST, RMU_RSTCAUSE_EM4WURST_XMASK },
+    204          #endif
+    205          #if defined(RMU_RSTCAUSE_BODAVDD0)
+    206            { RMU_RSTCAUSE_BODAVDD0, RMU_RSTCAUSE_BODAVDD0_XMASK },
+    207          #endif
+    208          #if defined(RMU_RSTCAUSE_BODAVDD1)
+    209            { RMU_RSTCAUSE_BODAVDD1, RMU_RSTCAUSE_BODAVDD1_XMASK },
+    210          #endif
+    211          #if defined(BU_PRESENT) && defined(_SILICON_LABS_32B_SERIES_0)
+    212            { RMU_RSTCAUSE_BUBODVDDDREG, RMU_RSTCAUSE_BUBODVDDDREG_XMASK },
+    213            { RMU_RSTCAUSE_BUBODBUVIN, RMU_RSTCAUSE_BUBODBUVIN_XMASK },
+    214            { RMU_RSTCAUSE_BUBODUNREG, RMU_RSTCAUSE_BUBODUNREG_XMASK },
+    215            { RMU_RSTCAUSE_BUBODREG, RMU_RSTCAUSE_BUBODREG_XMASK },
+    216            { RMU_RSTCAUSE_BUMODERST, RMU_RSTCAUSE_BUMODERST_XMASK },
+    217          #elif defined(RMU_RSTCAUSE_BUMODERST)
+    218            { RMU_RSTCAUSE_BUMODERST, RMU_RSTCAUSE_BUMODERST_XMASK },
+    219          #endif
+    220          };
+    221          #endif /* #if defined(_RMU_RSTCAUSE_MASK) */
+    222          
+    223          /*******************************************************************************
+    224           ********************************     TEST     ********************************
+    225           ******************************************************************************/
+    226          #if defined(EMLIB_REGRESSION_TEST)
+    227          /* A test variable that replaces the RSTCAUSE cause register when testing
+    228             the RMU_ResetCauseGet function. */
+    229          extern uint32_t rstCause;
+    230          #endif
+    231          
+    232          /** @endcond */
+    233          
+    234          /*******************************************************************************
+    235           **************************   GLOBAL FUNCTIONS   *******************************
+    236           ******************************************************************************/
+    237          
+    238          /***************************************************************************//**
+    239           * @brief
+    240           *   Disable/enable reset for various peripherals and signal sources.
+    241           *
+    242           * @param[in] reset Reset types to enable/disable.s
+    243           *
+    244           * @param[in] mode  Reset mode.
+    245           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    246          void RMU_ResetControl(RMU_Reset_TypeDef reset, RMU_ResetMode_TypeDef mode)
+    247          {
+    248            /* Note that the RMU supports bit-band access, but not peripheral bit-field set/clear. */
+    249          #if defined(_RMU_CTRL_PINRMODE_MASK)
+    250            uint32_t val;
+    251          #endif
+    252            uint32_t shift;
+    253          
+    254            shift = SL_CTZ((uint32_t)reset);
+    255          #if defined(_EMU_RSTCTRL_MASK)
+    256            BUS_RegBitWrite(&EMU->RSTCTRL, (uint32_t)shift, mode ? 1 : 0);
+   \                     RMU_ResetControl: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xFA90 0xF0A0      RBIT     R0,R0
+   \        0x6   0xFAB0 0xF080      CLZ      R0,R0
+   \        0xA   0xBF14             ITE      NE 
+   \        0xC   0x....             LDRNE.N  R1,??DataTable2  ;; 0x40005090
+   \        0xE   0x....             LDREQ.N  R1,??DataTable2_1  ;; 0x40006090
+   \       0x10   0x2201             MOVS     R2,#+1
+   \       0x12   0xFA02 0xF000      LSL      R0,R2,R0
+   \       0x16   0x6008             STR      R0,[R1, #+0]
+    257          #elif defined(_RMU_CTRL_PINRMODE_MASK)
+    258            val = (uint32_t)mode << shift;
+    259            RMU->CTRL = (RMU->CTRL & ~reset) | val;
+    260          #else
+    261            BUS_RegBitWrite(&RMU->CTRL, (uint32_t)shift, mode ? 1 : 0);
+    262          #endif
+    263          }
+   \       0x18   0x4770             BX       LR               ;; return
+    264          
+    265          /***************************************************************************//**
+    266           * @brief
+    267           *   Clear the reset cause register.
+    268           *
+    269           * @details
+    270           *   This function clears all the reset cause bits of the RSTCAUSE register.
+    271           *   The reset cause bits must be cleared by software before a new reset occurs.
+    272           *   Otherwise, reset causes may accumulate. See @ref RMU_ResetCauseGet().
+    273           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    274          void RMU_ResetCauseClear(void)
+    275          {
+    276          #if defined(_EMU_RSTCTRL_MASK)
+    277            EMU->CMD_SET = EMU_CMD_RSTCAUSECLR;
+   \                     RMU_ResetCauseClear: (+1)
+   \        0x0   0xF44F 0x3000      MOV      R0,#+131072
+   \        0x4   0x....             LDR.N    R1,??DataTable2_2  ;; 0x40005070
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+    278          #else
+    279            RMU->CMD = RMU_CMD_RCCLR;
+    280          #endif
+    281          
+    282          #if defined(EMU_AUXCTRL_HRCCLR)
+    283            {
+    284              uint32_t locked;
+    285          
+    286              /* Clear reset causes not cleared with the RMU CMD register. */
+    287              /* (If EMU registers are locked, they must be unlocked first) */
+    288              locked = EMU->LOCK & EMU_LOCK_LOCKKEY_LOCKED;
+    289              if (locked) {
+    290                EMU_Unlock();
+    291              }
+    292          
+    293              BUS_RegBitWrite(&(EMU->AUXCTRL), _EMU_AUXCTRL_HRCCLR_SHIFT, 1);
+    294              BUS_RegBitWrite(&(EMU->AUXCTRL), _EMU_AUXCTRL_HRCCLR_SHIFT, 0);
+    295          
+    296              if (locked) {
+    297                EMU_Lock();
+    298              }
+    299            }
+    300          #endif
+    301          }
+   \        0x8   0x4770             BX       LR               ;; return
+    302          
+    303          /***************************************************************************//**
+    304           * @brief
+    305           *   Get the cause of the last reset.
+    306           *
+    307           * @details
+    308           *   To be useful, the reset cause must be cleared by software before a new
+    309           *   reset occurs. Otherwise, reset causes may accumulate. See @ref
+    310           *   RMU_ResetCauseClear(). This function call will return the main cause for
+    311           *   reset, which can be a bit mask (several causes) and clear away "noise".
+    312           *
+    313           * @return
+    314           *   A reset cause mask. See the reference manual for a description
+    315           *   of the reset cause mask.
+    316           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    317          uint32_t RMU_ResetCauseGet(void)
+    318          {
+    319          #if defined(_EMU_RSTCAUSE_MASK)
+    320          #if defined(EMLIB_REGRESSION_TEST)
+    321            return rstCause;
+    322          #else
+    323            return EMU->RSTCAUSE;
+   \                     RMU_ResetCauseGet: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable2_3  ;; 0x40004094
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+    324          #endif
+    325          #endif
+    326          
+    327          #if defined(_RMU_RSTCAUSE_MASK)
+    328          #if !defined(EMLIB_REGRESSION_TEST)
+    329            uint32_t rstCause = RMU->RSTCAUSE;
+    330          #endif
+    331            uint32_t validRstCause = 0;
+    332            uint32_t zeroXMask;
+    333            uint32_t i;
+    334          
+    335            for (i = 0; i < NUM_RSTCAUSES; i++) {
+    336              zeroXMask = resetCauseMasks[i].resetCauseZeroXMask;
+    337          #if defined(_SILICON_LABS_32B_SERIES_1)
+    338              /* Handle soft/hard pin reset. */
+    339              if (!(LB_CLW0 & LB_CLW0_PINRESETSOFT)) {
+    340                /* RSTCAUSE_EXTRST must be 0 if pin reset is configured as hard reset. */
+    341                switch (resetCauseMasks[i].resetCauseMask) {
+    342                  case RMU_RSTCAUSE_LOCKUPRST:
+    343                  /* Fallthrough */
+    344                  case RMU_RSTCAUSE_SYSREQRST:
+    345                  /* Fallthrough */
+    346                  case RMU_RSTCAUSE_WDOGRST:
+    347                  /* Fallthrough */
+    348                  case RMU_RSTCAUSE_EM4RST:
+    349                    zeroXMask |= RMU_RSTCAUSE_EXTRST;
+    350                    break;
+    351                  default:
+    352                    /* MISRA requires a default case. */
+    353                    break;
+    354                }
+    355              }
+    356          #endif
+    357          
+    358          #if defined(_EMU_EM4CTRL_MASK) && defined(ERRATA_FIX_EMU_E208_EN)
+    359              /* Ignore BOD flags impacted by EMU_E208. */
+    360              if (*(volatile uint32_t *)(EMU_BASE + 0x88) & (0x1 << 8)) {
+    361                zeroXMask &= ~(RMU_RSTCAUSE_DECBOD
+    362                               | RMU_RSTCAUSE_DVDDBOD
+    363                               | RMU_RSTCAUSE_AVDDBOD);
+    364              }
+    365          #endif
+    366          
+    367              /* Check reset cause requirements. Note that a bit is "don't care" if 0 in
+    368                 both resetCauseMask and resetCauseZeroXMask. */
+    369              if ((rstCause & resetCauseMasks[i].resetCauseMask)
+    370                  && !(rstCause & zeroXMask)) {
+    371                /* Add this reset-cause to the mask of qualified reset-causes. */
+    372                validRstCause |= resetCauseMasks[i].resetCauseMask;
+    373              }
+    374            }
+    375          #if defined(_EMU_EM4CTRL_MASK) && defined(ERRATA_FIX_EMU_E208_EN)
+    376            /* Clear BOD flags impacted by EMU_E208. */
+    377            if (validRstCause & RMU_RSTCAUSE_EM4RST) {
+    378              validRstCause &= ~(RMU_RSTCAUSE_DECBOD
+    379                                 | RMU_RSTCAUSE_DVDDBOD
+    380                                 | RMU_RSTCAUSE_AVDDBOD);
+    381            }
+    382          #endif
+    383            return validRstCause;
+    384          #endif
+    385          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x4000'5090        DC32     0x40005090
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x4000'6090        DC32     0x40006090
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x4000'5070        DC32     0x40005070
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x4000'4094        DC32     0x40004094
+    386          
+    387          /** @} (end addtogroup RMU) */
+    388          /** @} (end addtogroup emlib) */
+    389          #endif /* defined(RMU_COUNT) && (RMU_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   RMU_ResetCauseClear
+       0   RMU_ResetCauseGet
+       0   RMU_ResetControl
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+      10  RMU_ResetCauseClear
+       6  RMU_ResetCauseGet
+      26  RMU_ResetControl
+
+ 
+ 58 bytes in section .text
+ 
+ 58 bytes of CODE memory
+
+Errors: none
+Warnings: none

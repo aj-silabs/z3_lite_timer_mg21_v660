@@ -1,0 +1,845 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:49
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_gpio.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW4C62.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_gpio.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_gpio.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_gpio.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_gpio.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_gpio.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief General Purpose IO (GPIO) peripheral API
+      4           *   devices.
+      5           * @version 5.8.0
+      6           *******************************************************************************
+      7           * # License
+      8           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      9           *******************************************************************************
+     10           *
+     11           * SPDX-License-Identifier: Zlib
+     12           *
+     13           * The licensor of this software is Silicon Laboratories Inc.
+     14           *
+     15           * This software is provided 'as-is', without any express or implied
+     16           * warranty. In no event will the authors be held liable for any damages
+     17           * arising from the use of this software.
+     18           *
+     19           * Permission is granted to anyone to use this software for any purpose,
+     20           * including commercial applications, and to alter it and redistribute it
+     21           * freely, subject to the following restrictions:
+     22           *
+     23           * 1. The origin of this software must not be misrepresented; you must not
+     24           *    claim that you wrote the original software. If you use this software
+     25           *    in a product, an acknowledgment in the product documentation would be
+     26           *    appreciated but is not required.
+     27           * 2. Altered source versions must be plainly marked as such, and must not be
+     28           *    misrepresented as being the original software.
+     29           * 3. This notice may not be removed or altered from any source distribution.
+     30           *
+     31           ******************************************************************************/
+     32          
+     33          #include "em_gpio.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void BUS_RegBitWrite(uint32_t volatile *, unsigned int, unsigned int)
+   \                     BUS_RegBitWrite: (+1)
+   \        0x0   0x2A00             CMP      R2,#+0
+   \        0x2   0xBF14             ITE      NE 
+   \        0x4   0xF500 0x5080      ADDNE    R0,R0,#+4096
+   \        0x8   0xF500 0x5000      ADDEQ    R0,R0,#+8192
+   \        0xC   0x2201             MOVS     R2,#+1
+   \        0xE   0xFA02 0xF101      LSL      R1,R2,R1
+   \       0x12   0x6001             STR      R1,[R0, #+0]
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void BUS_RegMaskedWrite(uint32_t volatile *, uint32_t, uint32_t)
+   \                     BUS_RegMaskedWrite: (+1)
+   \        0x0   0xF500 0x5300      ADD      R3,R0,#+8192
+   \        0x4   0x6019             STR      R1,[R3, #+0]
+   \        0x6   0xF500 0x5080      ADD      R0,R0,#+4096
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void GPIO_PinOutClear(GPIO_Port_TypeDef, unsigned int)
+   \                     GPIO_PinOutClear: (+1)
+   \        0x0   0x2230             MOVS     R2,#+48
+   \        0x2   0x4350             MULS     R0,R2,R0
+   \        0x4   0xB510             PUSH     {R4,LR}
+   \        0x6   0x2301             MOVS     R3,#+1
+   \        0x8   0x....             LDR.N    R4,??DataTable6  ;; 0x4003e000
+   \        0xA   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xFA03 0xF101      LSL      R1,R3,R1
+   \        0x4   0x4420             ADD      R0,R4,R0
+   \        0x6   0x6101             STR      R1,[R0, #+16]
+   \        0x8   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void GPIO_PinOutSet(GPIO_Port_TypeDef, unsigned int)
+   \                     GPIO_PinOutSet: (+1)
+   \        0x0   0x2230             MOVS     R2,#+48
+   \        0x2   0x4350             MULS     R0,R2,R0
+   \        0x4   0xB510             PUSH     {R4,LR}
+   \        0x6   0x2301             MOVS     R3,#+1
+   \        0x8   0x....             LDR.N    R4,??DataTable6_1  ;; 0x4003d000
+   \        0xA                      REQUIRE ?Subroutine0
+   \        0xA                      ;; // Fall through to label ?Subroutine0
+     34          
+     35          #if defined(GPIO_COUNT) && (GPIO_COUNT > 0)
+     36          
+     37          /***************************************************************************//**
+     38           * @addtogroup emlib
+     39           * @{
+     40           ******************************************************************************/
+     41          
+     42          /***************************************************************************//**
+     43           * @addtogroup GPIO
+     44           * @brief General Purpose Input/Output (GPIO) API
+     45           * @details
+     46           *  This module contains functions to control the GPIO peripheral of Silicon
+     47           *  Labs 32-bit MCUs and SoCs. The GPIO peripheral is used for pin configuration
+     48           *  and direct pin manipulation and sensing as well as routing for peripheral
+     49           *  pin connections.
+     50           * @{
+     51           ******************************************************************************/
+     52          
+     53          /*******************************************************************************
+     54           *******************************   DEFINES   ***********************************
+     55           ******************************************************************************/
+     56          
+     57          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     58          
+     59          /** Validation of the pin typically usable in assert statements. */
+     60          #define GPIO_DRIVEMODE_VALID(mode)    ((mode) <= 3)
+     61          #define GPIO_STRENGTH_VALID(strength) (!((strength)                          \
+     62                                                   & ~(_GPIO_P_CTRL_DRIVESTRENGTH_MASK \
+     63                                                       | _GPIO_P_CTRL_DRIVESTRENGTHALT_MASK)))
+     64          /** @endcond */
+     65          
+     66          /*******************************************************************************
+     67           **************************   GLOBAL FUNCTIONS   *******************************
+     68           ******************************************************************************/
+     69          
+     70          /***************************************************************************//**
+     71           * @brief
+     72           *   Sets the pin location of the debug pins (Serial Wire interface).
+     73           *
+     74           * @note
+     75           *   Changing the pins used for debugging uncontrolled, may result in a lockout.
+     76           *
+     77           * @param[in] location
+     78           *   The debug pin location to use (0-3).
+     79           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     80          void GPIO_DbgLocationSet(unsigned int location)
+     81          {
+     82          #if defined (_GPIO_ROUTE_SWLOCATION_MASK)
+     83            EFM_ASSERT(location < AFCHANLOC_MAX);
+     84          
+     85            GPIO->ROUTE = (GPIO->ROUTE & ~_GPIO_ROUTE_SWLOCATION_MASK)
+     86                          | (location << _GPIO_ROUTE_SWLOCATION_SHIFT);
+     87          #elif defined (_GPIO_ROUTELOC0_SWVLOC_MASK)
+     88            EFM_ASSERT(location < AFCHANLOC_MAX);
+     89          
+     90            GPIO->ROUTELOC0 = (GPIO->ROUTELOC0 & ~_GPIO_ROUTELOC0_SWVLOC_MASK)
+     91                              | (location << _GPIO_ROUTELOC0_SWVLOC_SHIFT);
+     92          #else
+     93            (void)location;
+     94          #endif
+     95          }
+   \                     GPIO_DbgLocationSet: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+     96          
+     97          #if defined (_GPIO_P_CTRL_DRIVEMODE_MASK)
+     98          /***************************************************************************//**
+     99           * @brief
+    100           *   Sets drive mode for a GPIO port.
+    101           *
+    102           * @param[in] port
+    103           *   The GPIO port to access.
+    104           *
+    105           * @param[in] mode
+    106           *   Drive mode to use for the port.
+    107           ******************************************************************************/
+    108          void GPIO_DriveModeSet(GPIO_Port_TypeDef port, GPIO_DriveMode_TypeDef mode)
+    109          {
+    110            EFM_ASSERT(GPIO_PORT_VALID(port) && GPIO_DRIVEMODE_VALID(mode));
+    111          
+    112            GPIO->P[port].CTRL = (GPIO->P[port].CTRL & ~(_GPIO_P_CTRL_DRIVEMODE_MASK))
+    113                                 | (mode << _GPIO_P_CTRL_DRIVEMODE_SHIFT);
+    114          }
+    115          #endif
+    116          
+    117          #if defined (_GPIO_P_CTRL_DRIVESTRENGTH_MASK)
+    118          /***************************************************************************//**
+    119           * @brief
+    120           *   Sets the drive strength for a GPIO port.
+    121           *
+    122           * @param[in] port
+    123           *   The GPIO port to access.
+    124           *
+    125           * @param[in] strength
+    126           *   The drive strength to use for the port.
+    127           ******************************************************************************/
+    128          void GPIO_DriveStrengthSet(GPIO_Port_TypeDef port,
+    129                                     GPIO_DriveStrength_TypeDef strength)
+    130          {
+    131            EFM_ASSERT(GPIO_PORT_VALID(port) && GPIO_STRENGTH_VALID(strength));
+    132            BUS_RegMaskedWrite(&GPIO->P[port].CTRL,
+    133                               _GPIO_P_CTRL_DRIVESTRENGTH_MASK | _GPIO_P_CTRL_DRIVESTRENGTHALT_MASK,
+    134                               strength);
+    135          }
+    136          #endif
+    137          
+    138          /***************************************************************************//**
+    139           * @brief
+    140           *   Configure the GPIO external pin interrupt.
+    141           *
+    142           * @details
+    143           *   It is recommended to disable interrupts before configuring the GPIO pin interrupt.
+    144           *   See @ref GPIO_IntDisable() for more information.
+    145           *
+    146           *   The GPIO interrupt handler must be in place before enabling the
+    147           *   interrupt.
+    148           *
+    149           *   Notice that any pending interrupt for the selected interrupt is cleared
+    150           *   by this function.
+    151           *
+    152           * @note
+    153           *   On series 0 devices, the pin number parameter is not used. The
+    154           *   pin number used on these devices is hardwired to the interrupt with the
+    155           *   same number. @n
+    156           *   On series 1 devices, the pin number can be selected freely within a group.
+    157           *   Interrupt numbers are divided into 4 groups (intNo / 4) and valid pin
+    158           *   number within the interrupt groups are:
+    159           *       0: pins 0-3   (interrupt number 0-3)
+    160           *       1: pins 4-7   (interrupt number 4-7)
+    161           *       2: pins 8-11  (interrupt number 8-11)
+    162           *       3: pins 12-15 (interrupt number 12-15)
+    163           *
+    164           * @param[in] port
+    165           *   The port to associate with the @p pin.
+    166           *
+    167           * @param[in] pin
+    168           *   The pin number on the port.
+    169           *
+    170           * @param[in] intNo
+    171           *   The interrupt number to trigger.
+    172           *
+    173           * @param[in] risingEdge
+    174           *   Set to true if the interrupt will be enabled on the rising edge. Otherwise, false.
+    175           *
+    176           * @param[in] fallingEdge
+    177           *   Set to true if the interrupt will be enabled on the falling edge. Otherwise, false.
+    178           *
+    179           * @param[in] enable
+    180           *   Set to true if the interrupt will be enabled after the configuration is complete.
+    181           *   False to leave disabled. See @ref GPIO_IntDisable() and @ref GPIO_IntEnable().
+    182           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    183          void GPIO_ExtIntConfig(GPIO_Port_TypeDef port,
+    184                                 unsigned int pin,
+    185                                 unsigned int intNo,
+    186                                 bool risingEdge,
+    187                                 bool fallingEdge,
+    188                                 bool enable)
+    189          {
+   \                     GPIO_ExtIntConfig: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4616             MOV      R6,R2
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x4698             MOV      R8,R3
+    190          #if defined (_GPIO_EXTIPSELH_MASK)
+    191            uint32_t tmp = 0;
+    192          #endif
+    193          #if !defined(_GPIO_EXTIPINSELL_MASK)
+    194            (void)pin;
+    195          #endif
+    196          
+    197            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+    198          #if defined(_GPIO_EXTIPINSELL_MASK)
+    199            EFM_ASSERT(GPIO_INTNO_PIN_VALID(intNo, pin));
+    200          #endif
+    201          
+    202            /* The EXTIPSELL register controls pins 0-7 and EXTIPSELH controls
+    203             * pins 8-15 of the interrupt configuration. */
+    204            if (intNo < 8) {
+   \        0xA   0x2E08             CMP      R6,#+8
+   \        0xC   0xD210             BCS.N    ??GPIO_ExtIntConfig_0
+    205              BUS_RegMaskedWrite(&GPIO->EXTIPSELL,
+    206                                 _GPIO_EXTIPSELL_EXTIPSEL0_MASK
+    207                                 << (_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT * intNo),
+    208                                 port << (_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT * intNo));
+   \        0xE   0x00B5             LSLS     R5,R6,#+2
+   \       0x10   0x2703             MOVS     R7,#+3
+   \       0x12   0x40AF             LSLS     R7,R7,R5
+   \       0x14   0xFA00 0xF205      LSL      R2,R0,R5
+   \       0x18   0x4639             MOV      R1,R7
+   \       0x1A   0x....             LDR.N    R0,??DataTable6_2  ;; 0x4003c400
+   \       0x1C   0x....'....        BL       BUS_RegMaskedWrite
+    209            } else {
+    210          #if defined(_GPIO_EXTIPSELH_MASK)
+    211              tmp = intNo - 8;
+    212          #if defined(_GPIO_EXTIPSELH_EXTIPSEL0_MASK)
+    213              BUS_RegMaskedWrite(&GPIO->EXTIPSELH,
+    214                                 _GPIO_EXTIPSELH_EXTIPSEL0_MASK
+    215                                 << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp),
+    216                                 port << (_GPIO_EXTIPSELH_EXTIPSEL1_SHIFT * tmp));
+    217          #elif defined(_GPIO_EXTIPSELH_EXTIPSEL8_MASK)
+    218              BUS_RegMaskedWrite(&GPIO->EXTIPSELH,
+    219                                 _GPIO_EXTIPSELH_EXTIPSEL8_MASK
+    220                                 << (_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT * tmp),
+    221                                 port << (_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT * tmp));
+    222          #else
+    223          #error Invalid GPIO_EXTIPINSELH bit fields
+    224          #endif
+    225          #endif /* #if defined(_GPIO_EXTIPSELH_MASK) */
+    226            }
+    227          
+    228          #if defined(_GPIO_EXTIPINSELL_MASK)
+    229          
+    230            /* The EXTIPINSELL register controls interrupt 0-7 and EXTIPINSELH controls
+    231             * interrupt 8-15 of the interrupt/pin number mapping. */
+    232            if (intNo < 8) {
+    233              BUS_RegMaskedWrite(&GPIO->EXTIPINSELL,
+    234                                 _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK
+    235                                 << (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo),
+    236                                 ((pin % 4) & _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK)
+    237                                 << (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo));
+   \       0x20   0xF004 0x0403      AND      R4,R4,#0x3
+   \       0x24   0xFA04 0xF205      LSL      R2,R4,R5
+   \       0x28   0x4639             MOV      R1,R7
+   \       0x2A   0x....             LDR.N    R0,??DataTable6_3  ;; 0x4003c408
+   \       0x2C   0x....'....        BL       BUS_RegMaskedWrite
+   \                     ??GPIO_ExtIntConfig_0: (+1)
+   \       0x30   0x9C07             LDR      R4,[SP, #+28]
+   \       0x32   0x9D06             LDR      R5,[SP, #+24]
+    238            } else {
+    239          #if defined (_GPIO_EXTIPINSELH_MASK) && !defined(_SILICON_LABS_32B_SERIES_2)
+    240              BUS_RegMaskedWrite(&GPIO->EXTIPINSELH,
+    241                                 _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK
+    242                                 << (_GPIO_EXTIPINSELH_EXTIPINSEL9_SHIFT * tmp),
+    243                                 ((pin % 4) & _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK)
+    244                                 << (_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT * tmp));
+    245          #endif
+    246            }
+    247          #endif
+    248          
+    249            /* Enable/disable the rising edge interrupt. */
+    250            BUS_RegBitWrite(&(GPIO->EXTIRISE), intNo, risingEdge);
+   \       0x34   0x4642             MOV      R2,R8
+   \       0x36   0x4631             MOV      R1,R6
+   \       0x38   0x....             LDR.N    R0,??DataTable6_4  ;; 0x4003c410
+   \       0x3A   0x....'....        BL       BUS_RegBitWrite
+    251          
+    252            /* Enable/disable the falling edge interrupt. */
+    253            BUS_RegBitWrite(&(GPIO->EXTIFALL), intNo, fallingEdge);
+   \       0x3E   0x462A             MOV      R2,R5
+   \       0x40   0x4631             MOV      R1,R6
+   \       0x42   0x....             LDR.N    R0,??DataTable6_5  ;; 0x4003c414
+   \       0x44   0x....'....        BL       BUS_RegBitWrite
+    254          
+    255            /* Clear any pending interrupt. */
+    256            GPIO_IntClear(1 << intNo);
+   \       0x48   0x2001             MOVS     R0,#+1
+   \       0x4A   0x40B0             LSLS     R0,R0,R6
+   \       0x4C   0x....             LDR.N    R1,??DataTable6_6  ;; 0x4003e420
+   \       0x4E   0x6008             STR      R0,[R1, #+0]
+    257          
+    258            /* Finally enable/disable interrupt. */
+    259            BUS_RegBitWrite(&(GPIO->IEN), intNo, enable);
+   \       0x50   0x4622             MOV      R2,R4
+   \       0x52   0x4631             MOV      R1,R6
+   \       0x54   0x....             LDR.N    R0,??DataTable6_7  ;; 0x4003c424
+   \       0x56   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \       0x5A   0x....             B.N      BUS_RegBitWrite
+    260          }
+    261          
+    262          /***************************************************************************//**
+    263           * @brief
+    264           *   Set the mode for a GPIO pin.
+    265           *
+    266           * @param[in] port
+    267           *   The GPIO port to access.
+    268           *
+    269           * @param[in] pin
+    270           *   The pin number in the port.
+    271           *
+    272           * @param[in] mode
+    273           *   The desired pin mode.
+    274           *
+    275           * @param[in] out
+    276           *   A value to set for the pin in the DOUT register. The DOUT setting is important for
+    277           *   some input mode configurations to determine the pull-up/down direction.
+    278           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    279          void GPIO_PinModeSet(GPIO_Port_TypeDef port,
+    280                               unsigned int pin,
+    281                               GPIO_Mode_TypeDef mode,
+    282                               unsigned int out)
+    283          {
+   \                     GPIO_PinModeSet: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4605             MOV      R5,R0
+   \        0x4   0x4617             MOV      R7,R2
+   \        0x6   0x460E             MOV      R6,R1
+   \        0x8   0x461C             MOV      R4,R3
+    284            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+    285          
+    286            /* If disabling a pin, do not modify DOUT to reduce the chance of */
+    287            /* a glitch/spike (may not be sufficient precaution in all use cases). */
+    288            if (mode != gpioModeDisabled) {
+   \        0xA   0x0038             MOVS     R0,R7
+   \        0xC   0xD007             BEQ.N    ??GPIO_PinModeSet_0
+    289              if (out) {
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0x4628             MOV      R0,R5
+   \       0x12   0xD002             BEQ.N    ??GPIO_PinModeSet_1
+    290                GPIO_PinOutSet(port, pin);
+   \       0x14   0x....'....        BL       GPIO_PinOutSet
+   \       0x18   0xE001             B.N      ??GPIO_PinModeSet_0
+    291              } else {
+    292                GPIO_PinOutClear(port, pin);
+   \                     ??GPIO_PinModeSet_1: (+1)
+   \       0x1A   0x....'....        BL       GPIO_PinOutClear
+    293              }
+    294            }
+    295          
+    296            /* There are two registers controlling the pins for each port. The MODEL
+    297             * register controls pins 0-7 and MODEH controls pins 8-15. */
+    298            if (pin < 8) {
+   \                     ??GPIO_PinModeSet_0: (+1)
+   \       0x1E   0x462A             MOV      R2,R5
+   \       0x20   0x2030             MOVS     R0,#+48
+   \       0x22   0x4342             MULS     R2,R0,R2
+   \       0x24   0x....             LDR.N    R1,??DataTable6_8  ;; 0x4003c000
+   \       0x26   0x1888             ADDS     R0,R1,R2
+   \       0x28   0x220F             MOVS     R2,#+15
+   \       0x2A   0x2E08             CMP      R6,#+8
+   \       0x2C   0xD205             BCS.N    ??GPIO_PinModeSet_2
+    299              GPIO->P[port].MODEL = (GPIO->P[port].MODEL & ~(0xFu << (pin * 4)))
+    300                                    | (mode << (pin * 4));
+   \       0x2E   0x6841             LDR      R1,[R0, #+4]
+   \       0x30   0x00B3             LSLS     R3,R6,#+2
+   \       0x32   0x....'....        BL       ?Subroutine1
+    301            } else {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x36   0x6041             STR      R1,[R0, #+4]
+   \       0x38   0xE006             B.N      ??GPIO_PinModeSet_3
+    302              GPIO->P[port].MODEH = (GPIO->P[port].MODEH & ~(0xFu << ((pin - 8) * 4)))
+    303                                    | (mode << ((pin - 8) * 4));
+   \                     ??GPIO_PinModeSet_2: (+1)
+   \       0x3A   0xF1A6 0x0308      SUB      R3,R6,#+8
+   \       0x3E   0x68C1             LDR      R1,[R0, #+12]
+   \       0x40   0x009B             LSLS     R3,R3,#+2
+   \       0x42   0x....'....        BL       ?Subroutine1
+    304            }
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x46   0x60C1             STR      R1,[R0, #+12]
+    305          
+    306            if (mode == gpioModeDisabled) {
+   \                     ??GPIO_PinModeSet_3: (+1)
+   \       0x48   0xB94F             CBNZ.N   R7,??GPIO_PinModeSet_4
+    307              if (out) {
+   \       0x4A   0x2C00             CMP      R4,#+0
+   \       0x4C   0x4631             MOV      R1,R6
+   \       0x4E   0x4628             MOV      R0,R5
+   \       0x50   0xD002             BEQ.N    ??GPIO_PinModeSet_5
+    308                GPIO_PinOutSet(port, pin);
+   \       0x52   0xE8BD 0x40F4      POP      {R2,R4-R7,LR}
+   \       0x56   0x....             B.N      GPIO_PinOutSet
+    309              } else {
+    310                GPIO_PinOutClear(port, pin);
+   \                     ??GPIO_PinModeSet_5: (+1)
+   \       0x58   0xE8BD 0x40F4      POP      {R2,R4-R7,LR}
+   \       0x5C   0x....             B.N      GPIO_PinOutClear
+    311              }
+    312            }
+    313          }
+   \                     ??GPIO_PinModeSet_4: (+1)
+   \       0x5E   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x409A             LSLS     R2,R2,R3
+   \        0x2   0xEA21 0x0202      BIC      R2,R1,R2
+   \        0x6   0xFA07 0xF103      LSL      R1,R7,R3
+   \        0xA   0x4311             ORRS     R1,R1,R2
+   \        0xC   0x4770             BX       LR
+    314          
+    315          /***************************************************************************//**
+    316           * @brief
+    317           *   Get the mode for a GPIO pin.
+    318           *
+    319           * @param[in] port
+    320           *   The GPIO port to access.
+    321           *
+    322           * @param[in] pin
+    323           *   The pin number in the port.
+    324           *
+    325           * @return
+    326           *   The pin mode.
+    327           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    328          GPIO_Mode_TypeDef GPIO_PinModeGet(GPIO_Port_TypeDef port,
+    329                                            unsigned int pin)
+    330          {
+    331            EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));
+    332          
+    333            if (pin < 8) {
+   \                     GPIO_PinModeGet: (+1)
+   \        0x0   0x2230             MOVS     R2,#+48
+   \        0x2   0x4350             MULS     R0,R2,R0
+   \        0x4   0x....             LDR.N    R3,??DataTable6_8  ;; 0x4003c000
+   \        0x6   0x2908             CMP      R1,#+8
+   \        0x8   0x4418             ADD      R0,R3,R0
+   \        0xA   0xBF32             ITEE     CC 
+   \        0xC   0x6840             LDRCC    R0,[R0, #+4]
+   \        0xE   0x68C0             LDRCS    R0,[R0, #+12]
+   \       0x10   0x3908             SUBCS    R1,R1,#+8
+    334              return (GPIO_Mode_TypeDef) ((GPIO->P[port].MODEL >> (pin * 4)) & 0xF);
+    335            } else {
+    336              return (GPIO_Mode_TypeDef) ((GPIO->P[port].MODEH >> ((pin - 8) * 4)) & 0xF);
+   \       0x12   0x0089             LSLS     R1,R1,#+2
+   \       0x14   0x40C8             LSRS     R0,R0,R1
+   \       0x16   0xF000 0x000F      AND      R0,R0,#0xF
+   \       0x1A   0x4770             BX       LR               ;; return
+    337            }
+    338          }
+    339          
+    340          #if defined(_GPIO_EM4WUEN_MASK)
+    341          /**************************************************************************//**
+    342           * @brief
+    343           *   Enable GPIO pin wake-up from EM4. When the function exits,
+    344           *   EM4 mode can be safely entered.
+    345           *
+    346           * @note
+    347           *   It is assumed that the GPIO pin modes are set correctly.
+    348           *   Valid modes are @ref gpioModeInput and @ref gpioModeInputPull.
+    349           *
+    350           * @param[in] pinmask
+    351           *   A bitmask containing the bitwise logic OR of which GPIO pin(s) to enable.
+    352           *   See Reference Manuals for a pinmask to the GPIO port/pin mapping.
+    353           * @param[in] polaritymask
+    354           *   A bitmask containing the bitwise logic OR of GPIO pin(s) wake-up polarity.
+    355           *   See Reference Manuals for pinmask-to-GPIO port/pin mapping.
+    356           *****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    357          void GPIO_EM4EnablePinWakeup(uint32_t pinmask, uint32_t polaritymask)
+    358          {
+   \                     GPIO_EM4EnablePinWakeup: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    359            EFM_ASSERT((pinmask & ~_GPIO_EM4WUEN_MASK) == 0);
+    360          
+    361          #if defined(_GPIO_EM4WUPOL_MASK)
+    362            EFM_ASSERT((polaritymask & ~_GPIO_EM4WUPOL_MASK) == 0);
+    363            GPIO->EM4WUPOL &= ~pinmask;               /* Set the wakeup polarity. */
+   \        0x2   0x....             LDR.N    R2,??DataTable6_9  ;; 0x4003c42c
+   \        0x4   0x6853             LDR      R3,[R2, #+4]
+    364            GPIO->EM4WUPOL |= pinmask & polaritymask;
+   \        0x6   0x4001             ANDS     R1,R1,R0
+   \        0x8   0x4383             BICS     R3,R3,R0
+   \        0xA   0x6053             STR      R3,[R2, #+4]
+   \        0xC   0x6854             LDR      R4,[R2, #+4]
+   \        0xE   0x4321             ORRS     R1,R1,R4
+   \       0x10   0x6051             STR      R1,[R2, #+4]
+    365          #elif defined(_GPIO_EXTILEVEL_MASK)
+    366            EFM_ASSERT((polaritymask & ~_GPIO_EXTILEVEL_MASK) == 0);
+    367            GPIO->EXTILEVEL &= ~pinmask;
+    368            GPIO->EXTILEVEL |= pinmask & polaritymask;
+    369          #endif
+    370            GPIO->EM4WUEN  |= pinmask;                /* Enable wakeup. */
+   \       0x12   0x6811             LDR      R1,[R2, #+0]
+   \       0x14   0x4301             ORRS     R1,R0,R1
+   \       0x16   0x6011             STR      R1,[R2, #+0]
+    371          
+    372            GPIO_EM4SetPinRetention(true);            /* Enable the pin retention. */
+   \       0x18   0x....             LDR.N    R1,??DataTable6_10  ;; 0x4000406c
+   \       0x1A   0x680A             LDR      R2,[R1, #+0]
+   \       0x1C   0xF002 0x0230      AND      R2,R2,#0x30
+   \       0x20   0x2A20             CMP      R2,#+32
+   \       0x22   0xD005             BEQ.N    ??GPIO_EM4EnablePinWakeup_0
+   \       0x24   0x680A             LDR      R2,[R1, #+0]
+   \       0x26   0xF022 0x0230      BIC      R2,R2,#0x30
+   \       0x2A   0xF042 0x0210      ORR      R2,R2,#0x10
+   \       0x2E   0x600A             STR      R2,[R1, #+0]
+    373          
+    374          #if defined(_GPIO_CMD_EM4WUCLR_MASK)
+    375            GPIO->CMD = GPIO_CMD_EM4WUCLR;            /* Clear the wake-up logic. */
+    376          #elif defined(_GPIO_IF_EM4WU_MASK)
+    377            GPIO_IntClear(pinmask);
+   \                     ??GPIO_EM4EnablePinWakeup_0: (+1)
+   \       0x30   0x....             LDR.N    R1,??DataTable6_6  ;; 0x4003e420
+   \       0x32   0x6008             STR      R0,[R1, #+0]
+    378          #endif
+    379          }
+   \       0x34   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x4003'E000        DC32     0x4003e000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x4003'D000        DC32     0x4003d000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x4003'C400        DC32     0x4003c400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x4003'C408        DC32     0x4003c408
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x4003'C410        DC32     0x4003c410
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x4003'C414        DC32     0x4003c414
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x4003'E420        DC32     0x4003e420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x4003'C424        DC32     0x4003c424
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x4003'C000        DC32     0x4003c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x4003'C42C        DC32     0x4003c42c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \        0x0   0x4000'406C        DC32     0x4000406c
+    380          #endif
+    381          
+    382          /** @} (end addtogroup GPIO) */
+    383          /** @} (end addtogroup emlib) */
+    384          
+    385          #endif /* defined(GPIO_COUNT) && (GPIO_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BUS_RegBitWrite
+       0   BUS_RegMaskedWrite
+       0   GPIO_DbgLocationSet
+       8   GPIO_EM4EnablePinWakeup
+      24   GPIO_ExtIntConfig
+         0   -> BUS_RegBitWrite
+        24   -> BUS_RegBitWrite
+        24   -> BUS_RegMaskedWrite
+       0   GPIO_PinModeGet
+      24   GPIO_PinModeSet
+         0   -> GPIO_PinOutClear
+        24   -> GPIO_PinOutClear
+         0   -> GPIO_PinOutSet
+        24   -> GPIO_PinOutSet
+       8   GPIO_PinOutClear
+       8   GPIO_PinOutSet
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      10  ?Subroutine0
+      14  ?Subroutine1
+      22  BUS_RegBitWrite
+      14  BUS_RegMaskedWrite
+       2  GPIO_DbgLocationSet
+      54  GPIO_EM4EnablePinWakeup
+      92  GPIO_ExtIntConfig
+      28  GPIO_PinModeGet
+      96  GPIO_PinModeSet
+      12  GPIO_PinOutClear
+      10  GPIO_PinOutSet
+
+ 
+ 398 bytes in section .text
+ 
+ 398 bytes of CODE memory
+
+Errors: none
+Warnings: none

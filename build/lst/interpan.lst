@@ -1,0 +1,2781 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:14
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\interpan\interpan.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWA9DD.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\interpan\interpan.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"interpan.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\interpan\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\interpan.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\interpan.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\interpan\interpan.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Generic code related to the receipt and processing of interpan
+      4           * messages.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     11           * software is governed by the terms of Silicon Labs Master Software License
+     12           * Agreement (MSLA) available at
+     13           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     14           * software is distributed to you in Source Code format and is governed by the
+     15           * sections of the MSLA applicable to Source Code.
+     16           *
+     17           ******************************************************************************/
+     18          
+     19          #include "app/framework/include/af.h"
+     20          #include "app/framework/util/util.h"
+     21          #include "interpan.h"
+     22          
+     23          //------------------------------------------------------------------------------
+     24          // Globals
+     25          
+     26          // Global enable. Defaults to true. User can set to false if s/he wishes.
+     27          // Example: user will set to false for SE 1.2 Comms Hub (GBCS)
+
+   \                                 In section .bss, align 1
+     28          static bool gInterpanEnabled;
+   \                     gInterpanEnabled:
+   \        0x0                      DS8 1
+     29          
+     30          // Global timeout value in seconds
+
+   \                                 In section .bss, align 2
+   \        0x0                      DS8 2
+     31          static uint16_t gMessageTimeout;
+     32          
+     33          // MAC frame control
+     34          // Bits:
+     35          // | 0-2   |   3      |    4    |  5  |  6    |   7-9    | 10-11 |  12-13   | 14-15 |
+     36          // | Frame | Security |  Frame  | Ack | Intra | Reserved | Dest. | Reserved | Src   |
+     37          // | Type  | Enabled  | Pending | Req | PAN   |          | Addr. |          | Adrr. |
+     38          // |       |          |         |     |       |          | Mode  |          | Mode  |
+     39          
+     40          // Frame Type
+     41          //   000       = Beacon
+     42          //   001       = Data
+     43          //   010       = Acknwoledgement
+     44          //   011       = MAC Command
+     45          //   100 - 111 = Reserved
+     46          
+     47          // Addressing Mode
+     48          //   00 - PAN ID and address field are not present
+     49          //   01 - Reserved
+     50          //   10 - Address field contains a 16-bit short address
+     51          //   11 - Address field contains a 64-bit extended address
+     52          
+     53          #define MAC_FRAME_TYPE_DATA           0x0001
+     54          
+     55          #define MAC_SOURCE_ADDRESS_MODE_SHORT 0x8000
+     56          #define MAC_SOURCE_ADDRESS_MODE_LONG  0xC000
+     57          
+     58          #define MAC_DEST_ADDRESS_MODE_SHORT   0x0800
+     59          #define MAC_DEST_ADDRESS_MODE_LONG    0x0C00
+     60          
+     61          // The two possible incoming MAC frame controls.
+     62          // Using short source address is not allowed.
+     63          #define SHORT_DEST_FRAME_CONTROL (MAC_FRAME_TYPE_DATA           \
+     64                                            | MAC_DEST_ADDRESS_MODE_SHORT \
+     65                                            | MAC_SOURCE_ADDRESS_MODE_LONG)
+     66          #define LONG_DEST_FRAME_CONTROL  (MAC_FRAME_TYPE_DATA          \
+     67                                            | MAC_DEST_ADDRESS_MODE_LONG \
+     68                                            | MAC_SOURCE_ADDRESS_MODE_LONG)
+     69          
+     70          #define MAC_ACK_REQUIRED              0x0020
+     71          
+     72          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_APS_ENCRYPTED_MESSAGES)
+     73            #define APS_ENCRYPTION_ALLOWED 1
+     74          #else
+     75            #define APS_ENCRYPTION_ALLOWED 0
+     76          #endif
+     77          
+     78          #define PRIMARY_ENDPOINT   0
+     79          #define ALL_ENDPOINTS      1
+     80          #define SPECIFIED_ENDPOINT 2
+     81          
+     82          #if defined(EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO)
+     83            #if EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO == PRIMARY_ENDPOINT
+     84              #define ENDPOINT emberAfPrimaryEndpoint()
+     85          
+     86            #elif EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO == ALL_ENDPOINTS
+     87              #define ENDPOINT EMBER_BROADCAST_ENDPOINT
+     88          
+     89            #elif EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO == SPECIFIED_ENDPOINT
+     90              #define ENDPOINT EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO_SPECIFIED_ENDPOINT_VALUE
+     91          
+     92            #else
+     93              #error Unknown value for interpan plugin option: EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO
+     94            #endif
+     95          #else
+     96            #error Invalid Interpan plugin Config: EMBER_AF_PLUGIN_INTERPAN_DELIVER_TO not defined.
+     97          #endif
+     98          
+     99          //------------------------------------------------------------------------------
+    100          // Forward Declarations
+    101          
+    102          static bool isMessageAllowed(EmberAfInterpanHeader *headerData,
+    103                                       uint8_t messageLength,
+    104                                       uint8_t *messageContents);
+    105          
+    106          #if defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_APP)
+    107          static void printMessage(EmberAfInterpanHeader *headerData);
+    108          #else
+    109            #define printMessage(x)
+    110          #endif
+    111          
+    112          #if !defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_APS_ENCRYPTED_MESSAGES)
+    113            #define handleApsSecurity(...) (EMBER_LIBRARY_NOT_PRESENT)
+    114          #endif
+    115          
+    116          #if !defined EMBER_AF_PLUGIN_INTERPAN_CUSTOM_FILTER
+    117            #define EMBER_AF_PLUGIN_INTERPAN_CUSTOM_FILTER
+    118          #endif
+    119          
+    120          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    121          EmberStatus interpanFragmentationSendUnicast(EmberAfInterpanHeader* header, uint8_t* message, uint16_t messageLen);
+    122          bool isInterpanFragment(uint8_t* payload, uint8_t payloadLen);
+    123          EmberStatus interpanFragmentationSendIpmf(txFragmentedInterpanPacket* txPacket);
+    124          EmberStatus interpanFragmentationProcessIpmf(EmberAfInterpanHeader header, uint8_t *message, uint8_t messageLen);
+    125          void interpanFragmentationSendIpmfResponse(EmberAfInterpanHeader header, uint8_t fragNum, uint8_t responseStatus);
+    126          void interpanFragmentationProcessIpmfResponse(EmberAfInterpanHeader header, uint8_t* payload, uint8_t payloadLen);
+    127          
+    128          static txFragmentedInterpanPacket txPackets[EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_OUTGOING_PACKETS];
+    129          static rxFragmentedInterpanPacket rxPackets[EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_INCOMING_PACKETS];
+    130          static txFragmentedInterpanPacket* getFreeTxPacketEntry(EmberEUI64 destinationEui);
+    131          static rxFragmentedInterpanPacket* getFreeRxPacketEntry(EmberEUI64 sourceEui);
+    132          static txFragmentedInterpanPacket* txPacketLookUp(EmberEUI64 destEui);
+    133          static rxFragmentedInterpanPacket* rxPacketLookUp(EmberEUI64 sourceEui);
+    134          static void freeTxPacketEntry(txFragmentedInterpanPacket *txPacket, EInterpanFragmentationStatus status);
+    135          static void freeRxPacketEntry(rxFragmentedInterpanPacket *rxPacket, EInterpanFragmentationStatus status);
+    136          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+    137          
+    138          // These have to stay outside the ifdef interpan frag check because AppBuilder
+    139          // generates code that calls them, which cannot be ifdeffed
+
+   \                                 In section .bss, align 4
+    140          EmberEventControl emberAfPluginInterpanFragmentTransmitEventControl;
+   \                     emberAfPluginInterpanFragmentTransmitEventControl:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+    141          EmberEventControl emberAfPluginInterpanFragmentReceiveEventControl;
+   \                     emberAfPluginInterpanFragmentReceiveEventControl:
+   \        0x0                      DS8 8
+    142          void emberAfPluginInterpanFragmentTransmitEventHandler(EmberEventControl *control);
+    143          void emberAfPluginInterpanFragmentReceiveEventHandler(EmberEventControl *control);
+    144          #define IPMF_MSG_TIMEOUT_MS       60 * 1000
+    145          
+    146          //------------------------------------------------------------------------------
+    147          
+    148          // Inter-PAN messages are a security risk because they are typically not
+    149          // encrypted and yet we must accept them.  Therefore, we are very strict about
+    150          // what we allow.  Listed below are ZCL messages that are allowed, including
+    151          // the profile, cluster, direction, and command id.  Any inter-PAN messages not
+    152          // matching one of these are dropped.
+    153          // If inter-PAN fragments (IPMF) are received, a different set of checks is
+    154          // performed.
+
+   \                                 In section .rodata, align 4
+    155          static const EmberAfAllowedInterPanMessage messages[] = {
+   \                     messages:
+   \        0x0   0xFFFF 0x0000      DC16 65535, 0
+   \        0x4   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    156            // A custom filter can be added using this #define.
+    157            // It should contain one or more 'EmberAfAllowedInterPanMessage' const structs
+    158            EMBER_AF_PLUGIN_INTERPAN_CUSTOM_FILTER
+    159          
+    160          #if defined (EMBER_AF_PLUGIN_INTERPAN_ALLOW_REQUIRED_SMART_ENERGY_MESSAGES)
+    161          
+    162          #ifdef ZCL_USING_PRICE_CLUSTER_SERVER
+    163            {
+    164              SE_PROFILE_ID,
+    165              ZCL_PRICE_CLUSTER_ID,
+    166              ZCL_GET_CURRENT_PRICE_COMMAND_ID,
+    167              EMBER_AF_INTERPAN_DIRECTION_CLIENT_TO_SERVER,
+    168            },
+    169            {
+    170              SE_PROFILE_ID,
+    171              ZCL_PRICE_CLUSTER_ID,
+    172              ZCL_GET_SCHEDULED_PRICES_COMMAND_ID,
+    173              EMBER_AF_INTERPAN_DIRECTION_CLIENT_TO_SERVER,
+    174            },
+    175          #endif
+    176          
+    177          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_REQUIRED_SMART_ENERGY_MESSAGES
+    178          
+    179          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_SMART_ENERGY_RESPONSE_MESSAGES)
+    180          
+    181          #ifdef ZCL_USING_PRICE_CLUSTER_CLIENT
+    182            {
+    183              SE_PROFILE_ID,
+    184              ZCL_PRICE_CLUSTER_ID,
+    185              ZCL_PUBLISH_PRICE_COMMAND_ID,
+    186              EMBER_AF_INTERPAN_DIRECTION_SERVER_TO_CLIENT,
+    187            },
+    188          #endif
+    189          #ifdef ZCL_USING_MESSAGING_CLUSTER_CLIENT
+    190            {
+    191              SE_PROFILE_ID,
+    192              ZCL_MESSAGING_CLUSTER_ID,
+    193              ZCL_DISPLAY_MESSAGE_COMMAND_ID,
+    194              EMBER_AF_INTERPAN_DIRECTION_SERVER_TO_CLIENT,
+    195            },
+    196            {
+    197              SE_PROFILE_ID,
+    198              ZCL_MESSAGING_CLUSTER_ID,
+    199              ZCL_CANCEL_MESSAGE_COMMAND_ID,
+    200              EMBER_AF_INTERPAN_DIRECTION_SERVER_TO_CLIENT,
+    201            },
+    202          #endif
+    203          
+    204          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_SMART_ENERGY_RESPONSE_MESSAGES
+    205          
+    206          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_KEY_ESTABLISHMENT)
+    207            // Since client and server share the same command ID's,
+    208            // we can get away with only listing the request messages.
+    209            {
+    210              SE_PROFILE_ID,
+    211              ZCL_KEY_ESTABLISHMENT_CLUSTER_ID,
+    212              ZCL_INITIATE_KEY_ESTABLISHMENT_REQUEST_COMMAND_ID,
+    213              EMBER_AF_INTERPAN_DIRECTION_BOTH,
+    214            },
+    215            {
+    216              SE_PROFILE_ID,
+    217              ZCL_KEY_ESTABLISHMENT_CLUSTER_ID,
+    218              ZCL_EPHEMERAL_DATA_RESPONSE_COMMAND_ID,
+    219              EMBER_AF_INTERPAN_DIRECTION_BOTH,
+    220            },
+    221            {
+    222              SE_PROFILE_ID,
+    223              ZCL_KEY_ESTABLISHMENT_CLUSTER_ID,
+    224              ZCL_CONFIRM_KEY_DATA_RESPONSE_COMMAND_ID,
+    225              EMBER_AF_INTERPAN_DIRECTION_BOTH,
+    226            },
+    227            {
+    228              SE_PROFILE_ID,
+    229              ZCL_KEY_ESTABLISHMENT_CLUSTER_ID,
+    230              ZCL_TERMINATE_KEY_ESTABLISHMENT_COMMAND_ID,
+    231              EMBER_AF_INTERPAN_DIRECTION_BOTH,
+    232            },
+    233            {
+    234              SE_PROFILE_ID,
+    235              ZCL_KEY_ESTABLISHMENT_CLUSTER_ID,
+    236              ZCL_DEFAULT_RESPONSE_COMMAND_ID,
+    237              EMBER_AF_INTERPAN_DIRECTION_CLIENT_TO_SERVER,
+    238            },
+    239          #endif // defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_KEY_ESTABLISHMENT)
+    240          
+    241            { 0xFFFF }, // terminator
+    242          };
+    243          
+    244          //#define ENCRYPT_DEBUG
+    245          
+    246          #if !defined(ENCRYPT_DEBUG)
+    247            #define printData(...)
+    248          #endif
+    249          
+    250          // Private ZLL API's
+    251          bool emAfPluginZllCommissioningClientInterpanPreMessageReceivedCallback(const EmberAfInterpanHeader *header,
+    252                                                                                  uint8_t msgLen,
+    253                                                                                  uint8_t *message);
+    254          bool emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback(const EmberAfInterpanHeader *header,
+    255                                                                                  uint8_t msgLen,
+    256                                                                                  uint8_t *message);
+    257          
+    258          //------------------------------------------------------------------------------
+    259          
+
+   \                                 In section .text, align 2, keep-with-next
+    260          void interpanPluginInit()
+    261          {
+    262            gInterpanEnabled = true;
+   \                     interpanPluginInit: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....'....        LDR.W    R1,??DataTable7
+   \        0x6   0x7008             STRB     R0,[R1, #+0]
+    263            gMessageTimeout  = IPMF_MSG_TIMEOUT_MS;
+    264          
+    265          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    266            uint8_t i;
+    267            // The following two loops need adjustment if more than one packet is desired
+    268            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_OUTGOING_PACKETS; i++) {
+    269              txPackets[i].messageType  = UNUSED_TX_PACKET_ENTRY;
+    270              txPackets[i].eventControl = &emberAfPluginInterpanFragmentTransmitEventControl;
+    271            }
+    272            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_INCOMING_PACKETS; i++) {
+    273              MEMSET(rxPackets[i].sourceEui, 0, EUI64_SIZE);
+    274              rxPackets[i].eventControl = &emberAfPluginInterpanFragmentReceiveEventControl;
+    275            }
+    276          #endif //EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+    277          }
+   \        0x8   0x4770             BX       LR               ;; return
+    278          
+    279          // This function sets the global state of inter-PAN. If state is true, inter-PAN
+    280          // messages are sent and received, else, all inter-PANs are dropped.
+
+   \                                 In section .text, align 2, keep-with-next
+    281          void emAfPluginInterpanSetEnableState(bool enable)
+    282          {
+    283            if (gInterpanEnabled != enable) {
+   \                     emAfPluginInterpanSetEnableState: (+1)
+   \        0x0   0x....'....        LDR.W    R1,??DataTable7
+   \        0x4   0x780A             LDRB     R2,[R1, #+0]
+   \        0x6   0x4282             CMP      R2,R0
+   \        0x8   0xBF1C             ITT      NE 
+    284              gInterpanEnabled = enable;
+   \        0xA   0x7008             STRBNE   R0,[R1, #+0]
+    285              interpanPluginSetMacMatchFilterEnable(enable);
+   \        0xC   0x....'....        BNE.W    interpanPluginSetMacMatchFilterEnable
+    286            }
+    287          }
+   \       0x10   0x4770             BX       LR               ;; return
+    288          
+    289          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    290          // This is a helper function for testing purposes only. It changes the inter-PAN
+    291          // fragment message timeout
+    292          void interpanPluginSetFragmentMessageTimeout(uint16_t timeout)  // seconds
+    293          {
+    294            uint16_t timeoutMs = timeout * 1000;
+    295            if (gMessageTimeout != timeoutMs) {
+    296              gMessageTimeout = timeoutMs;
+    297              emberAfAppPrintln("IPMF message timeout changed to %d seconds", timeout);
+    298            }
+    299          }
+    300          #endif //EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+    301          
+    302          #if defined(ENCRYPT_DEBUG)
+    303          
+    304          static void printData(const char * name, uint8_t* message, uint8_t length)
+    305          {
+    306            uint8_t i;
+    307            emberAfAppPrint("\n%p: ", name);
+    308            for (i = 0; i < length; i++) {
+    309              emberAfAppPrint("%X ", message[i]);
+    310              emberAfAppFlush();
+    311            }
+    312            emberAfAppPrintln("");
+    313            emberAfAppFlush();
+    314          }
+    315          
+    316          #endif
+    317          
+
+   \                                 In section .text, align 2, keep-with-next
+    318          static uint8_t* pushInt16u(uint8_t *finger, uint16_t value)
+    319          {
+    320            *finger++ = LOW_BYTE(value);
+   \                     pushInt16u: (+1)
+   \        0x0   0x7001             STRB     R1,[R0, #+0]
+    321            *finger++ = HIGH_BYTE(value);
+   \        0x2   0x0A09             LSRS     R1,R1,#+8
+   \        0x4   0x7041             STRB     R1,[R0, #+1]
+    322            return finger;
+   \        0x6   0x1C80             ADDS     R0,R0,#+2
+   \        0x8   0x4770             BX       LR               ;; return
+    323          }
+    324          
+
+   \                                 In section .text, align 2, keep-with-next
+    325          static uint8_t* pushEui64(uint8_t *finger, uint8_t *value)
+    326          {
+   \                     pushEui64: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    327            MEMMOVE(finger, value, 8);
+   \        0x4   0x2208             MOVS     R2,#+8
+   \        0x6   0x....'....        BL       halCommonMemMove
+    328            return finger + 8;
+   \        0xA   0xF104 0x0008      ADD      R0,R4,#+8
+   \        0xE   0xBD10             POP      {R4,PC}          ;; return
+    329          }
+    330          
+    331          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_APS_ENCRYPTED_MESSAGES)
+    332          
+    333          static EmberStatus handleApsSecurity(bool encrypt,
+    334                                               uint8_t* apsFrame,
+    335                                               uint8_t apsHeaderLength,
+    336                                               uint8_t* messageLength,
+    337                                               uint8_t maxLengthForEncryption,
+    338                                               EmberAfInterpanHeader* header)
+    339          {
+    340            uint8_t keyIndex;
+    341            EmberStatus status;
+    342          
+    343            if (!(header->options & EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS)) {
+    344              // We won't encrypt/decrypt messages that don't have a long address.
+    345              return EMBER_APS_ENCRYPTION_ERROR;
+    346            }
+    347            keyIndex = emberFindKeyTableEntry(header->longAddress,
+    348                                              true);  // link key? (vs. master key)
+    349            if (keyIndex == 0xFF) {
+    350              return EMBER_APS_ENCRYPTION_ERROR;
+    351            }
+    352          
+    353            if (encrypt
+    354                && ((maxLengthForEncryption - *messageLength)
+    355                    < INTERPAN_APS_ENCRYPTION_OVERHEAD)) {
+    356              return EMBER_APS_ENCRYPTION_ERROR;
+    357            }
+    358          
+    359            apsFrame[0] |= INTERPAN_APS_FRAME_SECURITY;
+    360          
+    361            status = emAfInterpanApsCryptMessage(encrypt,
+    362                                                 apsFrame,
+    363                                                 messageLength,
+    364                                                 apsHeaderLength,
+    365                                                 header->longAddress);
+    366            return status;
+    367          }
+    368          #endif
+    369          
+
+   \                                 In section .text, align 2, keep-with-next
+    370          static EmberStatus makeInterPanMessage(EmberAfInterpanHeader *headerData,
+    371                                                 uint8_t *message,
+    372                                                 uint16_t maxLength,
+    373                                                 uint8_t *payload,
+    374                                                 uint16_t *payloadLength,
+    375                                                 uint16_t *returnLength)
+    376          {
+   \                     makeInterPanMessage: (+1)
+   \        0x0   0xE92D 0x41FF      PUSH     {R0-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    377            uint8_t *finger = message;
+    378            bool haveLongAddress = (headerData->options
+    379                                    & EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS);
+    380            uint16_t macFrameControl = (haveLongAddress
+    381                                        ? LONG_DEST_FRAME_CONTROL
+    382                                        : SHORT_DEST_FRAME_CONTROL);
+   \        0x6   0x7D20             LDRB     R0,[R4, #+20]
+   \        0x8   0x460F             MOV      R7,R1
+    383          
+    384            EmberEUI64 eui;
+    385            uint8_t* apsFrame;
+    386          
+    387            uint8_t headerSize = (EMBER_AF_INTER_PAN_UNICAST == headerData->messageType)
+    388                                 ? INTERPAN_UNICAST_HEADER_SIZE
+    389                                 : INTERPAN_MULTICAST_HEADER_SIZE;
+   \        0xA   0x9E0A             LDR      R6,[SP, #+40]
+   \        0xC   0x0781             LSLS     R1,R0,#+30
+   \        0xE   0x7820             LDRB     R0,[R4, #+0]
+   \       0x10   0x461D             MOV      R5,R3
+   \       0x12   0xBF4C             ITE      MI 
+   \       0x14   0xF64C 0x4801      MOVWMI   R8,#+52225
+   \       0x18   0xF64C 0x0801      MOVWPL   R8,#+51201
+   \       0x1C   0x2800             CMP      R0,#+0
+    390          
+    391            if (maxLength < (headerSize + *payloadLength)) {
+   \       0x1E   0x8833             LDRH     R3,[R6, #+0]
+   \       0x20   0xBF0C             ITE      EQ 
+   \       0x22   0x211E             MOVEQ    R1,#+30
+   \       0x24   0x2120             MOVNE    R1,#+32
+   \       0x26   0xEB03 0x0C01      ADD      R12,R3,R1
+   \       0x2A   0x4562             CMP      R2,R12
+   \       0x2C   0xDA08             BGE.N    ??makeInterPanMessage_0
+    392              emberAfAppPrint("Error: Inter-pan message too big (%d + %d > %d)",
+    393                              headerSize, *payloadLength,
+    394                              maxLength);
+   \       0x2E   0x9200             STR      R2,[SP, #+0]
+   \       0x30   0x460A             MOV      R2,R1
+   \       0x32   0x....'....        LDR.W    R1,??DataTable7_1
+   \       0x36   0x2002             MOVS     R0,#+2
+   \       0x38   0x....'....        BL       emberAfPrint
+    395              return EMBER_MESSAGE_TOO_LONG;
+   \       0x3C   0x2074             MOVS     R0,#+116
+   \       0x3E   0xE045             B.N      ??makeInterPanMessage_1
+    396            }
+    397          
+    398            if (headerData->messageType == EMBER_AF_INTER_PAN_UNICAST) {
+   \                     ??makeInterPanMessage_0: (+1)
+   \       0x40   0xB908             CBNZ.N   R0,??makeInterPanMessage_2
+    399              macFrameControl |= MAC_ACK_REQUIRED;
+   \       0x42   0xF048 0x0820      ORR      R8,R8,#0x20
+    400            }
+    401          
+    402            emberAfGetEui64(eui);
+   \                     ??makeInterPanMessage_2: (+1)
+   \       0x46   0xA801             ADD      R0,SP,#+4
+   \       0x48   0x....'....        BL       emberAfGetEui64
+    403          
+    404            finger = pushInt16u(finger, macFrameControl);
+   \       0x4C   0x4641             MOV      R1,R8
+   \       0x4E   0x4638             MOV      R0,R7
+   \       0x50   0x....'....        BL       pushInt16u
+    405            finger++;  // Skip Sequence number, stack sets the sequence number.
+    406          
+    407            finger = pushInt16u(finger, headerData->panId);
+   \       0x54   0x89A1             LDRH     R1,[R4, #+12]
+   \       0x56   0x1C40             ADDS     R0,R0,#+1
+   \       0x58   0x....'....        BL       pushInt16u
+    408            if (headerData->options & EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS) {
+   \       0x5C   0x7D21             LDRB     R1,[R4, #+20]
+   \       0x5E   0x078A             LSLS     R2,R1,#+30
+   \       0x60   0xD503             BPL.N    ??makeInterPanMessage_3
+    409              finger = pushEui64(finger, headerData->longAddress);
+   \       0x62   0x1C61             ADDS     R1,R4,#+1
+   \       0x64   0x....'....        BL       pushEui64
+   \       0x68   0xE002             B.N      ??makeInterPanMessage_4
+    410            } else {
+    411              finger = pushInt16u(finger, headerData->shortAddress);
+   \                     ??makeInterPanMessage_3: (+1)
+   \       0x6A   0x8961             LDRH     R1,[R4, #+10]
+   \       0x6C   0x....'....        BL       pushInt16u
+   \                     ??makeInterPanMessage_4: (+1)
+   \       0x70   0x4680             MOV      R8,R0
+    412            }
+    413          
+    414            finger = pushInt16u(finger, emberAfGetPanId());
+   \       0x72   0x....'....        BL       emberAfGetPanId
+   \       0x76   0x4601             MOV      R1,R0
+   \       0x78   0x4640             MOV      R0,R8
+   \       0x7A   0x....'....        BL       pushInt16u
+    415            finger = pushEui64(finger, eui);
+   \       0x7E   0xA901             ADD      R1,SP,#+4
+   \       0x80   0x....'....        BL       pushEui64
+    416          
+    417            finger = pushInt16u(finger, STUB_NWK_FRAME_CONTROL);
+   \       0x84   0x210B             MOVS     R1,#+11
+   \       0x86   0x....'....        BL       pushInt16u
+    418          
+    419            apsFrame = finger;
+    420            *finger++ = (headerData->messageType
+    421                         | INTERPAN_APS_FRAME_TYPE);
+   \       0x8A   0x7821             LDRB     R1,[R4, #+0]
+   \       0x8C   0xF041 0x0103      ORR      R1,R1,#0x3
+   \       0x90   0xF800 0x1B01      STRB     R1,[R0], #+1
+    422          
+    423            if (headerData->messageType == EMBER_AF_INTER_PAN_MULTICAST) {
+   \       0x94   0x7822             LDRB     R2,[R4, #+0]
+   \       0x96   0x2A0C             CMP      R2,#+12
+   \       0x98   0xBF04             ITT      EQ 
+    424              finger = pushInt16u(finger, headerData->groupId);
+   \       0x9A   0x8A61             LDRHEQ   R1,[R4, #+18]
+   \       0x9C   0x....'....        BLEQ     pushInt16u
+    425            }
+    426          
+    427            finger = pushInt16u(finger, headerData->clusterId);
+   \       0xA0   0x8A21             LDRH     R1,[R4, #+16]
+   \       0xA2   0x....'....        BL       pushInt16u
+    428            finger = pushInt16u(finger, headerData->profileId);
+   \       0xA6   0x89E1             LDRH     R1,[R4, #+14]
+   \       0xA8   0x....'....        BL       pushInt16u
+    429          
+    430            uint8_t UNUSED apsHeaderLength = finger - apsFrame;
+    431          
+    432            MEMMOVE(finger, payload, *payloadLength);
+   \       0xAC   0x8832             LDRH     R2,[R6, #+0]
+   \       0xAE   0x4680             MOV      R8,R0
+   \       0xB0   0x4629             MOV      R1,R5
+   \       0xB2   0x....'....        BL       halCommonMemMove
+    433            finger += *payloadLength;
+    434          
+    435            if (headerData->options & EMBER_AF_INTERPAN_OPTION_APS_ENCRYPT) {
+   \       0xB6   0x7D20             LDRB     R0,[R4, #+20]
+   \       0xB8   0x07C1             LSLS     R1,R0,#+31
+   \       0xBA   0xBF48             IT       MI 
+   \       0xBC   0x20B7             MOVMI    R0,#+183
+    436              EmberStatus status;
+    437              if (!APS_ENCRYPTION_ALLOWED) {
+    438                return EMBER_SECURITY_CONFIGURATION_INVALID;
+   \       0xBE   0xD405             BMI.N    ??makeInterPanMessage_1
+    439              }
+    440              uint8_t apsEncryptLength = finger - apsFrame;
+                             ^
+Warning[Pe185]: dynamic initialization in unreachable code
+
+    uint8_t UNUSED apsHeaderLength = finger - apsFrame;
+                   ^
+"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\interpan\interpan.c",430  Warning[Pe177]: 
+          variable "apsHeaderLength" was declared but never referenced
+    441          
+    442              printData("Before Encryption", apsFrame, apsEncryptLength);
+    443          
+    444              status = handleApsSecurity(true,  // encrypt?
+    445                                         apsFrame,
+    446                                         apsHeaderLength,
+    447                                         &apsEncryptLength,
+    448                                         maxLength - (uint8_t)(apsFrame - message),
+    449                                         headerData);
+    450              if (status != EMBER_SUCCESS) {
+    451                return status;
+    452              }
+    453          
+    454              printData("After Encryption ", apsFrame, apsEncryptLength);
+    455          
+    456              finger = apsFrame + apsEncryptLength;
+    457            }
+    458          
+    459            *returnLength = finger - message;
+   \       0xC0   0x8831             LDRH     R1,[R6, #+0]
+   \       0xC2   0x980B             LDR      R0,[SP, #+44]
+   \       0xC4   0x4441             ADD      R1,R8,R1
+   \       0xC6   0x1BCF             SUBS     R7,R1,R7
+   \       0xC8   0x8007             STRH     R7,[R0, #+0]
+    460          
+    461            return EMBER_SUCCESS;
+   \       0xCA   0x2000             MOVS     R0,#+0
+   \                     ??makeInterPanMessage_1: (+1)
+   \       0xCC   0xB004             ADD      SP,SP,#+16
+   \       0xCE   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    462          }
+    463          
+
+   \                                 In section .text, align 2, keep-with-next
+    464          static uint8_t parseInterpanMessage(uint8_t *message,
+    465                                              uint8_t *messageLength,
+    466                                              EmberAfInterpanHeader *headerData)
+    467          {
+   \                     parseInterpanMessage: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460E             MOV      R6,R1
+   \        0x6   0x4615             MOV      R5,R2
+    468            uint8_t *finger = message;
+    469            uint16_t macFrameControl;
+    470            uint8_t remainingLength;
+    471            uint8_t apsFrameControl;
+    472            uint8_t apsHeaderIndex;
+    473          
+    474            MEMSET(headerData, 0, sizeof(EmberAfInterpanHeader));
+   \        0x8   0x2216             MOVS     R2,#+22
+   \        0xA   0x2100             MOVS     R1,#+0
+   \        0xC   0x4628             MOV      R0,R5
+   \        0xE   0x....'....        BL       halCommonMemSet
+    475          
+    476            // We rely on the stack to insure that the MAC frame is formatted
+    477            // correctly and that the length is at least long enough
+    478            // to contain that frame.
+    479          
+    480            macFrameControl = HIGH_LOW_TO_INT(finger[1], finger[0])
+    481                              & ~(MAC_ACK_REQUIRED);
+   \       0x12   0x7862             LDRB     R2,[R4, #+1]
+   \       0x14   0x7821             LDRB     R1,[R4, #+0]
+   \       0x16   0xF64F 0x70DF      MOVW     R0,#+65503
+   \       0x1A   0xEB01 0x2102      ADD      R1,R1,R2, LSL #+8
+    482          
+    483            if (macFrameControl == LONG_DEST_FRAME_CONTROL) {
+   \       0x1E   0xF64C 0x4201      MOVW     R2,#+52225
+   \       0x22   0x4001             ANDS     R1,R0,R1
+   \       0x24   0x4291             CMP      R1,R2
+   \       0x26   0xD11A             BNE.N    ??parseInterpanMessage_0
+    484              // control, sequence, dest PAN ID, long dest
+    485              finger += 2 + 1 + 2 + 8;
+   \       0x28   0xF104 0x000D      ADD      R0,R4,#+13
+    486            } else if (macFrameControl == SHORT_DEST_FRAME_CONTROL) {
+    487              // control, sequence, dest PAN ID, short dest
+    488              finger += 2 + 1 + 2 + 2;
+    489            } else {
+    490              return 0;
+    491            }
+    492          
+    493            // Source PAN ID
+    494            headerData->panId = HIGH_LOW_TO_INT(finger[1], finger[0]);
+   \                     ??parseInterpanMessage_1: (+1)
+   \       0x2C   0x7841             LDRB     R1,[R0, #+1]
+   \       0x2E   0x7802             LDRB     R2,[R0, #+0]
+    495            finger += 2;
+   \       0x30   0x1C87             ADDS     R7,R0,#+2
+    496          
+    497            // It is expected that the long Source Address is always present and
+    498            // that the stack MAC filters insured that to be the case.
+    499            headerData->options |= EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS;
+   \       0x32   0x8AA8             LDRH     R0,[R5, #+20]
+   \       0x34   0xEB02 0x2201      ADD      R2,R2,R1, LSL #+8
+    500            MEMMOVE(headerData->longAddress, finger, 8);
+   \       0x38   0x4639             MOV      R1,R7
+   \       0x3A   0xF040 0x0002      ORR      R0,R0,#0x2
+   \       0x3E   0x81AA             STRH     R2,[R5, #+12]
+   \       0x40   0x82A8             STRH     R0,[R5, #+20]
+   \       0x42   0x2208             MOVS     R2,#+8
+   \       0x44   0x1C68             ADDS     R0,R5,#+1
+   \       0x46   0x....'....        BL       halCommonMemMove
+    501            finger += 8;
+   \       0x4A   0xF107 0x0108      ADD      R1,R7,#+8
+    502          
+    503            // Now that we know the correct MAC length, verify the interpan
+    504            // frame is the correct length.
+    505          
+    506            remainingLength = *messageLength - (uint8_t)(finger - message);
+   \       0x4E   0x7830             LDRB     R0,[R6, #+0]
+   \       0x50   0x1B0A             SUBS     R2,R1,R4
+   \       0x52   0xB2D2             UXTB     R2,R2
+   \       0x54   0x1A82             SUBS     R2,R0,R2
+    507          
+    508            if (remainingLength < (STUB_NWK_SIZE + MIN_STUB_APS_SIZE)) {
+   \       0x56   0xB2D0             UXTB     R0,R2
+   \       0x58   0x2807             CMP      R0,#+7
+   \       0x5A   0xDA06             BGE.N    ??parseInterpanMessage_2
+    509              return 0;
+   \       0x5C   0xE045             B.N      ??parseInterpanMessage_3
+    510            }
+   \                     ??parseInterpanMessage_0: (+1)
+   \       0x5E   0xF64C 0x0001      MOVW     R0,#+51201
+   \       0x62   0x4281             CMP      R1,R0
+   \       0x64   0xD141             BNE.N    ??parseInterpanMessage_3
+   \       0x66   0x1DE0             ADDS     R0,R4,#+7
+   \       0x68   0xE7E0             B.N      ??parseInterpanMessage_1
+    511          
+    512            if (HIGH_LOW_TO_INT(finger[1], finger[0]) != STUB_NWK_FRAME_CONTROL) {
+   \                     ??parseInterpanMessage_2: (+1)
+   \       0x6A   0x784B             LDRB     R3,[R1, #+1]
+   \       0x6C   0x7808             LDRB     R0,[R1, #+0]
+   \       0x6E   0xEB00 0x2303      ADD      R3,R0,R3, LSL #+8
+   \       0x72   0x2B0B             CMP      R3,#+11
+   \       0x74   0xD139             BNE.N    ??parseInterpanMessage_3
+    513              return 0;
+    514            }
+    515            finger += 2;
+    516            apsHeaderIndex = (finger - message);
+    517            remainingLength -= 2;
+    518          
+    519            apsFrameControl = (*finger++);
+   \       0x76   0x788B             LDRB     R3,[R1, #+2]
+   \       0x78   0x1CC9             ADDS     R1,R1,#+3
+   \       0x7A   0x1E96             SUBS     R6,R2,#+2
+    520          
+    521            if ((apsFrameControl & ~(INTERPAN_APS_FRAME_DELIVERY_MODE_MASK)
+    522                 &~INTERPAN_APS_FRAME_SECURITY)
+    523                != INTERPAN_APS_FRAME_CONTROL_NO_DELIVERY_MODE) {
+   \       0x7C   0xF023 0x002C      BIC      R0,R3,#0x2C
+   \       0x80   0x2803             CMP      R0,#+3
+   \       0x82   0xB2F6             UXTB     R6,R6
+   \       0x84   0x....'....        LDR.W    R2,??DataTable7_2
+   \       0x88   0xBF18             IT       NE 
+   \       0x8A   0x....'....        LDRNE.W  R1,??DataTable7_3
+    524              emberAfAppPrintln("%pBad APS frame control 0x%X",
+    525                                "ERR: Inter-PAN ",
+    526                                apsFrameControl);
+   \       0x8E   0xD129             BNE.N    ??parseInterpanMessage_4
+    527              return 0;
+    528            }
+    529            headerData->messageType = (apsFrameControl
+    530                                       & INTERPAN_APS_FRAME_DELIVERY_MODE_MASK);
+   \       0x90   0xF013 0x000C      ANDS     R0,R3,#0xC
+   \       0x94   0x7028             STRB     R0,[R5, #+0]
+    531          
+    532            switch (headerData->messageType) {
+   \       0x96   0xBF18             IT       NE 
+   \       0x98   0x2808             CMPNE    R0,#+8
+   \       0x9A   0xD002             BEQ.N    ??parseInterpanMessage_5
+   \       0x9C   0x280C             CMP      R0,#+12
+   \       0x9E   0xD003             BEQ.N    ??parseInterpanMessage_6
+   \       0xA0   0xE01E             B.N      ??parseInterpanMessage_7
+    533              case EMBER_AF_INTER_PAN_UNICAST:
+    534              case EMBER_AF_INTER_PAN_BROADCAST:
+    535                // Broadcast and unicast have the same size messages
+    536                if (remainingLength < INTERPAN_APS_UNICAST_SIZE) {
+   \                     ??parseInterpanMessage_5: (+1)
+   \       0xA2   0x2E05             CMP      R6,#+5
+   \       0xA4   0xDA08             BGE.N    ??parseInterpanMessage_8
+    537                  return 0;
+   \       0xA6   0xE020             B.N      ??parseInterpanMessage_3
+    538                }
+    539                break;
+    540              case EMBER_AF_INTER_PAN_MULTICAST:
+    541                if (remainingLength < INTERPAN_APS_MULTICAST_SIZE) {
+   \                     ??parseInterpanMessage_6: (+1)
+   \       0xA8   0x2E07             CMP      R6,#+7
+   \       0xAA   0xDB1E             BLT.N    ??parseInterpanMessage_3
+    542                  return 0;
+    543                }
+    544                headerData->groupId = HIGH_LOW_TO_INT(finger[1], finger[0]);
+   \       0xAC   0x7848             LDRB     R0,[R1, #+1]
+   \       0xAE   0xF811 0x6B02      LDRB     R6,[R1], #+2
+   \       0xB2   0xEB06 0x2600      ADD      R6,R6,R0, LSL #+8
+   \       0xB6   0x826E             STRH     R6,[R5, #+18]
+    545                finger += 2;
+    546                break;
+    547              default:
+    548                emberAfAppPrintln("%pBad Delivery Mode 0x%X",
+    549                                  "ERR: Inter-PAN ",
+    550                                  headerData->messageType);
+    551                return 0;
+    552            }
+    553          
+    554            headerData->clusterId = HIGH_LOW_TO_INT(finger[1], finger[0]);
+   \                     ??parseInterpanMessage_8: (+1)
+   \       0xB8   0x7848             LDRB     R0,[R1, #+1]
+   \       0xBA   0x780E             LDRB     R6,[R1, #+0]
+   \       0xBC   0xEB06 0x2600      ADD      R6,R6,R0, LSL #+8
+    555            finger += 2;
+   \       0xC0   0x1C88             ADDS     R0,R1,#+2
+   \       0xC2   0x822E             STRH     R6,[R5, #+16]
+    556            headerData->profileId = HIGH_LOW_TO_INT(finger[1], finger[0]);
+   \       0xC4   0x7841             LDRB     R1,[R0, #+1]
+   \       0xC6   0x7806             LDRB     R6,[R0, #+0]
+   \       0xC8   0xEB06 0x2601      ADD      R6,R6,R1, LSL #+8
+    557            finger += 2;
+    558          
+    559            if (apsFrameControl & INTERPAN_APS_FRAME_SECURITY) {
+   \       0xCC   0x0699             LSLS     R1,R3,#+26
+   \       0xCE   0x81EE             STRH     R6,[R5, #+14]
+   \       0xD0   0xD50D             BPL.N    ??parseInterpanMessage_9
+    560              EmberStatus status;
+    561              uint8_t apsEncryptLength = *messageLength - apsHeaderIndex;
+    562              uint8_t UNUSED apsHeaderLength = (uint8_t)(finger - message) - apsHeaderIndex;
+                                    ^
+Warning[Pe177]: variable "apsHeaderLength" was declared but never referenced
+
+  static uint16_t gMessageTimeout;
+                  ^
+"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\interpan\interpan.c",31  Warning[Pe550]: 
+          variable "gMessageTimeout" was set but never used
+    563              headerData->options |= EMBER_AF_INTERPAN_OPTION_APS_ENCRYPT;
+   \       0xD2   0x8AA8             LDRH     R0,[R5, #+20]
+    564          
+    565              printData("Before Decryption",
+    566                        message + apsHeaderIndex,
+    567                        apsEncryptLength);
+    568          
+    569              status = handleApsSecurity(false,   // encrypt?
+    570                                         message + apsHeaderIndex,
+    571                                         apsHeaderLength,
+    572                                         &apsEncryptLength,
+    573                                         0,       // maxLengthForEncryption (ignored)
+    574                                         headerData);
+    575          
+    576              if (status != EMBER_SUCCESS) {
+    577                emberAfAppPrintln("%pAPS decryption failed (0x%X).",
+    578                                  "ERR: Inter-PAN ",
+    579                                  status);
+   \       0xD4   0x23B5             MOVS     R3,#+181
+   \       0xD6   0x....             LDR.N    R1,??DataTable7_4
+   \       0xD8   0xF040 0x0001      ORR      R0,R0,#0x1
+   \       0xDC   0x82A8             STRH     R0,[R5, #+20]
+   \       0xDE   0xE001             B.N      ??parseInterpanMessage_4
+    580                return 0;
+    581              }
+    582          
+    583              printData("After Decryption ",
+    584                        message + apsHeaderIndex,
+    585                        apsEncryptLength);
+    586          
+    587              *messageLength = apsHeaderIndex + apsEncryptLength;
+    588            }
+   \                     ??parseInterpanMessage_7: (+1)
+   \       0xE0   0x4603             MOV      R3,R0
+   \       0xE2   0x....             LDR.N    R1,??DataTable7_5
+   \                     ??parseInterpanMessage_4: (+1)
+   \       0xE4   0x2002             MOVS     R0,#+2
+   \       0xE6   0x....'....        BL       emberAfPrintln
+   \                     ??parseInterpanMessage_3: (+1)
+   \       0xEA   0x2000             MOVS     R0,#+0
+   \       0xEC   0xBDF2             POP      {R1,R4-R7,PC}
+    589          
+    590            return (finger - message);
+   \                     ??parseInterpanMessage_9: (+1)
+   \       0xEE   0x1C80             ADDS     R0,R0,#+2
+   \       0xF0   0x1B04             SUBS     R4,R0,R4
+   \       0xF2   0xB2E0             UXTB     R0,R4
+   \       0xF4   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    591          }
+    592          
+
+   \                                 In section .text, align 2, keep-with-next
+    593          bool emAfPluginInterpanProcessMessage(uint8_t messageLength,
+    594                                                uint8_t *messageContents)
+    595          {
+   \                     emAfPluginInterpanProcessMessage: (+1)
+   \        0x0   0xB571             PUSH     {R0,R4-R6,LR}
+   \        0x2   0xB08B             SUB      SP,SP,#+44
+   \        0x4   0x460E             MOV      R6,R1
+    596            EmberApsFrame apsFrame;
+    597            EmberIncomingMessageType type;
+    598            bool loopback;
+    599            EmberAfInterpanHeader headerData;
+    600            uint8_t payloadOffset, payloadLength;
+    601            uint8_t* payload;
+    602          
+    603            emberAfDebugPrintln("emAfPluginInterpanProcessMessage");
+    604            payloadOffset = parseInterpanMessage(messageContents,
+    605                                                 &messageLength,
+    606                                                 &headerData);
+   \        0x6   0xAA02             ADD      R2,SP,#+8
+   \        0x8   0xA90B             ADD      R1,SP,#+44
+   \        0xA   0x4630             MOV      R0,R6
+   \        0xC   0x....'....        BL       parseInterpanMessage
+   \       0x10   0x0004             MOVS     R4,R0
+    607            if (payloadOffset == 0) {
+   \       0x12   0xD07D             BEQ.N    ??emAfPluginInterpanProcessMessage_0
+    608              return false;
+    609            }
+    610            printMessage(&headerData);
+   \       0x14   0xA802             ADD      R0,SP,#+8
+   \       0x16   0x....'....        BL       printMessage
+    611          
+    612            payload = messageContents + payloadOffset;
+    613            payloadLength = messageLength - payloadOffset;
+   \       0x1A   0xF89D 0x502C      LDRB     R5,[SP, #+44]
+    614          
+    615            if (emberAfPluginInterpanPreMessageReceivedCallback(&headerData,
+    616                                                                payloadLength,
+    617                                                                payload)
+    618          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    619                || emAfPluginZllCommissioningClientInterpanPreMessageReceivedCallback(&headerData,
+    620                                                                                      payloadLength,
+    621                                                                                      payload)
+    622          #endif
+    623          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER
+    624                || emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback(&headerData,
+    625                                                                                      payloadLength,
+    626                                                                                      payload)
+    627          #endif
+    628                ) {
+   \       0x1E   0xA802             ADD      R0,SP,#+8
+   \       0x20   0x1B2D             SUBS     R5,R5,R4
+   \       0x22   0x4434             ADD      R4,R6,R4
+   \       0x24   0x4622             MOV      R2,R4
+   \       0x26   0xB2E9             UXTB     R1,R5
+   \       0x28   0x....'....        BL       emberAfPluginInterpanPreMessageReceivedCallback
+   \       0x2C   0xB980             CBNZ.N   R0,??emAfPluginInterpanProcessMessage_1
+   \       0x2E   0x4622             MOV      R2,R4
+   \       0x30   0xB2E9             UXTB     R1,R5
+   \       0x32   0xA802             ADD      R0,SP,#+8
+   \       0x34   0x....'....        BL       emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback
+   \       0x38   0xB950             CBNZ.N   R0,??emAfPluginInterpanProcessMessage_1
+    629              return true;
+    630            }
+    631          #if defined(EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT) || defined(EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER)
+    632            else if (headerData.profileId == EMBER_ZLL_PROFILE_ID
+    633                     && headerData.clusterId == ZCL_ZLL_COMMISSIONING_CLUSTER_ID) {
+   \       0x3A   0xF8BD 0x0016      LDRH     R0,[SP, #+22]
+   \       0x3E   0xF24C 0x015E      MOVW     R1,#+49246
+   \       0x42   0x4288             CMP      R0,R1
+   \       0x44   0xBF04             ITT      EQ 
+   \       0x46   0xF8BD 0x0018      LDRHEQ   R0,[SP, #+24]
+   \       0x4A   0xF5B0 0x5F80      CMPEQ    R0,#+4096
+   \       0x4E   0xD101             BNE.N    ??emAfPluginInterpanProcessMessage_2
+    634              // Drop any other ZLL commissioning interpans, if they get this far.
+    635              emberAfDebugPrintln("Interpan - dropping unhandled interpans");
+    636              return true;
+   \                     ??emAfPluginInterpanProcessMessage_1: (+1)
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0xE051             B.N      ??emAfPluginInterpanProcessMessage_3
+    637            }
+    638          #endif
+    639          
+    640            if (!isMessageAllowed(&headerData, payloadLength, payload)) {
+   \                     ??emAfPluginInterpanProcessMessage_2: (+1)
+   \       0x54   0x4622             MOV      R2,R4
+   \       0x56   0xB2E9             UXTB     R1,R5
+   \       0x58   0xA802             ADD      R0,SP,#+8
+   \       0x5A   0x....'....        BL       isMessageAllowed
+   \       0x5E   0x2800             CMP      R0,#+0
+   \       0x60   0xD056             BEQ.N    ??emAfPluginInterpanProcessMessage_0
+    641              return false;
+    642            }
+    643          
+    644            if (headerData.options & EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS) {
+   \       0x62   0xF89D 0x001C      LDRB     R0,[SP, #+28]
+   \       0x66   0x0781             LSLS     R1,R0,#+30
+   \       0x68   0xD50D             BPL.N    ??emAfPluginInterpanProcessMessage_4
+    645              headerData.shortAddress = EMBER_NULL_NODE_ID;
+   \       0x6A   0xF64F 0x70FF      MOVW     R0,#+65535
+   \       0x6E   0xF8AD 0x0012      STRH     R0,[SP, #+18]
+    646              loopback = emberIsLocalEui64(headerData.longAddress);
+   \       0x72   0x2208             MOVS     R2,#+8
+   \       0x74   0x....             LDR.N    R1,??DataTable7_6
+   \       0x76   0xF10D 0x0009      ADD      R0,SP,#+9
+   \       0x7A   0x....'....        BL       halCommonMemCompare
+   \       0x7E   0x1E41             SUBS     R1,R0,#+1
+   \       0x80   0x4189             SBCS     R1,R1,R1
+   \       0x82   0x0FC9             LSRS     R1,R1,#+31
+   \       0x84   0xE007             B.N      ??emAfPluginInterpanProcessMessage_5
+    647            } else {
+    648              loopback = (emberAfGetNodeId() == headerData.shortAddress);
+   \                     ??emAfPluginInterpanProcessMessage_4: (+1)
+   \       0x86   0x....'....        BL       emberAfGetNodeId
+   \       0x8A   0xF8BD 0x1012      LDRH     R1,[SP, #+18]
+   \       0x8E   0x4288             CMP      R0,R1
+   \       0x90   0xBF0C             ITE      EQ 
+   \       0x92   0x2101             MOVEQ    R1,#+1
+   \       0x94   0x2100             MOVNE    R1,#+0
+    649            }
+    650          
+    651            apsFrame.profileId = headerData.profileId;
+   \                     ??emAfPluginInterpanProcessMessage_5: (+1)
+   \       0x96   0xF8BD 0x0016      LDRH     R0,[SP, #+22]
+    652            apsFrame.clusterId = headerData.clusterId;
+   \       0x9A   0xF8BD 0x2018      LDRH     R2,[SP, #+24]
+    653            apsFrame.sourceEndpoint = 1;   // arbitrary since not sent over-the-air
+   \       0x9E   0x2301             MOVS     R3,#+1
+   \       0xA0   0xF8AD 0x0020      STRH     R0,[SP, #+32]
+   \       0xA4   0xF8AD 0x2022      STRH     R2,[SP, #+34]
+    654            apsFrame.destinationEndpoint = ENDPOINT;
+   \       0xA8   0x....             LDR.N    R0,??DataTable7_7
+   \       0xAA   0x7802             LDRB     R2,[R0, #+0]
+    655            apsFrame.options = (EMBER_APS_OPTION_NONE
+    656                                | ((headerData.options
+    657                                    & EMBER_AF_INTERPAN_OPTION_APS_ENCRYPT)
+    658                                   ? EMBER_APS_OPTION_ENCRYPTION
+    659                                   : 0));
+   \       0xAC   0xF89D 0x001C      LDRB     R0,[SP, #+28]
+   \       0xB0   0xF88D 0x3024      STRB     R3,[SP, #+36]
+   \       0xB4   0xF88D 0x2025      STRB     R2,[SP, #+37]
+   \       0xB8   0x07C2             LSLS     R2,R0,#+31
+    660            apsFrame.groupId = headerData.groupId;
+   \       0xBA   0xF8BD 0x201A      LDRH     R2,[SP, #+26]
+   \       0xBE   0xBF4C             ITE      MI 
+   \       0xC0   0x2020             MOVMI    R0,#+32
+   \       0xC2   0x2000             MOVPL    R0,#+0
+   \       0xC4   0xF8AD 0x0026      STRH     R0,[SP, #+38]
+    661            apsFrame.sequence = 0x00; // unknown sequence number
+    662          
+    663            switch (headerData.messageType) {
+   \       0xC8   0xF89D 0x0008      LDRB     R0,[SP, #+8]
+   \       0xCC   0x2300             MOVS     R3,#+0
+   \       0xCE   0xF8AD 0x2028      STRH     R2,[SP, #+40]
+   \       0xD2   0xF88D 0x302A      STRB     R3,[SP, #+42]
+   \       0xD6   0xB120             CBZ.N    R0,??emAfPluginInterpanProcessMessage_6
+   \       0xD8   0x2808             CMP      R0,#+8
+   \       0xDA   0xD00F             BEQ.N    ??emAfPluginInterpanProcessMessage_7
+   \       0xDC   0x280C             CMP      R0,#+12
+   \       0xDE   0xD012             BEQ.N    ??emAfPluginInterpanProcessMessage_8
+   \       0xE0   0xE016             B.N      ??emAfPluginInterpanProcessMessage_0
+    664              case EMBER_AF_INTER_PAN_UNICAST:
+    665                type = EMBER_INCOMING_UNICAST;
+   \                     ??emAfPluginInterpanProcessMessage_6: (+1)
+   \       0xE2   0x2100             MOVS     R1,#+0
+    666                break;
+    667              case EMBER_AF_INTER_PAN_BROADCAST:
+    668                type = (loopback
+    669                        ? EMBER_INCOMING_BROADCAST_LOOPBACK
+    670                        : EMBER_INCOMING_BROADCAST);
+    671                break;
+    672              case EMBER_AF_INTER_PAN_MULTICAST:
+    673                type = (loopback
+    674                        ? EMBER_INCOMING_MULTICAST_LOOPBACK
+    675                        : EMBER_INCOMING_MULTICAST);
+    676                break;
+    677              default:
+    678                return false;
+    679            }
+    680          
+    681          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    682            // If interpan fragment, intercept
+    683            if (SE_PROFILE_ID == headerData.profileId) {
+    684              if (isInterpanFragment(payload, payloadLength)) {
+    685                uint8_t fragNum = payload[INTERPAN_FRAGMENTATION_APS_INDEX_IPMF_INDEX];
+    686          
+    687                switch (payload[INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_INDEX]) {
+    688                  case INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_IPMF_VAL:
+    689                  {
+    690                    EmberStatus status = interpanFragmentationProcessIpmf(headerData,
+    691                                                                          messageContents,
+    692                                                                          messageLength);
+    693                    interpanFragmentationSendIpmfResponse(headerData,
+    694                                                          fragNum,
+    695                                                          EMBER_SUCCESS == status
+    696                                                          ? INTERPAN_IPMF_RESPONSE_SUCCESS
+    697                                                          : INTERPAN_IPMF_RESPONSE_FAILURE);
+    698                  }
+    699                  break;
+    700                  case INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_IPMF_RESPONSE_VAL:
+    701                  {
+    702                    // This function will also send the next fragment if response is OK
+    703                    interpanFragmentationProcessIpmfResponse(headerData,
+    704                                                             payload,
+    705                                                             payloadLength);
+    706                  }
+    707                  break;
+    708                  default:
+    709                    break;
+    710                }
+    711          
+    712                // All inter-PAN fragments are consumed
+    713                return true;
+    714              }
+    715            }
+    716          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+    717          
+    718            return emberAfProcessMessage(&apsFrame,
+    719                                         type,
+    720                                         payload,
+    721                                         payloadLength,
+    722                                         headerData.shortAddress,
+    723                                         &headerData);
+   \                     ??emAfPluginInterpanProcessMessage_9: (+1)
+   \       0xE4   0xF8BD 0x2012      LDRH     R2,[SP, #+18]
+   \       0xE8   0xA802             ADD      R0,SP,#+8
+   \       0xEA   0x9001             STR      R0,[SP, #+4]
+   \       0xEC   0x9200             STR      R2,[SP, #+0]
+   \       0xEE   0xB2EB             UXTB     R3,R5
+   \       0xF0   0x4622             MOV      R2,R4
+   \       0xF2   0xA808             ADD      R0,SP,#+32
+   \       0xF4   0x....'....        BL       emberAfProcessMessage
+   \                     ??emAfPluginInterpanProcessMessage_3: (+1)
+   \       0xF8   0xB00C             ADD      SP,SP,#+48
+   \       0xFA   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??emAfPluginInterpanProcessMessage_7: (+1)
+   \       0xFC   0x2900             CMP      R1,#+0
+   \       0xFE   0xBF0C             ITE      EQ 
+   \      0x100   0x2104             MOVEQ    R1,#+4
+   \      0x102   0x2105             MOVNE    R1,#+5
+   \      0x104   0xE7EE             B.N      ??emAfPluginInterpanProcessMessage_9
+   \                     ??emAfPluginInterpanProcessMessage_8: (+1)
+   \      0x106   0x2900             CMP      R1,#+0
+   \      0x108   0xBF0C             ITE      EQ 
+   \      0x10A   0x2102             MOVEQ    R1,#+2
+   \      0x10C   0x2103             MOVNE    R1,#+3
+   \      0x10E   0xE7E9             B.N      ??emAfPluginInterpanProcessMessage_9
+   \                     ??emAfPluginInterpanProcessMessage_0: (+1)
+   \      0x110   0x2000             MOVS     R0,#+0
+   \      0x112   0xE7F1             B.N      ??emAfPluginInterpanProcessMessage_3
+    724          }
+    725          
+
+   \                                 In section .text, align 2, keep-with-next
+    726          static bool isMessageAllowed(EmberAfInterpanHeader *headerData,
+    727                                       uint8_t messageLength,
+    728                                       uint8_t *messageContents)
+    729          {
+   \                     isMessageAllowed: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x4614             MOV      R4,R2
+    730            uint8_t incomingMessageOptions = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x4603             MOV      R3,R0
+    731            uint8_t commandId;
+    732            uint8_t i;
+    733          
+    734            if (messageLength < EMBER_AF_ZCL_OVERHEAD) {
+   \        0x8   0x....             LDR.N    R2,??DataTable7_2
+   \        0xA   0x2902             CMP      R1,#+2
+   \        0xC   0xDC07             BGT.N    ??isMessageAllowed_0
+    735              emberAfAppPrintln("%pmessage too short (%d < %d)!",
+    736                                "ERR: Inter-PAN ",
+    737                                messageLength,
+    738                                EMBER_AF_ZCL_OVERHEAD);
+   \        0xE   0x2303             MOVS     R3,#+3
+   \       0x10   0x9300             STR      R3,[SP, #+0]
+   \       0x12   0x460B             MOV      R3,R1
+   \       0x14   0x....             LDR.N    R1,??DataTable7_8
+   \       0x16   0x2002             MOVS     R0,#+2
+   \       0x18   0x....'....        BL       emberAfPrintln
+    739              return false;
+   \       0x1C   0xE045             B.N      ??isMessageAllowed_1
+    740            }
+    741          
+    742            if (headerData->options & EMBER_AF_INTERPAN_OPTION_APS_ENCRYPT) {
+   \                     ??isMessageAllowed_0: (+1)
+   \       0x1E   0x7D18             LDRB     R0,[R3, #+20]
+   \       0x20   0x07C6             LSLS     R6,R0,#+31
+   \       0x22   0xD442             BMI.N    ??isMessageAllowed_1
+    743              return APS_ENCRYPTION_ALLOWED;
+    744            }
+    745          
+    746            // Only the first bit is used for ZCL Frame type
+    747            if (messageContents[0] & BIT(1)) {
+   \       0x24   0x7826             LDRB     R6,[R4, #+0]
+   \       0x26   0x07B0             LSLS     R0,R6,#+30
+   \       0x28   0xD503             BPL.N    ??isMessageAllowed_2
+    748              emberAfAppPrintln("%pUnsupported ZCL frame type.",
+    749                                "ERR: Inter-PAN ");
+   \       0x2A   0x....             LDR.N    R1,??DataTable7_9
+   \       0x2C   0x....'....        BL       ?Subroutine1
+    750              return false;
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x30   0xE03B             B.N      ??isMessageAllowed_1
+    751            }
+    752          
+    753            if (messageContents[0] & ZCL_MANUFACTURER_SPECIFIC_MASK) {
+   \                     ??isMessageAllowed_2: (+1)
+   \       0x32   0xF016 0x0004      ANDS     R0,R6,#0x4
+   \       0x36   0xBF18             IT       NE 
+   \       0x38   0x2508             MOVNE    R5,#+8
+    754              incomingMessageOptions |= EMBER_AF_INTERPAN_MANUFACTURER_SPECIFIC;
+    755            }
+    756            if ((messageContents[0] & ZCL_CLUSTER_SPECIFIC_COMMAND)
+    757                == ZCL_GLOBAL_COMMAND) {
+   \       0x3A   0x07F7             LSLS     R7,R6,#+31
+   \       0x3C   0xBF58             IT       PL 
+   \       0x3E   0xF045 0x0504      ORRPL    R5,R5,#0x4
+    758              incomingMessageOptions |= EMBER_AF_INTERPAN_GLOBAL_COMMAND;
+    759            }
+    760          
+    761            incomingMessageOptions |= ((messageContents[0] & ZCL_FRAME_CONTROL_DIRECTION_MASK)
+    762                                       ? EMBER_AF_INTERPAN_DIRECTION_SERVER_TO_CLIENT
+    763                                       : EMBER_AF_INTERPAN_DIRECTION_CLIENT_TO_SERVER);
+   \       0x42   0x0736             LSLS     R6,R6,#+28
+   \       0x44   0xBF4C             ITE      MI 
+   \       0x46   0x2602             MOVMI    R6,#+2
+   \       0x48   0x2601             MOVPL    R6,#+1
+   \       0x4A   0x4335             ORRS     R5,R6,R5
+    764            if (messageContents[0] & ZCL_MANUFACTURER_SPECIFIC_MASK) {
+   \       0x4C   0xB138             CBZ.N    R0,??isMessageAllowed_3
+    765              if (messageLength < EMBER_AF_ZCL_MANUFACTURER_SPECIFIC_OVERHEAD) {
+   \       0x4E   0x2904             CMP      R1,#+4
+   \       0x50   0xDC03             BGT.N    ??isMessageAllowed_4
+    766                emberAfAppPrintln("%pmessage too short!", "ERR: Inter-PAN ");
+   \       0x52   0x....             LDR.N    R1,??DataTable7_10
+   \       0x54   0x....'....        BL       ?Subroutine1
+    767                return false;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x58   0xE027             B.N      ??isMessageAllowed_1
+    768              }
+    769              commandId = messageContents[4];
+   \                     ??isMessageAllowed_4: (+1)
+   \       0x5A   0x7921             LDRB     R1,[R4, #+4]
+   \       0x5C   0xE000             B.N      ??isMessageAllowed_5
+    770            } else {
+    771              commandId = messageContents[2];
+   \                     ??isMessageAllowed_3: (+1)
+   \       0x5E   0x78A1             LDRB     R1,[R4, #+2]
+    772            }
+    773          
+    774          #if defined (EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    775            // If interpan fragmentation is enabled, we allow all messages of
+    776            // SE profile ID, appropriate control byte value, and appropriate lengths
+    777            if ((headerData->profileId == SE_PROFILE_ID)
+    778                && isInterpanFragment(messageContents, messageLength)) {
+    779              return true;
+    780            }
+    781          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+    782          
+    783            i = 0;
+   \                     ??isMessageAllowed_5: (+1)
+   \       0x60   0x2400             MOVS     R4,#+0
+   \       0x62   0x89D8             LDRH     R0,[R3, #+14]
+   \       0x64   0xE001             B.N      ??isMessageAllowed_6
+    784            while (messages[i].profileId != 0xFFFF) {
+    785              if (messages[i].profileId == headerData->profileId
+    786                  && messages[i].clusterId == headerData->clusterId
+    787                  && messages[i].commandId == commandId
+    788                  // Here we only check if the direction is allowed
+    789                  && (messages[i].options & incomingMessageOptions)) {
+    790                return true;
+    791              }
+    792              i++;
+   \                     ??isMessageAllowed_7: (+1)
+   \       0x66   0x1C64             ADDS     R4,R4,#+1
+   \       0x68   0xB2E4             UXTB     R4,R4
+   \                     ??isMessageAllowed_6: (+1)
+   \       0x6A   0x2706             MOVS     R7,#+6
+   \       0x6C   0x4367             MULS     R7,R7,R4
+   \       0x6E   0x....             LDR.N    R6,??DataTable7_11
+   \       0x70   0xF64F 0x7CFF      MOVW     R12,#+65535
+   \       0x74   0x443E             ADD      R6,R6,R7
+   \       0x76   0x8837             LDRH     R7,[R6, #+0]
+   \       0x78   0x4567             CMP      R7,R12
+   \       0x7A   0xD00E             BEQ.N    ??isMessageAllowed_8
+   \       0x7C   0x4287             CMP      R7,R0
+   \       0x7E   0xBF02             ITTT     EQ 
+   \       0x80   0x8877             LDRHEQ   R7,[R6, #+2]
+   \       0x82   0xF8B3 0xC010      LDRHEQ   R12,[R3, #+16]
+   \       0x86   0x4567             CMPEQ    R7,R12
+   \       0x88   0xBF04             ITT      EQ 
+   \       0x8A   0x7937             LDRBEQ   R7,[R6, #+4]
+   \       0x8C   0x428F             CMPEQ    R7,R1
+   \       0x8E   0xD1EA             BNE.N    ??isMessageAllowed_7
+   \       0x90   0x7976             LDRB     R6,[R6, #+5]
+   \       0x92   0x422E             TST      R6,R5
+   \       0x94   0xD0E7             BEQ.N    ??isMessageAllowed_7
+   \       0x96   0x2001             MOVS     R0,#+1
+   \       0x98   0xBDFE             POP      {R1-R7,PC}
+    793            }
+    794          
+    795            emberAfAppPrintln("%pprofile 0x%2x, cluster 0x%2x, command 0x%x not permitted",
+    796                              "ERR: Inter-PAN ",
+    797                              headerData->profileId,
+    798                              headerData->clusterId,
+    799                              commandId);
+   \                     ??isMessageAllowed_8: (+1)
+   \       0x9A   0x9101             STR      R1,[SP, #+4]
+   \       0x9C   0x8A19             LDRH     R1,[R3, #+16]
+   \       0x9E   0x4603             MOV      R3,R0
+   \       0xA0   0x2002             MOVS     R0,#+2
+   \       0xA2   0x9100             STR      R1,[SP, #+0]
+   \       0xA4   0x....             LDR.N    R1,??DataTable7_12
+   \       0xA6   0x....'....        BL       emberAfPrintln
+    800            return false;
+   \                     ??isMessageAllowed_1: (+1)
+   \       0xAA   0x2000             MOVS     R0,#+0
+   \       0xAC   0xBDFE             POP      {R1-R7,PC}       ;; return
+    801          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....'....        B.W      emberAfPrintln
+    802          
+    803          #if defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_APP)
+    804          
+
+   \                                 In section .text, align 2, keep-with-next
+    805          static void printMessage(EmberAfInterpanHeader *headerData)
+    806          {
+   \                     printMessage: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    807            emberAfAppPrint("RX inter-PAN message (");
+   \        0x4   0x....             LDR.N    R1,??DataTable7_13
+   \        0x6   0x2002             MOVS     R0,#+2
+   \        0x8   0x....'....        BL       emberAfPrint
+    808            if (headerData->messageType == EMBER_AF_INTER_PAN_UNICAST) {
+   \        0xC   0x7820             LDRB     R0,[R4, #+0]
+   \        0xE   0xB908             CBNZ.N   R0,??printMessage_0
+    809              emberAfAppPrint("uni");
+   \       0x10   0x....             LDR.N    R1,??DataTable7_14
+   \       0x12   0xE006             B.N      ??printMessage_1
+    810            } else if (headerData->messageType == EMBER_AF_INTER_PAN_BROADCAST) {
+   \                     ??printMessage_0: (+1)
+   \       0x14   0x2808             CMP      R0,#+8
+   \       0x16   0xBF08             IT       EQ 
+   \       0x18   0x....             LDREQ.N  R1,??DataTable7_15
+    811              emberAfAppPrint("broad");
+   \       0x1A   0xD002             BEQ.N    ??printMessage_1
+    812            } else if (headerData->messageType == EMBER_AF_INTER_PAN_MULTICAST) {
+   \       0x1C   0x280C             CMP      R0,#+12
+   \       0x1E   0xD103             BNE.N    ??printMessage_2
+    813              emberAfAppPrint("multi");
+   \       0x20   0x....             LDR.N    R1,??DataTable7_16
+   \                     ??printMessage_1: (+1)
+   \       0x22   0x2002             MOVS     R0,#+2
+   \       0x24   0x....'....        BL       emberAfPrint
+    814            }
+    815            emberAfAppPrintln("cast):");
+   \                     ??printMessage_2: (+1)
+   \       0x28   0x....             LDR.N    R1,??DataTable7_17
+   \       0x2A   0x....'....        BL       ??Subroutine2_0
+    816            emberAfAppFlush();
+    817            emberAfAppPrintln("  src pan id: 0x%2x", headerData->panId);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x2E   0x89A2             LDRH     R2,[R4, #+12]
+   \       0x30   0x....             LDR.N    R1,??DataTable7_18
+   \       0x32   0x....'....        BL       ?Subroutine1
+    818            if (headerData->options & EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS) {
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x36   0x7D20             LDRB     R0,[R4, #+20]
+   \       0x38   0x....             LDR.N    R5,??DataTable7_19
+   \       0x3A   0x0781             LSLS     R1,R0,#+30
+   \       0x3C   0xD509             BPL.N    ??printMessage_3
+    819              emberAfAppPrint("  src long id: ");
+   \       0x3E   0x....             LDR.N    R1,??DataTable7_20
+   \       0x40   0x2002             MOVS     R0,#+2
+   \       0x42   0x....'....        BL       emberAfPrint
+    820              emberAfPrintBigEndianEui64(headerData->longAddress);
+   \       0x46   0x1C60             ADDS     R0,R4,#+1
+   \       0x48   0x....'....        BL       emberAfPrintBigEndianEui64
+    821              emberAfAppPrintln("");
+   \       0x4C   0x....'....        BL       ?Subroutine2
+    822            } else {
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x50   0xE003             B.N      ??CrossCallReturnLabel_2
+    823              emberAfAppPrintln("  src short id: 0x%2x", headerData->shortAddress);
+   \                     ??printMessage_3: (+1)
+   \       0x52   0x8962             LDRH     R2,[R4, #+10]
+   \       0x54   0x....             LDR.N    R1,??DataTable7_21
+   \       0x56   0x....'....        BL       ?Subroutine1
+    824            }
+    825            emberAfAppFlush();
+    826            emberAfAppPrintln("  profile id: 0x%2x", headerData->profileId);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x5A   0x89E2             LDRH     R2,[R4, #+14]
+   \       0x5C   0x....             LDR.N    R1,??DataTable7_22
+   \       0x5E   0x....'....        BL       ?Subroutine1
+    827            emberAfAppPrint("  cluster id: 0x%2x ", headerData->clusterId);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x62   0x8A22             LDRH     R2,[R4, #+16]
+   \       0x64   0x....             LDR.N    R1,??DataTable7_23
+   \       0x66   0x2002             MOVS     R0,#+2
+   \       0x68   0x....'....        BL       emberAfPrint
+    828            emberAfAppDebugExec(emberAfDecodeAndPrintClusterWithMfgCode(headerData->clusterId, emberAfGetMfgCodeFromCurrentCommand()));
+   \       0x6C   0x2002             MOVS     R0,#+2
+   \       0x6E   0x....'....        BL       emberAfPrintEnabled
+   \       0x72   0xB128             CBZ.N    R0,??printMessage_4
+   \       0x74   0x....'....        BL       emberAfGetMfgCodeFromCurrentCommand
+   \       0x78   0x4601             MOV      R1,R0
+   \       0x7A   0x8A20             LDRH     R0,[R4, #+16]
+   \       0x7C   0x....'....        BL       emberAfDecodeAndPrintClusterWithMfgCode
+    829            emberAfAppPrintln("");
+   \                     ??printMessage_4: (+1)
+   \       0x80   0x....'....        BL       ?Subroutine2
+    830            if (headerData->messageType == EMBER_AF_INTER_PAN_MULTICAST) {
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x84   0x7820             LDRB     R0,[R4, #+0]
+   \       0x86   0x280C             CMP      R0,#+12
+   \       0x88   0xD106             BNE.N    ??printMessage_5
+    831              emberAfAppPrintln("  group id: 0x%2x", headerData->groupId);
+   \       0x8A   0x8A62             LDRH     R2,[R4, #+18]
+   \       0x8C   0x....             LDR.N    R1,??DataTable7_24
+   \       0x8E   0x2002             MOVS     R0,#+2
+   \       0x90   0xE8BD 0x4038      POP      {R3-R5,LR}
+   \       0x94   0x....'....        B.W      emberAfPrintln
+    832            }
+    833            emberAfAppFlush();
+    834          }
+   \                     ??printMessage_5: (+1)
+   \       0x98   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4629             MOV      R1,R5
+   \                     ??Subroutine2_0: (+1)
+   \        0x2   0x2002             MOVS     R0,#+2
+   \        0x4   0x....'....        B.W      emberAfPrintln
+    835          
+    836          #endif //defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_APP)
+    837          
+
+   \                                 In section .text, align 2, keep-with-next
+    838          EmberStatus emberAfInterpanSendMessageCallback(EmberAfInterpanHeader* header,
+    839                                                         uint16_t messageLength,
+    840                                                         uint8_t* messageBytes)
+    841          {
+   \                     emberAfInterpanSendMessageCallback: (+1)
+   \        0x0   0xB533             PUSH     {R0,R1,R4,R5,LR}
+   \        0x2   0xB0A3             SUB      SP,SP,#+140
+    842            EmberStatus status;
+    843            uint8_t message[EMBER_AF_MAXIMUM_INTERPAN_LENGTH];
+    844            uint16_t maxLen;
+    845            uint8_t headerSize = EMBER_AF_INTER_PAN_UNICAST == header->messageType
+    846                                 ? INTERPAN_UNICAST_HEADER_SIZE
+    847                                 : INTERPAN_MULTICAST_HEADER_SIZE;
+   \        0x4   0x7801             LDRB     R1,[R0, #+0]
+    848          
+    849            if (!gInterpanEnabled) {
+   \        0x6   0x....             LDR.N    R3,??DataTable7
+   \        0x8   0x4614             MOV      R4,R2
+   \        0xA   0x2900             CMP      R1,#+0
+   \        0xC   0x7819             LDRB     R1,[R3, #+0]
+   \        0xE   0xBF0C             ITE      EQ 
+   \       0x10   0x221E             MOVEQ    R2,#+30
+   \       0x12   0x2220             MOVNE    R2,#+32
+   \       0x14   0xB909             CBNZ.N   R1,??emberAfInterpanSendMessageCallback_0
+    850              return EMBER_INVALID_CALL;
+   \       0x16   0x2070             MOVS     R0,#+112
+   \       0x18   0xE02C             B.N      ??emberAfInterpanSendMessageCallback_1
+    851            }
+    852          
+    853            if ((headerSize + messageLength) <= EMBER_AF_MAXIMUM_INTERPAN_LENGTH) {
+   \                     ??emberAfInterpanSendMessageCallback_0: (+1)
+   \       0x1A   0xF8BD 0x1090      LDRH     R1,[SP, #+144]
+   \       0x1E   0x188A             ADDS     R2,R1,R2
+   \       0x20   0x2A7E             CMP      R2,#+126
+   \       0x22   0xDA29             BGE.N    ??emberAfInterpanSendMessageCallback_2
+    854              status = makeInterPanMessage(header,
+    855                                           message,
+    856                                           EMBER_AF_MAXIMUM_INTERPAN_LENGTH,
+    857                                           messageBytes,
+    858                                           &messageLength,
+    859                                           &maxLen);
+   \       0x24   0xAB24             ADD      R3,SP,#+144
+   \       0x26   0xAD02             ADD      R5,SP,#+8
+   \       0x28   0x9300             STR      R3,[SP, #+0]
+   \       0x2A   0x9501             STR      R5,[SP, #+4]
+   \       0x2C   0x4623             MOV      R3,R4
+   \       0x2E   0x227D             MOVS     R2,#+125
+   \       0x30   0xA903             ADD      R1,SP,#+12
+   \       0x32   0x....'....        BL       makeInterPanMessage
+    860              if (status == EMBER_SUCCESS) {
+   \       0x36   0x0001             MOVS     R1,R0
+   \       0x38   0xD105             BNE.N    ??emberAfInterpanSendMessageCallback_3
+    861                status = emAfPluginInterpanSendRawMessage((uint8_t)maxLen, message);
+   \       0x3A   0xF8BD 0x0008      LDRH     R0,[SP, #+8]
+   \       0x3E   0xA903             ADD      R1,SP,#+12
+   \       0x40   0xB2C0             UXTB     R0,R0
+   \       0x42   0x....'....        BL       emAfPluginInterpanSendRawMessage
+    862              }
+    863            }
+    864          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    865            else if ((headerSize + messageLength)
+    866                     <= EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_BUFFER_SIZE) {
+    867              if (EMBER_AF_INTER_PAN_UNICAST != header->messageType) {
+    868                return EMBER_INVALID_CALL;
+    869              }
+    870          
+    871              status = interpanFragmentationSendUnicast(header,
+    872                                                        messageBytes,
+    873                                                        messageLength);
+    874            }
+    875          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+    876            else {
+    877              return EMBER_MESSAGE_TOO_LONG;
+    878            }
+    879          
+    880            if (status != EMBER_SUCCESS) {
+   \                     ??emberAfInterpanSendMessageCallback_3: (+1)
+   \       0x46   0x0001             MOVS     R1,R0
+   \       0x48   0xD114             BNE.N    ??emberAfInterpanSendMessageCallback_1
+    881              return status;
+    882            }
+    883          
+    884            emberAfAppPrint("T%4x:Inter-PAN TX (%d) [",
+    885                            emberAfGetCurrentTime(),
+    886                            messageLength);
+   \       0x4A   0x....'....        BL       emberAfGetCurrentTime
+   \       0x4E   0xF8BD 0x3090      LDRH     R3,[SP, #+144]
+   \       0x52   0x4602             MOV      R2,R0
+   \       0x54   0x....             LDR.N    R1,??DataTable7_25
+   \       0x56   0x2002             MOVS     R0,#+2
+   \       0x58   0x....'....        BL       emberAfPrint
+    887            emberAfAppPrintBuffer(messageBytes, messageLength, true);
+   \       0x5C   0xF8BD 0x2090      LDRH     R2,[SP, #+144]
+   \       0x60   0x2301             MOVS     R3,#+1
+   \       0x62   0x4621             MOV      R1,R4
+   \       0x64   0x2002             MOVS     R0,#+2
+   \       0x66   0x....'....        BL       emberAfPrintBuffer
+    888            emberAfAppPrintln("], 0x%x", status);
+   \       0x6A   0x2200             MOVS     R2,#+0
+   \       0x6C   0x....             LDR.N    R1,??DataTable7_26
+   \       0x6E   0x....'....        BL       ?Subroutine1
+    889            emberAfAppFlush();
+    890          
+    891            return status;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x72   0x2000             MOVS     R0,#+0
+   \                     ??emberAfInterpanSendMessageCallback_1: (+1)
+   \       0x74   0xB025             ADD      SP,SP,#+148
+   \       0x76   0xBD30             POP      {R4,R5,PC}       ;; return
+   \                     ??emberAfInterpanSendMessageCallback_2: (+1)
+   \       0x78   0x2074             MOVS     R0,#+116
+   \       0x7A   0xE7FB             B.N      ??emberAfInterpanSendMessageCallback_1
+    892          }
+    893          
+    894          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+    895          
+    896          // This function checks if packet is an inter-PAN fragment. It must do length
+    897          // checks as well since ZCL default responses come in with APS payload byte 1
+    898          // 0x00, which is also an inter-PAN IPMF control byte value.
+    899          bool isInterpanFragment(uint8_t* payload, uint8_t payloadLen)
+    900          {
+    901            if (!payload || (payloadLen < EMBER_APS_INTERPAN_FRAGMENT_MIN_LEN)) {
+    902              return false;
+    903            }
+    904          
+    905            switch (payload[INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_INDEX]) {
+    906              case INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_IPMF_VAL:
+    907              {
+    908                if ((payloadLen >= EMBER_APS_INTERPAN_FRAGMENTATION_OVERHEAD)
+    909                    && (payload[INTERPAN_FRAGMENTATION_APS_LEN_IPMF_INDEX]
+    910                        == (payloadLen - EMBER_APS_INTERPAN_FRAGMENTATION_OVERHEAD))) {
+    911                  return true;
+    912                }
+    913              }
+    914              break;
+    915              case INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_IPMF_RESPONSE_VAL:
+    916              {
+    917                if (EMBER_APS_INTERPAN_FRAGMENTATION_RESPONSE_LEN == payloadLen) {
+    918                  return true;
+    919                }
+    920              }
+    921              break;
+    922              default:
+    923                break;
+    924            }
+    925          
+    926            return false;
+    927          }
+    928          
+    929          // Helper function to find a free buffer used to store a message sent via frags
+    930          static txFragmentedInterpanPacket* getFreeTxPacketEntry(EmberEUI64 destEui)
+    931          {
+    932            uint8_t i;
+    933          
+    934            if (!destEui) {
+    935              return NULL;
+    936            }
+    937          
+    938            // Interpan fragmentation cannot handle sending mutliple fragmented
+    939            // transmissions to the same partner due to the lack of APS ACKS with sequence
+    940            // numbers. Ensure that we're not in the middle of sending to partner already
+    941            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_OUTGOING_PACKETS; i++) {
+    942              txFragmentedInterpanPacket *txPacket = &(txPackets[i]);
+    943              if (txPacket->messageType != UNUSED_TX_PACKET_ENTRY) {
+    944                if (!MEMCOMPARE(txPacket->destEui, destEui, EUI64_SIZE)) {
+    945                  return NULL;
+    946                }
+    947              }
+    948            }
+    949          
+    950            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_OUTGOING_PACKETS; i++) {
+    951              txFragmentedInterpanPacket *txPacket = &(txPackets[i]);
+    952              if (txPacket->messageType == UNUSED_TX_PACKET_ENTRY) {
+    953                MEMCOPY(txPacket->destEui, destEui, EUI64_SIZE);
+    954                return txPacket;
+    955              }
+    956            }
+    957            return NULL;
+    958          }
+    959          
+    960          // Helper function to free a buffer used to store a message sent via frags
+    961          static void freeTxPacketEntry(txFragmentedInterpanPacket *txPacket, EInterpanFragmentationStatus reason)
+    962          {
+    963            if (!txPacket) {
+    964              return;
+    965            }
+    966            txPacket->messageType = UNUSED_TX_PACKET_ENTRY;
+    967          
+    968            if (IPMF_SUCCESS != reason) {
+    969              // User callback: something went wrong
+    970              emberAfPluginInterpanFragmentTransmissionFailedCallback(reason,
+    971                                                                      txPacket->fragmentNum);
+    972            }
+    973          }
+    974          
+    975          // Helper function to find an existing buffer used to store a msg sent via frags
+    976          static txFragmentedInterpanPacket* txPacketLookUp(EmberEUI64 destEui)
+    977          {
+    978            uint8_t i;
+    979            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_OUTGOING_PACKETS; i++) {
+    980              txFragmentedInterpanPacket *txPacket = &(txPackets[i]);
+    981              if (!MEMCOMPARE(txPacket->destEui, destEui, EUI64_SIZE)) {
+    982                return txPacket;
+    983              }
+    984            }
+    985            return NULL;
+    986          }
+    987          
+    988          // Helper function to find a free buffer used to store a message rcvd via frags
+    989          static rxFragmentedInterpanPacket* getFreeRxPacketEntry(EmberEUI64 sourceEui)
+    990          {
+    991            uint8_t i;
+    992            EmberEUI64 nullEui = { 0 };
+    993            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_INCOMING_PACKETS; i++) {
+    994              rxFragmentedInterpanPacket *rxPacket = &(rxPackets[i]);
+    995              if (!MEMCOMPARE(rxPacket->sourceEui, nullEui, EUI64_SIZE)) {
+    996                MEMCOPY(rxPacket->sourceEui, sourceEui, EUI64_SIZE);
+    997                return rxPacket;
+    998              }
+    999            }
+   1000            return NULL;
+   1001          }
+   1002          
+   1003          // Helper function to free a buffer used to store a message received via frags
+   1004          static void freeRxPacketEntry(rxFragmentedInterpanPacket *rxPacket, EInterpanFragmentationStatus reason)
+   1005          {
+   1006            if (!rxPacket) {
+   1007              return;
+   1008            }
+   1009            MEMSET(rxPacket->sourceEui, 0, EUI64_SIZE);
+   1010          
+   1011            if (IPMF_SUCCESS != reason) {
+   1012              // User callback: something went wrong
+   1013              emberAfPluginInterpanFragmentTransmissionFailedCallback(reason,
+   1014                                                                      rxPacket->lastFragmentNumReceived + 1);
+   1015            }
+   1016          }
+   1017          
+   1018          // Helper function to find an existing buffer used to store a msg rcvd via frags
+   1019          static rxFragmentedInterpanPacket* rxPacketLookUp(EmberEUI64 sourceEui)
+   1020          {
+   1021            uint8_t i;
+   1022            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_INCOMING_PACKETS; i++) {
+   1023              rxFragmentedInterpanPacket *rxPacket = &(rxPackets[i]);
+   1024              if (!MEMCOMPARE(rxPacket->sourceEui, sourceEui, EUI64_SIZE)) {
+   1025                return rxPacket;
+   1026              }
+   1027            }
+   1028            return NULL;
+   1029          }
+   1030          
+   1031          // This function sends a whole message. It takes care of the fragmenting.
+   1032          EmberStatus interpanFragmentationSendUnicast(EmberAfInterpanHeader* header,
+   1033                                                       uint8_t* message,
+   1034                                                       uint16_t messageLen)
+   1035          {
+   1036            txFragmentedInterpanPacket *txPacket;
+   1037            EmberStatus status;
+   1038            uint8_t headerLen = INTERPAN_UNICAST_HEADER_SIZE;
+   1039            uint8_t maxFragLen, numFragments;
+   1040          
+   1041            if (!header || !message || (0 == messageLen)) {
+   1042              return EMBER_BAD_ARGUMENT;
+   1043            }
+   1044          
+   1045            if (messageLen > EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_BUFFER_SIZE) {
+   1046              return EMBER_MESSAGE_TOO_LONG;
+   1047            }
+   1048          
+   1049            // Claim a tx packet buffer. Only 1 tx packet per partner.
+   1050            txPacket = getFreeTxPacketEntry(header->longAddress);
+   1051            if (txPacket == NULL) {
+   1052              return EMBER_MAX_MESSAGE_LIMIT_REACHED;
+   1053            }
+   1054          
+   1055            // No interpan frag APS encryption allowed (payload assumed already encrypted)
+   1056            header->options &= ~EMBER_AF_INTERPAN_OPTION_APS_ENCRYPT;
+   1057          
+   1058            // Build a big packet
+   1059            status = makeInterPanMessage(header,
+   1060                                         txPacket->buffer,
+   1061                                         EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_BUFFER_SIZE,
+   1062                                         message,
+   1063                                         &messageLen,
+   1064                                         &(txPacket->bufLen));
+   1065            if (EMBER_SUCCESS != status) {
+   1066              return status;
+   1067            }
+   1068          
+   1069            maxFragLen = EMBER_AF_MAXIMUM_INTERPAN_LENGTH
+   1070                         - headerLen
+   1071                         - EMBER_APS_INTERPAN_FRAGMENTATION_OVERHEAD;
+   1072          
+   1073            numFragments = messageLen / maxFragLen;
+   1074            if (messageLen % maxFragLen) {
+   1075              numFragments++;
+   1076            }
+   1077            if (numFragments > MAX_INT8U_VALUE) {
+   1078              return EMBER_MESSAGE_TOO_LONG;
+   1079            }
+   1080          
+   1081            // Fill in some info before we start the transmit process
+   1082            txPacket->messageType    = header->messageType;
+   1083            txPacket->fragmentMaxLen = maxFragLen;
+   1084            txPacket->numFragments   = numFragments;
+   1085            txPacket->fragmentNum    = 0;
+   1086          
+   1087            // Forward it to the frag-sending function
+   1088            status = interpanFragmentationSendIpmf(txPacket);
+   1089          
+   1090            return status;
+   1091          }
+   1092          
+   1093          // This function sends an individual fragment. It expects the caller to handle
+   1094          // the setting up and handling of txPacket metadata.
+   1095          EmberStatus interpanFragmentationSendIpmf(txFragmentedInterpanPacket *txPacket)
+   1096          {
+   1097            if (!txPacket || !txPacket->bufLen) {
+   1098              return EMBER_BAD_ARGUMENT;
+   1099            }
+   1100          
+   1101            EmberStatus status;
+   1102            uint8_t  message[EMBER_AF_MAXIMUM_INTERPAN_LENGTH];
+   1103            uint8_t* finger = message;
+   1104            uint8_t  headerLen = EMBER_AF_INTER_PAN_UNICAST == txPacket->messageType
+   1105                                 ? INTERPAN_UNICAST_HEADER_SIZE
+   1106                                 : INTERPAN_MULTICAST_HEADER_SIZE;
+   1107            uint16_t messageSentLen, messageLeftLen;
+   1108            uint8_t  messageToBeSentLen, packetLen;
+   1109          
+   1110            // Copy header info from pre-built packet
+   1111            MEMMOVE(finger, txPacket->buffer, headerLen);
+   1112            finger += headerLen;
+   1113          
+   1114            // Write the IPMF payload with a fragment of the whole message
+   1115            messageSentLen = txPacket->fragmentMaxLen * txPacket->fragmentNum;
+   1116            messageLeftLen = txPacket->bufLen - headerLen - messageSentLen;
+   1117            messageToBeSentLen =  messageLeftLen >= txPacket->fragmentMaxLen
+   1118                                 ? txPacket->fragmentMaxLen : messageLeftLen;
+   1119          
+   1120            *finger++ = INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_IPMF_VAL;
+   1121            *finger++ = txPacket->fragmentNum;
+   1122            *finger++ = txPacket->numFragments;
+   1123            *finger++ = messageToBeSentLen;
+   1124            MEMMOVE(finger,
+   1125                    (txPacket->buffer + headerLen + messageSentLen),
+   1126                    messageToBeSentLen);
+   1127            finger += messageToBeSentLen;
+   1128          
+   1129            packetLen = finger - message;
+   1130          
+   1131            emberAfAppPrintln("Sending interpan fragment %d of %d",
+   1132                              txPacket->fragmentNum, txPacket->numFragments - 1);
+   1133          
+   1134            status = emAfPluginInterpanSendRawMessage(packetLen, message);
+   1135          
+   1136            // Start a timer waiting for the IPMF response
+   1137            emberEventControlSetDelayMS(*(txPacket->eventControl), gMessageTimeout);
+   1138          
+   1139            return status;
+   1140          }
+   1141          
+   1142          // This function reads an IPMF message and stores necessary data. The caller
+   1143          // will need to send an IPMF response based on the return from this function.
+   1144          EmberStatus interpanFragmentationProcessIpmf(EmberAfInterpanHeader header,
+   1145                                                       uint8_t *message, uint8_t messageLen)
+   1146          {
+   1147            uint8_t* finger;
+   1148            uint8_t fragNum, numFrags, fragLen, headerLen = INTERPAN_UNICAST_HEADER_SIZE;
+   1149            rxFragmentedInterpanPacket *rxPacket;
+   1150          
+   1151            if (!message || !messageLen) {
+   1152              return EMBER_BAD_ARGUMENT;
+   1153            }
+   1154          
+   1155            finger = message + headerLen;
+   1156            finger++;   // Skip the control byte
+   1157            fragNum  = *finger++;
+   1158            numFrags = *finger++;
+   1159            fragLen  = *finger++;
+   1160          
+   1161            emberAfAppPrintln("Receiving inter-PAN fragment %d of %d", fragNum, numFrags - 1);
+   1162          
+   1163            // See if we already have an entry for this fragment transmission
+   1164            rxPacket = rxPacketLookUp(header.longAddress);
+   1165            if (!rxPacket && (0 != fragNum)) {
+   1166              emberAfAppPrintln("ERR: expected first IPMF index 0, got %d", fragNum);
+   1167              return EMBER_INDEX_OUT_OF_RANGE;
+   1168            } else if (rxPacket && (0 == fragNum)) {
+   1169              emberAfAppPrint("ERR: ");
+   1170              emberAfPrintLittleEndianEui64(header.longAddress);
+   1171              emberAfAppPrintln(" sending multiple IPMF index 0 fragments");
+   1172              freeRxPacketEntry(rxPacket, IPMF_RX_BAD_RESPONSE);
+   1173              return EMBER_INDEX_OUT_OF_RANGE;
+   1174            }
+   1175          
+   1176            // If no entry, see if we have room to take a buffer
+   1177            if (NULL == rxPacket) {
+   1178              rxPacket = getFreeRxPacketEntry(header.longAddress);
+   1179              if (rxPacket) {
+   1180                // If we've allocated a new buffer, copy the header over and set data
+   1181                MEMMOVE(rxPacket->buffer, message, headerLen);
+   1182                rxPacket->bufLen                  = headerLen;
+   1183                rxPacket->numFragments            = numFrags;
+   1184                rxPacket->lastFragmentNumReceived = fragNum;
+   1185              }
+   1186            }
+   1187          
+   1188            if (NULL == rxPacket) {
+   1189              emberAfAppPrint("ERR: RX interpan fragment from ");
+   1190              emberAfPrintLittleEndianEui64(header.longAddress);
+   1191              emberAfAppPrintln(" but no available buffers");
+   1192              return EMBER_MAX_MESSAGE_LIMIT_REACHED;
+   1193            }
+   1194          
+   1195            // We received an IPMF, so turn off the timer for now
+   1196            emberEventControlSetInactive(*(rxPacket->eventControl));
+   1197          
+   1198            if (fragLen == 0) {
+   1199              emberAfAppPrintln("ERR: RX interpan fragment from ");
+   1200              emberAfPrintLittleEndianEui64(header.longAddress);
+   1201              emberAfAppPrintln(" with IPMF length 0");
+   1202              freeRxPacketEntry(rxPacket, IPMF_RX_BAD_RESPONSE);
+   1203              return EMBER_INDEX_OUT_OF_RANGE;
+   1204            }
+   1205          
+   1206            if (0 != fragNum) {
+   1207              if (rxPacket->lastFragmentNumReceived != (fragNum - 1)) {
+   1208                emberAfAppPrintln("ERR: RX IPMF fragment %d after %d, expecting %d",
+   1209                                  fragNum, rxPacket->lastFragmentNumReceived,
+   1210                                  rxPacket->lastFragmentNumReceived + 1);
+   1211                freeRxPacketEntry(rxPacket, IPMF_RX_BAD_RESPONSE);
+   1212                return EMBER_INDEX_OUT_OF_RANGE;
+   1213              }
+   1214              if (rxPacket->numFragments != numFrags) {
+   1215                emberAfAppPrintln("ERR: expecting total number of IPMFs %d, but received"
+   1216                                  " %d in IPMF fragment %d",
+   1217                                  rxPacket->numFragments, numFrags, fragNum);
+   1218                freeRxPacketEntry(rxPacket, IPMF_RX_BAD_RESPONSE);
+   1219                return EMBER_INDEX_OUT_OF_RANGE;
+   1220              }
+   1221              // Note that we allow sequential fragments to specify different lengths.
+   1222              // In theory, frags 0 to n-1 should be of the same maximum length, and the
+   1223              // last fragment n should be of shorter length. For now, we'll allow that
+   1224              // any of those middle packets may come in with a different length.
+   1225            }
+   1226          
+   1227            // Strip the payload and add it to the whole message buffer
+   1228            MEMMOVE(rxPacket->buffer + rxPacket->bufLen, finger, fragLen);
+   1229            rxPacket->bufLen += fragLen;
+   1230            rxPacket->lastFragmentNumReceived = fragNum;
+   1231          
+   1232            if (rxPacket->lastFragmentNumReceived == (rxPacket->numFragments - 1)) {
+   1233              // Full message received
+   1234              emberAfAppPrint("T%4x:Inter-PAN RX (%d B, %d fragments) [",
+   1235                              emberAfGetCurrentTime(),
+   1236                              rxPacket->bufLen - headerLen,
+   1237                              rxPacket->numFragments);
+   1238              emberAfAppPrintBuffer(rxPacket->buffer + headerLen,
+   1239                                    rxPacket->bufLen - headerLen,
+   1240                                    true);
+   1241              emberAfAppPrintln("], 0x%x", EMBER_SUCCESS);
+   1242              emberAfAppFlush();
+   1243          
+   1244              // User callback: all frags received, message reconstructed
+   1245              emberAfPluginInterpanMessageReceivedOverFragmentsCallback(
+   1246                &header,
+   1247                rxPacket->bufLen - headerLen,
+   1248                rxPacket->buffer + headerLen);
+   1249          
+   1250              freeRxPacketEntry(rxPacket, IPMF_SUCCESS);
+   1251            }
+   1252          
+   1253            return EMBER_SUCCESS;
+   1254          }
+   1255          
+   1256          // This function sends an IPMF response to the sender of the IPMF
+   1257          void interpanFragmentationSendIpmfResponse(EmberAfInterpanHeader header,
+   1258                                                     uint8_t fragNum, uint8_t response)
+   1259          {
+   1260            EmberStatus status;
+   1261            uint8_t message[EMBER_AF_MAXIMUM_INTERPAN_LENGTH];
+   1262            uint8_t* finger;
+   1263            uint16_t messageLength, noPayloadLen = 0;
+   1264            uint8_t noPayload = 0;
+   1265          
+   1266            if ((fragNum > MAX_INT8U_VALUE)
+   1267                || ((INTERPAN_IPMF_RESPONSE_SUCCESS != response)
+   1268                    && (INTERPAN_IPMF_RESPONSE_FAILURE != response))) {
+   1269              return;
+   1270            }
+   1271          
+   1272            // Construct a new IPMF message, but no payload
+   1273            status = makeInterPanMessage(&header,
+   1274                                         message,
+   1275                                         EMBER_AF_MAXIMUM_INTERPAN_LENGTH,
+   1276                                         &noPayload,
+   1277                                         &noPayloadLen,
+   1278                                         &messageLength);
+   1279            if (EMBER_SUCCESS != status) {
+   1280              return;
+   1281            }
+   1282          
+   1283            // Move past the header and write the IPMF response payload
+   1284            finger = message + messageLength;
+   1285            *finger++ = INTERPAN_FRAGMENTATION_APS_CONTROL_BYTE_IPMF_RESPONSE_VAL;
+   1286            *finger++ = fragNum;
+   1287            *finger++ = response;
+   1288          
+   1289            messageLength += EMBER_APS_INTERPAN_FRAGMENTATION_RESPONSE_LEN;
+   1290          
+   1291            // Send the response
+   1292            emAfPluginInterpanSendRawMessage(messageLength, message);
+   1293          
+   1294            // Start a timer waiting for the next IPMF
+   1295            rxFragmentedInterpanPacket* rxPacket = rxPacketLookUp(header.longAddress);
+   1296            if (rxPacket) {
+   1297              emberEventControlSetDelayMS(*(rxPacket->eventControl), gMessageTimeout);
+   1298            }
+   1299          }
+   1300          
+   1301          // This function processes the IPMF response and either sends the next fragment
+   1302          // or finishes the transmission
+   1303          void interpanFragmentationProcessIpmfResponse(EmberAfInterpanHeader header,
+   1304                                                        uint8_t* payload,
+   1305                                                        uint8_t payloadLen)
+   1306          {
+   1307            if (!payload
+   1308                || (EMBER_APS_INTERPAN_FRAGMENTATION_RESPONSE_LEN != payloadLen)) {
+   1309              return;
+   1310            }
+   1311          
+   1312            uint8_t fragmentNumAcked = payload[INTERPAN_FRAGMENTATION_APS_INDEX_IPMF_INDEX];
+   1313            uint8_t response = payload[INTERPAN_FRAGMENTATION_APS_IPMF_RESPONSE_INDEX];
+   1314          
+   1315            txFragmentedInterpanPacket* txPacket = txPacketLookUp(header.longAddress);
+   1316            if (!txPacket) {
+   1317              return;
+   1318            }
+   1319          
+   1320            // We received an IPMF, so turn off the timer for now
+   1321            emberEventControlSetInactive(*(txPacket->eventControl));
+   1322          
+   1323            if (fragmentNumAcked != txPacket->fragmentNum) {
+   1324              // Partner is not acking what we've sent it - error
+   1325              freeTxPacketEntry(txPacket, IPMF_TX_BAD_RESPONSE);
+   1326              return;
+   1327            }
+   1328          
+   1329            if (INTERPAN_IPMF_RESPONSE_SUCCESS != response) {
+   1330              // Partner acking bad response - error
+   1331              freeTxPacketEntry(txPacket, IPMF_TX_BAD_RESPONSE);
+   1332              return;
+   1333            }
+   1334          
+   1335            if (txPacket->fragmentNum == (txPacket->numFragments - 1)) {
+   1336              // Done!
+   1337              freeTxPacketEntry(txPacket, IPMF_SUCCESS);
+   1338              return;
+   1339            }
+   1340          
+   1341            txPacket->fragmentNum++;
+   1342            interpanFragmentationSendIpmf(txPacket);
+   1343          }
+   1344          
+   1345          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+   1346          
+   1347          // This function is called when an inter-PAN fragment transmission fails to
+   1348          // receive a response within the allotted time
+
+   \                                 In section .text, align 2, keep-with-next
+   1349          void emberAfPluginInterpanFragmentTransmitEventHandler(EmberEventControl *control)
+   1350          {
+   1351            emberEventControlSetInactive(*control);
+   \                     emberAfPluginInterpanFragmentTransmitEventHandler: (+1)
+   \        0x0   0x....             B.N      ?Subroutine0
+   1352          
+   1353          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+   1354            uint8_t i;
+   1355            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_OUTGOING_PACKETS; i++) {
+   1356              txFragmentedInterpanPacket *txPacket = &(txPackets[i]);
+   1357              if (txPacket->eventControl == control) {
+   1358                emberAfAppPrintln("ERR: TX inter-PAN: fragment %d of %d has timed out "
+   1359                                  "waiting for a fragment response",
+   1360                                  txPacket->fragmentNum, txPacket->numFragments - 1);
+   1361                freeTxPacketEntry(txPacket, IPMF_TX_TIMEOUT);
+   1362              }
+   1363            }
+   1364          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+   1365          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x7001             STRB     R1,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+   1366          
+   1367          // This function is called when an inter-PAN fragment reception fails to receive
+   1368          // the next fragment within the allotted time
+
+   \                                 In section .text, align 4, keep-with-next
+   1369          void emberAfPluginInterpanFragmentReceiveEventHandler(EmberEventControl *control)
+   1370          {
+   1371            emberEventControlSetInactive(*control);
+   \                     emberAfPluginInterpanFragmentReceiveEventHandler: (+1)
+   \        0x0   0xBF00             Nop      
+   \        0x2                      REQUIRE ?Subroutine0
+   \        0x2                      ;; // Fall through to label ?Subroutine0
+   1372          
+   1373          #if defined(EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION)
+   1374            uint8_t i;
+   1375            for (i = 0; i < EMBER_AF_PLUGIN_INTERPAN_FRAGMENTATION_MAX_INCOMING_PACKETS; i++) {
+   1376              rxFragmentedInterpanPacket *rxPacket = &(rxPackets[i]);
+   1377              if (rxPacket->eventControl == control) {
+   1378                emberAfAppPrintln("ERR: RX inter-PAN: fragment %d of %d has timed out "
+   1379                                  "waiting for the next fragment",
+   1380                                  rxPacket->lastFragmentNumReceived,
+   1381                                  rxPacket->numFragments - 1);
+   1382                freeRxPacketEntry(rxPacket, IPMF_RX_TIMEOUT);
+   1383              }
+   1384            }
+   1385          #endif // EMBER_AF_PLUGIN_INTERPAN_ALLOW_FRAGMENTATION
+   1386          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     gInterpanEnabled
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x....'....        DC32     emLocalEui64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0x....'....        DC32     emAfEndpoints
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \        0x0   0x....'....        DC32     messages
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_14:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_15:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_16:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_17:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_18:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_19:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_20:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_21:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_22:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_23:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_24:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_25:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_26:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x45 0x72          DC8 "Error: Inter-pan message too big (%d + %d > %d)"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x49    
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x2D 0x70    
+   \              0x61 0x6E    
+   \              0x20 0x6D    
+   \              0x65 0x73    
+   \              0x73 0x61    
+   \              0x67 0x65    
+   \              0x20 0x74    
+   \              0x6F 0x6F    
+   \              0x20 0x62    
+   \              0x69 0x67    
+   \              0x20 0x28    
+   \              0x25 0x64    
+   \              0x20 0x2B    
+   \              0x20 0x25    
+   \              0x64 0x20    
+   \              0x3E 0x20    
+   \              0x25 0x64    
+   \              0x29 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x25 0x70          DC8 "%pBad APS frame control 0x%X"
+   \              0x42 0x61    
+   \              0x64 0x20    
+   \              0x41 0x50    
+   \              0x53 0x20    
+   \              0x66 0x72    
+   \              0x61 0x6D    
+   \              0x65 0x20    
+   \              0x63 0x6F    
+   \              0x6E 0x74    
+   \              0x72 0x6F    
+   \              0x6C 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x1D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x45 0x52          DC8 "ERR: Inter-PAN "
+   \              0x52 0x3A    
+   \              0x20 0x49    
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x2D 0x50    
+   \              0x41 0x4E    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x25 0x70          DC8 "%pBad Delivery Mode 0x%X"
+   \              0x42 0x61    
+   \              0x64 0x20    
+   \              0x44 0x65    
+   \              0x6C 0x69    
+   \              0x76 0x65    
+   \              0x72 0x79    
+   \              0x20 0x4D    
+   \              0x6F 0x64    
+   \              0x65 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x19   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x25 0x70          DC8 "%pAPS decryption failed (0x%X)."
+   \              0x41 0x50    
+   \              0x53 0x20    
+   \              0x64 0x65    
+   \              0x63 0x72    
+   \              0x79 0x70    
+   \              0x74 0x69    
+   \              0x6F 0x6E    
+   \              0x20 0x66    
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x20    
+   \              0x28 0x30    
+   \              0x78 0x25    
+   \              0x58 0x29    
+   \              0x2E 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x25 0x70          DC8 "%pmessage too short (%d < %d)!"
+   \              0x6D 0x65    
+   \              0x73 0x73    
+   \              0x61 0x67    
+   \              0x65 0x20    
+   \              0x74 0x6F    
+   \              0x6F 0x20    
+   \              0x73 0x68    
+   \              0x6F 0x72    
+   \              0x74 0x20    
+   \              0x28 0x25    
+   \              0x64 0x20    
+   \              0x3C 0x20    
+   \              0x25 0x64    
+   \              0x29 0x21    
+   \              0x00         
+   \       0x1F   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x25 0x70          DC8 "%pUnsupported ZCL frame type."
+   \              0x55 0x6E    
+   \              0x73 0x75    
+   \              0x70 0x70    
+   \              0x6F 0x72    
+   \              0x74 0x65    
+   \              0x64 0x20    
+   \              0x5A 0x43    
+   \              0x4C 0x20    
+   \              0x66 0x72    
+   \              0x61 0x6D    
+   \              0x65 0x20    
+   \              0x74 0x79    
+   \              0x70 0x65    
+   \              0x2E 0x00    
+   \       0x1E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x25 0x70          DC8 "%pmessage too short!"
+   \              0x6D 0x65    
+   \              0x73 0x73    
+   \              0x61 0x67    
+   \              0x65 0x20    
+   \              0x74 0x6F    
+   \              0x6F 0x20    
+   \              0x73 0x68    
+   \              0x6F 0x72    
+   \              0x74 0x21    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x25 0x70          DC8 25H, 70H, 70H, 72H, 6FH, 66H, 69H, 6CH
+   \              0x70 0x72    
+   \              0x6F 0x66    
+   \              0x69 0x6C    
+   \        0x8   0x65 0x20          DC8 65H, 20H, 30H, 78H, 25H, 32H, 78H, 2CH
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x2C    
+   \       0x10   0x20 0x63          DC8 20H, 63H, 6CH, 75H, 73H, 74H, 65H, 72H
+   \              0x6C 0x75    
+   \              0x73 0x74    
+   \              0x65 0x72    
+   \       0x18   0x20 0x30          DC8 20H, 30H, 78H, 25H, 32H, 78H, 2CH, 20H
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x2C 0x20    
+   \       0x20   0x63 0x6F          DC8 63H, 6FH, 6DH, 6DH, 61H, 6EH, 64H, 20H
+   \              0x6D 0x6D    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \       0x28   0x30 0x78          DC8 30H, 78H, 25H, 78H, 20H, 6EH, 6FH, 74H
+   \              0x25 0x78    
+   \              0x20 0x6E    
+   \              0x6F 0x74    
+   \       0x30   0x20 0x70          DC8 20H, 70H, 65H, 72H, 6DH, 69H, 74H, 74H
+   \              0x65 0x72    
+   \              0x6D 0x69    
+   \              0x74 0x74    
+   \       0x38   0x65 0x64          DC8 65H, 64H, 0
+   \              0x00         
+   \       0x3B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x52 0x58          DC8 "RX inter-PAN message ("
+   \              0x20 0x69    
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x2D 0x50    
+   \              0x41 0x4E    
+   \              0x20 0x6D    
+   \              0x65 0x73    
+   \              0x73 0x61    
+   \              0x67 0x65    
+   \              0x20 0x28    
+   \              0x00         
+   \       0x17   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x75 0x6E          DC8 "uni"
+   \              0x69 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x62 0x72          DC8 "broad"
+   \              0x6F 0x61    
+   \              0x64 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x6D 0x75          DC8 "multi"
+   \              0x6C 0x74    
+   \              0x69 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x63 0x61          DC8 "cast):"
+   \              0x73 0x74    
+   \              0x29 0x3A    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x20 0x20          DC8 "  src pan id: 0x%2x"
+   \              0x73 0x72    
+   \              0x63 0x20    
+   \              0x70 0x61    
+   \              0x6E 0x20    
+   \              0x69 0x64    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x20 0x20          DC8 "  src long id: "
+   \              0x73 0x72    
+   \              0x63 0x20    
+   \              0x6C 0x6F    
+   \              0x6E 0x67    
+   \              0x20 0x69    
+   \              0x64 0x3A    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 1
+   \                     ?_16:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x20 0x20          DC8 "  src short id: 0x%2x"
+   \              0x73 0x72    
+   \              0x63 0x20    
+   \              0x73 0x68    
+   \              0x6F 0x72    
+   \              0x74 0x20    
+   \              0x69 0x64    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x00    
+   \       0x16   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x20 0x20          DC8 "  profile id: 0x%2x"
+   \              0x70 0x72    
+   \              0x6F 0x66    
+   \              0x69 0x6C    
+   \              0x65 0x20    
+   \              0x69 0x64    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x20 0x20          DC8 "  cluster id: 0x%2x "
+   \              0x63 0x6C    
+   \              0x75 0x73    
+   \              0x74 0x65    
+   \              0x72 0x20    
+   \              0x69 0x64    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x20    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x20 0x20          DC8 "  group id: 0x%2x"
+   \              0x67 0x72    
+   \              0x6F 0x75    
+   \              0x70 0x20    
+   \              0x69 0x64    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x00    
+   \       0x12   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x54 0x25          DC8 "T%4x:Inter-PAN TX (%d) ["
+   \              0x34 0x78    
+   \              0x3A 0x49    
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x2D 0x50    
+   \              0x41 0x4E    
+   \              0x20 0x54    
+   \              0x58 0x20    
+   \              0x28 0x25    
+   \              0x64 0x29    
+   \              0x20 0x5B    
+   \              0x00         
+   \       0x19   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x5D 0x2C          DC8 "], 0x%x"
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x78 0x00    
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      64   emAfPluginInterpanProcessMessage
+        64   -> emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback
+        64   -> emberAfGetNodeId
+        64   -> emberAfPluginInterpanPreMessageReceivedCallback
+        64   -> emberAfProcessMessage
+        64   -> halCommonMemCompare
+        64   -> isMessageAllowed
+        64   -> parseInterpanMessage
+        64   -> printMessage
+       0   emAfPluginInterpanSetEnableState
+         0   -> interpanPluginSetMacMatchFilterEnable
+     160   emberAfInterpanSendMessageCallback
+       160   -> emAfPluginInterpanSendRawMessage
+       160   -> emberAfGetCurrentTime
+       160   -> emberAfPrint
+       160   -> emberAfPrintBuffer
+       160   -> emberAfPrintln
+       160   -> makeInterPanMessage
+       0   emberAfPluginInterpanFragmentReceiveEventHandler
+       0   emberAfPluginInterpanFragmentTransmitEventHandler
+       0   interpanPluginInit
+      32   isMessageAllowed
+        32   -> emberAfPrintln
+      40   makeInterPanMessage
+        40   -> emberAfGetEui64
+        40   -> emberAfGetPanId
+        40   -> emberAfPrint
+        40   -> halCommonMemMove
+        40   -> pushEui64
+        40   -> pushInt16u
+      24   parseInterpanMessage
+        24   -> emberAfPrintln
+        24   -> halCommonMemMove
+        24   -> halCommonMemSet
+      16   printMessage
+        16   -> emberAfDecodeAndPrintClusterWithMfgCode
+        16   -> emberAfGetMfgCodeFromCurrentCommand
+        16   -> emberAfPrint
+        16   -> emberAfPrintBigEndianEui64
+        16   -> emberAfPrintEnabled
+         0   -> emberAfPrintln
+        16   -> emberAfPrintln
+       8   pushEui64
+         8   -> halCommonMemMove
+       0   pushInt16u
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_14
+       4  ??DataTable7_15
+       4  ??DataTable7_16
+       4  ??DataTable7_17
+       4  ??DataTable7_18
+       4  ??DataTable7_19
+       4  ??DataTable7_2
+       4  ??DataTable7_20
+       4  ??DataTable7_21
+       4  ??DataTable7_22
+       4  ??DataTable7_23
+       4  ??DataTable7_24
+       4  ??DataTable7_25
+       4  ??DataTable7_26
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+       6  ?Subroutine0
+       6  ?Subroutine1
+       8  ?Subroutine2
+      48  ?_0
+      32  ?_1
+       4  ?_10
+       8  ?_11
+       8  ?_12
+       8  ?_13
+      20  ?_14
+      16  ?_15
+       1  ?_16
+      24  ?_17
+      20  ?_18
+      24  ?_19
+      16  ?_2
+      20  ?_20
+      28  ?_21
+       8  ?_22
+      28  ?_3
+      32  ?_4
+      32  ?_5
+      32  ?_6
+      24  ?_7
+      60  ?_8
+      24  ?_9
+     276  emAfPluginInterpanProcessMessage
+      18  emAfPluginInterpanSetEnableState
+     124  emberAfInterpanSendMessageCallback
+       8  emberAfPluginInterpanFragmentReceiveEventControl
+       2  emberAfPluginInterpanFragmentReceiveEventHandler
+       8  emberAfPluginInterpanFragmentTransmitEventControl
+       2  emberAfPluginInterpanFragmentTransmitEventHandler
+       1  gInterpanEnabled
+       2  gMessageTimeout
+      10  interpanPluginInit
+     174  isMessageAllowed
+     210  makeInterPanMessage
+       8  messages
+     246  parseInterpanMessage
+     154  printMessage
+      16  pushEui64
+      10  pushInt16u
+
+ 
+    19 bytes in section .bss
+   525 bytes in section .rodata
+ 1 370 bytes in section .text
+ 
+ 1 370 bytes of CODE  memory
+   525 bytes of CONST memory
+    19 bytes of DATA  memory
+
+Errors: none
+Warnings: 4

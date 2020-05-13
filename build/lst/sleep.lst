@@ -1,0 +1,875 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:53
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\sleep\src\sleep.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW448A.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\sleep\src\sleep.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"sleep.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\sleep\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\sleep.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\sleep.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\sleep\src\sleep.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Energy Modes management driver
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc.  Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement.  This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          /* Chip specific header file(s). */
+     19          #include "em_device.h"
+     20          #include "em_assert.h"
+     21          #include "em_core.h"
+     22          #include "em_rmu.h"
+     23          #include "em_emu.h"
+     24          
+     25          /* Module header file(s). */
+     26          #include "sleep.h"
+     27          
+     28          /* stdlib is needed for NULL definition */
+     29          #include <stdlib.h>
+     30          
+     31          /***************************************************************************//**
+     32           * @addtogroup emdrv
+     33           * @{
+     34           ******************************************************************************/
+     35          
+     36          /***************************************************************************//**
+     37           * @addtogroup SLEEP
+     38           * @{
+     39           ******************************************************************************/
+     40          
+     41          /*******************************************************************************
+     42           *******************************   MACROS   ************************************
+     43           ******************************************************************************/
+     44          
+     45          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     46          
+     47          /* Number of low energy modes (EM2 and EM3). Note: EM4 sleep/wakeup is handled
+     48           * differently therefore it is not part of the list! */
+     49          #define SLEEP_NUMOF_LOW_ENERGY_MODES    2U
+     50          
+     51          #if defined(RMU_RSTCAUSE_EM4WURST)
+     52          #define EM4_RESET_FLAG  RMU_RSTCAUSE_EM4WURST
+     53          #elif defined(RMU_RSTCAUSE_EM4RST)
+     54          #define EM4_RESET_FLAG  RMU_RSTCAUSE_EM4RST
+     55          #elif defined(EMU_RSTCAUSE_EM4)
+     56          #define EM4_RESET_FLAG  EMU_RSTCAUSE_EM4
+     57          #endif
+     58          
+     59          /*******************************************************************************
+     60           *******************************   STATICS   ***********************************
+     61           ******************************************************************************/
+     62          
+     63          /* This is the internal context of the sleep driver. */
+
+   \                                 In section .bss, align 4
+     64          static SLEEP_Init_t sleepContext = { 0 };
+   \                     sleepContext:
+   \        0x0                      DS8 12
+     65          
+     66          /* Callback functions to call before and after sleep. This is only used to
+     67           * preserve backwards compatibility when using SLEEP_Init. When using
+     68           * SLEEP_InitEx this is no longer needed. */
+
+   \                                 In section .bss, align 4
+     69          static SLEEP_CbFuncPtr_t sleepCallback  = NULL;
+   \                     sleepCallback:
+   \        0x0                      DS8 4
+     70          
+     71          /* Sleep block counter array representing the nested sleep blocks for the low
+     72           * energy modes (EM2/EM3). Array index 0 corresponds to EM2 and index 1
+     73           * to EM3.
+     74           *
+     75           * Note:
+     76           * - EM4 sleep/wakeup is handled differently therefore it is not part of the
+     77           *   list!
+     78           * - Max. number of sleep block nesting is 255. */
+
+   \                                 In section .bss, align 2
+     79          static uint8_t sleepBlockCnt[SLEEP_NUMOF_LOW_ENERGY_MODES];
+   \                     sleepBlockCnt:
+   \        0x0                      DS8 2
+     80          
+     81          /**
+     82           * @brief
+     83           *   This function is only used to keep the interface backwards compatible.
+     84           *
+     85           * @details
+     86           *   Previous version of the sleep driver had a sleep callback but it did not
+     87           *   have a return value.
+     88           */
+
+   \                                 In section .text, align 2, keep-with-next
+     89          static bool sleepCallbackWrapper(SLEEP_EnergyMode_t emode)
+     90          {
+   \                     sleepCallbackWrapper: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     91            if (NULL != sleepCallback) {
+   \        0x2   0x....             LDR.N    R1,??DataTable7
+   \        0x4   0x6809             LDR      R1,[R1, #+0]
+   \        0x6   0xB101             CBZ.N    R1,??sleepCallbackWrapper_0
+     92              sleepCallback(emode);
+   \        0x8   0x4788             BLX      R1
+     93            }
+     94            return true;
+   \                     ??sleepCallbackWrapper_0: (+1)
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0xBD02             POP      {R1,PC}          ;; return
+     95          }
+     96          
+     97          /*******************************************************************************
+     98           ******************************   PROTOTYPES   *********************************
+     99           ******************************************************************************/
+    100          
+    101          static SLEEP_EnergyMode_t enterEMx(SLEEP_EnergyMode_t eMode);
+    102          
+    103          /** @endcond */
+    104          
+    105          /*******************************************************************************
+    106           ***************************   GLOBAL FUNCTIONS   ******************************
+    107           ******************************************************************************/
+    108          
+    109          /***************************************************************************//**
+    110           * @brief
+    111           *   Initialize the Sleep module.
+    112           *
+    113           * @details
+    114           *   Use this function to initialize the Sleep module, should be called
+    115           *   only once! Pointers to sleep and wake-up callback functions shall be
+    116           *   provided when calling this function.
+    117           *   If SLEEP_EM4_WAKEUP_CALLBACK_ENABLED is set to true, this function checks
+    118           *   for the cause of the reset that implicitly called it and calls the wakeup
+    119           *   callback if the reset was a wakeup from EM4 (does not work on Gecko MCU).
+    120           *
+    121           * @param[in] pSleepCb
+    122           *   Pointer to the callback function that is being called before the device is
+    123           *   going to sleep.
+    124           *
+    125           * @param[in] pWakeUpCb
+    126           *   Pointer to the callback function that is being called after wake up.
+    127           *
+    128           * @deprecated New code should use the @ref SLEEP_InitEx function for
+    129           *   initializing the sleep module.
+    130           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    131          void SLEEP_Init(SLEEP_CbFuncPtr_t pSleepCb, SLEEP_CbFuncPtr_t pWakeUpCb)
+    132          {
+   \                     SLEEP_Init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    133            /* Initialize callback functions. */
+    134            sleepCallback = pSleepCb;
+   \        0x2   0x....             LDR.N    R2,??DataTable7
+   \        0x4   0x6010             STR      R0,[R2, #+0]
+    135            sleepContext.sleepCallback = sleepCallbackWrapper;
+   \        0x6   0x....             LDR.N    R4,??DataTable7_1
+   \        0x8   0x....             LDR.N    R0,??DataTable7_2
+   \        0xA   0x6020             STR      R0,[R4, #+0]
+    136            sleepContext.wakeupCallback = pWakeUpCb;
+   \        0xC   0x6061             STR      R1,[R4, #+4]
+    137          
+    138            /* Reset sleep block counters. Note: not using for() saves code! */
+    139            sleepBlockCnt[0U] = 0U;
+   \        0xE   0x....             LDR.N    R0,??DataTable7_3
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0x8001             STRH     R1,[R0, #+0]
+    140            sleepBlockCnt[1U] = 0U;
+    141          
+    142          #if (SLEEP_EM4_WAKEUP_CALLBACK_ENABLED == true) && !defined(_EFM32_GECKO_FAMILY)
+    143            /* Check if the Init() happened after an EM4 reset. */
+    144            if (RMU_ResetCauseGet() & EM4_RESET_FLAG) {
+   \       0x14   0x....'....        BL       RMU_ResetCauseGet
+   \       0x18   0x0740             LSLS     R0,R0,#+29
+   \       0x1A   0xD507             BPL.N    ??SLEEP_Init_0
+    145              /* Clear the cause of the reset. */
+    146              RMU_ResetCauseClear();
+   \       0x1C   0x....'....        BL       RMU_ResetCauseClear
+    147              /* Call wakeup callback with EM4 parameter. */
+    148              if (NULL != sleepContext.wakeupCallback) {
+   \       0x20   0x6861             LDR      R1,[R4, #+4]
+   \       0x22   0xB119             CBZ.N    R1,??SLEEP_Init_0
+    149                sleepContext.wakeupCallback(sleepEM4);
+   \       0x24   0x2004             MOVS     R0,#+4
+   \       0x26   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x2A   0x4708             BX       R1
+    150              }
+    151            }
+    152          #endif
+    153          }
+   \                     ??SLEEP_Init_0: (+1)
+   \       0x2C   0xBD10             POP      {R4,PC}          ;; return
+    154          
+    155          /***************************************************************************//**
+    156           * @brief
+    157           *   Initialize the Sleep module.
+    158           *
+    159           * @details
+    160           *   Use this function to initialize the Sleep module.
+    161           *
+    162           * @param[in] init
+    163           *   Pointer to the sleep module init structure containing callback function
+    164           *   and configuration parameters.
+    165           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    166          void SLEEP_InitEx(const SLEEP_Init_t * init)
+    167          {
+   \                     SLEEP_InitEx: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    168            SLEEP_Init(NULL, init->wakeupCallback);
+   \        0x4   0x6861             LDR      R1,[R4, #+4]
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x....'....        BL       SLEEP_Init
+    169            sleepContext.sleepCallback   = init->sleepCallback;
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x....             LDR.N    R0,??DataTable7_1
+   \       0x10   0x6001             STR      R1,[R0, #+0]
+    170            sleepContext.restoreCallback = init->restoreCallback;
+   \       0x12   0x68A2             LDR      R2,[R4, #+8]
+   \       0x14   0x6082             STR      R2,[R0, #+8]
+    171            sleepContext.wakeupCallback  = init->wakeupCallback;
+   \       0x16   0x6861             LDR      R1,[R4, #+4]
+   \       0x18   0x6041             STR      R1,[R0, #+4]
+    172          }
+   \       0x1A   0xBD10             POP      {R4,PC}          ;; return
+    173          
+    174          /***************************************************************************//**
+    175           * @brief
+    176           *   Sets the system to sleep into the lowest possible energy mode.
+    177           *
+    178           * @details
+    179           *   This function takes care of the system states protected by the sleep block
+    180           *   provided by SLEEP_SleepBlockBegin() / SLEEP_SleepBlockEnd(). It allows
+    181           *   the system to go into the lowest possible energy mode that the device can
+    182           *   be set into at the time of the call of this function.
+    183           *   This function will not go lower than EM3 because leaving EM4 requires
+    184           *   resetting MCU. To enter into EM4 call SLEEP_ForceSleepInEM4().
+    185           *
+    186           * @return
+    187           *   Energy Mode that was entered. Possible values:
+    188           *   @li sleepEM0
+    189           *   @li sleepEM1
+    190           *   @li sleepEM2
+    191           *   @li sleepEM3
+    192           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    193          SLEEP_EnergyMode_t SLEEP_Sleep(void)
+    194          {
+   \                     SLEEP_Sleep: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    195            CORE_DECLARE_IRQ_STATE;
+    196            SLEEP_EnergyMode_t allowedEM;
+    197            SLEEP_EnergyMode_t modeEntered = sleepEM0;
+    198            uint32_t flags = 0;
+    199          
+    200            /* Critical section to allow sleep blocks in ISRs. */
+    201            CORE_ENTER_CRITICAL();
+   \        0x2   0x....'....        BL       CORE_EnterCritical
+   \        0x6   0x4604             MOV      R4,R0
+   \        0x8   0x2500             MOVS     R5,#+0
+   \        0xA   0x2600             MOVS     R6,#+0
+    202            allowedEM = SLEEP_LowestEnergyModeGet();
+   \        0xC   0x....'....        BL       SLEEP_LowestEnergyModeGet
+    203            if (allowedEM == sleepEM2 || allowedEM == sleepEM3) {
+   \       0x10   0x2802             CMP      R0,#+2
+   \       0x12   0xBF14             ITE      NE 
+   \       0x14   0x2803             CMPNE    R0,#+3
+    204              EMU_Save();
+   \       0x16   0x....'....        BLEQ     EMU_Save
+    205            }
+    206          
+    207            do {
+    208              allowedEM = SLEEP_LowestEnergyModeGet();
+   \                     ??SLEEP_Sleep_0: (+1)
+   \       0x1A   0x....'....        BL       SLEEP_LowestEnergyModeGet
+    209          
+    210              if ((allowedEM >= sleepEM1) && (allowedEM <= sleepEM3)) {
+   \       0x1E   0xB120             CBZ.N    R0,??SLEEP_Sleep_1
+   \       0x20   0x2803             CMP      R0,#+3
+   \       0x22   0xDC02             BGT.N    ??SLEEP_Sleep_1
+    211                modeEntered = enterEMx(allowedEM);
+   \       0x24   0x....'....        BL       enterEMx
+   \       0x28   0x4605             MOV      R5,R0
+    212              }
+    213          
+    214              if (NULL != sleepContext.restoreCallback) {
+   \                     ??SLEEP_Sleep_1: (+1)
+   \       0x2A   0x....             LDR.N    R0,??DataTable7_1
+   \       0x2C   0x6881             LDR      R1,[R0, #+8]
+   \       0x2E   0xB111             CBZ.N    R1,??SLEEP_Sleep_2
+    215                flags = sleepContext.restoreCallback(modeEntered);
+   \       0x30   0x4628             MOV      R0,R5
+   \       0x32   0x4788             BLX      R1
+   \       0x34   0x4606             MOV      R6,R0
+    216              }
+    217            } while ((flags & SLEEP_FLAG_NO_CLOCK_RESTORE) > 0u);
+   \                     ??SLEEP_Sleep_2: (+1)
+   \       0x36   0x07F0             LSLS     R0,R6,#+31
+   \       0x38   0xD4EF             BMI.N    ??SLEEP_Sleep_0
+    218          
+    219            if (modeEntered == sleepEM2 || modeEntered == sleepEM3) {
+   \       0x3A   0x2D02             CMP      R5,#+2
+   \       0x3C   0xBF14             ITE      NE 
+   \       0x3E   0x2D03             CMPNE    R5,#+3
+    220              EMU_Restore();
+   \       0x40   0x....'....        BLEQ     EMU_Restore
+    221            }
+    222            CORE_EXIT_CRITICAL();
+   \       0x44   0x4620             MOV      R0,R4
+   \       0x46   0x....'....        BL       CORE_ExitCritical
+    223          
+    224            return modeEntered;
+   \       0x4A   0x4628             MOV      R0,R5
+   \       0x4C   0xBD70             POP      {R4-R6,PC}       ;; return
+    225          }
+    226          
+    227          /***************************************************************************//**
+    228           * @brief
+    229           *   Force the device to go to EM4 without doing any checks.
+    230           *
+    231           * @details
+    232           *   This function unblocks the low energy sleep block then goes to EM4.
+    233           *
+    234           * @note
+    235           *   Regular RAM is not retained in EM4 and the wake up causes a reset.
+    236           *   If the configuration option SLEEP_EM4_WAKEUP_CALLBACK_ENABLED is set to
+    237           *   true, the SLEEP_Init() function checks for the reset cause and calls the
+    238           *   EM4 wakeup callback.
+    239           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    240          void SLEEP_ForceSleepInEM4(void)
+    241          {
+    242          #if (SLEEP_HW_LOW_ENERGY_BLOCK_ENABLED == true)
+    243            /* Unblock the EM2/EM3/EM4 block in the EMU. */
+    244            EMU_EM2UnBlock();
+    245          #endif
+    246          
+    247            /* Request entering to EM4. */
+    248            enterEMx(sleepEM4);
+   \                     SLEEP_ForceSleepInEM4: (+1)
+   \        0x0   0x2004             MOVS     R0,#+4
+   \        0x2   0x....             B.N      enterEMx
+    249          }
+    250          
+    251          /***************************************************************************//**
+    252           * @brief
+    253           *   Begin sleep block in the requested energy mode.
+    254           *
+    255           * @details
+    256           *   Blocking a critical system state from a certain energy mode makes sure that
+    257           *   the system is not set to that energy mode while the block is not being
+    258           *   released.
+    259           *   Every SLEEP_SleepBlockBegin() increases the corresponding counter and
+    260           *   every SLEEP_SleepBlockEnd() decreases it.
+    261           *
+    262           *   Example:\code
+    263           *      SLEEP_SleepBlockBegin(sleepEM2);  // do not allow EM2 or higher
+    264           *      // do some stuff that requires EM1 at least, like ADC sampling
+    265           *      SLEEP_SleepBlockEnd(sleepEM2);    // remove restriction for EM2\endcode
+    266           *
+    267           * @note
+    268           *   Be aware that there is limit of maximum blocks nesting to 255.
+    269           *
+    270           * @param[in] eMode
+    271           *   Energy mode to begin to block. Possible values:
+    272           *   @li sleepEM2 - Begin to block the system from being set to EM2/EM3/EM4.
+    273           *   @li sleepEM3 - Begin to block the system from being set to EM3/EM4.
+    274           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    275          void SLEEP_SleepBlockBegin(SLEEP_EnergyMode_t eMode)
+    276          {
+    277            EFM_ASSERT((eMode >= sleepEM2) && (eMode < sleepEM4));
+    278            EFM_ASSERT((sleepBlockCnt[eMode - 2U]) < 255U);
+    279          
+    280            if ((eMode == sleepEM2) || (eMode == sleepEM3)) {
+   \                     SLEEP_SleepBlockBegin: (+1)
+   \        0x0   0x2802             CMP      R0,#+2
+   \        0x2   0xBF18             IT       NE 
+   \        0x4   0x2803             CMPNE    R0,#+3
+   \        0x6   0xD106             BNE.N    ??SLEEP_SleepBlockBegin_0
+    281              /* Increase the sleep block counter of the selected energy mode. */
+    282              sleepBlockCnt[eMode - 2U]++;
+   \        0x8   0x....             LDR.N    R1,??DataTable7_3
+   \        0xA   0x4408             ADD      R0,R1,R0
+   \        0xC   0xF810 0x2C02      LDRB     R2,[R0, #-2]
+   \       0x10   0x1C52             ADDS     R2,R2,#+1
+   \       0x12   0xF800 0x2C02      STRB     R2,[R0, #-2]
+    283          
+    284          #if (SLEEP_HW_LOW_ENERGY_BLOCK_ENABLED == true) && defined(_EMU_CTRL_EM2BLOCK_MASK)
+    285              /* Block EM2/EM3 sleep if the EM2 block begins. */
+    286              if (eMode == sleepEM2) {
+    287                EMU_EM2Block();
+    288              }
+    289          #endif
+    290            }
+    291          }
+   \                     ??SLEEP_SleepBlockBegin_0: (+1)
+   \       0x16   0x4770             BX       LR               ;; return
+    292          
+    293          /***************************************************************************//**
+    294           * @brief
+    295           *   End sleep block in the requested energy mode.
+    296           *
+    297           * @details
+    298           *   Release restriction for entering certain energy mode. Every call of this
+    299           *   function reduce blocking counter by 1. Once the counter for specific energy
+    300           *   mode is 0 and all counters for lower energy modes are 0 as well, using
+    301           *   particular energy mode is allowed.
+    302           *   Every SLEEP_SleepBlockBegin() increases the corresponding counter and
+    303           *   every SLEEP_SleepBlockEnd() decreases it.
+    304           *
+    305           *   Example:\code
+    306           *      // at start all energy modes are allowed
+    307           *      SLEEP_SleepBlockBegin(sleepEM3); // EM3 and EM4 are blocked
+    308           *      SLEEP_SleepBlockBegin(sleepEM2); // EM2, EM3 and EM4 are blocked
+    309           *      SLEEP_SleepBlockBegin(sleepEM2); // EM2, EM3 and EM4 are blocked
+    310           *      SLEEP_SleepBlockEnd(sleepEM3);   // EM2, EM3 and EM4 are still blocked
+    311           *      SLEEP_SleepBlockEnd(sleepEM2);   // EM2, EM3 and EM4 are still blocked
+    312           *      SLEEP_SleepBlockEnd(sleepEM2);   // all energy modes are allowed now\endcode
+    313           *
+    314           * @param[in] eMode
+    315           *   Energy mode to end to block. Possible values:
+    316           *   @li sleepEM2 - End to block the system from being set to EM2/EM3/EM4.
+    317           *   @li sleepEM3 - End to block the system from being set to EM3/EM4.
+    318           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    319          void SLEEP_SleepBlockEnd(SLEEP_EnergyMode_t eMode)
+    320          {
+    321            EFM_ASSERT((eMode >= sleepEM2) && (eMode < sleepEM4));
+    322          
+    323            if ((eMode == sleepEM2) || (eMode == sleepEM3)) {
+   \                     SLEEP_SleepBlockEnd: (+1)
+   \        0x0   0x2802             CMP      R0,#+2
+   \        0x2   0xBF18             IT       NE 
+   \        0x4   0x2803             CMPNE    R0,#+3
+   \        0x6   0xD107             BNE.N    ??SLEEP_SleepBlockEnd_0
+    324              /* Decrease the sleep block counter of the selected energy mode. */
+    325              if (sleepBlockCnt[eMode - 2U] > 0U) {
+   \        0x8   0x....             LDR.N    R1,??DataTable7_3
+   \        0xA   0x4401             ADD      R1,R1,R0
+   \        0xC   0xF811 0x0C02      LDRB     R0,[R1, #-2]
+   \       0x10   0xB110             CBZ.N    R0,??SLEEP_SleepBlockEnd_0
+    326                sleepBlockCnt[eMode - 2U]--;
+   \       0x12   0x1E40             SUBS     R0,R0,#+1
+   \       0x14   0xF801 0x0C02      STRB     R0,[R1, #-2]
+    327              }
+    328          
+    329          #if (SLEEP_HW_LOW_ENERGY_BLOCK_ENABLED == true) && defined(_EMU_CTRL_EM2BLOCK_MASK)
+    330              /* Check if the EM2/EM3 block should be unblocked in the EMU. */
+    331              if (0U == sleepBlockCnt[sleepEM2 - 2U]) {
+    332                EMU_EM2UnBlock();
+    333              }
+    334          #endif
+    335            }
+    336          }
+   \                     ??SLEEP_SleepBlockEnd_0: (+1)
+   \       0x18   0x4770             BX       LR               ;; return
+    337          
+    338          /***************************************************************************//**
+    339           * @brief
+    340           *   Gets the lowest energy mode that the system is allowed to be set to.
+    341           *
+    342           * @details
+    343           *   This function uses the low energy mode block counters to determine the
+    344           *   lowest possible that the system is allowed to be set to.
+    345           *
+    346           * @return
+    347           *   Lowest energy mode that the system can be set to. Possible values:
+    348           *   @li sleepEM1
+    349           *   @li sleepEM2
+    350           *   @li sleepEM3
+    351           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    352          SLEEP_EnergyMode_t SLEEP_LowestEnergyModeGet(void)
+    353          {
+    354            SLEEP_EnergyMode_t tmpLowestEM = sleepEM1;
+    355          
+    356            /* Check which is the lowest energy mode that the system can be set to. */
+    357            if (0U == sleepBlockCnt[sleepEM2 - 2U]) {
+   \                     SLEEP_LowestEnergyModeGet: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable7_3
+   \        0x2   0x7811             LDRB     R1,[R2, #+0]
+   \        0x4   0x2001             MOVS     R0,#+1
+   \        0x6   0x2900             CMP      R1,#+0
+   \        0x8   0xBF01             ITTTT    EQ 
+   \        0xA   0x2002             MOVEQ    R0,#+2
+   \        0xC   0x7851             LDRBEQ   R1,[R2, #+1]
+   \        0xE   0x2900             CMPEQ    R1,#+0
+   \       0x10   0x2003             MOVEQ    R0,#+3
+    358              tmpLowestEM = sleepEM2;
+    359              if (0U == sleepBlockCnt[sleepEM3 - 2U]) {
+    360                tmpLowestEM = sleepEM3;
+    361              }
+    362            }
+    363          
+    364            /* Compare with the default lowest energy mode setting. */
+    365            if (SLEEP_LOWEST_ENERGY_MODE_DEFAULT < tmpLowestEM) {
+    366              tmpLowestEM = SLEEP_LOWEST_ENERGY_MODE_DEFAULT;
+    367            }
+    368          
+    369            return tmpLowestEM;
+   \       0x12   0x4770             BX       LR               ;; return
+    370          }
+    371          
+    372          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    373          
+    374          /***************************************************************************//**
+    375           * @brief
+    376           *   Call the callbacks and enter the requested energy mode.
+    377           *
+    378           * @details
+    379           *   This function is not part of the API, therefore it shall not be called by
+    380           *   the user directly as it doesn not have any checks if the system is ready
+    381           *   for sleep!
+    382           *
+    383           * @note
+    384           *   The EM4 wakeup callback is not being called from this function because
+    385           *   waking up from EM4 causes a reset.
+    386           *   If SLEEP_EM4_WAKEUP_CALLBACK_ENABLED is set to true, SLEEP_Init() function
+    387           *   checks for the cause of the reset and calls the wakeup callback if the
+    388           *   reset was a wakeup from EM4.
+    389           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    390          static SLEEP_EnergyMode_t enterEMx(SLEEP_EnergyMode_t eMode)
+    391          {
+   \                     enterEMx: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    392            bool enterSleep = true;
+    393            EFM_ASSERT((eMode > sleepEM0) && (eMode <= sleepEM4));
+    394          
+    395            /* Call sleepCallback() before going to sleep. */
+    396            if (NULL != sleepContext.sleepCallback) {
+   \        0x2   0x....             LDR.N    R5,??DataTable7_1
+   \        0x4   0x6829             LDR      R1,[R5, #+0]
+   \        0x6   0x4604             MOV      R4,R0
+   \        0x8   0xB109             CBZ.N    R1,??enterEMx_1
+    397              /* Call the callback before going to sleep. */
+    398              enterSleep = sleepContext.sleepCallback(eMode);
+    399            }
+    400          
+    401            if (!enterSleep) {
+   \        0xA   0x4788             BLX      R1
+   \        0xC   0xB1E0             CBZ.N    R0,??enterEMx_2
+    402              return sleepEM0;
+    403            }
+    404          
+    405            /* Enter the requested energy mode. */
+    406            switch (eMode) {
+   \                     ??enterEMx_1: (+1)
+   \        0xE   0x1E60             SUBS     R0,R4,#+1
+   \       0x10   0x2803             CMP      R0,#+3
+   \       0x12   0xD814             BHI.N    ??enterEMx_3
+   \       0x14   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??enterEMx_0:
+   \       0x18   0x02 0x09          DC8      0x2,0x9,0xD,0x11
+   \              0x0D 0x11    
+    407              case sleepEM1:
+    408                EMU_EnterEM1();
+   \                     ??enterEMx_4: (+1)
+   \       0x1C   0x....             LDR.N    R0,??DataTable7_4  ;; 0xe000ed10
+   \       0x1E   0x6801             LDR      R1,[R0, #+0]
+   \       0x20   0xF021 0x0104      BIC      R1,R1,#0x4
+   \       0x24   0x6001             STR      R1,[R0, #+0]
+   \       0x26   0xBF30             WFI      
+    409                break;
+   \       0x28   0xE009             B.N      ??enterEMx_3
+    410          
+    411              case sleepEM2:
+    412                EMU_EnterEM2(false);
+   \                     ??enterEMx_5: (+1)
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0x....'....        BL       EMU_EnterEM2
+    413                break;
+   \       0x30   0xE005             B.N      ??enterEMx_3
+    414          
+    415              case sleepEM3:
+    416                EMU_EnterEM3(false);
+   \                     ??enterEMx_6: (+1)
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x....'....        BL       EMU_EnterEM3
+    417                break;
+   \       0x38   0xE001             B.N      ??enterEMx_3
+    418          
+    419              case sleepEM4:
+    420                EMU_EnterEM4();
+   \                     ??enterEMx_7: (+1)
+   \       0x3A   0x....'....        BL       EMU_EnterEM4
+    421                break;
+    422          
+    423              default:
+    424                /* Don't do anything, stay in EM0. */
+    425                break;
+    426            }
+    427          
+    428            /* Call the callback after waking up from sleep. */
+    429            if (NULL != sleepContext.wakeupCallback) {
+   \                     ??enterEMx_3: (+1)
+   \       0x3E   0x6869             LDR      R1,[R5, #+4]
+   \       0x40   0xB109             CBZ.N    R1,??enterEMx_8
+    430              sleepContext.wakeupCallback(eMode);
+   \       0x42   0x4620             MOV      R0,R4
+   \       0x44   0x4788             BLX      R1
+    431            }
+    432          
+    433            return eMode;
+   \                     ??enterEMx_8: (+1)
+   \       0x46   0x4620             MOV      R0,R4
+   \                     ??enterEMx_2: (+1)
+   \       0x48   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    434          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     sleepCallback
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x....'....        DC32     sleepContext
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x....'....        DC32     sleepCallbackWrapper
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     sleepBlockCnt
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0xE000'ED10        DC32     0xe000ed10
+    435          /** @endcond */
+    436          
+    437          /** @} (end addtogroup SLEEP */
+    438          /** @} (end addtogroup emdrv) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SLEEP_ForceSleepInEM4
+         0   -> enterEMx
+       8   SLEEP_Init
+         0   -- Indirect call
+         8   -> RMU_ResetCauseClear
+         8   -> RMU_ResetCauseGet
+       8   SLEEP_InitEx
+         8   -> SLEEP_Init
+       0   SLEEP_LowestEnergyModeGet
+      16   SLEEP_Sleep
+        16   -- Indirect call
+        16   -> CORE_EnterCritical
+        16   -> CORE_ExitCritical
+        16   -> EMU_Restore
+        16   -> EMU_Save
+        16   -> SLEEP_LowestEnergyModeGet
+        16   -> enterEMx
+       0   SLEEP_SleepBlockBegin
+       0   SLEEP_SleepBlockEnd
+      16   enterEMx
+        16   -- Indirect call
+        16   -> EMU_EnterEM2
+        16   -> EMU_EnterEM3
+        16   -> EMU_EnterEM4
+       8   sleepCallbackWrapper
+         8   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  SLEEP_ForceSleepInEM4
+      46  SLEEP_Init
+      28  SLEEP_InitEx
+      20  SLEEP_LowestEnergyModeGet
+      78  SLEEP_Sleep
+      24  SLEEP_SleepBlockBegin
+      26  SLEEP_SleepBlockEnd
+      74  enterEMx
+       2  sleepBlockCnt
+       4  sleepCallback
+      14  sleepCallbackWrapper
+      12  sleepContext
+
+ 
+  18 bytes in section .bss
+ 334 bytes in section .text
+ 
+ 334 bytes of CODE memory
+  18 bytes of DATA memory
+
+Errors: none
+Warnings: none

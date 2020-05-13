@@ -1,0 +1,637 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:39
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_cmac.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW249D.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_cmac.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"cryptoacc_cmac.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\cryptoacc_cmac.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\cryptoacc_cmac.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_cmac.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief AES-CMAC abstraction based on CRYPTOACC
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: APACHE-2.0
+     10           *
+     11           * This software is subject to an open source license and is distributed by
+     12           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     13           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     14           * Such terms and conditions may be further supplemented by the Silicon Labs
+     15           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     16           * sections applicable to open source software.
+     17           *
+     18           ******************************************************************************/
+     19          
+     20          /*
+     21           * This file includes alternative plugin implementations of various
+     22           * functions in cmac.c using the CRYPTOACC accelerator incorporated
+     23           * in MCU devices from Silicon Laboratories.
+     24           */
+     25          
+     26          #include "em_device.h"
+     27          
+     28          #if defined(CRYPTOACC_PRESENT)
+     29          
+     30          #if !defined(MBEDTLS_CONFIG_FILE)
+     31          #include "mbedtls/config.h"
+     32          #else
+     33          #include MBEDTLS_CONFIG_FILE
+     34          #endif
+     35          
+     36          #if defined(MBEDTLS_AES_C)
+     37          #if defined (MBEDTLS_CMAC_ALT) && defined(MBEDTLS_CMAC_C)
+     38          #include "cryptoacc_management.h"
+     39          #include "sx_aes.h"
+     40          #include "sx_errors.h"
+     41          #include "cryptolib_def.h"
+     42          #include <string.h>
+     43          #include "mbedtls/cmac.h"
+     44          #include "mbedtls/cipher.h"
+     45          
+     46          #if defined(MBEDTLS_PLATFORM_C)
+     47          #include "mbedtls/platform.h"
+     48          #else
+     49          #include <stdlib.h>
+     50          #define mbedtls_calloc     calloc
+     51          #define mbedtls_free       free
+     52          #if defined(MBEDTLS_SELF_TEST)
+     53          #include <stdio.h>
+     54          #define mbedtls_printf     printf
+     55          #endif /* MBEDTLS_SELF_TEST */
+     56          #endif /* MBEDTLS_PLATFORM_C */
+     57          
+     58          /* Implementation that should never be optimized out by the compiler */
+     59          static void mbedtls_zeroize( void *v, size_t n ) {
+     60              volatile unsigned char *p = (unsigned char*)v; while( n-- ) *p++ = 0;
+     61          }
+     62          
+     63          /*
+     64           * Multiplication by u in the Galois field of GF(2^n)
+     65           *
+     66           * As explained in NIST SP 800-38B, this can be computed:
+     67           *
+     68           *   If MSB(p) = 0, then p = (p << 1)
+     69           *   If MSB(p) = 1, then p = (p << 1) ^ R_n
+     70           *   with R_64 = 0x1B and  R_128 = 0x87
+     71           *
+     72           * Input and output MUST NOT point to the same buffer
+     73           * Block size must be 8 bytes or 16 bytes - the block sizes for DES and AES.
+     74           */
+     75          static int cmac_multiply_by_u( unsigned char *output,
+     76                                         const unsigned char *input,
+     77                                         size_t blocksize )
+     78          {
+     79              const unsigned char R_128 = 0x87;
+     80              const unsigned char R_64 = 0x1B;
+     81              unsigned char R_n, mask;
+     82              unsigned char overflow = 0x00;
+     83              int i;
+     84          
+     85              if( blocksize == MBEDTLS_AES_BLOCK_SIZE )
+     86              {
+     87                  R_n = R_128;
+     88              }
+     89              else if( blocksize == MBEDTLS_DES3_BLOCK_SIZE )
+     90              {
+     91                  R_n = R_64;
+     92              }
+     93              else
+     94              {
+     95                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+     96              }
+     97          
+     98              for( i = (int)blocksize - 1; i >= 0; i-- )
+     99              {
+    100                  output[i] = input[i] << 1 | overflow;
+    101                  overflow = input[i] >> 7;
+    102              }
+    103          
+    104              /* mask = ( input[0] >> 7 ) ? 0xff : 0x00
+    105               * using bit operations to avoid branches */
+    106              mask = - ( input[0] >> 7 );
+    107          
+    108              output[ blocksize - 1 ] ^= R_n & mask;
+    109          
+    110              return( 0 );
+    111          }
+    112          
+    113          /*
+    114           * Generate subkeys
+    115           *
+    116           * - as specified by RFC 4493, section 2.3 Subkey Generation Algorithm
+    117           */
+    118          static int cmac_generate_subkeys( mbedtls_cipher_context_t *ctx,
+    119                                            unsigned char* K1, unsigned char* K2 )
+    120          {
+    121              int ret;
+    122              unsigned char L[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    123              size_t olen, block_size;
+    124          
+    125              mbedtls_zeroize( L, sizeof( L ) );
+    126          
+    127              block_size = ctx->cipher_info->block_size;
+    128          
+    129              /* Calculate Ek(0) */
+    130              if( ( ret = mbedtls_cipher_update( ctx, L, block_size, L, &olen ) ) != 0 )
+    131                  goto exit;
+    132          
+    133              /*
+    134               * Generate K1 and K2
+    135               */
+    136              if( ( ret = cmac_multiply_by_u( K1, L , block_size ) ) != 0 )
+    137                  goto exit;
+    138          
+    139              if( ( ret = cmac_multiply_by_u( K2, K1 , block_size ) ) != 0 )
+    140                  goto exit;
+    141          
+    142          exit:
+    143              mbedtls_zeroize( L, sizeof( L ) );
+    144          
+    145              return( ret );
+    146          }
+    147          
+    148          static void cmac_xor_block( unsigned char *output, const unsigned char *input1,
+    149                                      const unsigned char *input2,
+    150                                      const size_t block_size )
+    151          {
+    152              size_t idx;
+    153          
+    154              for( idx = 0; idx < block_size; idx++ )
+    155                  output[ idx ] = input1[ idx ] ^ input2[ idx ];
+    156          }
+    157          
+    158          /*
+    159           * Create padded last block from (partial) last block.
+    160           *
+    161           * We can't use the padding option from the cipher layer, as it only works for
+    162           * CBC and we use ECB mode, and anyway we need to XOR K1 or K2 in addition.
+    163           */
+    164          static void cmac_pad( unsigned char padded_block[MBEDTLS_CIPHER_BLKSIZE_MAX],
+    165                                size_t padded_block_len,
+    166                                const unsigned char *last_block,
+    167                                size_t last_block_len )
+    168          {
+    169              size_t j;
+    170          
+    171              for( j = 0; j < padded_block_len; j++ )
+    172              {
+    173                  if( j < last_block_len )
+    174                      padded_block[j] = last_block[j];
+    175                  else if( j == last_block_len )
+    176                      padded_block[j] = 0x80;
+    177                  else
+    178                      padded_block[j] = 0x00;
+    179              }
+    180          }
+    181          
+    182          int mbedtls_cipher_cmac_starts( mbedtls_cipher_context_t *ctx,
+    183                                          const unsigned char *key, size_t keybits )
+    184          {
+    185              mbedtls_cipher_type_t type;
+    186              mbedtls_cmac_context_t *cmac_ctx;
+    187              int retval;
+    188          
+    189              if( ctx == NULL || ctx->cipher_info == NULL || key == NULL )
+    190                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    191          
+    192              if( ( retval = mbedtls_cipher_setkey( ctx, key, (int)keybits,
+    193                                                    MBEDTLS_ENCRYPT ) ) != 0 )
+    194                  return( retval );
+    195          
+    196              type = ctx->cipher_info->type;
+    197          
+    198              switch( type )
+    199              {
+    200                  case MBEDTLS_CIPHER_AES_128_ECB:
+    201                  case MBEDTLS_CIPHER_AES_192_ECB:
+    202                  case MBEDTLS_CIPHER_AES_256_ECB:
+    203                  case MBEDTLS_CIPHER_DES_EDE3_ECB:
+    204                      break;
+    205                  default:
+    206                      return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    207              }
+    208          
+    209              /* Allocated and initialise in the cipher context memory for the CMAC
+    210               * context */
+    211              cmac_ctx = mbedtls_calloc( 1, sizeof( mbedtls_cmac_context_t ) );
+    212              if( cmac_ctx == NULL )
+    213                  return( MBEDTLS_ERR_CIPHER_ALLOC_FAILED );
+    214          
+    215              ctx->cmac_ctx = cmac_ctx;
+    216          
+    217              mbedtls_zeroize( cmac_ctx->state, sizeof( cmac_ctx->state ) );
+    218          
+    219              return 0;
+    220          }
+    221          
+    222          int mbedtls_cipher_cmac_update( mbedtls_cipher_context_t *ctx,
+    223                                          const unsigned char *input, size_t ilen )
+    224          {
+    225              mbedtls_cmac_context_t* cmac_ctx;
+    226              unsigned char *state;
+    227              int ret = 0;
+    228              size_t n, j, olen, block_size;
+    229          
+    230              if( ctx == NULL || ctx->cipher_info == NULL || input == NULL ||
+    231                  ctx->cmac_ctx == NULL )
+    232                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    233          
+    234              cmac_ctx = ctx->cmac_ctx;
+    235              block_size = ctx->cipher_info->block_size;
+    236              state = ctx->cmac_ctx->state;
+    237          
+    238              /* Is there data still to process from the last call, that's greater in
+    239               * size than a block? */
+    240              if( cmac_ctx->unprocessed_len > 0 &&
+    241                  ilen > block_size - cmac_ctx->unprocessed_len )
+    242              {
+    243                  memcpy( &cmac_ctx->unprocessed_block[cmac_ctx->unprocessed_len],
+    244                          input,
+    245                          block_size - cmac_ctx->unprocessed_len );
+    246          
+    247                  cmac_xor_block( state, cmac_ctx->unprocessed_block, state, block_size );
+    248          
+    249                  if( ( ret = mbedtls_cipher_update( ctx, state, block_size, state,
+    250                                                     &olen ) ) != 0 )
+    251                  {
+    252                     goto exit;
+    253                  }
+    254          
+    255                  input += block_size - cmac_ctx->unprocessed_len;
+    256                  ilen -= block_size - cmac_ctx->unprocessed_len;
+    257                  cmac_ctx->unprocessed_len = 0;
+    258              }
+    259          
+    260              /* n is the number of blocks including any final partial block */
+    261              n = ( ilen + block_size - 1 ) / block_size;
+    262          
+    263              /* Iterate across the input data in block sized chunks, excluding any
+    264               * final partial or complete block */
+    265              for( j = 1; j < n; j++ )
+    266              {
+    267                  cmac_xor_block( state, input, state, block_size );
+    268          
+    269                  if( ( ret = mbedtls_cipher_update( ctx, state, block_size, state,
+    270                                                     &olen ) ) != 0 )
+    271                     goto exit;
+    272          
+    273                  ilen -= block_size;
+    274                  input += block_size;
+    275              }
+    276          
+    277              /* If there is data left over that wasn't aligned to a block */
+    278              if( ilen > 0 )
+    279              {
+    280                  memcpy( &cmac_ctx->unprocessed_block[cmac_ctx->unprocessed_len],
+    281                          input,
+    282                          ilen );
+    283                  cmac_ctx->unprocessed_len += ilen;
+    284              }
+    285          
+    286          exit:
+    287              return( ret );
+    288          }
+    289          
+    290          int mbedtls_cipher_cmac_finish( mbedtls_cipher_context_t *ctx,
+    291                                          unsigned char *output )
+    292          {
+    293              mbedtls_cmac_context_t* cmac_ctx;
+    294              unsigned char *state, *last_block;
+    295              unsigned char K1[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    296              unsigned char K2[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    297              unsigned char M_last[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    298              int ret;
+    299              size_t olen, block_size;
+    300          
+    301              if( ctx == NULL || ctx->cipher_info == NULL || ctx->cmac_ctx == NULL ||
+    302                  output == NULL )
+    303                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    304          
+    305              cmac_ctx = ctx->cmac_ctx;
+    306              block_size = ctx->cipher_info->block_size;
+    307              state = cmac_ctx->state;
+    308          
+    309              mbedtls_zeroize( K1, sizeof( K1 ) );
+    310              mbedtls_zeroize( K2, sizeof( K2 ) );
+    311              cmac_generate_subkeys( ctx, K1, K2 );
+    312          
+    313              last_block = cmac_ctx->unprocessed_block;
+    314          
+    315              /* Calculate last block */
+    316              if( cmac_ctx->unprocessed_len < block_size )
+    317              {
+    318                  cmac_pad( M_last, block_size, last_block, cmac_ctx->unprocessed_len );
+    319                  cmac_xor_block( M_last, M_last, K2, block_size );
+    320              }
+    321              else
+    322              {
+    323                  /* Last block is complete block */
+    324                  cmac_xor_block( M_last, last_block, K1, block_size );
+    325              }
+    326          
+    327          
+    328              cmac_xor_block( state, M_last, state, block_size );
+    329              if( ( ret = mbedtls_cipher_update( ctx, state, block_size, state,
+    330                                                 &olen ) ) != 0 )
+    331              {
+    332                  goto exit;
+    333              }
+    334          
+    335              memcpy( output, state, block_size );
+    336          
+    337          exit:
+    338              /* Wipe the generated keys on the stack, and any other transients to avoid
+    339               * side channel leakage */
+    340              mbedtls_zeroize( K1, sizeof( K1 ) );
+    341              mbedtls_zeroize( K2, sizeof( K2 ) );
+    342          
+    343              cmac_ctx->unprocessed_len = 0;
+    344              mbedtls_zeroize( cmac_ctx->unprocessed_block,
+    345                               sizeof( cmac_ctx->unprocessed_block ) );
+    346          
+    347              mbedtls_zeroize( state, MBEDTLS_CIPHER_BLKSIZE_MAX );
+    348              return( ret );
+    349          }
+    350          
+    351          int mbedtls_cipher_cmac_reset( mbedtls_cipher_context_t *ctx )
+    352          {
+    353              mbedtls_cmac_context_t* cmac_ctx;
+    354          
+    355              if( ctx == NULL || ctx->cipher_info == NULL || ctx->cmac_ctx == NULL )
+    356                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    357          
+    358              cmac_ctx = ctx->cmac_ctx;
+    359          
+    360              /* Reset the internal state */
+    361              cmac_ctx->unprocessed_len = 0;
+    362              mbedtls_zeroize( cmac_ctx->unprocessed_block,
+    363                               sizeof( cmac_ctx->unprocessed_block ) );
+    364              mbedtls_zeroize( cmac_ctx->state,
+    365                               sizeof( cmac_ctx->state ) );
+    366          
+    367              return( 0 );
+    368          }
+    369          
+    370          int mbedtls_cipher_cmac( const mbedtls_cipher_info_t *cipher_info,
+    371                                   const unsigned char *key, size_t keylen,
+    372                                   const unsigned char *input, size_t ilen,
+    373                                   unsigned char *output )
+    374          {
+    375              int status;
+    376              uint32_t sx_ret;
+    377              block_t _key;
+    378              block_t data_in;
+    379              block_t tag_out;
+    380          
+    381              if( cipher_info == NULL || key == NULL || input == NULL || output == NULL )
+    382                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    383          
+    384              if ( keylen != 128UL && keylen != 192UL && keylen != 256UL) {
+    385                  return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+    386              }
+    387          
+    388              switch( cipher_info->type )
+    389              {
+    390                  case MBEDTLS_CIPHER_AES_128_ECB:
+    391                  case MBEDTLS_CIPHER_AES_192_ECB:
+    392                  case MBEDTLS_CIPHER_AES_256_ECB:
+    393                      break;
+    394                  default:
+    395                      return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    396              }
+    397          
+    398              _key = block_t_convert(key, keylen / 8);
+    399              data_in = block_t_convert(input, ilen);
+    400              tag_out = block_t_convert(output, 16);
+    401          
+    402              status = cryptoacc_management_acquire();
+    403              if (status != 0) {
+    404                  return status;
+    405              }
+    406              sx_ret = sx_aes_blk(CMAC, ENC, CTX_WHOLE, _key, NULL_blk, NULL_blk, data_in,
+    407          			NULL_blk, NULL_blk, tag_out, NULL_blk, NULL_blk);
+    408              cryptoacc_management_release();
+    409          
+    410              if (sx_ret != CRYPTOLIB_SUCCESS) {
+    411                  return MBEDTLS_ERR_CIPHER_HW_ACCEL_FAILED;
+    412              }
+    413          
+    414              return( 0 );
+    415          }
+    416          
+    417          /*
+    418           * Implementation of AES-CMAC-PRF-128 defined in RFC 4615
+    419           */
+    420          int mbedtls_aes_cmac_prf_128( const unsigned char *key, size_t key_length,
+    421                                        const unsigned char *input, size_t in_len,
+    422                                        unsigned char *output )
+    423          {
+    424              int ret;
+    425              const mbedtls_cipher_info_t *cipher_info;
+    426              unsigned char zero_key[MBEDTLS_AES_BLOCK_SIZE];
+    427              unsigned char int_key[MBEDTLS_AES_BLOCK_SIZE];
+    428          
+    429              if( key == NULL || input == NULL || output == NULL )
+    430                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    431          
+    432              cipher_info = mbedtls_cipher_info_from_type( MBEDTLS_CIPHER_AES_128_ECB );
+    433              if( cipher_info == NULL )
+    434              {
+    435                  /* Failing at this point must be due to a build issue */
+    436                  ret = MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE;
+    437                  goto exit;
+    438              }
+    439          
+    440              if( key_length == MBEDTLS_AES_BLOCK_SIZE )
+    441              {
+    442                  /* Use key as is */
+    443                  memcpy( int_key, key, MBEDTLS_AES_BLOCK_SIZE );
+    444              }
+    445              else
+    446              {
+    447                  memset( zero_key, 0, MBEDTLS_AES_BLOCK_SIZE );
+    448          
+    449                  ret = mbedtls_cipher_cmac( cipher_info, zero_key, 128, key,
+    450                                             key_length, int_key );
+    451                  if( ret != 0 )
+    452                      goto exit;
+    453              }
+    454          
+    455              ret = mbedtls_cipher_cmac( cipher_info, int_key, 128, input, in_len,
+    456                                         output );
+    457          
+    458          exit:
+    459              mbedtls_zeroize( int_key, sizeof( int_key ) );
+    460          
+    461              return( ret );
+    462          }
+    463          
+    464          #endif /* MBEDTLS_CMAC_ALT && MBEDTLS_CMAC_C */
+    465          
+    466          #endif /* MBEDTLS_AES_C */
+    467          
+    468          #endif /* CRYPTOACC_PRESENT */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

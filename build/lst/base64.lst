@@ -1,0 +1,474 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:15
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\base64.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWC37B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\base64.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"base64.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\base64.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\base64.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\base64.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  RFC 1521 base64 encoding/decoding
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_BASE64_C)
+     41          
+     42          #include "mbedtls/base64.h"
+     43          
+     44          #include <stdint.h>
+     45          
+     46          #if defined(MBEDTLS_SELF_TEST)
+     47          #include <string.h>
+     48          #if defined(MBEDTLS_PLATFORM_C)
+     49          #include "mbedtls/platform.h"
+     50          #else
+     51          #include <stdio.h>
+     52          #define mbedtls_printf printf
+     53          #endif /* MBEDTLS_PLATFORM_C */
+     54          #endif /* MBEDTLS_SELF_TEST */
+     55          
+     56          static const unsigned char base64_enc_map[64] =
+     57          {
+     58              'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+     59              'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+     60              'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
+     61              'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+     62              'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+     63              'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7',
+     64              '8', '9', '+', '/'
+     65          };
+     66          
+     67          static const unsigned char base64_dec_map[128] =
+     68          {
+     69              127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+     70              127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+     71              127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+     72              127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+     73              127, 127, 127,  62, 127, 127, 127,  63,  52,  53,
+     74               54,  55,  56,  57,  58,  59,  60,  61, 127, 127,
+     75              127,  64, 127, 127, 127,   0,   1,   2,   3,   4,
+     76                5,   6,   7,   8,   9,  10,  11,  12,  13,  14,
+     77               15,  16,  17,  18,  19,  20,  21,  22,  23,  24,
+     78               25, 127, 127, 127, 127, 127, 127,  26,  27,  28,
+     79               29,  30,  31,  32,  33,  34,  35,  36,  37,  38,
+     80               39,  40,  41,  42,  43,  44,  45,  46,  47,  48,
+     81               49,  50,  51, 127, 127, 127, 127, 127
+     82          };
+     83          
+     84          #define BASE64_SIZE_T_MAX   ( (size_t) -1 ) /* SIZE_T_MAX is not standard */
+     85          
+     86          /*
+     87           * Encode a buffer into base64 format
+     88           */
+     89          int mbedtls_base64_encode( unsigned char *dst, size_t dlen, size_t *olen,
+     90                             const unsigned char *src, size_t slen )
+     91          {
+     92              size_t i, n;
+     93              int C1, C2, C3;
+     94              unsigned char *p;
+     95          
+     96              if( slen == 0 )
+     97              {
+     98                  *olen = 0;
+     99                  return( 0 );
+    100              }
+    101          
+    102              n = slen / 3 + ( slen % 3 != 0 );
+    103          
+    104              if( n > ( BASE64_SIZE_T_MAX - 1 ) / 4 )
+    105              {
+    106                  *olen = BASE64_SIZE_T_MAX;
+    107                  return( MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL );
+    108              }
+    109          
+    110              n *= 4;
+    111          
+    112              if( ( dlen < n + 1 ) || ( NULL == dst ) )
+    113              {
+    114                  *olen = n + 1;
+    115                  return( MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL );
+    116              }
+    117          
+    118              n = ( slen / 3 ) * 3;
+    119          
+    120              for( i = 0, p = dst; i < n; i += 3 )
+    121              {
+    122                  C1 = *src++;
+    123                  C2 = *src++;
+    124                  C3 = *src++;
+    125          
+    126                  *p++ = base64_enc_map[(C1 >> 2) & 0x3F];
+    127                  *p++ = base64_enc_map[(((C1 &  3) << 4) + (C2 >> 4)) & 0x3F];
+    128                  *p++ = base64_enc_map[(((C2 & 15) << 2) + (C3 >> 6)) & 0x3F];
+    129                  *p++ = base64_enc_map[C3 & 0x3F];
+    130              }
+    131          
+    132              if( i < slen )
+    133              {
+    134                  C1 = *src++;
+    135                  C2 = ( ( i + 1 ) < slen ) ? *src++ : 0;
+    136          
+    137                  *p++ = base64_enc_map[(C1 >> 2) & 0x3F];
+    138                  *p++ = base64_enc_map[(((C1 & 3) << 4) + (C2 >> 4)) & 0x3F];
+    139          
+    140                  if( ( i + 1 ) < slen )
+    141                       *p++ = base64_enc_map[((C2 & 15) << 2) & 0x3F];
+    142                  else *p++ = '=';
+    143          
+    144                  *p++ = '=';
+    145              }
+    146          
+    147              *olen = p - dst;
+    148              *p = 0;
+    149          
+    150              return( 0 );
+    151          }
+    152          
+    153          /*
+    154           * Decode a base64-formatted buffer
+    155           */
+    156          int mbedtls_base64_decode( unsigned char *dst, size_t dlen, size_t *olen,
+    157                             const unsigned char *src, size_t slen )
+    158          {
+    159              size_t i, n;
+    160              uint32_t j, x;
+    161              unsigned char *p;
+    162          
+    163              /* First pass: check for validity and get output length */
+    164              for( i = n = j = 0; i < slen; i++ )
+    165              {
+    166                  /* Skip spaces before checking for EOL */
+    167                  x = 0;
+    168                  while( i < slen && src[i] == ' ' )
+    169                  {
+    170                      ++i;
+    171                      ++x;
+    172                  }
+    173          
+    174                  /* Spaces at end of buffer are OK */
+    175                  if( i == slen )
+    176                      break;
+    177          
+    178                  if( ( slen - i ) >= 2 &&
+    179                      src[i] == '\r' && src[i + 1] == '\n' )
+    180                      continue;
+    181          
+    182                  if( src[i] == '\n' )
+    183                      continue;
+    184          
+    185                  /* Space inside a line is an error */
+    186                  if( x != 0 )
+    187                      return( MBEDTLS_ERR_BASE64_INVALID_CHARACTER );
+    188          
+    189                  if( src[i] == '=' && ++j > 2 )
+    190                      return( MBEDTLS_ERR_BASE64_INVALID_CHARACTER );
+    191          
+    192                  if( src[i] > 127 || base64_dec_map[src[i]] == 127 )
+    193                      return( MBEDTLS_ERR_BASE64_INVALID_CHARACTER );
+    194          
+    195                  if( base64_dec_map[src[i]] < 64 && j != 0 )
+    196                      return( MBEDTLS_ERR_BASE64_INVALID_CHARACTER );
+    197          
+    198                  n++;
+    199              }
+    200          
+    201              if( n == 0 )
+    202              {
+    203                  *olen = 0;
+    204                  return( 0 );
+    205              }
+    206          
+    207              /* The following expression is to calculate the following formula without
+    208               * risk of integer overflow in n:
+    209               *     n = ( ( n * 6 ) + 7 ) >> 3;
+    210               */
+    211              n = ( 6 * ( n >> 3 ) ) + ( ( 6 * ( n & 0x7 ) + 7 ) >> 3 );
+    212              n -= j;
+    213          
+    214              if( dst == NULL || dlen < n )
+    215              {
+    216                  *olen = n;
+    217                  return( MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL );
+    218              }
+    219          
+    220             for( j = 3, n = x = 0, p = dst; i > 0; i--, src++ )
+    221             {
+    222                  if( *src == '\r' || *src == '\n' || *src == ' ' )
+    223                      continue;
+    224          
+    225                  j -= ( base64_dec_map[*src] == 64 );
+    226                  x  = ( x << 6 ) | ( base64_dec_map[*src] & 0x3F );
+    227          
+    228                  if( ++n == 4 )
+    229                  {
+    230                      n = 0;
+    231                      if( j > 0 ) *p++ = (unsigned char)( x >> 16 );
+    232                      if( j > 1 ) *p++ = (unsigned char)( x >>  8 );
+    233                      if( j > 2 ) *p++ = (unsigned char)( x       );
+    234                  }
+    235              }
+    236          
+    237              *olen = p - dst;
+    238          
+    239              return( 0 );
+    240          }
+    241          
+    242          #if defined(MBEDTLS_SELF_TEST)
+    243          
+    244          static const unsigned char base64_test_dec[64] =
+    245          {
+    246              0x24, 0x48, 0x6E, 0x56, 0x87, 0x62, 0x5A, 0xBD,
+    247              0xBF, 0x17, 0xD9, 0xA2, 0xC4, 0x17, 0x1A, 0x01,
+    248              0x94, 0xED, 0x8F, 0x1E, 0x11, 0xB3, 0xD7, 0x09,
+    249              0x0C, 0xB6, 0xE9, 0x10, 0x6F, 0x22, 0xEE, 0x13,
+    250              0xCA, 0xB3, 0x07, 0x05, 0x76, 0xC9, 0xFA, 0x31,
+    251              0x6C, 0x08, 0x34, 0xFF, 0x8D, 0xC2, 0x6C, 0x38,
+    252              0x00, 0x43, 0xE9, 0x54, 0x97, 0xAF, 0x50, 0x4B,
+    253              0xD1, 0x41, 0xBA, 0x95, 0x31, 0x5A, 0x0B, 0x97
+    254          };
+    255          
+    256          static const unsigned char base64_test_enc[] =
+    257              "JEhuVodiWr2/F9mixBcaAZTtjx4Rs9cJDLbpEG8i7hPK"
+    258              "swcFdsn6MWwINP+Nwmw4AEPpVJevUEvRQbqVMVoLlw==";
+    259          
+    260          /*
+    261           * Checkup routine
+    262           */
+    263          int mbedtls_base64_self_test( int verbose )
+    264          {
+    265              size_t len;
+    266              const unsigned char *src;
+    267              unsigned char buffer[128];
+    268          
+    269              if( verbose != 0 )
+    270                  mbedtls_printf( "  Base64 encoding test: " );
+    271          
+    272              src = base64_test_dec;
+    273          
+    274              if( mbedtls_base64_encode( buffer, sizeof( buffer ), &len, src, 64 ) != 0 ||
+    275                   memcmp( base64_test_enc, buffer, 88 ) != 0 )
+    276              {
+    277                  if( verbose != 0 )
+    278                      mbedtls_printf( "failed\n" );
+    279          
+    280                  return( 1 );
+    281              }
+    282          
+    283              if( verbose != 0 )
+    284                  mbedtls_printf( "passed\n  Base64 decoding test: " );
+    285          
+    286              src = base64_test_enc;
+    287          
+    288              if( mbedtls_base64_decode( buffer, sizeof( buffer ), &len, src, 88 ) != 0 ||
+    289                   memcmp( base64_test_dec, buffer, 64 ) != 0 )
+    290              {
+    291                  if( verbose != 0 )
+    292                      mbedtls_printf( "failed\n" );
+    293          
+    294                  return( 1 );
+    295              }
+    296          
+    297              if( verbose != 0 )
+    298                  mbedtls_printf( "passed\n\n" );
+    299          
+    300              return( 0 );
+    301          }
+    302          
+    303          #endif /* MBEDTLS_SELF_TEST */
+    304          
+    305          #endif /* MBEDTLS_BASE64_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

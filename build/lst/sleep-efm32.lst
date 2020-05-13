@@ -1,0 +1,726 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:52
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\sleep-efm32.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW41E9.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\sleep-efm32.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"sleep-efm32.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\sleep-efm32.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\sleep-efm32.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\sleep-efm32.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief EFM32/EFR32 specific sleep functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          #include PLATFORM_HEADER
+     18          #include "sleep-efm32.h"
+     19          #include "hal/micro/micro.h"
+     20          #include "em_emu.h"
+     21          #include "em_gpio.h"
+     22          #include "serial/com.h"
+     23          #include "watchdog.h"
+     24          #include "em_wdog.h"
+     25          
+     26          #if defined(RTCC_PRESENT) && (RTCC_COUNT == 1)
+     27          #define SYSTIMER_IRQ_N   RTCC_IRQn
+     28          #else
+     29          #define SYSTIMER_IRQ_N   RTC_IRQn
+     30          #endif
+     31          
+
+   \                                 In section .bss, align 4
+     32          static WakeEvents wakeInfo;
+   \                     wakeInfo:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     33          static Em4WakeupCause_t em4WakeupCause;
+   \                     em4WakeupCause:
+   \        0x0                      DS8 4
+     34          
+
+   \                                 In section .text, align 2, keep-with-next
+     35          WakeEvents halGetWakeInfo(void)
+     36          {
+     37            return wakeInfo;
+   \                     halGetWakeInfo: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable5
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+     38          }
+     39          
+
+   \                                 In section .text, align 2, keep-with-next
+     40          const Em4WakeupCause_t * halInternalEm4WakeupCause(void)
+     41          {
+     42            return &em4WakeupCause;
+   \                     halInternalEm4WakeupCause: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable5_1
+   \        0x2   0x4770             BX       LR               ;; return
+     43          }
+     44          
+
+   \                                 In section .text, align 2, keep-with-next
+     45          void halInternalEm4Wakeup(void)
+     46          {
+     47            uint32_t gpioEm4Flags = 0;
+     48          
+     49          #if defined(_GPIO_IF_EM4WU_MASK)
+     50            gpioEm4Flags = GPIO_IntGet() & _GPIO_IF_EM4WU_MASK;
+   \                     halInternalEm4Wakeup: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable5_2  ;; 0x4003c420
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+     51            GPIO_IntClear(gpioEm4Flags);
+   \        0x4   0x....             LDR.N    R1,??DataTable5_3  ;; 0x4003e420
+     52          #elif defined(_GPIO_EM4WUCAUSE_MASK)
+     53            gpioEm4Flags = GPIO->EM4WUCAUSE & _GPIO_EM4WUCAUSE_MASK;
+     54          #endif
+     55          
+     56            em4WakeupCause.gpioFlags = gpioEm4Flags;
+   \        0x6   0x....             LDR.N    R2,??DataTable5_1
+   \        0x8   0x0C00             LSRS     R0,R0,#+16
+   \        0xA   0x0400             LSLS     R0,R0,#+16
+   \        0xC   0x6008             STR      R0,[R1, #+0]
+   \        0xE   0x6010             STR      R0,[R2, #+0]
+     57          }
+   \       0x10   0x4770             BX       LR               ;; return
+     58          
+     59          /**
+     60           * @brief Check if an interrupt is triggered
+     61           *
+     62           * @details This function checks if an interrupt is enabled and pending
+     63           *
+     64           * @param  [in] IRQn Interrupt number
+     65           *
+     66           * @return true   Interrupt is triggered
+     67           *         false  Interrupt is not triggered
+     68           */
+
+   \                                 In section .text, align 2, keep-with-next
+     69          static bool irqTriggered(IRQn_Type IRQn)
+     70          {
+   \                     irqTriggered: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+     71            return NVIC_GetPendingIRQ(IRQn) && NVIC_GetEnableIRQ(IRQn);
+   \        0x2   0xD40F             BMI.N    ??irqTriggered_0
+   \        0x4   0x0940             LSRS     R0,R0,#+5
+   \        0x6   0x....             LDR.N    R2,??DataTable5_4  ;; 0xe000e200
+   \        0x8   0xF852 0x2020      LDR      R2,[R2, R0, LSL #+2]
+   \        0xC   0xF001 0x011F      AND      R1,R1,#0x1F
+   \       0x10   0x40CA             LSRS     R2,R2,R1
+   \       0x12   0x07D2             LSLS     R2,R2,#+31
+   \       0x14   0xD506             BPL.N    ??irqTriggered_0
+   \       0x16   0x....             LDR.N    R3,??DataTable5_5  ;; 0xe000e100
+   \       0x18   0xF853 0x0020      LDR      R0,[R3, R0, LSL #+2]
+   \       0x1C   0x40C8             LSRS     R0,R0,R1
+   \       0x1E   0xF000 0x0001      AND      R0,R0,#0x1
+   \       0x22   0x4770             BX       LR
+   \                     ??irqTriggered_0: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x4770             BX       LR               ;; return
+     72          }
+     73          
+
+   \                                 In section .text, align 4, keep-with-next
+     74          static void halInternalSleepHelper(SleepModes sleepMode, bool preserveIntState)
+     75          {
+   \                     halInternalSleepHelper: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4605             MOV      R5,R0
+     76            bool watchdogDisableInSleep;
+     77          
+     78            // SLEEPMODE_POWERDOWN and SLEEPMODE_POWERSAVE are deprecated.  Remap them
+     79            // to their appropriate, new mode name.
+     80            if (sleepMode == SLEEPMODE_POWERDOWN) {
+   \        0x6   0x2807             CMP      R0,#+7
+   \        0x8   0x468A             MOV      R10,R1
+   \        0xA   0xBF08             IT       EQ 
+   \        0xC   0x2503             MOVEQ    R5,#+3
+     81              sleepMode = SLEEPMODE_MAINTAINTIMER;
+   \        0xE   0xD002             BEQ.N    ??halInternalSleepHelper_1
+     82            } else if (sleepMode == SLEEPMODE_POWERSAVE) {
+   \       0x10   0x2808             CMP      R0,#+8
+   \       0x12   0xBF08             IT       EQ 
+   \       0x14   0x2502             MOVEQ    R5,#+2
+     83              sleepMode = SLEEPMODE_WAKETIMER;
+     84            }
+     85          
+     86            halSleepCallback(true, sleepMode);
+   \                     ??halInternalSleepHelper_1: (+1)
+   \       0x16   0x4629             MOV      R1,R5
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0x....'....        BL       halSleepCallback
+     87            // Disable and restore watchdog if already on and going for EM1 sleep,
+     88            // since we can't clear it asleep in EM1. The watchdog is frozen in
+     89            // EM2 and 3 and disabling it while in EM2 and 3 sleep is not needed.
+     90            watchdogDisableInSleep = halInternalWatchDogEnabled()
+     91                                     && (sleepMode == SLEEPMODE_IDLE);
+   \       0x1E   0x....'....        BL       halInternalWatchDogEnabled
+   \       0x22   0xB130             CBZ.N    R0,??halInternalSleepHelper_2
+   \       0x24   0x2D01             CMP      R5,#+1
+   \       0x26   0xD104             BNE.N    ??halInternalSleepHelper_2
+     92          
+     93            if (watchdogDisableInSleep) {
+     94              halInternalDisableWatchDog(MICRO_DISABLE_WATCH_DOG_KEY);
+   \       0x28   0x20A5             MOVS     R0,#+165
+   \       0x2A   0x2601             MOVS     R6,#+1
+   \       0x2C   0x....'....        BL       halInternalDisableWatchDog
+   \       0x30   0xE005             B.N      ??halInternalSleepHelper_3
+     95            } else if (halInternalWatchDogEnabled()) {
+   \                     ??halInternalSleepHelper_2: (+1)
+   \       0x32   0x2600             MOVS     R6,#+0
+   \       0x34   0x....'....        BL       halInternalWatchDogEnabled
+   \       0x38   0xB108             CBZ.N    R0,??halInternalSleepHelper_3
+     96              halInternalWatchDogSleep();
+   \       0x3A   0x....'....        BL       halInternalWatchDogSleep
+     97            }
+     98          
+     99            // BASEPRI is set to 0 in order to allow interrupts to wakeup the MCU
+    100            // PRIMASK is set to 1 in order to block interrupt handler when MCU wakes up.
+    101            uint32_t primask = __get_PRIMASK();
+   \                     ??halInternalSleepHelper_3: (+1)
+   \       0x3E   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \       0x42   0x9000             STR      R0,[SP, #+0]
+    102            __set_PRIMASK(1);
+   \       0x44   0x2001             MOVS     R0,#+1
+   \       0x46   0xF380 0x8810      MSR      PRIMASK,R0
+    103          #if (__CORTEX_M >= 3)
+    104            uint32_t basepri = __get_BASEPRI();
+   \       0x4A   0xF3EF 0x8B11      MRS      R11,BASEPRI
+    105            __set_BASEPRI(0);
+   \       0x4E   0xF04F 0x0800      MOV      R8,#+0
+   \       0x52   0xF388 0x8811      MSR      BASEPRI,R8
+    106          #endif
+    107          
+    108            COM_InternalPowerDown(sleepMode == SLEEPMODE_IDLE);
+   \       0x56   0x2D01             CMP      R5,#+1
+   \       0x58   0x....             LDR.N    R4,??DataTable5
+   \       0x5A   0xBF0C             ITE      EQ 
+   \       0x5C   0x4681             MOVEQ    R9,R0
+   \       0x5E   0x46C1             MOVNE    R9,R8
+   \       0x60   0x4648             MOV      R0,R9
+   \       0x62   0x....'....        BL       COM_InternalPowerDown
+    109            wakeInfo = 0;
+    110          
+    111          #ifdef BOOTLOADER_OPEN
+    112            #error no bootloader support yet
+    113          #endif
+    114          
+    115            switch (sleepMode) {
+   \       0x66   0x1E68             SUBS     R0,R5,#+1
+   \       0x68   0xF8C4 0x8000      STR      R8,[R4, #+0]
+   \       0x6C   0x2804             CMP      R0,#+4
+   \       0x6E   0xD816             BHI.N    ??halInternalSleepHelper_4
+   \       0x70   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??halInternalSleepHelper_0:
+   \       0x74   0x03 0x0A          DC8      0x3,0xA,0xA,0xE
+   \              0x0A 0x0E    
+   \       0x78   0x12 0x00          DC8      0x12,0x0
+    116              case SLEEPMODE_IDLE:
+    117                EMU_EnterEM1();
+   \                     ??halInternalSleepHelper_5: (+1)
+   \       0x7A   0x....             LDR.N    R0,??DataTable5_6  ;; 0xe000ed10
+   \       0x7C   0x6801             LDR      R1,[R0, #+0]
+   \       0x7E   0xF021 0x0104      BIC      R1,R1,#0x4
+   \       0x82   0x6001             STR      R1,[R0, #+0]
+   \       0x84   0xBF30             WFI      
+    118                break;
+   \       0x86   0xE00E             B.N      ??halInternalSleepHelper_6
+    119              // there is no difference between wake/maintain timer
+    120              case SLEEPMODE_WAKETIMER:
+    121              case SLEEPMODE_MAINTAINTIMER:
+    122                EMU_EnterEM2(true);
+   \                     ??halInternalSleepHelper_7: (+1)
+   \       0x88   0x2001             MOVS     R0,#+1
+   \       0x8A   0x....'....        BL       EMU_EnterEM2
+    123                break;
+   \       0x8E   0xE00A             B.N      ??halInternalSleepHelper_6
+    124              case SLEEPMODE_NOTIMER:
+    125                EMU_EnterEM3(true);
+   \                     ??halInternalSleepHelper_8: (+1)
+   \       0x90   0x2001             MOVS     R0,#+1
+   \       0x92   0x....'....        BL       EMU_EnterEM3
+    126                break;
+   \       0x96   0xE006             B.N      ??halInternalSleepHelper_6
+    127              case SLEEPMODE_HIBERNATE:
+    128                EMU_EnterEM4();
+   \                     ??halInternalSleepHelper_9: (+1)
+   \       0x98   0x....'....        BL       EMU_EnterEM4
+    129                break;
+   \       0x9C   0xE003             B.N      ??halInternalSleepHelper_6
+    130              default:
+    131                //Oops!  Invalid sleepMode parameter.
+    132                assert(0);
+   \                     ??halInternalSleepHelper_4: (+1)
+   \       0x9E   0x2184             MOVS     R1,#+132
+   \       0xA0   0x....             LDR.N    R0,??DataTable5_7
+   \       0xA2   0x....'....        BL       halInternalAssertFailed
+    133                break;
+    134            }
+    135          
+    136            wakeInfo = GPIO_IntGetEnabled() & _GPIO_IF_EXT_MASK;
+   \                     ??halInternalSleepHelper_6: (+1)
+   \       0xA6   0x....             LDR.N    R0,??DataTable5_2  ;; 0x4003c420
+   \       0xA8   0x6841             LDR      R1,[R0, #+4]
+   \       0xAA   0x6807             LDR      R7,[R0, #+0]
+    137            if (irqTriggered(GPIO_EVEN_IRQn) || irqTriggered(GPIO_ODD_IRQn)) {
+   \       0xAC   0x201A             MOVS     R0,#+26
+   \       0xAE   0x400F             ANDS     R7,R1,R7
+   \       0xB0   0xB2BF             UXTH     R7,R7
+   \       0xB2   0x6027             STR      R7,[R4, #+0]
+   \       0xB4   0x....'....        BL       irqTriggered
+   \       0xB8   0xB918             CBNZ.N   R0,??halInternalSleepHelper_10
+   \       0xBA   0x2019             MOVS     R0,#+25
+   \       0xBC   0x....'....        BL       irqTriggered
+   \       0xC0   0xB110             CBZ.N    R0,??halInternalSleepHelper_11
+    138              wakeInfo |= WAKE_IRQ_GPIO;
+   \                     ??halInternalSleepHelper_10: (+1)
+   \       0xC2   0xF447 0x3780      ORR      R7,R7,#0x10000
+   \       0xC6   0x6027             STR      R7,[R4, #+0]
+    139            }
+    140            if (irqTriggered(SYSTIMER_IRQ_N)) {
+   \                     ??halInternalSleepHelper_11: (+1)
+   \       0xC8   0x200A             MOVS     R0,#+10
+   \       0xCA   0x....'....        BL       irqTriggered
+   \       0xCE   0xB118             CBZ.N    R0,??halInternalSleepHelper_12
+    141              wakeInfo |= WAKE_IRQ_SYSTIMER;
+   \       0xD0   0x6820             LDR      R0,[R4, #+0]
+   \       0xD2   0xF440 0x3000      ORR      R0,R0,#0x20000
+   \       0xD6   0x6020             STR      R0,[R4, #+0]
+    142            }
+    143          #if defined(RFSENSE_PRESENT) && (RFSENSE_COUNT == 1)
+    144            if (irqTriggered(RFSENSE_IRQn)) {
+    145              wakeInfo |= WAKE_IRQ_RFSENSE;
+    146            }
+    147          #endif
+    148          
+    149            // restart watchdog if it was running when we entered sleep
+    150            // do this before dispatching interrupts while we still have tight
+    151            // control of code execution
+    152            if (watchdogDisableInSleep) {
+   \                     ??halInternalSleepHelper_12: (+1)
+   \       0xD8   0xB11E             CBZ.N    R6,??halInternalSleepHelper_13
+    153              WDOGn_Enable(DEFAULT_WDOG, true);
+   \       0xDA   0x2101             MOVS     R1,#+1
+   \       0xDC   0x....             LDR.N    R0,??DataTable5_8  ;; 0x4a018000
+   \       0xDE   0x....'....        BL       WDOGn_Enable
+    154            }
+    155          
+    156            COM_InternalPowerUp(sleepMode == SLEEPMODE_IDLE);
+   \                     ??halInternalSleepHelper_13: (+1)
+   \       0xE2   0x4648             MOV      R0,R9
+   \       0xE4   0x....'....        BL       COM_InternalPowerUp
+    157          
+    158            if (preserveIntState) { // RTOS-friendly scheme to preserve interrupt state
+   \       0xE8   0xF1BA 0x0F00      CMP      R10,#+0
+    159              // Restore BASEPRI and PRIMASK to previous levels.
+    160            #if (__CORTEX_M >= 3)
+    161              __set_BASEPRI(basepri);
+    162            #endif
+    163              __set_PRIMASK(primask);
+    164            } else { // emberHAL-compatible scheme enabling interrupts per API expectation
+    165              // Clear PRIMASK to enable all interrupts. Note that after this
+    166              // point BASEPRI=0 and PRIMASK=0 which means that all interrupts
+    167              // are enabled. The interrupt state is not saved/restored due to
+    168              // historical API restrictions.
+    169              __set_PRIMASK(0);
+    170            }
+    171            halSleepCallback(false, sleepMode);
+   \       0xEC   0x4629             MOV      R1,R5
+   \       0xEE   0xBF1D             ITTTE    NE 
+   \       0xF0   0xF38B 0x8811      MSRNE    BASEPRI,R11
+   \       0xF4   0x9800             LDRNE    R0,[SP, #+0]
+   \       0xF6   0xF380 0x8810      MSRNE    PRIMASK,R0
+   \       0xFA   0xF388 0x8810      MSREQ    PRIMASK,R8
+   \       0xFE   0x2000             MOVS     R0,#+0
+   \      0x100   0xE8BD 0x4FF4      POP      {R2,R4-R11,LR}
+   \      0x104   0x....'....        B.W      halSleepCallback
+    172          }
+    173          
+
+   \                                 In section .text, align 2, keep-with-next
+    174          void halInternalSleep(SleepModes sleepMode)
+    175          {
+    176            halInternalSleepHelper(sleepMode, false);
+   \                     halInternalSleep: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x....             B.N      halInternalSleepHelper
+    177          }
+    178          
+    179          // Series 1 devices use _GPIO_IEN_EXT_MASK and series 2 devices use and
+    180          // identical mask renamed to _GPIO_IEN_EXTIEN_MASK.
+    181          #if defined (_SILICON_LABS_32B_SERIES_2) && !defined (_GPIO_IEN_EXT_MASK)
+    182          #define _GPIO_IEN_EXT_MASK _GPIO_IEN_EXTIEN_MASK
+    183          #endif
+    184          
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void halSleepWithOptions(SleepModes sleepMode, WakeMask wakeMask)
+    186          {
+   \                     halSleepWithOptions: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    187            uint32_t gpioIen = GPIO->IEN & _GPIO_IEN_EXT_MASK;
+   \        0x2   0x....'....        BL       ?Subroutine0
+    188            GPIO->IEN = (GPIO->IEN & ~(_GPIO_IEN_EXT_MASK))
+    189                        | (wakeMask & _GPIO_IEN_EXT_MASK);
+    190            halInternalSleep(sleepMode);
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0x....'....        BL       halInternalSleep
+    191            GPIO->IEN = (GPIO->IEN & ~(_GPIO_IEN_EXT_MASK))
+    192                        | (gpioIen & _GPIO_IEN_EXT_MASK);
+   \        0xA   0x6821             LDR      R1,[R4, #+0]
+   \        0xC   0x0C09             LSRS     R1,R1,#+16
+   \        0xE   0xEA45 0x4501      ORR      R5,R5,R1, LSL #+16
+   \       0x12   0x6025             STR      R5,[R4, #+0]
+    193          }
+   \       0x14   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R4,??DataTable5_9  ;; 0x4003c424
+   \        0x2   0x6825             LDR      R5,[R4, #+0]
+   \        0x4   0x6822             LDR      R2,[R4, #+0]
+   \        0x6   0xB289             UXTH     R1,R1
+   \        0x8   0xB2AD             UXTH     R5,R5
+   \        0xA   0x0C12             LSRS     R2,R2,#+16
+   \        0xC   0xEA41 0x4102      ORR      R1,R1,R2, LSL #+16
+   \       0x10   0x6021             STR      R1,[R4, #+0]
+   \       0x12   0x4770             BX       LR
+    194          
+
+   \                                 In section .text, align 2, keep-with-next
+    195          void halSleep(SleepModes sleepMode)
+    196          {
+    197            halInternalSleep(sleepMode);
+   \                     halSleep: (+1)
+   \        0x0   0x....             B.N      halInternalSleep
+    198          }
+    199          
+    200          // RTOS-friendly APIs that restore interrupt state upon waking
+
+   \                                 In section .text, align 2, keep-with-next
+    201          void halSleepWithOptionsPreserveInts(SleepModes sleepMode, WakeMask wakeMask)
+    202          {
+   \                     halSleepWithOptionsPreserveInts: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    203            uint32_t gpioIen = GPIO->IEN & _GPIO_IEN_EXT_MASK;
+   \        0x2   0x....'....        BL       ?Subroutine0
+    204            GPIO->IEN = (GPIO->IEN & ~(_GPIO_IEN_EXT_MASK))
+    205                        | (wakeMask & _GPIO_IEN_EXT_MASK);
+    206            halInternalSleepHelper(sleepMode, true);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0x2101             MOVS     R1,#+1
+   \        0x8   0x....'....        BL       halInternalSleepHelper
+    207            GPIO->IEN = (GPIO->IEN & ~(_GPIO_IEN_EXT_MASK))
+    208                        | (gpioIen & _GPIO_IEN_EXT_MASK);
+   \        0xC   0x6822             LDR      R2,[R4, #+0]
+   \        0xE   0x0C12             LSRS     R2,R2,#+16
+   \       0x10   0xEA45 0x4502      ORR      R5,R5,R2, LSL #+16
+   \       0x14   0x6025             STR      R5,[R4, #+0]
+    209            // N.B. If interrupts were disabled upon entry, any GPIOs in wakeMask
+    210            // that were newly enabled (not in gpioIen) and caused the wakeup
+    211            // will *not* trigger their ISR handler because interrupts remain
+    212            // disabled here and those wakeMask GPIOs were just disabled by the
+    213            // GPIO IEN restoration above.  They will, however, be represented
+    214            // by WAKE_IRQ_GPIO in halGetWakeInfo().
+    215          }
+   \       0x16   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    216          
+
+   \                                 In section .text, align 2, keep-with-next
+    217          void halSleepPreserveInts(SleepModes sleepMode)
+    218          {
+    219            halInternalSleepHelper(sleepMode, true);
+   \                     halSleepPreserveInts: (+1)
+   \        0x0   0x2101             MOVS     R1,#+1
+   \        0x2   0x....             B.N      halInternalSleepHelper
+    220          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     wakeInfo
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     em4WakeupCause
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x4003'C420        DC32     0x4003c420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x4003'E420        DC32     0x4003e420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0xE000'E200        DC32     0xe000e200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \        0x0   0xE000'ED10        DC32     0xe000ed10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_7:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_8:
+   \        0x0   0x4A01'8000        DC32     0x4a018000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_9:
+   \        0x0   0x4003'C424        DC32     0x4003c424
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x73 0x6C          DC8 "sleep-efm32.c"
+   \              0x65 0x65    
+   \              0x70 0x2D    
+   \              0x65 0x66    
+   \              0x6D 0x33    
+   \              0x32 0x2E    
+   \              0x63 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   halGetWakeInfo
+       0   halInternalEm4Wakeup
+       0   halInternalEm4WakeupCause
+       0   halInternalSleep
+         0   -> halInternalSleepHelper
+      40   halInternalSleepHelper
+        40   -> COM_InternalPowerDown
+        40   -> COM_InternalPowerUp
+        40   -> EMU_EnterEM2
+        40   -> EMU_EnterEM3
+        40   -> EMU_EnterEM4
+        40   -> WDOGn_Enable
+        40   -> halInternalAssertFailed
+        40   -> halInternalDisableWatchDog
+        40   -> halInternalWatchDogEnabled
+        40   -> halInternalWatchDogSleep
+         0   -> halSleepCallback
+        40   -> halSleepCallback
+        40   -> irqTriggered
+       0   halSleep
+         0   -> halInternalSleep
+       0   halSleepPreserveInts
+         0   -> halInternalSleepHelper
+      16   halSleepWithOptions
+        16   -> halInternalSleep
+      16   halSleepWithOptionsPreserveInts
+        16   -> halInternalSleepHelper
+       0   irqTriggered
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+      20  ?Subroutine0
+      16  ?_0
+       4  em4WakeupCause
+       6  halGetWakeInfo
+      18  halInternalEm4Wakeup
+       4  halInternalEm4WakeupCause
+       4  halInternalSleep
+     264  halInternalSleepHelper
+       2  halSleep
+       4  halSleepPreserveInts
+      22  halSleepWithOptions
+      24  halSleepWithOptionsPreserveInts
+      40  irqTriggered
+       4  wakeInfo
+
+ 
+   8 bytes in section .bss
+  16 bytes in section .rodata
+ 448 bytes in section .text
+ 
+ 448 bytes of CODE  memory
+  16 bytes of CONST memory
+   8 bytes of DATA  memory
+
+Errors: none
+Warnings: none

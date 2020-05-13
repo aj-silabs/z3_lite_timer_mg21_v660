@@ -1,0 +1,957 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:20:04
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509_crl.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW70A7.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509_crl.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"x509_crl.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\x509_crl.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\x509_crl.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\x509_crl.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  X.509 Certidicate Revocation List (CRL) parsing
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          /*
+     34           *  The ITU-T X.509 standard defines a certificate format for PKI.
+     35           *
+     36           *  http://www.ietf.org/rfc/rfc5280.txt (Certificates and CRLs)
+     37           *  http://www.ietf.org/rfc/rfc3279.txt (Alg IDs for CRLs)
+     38           *  http://www.ietf.org/rfc/rfc2986.txt (CSRs, aka PKCS#10)
+     39           *
+     40           *  http://www.itu.int/ITU-T/studygroups/com17/languages/X.680-0207.pdf
+     41           *  http://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf
+     42           */
+     43          
+     44          #if !defined(MBEDTLS_CONFIG_FILE)
+     45          #include "mbedtls/config.h"
+     46          #else
+     47          #include MBEDTLS_CONFIG_FILE
+     48          #endif
+     49          
+     50          #if defined(MBEDTLS_X509_CRL_PARSE_C)
+     51          
+     52          #include "mbedtls/x509_crl.h"
+     53          #include "mbedtls/oid.h"
+     54          
+     55          #include <string.h>
+     56          
+     57          #if defined(MBEDTLS_PEM_PARSE_C)
+     58          #include "mbedtls/pem.h"
+     59          #endif
+     60          
+     61          #if defined(MBEDTLS_PLATFORM_C)
+     62          #include "mbedtls/platform.h"
+     63          #else
+     64          #include <stdlib.h>
+     65          #include <stdio.h>
+     66          #define mbedtls_free       free
+     67          #define mbedtls_calloc    calloc
+     68          #define mbedtls_snprintf   snprintf
+     69          #endif
+     70          
+     71          #if defined(_WIN32) && !defined(EFIX64) && !defined(EFI32)
+     72          #include <windows.h>
+     73          #else
+     74          #include <time.h>
+     75          #endif
+     76          
+     77          #if defined(MBEDTLS_FS_IO) || defined(EFIX64) || defined(EFI32)
+     78          #include <stdio.h>
+     79          #endif
+     80          
+     81          /* Implementation that should never be optimized out by the compiler */
+     82          static void mbedtls_zeroize( void *v, size_t n ) {
+     83              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     84          }
+     85          
+     86          /*
+     87           *  Version  ::=  INTEGER  {  v1(0), v2(1)  }
+     88           */
+     89          static int x509_crl_get_version( unsigned char **p,
+     90                                       const unsigned char *end,
+     91                                       int *ver )
+     92          {
+     93              int ret;
+     94          
+     95              if( ( ret = mbedtls_asn1_get_int( p, end, ver ) ) != 0 )
+     96              {
+     97                  if( ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+     98                  {
+     99                      *ver = 0;
+    100                      return( 0 );
+    101                  }
+    102          
+    103                  return( MBEDTLS_ERR_X509_INVALID_VERSION + ret );
+    104              }
+    105          
+    106              return( 0 );
+    107          }
+    108          
+    109          /*
+    110           * X.509 CRL v2 extensions
+    111           *
+    112           * We currently don't parse any extension's content, but we do check that the
+    113           * list of extensions is well-formed and abort on critical extensions (that
+    114           * are unsupported as we don't support any extension so far)
+    115           */
+    116          static int x509_get_crl_ext( unsigned char **p,
+    117                                       const unsigned char *end,
+    118                                       mbedtls_x509_buf *ext )
+    119          {
+    120              int ret;
+    121          
+    122              /*
+    123               * crlExtensions           [0]  EXPLICIT Extensions OPTIONAL
+    124               *                              -- if present, version MUST be v2
+    125               */
+    126              if( ( ret = mbedtls_x509_get_ext( p, end, ext, 0 ) ) != 0 )
+    127              {
+    128                  if( ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    129                      return( 0 );
+    130          
+    131                  return( ret );
+    132              }
+    133          
+    134              while( *p < end )
+    135              {
+    136                  /*
+    137                   * Extension  ::=  SEQUENCE  {
+    138                   *      extnID      OBJECT IDENTIFIER,
+    139                   *      critical    BOOLEAN DEFAULT FALSE,
+    140                   *      extnValue   OCTET STRING  }
+    141                   */
+    142                  int is_critical = 0;
+    143                  const unsigned char *end_ext_data;
+    144                  size_t len;
+    145          
+    146                  /* Get enclosing sequence tag */
+    147                  if( ( ret = mbedtls_asn1_get_tag( p, end, &len,
+    148                          MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    149                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    150          
+    151                  end_ext_data = *p + len;
+    152          
+    153                  /* Get OID (currently ignored) */
+    154                  if( ( ret = mbedtls_asn1_get_tag( p, end_ext_data, &len,
+    155                                                    MBEDTLS_ASN1_OID ) ) != 0 )
+    156                  {
+    157                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    158                  }
+    159                  *p += len;
+    160          
+    161                  /* Get optional critical */
+    162                  if( ( ret = mbedtls_asn1_get_bool( p, end_ext_data,
+    163                                                     &is_critical ) ) != 0 &&
+    164                      ( ret != MBEDTLS_ERR_ASN1_UNEXPECTED_TAG ) )
+    165                  {
+    166                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    167                  }
+    168          
+    169                  /* Data should be octet string type */
+    170                  if( ( ret = mbedtls_asn1_get_tag( p, end_ext_data, &len,
+    171                          MBEDTLS_ASN1_OCTET_STRING ) ) != 0 )
+    172                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    173          
+    174                  /* Ignore data so far and just check its length */
+    175                  *p += len;
+    176                  if( *p != end_ext_data )
+    177                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS +
+    178                              MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    179          
+    180                  /* Abort on (unsupported) critical extensions */
+    181                  if( is_critical )
+    182                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS +
+    183                              MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    184              }
+    185          
+    186              if( *p != end )
+    187                  return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS +
+    188                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    189          
+    190              return( 0 );
+    191          }
+    192          
+    193          /*
+    194           * X.509 CRL v2 entry extensions (no extensions parsed yet.)
+    195           */
+    196          static int x509_get_crl_entry_ext( unsigned char **p,
+    197                                       const unsigned char *end,
+    198                                       mbedtls_x509_buf *ext )
+    199          {
+    200              int ret;
+    201              size_t len = 0;
+    202          
+    203              /* OPTIONAL */
+    204              if( end <= *p )
+    205                  return( 0 );
+    206          
+    207              ext->tag = **p;
+    208              ext->p = *p;
+    209          
+    210              /*
+    211               * Get CRL-entry extension sequence header
+    212               * crlEntryExtensions      Extensions OPTIONAL  -- if present, MUST be v2
+    213               */
+    214              if( ( ret = mbedtls_asn1_get_tag( p, end, &ext->len,
+    215                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    216              {
+    217                  if( ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    218                  {
+    219                      ext->p = NULL;
+    220                      return( 0 );
+    221                  }
+    222                  return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    223              }
+    224          
+    225              end = *p + ext->len;
+    226          
+    227              if( end != *p + ext->len )
+    228                  return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS +
+    229                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    230          
+    231              while( *p < end )
+    232              {
+    233                  if( ( ret = mbedtls_asn1_get_tag( p, end, &len,
+    234                          MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    235                      return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS + ret );
+    236          
+    237                  *p += len;
+    238              }
+    239          
+    240              if( *p != end )
+    241                  return( MBEDTLS_ERR_X509_INVALID_EXTENSIONS +
+    242                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    243          
+    244              return( 0 );
+    245          }
+    246          
+    247          /*
+    248           * X.509 CRL Entries
+    249           */
+    250          static int x509_get_entries( unsigned char **p,
+    251                                       const unsigned char *end,
+    252                                       mbedtls_x509_crl_entry *entry )
+    253          {
+    254              int ret;
+    255              size_t entry_len;
+    256              mbedtls_x509_crl_entry *cur_entry = entry;
+    257          
+    258              if( *p == end )
+    259                  return( 0 );
+    260          
+    261              if( ( ret = mbedtls_asn1_get_tag( p, end, &entry_len,
+    262                      MBEDTLS_ASN1_SEQUENCE | MBEDTLS_ASN1_CONSTRUCTED ) ) != 0 )
+    263              {
+    264                  if( ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG )
+    265                      return( 0 );
+    266          
+    267                  return( ret );
+    268              }
+    269          
+    270              end = *p + entry_len;
+    271          
+    272              while( *p < end )
+    273              {
+    274                  size_t len2;
+    275                  const unsigned char *end2;
+    276          
+    277                  if( ( ret = mbedtls_asn1_get_tag( p, end, &len2,
+    278                          MBEDTLS_ASN1_SEQUENCE | MBEDTLS_ASN1_CONSTRUCTED ) ) != 0 )
+    279                  {
+    280                      return( ret );
+    281                  }
+    282          
+    283                  cur_entry->raw.tag = **p;
+    284                  cur_entry->raw.p = *p;
+    285                  cur_entry->raw.len = len2;
+    286                  end2 = *p + len2;
+    287          
+    288                  if( ( ret = mbedtls_x509_get_serial( p, end2, &cur_entry->serial ) ) != 0 )
+    289                      return( ret );
+    290          
+    291                  if( ( ret = mbedtls_x509_get_time( p, end2,
+    292                                             &cur_entry->revocation_date ) ) != 0 )
+    293                      return( ret );
+    294          
+    295                  if( ( ret = x509_get_crl_entry_ext( p, end2,
+    296                                                      &cur_entry->entry_ext ) ) != 0 )
+    297                      return( ret );
+    298          
+    299                  if( *p < end )
+    300                  {
+    301                      cur_entry->next = mbedtls_calloc( 1, sizeof( mbedtls_x509_crl_entry ) );
+    302          
+    303                      if( cur_entry->next == NULL )
+    304                          return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    305          
+    306                      cur_entry = cur_entry->next;
+    307                  }
+    308              }
+    309          
+    310              return( 0 );
+    311          }
+    312          
+    313          /*
+    314           * Parse one  CRLs in DER format and append it to the chained list
+    315           */
+    316          int mbedtls_x509_crl_parse_der( mbedtls_x509_crl *chain,
+    317                                  const unsigned char *buf, size_t buflen )
+    318          {
+    319              int ret;
+    320              size_t len;
+    321              unsigned char *p = NULL, *end = NULL;
+    322              mbedtls_x509_buf sig_params1, sig_params2, sig_oid2;
+    323              mbedtls_x509_crl *crl = chain;
+    324          
+    325              /*
+    326               * Check for valid input
+    327               */
+    328              if( crl == NULL || buf == NULL )
+    329                  return( MBEDTLS_ERR_X509_BAD_INPUT_DATA );
+    330          
+    331              memset( &sig_params1, 0, sizeof( mbedtls_x509_buf ) );
+    332              memset( &sig_params2, 0, sizeof( mbedtls_x509_buf ) );
+    333              memset( &sig_oid2, 0, sizeof( mbedtls_x509_buf ) );
+    334          
+    335              /*
+    336               * Add new CRL on the end of the chain if needed.
+    337               */
+    338              while( crl->version != 0 && crl->next != NULL )
+    339                  crl = crl->next;
+    340          
+    341              if( crl->version != 0 && crl->next == NULL )
+    342              {
+    343                  crl->next = mbedtls_calloc( 1, sizeof( mbedtls_x509_crl ) );
+    344          
+    345                  if( crl->next == NULL )
+    346                  {
+    347                      mbedtls_x509_crl_free( crl );
+    348                      return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    349                  }
+    350          
+    351                  mbedtls_x509_crl_init( crl->next );
+    352                  crl = crl->next;
+    353              }
+    354          
+    355              /*
+    356               * Copy raw DER-encoded CRL
+    357               */
+    358              if( buflen == 0 )
+    359                  return( MBEDTLS_ERR_X509_INVALID_FORMAT );
+    360          
+    361              p = mbedtls_calloc( 1, buflen );
+    362              if( p == NULL )
+    363                  return( MBEDTLS_ERR_X509_ALLOC_FAILED );
+    364          
+    365              memcpy( p, buf, buflen );
+    366          
+    367              crl->raw.p = p;
+    368              crl->raw.len = buflen;
+    369          
+    370              end = p + buflen;
+    371          
+    372              /*
+    373               * CertificateList  ::=  SEQUENCE  {
+    374               *      tbsCertList          TBSCertList,
+    375               *      signatureAlgorithm   AlgorithmIdentifier,
+    376               *      signatureValue       BIT STRING  }
+    377               */
+    378              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    379                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    380              {
+    381                  mbedtls_x509_crl_free( crl );
+    382                  return( MBEDTLS_ERR_X509_INVALID_FORMAT );
+    383              }
+    384          
+    385              if( len != (size_t) ( end - p ) )
+    386              {
+    387                  mbedtls_x509_crl_free( crl );
+    388                  return( MBEDTLS_ERR_X509_INVALID_FORMAT +
+    389                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    390              }
+    391          
+    392              /*
+    393               * TBSCertList  ::=  SEQUENCE  {
+    394               */
+    395              crl->tbs.p = p;
+    396          
+    397              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    398                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    399              {
+    400                  mbedtls_x509_crl_free( crl );
+    401                  return( MBEDTLS_ERR_X509_INVALID_FORMAT + ret );
+    402              }
+    403          
+    404              end = p + len;
+    405              crl->tbs.len = end - crl->tbs.p;
+    406          
+    407              /*
+    408               * Version  ::=  INTEGER  OPTIONAL {  v1(0), v2(1)  }
+    409               *               -- if present, MUST be v2
+    410               *
+    411               * signature            AlgorithmIdentifier
+    412               */
+    413              if( ( ret = x509_crl_get_version( &p, end, &crl->version ) ) != 0 ||
+    414                  ( ret = mbedtls_x509_get_alg( &p, end, &crl->sig_oid, &sig_params1 ) ) != 0 )
+    415              {
+    416                  mbedtls_x509_crl_free( crl );
+    417                  return( ret );
+    418              }
+    419          
+    420              if( crl->version < 0 || crl->version > 1 )
+    421              {
+    422                  mbedtls_x509_crl_free( crl );
+    423                  return( MBEDTLS_ERR_X509_UNKNOWN_VERSION );
+    424              }
+    425          
+    426              crl->version++;
+    427          
+    428              if( ( ret = mbedtls_x509_get_sig_alg( &crl->sig_oid, &sig_params1,
+    429                                            &crl->sig_md, &crl->sig_pk,
+    430                                            &crl->sig_opts ) ) != 0 )
+    431              {
+    432                  mbedtls_x509_crl_free( crl );
+    433                  return( MBEDTLS_ERR_X509_UNKNOWN_SIG_ALG );
+    434              }
+    435          
+    436              /*
+    437               * issuer               Name
+    438               */
+    439              crl->issuer_raw.p = p;
+    440          
+    441              if( ( ret = mbedtls_asn1_get_tag( &p, end, &len,
+    442                      MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE ) ) != 0 )
+    443              {
+    444                  mbedtls_x509_crl_free( crl );
+    445                  return( MBEDTLS_ERR_X509_INVALID_FORMAT + ret );
+    446              }
+    447          
+    448              if( ( ret = mbedtls_x509_get_name( &p, p + len, &crl->issuer ) ) != 0 )
+    449              {
+    450                  mbedtls_x509_crl_free( crl );
+    451                  return( ret );
+    452              }
+    453          
+    454              crl->issuer_raw.len = p - crl->issuer_raw.p;
+    455          
+    456              /*
+    457               * thisUpdate          Time
+    458               * nextUpdate          Time OPTIONAL
+    459               */
+    460              if( ( ret = mbedtls_x509_get_time( &p, end, &crl->this_update ) ) != 0 )
+    461              {
+    462                  mbedtls_x509_crl_free( crl );
+    463                  return( ret );
+    464              }
+    465          
+    466              if( ( ret = mbedtls_x509_get_time( &p, end, &crl->next_update ) ) != 0 )
+    467              {
+    468                  if( ret != ( MBEDTLS_ERR_X509_INVALID_DATE +
+    469                                  MBEDTLS_ERR_ASN1_UNEXPECTED_TAG ) &&
+    470                      ret != ( MBEDTLS_ERR_X509_INVALID_DATE +
+    471                                  MBEDTLS_ERR_ASN1_OUT_OF_DATA ) )
+    472                  {
+    473                      mbedtls_x509_crl_free( crl );
+    474                      return( ret );
+    475                  }
+    476              }
+    477          
+    478              /*
+    479               * revokedCertificates    SEQUENCE OF SEQUENCE   {
+    480               *      userCertificate        CertificateSerialNumber,
+    481               *      revocationDate         Time,
+    482               *      crlEntryExtensions     Extensions OPTIONAL
+    483               *                                   -- if present, MUST be v2
+    484               *                        } OPTIONAL
+    485               */
+    486              if( ( ret = x509_get_entries( &p, end, &crl->entry ) ) != 0 )
+    487              {
+    488                  mbedtls_x509_crl_free( crl );
+    489                  return( ret );
+    490              }
+    491          
+    492              /*
+    493               * crlExtensions          EXPLICIT Extensions OPTIONAL
+    494               *                              -- if present, MUST be v2
+    495               */
+    496              if( crl->version == 2 )
+    497              {
+    498                  ret = x509_get_crl_ext( &p, end, &crl->crl_ext );
+    499          
+    500                  if( ret != 0 )
+    501                  {
+    502                      mbedtls_x509_crl_free( crl );
+    503                      return( ret );
+    504                  }
+    505              }
+    506          
+    507              if( p != end )
+    508              {
+    509                  mbedtls_x509_crl_free( crl );
+    510                  return( MBEDTLS_ERR_X509_INVALID_FORMAT +
+    511                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    512              }
+    513          
+    514              end = crl->raw.p + crl->raw.len;
+    515          
+    516              /*
+    517               *  signatureAlgorithm   AlgorithmIdentifier,
+    518               *  signatureValue       BIT STRING
+    519               */
+    520              if( ( ret = mbedtls_x509_get_alg( &p, end, &sig_oid2, &sig_params2 ) ) != 0 )
+    521              {
+    522                  mbedtls_x509_crl_free( crl );
+    523                  return( ret );
+    524              }
+    525          
+    526              if( crl->sig_oid.len != sig_oid2.len ||
+    527                  memcmp( crl->sig_oid.p, sig_oid2.p, crl->sig_oid.len ) != 0 ||
+    528                  sig_params1.len != sig_params2.len ||
+    529                  ( sig_params1.len != 0 &&
+    530                    memcmp( sig_params1.p, sig_params2.p, sig_params1.len ) != 0 ) )
+    531              {
+    532                  mbedtls_x509_crl_free( crl );
+    533                  return( MBEDTLS_ERR_X509_SIG_MISMATCH );
+    534              }
+    535          
+    536              if( ( ret = mbedtls_x509_get_sig( &p, end, &crl->sig ) ) != 0 )
+    537              {
+    538                  mbedtls_x509_crl_free( crl );
+    539                  return( ret );
+    540              }
+    541          
+    542              if( p != end )
+    543              {
+    544                  mbedtls_x509_crl_free( crl );
+    545                  return( MBEDTLS_ERR_X509_INVALID_FORMAT +
+    546                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH );
+    547              }
+    548          
+    549              return( 0 );
+    550          }
+    551          
+    552          /*
+    553           * Parse one or more CRLs and add them to the chained list
+    554           */
+    555          int mbedtls_x509_crl_parse( mbedtls_x509_crl *chain, const unsigned char *buf, size_t buflen )
+    556          {
+    557          #if defined(MBEDTLS_PEM_PARSE_C)
+    558              int ret;
+    559              size_t use_len;
+    560              mbedtls_pem_context pem;
+    561              int is_pem = 0;
+    562          
+    563              if( chain == NULL || buf == NULL )
+    564                  return( MBEDTLS_ERR_X509_BAD_INPUT_DATA );
+    565          
+    566              do
+    567              {
+    568                  mbedtls_pem_init( &pem );
+    569          
+    570                  // Avoid calling mbedtls_pem_read_buffer() on non-null-terminated
+    571                  // string
+    572                  if( buflen == 0 || buf[buflen - 1] != '\0' )
+    573                      ret = MBEDTLS_ERR_PEM_NO_HEADER_FOOTER_PRESENT;
+    574                  else
+    575                      ret = mbedtls_pem_read_buffer( &pem,
+    576                                                     "-----BEGIN X509 CRL-----",
+    577                                                     "-----END X509 CRL-----",
+    578                                                      buf, NULL, 0, &use_len );
+    579          
+    580                  if( ret == 0 )
+    581                  {
+    582                      /*
+    583                       * Was PEM encoded
+    584                       */
+    585                      is_pem = 1;
+    586          
+    587                      buflen -= use_len;
+    588                      buf += use_len;
+    589          
+    590                      if( ( ret = mbedtls_x509_crl_parse_der( chain,
+    591                                                      pem.buf, pem.buflen ) ) != 0 )
+    592                      {
+    593                          mbedtls_pem_free( &pem );
+    594                          return( ret );
+    595                      }
+    596                  }
+    597                  else if( is_pem )
+    598                  {
+    599                      mbedtls_pem_free( &pem );
+    600                      return( ret );
+    601                  }
+    602          
+    603                  mbedtls_pem_free( &pem );
+    604              }
+    605              /* In the PEM case, buflen is 1 at the end, for the terminated NULL byte.
+    606               * And a valid CRL cannot be less than 1 byte anyway. */
+    607              while( is_pem && buflen > 1 );
+    608          
+    609              if( is_pem )
+    610                  return( 0 );
+    611              else
+    612          #endif /* MBEDTLS_PEM_PARSE_C */
+    613                  return( mbedtls_x509_crl_parse_der( chain, buf, buflen ) );
+    614          }
+    615          
+    616          #if defined(MBEDTLS_FS_IO)
+    617          /*
+    618           * Load one or more CRLs and add them to the chained list
+    619           */
+    620          int mbedtls_x509_crl_parse_file( mbedtls_x509_crl *chain, const char *path )
+    621          {
+    622              int ret;
+    623              size_t n;
+    624              unsigned char *buf;
+    625          
+    626              if( ( ret = mbedtls_pk_load_file( path, &buf, &n ) ) != 0 )
+    627                  return( ret );
+    628          
+    629              ret = mbedtls_x509_crl_parse( chain, buf, n );
+    630          
+    631              mbedtls_zeroize( buf, n );
+    632              mbedtls_free( buf );
+    633          
+    634              return( ret );
+    635          }
+    636          #endif /* MBEDTLS_FS_IO */
+    637          
+    638          /*
+    639           * Return an informational string about the certificate.
+    640           */
+    641          #define BEFORE_COLON    14
+    642          #define BC              "14"
+    643          /*
+    644           * Return an informational string about the CRL.
+    645           */
+    646          int mbedtls_x509_crl_info( char *buf, size_t size, const char *prefix,
+    647                             const mbedtls_x509_crl *crl )
+    648          {
+    649              int ret;
+    650              size_t n;
+    651              char *p;
+    652              const mbedtls_x509_crl_entry *entry;
+    653          
+    654              p = buf;
+    655              n = size;
+    656          
+    657              ret = mbedtls_snprintf( p, n, "%sCRL version   : %d",
+    658                                         prefix, crl->version );
+    659              MBEDTLS_X509_SAFE_SNPRINTF;
+    660          
+    661              ret = mbedtls_snprintf( p, n, "\n%sissuer name   : ", prefix );
+    662              MBEDTLS_X509_SAFE_SNPRINTF;
+    663              ret = mbedtls_x509_dn_gets( p, n, &crl->issuer );
+    664              MBEDTLS_X509_SAFE_SNPRINTF;
+    665          
+    666              ret = mbedtls_snprintf( p, n, "\n%sthis update   : " \
+    667                             "%04d-%02d-%02d %02d:%02d:%02d", prefix,
+    668                             crl->this_update.year, crl->this_update.mon,
+    669                             crl->this_update.day,  crl->this_update.hour,
+    670                             crl->this_update.min,  crl->this_update.sec );
+    671              MBEDTLS_X509_SAFE_SNPRINTF;
+    672          
+    673              ret = mbedtls_snprintf( p, n, "\n%snext update   : " \
+    674                             "%04d-%02d-%02d %02d:%02d:%02d", prefix,
+    675                             crl->next_update.year, crl->next_update.mon,
+    676                             crl->next_update.day,  crl->next_update.hour,
+    677                             crl->next_update.min,  crl->next_update.sec );
+    678              MBEDTLS_X509_SAFE_SNPRINTF;
+    679          
+    680              entry = &crl->entry;
+    681          
+    682              ret = mbedtls_snprintf( p, n, "\n%sRevoked certificates:",
+    683                                         prefix );
+    684              MBEDTLS_X509_SAFE_SNPRINTF;
+    685          
+    686              while( entry != NULL && entry->raw.len != 0 )
+    687              {
+    688                  ret = mbedtls_snprintf( p, n, "\n%sserial number: ",
+    689                                         prefix );
+    690                  MBEDTLS_X509_SAFE_SNPRINTF;
+    691          
+    692                  ret = mbedtls_x509_serial_gets( p, n, &entry->serial );
+    693                  MBEDTLS_X509_SAFE_SNPRINTF;
+    694          
+    695                  ret = mbedtls_snprintf( p, n, " revocation date: " \
+    696                             "%04d-%02d-%02d %02d:%02d:%02d",
+    697                             entry->revocation_date.year, entry->revocation_date.mon,
+    698                             entry->revocation_date.day,  entry->revocation_date.hour,
+    699                             entry->revocation_date.min,  entry->revocation_date.sec );
+    700                  MBEDTLS_X509_SAFE_SNPRINTF;
+    701          
+    702                  entry = entry->next;
+    703              }
+    704          
+    705              ret = mbedtls_snprintf( p, n, "\n%ssigned using  : ", prefix );
+    706              MBEDTLS_X509_SAFE_SNPRINTF;
+    707          
+    708              ret = mbedtls_x509_sig_alg_gets( p, n, &crl->sig_oid, crl->sig_pk, crl->sig_md,
+    709                                       crl->sig_opts );
+    710              MBEDTLS_X509_SAFE_SNPRINTF;
+    711          
+    712              ret = mbedtls_snprintf( p, n, "\n" );
+    713              MBEDTLS_X509_SAFE_SNPRINTF;
+    714          
+    715              return( (int) ( size - n ) );
+    716          }
+    717          
+    718          /*
+    719           * Initialize a CRL chain
+    720           */
+    721          void mbedtls_x509_crl_init( mbedtls_x509_crl *crl )
+    722          {
+    723              memset( crl, 0, sizeof(mbedtls_x509_crl) );
+    724          }
+    725          
+    726          /*
+    727           * Unallocate all CRL data
+    728           */
+    729          void mbedtls_x509_crl_free( mbedtls_x509_crl *crl )
+    730          {
+    731              mbedtls_x509_crl *crl_cur = crl;
+    732              mbedtls_x509_crl *crl_prv;
+    733              mbedtls_x509_name *name_cur;
+    734              mbedtls_x509_name *name_prv;
+    735              mbedtls_x509_crl_entry *entry_cur;
+    736              mbedtls_x509_crl_entry *entry_prv;
+    737          
+    738              if( crl == NULL )
+    739                  return;
+    740          
+    741              do
+    742              {
+    743          #if defined(MBEDTLS_X509_RSASSA_PSS_SUPPORT)
+    744                  mbedtls_free( crl_cur->sig_opts );
+    745          #endif
+    746          
+    747                  name_cur = crl_cur->issuer.next;
+    748                  while( name_cur != NULL )
+    749                  {
+    750                      name_prv = name_cur;
+    751                      name_cur = name_cur->next;
+    752                      mbedtls_zeroize( name_prv, sizeof( mbedtls_x509_name ) );
+    753                      mbedtls_free( name_prv );
+    754                  }
+    755          
+    756                  entry_cur = crl_cur->entry.next;
+    757                  while( entry_cur != NULL )
+    758                  {
+    759                      entry_prv = entry_cur;
+    760                      entry_cur = entry_cur->next;
+    761                      mbedtls_zeroize( entry_prv, sizeof( mbedtls_x509_crl_entry ) );
+    762                      mbedtls_free( entry_prv );
+    763                  }
+    764          
+    765                  if( crl_cur->raw.p != NULL )
+    766                  {
+    767                      mbedtls_zeroize( crl_cur->raw.p, crl_cur->raw.len );
+    768                      mbedtls_free( crl_cur->raw.p );
+    769                  }
+    770          
+    771                  crl_cur = crl_cur->next;
+    772              }
+    773              while( crl_cur != NULL );
+    774          
+    775              crl_cur = crl;
+    776              do
+    777              {
+    778                  crl_prv = crl_cur;
+    779                  crl_cur = crl_cur->next;
+    780          
+    781                  mbedtls_zeroize( crl_prv, sizeof( mbedtls_x509_crl ) );
+    782                  if( crl_prv != crl )
+    783                      mbedtls_free( crl_prv );
+    784              }
+    785              while( crl_cur != NULL );
+    786          }
+    787          
+    788          #endif /* MBEDTLS_X509_CRL_PARSE_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

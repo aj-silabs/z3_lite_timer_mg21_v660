@@ -1,0 +1,2757 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:42
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\rtcdrv\src\rtcdriver.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW191C.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\rtcdrv\src\rtcdriver.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"rtcdriver.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\rtcdrv\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\rtcdriver.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\rtcdriver.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emdrv\rtcdrv\src\rtcdriver.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief RTCDRV timer API implementation.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc.  Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement.  This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include <string.h>
+     19          
+     20          #include "em_device.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void __NVIC_ClearPendingIRQ(IRQn_Type)
+   \                     __NVIC_ClearPendingIRQ: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0xD408             BMI.N    ??__NVIC_ClearPendingIRQ_0
+   \        0x4   0x2201             MOVS     R2,#+1
+   \        0x6   0xF000 0x011F      AND      R1,R0,#0x1F
+   \        0xA   0x408A             LSLS     R2,R2,R1
+   \        0xC   0x....'....        LDR.W    R3,??DataTable24  ;; 0xe000e280
+   \       0x10   0x0940             LSRS     R0,R0,#+5
+   \       0x12   0xF843 0x2020      STR      R2,[R3, R0, LSL #+2]
+   \                     ??__NVIC_ClearPendingIRQ_0: (+1)
+   \       0x16   0x4770             BX       LR               ;; return
+     21          #include "em_cmu.h"
+     22          #include "em_common.h"
+     23          #include "em_core.h"
+     24          
+     25          #if defined(RTCC_PRESENT) && (RTCC_COUNT == 1)
+     26          #define RTCDRV_USE_RTCC
+     27          #else
+     28          #define RTCDRV_USE_RTC
+     29          #endif
+     30          
+     31          #if defined(RTCDRV_USE_RTCC)
+     32          #include "em_rtcc.h"
+     33          #else
+     34          #include "em_rtc.h"
+     35          #endif
+     36          
+     37          #include "rtcdriver.h"
+     38          #if defined(EMDRV_RTCDRV_SLEEPDRV_INTEGRATION)
+     39          #include "sleep.h"
+     40          #endif
+     41          
+     42          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+     43          
+     44          #if defined(EMDRV_RTCDRV_SLEEPDRV_INTEGRATION) \
+     45            && !defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)   \
+     46            &&  defined(RTCDRV_USE_RTC)
+     47          // Do not allow EM3/EM4 energy modes when the RTC is running.
+     48          #define EMODE_DYNAMIC
+     49          #endif
+     50          
+     51          #if defined(EMDRV_RTCDRV_SLEEPDRV_INTEGRATION) \
+     52            && defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)    \
+     53            &&  defined(RTCDRV_USE_RTC)
+     54          // Always deny EM3/EM4 energy modes when wallclock is enabled.
+     55          #define EMODE_NEVER_ALLOW_EM3EM4
+     56          #endif
+     57          
+     58          //
+     59          // Various #defines to enable use of both RTC and RTCC.
+     60          //
+     61          #if defined(RTCDRV_USE_RTCC)
+     62          #define TIMEDIFF(a, b)              ((a) - (b))
+     63          #define RTC_COUNTERGET()            RTCC_CounterGet()
+     64          #define RTC_COUNTER_BITS            32
+     65          #define RTC_ALL_INTS                _RTCC_IF_MASK
+     66          #define RTC_OF_INT                  RTCC_IF_OF
+     67          #define RTC_COMP_INT                RTCC_IF_CC1
+     68          #define RTC_COUNTER_MASK            (_RTCC_CNT_MASK)
+     69          #define RTC_MAX_VALUE               (_RTCC_CNT_MASK)
+     70          #define RTC_INTDISABLE(x)           RTCC_IntDisable(x)
+     71          #define RTC_INTENABLE(x)            RTCC_IntEnable(x)
+     72          #define RTC_INTCLEAR(x)             RTCC_IntClear(x)
+     73          #define RTC_INTGET()                RTCC_IntGetEnabled()
+     74          #define RTC_COUNTERRESET()          RTCC->CNT = _RTCC_CNT_RESETVALUE
+     75          #define RTC_COMPARESET(x)           RTCC_ChannelCCVSet(1, x)
+     76          #define RTC_COMPAREGET()            RTCC_ChannelCCVGet(1)
+     77          #define NVIC_CLEARPENDINGIRQ()      NVIC_ClearPendingIRQ(RTCC_IRQn)
+     78          #define NVIC_DISABLEIRQ()           NVIC_DisableIRQ(RTCC_IRQn)
+     79          #define NVIC_ENABLEIRQ()            NVIC_EnableIRQ(RTCC_IRQn)
+     80          #if defined(_SILICON_LABS_32B_SERIES_2)
+     81          #define RTC_ONESHOT_TICK_ADJUST     1
+     82          #else
+     83          #define RTC_ONESHOT_TICK_ADJUST     0
+     84          #endif
+     85          
+     86          #else
+     87          // To get the math correct MSB of the underlying 24bit
+     88          // counter must be in the MSB position of a uint32_t datatype.
+     89          #define TIMEDIFF(a, b)              ((( (a) << 8) - ((b) << 8) ) >> 8)
+     90          #define RTC_COUNTERGET()            RTC_CounterGet()
+     91          #define RTC_COUNTER_BITS            24
+     92          #define RTC_ALL_INTS                _RTC_IF_MASK
+     93          #define RTC_OF_INT                  RTC_IF_OF
+     94          #define RTC_COMP_INT                RTC_IF_COMP0
+     95          #define RTC_COUNTER_MASK            (_RTC_CNT_MASK)
+     96          #define RTC_MAX_VALUE               (_RTC_CNT_MASK)
+     97          #define RTC_INTDISABLE(x)           RTC_IntDisable(x)
+     98          #define RTC_INTENABLE(x)            RTC_IntEnable(x)
+     99          #define RTC_INTCLEAR(x)             RTC_IntClear(x)
+    100          #define RTC_INTGET()                RTC_IntGetEnabled()
+    101          #define RTC_COUNTERRESET()          RTC_CounterReset()
+    102          #define RTC_COMPARESET(x)           RTC_CompareSet(0, (x) & _RTC_COMP0_MASK)
+    103          #define RTC_COMPAREGET()            RTC_CompareGet(0)
+    104          #define NVIC_CLEARPENDINGIRQ()      NVIC_ClearPendingIRQ(RTC_IRQn)
+    105          #define NVIC_DISABLEIRQ()           NVIC_DisableIRQ(RTC_IRQn)
+    106          #define NVIC_ENABLEIRQ()            NVIC_EnableIRQ(RTC_IRQn)
+    107          #define RTC_ONESHOT_TICK_ADJUST     1
+    108          
+    109          #endif
+    110          
+    111          // Maximum number of ticks per overflow period (not the maximum tick value)
+    112          #define MAX_RTC_TICK_CNT              (RTC_MAX_VALUE + 1UL)
+    113          #define RTC_CLOSE_TO_MAX_VALUE        (RTC_MAX_VALUE - 100UL)
+    114          
+    115          #if defined(_EFM32_GECKO_FAMILY)
+    116          // Assume 32 kHz RTC/RTCC clock, cmuClkDiv_2 prescaler, 16 ticks per millisecond
+    117          #define RTC_DIVIDER                   (cmuClkDiv_2)
+    118          #else
+    119          // Assume 32 kHz RTC/RTCC clock, cmuClkDiv_1 prescaler, 32 ticks per millisecond
+    120          #define RTC_DIVIDER                   (1U)
+    121          #endif
+    122          
+    123          #define RTC_CLOCK                     (32768U)
+    124          #define MSEC_TO_TICKS_DIVIDER         (1000U * RTC_DIVIDER)
+    125          #define MSEC_TO_TICKS_ROUNDING_FACTOR (MSEC_TO_TICKS_DIVIDER / 2U)
+    126          #define MSEC_TO_TICKS(ms)             ((((uint64_t)(ms) * RTC_CLOCK)     \
+    127                                                  + MSEC_TO_TICKS_ROUNDING_FACTOR) \
+    128                                                 / MSEC_TO_TICKS_DIVIDER)
+    129          
+    130          #define TICKS_TO_MSEC_ROUNDING_FACTOR (RTC_CLOCK / 2U)
+    131          #define TICKS_TO_MSEC(ticks)          ((((uint64_t)(ticks)               \
+    132                                                   * RTC_DIVIDER * 1000U)          \
+    133                                                  + TICKS_TO_MSEC_ROUNDING_FACTOR) \
+    134                                                 / RTC_CLOCK)
+    135          
+    136          #define TICKS_TO_SEC_ROUNDING_FACTOR  (RTC_CLOCK / 2U)
+    137          #define TICKS_TO_SEC(ticks)           ((((uint64_t)(ticks)              \
+    138                                                   * RTC_DIVIDER)                 \
+    139                                                  + TICKS_TO_SEC_ROUNDING_FACTOR) \
+    140                                                 / RTC_CLOCK)
+    141          #define TICK_TIME_USEC                (1000000U * RTC_DIVIDER / RTC_CLOCK)
+    142          
+    143          typedef struct Timer{
+    144            uint64_t            remaining;
+    145            uint64_t            ticks;
+    146            int                 periodicCompensationUsec;
+    147            unsigned int        periodicDriftUsec;
+    148            RTCDRV_Callback_t   callback;
+    149            bool                running;
+    150            bool                doCallback;
+    151            bool                allocated;
+    152            RTCDRV_TimerType_t  timerType;
+    153            void                *user;
+    154          } Timer_t;
+    155          
+
+   \                                 In section .bss, align 8
+    156          static Timer_t            timer[EMDRV_RTCDRV_NUM_TIMERS];
+   \                     timer:
+   \        0x0                      DS8 160
+
+   \                                 In section .bss, align 4
+    157          static uint32_t           lastStart;
+   \                     lastStart:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    158          static volatile uint32_t  startTimerNestingLevel;
+   \                     startTimerNestingLevel:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 1
+    159          static bool               inTimerIRQ;
+   \                     inTimerIRQ:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    160          static bool               rtcRunning;
+   \                     rtcRunning:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    161          static bool               rtcdrvIsInitialized = false;
+   \                     rtcdrvIsInitialized:
+   \        0x0                      DS8 1
+    162          #if defined(EMODE_DYNAMIC)
+    163          static bool               sleepBlocked;
+    164          #endif
+    165          
+    166          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+
+   \                                 In section .bss, align 4
+    167          static volatile uint32_t  wallClockOverflowCnt;
+   \                     wallClockOverflowCnt:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    168          static uint32_t           wallClockTimeBase;
+   \                     wallClockTimeBase:
+   \        0x0                      DS8 4
+    169          #endif
+    170          
+    171          #if defined(RTCDRV_USE_RTC)
+    172          static const RTC_Init_TypeDef initRTC =
+    173          {
+    174            true,  // Start counting when the initialization is complete.
+    175            false, // Disable updating RTC during debug halt.
+    176            false  // Count to maximum to wrap around.
+    177          };
+    178          
+    179          #elif defined(RTCDRV_USE_RTCC)
+
+   \                                 In section .data, align 4
+    180          static RTCC_Init_TypeDef initRTCC =
+   \                     initRTCC:
+   \        0x0   0x01 0x00          DC8 1, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    181          {
+    182            true,                 /* Start counting when the initialization is complete. */
+    183            false,                /* Disable updating RTC during debug halt. */
+    184            false,                /* Prescaler counts to maximum before wrapping around. */
+    185            false,                /* Counter counts to maximum before wrapping around. */
+    186            rtccCntPresc_1,       /* Set RTCC prescaler to 1. */
+    187            rtccCntTickPresc,     /* Count according to the prescaler configuration. */
+    188          #if defined(_RTCC_CTRL_BUMODETSEN_MASK)
+    189            false,                /* Disable storing RTCC counter value in RTCC_CCV2 upon backup mode entry. */
+    190          #endif
+    191          #if defined(_RTCC_CTRL_OSCFDETEN_MASK)
+    192            false,                /* LFXO fail detection disabled */
+    193          #endif
+    194          #if defined (_RTCC_CTRL_CNTMODE_MASK)
+    195            rtccCntModeNormal,    /* Use RTCC in normal mode and not in calender mode */
+    196          #endif
+    197          #if defined (_RTCC_CTRL_LYEARCORRDIS_MASK)
+    198            false                 /* No leap year correction. */
+    199          #endif
+    200          };
+    201          
+
+   \                                 In section .data, align 4
+    202          static RTCC_CCChConf_TypeDef initRTCCCompareChannel =
+   \                     initRTCCCompareChannel:
+   \        0x0   0x02 0x00          DC8 2, 0, 0, 3, 0, 0, 0, 0
+   \              0x00 0x03    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    203            RTCC_CH_INIT_COMPARE_DEFAULT;
+    204          #endif
+    205          
+    206          // Default to LFXO unless configured for LFRCO.
+    207          #if defined(EMDRV_RTCDRV_USE_LFRCO)
+    208            #define RTCDRV_OSC cmuSelect_LFRCO
+    209          #elif defined(EMDRV_RTCDRV_USE_PLFRCO) && defined(PLFRCO_PRESENT)
+    210            #define RTCDRV_OSC cmuSelect_PLFRCO
+    211          #else
+    212            #define RTCDRV_OSC cmuSelect_LFXO
+    213          #endif
+    214          
+    215          static void checkAllTimers(uint32_t timeElapsed);
+    216          static void delayTicks(uint32_t ticks);
+    217          static void executeTimerCallbacks(void);
+    218          static void rescheduleRtc(uint32_t rtcCnt);
+    219          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    220          static void handleOverflow(void);
+    221          #endif
+    222          
+    223          /// @endcond
+    224          
+    225          /***************************************************************************//**
+    226           * @brief
+    227           *    Allocate timer.
+    228           *
+    229           * @details
+    230           *    Reserve a timer instance.
+    231           *
+    232           * @param[out] id The ID of the reserved timer.
+    233           *
+    234           * @return
+    235           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    236           *    @ref ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED when no timers are available.@n
+    237           *    @ref ECODE_EMDRV_RTCDRV_PARAM_ERROR if an invalid ID pointer was supplied.@n
+    238           *    @ref ECODE_EMDRV_RTCDRV_NOT_INITIALIZED if the driver is not initialized.
+    239           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    240          Ecode_t RTCDRV_AllocateTimer(RTCDRV_TimerID_t *id)
+    241          {
+   \                     RTCDRV_AllocateTimer: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x....'....        BL       ?Subroutine4
+    242            CORE_DECLARE_IRQ_STATE;
+    243            int i      = 0;
+    244            Ecode_t retVal = 0;
+    245          
+    246            // Check if driver is initialized.
+    247            if ( rtcdrvIsInitialized == false ) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x2600             MOVS     R6,#+0
+   \        0xA   0xB910             CBNZ.N   R0,??RTCDRV_AllocateTimer_0
+    248              return ECODE_EMDRV_RTCDRV_NOT_INITIALIZED;
+   \        0xC   0x....'....        LDR.W    R0,??DataTable24_1  ;; 0xf0001006
+   \       0x10   0xBDF2             POP      {R1,R4-R7,PC}
+    249            }
+    250          
+    251            CORE_ENTER_ATOMIC();
+   \                     ??RTCDRV_AllocateTimer_0: (+1)
+   \       0x12   0x....'....        BL       CORE_EnterAtomic
+   \       0x16   0x....'....        LDR.W    R3,??DataTable24_2
+   \       0x1A   0x4601             MOV      R1,R0
+   \       0x1C   0x2228             MOVS     R2,#+40
+   \       0x1E   0xF103 0x071E      ADD      R7,R3,#+30
+   \                     ??RTCDRV_AllocateTimer_1: (+1)
+   \       0x22   0xFB02 0xFC05      MUL      R12,R2,R5
+   \       0x26   0xF817 0x000C      LDRB     R0,[R7, R12]
+   \       0x2A   0xB110             CBZ.N    R0,??RTCDRV_AllocateTimer_2
+    252            // Iterate through the table of the timers until the first available.
+    253            while ( (i < EMDRV_RTCDRV_NUM_TIMERS) && (timer[i].allocated) ) {
+    254              i++;
+   \       0x2C   0x1C6D             ADDS     R5,R5,#+1
+    255            }
+   \       0x2E   0x2D04             CMP      R5,#+4
+   \       0x30   0xDBF7             BLT.N    ??RTCDRV_AllocateTimer_1
+    256          
+    257            // Check if the end of the table is reached.
+    258            if ( i == EMDRV_RTCDRV_NUM_TIMERS ) {
+   \                     ??RTCDRV_AllocateTimer_2: (+1)
+   \       0x32   0x2D04             CMP      R5,#+4
+   \       0x34   0xBF08             IT       EQ 
+   \       0x36   0x....'....        LDREQ.W  R6,??DataTable24_3  ;; 0xf0001001
+    259              retVal = ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED;
+   \       0x3A   0xD008             BEQ.N    ??RTCDRV_AllocateTimer_3
+    260            } else {
+    261              // Check if a NULL pointer was passed.
+    262              if ( id != NULL ) {
+   \       0x3C   0xB12C             CBZ.N    R4,??RTCDRV_AllocateTimer_4
+    263                timer[i].allocated = true;
+   \       0x3E   0x436A             MULS     R2,R2,R5
+   \       0x40   0x2001             MOVS     R0,#+1
+   \       0x42   0x331E             ADDS     R3,R3,#+30
+   \       0x44   0x5498             STRB     R0,[R3, R2]
+    264                *id = i;
+   \       0x46   0x6025             STR      R5,[R4, #+0]
+    265                retVal = ECODE_EMDRV_RTCDRV_OK;
+   \       0x48   0xE001             B.N      ??RTCDRV_AllocateTimer_3
+    266              } else {
+    267                retVal = ECODE_EMDRV_RTCDRV_PARAM_ERROR;
+   \                     ??RTCDRV_AllocateTimer_4: (+1)
+   \       0x4A   0x....'....        LDR.W    R6,??DataTable24_4  ;; 0xf0001004
+    268              }
+    269            }
+    270            CORE_EXIT_ATOMIC();
+   \                     ??RTCDRV_AllocateTimer_3: (+1)
+   \       0x4E   0x4608             MOV      R0,R1
+   \       0x50   0x....'....        BL       CORE_ExitAtomic
+    271          
+    272            return retVal;
+   \       0x54   0x4630             MOV      R0,R6
+   \       0x56   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    273          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x....'....        LDR.W    R1,??DataTable24_5
+   \        0x6   0x7808             LDRB     R0,[R1, #+0]
+   \        0x8   0x4770             BX       LR
+    274          
+    275          /***************************************************************************//**
+    276           * @brief
+    277           *    Millisecond delay function.
+    278           *
+    279           * @param[in] ms Milliseconds to stay in the delay function.
+    280           *
+    281           * @return
+    282           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    283           *    @ref ECODE_EMDRV_RTCDRV_NOT_INITIALIZED if the driver is not initialized.
+    284           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    285          Ecode_t RTCDRV_Delay(uint32_t ms)
+    286          {
+   \                     RTCDRV_Delay: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    287            uint64_t totalTicks;
+    288          
+    289            // Check if driver is initialized.
+    290            if ( rtcdrvIsInitialized == false ) {
+   \        0x2   0x....'....        LDR.W    R2,??DataTable24_5
+   \        0x6   0x7811             LDRB     R1,[R2, #+0]
+   \        0x8   0xB901             CBNZ.N   R1,??RTCDRV_Delay_0
+    291              return ECODE_EMDRV_RTCDRV_NOT_INITIALIZED;
+   \        0xA   0x....             B.N      ?Subroutine0
+    292            }
+    293          
+    294            totalTicks = MSEC_TO_TICKS(ms);
+   \                     ??RTCDRV_Delay_0: (+1)
+   \        0xC   0x0C41             LSRS     R1,R0,#+17
+   \        0xE   0x03C0             LSLS     R0,R0,#+15
+   \       0x10   0xF510 0x70FA      ADDS     R0,R0,#+500
+   \       0x14   0xF141 0x0100      ADC      R1,R1,#+0
+   \       0x18   0xF44F 0x727A      MOV      R2,#+1000
+   \       0x1C   0x2300             MOVS     R3,#+0
+   \       0x1E   0x....'....        BL       __aeabi_uldivmod
+   \       0x22   0x4604             MOV      R4,R0
+   \       0x24   0x460D             MOV      R5,R1
+   \       0x26   0xE006             B.N      ??RTCDRV_Delay_1
+    295          
+    296            while ( totalTicks > RTC_CLOSE_TO_MAX_VALUE ) {
+    297              delayTicks(RTC_CLOSE_TO_MAX_VALUE);
+   \                     ??RTCDRV_Delay_2: (+1)
+   \       0x28   0xF06F 0x0064      MVN      R0,#+100
+   \       0x2C   0x....'....        BL       delayTicks
+    298              totalTicks -= RTC_CLOSE_TO_MAX_VALUE;
+   \       0x30   0x3465             ADDS     R4,R4,#+101
+   \       0x32   0xF145 0x35FF      ADC      R5,R5,#-1
+    299            }
+   \                     ??RTCDRV_Delay_1: (+1)
+   \       0x36   0x2100             MOVS     R1,#+0
+   \       0x38   0xF06F 0x0063      MVN      R0,#+99
+   \       0x3C   0x428D             CMP      R5,R1
+   \       0x3E   0xD8F3             BHI.N    ??RTCDRV_Delay_2
+   \       0x40   0x4284             CMP      R4,R0
+   \       0x42   0xD2F1             BCS.N    ??RTCDRV_Delay_2
+    300            delayTicks(totalTicks);
+   \       0x44   0x4620             MOV      R0,R4
+   \       0x46   0x....'....        BL       delayTicks
+    301          
+    302            return ECODE_EMDRV_RTCDRV_OK;
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    303          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....'....        LDR.W    R0,??DataTable24_1  ;; 0xf0001006
+   \        0x4   0xBD32             POP      {R1,R4,R5,PC}
+    304          
+    305          /***************************************************************************//**
+    306           * @brief
+    307           *    Free timer.
+    308           *
+    309           * @details
+    310           *    Release a reserved timer.
+    311           *
+    312           * @param[out] id The ID of the timer to release.
+    313           *
+    314           * @return
+    315           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    316           *    @ref ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID if the ID has an illegal value.
+    317           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    318          Ecode_t RTCDRV_FreeTimer(RTCDRV_TimerID_t id)
+    319          {
+   \                     RTCDRV_FreeTimer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    320            // Check if valid timer ID.
+    321            if ( id >= EMDRV_RTCDRV_NUM_TIMERS ) {
+   \        0x4   0x2C04             CMP      R4,#+4
+   \        0x6   0xD300             BCC.N    ??RTCDRV_FreeTimer_0
+    322              return ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID;
+   \        0x8   0x....             B.N      ?Subroutine2
+    323            }
+    324          
+    325            CORE_ATOMIC_SECTION(
+    326              timer[id].running   = false;
+    327              timer[id].allocated = false;
+    328              )
+   \                     ??RTCDRV_FreeTimer_0: (+1)
+   \        0xA   0x....'....        BL       CORE_EnterAtomic
+   \        0xE   0x2128             MOVS     R1,#+40
+   \       0x10   0x434C             MULS     R4,R1,R4
+   \       0x12   0x....'....        LDR.W    R2,??DataTable24_2
+   \       0x16   0x2300             MOVS     R3,#+0
+   \       0x18   0x1911             ADDS     R1,R2,R4
+   \       0x1A   0x770B             STRB     R3,[R1, #+28]
+   \       0x1C   0x778B             STRB     R3,[R1, #+30]
+   \       0x1E   0x....             B.N      ?Subroutine1
+    329          
+    330            return ECODE_EMDRV_RTCDRV_OK;
+    331          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x....'....        LDR.W    R0,??DataTable24_18  ;; 0xf0001002
+   \        0x4   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....'....        BL       CORE_ExitAtomic
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xBD10             POP      {R4,PC}          ;; return
+    332          
+    333          /***************************************************************************//**
+    334           * @brief
+    335           *    Initialize the RTCDRV driver.
+    336           *
+    337           * @details
+    338           *    Will enable all necessary clocks. Initializes internal data structures
+    339           *    and configures the underlying hardware timer.
+    340           *
+    341           * @return
+    342           *    @ref ECODE_EMDRV_RTCDRV_OK.
+    343           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    344          Ecode_t RTCDRV_Init(void)
+    345          {
+   \                     RTCDRV_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    346            if ( rtcdrvIsInitialized == true ) {
+   \        0x2   0x....'....        LDR.W    R4,??DataTable24_5
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD043             BEQ.N    ??RTCDRV_Init_0
+    347              return ECODE_EMDRV_RTCDRV_OK;
+    348            }
+    349          
+    350          #if defined(cmuClock_CORELE)
+    351            // Ensure LE modules are clocked.
+    352            CMU_ClockEnable(cmuClock_CORELE, true);
+    353          #endif
+    354          
+    355          #if defined(CMU_LFECLKEN0_RTCC)
+    356            // Enable LFECLK in CMU (will also enable oscillator if not enabled).
+    357            CMU_ClockSelectSet(cmuClock_LFE, RTCDRV_OSC);
+    358          #else
+    359          #if defined(_SILICON_LABS_32B_SERIES_2)
+    360            CMU_ClockSelectSet(cmuClock_RTCC, RTCDRV_OSC);
+   \        0xC   0x2108             MOVS     R1,#+8
+   \        0xE   0x201B             MOVS     R0,#+27
+   \       0x10   0x....'....        BL       CMU_ClockSelectSet
+    361          #else
+    362            // Enable LFACLK in CMU (will also enable oscillator if not enabled).
+    363            CMU_ClockSelectSet(cmuClock_LFA, RTCDRV_OSC);
+    364          #endif
+    365          #endif
+    366          
+    367          #if defined(RTCDRV_USE_RTC)
+    368            // Set clock divider.
+    369            CMU_ClockDivSet(cmuClock_RTC, RTC_DIVIDER);
+    370          
+    371            // Enable RTC module clock.
+    372            CMU_ClockEnable(cmuClock_RTC, true);
+    373          
+    374            // Initialize RTC.
+    375            RTC_Init(&initRTC);
+    376          
+    377          #elif defined(RTCDRV_USE_RTCC)
+    378            // Set clock divider.
+    379          #if defined(_SILICON_LABS_32B_SERIES_2)
+    380            initRTCC.presc = (RTCC_CntPresc_TypeDef)(31UL - __CLZ(RTC_DIVIDER));
+   \       0x14   0x....'....        LDR.W    R0,??DataTable24_6
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0x7101             STRB     R1,[R0, #+4]
+    381          #else
+    382            initRTCC.presc = (RTCC_CntPresc_TypeDef)CMU_DivToLog2(RTC_DIVIDER);
+    383          #endif
+    384          
+    385            // Enable RTCC module clock.
+    386            CMU_ClockEnable(cmuClock_RTCC, true);
+    387          
+    388            // Initialize RTCC.
+    389            RTCC_Init(&initRTCC);
+   \       0x1C   0x....'....        BL       RTCC_Init
+    390          
+    391            // Set up compare channel.
+    392            RTCC_ChannelInit(1, &initRTCCCompareChannel);
+   \       0x20   0x....'....        LDR.W    R1,??DataTable24_7
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x....'....        BL       RTCC_ChannelInit
+    393          #endif
+    394          
+    395            // Disable RTC/RTCC interrupt generation.
+    396            RTC_INTDISABLE(RTC_ALL_INTS);
+   \       0x2A   0x....'....        LDR.W    R5,??DataTable24_8  ;; 0x48000004
+   \       0x2E   0x6968             LDR      R0,[R5, #+20]
+    397            RTC_INTCLEAR(RTC_ALL_INTS);
+   \       0x30   0x211F             MOVS     R1,#+31
+    398          
+    399            RTC_COUNTERRESET();
+   \       0x32   0x2200             MOVS     R2,#+0
+   \       0x34   0x0940             LSRS     R0,R0,#+5
+   \       0x36   0x0140             LSLS     R0,R0,#+5
+   \       0x38   0x6168             STR      R0,[R5, #+20]
+   \       0x3A   0x....'....        LDR.W    R0,??DataTable24_9  ;; 0x48002014
+   \       0x3E   0x6001             STR      R1,[R0, #+0]
+   \       0x40   0x61EA             STR      R2,[R5, #+28]
+    400          
+    401            // Clear and then enable RTC interrupts in NVIC.
+    402            NVIC_CLEARPENDINGIRQ();
+   \       0x42   0x200A             MOVS     R0,#+10
+   \       0x44   0x....'....        BL       __NVIC_ClearPendingIRQ
+    403            NVIC_ENABLEIRQ();
+   \       0x48   0xF44F 0x6080      MOV      R0,#+1024
+   \       0x4C   0x....'....        LDR.W    R1,??DataTable24_10  ;; 0xe000e100
+   \       0x50   0x6008             STR      R0,[R1, #+0]
+    404          
+    405          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    406            // Enable overflow interrupt for wallclock.
+    407            RTC_INTENABLE(RTC_OF_INT);
+   \       0x52   0x696A             LDR      R2,[R5, #+20]
+    408          #endif
+    409          
+    410            // Reset RTCDRV internal data structures/variables.
+    411            memset(timer, 0, sizeof(timer) );
+   \       0x54   0x21A0             MOVS     R1,#+160
+   \       0x56   0x....'....        LDR.W    R0,??DataTable24_2
+   \       0x5A   0xF042 0x0201      ORR      R2,R2,#0x1
+   \       0x5E   0x616A             STR      R2,[R5, #+20]
+   \       0x60   0x....'....        BL       __aeabi_memclr4
+    412            inTimerIRQ             = false;
+   \       0x64   0x2000             MOVS     R0,#+0
+   \       0x66   0x....'....        LDR.W    R1,??DataTable24_11
+   \       0x6A   0x7008             STRB     R0,[R1, #+0]
+    413            rtcRunning             = false;
+   \       0x6C   0x....'....        LDR.W    R3,??DataTable24_12
+   \       0x70   0x7018             STRB     R0,[R3, #+0]
+    414            startTimerNestingLevel = 0;
+   \       0x72   0x....'....        LDR.W    R1,??DataTable24_13
+   \       0x76   0x6008             STR      R0,[R1, #+0]
+    415          #if defined(EMODE_DYNAMIC)
+    416            sleepBlocked           = false;
+    417          #endif
+    418          
+    419          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    420            wallClockOverflowCnt = 0;
+   \       0x78   0x....'....        LDR.W    R3,??DataTable24_14
+   \       0x7C   0x6018             STR      R0,[R3, #+0]
+    421            wallClockTimeBase    = 0;
+   \       0x7E   0x....'....        LDR.W    R1,??DataTable24_15
+   \       0x82   0x6008             STR      R0,[R1, #+0]
+    422          
+    423          #if defined(EMODE_NEVER_ALLOW_EM3EM4)
+    424            // Always block EM3 and EM4 if wallclock is running.
+    425            SLEEP_SleepBlockBegin(sleepEM3);
+    426          #endif
+    427          
+    428          #endif
+    429          
+    430            rtcdrvIsInitialized = true;
+   \       0x84   0x2201             MOVS     R2,#+1
+   \       0x86   0x7022             STRB     R2,[R4, #+0]
+    431          #if defined(_SILICON_LABS_32B_SERIES_2)
+    432            RTCC_SyncWait();
+   \                     ??RTCDRV_Init_1: (+1)
+   \       0x88   0x6828             LDR      R0,[R5, #+0]
+   \       0x8A   0x2800             CMP      R0,#+0
+   \       0x8C   0xBF1C             ITT      NE 
+   \       0x8E   0x6A68             LDRNE    R0,[R5, #+36]
+   \       0x90   0x2800             CMPNE    R0,#+0
+   \       0x92   0xD1F9             BNE.N    ??RTCDRV_Init_1
+    433          #endif
+    434            return ECODE_EMDRV_RTCDRV_OK;
+   \                     ??RTCDRV_Init_0: (+1)
+   \       0x94   0x2000             MOVS     R0,#+0
+   \       0x96   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    435          }
+    436          
+    437          /***************************************************************************//**
+    438           * @brief
+    439           *    Deinitialize the RTCDRV driver.
+    440           *
+    441           * @details
+    442           *    Will disable interrupts and turn off the clock to the underlying hardware
+    443           *    timer.
+    444           *    If the integration with the SLEEP module is enabled, it will remove any
+    445           *    restrictions that are set on energy mode usage.
+    446           *
+    447           * @return
+    448           *    @ref ECODE_EMDRV_RTCDRV_OK.
+    449           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    450          Ecode_t RTCDRV_DeInit(void)
+    451          {
+   \                     RTCDRV_DeInit: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    452            // Mark the driver as uninitialized.
+    453            rtcdrvIsInitialized = false;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        LDR.W    R1,??DataTable24_5
+   \        0x8   0x7008             STRB     R0,[R1, #+0]
+    454          
+    455            // Disable and clear all interrupt sources.
+    456            NVIC_DISABLEIRQ();
+   \        0xA   0xF44F 0x6280      MOV      R2,#+1024
+   \        0xE   0x....'....        LDR.W    R3,??DataTable24_16  ;; 0xe000e180
+   \       0x12   0x601A             STR      R2,[R3, #+0]
+   \       0x14   0xF3BF 0x8F4F      DSB      SY
+   \       0x18   0xF3BF 0x8F6F      ISB      SY
+    457            RTC_INTDISABLE(RTC_ALL_INTS);
+   \       0x1C   0x....'....        LDR.W    R0,??DataTable24_17  ;; 0x48000018
+   \       0x20   0x6801             LDR      R1,[R0, #+0]
+    458            RTC_INTCLEAR(RTC_ALL_INTS);
+   \       0x22   0x....'....        LDR.W    R2,??DataTable24_9  ;; 0x48002014
+   \       0x26   0x0949             LSRS     R1,R1,#+5
+   \       0x28   0x0149             LSLS     R1,R1,#+5
+   \       0x2A   0x6001             STR      R1,[R0, #+0]
+   \       0x2C   0x201F             MOVS     R0,#+31
+   \       0x2E   0x6010             STR      R0,[R2, #+0]
+    459            NVIC_CLEARPENDINGIRQ();
+   \       0x30   0x200A             MOVS     R0,#+10
+   \       0x32   0x....'....        BL       __NVIC_ClearPendingIRQ
+    460          
+    461            // Disable RTC module and its clock.
+    462          #if defined(RTCDRV_USE_RTC)
+    463            RTC_Enable(false);
+    464            CMU_ClockEnable(cmuClock_RTC, false);
+    465          #elif defined(RTCDRV_USE_RTCC)
+    466            RTCC_Enable(false);
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x....'....        BL       RTCC_Enable
+    467            CMU_ClockEnable(cmuClock_RTCC, false);
+    468          #endif
+    469          
+    470          #if defined(EMODE_NEVER_ALLOW_EM3EM4)
+    471            // End EM3 and EM4 blocking.
+    472            SLEEP_SleepBlockEnd(sleepEM3);
+    473          #endif
+    474          
+    475          #if defined(EMODE_DYNAMIC)
+    476            // End EM3 and EM4 blocking if a block start has been set.
+    477            if ( sleepBlocked ) {
+    478              SLEEP_SleepBlockEnd(sleepEM3);
+    479            }
+    480          #endif
+    481          
+    482            return ECODE_EMDRV_RTCDRV_OK;
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0xBD02             POP      {R1,PC}          ;; return
+    483          }
+    484          
+    485          /***************************************************************************//**
+    486           * @brief
+    487           *    Check if a given timer is running.
+    488           *
+    489           * @param[in] id The ID of the timer to query.
+    490           *
+    491           * @param[out] isRunning True if the timer is running. False if not running.
+    492           *                       Only valid if return status is ECODE_EMDRV_RTCDRV_OK.
+    493           *
+    494           * @return
+    495           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    496           *    @ref ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID if the ID has an illegal value. @n
+    497           *    @ref ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED if the timer is not reserved.@n
+    498           *    @ref ECODE_EMDRV_RTCDRV_PARAM_ERROR if an invalid isRunning pointer was
+    499           *         supplied.@n
+    500           *    @ref ECODE_EMDRV_RTCDRV_NOT_INITIALIZED if the driver is not initialized.
+    501           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    502          Ecode_t RTCDRV_IsRunning(RTCDRV_TimerID_t id, bool *isRunning)
+    503          {
+   \                     RTCDRV_IsRunning: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x460C             MOV      R4,R1
+   \        0x4   0x4605             MOV      R5,R0
+    504            CORE_DECLARE_IRQ_STATE;
+    505          
+    506            // Check if driver is initialized.
+    507            if ( rtcdrvIsInitialized == false ) {
+   \        0x6   0x....'....        LDR.W    R1,??DataTable24_5
+   \        0xA   0x7808             LDRB     R0,[R1, #+0]
+   \        0xC   0xB900             CBNZ.N   R0,??RTCDRV_IsRunning_0
+    508              return ECODE_EMDRV_RTCDRV_NOT_INITIALIZED;
+   \        0xE   0x....             B.N      ?Subroutine0
+    509            }
+    510          
+    511            // Check if valid timer ID.
+    512            if ( id >= EMDRV_RTCDRV_NUM_TIMERS ) {
+   \                     ??RTCDRV_IsRunning_0: (+1)
+   \       0x10   0x2D04             CMP      R5,#+4
+   \       0x12   0xD302             BCC.N    ??RTCDRV_IsRunning_1
+    513              return ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID;
+   \       0x14   0x....'....        LDR.W    R0,??DataTable24_18  ;; 0xf0001002
+   \       0x18   0xBD32             POP      {R1,R4,R5,PC}
+    514            }
+    515          
+    516            // Check pointer validity.
+    517            if ( isRunning == NULL ) {
+   \                     ??RTCDRV_IsRunning_1: (+1)
+   \       0x1A   0xB914             CBNZ.N   R4,??RTCDRV_IsRunning_2
+    518              return ECODE_EMDRV_RTCDRV_PARAM_ERROR;
+   \       0x1C   0x....'....        LDR.W    R0,??DataTable24_4  ;; 0xf0001004
+   \       0x20   0xBD32             POP      {R1,R4,R5,PC}
+    519            }
+    520          
+    521            CORE_ENTER_ATOMIC();
+   \                     ??RTCDRV_IsRunning_2: (+1)
+   \       0x22   0x....'....        BL       CORE_EnterAtomic
+    522            // Check if the timer is reserved.
+    523            if ( !timer[id].allocated ) {
+   \       0x26   0x2228             MOVS     R2,#+40
+   \       0x28   0x4355             MULS     R5,R2,R5
+   \       0x2A   0x....'....        LDR.W    R3,??DataTable24_2
+   \       0x2E   0x195A             ADDS     R2,R3,R5
+   \       0x30   0x7F91             LDRB     R1,[R2, #+30]
+   \       0x32   0xB921             CBNZ.N   R1,??RTCDRV_IsRunning_3
+    524              CORE_EXIT_ATOMIC();
+   \       0x34   0x....'....        BL       CORE_ExitAtomic
+    525              return ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED;
+   \       0x38   0x....'....        LDR.W    R0,??DataTable24_19  ;; 0xf0001003
+   \       0x3C   0xBD32             POP      {R1,R4,R5,PC}
+    526            }
+    527            *isRunning = timer[id].running;
+   \                     ??RTCDRV_IsRunning_3: (+1)
+   \       0x3E   0x7F11             LDRB     R1,[R2, #+28]
+   \       0x40   0x7021             STRB     R1,[R4, #+0]
+    528            CORE_EXIT_ATOMIC();
+   \       0x42   0x....'....        BL       CORE_ExitAtomic
+    529          
+    530            return ECODE_EMDRV_RTCDRV_OK;
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    531          }
+    532          
+    533          /***************************************************************************//**
+    534           * @brief
+    535           *    Start a timer.
+    536           *
+    537           * @note
+    538           *    It is legal to start an already running timer.
+    539           *
+    540           * @param[in] id The ID of the timer to start.
+    541           * @param[in] type Timer type, oneshot or periodic. See @ref RTCDRV_TimerType_t.
+    542           * @param[in] timeout Timeout expressed in milliseconds. If the timeout value
+    543           *            is 0, the callback function is called immediately and
+    544           *            the timer will not be started.
+    545           * @param[in] callback Function to call when the timer expires. See @ref
+    546           *            RTCDRV_Callback_t. NULL is a legal value.
+    547           * @param[in] user Extra callback function parameter for the user application.
+    548           *
+    549           * @return
+    550           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    551           *    @ref ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID if the ID has an illegal value.@n
+    552           *    @ref ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED if the timer is not reserved.@n
+    553           *    @ref ECODE_EMDRV_RTCDRV_NOT_INITIALIZED if the driver is not initialized.
+    554           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    555          Ecode_t RTCDRV_StartTimer(RTCDRV_TimerID_t id,
+    556                                    RTCDRV_TimerType_t type,
+    557                                    uint32_t timeout,
+    558                                    RTCDRV_Callback_t callback,
+    559                                    void *user)
+    560          {
+   \                     RTCDRV_StartTimer: (+1)
+   \        0x0   0xE92D 0x47FF      PUSH     {R0-R10,LR}
+   \        0x4   0x460E             MOV      R6,R1
+   \        0x6   0x4605             MOV      R5,R0
+    561            CORE_DECLARE_IRQ_STATE;
+    562          
+    563            uint32_t timeElapsed, cnt, compVal, loopCnt = 0;
+    564            uint32_t timeToNextTimerCompletion;
+    565          
+    566            // Check if driver is initialized.
+    567            if ( rtcdrvIsInitialized == false ) {
+   \        0x8   0x....'....        LDR.W    R1,??DataTable24_5
+   \        0xC   0x7808             LDRB     R0,[R1, #+0]
+   \        0xE   0x4614             MOV      R4,R2
+   \       0x10   0x4699             MOV      R9,R3
+   \       0x12   0xF04F 0x0800      MOV      R8,#+0
+   \       0x16   0xB910             CBNZ.N   R0,??RTCDRV_StartTimer_0
+    568              return ECODE_EMDRV_RTCDRV_NOT_INITIALIZED;
+   \       0x18   0x....'....        LDR.W    R0,??DataTable24_1  ;; 0xf0001006
+   \                     ??RTCDRV_StartTimer_1: (+1)
+   \       0x1C   0xE08E             B.N      ??RTCDRV_StartTimer_2
+    569            }
+    570          
+    571            // Check if valid timer ID.
+    572            if ( id >= EMDRV_RTCDRV_NUM_TIMERS ) {
+   \                     ??RTCDRV_StartTimer_0: (+1)
+   \       0x1E   0x2D04             CMP      R5,#+4
+   \       0x20   0xBF28             IT       CS 
+   \       0x22   0x....'....        LDRCS.W  R0,??DataTable24_18  ;; 0xf0001002
+    573              return ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID;
+   \       0x26   0xD2F9             BCS.N    ??RTCDRV_StartTimer_1
+    574            }
+    575          
+    576            CORE_ENTER_ATOMIC();
+   \       0x28   0x....'....        BL       CORE_EnterAtomic
+    577            if ( !timer[id].allocated ) {
+   \       0x2C   0x2228             MOVS     R2,#+40
+   \       0x2E   0x436A             MULS     R2,R2,R5
+   \       0x30   0x....'....        LDR.W    R1,??DataTable24_2
+   \       0x34   0x9001             STR      R0,[SP, #+4]
+   \       0x36   0x188F             ADDS     R7,R1,R2
+   \       0x38   0x7FB8             LDRB     R0,[R7, #+30]
+   \       0x3A   0xB928             CBNZ.N   R0,??RTCDRV_StartTimer_3
+    578              CORE_EXIT_ATOMIC();
+   \       0x3C   0x9801             LDR      R0,[SP, #+4]
+   \       0x3E   0x....'....        BL       CORE_ExitAtomic
+    579              return ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED;
+   \       0x42   0x....'....        LDR.W    R0,??DataTable24_19  ;; 0xf0001003
+   \       0x46   0xE079             B.N      ??RTCDRV_StartTimer_2
+    580            }
+    581          
+    582            if ( timeout == 0 ) {
+   \                     ??RTCDRV_StartTimer_3: (+1)
+   \       0x48   0x2C00             CMP      R4,#+0
+   \       0x4A   0xD17A             BNE.N    ??RTCDRV_StartTimer_4
+    583              if ( callback != NULL ) {
+   \       0x4C   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0x50   0xD070             BEQ.N    ??RTCDRV_StartTimer_5
+    584                callback(id, user);
+   \       0x52   0x990C             LDR      R1,[SP, #+48]
+   \       0x54   0x4628             MOV      R0,R5
+   \       0x56   0x47C8             BLX      R9
+   \       0x58   0xE06C             B.N      ??RTCDRV_StartTimer_5
+    585              }
+    586              CORE_EXIT_ATOMIC();
+    587              return ECODE_EMDRV_RTCDRV_OK;
+    588            }
+    589          
+    590            cnt = RTC_COUNTERGET();
+    591          
+    592            timer[id].callback  = callback;
+    593            timer[id].ticks     = MSEC_TO_TICKS(timeout);
+    594            if (rtcdrvTimerTypePeriodic == type) {
+    595              // Calculate compensation value for periodic timers.
+    596              timer[id].periodicCompensationUsec = 1000 * timeout
+    597                                                   - (timer[id].ticks * TICK_TIME_USEC);
+    598              timer[id].periodicDriftUsec = TICK_TIME_USEC / 2U;
+    599            } else {
+    600              // Compensate for the fact that CNT is normally COMP0+1 after a
+    601              // compare match event on some devices.
+    602              timer[id].ticks -= RTC_ONESHOT_TICK_ADJUST;
+   \                     ??RTCDRV_StartTimer_6: (+1)
+   \       0x5A   0x1E40             SUBS     R0,R0,#+1
+   \       0x5C   0xF161 0x0100      SBC      R1,R1,#+0
+   \       0x60   0xE9C7 0x0102      STRD     R0,R1,[R7, #+8]
+    603            }
+    604            // Add one tick to compensate if RTC is close to an increment event.
+    605            timer[id].remaining = timer[id].ticks + 1;
+   \                     ??RTCDRV_StartTimer_7: (+1)
+   \       0x64   0xE9D7 0x0102      LDRD     R0,R1,[R7, #+8]
+   \       0x68   0x1C42             ADDS     R2,R0,#+1
+   \       0x6A   0xF161 0x33FF      SBC      R3,R1,#-1
+   \       0x6E   0xE9C7 0x2300      STRD     R2,R3,[R7, #+0]
+    606            timer[id].running   = true;
+   \       0x72   0x2301             MOVS     R3,#+1
+   \       0x74   0x773B             STRB     R3,[R7, #+28]
+    607            timer[id].timerType = type;
+   \       0x76   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x7A   0x77F8             STRB     R0,[R7, #+31]
+    608            timer[id].user      = user;
+   \       0x7C   0x990C             LDR      R1,[SP, #+48]
+    609          
+    610            if ( inTimerIRQ == true ) {
+   \       0x7E   0x....'....        LDR.W    R0,??DataTable24_11
+   \       0x82   0x6239             STR      R1,[R7, #+32]
+   \       0x84   0x7802             LDRB     R2,[R0, #+0]
+   \       0x86   0x2A01             CMP      R2,#+1
+   \       0x88   0xD054             BEQ.N    ??RTCDRV_StartTimer_5
+    611              // Exit now, remaining processing will be done in IRQ handler.
+    612              CORE_EXIT_ATOMIC();
+    613              return ECODE_EMDRV_RTCDRV_OK;
+    614            }
+    615          
+    616            // StartTimer() may recurse, keep track of recursion level.
+    617            if ( startTimerNestingLevel < UINT32_MAX ) {
+   \       0x8A   0x....'....        LDR.W    R4,??DataTable24_13
+   \       0x8E   0x6820             LDR      R0,[R4, #+0]
+   \       0x90   0xF110 0x0F01      CMN      R0,#+1
+   \       0x94   0xD002             BEQ.N    ??RTCDRV_StartTimer_8
+    618              startTimerNestingLevel++;
+   \       0x96   0x6821             LDR      R1,[R4, #+0]
+   \       0x98   0x1C49             ADDS     R1,R1,#+1
+   \       0x9A   0x6021             STR      R1,[R4, #+0]
+    619            }
+    620          
+    621            if ( rtcRunning == false ) {
+   \                     ??RTCDRV_StartTimer_8: (+1)
+   \       0x9C   0x....'....        LDR.W    R10,??DataTable24_12
+   \       0xA0   0xF89A 0x0000      LDRB     R0,[R10, #+0]
+   \       0xA4   0x....'....        LDR.W    R9,??DataTable24_20
+   \       0xA8   0xB9B8             CBNZ.N   R0,??RTCDRV_StartTimer_9
+    622          #if defined(RTCDRV_USE_RTC)
+    623              lastStart = (cnt) & RTC_COUNTER_MASK;
+    624          #elif defined(RTCDRV_USE_RTCC)
+    625              lastStart = cnt;
+   \       0xAA   0xF8C9 0x6000      STR      R6,[R9, #+0]
+    626          #endif
+    627          
+    628              RTC_INTCLEAR(RTC_COMP_INT);
+   \       0xAE   0x2108             MOVS     R1,#+8
+   \       0xB0   0x....'....        LDR.W    R0,??DataTable24_9  ;; 0x48002014
+   \       0xB4   0x6001             STR      R1,[R0, #+0]
+    629          
+    630              compVal = SL_MIN(timer[id].remaining, RTC_CLOSE_TO_MAX_VALUE);
+   \       0xB6   0xE9D7 0x0100      LDRD     R0,R1,[R7, #+0]
+   \       0xBA   0xF06F 0x0264      MVN      R2,#+100
+   \       0xBE   0x4541             CMP      R1,R8
+   \       0xC0   0xD801             BHI.N    ??RTCDRV_StartTimer_10
+   \       0xC2   0x4290             CMP      R0,R2
+   \       0xC4   0xD300             BCC.N    ??RTCDRV_StartTimer_11
+   \                     ??RTCDRV_StartTimer_10: (+1)
+   \       0xC6   0x4610             MOV      R0,R2
+    631              RTC_COMPARESET(cnt + compVal);
+   \                     ??RTCDRV_StartTimer_11: (+1)
+   \       0xC8   0x1986             ADDS     R6,R0,R6
+   \       0xCA   0x62AE             STR      R6,[R5, #+40]
+    632          
+    633              // Start the timer system by enabling the compare interrupt.
+    634              RTC_INTENABLE(RTC_COMP_INT);
+   \       0xCC   0x6828             LDR      R0,[R5, #+0]
+   \       0xCE   0xF040 0x0008      ORR      R0,R0,#0x8
+   \       0xD2   0x6028             STR      R0,[R5, #+0]
+    635          
+    636          #if defined(EMODE_DYNAMIC)
+    637              // When RTC is running, EM3 or EM4 is not allowed.
+    638              if ( sleepBlocked == false ) {
+    639                sleepBlocked = true;
+    640                SLEEP_SleepBlockBegin(sleepEM3);
+    641              }
+    642          #endif
+    643          
+    644              rtcRunning = true;
+   \       0xD4   0xF88A 0x3000      STRB     R3,[R10, #+0]
+   \       0xD8   0xE027             B.N      ??RTCDRV_StartTimer_12
+    645            } else {
+    646              // The timer system is running. It must stop, timers must be updated with the time
+    647              // elapsed so far, the timer with the shortest timeout must be found, and the system restarted.
+    648              // As StartTimer() may be called from the callbacks. This
+    649              // processing is only done at the first nesting level.
+    650              if ( startTimerNestingLevel == 1  ) {
+   \                     ??RTCDRV_StartTimer_9: (+1)
+   \       0xDA   0x6820             LDR      R0,[R4, #+0]
+   \       0xDC   0x2801             CMP      R0,#+1
+   \       0xDE   0xD124             BNE.N    ??RTCDRV_StartTimer_12
+    651                timer[id].running = false;
+   \       0xE0   0xF887 0x801C      STRB     R8,[R7, #+28]
+    652                // This loop is repeated if CNT is incremented while processing.
+    653                do {
+    654                  RTC_INTDISABLE(RTC_COMP_INT);
+   \                     ??RTCDRV_StartTimer_13: (+1)
+   \       0xE4   0x6828             LDR      R0,[R5, #+0]
+   \       0xE6   0xF020 0x0008      BIC      R0,R0,#0x8
+   \       0xEA   0x6028             STR      R0,[R5, #+0]
+    655          
+    656                  timeElapsed = TIMEDIFF(cnt, lastStart);
+    657          #if defined(RTCDRV_USE_RTC)
+    658                  // Compensate for the fact that CNT is normally COMP0+1 after a
+    659                  // compare match event.
+    660                  if ( timeElapsed == RTC_MAX_VALUE ) {
+    661                    timeElapsed = 0;
+    662                  }
+    663          #endif
+    664          
+    665                  // Update all timers with elapsed time.
+    666                  checkAllTimers(timeElapsed);
+   \       0xEC   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0xF0   0x1A30             SUBS     R0,R6,R0
+   \       0xF2   0x....'....        BL       checkAllTimers
+    667          
+    668                  // Execute timer callbacks.
+    669                  executeTimerCallbacks();
+   \       0xF6   0x....'....        BL       executeTimerCallbacks
+    670          
+    671                  // Set timer to running only after checkAllTimers() is called once.
+    672                  if ( loopCnt == 0 ) {
+   \       0xFA   0xF1B8 0x0F00      CMP      R8,#+0
+    673                    timer[id].running = true;
+    674                  }
+    675                  loopCnt++;
+   \       0xFE   0xF108 0x0801      ADD      R8,R8,#+1
+   \      0x102   0xBF04             ITT      EQ 
+   \      0x104   0x2001             MOVEQ    R0,#+1
+   \      0x106   0x7738             STRBEQ   R0,[R7, #+28]
+    676          
+    677                  // Restart RTC according to the next timeout.
+    678                  rescheduleRtc(cnt);
+   \      0x108   0x4630             MOV      R0,R6
+   \      0x10A   0x....'....        BL       rescheduleRtc
+    679          
+    680                  cnt = RTC_COUNTERGET();
+   \                     ??RTCDRV_StartTimer_14: (+1)
+   \      0x10E   0x6928             LDR      R0,[R5, #+16]
+   \      0x110   0x0701             LSLS     R1,R0,#+28
+   \      0x112   0xD4FC             BMI.N    ??RTCDRV_StartTimer_14
+   \      0x114   0x68AE             LDR      R6,[R5, #+8]
+    681                  timeElapsed = TIMEDIFF(cnt, lastStart);
+    682                  timeToNextTimerCompletion = TIMEDIFF(RTC_COMPAREGET(), lastStart);
+   \      0x116   0x6AA9             LDR      R1,[R5, #+40]
+    683          
+    684                  /* If the counter has passed the COMP(ARE) register value since
+    685                     the timers were checked, recheck the timers and
+    686                     reschedule. */
+    687                } while ( rtcRunning && (timeElapsed >= timeToNextTimerCompletion));
+   \      0x118   0xF89A 0x0000      LDRB     R0,[R10, #+0]
+   \      0x11C   0xB128             CBZ.N    R0,??RTCDRV_StartTimer_12
+   \      0x11E   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \      0x122   0x1A32             SUBS     R2,R6,R0
+   \      0x124   0x1A09             SUBS     R1,R1,R0
+   \      0x126   0x428A             CMP      R2,R1
+   \      0x128   0xD2DC             BCS.N    ??RTCDRV_StartTimer_13
+    688              }
+    689            }
+    690          
+    691            if ( startTimerNestingLevel > 0 ) {
+   \                     ??RTCDRV_StartTimer_12: (+1)
+   \      0x12A   0x6820             LDR      R0,[R4, #+0]
+   \      0x12C   0xB110             CBZ.N    R0,??RTCDRV_StartTimer_5
+    692              startTimerNestingLevel--;
+   \      0x12E   0x6821             LDR      R1,[R4, #+0]
+   \      0x130   0x1E49             SUBS     R1,R1,#+1
+   \      0x132   0x6021             STR      R1,[R4, #+0]
+    693            }
+    694          
+    695            CORE_EXIT_ATOMIC();
+   \                     ??RTCDRV_StartTimer_5: (+1)
+   \      0x134   0x9801             LDR      R0,[SP, #+4]
+   \      0x136   0x....'....        BL       CORE_ExitAtomic
+    696            return ECODE_EMDRV_RTCDRV_OK;
+   \      0x13A   0x2000             MOVS     R0,#+0
+   \                     ??RTCDRV_StartTimer_2: (+1)
+   \      0x13C   0xB004             ADD      SP,SP,#+16
+   \      0x13E   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+   \                     ??RTCDRV_StartTimer_4: (+1)
+   \      0x142   0x....'....        LDR.W    R5,??DataTable24_17  ;; 0x48000018
+   \      0x146   0x6928             LDR      R0,[R5, #+16]
+   \      0x148   0x0701             LSLS     R1,R0,#+28
+   \      0x14A   0xD4FA             BMI.N    ??RTCDRV_StartTimer_4
+   \      0x14C   0x0C62             LSRS     R2,R4,#+17
+   \      0x14E   0x03E1             LSLS     R1,R4,#+15
+   \      0x150   0xF511 0x70FA      ADDS     R0,R1,#+500
+   \      0x154   0xF88D 0x6000      STRB     R6,[SP, #+0]
+   \      0x158   0xF142 0x0100      ADC      R1,R2,#+0
+   \      0x15C   0x68AE             LDR      R6,[R5, #+8]
+   \      0x15E   0xF44F 0x727A      MOV      R2,#+1000
+   \      0x162   0x2300             MOVS     R3,#+0
+   \      0x164   0xF8C7 0x9018      STR      R9,[R7, #+24]
+   \      0x168   0x....'....        BL       __aeabi_uldivmod
+   \      0x16C   0xE9C7 0x0102      STRD     R0,R1,[R7, #+8]
+   \      0x170   0xF89D 0x2000      LDRB     R2,[SP, #+0]
+   \      0x174   0x2A01             CMP      R2,#+1
+   \      0x176   0xF47F 0xAF70      BNE.W    ??RTCDRV_StartTimer_6
+   \      0x17A   0xF44F 0x717A      MOV      R1,#+1000
+   \      0x17E   0x4602             MOV      R2,R0
+   \      0x180   0x4361             MULS     R1,R1,R4
+   \      0x182   0x201E             MOVS     R0,#+30
+   \      0x184   0xFBA0 0x4902      UMULL    R4,R9,R0,R2
+   \      0x188   0x1B08             SUBS     R0,R1,R4
+   \      0x18A   0x6138             STR      R0,[R7, #+16]
+   \      0x18C   0x200F             MOVS     R0,#+15
+   \      0x18E   0x6178             STR      R0,[R7, #+20]
+   \      0x190   0xE768             B.N      ??RTCDRV_StartTimer_7
+    697          }
+    698          
+    699          /***************************************************************************//**
+    700           * @brief
+    701           *    Stop a given timer.
+    702           *
+    703           * @param[in] id The ID of the timer to stop.
+    704           *
+    705           * @return
+    706           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    707           *    @ref ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID if the ID has an illegal value. @n
+    708           *    @ref ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED if the timer is not reserved.@n
+    709           *    @ref ECODE_EMDRV_RTCDRV_NOT_INITIALIZED if the driver is not initialized.
+    710           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    711          Ecode_t RTCDRV_StopTimer(RTCDRV_TimerID_t id)
+    712          {
+   \                     RTCDRV_StopTimer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x....'....        BL       ?Subroutine4
+    713            CORE_DECLARE_IRQ_STATE;
+    714          
+    715            // Check if driver is initialized.
+    716            if ( rtcdrvIsInitialized == false ) {
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0xB910             CBNZ.N   R0,??RTCDRV_StopTimer_0
+    717              return ECODE_EMDRV_RTCDRV_NOT_INITIALIZED;
+   \        0x8   0x....'....        LDR.W    R0,??DataTable24_1  ;; 0xf0001006
+   \        0xC   0xBD10             POP      {R4,PC}
+    718            }
+    719          
+    720            // Check if valid timer ID.
+    721            if ( id >= EMDRV_RTCDRV_NUM_TIMERS ) {
+   \                     ??RTCDRV_StopTimer_0: (+1)
+   \        0xE   0x2C04             CMP      R4,#+4
+   \       0x10   0xD300             BCC.N    ??RTCDRV_StopTimer_1
+    722              return ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID;
+   \       0x12   0x....             B.N      ?Subroutine2
+    723            }
+    724          
+    725            CORE_ENTER_ATOMIC();
+   \                     ??RTCDRV_StopTimer_1: (+1)
+   \       0x14   0x....'....        BL       CORE_EnterAtomic
+    726            if ( !timer[id].allocated ) {
+   \       0x18   0x....'....        BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x1C   0xB921             CBNZ.N   R1,??RTCDRV_StopTimer_2
+    727              CORE_EXIT_ATOMIC();
+   \       0x1E   0x....'....        BL       CORE_ExitAtomic
+    728              return ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED;
+   \       0x22   0x....'....        LDR.W    R0,??DataTable24_19  ;; 0xf0001003
+   \       0x26   0xBD10             POP      {R4,PC}
+    729            }
+    730          
+    731            timer[id].running = false;
+   \                     ??RTCDRV_StopTimer_2: (+1)
+   \       0x28   0x2100             MOVS     R1,#+0
+   \       0x2A   0x7711             STRB     R1,[R2, #+28]
+    732            CORE_EXIT_ATOMIC();
+   \       0x2C   0x....             B.N      ?Subroutine1
+    733          
+    734            return ECODE_EMDRV_RTCDRV_OK;
+    735          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x2228             MOVS     R2,#+40
+   \        0x2   0x4354             MULS     R4,R2,R4
+   \        0x4   0x....'....        LDR.W    R3,??DataTable24_2
+   \        0x8   0x191A             ADDS     R2,R3,R4
+   \        0xA   0x7F91             LDRB     R1,[R2, #+30]
+   \        0xC   0x4770             BX       LR
+    736          
+    737          /***************************************************************************//**
+    738           * @brief
+    739           *    Get time left before a given timer expires.
+    740           *
+    741           * @param[in] id The ID of the timer to query.
+    742           *
+    743           * @param[out] timeRemaining Time left expressed in milliseconds.
+    744           *                        Only valid if the return status is ECODE_EMDRV_RTCDRV_OK.
+    745           * @return
+    746           *    @ref ECODE_EMDRV_RTCDRV_OK on success.@n
+    747           *    @ref ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID if the ID has an illegal value. @n
+    748           *    @ref ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED if the timer is not reserved.@n
+    749           *    @ref ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING if the timer is not running.@n
+    750           *    @ref ECODE_EMDRV_RTCDRV_PARAM_ERROR if an invalid timeRemaining pointer
+    751           *         was supplied.@n
+    752           *    @ref ECODE_EMDRV_RTCDRV_NOT_INITIALIZED if the driver is not initialized.
+    753           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    754          Ecode_t RTCDRV_TimeRemaining(RTCDRV_TimerID_t id, uint32_t *timeRemaining)
+    755          {
+   \                     RTCDRV_TimeRemaining: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x460E             MOV      R6,R1
+   \        0x6   0x....'....        BL       ?Subroutine4
+    756            CORE_DECLARE_IRQ_STATE;
+    757            uint64_t ticksLeft;
+    758            uint32_t currentCnt, lastRtcStart;
+    759          
+    760            // Check if driver is initialized.
+    761            if ( rtcdrvIsInitialized == false ) {
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0xA   0xB910             CBNZ.N   R0,??RTCDRV_TimeRemaining_0
+    762              return ECODE_EMDRV_RTCDRV_NOT_INITIALIZED;
+   \        0xC   0x....'....        LDR.W    R0,??DataTable24_1  ;; 0xf0001006
+   \       0x10   0xE042             B.N      ??RTCDRV_TimeRemaining_1
+    763            }
+    764          
+    765            // Check if valid timer ID.
+    766            if ( id >= EMDRV_RTCDRV_NUM_TIMERS ) {
+   \                     ??RTCDRV_TimeRemaining_0: (+1)
+   \       0x12   0x2C04             CMP      R4,#+4
+   \       0x14   0xBF28             IT       CS 
+   \       0x16   0x....'....        LDRCS.W  R0,??DataTable24_18  ;; 0xf0001002
+    767              return ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID;
+   \       0x1A   0xD23D             BCS.N    ??RTCDRV_TimeRemaining_1
+    768            }
+    769          
+    770            // Check pointer validity.
+    771            if ( timeRemaining == NULL ) {
+   \       0x1C   0xB916             CBNZ.N   R6,??RTCDRV_TimeRemaining_2
+    772              return ECODE_EMDRV_RTCDRV_PARAM_ERROR;
+   \       0x1E   0x....'....        LDR.W    R0,??DataTable24_4  ;; 0xf0001004
+   \       0x22   0xE039             B.N      ??RTCDRV_TimeRemaining_1
+    773            }
+    774          
+    775            CORE_ENTER_ATOMIC();
+   \                     ??RTCDRV_TimeRemaining_2: (+1)
+   \       0x24   0x....'....        BL       CORE_EnterAtomic
+    776            // Check if timer is reserved.
+    777            if ( !timer[id].allocated ) {
+   \       0x28   0x....'....        BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x2C   0xB921             CBNZ.N   R1,??RTCDRV_TimeRemaining_3
+    778              CORE_EXIT_ATOMIC();
+   \       0x2E   0x....'....        BL       CORE_ExitAtomic
+    779              return ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED;
+   \       0x32   0x....'....        LDR.W    R0,??DataTable24_19  ;; 0xf0001003
+   \       0x36   0xE02F             B.N      ??RTCDRV_TimeRemaining_1
+    780            }
+    781          
+    782            // Check if timer is running.
+    783            if ( !timer[id].running ) {
+   \                     ??RTCDRV_TimeRemaining_3: (+1)
+   \       0x38   0x7F11             LDRB     R1,[R2, #+28]
+   \       0x3A   0xB921             CBNZ.N   R1,??RTCDRV_TimeRemaining_4
+    784              CORE_EXIT_ATOMIC();
+   \       0x3C   0x....'....        BL       CORE_ExitAtomic
+    785              return ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING;
+   \       0x40   0x....'....        LDR.W    R0,??DataTable24_21  ;; 0xf0001005
+   \       0x44   0xE028             B.N      ??RTCDRV_TimeRemaining_1
+    786            }
+    787          
+    788            ticksLeft    = timer[id].remaining;
+   \                     ??RTCDRV_TimeRemaining_4: (+1)
+   \       0x46   0xE9D2 0x4800      LDRD     R4,R8,[R2, #+0]
+   \       0x4A   0x....'....        LDR.W    R1,??DataTable24_22  ;; 0x48000020
+    789            currentCnt   = RTC_COUNTERGET();
+   \                     ??RTCDRV_TimeRemaining_5: (+1)
+   \       0x4E   0x688A             LDR      R2,[R1, #+8]
+   \       0x50   0x0713             LSLS     R3,R2,#+28
+   \       0x52   0xD4FC             BMI.N    ??RTCDRV_TimeRemaining_5
+   \       0x54   0x680F             LDR      R7,[R1, #+0]
+    790            lastRtcStart = lastStart;
+   \       0x56   0x....'....        LDR.W    R1,??DataTable24_20
+   \       0x5A   0x680D             LDR      R5,[R1, #+0]
+    791            CORE_EXIT_ATOMIC();
+   \       0x5C   0x....'....        BL       CORE_ExitAtomic
+    792          
+    793            // Get number of RTC clock ticks elapsed since last RTC reschedule.
+    794            currentCnt = TIMEDIFF(currentCnt, lastRtcStart);
+   \       0x60   0x1B7D             SUBS     R5,R7,R5
+    795          
+    796            if ( currentCnt > ticksLeft ) {
+   \       0x62   0x2700             MOVS     R7,#+0
+   \       0x64   0x45B8             CMP      R8,R7
+   \       0x66   0xD805             BHI.N    ??RTCDRV_TimeRemaining_6
+   \       0x68   0x42AC             CMP      R4,R5
+   \       0x6A   0xD203             BCS.N    ??RTCDRV_TimeRemaining_6
+    797              ticksLeft = 0;
+   \       0x6C   0xF44F 0x4080      MOV      R0,#+16384
+   \       0x70   0x2100             MOVS     R1,#+0
+   \       0x72   0xE00C             B.N      ??RTCDRV_TimeRemaining_7
+    798            } else {
+    799              ticksLeft -= currentCnt;
+   \                     ??RTCDRV_TimeRemaining_6: (+1)
+   \       0x74   0x1B62             SUBS     R2,R4,R5
+   \       0x76   0xF44F 0x747A      MOV      R4,#+1000
+   \       0x7A   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \       0x7E   0xEB68 0x0307      SBC      R3,R8,R7
+   \       0x82   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \       0x86   0xF510 0x4080      ADDS     R0,R0,#+16384
+   \       0x8A   0xF141 0x0100      ADC      R1,R1,#+0
+    800            }
+    801          
+    802            *timeRemaining = TICKS_TO_MSEC(ticksLeft);
+   \                     ??RTCDRV_TimeRemaining_7: (+1)
+   \       0x8E   0x0BC0             LSRS     R0,R0,#+15
+   \       0x90   0xEA40 0x4041      ORR      R0,R0,R1, LSL #+17
+   \       0x94   0x6030             STR      R0,[R6, #+0]
+    803          
+    804            return ECODE_EMDRV_RTCDRV_OK;
+   \       0x96   0x2000             MOVS     R0,#+0
+   \                     ??RTCDRV_TimeRemaining_1: (+1)
+   \       0x98   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    805          }
+    806          
+    807          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    808          /***************************************************************************//**
+    809           * @brief
+    810           *    Get wallclock time.
+    811           *
+    812           * @return
+    813           *    Seconds elapsed since RTCDRV was initialized.
+    814           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    815          uint32_t RTCDRV_GetWallClock(void)
+    816          {
+   \                     RTCDRV_GetWallClock: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x....'....        BL       ?Subroutine7
+    817            return wallClockTimeBase
+    818                   + (uint32_t)TICKS_TO_SEC(RTCDRV_GetWallClockTicks32() );
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x6804             LDR      R4,[R0, #+0]
+   \        0xA   0x....'....        LDR.W    R0,??DataTable24_15
+   \        0xE   0x6800             LDR      R0,[R0, #+0]
+   \       0x10   0xF514 0x4280      ADDS     R2,R4,#+16384
+   \       0x14   0xF145 0x0300      ADC      R3,R5,#+0
+   \       0x18   0x0BD2             LSRS     R2,R2,#+15
+   \       0x1A   0xEA42 0x4243      ORR      R2,R2,R3, LSL #+17
+   \       0x1E   0x1810             ADDS     R0,R2,R0
+   \       0x20   0xBD30             POP      {R4,R5,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable24_22  ;; 0x48000020
+   \                     ??Subroutine7_0: (+1)
+   \        0x2   0x6881             LDR      R1,[R0, #+8]
+   \        0x4   0x070A             LSLS     R2,R1,#+28
+   \        0x6   0xD4FC             BMI.N    ??Subroutine7_0
+   \        0x8   0x4770             BX       LR
+    819          }
+    820          #endif
+    821          
+    822          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    823          /***************************************************************************//**
+    824           * @brief
+    825           *    Get wallclock tick count as a 32bit value. At 4 ticks per millisecond,
+    826           *    overflow occurs after approximately 12.5 days.
+    827           *
+    828           * @detail
+    829           *    The return value of this function is in counter ticks. Use
+    830           *    @ref RTCDRV_TicksToMsec() or @ref RTCDRV_TicksToSec() to convert ticks
+    831           *    to the desired time unit.
+    832           *
+    833           * @return
+    834           *    A wallclock tick counter.
+    835           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    836          uint32_t RTCDRV_GetWallClockTicks32(void)
+    837          {
+   \                     RTCDRV_GetWallClockTicks32: (+1)
+   \        0x0   0x....'....        LDR.W    R0,??DataTable24_22  ;; 0x48000020
+    838          #if (RTC_COUNTER_BITS == 32)
+    839            return RTC_COUNTERGET();
+   \                     ??RTCDRV_GetWallClockTicks32_0: (+1)
+   \        0x4   0x6881             LDR      R1,[R0, #+8]
+   \        0x6   0x070A             LSLS     R2,R1,#+28
+   \        0x8   0xD4FC             BMI.N    ??RTCDRV_GetWallClockTicks32_0
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0x4770             BX       LR               ;; return
+    840          #else
+    841            CORE_DECLARE_IRQ_STATE;
+    842            uint32_t overflows, ticks;
+    843          
+    844            /* Need to re-read data in case overflow cnt is incremented while we read. */
+    845            CORE_ENTER_ATOMIC();
+    846            do {
+    847              overflows = wallClockOverflowCnt;
+    848              ticks     = RTC_COUNTERGET();
+    849              handleOverflow();
+    850            } while ( overflows != wallClockOverflowCnt );
+    851            CORE_EXIT_ATOMIC();
+    852          
+    853            return (overflows << RTC_COUNTER_BITS) + ticks;
+    854          #endif
+    855          }
+    856          #endif
+    857          
+    858          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    859          /***************************************************************************//**
+    860           * @brief
+    861           *    Get a wallclock tick count as a 64 bit value.
+    862           *
+    863           * @detail
+    864           *    The return value of this function is in counter ticks. Use
+    865           *    @ref RTCDRV_TicksToMsec64() or @ref RTCDRV_TicksToSec() to convert ticks
+    866           *    to the desired time unit.
+    867           *
+    868           * @return
+    869           *    A wallclock tick counter.
+    870           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    871          uint64_t RTCDRV_GetWallClockTicks64(void)
+    872          {
+   \                     RTCDRV_GetWallClockTicks64: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    873            CORE_DECLARE_IRQ_STATE;
+    874            uint64_t overflows, ticks;
+    875          
+    876            /* Need to re-read data if the overflow cnt is incremented while reading. */
+    877            CORE_ENTER_ATOMIC();
+   \        0x4   0x....'....        BL       CORE_EnterAtomic
+   \        0x8   0x4680             MOV      R8,R0
+   \        0xA   0x....             LDR.N    R5,??DataTable24_14
+   \        0xC   0x2700             MOVS     R7,#+0
+    878            do {
+    879              overflows = wallClockOverflowCnt;
+   \                     ??RTCDRV_GetWallClockTicks64_0: (+1)
+   \        0xE   0x682C             LDR      R4,[R5, #+0]
+   \       0x10   0x....'....        BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x14   0x6806             LDR      R6,[R0, #+0]
+    880              ticks     = RTC_COUNTERGET();
+    881              handleOverflow();
+   \       0x16   0x....'....        BL       handleOverflow
+    882            } while ( overflows != wallClockOverflowCnt );
+   \       0x1A   0x6828             LDR      R0,[R5, #+0]
+   \       0x1C   0x4284             CMP      R4,R0
+   \       0x1E   0xD1F6             BNE.N    ??RTCDRV_GetWallClockTicks64_0
+    883            CORE_EXIT_ATOMIC();
+   \       0x20   0x4640             MOV      R0,R8
+   \       0x22   0x....'....        BL       CORE_ExitAtomic
+    884          
+    885            return (overflows << RTC_COUNTER_BITS) + ticks;
+   \       0x26   0x19B8             ADDS     R0,R7,R6
+   \       0x28   0xEB44 0x0107      ADC      R1,R4,R7
+   \       0x2C   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    886          }
+    887          #endif
+    888          
+    889          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    890          /***************************************************************************//**
+    891           * @brief
+    892           *    Set wallclock time.
+    893           *
+    894           * @param[in] secs A value to set (seconds).
+    895           *
+    896           * @return
+    897           *    @ref ECODE_EMDRV_RTCDRV_OK
+    898           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    899          Ecode_t RTCDRV_SetWallClock(uint32_t secs)
+    900          {
+   \                     RTCDRV_SetWallClock: (+1)
+   \        0x0   0xB5D0             PUSH     {R4,R6,R7,LR}
+   \        0x2   0x....             LDR.N    R1,??DataTable24_22  ;; 0x48000020
+    901            wallClockTimeBase = secs - TICKS_TO_SEC(RTCDRV_GetWallClockTicks32() );
+   \                     ??RTCDRV_SetWallClock_0: (+1)
+   \        0x4   0x688A             LDR      R2,[R1, #+8]
+   \        0x6   0x0714             LSLS     R4,R2,#+28
+   \        0x8   0xD4FC             BMI.N    ??RTCDRV_SetWallClock_0
+   \        0xA   0x680A             LDR      R2,[R1, #+0]
+   \        0xC   0x2300             MOVS     R3,#+0
+   \        0xE   0xF512 0x4680      ADDS     R6,R2,#+16384
+   \       0x12   0xF143 0x0700      ADC      R7,R3,#+0
+   \       0x16   0x0BF6             LSRS     R6,R6,#+15
+   \       0x18   0xEA46 0x4647      ORR      R6,R6,R7, LSL #+17
+   \       0x1C   0x1B84             SUBS     R4,R0,R6
+   \       0x1E   0x....             LDR.N    R0,??DataTable24_15
+   \       0x20   0x6004             STR      R4,[R0, #+0]
+    902            return ECODE_EMDRV_RTCDRV_OK;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0xBDD0             POP      {R4,R6,R7,PC}    ;; return
+    903          }
+    904          #endif
+    905          
+    906          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    907          /***************************************************************************//**
+    908           * @brief
+    909           *    Convert from milliseconds to RTC/RTCC ticks.
+    910           *
+    911           * @param[in] ms Millisecond value to convert.
+    912           *
+    913           * @return
+    914           *    A number of ticks.
+    915           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    916          uint64_t  RTCDRV_MsecsToTicks(uint32_t ms)
+    917          {
+    918            return MSEC_TO_TICKS(ms);
+   \                     RTCDRV_MsecsToTicks: (+1)
+   \        0x0   0x0C41             LSRS     R1,R0,#+17
+   \        0x2   0x03C0             LSLS     R0,R0,#+15
+   \        0x4   0xF510 0x70FA      ADDS     R0,R0,#+500
+   \        0x8   0xF141 0x0100      ADC      R1,R1,#+0
+   \        0xC   0xF44F 0x727A      MOV      R2,#+1000
+   \       0x10   0x....             B.N      ?Subroutine3
+    919          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x2300             MOVS     R3,#+0
+   \        0x2   0x....'....        B.W      __aeabi_uldivmod
+    920          #endif
+    921          
+    922          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    923          /***************************************************************************//**
+    924           * @brief
+    925           *    Convert from seconds to RTC/RTCC ticks.
+    926           *
+    927           * @param[in] secs Second value to convert.
+    928           *
+    929           * @return
+    930           *    A number of ticks.
+    931           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    932          uint64_t  RTCDRV_SecsToTicks(uint32_t secs)
+    933          {
+    934            return MSEC_TO_TICKS(1000 * secs);
+   \                     RTCDRV_SecsToTicks: (+1)
+   \        0x0   0xF44F 0x717A      MOV      R1,#+1000
+   \        0x4   0x4348             MULS     R0,R1,R0
+   \        0x6   0xF44F 0x727A      MOV      R2,#+1000
+   \        0xA   0x0C41             LSRS     R1,R0,#+17
+   \        0xC   0x03C0             LSLS     R0,R0,#+15
+   \        0xE   0xF510 0x70FA      ADDS     R0,R0,#+500
+   \       0x12   0xF141 0x0100      ADC      R1,R1,#+0
+   \       0x16                      REQUIRE ?Subroutine3
+   \       0x16                      ;; // Fall through to label ?Subroutine3
+    935          }
+    936          #endif
+    937          
+    938          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    939          /***************************************************************************//**
+    940           * @brief
+    941           *    Convert from RTC/RTCC ticks to milliseconds.
+    942           *
+    943           * @param[in] ticks Number of ticks to convert.
+    944           *
+    945           * @return
+    946           *   A number of milliseconds.
+    947           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    948          uint32_t  RTCDRV_TicksToMsec(uint64_t ticks)
+    949          {
+   \                     RTCDRV_TicksToMsec: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    950            return TICKS_TO_MSEC(ticks);
+   \        0x2   0x....'....        BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \        0x6   0xBD30             POP      {R4,R5,PC}       ;; return
+    951          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0xF44F 0x727A      MOV      R2,#+1000
+   \        0x4   0xFBA2 0x4500      UMULL    R4,R5,R2,R0
+   \        0x8   0xFB02 0x5501      MLA      R5,R2,R1,R5
+   \        0xC   0xF514 0x4080      ADDS     R0,R4,#+16384
+   \       0x10   0xF145 0x0100      ADC      R1,R5,#+0
+   \       0x14   0x0BC0             LSRS     R0,R0,#+15
+   \       0x16   0xEA40 0x4041      ORR      R0,R0,R1, LSL #+17
+   \       0x1A   0x4770             BX       LR
+    952          
+    953          /***************************************************************************//**
+    954           * @brief
+    955           *    Convert from RTC/RTCC ticks to milliseconds with 64-bit resolution.
+    956           *
+    957           * @param[in] ticks Number of ticks to convert.
+    958           *
+    959           * @return
+    960           *   A number of milliseconds as a 64-bit value.
+    961           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    962          uint64_t  RTCDRV_TicksToMsec64(uint64_t ticks)
+    963          {
+   \                     RTCDRV_TicksToMsec64: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    964            return TICKS_TO_MSEC(ticks);
+   \        0x2   0x....'....        BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \        0x6   0x0BC9             LSRS     R1,R1,#+15
+   \        0x8   0xBD30             POP      {R4,R5,PC}       ;; return
+    965          }
+    966          #endif
+    967          
+    968          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+    969          /***************************************************************************//**
+    970           * @brief
+    971           *    Convert from RTC/RTCC ticks to seconds.
+    972           *
+    973           * @param[in] ticks Number of ticks to convert.
+    974           *
+    975           * @return
+    976           *    A number of seconds.
+    977           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    978          uint32_t  RTCDRV_TicksToSec(uint64_t ticks)
+    979          {
+   \                     RTCDRV_TicksToSec: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    980            return TICKS_TO_MSEC(ticks) / 1000;
+   \        0x2   0xF44F 0x727A      MOV      R2,#+1000
+   \        0x6   0xFBA2 0x4500      UMULL    R4,R5,R2,R0
+   \        0xA   0x2300             MOVS     R3,#+0
+   \        0xC   0xFB02 0x5501      MLA      R5,R2,R1,R5
+   \       0x10   0xF514 0x4080      ADDS     R0,R4,#+16384
+   \       0x14   0xF145 0x0100      ADC      R1,R5,#+0
+   \       0x18   0x0BC0             LSRS     R0,R0,#+15
+   \       0x1A   0xEA40 0x4041      ORR      R0,R0,R1, LSL #+17
+   \       0x1E   0x0BC9             LSRS     R1,R1,#+15
+   \       0x20   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \       0x24   0x....'....        B.W      __aeabi_uldivmod
+    981          }
+    982          #endif
+    983          
+    984          /// @cond DO_NOT_INCLUDE_WITH_DOXYGEN
+    985          
+    986          #if defined(RTCDRV_USE_RTC)
+    987          void RTC_IRQHandler(void)
+    988          #elif defined(RTCDRV_USE_RTCC)
+
+   \                                 In section .text, align 2, keep-with-next
+    989          void RTCC_IRQHandler(void)
+    990          #endif
+    991          {
+   \                     RTCC_IRQHandler: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+    992            CORE_DECLARE_IRQ_STATE;
+    993            uint32_t flags, timeElapsed, cnt, timeToNextTimerCompletion;
+    994          
+    995            CORE_ENTER_ATOMIC();
+   \        0x4   0x....'....        BL       CORE_EnterAtomic
+   \        0x8   0x4680             MOV      R8,R0
+    996          
+    997            // CNT will normally be COMP0+1 at this point,
+    998            // unless IRQ latency exceeded one tick period.
+    999          
+   1000            flags = RTC_INTGET();
+   \        0xA   0x....             LDR.N    R5,??DataTable24_23  ;; 0x48000014
+   \        0xC   0x6868             LDR      R0,[R5, #+4]
+   \        0xE   0x6829             LDR      R1,[R5, #+0]
+   1001          
+   1002            // Acknowledge all RTC interrupts that are enabled which aren't processed
+   1003            // below to prevent looping in the IRQ handler if these become enabled.
+   1004            RTC_INTCLEAR(flags & ~(RTC_COMP_INT | RTC_OF_INT));
+   \       0x10   0x....             LDR.N    R2,??DataTable24_9  ;; 0x48002014
+   \       0x12   0x4008             ANDS     R0,R0,R1
+   \       0x14   0xF020 0x0109      BIC      R1,R0,#0x9
+   \       0x18   0x6011             STR      R1,[R2, #+0]
+   1005          
+   1006            if ( flags & RTC_COMP_INT ) {
+   \       0x1A   0x0700             LSLS     R0,R0,#+28
+   \       0x1C   0xD525             BPL.N    ??RTCC_IRQHandler_0
+   1007              // Stop timer system by disabling the compare IRQ.
+   1008              // Update all timers with the time elapsed, call callbacks if needed,
+   1009              // then find the timer with the shortest timeout (if any at all) and
+   1010              // reenable the compare IRQ if needed.
+   1011          
+   1012              inTimerIRQ = true;
+   \       0x1E   0x....             LDR.N    R6,??DataTable24_11
+   \       0x20   0x2101             MOVS     R1,#+1
+   \       0x22   0x7031             STRB     R1,[R6, #+0]
+   1013          
+   1014              cnt = RTC_COUNTERGET();
+   \                     ??RTCC_IRQHandler_1: (+1)
+   \       0x24   0x6968             LDR      R0,[R5, #+20]
+   \       0x26   0x0701             LSLS     R1,R0,#+28
+   \       0x28   0xD4FC             BMI.N    ??RTCC_IRQHandler_1
+   \       0x2A   0x68EF             LDR      R7,[R5, #+12]
+   \       0x2C   0x....'....        LDR.W    R9,??DataTable24_12
+   \       0x30   0x....             LDR.N    R4,??DataTable24_20
+   1015          
+   1016              // This loop is repeated if CNT is incremented while processing.
+   1017              do {
+   1018                RTC_INTDISABLE(RTC_COMP_INT);
+   \                     ??RTCC_IRQHandler_2: (+1)
+   \       0x32   0x6868             LDR      R0,[R5, #+4]
+   \       0x34   0xF020 0x0008      BIC      R0,R0,#0x8
+   \       0x38   0x6068             STR      R0,[R5, #+4]
+   1019          
+   1020                timeElapsed = TIMEDIFF(cnt, lastStart);
+   1021          
+   1022                // Update all timers with elapsed time.
+   1023                checkAllTimers(timeElapsed);
+   \       0x3A   0x6820             LDR      R0,[R4, #+0]
+   \       0x3C   0x1A38             SUBS     R0,R7,R0
+   \       0x3E   0x....'....        BL       checkAllTimers
+   1024          
+   1025                // Execute timer callbacks.
+   1026                executeTimerCallbacks();
+   \       0x42   0x....'....        BL       executeTimerCallbacks
+   1027          
+   1028                // Restart RTC according to next timeout.
+   1029                rescheduleRtc(cnt);
+   \       0x46   0x4638             MOV      R0,R7
+   \       0x48   0x....'....        BL       rescheduleRtc
+   1030          
+   1031                cnt = RTC_COUNTERGET();
+   \                     ??RTCC_IRQHandler_3: (+1)
+   \       0x4C   0x6968             LDR      R0,[R5, #+20]
+   \       0x4E   0x0701             LSLS     R1,R0,#+28
+   \       0x50   0xD4FC             BMI.N    ??RTCC_IRQHandler_3
+   \       0x52   0x68EF             LDR      R7,[R5, #+12]
+   1032                timeElapsed = TIMEDIFF(cnt, lastStart);
+   1033                timeToNextTimerCompletion = TIMEDIFF(RTC_COMPAREGET(), lastStart);
+   \       0x54   0x6AE9             LDR      R1,[R5, #+44]
+   1034                /* If the counter has passed the COMP(ARE) register value since
+   1035                   the timers were checked, recheck the timers and
+   1036                   reschedule. */
+   1037              } while ( rtcRunning && (timeElapsed >= timeToNextTimerCompletion));
+   \       0x56   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0x5A   0xB120             CBZ.N    R0,??RTCC_IRQHandler_4
+   \       0x5C   0x6820             LDR      R0,[R4, #+0]
+   \       0x5E   0x1A3A             SUBS     R2,R7,R0
+   \       0x60   0x1A09             SUBS     R1,R1,R0
+   \       0x62   0x428A             CMP      R2,R1
+   \       0x64   0xD2E5             BCS.N    ??RTCC_IRQHandler_2
+   1038              inTimerIRQ = false;
+   \                     ??RTCC_IRQHandler_4: (+1)
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0x7030             STRB     R0,[R6, #+0]
+   1039            }
+   1040          
+   1041          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+   1042            handleOverflow();
+   \                     ??RTCC_IRQHandler_0: (+1)
+   \       0x6A   0x....'....        BL       handleOverflow
+   1043          #endif
+   1044          
+   1045            CORE_EXIT_ATOMIC();
+   \       0x6E   0x4640             MOV      R0,R8
+   \       0x70   0xE8BD 0x43F2      POP      {R1,R4-R9,LR}
+   \       0x74   0x....'....        B.W      CORE_ExitAtomic
+   1046          }
+   1047          
+
+   \                                 In section .text, align 2, keep-with-next
+   1048          static void checkAllTimers(uint32_t timeElapsed)
+   1049          {
+   \                     checkAllTimers: (+1)
+   \        0x0   0xE92D 0x49F0      PUSH     {R4-R8,R11,LR}
+   1050            int i;
+   1051          #if defined(EMODE_DYNAMIC)
+   1052            int numOfTimersRunning = 0;
+   1053          #endif
+   1054          
+   1055            // Iterate through the timer table.
+   1056            // Update time remaining, check for timeout and rescheduling of periodic
+   1057            // timers, check for callbacks.
+   1058          
+   1059            for ( i = 0; i < EMDRV_RTCDRV_NUM_TIMERS; i++ ) {
+   \        0x4   0x2700             MOVS     R7,#+0
+   \        0x6   0x4606             MOV      R6,R0
+   \        0x8   0x46BB             MOV      R11,R7
+   1060              timer[i].doCallback = false;
+   \                     ??checkAllTimers_0: (+1)
+   \        0xA   0x2128             MOVS     R1,#+40
+   \        0xC   0x4379             MULS     R1,R1,R7
+   \        0xE   0x....             LDR.N    R0,??DataTable24_2
+   \       0x10   0xEB00 0x0801      ADD      R8,R0,R1
+   1061              if ( timer[i].running == true ) {
+   \       0x14   0xF898 0x001C      LDRB     R0,[R8, #+28]
+   \       0x18   0xF888 0xB01D      STRB     R11,[R8, #+29]
+   \       0x1C   0x2801             CMP      R0,#+1
+   \       0x1E   0xD150             BNE.N    ??checkAllTimers_1
+   1062          #if defined(EMODE_DYNAMIC)
+   1063                numOfTimersRunning++;
+   1064          #endif
+   1065                if ( timer[i].remaining > timeElapsed ) {
+   \       0x20   0xE9D8 0x0100      LDRD     R0,R1,[R8, #+0]
+   \       0x24   0x458B             CMP      R11,R1
+   \       0x26   0xD808             BHI.N    ??checkAllTimers_2
+   \       0x28   0xBF28             IT       CS 
+   \       0x2A   0x4286             CMPCS    R6,R0
+   \       0x2C   0xD205             BCS.N    ??checkAllTimers_2
+   1066                  timer[i].remaining -= timeElapsed;
+   \       0x2E   0x1B80             SUBS     R0,R0,R6
+   \       0x30   0xEB61 0x010B      SBC      R1,R1,R11
+   \       0x34   0xE9C8 0x0100      STRD     R0,R1,[R8, #+0]
+   \       0x38   0xE043             B.N      ??checkAllTimers_1
+   1067                } else {
+   1068                  if ( timer[i].timerType == rtcdrvTimerTypeOneshot ) {
+   \                     ??checkAllTimers_2: (+1)
+   \       0x3A   0xF898 0x001F      LDRB     R0,[R8, #+31]
+   \       0x3E   0xB910             CBNZ.N   R0,??checkAllTimers_3
+   1069                    timer[i].running = false;
+   \       0x40   0xF888 0xB01C      STRB     R11,[R8, #+28]
+   \       0x44   0xE037             B.N      ??checkAllTimers_4
+   1070          #if defined(EMODE_DYNAMIC)
+   1071                    numOfTimersRunning--;
+   1072          #endif
+   1073                  } else {
+   1074                    // Compensate overdue periodic timers to avoid accumlating errors.
+   1075                    // Note that, in some cases, the timer can be held up more than twice the time
+   1076                    // of the periodic timer. This can happen on flash erase for instance or
+   1077                    // when long interrupt handlers are blocking the RTC interrupt.
+   1078                    uint64_t previousTick = timeElapsed - timer[i].remaining;
+   1079                    timer[i].remaining = timer[i].ticks - (previousTick % timer[i].ticks);
+   \                     ??checkAllTimers_3: (+1)
+   \       0x46   0xE9D8 0x0100      LDRD     R0,R1,[R8, #+0]
+   \       0x4A   0xE9D8 0x2302      LDRD     R2,R3,[R8, #+8]
+   \       0x4E   0xE9D8 0x4502      LDRD     R4,R5,[R8, #+8]
+   \       0x52   0x1A30             SUBS     R0,R6,R0
+   \       0x54   0xEB6B 0x0101      SBC      R1,R11,R1
+   \       0x58   0x....'....        BL       __aeabi_uldivmod
+   \       0x5C   0x1AA2             SUBS     R2,R4,R2
+   \       0x5E   0xEB65 0x0303      SBC      R3,R5,R3
+   \       0x62   0xE9C8 0x2300      STRD     R2,R3,[R8, #+0]
+   1080          
+   1081                    if ( timer[i].periodicCompensationUsec > 0 ) {
+   \       0x66   0xF8D8 0x0010      LDR      R0,[R8, #+16]
+   \       0x6A   0x2800             CMP      R0,#+0
+   \       0x6C   0xDD0E             BLE.N    ??checkAllTimers_5
+   1082                      timer[i].periodicDriftUsec += timer[i].periodicCompensationUsec;
+   \       0x6E   0xF8D8 0x0014      LDR      R0,[R8, #+20]
+   \       0x72   0xF8D8 0x1010      LDR      R1,[R8, #+16]
+   \       0x76   0x1808             ADDS     R0,R1,R0
+   \       0x78   0xF8C8 0x0014      STR      R0,[R8, #+20]
+   1083                      if (timer[i].periodicDriftUsec >= TICK_TIME_USEC) {
+   \       0x7C   0x281E             CMP      R0,#+30
+   \       0x7E   0xD31A             BCC.N    ??checkAllTimers_4
+   1084                        // Add a tick if the timer drift is longer than the time of
+   1085                        // one tick.
+   1086                        timer[i].remaining += 1;
+   \       0x80   0xE9D8 0x0100      LDRD     R0,R1,[R8, #+0]
+   \       0x84   0x1C42             ADDS     R2,R0,#+1
+   \       0x86   0xF161 0x33FF      SBC      R3,R1,#-1
+   \       0x8A   0xE00D             B.N      ??checkAllTimers_6
+   1087                        timer[i].periodicDriftUsec -= TICK_TIME_USEC;
+   1088                      }
+   1089                    } else {
+   1090                      timer[i].periodicDriftUsec -= timer[i].periodicCompensationUsec;
+   \                     ??checkAllTimers_5: (+1)
+   \       0x8C   0xF8D8 0x1014      LDR      R1,[R8, #+20]
+   \       0x90   0xF8D8 0x0010      LDR      R0,[R8, #+16]
+   \       0x94   0x1A08             SUBS     R0,R1,R0
+   \       0x96   0xF8C8 0x0014      STR      R0,[R8, #+20]
+   1091                      if (timer[i].periodicDriftUsec >= TICK_TIME_USEC) {
+   \       0x9A   0x281E             CMP      R0,#+30
+   \       0x9C   0xD30B             BCC.N    ??checkAllTimers_4
+   1092                        // Subtract one tick if the timer drift is longer than the time
+   1093                        // of one tick.
+   1094                        timer[i].remaining -= 1;
+   \       0x9E   0xE9D8 0x0100      LDRD     R0,R1,[R8, #+0]
+   \       0xA2   0x1E42             SUBS     R2,R0,#+1
+   \       0xA4   0xF161 0x0300      SBC      R3,R1,#+0
+   \                     ??checkAllTimers_6: (+1)
+   \       0xA8   0xE9C8 0x2300      STRD     R2,R3,[R8, #+0]
+   1095                        timer[i].periodicDriftUsec -= TICK_TIME_USEC;
+   \       0xAC   0xF8D8 0x4014      LDR      R4,[R8, #+20]
+   \       0xB0   0x3C1E             SUBS     R4,R4,#+30
+   \       0xB2   0xF8C8 0x4014      STR      R4,[R8, #+20]
+   1096                      }
+   1097                    }
+   1098                  }
+   1099                  if ( timer[i].callback != NULL ) {
+   \                     ??checkAllTimers_4: (+1)
+   \       0xB6   0xF8D8 0x0018      LDR      R0,[R8, #+24]
+   \       0xBA   0xB110             CBZ.N    R0,??checkAllTimers_1
+   1100                    timer[i].doCallback = true;
+   \       0xBC   0x2101             MOVS     R1,#+1
+   \       0xBE   0xF888 0x101D      STRB     R1,[R8, #+29]
+   1101                  }
+   1102                }
+   1103              }
+   1104            }
+   \                     ??checkAllTimers_1: (+1)
+   \       0xC2   0x1C7F             ADDS     R7,R7,#+1
+   \       0xC4   0x2F04             CMP      R7,#+4
+   \       0xC6   0xDBA0             BLT.N    ??checkAllTimers_0
+   1105          
+   1106          #if defined(EMODE_DYNAMIC)
+   1107            // If no timers are running, remove block on EM3 and EM4 sleep modes.
+   1108            if ( (numOfTimersRunning == 0) && (sleepBlocked == true) ) {
+   1109              sleepBlocked = false;
+   1110              SLEEP_SleepBlockEnd(sleepEM3);
+   1111            }
+   1112          #endif
+   1113          }
+   \       0xC8   0xE8BD 0x89F0      POP      {R4-R8,R11,PC}   ;; return
+   1114          
+
+   \                                 In section .text, align 2, keep-with-next
+   1115          static void delayTicks(uint32_t ticks)
+   1116          {
+   \                     delayTicks: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xD100             BNE.N    ??delayTicks_0
+   \        0x4   0x4770             BX       LR
+   \                     ??delayTicks_0: (+1)
+   \        0x6   0xB518             PUSH     {R3,R4,LR}
+   1117            uint32_t startTime;
+   1118            volatile uint32_t now;
+   1119          
+   1120            if ( ticks ) {
+   \                     ??delayTicks_1: (+1)
+   \        0x8   0x....             LDR.N    R1,??DataTable24_22  ;; 0x48000020
+   \        0xA   0x688A             LDR      R2,[R1, #+8]
+   \        0xC   0x0713             LSLS     R3,R2,#+28
+   \        0xE   0xD4FB             BMI.N    ??delayTicks_1
+   \       0x10   0x680A             LDR      R2,[R1, #+0]
+   \                     ??delayTicks_2: (+1)
+   \       0x12   0x688B             LDR      R3,[R1, #+8]
+   \       0x14   0x071C             LSLS     R4,R3,#+28
+   \       0x16   0xD4FC             BMI.N    ??delayTicks_2
+   \       0x18   0x680B             LDR      R3,[R1, #+0]
+   \       0x1A   0x9300             STR      R3,[SP, #+0]
+   1121              startTime = RTC_COUNTERGET();
+   1122              do {
+   1123                now = RTC_COUNTERGET();
+   1124              } while ( TIMEDIFF(now, startTime) < ticks );
+   \       0x1C   0x9C00             LDR      R4,[SP, #+0]
+   \       0x1E   0x1AA4             SUBS     R4,R4,R2
+   \       0x20   0x4284             CMP      R4,R0
+   \       0x22   0xD3F6             BCC.N    ??delayTicks_2
+   1125            }
+   1126          }
+   \       0x24   0xBD11             POP      {R0,R4,PC}       ;; return
+   1127          
+
+   \                                 In section .text, align 2, keep-with-next
+   1128          static void executeTimerCallbacks(void)
+   1129          {
+   \                     executeTimerCallbacks: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   1130            int i;
+   1131          
+   1132            for ( i = 0; i < EMDRV_RTCDRV_NUM_TIMERS; i++ ) {
+   \        0x2   0x2400             MOVS     R4,#+0
+   1133              if ( timer[i].doCallback ) {
+   \                     ??executeTimerCallbacks_0: (+1)
+   \        0x4   0x2228             MOVS     R2,#+40
+   \        0x6   0x4362             MULS     R2,R2,R4
+   \        0x8   0x....             LDR.N    R1,??DataTable24_2
+   \        0xA   0x440A             ADD      R2,R1,R2
+   \        0xC   0x7F50             LDRB     R0,[R2, #+29]
+   \        0xE   0xB118             CBZ.N    R0,??executeTimerCallbacks_1
+   1134                timer[i].callback(i, timer[i].user);
+   \       0x10   0x6A11             LDR      R1,[R2, #+32]
+   \       0x12   0x6992             LDR      R2,[R2, #+24]
+   \       0x14   0x4620             MOV      R0,R4
+   \       0x16   0x4790             BLX      R2
+   1135              }
+   1136            }
+   \                     ??executeTimerCallbacks_1: (+1)
+   \       0x18   0x1C64             ADDS     R4,R4,#+1
+   \       0x1A   0x2C04             CMP      R4,#+4
+   \       0x1C   0xDBF2             BLT.N    ??executeTimerCallbacks_0
+   1137          }
+   \       0x1E   0xBD10             POP      {R4,PC}          ;; return
+   1138          
+
+   \                                 In section .text, align 2, keep-with-next
+   1139          static void rescheduleRtc(uint32_t rtcCnt)
+   1140          {
+   \                     rescheduleRtc: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   1141            int i;
+   1142            uint64_t min = UINT64_MAX;
+   \        0x2   0xF04F 0x32FF      MOV      R2,#-1
+   \        0x6   0x4613             MOV      R3,R2
+   1143          
+   1144            // Find the timer with shortest timeout.
+   1145            for ( i = 0; i < EMDRV_RTCDRV_NUM_TIMERS; i++ ) {
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x....             LDR.N    R4,??DataTable24_2
+   1146              if (    (timer[i].running   == true)
+   1147                      && (timer[i].remaining <  min) ) {
+   \                     ??rescheduleRtc_0: (+1)
+   \        0xC   0x2528             MOVS     R5,#+40
+   \        0xE   0x434D             MULS     R5,R5,R1
+   \       0x10   0x1966             ADDS     R6,R4,R5
+   \       0x12   0x7F37             LDRB     R7,[R6, #+28]
+   \       0x14   0x2F01             CMP      R7,#+1
+   \       0x16   0xD108             BNE.N    ??rescheduleRtc_1
+   \       0x18   0x4425             ADD      R5,R4,R5
+   \       0x1A   0xE9D5 0x6700      LDRD     R6,R7,[R5, #+0]
+   \       0x1E   0x429F             CMP      R7,R3
+   \       0x20   0xD803             BHI.N    ??rescheduleRtc_1
+   \       0x22   0xBF2E             ITEE     CS 
+   \       0x24   0x4296             CMPCS    R6,R2
+   \       0x26   0x4632             MOVCC    R2,R6
+   \       0x28   0x463B             MOVCC    R3,R7
+   1148                min = timer[i].remaining;
+   1149              }
+   1150            }
+   \                     ??rescheduleRtc_1: (+1)
+   \       0x2A   0x1C49             ADDS     R1,R1,#+1
+   \       0x2C   0x2904             CMP      R1,#+4
+   \       0x2E   0xDBED             BLT.N    ??rescheduleRtc_0
+   1151          
+   1152            rtcRunning = false;
+   \       0x30   0x2100             MOVS     R1,#+0
+   1153            if ( min != UINT64_MAX ) {
+   \       0x32   0xF04F 0x34FF      MOV      R4,#-1
+   \       0x36   0x42A3             CMP      R3,R4
+   \       0x38   0xBF08             IT       EQ 
+   \       0x3A   0x42A2             CMPEQ    R2,R4
+   \       0x3C   0xD013             BEQ.N    ??rescheduleRtc_2
+   1154              min = SL_MIN(min, RTC_CLOSE_TO_MAX_VALUE);
+   \       0x3E   0xF06F 0x0664      MVN      R6,#+100
+   \       0x42   0x428B             CMP      R3,R1
+   \       0x44   0xD801             BHI.N    ??rescheduleRtc_3
+   \       0x46   0x42B2             CMP      R2,R6
+   \       0x48   0xD300             BCC.N    ??rescheduleRtc_4
+   \                     ??rescheduleRtc_3: (+1)
+   \       0x4A   0x4632             MOV      R2,R6
+   1155          #if defined(RTCDRV_USE_RTC)
+   1156              if ( inTimerIRQ == false ) {
+   1157                lastStart = (rtcCnt) & RTC_COUNTER_MASK;
+   1158              } else
+   1159          #endif
+   1160              {
+   1161                lastStart = rtcCnt;
+   \                     ??rescheduleRtc_4: (+1)
+   \       0x4C   0x....             LDR.N    R1,??DataTable24_20
+   \       0x4E   0x6008             STR      R0,[R1, #+0]
+   1162              }
+   1163              RTC_INTCLEAR(RTC_COMP_INT);
+   \       0x50   0x2308             MOVS     R3,#+8
+   \       0x52   0x....             LDR.N    R4,??DataTable24_9  ;; 0x48002014
+   \       0x54   0x6023             STR      R3,[R4, #+0]
+   1164          
+   1165              RTC_COMPARESET(rtcCnt + min);
+   \       0x56   0x....             LDR.N    R3,??DataTable24_17  ;; 0x48000018
+   \       0x58   0x1810             ADDS     R0,R2,R0
+   \       0x5A   0x6298             STR      R0,[R3, #+40]
+   1166          
+   1167          #if defined(EMODE_DYNAMIC)
+   1168              // When RTC is running, EM3 or EM4 are not allowed.
+   1169              if ( sleepBlocked == false ) {
+   1170                sleepBlocked = true;
+   1171                SLEEP_SleepBlockBegin(sleepEM3);
+   1172              }
+   1173          #endif
+   1174          
+   1175              rtcRunning = true;
+   1176          
+   1177              // Reenable compare IRQ.
+   1178              RTC_INTENABLE(RTC_COMP_INT);
+   \       0x5C   0x6818             LDR      R0,[R3, #+0]
+   \       0x5E   0x2101             MOVS     R1,#+1
+   \       0x60   0xF040 0x0008      ORR      R0,R0,#0x8
+   \       0x64   0x6018             STR      R0,[R3, #+0]
+   1179            }
+   \                     ??rescheduleRtc_2: (+1)
+   \       0x66   0x....             LDR.N    R2,??DataTable24_12
+   \       0x68   0x7011             STRB     R1,[R2, #+0]
+   1180          }
+   \       0x6A   0xBDF0             POP      {R4-R7,PC}       ;; return
+   1181          
+   1182          #if defined(EMDRV_RTCDRV_WALLCLOCK_CONFIG)
+   1183          /***************************************************************************//**
+   1184           * @brief
+   1185           *    Handle counter overflow
+   1186           *
+   1187           * @note
+   1188           *    This function must only be called inside an atomic section.
+   1189           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1190          static void handleOverflow(void)
+   1191          {
+   1192            if (RTC_INTGET() & RTC_OF_INT) {
+   \                     handleOverflow: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable24_23  ;; 0x48000014
+   \        0x2   0x6841             LDR      R1,[R0, #+4]
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x4001             ANDS     R1,R1,R0
+   \        0x8   0x07C8             LSLS     R0,R1,#+31
+   \        0xA   0xD506             BPL.N    ??handleOverflow_0
+   1193              RTC_INTCLEAR(RTC_OF_INT);
+   \        0xC   0x2101             MOVS     R1,#+1
+   \        0xE   0x....             LDR.N    R2,??DataTable24_9  ;; 0x48002014
+   \       0x10   0x6011             STR      R1,[R2, #+0]
+   1194              wallClockOverflowCnt++;
+   \       0x12   0x....             LDR.N    R0,??DataTable24_14
+   \       0x14   0x6803             LDR      R3,[R0, #+0]
+   \       0x16   0x1C5B             ADDS     R3,R3,#+1
+   \       0x18   0x6003             STR      R3,[R0, #+0]
+   1195            }
+   1196          }
+   \                     ??handleOverflow_0: (+1)
+   \       0x1A   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24:
+   \        0x0   0xE000'E280        DC32     0xe000e280
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_1:
+   \        0x0   0xF000'1006        DC32     0xf0001006
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_2:
+   \        0x0   0x....'....        DC32     timer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_3:
+   \        0x0   0xF000'1001        DC32     0xf0001001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_4:
+   \        0x0   0xF000'1004        DC32     0xf0001004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_5:
+   \        0x0   0x....'....        DC32     rtcdrvIsInitialized
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_6:
+   \        0x0   0x....'....        DC32     initRTCC
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_7:
+   \        0x0   0x....'....        DC32     initRTCCCompareChannel
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_8:
+   \        0x0   0x4800'0004        DC32     0x48000004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_9:
+   \        0x0   0x4800'2014        DC32     0x48002014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_10:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_11:
+   \        0x0   0x....'....        DC32     inTimerIRQ
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_12:
+   \        0x0   0x....'....        DC32     rtcRunning
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_13:
+   \        0x0   0x....'....        DC32     startTimerNestingLevel
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_14:
+   \        0x0   0x....'....        DC32     wallClockOverflowCnt
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_15:
+   \        0x0   0x....'....        DC32     wallClockTimeBase
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_16:
+   \        0x0   0xE000'E180        DC32     0xe000e180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_17:
+   \        0x0   0x4800'0018        DC32     0x48000018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_18:
+   \        0x0   0xF000'1002        DC32     0xf0001002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_19:
+   \        0x0   0xF000'1003        DC32     0xf0001003
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_20:
+   \        0x0   0x....'....        DC32     lastStart
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_21:
+   \        0x0   0xF000'1005        DC32     0xf0001005
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_22:
+   \        0x0   0x4800'0020        DC32     0x48000020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_23:
+   \        0x0   0x4800'0014        DC32     0x48000014
+   1197          #endif
+   1198          
+   1199          /// @endcond
+   1200          
+   1201          /* *INDENT-OFF* */
+   1202          /******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************//**
+   1203           * @addtogroup emdrv
+   1204           * @{
+   1205           * @addtogroup RTCDRV
+   1206           * @brief Real-time Clock Driver
+   1207           * @{
+   1208          
+   1209             @details
+   1210             The rtcdriver.c and rtcdriver.h source files for the RTCDRV device driver library are in the
+   1211             emdrv/rtcdrv folder.
+   1212          
+   1213             @li @ref rtcdrv_intro
+   1214             @li @ref rtcdrv_conf
+   1215             @li @ref rtcdrv_api
+   1216             @li @ref rtcdrv_example
+   1217          
+   1218             @n @section rtcdrv_intro Introduction
+   1219          
+   1220             The RTCDRV driver uses the RTC peripheral of a device in Silicon Laboratories
+   1221             Gecko microcontroller family to provide a user-configurable number of software
+   1222             millisecond timers.
+   1223             Oneshot timers and periodic timers are supported.
+   1224             Timers will, when their timeout period has expired, call a user-supplied
+   1225             callback function.
+   1226             @note The callback function is called from within an interrupt handler with
+   1227             interrupts disabled.
+   1228          
+   1229             In addition to the timers, RTCDRV also offers an optional wallclock
+   1230             functionality. The wallclock keeps track of the number of seconds elapsed
+   1231             since RTCDRV initialization.
+   1232          
+   1233             RTCDRV resolution is 1 ms with 244 us accuracy. On the EFM32G family (classic
+   1234             Gecko), the accuracy is 61 us.
+   1235             Since RTCDRV is interrupt-driven using the default RTC interrupt priority
+   1236             level, timeout accuracy will be affected by the interrupt latency of the
+   1237             system.
+   1238          
+   1239             @n @section rtcdrv_conf Configuration Options
+   1240          
+   1241             Some properties of the RTCDRV driver are compile-time configurable. These
+   1242             properties are stored in the @ref rtcdrv_config.h file. A template for this
+   1243             file, containing default values, is in the emdrv/config folder.
+   1244             Currently the configuration options are as follows:
+   1245             @li The number of timers that RTCDRV provides.
+   1246             @li Inclusion of the wallclock functionality.
+   1247             @li Integration with the SLEEP driver.
+   1248          
+   1249             When the integration with the SLEEP driver is enabled, RTCDRV will
+   1250             notify the SLEEP driver which energy mode can be
+   1251             safely used.
+   1252          
+   1253             To configure RTCDRV, provide a custom configuration file. This is an
+   1254             example @ref rtcdrv_config.h file:
+   1255             @verbatim
+   1256          #ifndef SILICON_LABS_RTCDRV_CONFIG_H
+   1257          #define SILICON_LABS_RTCDRV_CONFIG_H
+   1258          
+   1259          // Define how many timers RTCDRV provides.
+   1260          #define EMDRV_RTCDRV_NUM_TIMERS     (4)
+   1261          
+   1262          // Uncomment the following line to include the wallclock functionality.
+   1263          //#define EMDRV_RTCDRV_WALLCLOCK_CONFIG
+   1264          
+   1265          // Uncomment the following line to enable integration with the SLEEP driver.
+   1266          //#define EMDRV_RTCDRV_SLEEPDRV_INTEGRATION
+   1267          
+   1268          // Uncomment the following line to let the RTCDRV clock on LFRCO or PLFRCO.
+   1269          // The default is LFXO.
+   1270          //#define EMDRV_RTCDRV_USE_LFRCO
+   1271          //#define EMDRV_RTCDRV_USE_PLFRCO
+   1272          
+   1273          #endif
+   1274             @endverbatim
+   1275          
+   1276             @n @section rtcdrv_api The API
+   1277          
+   1278             This section contains brief descriptions of the API functions. For
+   1279             more information about input and output parameters and return values,
+   1280             click on the hyperlinked function names. Most functions return an error
+   1281             code, @ref ECODE_EMDRV_RTCDRV_OK is returned on success,
+   1282             see @ref ecode.h and @ref rtcdriver.h for other error codes.
+   1283          
+   1284             The application code must include the @em rtcdriver.h header file.
+   1285          
+   1286             All API functions can be called from within interrupt handlers.
+   1287          
+   1288             @ref RTCDRV_Init(), @ref RTCDRV_DeInit() @n
+   1289              These functions initialize or deinitialize the RTCDRV driver. Typically,
+   1290              @htmlonly RTCDRV_Init() @endhtmlonly is called once in the startup code.
+   1291          
+   1292             @ref RTCDRV_StartTimer(), @ref RTCDRV_StopTimer() @n
+   1293              Start/Stop a timer. When a timer expires, a user-supplied callback function
+   1294              is called. A pointer to this function is passed to @htmlonly
+   1295              RTCDRV_StartTimer()@endhtmlonly. See @ref TimerCallback for details of
+   1296              the callback prototype.
+   1297              Note that it is legal to start an already started timer, which is
+   1298              restarted with the new timeout value.
+   1299          
+   1300             @ref RTCDRV_AllocateTimer(), @ref RTCDRV_FreeTimer() @n
+   1301              Reserve/release a timer. Many functions in the API require a timer ID as
+   1302              an input parameter. Use @htmlonly RTCDRV_AllocateTimer() @endhtmlonly to
+   1303              aquire this reference.
+   1304          
+   1305             @ref RTCDRV_TimeRemaining() @n
+   1306              Get time left to the timer expiration.
+   1307          
+   1308             @ref RTCDRV_Delay() @n
+   1309              Millisecond delay function. This is an "active wait" delay function.
+   1310          
+   1311             @ref RTCDRV_IsRunning() @n
+   1312              Check if a timer is running.
+   1313          
+   1314             @ref RTCDRV_GetWallClock(), @ref RTCDRV_SetWallClock() @n
+   1315              Get or set wallclock time.
+   1316          
+   1317             @ref RTCDRV_GetWallClockTicks32(), @ref RTCDRV_GetWallClockTicks64() @n
+   1318              Get wallclock time expressed as number of RTC/RTCC counter ticks, available
+   1319              both as 32bit and 64 bit values.
+   1320          
+   1321             @ref RTCDRV_MsecsToTicks(), @ref RTCDRV_SecsToTicks(),
+   1322             @ref RTCDRV_TicksToMsec(), @ref RTCDRV_TicksToSec() @n
+   1323              Conversion functions between seconds, milliseconds, and RTC/RTCC
+   1324              counter ticks.
+   1325          
+   1326             @n @anchor TimerCallback <b>The timer expiry callback function:</b> @n
+   1327             The callback function, prototyped as @ref RTCDRV_Callback_t(), is called from
+   1328             within the RTC peripheral interrupt handler on timer expiration.
+   1329             @htmlonly RTCDRV_Callback_t( RTCDRV_TimerID_t id )@endhtmlonly is called with
+   1330             the timer ID as an input parameter.
+   1331          
+   1332             @n <b>The timer type:</b> @n
+   1333             Timers are either oneshot or periodic.
+   1334             @li Oneshot timers run only once toward their expiration.
+   1335             @li Periodic timers will be automatically restarted when they expire.
+   1336          
+   1337             The timer type is an enumeration, see @ref RTCDRV_TimerType_t for details.
+   1338          
+   1339             @n @section rtcdrv_example Example
+   1340             @verbatim
+   1341          #include "rtcdriver.h"
+   1342          #include <stddef.h>
+   1343          
+   1344          int i = 0;
+   1345          RTCDRV_TimerID_t id;
+   1346          
+   1347          void myCallback( RTCDRV_TimerID_t id, void * user )
+   1348          {
+   1349            (void) user; // unused argument in this example
+   1350          
+   1351            i++;
+   1352          
+   1353            if ( i < 10 ) {
+   1354              // Restart timer
+   1355              RTCDRV_StartTimer( id, rtcdrvTimerTypeOneshot, 100, myCallback, NULL );
+   1356            }
+   1357          }
+   1358          
+   1359          int main( void )
+   1360          {
+   1361            // Initialization of the RTCDRV driver.
+   1362            RTCDRV_Init();
+   1363          
+   1364            // Reserve a timer.
+   1365            RTCDRV_AllocateTimer( &id );
+   1366          
+   1367            // Start a oneshot timer with 100 millisecond timeout.
+   1368            RTCDRV_StartTimer( id, rtcdrvTimerTypeOneshot, 100, myCallback, NULL );
+   1369          
+   1370            return 0;
+   1371          }
+   1372             @endverbatim
+   1373          
+   1374           * @} end group RTCDRV ********************************************************
+   1375           * @} end group emdrv ****************************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   RTCC_IRQHandler
+        32   -> CORE_EnterAtomic
+         0   -> CORE_ExitAtomic
+        32   -> checkAllTimers
+        32   -> executeTimerCallbacks
+        32   -> handleOverflow
+        32   -> rescheduleRtc
+      24   RTCDRV_AllocateTimer
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+       8   RTCDRV_DeInit
+         8   -> RTCC_Enable
+         8   -> __NVIC_ClearPendingIRQ
+      16   RTCDRV_Delay
+        16   -> delayTicks
+        16 __aeabi_uldivmod
+       8   RTCDRV_FreeTimer
+         8   -> CORE_EnterAtomic
+         8   -> CORE_ExitAtomic
+      12   RTCDRV_GetWallClock
+       0   RTCDRV_GetWallClockTicks32
+      24   RTCDRV_GetWallClockTicks64
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+        24   -> handleOverflow
+      16   RTCDRV_Init
+        16   -> CMU_ClockSelectSet
+        16   -> RTCC_ChannelInit
+        16   -> RTCC_Init
+        16   -> __NVIC_ClearPendingIRQ
+        16   -> __aeabi_memclr4
+      16   RTCDRV_IsRunning
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+       0   RTCDRV_MsecsToTicks
+         0 __aeabi_uldivmod
+       0   RTCDRV_SecsToTicks
+         0 __aeabi_uldivmod
+      16   RTCDRV_SetWallClock
+      48   RTCDRV_StartTimer
+        48   -- Indirect call
+        48   -> CORE_EnterAtomic
+        48   -> CORE_ExitAtomic
+        48   -> checkAllTimers
+        48   -> executeTimerCallbacks
+        48   -> rescheduleRtc
+        48 __aeabi_uldivmod
+       8   RTCDRV_StopTimer
+         8   -> CORE_EnterAtomic
+         8   -> CORE_ExitAtomic
+      12   RTCDRV_TicksToMsec
+      12   RTCDRV_TicksToMsec64
+      12   RTCDRV_TicksToSec
+         0 __aeabi_uldivmod
+      24   RTCDRV_TimeRemaining
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+       0   __NVIC_ClearPendingIRQ
+      28   checkAllTimers
+        28 __aeabi_uldivmod
+      12   delayTicks
+       8   executeTimerCallbacks
+         8   -- Indirect call
+       0   handleOverflow
+      20   rescheduleRtc
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable24
+       4  ??DataTable24_1
+       4  ??DataTable24_10
+       4  ??DataTable24_11
+       4  ??DataTable24_12
+       4  ??DataTable24_13
+       4  ??DataTable24_14
+       4  ??DataTable24_15
+       4  ??DataTable24_16
+       4  ??DataTable24_17
+       4  ??DataTable24_18
+       4  ??DataTable24_19
+       4  ??DataTable24_2
+       4  ??DataTable24_20
+       4  ??DataTable24_21
+       4  ??DataTable24_22
+       4  ??DataTable24_23
+       4  ??DataTable24_3
+       4  ??DataTable24_4
+       4  ??DataTable24_5
+       4  ??DataTable24_6
+       4  ??DataTable24_7
+       4  ??DataTable24_8
+       4  ??DataTable24_9
+       6  ?Subroutine0
+       8  ?Subroutine1
+       6  ?Subroutine2
+       6  ?Subroutine3
+      10  ?Subroutine4
+      14  ?Subroutine5
+      28  ?Subroutine6
+      10  ?Subroutine7
+     120  RTCC_IRQHandler
+      88  RTCDRV_AllocateTimer
+      64  RTCDRV_DeInit
+      78  RTCDRV_Delay
+      32  RTCDRV_FreeTimer
+      34  RTCDRV_GetWallClock
+      14  RTCDRV_GetWallClockTicks32
+      48  RTCDRV_GetWallClockTicks64
+     152  RTCDRV_Init
+      74  RTCDRV_IsRunning
+      18  RTCDRV_MsecsToTicks
+      22  RTCDRV_SecsToTicks
+      38  RTCDRV_SetWallClock
+     402  RTCDRV_StartTimer
+      46  RTCDRV_StopTimer
+       8  RTCDRV_TicksToMsec
+      10  RTCDRV_TicksToMsec64
+      40  RTCDRV_TicksToSec
+     156  RTCDRV_TimeRemaining
+      24  __NVIC_ClearPendingIRQ
+     204  checkAllTimers
+      38  delayTicks
+      32  executeTimerCallbacks
+      28  handleOverflow
+       1  inTimerIRQ
+       8  initRTCC
+       8  initRTCCCompareChannel
+       4  lastStart
+     108  rescheduleRtc
+       1  rtcRunning
+       1  rtcdrvIsInitialized
+       4  startTimerNestingLevel
+     160  timer
+       4  wallClockOverflowCnt
+       4  wallClockTimeBase
+
+ 
+   179 bytes in section .bss
+    16 bytes in section .data
+ 2 062 bytes in section .text
+ 
+ 2 062 bytes of CODE memory
+   195 bytes of DATA memory
+
+Errors: none
+Warnings: none

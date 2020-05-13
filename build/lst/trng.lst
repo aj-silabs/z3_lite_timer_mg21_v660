@@ -1,0 +1,579 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:59
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\trng.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW5C88.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\trng.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"trng.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\trng.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\trng.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\trng.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief True Random Number Generator (TRNG) driver for Silicon Labs devices
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: APACHE-2.0
+     10           *
+     11           * This software is subject to an open source license and is distributed by
+     12           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     13           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     14           * Such terms and conditions may be further supplemented by the Silicon Labs
+     15           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     16           * sections applicable to open source software.
+     17           *
+     18           ******************************************************************************/
+     19          
+     20          #if !defined(MBEDTLS_CONFIG_FILE)
+     21          #include "mbedtls/config.h"
+     22          #else
+     23          #include MBEDTLS_CONFIG_FILE
+     24          #endif
+     25          
+     26          #if defined(MBEDTLS_TRNG_C)
+     27          
+     28          #include "trng.h"
+     29          #include "em_device.h"
+     30          #include "em_cmu.h"
+     31          #include "em_common.h"
+     32          #include <string.h>
+     33          
+     34          #if defined(TRNG_PRESENT)
+     35          
+     36          #define FIFO_LEVEL_RETRY   (10000)
+     37          #define TEST_WORDS_MIN       (257)
+     38          
+     39          #define TEST_VECTOR_CONDITIONING_KEY_SIZE  (4)
+     40          static const uint32_t
+     41          test_vector_conditioning_key[TEST_VECTOR_CONDITIONING_KEY_SIZE] =
+     42            {0x16157E2B, 0xA6D2AE28, 0x8815F7AB, 0x3C4FCF09};
+     43          
+     44          #define TEST_VECTOR_CONDITIONING_INPUT_SIZE (16)
+     45          static const uint32_t
+     46          test_vector_conditioning_input[TEST_VECTOR_CONDITIONING_INPUT_SIZE] =
+     47            {0xE1BCC06B, 0x9199452A, 0x1A7434E1, 0x25199E7F,
+     48             0x578A2DAE, 0x9CAC031E, 0xAC6FB79E, 0x518EAF45,
+     49             0x461CC830, 0x11E45CA3, 0x19C1FBE5, 0xEF520A1A,
+     50             0x45249FF6, 0x179B4FDF, 0x7B412BAD, 0x10376CE6};
+     51          
+     52          #define TEST_VECTOR_CONDITIONING_OUTPUT_SIZE (4)
+     53          static const uint32_t
+     54          test_vector_conditioning_output[TEST_VECTOR_CONDITIONING_OUTPUT_SIZE] =
+     55            {0xA1CAF13F, 0x09AC1F68, 0x30CA0E12, 0xA7E18675};
+     56          
+     57          #define TRNG_STARTUP_TEST_WAIT_RETRY  (10000)
+     58          
+     59          void mbedtls_trng_init( mbedtls_trng_context *ctx )
+     60          {
+     61              int i;
+     62          
+     63              memset(ctx, 0, sizeof( mbedtls_trng_context ) );
+     64          
+     65              /* Enable the TRNG0 clock. */
+     66              CMU_ClockEnable( cmuClock_TRNG0, true );
+     67          
+     68              /* Enable TRNG0. */
+     69              ctx->trng = TRNG0;
+     70          
+     71              ctx->trng->CONTROL =
+     72                  TRNG_CONTROL_ENABLE |
+     73                  TRNG_CONTROL_REPCOUNTIEN |
+     74                  TRNG_CONTROL_APT64IEN |
+     75                  TRNG_CONTROL_APT4096IEN |
+     76                  TRNG_CONTROL_PREIEN |
+     77                  TRNG_CONTROL_ALMIEN;
+     78          
+     79              /* Apply software reset */
+     80              mbedtls_trng_soft_reset(ctx);
+     81          
+     82              /* Wait for TRNG to complete startup tests and start filling the FIFO. */
+     83              for (i=0; (TRNG0->FIFOLEVEL == 0) && (i<TRNG_STARTUP_TEST_WAIT_RETRY); i++);
+     84              EFM_ASSERT(i<TRNG_STARTUP_TEST_WAIT_RETRY);
+     85          }
+     86          
+     87          void mbedtls_trng_free( mbedtls_trng_context *ctx )
+     88          {
+     89              /* Disable TRNG0. */
+     90              ctx->trng->CONTROL = 0;
+     91          
+     92              /* Disable the TRNG0 clock. */
+     93              CMU_ClockEnable( cmuClock_TRNG0, false );
+     94          
+     95              memset(ctx, 0, sizeof( mbedtls_trng_context ) );
+     96          }
+     97          
+     98          void mbedtls_trng_soft_reset( mbedtls_trng_context *ctx )
+     99          {
+    100              TRNG_TypeDef *trng = ctx->trng;
+    101              uint32_t ctrl = trng->CONTROL;
+    102          
+    103              ctrl |= TRNG_CONTROL_SOFTRESET;
+    104          
+    105              trng->CONTROL = ctrl;
+    106          
+    107              ctrl &= ~TRNG_CONTROL_SOFTRESET;
+    108              trng->CONTROL = ctrl;
+    109          }
+    110          
+    111          static inline
+    112          void mbedtls_trng_write_test_data( mbedtls_trng_context *ctx, uint32_t data )
+    113          {
+    114              TRNG_TypeDef *trng = ctx->trng;
+    115              /* Wait for TESTDATA register to become ready for next word. */
+    116              while (trng->STATUS & TRNG_STATUS_TESTDATABUSY);
+    117              trng->TESTDATA = data;
+    118          }
+    119          
+    120          static void mbedtls_trng_clear_fifo( mbedtls_trng_context *ctx )
+    121          {
+    122            TRNG_TypeDef *trng = ctx->trng;
+    123            volatile uint32_t val32;
+    124          
+    125            /* Empty FIFO */
+    126            while ( trng->FIFOLEVEL )
+    127            {
+    128                val32 = trng->FIFO;
+    129                (void)val32;
+    130            }
+    131          }
+    132          
+    133          int mbedtls_trng_set_key( mbedtls_trng_context *ctx, const unsigned char *key )
+    134          {
+    135              TRNG_TypeDef *trng = ctx->trng;
+    136              uint32_t _key[4];
+    137          
+    138              memcpy(_key, key, sizeof(_key));
+    139          
+    140              mbedtls_trng_clear_fifo(ctx);
+    141          
+    142              /* Program key in KEY registers of the TRNG. */
+    143              trng->KEY0 = _key[0];
+    144              trng->KEY1 = _key[1];
+    145              trng->KEY2 = _key[2];
+    146              trng->KEY3 = _key[3];
+    147          
+    148              return 0;
+    149          }
+    150          
+    151          int mbedtls_trng_check_conditioning( mbedtls_trng_context *ctx )
+    152          {
+    153              TRNG_TypeDef *trng = ctx->trng;
+    154              uint32_t val32;
+    155              int i, ret=0;
+    156              uint32_t ctrl = trng->CONTROL;
+    157          
+    158              /* Setup control register */
+    159              trng->CONTROL = TRNG_CONTROL_ENABLE | TRNG_CONTROL_TESTEN |
+    160                  TRNG_CONTROL_BYPNIST | TRNG_CONTROL_BYPAIS31;
+    161          
+    162              /* Apply software reset */
+    163              mbedtls_trng_soft_reset(ctx);
+    164          
+    165              /* Write test vector to the key register. */
+    166              mbedtls_trng_set_key(ctx,
+    167                                   (const unsigned char*)test_vector_conditioning_key);
+    168          
+    169              /* Write test vector to the TESTDATA register */
+    170              for (i=0; i<TEST_VECTOR_CONDITIONING_INPUT_SIZE; i++)
+    171              {
+    172                mbedtls_trng_write_test_data(ctx, test_vector_conditioning_input[i]);
+    173              }
+    174          
+    175              for (i=0; i<TEST_VECTOR_CONDITIONING_OUTPUT_SIZE; i++)
+    176              {
+    177                  /* Wait for data to become available in the FIFO. */
+    178                  while ( 0 == trng->FIFOLEVEL );
+    179                  /* Read output from the conditioning function */
+    180                  val32 = trng->FIFO;
+    181                  /* Compare with expected test vector. */
+    182                  if (val32 != test_vector_conditioning_output[i])
+    183                  {
+    184                      ret = MBEDTLS_ERR_TRNG_CONDITIONING_TEST_FAILED;
+    185                  }
+    186              }
+    187          
+    188              /* Restore initial value of control register */
+    189              trng->CONTROL = ctrl;
+    190          
+    191              return ret;
+    192          }
+    193          
+    194          static int trng_check_status( mbedtls_trng_context *ctx )
+    195          {
+    196              TRNG_TypeDef *trng = ctx->trng;
+    197              uint32_t status = trng->STATUS;
+    198          
+    199              if ( (status & (TRNG_STATUS_PREIF
+    200                              | TRNG_STATUS_REPCOUNTIF
+    201                              | TRNG_STATUS_APT64IF
+    202                              | TRNG_STATUS_APT4096IF
+    203                              | TRNG_STATUS_ALMIF)) == 0 )
+    204              {
+    205                  /* No errors */
+    206                  return 0;
+    207              }
+    208          
+    209              if ( status & TRNG_STATUS_PREIF )
+    210              {
+    211                  /* On a preliminary noise alarm we clear the FIFO and clear
+    212                   * the alarm. The preliminary noise alarm is not critical. */
+    213                  status &= ~TRNG_STATUS_PREIF;
+    214                  trng->STATUS = status;
+    215                  mbedtls_trng_clear_fifo(ctx);
+    216                  return MBEDTLS_ERR_TRNG_PRELIMINARY_NOISE_ALARM;
+    217              }
+    218              else
+    219              {
+    220                  /* Clear alarm conditions by doing a TRNG soft reset. */
+    221                  mbedtls_trng_soft_reset( ctx );
+    222                  if ( status & TRNG_STATUS_REPCOUNTIF )
+    223                  {
+    224                      return MBEDTLS_ERR_TRNG_REPETITION_COUNT_TEST_FAILED;
+    225                  }
+    226                  if ( status & TRNG_STATUS_APT64IF )
+    227                  {
+    228                      return MBEDTLS_ERR_TRNG_ADAPTIVE_PROPORTION_TEST_64_FAILED;
+    229                  }
+    230                  if ( status & TRNG_STATUS_APT4096IF )
+    231                  {
+    232                      return MBEDTLS_ERR_TRNG_ADAPTIVE_PROPORTION_TEST_4096_FAILED;
+    233                  }
+    234                  if ( status & TRNG_STATUS_ALMIF )
+    235                  {
+    236                      return MBEDTLS_ERR_TRNG_NOISE_ALARM;
+    237                  }
+    238              }
+    239          
+    240              return 0;
+    241          }
+    242          
+    243          int mbedtls_trng_check_entropy( mbedtls_trng_context *ctx )
+    244          {
+    245              TRNG_TypeDef *trng = ctx->trng;
+    246              volatile uint32_t val32;
+    247              int i, ret = 0;
+    248              uint32_t ctrl = trng->CONTROL;
+    249          
+    250              /* Setup control register */
+    251              trng->CONTROL =
+    252                  TRNG_CONTROL_ENABLE |
+    253                  TRNG_CONTROL_REPCOUNTIEN |
+    254                  TRNG_CONTROL_APT64IEN |
+    255                  TRNG_CONTROL_APT4096IEN |
+    256                  TRNG_CONTROL_PREIEN |
+    257                  TRNG_CONTROL_ALMIEN;
+    258          
+    259              /* Apply software reset */
+    260              mbedtls_trng_soft_reset(ctx);
+    261          
+    262              /* Check FIFO level is non-zero . */
+    263              for (i=0; i<FIFO_LEVEL_RETRY; i++)
+    264              {
+    265                  if ( trng->FIFOLEVEL )
+    266                  {
+    267                      break;
+    268                  }
+    269              }
+    270              /* Check for no data within timeout (max retry count) */
+    271              if (i>=FIFO_LEVEL_RETRY)
+    272              {
+    273                  ret = MBEDTLS_ERR_TRNG_NO_DATA;
+    274              }
+    275              else
+    276              {
+    277                  /* Read at least 4097x2 bits (~257 x 32 bits) in order for the longest
+    278                     test to complete (adaptive proportion test of 4096 samples). */
+    279                  for (i=0; i<TEST_WORDS_MIN; i++)
+    280                  {
+    281                      val32 = trng->FIFO;
+    282                      (void)val32;
+    283                  }
+    284          
+    285                  /* Check in status register for errors. */
+    286                  ret = trng_check_status( ctx );
+    287              }
+    288          
+    289              /* Restore initial value of control register */
+    290              trng->CONTROL = ctrl;
+    291          
+    292              return ret;
+    293          }
+    294          
+    295          static void mbedtls_trng_read_chunk( mbedtls_trng_context *ctx,
+    296                                               unsigned char *output, size_t len )
+    297          {
+    298              TRNG_TypeDef *trng = ctx->trng;
+    299              uint32_t * out32 = (uint32_t *) output;
+    300              uint32_t tmp;
+    301          
+    302              /* Read known good available data. */
+    303              while ( len >= 4 )
+    304              {
+    305                  *out32++ = trng->FIFO;
+    306                  len -= 4;
+    307              }    
+    308              if (len == 0) return;
+    309          
+    310              /* Handle the case where len is not a multiple of 4 
+    311                 and FIFO data is available. */
+    312              tmp = trng->FIFO;
+    313              memcpy((uint8_t *)out32, (const uint8_t *) &tmp, len);
+    314          }
+    315          
+    316          int mbedtls_trng_poll( mbedtls_trng_context *ctx,
+    317                                 unsigned char *output, size_t len, size_t *olen )
+    318          {
+    319              TRNG_TypeDef *trng = ctx->trng;
+    320              unsigned char *outptr = output;
+    321              size_t output_len = 0;
+    322              size_t count = 0;
+    323              size_t available;
+    324              int ret = 0;
+    325          
+    326              while (len > 0)
+    327              {
+    328                  available = trng->FIFOLEVEL * 4;
+    329                  if (available == 0)
+    330                  {
+    331                      break;
+    332                  }
+    333          
+    334                  /* Check status for current data in FIFO
+    335                   * and handle any error conditions. */
+    336                  ret = trng_check_status( ctx );
+    337          
+    338                  /* The TRNG output data did not pass the internal TRNG random tests.
+    339                   * If the user has registered a callback function for TRNG test errors
+    340                   * call it to notify the user.
+    341                   * Discard the bad data by setting output length to zero.
+    342                   * Return 0 (OK) in order to keep the entropy accumulator of mbedtls
+    343                   * running. */
+    344          
+    345                  if (ret != 0)
+    346                  {
+    347                      if (ctx->test_error_callback)
+    348                      {
+    349                          ctx->test_error_callback(ctx->test_error_callback_user_arg,
+    350                                                   ret);
+    351                      }
+    352                      memset(output, 0, output_len);
+    353                      output_len = 0;
+    354                      ret = 0;
+    355                      break;
+    356                  }
+    357          
+    358                  count = SL_MIN(len, available);
+    359                  mbedtls_trng_read_chunk(ctx, outptr, count);
+    360                  outptr += count;
+    361                  output_len += count;
+    362                  len -= count;
+    363              }
+    364          
+    365              *olen = output_len;
+    366              return ret;
+    367          }
+    368          
+    369          void mbedtls_trng_test_error_callback_set( mbedtls_trng_context *ctx,
+    370          					   void (*callback)( void*, int ),
+    371          					   void *user_arg )
+    372          {
+    373              ctx->test_error_callback = callback;
+    374              ctx->test_error_callback_user_arg = user_arg;
+    375          }
+    376          
+    377          #if defined(MBEDTLS_ENTROPY_HARDWARE_ALT) && defined(MBEDTLS_ENTROPY_C)
+    378          
+    379          static bool initialized = false;
+    380          static mbedtls_trng_context trng_ctx;
+    381          
+    382          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_89)
+    383          #include "em_system.h"
+    384          #endif
+    385          int mbedtls_hardware_poll( void *data,
+    386                                     unsigned char *output,
+    387                                     size_t len,
+    388                                     size_t *olen ) {
+    389          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_89)
+    390              SYSTEM_ChipRevision_TypeDef rev;
+    391              SYSTEM_ChipRevisionGet(&rev);
+    392              // TRNG entropy on xG13 is only supported for >= Rev A3
+    393              if ((rev.major == 1) && (rev.minor < 3)) {
+    394                  while (true) {
+    395                      EFM_ASSERT(false);
+    396                  }
+    397              }
+    398          #endif
+    399              (void)data;
+    400              if(!initialized) {
+    401                  mbedtls_trng_init(&trng_ctx);
+    402                  initialized = true;
+    403              }
+    404          
+    405              return mbedtls_trng_poll(&trng_ctx, output, len, olen);
+    406          }
+    407          
+    408          #endif // MBEDTLS_ENTROPY_HARDWARE_ALT && MBEDTLS_ENTROPY_C
+    409          #endif // TRNG_PRESENT
+    410          #endif // MBEDTLS_TRNG_C
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

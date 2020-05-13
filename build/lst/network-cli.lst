@@ -1,0 +1,1380 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:23
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\network-cli.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWCE9E.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\network-cli.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"network-cli.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\network-cli.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\network-cli.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\network-cli.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Implementations for network related CLI commands.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "app/framework/include/af.h"
+     19          #include "app/framework/util/af-main.h"
+     20          #include "app/framework/util/util.h"
+     21          #include "app/util/serial/command-interpreter2.h"
+     22          #include "app/util/zigbee-framework/zigbee-device-common.h"
+     23          #include "network-cli.h"
+     24          
+     25          // emberFindAndRejoinNetworkWithReason
+     26          #ifdef EZSP_HOST
+     27            #include "app/util/ezsp/ezsp.h"
+     28          #else
+     29            #include "stack/include/network-formation.h"
+     30          #endif
+     31          
+     32          //------------------------------------------------------------------------------
+     33          
+     34          void networkJoinCommand(void);
+     35          void networkRejoinCommand(void);
+     36          void networkFormCommand(void);
+     37          void networkExtendedPanIdCommand(void);
+     38          void networkLeaveCommand(void);
+     39          void networkPermitJoinCommand(void);
+     40          void findJoinableNetworkCommand(void);
+     41          void findUnusedPanIdCommand(void);
+     42          void networkChangeChannelCommand(void);
+     43          void networkSetCommand(void);
+     44          void networkIdCommand(void);
+     45          void networkMultiPhyStartCommand(void);
+     46          void networkMultiPhyStopCommand(void);
+     47          
+     48          // TODO: Gate this again when we have the mechanism for doing so
+     49          // with the generated CLI.
+     50          //#if defined(EMBER_AF_TC_SWAP_OUT_TEST)
+     51          void networkInitCommand(void);
+     52          //#endif
+     53          
+     54          /**
+     55           * @addtogroup cli
+     56           * @{
+     57           */
+     58          /**
+     59           * @brief
+     60           *        <b>network form &lt;channel&gt; &lt;power> &lt;panid></b>
+     61           *        - <i>Form a network on a given channel, with a given TX Power and PAN ID.</i>
+     62           *           - <i>channel - uint8_t. The channel on which to form the network.</i>
+     63           *           - <i>power   - int8_t. One byte signed value indicating the TX Power
+     64           *                                 that the radio should be set to.</i>
+     65           *           - <i>panId   - uint16_t. The PAN ID on which to form the network.</i>
+     66           *
+     67           *        <b>network join &lt;channel&gt; &lt;power&gt; &lt;panid&gt;</b>
+     68           *        - <i>Join a network on a given channel, with a given TX Power and PAN ID.</i>
+     69           *           - <i>channel - uint8_t. The channel on which to join the network.</i>
+     70           *           - <i>power   - int8_t. One byte signed value indicating the TX Power
+     71           *                                 that the radio should be set to.</i>
+     72           *           - <i>panId   - uint16_t. The PAN ID on which to join the network.</i>
+     73           *
+     74           *        <b>network rejoin &lt;encrypted&gt;</b>
+     75           *        - <i>Find and rejoin the previous network the device was connected to.</i>
+     76           *           - <i>encrypted - uint8_t. A single byte boolean 0 or 1 indicating
+     77           *                            whether or not the rejoin should be done with encryption.</i>
+     78           *
+     79           *        <b>network leave</b>
+     80           *        - <i>Leave the current network that the device is connected to.</i>
+     81           *
+     82           *        <b>network pjoin &lt;seconds&gt;</b>
+     83           *        - <i>Turn permit joining on for the amount of time indicated.</i>
+     84           *           - <i>seconds - uint8_t. A single byte indicating how long the device
+     85           *                         should have permit joining turn on for. A value of
+     86           *                         0xff turns permit join indefinitely.</i>
+     87           *
+     88           *        <b>network broad-pjoin &lt;seconds&gt;</b>
+     89           *        - <i>Turn permit joining on for the amount of time indicated AND
+     90           *             broadcast a ZDO Mgmt Permit Joining request to all routers.
+     91           *           - <i>seconds - uint8_t. A single byte indicating how long the device
+     92           *                         should have permit joining turn on for. A value of
+     93           *                         0xff turns permit join indefinitely.</i>
+     94           *
+     95           *        <b>network extpanid &lt;bytes&gt;</b>
+     96           *        - <i>Write the extended PAN ID of the device.</i>
+     97           *           - <i>bytes - byte array. An array of bytes which represents
+     98           *                        the extended PAN ID for the device.</i>
+     99           *
+    100           *        <b>network find unused</b>
+    101           *        - <i>Begins a search for an unused Channel and PAN ID. Will automatically
+    102           *             form a network on the first unused Channel and PAN ID it finds.</i>
+    103           *
+    104           *        <b>network find joinable</b>
+    105           *        - <i>Begins a search for a joinable network. Will automatically
+    106           *             attempt to join the first network it finds.</i>
+    107           */
+    108          #define EMBER_AF_DOXYGEN_CLI__NETWORK_COMMANDS
+    109          /** @} END addtogroup */
+    110          
+    111          #ifndef EMBER_AF_GENERATE_CLI
+    112          
+    113          // Form and join library commands.
+    114          static EmberCommandEntry findCommands[] = {
+    115            { "joinable", findJoinableNetworkCommand, "" },
+    116            { "unused", findUnusedPanIdCommand, "" },
+    117            { NULL },
+    118          };
+    119          
+    120          EmberCommandEntry networkCommands[] = {
+    121            { "form", networkFormCommand, "usv" },
+    122            { "join", networkJoinCommand, "usvu*" },
+    123            { "rejoin", networkRejoinCommand, "uw" },
+    124            { "leave", networkLeaveCommand, "" },
+    125            { "pjoin", networkPermitJoinCommand, "u" },
+    126            { "broad-pjoin", networkPermitJoinCommand, "u" },
+    127            { "extpanid", networkExtendedPanIdCommand, "b" },
+    128            { "find", NULL, (const char *)findCommands },
+    129          
+    130            emberCommandEntryAction("id",
+    131                                    networkIdCommand,
+    132                                    "",
+    133                                    "Print the current network IDs"),
+    134          
+    135            { "change-channel", networkChangeChannelCommand, "u" },
+    136            { "multi-phy-start", networkMultiPhyStartCommand, "uusu*" },
+    137            { "multi-phy-stop", networkMultiPhyStopCommand, "" },
+    138          
+    139          #if defined(EMBER_AF_TC_SWAP_OUT_TEST)
+    140            // Do not document this command.
+    141            { "init", networkInitCommand, "" },
+    142          #endif
+    143          
+    144            { "set", networkSetCommand, "u" },
+    145          
+    146            { NULL }
+    147          };
+    148          
+    149          #endif // EMBER_AF_GENERATE_CLI
+    150          
+
+   \                                 In section .bss, align 1
+    151          uint8_t emAfCliNetworkIndex = EMBER_AF_DEFAULT_NETWORK_INDEX;
+   \                     emAfCliNetworkIndex:
+   \        0x0                      DS8 1
+    152          
+    153          #ifdef EMBER_AF_PLUGIN_TEST_HARNESS_Z3
+    154          extern EmberEventControl emZigbeeLeaveEvent;
+    155          #endif
+    156          
+    157          //------------------------------------------------------------------------------
+    158          
+
+   \                                 In section .text, align 2, keep-with-next
+    159          void initNetworkParams(EmberNetworkParameters *networkParams)
+    160          {
+   \                     initNetworkParams: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    161            MEMSET(networkParams, 0, sizeof(EmberNetworkParameters));
+   \        0x4   0x2218             MOVS     R2,#+24
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x....'....        BL       halCommonMemSet
+    162            emberAfGetFormAndJoinExtendedPanIdCallback(networkParams->extendedPanId);
+   \        0xC   0x4620             MOV      R0,R4
+   \        0xE   0x....'....        BL       emberAfGetFormAndJoinExtendedPanIdCallback
+    163            networkParams->radioChannel = (uint8_t)emberUnsignedCommandArgument(0);
+   \       0x12   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x16   0x72E0             STRB     R0,[R4, #+11]
+    164            networkParams->radioTxPower = (int8_t)emberSignedCommandArgument(1);
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0x....'....        BL       emberSignedCommandArgument
+   \       0x1E   0x72A0             STRB     R0,[R4, #+10]
+    165            networkParams->panId = (uint16_t)emberUnsignedCommandArgument(2);
+   \       0x20   0x2002             MOVS     R0,#+2
+   \       0x22   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x26   0x8120             STRH     R0,[R4, #+8]
+    166            if (emberCommandArgumentCount() > 3) {
+   \       0x28   0x....'....        BL       emberCommandArgumentCount
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xDB06             BLT.N    ??initNetworkParams_0
+    167              // Map the channel page into the channel, if present.
+    168              // Page bits: 7, 6, 5 channel bits: 4...0
+    169              uint8_t page = (uint8_t)emberUnsignedCommandArgument(3);
+   \       0x30   0x2003             MOVS     R0,#+3
+   \       0x32   0x....'....        BL       emberUnsignedCommandArgument
+    170              networkParams->radioChannel = (uint8_t)((page << 5) | (networkParams->radioChannel & 0x1F));
+   \       0x36   0x7AE1             LDRB     R1,[R4, #+11]
+   \       0x38   0xF360 0x1147      BFI      R1,R0,#+5,#+3
+   \       0x3C   0x72E1             STRB     R1,[R4, #+11]
+    171            }
+    172          }
+   \                     ??initNetworkParams_0: (+1)
+   \       0x3E   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....'....        B.W      emberUnsignedCommandArgument
+    173          
+    174          // network join <channel> <power> <panid>
+
+   \                                 In section .text, align 2, keep-with-next
+    175          void networkJoinCommand(void)
+    176          {
+   \                     networkJoinCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+    177            EmberStatus status;
+    178            EmberNetworkParameters networkParams = { 0 };
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x2118             MOVS     R1,#+24
+   \        0x8   0x....'....        BL       __aeabi_memclr4
+    179            initNetworkParams(&networkParams);
+   \        0xC   0x4668             MOV      R0,SP
+   \        0xE   0x....'....        BL       initNetworkParams
+    180            status = emberAfJoinNetwork(&networkParams);
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x....'....        BL       emberAfJoinNetwork
+    181            UNUSED_VAR(status);
+    182            emberAfAppPrintln("%p 0x%x", "join", status);
+   \       0x18   0x4603             MOV      R3,R0
+   \       0x1A   0x....             LDR.N    R2,??DataTable15
+   \       0x1C   0x....             LDR.N    R1,??DataTable15_1
+   \       0x1E   0x2002             MOVS     R0,#+2
+   \       0x20   0x....'....        BL       emberAfPrintln
+    183          }
+   \       0x24   0xB007             ADD      SP,SP,#+28
+   \       0x26   0xBD00             POP      {PC}             ;; return
+    184          
+    185          // network rejoin <haveCurrentNetworkKey:1>
+
+   \                                 In section .text, align 2, keep-with-next
+    186          void networkRejoinCommand(void)
+    187          {
+   \                     networkRejoinCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    188            bool haveCurrentNetworkKey = (bool)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0xBF18             IT       NE 
+   \        0xA   0x2401             MOVNE    R4,#+1
+    189            uint32_t channelMask = (uint32_t)emberUnsignedCommandArgument(1);
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x....'....        BL       emberUnsignedCommandArgument
+    190            if (channelMask == 0) {
+   \       0x12   0xB900             CBNZ.N   R0,??networkRejoinCommand_0
+    191              channelMask = EMBER_ALL_802_15_4_CHANNELS_MASK;
+   \       0x14   0x....             LDR.N    R0,??DataTable15_2  ;; 0x7fff800
+    192            }
+    193            EmberStatus status = emberFindAndRejoinNetworkWithReason(haveCurrentNetworkKey,
+    194                                                                     channelMask,
+    195                                                                     EMBER_AF_REJOIN_DUE_TO_CLI_COMMAND);
+   \                     ??networkRejoinCommand_0: (+1)
+   \       0x16   0x4601             MOV      R1,R0
+   \       0x18   0x22A2             MOVS     R2,#+162
+   \       0x1A   0xB2E0             UXTB     R0,R4
+   \       0x1C   0x....'....        BL       emberFindAndRejoinNetworkWithReason
+    196            emberAfAppPrintln("%p 0x%x", "rejoin", status);
+   \       0x20   0x4603             MOV      R3,R0
+   \       0x22   0x....             LDR.N    R2,??DataTable15_3
+   \       0x24   0x....             LDR.N    R1,??DataTable15_1
+   \       0x26   0x....             B.N      ?Subroutine0
+    197          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0xE8BD 0x4010      POP      {R4,LR}
+   \        0x6   0x....'....        B.W      emberAfPrintln
+    198          
+
+   \                                 In section .text, align 2, keep-with-next
+    199          void networkRejoinDiffDeviceTypeCommand(void)
+    200          {
+   \                     networkRejoinDiffDeviceTypeCommand: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    201            bool haveCurrentNetworkKey = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0x6   0xB2C4             UXTB     R4,R0
+   \        0x8   0xB104             CBZ.N    R4,??networkRejoinDiffDeviceTypeCommand_0
+   \        0xA   0x2401             MOVS     R4,#+1
+    202            uint32_t channelMask = (uint32_t)emberUnsignedCommandArgument(1);
+   \                     ??networkRejoinDiffDeviceTypeCommand_0: (+1)
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x12   0x4605             MOV      R5,R0
+    203            uint8_t emberNodeType = (uint8_t)emberUnsignedCommandArgument(2);
+   \       0x14   0x2002             MOVS     R0,#+2
+   \       0x16   0x....'....        BL       emberUnsignedCommandArgument
+    204            EmberStatus status = emberFindAndRejoinNetworkWithNodeType(haveCurrentNetworkKey,
+    205                                                                       channelMask,
+    206                                                                       emberNodeType);
+   \       0x1A   0xB2C2             UXTB     R2,R0
+   \       0x1C   0x4629             MOV      R1,R5
+   \       0x1E   0x4620             MOV      R0,R4
+   \       0x20   0x....'....        BL       emberFindAndRejoinNetworkWithNodeType
+    207            emberAfAppPrintln("%p 0x%x", "rejoinDiffDeviceType", status);
+   \       0x24   0x4603             MOV      R3,R0
+   \       0x26   0xB001             ADD      SP,SP,#+4
+   \       0x28   0x....             LDR.N    R2,??DataTable15_4
+   \       0x2A   0x....             LDR.N    R1,??DataTable15_1
+   \       0x2C   0x2002             MOVS     R0,#+2
+   \       0x2E   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \       0x32   0x....'....        B.W      emberAfPrintln
+    208          }
+    209          
+    210          // network form <channel> <power> <panid>
+
+   \                                 In section .text, align 2, keep-with-next
+    211          void networkFormCommand(void)
+    212          {
+    213          #ifdef EMBER_AF_HAS_COORDINATOR_NETWORK
+    214            EmberStatus status;
+    215            EmberNetworkParameters networkParams;
+    216            initNetworkParams(&networkParams);
+    217            status = emberAfFormNetwork(&networkParams);
+    218            emberAfAppPrintln("%p 0x%x", "form", status);
+    219            emberAfAppFlush();
+    220          #else
+    221            emberAfAppPrintln("only coordinators can form");
+   \                     networkFormCommand: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable15_5
+   \        0x2   0x2002             MOVS     R0,#+2
+   \        0x4   0x....'....        B.W      emberAfPrintln
+    222          #endif
+    223          }
+    224          
+    225          // network extpanid <8 BYTES>
+
+   \                                 In section .text, align 2, keep-with-next
+    226          void networkExtendedPanIdCommand(void)
+    227          {
+   \                     networkExtendedPanIdCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    228            emberCopyBigEndianEui64Argument(0, emAfExtendedPanId);
+   \        0x2   0x....             LDR.N    R4,??DataTable15_6
+   \        0x4   0x4621             MOV      R1,R4
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x....'....        BL       emberCopyBigEndianEui64Argument
+    229            emberAfSetFormAndJoinExtendedPanIdCallback(emAfExtendedPanId);
+   \        0xC   0x4620             MOV      R0,R4
+   \        0xE   0x....'....        BL       emberAfSetFormAndJoinExtendedPanIdCallback
+    230            emberAfAppPrint("ext. PAN ID: ");
+   \       0x12   0x....             LDR.N    R1,??DataTable15_7
+   \       0x14   0x2002             MOVS     R0,#+2
+   \       0x16   0x....'....        BL       emberAfPrint
+    231            emberAfAppDebugExec(emberAfPrintBigEndianEui64(emAfExtendedPanId));
+   \       0x1A   0x2002             MOVS     R0,#+2
+   \       0x1C   0x....'....        BL       emberAfPrintEnabled
+   \       0x20   0xB110             CBZ.N    R0,??networkExtendedPanIdCommand_0
+   \       0x22   0x4620             MOV      R0,R4
+   \       0x24   0x....'....        BL       emberAfPrintBigEndianEui64
+    232            emberAfAppPrintln("");
+   \                     ??networkExtendedPanIdCommand_0: (+1)
+   \       0x28   0x....             LDR.N    R1,??DataTable15_8
+   \       0x2A   0x2002             MOVS     R0,#+2
+   \       0x2C   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x30   0x....'....        B.W      emberAfPrintln
+    233          }
+    234          
+    235          // network leave
+
+   \                                 In section .text, align 2, keep-with-next
+    236          void networkLeaveCommand(void)
+    237          {
+   \                     networkLeaveCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    238            EmberStatus status;
+    239            status = emberLeaveNetwork();
+   \        0x2   0x....'....        BL       emberLeaveNetwork
+    240          #ifdef EMBER_AF_PLUGIN_TEST_HARNESS_Z3
+    241            // Complete the leave immediately without the usual delay.
+    242            emberEventControlSetActive(emZigbeeLeaveEvent);
+    243          #endif
+    244            UNUSED_VAR(status);
+    245            emberAfAppPrintln("%p 0x%x", "leave", status);
+   \        0x6   0x4603             MOV      R3,R0
+   \        0x8   0x....             LDR.N    R2,??DataTable15_9
+   \        0xA   0x....             LDR.N    R1,??DataTable15_1
+   \        0xC   0x2002             MOVS     R0,#+2
+   \        0xE                      REQUIRE ?Subroutine1
+   \        0xE                      ;; // Fall through to label ?Subroutine1
+    246          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xE8BD 0x5000      POP      {R12,LR}
+   \        0x4   0x....'....        B.W      emberAfPrintln
+    247          
+    248          // network pjoin <time>
+    249          // network broad-pjoin <time>
+
+   \                                 In section .text, align 2, keep-with-next
+    250          void networkPermitJoinCommand(void)
+    251          {
+   \                     networkPermitJoinCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    252            uint8_t duration = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \        0x6   0x4604             MOV      R4,R0
+    253            emAfPermitJoin(duration,
+    254                           ('b'
+    255                            == emberStringCommandArgument(-1,
+    256                                                          NULL)[0]));  // broadcast permit join?
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0xF04F 0x30FF      MOV      R0,#-1
+   \        0xE   0x....'....        BL       emberStringCommandArgument
+   \       0x12   0x7800             LDRB     R0,[R0, #+0]
+   \       0x14   0x2862             CMP      R0,#+98
+   \       0x16   0xB2E0             UXTB     R0,R4
+   \       0x18   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x1C   0xBF0C             ITE      EQ 
+   \       0x1E   0x2101             MOVEQ    R1,#+1
+   \       0x20   0x2100             MOVNE    R1,#+0
+   \       0x22   0x....'....        B.W      emAfPermitJoin
+    257          }
+    258          
+
+   \                                 In section .text, align 2, keep-with-next
+    259          void findJoinableNetworkCommand(void)
+    260          {
+   \                     findJoinableNetworkCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    261            EmberStatus status = emberAfStartSearchForJoinableNetwork();
+   \        0x2   0x....'....        BL       emberAfStartSearchForJoinableNetworkCallback
+    262            emberAfCorePrintln("find joinable: 0x%X", status);
+   \        0x6   0x4602             MOV      R2,R0
+   \        0x8   0x....             LDR.N    R1,??DataTable15_10
+   \        0xA   0x....             B.N      ?Subroutine2
+    263          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0xE8BD 0x4008      POP      {R3,LR}
+   \        0x6   0x....'....        B.W      emberAfPrintln
+    264          
+
+   \                                 In section .text, align 2, keep-with-next
+    265          void findUnusedPanIdCommand(void)
+    266          {
+   \                     findUnusedPanIdCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    267            EmberStatus status = emberAfFindUnusedPanIdAndForm();
+   \        0x2   0x....'....        BL       emberAfFindUnusedPanIdAndFormCallback
+    268            emberAfCorePrintln("find unused: 0x%X", status);
+   \        0x6   0x4602             MOV      R2,R0
+   \        0x8   0x....             LDR.N    R1,??DataTable15_11
+   \        0xA                      REQUIRE ?Subroutine2
+   \        0xA                      ;; // Fall through to label ?Subroutine2
+    269          }
+    270          
+
+   \                                 In section .text, align 2, keep-with-next
+    271          void networkChangeChannelCommand(void)
+    272          {
+   \                     networkChangeChannelCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    273            uint8_t channel = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0x6   0x4604             MOV      R4,R0
+    274            EmberStatus status = emberChannelChangeRequest(channel);
+   \        0x8   0x2101             MOVS     R1,#+1
+   \        0xA   0x2300             MOVS     R3,#+0
+   \        0xC   0x22FE             MOVS     R2,#+254
+   \        0xE   0x40A1             LSLS     R1,R1,R4
+   \       0x10   0xF64F 0x70FF      MOVW     R0,#+65535
+   \       0x14   0x....'....        BL       emberEnergyScanRequest
+    275            emberAfAppPrintln("Changing to channel %d: 0x%X",
+    276                              channel,
+    277                              status);
+   \       0x18   0x4603             MOV      R3,R0
+   \       0x1A   0xB2E2             UXTB     R2,R4
+   \       0x1C   0x....             LDR.N    R1,??DataTable15_12
+   \       0x1E                      REQUIRE ?Subroutine0
+   \       0x1E                      ;; // Fall through to label ?Subroutine0
+    278          }
+    279          
+    280          // TODO: Put gating back in after we have a mechanism in place to do so
+    281          // for the generated CLI.
+    282          //#if defined(EMBER_AF_TC_SWAP_OUT_TEST)
+
+   \                                 In section .text, align 2, keep-with-next
+    283          void networkInitCommand(void)
+    284          {
+   \                     networkInitCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    285            EmberNetworkInitStruct networkInitStruct = {
+    286              EMBER_AF_CUSTOM_NETWORK_INIT_OPTIONS   // EmberNetworkInitBitmask value
+    287            };
+   \        0x2   0x....             LDR.N    R0,??DataTable15_13
+   \        0x4   0x8801             LDRH     R1,[R0, #+0]
+    288            EmberStatus status = emberNetworkInit(&networkInitStruct);
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0xF8AD 0x1000      STRH     R1,[SP, #+0]
+   \        0xC   0x....'....        BL       emberNetworkInit
+    289            emberAfAppPrintln("Network Init returned: 0x%X", status);
+   \       0x10   0x4602             MOV      R2,R0
+   \       0x12   0x....             LDR.N    R1,??DataTable15_14
+   \       0x14   0x2002             MOVS     R0,#+2
+   \       0x16   0x....'....        BL       emberAfPrintln
+    290          }
+   \       0x1A   0xBD01             POP      {R0,PC}          ;; return
+    291          //#endif
+    292          
+
+   \                                 In section .text, align 2, keep-with-next
+    293          void networkSetCommand(void)
+    294          {
+   \                     networkSetCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    295            uint8_t index = (uint8_t)emberUnsignedCommandArgument(0);
+    296            if (EMBER_SUPPORTED_NETWORKS <= index) {
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xB128             CBZ.N    R0,??networkSetCommand_0
+    297              emberAfCorePrintln("invalid network index");
+   \        0xA   0x....             LDR.N    R1,??DataTable15_15
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0xE8BD 0x4004      POP      {R2,LR}
+   \       0x12   0x....'....        B.W      emberAfPrintln
+    298              return;
+    299            }
+    300            emAfCliNetworkIndex = index;
+   \                     ??networkSetCommand_0: (+1)
+   \       0x16   0x....             LDR.N    R1,??DataTable15_16
+   \       0x18   0x7008             STRB     R0,[R1, #+0]
+    301          }
+   \       0x1A   0xBD01             POP      {R0,PC}          ;; return
+    302          
+
+   \                                 In section .text, align 2, keep-with-next
+    303          void networkIdCommand(void)
+    304          {
+   \                     networkIdCommand: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+    305            EmberEUI64 eui64;
+    306            emberAfGetEui64(eui64);
+   \        0x2   0x4668             MOV      R0,SP
+   \        0x4   0x....'....        BL       emberAfGetEui64
+    307            emberAfCorePrint("Short ID: 0x%2X, EUI64: ", emberAfGetNodeId());
+   \        0x8   0x....'....        BL       emberAfGetNodeId
+   \        0xC   0x4602             MOV      R2,R0
+   \        0xE   0x....             LDR.N    R1,??DataTable15_17
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x....'....        BL       emberAfPrint
+    308            emberAfPrintBigEndianEui64(eui64);
+   \       0x16   0x4668             MOV      R0,SP
+   \       0x18   0x....'....        BL       emberAfPrintBigEndianEui64
+    309            emberAfCorePrintln(", Pan ID: 0x%2X", emberAfGetPanId());
+   \       0x1C   0x....'....        BL       emberAfGetPanId
+   \       0x20   0x4602             MOV      R2,R0
+   \       0x22   0x....             LDR.N    R1,??DataTable15_18
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x....'....        BL       emberAfPrintln
+    310          }
+   \       0x2A   0xBD07             POP      {R0-R2,PC}       ;; return
+    311          
+
+   \                                 In section .text, align 2, keep-with-next
+    312          void networkMultiPhyStartCommand(void)
+    313          {
+   \                     networkMultiPhyStartCommand: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    314            EmberStatus status;
+    315            uint8_t page = emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0x4604             MOV      R4,R0
+    316            uint8_t channel = emberUnsignedCommandArgument(1);
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0x....'....        BL       emberUnsignedCommandArgument
+   \        0xE   0x4605             MOV      R5,R0
+    317            int8_t power = (int8_t)emberSignedCommandArgument(2);
+   \       0x10   0x2002             MOVS     R0,#+2
+   \       0x12   0x....'....        BL       emberSignedCommandArgument
+   \       0x16   0x4606             MOV      R6,R0
+    318            uint8_t optionsMask = 0;
+   \       0x18   0x2700             MOVS     R7,#+0
+    319          
+    320            if (emberCommandArgumentCount() > 3) {
+   \       0x1A   0x....'....        BL       emberCommandArgumentCount
+   \       0x1E   0x2804             CMP      R0,#+4
+   \       0x20   0xDB03             BLT.N    ??networkMultiPhyStartCommand_0
+    321              optionsMask = (uint8_t) emberUnsignedCommandArgument(3);
+   \       0x22   0x2003             MOVS     R0,#+3
+   \       0x24   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x28   0x4607             MOV      R7,R0
+    322            }
+    323          
+    324            status = emberMultiPhyStart(PHY_INDEX_PRO2PLUS, page, channel, power, optionsMask);
+   \                     ??networkMultiPhyStartCommand_0: (+1)
+   \       0x2A   0xB2FF             UXTB     R7,R7
+   \       0x2C   0x9700             STR      R7,[SP, #+0]
+   \       0x2E   0xB273             SXTB     R3,R6
+   \       0x30   0xB2EA             UXTB     R2,R5
+   \       0x32   0xB2E1             UXTB     R1,R4
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0x....'....        BL       emberMultiPhyStart
+    325          
+    326            if (status == EMBER_SUCCESS) {
+   \       0x3A   0xB928             CBNZ.N   R0,??networkMultiPhyStartCommand_1
+    327              emberAfCorePrintln("Started multi-phy interface");
+   \       0x3C   0x....             LDR.N    R1,??DataTable15_19
+   \       0x3E   0x2001             MOVS     R0,#+1
+   \       0x40   0xE8BD 0x40F4      POP      {R2,R4-R7,LR}
+   \       0x44   0x....'....        B.W      emberAfPrintln
+    328            } else {
+    329              emberAfCorePrintln("Failed to %s %s 0x%X",
+    330                                 "start",
+    331                                 "multi-phy interface",
+    332                                 status);
+   \                     ??networkMultiPhyStartCommand_1: (+1)
+   \       0x48   0x9000             STR      R0,[SP, #+0]
+   \       0x4A   0x....             LDR.N    R3,??DataTable15_20
+   \       0x4C   0x....             LDR.N    R2,??DataTable15_21
+   \       0x4E   0x....'....        BL       ?Subroutine4
+    333            }
+    334          }
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x52   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable15_24
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....'....        B.W      emberAfPrintln
+    335          
+
+   \                                 In section .text, align 2, keep-with-next
+    336          void networkMultiPhyStopCommand(void)
+    337          {
+   \                     networkMultiPhyStopCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    338            uint8_t status = emberMultiPhyStop(PHY_INDEX_PRO2PLUS);
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....'....        BL       emberMultiPhyStop
+    339          
+    340            if (status == EMBER_SUCCESS) {
+   \        0x8   0x....             LDR.N    R2,??DataTable15_20
+   \        0xA   0xB918             CBNZ.N   R0,??networkMultiPhyStopCommand_0
+    341              emberAfCorePrintln("Terminated %s 0x%X",
+    342                                 "multi-phy interface",
+    343                                 status);
+   \        0xC   0x2300             MOVS     R3,#+0
+   \        0xE   0x....             LDR.N    R1,??DataTable15_22
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x....             B.N      ?Subroutine1
+    344            } else {
+    345              emberAfCorePrintln("Failed to %s %s 0x%X",
+    346                                 "stop",
+    347                                 "multi-phy interface",
+    348                                 status);
+   \                     ??networkMultiPhyStopCommand_0: (+1)
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+   \       0x16   0x4613             MOV      R3,R2
+   \       0x18   0x....             LDR.N    R2,??DataTable15_23
+   \       0x1A   0x....'....        BL       ?Subroutine4
+    349            }
+    350          }
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x1E   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_1:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_2:
+   \        0x0   0x07FF'F800        DC32     0x7fff800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_3:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_4:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_5:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_6:
+   \        0x0   0x....'....        DC32     emAfExtendedPanId
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_7:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_8:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_9:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_10:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_11:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_12:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_13:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_14:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_15:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_16:
+   \        0x0   0x....'....        DC32     emAfCliNetworkIndex
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_17:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_18:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_19:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_20:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_21:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_22:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_23:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_24:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \        0x8   0x0000             DC16 0
+   \        0xA   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \        0xE   0x0000             DC16 0
+   \       0x10   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \       0x14   0x0000'0000        DC32 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x25 0x70          DC8 "%p 0x%x"
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x78 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x6A 0x6F          DC8 "join"
+   \              0x69 0x6E    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x72 0x65          DC8 "rejoin"
+   \              0x6A 0x6F    
+   \              0x69 0x6E    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x72 0x65          DC8 "rejoinDiffDeviceType"
+   \              0x6A 0x6F    
+   \              0x69 0x6E    
+   \              0x44 0x69    
+   \              0x66 0x66    
+   \              0x44 0x65    
+   \              0x76 0x69    
+   \              0x63 0x65    
+   \              0x54 0x79    
+   \              0x70 0x65    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x6F 0x6E          DC8 "only coordinators can form"
+   \              0x6C 0x79    
+   \              0x20 0x63    
+   \              0x6F 0x6F    
+   \              0x72 0x64    
+   \              0x69 0x6E    
+   \              0x61 0x74    
+   \              0x6F 0x72    
+   \              0x73 0x20    
+   \              0x63 0x61    
+   \              0x6E 0x20    
+   \              0x66 0x6F    
+   \              0x72 0x6D    
+   \              0x00         
+   \       0x1B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x65 0x78          DC8 "ext. PAN ID: "
+   \              0x74 0x2E    
+   \              0x20 0x50    
+   \              0x41 0x4E    
+   \              0x20 0x49    
+   \              0x44 0x3A    
+   \              0x20 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 1
+   \                     ?_7:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x6C 0x65          DC8 "leave"
+   \              0x61 0x76    
+   \              0x65 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x66 0x69          DC8 "find joinable: 0x%X"
+   \              0x6E 0x64    
+   \              0x20 0x6A    
+   \              0x6F 0x69    
+   \              0x6E 0x61    
+   \              0x62 0x6C    
+   \              0x65 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x58 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x66 0x69          DC8 "find unused: 0x%X"
+   \              0x6E 0x64    
+   \              0x20 0x75    
+   \              0x6E 0x75    
+   \              0x73 0x65    
+   \              0x64 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x58 0x00    
+   \       0x12   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x43 0x68          DC8 "Changing to channel %d: 0x%X"
+   \              0x61 0x6E    
+   \              0x67 0x69    
+   \              0x6E 0x67    
+   \              0x20 0x74    
+   \              0x6F 0x20    
+   \              0x63 0x68    
+   \              0x61 0x6E    
+   \              0x6E 0x65    
+   \              0x6C 0x20    
+   \              0x25 0x64    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x1D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 2
+   \                     ?_12:
+   \        0x0   0x0003             DC16 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x4E 0x65          DC8 "Network Init returned: 0x%X"
+   \              0x74 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x20    
+   \              0x49 0x6E    
+   \              0x69 0x74    
+   \              0x20 0x72    
+   \              0x65 0x74    
+   \              0x75 0x72    
+   \              0x6E 0x65    
+   \              0x64 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x58 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x69 0x6E          DC8 "invalid network index"
+   \              0x76 0x61    
+   \              0x6C 0x69    
+   \              0x64 0x20    
+   \              0x6E 0x65    
+   \              0x74 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x20    
+   \              0x69 0x6E    
+   \              0x64 0x65    
+   \              0x78 0x00    
+   \       0x16   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x53 0x68          DC8 "Short ID: 0x%2X, EUI64: "
+   \              0x6F 0x72    
+   \              0x74 0x20    
+   \              0x49 0x44    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x58 0x2C    
+   \              0x20 0x45    
+   \              0x55 0x49    
+   \              0x36 0x34    
+   \              0x3A 0x20    
+   \              0x00         
+   \       0x19   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x2C 0x20          DC8 ", Pan ID: 0x%2X"
+   \              0x50 0x61    
+   \              0x6E 0x20    
+   \              0x49 0x44    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x58 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x53 0x74          DC8 "Started multi-phy interface"
+   \              0x61 0x72    
+   \              0x74 0x65    
+   \              0x64 0x20    
+   \              0x6D 0x75    
+   \              0x6C 0x74    
+   \              0x69 0x2D    
+   \              0x70 0x68    
+   \              0x79 0x20    
+   \              0x69 0x6E    
+   \              0x74 0x65    
+   \              0x72 0x66    
+   \              0x61 0x63    
+   \              0x65 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x46 0x61          DC8 "Failed to %s %s 0x%X"
+   \              0x69 0x6C    
+   \              0x65 0x64    
+   \              0x20 0x74    
+   \              0x6F 0x20    
+   \              0x25 0x73    
+   \              0x20 0x25    
+   \              0x73 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x73 0x74          DC8 "start"
+   \              0x61 0x72    
+   \              0x74 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x6D 0x75          DC8 "multi-phy interface"
+   \              0x6C 0x74    
+   \              0x69 0x2D    
+   \              0x70 0x68    
+   \              0x79 0x20    
+   \              0x69 0x6E    
+   \              0x74 0x65    
+   \              0x72 0x66    
+   \              0x61 0x63    
+   \              0x65 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x54 0x65          DC8 "Terminated %s 0x%X"
+   \              0x72 0x6D    
+   \              0x69 0x6E    
+   \              0x61 0x74    
+   \              0x65 0x64    
+   \              0x20 0x25    
+   \              0x73 0x20    
+   \              0x30 0x78    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x13   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x73 0x74          DC8 "stop"
+   \              0x6F 0x70    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   findJoinableNetworkCommand
+         0   -> emberAfPrintln
+         8   -> emberAfStartSearchForJoinableNetworkCallback
+       8   findUnusedPanIdCommand
+         8   -> emberAfFindUnusedPanIdAndFormCallback
+         0   -> emberAfPrintln
+       8   initNetworkParams
+         8   -> emberAfGetFormAndJoinExtendedPanIdCallback
+         8   -> emberCommandArgumentCount
+         8   -> emberSignedCommandArgument
+         8   -> emberUnsignedCommandArgument
+         8   -> halCommonMemSet
+       8   networkChangeChannelCommand
+         0   -> emberAfPrintln
+         8   -> emberEnergyScanRequest
+         8   -> emberUnsignedCommandArgument
+       8   networkExtendedPanIdCommand
+         8   -> emberAfPrint
+         8   -> emberAfPrintBigEndianEui64
+         8   -> emberAfPrintEnabled
+         0   -> emberAfPrintln
+         8   -> emberAfSetFormAndJoinExtendedPanIdCallback
+         8   -> emberCopyBigEndianEui64Argument
+       0   networkFormCommand
+         0   -> emberAfPrintln
+      16   networkIdCommand
+        16   -> emberAfGetEui64
+        16   -> emberAfGetNodeId
+        16   -> emberAfGetPanId
+        16   -> emberAfPrint
+        16   -> emberAfPrintBigEndianEui64
+        16   -> emberAfPrintln
+       8   networkInitCommand
+         8   -> emberAfPrintln
+         8   -> emberNetworkInit
+      32   networkJoinCommand
+        32   -> __aeabi_memclr4
+        32   -> emberAfJoinNetwork
+        32   -> emberAfPrintln
+        32   -> initNetworkParams
+       8   networkLeaveCommand
+         0   -> emberAfPrintln
+         8   -> emberLeaveNetwork
+      24   networkMultiPhyStartCommand
+         0   -> emberAfPrintln
+        24   -> emberAfPrintln
+        24   -> emberCommandArgumentCount
+        24   -> emberMultiPhyStart
+        24   -> emberSignedCommandArgument
+        24   -> emberUnsignedCommandArgument
+       8   networkMultiPhyStopCommand
+         0   -> emberAfPrintln
+         8   -> emberAfPrintln
+         8   -> emberMultiPhyStop
+       8   networkPermitJoinCommand
+         0   -> emAfPermitJoin
+         8   -> emberStringCommandArgument
+         8   -> emberUnsignedCommandArgument
+       8   networkRejoinCommand
+         0   -> emberAfPrintln
+         8   -> emberFindAndRejoinNetworkWithReason
+         8   -> emberUnsignedCommandArgument
+      16   networkRejoinDiffDeviceTypeCommand
+         0   -> emberAfPrintln
+        16   -> emberFindAndRejoinNetworkWithNodeType
+        16   -> emberUnsignedCommandArgument
+       8   networkSetCommand
+         0   -> emberAfPrintln
+         8   -> emberUnsignedCommandArgument
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_10
+       4  ??DataTable15_11
+       4  ??DataTable15_12
+       4  ??DataTable15_13
+       4  ??DataTable15_14
+       4  ??DataTable15_15
+       4  ??DataTable15_16
+       4  ??DataTable15_17
+       4  ??DataTable15_18
+       4  ??DataTable15_19
+       4  ??DataTable15_2
+       4  ??DataTable15_20
+       4  ??DataTable15_21
+       4  ??DataTable15_22
+       4  ??DataTable15_23
+       4  ??DataTable15_24
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+       4  ??DataTable15_5
+       4  ??DataTable15_6
+       4  ??DataTable15_7
+       4  ??DataTable15_8
+       4  ??DataTable15_9
+      10  ?Subroutine0
+       8  ?Subroutine1
+      10  ?Subroutine2
+       6  ?Subroutine3
+       8  ?Subroutine4
+      24  ?_0
+       8  ?_1
+      20  ?_10
+      32  ?_11
+       2  ?_12
+      28  ?_13
+      24  ?_14
+      28  ?_15
+      16  ?_16
+      28  ?_17
+      24  ?_18
+       8  ?_19
+       8  ?_2
+      20  ?_20
+      20  ?_21
+       8  ?_22
+       8  ?_3
+      24  ?_4
+      28  ?_5
+      16  ?_6
+       1  ?_7
+       8  ?_8
+      20  ?_9
+       1  emAfCliNetworkIndex
+      12  findJoinableNetworkCommand
+      10  findUnusedPanIdCommand
+      64  initNetworkParams
+      30  networkChangeChannelCommand
+      52  networkExtendedPanIdCommand
+       8  networkFormCommand
+      44  networkIdCommand
+      28  networkInitCommand
+      40  networkJoinCommand
+      14  networkLeaveCommand
+      84  networkMultiPhyStartCommand
+      32  networkMultiPhyStopCommand
+      38  networkPermitJoinCommand
+      40  networkRejoinCommand
+      54  networkRejoinDiffDeviceTypeCommand
+      28  networkSetCommand
+
+ 
+   1 byte  in section .bss
+ 403 bytes in section .rodata
+ 720 bytes in section .text
+ 
+ 720 bytes of CODE  memory
+ 403 bytes of CONST memory
+   1 byte  of DATA  memory
+
+Errors: none
+Warnings: none

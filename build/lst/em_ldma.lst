@@ -1,0 +1,937 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:50
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_ldma.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW4FBF.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_ldma.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_ldma.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_ldma.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_ldma.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_ldma.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Direct memory access (LDMA) module peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_ldma.h"
+     33          
+     34          #if defined(LDMA_PRESENT) && (LDMA_COUNT == 1)
+     35          
+     36          #include <stddef.h>
+     37          #include "em_assert.h"
+     38          #include "em_bus.h"
+     39          #include "em_cmu.h"
+     40          #include "em_core.h"
+     41          
+     42          /***************************************************************************//**
+     43           * @addtogroup emlib
+     44           * @{
+     45           ******************************************************************************/
+     46          
+     47          /***************************************************************************//**
+     48           * @addtogroup LDMA
+     49           * @{
+     50           ******************************************************************************/
+     51          
+     52          #if defined(LDMA_IRQ_HANDLER_TEMPLATE)
+     53          /***************************************************************************//**
+     54           * @brief
+     55           *   A template for an LDMA IRQ handler.
+     56           ******************************************************************************/
+     57          void LDMA_IRQHandler(void)
+     58          {
+     59            uint32_t ch;
+     60            /* Get all pending and enabled interrupts. */
+     61            uint32_t pending = LDMA_IntGetEnabled();
+     62          
+     63            /* Loop on an LDMA error to enable debugging. */
+     64            while (pending & LDMA_IF_ERROR) {
+     65            }
+     66          
+     67            /* Iterate over all LDMA channels. */
+     68            for (ch = 0; ch < DMA_CHAN_COUNT; ch++) {
+     69              uint32_t mask = 0x1 << ch;
+     70              if (pending & mask) {
+     71                /* Clear the interrupt flag. */
+     72                LDMA->IFC = mask;
+     73          
+     74                /* Perform more actions here, execute callbacks, and so on. */
+     75              }
+     76            }
+     77          }
+     78          #endif
+     79          
+     80          /***************************************************************************//**
+     81           * @brief
+     82           *   De-initialize the LDMA controller.
+     83           *
+     84           *   LDMA interrupts are disabled and the LDMA clock is stopped.
+     85           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     86          void LDMA_DeInit(void)
+     87          {
+     88            NVIC_DisableIRQ(LDMA_IRQn);
+   \                     LDMA_DeInit: (+1)
+   \        0x0   0xF44F 0x1000      MOV      R0,#+2097152
+   \        0x4   0x....             LDR.N    R1,??DataTable6  ;; 0xe000e180
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+   \        0x8   0xF3BF 0x8F4F      DSB      SY
+   \        0xC   0xF3BF 0x8F6F      ISB      SY
+     89            LDMA->IEN  = 0;
+   \       0x10   0x....             LDR.N    R0,??DataTable6_1  ;; 0x40040004
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0x6502             STR      R2,[R0, #+80]
+     90          #if defined(_LDMA_CHDIS_MASK)
+     91            LDMA->CHDIS = _LDMA_CHEN_MASK;
+   \       0x16   0x21FF             MOVS     R1,#+255
+   \       0x18   0x6241             STR      R1,[R0, #+36]
+     92          #else
+     93            LDMA->CHEN = 0;
+     94          #endif
+     95          #if defined(LDMA_EN_EN)
+     96            LDMA->EN = 0;
+   \       0x1A   0x6002             STR      R2,[R0, #+0]
+     97          #endif
+     98          
+     99          #if !defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    100            CMU_ClockEnable(cmuClock_LDMA, false);
+    101          #endif
+    102          
+    103          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+    104            CMU_ClockEnable(cmuClock_LDMAXBAR, false);
+    105          #endif
+    106          }
+   \       0x1C   0x4770             BX       LR               ;; return
+    107          
+    108          /***************************************************************************//**
+    109           * @brief
+    110           *   Enable or disable an LDMA channel request.
+    111           *
+    112           * @details
+    113           *   Use this function to enable or disable an LDMA channel request. This will
+    114           *   prevent the LDMA from proceeding after its current transaction if disabled.
+    115           *
+    116           * @param[in] channel
+    117           *   LDMA channel to enable or disable requests.
+    118           *
+    119           * @param[in] enable
+    120           *   If 'true', the request will be enabled. If 'false', the request will be disabled.
+    121           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    122          void LDMA_EnableChannelRequest(int ch, bool enable)
+    123          {
+    124            EFM_ASSERT(ch < (int)DMA_CHAN_COUNT);
+    125          
+    126            BUS_RegBitWrite(&LDMA->REQDIS, ch, !enable);
+   \                     LDMA_EnableChannelRequest: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF0C             ITE      EQ 
+   \        0x4   0x....             LDREQ.N  R1,??DataTable6_2  ;; 0x40041040
+   \        0x6   0x....             LDRNE.N  R1,??DataTable6_3  ;; 0x40042040
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0xFA02 0xF000      LSL      R0,R2,R0
+   \        0xE   0x6008             STR      R0,[R1, #+0]
+    127          }
+   \       0x10   0x4770             BX       LR               ;; return
+    128          
+    129          /***************************************************************************//**
+    130           * @brief
+    131           *   Initialize the LDMA controller.
+    132           *
+    133           * @details
+    134           *   This function will disable all the LDMA channels and enable the LDMA bus
+    135           *   clock in the CMU. This function will also enable the LDMA IRQ in the NVIC
+    136           *   and set the LDMA IRQ priority to a user-configurable priority. The LDMA
+    137           *   interrupt priority is configured using the @ref LDMA_Init_t structure.
+    138           *
+    139           * @note
+    140           *   Since this function enables the LDMA IRQ, always add a custom
+    141           *   LDMA_IRQHandler to the application to handle any interrupts
+    142           *   from LDMA.
+    143           *
+    144           * @param[in] init
+    145           *   A pointer to the initialization structure used to configure the LDMA.
+    146           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    147          void LDMA_Init(const LDMA_Init_t *init)
+    148          {
+    149            uint32_t ldmaCtrlVal;
+    150            EFM_ASSERT(init != NULL);
+    151            EFM_ASSERT(!(((uint32_t)init->ldmaInitCtrlNumFixed << _LDMA_CTRL_NUMFIXED_SHIFT)
+    152                         & ~_LDMA_CTRL_NUMFIXED_MASK));
+    153          
+    154          #if defined(_LDMA_CTRL_SYNCPRSCLREN_SHIFT) && defined (_LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    155            EFM_ASSERT(!(((uint32_t)init->ldmaInitCtrlSyncPrsClrEn << _LDMA_CTRL_SYNCPRSCLREN_SHIFT)
+    156                         & ~_LDMA_CTRL_SYNCPRSCLREN_MASK));
+    157            EFM_ASSERT(!(((uint32_t)init->ldmaInitCtrlSyncPrsSetEn << _LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    158                         & ~_LDMA_CTRL_SYNCPRSSETEN_MASK));
+    159          #endif
+    160          
+    161          #if defined(_LDMA_SYNCHWEN_SYNCCLREN_SHIFT) && defined (_LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    162            EFM_ASSERT(!(((uint32_t)init->ldmaInitCtrlSyncPrsClrEn << _LDMA_SYNCHWEN_SYNCCLREN_SHIFT)
+    163                         & ~_LDMA_SYNCHWEN_SYNCCLREN_MASK));
+    164            EFM_ASSERT(!(((uint32_t)init->ldmaInitCtrlSyncPrsSetEn << _LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    165                         & ~_LDMA_SYNCHWEN_SYNCSETEN_MASK));
+    166          #endif
+    167          
+    168            EFM_ASSERT(init->ldmaInitIrqPriority < (1 << __NVIC_PRIO_BITS));
+    169          
+    170          #if !defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    171            CMU_ClockEnable(cmuClock_LDMA, true);
+    172          #endif
+    173          
+    174          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+    175            CMU_ClockEnable(cmuClock_LDMAXBAR, true);
+    176          #endif
+    177          
+    178          #if defined(LDMA_EN_EN)
+    179            LDMA->EN = LDMA_EN_EN;
+   \                     LDMA_Init: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable6_1  ;; 0x40040004
+   \        0x2   0x2201             MOVS     R2,#+1
+   \        0x4   0x600A             STR      R2,[R1, #+0]
+    180          #endif
+    181          
+    182            ldmaCtrlVal = init->ldmaInitCtrlNumFixed << _LDMA_CTRL_NUMFIXED_SHIFT;
+    183          
+    184          #if defined(_LDMA_CTRL_SYNCPRSCLREN_SHIFT) && defined (_LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    185            ldmaCtrlVal |=  (init->ldmaInitCtrlSyncPrsClrEn << _LDMA_CTRL_SYNCPRSCLREN_SHIFT)
+    186                           | (init->ldmaInitCtrlSyncPrsSetEn << _LDMA_CTRL_SYNCPRSSETEN_SHIFT);
+    187          #endif
+    188          
+    189            LDMA->CTRL = ldmaCtrlVal;
+   \        0x6   0x7803             LDRB     R3,[R0, #+0]
+   \        0x8   0x061B             LSLS     R3,R3,#+24
+   \        0xA   0x604B             STR      R3,[R1, #+4]
+    190          
+    191          #if defined(_LDMA_SYNCHWEN_SYNCCLREN_SHIFT) && defined (_LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    192            LDMA->SYNCHWEN = (init->ldmaInitCtrlSyncPrsClrEn << _LDMA_SYNCHWEN_SYNCCLREN_SHIFT)
+    193                             | (init->ldmaInitCtrlSyncPrsSetEn << _LDMA_SYNCHWEN_SYNCSETEN_SHIFT);
+   \        0xC   0x7842             LDRB     R2,[R0, #+1]
+   \        0xE   0x7883             LDRB     R3,[R0, #+2]
+   \       0x10   0xEA43 0x4302      ORR      R3,R3,R2, LSL #+16
+    194          #endif
+    195          
+    196          #if defined(_LDMA_CHDIS_MASK)
+    197            LDMA->CHDIS = _LDMA_CHEN_MASK;
+   \       0x14   0x22FF             MOVS     R2,#+255
+   \       0x16   0x614B             STR      R3,[R1, #+20]
+   \       0x18   0x624A             STR      R2,[R1, #+36]
+    198          #else
+    199            LDMA->CHEN    = 0;
+    200          #endif
+    201            LDMA->DBGHALT = 0;
+   \       0x1A   0x2300             MOVS     R3,#+0
+   \       0x1C   0x634B             STR      R3,[R1, #+52]
+    202            LDMA->REQDIS  = 0;
+   \       0x1E   0x63CB             STR      R3,[R1, #+60]
+    203          
+    204            /* Enable the LDMA error interrupt. */
+    205          #if defined (LDMA_IEN_ERRORIEN)
+    206            LDMA->IEN = LDMA_IEN_ERRORIEN;
+    207          #elif defined (LDMA_IEN_ERROR)
+    208            LDMA->IEN = LDMA_IEN_ERROR;
+   \       0x20   0xF04F 0x4300      MOV      R3,#-2147483648
+   \       0x24   0x650B             STR      R3,[R1, #+80]
+    209          #else
+    210            #error "IEN register not defined!!!"
+    211          #endif
+    212          
+    213          #if defined (LDMA_HAS_SET_CLEAR)
+    214            LDMA->IF_CLR = 0xFFFFFFFFU;
+   \       0x26   0xF04F 0x31FF      MOV      R1,#-1
+   \       0x2A   0x....             LDR.N    R2,??DataTable6_4  ;; 0x40042050
+   \       0x2C   0x6011             STR      R1,[R2, #+0]
+    215          #else
+    216            LDMA->IFC = 0xFFFFFFFFU;
+    217          #endif
+    218            NVIC_ClearPendingIRQ(LDMA_IRQn);
+   \       0x2E   0xF44F 0x1100      MOV      R1,#+2097152
+   \       0x32   0x....             LDR.N    R3,??DataTable6_5  ;; 0xe000e280
+   \       0x34   0x6019             STR      R1,[R3, #+0]
+    219          
+    220            /* Range is 0-7, where 0 is the highest priority. */
+    221            NVIC_SetPriority(LDMA_IRQn, init->ldmaInitIrqPriority);
+   \       0x36   0x78C0             LDRB     R0,[R0, #+3]
+   \       0x38   0x....             LDR.N    R2,??DataTable6_6  ;; 0xe000e415
+    222          
+    223            NVIC_EnableIRQ(LDMA_IRQn);
+   \       0x3A   0x....             LDR.N    R3,??DataTable6_7  ;; 0xe000e100
+   \       0x3C   0x0100             LSLS     R0,R0,#+4
+   \       0x3E   0x7010             STRB     R0,[R2, #+0]
+   \       0x40   0x6019             STR      R1,[R3, #+0]
+    224          }
+   \       0x42   0x4770             BX       LR               ;; return
+    225          
+    226          /***************************************************************************//**
+    227           * @brief
+    228           *   Start a DMA transfer.
+    229           *
+    230           * @param[in] ch
+    231           *   A DMA channel.
+    232           *
+    233           * @param[in] transfer
+    234           *   The initialization structure used to configure the transfer.
+    235           *
+    236           * @param[in] descriptor
+    237           *   The transfer descriptor, which can be an array of descriptors linked together.
+    238           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    239          void LDMA_StartTransfer(int ch,
+    240                                  const LDMA_TransferCfg_t *transfer,
+    241                                  const LDMA_Descriptor_t  *descriptor)
+    242          {
+   \                     LDMA_StartTransfer: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    243          #if !(defined (_LDMA_SYNCHWEN_SYNCCLREN_SHIFT) && defined (_LDMA_SYNCHWEN_SYNCSETEN_SHIFT))
+    244            uint32_t tmp;
+    245          #endif
+    246            CORE_DECLARE_IRQ_STATE;
+    247            uint32_t chMask = 1UL << (uint8_t)ch;
+    248          
+    249            EFM_ASSERT(ch < (int)DMA_CHAN_COUNT);
+    250            EFM_ASSERT(transfer != NULL);
+    251          
+    252          #if defined (_LDMAXBAR_CH_REQSEL_MASK)
+    253            EFM_ASSERT(!(transfer->ldmaReqSel & ~_LDMAXBAR_CH_REQSEL_MASK));
+    254          #elif defined (_LDMA_CH_REQSEL_MASK)
+    255            EFM_ASSERT(!(transfer->ldmaReqSel & ~_LDMA_CH_REQSEL_MASK));
+    256          #endif
+    257          
+    258          #if defined (_LDMA_SYNCHWEN_SYNCCLREN_SHIFT) && defined (_LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    259            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsClrOff << _LDMA_SYNCHWEN_SYNCCLREN_SHIFT)
+    260                         & ~_LDMA_SYNCHWEN_SYNCCLREN_MASK));
+    261            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsClrOn << _LDMA_SYNCHWEN_SYNCCLREN_SHIFT)
+    262                         & ~_LDMA_SYNCHWEN_SYNCCLREN_MASK));
+    263            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsSetOff << _LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    264                         & ~_LDMA_SYNCHWEN_SYNCSETEN_MASK));
+    265            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsSetOn << _LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    266                         & ~_LDMA_SYNCHWEN_SYNCSETEN_MASK));
+    267          #elif defined (_LDMA_CTRL_SYNCPRSCLREN_SHIFT) && defined (_LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    268            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsClrOff << _LDMA_CTRL_SYNCPRSCLREN_SHIFT)
+    269                         & ~_LDMA_CTRL_SYNCPRSCLREN_MASK));
+    270            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsClrOn << _LDMA_CTRL_SYNCPRSCLREN_SHIFT)
+    271                         & ~_LDMA_CTRL_SYNCPRSCLREN_MASK));
+    272            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsSetOff << _LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    273                         & ~_LDMA_CTRL_SYNCPRSSETEN_MASK));
+    274            EFM_ASSERT(!(((uint32_t)transfer->ldmaCtrlSyncPrsSetOn << _LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    275                         & ~_LDMA_CTRL_SYNCPRSSETEN_MASK));
+    276          #endif
+    277          
+    278            EFM_ASSERT(!(((uint32_t)transfer->ldmaCfgArbSlots << _LDMA_CH_CFG_ARBSLOTS_SHIFT)
+    279                         & ~_LDMA_CH_CFG_ARBSLOTS_MASK));
+    280            EFM_ASSERT(!(((uint32_t)transfer->ldmaCfgSrcIncSign << _LDMA_CH_CFG_SRCINCSIGN_SHIFT)
+    281                         & ~_LDMA_CH_CFG_SRCINCSIGN_MASK));
+    282            EFM_ASSERT(!(((uint32_t)transfer->ldmaCfgDstIncSign << _LDMA_CH_CFG_DSTINCSIGN_SHIFT)
+    283                         & ~_LDMA_CH_CFG_DSTINCSIGN_MASK));
+    284            EFM_ASSERT(!(((uint32_t)transfer->ldmaLoopCnt << _LDMA_CH_LOOP_LOOPCNT_SHIFT)
+    285                         & ~_LDMA_CH_LOOP_LOOPCNT_MASK));
+    286          
+    287          #if defined(LDMAXBAR)
+    288            LDMAXBAR->CH[ch].REQSEL = transfer->ldmaReqSel;
+   \        0x4   0x6821             LDR      R1,[R4, #+0]
+   \        0x6   0x....             LDR.N    R3,??DataTable6_8  ;; 0x40044000
+   \        0x8   0x2501             MOVS     R5,#+1
+   \        0xA   0xF843 0x1020      STR      R1,[R3, R0, LSL #+2]
+   \        0xE   0x4085             LSLS     R5,R5,R0
+    289          #else
+    290            LDMA->CH[ch].REQSEL = transfer->ldmaReqSel;
+    291          #endif
+    292            LDMA->CH[ch].LOOP = transfer->ldmaLoopCnt << _LDMA_CH_LOOP_LOOPCNT_SHIFT;
+   \       0x10   0x2130             MOVS     R1,#+48
+   \       0x12   0x4348             MULS     R0,R1,R0
+   \       0x14   0x7B63             LDRB     R3,[R4, #+13]
+   \       0x16   0x....             LDR.N    R6,??DataTable6_9  ;; 0x40040058
+   \       0x18   0x4430             ADD      R0,R6,R0
+   \       0x1A   0x6083             STR      R3,[R0, #+8]
+    293            LDMA->CH[ch].CFG = (transfer->ldmaCfgArbSlots << _LDMA_CH_CFG_ARBSLOTS_SHIFT)
+    294                               | (transfer->ldmaCfgSrcIncSign << _LDMA_CH_CFG_SRCINCSIGN_SHIFT)
+    295                               | (transfer->ldmaCfgDstIncSign << _LDMA_CH_CFG_DSTINCSIGN_SHIFT);
+   \       0x1C   0x7AE3             LDRB     R3,[R4, #+11]
+   \       0x1E   0x7AA1             LDRB     R1,[R4, #+10]
+    296          
+    297            /* Set the descriptor address. */
+    298            LDMA->CH[ch].LINK = (uint32_t)descriptor & _LDMA_CH_LINK_LINKADDR_MASK;
+   \       0x20   0x0892             LSRS     R2,R2,#+2
+   \       0x22   0x051B             LSLS     R3,R3,#+20
+   \       0x24   0xEA43 0x4301      ORR      R3,R3,R1, LSL #+16
+   \       0x28   0x7B21             LDRB     R1,[R4, #+12]
+   \       0x2A   0x0092             LSLS     R2,R2,#+2
+    299          
+    300            /* Clear the pending channel interrupt. */
+    301          #if defined (LDMA_HAS_SET_CLEAR)
+    302            LDMA->IF_CLR = chMask;
+   \       0x2C   0x....             LDR.N    R6,??DataTable6_10  ;; 0x40042018
+   \       0x2E   0xEA43 0x5341      ORR      R3,R3,R1, LSL #+21
+   \       0x32   0x6043             STR      R3,[R0, #+4]
+   \       0x34   0x6182             STR      R2,[R0, #+24]
+   \       0x36   0x63B5             STR      R5,[R6, #+56]
+    303          #else
+    304            LDMA->IFC = chMask;
+    305          #endif
+    306          
+    307            /* A critical region. */
+    308            CORE_ENTER_ATOMIC();
+   \       0x38   0x....'....        BL       CORE_EnterAtomic
+    309          
+    310            /* Enable the channel interrupt. */
+    311            LDMA->IEN |= chMask;
+   \       0x3C   0x....             LDR.N    R2,??DataTable6_11  ;; 0x40040038
+   \       0x3E   0x69D3             LDR      R3,[R2, #+28]
+   \       0x40   0x432B             ORRS     R3,R5,R3
+   \       0x42   0x61D3             STR      R3,[R2, #+28]
+    312          
+    313            if (transfer->ldmaReqDis) {
+   \       0x44   0x7A21             LDRB     R1,[R4, #+8]
+   \       0x46   0xB111             CBZ.N    R1,??LDMA_StartTransfer_0
+    314              LDMA->REQDIS |= chMask;
+   \       0x48   0x6891             LDR      R1,[R2, #+8]
+   \       0x4A   0x4329             ORRS     R1,R5,R1
+   \       0x4C   0x6091             STR      R1,[R2, #+8]
+    315            }
+    316          
+    317            if (transfer->ldmaDbgHalt) {
+   \                     ??LDMA_StartTransfer_0: (+1)
+   \       0x4E   0x7A61             LDRB     R1,[R4, #+9]
+   \       0x50   0xB111             CBZ.N    R1,??LDMA_StartTransfer_1
+    318              LDMA->DBGHALT |= chMask;
+   \       0x52   0x6813             LDR      R3,[R2, #+0]
+   \       0x54   0x432B             ORRS     R3,R5,R3
+   \       0x56   0x6013             STR      R3,[R2, #+0]
+    319            }
+    320          
+    321          #if defined (_LDMA_SYNCHWEN_SYNCCLREN_SHIFT) && defined (_LDMA_SYNCHWEN_SYNCSETEN_SHIFT)
+    322          
+    323            LDMA->SYNCHWEN_CLR =
+    324              ((transfer->ldmaCtrlSyncPrsClrOff << _LDMA_SYNCHWEN_SYNCCLREN_SHIFT)
+    325               | (transfer->ldmaCtrlSyncPrsSetOff << _LDMA_SYNCHWEN_SYNCSETEN_SHIFT))
+    326              & _LDMA_SYNCHWEN_MASK;
+   \                     ??LDMA_StartTransfer_1: (+1)
+   \       0x58   0x7921             LDRB     R1,[R4, #+4]
+   \       0x5A   0x79A3             LDRB     R3,[R4, #+6]
+   \       0x5C   0xEA43 0x4301      ORR      R3,R3,R1, LSL #+16
+   \       0x60   0x6033             STR      R3,[R6, #+0]
+    327          
+    328            LDMA->SYNCHWEN_SET =
+    329              ((transfer->ldmaCtrlSyncPrsClrOn << _LDMA_SYNCHWEN_SYNCCLREN_SHIFT)
+    330               | (transfer->ldmaCtrlSyncPrsSetOn << _LDMA_SYNCHWEN_SYNCSETEN_SHIFT))
+    331              & _LDMA_SYNCHWEN_MASK;
+   \       0x62   0x7961             LDRB     R1,[R4, #+5]
+   \       0x64   0x79E3             LDRB     R3,[R4, #+7]
+   \       0x66   0xEA43 0x4301      ORR      R3,R3,R1, LSL #+16
+   \       0x6A   0x....             LDR.N    R1,??DataTable6_12  ;; 0x40041018
+   \       0x6C   0x600B             STR      R3,[R1, #+0]
+    332          
+    333          #elif defined (_LDMA_CTRL_SYNCPRSCLREN_SHIFT) && defined (_LDMA_CTRL_SYNCPRSSETEN_SHIFT)
+    334          
+    335            tmp = LDMA->CTRL;
+    336          
+    337            if (transfer->ldmaCtrlSyncPrsClrOff) {
+    338              tmp &= ~_LDMA_CTRL_SYNCPRSCLREN_MASK
+    339                     | (~transfer->ldmaCtrlSyncPrsClrOff << _LDMA_CTRL_SYNCPRSCLREN_SHIFT);
+    340            }
+    341          
+    342            if (transfer->ldmaCtrlSyncPrsClrOn) {
+    343              tmp |= transfer->ldmaCtrlSyncPrsClrOn << _LDMA_CTRL_SYNCPRSCLREN_SHIFT;
+    344            }
+    345          
+    346            if (transfer->ldmaCtrlSyncPrsSetOff) {
+    347              tmp &= ~_LDMA_CTRL_SYNCPRSSETEN_MASK
+    348                     | (~transfer->ldmaCtrlSyncPrsSetOff << _LDMA_CTRL_SYNCPRSSETEN_SHIFT);
+    349            }
+    350          
+    351            if (transfer->ldmaCtrlSyncPrsSetOn) {
+    352              tmp |= transfer->ldmaCtrlSyncPrsSetOn << _LDMA_CTRL_SYNCPRSSETEN_SHIFT;
+    353            }
+    354          
+    355            LDMA->CTRL = tmp;
+    356          
+    357          #else
+    358          
+    359            #error  "SYNC Set and SYNC Clear not defined"
+    360          
+    361          #endif
+    362          
+    363            BUS_RegMaskedClear(&LDMA->CHDONE, chMask);  /* Clear the done flag.     */
+   \       0x6E   0x61F5             STR      R5,[R6, #+28]
+    364            LDMA->LINKLOAD = chMask;      /* Start a transfer by loading the descriptor.  */
+   \       0x70   0x6115             STR      R5,[R2, #+16]
+    365          
+    366            /* A critical region end. */
+    367            CORE_EXIT_ATOMIC();
+   \       0x72   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x76   0x....'....        B.W      CORE_ExitAtomic
+    368          }
+    369          
+    370          /***************************************************************************//**
+    371           * @brief
+    372           *   Stop a DMA transfer.
+    373           *
+    374           * @note
+    375           *   The DMA will complete the current AHB burst transfer before stopping.
+    376           *
+    377           * @param[in] ch
+    378           *   A DMA channel to stop.
+    379           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    380          void LDMA_StopTransfer(int ch)
+    381          {
+   \                     LDMA_StopTransfer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x....'....        BL       ?Subroutine0
+    382            uint32_t chMask = 1UL << (uint8_t)ch;
+    383          
+    384            EFM_ASSERT(ch < (int)DMA_CHAN_COUNT);
+    385          
+    386            CORE_ATOMIC_SECTION(
+    387              LDMA->IEN &= ~chMask;
+    388          #if defined(_LDMA_CHDIS_MASK)
+    389              LDMA->CHDIS = chMask;
+    390          #else
+    391              BUS_RegMaskedClear(&LDMA->CHEN, chMask);
+    392          #endif
+    393              )
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0x....             LDR.N    R1,??DataTable6_13  ;; 0x40040028
+   \        0x8   0x6ACA             LDR      R2,[R1, #+44]
+   \        0xA   0x43A2             BICS     R2,R2,R4
+   \        0xC   0x62CA             STR      R2,[R1, #+44]
+   \        0xE   0x600C             STR      R4,[R1, #+0]
+   \       0x10   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x14   0x....'....        B.W      CORE_ExitAtomic
+    394          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0xFA00 0xF404      LSL      R4,R0,R4
+   \        0x8   0x....'....        B.W      CORE_EnterAtomic
+    395          
+    396          /***************************************************************************//**
+    397           * @brief
+    398           *   Check if a DMA transfer has completed.
+    399           *
+    400           * @param[in] ch
+    401           *   A DMA channel to check.
+    402           *
+    403           * @return
+    404           *   True if transfer has completed, false if not.
+    405           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    406          bool LDMA_TransferDone(int ch)
+    407          {
+   \                     LDMA_TransferDone: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x....'....        BL       ?Subroutine0
+    408            bool     retVal = false;
+    409            uint32_t chMask = 1UL << (uint8_t)ch;
+    410          
+    411            EFM_ASSERT(ch < (int)DMA_CHAN_COUNT);
+    412          
+    413            CORE_ATOMIC_SECTION(
+    414              if (
+    415          #if defined(_LDMA_CHSTATUS_MASK)
+    416                ((LDMA->CHSTATUS & chMask) == 0)
+    417          #else
+    418                ((LDMA->CHEN & chMask) == 0)
+    419          #endif
+    420                && ((LDMA->CHDONE & chMask) == chMask)) {
+    421              retVal = true;
+    422            }
+    423              )
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0x....             LDR.N    R1,??DataTable6_14  ;; 0x4004002c
+   \        0x8   0x680A             LDR      R2,[R1, #+0]
+   \        0xA   0x2500             MOVS     R5,#+0
+   \        0xC   0x4222             TST      R2,R4
+   \        0xE   0xBF01             ITTTT    EQ 
+   \       0x10   0x6889             LDREQ    R1,[R1, #+8]
+   \       0x12   0x4021             ANDEQ    R1,R4,R1
+   \       0x14   0x42A1             CMPEQ    R1,R4
+   \       0x16   0x2501             MOVEQ    R5,#+1
+   \       0x18   0x....'....        BL       CORE_ExitAtomic
+    424          
+    425            return retVal;
+   \       0x1C   0x4628             MOV      R0,R5
+   \       0x1E   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    426          }
+    427          
+    428          /***************************************************************************//**
+    429           * @brief
+    430           *  Get the number of items remaining in a transfer.
+    431           *
+    432           * @note
+    433           *  This function does not take into account that a DMA transfer with
+    434           *  a chain of linked transfers might be ongoing. It will only check the
+    435           *  count for the current transfer.
+    436           *
+    437           * @param[in] ch
+    438           *  The channel number of the transfer to check.
+    439           *
+    440           * @return
+    441           *  A number of items remaining in the transfer.
+    442           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    443          uint32_t LDMA_TransferRemainingCount(int ch)
+    444          {
+   \                     LDMA_TransferRemainingCount: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4607             MOV      R7,R0
+    445            uint32_t remaining, done, iflag;
+    446            uint32_t chMask = 1UL << (uint8_t)ch;
+    447          
+    448            EFM_ASSERT(ch < (int)DMA_CHAN_COUNT);
+    449          
+    450            CORE_ATOMIC_SECTION(
+    451              iflag  = LDMA->IF;
+    452              done   = LDMA->CHDONE;
+    453              remaining = LDMA->CH[ch].CTRL;
+    454              )
+   \        0x4   0x....'....        BL       CORE_EnterAtomic
+   \        0x8   0x....             LDR.N    R1,??DataTable6_15  ;; 0x40040034
+   \        0xA   0x69CC             LDR      R4,[R1, #+28]
+   \        0xC   0x2501             MOVS     R5,#+1
+   \        0xE   0x680E             LDR      R6,[R1, #+0]
+   \       0x10   0x40BD             LSLS     R5,R5,R7
+   \       0x12   0x2130             MOVS     R1,#+48
+   \       0x14   0x434F             MULS     R7,R1,R7
+   \       0x16   0x....             LDR.N    R2,??DataTable6_9  ;; 0x40040058
+   \       0x18   0x402C             ANDS     R4,R5,R4
+   \       0x1A   0x19D1             ADDS     R1,R2,R7
+   \       0x1C   0x68CF             LDR      R7,[R1, #+12]
+   \       0x1E   0x....'....        BL       CORE_ExitAtomic
+    455          
+    456            iflag    &= chMask;
+    457            done     &= chMask;
+    458            remaining = (remaining & _LDMA_CH_CTRL_XFERCNT_MASK)
+    459                        >> _LDMA_CH_CTRL_XFERCNT_SHIFT;
+    460          
+    461            if (done || ((remaining == 0) && iflag)) {
+   \       0x22   0x422E             TST      R6,R5
+   \       0x24   0xF3C7 0x100A      UBFX     R0,R7,#+4,#+11
+   \       0x28   0xD101             BNE.N    ??LDMA_TransferRemainingCount_0
+   \       0x2A   0xB910             CBNZ.N   R0,??LDMA_TransferRemainingCount_1
+   \       0x2C   0xB10C             CBZ.N    R4,??LDMA_TransferRemainingCount_1
+    462              return 0;
+   \                     ??LDMA_TransferRemainingCount_0: (+1)
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0xBDF2             POP      {R1,R4-R7,PC}
+    463            }
+    464          
+    465            return remaining + 1;
+   \                     ??LDMA_TransferRemainingCount_1: (+1)
+   \       0x32   0x1C40             ADDS     R0,R0,#+1
+   \       0x34   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    466          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0xE000'E180        DC32     0xe000e180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x4004'0004        DC32     0x40040004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x4004'1040        DC32     0x40041040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x4004'2040        DC32     0x40042040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x4004'2050        DC32     0x40042050
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0xE000'E280        DC32     0xe000e280
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0xE000'E415        DC32     0xe000e415
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x4004'4000        DC32     0x40044000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x4004'0058        DC32     0x40040058
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \        0x0   0x4004'2018        DC32     0x40042018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \        0x0   0x4004'0038        DC32     0x40040038
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \        0x0   0x4004'1018        DC32     0x40041018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \        0x0   0x4004'0028        DC32     0x40040028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_14:
+   \        0x0   0x4004'002C        DC32     0x4004002c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_15:
+   \        0x0   0x4004'0034        DC32     0x40040034
+    467          
+    468          /** @} (end addtogroup LDMA) */
+    469          /** @} (end addtogroup emlib) */
+    470          #endif /* defined( LDMA_PRESENT ) && ( LDMA_COUNT == 1 ) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LDMA_DeInit
+       0   LDMA_EnableChannelRequest
+       0   LDMA_Init
+      16   LDMA_StartTransfer
+        16   -> CORE_EnterAtomic
+         0   -> CORE_ExitAtomic
+       8   LDMA_StopTransfer
+         8   -> CORE_EnterAtomic
+         0   -> CORE_ExitAtomic
+      16   LDMA_TransferDone
+        16   -> CORE_EnterAtomic
+        16   -> CORE_ExitAtomic
+      24   LDMA_TransferRemainingCount
+        24   -> CORE_EnterAtomic
+        24   -> CORE_ExitAtomic
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_15
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      12  ?Subroutine0
+      30  LDMA_DeInit
+      18  LDMA_EnableChannelRequest
+      68  LDMA_Init
+     122  LDMA_StartTransfer
+      24  LDMA_StopTransfer
+      32  LDMA_TransferDone
+      54  LDMA_TransferRemainingCount
+
+ 
+ 424 bytes in section .text
+ 
+ 424 bytes of CODE memory
+
+Errors: none
+Warnings: none

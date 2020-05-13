@@ -1,0 +1,563 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:31
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\pk.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWF031.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\pk.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"pk.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\pk.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\pk.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\pk.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Public Key abstraction layer
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_PK_C)
+     41          #include "mbedtls/pk.h"
+     42          #include "mbedtls/pk_internal.h"
+     43          
+     44          #if defined(MBEDTLS_RSA_C)
+     45          #include "mbedtls/rsa.h"
+     46          #endif
+     47          #if defined(MBEDTLS_ECP_C)
+     48          #include "mbedtls/ecp.h"
+     49          #endif
+     50          #if defined(MBEDTLS_ECDSA_C)
+     51          #include "mbedtls/ecdsa.h"
+     52          #endif
+     53          
+     54          #include <limits.h>
+     55          #include <stdint.h>
+     56          
+     57          /* Implementation that should never be optimized out by the compiler */
+     58          static void mbedtls_zeroize( void *v, size_t n ) {
+     59              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     60          }
+     61          
+     62          /*
+     63           * Initialise a mbedtls_pk_context
+     64           */
+     65          void mbedtls_pk_init( mbedtls_pk_context *ctx )
+     66          {
+     67              if( ctx == NULL )
+     68                  return;
+     69          
+     70              ctx->pk_info = NULL;
+     71              ctx->pk_ctx = NULL;
+     72          }
+     73          
+     74          /*
+     75           * Free (the components of) a mbedtls_pk_context
+     76           */
+     77          void mbedtls_pk_free( mbedtls_pk_context *ctx )
+     78          {
+     79              if( ctx == NULL || ctx->pk_info == NULL )
+     80                  return;
+     81          
+     82              ctx->pk_info->ctx_free_func( ctx->pk_ctx );
+     83          
+     84              mbedtls_zeroize( ctx, sizeof( mbedtls_pk_context ) );
+     85          }
+     86          
+     87          /*
+     88           * Get pk_info structure from type
+     89           */
+     90          const mbedtls_pk_info_t * mbedtls_pk_info_from_type( mbedtls_pk_type_t pk_type )
+     91          {
+     92              switch( pk_type ) {
+     93          #if defined(MBEDTLS_RSA_C)
+     94                  case MBEDTLS_PK_RSA:
+     95                      return( &mbedtls_rsa_info );
+     96          #endif
+     97          #if defined(MBEDTLS_ECP_C)
+     98                  case MBEDTLS_PK_ECKEY:
+     99                      return( &mbedtls_eckey_info );
+    100                  case MBEDTLS_PK_ECKEY_DH:
+    101                      return( &mbedtls_eckeydh_info );
+    102          #endif
+    103          #if defined(MBEDTLS_ECDSA_C)
+    104                  case MBEDTLS_PK_ECDSA:
+    105                      return( &mbedtls_ecdsa_info );
+    106          #endif
+    107                  /* MBEDTLS_PK_RSA_ALT omitted on purpose */
+    108                  default:
+    109                      return( NULL );
+    110              }
+    111          }
+    112          
+    113          /*
+    114           * Initialise context
+    115           */
+    116          int mbedtls_pk_setup( mbedtls_pk_context *ctx, const mbedtls_pk_info_t *info )
+    117          {
+    118              if( ctx == NULL || info == NULL || ctx->pk_info != NULL )
+    119                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    120          
+    121              if( ( ctx->pk_ctx = info->ctx_alloc_func() ) == NULL )
+    122                  return( MBEDTLS_ERR_PK_ALLOC_FAILED );
+    123          
+    124              ctx->pk_info = info;
+    125          
+    126              return( 0 );
+    127          }
+    128          
+    129          #if defined(MBEDTLS_PK_RSA_ALT_SUPPORT)
+    130          /*
+    131           * Initialize an RSA-alt context
+    132           */
+    133          int mbedtls_pk_setup_rsa_alt( mbedtls_pk_context *ctx, void * key,
+    134                                   mbedtls_pk_rsa_alt_decrypt_func decrypt_func,
+    135                                   mbedtls_pk_rsa_alt_sign_func sign_func,
+    136                                   mbedtls_pk_rsa_alt_key_len_func key_len_func )
+    137          {
+    138              mbedtls_rsa_alt_context *rsa_alt;
+    139              const mbedtls_pk_info_t *info = &mbedtls_rsa_alt_info;
+    140          
+    141              if( ctx == NULL || ctx->pk_info != NULL )
+    142                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    143          
+    144              if( ( ctx->pk_ctx = info->ctx_alloc_func() ) == NULL )
+    145                  return( MBEDTLS_ERR_PK_ALLOC_FAILED );
+    146          
+    147              ctx->pk_info = info;
+    148          
+    149              rsa_alt = (mbedtls_rsa_alt_context *) ctx->pk_ctx;
+    150          
+    151              rsa_alt->key = key;
+    152              rsa_alt->decrypt_func = decrypt_func;
+    153              rsa_alt->sign_func = sign_func;
+    154              rsa_alt->key_len_func = key_len_func;
+    155          
+    156              return( 0 );
+    157          }
+    158          #endif /* MBEDTLS_PK_RSA_ALT_SUPPORT */
+    159          
+    160          /*
+    161           * Tell if a PK can do the operations of the given type
+    162           */
+    163          int mbedtls_pk_can_do( const mbedtls_pk_context *ctx, mbedtls_pk_type_t type )
+    164          {
+    165              /* null or NONE context can't do anything */
+    166              if( ctx == NULL || ctx->pk_info == NULL )
+    167                  return( 0 );
+    168          
+    169              return( ctx->pk_info->can_do( type ) );
+    170          }
+    171          
+    172          /*
+    173           * Helper for mbedtls_pk_sign and mbedtls_pk_verify
+    174           */
+    175          static inline int pk_hashlen_helper( mbedtls_md_type_t md_alg, size_t *hash_len )
+    176          {
+    177              const mbedtls_md_info_t *md_info;
+    178          
+    179              if( *hash_len != 0 )
+    180                  return( 0 );
+    181          
+    182              if( ( md_info = mbedtls_md_info_from_type( md_alg ) ) == NULL )
+    183                  return( -1 );
+    184          
+    185              *hash_len = mbedtls_md_get_size( md_info );
+    186              return( 0 );
+    187          }
+    188          
+    189          /*
+    190           * Verify a signature
+    191           */
+    192          int mbedtls_pk_verify( mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
+    193                         const unsigned char *hash, size_t hash_len,
+    194                         const unsigned char *sig, size_t sig_len )
+    195          {
+    196              if( ctx == NULL || ctx->pk_info == NULL ||
+    197                  pk_hashlen_helper( md_alg, &hash_len ) != 0 )
+    198                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    199          
+    200              if( ctx->pk_info->verify_func == NULL )
+    201                  return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    202          
+    203              return( ctx->pk_info->verify_func( ctx->pk_ctx, md_alg, hash, hash_len,
+    204                                                 sig, sig_len ) );
+    205          }
+    206          
+    207          /*
+    208           * Verify a signature with options
+    209           */
+    210          int mbedtls_pk_verify_ext( mbedtls_pk_type_t type, const void *options,
+    211                             mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
+    212                             const unsigned char *hash, size_t hash_len,
+    213                             const unsigned char *sig, size_t sig_len )
+    214          {
+    215              if( ctx == NULL || ctx->pk_info == NULL )
+    216                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    217          
+    218              if( ! mbedtls_pk_can_do( ctx, type ) )
+    219                  return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    220          
+    221              if( type == MBEDTLS_PK_RSASSA_PSS )
+    222              {
+    223          #if defined(MBEDTLS_RSA_C) && defined(MBEDTLS_PKCS1_V21)
+    224                  int ret;
+    225                  const mbedtls_pk_rsassa_pss_options *pss_opts;
+    226          
+    227          #if SIZE_MAX > UINT_MAX
+    228                  if( md_alg == MBEDTLS_MD_NONE && UINT_MAX < hash_len )
+    229                      return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    230          #endif /* SIZE_MAX > UINT_MAX */
+    231          
+    232                  if( options == NULL )
+    233                      return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    234          
+    235                  pss_opts = (const mbedtls_pk_rsassa_pss_options *) options;
+    236          
+    237                  if( sig_len < mbedtls_pk_get_len( ctx ) )
+    238                      return( MBEDTLS_ERR_RSA_VERIFY_FAILED );
+    239          
+    240                  ret = mbedtls_rsa_rsassa_pss_verify_ext( mbedtls_pk_rsa( *ctx ),
+    241                          NULL, NULL, MBEDTLS_RSA_PUBLIC,
+    242                          md_alg, (unsigned int) hash_len, hash,
+    243                          pss_opts->mgf1_hash_id,
+    244                          pss_opts->expected_salt_len,
+    245                          sig );
+    246                  if( ret != 0 )
+    247                      return( ret );
+    248          
+    249                  if( sig_len > mbedtls_pk_get_len( ctx ) )
+    250                      return( MBEDTLS_ERR_PK_SIG_LEN_MISMATCH );
+    251          
+    252                  return( 0 );
+    253          #else
+    254                  return( MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE );
+    255          #endif /* MBEDTLS_RSA_C && MBEDTLS_PKCS1_V21 */
+    256              }
+    257          
+    258              /* General case: no options */
+    259              if( options != NULL )
+    260                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    261          
+    262              return( mbedtls_pk_verify( ctx, md_alg, hash, hash_len, sig, sig_len ) );
+    263          }
+    264          
+    265          /*
+    266           * Make a signature
+    267           */
+    268          int mbedtls_pk_sign( mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
+    269                       const unsigned char *hash, size_t hash_len,
+    270                       unsigned char *sig, size_t *sig_len,
+    271                       int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    272          {
+    273              if( ctx == NULL || ctx->pk_info == NULL ||
+    274                  pk_hashlen_helper( md_alg, &hash_len ) != 0 )
+    275                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    276          
+    277              if( ctx->pk_info->sign_func == NULL )
+    278                  return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    279          
+    280              return( ctx->pk_info->sign_func( ctx->pk_ctx, md_alg, hash, hash_len,
+    281                                               sig, sig_len, f_rng, p_rng ) );
+    282          }
+    283          
+    284          /*
+    285           * Decrypt message
+    286           */
+    287          int mbedtls_pk_decrypt( mbedtls_pk_context *ctx,
+    288                          const unsigned char *input, size_t ilen,
+    289                          unsigned char *output, size_t *olen, size_t osize,
+    290                          int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    291          {
+    292              if( ctx == NULL || ctx->pk_info == NULL )
+    293                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    294          
+    295              if( ctx->pk_info->decrypt_func == NULL )
+    296                  return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    297          
+    298              return( ctx->pk_info->decrypt_func( ctx->pk_ctx, input, ilen,
+    299                          output, olen, osize, f_rng, p_rng ) );
+    300          }
+    301          
+    302          /*
+    303           * Encrypt message
+    304           */
+    305          int mbedtls_pk_encrypt( mbedtls_pk_context *ctx,
+    306                          const unsigned char *input, size_t ilen,
+    307                          unsigned char *output, size_t *olen, size_t osize,
+    308                          int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    309          {
+    310              if( ctx == NULL || ctx->pk_info == NULL )
+    311                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    312          
+    313              if( ctx->pk_info->encrypt_func == NULL )
+    314                  return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    315          
+    316              return( ctx->pk_info->encrypt_func( ctx->pk_ctx, input, ilen,
+    317                          output, olen, osize, f_rng, p_rng ) );
+    318          }
+    319          
+    320          /*
+    321           * Check public-private key pair
+    322           */
+    323          int mbedtls_pk_check_pair( const mbedtls_pk_context *pub, const mbedtls_pk_context *prv )
+    324          {
+    325              if( pub == NULL || pub->pk_info == NULL ||
+    326                  prv == NULL || prv->pk_info == NULL ||
+    327                  prv->pk_info->check_pair_func == NULL )
+    328              {
+    329                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    330              }
+    331          
+    332              if( prv->pk_info->type == MBEDTLS_PK_RSA_ALT )
+    333              {
+    334                  if( pub->pk_info->type != MBEDTLS_PK_RSA )
+    335                      return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    336              }
+    337              else
+    338              {
+    339                  if( pub->pk_info != prv->pk_info )
+    340                      return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    341              }
+    342          
+    343              return( prv->pk_info->check_pair_func( pub->pk_ctx, prv->pk_ctx ) );
+    344          }
+    345          
+    346          /*
+    347           * Get key size in bits
+    348           */
+    349          size_t mbedtls_pk_get_bitlen( const mbedtls_pk_context *ctx )
+    350          {
+    351              if( ctx == NULL || ctx->pk_info == NULL )
+    352                  return( 0 );
+    353          
+    354              return( ctx->pk_info->get_bitlen( ctx->pk_ctx ) );
+    355          }
+    356          
+    357          /*
+    358           * Export debug information
+    359           */
+    360          int mbedtls_pk_debug( const mbedtls_pk_context *ctx, mbedtls_pk_debug_item *items )
+    361          {
+    362              if( ctx == NULL || ctx->pk_info == NULL )
+    363                  return( MBEDTLS_ERR_PK_BAD_INPUT_DATA );
+    364          
+    365              if( ctx->pk_info->debug_func == NULL )
+    366                  return( MBEDTLS_ERR_PK_TYPE_MISMATCH );
+    367          
+    368              ctx->pk_info->debug_func( ctx->pk_ctx, items );
+    369              return( 0 );
+    370          }
+    371          
+    372          /*
+    373           * Access the PK type name
+    374           */
+    375          const char *mbedtls_pk_get_name( const mbedtls_pk_context *ctx )
+    376          {
+    377              if( ctx == NULL || ctx->pk_info == NULL )
+    378                  return( "invalid PK" );
+    379          
+    380              return( ctx->pk_info->name );
+    381          }
+    382          
+    383          /*
+    384           * Access the PK type
+    385           */
+    386          mbedtls_pk_type_t mbedtls_pk_get_type( const mbedtls_pk_context *ctx )
+    387          {
+    388              if( ctx == NULL || ctx->pk_info == NULL )
+    389                  return( MBEDTLS_PK_NONE );
+    390          
+    391              return( ctx->pk_info->type );
+    392          }
+    393          
+    394          #endif /* MBEDTLS_PK_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

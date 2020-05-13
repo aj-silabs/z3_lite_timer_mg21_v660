@@ -1,0 +1,1144 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:01
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\gcm.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW7A61.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\gcm.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"gcm.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\gcm.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\gcm.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\gcm.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  NIST SP800-38D compliant GCM implementation
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          /*
+     35           * http://csrc.nist.gov/publications/nistpubs/800-38D/SP-800-38D.pdf
+     36           *
+     37           * See also:
+     38           * [MGV] http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/gcm/gcm-revised-spec.pdf
+     39           *
+     40           * We use the algorithm described as Shoup's method with 4-bit tables in
+     41           * [MGV] 4.1, pp. 12-13, to enhance speed without using too much memory.
+     42           */
+     43          
+     44          #if !defined(MBEDTLS_CONFIG_FILE)
+     45          #include "mbedtls/config.h"
+     46          #else
+     47          #include MBEDTLS_CONFIG_FILE
+     48          #endif
+     49          
+     50          #if defined(MBEDTLS_GCM_C)
+     51          
+     52          #include "mbedtls/gcm.h"
+     53          
+     54          #include <string.h>
+     55          
+     56          #if defined(MBEDTLS_AESNI_C)
+     57          #include "mbedtls/aesni.h"
+     58          #endif
+     59          
+     60          #if defined(MBEDTLS_SELF_TEST) && defined(MBEDTLS_AES_C)
+     61          #include "mbedtls/aes.h"
+     62          #if defined(MBEDTLS_PLATFORM_C)
+     63          #include "mbedtls/platform.h"
+     64          #else
+     65          #include <stdio.h>
+     66          #define mbedtls_printf printf
+     67          #endif /* MBEDTLS_PLATFORM_C */
+     68          #endif /* MBEDTLS_SELF_TEST && MBEDTLS_AES_C */
+     69          
+     70          #if !defined(MBEDTLS_GCM_ALT)
+     71          
+     72          /*
+     73           * 32-bit integer manipulation macros (big endian)
+     74           */
+     75          #ifndef GET_UINT32_BE
+     76          #define GET_UINT32_BE(n,b,i)                            \
+     77          {                                                       \
+     78              (n) = ( (uint32_t) (b)[(i)    ] << 24 )             \
+     79                  | ( (uint32_t) (b)[(i) + 1] << 16 )             \
+     80                  | ( (uint32_t) (b)[(i) + 2] <<  8 )             \
+     81                  | ( (uint32_t) (b)[(i) + 3]       );            \
+     82          }
+     83          #endif
+     84          
+     85          #ifndef PUT_UINT32_BE
+     86          #define PUT_UINT32_BE(n,b,i)                            \
+     87          {                                                       \
+     88              (b)[(i)    ] = (unsigned char) ( (n) >> 24 );       \
+     89              (b)[(i) + 1] = (unsigned char) ( (n) >> 16 );       \
+     90              (b)[(i) + 2] = (unsigned char) ( (n) >>  8 );       \
+     91              (b)[(i) + 3] = (unsigned char) ( (n)       );       \
+     92          }
+     93          #endif
+     94          
+     95          /* Implementation that should never be optimized out by the compiler */
+     96          static void mbedtls_zeroize( void *v, size_t n ) {
+     97              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     98          }
+     99          
+    100          /*
+    101           * Initialize a context
+    102           */
+    103          void mbedtls_gcm_init( mbedtls_gcm_context *ctx )
+    104          {
+    105              memset( ctx, 0, sizeof( mbedtls_gcm_context ) );
+    106          }
+    107          
+    108          /*
+    109           * Precompute small multiples of H, that is set
+    110           *      HH[i] || HL[i] = H times i,
+    111           * where i is seen as a field element as in [MGV], ie high-order bits
+    112           * correspond to low powers of P. The result is stored in the same way, that
+    113           * is the high-order bit of HH corresponds to P^0 and the low-order bit of HL
+    114           * corresponds to P^127.
+    115           */
+    116          static int gcm_gen_table( mbedtls_gcm_context *ctx )
+    117          {
+    118              int ret, i, j;
+    119              uint64_t hi, lo;
+    120              uint64_t vl, vh;
+    121              unsigned char h[16];
+    122              size_t olen = 0;
+    123          
+    124              memset( h, 0, 16 );
+    125              if( ( ret = mbedtls_cipher_update( &ctx->cipher_ctx, h, 16, h, &olen ) ) != 0 )
+    126                  return( ret );
+    127          
+    128              /* pack h as two 64-bits ints, big-endian */
+    129              GET_UINT32_BE( hi, h,  0  );
+    130              GET_UINT32_BE( lo, h,  4  );
+    131              vh = (uint64_t) hi << 32 | lo;
+    132          
+    133              GET_UINT32_BE( hi, h,  8  );
+    134              GET_UINT32_BE( lo, h,  12 );
+    135              vl = (uint64_t) hi << 32 | lo;
+    136          
+    137              /* 8 = 1000 corresponds to 1 in GF(2^128) */
+    138              ctx->HL[8] = vl;
+    139              ctx->HH[8] = vh;
+    140          
+    141          #if defined(MBEDTLS_AESNI_C) && defined(MBEDTLS_HAVE_X86_64)
+    142              /* With CLMUL support, we need only h, not the rest of the table */
+    143              if( mbedtls_aesni_has_support( MBEDTLS_AESNI_CLMUL ) )
+    144                  return( 0 );
+    145          #endif
+    146          
+    147              /* 0 corresponds to 0 in GF(2^128) */
+    148              ctx->HH[0] = 0;
+    149              ctx->HL[0] = 0;
+    150          
+    151              for( i = 4; i > 0; i >>= 1 )
+    152              {
+    153                  uint32_t T = ( vl & 1 ) * 0xe1000000U;
+    154                  vl  = ( vh << 63 ) | ( vl >> 1 );
+    155                  vh  = ( vh >> 1 ) ^ ( (uint64_t) T << 32);
+    156          
+    157                  ctx->HL[i] = vl;
+    158                  ctx->HH[i] = vh;
+    159              }
+    160          
+    161              for( i = 2; i <= 8; i *= 2 )
+    162              {
+    163                  uint64_t *HiL = ctx->HL + i, *HiH = ctx->HH + i;
+    164                  vh = *HiH;
+    165                  vl = *HiL;
+    166                  for( j = 1; j < i; j++ )
+    167                  {
+    168                      HiH[j] = vh ^ ctx->HH[j];
+    169                      HiL[j] = vl ^ ctx->HL[j];
+    170                  }
+    171              }
+    172          
+    173              return( 0 );
+    174          }
+    175          
+    176          int mbedtls_gcm_setkey( mbedtls_gcm_context *ctx,
+    177                                  mbedtls_cipher_id_t cipher,
+    178                                  const unsigned char *key,
+    179                                  unsigned int keybits )
+    180          {
+    181              int ret;
+    182              const mbedtls_cipher_info_t *cipher_info;
+    183          
+    184              cipher_info = mbedtls_cipher_info_from_values( cipher, keybits, MBEDTLS_MODE_ECB );
+    185              if( cipher_info == NULL )
+    186                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    187          
+    188              if( cipher_info->block_size != 16 )
+    189                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    190          
+    191              mbedtls_cipher_free( &ctx->cipher_ctx );
+    192          
+    193              if( ( ret = mbedtls_cipher_setup( &ctx->cipher_ctx, cipher_info ) ) != 0 )
+    194                  return( ret );
+    195          
+    196              if( ( ret = mbedtls_cipher_setkey( &ctx->cipher_ctx, key, keybits,
+    197                                         MBEDTLS_ENCRYPT ) ) != 0 )
+    198              {
+    199                  return( ret );
+    200              }
+    201          
+    202              if( ( ret = gcm_gen_table( ctx ) ) != 0 )
+    203                  return( ret );
+    204          
+    205              return( 0 );
+    206          }
+    207          
+    208          /*
+    209           * Shoup's method for multiplication use this table with
+    210           *      last4[x] = x times P^128
+    211           * where x and last4[x] are seen as elements of GF(2^128) as in [MGV]
+    212           */
+    213          static const uint64_t last4[16] =
+    214          {
+    215              0x0000, 0x1c20, 0x3840, 0x2460,
+    216              0x7080, 0x6ca0, 0x48c0, 0x54e0,
+    217              0xe100, 0xfd20, 0xd940, 0xc560,
+    218              0x9180, 0x8da0, 0xa9c0, 0xb5e0
+    219          };
+    220          
+    221          /*
+    222           * Sets output to x times H using the precomputed tables.
+    223           * x and output are seen as elements of GF(2^128) as in [MGV].
+    224           */
+    225          static void gcm_mult( mbedtls_gcm_context *ctx, const unsigned char x[16],
+    226                                unsigned char output[16] )
+    227          {
+    228              int i = 0;
+    229              unsigned char lo, hi, rem;
+    230              uint64_t zh, zl;
+    231          
+    232          #if defined(MBEDTLS_AESNI_C) && defined(MBEDTLS_HAVE_X86_64)
+    233              if( mbedtls_aesni_has_support( MBEDTLS_AESNI_CLMUL ) ) {
+    234                  unsigned char h[16];
+    235          
+    236                  PUT_UINT32_BE( ctx->HH[8] >> 32, h,  0 );
+    237                  PUT_UINT32_BE( ctx->HH[8],       h,  4 );
+    238                  PUT_UINT32_BE( ctx->HL[8] >> 32, h,  8 );
+    239                  PUT_UINT32_BE( ctx->HL[8],       h, 12 );
+    240          
+    241                  mbedtls_aesni_gcm_mult( output, x, h );
+    242                  return;
+    243              }
+    244          #endif /* MBEDTLS_AESNI_C && MBEDTLS_HAVE_X86_64 */
+    245          
+    246              lo = x[15] & 0xf;
+    247          
+    248              zh = ctx->HH[lo];
+    249              zl = ctx->HL[lo];
+    250          
+    251              for( i = 15; i >= 0; i-- )
+    252              {
+    253                  lo = x[i] & 0xf;
+    254                  hi = x[i] >> 4;
+    255          
+    256                  if( i != 15 )
+    257                  {
+    258                      rem = (unsigned char) zl & 0xf;
+    259                      zl = ( zh << 60 ) | ( zl >> 4 );
+    260                      zh = ( zh >> 4 );
+    261                      zh ^= (uint64_t) last4[rem] << 48;
+    262                      zh ^= ctx->HH[lo];
+    263                      zl ^= ctx->HL[lo];
+    264          
+    265                  }
+    266          
+    267                  rem = (unsigned char) zl & 0xf;
+    268                  zl = ( zh << 60 ) | ( zl >> 4 );
+    269                  zh = ( zh >> 4 );
+    270                  zh ^= (uint64_t) last4[rem] << 48;
+    271                  zh ^= ctx->HH[hi];
+    272                  zl ^= ctx->HL[hi];
+    273              }
+    274          
+    275              PUT_UINT32_BE( zh >> 32, output, 0 );
+    276              PUT_UINT32_BE( zh, output, 4 );
+    277              PUT_UINT32_BE( zl >> 32, output, 8 );
+    278              PUT_UINT32_BE( zl, output, 12 );
+    279          }
+    280          
+    281          int mbedtls_gcm_starts( mbedtls_gcm_context *ctx,
+    282                          int mode,
+    283                          const unsigned char *iv,
+    284                          size_t iv_len,
+    285                          const unsigned char *add,
+    286                          size_t add_len )
+    287          {
+    288              int ret;
+    289              unsigned char work_buf[16];
+    290              size_t i;
+    291              const unsigned char *p;
+    292              size_t use_len, olen = 0;
+    293          
+    294              /* IV and AD are limited to 2^64 bits, so 2^61 bytes */
+    295              /* IV is not allowed to be zero length */
+    296              if( iv_len == 0 ||
+    297                ( (uint64_t) iv_len  ) >> 61 != 0 ||
+    298                ( (uint64_t) add_len ) >> 61 != 0 )
+    299              {
+    300                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    301              }
+    302          
+    303              memset( ctx->y, 0x00, sizeof(ctx->y) );
+    304              memset( ctx->buf, 0x00, sizeof(ctx->buf) );
+    305          
+    306              ctx->mode = mode;
+    307              ctx->len = 0;
+    308              ctx->add_len = 0;
+    309          
+    310              if( iv_len == 12 )
+    311              {
+    312                  memcpy( ctx->y, iv, iv_len );
+    313                  ctx->y[15] = 1;
+    314              }
+    315              else
+    316              {
+    317                  memset( work_buf, 0x00, 16 );
+    318                  PUT_UINT32_BE( iv_len * 8, work_buf, 12 );
+    319          
+    320                  p = iv;
+    321                  while( iv_len > 0 )
+    322                  {
+    323                      use_len = ( iv_len < 16 ) ? iv_len : 16;
+    324          
+    325                      for( i = 0; i < use_len; i++ )
+    326                          ctx->y[i] ^= p[i];
+    327          
+    328                      gcm_mult( ctx, ctx->y, ctx->y );
+    329          
+    330                      iv_len -= use_len;
+    331                      p += use_len;
+    332                  }
+    333          
+    334                  for( i = 0; i < 16; i++ )
+    335                      ctx->y[i] ^= work_buf[i];
+    336          
+    337                  gcm_mult( ctx, ctx->y, ctx->y );
+    338              }
+    339          
+    340              if( ( ret = mbedtls_cipher_update( &ctx->cipher_ctx, ctx->y, 16, ctx->base_ectr,
+    341                                       &olen ) ) != 0 )
+    342              {
+    343                  return( ret );
+    344              }
+    345          
+    346              ctx->add_len = add_len;
+    347              p = add;
+    348              while( add_len > 0 )
+    349              {
+    350                  use_len = ( add_len < 16 ) ? add_len : 16;
+    351          
+    352                  for( i = 0; i < use_len; i++ )
+    353                      ctx->buf[i] ^= p[i];
+    354          
+    355                  gcm_mult( ctx, ctx->buf, ctx->buf );
+    356          
+    357                  add_len -= use_len;
+    358                  p += use_len;
+    359              }
+    360          
+    361              return( 0 );
+    362          }
+    363          
+    364          int mbedtls_gcm_update( mbedtls_gcm_context *ctx,
+    365                          size_t length,
+    366                          const unsigned char *input,
+    367                          unsigned char *output )
+    368          {
+    369              int ret;
+    370              unsigned char ectr[16];
+    371              size_t i;
+    372              const unsigned char *p;
+    373              unsigned char *out_p = output;
+    374              size_t use_len, olen = 0;
+    375          
+    376              if( output > input && (size_t) ( output - input ) < length )
+    377                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    378          
+    379              /* Total length is restricted to 2^39 - 256 bits, ie 2^36 - 2^5 bytes
+    380               * Also check for possible overflow */
+    381              if( ctx->len + length < ctx->len ||
+    382                  (uint64_t) ctx->len + length > 0xFFFFFFFE0ull )
+    383              {
+    384                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    385              }
+    386          
+    387              ctx->len += length;
+    388          
+    389              p = input;
+    390              while( length > 0 )
+    391              {
+    392                  use_len = ( length < 16 ) ? length : 16;
+    393          
+    394                  for( i = 16; i > 12; i-- )
+    395                      if( ++ctx->y[i - 1] != 0 )
+    396                          break;
+    397          
+    398                  if( ( ret = mbedtls_cipher_update( &ctx->cipher_ctx, ctx->y, 16, ectr,
+    399                                             &olen ) ) != 0 )
+    400                  {
+    401                      return( ret );
+    402                  }
+    403          
+    404                  for( i = 0; i < use_len; i++ )
+    405                  {
+    406                      if( ctx->mode == MBEDTLS_GCM_DECRYPT )
+    407                          ctx->buf[i] ^= p[i];
+    408                      out_p[i] = ectr[i] ^ p[i];
+    409                      if( ctx->mode == MBEDTLS_GCM_ENCRYPT )
+    410                          ctx->buf[i] ^= out_p[i];
+    411                  }
+    412          
+    413                  gcm_mult( ctx, ctx->buf, ctx->buf );
+    414          
+    415                  length -= use_len;
+    416                  p += use_len;
+    417                  out_p += use_len;
+    418              }
+    419          
+    420              return( 0 );
+    421          }
+    422          
+    423          int mbedtls_gcm_finish( mbedtls_gcm_context *ctx,
+    424                          unsigned char *tag,
+    425                          size_t tag_len )
+    426          {
+    427              unsigned char work_buf[16];
+    428              size_t i;
+    429              uint64_t orig_len = ctx->len * 8;
+    430              uint64_t orig_add_len = ctx->add_len * 8;
+    431          
+    432              if( tag_len > 16 || tag_len < 4 )
+    433                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    434          
+    435              memcpy( tag, ctx->base_ectr, tag_len );
+    436          
+    437              if( orig_len || orig_add_len )
+    438              {
+    439                  memset( work_buf, 0x00, 16 );
+    440          
+    441                  PUT_UINT32_BE( ( orig_add_len >> 32 ), work_buf, 0  );
+    442                  PUT_UINT32_BE( ( orig_add_len       ), work_buf, 4  );
+    443                  PUT_UINT32_BE( ( orig_len     >> 32 ), work_buf, 8  );
+    444                  PUT_UINT32_BE( ( orig_len           ), work_buf, 12 );
+    445          
+    446                  for( i = 0; i < 16; i++ )
+    447                      ctx->buf[i] ^= work_buf[i];
+    448          
+    449                  gcm_mult( ctx, ctx->buf, ctx->buf );
+    450          
+    451                  for( i = 0; i < tag_len; i++ )
+    452                      tag[i] ^= ctx->buf[i];
+    453              }
+    454          
+    455              return( 0 );
+    456          }
+    457          
+    458          int mbedtls_gcm_crypt_and_tag( mbedtls_gcm_context *ctx,
+    459                                 int mode,
+    460                                 size_t length,
+    461                                 const unsigned char *iv,
+    462                                 size_t iv_len,
+    463                                 const unsigned char *add,
+    464                                 size_t add_len,
+    465                                 const unsigned char *input,
+    466                                 unsigned char *output,
+    467                                 size_t tag_len,
+    468                                 unsigned char *tag )
+    469          {
+    470              int ret;
+    471          
+    472              if( ( ret = mbedtls_gcm_starts( ctx, mode, iv, iv_len, add, add_len ) ) != 0 )
+    473                  return( ret );
+    474          
+    475              if( ( ret = mbedtls_gcm_update( ctx, length, input, output ) ) != 0 )
+    476                  return( ret );
+    477          
+    478              if( ( ret = mbedtls_gcm_finish( ctx, tag, tag_len ) ) != 0 )
+    479                  return( ret );
+    480          
+    481              return( 0 );
+    482          }
+    483          
+    484          int mbedtls_gcm_auth_decrypt( mbedtls_gcm_context *ctx,
+    485                                size_t length,
+    486                                const unsigned char *iv,
+    487                                size_t iv_len,
+    488                                const unsigned char *add,
+    489                                size_t add_len,
+    490                                const unsigned char *tag,
+    491                                size_t tag_len,
+    492                                const unsigned char *input,
+    493                                unsigned char *output )
+    494          {
+    495              int ret;
+    496              unsigned char check_tag[16];
+    497              size_t i;
+    498              int diff;
+    499          
+    500              if( ( ret = mbedtls_gcm_crypt_and_tag( ctx, MBEDTLS_GCM_DECRYPT, length,
+    501                                             iv, iv_len, add, add_len,
+    502                                             input, output, tag_len, check_tag ) ) != 0 )
+    503              {
+    504                  return( ret );
+    505              }
+    506          
+    507              /* Check tag in "constant-time" */
+    508              for( diff = 0, i = 0; i < tag_len; i++ )
+    509                  diff |= tag[i] ^ check_tag[i];
+    510          
+    511              if( diff != 0 )
+    512              {
+    513                  mbedtls_zeroize( output, length );
+    514                  return( MBEDTLS_ERR_GCM_AUTH_FAILED );
+    515              }
+    516          
+    517              return( 0 );
+    518          }
+    519          
+    520          void mbedtls_gcm_free( mbedtls_gcm_context *ctx )
+    521          {
+    522              mbedtls_cipher_free( &ctx->cipher_ctx );
+    523              mbedtls_zeroize( ctx, sizeof( mbedtls_gcm_context ) );
+    524          }
+    525          
+    526          #endif /* !MBEDTLS_GCM_ALT */
+    527          
+    528          #if defined(MBEDTLS_SELF_TEST) && defined(MBEDTLS_AES_C)
+    529          /*
+    530           * AES-GCM test vectors from:
+    531           *
+    532           * http://csrc.nist.gov/groups/STM/cavp/documents/mac/gcmtestvectors.zip
+    533           */
+    534          #define MAX_TESTS   6
+    535          
+    536          static const int key_index[MAX_TESTS] =
+    537              { 0, 0, 1, 1, 1, 1 };
+    538          
+    539          static const unsigned char key[MAX_TESTS][32] =
+    540          {
+    541              { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    542                0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    543                0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    544                0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
+    545              { 0xfe, 0xff, 0xe9, 0x92, 0x86, 0x65, 0x73, 0x1c,
+    546                0x6d, 0x6a, 0x8f, 0x94, 0x67, 0x30, 0x83, 0x08,
+    547                0xfe, 0xff, 0xe9, 0x92, 0x86, 0x65, 0x73, 0x1c,
+    548                0x6d, 0x6a, 0x8f, 0x94, 0x67, 0x30, 0x83, 0x08 },
+    549          };
+    550          
+    551          static const size_t iv_len[MAX_TESTS] =
+    552              { 12, 12, 12, 12, 8, 60 };
+    553          
+    554          static const int iv_index[MAX_TESTS] =
+    555              { 0, 0, 1, 1, 1, 2 };
+    556          
+    557          static const unsigned char iv[MAX_TESTS][64] =
+    558          {
+    559              { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    560                0x00, 0x00, 0x00, 0x00 },
+    561              { 0xca, 0xfe, 0xba, 0xbe, 0xfa, 0xce, 0xdb, 0xad,
+    562                0xde, 0xca, 0xf8, 0x88 },
+    563              { 0x93, 0x13, 0x22, 0x5d, 0xf8, 0x84, 0x06, 0xe5,
+    564                0x55, 0x90, 0x9c, 0x5a, 0xff, 0x52, 0x69, 0xaa,
+    565                0x6a, 0x7a, 0x95, 0x38, 0x53, 0x4f, 0x7d, 0xa1,
+    566                0xe4, 0xc3, 0x03, 0xd2, 0xa3, 0x18, 0xa7, 0x28,
+    567                0xc3, 0xc0, 0xc9, 0x51, 0x56, 0x80, 0x95, 0x39,
+    568                0xfc, 0xf0, 0xe2, 0x42, 0x9a, 0x6b, 0x52, 0x54,
+    569                0x16, 0xae, 0xdb, 0xf5, 0xa0, 0xde, 0x6a, 0x57,
+    570                0xa6, 0x37, 0xb3, 0x9b },
+    571          };
+    572          
+    573          static const size_t add_len[MAX_TESTS] =
+    574              { 0, 0, 0, 20, 20, 20 };
+    575          
+    576          static const int add_index[MAX_TESTS] =
+    577              { 0, 0, 0, 1, 1, 1 };
+    578          
+    579          static const unsigned char additional[MAX_TESTS][64] =
+    580          {
+    581              { 0x00 },
+    582              { 0xfe, 0xed, 0xfa, 0xce, 0xde, 0xad, 0xbe, 0xef,
+    583                0xfe, 0xed, 0xfa, 0xce, 0xde, 0xad, 0xbe, 0xef,
+    584                0xab, 0xad, 0xda, 0xd2 },
+    585          };
+    586          
+    587          static const size_t pt_len[MAX_TESTS] =
+    588              { 0, 16, 64, 60, 60, 60 };
+    589          
+    590          static const int pt_index[MAX_TESTS] =
+    591              { 0, 0, 1, 1, 1, 1 };
+    592          
+    593          static const unsigned char pt[MAX_TESTS][64] =
+    594          {
+    595              { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    596                0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
+    597              { 0xd9, 0x31, 0x32, 0x25, 0xf8, 0x84, 0x06, 0xe5,
+    598                0xa5, 0x59, 0x09, 0xc5, 0xaf, 0xf5, 0x26, 0x9a,
+    599                0x86, 0xa7, 0xa9, 0x53, 0x15, 0x34, 0xf7, 0xda,
+    600                0x2e, 0x4c, 0x30, 0x3d, 0x8a, 0x31, 0x8a, 0x72,
+    601                0x1c, 0x3c, 0x0c, 0x95, 0x95, 0x68, 0x09, 0x53,
+    602                0x2f, 0xcf, 0x0e, 0x24, 0x49, 0xa6, 0xb5, 0x25,
+    603                0xb1, 0x6a, 0xed, 0xf5, 0xaa, 0x0d, 0xe6, 0x57,
+    604                0xba, 0x63, 0x7b, 0x39, 0x1a, 0xaf, 0xd2, 0x55 },
+    605          };
+    606          
+    607          static const unsigned char ct[MAX_TESTS * 3][64] =
+    608          {
+    609              { 0x00 },
+    610              { 0x03, 0x88, 0xda, 0xce, 0x60, 0xb6, 0xa3, 0x92,
+    611                0xf3, 0x28, 0xc2, 0xb9, 0x71, 0xb2, 0xfe, 0x78 },
+    612              { 0x42, 0x83, 0x1e, 0xc2, 0x21, 0x77, 0x74, 0x24,
+    613                0x4b, 0x72, 0x21, 0xb7, 0x84, 0xd0, 0xd4, 0x9c,
+    614                0xe3, 0xaa, 0x21, 0x2f, 0x2c, 0x02, 0xa4, 0xe0,
+    615                0x35, 0xc1, 0x7e, 0x23, 0x29, 0xac, 0xa1, 0x2e,
+    616                0x21, 0xd5, 0x14, 0xb2, 0x54, 0x66, 0x93, 0x1c,
+    617                0x7d, 0x8f, 0x6a, 0x5a, 0xac, 0x84, 0xaa, 0x05,
+    618                0x1b, 0xa3, 0x0b, 0x39, 0x6a, 0x0a, 0xac, 0x97,
+    619                0x3d, 0x58, 0xe0, 0x91, 0x47, 0x3f, 0x59, 0x85 },
+    620              { 0x42, 0x83, 0x1e, 0xc2, 0x21, 0x77, 0x74, 0x24,
+    621                0x4b, 0x72, 0x21, 0xb7, 0x84, 0xd0, 0xd4, 0x9c,
+    622                0xe3, 0xaa, 0x21, 0x2f, 0x2c, 0x02, 0xa4, 0xe0,
+    623                0x35, 0xc1, 0x7e, 0x23, 0x29, 0xac, 0xa1, 0x2e,
+    624                0x21, 0xd5, 0x14, 0xb2, 0x54, 0x66, 0x93, 0x1c,
+    625                0x7d, 0x8f, 0x6a, 0x5a, 0xac, 0x84, 0xaa, 0x05,
+    626                0x1b, 0xa3, 0x0b, 0x39, 0x6a, 0x0a, 0xac, 0x97,
+    627                0x3d, 0x58, 0xe0, 0x91 },
+    628              { 0x61, 0x35, 0x3b, 0x4c, 0x28, 0x06, 0x93, 0x4a,
+    629                0x77, 0x7f, 0xf5, 0x1f, 0xa2, 0x2a, 0x47, 0x55,
+    630                0x69, 0x9b, 0x2a, 0x71, 0x4f, 0xcd, 0xc6, 0xf8,
+    631                0x37, 0x66, 0xe5, 0xf9, 0x7b, 0x6c, 0x74, 0x23,
+    632                0x73, 0x80, 0x69, 0x00, 0xe4, 0x9f, 0x24, 0xb2,
+    633                0x2b, 0x09, 0x75, 0x44, 0xd4, 0x89, 0x6b, 0x42,
+    634                0x49, 0x89, 0xb5, 0xe1, 0xeb, 0xac, 0x0f, 0x07,
+    635                0xc2, 0x3f, 0x45, 0x98 },
+    636              { 0x8c, 0xe2, 0x49, 0x98, 0x62, 0x56, 0x15, 0xb6,
+    637                0x03, 0xa0, 0x33, 0xac, 0xa1, 0x3f, 0xb8, 0x94,
+    638                0xbe, 0x91, 0x12, 0xa5, 0xc3, 0xa2, 0x11, 0xa8,
+    639                0xba, 0x26, 0x2a, 0x3c, 0xca, 0x7e, 0x2c, 0xa7,
+    640                0x01, 0xe4, 0xa9, 0xa4, 0xfb, 0xa4, 0x3c, 0x90,
+    641                0xcc, 0xdc, 0xb2, 0x81, 0xd4, 0x8c, 0x7c, 0x6f,
+    642                0xd6, 0x28, 0x75, 0xd2, 0xac, 0xa4, 0x17, 0x03,
+    643                0x4c, 0x34, 0xae, 0xe5 },
+    644              { 0x00 },
+    645              { 0x98, 0xe7, 0x24, 0x7c, 0x07, 0xf0, 0xfe, 0x41,
+    646                0x1c, 0x26, 0x7e, 0x43, 0x84, 0xb0, 0xf6, 0x00 },
+    647              { 0x39, 0x80, 0xca, 0x0b, 0x3c, 0x00, 0xe8, 0x41,
+    648                0xeb, 0x06, 0xfa, 0xc4, 0x87, 0x2a, 0x27, 0x57,
+    649                0x85, 0x9e, 0x1c, 0xea, 0xa6, 0xef, 0xd9, 0x84,
+    650                0x62, 0x85, 0x93, 0xb4, 0x0c, 0xa1, 0xe1, 0x9c,
+    651                0x7d, 0x77, 0x3d, 0x00, 0xc1, 0x44, 0xc5, 0x25,
+    652                0xac, 0x61, 0x9d, 0x18, 0xc8, 0x4a, 0x3f, 0x47,
+    653                0x18, 0xe2, 0x44, 0x8b, 0x2f, 0xe3, 0x24, 0xd9,
+    654                0xcc, 0xda, 0x27, 0x10, 0xac, 0xad, 0xe2, 0x56 },
+    655              { 0x39, 0x80, 0xca, 0x0b, 0x3c, 0x00, 0xe8, 0x41,
+    656                0xeb, 0x06, 0xfa, 0xc4, 0x87, 0x2a, 0x27, 0x57,
+    657                0x85, 0x9e, 0x1c, 0xea, 0xa6, 0xef, 0xd9, 0x84,
+    658                0x62, 0x85, 0x93, 0xb4, 0x0c, 0xa1, 0xe1, 0x9c,
+    659                0x7d, 0x77, 0x3d, 0x00, 0xc1, 0x44, 0xc5, 0x25,
+    660                0xac, 0x61, 0x9d, 0x18, 0xc8, 0x4a, 0x3f, 0x47,
+    661                0x18, 0xe2, 0x44, 0x8b, 0x2f, 0xe3, 0x24, 0xd9,
+    662                0xcc, 0xda, 0x27, 0x10 },
+    663              { 0x0f, 0x10, 0xf5, 0x99, 0xae, 0x14, 0xa1, 0x54,
+    664                0xed, 0x24, 0xb3, 0x6e, 0x25, 0x32, 0x4d, 0xb8,
+    665                0xc5, 0x66, 0x63, 0x2e, 0xf2, 0xbb, 0xb3, 0x4f,
+    666                0x83, 0x47, 0x28, 0x0f, 0xc4, 0x50, 0x70, 0x57,
+    667                0xfd, 0xdc, 0x29, 0xdf, 0x9a, 0x47, 0x1f, 0x75,
+    668                0xc6, 0x65, 0x41, 0xd4, 0xd4, 0xda, 0xd1, 0xc9,
+    669                0xe9, 0x3a, 0x19, 0xa5, 0x8e, 0x8b, 0x47, 0x3f,
+    670                0xa0, 0xf0, 0x62, 0xf7 },
+    671              { 0xd2, 0x7e, 0x88, 0x68, 0x1c, 0xe3, 0x24, 0x3c,
+    672                0x48, 0x30, 0x16, 0x5a, 0x8f, 0xdc, 0xf9, 0xff,
+    673                0x1d, 0xe9, 0xa1, 0xd8, 0xe6, 0xb4, 0x47, 0xef,
+    674                0x6e, 0xf7, 0xb7, 0x98, 0x28, 0x66, 0x6e, 0x45,
+    675                0x81, 0xe7, 0x90, 0x12, 0xaf, 0x34, 0xdd, 0xd9,
+    676                0xe2, 0xf0, 0x37, 0x58, 0x9b, 0x29, 0x2d, 0xb3,
+    677                0xe6, 0x7c, 0x03, 0x67, 0x45, 0xfa, 0x22, 0xe7,
+    678                0xe9, 0xb7, 0x37, 0x3b },
+    679              { 0x00 },
+    680              { 0xce, 0xa7, 0x40, 0x3d, 0x4d, 0x60, 0x6b, 0x6e,
+    681                0x07, 0x4e, 0xc5, 0xd3, 0xba, 0xf3, 0x9d, 0x18 },
+    682              { 0x52, 0x2d, 0xc1, 0xf0, 0x99, 0x56, 0x7d, 0x07,
+    683                0xf4, 0x7f, 0x37, 0xa3, 0x2a, 0x84, 0x42, 0x7d,
+    684                0x64, 0x3a, 0x8c, 0xdc, 0xbf, 0xe5, 0xc0, 0xc9,
+    685                0x75, 0x98, 0xa2, 0xbd, 0x25, 0x55, 0xd1, 0xaa,
+    686                0x8c, 0xb0, 0x8e, 0x48, 0x59, 0x0d, 0xbb, 0x3d,
+    687                0xa7, 0xb0, 0x8b, 0x10, 0x56, 0x82, 0x88, 0x38,
+    688                0xc5, 0xf6, 0x1e, 0x63, 0x93, 0xba, 0x7a, 0x0a,
+    689                0xbc, 0xc9, 0xf6, 0x62, 0x89, 0x80, 0x15, 0xad },
+    690              { 0x52, 0x2d, 0xc1, 0xf0, 0x99, 0x56, 0x7d, 0x07,
+    691                0xf4, 0x7f, 0x37, 0xa3, 0x2a, 0x84, 0x42, 0x7d,
+    692                0x64, 0x3a, 0x8c, 0xdc, 0xbf, 0xe5, 0xc0, 0xc9,
+    693                0x75, 0x98, 0xa2, 0xbd, 0x25, 0x55, 0xd1, 0xaa,
+    694                0x8c, 0xb0, 0x8e, 0x48, 0x59, 0x0d, 0xbb, 0x3d,
+    695                0xa7, 0xb0, 0x8b, 0x10, 0x56, 0x82, 0x88, 0x38,
+    696                0xc5, 0xf6, 0x1e, 0x63, 0x93, 0xba, 0x7a, 0x0a,
+    697                0xbc, 0xc9, 0xf6, 0x62 },
+    698              { 0xc3, 0x76, 0x2d, 0xf1, 0xca, 0x78, 0x7d, 0x32,
+    699                0xae, 0x47, 0xc1, 0x3b, 0xf1, 0x98, 0x44, 0xcb,
+    700                0xaf, 0x1a, 0xe1, 0x4d, 0x0b, 0x97, 0x6a, 0xfa,
+    701                0xc5, 0x2f, 0xf7, 0xd7, 0x9b, 0xba, 0x9d, 0xe0,
+    702                0xfe, 0xb5, 0x82, 0xd3, 0x39, 0x34, 0xa4, 0xf0,
+    703                0x95, 0x4c, 0xc2, 0x36, 0x3b, 0xc7, 0x3f, 0x78,
+    704                0x62, 0xac, 0x43, 0x0e, 0x64, 0xab, 0xe4, 0x99,
+    705                0xf4, 0x7c, 0x9b, 0x1f },
+    706              { 0x5a, 0x8d, 0xef, 0x2f, 0x0c, 0x9e, 0x53, 0xf1,
+    707                0xf7, 0x5d, 0x78, 0x53, 0x65, 0x9e, 0x2a, 0x20,
+    708                0xee, 0xb2, 0xb2, 0x2a, 0xaf, 0xde, 0x64, 0x19,
+    709                0xa0, 0x58, 0xab, 0x4f, 0x6f, 0x74, 0x6b, 0xf4,
+    710                0x0f, 0xc0, 0xc3, 0xb7, 0x80, 0xf2, 0x44, 0x45,
+    711                0x2d, 0xa3, 0xeb, 0xf1, 0xc5, 0xd8, 0x2c, 0xde,
+    712                0xa2, 0x41, 0x89, 0x97, 0x20, 0x0e, 0xf8, 0x2e,
+    713                0x44, 0xae, 0x7e, 0x3f },
+    714          };
+    715          
+    716          static const unsigned char tag[MAX_TESTS * 3][16] =
+    717          {
+    718              { 0x58, 0xe2, 0xfc, 0xce, 0xfa, 0x7e, 0x30, 0x61,
+    719                0x36, 0x7f, 0x1d, 0x57, 0xa4, 0xe7, 0x45, 0x5a },
+    720              { 0xab, 0x6e, 0x47, 0xd4, 0x2c, 0xec, 0x13, 0xbd,
+    721                0xf5, 0x3a, 0x67, 0xb2, 0x12, 0x57, 0xbd, 0xdf },
+    722              { 0x4d, 0x5c, 0x2a, 0xf3, 0x27, 0xcd, 0x64, 0xa6,
+    723                0x2c, 0xf3, 0x5a, 0xbd, 0x2b, 0xa6, 0xfa, 0xb4 },
+    724              { 0x5b, 0xc9, 0x4f, 0xbc, 0x32, 0x21, 0xa5, 0xdb,
+    725                0x94, 0xfa, 0xe9, 0x5a, 0xe7, 0x12, 0x1a, 0x47 },
+    726              { 0x36, 0x12, 0xd2, 0xe7, 0x9e, 0x3b, 0x07, 0x85,
+    727                0x56, 0x1b, 0xe1, 0x4a, 0xac, 0xa2, 0xfc, 0xcb },
+    728              { 0x61, 0x9c, 0xc5, 0xae, 0xff, 0xfe, 0x0b, 0xfa,
+    729                0x46, 0x2a, 0xf4, 0x3c, 0x16, 0x99, 0xd0, 0x50 },
+    730              { 0xcd, 0x33, 0xb2, 0x8a, 0xc7, 0x73, 0xf7, 0x4b,
+    731                0xa0, 0x0e, 0xd1, 0xf3, 0x12, 0x57, 0x24, 0x35 },
+    732              { 0x2f, 0xf5, 0x8d, 0x80, 0x03, 0x39, 0x27, 0xab,
+    733                0x8e, 0xf4, 0xd4, 0x58, 0x75, 0x14, 0xf0, 0xfb },
+    734              { 0x99, 0x24, 0xa7, 0xc8, 0x58, 0x73, 0x36, 0xbf,
+    735                0xb1, 0x18, 0x02, 0x4d, 0xb8, 0x67, 0x4a, 0x14 },
+    736              { 0x25, 0x19, 0x49, 0x8e, 0x80, 0xf1, 0x47, 0x8f,
+    737                0x37, 0xba, 0x55, 0xbd, 0x6d, 0x27, 0x61, 0x8c },
+    738              { 0x65, 0xdc, 0xc5, 0x7f, 0xcf, 0x62, 0x3a, 0x24,
+    739                0x09, 0x4f, 0xcc, 0xa4, 0x0d, 0x35, 0x33, 0xf8 },
+    740              { 0xdc, 0xf5, 0x66, 0xff, 0x29, 0x1c, 0x25, 0xbb,
+    741                0xb8, 0x56, 0x8f, 0xc3, 0xd3, 0x76, 0xa6, 0xd9 },
+    742              { 0x53, 0x0f, 0x8a, 0xfb, 0xc7, 0x45, 0x36, 0xb9,
+    743                0xa9, 0x63, 0xb4, 0xf1, 0xc4, 0xcb, 0x73, 0x8b },
+    744              { 0xd0, 0xd1, 0xc8, 0xa7, 0x99, 0x99, 0x6b, 0xf0,
+    745                0x26, 0x5b, 0x98, 0xb5, 0xd4, 0x8a, 0xb9, 0x19 },
+    746              { 0xb0, 0x94, 0xda, 0xc5, 0xd9, 0x34, 0x71, 0xbd,
+    747                0xec, 0x1a, 0x50, 0x22, 0x70, 0xe3, 0xcc, 0x6c },
+    748              { 0x76, 0xfc, 0x6e, 0xce, 0x0f, 0x4e, 0x17, 0x68,
+    749                0xcd, 0xdf, 0x88, 0x53, 0xbb, 0x2d, 0x55, 0x1b },
+    750              { 0x3a, 0x33, 0x7d, 0xbf, 0x46, 0xa7, 0x92, 0xc4,
+    751                0x5e, 0x45, 0x49, 0x13, 0xfe, 0x2e, 0xa8, 0xf2 },
+    752              { 0xa4, 0x4a, 0x82, 0x66, 0xee, 0x1c, 0x8e, 0xb0,
+    753                0xc8, 0xb5, 0xd4, 0xcf, 0x5a, 0xe9, 0xf1, 0x9a },
+    754          };
+    755          
+    756          int mbedtls_gcm_self_test( int verbose )
+    757          {
+    758              mbedtls_gcm_context ctx;
+    759              unsigned char buf[64];
+    760              unsigned char tag_buf[16];
+    761              int i, j, ret;
+    762              mbedtls_cipher_id_t cipher = MBEDTLS_CIPHER_ID_AES;
+    763          #if defined( CRYPTOACC_PRESENT )
+    764              uint8_t numTests = MAX_TESTS-2; // Cryptoacc only support iv_len of 12 bytes.
+    765          #else
+    766              uint8_t numTests = MAX_TESTS;
+    767          #endif
+    768          
+    769              for( j = 0; j < 3; j++ )
+    770              {
+    771                  int key_len = 128 + 64 * j;
+    772          
+    773                  for( i = 0; i < numTests; i++ )
+    774                  {
+    775                      mbedtls_gcm_init( &ctx );
+    776          
+    777                      if( verbose != 0 )
+    778                          mbedtls_printf( "  AES-GCM-%3d #%d (%s): ",
+    779                                          key_len, i, "enc" );
+    780          
+    781                      ret = mbedtls_gcm_setkey( &ctx, cipher, key[key_index[i]],
+    782                                                key_len );
+    783                      /*
+    784                       * AES-192 is an optional feature that may be unavailable when
+    785                       * there is an alternative underlying implementation i.e. when
+    786                       * MBEDTLS_AES_ALT is defined.
+    787                       */
+    788                      if( ret == MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE && key_len == 192 )
+    789                      {
+    790                          mbedtls_printf( "skipped\n" );
+    791                          break;
+    792                      }
+    793                      else if( ret != 0 )
+    794                      {
+    795                          goto exit;
+    796                      }
+    797          
+    798                      ret = mbedtls_gcm_crypt_and_tag( &ctx, MBEDTLS_GCM_ENCRYPT,
+    799                                                  pt_len[i],
+    800                                                  iv[iv_index[i]], iv_len[i],
+    801                                                  additional[add_index[i]], add_len[i],
+    802                                                  pt[pt_index[i]], buf, 16, tag_buf );
+    803                      if( ret != 0 )
+    804                          goto exit;
+    805          
+    806                      if ( memcmp( buf, ct[j * 6 + i], pt_len[i] ) != 0 ||
+    807                           memcmp( tag_buf, tag[j * 6 + i], 16 ) != 0 )
+    808                      {
+    809                          ret = 1;
+    810                          goto exit;
+    811                      }
+    812          
+    813                      mbedtls_gcm_free( &ctx );
+    814          
+    815                      if( verbose != 0 )
+    816                          mbedtls_printf( "passed\n" );
+    817          
+    818                      mbedtls_gcm_init( &ctx );
+    819          
+    820                      if( verbose != 0 )
+    821                          mbedtls_printf( "  AES-GCM-%3d #%d (%s): ",
+    822                                          key_len, i, "dec" );
+    823          
+    824                      ret = mbedtls_gcm_setkey( &ctx, cipher, key[key_index[i]],
+    825                                                key_len );
+    826                      if( ret != 0 )
+    827                          goto exit;
+    828          
+    829                      ret = mbedtls_gcm_crypt_and_tag( &ctx, MBEDTLS_GCM_DECRYPT,
+    830                                                  pt_len[i],
+    831                                                  iv[iv_index[i]], iv_len[i],
+    832                                                  additional[add_index[i]], add_len[i],
+    833                                                  ct[j * 6 + i], buf, 16, tag_buf );
+    834          
+    835                      if( ret != 0 )
+    836                          goto exit;
+    837          
+    838                      if( memcmp( buf, pt[pt_index[i]], pt_len[i] ) != 0 ||
+    839                          memcmp( tag_buf, tag[j * 6 + i], 16 ) != 0 )
+    840                      {
+    841                          ret = 1;
+    842                          goto exit;
+    843                      }
+    844          
+    845                      mbedtls_gcm_free( &ctx );
+    846          
+    847                      if( verbose != 0 )
+    848                          mbedtls_printf( "passed\n" );
+    849          
+    850                      mbedtls_gcm_init( &ctx );
+    851          
+    852                      if( verbose != 0 )
+    853                          mbedtls_printf( "  AES-GCM-%3d #%d split (%s): ",
+    854                                          key_len, i, "enc" );
+    855          
+    856                      ret = mbedtls_gcm_setkey( &ctx, cipher, key[key_index[i]],
+    857                                                key_len );
+    858                      if( ret != 0 )
+    859                          goto exit;
+    860          
+    861                      ret = mbedtls_gcm_starts( &ctx, MBEDTLS_GCM_ENCRYPT,
+    862                                                iv[iv_index[i]], iv_len[i],
+    863                                                additional[add_index[i]], add_len[i] );
+    864                      if( ret != 0 )
+    865                          goto exit;
+    866          
+    867                      if( pt_len[i] > 32 )
+    868                      {
+    869                          size_t rest_len = pt_len[i] - 32;
+    870                          ret = mbedtls_gcm_update( &ctx, 32, pt[pt_index[i]], buf );
+    871                          if( ret != 0 )
+    872                              goto exit;
+    873          
+    874                          ret = mbedtls_gcm_update( &ctx, rest_len, pt[pt_index[i]] + 32,
+    875                                            buf + 32 );
+    876                          if( ret != 0 )
+    877                              goto exit;
+    878                      }
+    879                      else
+    880                      {
+    881                          ret = mbedtls_gcm_update( &ctx, pt_len[i], pt[pt_index[i]], buf );
+    882                          if( ret != 0 )
+    883                              goto exit;
+    884                      }
+    885          
+    886                      ret = mbedtls_gcm_finish( &ctx, tag_buf, 16 );
+    887                      if( ret != 0 )
+    888                          goto exit;
+    889          
+    890                      if( memcmp( buf, ct[j * 6 + i], pt_len[i] ) != 0 ||
+    891                          memcmp( tag_buf, tag[j * 6 + i], 16 ) != 0 )
+    892                      {
+    893                          ret = 1;
+    894                          goto exit;
+    895                      }
+    896          
+    897                      mbedtls_gcm_free( &ctx );
+    898          
+    899                      if( verbose != 0 )
+    900                          mbedtls_printf( "passed\n" );
+    901          
+    902                      mbedtls_gcm_init( &ctx );
+    903          
+    904                      if( verbose != 0 )
+    905                          mbedtls_printf( "  AES-GCM-%3d #%d split (%s): ",
+    906                                          key_len, i, "dec" );
+    907          
+    908                      ret = mbedtls_gcm_setkey( &ctx, cipher, key[key_index[i]],
+    909                                                key_len );
+    910                      if( ret != 0 )
+    911                          goto exit;
+    912          
+    913                      ret = mbedtls_gcm_starts( &ctx, MBEDTLS_GCM_DECRYPT,
+    914                                        iv[iv_index[i]], iv_len[i],
+    915                                        additional[add_index[i]], add_len[i] );
+    916                      if( ret != 0 )
+    917                          goto exit;
+    918          
+    919                      if( pt_len[i] > 32 )
+    920                      {
+    921                          size_t rest_len = pt_len[i] - 32;
+    922                          ret = mbedtls_gcm_update( &ctx, 32, ct[j * 6 + i], buf );
+    923                          if( ret != 0 )
+    924                              goto exit;
+    925          
+    926                          ret = mbedtls_gcm_update( &ctx, rest_len, ct[j * 6 + i] + 32,
+    927                                                    buf + 32 );
+    928                          if( ret != 0 )
+    929                              goto exit;
+    930                      }
+    931                      else
+    932                      {
+    933                          ret = mbedtls_gcm_update( &ctx, pt_len[i], ct[j * 6 + i],
+    934                                                    buf );
+    935                          if( ret != 0 )
+    936                              goto exit;
+    937                      }
+    938          
+    939                      ret = mbedtls_gcm_finish( &ctx, tag_buf, 16 );
+    940                      if( ret != 0 )
+    941                          goto exit;
+    942          
+    943                      if( memcmp( buf, pt[pt_index[i]], pt_len[i] ) != 0 ||
+    944                          memcmp( tag_buf, tag[j * 6 + i], 16 ) != 0 )
+    945                      {
+    946                          ret = 1;
+    947                          goto exit;
+    948                      }
+    949          
+    950                      mbedtls_gcm_free( &ctx );
+    951          
+    952                      if( verbose != 0 )
+    953                          mbedtls_printf( "passed\n" );
+    954                  }
+    955              }
+    956          
+    957              if( verbose != 0 )
+    958                  mbedtls_printf( "\n" );
+    959          
+    960              ret = 0;
+    961          
+    962          exit:
+    963              if( ret != 0 )
+    964              {
+    965                  if( verbose != 0 )
+    966                      mbedtls_printf( "failed\n" );
+    967                  mbedtls_gcm_free( &ctx );
+    968              }
+    969          
+    970              return( ret );
+    971          }
+    972          
+    973          #endif /* MBEDTLS_SELF_TEST && MBEDTLS_AES_C */
+    974          
+    975          #endif /* MBEDTLS_GCM_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

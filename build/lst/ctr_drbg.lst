@@ -1,0 +1,841 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:42
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ctr_drbg.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW2E59.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ctr_drbg.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"ctr_drbg.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\ctr_drbg.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\ctr_drbg.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\ctr_drbg.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  CTR_DRBG implementation based on AES-256 (NIST SP 800-90)
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          /*
+     34           *  The NIST SP 800-90 DRBGs are described in the following publication.
+     35           *
+     36           *  http://csrc.nist.gov/publications/nistpubs/800-90/SP800-90revised_March2007.pdf
+     37           */
+     38          
+     39          #if !defined(MBEDTLS_CONFIG_FILE)
+     40          #include "mbedtls/config.h"
+     41          #else
+     42          #include MBEDTLS_CONFIG_FILE
+     43          #endif
+     44          
+     45          #if defined(MBEDTLS_CTR_DRBG_C)
+     46          
+     47          #include "mbedtls/ctr_drbg.h"
+     48          
+     49          #include <string.h>
+     50          
+     51          #if defined(MBEDTLS_FS_IO)
+     52          #include <stdio.h>
+     53          #endif
+     54          
+     55          #if defined(MBEDTLS_SELF_TEST)
+     56          #if defined(MBEDTLS_PLATFORM_C)
+     57          #include "mbedtls/platform.h"
+     58          #else
+     59          #include <stdio.h>
+     60          #define mbedtls_printf printf
+     61          #endif /* MBEDTLS_PLATFORM_C */
+     62          #endif /* MBEDTLS_SELF_TEST */
+     63          
+     64          /* Implementation that should never be optimized out by the compiler */
+     65          static void mbedtls_zeroize( void *v, size_t n ) {
+     66              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     67          }
+     68          
+     69          /*
+     70           * CTR_DRBG context initialization
+     71           */
+     72          void mbedtls_ctr_drbg_init( mbedtls_ctr_drbg_context *ctx )
+     73          {
+     74              memset( ctx, 0, sizeof( mbedtls_ctr_drbg_context ) );
+     75          
+     76          #if defined(MBEDTLS_THREADING_C)
+     77              mbedtls_mutex_init( &ctx->mutex );
+     78          #endif
+     79          }
+     80          
+     81          /*
+     82           * Non-public function wrapped by mbedtls_ctr_drbg_seed(). Necessary to allow
+     83           * NIST tests to succeed (which require known length fixed entropy)
+     84           */
+     85          int mbedtls_ctr_drbg_seed_entropy_len(
+     86                             mbedtls_ctr_drbg_context *ctx,
+     87                             int (*f_entropy)(void *, unsigned char *, size_t),
+     88                             void *p_entropy,
+     89                             const unsigned char *custom,
+     90                             size_t len,
+     91                             size_t entropy_len )
+     92          {
+     93              int ret;
+     94              unsigned char key[MBEDTLS_CTR_DRBG_KEYSIZE];
+     95          
+     96              memset( key, 0, MBEDTLS_CTR_DRBG_KEYSIZE );
+     97          
+     98              mbedtls_aes_init( &ctx->aes_ctx );
+     99          
+    100              ctx->f_entropy = f_entropy;
+    101              ctx->p_entropy = p_entropy;
+    102          
+    103              ctx->entropy_len = entropy_len;
+    104              ctx->reseed_interval = MBEDTLS_CTR_DRBG_RESEED_INTERVAL;
+    105          
+    106              /*
+    107               * Initialize with an empty key
+    108               */
+    109              if( ( ret = mbedtls_aes_setkey_enc( &ctx->aes_ctx, key, MBEDTLS_CTR_DRBG_KEYBITS ) ) != 0 )
+    110              {
+    111                  return( ret );
+    112              }
+    113          
+    114              if( ( ret = mbedtls_ctr_drbg_reseed( ctx, custom, len ) ) != 0 )
+    115              {
+    116                  return( ret );
+    117              }
+    118              return( 0 );
+    119          }
+    120          
+    121          int mbedtls_ctr_drbg_seed( mbedtls_ctr_drbg_context *ctx,
+    122                             int (*f_entropy)(void *, unsigned char *, size_t),
+    123                             void *p_entropy,
+    124                             const unsigned char *custom,
+    125                             size_t len )
+    126          {
+    127              return( mbedtls_ctr_drbg_seed_entropy_len( ctx, f_entropy, p_entropy, custom, len,
+    128                                                 MBEDTLS_CTR_DRBG_ENTROPY_LEN ) );
+    129          }
+    130          
+    131          void mbedtls_ctr_drbg_free( mbedtls_ctr_drbg_context *ctx )
+    132          {
+    133              if( ctx == NULL )
+    134                  return;
+    135          
+    136          #if defined(MBEDTLS_THREADING_C)
+    137              mbedtls_mutex_free( &ctx->mutex );
+    138          #endif
+    139              mbedtls_aes_free( &ctx->aes_ctx );
+    140              mbedtls_zeroize( ctx, sizeof( mbedtls_ctr_drbg_context ) );
+    141          }
+    142          
+    143          void mbedtls_ctr_drbg_set_prediction_resistance( mbedtls_ctr_drbg_context *ctx, int resistance )
+    144          {
+    145              ctx->prediction_resistance = resistance;
+    146          }
+    147          
+    148          void mbedtls_ctr_drbg_set_entropy_len( mbedtls_ctr_drbg_context *ctx, size_t len )
+    149          {
+    150              ctx->entropy_len = len;
+    151          }
+    152          
+    153          void mbedtls_ctr_drbg_set_reseed_interval( mbedtls_ctr_drbg_context *ctx, int interval )
+    154          {
+    155              ctx->reseed_interval = interval;
+    156          }
+    157          
+    158          static int block_cipher_df( unsigned char *output,
+    159                                      const unsigned char *data, size_t data_len )
+    160          {
+    161              unsigned char buf[MBEDTLS_CTR_DRBG_MAX_SEED_INPUT + MBEDTLS_CTR_DRBG_BLOCKSIZE + 16];
+    162              unsigned char tmp[MBEDTLS_CTR_DRBG_SEEDLEN];
+    163              unsigned char key[MBEDTLS_CTR_DRBG_KEYSIZE];
+    164              unsigned char chain[MBEDTLS_CTR_DRBG_BLOCKSIZE];
+    165              unsigned char *p, *iv;
+    166              mbedtls_aes_context aes_ctx;
+    167              int ret = 0;
+    168          
+    169              int i, j;
+    170              size_t buf_len, use_len;
+    171          
+    172              if( data_len > MBEDTLS_CTR_DRBG_MAX_SEED_INPUT )
+    173                  return( MBEDTLS_ERR_CTR_DRBG_INPUT_TOO_BIG );
+    174          
+    175              memset( buf, 0, MBEDTLS_CTR_DRBG_MAX_SEED_INPUT + MBEDTLS_CTR_DRBG_BLOCKSIZE + 16 );
+    176              mbedtls_aes_init( &aes_ctx );
+    177          
+    178              /*
+    179               * Construct IV (16 bytes) and S in buffer
+    180               * IV = Counter (in 32-bits) padded to 16 with zeroes
+    181               * S = Length input string (in 32-bits) || Length of output (in 32-bits) ||
+    182               *     data || 0x80
+    183               *     (Total is padded to a multiple of 16-bytes with zeroes)
+    184               */
+    185              p = buf + MBEDTLS_CTR_DRBG_BLOCKSIZE;
+    186              *p++ = ( data_len >> 24 ) & 0xff;
+    187              *p++ = ( data_len >> 16 ) & 0xff;
+    188              *p++ = ( data_len >> 8  ) & 0xff;
+    189              *p++ = ( data_len       ) & 0xff;
+    190              p += 3;
+    191              *p++ = MBEDTLS_CTR_DRBG_SEEDLEN;
+    192              memcpy( p, data, data_len );
+    193              p[data_len] = 0x80;
+    194          
+    195              buf_len = MBEDTLS_CTR_DRBG_BLOCKSIZE + 8 + data_len + 1;
+    196          
+    197              for( i = 0; i < MBEDTLS_CTR_DRBG_KEYSIZE; i++ )
+    198                  key[i] = i;
+    199          
+    200              if( ( ret = mbedtls_aes_setkey_enc( &aes_ctx, key, MBEDTLS_CTR_DRBG_KEYBITS ) ) != 0 )
+    201              {
+    202                  goto exit;
+    203              }
+    204          
+    205              /*
+    206               * Reduce data to MBEDTLS_CTR_DRBG_SEEDLEN bytes of data
+    207               */
+    208              for( j = 0; j < MBEDTLS_CTR_DRBG_SEEDLEN; j += MBEDTLS_CTR_DRBG_BLOCKSIZE )
+    209              {
+    210                  p = buf;
+    211                  memset( chain, 0, MBEDTLS_CTR_DRBG_BLOCKSIZE );
+    212                  use_len = buf_len;
+    213          
+    214                  while( use_len > 0 )
+    215                  {
+    216                      for( i = 0; i < MBEDTLS_CTR_DRBG_BLOCKSIZE; i++ )
+    217                          chain[i] ^= p[i];
+    218                      p += MBEDTLS_CTR_DRBG_BLOCKSIZE;
+    219                      use_len -= ( use_len >= MBEDTLS_CTR_DRBG_BLOCKSIZE ) ?
+    220                                 MBEDTLS_CTR_DRBG_BLOCKSIZE : use_len;
+    221          
+    222                      if( ( ret = mbedtls_aes_crypt_ecb( &aes_ctx, MBEDTLS_AES_ENCRYPT, chain, chain ) ) != 0 )
+    223                      {
+    224                          goto exit;
+    225                      }
+    226                  }
+    227          
+    228                  memcpy( tmp + j, chain, MBEDTLS_CTR_DRBG_BLOCKSIZE );
+    229          
+    230                  /*
+    231                   * Update IV
+    232                   */
+    233                  buf[3]++;
+    234              }
+    235          
+    236              /*
+    237               * Do final encryption with reduced data
+    238               */
+    239              if( ( ret = mbedtls_aes_setkey_enc( &aes_ctx, tmp, MBEDTLS_CTR_DRBG_KEYBITS ) ) != 0 )
+    240              {
+    241                  goto exit;
+    242              }
+    243              iv = tmp + MBEDTLS_CTR_DRBG_KEYSIZE;
+    244              p = output;
+    245          
+    246              for( j = 0; j < MBEDTLS_CTR_DRBG_SEEDLEN; j += MBEDTLS_CTR_DRBG_BLOCKSIZE )
+    247              {
+    248                  if( ( ret = mbedtls_aes_crypt_ecb( &aes_ctx, MBEDTLS_AES_ENCRYPT, iv, iv ) ) != 0 )
+    249                  {
+    250                      goto exit;
+    251                  }
+    252                  memcpy( p, iv, MBEDTLS_CTR_DRBG_BLOCKSIZE );
+    253                  p += MBEDTLS_CTR_DRBG_BLOCKSIZE;
+    254              }
+    255          exit:
+    256              mbedtls_aes_free( &aes_ctx );
+    257              /*
+    258              * tidy up the stack
+    259              */
+    260              mbedtls_zeroize( buf, sizeof( buf ) );
+    261              mbedtls_zeroize( tmp, sizeof( tmp ) );
+    262              mbedtls_zeroize( key, sizeof( key ) );
+    263              mbedtls_zeroize( chain, sizeof( chain ) );
+    264              if( 0 != ret )
+    265              {
+    266                  /*
+    267                  * wipe partial seed from memory
+    268                  */
+    269                  mbedtls_zeroize( output, MBEDTLS_CTR_DRBG_SEEDLEN );
+    270              }
+    271          
+    272              return( ret );
+    273          }
+    274          
+    275          static int ctr_drbg_update_internal( mbedtls_ctr_drbg_context *ctx,
+    276                                        const unsigned char data[MBEDTLS_CTR_DRBG_SEEDLEN] )
+    277          {
+    278              unsigned char tmp[MBEDTLS_CTR_DRBG_SEEDLEN];
+    279              unsigned char *p = tmp;
+    280              int i, j;
+    281              int ret = 0;
+    282          
+    283              memset( tmp, 0, MBEDTLS_CTR_DRBG_SEEDLEN );
+    284          
+    285              for( j = 0; j < MBEDTLS_CTR_DRBG_SEEDLEN; j += MBEDTLS_CTR_DRBG_BLOCKSIZE )
+    286              {
+    287                  /*
+    288                   * Increase counter
+    289                   */
+    290                  for( i = MBEDTLS_CTR_DRBG_BLOCKSIZE; i > 0; i-- )
+    291                      if( ++ctx->counter[i - 1] != 0 )
+    292                          break;
+    293          
+    294                  /*
+    295                   * Crypt counter block
+    296                   */
+    297                  if( ( ret = mbedtls_aes_crypt_ecb( &ctx->aes_ctx, MBEDTLS_AES_ENCRYPT, ctx->counter, p ) ) != 0 )
+    298                      goto exit;
+    299          
+    300                  p += MBEDTLS_CTR_DRBG_BLOCKSIZE;
+    301              }
+    302          
+    303              for( i = 0; i < MBEDTLS_CTR_DRBG_SEEDLEN; i++ )
+    304                  tmp[i] ^= data[i];
+    305          
+    306              /*
+    307               * Update key and counter
+    308               */
+    309              if( ( ret = mbedtls_aes_setkey_enc( &ctx->aes_ctx, tmp, MBEDTLS_CTR_DRBG_KEYBITS ) ) != 0 )
+    310                  goto exit;
+    311              memcpy( ctx->counter, tmp + MBEDTLS_CTR_DRBG_KEYSIZE, MBEDTLS_CTR_DRBG_BLOCKSIZE );
+    312          
+    313          exit:
+    314              mbedtls_zeroize( tmp, sizeof( tmp ) );
+    315              return( ret );
+    316          }
+    317          
+    318          int mbedtls_ctr_drbg_update_ret( mbedtls_ctr_drbg_context *ctx,
+    319                                           const unsigned char *additional,
+    320                                           size_t add_len )
+    321          {
+    322              unsigned char add_input[MBEDTLS_CTR_DRBG_SEEDLEN];
+    323              int ret;
+    324          
+    325              if( add_len == 0 )
+    326                  return( 0 );
+    327          
+    328              if( ( ret = block_cipher_df( add_input, additional, add_len ) ) != 0 )
+    329                  goto exit;
+    330              if( ( ret = ctr_drbg_update_internal( ctx, add_input ) ) != 0 )
+    331                  goto exit;
+    332          
+    333          exit:
+    334              mbedtls_zeroize( add_input, sizeof( add_input ) );
+    335              return( ret );
+    336          }
+    337          
+    338          /* Deprecated function, kept for backward compatibility. */
+    339          void mbedtls_ctr_drbg_update( mbedtls_ctr_drbg_context *ctx,
+    340                                        const unsigned char *additional,
+    341                                        size_t add_len )
+    342          {
+    343              /* MAX_INPUT would be more logical here, but we have to match
+    344               * block_cipher_df()'s limits since we can't propagate errors */
+    345              if( add_len > MBEDTLS_CTR_DRBG_MAX_SEED_INPUT )
+    346                  add_len = MBEDTLS_CTR_DRBG_MAX_SEED_INPUT;
+    347              (void) mbedtls_ctr_drbg_update_ret( ctx, additional, add_len );
+    348          }
+    349          
+    350          int mbedtls_ctr_drbg_reseed( mbedtls_ctr_drbg_context *ctx,
+    351                               const unsigned char *additional, size_t len )
+    352          {
+    353              unsigned char seed[MBEDTLS_CTR_DRBG_MAX_SEED_INPUT];
+    354              size_t seedlen = 0;
+    355              int ret;
+    356          
+    357              if( ctx->entropy_len > MBEDTLS_CTR_DRBG_MAX_SEED_INPUT ||
+    358                  len > MBEDTLS_CTR_DRBG_MAX_SEED_INPUT - ctx->entropy_len )
+    359                  return( MBEDTLS_ERR_CTR_DRBG_INPUT_TOO_BIG );
+    360          
+    361              memset( seed, 0, MBEDTLS_CTR_DRBG_MAX_SEED_INPUT );
+    362          
+    363              /*
+    364               * Gather entropy_len bytes of entropy to seed state
+    365               */
+    366              if( 0 != ctx->f_entropy( ctx->p_entropy, seed,
+    367                                       ctx->entropy_len ) )
+    368              {
+    369                  return( MBEDTLS_ERR_CTR_DRBG_ENTROPY_SOURCE_FAILED );
+    370              }
+    371          
+    372              seedlen += ctx->entropy_len;
+    373          
+    374              /*
+    375               * Add additional data
+    376               */
+    377              if( additional && len )
+    378              {
+    379                  memcpy( seed + seedlen, additional, len );
+    380                  seedlen += len;
+    381              }
+    382          
+    383              /*
+    384               * Reduce to 384 bits
+    385               */
+    386              if( ( ret = block_cipher_df( seed, seed, seedlen ) ) != 0 )
+    387                  goto exit;
+    388          
+    389              /*
+    390               * Update state
+    391               */
+    392              if( ( ret = ctr_drbg_update_internal( ctx, seed ) ) != 0 )
+    393                  goto exit;
+    394              ctx->reseed_counter = 1;
+    395          
+    396          exit:
+    397              mbedtls_zeroize( seed, sizeof( seed ) );
+    398              return( ret );
+    399          }
+    400          
+    401          int mbedtls_ctr_drbg_random_with_add( void *p_rng,
+    402                                        unsigned char *output, size_t output_len,
+    403                                        const unsigned char *additional, size_t add_len )
+    404          {
+    405              int ret = 0;
+    406              mbedtls_ctr_drbg_context *ctx = (mbedtls_ctr_drbg_context *) p_rng;
+    407              unsigned char add_input[MBEDTLS_CTR_DRBG_SEEDLEN];
+    408              unsigned char *p = output;
+    409              unsigned char tmp[MBEDTLS_CTR_DRBG_BLOCKSIZE];
+    410              int i;
+    411              size_t use_len;
+    412          
+    413              if( output_len > MBEDTLS_CTR_DRBG_MAX_REQUEST )
+    414                  return( MBEDTLS_ERR_CTR_DRBG_REQUEST_TOO_BIG );
+    415          
+    416              if( add_len > MBEDTLS_CTR_DRBG_MAX_INPUT )
+    417                  return( MBEDTLS_ERR_CTR_DRBG_INPUT_TOO_BIG );
+    418          
+    419              memset( add_input, 0, MBEDTLS_CTR_DRBG_SEEDLEN );
+    420          
+    421              if( ctx->reseed_counter > ctx->reseed_interval ||
+    422                  ctx->prediction_resistance )
+    423              {
+    424                  if( ( ret = mbedtls_ctr_drbg_reseed( ctx, additional, add_len ) ) != 0 )
+    425                  {
+    426                      return( ret );
+    427                  }
+    428                  add_len = 0;
+    429              }
+    430          
+    431              if( add_len > 0 )
+    432              {
+    433                  if( ( ret = block_cipher_df( add_input, additional, add_len ) ) != 0 )
+    434                      goto exit;
+    435                  if( ( ret = ctr_drbg_update_internal( ctx, add_input ) ) != 0 )
+    436                      goto exit;
+    437              }
+    438          
+    439              while( output_len > 0 )
+    440              {
+    441                  /*
+    442                   * Increase counter
+    443                   */
+    444                  for( i = MBEDTLS_CTR_DRBG_BLOCKSIZE; i > 0; i-- )
+    445                      if( ++ctx->counter[i - 1] != 0 )
+    446                          break;
+    447          
+    448                  /*
+    449                   * Crypt counter block
+    450                   */
+    451                  if( ( ret = mbedtls_aes_crypt_ecb( &ctx->aes_ctx, MBEDTLS_AES_ENCRYPT, ctx->counter, tmp ) ) != 0 )
+    452                      goto exit;
+    453          
+    454                  use_len = ( output_len > MBEDTLS_CTR_DRBG_BLOCKSIZE ) ? MBEDTLS_CTR_DRBG_BLOCKSIZE :
+    455                                                                 output_len;
+    456                  /*
+    457                   * Copy random block to destination
+    458                   */
+    459                  memcpy( p, tmp, use_len );
+    460                  p += use_len;
+    461                  output_len -= use_len;
+    462              }
+    463          
+    464              if( ( ret = ctr_drbg_update_internal( ctx, add_input ) ) != 0 )
+    465                  goto exit;
+    466          
+    467              ctx->reseed_counter++;
+    468          
+    469          exit:
+    470              mbedtls_zeroize( add_input, sizeof( add_input ) );
+    471              mbedtls_zeroize( tmp, sizeof( tmp ) );
+    472              return( 0 );
+    473          }
+    474          
+    475          int mbedtls_ctr_drbg_random( void *p_rng, unsigned char *output, size_t output_len )
+    476          {
+    477              int ret;
+    478              mbedtls_ctr_drbg_context *ctx = (mbedtls_ctr_drbg_context *) p_rng;
+    479          
+    480          #if defined(MBEDTLS_THREADING_C)
+    481              if( ( ret = mbedtls_mutex_lock( &ctx->mutex ) ) != 0 )
+    482                  return( ret );
+    483          #endif
+    484          
+    485              ret = mbedtls_ctr_drbg_random_with_add( ctx, output, output_len, NULL, 0 );
+    486          
+    487          #if defined(MBEDTLS_THREADING_C)
+    488              if( mbedtls_mutex_unlock( &ctx->mutex ) != 0 )
+    489                  return( MBEDTLS_ERR_THREADING_MUTEX_ERROR );
+    490          #endif
+    491          
+    492              return( ret );
+    493          }
+    494          
+    495          #if defined(MBEDTLS_FS_IO)
+    496          int mbedtls_ctr_drbg_write_seed_file( mbedtls_ctr_drbg_context *ctx, const char *path )
+    497          {
+    498              int ret = MBEDTLS_ERR_CTR_DRBG_FILE_IO_ERROR;
+    499              FILE *f;
+    500              unsigned char buf[ MBEDTLS_CTR_DRBG_MAX_INPUT ];
+    501          
+    502              if( ( f = fopen( path, "wb" ) ) == NULL )
+    503                  return( MBEDTLS_ERR_CTR_DRBG_FILE_IO_ERROR );
+    504          
+    505              if( ( ret = mbedtls_ctr_drbg_random( ctx, buf, MBEDTLS_CTR_DRBG_MAX_INPUT ) ) != 0 )
+    506                  goto exit;
+    507          
+    508              if( fwrite( buf, 1, MBEDTLS_CTR_DRBG_MAX_INPUT, f ) != MBEDTLS_CTR_DRBG_MAX_INPUT )
+    509                  ret = MBEDTLS_ERR_CTR_DRBG_FILE_IO_ERROR;
+    510              else
+    511                  ret = 0;
+    512          
+    513          exit:
+    514              mbedtls_zeroize( buf, sizeof( buf ) );
+    515          
+    516              fclose( f );
+    517              return( ret );
+    518          }
+    519          
+    520          int mbedtls_ctr_drbg_update_seed_file( mbedtls_ctr_drbg_context *ctx, const char *path )
+    521          {
+    522              int ret = 0;
+    523              FILE *f;
+    524              size_t n;
+    525              unsigned char buf[ MBEDTLS_CTR_DRBG_MAX_INPUT ];
+    526          
+    527              if( ( f = fopen( path, "rb" ) ) == NULL )
+    528                  return( MBEDTLS_ERR_CTR_DRBG_FILE_IO_ERROR );
+    529          
+    530              fseek( f, 0, SEEK_END );
+    531              n = (size_t) ftell( f );
+    532              fseek( f, 0, SEEK_SET );
+    533          
+    534              if( n > MBEDTLS_CTR_DRBG_MAX_INPUT )
+    535              {
+    536                  fclose( f );
+    537                  return( MBEDTLS_ERR_CTR_DRBG_INPUT_TOO_BIG );
+    538              }
+    539          
+    540              if( fread( buf, 1, n, f ) != n )
+    541                  ret = MBEDTLS_ERR_CTR_DRBG_FILE_IO_ERROR;
+    542              else
+    543                  ret = mbedtls_ctr_drbg_update_ret( ctx, buf, n );
+    544          
+    545              fclose( f );
+    546          
+    547              mbedtls_zeroize( buf, sizeof( buf ) );
+    548          
+    549              if( ret != 0 )
+    550                  return( ret );
+    551          
+    552              return( mbedtls_ctr_drbg_write_seed_file( ctx, path ) );
+    553          }
+    554          #endif /* MBEDTLS_FS_IO */
+    555          
+    556          #if defined(MBEDTLS_SELF_TEST)
+    557          
+    558          static const unsigned char entropy_source_pr[96] =
+    559              { 0xc1, 0x80, 0x81, 0xa6, 0x5d, 0x44, 0x02, 0x16,
+    560                0x19, 0xb3, 0xf1, 0x80, 0xb1, 0xc9, 0x20, 0x02,
+    561                0x6a, 0x54, 0x6f, 0x0c, 0x70, 0x81, 0x49, 0x8b,
+    562                0x6e, 0xa6, 0x62, 0x52, 0x6d, 0x51, 0xb1, 0xcb,
+    563                0x58, 0x3b, 0xfa, 0xd5, 0x37, 0x5f, 0xfb, 0xc9,
+    564                0xff, 0x46, 0xd2, 0x19, 0xc7, 0x22, 0x3e, 0x95,
+    565                0x45, 0x9d, 0x82, 0xe1, 0xe7, 0x22, 0x9f, 0x63,
+    566                0x31, 0x69, 0xd2, 0x6b, 0x57, 0x47, 0x4f, 0xa3,
+    567                0x37, 0xc9, 0x98, 0x1c, 0x0b, 0xfb, 0x91, 0x31,
+    568                0x4d, 0x55, 0xb9, 0xe9, 0x1c, 0x5a, 0x5e, 0xe4,
+    569                0x93, 0x92, 0xcf, 0xc5, 0x23, 0x12, 0xd5, 0x56,
+    570                0x2c, 0x4a, 0x6e, 0xff, 0xdc, 0x10, 0xd0, 0x68 };
+    571          
+    572          static const unsigned char entropy_source_nopr[64] =
+    573              { 0x5a, 0x19, 0x4d, 0x5e, 0x2b, 0x31, 0x58, 0x14,
+    574                0x54, 0xde, 0xf6, 0x75, 0xfb, 0x79, 0x58, 0xfe,
+    575                0xc7, 0xdb, 0x87, 0x3e, 0x56, 0x89, 0xfc, 0x9d,
+    576                0x03, 0x21, 0x7c, 0x68, 0xd8, 0x03, 0x38, 0x20,
+    577                0xf9, 0xe6, 0x5e, 0x04, 0xd8, 0x56, 0xf3, 0xa9,
+    578                0xc4, 0x4a, 0x4c, 0xbd, 0xc1, 0xd0, 0x08, 0x46,
+    579                0xf5, 0x98, 0x3d, 0x77, 0x1c, 0x1b, 0x13, 0x7e,
+    580                0x4e, 0x0f, 0x9d, 0x8e, 0xf4, 0x09, 0xf9, 0x2e };
+    581          
+    582          static const unsigned char nonce_pers_pr[16] =
+    583              { 0xd2, 0x54, 0xfc, 0xff, 0x02, 0x1e, 0x69, 0xd2,
+    584                0x29, 0xc9, 0xcf, 0xad, 0x85, 0xfa, 0x48, 0x6c };
+    585          
+    586          static const unsigned char nonce_pers_nopr[16] =
+    587              { 0x1b, 0x54, 0xb8, 0xff, 0x06, 0x42, 0xbf, 0xf5,
+    588                0x21, 0xf1, 0x5c, 0x1c, 0x0b, 0x66, 0x5f, 0x3f };
+    589          
+    590          static const unsigned char result_pr[16] =
+    591              { 0x34, 0x01, 0x16, 0x56, 0xb4, 0x29, 0x00, 0x8f,
+    592                0x35, 0x63, 0xec, 0xb5, 0xf2, 0x59, 0x07, 0x23 };
+    593          
+    594          static const unsigned char result_nopr[16] =
+    595              { 0xa0, 0x54, 0x30, 0x3d, 0x8a, 0x7e, 0xa9, 0x88,
+    596                0x9d, 0x90, 0x3e, 0x07, 0x7c, 0x6f, 0x21, 0x8f };
+    597          
+    598          static size_t test_offset;
+    599          static int ctr_drbg_self_test_entropy( void *data, unsigned char *buf,
+    600                                                 size_t len )
+    601          {
+    602              const unsigned char *p = data;
+    603              memcpy( buf, p + test_offset, len );
+    604              test_offset += len;
+    605              return( 0 );
+    606          }
+    607          
+    608          #define CHK( c )    if( (c) != 0 )                          \
+    609                              {                                       \
+    610                                  if( verbose != 0 )                  \
+    611                                      mbedtls_printf( "failed\n" );  \
+    612                                  return( 1 );                        \
+    613                              }
+    614          
+    615          /*
+    616           * Checkup routine
+    617           */
+    618          int mbedtls_ctr_drbg_self_test( int verbose )
+    619          {
+    620              mbedtls_ctr_drbg_context ctx;
+    621              unsigned char buf[16];
+    622          
+    623              mbedtls_ctr_drbg_init( &ctx );
+    624          
+    625              /*
+    626               * Based on a NIST CTR_DRBG test vector (PR = True)
+    627               */
+    628              if( verbose != 0 )
+    629                  mbedtls_printf( "  CTR_DRBG (PR = TRUE) : " );
+    630          
+    631              test_offset = 0;
+    632              CHK( mbedtls_ctr_drbg_seed_entropy_len( &ctx, ctr_drbg_self_test_entropy,
+    633                                          (void *) entropy_source_pr, nonce_pers_pr, 16, 32 ) );
+    634              mbedtls_ctr_drbg_set_prediction_resistance( &ctx, MBEDTLS_CTR_DRBG_PR_ON );
+    635              CHK( mbedtls_ctr_drbg_random( &ctx, buf, MBEDTLS_CTR_DRBG_BLOCKSIZE ) );
+    636              CHK( mbedtls_ctr_drbg_random( &ctx, buf, MBEDTLS_CTR_DRBG_BLOCKSIZE ) );
+    637              CHK( memcmp( buf, result_pr, MBEDTLS_CTR_DRBG_BLOCKSIZE ) );
+    638          
+    639              mbedtls_ctr_drbg_free( &ctx );
+    640          
+    641              if( verbose != 0 )
+    642                  mbedtls_printf( "passed\n" );
+    643          
+    644              /*
+    645               * Based on a NIST CTR_DRBG test vector (PR = FALSE)
+    646               */
+    647              if( verbose != 0 )
+    648                  mbedtls_printf( "  CTR_DRBG (PR = FALSE): " );
+    649          
+    650              mbedtls_ctr_drbg_init( &ctx );
+    651          
+    652              test_offset = 0;
+    653              CHK( mbedtls_ctr_drbg_seed_entropy_len( &ctx, ctr_drbg_self_test_entropy,
+    654                                      (void *) entropy_source_nopr, nonce_pers_nopr, 16, 32 ) );
+    655              CHK( mbedtls_ctr_drbg_random( &ctx, buf, 16 ) );
+    656              CHK( mbedtls_ctr_drbg_reseed( &ctx, NULL, 0 ) );
+    657              CHK( mbedtls_ctr_drbg_random( &ctx, buf, 16 ) );
+    658              CHK( memcmp( buf, result_nopr, 16 ) );
+    659          
+    660              mbedtls_ctr_drbg_free( &ctx );
+    661          
+    662              if( verbose != 0 )
+    663                  mbedtls_printf( "passed\n" );
+    664          
+    665              if( verbose != 0 )
+    666                      mbedtls_printf( "\n" );
+    667          
+    668              return( 0 );
+    669          }
+    670          #endif /* MBEDTLS_SELF_TEST */
+    671          
+    672          #endif /* MBEDTLS_CTR_DRBG_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

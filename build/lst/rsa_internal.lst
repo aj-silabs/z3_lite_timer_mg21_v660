@@ -1,0 +1,668 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:41
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\rsa_internal.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW16F8.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\rsa_internal.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"rsa_internal.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\rsa_internal.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\rsa_internal.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\rsa_internal.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Helper functions for the RSA module
+     15           *
+     16           *  Copyright (C) 2006-2017, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           *
+     33           */
+     34          
+     35          #if !defined(MBEDTLS_CONFIG_FILE)
+     36          #include "mbedtls/config.h"
+     37          #else
+     38          #include MBEDTLS_CONFIG_FILE
+     39          #endif
+     40          
+     41          #if defined(MBEDTLS_RSA_C)
+     42          
+     43          #include "mbedtls/rsa.h"
+     44          #include "mbedtls/bignum.h"
+     45          #include "mbedtls/rsa_internal.h"
+     46          
+     47          /*
+     48           * Compute RSA prime factors from public and private exponents
+     49           *
+     50           * Summary of algorithm:
+     51           * Setting F := lcm(P-1,Q-1), the idea is as follows:
+     52           *
+     53           * (a) For any 1 <= X < N with gcd(X,N)=1, we have X^F = 1 modulo N, so X^(F/2)
+     54           *     is a square root of 1 in Z/NZ. Since Z/NZ ~= Z/PZ x Z/QZ by CRT and the
+     55           *     square roots of 1 in Z/PZ and Z/QZ are +1 and -1, this leaves the four
+     56           *     possibilities X^(F/2) = (+-1, +-1). If it happens that X^(F/2) = (-1,+1)
+     57           *     or (+1,-1), then gcd(X^(F/2) + 1, N) will be equal to one of the prime
+     58           *     factors of N.
+     59           *
+     60           * (b) If we don't know F/2 but (F/2) * K for some odd (!) K, then the same
+     61           *     construction still applies since (-)^K is the identity on the set of
+     62           *     roots of 1 in Z/NZ.
+     63           *
+     64           * The public and private key primitives (-)^E and (-)^D are mutually inverse
+     65           * bijections on Z/NZ if and only if (-)^(DE) is the identity on Z/NZ, i.e.
+     66           * if and only if DE - 1 is a multiple of F, say DE - 1 = F * L.
+     67           * Splitting L = 2^t * K with K odd, we have
+     68           *
+     69           *   DE - 1 = FL = (F/2) * (2^(t+1)) * K,
+     70           *
+     71           * so (F / 2) * K is among the numbers
+     72           *
+     73           *   (DE - 1) >> 1, (DE - 1) >> 2, ..., (DE - 1) >> ord
+     74           *
+     75           * where ord is the order of 2 in (DE - 1).
+     76           * We can therefore iterate through these numbers apply the construction
+     77           * of (a) and (b) above to attempt to factor N.
+     78           *
+     79           */
+     80          int mbedtls_rsa_deduce_primes( mbedtls_mpi const *N,
+     81                               mbedtls_mpi const *E, mbedtls_mpi const *D,
+     82                               mbedtls_mpi *P, mbedtls_mpi *Q )
+     83          {
+     84              int ret = 0;
+     85          
+     86              uint16_t attempt;  /* Number of current attempt  */
+     87              uint16_t iter;     /* Number of squares computed in the current attempt */
+     88          
+     89              uint16_t order;    /* Order of 2 in DE - 1 */
+     90          
+     91              mbedtls_mpi T;  /* Holds largest odd divisor of DE - 1     */
+     92              mbedtls_mpi K;  /* Temporary holding the current candidate */
+     93          
+     94              const unsigned char primes[] = { 2,
+     95                     3,    5,    7,   11,   13,   17,   19,   23,
+     96                    29,   31,   37,   41,   43,   47,   53,   59,
+     97                    61,   67,   71,   73,   79,   83,   89,   97,
+     98                   101,  103,  107,  109,  113,  127,  131,  137,
+     99                   139,  149,  151,  157,  163,  167,  173,  179,
+    100                   181,  191,  193,  197,  199,  211,  223,  227,
+    101                   229,  233,  239,  241,  251
+    102              };
+    103          
+    104              const size_t num_primes = sizeof( primes ) / sizeof( *primes );
+    105          
+    106              if( P == NULL || Q == NULL || P->p != NULL || Q->p != NULL )
+    107                  return( MBEDTLS_ERR_MPI_BAD_INPUT_DATA );
+    108          
+    109              if( mbedtls_mpi_cmp_int( N, 0 ) <= 0 ||
+    110                  mbedtls_mpi_cmp_int( D, 1 ) <= 0 ||
+    111                  mbedtls_mpi_cmp_mpi( D, N ) >= 0 ||
+    112                  mbedtls_mpi_cmp_int( E, 1 ) <= 0 ||
+    113                  mbedtls_mpi_cmp_mpi( E, N ) >= 0 )
+    114              {
+    115                  return( MBEDTLS_ERR_MPI_BAD_INPUT_DATA );
+    116              }
+    117          
+    118              /*
+    119               * Initializations and temporary changes
+    120               */
+    121          
+    122              mbedtls_mpi_init( &K );
+    123              mbedtls_mpi_init( &T );
+    124          
+    125              /* T := DE - 1 */
+    126              MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &T, D,  E ) );
+    127              MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &T, &T, 1 ) );
+    128          
+    129              if( ( order = (uint16_t) mbedtls_mpi_lsb( &T ) ) == 0 )
+    130              {
+    131                  ret = MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    132                  goto cleanup;
+    133              }
+    134          
+    135              /* After this operation, T holds the largest odd divisor of DE - 1. */
+    136              MBEDTLS_MPI_CHK( mbedtls_mpi_shift_r( &T, order ) );
+    137          
+    138              /*
+    139               * Actual work
+    140               */
+    141          
+    142              /* Skip trying 2 if N == 1 mod 8 */
+    143              attempt = 0;
+    144              if( N->p[0] % 8 == 1 )
+    145                  attempt = 1;
+    146          
+    147              for( ; attempt < num_primes; ++attempt )
+    148              {
+    149                  mbedtls_mpi_lset( &K, primes[attempt] );
+    150          
+    151                  /* Check if gcd(K,N) = 1 */
+    152                  MBEDTLS_MPI_CHK( mbedtls_mpi_gcd( P, &K, N ) );
+    153                  if( mbedtls_mpi_cmp_int( P, 1 ) != 0 )
+    154                      continue;
+    155          
+    156                  /* Go through K^T + 1, K^(2T) + 1, K^(4T) + 1, ...
+    157                   * and check whether they have nontrivial GCD with N. */
+    158                  MBEDTLS_MPI_CHK( mbedtls_mpi_exp_mod( &K, &K, &T, N,
+    159                                       Q /* temporarily use Q for storing Montgomery
+    160                                          * multiplication helper values */ ) );
+    161          
+    162                  for( iter = 1; iter <= order; ++iter )
+    163                  {
+    164                      /* If we reach 1 prematurely, there's no point
+    165                       * in continuing to square K */
+    166                      if( mbedtls_mpi_cmp_int( &K, 1 ) == 0 )
+    167                          break;
+    168          
+    169                      MBEDTLS_MPI_CHK( mbedtls_mpi_add_int( &K, &K, 1 ) );
+    170                      MBEDTLS_MPI_CHK( mbedtls_mpi_gcd( P, &K, N ) );
+    171          
+    172                      if( mbedtls_mpi_cmp_int( P, 1 ) ==  1 &&
+    173                          mbedtls_mpi_cmp_mpi( P, N ) == -1 )
+    174                      {
+    175                          /*
+    176                           * Have found a nontrivial divisor P of N.
+    177                           * Set Q := N / P.
+    178                           */
+    179          
+    180                          MBEDTLS_MPI_CHK( mbedtls_mpi_div_mpi( Q, NULL, N, P ) );
+    181                          goto cleanup;
+    182                      }
+    183          
+    184                      MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, &K, 1 ) );
+    185                      MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &K, &K, &K ) );
+    186                      MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &K, &K, N ) );
+    187                  }
+    188          
+    189                  /*
+    190                   * If we get here, then either we prematurely aborted the loop because
+    191                   * we reached 1, or K holds primes[attempt]^(DE - 1) mod N, which must
+    192                   * be 1 if D,E,N were consistent.
+    193                   * Check if that's the case and abort if not, to avoid very long,
+    194                   * yet eventually failing, computations if N,D,E were not sane.
+    195                   */
+    196                  if( mbedtls_mpi_cmp_int( &K, 1 ) != 0 )
+    197                  {
+    198                      break;
+    199                  }
+    200              }
+    201          
+    202              ret = MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    203          
+    204          cleanup:
+    205          
+    206              mbedtls_mpi_free( &K );
+    207              mbedtls_mpi_free( &T );
+    208              return( ret );
+    209          }
+    210          
+    211          /*
+    212           * Given P, Q and the public exponent E, deduce D.
+    213           * This is essentially a modular inversion.
+    214           */
+    215          int mbedtls_rsa_deduce_private_exponent( mbedtls_mpi const *P,
+    216                                                   mbedtls_mpi const *Q,
+    217                                                   mbedtls_mpi const *E,
+    218                                                   mbedtls_mpi *D )
+    219          {
+    220              int ret = 0;
+    221              mbedtls_mpi K, L;
+    222          
+    223              if( D == NULL || mbedtls_mpi_cmp_int( D, 0 ) != 0 )
+    224                  return( MBEDTLS_ERR_MPI_BAD_INPUT_DATA );
+    225          
+    226              if( mbedtls_mpi_cmp_int( P, 1 ) <= 0 ||
+    227                  mbedtls_mpi_cmp_int( Q, 1 ) <= 0 ||
+    228                  mbedtls_mpi_cmp_int( E, 0 ) == 0 )
+    229              {
+    230                  return( MBEDTLS_ERR_MPI_BAD_INPUT_DATA );
+    231              }
+    232          
+    233              mbedtls_mpi_init( &K );
+    234              mbedtls_mpi_init( &L );
+    235          
+    236              /* Temporarily put K := P-1 and L := Q-1 */
+    237              MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, P, 1 ) );
+    238              MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &L, Q, 1 ) );
+    239          
+    240              /* Temporarily put D := gcd(P-1, Q-1) */
+    241              MBEDTLS_MPI_CHK( mbedtls_mpi_gcd( D, &K, &L ) );
+    242          
+    243              /* K := LCM(P-1, Q-1) */
+    244              MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &K, &K, &L ) );
+    245              MBEDTLS_MPI_CHK( mbedtls_mpi_div_mpi( &K, NULL, &K, D ) );
+    246          
+    247              /* Compute modular inverse of E in LCM(P-1, Q-1) */
+    248              MBEDTLS_MPI_CHK( mbedtls_mpi_inv_mod( D, E, &K ) );
+    249          
+    250          cleanup:
+    251          
+    252              mbedtls_mpi_free( &K );
+    253              mbedtls_mpi_free( &L );
+    254          
+    255              return( ret );
+    256          }
+    257          
+    258          /*
+    259           * Check that RSA CRT parameters are in accordance with core parameters.
+    260           */
+    261          int mbedtls_rsa_validate_crt( const mbedtls_mpi *P,  const mbedtls_mpi *Q,
+    262                                        const mbedtls_mpi *D,  const mbedtls_mpi *DP,
+    263                                        const mbedtls_mpi *DQ, const mbedtls_mpi *QP )
+    264          {
+    265              int ret = 0;
+    266          
+    267              mbedtls_mpi K, L;
+    268              mbedtls_mpi_init( &K );
+    269              mbedtls_mpi_init( &L );
+    270          
+    271              /* Check that DP - D == 0 mod P - 1 */
+    272              if( DP != NULL )
+    273              {
+    274                  if( P == NULL )
+    275                  {
+    276                      ret = MBEDTLS_ERR_RSA_BAD_INPUT_DATA;
+    277                      goto cleanup;
+    278                  }
+    279          
+    280                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, P, 1 ) );
+    281                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_mpi( &L, DP, D ) );
+    282                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &L, &L, &K ) );
+    283          
+    284                  if( mbedtls_mpi_cmp_int( &L, 0 ) != 0 )
+    285                  {
+    286                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    287                      goto cleanup;
+    288                  }
+    289              }
+    290          
+    291              /* Check that DQ - D == 0 mod Q - 1 */
+    292              if( DQ != NULL )
+    293              {
+    294                  if( Q == NULL )
+    295                  {
+    296                      ret = MBEDTLS_ERR_RSA_BAD_INPUT_DATA;
+    297                      goto cleanup;
+    298                  }
+    299          
+    300                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, Q, 1 ) );
+    301                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_mpi( &L, DQ, D ) );
+    302                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &L, &L, &K ) );
+    303          
+    304                  if( mbedtls_mpi_cmp_int( &L, 0 ) != 0 )
+    305                  {
+    306                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    307                      goto cleanup;
+    308                  }
+    309              }
+    310          
+    311              /* Check that QP * Q - 1 == 0 mod P */
+    312              if( QP != NULL )
+    313              {
+    314                  if( P == NULL || Q == NULL )
+    315                  {
+    316                      ret = MBEDTLS_ERR_RSA_BAD_INPUT_DATA;
+    317                      goto cleanup;
+    318                  }
+    319          
+    320                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &K, QP, Q ) );
+    321                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, &K, 1 ) );
+    322                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &K, &K, P ) );
+    323                  if( mbedtls_mpi_cmp_int( &K, 0 ) != 0 )
+    324                  {
+    325                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    326                      goto cleanup;
+    327                  }
+    328              }
+    329          
+    330          cleanup:
+    331          
+    332              /* Wrap MPI error codes by RSA check failure error code */
+    333              if( ret != 0 &&
+    334                  ret != MBEDTLS_ERR_RSA_KEY_CHECK_FAILED &&
+    335                  ret != MBEDTLS_ERR_RSA_BAD_INPUT_DATA )
+    336              {
+    337                  ret += MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    338              }
+    339          
+    340              mbedtls_mpi_free( &K );
+    341              mbedtls_mpi_free( &L );
+    342          
+    343              return( ret );
+    344          }
+    345          
+    346          /*
+    347           * Check that core RSA parameters are sane.
+    348           */
+    349          int mbedtls_rsa_validate_params( const mbedtls_mpi *N, const mbedtls_mpi *P,
+    350                                           const mbedtls_mpi *Q, const mbedtls_mpi *D,
+    351                                           const mbedtls_mpi *E,
+    352                                           int (*f_rng)(void *, unsigned char *, size_t),
+    353                                           void *p_rng )
+    354          {
+    355              int ret = 0;
+    356              mbedtls_mpi K, L;
+    357          
+    358              mbedtls_mpi_init( &K );
+    359              mbedtls_mpi_init( &L );
+    360          
+    361              /*
+    362               * Step 1: If PRNG provided, check that P and Q are prime
+    363               */
+    364          
+    365          #if defined(MBEDTLS_GENPRIME)
+    366              if( f_rng != NULL && P != NULL &&
+    367                  ( ret = mbedtls_mpi_is_prime( P, f_rng, p_rng ) ) != 0 )
+    368              {
+    369                  ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    370                  goto cleanup;
+    371              }
+    372          
+    373              if( f_rng != NULL && Q != NULL &&
+    374                  ( ret = mbedtls_mpi_is_prime( Q, f_rng, p_rng ) ) != 0 )
+    375              {
+    376                  ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    377                  goto cleanup;
+    378              }
+    379          #else
+    380              ((void) f_rng);
+    381              ((void) p_rng);
+    382          #endif /* MBEDTLS_GENPRIME */
+    383          
+    384              /*
+    385               * Step 2: Check that 1 < N = P * Q
+    386               */
+    387          
+    388              if( P != NULL && Q != NULL && N != NULL )
+    389              {
+    390                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &K, P, Q ) );
+    391                  if( mbedtls_mpi_cmp_int( N, 1 )  <= 0 ||
+    392                      mbedtls_mpi_cmp_mpi( &K, N ) != 0 )
+    393                  {
+    394                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    395                      goto cleanup;
+    396                  }
+    397              }
+    398          
+    399              /*
+    400               * Step 3: Check and 1 < D, E < N if present.
+    401               */
+    402          
+    403              if( N != NULL && D != NULL && E != NULL )
+    404              {
+    405                  if ( mbedtls_mpi_cmp_int( D, 1 ) <= 0 ||
+    406                       mbedtls_mpi_cmp_int( E, 1 ) <= 0 ||
+    407                       mbedtls_mpi_cmp_mpi( D, N ) >= 0 ||
+    408                       mbedtls_mpi_cmp_mpi( E, N ) >= 0 )
+    409                  {
+    410                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    411                      goto cleanup;
+    412                  }
+    413              }
+    414          
+    415              /*
+    416               * Step 4: Check that D, E are inverse modulo P-1 and Q-1
+    417               */
+    418          
+    419              if( P != NULL && Q != NULL && D != NULL && E != NULL )
+    420              {
+    421                  if( mbedtls_mpi_cmp_int( P, 1 ) <= 0 ||
+    422                      mbedtls_mpi_cmp_int( Q, 1 ) <= 0 )
+    423                  {
+    424                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    425                      goto cleanup;
+    426                  }
+    427          
+    428                  /* Compute DE-1 mod P-1 */
+    429                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &K, D, E ) );
+    430                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, &K, 1 ) );
+    431                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &L, P, 1 ) );
+    432                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &K, &K, &L ) );
+    433                  if( mbedtls_mpi_cmp_int( &K, 0 ) != 0 )
+    434                  {
+    435                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    436                      goto cleanup;
+    437                  }
+    438          
+    439                  /* Compute DE-1 mod Q-1 */
+    440                  MBEDTLS_MPI_CHK( mbedtls_mpi_mul_mpi( &K, D, E ) );
+    441                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, &K, 1 ) );
+    442                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &L, Q, 1 ) );
+    443                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( &K, &K, &L ) );
+    444                  if( mbedtls_mpi_cmp_int( &K, 0 ) != 0 )
+    445                  {
+    446                      ret = MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    447                      goto cleanup;
+    448                  }
+    449              }
+    450          
+    451          cleanup:
+    452          
+    453              mbedtls_mpi_free( &K );
+    454              mbedtls_mpi_free( &L );
+    455          
+    456              /* Wrap MPI error codes by RSA check failure error code */
+    457              if( ret != 0 && ret != MBEDTLS_ERR_RSA_KEY_CHECK_FAILED )
+    458              {
+    459                  ret += MBEDTLS_ERR_RSA_KEY_CHECK_FAILED;
+    460              }
+    461          
+    462              return( ret );
+    463          }
+    464          
+    465          int mbedtls_rsa_deduce_crt( const mbedtls_mpi *P, const mbedtls_mpi *Q,
+    466                                      const mbedtls_mpi *D, mbedtls_mpi *DP,
+    467                                      mbedtls_mpi *DQ, mbedtls_mpi *QP )
+    468          {
+    469              int ret = 0;
+    470              mbedtls_mpi K;
+    471              mbedtls_mpi_init( &K );
+    472          
+    473              /* DP = D mod P-1 */
+    474              if( DP != NULL )
+    475              {
+    476                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, P, 1  ) );
+    477                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( DP, D, &K ) );
+    478              }
+    479          
+    480              /* DQ = D mod Q-1 */
+    481              if( DQ != NULL )
+    482              {
+    483                  MBEDTLS_MPI_CHK( mbedtls_mpi_sub_int( &K, Q, 1  ) );
+    484                  MBEDTLS_MPI_CHK( mbedtls_mpi_mod_mpi( DQ, D, &K ) );
+    485              }
+    486          
+    487              /* QP = Q^{-1} mod P */
+    488              if( QP != NULL )
+    489              {
+    490                  MBEDTLS_MPI_CHK( mbedtls_mpi_inv_mod( QP, Q, P ) );
+    491              }
+    492          
+    493          cleanup:
+    494              mbedtls_mpi_free( &K );
+    495          
+    496              return( ret );
+    497          }
+    498          
+    499          #endif /* MBEDTLS_RSA_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

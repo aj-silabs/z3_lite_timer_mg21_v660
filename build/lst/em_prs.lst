@@ -1,0 +1,957 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:52
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_prs.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW55AE.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_prs.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_prs.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_prs.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_prs.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_prs.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Peripheral Reflex System (PRS) Peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_prs.h"
+     33          #if defined(PRS_COUNT) && (PRS_COUNT > 0)
+     34          
+     35          #include "em_assert.h"
+     36          
+     37          /***************************************************************************//**
+     38           * @addtogroup emlib
+     39           * @{
+     40           ******************************************************************************/
+     41          
+     42          /***************************************************************************//**
+     43           * @addtogroup PRS
+     44           * @brief Peripheral Reflex System (PRS) Peripheral API
+     45           * @details
+     46           *  This module contains functions to control the PRS peripheral of Silicon
+     47           *  Labs 32-bit MCUs and SoCs. The PRS allows configurable, fast, and autonomous
+     48           *  communication between peripherals on the MCU or SoC.
+     49           * @{
+     50           ******************************************************************************/
+     51          
+     52          /*******************************************************************************
+     53           **************************   LOCAL FUNCTIONS   ********************************
+     54           ******************************************************************************/
+     55          
+     56          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     57          
+     58          /***************************************************************************//**
+     59           * @brief
+     60           *   Get PRS source for a channel.
+     61           *
+     62           * @param[in] type
+     63           *   PRS channel type. This can be either @ref prsTypeAsync or
+     64           *   @ref prsTypeSync.
+     65           *
+     66           * @param[in] ch
+     67           *   channel number.
+     68           *
+     69           * @return
+     70           *   PRS source for the channel.
+     71           ******************************************************************************/
+     72          static uint32_t getSource(unsigned int ch, PRS_ChType_t type)
+     73          {
+     74            uint32_t source;
+     75          #if defined(_PRS_ASYNC_CH_CTRL_SOURCESEL_MASK)
+     76            if (type == prsTypeAsync) {
+     77              source = (PRS->ASYNC_CH[ch].CTRL & _PRS_ASYNC_CH_CTRL_SOURCESEL_MASK)
+     78                       >> _PRS_ASYNC_CH_CTRL_SOURCESEL_SHIFT;
+     79            } else {
+     80              source = (PRS->SYNC_CH[ch].CTRL & _PRS_SYNC_CH_CTRL_SOURCESEL_MASK)
+     81                       >> _PRS_SYNC_CH_CTRL_SOURCESEL_SHIFT;
+     82            }
+     83          #else
+     84            (void) type;
+     85            source = (PRS->CH[ch].CTRL & _PRS_CH_CTRL_SOURCESEL_MASK)
+     86                     >> _PRS_CH_CTRL_SOURCESEL_SHIFT;
+     87          #endif
+     88            return source;
+     89          }
+     90          
+     91          #if defined(_SILICON_LABS_32B_SERIES_2)
+     92          /***************************************************************************//**
+     93           * @brief
+     94           *   Convert an async PRS source to a sync source.
+     95           *
+     96           * @details
+     97           *   This conversion must be done because the id's of the same peripheral
+     98           *   source is different depending on if it's used as an asynchronous PRS source
+     99           *   or a synchronous PRS source.
+    100           *
+    101           * @param[in] asyncSource
+    102           *   The id of the asynchronous PRS source.
+    103           *
+    104           * @return
+    105           *   The id of the corresponding synchronous PRS source or 0 if it's not found.
+    106           ******************************************************************************/
+    107          static uint32_t toSyncSource(uint32_t asyncSource)
+    108          {
+    109            uint32_t syncSource = 0;
+    110          
+    111            switch (asyncSource) {
+    112              case _PRS_ASYNC_CH_CTRL_SOURCESEL_IADC0:
+    113                syncSource = _PRS_SYNC_CH_CTRL_SOURCESEL_IADC0;
+    114                break;
+    115              case _PRS_ASYNC_CH_CTRL_SOURCESEL_TIMER0:
+    116                syncSource = _PRS_SYNC_CH_CTRL_SOURCESEL_TIMER0;
+    117                break;
+    118              case _PRS_ASYNC_CH_CTRL_SOURCESEL_TIMER1:
+    119                syncSource = _PRS_SYNC_CH_CTRL_SOURCESEL_TIMER1;
+    120                break;
+    121              case _PRS_ASYNC_CH_CTRL_SOURCESEL_TIMER2:
+    122                syncSource = _PRS_SYNC_CH_CTRL_SOURCESEL_TIMER2;
+    123                break;
+    124              case _PRS_ASYNC_CH_CTRL_SOURCESEL_TIMER3:
+    125                syncSource = _PRS_SYNC_CH_CTRL_SOURCESEL_TIMER3;
+    126                break;
+    127              default:
+    128                EFM_ASSERT(false);
+    129                break;
+    130            }
+    131            return syncSource;
+    132          }
+    133          
+    134          /***************************************************************************//**
+    135           * @brief
+    136           *   Convert an async PRS signal to a sync signal.
+    137           *
+    138           * @details
+    139           *   PRS values for TIMER2 and TIMER3 signals differ between asynchronous and
+    140           *   synchronous PRS channels. This function must be used to handle the
+    141           *   conversion.
+    142           *
+    143           * @param[in] asyncSource
+    144           *   The id of the asynchronous PRS source.
+    145           *
+    146           * @param[in] asyncSignal
+    147           *   The id of the asynchronous PRS signal.
+    148           *
+    149           * @return
+    150           *   The id of the corresponding synchronous PRS signal.
+    151           ******************************************************************************/
+    152          static uint32_t toSyncSignal(uint32_t asyncSource, uint32_t asyncSignal)
+    153          {
+    154            uint32_t syncSignal = asyncSignal;
+    155          
+    156            switch (asyncSource) {
+    157              case _PRS_ASYNC_CH_CTRL_SOURCESEL_TIMER2:
+    158              case _PRS_ASYNC_CH_CTRL_SOURCESEL_TIMER3:
+    159                switch (asyncSignal) {
+    160                  case _PRS_ASYNC_CH_CTRL_SIGSEL_TIMER2UF:
+    161                    syncSignal = _PRS_SYNC_CH_CTRL_SIGSEL_TIMER2UF;
+    162                    break;
+    163                  case _PRS_ASYNC_CH_CTRL_SIGSEL_TIMER2OF:
+    164                    syncSignal = _PRS_SYNC_CH_CTRL_SIGSEL_TIMER2OF;
+    165                    break;
+    166                  case _PRS_ASYNC_CH_CTRL_SIGSEL_TIMER2CC0:
+    167                    syncSignal = _PRS_SYNC_CH_CTRL_SIGSEL_TIMER2CC0;
+    168                    break;
+    169                  case _PRS_ASYNC_CH_CTRL_SIGSEL_TIMER2CC1:
+    170                    syncSignal = _PRS_SYNC_CH_CTRL_SIGSEL_TIMER2CC1;
+    171                    break;
+    172                  case _PRS_ASYNC_CH_CTRL_SIGSEL_TIMER2CC2:
+    173                    syncSignal = _PRS_SYNC_CH_CTRL_SIGSEL_TIMER2CC2;
+    174                    break;
+    175                  default:
+    176                    break;
+    177                }
+    178                break;
+    179              default:
+    180                // No translation
+    181                break;
+    182            }
+    183            return syncSignal;
+    184          }
+    185          
+    186          #endif
+    187          
+    188          /** @endcond */
+    189          
+    190          /*******************************************************************************
+    191           **************************   GLOBAL FUNCTIONS   *******************************
+    192           ******************************************************************************/
+    193          
+    194          /***************************************************************************//**
+    195           * @brief
+    196           *   Set a source and signal for a channel.
+    197           *
+    198           * @param[in] ch
+    199           *   A channel to define the signal and source for.
+    200           *
+    201           * @param[in] source
+    202           *   A source to select for the channel. Use one of PRS_CH_CTRL_SOURCESEL_x defines.
+    203           *
+    204           * @param[in] signal
+    205           *   A signal (for selected @p source) to use. Use one of PRS_CH_CTRL_SIGSEL_x
+    206           *   defines.
+    207           *
+    208           * @param[in] edge
+    209           *   An edge (for selected source/signal) to generate the pulse for.
+    210           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    211          void PRS_SourceSignalSet(unsigned int ch,
+    212                                   uint32_t source,
+    213                                   uint32_t signal,
+    214                                   PRS_Edge_TypeDef edge)
+    215          {
+    216          #if defined(_PRS_SYNC_CH_CTRL_MASK)
+    217            (void) edge;
+    218            EFM_ASSERT(ch < PRS_SYNC_CHAN_COUNT);
+    219            PRS->SYNC_CH[ch].CTRL = (source & _PRS_SYNC_CH_CTRL_SOURCESEL_MASK)
+    220                                    | (signal & _PRS_SYNC_CH_CTRL_SIGSEL_MASK);
+   \                     PRS_SourceSignalSet: (+1)
+   \        0x0   0xF401 0x41FE      AND      R1,R1,#0x7F00
+   \        0x4   0xF002 0x0207      AND      R2,R2,#0x7
+   \        0x8   0x4311             ORRS     R1,R2,R1
+   \        0xA   0x....             LDR.N    R2,??DataTable6  ;; 0x40038048
+   \        0xC   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+    221          #else
+    222            EFM_ASSERT(ch < PRS_CHAN_COUNT);
+    223            PRS->CH[ch].CTRL = (source & _PRS_CH_CTRL_SOURCESEL_MASK)
+    224                               | (signal & _PRS_CH_CTRL_SIGSEL_MASK)
+    225                               | (uint32_t)edge << _PRS_CH_CTRL_EDSEL_SHIFT;
+    226          #endif
+    227          }
+   \       0x10   0x4770             BX       LR               ;; return
+    228          
+    229          #if defined(PRS_ASYNC_SUPPORTED)
+    230          /***************************************************************************//**
+    231           * @brief
+    232           *   Set the source and asynchronous signal for a channel.
+    233           *
+    234           * @details
+    235           *   Asynchronous reflexes are not clocked on HFPERCLK and can be used even in
+    236           *   EM2/EM3.
+    237           *   There is a limitation to reflexes operating in asynchronous mode in
+    238           *   that they can only be used by a subset of the reflex consumers. See
+    239           *   the PRS chapter in the reference manual for the complete list of
+    240           *   supported asynchronous signals and consumers.
+    241           *
+    242           * @note
+    243           *   This function is not supported on EFM32GxxxFyyy parts.
+    244           *   In asynchronous mode, the edge detector only works in EM0 and should
+    245           *   not be used. The EDSEL parameter in PRS_CHx_CTRL register is set to 0 (OFF)
+    246           *   by default.
+    247           *
+    248           * @param[in] ch
+    249           *   A channel to define the source and asynchronous signal for.
+    250           *
+    251           * @param[in] source
+    252           *   A source to select for the channel. Use one of PRS_CH_CTRL_SOURCESEL_x defines.
+    253           *
+    254           * @param[in] signal
+    255           *   An asynchronous signal (for selected @p source) to use. Use one of the
+    256           *   PRS_CH_CTRL_SIGSEL_x defines that support asynchronous operation.
+    257           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    258          void PRS_SourceAsyncSignalSet(unsigned int ch,
+    259                                        uint32_t source,
+    260                                        uint32_t signal)
+    261          {
+    262            PRS_ConnectSignal(ch, prsTypeAsync, (PRS_Signal_t) (source | signal));
+   \                     PRS_SourceAsyncSignalSet: (+1)
+   \        0x0   0x4311             ORRS     R1,R2,R1
+   \        0x2   0xB20A             SXTH     R2,R1
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x....             B.N      PRS_ConnectSignal
+    263          }
+    264          #endif
+    265          
+    266          #if defined(_PRS_ROUTELOC0_MASK) || (_PRS_ROUTE_MASK)
+    267          /***************************************************************************//**
+    268           * @brief
+    269           *   Send the output of a PRS channel to a GPIO pin.
+    270           *
+    271           * @details
+    272           *   This function is used to send the output of a PRS channel to a GPIO pin.
+    273           *   Note that there are certain restrictions to where a PRS channel can be
+    274           *   routed. Consult the datasheet of the device to see if a channel can be
+    275           *   routed to the requested GPIO pin.
+    276           *
+    277           * @param[in] ch
+    278           *   PRS channel number.
+    279           *
+    280           * @param[in] loc
+    281           *   PRS routing location.
+    282           ******************************************************************************/
+    283          void PRS_GpioOutputLocation(unsigned int ch,
+    284                                      unsigned int location)
+    285          {
+    286            EFM_ASSERT(ch < PRS_CHAN_COUNT);
+    287          
+    288          #if defined(_PRS_ROUTE_MASK)
+    289            PRS->ROUTE |= (location << _PRS_ROUTE_LOCATION_SHIFT)
+    290                          | (1 << ch);
+    291          #else
+    292            uint32_t shift = (ch % 4) * 8;
+    293            uint32_t mask = location << shift;
+    294            uint32_t locationGroup = ch / 4;
+    295            /* Since all ROUTELOCx registers are in consecutive memory locations, we can treat them
+    296             * as an array starting at ROUTELOC0 and use locationGroup to index into this array */
+    297            volatile uint32_t * routeloc = &PRS->ROUTELOC0;
+    298            routeloc[locationGroup] |= mask;
+    299            PRS->ROUTEPEN |= 1 << ch;
+    300          #endif
+    301          }
+    302          #endif
+    303          
+    304          /***************************************************************************//**
+    305           * @brief
+    306           *   Search for the first free PRS channel.
+    307           *
+    308           * @param[in] type
+    309           *   PRS channel type. This can be either @ref prsTypeAsync or
+    310           *   @ref prsTypeSync.
+    311           *
+    312           * @return
+    313           *   Channel number >= 0 if an unused PRS channel was found. If no free PRS
+    314           *   channel was found then -1 is returned.
+    315           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    316          int PRS_GetFreeChannel(PRS_ChType_t type)
+    317          {
+   \                     PRS_GetFreeChannel: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x4602             MOV      R2,R0
+    318            int ch = -1;
+    319            uint32_t source;
+    320            int max;
+    321          
+    322            if (type == prsTypeAsync) {
+   \        0x4   0x0011             MOVS     R1,R2
+   \        0x6   0xF04F 0x30FF      MOV      R0,#-1
+   \        0xA   0xBF0C             ITE      EQ 
+   \        0xC   0x230C             MOVEQ    R3,#+12
+   \        0xE   0x2304             MOVNE    R3,#+4
+    323              max = PRS_ASYNC_CHAN_COUNT;
+    324            } else {
+    325              max = PRS_SYNC_CHAN_COUNT;
+    326            }
+    327          
+    328            for (int i = 0; i < max; i++) {
+   \       0x10   0x2400             MOVS     R4,#+0
+   \       0x12   0xE000             B.N      ??PRS_GetFreeChannel_0
+   \                     ??PRS_GetFreeChannel_1: (+1)
+   \       0x14   0x1C64             ADDS     R4,R4,#+1
+   \                     ??PRS_GetFreeChannel_0: (+1)
+   \       0x16   0x429C             CMP      R4,R3
+   \       0x18   0xDA0B             BGE.N    ??PRS_GetFreeChannel_2
+    329              source = getSource(i, type);
+   \       0x1A   0x0015             MOVS     R5,R2
+   \       0x1C   0x4621             MOV      R1,R4
+   \       0x1E   0xBF0C             ITE      EQ 
+   \       0x20   0x....             LDREQ.N  R5,??DataTable6_1  ;; 0x40038018
+   \       0x22   0x....             LDRNE.N  R5,??DataTable6  ;; 0x40038048
+   \       0x24   0xF855 0x1021      LDR      R1,[R5, R1, LSL #+2]
+   \       0x28   0xF3C1 0x2106      UBFX     R1,R1,#+8,#+7
+    330              if (source == 0) {
+   \       0x2C   0x2900             CMP      R1,#+0
+   \       0x2E   0xD1F1             BNE.N    ??PRS_GetFreeChannel_1
+    331                ch = i;
+   \       0x30   0x4620             MOV      R0,R4
+    332                break;
+    333              }
+    334            }
+    335            return ch;
+   \                     ??PRS_GetFreeChannel_2: (+1)
+   \       0x32   0xBD30             POP      {R4,R5,PC}       ;; return
+    336          }
+    337          
+    338          /***************************************************************************//**
+    339           * @brief
+    340           *   Reset all PRS channels
+    341           *
+    342           * @details
+    343           *   This function will reset all the PRS channel configuration.
+    344           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    345          void PRS_Reset(void)
+    346          {
+    347            unsigned int i;
+    348          
+    349          #if defined(_SILICON_LABS_32B_SERIES_2)
+    350            PRS->ASYNC_SWLEVEL = 0;
+   \                     PRS_Reset: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....             LDR.N    R1,??DataTable6_2  ;; 0x4003800c
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+    351            for (i = 0; i < PRS_ASYNC_CHAN_COUNT; i++) {
+   \        0x6   0x....             LDR.N    R1,??DataTable6_1  ;; 0x40038018
+   \        0x8   0xF44F 0x2240      MOV      R2,#+786432
+    352              PRS->ASYNC_CH[i].CTRL = _PRS_ASYNC_CH_CTRL_RESETVALUE;
+   \                     ??PRS_Reset_0: (+1)
+   \        0xC   0xF841 0x2020      STR      R2,[R1, R0, LSL #+2]
+    353            }
+   \       0x10   0x1C40             ADDS     R0,R0,#+1
+   \       0x12   0x280C             CMP      R0,#+12
+   \       0x14   0xD3FA             BCC.N    ??PRS_Reset_0
+    354            for (i = 0; i < PRS_SYNC_CHAN_COUNT; i++) {
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0x....             LDR.N    R2,??DataTable6  ;; 0x40038048
+    355              PRS->SYNC_CH[i].CTRL = _PRS_SYNC_CH_CTRL_RESETVALUE;
+   \                     ??PRS_Reset_1: (+1)
+   \       0x1C   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+    356            }
+   \       0x20   0x1C40             ADDS     R0,R0,#+1
+   \       0x22   0x2804             CMP      R0,#+4
+   \       0x24   0xD3FA             BCC.N    ??PRS_Reset_1
+    357          #else
+    358            PRS->SWLEVEL = 0x0;
+    359            for (i = 0; i < PRS_CHAN_COUNT; i++) {
+    360              PRS->CH[i].CTRL = _PRS_CH_CTRL_RESETVALUE;
+    361            }
+    362          #endif
+    363          }
+   \       0x26   0x4770             BX       LR               ;; return
+    364          
+    365          /***************************************************************************//**
+    366           * @brief
+    367           *   Connect a PRS signal to a channel.
+    368           *
+    369           * @details
+    370           *   This function will make the PRS signal available on the specific channel.
+    371           *   Only a single PRS signal can be connected to any given channel.
+    372           *
+    373           * @param[in] ch
+    374           *   PRS channel number.
+    375           *
+    376           * @param[in] type
+    377           *   PRS channel type. This can be either @ref prsTypeAsync or
+    378           *   @ref prsTypeSync.
+    379           *
+    380           * @param[in] signal
+    381           *   This is the PRS signal that should be placed on the channel.
+    382           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    383          void PRS_ConnectSignal(unsigned int ch, PRS_ChType_t type, PRS_Signal_t signal)
+    384          {
+    385          #if defined(_PRS_ASYNC_CH_CTRL_MASK)
+    386            // Series 2 devices
+    387            uint32_t sourceField = ((uint32_t)signal & _PRS_ASYNC_CH_CTRL_SOURCESEL_MASK)
+    388                                   >> _PRS_ASYNC_CH_CTRL_SOURCESEL_SHIFT;
+   \                     PRS_ConnectSignal: (+1)
+   \        0x0   0xF3C2 0x2306      UBFX     R3,R2,#+8,#+7
+   \        0x4   0xB510             PUSH     {R4,LR}
+    389            uint32_t signalField = ((uint32_t)signal & _PRS_ASYNC_CH_CTRL_SIGSEL_MASK)
+    390                                   >> _PRS_ASYNC_CH_CTRL_SIGSEL_SHIFT;
+   \        0x6   0xF002 0x0207      AND      R2,R2,#0x7
+    391            if (type == prsTypeAsync) {
+   \        0xA   0xB939             CBNZ.N   R1,??PRS_ConnectSignal_1
+    392              EFM_ASSERT(ch < PRS_ASYNC_CHAN_COUNT);
+    393              PRS->ASYNC_CH[ch].CTRL = PRS_ASYNC_CH_CTRL_FNSEL_A
+    394                                       | (sourceField << _PRS_ASYNC_CH_CTRL_SOURCESEL_SHIFT)
+    395                                       | (signalField << _PRS_ASYNC_CH_CTRL_SIGSEL_SHIFT);
+   \        0xC   0xEA42 0x2203      ORR      R2,R2,R3, LSL #+8
+   \       0x10   0x....             LDR.N    R1,??DataTable6_1  ;; 0x40038018
+   \       0x12   0xF442 0x2240      ORR      R2,R2,#0xC0000
+   \       0x16   0xF841 0x2020      STR      R2,[R1, R0, LSL #+2]
+   \       0x1A   0xBD10             POP      {R4,PC}
+    396            } else {
+    397              EFM_ASSERT(ch < PRS_SYNC_CHAN_COUNT);
+    398              signalField = toSyncSignal(sourceField, signalField);
+   \                     ??PRS_ConnectSignal_1: (+1)
+   \       0x1C   0xF1A3 0x0425      SUB      R4,R3,#+37
+   \       0x20   0x2C01             CMP      R4,#+1
+   \       0x22   0x4611             MOV      R1,R2
+   \       0x24   0xBF98             IT       LS 
+   \       0x26   0x2A04             CMPLS    R2,#+4
+   \       0x28   0xD80D             BHI.N    ??PRS_ConnectSignal_2
+   \       0x2A   0xE8DF 0xF002      TBB      [PC, R2]
+   \                     ??PRS_ConnectSignal_0:
+   \       0x2E   0x0B 0x09          DC8      0xB,0x9,0x7,0x5
+   \              0x07 0x05    
+   \       0x32   0x03 0x00          DC8      0x3,0x0
+   \                     ??PRS_ConnectSignal_3: (+1)
+   \       0x34   0x2102             MOVS     R1,#+2
+   \       0x36   0xE006             B.N      ??PRS_ConnectSignal_2
+   \                     ??PRS_ConnectSignal_4: (+1)
+   \       0x38   0x2101             MOVS     R1,#+1
+   \       0x3A   0xE004             B.N      ??PRS_ConnectSignal_2
+   \                     ??PRS_ConnectSignal_5: (+1)
+   \       0x3C   0x2100             MOVS     R1,#+0
+   \       0x3E   0xE002             B.N      ??PRS_ConnectSignal_2
+   \                     ??PRS_ConnectSignal_6: (+1)
+   \       0x40   0x2104             MOVS     R1,#+4
+   \       0x42   0xE000             B.N      ??PRS_ConnectSignal_2
+   \                     ??PRS_ConnectSignal_7: (+1)
+   \       0x44   0x2103             MOVS     R1,#+3
+    399              sourceField = toSyncSource(sourceField);
+   \                     ??PRS_ConnectSignal_2: (+1)
+   \       0x46   0x2200             MOVS     R2,#+0
+   \       0x48   0x2B01             CMP      R3,#+1
+   \       0x4A   0xD00F             BEQ.N    ??PRS_ConnectSignal_8
+   \       0x4C   0x2B23             CMP      R3,#+35
+   \       0x4E   0xD00B             BEQ.N    ??PRS_ConnectSignal_9
+   \       0x50   0x2B24             CMP      R3,#+36
+   \       0x52   0xD007             BEQ.N    ??PRS_ConnectSignal_10
+   \       0x54   0x2B25             CMP      R3,#+37
+   \       0x56   0xD003             BEQ.N    ??PRS_ConnectSignal_11
+   \       0x58   0x2B26             CMP      R3,#+38
+   \       0x5A   0xD108             BNE.N    ??PRS_ConnectSignal_12
+   \       0x5C   0x2205             MOVS     R2,#+5
+   \       0x5E   0xE006             B.N      ??PRS_ConnectSignal_12
+   \                     ??PRS_ConnectSignal_11: (+1)
+   \       0x60   0x2204             MOVS     R2,#+4
+   \       0x62   0xE004             B.N      ??PRS_ConnectSignal_12
+   \                     ??PRS_ConnectSignal_10: (+1)
+   \       0x64   0x2202             MOVS     R2,#+2
+   \       0x66   0xE002             B.N      ??PRS_ConnectSignal_12
+   \                     ??PRS_ConnectSignal_9: (+1)
+   \       0x68   0x2201             MOVS     R2,#+1
+   \       0x6A   0xE000             B.N      ??PRS_ConnectSignal_12
+   \                     ??PRS_ConnectSignal_8: (+1)
+   \       0x6C   0x2203             MOVS     R2,#+3
+    400              PRS->SYNC_CH[ch].CTRL = (sourceField << _PRS_SYNC_CH_CTRL_SOURCESEL_SHIFT)
+    401                                      | (signalField << _PRS_SYNC_CH_CTRL_SIGSEL_SHIFT);
+   \                     ??PRS_ConnectSignal_12: (+1)
+   \       0x6E   0xEA41 0x2102      ORR      R1,R1,R2, LSL #+8
+   \       0x72   0x....             LDR.N    R2,??DataTable6  ;; 0x40038048
+   \       0x74   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+    402            }
+    403          #else
+    404            // Series 0 and Series 1 devices
+    405            uint32_t signalField = (uint32_t) signal & (_PRS_CH_CTRL_SOURCESEL_MASK
+    406                                                        | _PRS_CH_CTRL_SIGSEL_MASK);
+    407            if (type == prsTypeAsync) {
+    408          #if defined(PRS_ASYNC_SUPPORTED)
+    409              EFM_ASSERT(ch < PRS_ASYNC_CHAN_COUNT);
+    410              PRS->CH[ch].CTRL = PRS_CH_CTRL_EDSEL_OFF
+    411                                 | PRS_CH_CTRL_ASYNC
+    412                                 | signalField;
+    413          #endif
+    414            } else {
+    415              EFM_ASSERT(ch < PRS_SYNC_CHAN_COUNT);
+    416              PRS->CH[ch].CTRL = PRS_CH_CTRL_EDSEL_OFF
+    417                                 | signalField;
+    418            }
+    419          #endif
+    420          }
+   \       0x78   0xBD10             POP      {R4,PC}          ;; return
+    421          
+    422          #if defined(_SILICON_LABS_32B_SERIES_2)
+    423          /***************************************************************************//**
+    424           * @brief
+    425           *   Connect a peripheral consumer to a PRS channel.
+    426           *
+    427           * @details
+    428           *   Different peripherals can use PRS channels as their input. This function
+    429           *   can be used to connect a peripheral consumer to a PRS channel. Multiple
+    430           *   consumers can be connected to a single PRS channel.
+    431           *
+    432           * @param[in] ch
+    433           *   PRS channel number.
+    434           *
+    435           * @param[in] type
+    436           *   PRS channel type. This can be either @ref prsTypeAsync or
+    437           *   @ref prsTypeSync.
+    438           *
+    439           * @param[in] consumer
+    440           *   This is the PRS consumer.
+    441           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    442          void PRS_ConnectConsumer(unsigned int ch, PRS_ChType_t type, PRS_Consumer_t consumer)
+    443          {
+   \                     PRS_ConnectConsumer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    444            EFM_ASSERT((uint32_t)consumer <= 0xFFF);
+    445            volatile uint32_t * addr = (volatile uint32_t *) PRS;
+    446            uint32_t offset = (uint32_t) consumer;
+    447            addr = addr + offset / 4;
+   \        0x2   0x....             LDR.N    R3,??DataTable6_3  ;; 0x40038000
+   \        0x4   0x0894             LSRS     R4,R2,#+2
+   \        0x6   0xEB03 0x0384      ADD      R3,R3,R4, LSL #+2
+    448          
+    449            if (consumer != prsConsumerNone) {
+   \        0xA   0xB112             CBZ.N    R2,??PRS_ConnectConsumer_0
+    450              if (type == prsTypeAsync) {
+   \        0xC   0xB101             CBZ.N    R1,??PRS_ConnectConsumer_1
+    451                *addr = ch << _PRS_CONSUMER_TIMER0_CC0_PRSSEL_SHIFT;
+    452              } else {
+    453                *addr = ch << _PRS_CONSUMER_TIMER0_CC0_SPRSSEL_SHIFT;
+   \        0xE   0x0200             LSLS     R0,R0,#+8
+   \                     ??PRS_ConnectConsumer_1: (+1)
+   \       0x10   0x6018             STR      R0,[R3, #+0]
+    454              }
+    455            }
+    456          }
+   \                     ??PRS_ConnectConsumer_0: (+1)
+   \       0x12   0xBD10             POP      {R4,PC}          ;; return
+    457          
+    458          /***************************************************************************//**
+    459           * @brief
+    460           *   Send the output of a PRS channel to a GPIO pin.
+    461           *
+    462           * @details
+    463           *   This function is used to send the output of a PRS channel to a GPIO pin.
+    464           *   Note that there are certain restrictions to where a PRS channel can be
+    465           *   routed. Consult the datasheet of the device to see if a channel can be
+    466           *   routed to the requested GPIO pin. Some devices for instance can only route
+    467           *   the async channels 0-5 on GPIO pins PAx and PBx while async channels 6-11
+    468           *   can only be routed to GPIO pins PCx and PDx
+    469           *
+    470           * @param[in] ch
+    471           *   PRS channel number.
+    472           *
+    473           * @param[in] type
+    474           *   PRS channel type. This can be either @ref prsTypeAsync or
+    475           *   @ref prsTypeSync.
+    476           *
+    477           * @param[in] port
+    478           *   GPIO port
+    479           *
+    480           * @param[in] pin
+    481           *   GPIO pin
+    482           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    483          void PRS_PinOutput(unsigned int ch, PRS_ChType_t type, GPIO_Port_TypeDef port, uint8_t pin)
+    484          {
+   \                     PRS_PinOutput: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    485            volatile uint32_t * addr;
+    486            if (type == prsTypeAsync) {
+   \        0x2   0x....             LDR.N    R4,??DataTable6_4  ;; 0x4003c4e4
+   \        0x4   0x000D             MOVS     R5,R1
+    487              addr = &GPIO->PRSROUTE[0].ASYNCH0ROUTE;
+    488            } else {
+    489              addr = &GPIO->PRSROUTE[0].SYNCH0ROUTE;
+    490            }
+    491            addr += ch;
+    492            *addr = ((uint32_t)port << _GPIO_PRS_ASYNCH0ROUTE_PORT_SHIFT)
+    493                    | (pin << _GPIO_PRS_ASYNCH0ROUTE_PIN_SHIFT);
+   \        0x6   0xEA42 0x4203      ORR      R2,R2,R3, LSL #+16
+   \        0xA   0xBF0C             ITE      EQ 
+   \        0xC   0x1D25             ADDEQ    R5,R4,#+4
+   \        0xE   0xF104 0x0534      ADDNE    R5,R4,#+52
+   \       0x12   0xF845 0x2020      STR      R2,[R5, R0, LSL #+2]
+    494          
+    495            if (type == prsTypeAsync) {
+   \       0x16   0x2201             MOVS     R2,#+1
+   \       0x18   0xB921             CBNZ.N   R1,??PRS_PinOutput_0
+    496              GPIO->PRSROUTE[0].ROUTEEN |= 0x1 << (ch + _GPIO_PRS_ROUTEEN_ASYNCH0PEN_SHIFT);
+   \       0x1A   0x6821             LDR      R1,[R4, #+0]
+   \       0x1C   0xFA02 0xF000      LSL      R0,R2,R0
+   \       0x20   0x4308             ORRS     R0,R0,R1
+   \       0x22   0xE004             B.N      ??PRS_PinOutput_1
+    497            } else {
+    498              GPIO->PRSROUTE[0].ROUTEEN |= 0x1 << (ch + _GPIO_PRS_ROUTEEN_SYNCH0PEN_SHIFT);
+   \                     ??PRS_PinOutput_0: (+1)
+   \       0x24   0x6823             LDR      R3,[R4, #+0]
+   \       0x26   0x300C             ADDS     R0,R0,#+12
+   \       0x28   0xFA02 0xF000      LSL      R0,R2,R0
+   \       0x2C   0x4318             ORRS     R0,R0,R3
+   \                     ??PRS_PinOutput_1: (+1)
+   \       0x2E   0x6020             STR      R0,[R4, #+0]
+    499            }
+    500          }
+   \       0x30   0xBD30             POP      {R4,R5,PC}       ;; return
+    501          
+    502          /***************************************************************************//**
+    503           * @brief
+    504           *   Combine two PRS channels using a logic function.
+    505           *
+    506           * @details
+    507           *   This function allows you to combine the output of one PRS channel with the
+    508           *   the signal of another PRS channel using various logic functions. Note that
+    509           *   for series 2, config 1 devices, the hardware only allows a PRS channel to
+    510           *   be combined with the previous channel. So for instance channel 5 can be
+    511           *   combined only with channel 4.
+    512           *
+    513           *   The logic function operates on two PRS channels called A and B. The output
+    514           *   of PRS channel B is combined with the PRS source configured for channel A
+    515           *   to produce an output. This output is used as the output of channel A.
+    516           *
+    517           * @param[in] chA
+    518           *   PRS Channel for the A input.
+    519           *
+    520           * @param[in] chB
+    521           *   PRS Channel for the B input.
+    522           *
+    523           * @param[in] logic
+    524           *   The logic function to use when combining the Channel A and Channel B. The
+    525           *   output of the logic function is the output of Channel A. Function like
+    526           *   AND, OR, XOR, NOT and more are available.
+    527           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    528          void PRS_Combine(unsigned int chA, unsigned int chB, PRS_Logic_t logic)
+    529          {
+    530            EFM_ASSERT(chA < PRS_ASYNC_CHAN_COUNT);
+    531            EFM_ASSERT(chB < PRS_ASYNC_CHAN_COUNT);
+    532          
+    533          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    534            EFM_ASSERT(chA == ((chB + 1) % PRS_ASYNC_CHAN_COUNT));
+    535            PRS->ASYNC_CH[chA].CTRL = (PRS->ASYNC_CH[chA].CTRL & ~_PRS_ASYNC_CH_CTRL_FNSEL_MASK)
+    536                                      | ((uint32_t)logic << _PRS_ASYNC_CH_CTRL_FNSEL_SHIFT);
+   \                     PRS_Combine: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable6_1  ;; 0x40038018
+   \        0x2   0xF851 0x3020      LDR      R3,[R1, R0, LSL #+2]
+   \        0x6   0xF423 0x2370      BIC      R3,R3,#0xF0000
+   \        0xA   0xEA43 0x4302      ORR      R3,R3,R2, LSL #+16
+   \        0xE   0xF841 0x3020      STR      R3,[R1, R0, LSL #+2]
+    537          
+    538          #else
+    539            PRS->ASYNC_CH[chA].CTRL = (PRS->ASYNC_CH[chA].CTRL
+    540                                       & ~(_PRS_ASYNC_CH_CTRL_FNSEL_MASK
+    541                                           | _PRS_ASYNC_CH_CTRL_AUXSEL_MASK))
+    542                                      | ((uint32_t)logic << _PRS_ASYNC_CH_CTRL_FNSEL_SHIFT)
+    543                                      | ((uint32_t)chB << _PRS_ASYNC_CH_CTRL_AUXSEL_SHIFT);
+    544            PRS->ASYNC_CH[chB].CTRL = (PRS->ASYNC_CH[chB].CTRL & ~_PRS_ASYNC_CH_CTRL_FNSEL_MASK)
+    545                                      | PRS_ASYNC_CH_CTRL_FNSEL_DEFAULT;
+    546          #endif
+    547          }
+   \       0x12   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x4003'8048        DC32     0x40038048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x4003'8018        DC32     0x40038018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x4003'800C        DC32     0x4003800c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x4003'8000        DC32     0x40038000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x4003'C4E4        DC32     0x4003c4e4
+    548          #endif
+    549          
+    550          /** @} (end addtogroup PRS) */
+    551          /** @} (end addtogroup emlib) */
+    552          #endif /* defined(PRS_COUNT) && (PRS_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   PRS_Combine
+       8   PRS_ConnectConsumer
+       8   PRS_ConnectSignal
+      12   PRS_GetFreeChannel
+      12   PRS_PinOutput
+       0   PRS_Reset
+       0   PRS_SourceAsyncSignalSet
+         0   -> PRS_ConnectSignal
+       0   PRS_SourceSignalSet
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+      20  PRS_Combine
+      20  PRS_ConnectConsumer
+     122  PRS_ConnectSignal
+      52  PRS_GetFreeChannel
+      50  PRS_PinOutput
+      40  PRS_Reset
+       8  PRS_SourceAsyncSignalSet
+      18  PRS_SourceSignalSet
+
+ 
+ 350 bytes in section .text
+ 
+ 350 bytes of CODE memory
+
+Errors: none
+Warnings: none

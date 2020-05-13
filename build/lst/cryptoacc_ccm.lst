@@ -1,0 +1,427 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:39
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_ccm.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW2306.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_ccm.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"cryptoacc_ccm.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\cryptoacc_ccm.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\cryptoacc_ccm.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_ccm.c
+      1          /*
+      2           *  AES-CCM abstraction based on the CRYPTOACC peripheral on Silabs devices.
+      3           *
+      4           *  Copyright (C) 2017, Silicon Labs, http://www.silabs.com
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          /*
+     21           * This file includes alternative plugin implementations of various
+     22           * functions in ccm.c using the Secure Element accelerator incorporated
+     23           * in MCU devices from Silicon Laboratories.
+     24           */
+     25          
+     26          #include "em_device.h"
+     27          
+     28          #if defined(CRYPTOACC_PRESENT)
+     29          
+     30          #if !defined(MBEDTLS_CONFIG_FILE)
+     31          #include "mbedtls/config.h"
+     32          #else
+     33          #include MBEDTLS_CONFIG_FILE
+     34          #endif
+     35          
+     36          #if defined(MBEDTLS_AES_C)
+     37          #if defined(MBEDTLS_CCM_ALT) && defined(MBEDTLS_CCM_C)
+     38          #include "cryptoacc_management.h"
+     39          #include "sx_aes.h"
+     40          #include "sx_errors.h"
+     41          #include "cryptolib_def.h"
+     42          #include "mbedtls/ccm.h"
+     43          #include "mbedtls/aes.h"
+     44          #include <string.h>
+     45          
+     46          /*
+     47           * Initialize CCM context
+     48           */
+     49          void mbedtls_ccm_init( mbedtls_ccm_context *ctx )
+     50          {
+     51              if( ctx == NULL ) {
+     52                  return;
+     53              }
+     54          
+     55              memset( ctx, 0, sizeof( mbedtls_ccm_context ) );
+     56          }
+     57          
+     58          /*
+     59           * Clear CCM context
+     60           */
+     61          void mbedtls_ccm_free( mbedtls_ccm_context *ctx )
+     62          {
+     63              if( ctx == NULL ) {
+     64                  return;
+     65              }
+     66          
+     67              memset( ctx, 0, sizeof( mbedtls_ccm_context ) );
+     68          }
+     69          
+     70          /*
+     71           * CCM key schedule
+     72           */
+     73          int mbedtls_ccm_setkey( mbedtls_ccm_context *ctx,
+     74                                  mbedtls_cipher_id_t cipher,
+     75                                  const unsigned char *key,
+     76                                  unsigned int keybits )
+     77          {
+     78              if( ctx == NULL || key == NULL ) {
+     79                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+     80              }
+     81          
+     82              memset( ctx, 0, sizeof( mbedtls_ccm_context ) );
+     83          
+     84              if ( cipher != MBEDTLS_CIPHER_ID_AES ) {
+     85                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+     86              }
+     87          
+     88              if ( ( 128UL != keybits ) && ( 192UL != keybits ) && ( 256UL != keybits ) ) {
+     89                  /* Unsupported key size */
+     90                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+     91              }
+     92          
+     93              ctx->keybits = keybits;
+     94              memcpy(ctx->key, key, keybits/8);
+     95          
+     96              return 0;
+     97          }
+     98          
+     99          int mbedtls_ccm_encrypt_and_tag( mbedtls_ccm_context *ctx, size_t length,
+    100                                   const unsigned char *iv, size_t iv_len,
+    101                                   const unsigned char *add, size_t add_len,
+    102                                   const unsigned char *input, unsigned char *output,
+    103                                   unsigned char *tag, size_t tag_len )
+    104          {
+    105              int status;
+    106              unsigned char q;
+    107              uint32_t sx_ret;
+    108              sx_aes_mode_t dir = ENC;
+    109              block_t key;
+    110              block_t aad_block;
+    111              block_t tag_block;
+    112              block_t nonce;
+    113              block_t data_in;
+    114              block_t data_out;
+    115          
+    116              if( ctx == NULL || tag == NULL || iv == NULL ) {
+    117                  return ( MBEDTLS_ERR_CCM_BAD_INPUT );
+    118              }
+    119              if (add_len > 0 && add == NULL ) {
+    120                  return ( MBEDTLS_ERR_CCM_BAD_INPUT );
+    121              }
+    122              if( length > 0 && (input == NULL || output == NULL) ) {
+    123                  return ( MBEDTLS_ERR_CCM_BAD_INPUT );
+    124              }
+    125          
+    126              if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+    127                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+    128              }
+    129          
+    130              /* Test for invalid (too long) message length. This test is included here because
+    131                 the SE does not implement the test. When the SE ultimately implements the test
+    132                 the following test can be removed.  */
+    133              q = 16 - 1 - (unsigned char) iv_len;
+    134              if ( (q < sizeof(length)) && (length >= (1UL<<(q*8))) )
+    135                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    136          
+    137              if( tag_len == 2 || tag_len > 16 || tag_len % 2 != 0 )
+    138                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    139          
+    140              /* Also implies q is within bounds */
+    141              if( iv_len < 7 || iv_len > 13 )
+    142                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    143          
+    144              if( add_len > 0xFF00 ) {
+    145                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    146              }
+    147          
+    148              if ((uint32_t)output + length > RAM_MEM_END) {
+    149                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+    150              }
+    151          
+    152              key = block_t_convert(ctx->key, ctx->keybits / 8);
+    153              aad_block = block_t_convert(add, add_len);
+    154              tag_block = block_t_convert(tag, tag_len);
+    155              nonce = block_t_convert(iv, iv_len);
+    156              data_in = block_t_convert(input, length);
+    157              data_out = block_t_convert(output, length);
+    158          
+    159              status = cryptoacc_management_acquire();
+    160              if (status != 0) {
+    161                  return status;
+    162              }
+    163              sx_ret = sx_aes_blk(CCM, dir, CTX_WHOLE, key, NULL_blk, NULL_blk,
+    164          			data_in, data_out,
+    165          			aad_block, tag_block, NULL_blk, nonce);
+    166              cryptoacc_management_release();
+    167          
+    168              if (sx_ret != CRYPTOLIB_SUCCESS) {
+    169                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+    170              } else {
+    171                  return 0;
+    172              }
+    173          }
+    174          
+    175          int mbedtls_ccm_auth_decrypt( mbedtls_ccm_context *ctx, size_t length,
+    176                                const unsigned char *iv, size_t iv_len,
+    177                                const unsigned char *add, size_t add_len,
+    178                                const unsigned char *input, unsigned char *output,
+    179                                const unsigned char *tag, size_t tag_len )
+    180          {
+    181              int status;
+    182              unsigned char q;
+    183              uint32_t sx_ret;
+    184              sx_aes_mode_t dir = DEC;
+    185              block_t key;
+    186              block_t aad_block;
+    187              block_t tag_block;
+    188              block_t nonce;
+    189              block_t data_in;
+    190              block_t data_out;
+    191          
+    192              if( ctx == NULL || tag == NULL || iv == NULL ) {
+    193                  return ( MBEDTLS_ERR_CCM_BAD_INPUT );
+    194              }
+    195              if (add_len > 0 && add == NULL ) {
+    196                  return ( MBEDTLS_ERR_CCM_BAD_INPUT );
+    197              }
+    198              if( length > 0 && (input == NULL || output == NULL) ) {
+    199                  return ( MBEDTLS_ERR_CCM_BAD_INPUT );
+    200              }
+    201          
+    202              if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+    203                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+    204              }
+    205          
+    206              /* Test for invalid (too long) message length. This test is included here because
+    207                 the SE does not implement the test. When the SE ultimately implements the test
+    208                 the following test can be removed.  */
+    209              q = 16 - 1 - (unsigned char) iv_len;
+    210              if ( (q < sizeof(length)) && (length >= (1UL<<(q*8))) )
+    211                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    212          
+    213              if( tag_len == 2 || tag_len > 16 || tag_len % 2 != 0 )
+    214                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    215          
+    216              /* Also implies q is within bounds */
+    217              if( iv_len < 7 || iv_len > 13 )
+    218                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    219          
+    220              if( add_len > 0xFF00 ) {
+    221                  return( MBEDTLS_ERR_CCM_BAD_INPUT );
+    222              }
+    223          
+    224              if ((uint32_t)output + length > RAM_MEM_END) {
+    225                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+    226              }
+    227          
+    228              key = block_t_convert(ctx->key, ctx->keybits / 8);
+    229              aad_block = block_t_convert(add, add_len);
+    230              tag_block = block_t_convert(tag, tag_len);
+    231              nonce = block_t_convert(iv, iv_len);
+    232              data_in = block_t_convert(input, length);
+    233              data_out = block_t_convert(output, length);
+    234          
+    235              status = cryptoacc_management_acquire();
+    236              if (status != 0) {
+    237                  return status;
+    238              }
+    239              sx_ret = sx_aes_blk(CCM, dir, CTX_WHOLE, key, NULL_blk, NULL_blk,
+    240          			data_in, data_out,
+    241          			aad_block, tag_block, NULL_blk, nonce);
+    242              cryptoacc_management_release();
+    243          
+    244              if (sx_ret == CRYPTOLIB_SUCCESS) {
+    245                  return 0;
+    246              } else if ( sx_ret == CRYPTOLIB_INVALID_SIGN_ERR ) {
+    247                  memset( output, 0, length );
+    248                  return MBEDTLS_ERR_CCM_AUTH_FAILED;
+    249              } else {
+    250                  return MBEDTLS_ERR_CCM_BAD_INPUT;
+    251              }
+    252          }
+    253          
+    254          #endif /* CRYPTOACC_PRESENT */
+    255          
+    256          #endif /* MBEDTLS_CCM_ALT && MBEDTLS_CCM_C */
+    257          
+    258          #endif /* MBEDTLS_AES_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

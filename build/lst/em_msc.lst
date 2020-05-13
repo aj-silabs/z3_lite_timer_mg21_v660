@@ -1,0 +1,2297 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:51
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_msc.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW536B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_msc.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_msc.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_msc.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_msc.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_msc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Flash controller (MSC) Peripheral API
+      4           * @version 5.8.0
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: Zlib
+     11           *
+     12           * The licensor of this software is Silicon Laboratories Inc.
+     13           *
+     14           * This software is provided 'as-is', without any express or implied
+     15           * warranty. In no event will the authors be held liable for any damages
+     16           * arising from the use of this software.
+     17           *
+     18           * Permission is granted to anyone to use this software for any purpose,
+     19           * including commercial applications, and to alter it and redistribute it
+     20           * freely, subject to the following restrictions:
+     21           *
+     22           * 1. The origin of this software must not be misrepresented; you must not
+     23           *    claim that you wrote the original software. If you use this software
+     24           *    in a product, an acknowledgment in the product documentation would be
+     25           *    appreciated but is not required.
+     26           * 2. Altered source versions must be plainly marked as such, and must not be
+     27           *    misrepresented as being the original software.
+     28           * 3. This notice may not be removed or altered from any source distribution.
+     29           *
+     30           ******************************************************************************/
+     31          
+     32          #include "em_msc.h"
+     33          #if defined(MSC_COUNT) && (MSC_COUNT > 0)
+     34          
+     35          #include "em_system.h"
+     36          #if defined(_MSC_TIMEBASE_MASK)
+     37          #include "em_cmu.h"
+     38          #endif
+     39          #include "em_assert.h"
+     40          #if defined(_SILICON_LABS_32B_SERIES_2)
+     41          #include "em_common.h"
+     42          #endif
+     43          #if defined(_MSC_ECCCTRL_MASK) || defined(_SYSCFG_DMEM0ECCCTRL_MASK)
+     44          #include "em_cmu.h"
+     45          #include "em_core.h"
+     46          #endif
+     47          
+     48          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     49          
+     50          #if defined(__ICCARM__)
+     51          /* Suppress warnings originating from use of EFM_ASSERT() with IAR Embedded Workbench:
+     52             EFM_ASSERT() is implemented as a local ramfunc */
+     53          #pragma diag_suppress=Ta022
+     54          #endif
+     55          
+     56          #if defined(EM_MSC_RUN_FROM_FLASH) && defined(_EFM32_GECKO_FAMILY)
+     57          #error "Running Flash write/erase operations from Flash is not supported on EFM32G."
+     58          #endif
+     59          
+     60          /*******************************************************************************
+     61           ******************************      DEFINES      ******************************
+     62           ******************************************************************************/
+     63          #if defined(MSC_WRITECTRL_WDOUBLE)
+     64          #define WORDS_PER_DATA_PHASE (FLASH_SIZE < (512 * 1024) ? 1 : 2)
+     65          #else
+     66          #define WORDS_PER_DATA_PHASE (1)
+     67          #endif
+     68          
+     69          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+     70          /* Fix for errata FLASH_E201 - Potential program failure after Power On */
+     71          #define ERRATA_FIX_FLASH_E201_EN
+     72          #endif
+     73          
+     74          #define FLASH_PAGE_MASK (~(FLASH_PAGE_SIZE - 1U))
+     75          
+     76          #if defined(_MSC_ECCCTRL_MASK) || defined(_SYSCFG_DMEM0ECCCTRL_MASK)
+     77          #if defined(_SILICON_LABS_32B_SERIES_1_CONFIG_1)
+     78          /* On Series 1 Config 1 EFM32GG11, ECC is supported for RAM0 and RAM1
+     79             banks (not RAM2). It is necessary to figure out which is biggest to
+     80             calculate the number of DMA descriptors needed. */
+     81          #define ECC_RAM_SIZE_MAX   (SL_MAX(RAM0_MEM_SIZE, RAM1_MEM_SIZE))
+     82          
+     83          #define ECC_RAM0_MEM_BASE  (RAM0_MEM_BASE)
+     84          #define ECC_RAM0_MEM_SIZE  (RAM0_MEM_SIZE)
+     85          
+     86          #define ECC_RAM1_MEM_BASE  (RAM1_MEM_BASE)
+     87          #define ECC_RAM1_MEM_SIZE  (RAM1_MEM_SIZE)
+     88          
+     89          #define ECC_CTRL_REG            (MSC->ECCCTRL)
+     90          #define ECC_RAM0_SYNDROMES_INIT (MSC_ECCCTRL_RAMECCEWEN)
+     91          #define ECC_RAM0_CORRECTION_EN  (MSC_ECCCTRL_RAMECCCHKEN)
+     92          #define ECC_RAM1_SYNDROMES_INIT (MSC_ECCCTRL_RAM1ECCEWEN)
+     93          #define ECC_RAM1_CORRECTION_EN  (MSC_ECCCTRL_RAM1ECCCHKEN)
+     94          
+     95          #define ECC_IFC_REG        (MSC->IFC)
+     96          #define ECC_IFC_MASK       (MSC_IFC_RAMERR1B | MSC_IFC_RAMERR2B \
+     97                                      | MSC_IFC_RAM1ERR1B | MSC_IFC_RAM1ERR2B)
+     98          
+     99          #define ECC_FAULT_CTRL_REG (MSC->CTRL)
+    100          #define ECC_FAULT_EN       (MSC_CTRL_RAMECCERRFAULTEN)
+    101          
+    102          #elif defined(_SILICON_LABS_GECKO_INTERNAL_SDID_106)
+    103          /* On Series 1 Config 2 EFM32GG12, ECC is supported for RAM0, RAM1 and
+    104             RAM2 banks. All banks are of equal size. */
+    105          #define ECC_RAM_SIZE_MAX   (RAM0_MEM_SIZE)
+    106          
+    107          #define ECC_RAM0_MEM_BASE  (RAM0_MEM_BASE)
+    108          #define ECC_RAM0_MEM_SIZE  (RAM0_MEM_SIZE)
+    109          
+    110          #define ECC_RAM1_MEM_BASE  (RAM1_MEM_BASE)
+    111          #define ECC_RAM1_MEM_SIZE  (RAM1_MEM_SIZE)
+    112          
+    113          #define ECC_RAM2_MEM_BASE  (RAM2_MEM_BASE)
+    114          #define ECC_RAM2_MEM_SIZE  (RAM2_MEM_SIZE)
+    115          
+    116          #define ECC_CTRL_REG            (MSC->ECCCTRL)
+    117          #define ECC_RAM0_SYNDROMES_INIT (MSC_ECCCTRL_RAMECCEWEN)
+    118          #define ECC_RAM0_CORRECTION_EN  (MSC_ECCCTRL_RAMECCCHKEN)
+    119          #define ECC_RAM1_SYNDROMES_INIT (MSC_ECCCTRL_RAM1ECCEWEN)
+    120          #define ECC_RAM1_CORRECTION_EN  (MSC_ECCCTRL_RAM1ECCCHKEN)
+    121          #define ECC_RAM2_SYNDROMES_INIT (MSC_ECCCTRL_RAM2ECCEWEN)
+    122          #define ECC_RAM2_CORRECTION_EN  (MSC_ECCCTRL_RAM2ECCCHKEN)
+    123          
+    124          #define ECC_IFC_REG        (MSC->IFC)
+    125          #define ECC_IFC_MASK       (MSC_IFC_RAMERR1B | MSC_IFC_RAMERR2B     \
+    126                                      | MSC_IFC_RAM1ERR1B | MSC_IFC_RAM1ERR2B \
+    127                                      | MSC_IFC_RAM2ERR1B | MSC_IFC_RAM2ERR2B)
+    128          
+    129          #define ECC_FAULT_CTRL_REG (MSC->CTRL)
+    130          #define ECC_FAULT_EN       (MSC_CTRL_RAMECCERRFAULTEN)
+    131          
+    132          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    133          
+    134          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1)
+    135          
+    136          /* On Series 2 Config 1, aka EFR32XG21, ECC is supported for the
+    137             main DMEM RAM banks which is controlled with one ECC encoder/decoder. */
+    138          #define ECC_RAM0_SYNDROMES_INIT (SYSCFG_DMEM0ECCCTRL_RAMECCEWEN)
+    139          #define ECC_RAM0_CORRECTION_EN  (SYSCFG_DMEM0ECCCTRL_RAMECCCHKEN)
+    140          
+    141          #elif defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+    142          
+    143          /* On Series 2 Config 2, aka EFR32XG22, ECC is supported for the
+    144             main DMEM RAM banks which is controlled with one ECC encoder/decoder. */
+    145          #define ECC_RAM0_SYNDROMES_INIT (SYSCFG_DMEM0ECCCTRL_RAMECCEN)
+    146          #define ECC_RAM0_CORRECTION_EN  (SYSCFG_DMEM0ECCCTRL_RAMECCEWEN)
+    147          
+    148          #define ECC_IF_REG         (SYSCFG->IF)
+    149          #define ECC_IF_1BIT_ERROR  (SYSCFG_IF_RAMERR1B)
+    150          
+    151          #else
+    152          
+    153          #error "Unknown device"
+    154          
+    155          #endif /* #if defined(if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_1) */
+    156          
+    157          #define ECC_RAM_SIZE_MAX   (RAM_MEM_SIZE)
+    158          #define ECC_RAM0_MEM_BASE  (RAM_MEM_BASE)
+    159          #define ECC_RAM0_MEM_SIZE  (RAM_MEM_SIZE)
+    160          
+    161          #define ECC_CTRL_REG       (SYSCFG->DMEM0ECCCTRL)
+    162          #define ECC_IFC_REG        (SYSCFG->IF_CLR)
+    163          #define ECC_IFC_MASK       (SYSCFG_IF_RAMERR1B | SYSCFG_IF_RAMERR2B)
+    164          #define ECC_FAULT_CTRL_REG (SYSCFG->CTRL)
+    165          #define ECC_FAULT_EN       (SYSCFG_CTRL_RAMECCERRFAULTEN)
+    166          
+    167          #else
+    168          
+    169          #error Unknown device.
+    170          
+    171          #endif
+    172          
+    173          #define ECC_DMA_MAX_XFERCNT (_LDMA_CH_CTRL_XFERCNT_MASK \
+    174                                       >> _LDMA_CH_CTRL_XFERCNT_SHIFT)
+    175          #define ECC_DMA_DESC_SIZE   ((ECC_DMA_MAX_XFERCNT + 1) * 4)  /* 4 bytes units */
+    176          
+    177          #define ECC_DMA_DESCS       (ECC_RAM_SIZE_MAX / ECC_DMA_DESC_SIZE)
+    178          
+    179          #endif /* #if defined(_MSC_ECCCTRL_MASK) */
+    180          
+    181          /***************************************************************************//**
+    182           * @brief
+    183           *   Get locked status of the MSC registers.
+    184           *
+    185           * @detail
+    186           *   MSC_IS_LOCKED() is implemented as a macro because it's used inside functions
+    187           *   that can be placed either in flash or in RAM.
+    188           ******************************************************************************/
+    189          #if defined(_MSC_STATUS_REGLOCK_MASK)
+    190          #define MSC_IS_LOCKED()    ((MSC->STATUS & _MSC_STATUS_REGLOCK_MASK) != 0U)
+    191          #else
+    192          #define MSC_IS_LOCKED()    ((MSC->LOCK & _MSC_LOCK_MASK) != 0U)
+    193          #endif
+    194          
+    195          /*******************************************************************************
+    196           ******************************      TYPEDEFS     ******************************
+    197           ******************************************************************************/
+    198          
+    199          typedef enum {
+    200            mscWriteIntSafe,
+    201            mscWriteFast,
+    202          } MSC_WriteStrategy_Typedef;
+    203          
+    204          #if defined(_MSC_ECCCTRL_MASK) || defined(_SYSCFG_DMEM0ECCCTRL_MASK)
+    205          typedef struct {
+    206            uint32_t           initSyndromeEnable;
+    207            uint32_t           correctionEnable;
+    208            uint32_t           base;
+    209            uint32_t           size;
+    210          } MSC_EccBank_Typedef;
+    211          
+    212          #endif
+    213          
+    214          /*******************************************************************************
+    215           ******************************      LOCALS      *******************************
+    216           ******************************************************************************/
+    217          #if defined(_MSC_ECCCTRL_MASK) || defined(_SYSCFG_DMEM0ECCCTRL_MASK)
+    218          static const MSC_EccBank_Typedef eccBankTbl[MSC_ECC_BANKS] =
+    219          {
+    220            {
+    221              ECC_RAM0_SYNDROMES_INIT, ECC_RAM0_CORRECTION_EN,
+    222              ECC_RAM0_MEM_BASE, ECC_RAM0_MEM_SIZE
+    223            },
+    224          #if MSC_ECC_BANKS > 1
+    225            {
+    226              ECC_RAM1_SYNDROMES_INIT, ECC_RAM1_CORRECTION_EN,
+    227              ECC_RAM1_MEM_BASE, ECC_RAM1_MEM_SIZE
+    228            },
+    229          #if MSC_ECC_BANKS > 2
+    230            {
+    231              ECC_RAM2_SYNDROMES_INIT, ECC_RAM2_CORRECTION_EN,
+    232              ECC_RAM2_MEM_BASE, ECC_RAM2_MEM_SIZE
+    233            },
+    234          #endif
+    235          #endif
+    236          };
+    237          #endif
+    238          
+    239          /*******************************************************************************
+    240           ******************************     FUNCTIONS     ******************************
+    241           ******************************************************************************/
+    242          MSC_RAMFUNC_DECLARATOR MSC_Status_TypeDef
+    243          MSC_WriteWordI(uint32_t *address,
+    244                         void const *data,
+    245                         uint32_t numBytes,
+    246                         MSC_WriteStrategy_Typedef writeStrategy);
+    247          
+    248          MSC_RAMFUNC_DECLARATOR MSC_Status_TypeDef
+    249          MSC_LoadWriteData(uint32_t* data,
+    250                            uint32_t numWords,
+    251                            MSC_WriteStrategy_Typedef writeStrategy);
+    252          
+    253          MSC_RAMFUNC_DECLARATOR MSC_Status_TypeDef
+    254          MSC_LoadVerifyAddress(uint32_t* address);
+    255          
+    256          #if !defined(EM_MSC_RUN_FROM_FLASH)
+    257          
+    258          MSC_RAMFUNC_DECLARATOR void mscRfAssertEFM(const char *file, int line);
+    259          
+    260          /***************************************************************************//**
+    261           * @brief
+    262           *   Local ramfunc assertEFM.
+    263           *
+    264           *   A local ramfunc version of assertEFM is needed because certain MSC functions
+    265           *   are allocated to RAM. The Flash may get erased and code normally located in
+    266           *   Flash must therefore have a RAM copy.
+    267           *
+    268           *   This function is invoked through EFM_ASSERT() macro usage only and should
+    269           *   not be used explicitly.
+    270           *
+    271           * @param[in] file
+    272           *   The source file where assertion failed.
+    273           *
+    274           * @param[in] line
+    275           *   A line number in the source file where assertion failed.
+    276           ******************************************************************************/
+
+   \                                 In section .textrw, align 2, keep-with-next
+    277          MSC_RAMFUNC_DEFINITION_BEGIN
+    278          void mscRfAssertEFM(const char *file, int line)
+    279          {
+    280            (void)file;  /* Unused parameter */
+    281            (void)line;  /* Unused parameter */
+    282          
+    283            while (true) {
+   \                     mscRfAssertEFM: (+1)
+   \                     ??mscRfAssertEFM_0: (+1)
+   \        0x0   0xE7FE             B.N      ??mscRfAssertEFM_0
+    284            }
+    285          }
+    286          MSC_RAMFUNC_DEFINITION_END
+    287          
+    288          /* Undef the define from em_assert.h and redirect to a local ramfunc version. */
+    289          #undef  EFM_ASSERT
+    290          #if defined(DEBUG_EFM) || defined(DEBUG_EFM_USER)
+    291          #define EFM_ASSERT(expr)    ((expr) ? ((void)0) : mscRfAssertEFM(__FILE__, __LINE__))
+    292          #else
+    293          #define EFM_ASSERT(expr)    ((void)(expr))
+    294          #endif /* defined(DEBUG_EFM) || defined(DEBUG_EFM_USER) */
+    295          
+    296          #endif /* !EM_MSC_RUN_FROM_FLASH */
+    297          
+    298          /** @endcond */
+    299          
+    300          /***************************************************************************//**
+    301           * @addtogroup emlib
+    302           * @{
+    303           ******************************************************************************/
+    304          
+    305          /***************************************************************************//**
+    306           * @addtogroup MSC
+    307           * @{
+    308           ******************************************************************************/
+    309          
+    310          /*******************************************************************************
+    311           **************************   GLOBAL FUNCTIONS   *******************************
+    312           ******************************************************************************/
+    313          
+    314          #if defined(_SILICON_LABS_32B_SERIES_2)
+    315          
+    316          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    317          
+    318          /***************************************************************************//**
+    319           * @brief
+    320           *   Wait for a specified MSC status or timeout.
+    321           *
+    322           * @param[in] mask
+    323           *   MSC->STATUS register mask to apply when testing for specified status.
+    324           * @param[in] value
+    325           *   The value the MSC->STATUS test is waiting to see.
+    326           * @return
+    327           *   Returns the status of a write or erase operation, @ref MSC_Status_TypeDef
+    328           * @verbatim
+    329           *   mscReturnOk - Specified status criterium fulfilled.
+    330           *   mscReturnInvalidAddr - Operation tried to write or erase a non-flash area.
+    331           *   flashReturnLocked - MSC registers are locked or the operation tried to
+    332           *                       write or erase a locked area of the flash.
+    333           *   flashReturnTimeOut - Operation timed out.
+    334           * @endverbatim
+    335           ******************************************************************************/
+
+   \                                 In section .textrw, align 2, keep-with-next
+    336          MSC_RAMFUNC_DEFINITION_BEGIN
+    337          msc_Return_TypeDef mscStatusWait(uint32_t mask, uint32_t value)
+    338          {
+   \                     mscStatusWait: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    339            uint32_t status;
+    340            int timeOut = MSC_PROGRAM_TIMEOUT;
+   \        0x2   0x....             LDR.N    R2,??DataTable4  ;; 0x989680
+   \        0x4   0x....             LDR.N    R4,??DataTable4_1  ;; 0x10006
+    341          
+    342            while (timeOut > 0) {
+    343              // Check if any error flags are set
+    344              if ((status = MSC->STATUS)
+    345                  & (MSC_STATUS_LOCKED | MSC_STATUS_REGLOCK | MSC_STATUS_INVADDR)) {
+   \                     ??mscStatusWait_0: (+1)
+   \        0x6   0x....             LDR.N    R3,??DataTable4_2  ;; 0x4003001c
+   \        0x8   0x681B             LDR      R3,[R3, #+0]
+   \        0xA   0x4223             TST      R3,R4
+   \        0xC   0xD107             BNE.N    ??mscStatusWait_1
+    346                if (status & (MSC_STATUS_LOCKED | MSC_STATUS_REGLOCK)) {
+    347                  return mscReturnLocked;
+    348                }
+    349                return mscReturnInvalidAddr;
+    350              }
+    351              // Test exit criterium
+    352              if ((status & mask) == value) {
+   \        0xE   0x4003             ANDS     R3,R0,R3
+   \       0x10   0x428B             CMP      R3,R1
+   \       0x12   0xD00D             BEQ.N    ??mscStatusWait_2
+    353                return mscReturnOk;
+    354              }
+    355              timeOut--;
+   \       0x14   0x1E52             SUBS     R2,R2,#+1
+   \       0x16   0xD1F6             BNE.N    ??mscStatusWait_0
+    356            }
+    357            return mscReturnTimeOut;
+   \       0x18   0xF06F 0x0002      MVN      R0,#+2
+   \       0x1C   0xBD10             POP      {R4,PC}          ;; return
+   \                     ??mscStatusWait_1: (+1)
+   \       0x1E   0x....             LDR.N    R0,??DataTable4_3  ;; 0x10002
+   \       0x20   0x4203             TST      R3,R0
+   \       0x22   0xD002             BEQ.N    ??mscStatusWait_3
+   \       0x24   0xF06F 0x0001      MVN      R0,#+1
+   \       0x28   0xBD10             POP      {R4,PC}
+   \                     ??mscStatusWait_3: (+1)
+   \       0x2A   0xF04F 0x30FF      MOV      R0,#-1
+   \       0x2E   0xBD10             POP      {R4,PC}
+   \                     ??mscStatusWait_2: (+1)
+   \       0x30   0x2000             MOVS     R0,#+0
+   \       0x32   0xBD10             POP      {R4,PC}
+    358          }
+    359          MSC_RAMFUNC_DEFINITION_END
+    360          
+    361          /***************************************************************************//**
+    362           * @brief
+    363           *   Writes data to flash memory. It is assumed that start address is word
+    364           *   aligned and that numBytes is an integer multiple of four, and that the
+    365           *   write operation does not cross a flash page boundary.
+    366           *
+    367           * @param[in] address
+    368           *   Pointer to the flash word to write to. Must be aligned to words.
+    369           * @param[in] data
+    370           *   Data to write to flash.
+    371           * @param[in] numBytes
+    372           *   Number of bytes to write to flash. NB: Must be divisable by four.
+    373           * @return
+    374           *   Returns the status of the write operation, @ref MSC_Status_TypeDef
+    375           * @verbatim
+    376           *   flashReturnOk - Operation completed successfully.
+    377           *   flashReturnInvalidAddr - Operation tried to write to a non-flash area.
+    378           *   flashReturnLocked - MSC registers are locked or the operation tried to
+    379           *                       program a locked area of the flash.
+    380           *   flashReturnTimeOut - Operation timed out.
+    381           * @endverbatim
+    382           ******************************************************************************/
+
+   \                                 In section .textrw, align 2, keep-with-next
+    383          MSC_RAMFUNC_DEFINITION_BEGIN
+    384          msc_Return_TypeDef writeBurst(uint32_t address,
+    385                                        const uint32_t *data,
+    386                                        uint32_t numBytes)
+    387          {
+   \                     writeBurst: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    388            msc_Return_TypeDef retVal;
+    389          
+    390            MSC->ADDRB = address;
+   \        0x2   0x....             LDR.N    R5,??DataTable4_4  ;; 0x40030010
+   \        0x4   0x6068             STR      R0,[R5, #+4]
+    391            if (MSC->STATUS & MSC_STATUS_INVADDR) {
+   \        0x6   0x68E8             LDR      R0,[R5, #+12]
+   \        0x8   0x460E             MOV      R6,R1
+   \        0xA   0x0741             LSLS     R1,R0,#+29
+   \        0xC   0xD502             BPL.N    ??writeBurst_0
+    392              return mscReturnInvalidAddr;
+   \        0xE   0xF04F 0x30FF      MOV      R0,#-1
+   \       0x12   0xBD70             POP      {R4-R6,PC}
+    393            }
+    394            MSC->WDATA = *data++;
+   \                     ??writeBurst_0: (+1)
+   \       0x14   0xF856 0x0B04      LDR      R0,[R6], #+4
+    395            numBytes  -= 4;
+   \       0x18   0x1F14             SUBS     R4,R2,#+4
+   \       0x1A   0xE002             B.N      ??writeBurst_1
+    396          
+    397            while (numBytes) {
+    398              if ((retVal = mscStatusWait(MSC_STATUS_WDATAREADY, MSC_STATUS_WDATAREADY))
+    399                  != mscReturnOk) {
+    400                MSC->WRITECMD = MSC_WRITECMD_WRITEEND;
+    401                return retVal;
+    402              }
+    403              MSC->WDATA = *data++;
+   \                     ??writeBurst_2: (+1)
+   \       0x1C   0xF856 0x0B04      LDR      R0,[R6], #+4
+    404              numBytes  -= 4;
+   \       0x20   0x1F24             SUBS     R4,R4,#+4
+   \                     ??writeBurst_1: (+1)
+   \       0x22   0x60A8             STR      R0,[R5, #+8]
+   \       0x24   0xB144             CBZ.N    R4,??writeBurst_3
+   \       0x26   0x2108             MOVS     R1,#+8
+   \       0x28   0x2008             MOVS     R0,#+8
+   \       0x2A   0x....'....        BL       mscStatusWait
+   \       0x2E   0x0001             MOVS     R1,R0
+   \       0x30   0xD0F4             BEQ.N    ??writeBurst_2
+   \       0x32   0x2104             MOVS     R1,#+4
+   \       0x34   0x6029             STR      R1,[R5, #+0]
+   \       0x36   0xBD70             POP      {R4-R6,PC}
+    405            }
+    406          
+    407            MSC->WRITECMD = MSC_WRITECMD_WRITEEND;
+   \                     ??writeBurst_3: (+1)
+   \       0x38   0x2004             MOVS     R0,#+4
+   \       0x3A   0x6028             STR      R0,[R5, #+0]
+    408            if ((retVal = mscStatusWait((MSC_STATUS_BUSY | MSC_STATUS_PENDING), 0))
+    409                == mscReturnOk) {
+   \       0x3C   0x2100             MOVS     R1,#+0
+   \       0x3E   0x2021             MOVS     R0,#+33
+   \       0x40   0x....'....        BL       mscStatusWait
+   \       0x44   0x0001             MOVS     R1,R0
+   \       0x46   0xD104             BNE.N    ??writeBurst_4
+    410              // We need to check twice to be sure
+    411              retVal = mscStatusWait((MSC_STATUS_BUSY | MSC_STATUS_PENDING), 0);
+   \       0x48   0x2100             MOVS     R1,#+0
+   \       0x4A   0x2021             MOVS     R0,#+33
+   \       0x4C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x50   0x....             B.N      mscStatusWait
+    412            }
+    413            return retVal;
+   \                     ??writeBurst_4: (+1)
+   \       0x52   0xBD70             POP      {R4-R6,PC}       ;; return
+    414          }
+    415          MSC_RAMFUNC_DEFINITION_END
+    416          
+    417          /** @endcond */
+    418          
+    419          /***************************************************************************//**
+    420           * @brief
+    421           *   Initialize MSC module. Puts MSC hw in a known state.
+    422           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    423          void MSC_Init(void)
+    424          {
+    425          #if defined(_CMU_CLKEN1_MASK)
+    426            CMU->CLKEN1_SET = CMU_CLKEN1_MSC;
+    427          #endif
+    428            // Unlock MSC
+    429            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   \                     MSC_Init: (+1)
+   \        0x0   0xF641 0x3071      MOVW     R0,#+7025
+   \        0x4   0x....             LDR.N    R1,??DataTable15  ;; 0x4003003c
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+    430            // Disable flash write
+    431            MSC->WRITECTRL_CLR = MSC_WRITECTRL_WREN;
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0x....             LDR.N    R3,??DataTable15_1  ;; 0x4003200c
+   \        0xC   0x601A             STR      R2,[R3, #+0]
+    432          }
+   \        0xE   0x4770             BX       LR               ;; return
+    433          
+    434          /***************************************************************************//**
+    435           * @brief
+    436           *   Turn off MSC flash write enable and lock MSC registers.
+    437           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    438          void MSC_Deinit(void)
+    439          {
+   \                     MSC_Deinit: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    440            // Unlock MSC
+    441            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   \        0x2   0x....             LDR.N    R0,??DataTable15  ;; 0x4003003c
+   \        0x4   0xF641 0x3171      MOVW     R1,#+7025
+   \        0x8   0x6001             STR      R1,[R0, #+0]
+    442            // Disable flash write
+    443            MSC->WRITECTRL_CLR = MSC_WRITECTRL_WREN;
+   \        0xA   0x2201             MOVS     R2,#+1
+   \        0xC   0x....             LDR.N    R3,??DataTable15_1  ;; 0x4003200c
+   \        0xE   0x601A             STR      R2,[R3, #+0]
+    444            // Lock MSC
+    445            MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   \       0x10   0x2400             MOVS     R4,#+0
+   \       0x12   0x6004             STR      R4,[R0, #+0]
+    446          #if defined(_CMU_CLKEN1_MASK)
+    447            CMU->CLKEN1_CLR = CMU_CLKEN1_MSC;
+    448          #endif
+    449          }
+   \       0x14   0xBD10             POP      {R4,PC}          ;; return
+    450          
+    451          /***************************************************************************//**
+    452           * @brief
+    453           *   Set MSC code execution configuration
+    454           *
+    455           * @param[in] execConfig
+    456           *   Code execution configuration
+    457           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    458          void MSC_ExecConfigSet(MSC_ExecConfig_TypeDef *execConfig)
+    459          {
+    460            uint32_t mscReadCtrl;
+    461          
+    462            mscReadCtrl = MSC->READCTRL & ~MSC_READCTRL_DOUTBUFEN;
+   \                     MSC_ExecConfigSet: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable15_2  ;; 0x40030008
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+    463          
+    464            if (execConfig->doutBufEn) {
+   \        0x4   0x7800             LDRB     R0,[R0, #+0]
+   \        0x6   0xF422 0x5280      BIC      R2,R2,#0x1000
+   \        0xA   0xB108             CBZ.N    R0,??MSC_ExecConfigSet_0
+    465              mscReadCtrl |= MSC_READCTRL_DOUTBUFEN;
+   \        0xC   0xF442 0x5280      ORR      R2,R2,#0x1000
+    466            }
+    467          
+    468            MSC->READCTRL = mscReadCtrl;
+   \                     ??MSC_ExecConfigSet_0: (+1)
+   \       0x10   0x600A             STR      R2,[R1, #+0]
+    469          }
+   \       0x12   0x4770             BX       LR               ;; return
+    470          
+    471          /***************************************************************************//**
+    472           * @brief
+    473           *   Erases a page in flash memory.
+    474           *
+    475           *   For IAR Embedded Workbench, Simplicity Studio and GCC this will be achieved
+    476           *   automatically by using attributes in the function proctype. For Keil
+    477           *   uVision you must define a section called "ram_code" and place this manually
+    478           *   in your project's scatter file.
+    479           *
+    480           * @param[in] startAddress
+    481           *   Pointer to the flash page to erase. Must be aligned to beginning of page
+    482           *   boundary.
+    483           * @return
+    484           *   Returns the status of erase operation, @ref MSC_Status_TypeDef
+    485           * @verbatim
+    486           *   mscReturnOk - Operation completed successfully.
+    487           *   mscReturnInvalidAddr - Operation tried to erase a non-flash area.
+    488           *   flashReturnLocked - MSC registers are locked or the operation tried to
+    489           *                       erase a locked area of the flash.
+    490           *   flashReturnTimeOut - Operation timed out.
+    491           * @endverbatim
+    492           ******************************************************************************/
+
+   \                                 In section .textrw, align 2, keep-with-next
+    493          MSC_RAMFUNC_DEFINITION_BEGIN
+    494          MSC_Status_TypeDef MSC_ErasePage(uint32_t *startAddress)
+    495          {
+   \                     MSC_ErasePage: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    496            MSC_Status_TypeDef retVal;
+    497            bool wasLocked;
+    498          
+    499            // Address must be aligned to page boundary
+    500            EFM_ASSERT((((uint32_t)startAddress) & (FLASH_PAGE_SIZE - 1U)) == 0);
+    501          
+    502            wasLocked = MSC_IS_LOCKED();
+    503            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   \        0x2   0xF641 0x3171      MOVW     R1,#+7025
+   \        0x6   0x....             LDR.N    R4,??DataTable4_4  ;; 0x40030010
+    504          
+    505            MSC->WRITECTRL_SET = MSC_WRITECTRL_WREN;
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0x....             LDR.N    R3,??DataTable4_5  ;; 0x4003100c
+   \        0xC   0x68E5             LDR      R5,[R4, #+12]
+   \        0xE   0x62E1             STR      R1,[R4, #+44]
+   \       0x10   0x601A             STR      R2,[R3, #+0]
+    506            MSC->ADDRB         = (uint32_t)startAddress;
+   \       0x12   0x6060             STR      R0,[R4, #+4]
+    507            MSC->WRITECMD      = MSC_WRITECMD_ERASEPAGE;
+   \       0x14   0x2602             MOVS     R6,#+2
+   \       0x16   0x6026             STR      R6,[R4, #+0]
+    508            if ((retVal = mscStatusWait((MSC_STATUS_BUSY | MSC_STATUS_PENDING), 0))
+    509                == mscReturnOk) {
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0x2021             MOVS     R0,#+33
+   \       0x1C   0x0C2D             LSRS     R5,R5,#+16
+   \       0x1E   0x....'....        BL       mscStatusWait
+   \       0x22   0xF005 0x0501      AND      R5,R5,#0x1
+   \       0x26   0x0001             MOVS     R1,R0
+   \       0x28   0xD103             BNE.N    ??MSC_ErasePage_0
+    510              // We need to check twice to be sure
+    511              retVal = mscStatusWait((MSC_STATUS_BUSY | MSC_STATUS_PENDING), 0);
+   \       0x2A   0x2100             MOVS     R1,#+0
+   \       0x2C   0x2021             MOVS     R0,#+33
+   \       0x2E   0x....'....        BL       mscStatusWait
+    512            }
+    513            MSC->WRITECTRL_CLR = MSC_WRITECTRL_WREN;
+   \                     ??MSC_ErasePage_0: (+1)
+   \       0x32   0x2101             MOVS     R1,#+1
+   \       0x34   0x....             LDR.N    R2,??DataTable4_6  ;; 0x4003200c
+   \       0x36   0x6011             STR      R1,[R2, #+0]
+    514          
+    515            if (wasLocked) {
+   \       0x38   0xB10D             CBZ.N    R5,??MSC_ErasePage_1
+    516              MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   \       0x3A   0x2100             MOVS     R1,#+0
+   \       0x3C   0x62E1             STR      R1,[R4, #+44]
+    517            }
+    518          
+    519            return retVal;
+   \                     ??MSC_ErasePage_1: (+1)
+   \       0x3E   0xBD70             POP      {R4-R6,PC}       ;; return
+    520          }
+    521          MSC_RAMFUNC_DEFINITION_END
+    522          
+    523          /***************************************************************************//**
+    524           * @brief
+    525           *   Writes data to flash memory. Write data must be aligned to words and
+    526           *   contain a number of bytes that is divisable by four.
+    527           * @note
+    528           *   It is recommended to erase the flash page before performing a write.
+    529           *
+    530           *   For IAR Embedded Workbench, Simplicity Studio and GCC this will be achieved
+    531           *   automatically by using attributes in the function proctype. For Keil
+    532           *   uVision you must define a section called "ram_code" and place this manually
+    533           *   in your project's scatter file.
+    534           *
+    535           * @param[in] address
+    536           *   Pointer to the flash word to write to. Must be aligned to words.
+    537           * @param[in] data
+    538           *   Data to write to flash.
+    539           * @param[in] numBytes
+    540           *   Number of bytes to write to flash. NB: Must be divisable by four.
+    541           * @return
+    542           *   Returns the status of the write operation, @ref MSC_Status_TypeDef
+    543           * @verbatim
+    544           *   flashReturnOk - Operation completed successfully.
+    545           *   flashReturnInvalidAddr - Operation tried to write to a non-flash area.
+    546           *   flashReturnLocked - MSC registers are locked or the operation tried to
+    547           *                       program a locked area of the flash.
+    548           *   flashReturnTimeOut - Operation timed out.
+    549           * @endverbatim
+    550           ******************************************************************************/
+
+   \                                 In section .textrw, align 2, keep-with-next
+    551          MSC_RAMFUNC_DEFINITION_BEGIN
+    552          MSC_Status_TypeDef MSC_WriteWord(uint32_t *address,
+    553                                           void const *data,
+    554                                           uint32_t numBytes)
+    555          {
+   \                     MSC_WriteWord: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+    556            uint32_t addr;
+    557            uint8_t  *pData;
+    558            uint32_t burstLen;
+    559            MSC_Status_TypeDef retVal = mscReturnOk;
+    560            bool wasLocked;
+    561          
+    562            // Check alignment (must be aligned to words)
+    563            EFM_ASSERT(((uint32_t)address & 0x3U) == 0);
+    564            // Check number of bytes, must be divisable by four
+    565            EFM_ASSERT((numBytes & 0x3U) == 0);
+    566          
+    567            wasLocked = MSC_IS_LOCKED();
+   \        0x4   0x....             LDR.N    R7,??DataTable4_2  ;; 0x4003001c
+   \        0x6   0x683D             LDR      R5,[R7, #+0]
+   \        0x8   0x4689             MOV      R9,R1
+   \        0xA   0x4614             MOV      R4,R2
+    568            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   \        0xC   0xF641 0x3171      MOVW     R1,#+7025
+   \       0x10   0x4680             MOV      R8,R0
+   \       0x12   0x0C2D             LSRS     R5,R5,#+16
+   \       0x14   0x6239             STR      R1,[R7, #+32]
+    569          
+    570            // Enable flash write
+    571            MSC->WRITECTRL_SET = MSC_WRITECTRL_WREN;
+   \       0x16   0x2201             MOVS     R2,#+1
+   \       0x18   0x....             LDR.N    R3,??DataTable4_5  ;; 0x4003100c
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0xF005 0x0501      AND      R5,R5,#0x1
+   \       0x20   0x601A             STR      R2,[R3, #+0]
+    572          
+    573            addr  = (uint32_t)address;
+    574            pData = (uint8_t*)data;
+   \       0x22   0xE009             B.N      ??MSC_WriteWord_0
+    575          
+    576            while (numBytes) {
+    577              // Max burst length is up to next flash page boundary
+    578              burstLen = SL_MIN(numBytes,
+    579                                ((addr + FLASH_PAGE_SIZE) & FLASH_PAGE_MASK) - addr);
+    580          
+    581              if ((retVal = writeBurst(addr, (const uint32_t*)pData, burstLen))
+    582                  != mscReturnOk) {
+   \                     ??MSC_WriteWord_1: (+1)
+   \       0x24   0x4632             MOV      R2,R6
+   \       0x26   0x4649             MOV      R1,R9
+   \       0x28   0x4640             MOV      R0,R8
+   \       0x2A   0x....'....        BL       writeBurst
+   \       0x2E   0x0001             MOVS     R1,R0
+   \       0x30   0xD10D             BNE.N    ??MSC_WriteWord_2
+    583                break;
+    584              }
+    585          
+    586              addr     += burstLen;
+   \       0x32   0x44B0             ADD      R8,R6,R8
+    587              pData    += burstLen;
+   \       0x34   0x44B1             ADD      R9,R9,R6
+    588              numBytes -= burstLen;
+   \       0x36   0x1BA4             SUBS     R4,R4,R6
+   \                     ??MSC_WriteWord_0: (+1)
+   \       0x38   0xB14C             CBZ.N    R4,??MSC_WriteWord_2
+   \       0x3A   0xF508 0x5600      ADD      R6,R8,#+8192
+   \       0x3E   0x0B76             LSRS     R6,R6,#+13
+   \       0x40   0x0376             LSLS     R6,R6,#+13
+   \       0x42   0xEBA6 0x0608      SUB      R6,R6,R8
+   \       0x46   0x42B4             CMP      R4,R6
+   \       0x48   0xD2EC             BCS.N    ??MSC_WriteWord_1
+   \       0x4A   0x4626             MOV      R6,R4
+   \       0x4C   0xE7EA             B.N      ??MSC_WriteWord_1
+    589            }
+    590          
+    591            // Disable flash write
+    592            MSC->WRITECTRL_CLR = MSC_WRITECTRL_WREN;
+   \                     ??MSC_WriteWord_2: (+1)
+   \       0x4E   0x2101             MOVS     R1,#+1
+   \       0x50   0x....             LDR.N    R2,??DataTable4_6  ;; 0x4003200c
+   \       0x52   0x6011             STR      R1,[R2, #+0]
+    593          
+    594            if (wasLocked) {
+   \       0x54   0xB10D             CBZ.N    R5,??MSC_WriteWord_3
+    595              MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   \       0x56   0x2100             MOVS     R1,#+0
+   \       0x58   0x6239             STR      R1,[R7, #+32]
+    596            }
+    597          
+    598            return retVal;
+   \                     ??MSC_WriteWord_3: (+1)
+   \       0x5A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    599          }
+    600          MSC_RAMFUNC_DEFINITION_END
+    601          
+    602          #if 0       // Masserase is only possible from SE, code kept for doc. purposes
+    603          MSC_RAMFUNC_DEFINITION_BEGIN
+    604          MSC_Status_TypeDef MSC_MassErase(void)
+    605          {
+    606            MSC_Status_TypeDef retVal;
+    607          
+    608            if (MSC_IS_LOCKED()) {
+    609              return mscReturnLocked;
+    610            }
+    611          
+    612            MSC->WRITECTRL_SET    = MSC_WRITECTRL_WREN;
+    613            // NOTE: Only SE can clear MELOCKBIT, so this function does not really work...
+    614            MSC->MISCLOCKWORD_CLR = MSC_MISCLOCKWORD_MELOCKBIT;
+    615            MSC->WRITECMD         = MSC_WRITECMD_ERASEMAIN0;
+    616            retVal                = mscStatusWait(MSC_STATUS_BUSY, 0);
+    617            MSC->MISCLOCKWORD_SET = MSC_MISCLOCKWORD_MELOCKBIT;
+    618            MSC->WRITECTRL_CLR    = MSC_MSC_WRITECTRL_WREN;
+    619          
+    620            return retVal;
+    621          }
+    622          MSC_RAMFUNC_DEFINITION_END
+    623          #endif
+    624          
+    625          #else // defined(_SILICON_LABS_32B_SERIES_2)
+    626          
+    627          /***************************************************************************//**
+    628           * @brief
+    629           *   Enables the flash controller for writing.
+    630           * @note
+    631           *   This function must be called before flash operations when
+    632           *   AUXHFRCO clock has been changed from a default band.
+    633           ******************************************************************************/
+    634          void MSC_Init(void)
+    635          {
+    636          #if defined(_MSC_TIMEBASE_MASK)
+    637            uint32_t freq, cycles;
+    638          #endif
+    639          
+    640          #if defined(_EMU_STATUS_VSCALE_MASK)
+    641            /* VSCALE must be done. Flash erase and write requires VSCALE2. */
+    642            EFM_ASSERT(!(EMU->STATUS & _EMU_STATUS_VSCALEBUSY_MASK));
+    643            EFM_ASSERT((EMU->STATUS & _EMU_STATUS_VSCALE_MASK) == EMU_STATUS_VSCALE_VSCALE2);
+    644          #endif
+    645          
+    646            /* Unlock the MSC module. */
+    647            MSC->LOCK = MSC_UNLOCK_CODE;
+    648            /* Disable writing to the Flash. */
+    649            MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+    650          
+    651          #if defined(_MSC_TIMEBASE_MASK)
+    652            /* Configure MSC->TIMEBASE according to a selected frequency. */
+    653            freq = CMU_ClockFreqGet(cmuClock_AUX);
+    654          
+    655            /* Timebase 5us is used for the 1/1.2 MHz band only. Note that the 1 MHz band
+    656               is tuned to 1.2 MHz on newer revisions.  */
+    657            if (freq > 1200000) {
+    658              /* Calculate a number of clock cycles for 1 us as a base period. */
+    659              freq   = (freq * 11) / 10;
+    660              cycles = (freq / 1000000) + 1;
+    661          
+    662              /* Configure clock cycles for flash timing. */
+    663              MSC->TIMEBASE = (MSC->TIMEBASE & ~(_MSC_TIMEBASE_BASE_MASK
+    664                                                 | _MSC_TIMEBASE_PERIOD_MASK))
+    665                              | MSC_TIMEBASE_PERIOD_1US
+    666                              | (cycles << _MSC_TIMEBASE_BASE_SHIFT);
+    667            } else {
+    668              /* Calculate a number of clock cycles for 5 us as a base period. */
+    669              freq   = (freq * 5 * 11) / 10;
+    670              cycles = (freq / 1000000) + 1;
+    671          
+    672              /* Configure clock cycles for flash timing */
+    673              MSC->TIMEBASE = (MSC->TIMEBASE & ~(_MSC_TIMEBASE_BASE_MASK
+    674                                                 | _MSC_TIMEBASE_PERIOD_MASK))
+    675                              | MSC_TIMEBASE_PERIOD_5US
+    676                              | (cycles << _MSC_TIMEBASE_BASE_SHIFT);
+    677            }
+    678          #endif
+    679          }
+    680          
+    681          /***************************************************************************//**
+    682           * @brief
+    683           *   Disables the flash controller for writing.
+    684           ******************************************************************************/
+    685          void MSC_Deinit(void)
+    686          {
+    687            /* Disable writing to the Flash. */
+    688            MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+    689            /* Lock the MSC module.*/
+    690            MSC->LOCK = 0;
+    691          }
+    692          
+    693          /***************************************************************************//**
+    694           * @brief
+    695           *   Set the MSC code execution configuration.
+    696           *
+    697           * @param[in] execConfig
+    698           *   The code execution configuration.
+    699           ******************************************************************************/
+    700          void MSC_ExecConfigSet(MSC_ExecConfig_TypeDef *execConfig)
+    701          {
+    702            uint32_t mscReadCtrl;
+    703          
+    704          #if defined(MSC_READCTRL_MODE_WS0SCBTP)
+    705            mscReadCtrl = MSC->READCTRL & _MSC_READCTRL_MODE_MASK;
+    706            if ((mscReadCtrl == MSC_READCTRL_MODE_WS0) && (execConfig->scbtEn)) {
+    707              mscReadCtrl |= MSC_READCTRL_MODE_WS0SCBTP;
+    708            } else if ((mscReadCtrl == MSC_READCTRL_MODE_WS1) && (execConfig->scbtEn)) {
+    709              mscReadCtrl |= MSC_READCTRL_MODE_WS1SCBTP;
+    710            } else if ((mscReadCtrl == MSC_READCTRL_MODE_WS0SCBTP) && (!execConfig->scbtEn)) {
+    711              mscReadCtrl |= MSC_READCTRL_MODE_WS0;
+    712            } else if ((mscReadCtrl == MSC_READCTRL_MODE_WS1SCBTP) && (!execConfig->scbtEn)) {
+    713              mscReadCtrl |= MSC_READCTRL_MODE_WS1;
+    714            } else {
+    715              /* No change needed. */
+    716            }
+    717          #endif
+    718          
+    719            mscReadCtrl = MSC->READCTRL & ~(0
+    720          #if defined(MSC_READCTRL_SCBTP)
+    721                                            | MSC_READCTRL_SCBTP
+    722          #endif
+    723          #if defined(MSC_READCTRL_USEHPROT)
+    724                                            | MSC_READCTRL_USEHPROT
+    725          #endif
+    726          #if defined(MSC_READCTRL_PREFETCH)
+    727                                            | MSC_READCTRL_PREFETCH
+    728          #endif
+    729          #if defined(MSC_READCTRL_ICCDIS)
+    730                                            | MSC_READCTRL_ICCDIS
+    731          #endif
+    732          #if defined(MSC_READCTRL_AIDIS)
+    733                                            | MSC_READCTRL_AIDIS
+    734          #endif
+    735          #if defined(MSC_READCTRL_IFCDIS)
+    736                                            | MSC_READCTRL_IFCDIS
+    737          #endif
+    738                                            );
+    739            mscReadCtrl |= (0
+    740          #if defined(MSC_READCTRL_SCBTP)
+    741                            | (execConfig->scbtEn ? MSC_READCTRL_SCBTP : 0)
+    742          #endif
+    743          #if defined(MSC_READCTRL_USEHPROT)
+    744                            | (execConfig->useHprot ? MSC_READCTRL_USEHPROT : 0)
+    745          #endif
+    746          #if defined(MSC_READCTRL_PREFETCH)
+    747                            | (execConfig->prefetchEn ? MSC_READCTRL_PREFETCH : 0)
+    748          #endif
+    749          #if defined(MSC_READCTRL_ICCDIS)
+    750                            | (execConfig->iccDis ? MSC_READCTRL_ICCDIS : 0)
+    751          #endif
+    752          #if defined(MSC_READCTRL_AIDIS)
+    753                            | (execConfig->aiDis ? MSC_READCTRL_AIDIS : 0)
+    754          #endif
+    755          #if defined(MSC_READCTRL_IFCDIS)
+    756                            | (execConfig->ifcDis ? MSC_READCTRL_IFCDIS : 0)
+    757          #endif
+    758                            );
+    759          
+    760            MSC->READCTRL = mscReadCtrl;
+    761          }
+    762          
+    763          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    764          
+    765          /***************************************************************************//**
+    766           * @brief
+    767           *   Perform the address phase of the flash write cycle.
+    768           * @details
+    769           *   This function performs the address phase of a flash write operation by
+    770           *   writing the given flash address to the ADDRB register and issuing the
+    771           *   LADDRIM command to load the address.
+    772           * @param[in] address
+    773           *   An address in flash memory. Must be aligned at a 4 byte boundary.
+    774           * @return
+    775           *   Returns the status of the address load operation, #MSC_Status_TypeDef
+    776           * @verbatim
+    777           *   mscReturnOk - The operation completed successfully.
+    778           *   mscReturnInvalidAddr - The operation tried to erase a non-flash area.
+    779           *   mscReturnLocked - The operation tried to erase a locked area of the Flash.
+    780           * @endverbatim
+    781           ******************************************************************************/
+    782          MSC_RAMFUNC_DEFINITION_BEGIN
+    783          MSC_Status_TypeDef MSC_LoadVerifyAddress(uint32_t* address)
+    784          {
+    785            uint32_t timeOut;
+    786          
+    787            /* Wait for the MSC to become ready. */
+    788            timeOut = MSC_PROGRAM_TIMEOUT;
+    789            while ((MSC->STATUS & MSC_STATUS_BUSY) && (timeOut != 0)) {
+    790              timeOut--;
+    791            }
+    792          
+    793            /* Check for timeout. */
+    794            if (timeOut == 0) {
+    795              return mscReturnTimeOut;
+    796            }
+    797            /* Load the address. */
+    798            MSC->ADDRB    = (uint32_t)address;
+    799            MSC->WRITECMD = MSC_WRITECMD_LADDRIM;
+    800          
+    801            /* Check for an invalid address. */
+    802            if (MSC->STATUS & MSC_STATUS_INVADDR) {
+    803              return mscReturnInvalidAddr;
+    804            }
+    805            return mscReturnOk;
+    806          }
+    807          MSC_RAMFUNC_DEFINITION_END
+    808          
+    809          /***************************************************************************//**
+    810           * @brief
+    811           *   Perform a flash data write phase.
+    812           * @details
+    813           *   This function performs the data phase of a flash write operation by loading
+    814           *   the given number of 32-bit words to the WDATA register.
+    815           * @param[in] data
+    816           *   A pointer to the first data word to load.
+    817           * @param[in] numWords
+    818           *   A number of data words (32-bit) to load.
+    819           * @param[in] writeStrategy
+    820           *   A write strategy to apply.
+    821           * @return
+    822           *   Returns the status of the data load operation.
+    823           * @verbatim
+    824           *   mscReturnOk - An operation completed successfully.
+    825           *   mscReturnTimeOut - An operation timed out waiting for the flash operation
+    826           *                      to complete.
+    827           * @endverbatim
+    828           ******************************************************************************/
+    829          MSC_RAMFUNC_DEFINITION_BEGIN
+    830          MSC_Status_TypeDef MSC_LoadWriteData(uint32_t* data,
+    831                                               uint32_t numWords,
+    832                                               MSC_WriteStrategy_Typedef writeStrategy)
+    833          {
+    834            uint32_t timeOut;
+    835            uint32_t wordIndex;
+    836            bool useWDouble = false;
+    837            MSC_Status_TypeDef retval = mscReturnOk;
+    838          #if !defined(_EFM32_GECKO_FAMILY)
+    839            uint32_t irqState;
+    840          #endif
+    841          
+    842          #if defined(_MSC_WRITECTRL_LPWRITE_MASK) && defined(_MSC_WRITECTRL_WDOUBLE_MASK)
+    843            /* If the LPWRITE (Low Power Write) is NOT enabled, set WDOUBLE (Write Double word). */
+    844            if (!(MSC->WRITECTRL & MSC_WRITECTRL_LPWRITE)) {
+    845          #if defined(_SILICON_LABS_32B_SERIES_0)
+    846              /* If the number of words to be written is odd, align by writing
+    847                 a single word first, before setting the WDOUBLE bit. */
+    848              if (numWords & 0x1) {
+    849                /* Wait for the MSC to become ready for the next word. */
+    850                timeOut = MSC_PROGRAM_TIMEOUT;
+    851                while ((!(MSC->STATUS & MSC_STATUS_WDATAREADY)) && (timeOut != 0)) {
+    852                  timeOut--;
+    853                }
+    854                /* Check for timeout. */
+    855                if (timeOut == 0) {
+    856                  return mscReturnTimeOut;
+    857                }
+    858          
+    859                /* Clear the double word option to write the initial single word. */
+    860                MSC->WRITECTRL &= ~MSC_WRITECTRL_WDOUBLE;
+    861                /* Write first data word. */
+    862                MSC->WDATA = *data++;
+    863                MSC->WRITECMD = MSC_WRITECMD_WRITEONCE;
+    864          
+    865                /* Wait for the operation to finish. It may be required to change the WDOUBLE
+    866                   configuration after the initial write. It should not be changed while BUSY. */
+    867                timeOut = MSC_PROGRAM_TIMEOUT;
+    868                while ((MSC->STATUS & MSC_STATUS_BUSY) && (timeOut != 0)) {
+    869                  timeOut--;
+    870                }
+    871                /* Check for timeout. */
+    872                if (timeOut == 0) {
+    873                  return mscReturnTimeOut;
+    874                }
+    875                /* Check for a write protected flash area. */
+    876                if (MSC->STATUS & MSC_STATUS_LOCKED) {
+    877                  return mscReturnLocked;
+    878                }
+    879                /* Subtract this initial odd word for the write loop below. */
+    880                numWords -= 1;
+    881                retval = mscReturnOk;
+    882              }
+    883              /* Set the double word option to write two words per
+    884                 data phase. */
+    885          #endif
+    886              MSC->WRITECTRL |= MSC_WRITECTRL_WDOUBLE;
+    887              useWDouble = true;
+    888            }
+    889          #endif /* defined( _MSC_WRITECTRL_LPWRITE_MASK ) && defined( _MSC_WRITECTRL_WDOUBLE_MASK ) */
+    890          
+    891            /* Write the rest as a double word write if wordsPerDataPhase == 2 */
+    892            if (numWords > 0) {
+    893              /**** Write strategy: mscWriteIntSafe ****/
+    894              if (writeStrategy == mscWriteIntSafe) {
+    895                /* Requires a system core clock at 1MHz or higher */
+    896                EFM_ASSERT(SystemCoreClock >= 1000000);
+    897                wordIndex = 0;
+    898                while (wordIndex < numWords) {
+    899                  if (!useWDouble) {
+    900                    MSC->WDATA = *data++;
+    901                    wordIndex++;
+    902                    MSC->WRITECMD = MSC_WRITECMD_WRITEONCE;
+    903                  } else { // useWDouble == true
+    904                           /* Trigger a double write according to flash properties. */
+    905          #if defined(_SILICON_LABS_32B_SERIES_0) && defined(_MSC_WRITECTRL_WDOUBLE_MASK)
+    906                    MSC->WDATA = *data++;
+    907                    while (!(MSC->STATUS & MSC_STATUS_WDATAREADY)) ;
+    908                    MSC->WDATA = *data++;
+    909                    wordIndex += 2;
+    910                    MSC->WRITECMD = MSC_WRITECMD_WRITEONCE;
+    911          
+    912          #elif defined(_SILICON_LABS_32B_SERIES_1) && defined(_MSC_WRITECTRL_WDOUBLE_MASK)
+    913                    while (!(MSC->STATUS & MSC_STATUS_WDATAREADY)) ;
+    914                    do {
+    915                      MSC->WDATA = *data++;
+    916                      wordIndex++;
+    917                    } while ((MSC->STATUS & MSC_STATUS_WDATAREADY)
+    918                             && (wordIndex < numWords));
+    919                    MSC->WRITECMD = MSC_WRITECMD_WRITETRIG;
+    920          #endif
+    921                  }
+    922          
+    923                  /* Wait for the transaction to finish. */
+    924                  timeOut = MSC_PROGRAM_TIMEOUT;
+    925                  while ((MSC->STATUS & MSC_STATUS_BUSY) && (timeOut != 0)) {
+    926                    timeOut--;
+    927                  }
+    928                  /* Check for a timeout. */
+    929                  if (timeOut == 0) {
+    930                    retval = mscReturnTimeOut;
+    931                    break;
+    932                  }
+    933                  /* Check for a write protected flash area. */
+    934                  if (MSC->STATUS & MSC_STATUS_LOCKED) {
+    935                    retval = mscReturnLocked;
+    936                    break;
+    937                  }
+    938          #if defined(_EFM32_GECKO_FAMILY)
+    939                  MSC->ADDRB += 4;
+    940                  MSC->WRITECMD = MSC_WRITECMD_LADDRIM;
+    941          #endif
+    942                }
+    943              }
+    944              /**** Write strategy: mscWriteFast ****/
+    945              else {
+    946          #if defined(_EFM32_GECKO_FAMILY)
+    947                /* Gecko does not have auto-increment of ADDR. */
+    948                EFM_ASSERT(false);
+    949          #else
+    950                /* Requires a system core clock at 14 MHz or higher. */
+    951                EFM_ASSERT(SystemCoreClock >= 14000000);
+    952          
+    953                /*
+    954                 * Protect from interrupts to be sure to satisfy the us timing
+    955                 * needs of the MSC flash programming state machine.
+    956                 */
+    957                irqState = __get_PRIMASK();
+    958                __disable_irq();
+    959          
+    960                wordIndex = 0;
+    961                while (wordIndex < numWords) {
+    962                  /* Wait for the MSC to be ready for the next word. */
+    963                  while (!(MSC->STATUS & MSC_STATUS_WDATAREADY)) {
+    964                    /* If the write to MSC->WDATA below missed the 30 us timeout and the
+    965                       following MSC_WRITECMD_WRITETRIG command arrived while
+    966                       MSC_STATUS_BUSY is 1, the MSC_WRITECMD_WRITETRIG could be ignored by
+    967                       the MSC. In this case, MSC_STATUS_WORDTIMEOUT is set to 1
+    968                       and MSC_STATUS_BUSY is 0. A new trigger is therefore needed to
+    969                       complete write of data in MSC->WDATA.
+    970                       If WDATAREADY became high since entering the loop, exit and continue
+    971                       to the next WDATA write.
+    972                     */
+    973                    if ((MSC->STATUS & (MSC_STATUS_WORDTIMEOUT
+    974                                        | MSC_STATUS_BUSY
+    975                                        | MSC_STATUS_WDATAREADY))
+    976                        == MSC_STATUS_WORDTIMEOUT) {
+    977                      MSC->WRITECMD = MSC_WRITECMD_WRITETRIG;
+    978                    }
+    979                  }
+    980          
+    981                  if (!useWDouble) {
+    982                    MSC->WDATA = *data;
+    983                    MSC->WRITECMD = MSC_WRITECMD_WRITETRIG;
+    984                    data++;
+    985                    wordIndex++;
+    986                  } else { // useWDouble == true
+    987                           /* Trigger double write according to flash properties. */
+    988          #if defined(_SILICON_LABS_32B_SERIES_0)
+    989                    MSC->WDATA = *data;
+    990                    if (wordIndex & 0x1) {
+    991                      MSC->WRITECMD = MSC_WRITECMD_WRITETRIG;
+    992                    }
+    993                    data++;
+    994                    wordIndex++;
+    995          
+    996          #elif (_SILICON_LABS_32B_SERIES_1_CONFIG >= 2)
+    997                    do {
+    998                      MSC->WDATA = *data++;
+    999                      wordIndex++;
+   1000                    } while ((MSC->STATUS & MSC_STATUS_WDATAREADY)
+   1001                             && (wordIndex < numWords));
+   1002                    MSC->WRITECMD = MSC_WRITECMD_WRITETRIG;
+   1003          #endif
+   1004                  }
+   1005                } // End of: while (wordIndex < numWords) {
+   1006          
+   1007                if (irqState == 0) {
+   1008                  /* Restore the previous interrupt state. */
+   1009                  __enable_irq();
+   1010                }
+   1011          
+   1012                /* Wait for the transaction to finish. */
+   1013                timeOut = MSC_PROGRAM_TIMEOUT;
+   1014                while ((MSC->STATUS & MSC_STATUS_BUSY) && (timeOut != 0)) {
+   1015                  timeOut--;
+   1016                }
+   1017                /* Check for a timeout. */
+   1018                if (timeOut == 0) {
+   1019                  retval = mscReturnTimeOut;
+   1020                }
+   1021                /* Check for a write protected flash area. */
+   1022                if (MSC->STATUS & MSC_STATUS_LOCKED) {
+   1023                  retval = mscReturnLocked;
+   1024                }
+   1025          #endif
+   1026              } /* writeStrategy */
+   1027            }
+   1028          
+   1029          #if defined(_MSC_WRITECTRL_WDOUBLE_MASK)
+   1030            /* Clear a double word option, which should not be left on when returning. */
+   1031            MSC->WRITECTRL &= ~MSC_WRITECTRL_WDOUBLE;
+   1032          #endif
+   1033          
+   1034            return retval;
+   1035          }
+   1036          MSC_RAMFUNC_DEFINITION_END
+   1037          
+   1038          /***************************************************************************//**
+   1039           * @brief
+   1040           *   An internal flash write function with the select write strategy parameter.
+   1041           * @param[in] address
+   1042           *   A write address.
+   1043           * @param[in] data
+   1044           *   A pointer to the first data word to load.
+   1045           * @param[in] numBytes
+   1046           *   A nsumber of data bytes to load, which must be a multiple of 4 bytes.
+   1047           * @param[in] writeStrategy
+   1048           *  A wWrite strategy to apply.
+   1049           * @return
+   1050           *   Returns the status of the data load operation.
+   1051           ******************************************************************************/
+   1052          MSC_RAMFUNC_DEFINITION_BEGIN
+   1053          MSC_Status_TypeDef MSC_WriteWordI(uint32_t *address,
+   1054                                            void const *data,
+   1055                                            uint32_t numBytes,
+   1056                                            MSC_WriteStrategy_Typedef writeStrategy)
+   1057          {
+   1058            uint32_t wordCount;
+   1059            uint32_t numWords;
+   1060            uint32_t pageWords;
+   1061            uint32_t* pData;
+   1062            bool wasLocked;
+   1063            MSC_Status_TypeDef retval = mscReturnOk;
+   1064          
+   1065            wasLocked = MSC_IS_LOCKED();
+   1066            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   1067          
+   1068            /* Check alignment (must be aligned to words). */
+   1069            EFM_ASSERT(((uint32_t) address & 0x3) == 0);
+   1070          
+   1071            /* Check a number of bytes. Must be divisible by four. */
+   1072            EFM_ASSERT((numBytes & 0x3) == 0);
+   1073          
+   1074          #if defined(_EMU_STATUS_VSCALE_MASK)
+   1075            /* VSCALE must be done and flash write requires VSCALE2. */
+   1076            EFM_ASSERT(!(EMU->STATUS & _EMU_STATUS_VSCALEBUSY_MASK));
+   1077            EFM_ASSERT((EMU->STATUS & _EMU_STATUS_VSCALE_MASK) == EMU_STATUS_VSCALE_VSCALE2);
+   1078          #endif
+   1079          
+   1080            /* Enable writing to the MSC module. */
+   1081            MSC->WRITECTRL |= MSC_WRITECTRL_WREN;
+   1082          
+   1083            /* Convert bytes to words. */
+   1084            numWords = numBytes >> 2;
+   1085            EFM_ASSERT(numWords > 0);
+   1086          
+   1087            /* The following loop splits the data into chunks corresponding to flash pages.
+   1088               The address is loaded only once per page because the hardware automatically
+   1089               increments the address internally for each data load inside a page. */
+   1090            for (wordCount = 0, pData = (uint32_t *)data; wordCount < numWords; ) {
+   1091              /* First, the address is loaded. The address is auto-incremented within a page.
+   1092                 Therefore, the address phase is only needed once for each page. */
+   1093              retval = MSC_LoadVerifyAddress(address + wordCount);
+   1094              if (mscReturnOk != retval) {
+   1095                /* Disable writing to the MSC module. */
+   1096                MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1097                if (wasLocked) {
+   1098                  MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1099                }
+   1100                return retval;
+   1101              }
+   1102              /* Compute the number of words to write to the current page. */
+   1103              pageWords =
+   1104                (FLASH_PAGE_SIZE
+   1105                 - (((uint32_t) (address + wordCount)) & (FLASH_PAGE_SIZE - 1)))
+   1106                / sizeof(uint32_t);
+   1107              if (pageWords > numWords - wordCount) {
+   1108                pageWords = numWords - wordCount;
+   1109              }
+   1110              /* Write the data in the current page. */
+   1111              retval = MSC_LoadWriteData(pData, pageWords, writeStrategy);
+   1112              if (mscReturnOk != retval) {
+   1113                break;
+   1114              }
+   1115              wordCount += pageWords;
+   1116              pData += pageWords;
+   1117            }
+   1118          
+   1119          #if defined(ERRATA_FIX_FLASH_E201_EN)
+   1120            /* Fix for errata FLASH_E201 - Potential program failure after Power On.
+   1121             *
+   1122             * Check if the first word was programmed correctly. If a failure is detected,
+   1123             * retry programming of the first word.
+   1124             *
+   1125             * A full description of the errata is in the errata document. */
+   1126            pData = (uint32_t *) data;
+   1127            if (*address != *pData) {
+   1128              retval = MSC_LoadVerifyAddress(address);
+   1129              if (mscReturnOk == retval) {
+   1130                retval = MSC_LoadWriteData(pData, 1, writeStrategy);
+   1131              }
+   1132            }
+   1133          #endif
+   1134          
+   1135            /* Disable writing to the MSC module. */
+   1136            MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1137          
+   1138          #if defined(_MSC_WRITECTRL_WDOUBLE_MASK)
+   1139          #if (WORDS_PER_DATA_PHASE == 2)
+   1140            /* Turn off the double word write cycle support. */
+   1141            MSC->WRITECTRL &= ~MSC_WRITECTRL_WDOUBLE;
+   1142          #endif
+   1143          #endif
+   1144            if (wasLocked) {
+   1145              MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1146            }
+   1147            return retval;
+   1148          }
+   1149          MSC_RAMFUNC_DEFINITION_END
+   1150          
+   1151          /** @endcond */
+   1152          
+   1153          /***************************************************************************//**
+   1154           * @brief
+   1155           *   Erases a page in flash memory.
+   1156           * @note
+   1157           *   For the Gecko family, it is required to run this function from RAM.
+   1158           *
+   1159           *   For IAR Embedded Workbench, Simplicity Studio and GCC, this is
+   1160           *   achieved automatically by using attributes in the function proctype. For Keil
+   1161           *   uVision IDE, define a section called "ram_code" and place this manually in
+   1162           *   the project's scatter file.
+   1163           *
+   1164           * @param[in] startAddress
+   1165           *   A pointer to the flash page to erase. Must be aligned to the beginning of the page
+   1166           *   boundary.
+   1167           * @return
+   1168           *   Returns the status of erase operation, #MSC_Status_TypeDef
+   1169           * @verbatim
+   1170           *   mscReturnOk - The operation completed successfully.
+   1171           *   mscReturnInvalidAddr - The operation tried to erase a non-flash area.
+   1172           *   mscReturnLocked - The operation tried to erase a locked area of the flash.
+   1173           *   mscReturnTimeOut - The operation timed out waiting for the flash operation
+   1174           *       to complete.
+   1175           * @endverbatim
+   1176           ******************************************************************************/
+   1177          MSC_RAMFUNC_DEFINITION_BEGIN
+   1178          MSC_Status_TypeDef MSC_ErasePage(uint32_t *startAddress)
+   1179          {
+   1180            uint32_t timeOut = MSC_PROGRAM_TIMEOUT;
+   1181            bool wasLocked;
+   1182          
+   1183            wasLocked = MSC_IS_LOCKED();
+   1184            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   1185          
+   1186            /* An address must be aligned to pages. */
+   1187            EFM_ASSERT((((uint32_t) startAddress) & (FLASH_PAGE_SIZE - 1)) == 0);
+   1188          #if defined(_EMU_STATUS_VSCALE_MASK)
+   1189            /* VSCALE must be done and flash erase requires VSCALE2. */
+   1190            EFM_ASSERT(!(EMU->STATUS & _EMU_STATUS_VSCALEBUSY_MASK));
+   1191            EFM_ASSERT((EMU->STATUS & _EMU_STATUS_VSCALE_MASK) == EMU_STATUS_VSCALE_VSCALE2);
+   1192          #endif
+   1193          
+   1194            /* Enable writing to the MSC module. */
+   1195            MSC->WRITECTRL |= MSC_WRITECTRL_WREN;
+   1196          
+   1197            /* Load an address. */
+   1198            MSC->ADDRB    = (uint32_t)startAddress;
+   1199            MSC->WRITECMD = MSC_WRITECMD_LADDRIM;
+   1200          
+   1201            /* Check for an invalid address. */
+   1202            if (MSC->STATUS & MSC_STATUS_INVADDR) {
+   1203              /* Disable writing to the MSC module. */
+   1204              MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1205              if (wasLocked) {
+   1206                MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1207              }
+   1208              return mscReturnInvalidAddr;
+   1209            }
+   1210          
+   1211            /* Send erase page command. */
+   1212            MSC->WRITECMD = MSC_WRITECMD_ERASEPAGE;
+   1213          
+   1214            /* Wait for the erase to complete. */
+   1215            while ((MSC->STATUS & MSC_STATUS_BUSY) && (timeOut != 0)) {
+   1216              timeOut--;
+   1217            }
+   1218            /* Check for write protected page. */
+   1219            if (MSC->STATUS & MSC_STATUS_LOCKED) {
+   1220              /* Disable writing to the MSC module. */
+   1221              MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1222              if (wasLocked) {
+   1223                MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1224              }
+   1225              return mscReturnLocked;
+   1226            }
+   1227            if (timeOut == 0) {
+   1228              /* Disable writing to the MSC module. */
+   1229              MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1230              if (wasLocked) {
+   1231                MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1232              }
+   1233              return mscReturnTimeOut;
+   1234            }
+   1235            /* Disable writing to the MSC module. */
+   1236            MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1237            if (wasLocked) {
+   1238              MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1239            }
+   1240            return mscReturnOk;
+   1241          }
+   1242          MSC_RAMFUNC_DEFINITION_END
+   1243          
+   1244          /***************************************************************************//**
+   1245           * @brief
+   1246           *   Writes data to flash memory. This function is interrupt-safe, but slower than
+   1247           *   MSC_WriteWordFast(), which writes to flash with interrupts disabled.
+   1248           *   Write data must be aligned to words and contain a number of bytes that is
+   1249           *   divisible by four.
+   1250           * @note
+   1251           *   It is recommended to erase the flash page before performing a write.
+   1252           *
+   1253           *   For the Gecko family, it is required to run this function from RAM.
+   1254           *
+   1255           *   For IAR Embedded Workbench, Simplicity Studio and GCC,
+   1256           *   this is done automatically by using attributes in the function proctype.
+   1257           *   For Keil uVision IDE, define a section called "ram_code" and place it
+   1258           *   manually in the project's scatter file.
+   1259           *
+   1260           *   This function requires a system core clock at 1 MHz or higher.
+   1261           *
+   1262           * @param[in] address
+   1263           *   A pointer to the flash word to write to. Must be aligned to words.
+   1264           * @param[in] data
+   1265           *   Data to write to flash.
+   1266           * @param[in] numBytes
+   1267           *   A number of bytes to write from flash. NB: Must be divisible by four.
+   1268           * @return
+   1269           *   Returns the status of the write operation.
+   1270           * @verbatim
+   1271           *   flashReturnOk - The operation completed successfully.
+   1272           *   flashReturnInvalidAddr - The operation tried to erase a non-flash area.
+   1273           *   flashReturnLocked - The operation tried to erase a locked area of the Flash.
+   1274           *   flashReturnTimeOut - The operation timed out waiting for the flash operation
+   1275           *       to complete, or the MSC module timed out waiting for the software to write
+   1276           *       the next word into the DWORD register.
+   1277           * @endverbatim
+   1278           ******************************************************************************/
+   1279          MSC_RAMFUNC_DEFINITION_BEGIN
+   1280          MSC_Status_TypeDef MSC_WriteWord(uint32_t *address,
+   1281                                           void const *data,
+   1282                                           uint32_t numBytes)
+   1283          {
+   1284            return MSC_WriteWordI(address, data, numBytes, mscWriteIntSafe);
+   1285          }
+   1286          MSC_RAMFUNC_DEFINITION_END
+   1287          
+   1288          #if !defined(_EFM32_GECKO_FAMILY)
+   1289          #if !defined (EM_MSC_RUN_FROM_FLASH) || (_SILICON_LABS_GECKO_INTERNAL_SDID < 84)
+   1290          /***************************************************************************//**
+   1291           * @brief
+   1292           *   Writes data to flash memory. This function is faster than MSC_WriteWord(),
+   1293           *   but it disables interrupts. Write data must be aligned to words and contain
+   1294           *   a number of bytes that is divisible by four.
+   1295           * @warning
+   1296           *   This function is only available for certain devices.
+   1297           * @note
+   1298           *   It is recommended to erase the flash page before performing a write.
+   1299           *   It is required to run this function from RAM on parts that include a
+   1300           *   flash write buffer.
+   1301           *
+   1302           *   For IAR Embedded Workbench, Simplicity Studio and GCC,
+   1303           *   this is done automatically by using attributes in the function proctype.
+   1304           *   For Keil uVision IDE, define a section called "ram_code" and place this manually
+   1305           *   in the project's scatter file.
+   1306           *
+   1307           * @param[in] address
+   1308           *   A pointer to the flash word to write to. Must be aligned to words.
+   1309           * @param[in] data
+   1310           *   Data to write to flash.
+   1311           * @param[in] numBytes
+   1312           *   A number of bytes to write from the Flash. NB: Must be divisible by four.
+   1313           * @return
+   1314           *   Returns the status of the write operation.
+   1315           * @verbatim
+   1316           *   flashReturnOk - The operation completed successfully.
+   1317           *   flashReturnInvalidAddr - The operation tried to erase a non-flash area.
+   1318           *   flashReturnLocked - The operation tried to erase a locked area of the flash.
+   1319           *   flashReturnTimeOut - The operation timed out waiting for flash operation
+   1320           *       to complete. Or the MSC timed out waiting for the software to write
+   1321           *       the next word into the DWORD register.
+   1322           * @endverbatim
+   1323           ******************************************************************************/
+   1324          MSC_RAMFUNC_DEFINITION_BEGIN
+   1325          MSC_Status_TypeDef MSC_WriteWordFast(uint32_t *address,
+   1326                                               void const *data,
+   1327                                               uint32_t numBytes)
+   1328          {
+   1329            return MSC_WriteWordI(address, data, numBytes, mscWriteFast);
+   1330          }
+   1331          MSC_RAMFUNC_DEFINITION_END
+   1332          #endif // !defined (EM_MSC_RUN_FROM_FLASH) || (_SILICON_LABS_GECKO_INTERNAL_SDID < 84)
+   1333          #endif // !defined(_EFM32_GECKO_FAMILY)
+   1334          
+   1335          #if defined(_MSC_MASSLOCK_MASK)
+   1336          /***************************************************************************//**
+   1337           * @brief
+   1338           *   Erase the entire Flash in one operation.
+   1339           *
+   1340           * @note
+   1341           *   This command will erase the entire contents of the device.
+   1342           *   Use with care, both a debug session and all contents of the flash will be
+   1343           *   lost. The lock bit, MLW will prevent this operation from executing and
+   1344           *   might prevent a successful mass erase.
+   1345           ******************************************************************************/
+   1346          MSC_RAMFUNC_DEFINITION_BEGIN
+   1347          MSC_Status_TypeDef MSC_MassErase(void)
+   1348          {
+   1349            bool wasLocked;
+   1350            wasLocked = MSC_IS_LOCKED();
+   1351            MSC->LOCK = MSC_LOCK_LOCKKEY_UNLOCK;
+   1352          
+   1353            /* Enable writing to the MSC module. */
+   1354            MSC->WRITECTRL |= MSC_WRITECTRL_WREN;
+   1355          
+   1356            /* Unlock the device mass erase. */
+   1357            MSC->MASSLOCK = MSC_MASSLOCK_LOCKKEY_UNLOCK;
+   1358          
+   1359            /* Erase the first 512 K block. */
+   1360            MSC->WRITECMD = MSC_WRITECMD_ERASEMAIN0;
+   1361          
+   1362            /* Waiting for erase to complete. */
+   1363            while ((MSC->STATUS & MSC_STATUS_BUSY) != 0U) {
+   1364            }
+   1365          
+   1366          #if ((FLASH_SIZE >= (512 * 1024)) && defined(_MSC_WRITECMD_ERASEMAIN1_MASK))
+   1367            /* Erase the second 512 K block. */
+   1368            MSC->WRITECMD = MSC_WRITECMD_ERASEMAIN1;
+   1369          
+   1370            /* Waiting for erase to complete. */
+   1371            while ((MSC->STATUS & MSC_STATUS_BUSY) != 0U) {
+   1372            }
+   1373          #endif
+   1374          
+   1375            /* Restore the mass erase lock. */
+   1376            MSC->MASSLOCK = MSC_MASSLOCK_LOCKKEY_LOCK;
+   1377          
+   1378            /* Disable writing to the MSC module. */
+   1379            MSC->WRITECTRL &= ~MSC_WRITECTRL_WREN;
+   1380          
+   1381            if (wasLocked) {
+   1382              MSC->LOCK = MSC_LOCK_LOCKKEY_LOCK;
+   1383            }
+   1384          
+   1385            /* This will only successfully return if calling function is also in SRAM. */
+   1386            return mscReturnOk;
+   1387          }
+   1388          MSC_RAMFUNC_DEFINITION_END
+   1389          #endif  // defined(_MSC_MASSLOCK_MASK)
+   1390          
+   1391          #endif // defined(_SILICON_LABS_32B_SERIES_2)
+   1392          
+   1393          #if defined(_MSC_ECCCTRL_MASK) || defined(_SYSCFG_DMEM0ECCCTRL_MASK)
+   1394          
+   1395          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+   1396          
+   1397          /***************************************************************************//**
+   1398           * @brief
+   1399           *    Read and write existing values in RAM (for ECC initializaion).
+   1400           *
+   1401           * @details
+   1402           *    This function uses core to load and store the existing data
+   1403           *    values in the given RAM bank.
+   1404           *
+   1405           * @param[in] eccBank
+   1406           *    Pointer to ECC RAM bank (MSC_EccBank_Typedef)
+   1407           ******************************************************************************/
+   1408          static void mscEccReadWriteExistingPio(const MSC_EccBank_Typedef *eccBank)
+   1409          {
+   1410            volatile uint32_t *ramptr = (volatile uint32_t *) eccBank->base;
+   1411            const uint32_t *endptr = (const uint32_t *) (eccBank->base + eccBank->size);
+   1412            uint32_t val32;
+   1413            uint32_t ctrlReg = ECC_CTRL_REG;
+   1414          
+   1415            // Make sure ECC bit error interrupt event bits are cleared.
+   1416            ECC_IFC_REG = ECC_IFC_MASK;
+   1417          
+   1418            // Loop through all 32-bit words in RAM block.
+   1419            for (; ramptr < endptr; ramptr++) {
+   1420              // Read value from RAM
+   1421              val32 = *ramptr;
+   1422              if (ECC_IF_REG & ECC_IF_1BIT_ERROR) {
+   1423                /* 1-bit error occurred. The read value is incorrect since the ECC logic
+   1424                   has modified it. Disable ECC, re-read correct value from RAM,
+   1425                   re-enable ECC, and finally write value which will also initialize the
+   1426                   corresponding ECC syndrome. */
+   1427                ctrlReg &= ~eccBank->initSyndromeEnable;
+   1428                ECC_CTRL_REG = ctrlReg;
+   1429                val32 = *ramptr;
+   1430                // Re-enable ECC
+   1431                ctrlReg |= eccBank->initSyndromeEnable;
+   1432                ECC_CTRL_REG = ctrlReg;
+   1433                ECC_IFC_REG = ECC_IFC_MASK;
+   1434              }
+   1435              *ramptr = val32;
+   1436            }
+   1437          }
+   1438          
+   1439          #else // #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+   1440          
+   1441          /***************************************************************************//**
+   1442           * @brief
+   1443           *    DMA read and write existing values (for ECC initializaion).
+   1444           *
+   1445           * @details
+   1446           *    This function uses DMA to read and write the existing data values in
+   1447           *    the RAM region specified by start and size. The function will use the
+   1448           *    2 DMA channels specified by the channels[2] array.
+   1449           *
+   1450           * @param[in] start
+   1451           *    Start address of address range in RAM to read/write.
+   1452           *
+   1453           * @param[in] size
+   1454           *    Size of address range in RAM to read/write.
+   1455           *
+   1456           * @param[in] channels[2]
+   1457           *    Array of 2 DMA channels to use.
+   1458           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1459          static void mscEccReadWriteExistingDma(uint32_t start,
+   1460                                                 uint32_t size,
+   1461                                                 uint32_t channels[2])
+   1462          {
+   \                     mscEccReadWriteExistingDma: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0xB0B0             SUB      SP,SP,#+192
+   1463            uint32_t descCnt = 0;
+   1464            volatile uint32_t dmaDesc[ECC_DMA_DESCS][4];
+   1465            uint32_t chMask = (1 << channels[0]) | (1 << channels[1]);
+   \        0x6   0x6814             LDR      R4,[R2, #+0]
+   \        0x8   0x6853             LDR      R3,[R2, #+4]
+   \        0xA   0x2601             MOVS     R6,#+1
+   \        0xC   0xFA06 0xF404      LSL      R4,R6,R4
+   \       0x10   0x409E             LSLS     R6,R6,R3
+   \       0x12   0x2500             MOVS     R5,#+0
+   \       0x14   0x4334             ORRS     R4,R6,R4
+   1466            /* Assert that the 2 DMA channel numbers are different. */
+   1467            EFM_ASSERT(channels[0] != channels[1]);
+   \       0x16   0x....             LDR.N    R3,??DataTable15_3  ;; 0x82f7ff8
+   1468          
+   1469            /* Make sure ECC_RAM_SIZE_MAX is a multiple of ECC_DMA_DESC_SIZE in order
+   1470               to match the total xfer size of the descriptor chain with the largest
+   1471               ECC RAM bank. */
+   1472            EFM_ASSERT((ECC_RAM_SIZE_MAX % ECC_DMA_DESC_SIZE) == 0);
+   1473          
+   1474            /* Initialize LDMA descriptor chain. */
+   1475            do {
+   1476              dmaDesc[descCnt][0] =                 /* DMA desc CTRL word */
+   1477                                    LDMA_CH_CTRL_STRUCTTYPE_TRANSFER
+   1478                                    | LDMA_CH_CTRL_STRUCTREQ
+   1479                                    | _LDMA_CH_CTRL_XFERCNT_MASK
+   1480                                    | LDMA_CH_CTRL_BLOCKSIZE_ALL
+   1481                                    | LDMA_CH_CTRL_REQMODE_ALL
+   1482                                    | LDMA_CH_CTRL_SRCINC_ONE
+   1483                                    | LDMA_CH_CTRL_SIZE_WORD
+   1484                                    | LDMA_CH_CTRL_DSTINC_ONE;
+   \                     ??mscEccReadWriteExistingDma_0: (+1)
+   \       0x18   0x012E             LSLS     R6,R5,#+4
+   \       0x1A   0xEB0D 0x0706      ADD      R7,SP,R6
+   \       0x1E   0x603B             STR      R3,[R7, #+0]
+   1485          
+   1486              /* source and destination address */
+   1487              dmaDesc[descCnt][1] = start;
+   \       0x20   0x6078             STR      R0,[R7, #+4]
+   1488              dmaDesc[descCnt][2] = start;
+   \       0x22   0xF10D 0x0E08      ADD      LR,SP,#+8
+   \       0x26   0xF84E 0x0006      STR      R0,[LR, R6]
+   1489              /* link to next descriptor */
+   1490              dmaDesc[descCnt][3] = LDMA_CH_LINK_LINK
+   1491                                    | (((uint32_t) &dmaDesc[descCnt + 1][0])
+   1492                                       & _LDMA_CH_LINK_LINKADDR_MASK);
+   \       0x2A   0xF107 0x0610      ADD      R6,R7,#+16
+   \       0x2E   0x08B6             LSRS     R6,R6,#+2
+   \       0x30   0x00B6             LSLS     R6,R6,#+2
+   \       0x32   0xF046 0x0602      ORR      R6,R6,#0x2
+   1493          
+   1494              start += ECC_DMA_DESC_SIZE;
+   1495              size  -= ECC_DMA_DESC_SIZE;
+   \       0x36   0xF5A1 0x5100      SUB      R1,R1,#+8192
+   1496              descCnt++;
+   \       0x3A   0x1C6D             ADDS     R5,R5,#+1
+   \       0x3C   0x60FE             STR      R6,[R7, #+12]
+   \       0x3E   0xF500 0x5000      ADD      R0,R0,#+8192
+   1497            } while (size);
+   \       0x42   0x2900             CMP      R1,#+0
+   \       0x44   0xD1E8             BNE.N    ??mscEccReadWriteExistingDma_0
+   1498          
+   1499            /* Now, divide the descriptor list in two parts, one for each channel,
+   1500               by setting the link bit and address 0 of the descriptor in the middle
+   1501               to 0. */
+   1502            dmaDesc[(descCnt / 2) - 1][3] = 0;
+   \       0x46   0x0868             LSRS     R0,R5,#+1
+   \       0x48   0x0100             LSLS     R0,R0,#+4
+   \       0x4A   0xF1AD 0x0104      SUB      R1,SP,#+4
+   \       0x4E   0x2300             MOVS     R3,#+0
+   \       0x50   0x500B             STR      R3,[R1, R0]
+   1503          
+   1504            /* Set last descriptor link bit and address to 0. */
+   1505            dmaDesc[descCnt - 1][3] = 0;
+   \       0x52   0x012D             LSLS     R5,R5,#+4
+   \       0x54   0x514B             STR      R3,[R1, R5]
+   1506          
+   1507          #if !defined(_SILICON_LABS_32B_SERIES_2)
+   1508            /* Start the LDMA clock now */
+   1509            CMU_ClockEnable(cmuClock_LDMA, true);
+   1510          #endif
+   1511          
+   1512            /* Round robin scheduling for all channels (0 = no fixed priority channels).
+   1513             */
+   1514            LDMA->CTRL    = 0 << _LDMA_CTRL_NUMFIXED_SHIFT;
+   \       0x56   0x....             LDR.N    R1,??DataTable15_4  ;; 0x40040004
+   \       0x58   0x604B             STR      R3,[R1, #+4]
+   1515          #if defined(LDMA_EN_EN)
+   1516            LDMA->EN      = LDMA_EN_EN;
+   \       0x5A   0x2501             MOVS     R5,#+1
+   \       0x5C   0x600D             STR      R5,[R1, #+0]
+   1517          #endif
+   1518            LDMA->CHEN    = 0;
+   \       0x5E   0x620B             STR      R3,[R1, #+32]
+   1519            LDMA->DBGHALT = 0;
+   \       0x60   0x634B             STR      R3,[R1, #+52]
+   1520            LDMA->REQDIS  = 0;
+   \       0x62   0x63CB             STR      R3,[R1, #+60]
+   1521          
+   1522            /* Disable LDMA interrupts, and clear interrupt status. */
+   1523            LDMA->IEN = 0;
+   \       0x64   0x650B             STR      R3,[R1, #+80]
+   1524          #if defined (LDMA_HAS_SET_CLEAR)
+   1525            LDMA->IF_CLR = chMask;
+   \       0x66   0x....             LDR.N    R3,??DataTable15_5  ;; 0x40042034
+   \       0x68   0x61DC             STR      R4,[R3, #+28]
+   1526          #else
+   1527            LDMA->IFC = chMask;
+   1528          #endif
+   1529          
+   1530            /* Disable looping */
+   1531            LDMA->CH[channels[0]].LOOP = 0;
+   \       0x6A   0xF8D2 0xE000      LDR      LR,[R2, #+0]
+   \       0x6E   0x2530             MOVS     R5,#+48
+   \       0x70   0x....             LDR.N    R6,??DataTable15_6  ;; 0x40040058
+   \       0x72   0xFB05 0xFE0E      MUL      LR,R5,LR
+   \       0x76   0xF106 0x0708      ADD      R7,R6,#+8
+   \       0x7A   0xF04F 0x0C00      MOV      R12,#+0
+   \       0x7E   0xF847 0xC00E      STR      R12,[R7, LR]
+   1532            LDMA->CH[channels[1]].LOOP = 0;
+   \       0x82   0xF8D2 0x8004      LDR      R8,[R2, #+4]
+   1533          
+   1534            /* Set descriptor address for first channel. */
+   1535            LDMA->CH[channels[0]].LINK = ((uint32_t)&dmaDesc[0][0])
+   1536                                         & _LDMA_CH_LINK_LINKADDR_MASK;
+   \       0x86   0x3618             ADDS     R6,R6,#+24
+   1537            /* Set descriptor address for second channel. */
+   1538            LDMA->CH[channels[1]].LINK = ((uint32_t)&dmaDesc[descCnt / 2][0])
+   1539                                         & _LDMA_CH_LINK_LINKADDR_MASK;
+   \       0x88   0x4468             ADD      R0,SP,R0
+   \       0x8A   0xFB05 0xF808      MUL      R8,R5,R8
+   \       0x8E   0x0880             LSRS     R0,R0,#+2
+   \       0x90   0x0080             LSLS     R0,R0,#+2
+   \       0x92   0xF847 0xC008      STR      R12,[R7, R8]
+   \       0x96   0xF8D2 0xC000      LDR      R12,[R2, #+0]
+   \       0x9A   0x466F             MOV      R7,SP
+   \       0x9C   0x08BF             LSRS     R7,R7,#+2
+   \       0x9E   0xFB05 0xFC0C      MUL      R12,R5,R12
+   \       0xA2   0x00BF             LSLS     R7,R7,#+2
+   \       0xA4   0xF846 0x700C      STR      R7,[R6, R12]
+   \       0xA8   0x6852             LDR      R2,[R2, #+4]
+   \       0xAA   0x4355             MULS     R5,R5,R2
+   \       0xAC   0x5170             STR      R0,[R6, R5]
+   1540            /* Clear the channel done flags.  */
+   1541            BUS_RegMaskedClear(&LDMA->CHDONE, chMask);
+   \       0xAE   0x601C             STR      R4,[R3, #+0]
+   1542          
+   1543            /* Start transfer by loading descriptors.  */
+   1544            LDMA->LINKLOAD = chMask;
+   \       0xB0   0x644C             STR      R4,[R1, #+68]
+   1545          
+   1546            /* Wait until finished. */
+   1547            while (!(
+   1548          #if defined(_LDMA_CHSTATUS_MASK)
+   1549                     ((LDMA->CHSTATUS & chMask) == 0)
+   1550          #else
+   1551                     ((LDMA->CHEN & chMask) == 0)
+   1552          #endif
+   1553                     && ((LDMA->CHDONE & chMask) == chMask))) {
+   \                     ??mscEccReadWriteExistingDma_1: (+1)
+   \       0xB2   0x6A88             LDR      R0,[R1, #+40]
+   \       0xB4   0x4220             TST      R0,R4
+   \       0xB6   0xD1FC             BNE.N    ??mscEccReadWriteExistingDma_1
+   \       0xB8   0x6B08             LDR      R0,[R1, #+48]
+   \       0xBA   0x4020             ANDS     R0,R4,R0
+   \       0xBC   0x42A0             CMP      R0,R4
+   \       0xBE   0xD1F8             BNE.N    ??mscEccReadWriteExistingDma_1
+   1554            }
+   1555          
+   1556          #if !defined(_SILICON_LABS_32B_SERIES_2)
+   1557            /* Stop the LDMA clock now */
+   1558            CMU_ClockEnable(cmuClock_LDMA, false);
+   1559          #endif
+   1560          }
+   \       0xC0   0xB030             ADD      SP,SP,#+192
+   \       0xC2   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+   1561          
+   1562          #endif // #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+   1563          
+   1564          /***************************************************************************//**
+   1565           * @brief
+   1566           *    Initialize ECC for a given memory bank.
+   1567           *
+   1568           * @brief
+   1569           *    This function initializes ECC for a given memory bank which is specified
+   1570           *    with the MSC_EccBank_Typedef structure input parameter.
+   1571           *
+   1572           * @param[in] eccBank
+   1573           *    ECC memory bank device structure.
+   1574           *
+   1575           * @param[in] dmaChannels
+   1576           *    Array of 2 DMA channels that may be used during ECC initialization.
+   1577           *
+   1578           ******************************************************************************/
+   1579          static void mscEccBankInit(const MSC_EccBank_Typedef *eccBank,
+   1580                                     uint32_t dmaChannels[2])
+   1581          {
+   1582            uint32_t ctrlReg;
+   1583          
+   1584            CORE_DECLARE_IRQ_STATE;
+   1585          
+   1586            CORE_ENTER_CRITICAL();
+   1587          
+   1588            /* Enable ECC write. Keep ECC checking disabled during initialization. */
+   1589            ctrlReg  = ECC_CTRL_REG;
+   1590            ctrlReg |= eccBank->initSyndromeEnable;
+   1591            ECC_CTRL_REG = ctrlReg;
+   1592          
+   1593          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_2)
+   1594            (void) dmaChannels;
+   1595            /* Initialize ECC syndromes by using core cpu to load and store the existing
+   1596               data values in RAM. */
+   1597            mscEccReadWriteExistingPio(eccBank);
+   1598          #else
+   1599            /* Initialize ECC syndromes by using DMA to read and write the existing
+   1600               data values in RAM. */
+   1601            mscEccReadWriteExistingDma(eccBank->base, eccBank->size, dmaChannels);
+   1602          #endif
+   1603          
+   1604            /* Clear any ECC errors that may have been reported before or during
+   1605               initialization. */
+   1606            ECC_IFC_REG = ECC_IFC_MASK;
+   1607          
+   1608            /* Enable ECC decoder to detect and report ECC errors. */
+   1609            ctrlReg |= eccBank->correctionEnable;
+   1610            ECC_CTRL_REG = ctrlReg;
+   1611          
+   1612            CORE_EXIT_CRITICAL();
+   1613          }
+   1614          
+   1615          /***************************************************************************//**
+   1616           * @brief
+   1617           *    Disable ECC for a given memory bank.
+   1618           *
+   1619           * @brief
+   1620           *    This function disables ECC for a given memory bank which is specified
+   1621           *    with the MSC_EccBank_Typedef structure input parameter.
+   1622           *
+   1623           * @param[in] eccBank
+   1624           *    ECC memory bank device structure.
+   1625           *
+   1626           ******************************************************************************/
+   1627          static void mscEccBankDisable(const MSC_EccBank_Typedef *eccBank)
+   1628          {
+   1629            /* Disable ECC write (encoder) and checking (decoder). */
+   1630            ECC_CTRL_REG &= ~(eccBank->initSyndromeEnable | eccBank->correctionEnable);
+   1631          }
+   1632          
+   1633          /***************************************************************************//**
+   1634           * @brief
+   1635           *   Configure Error Correcting Code (ECC)
+   1636           *
+   1637           * @details
+   1638           *   This function configures ECC support according to the configuration
+   1639           *   input parameter. If the user requests enabling ECC for a given RAM bank
+   1640           *   this function will initialize ECC memory (syndromes) for the bank by
+   1641           *   reading and writing the existing values in memory. I.e. all data is
+   1642           *   preserved. The initialization process runs in a critical section
+   1643           *   disallowing interrupts and thread scheduling, and will consume a
+   1644           *   considerable amount of clock cycles. Therefore the user should carefully
+   1645           *   assess where to call this function. The user can consider to increase
+   1646           *   the clock frequency in order to reduce the execution time.
+   1647           *   This function makes use of 2 DMA channels to move data to/from RAM in an
+   1648           *   efficient way. The user can select which 2 DMA channels to use in order
+   1649           *   to avoid conflicts with the application. However the user must make sure
+   1650           *   that no other DMA operations takes place while this function is executing.
+   1651           *   If the application has been using the DMA controller prior to calling this
+   1652           *   function, the application will need to reinitialize DMA registers after
+   1653           *   this function has completed.
+   1654           *
+   1655           * @note
+   1656           *   This function protects the ECC initialization procedure from interrupts
+   1657           *   and other threads by using a critical section (defined by em_core.h)
+   1658           *   When running on RTOS the user may need to override CORE_EnterCritical
+   1659           *   CORE_ExitCritical which are declared as 'SL_WEAK' in em_core.c.
+   1660           *
+   1661           * @param[in] eccConfig
+   1662           *   ECC configuration
+   1663           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1664          void MSC_EccConfigSet(MSC_EccConfig_TypeDef *eccConfig)
+   1665          {
+   \                     MSC_EccConfigSet: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   1666            unsigned int cnt;
+   1667          #if defined(ECC_FAULT_CTRL_REG)
+   1668            uint32_t faultCtrlReg = ECC_FAULT_CTRL_REG;
+   \        0x4   0x....             LDR.N    R4,??DataTable15_7  ;; 0x4007c200
+   \        0x6   0x6825             LDR      R5,[R4, #+0]
+   \        0x8   0x4606             MOV      R6,R0
+   1669            /* Disable ECC faults if ecc fault ctrl register is defined. */
+   1670            faultCtrlReg &= ~ECC_FAULT_EN;
+   \        0xA   0xF025 0x0520      BIC      R5,R5,#0x20
+   1671            ECC_FAULT_CTRL_REG = faultCtrlReg;
+   \        0xE   0x6025             STR      R5,[R4, #+0]
+   1672          #endif
+   1673          
+   1674            /* Loop through the ECC banks array, enable or disable according to
+   1675               the eccConfig->enableEccBank array. */
+   1676            for (cnt = 0; cnt < MSC_ECC_BANKS; cnt++) {
+   1677              if (eccConfig->enableEccBank[cnt]) {
+   \       0x10   0x7830             LDRB     R0,[R6, #+0]
+   \       0x12   0xB1C0             CBZ.N    R0,??MSC_EccConfigSet_0
+   1678                mscEccBankInit(&eccBankTbl[cnt], eccConfig->dmaChannels);
+   \       0x14   0x....'....        BL       CORE_EnterCritical
+   \       0x18   0x6967             LDR      R7,[R4, #+20]
+   \       0x1A   0x4680             MOV      R8,R0
+   \       0x1C   0x1D32             ADDS     R2,R6,#+4
+   \       0x1E   0xF047 0x0701      ORR      R7,R7,#0x1
+   \       0x22   0x6167             STR      R7,[R4, #+20]
+   \       0x24   0xF44F 0x31C0      MOV      R1,#+98304
+   \       0x28   0xF04F 0x5000      MOV      R0,#+536870912
+   \       0x2C   0x....'....        BL       mscEccReadWriteExistingDma
+   \       0x30   0xF44F 0x3040      MOV      R0,#+196608
+   \       0x34   0x....             LDR.N    R1,??DataTable15_8  ;; 0x4007e000
+   \       0x36   0x6008             STR      R0,[R1, #+0]
+   \       0x38   0xF047 0x0702      ORR      R7,R7,#0x2
+   \       0x3C   0x6167             STR      R7,[R4, #+20]
+   \       0x3E   0x4640             MOV      R0,R8
+   \       0x40   0x....'....        BL       CORE_ExitCritical
+   1679              } else {
+   \       0x44   0xE003             B.N      ??MSC_EccConfigSet_1
+   1680                mscEccBankDisable(&eccBankTbl[cnt]);
+   \                     ??MSC_EccConfigSet_0: (+1)
+   \       0x46   0x6960             LDR      R0,[R4, #+20]
+   \       0x48   0x0880             LSRS     R0,R0,#+2
+   \       0x4A   0x0080             LSLS     R0,R0,#+2
+   \       0x4C   0x6160             STR      R0,[R4, #+20]
+   1681              }
+   1682            }
+   1683          
+   1684          #if defined(ECC_FAULT_CTRL_REG) && !defined(_SILICON_LABS_32B_SERIES_1_CONFIG_1)
+   1685            /* Enable ECC faults if ecc fault ctrl register is set.
+   1686               On Series 1 Config 1, aka EFM32GG11, ECC faults should stay disabled. */
+   1687            faultCtrlReg |= ECC_FAULT_EN;
+   1688            ECC_FAULT_CTRL_REG = faultCtrlReg;
+   \                     ??MSC_EccConfigSet_1: (+1)
+   \       0x4E   0xF045 0x0520      ORR      R5,R5,#0x20
+   \       0x52   0x6025             STR      R5,[R4, #+0]
+   1689          #endif
+   1690          }
+   \       0x54   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x0098'9680        DC32     0x989680
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x0001'0006        DC32     0x10006
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x4003'001C        DC32     0x4003001c
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x0001'0002        DC32     0x10002
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x4003'0010        DC32     0x40030010
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x4003'100C        DC32     0x4003100c
+
+   \                                 In section .textrw, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x4003'200C        DC32     0x4003200c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15:
+   \        0x0   0x4003'003C        DC32     0x4003003c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_1:
+   \        0x0   0x4003'200C        DC32     0x4003200c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_2:
+   \        0x0   0x4003'0008        DC32     0x40030008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_3:
+   \        0x0   0x082F'7FF8        DC32     0x82f7ff8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_4:
+   \        0x0   0x4004'0004        DC32     0x40040004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_5:
+   \        0x0   0x4004'2034        DC32     0x40042034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_6:
+   \        0x0   0x4004'0058        DC32     0x40040058
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_7:
+   \        0x0   0x4007'C200        DC32     0x4007c200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_8:
+   \        0x0   0x4007'E000        DC32     0x4007e000
+   1691          
+   1692          #endif /* #if defined(_MSC_ECCCTRL_MASK) */
+   1693          
+   1694          /** @} (end addtogroup MSC) */
+   1695          /** @} (end addtogroup emlib) */
+   1696          #endif /* defined(MSC_COUNT) && (MSC_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   MSC_Deinit
+      24   MSC_EccConfigSet
+        24   -> CORE_EnterCritical
+        24   -> CORE_ExitCritical
+        24   -> mscEccReadWriteExistingDma
+      16   MSC_ErasePage
+        16   -> mscStatusWait
+       0   MSC_ExecConfigSet
+       0   MSC_Init
+      32   MSC_WriteWord
+        32   -> writeBurst
+     216   mscEccReadWriteExistingDma
+       0   mscRfAssertEFM
+       8   mscStatusWait
+      16   writeBurst
+         0   -> mscStatusWait
+        16   -> mscStatusWait
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_2
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+       4  ??DataTable15_5
+       4  ??DataTable15_6
+       4  ??DataTable15_7
+       4  ??DataTable15_8
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+      22  MSC_Deinit
+      88  MSC_EccConfigSet
+      64  MSC_ErasePage
+      20  MSC_ExecConfigSet
+      16  MSC_Init
+      94  MSC_WriteWord
+     198  mscEccReadWriteExistingDma
+       2  mscRfAssertEFM
+      52  mscStatusWait
+      84  writeBurst
+
+ 
+ 380 bytes in section .text
+ 324 bytes in section .textrw
+ 
+ 704 bytes of CODE memory
+
+Errors: none
+Warnings: none

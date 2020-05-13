@@ -1,0 +1,1013 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:59
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\error.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW7125.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\error.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"error.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\error.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\error.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\error.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  Error message information
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_ERROR_C) || defined(MBEDTLS_ERROR_STRERROR_DUMMY)
+     41          #include "mbedtls/error.h"
+     42          #include <string.h>
+     43          #endif
+     44          
+     45          #if defined(MBEDTLS_PLATFORM_C)
+     46          #include "mbedtls/platform.h"
+     47          #else
+     48          #define mbedtls_snprintf snprintf
+     49          #define mbedtls_time_t   time_t
+     50          #endif
+     51          
+     52          #if defined(MBEDTLS_ERROR_C)
+     53          
+     54          #include <stdio.h>
+     55          
+     56          #if defined(MBEDTLS_AES_C)
+     57          #include "mbedtls/aes.h"
+     58          #endif
+     59          
+     60          #if defined(MBEDTLS_ARC4_C)
+     61          #include "mbedtls/arc4.h"
+     62          #endif
+     63          
+     64          #if defined(MBEDTLS_BASE64_C)
+     65          #include "mbedtls/base64.h"
+     66          #endif
+     67          
+     68          #if defined(MBEDTLS_BIGNUM_C)
+     69          #include "mbedtls/bignum.h"
+     70          #endif
+     71          
+     72          #if defined(MBEDTLS_BLOWFISH_C)
+     73          #include "mbedtls/blowfish.h"
+     74          #endif
+     75          
+     76          #if defined(MBEDTLS_CAMELLIA_C)
+     77          #include "mbedtls/camellia.h"
+     78          #endif
+     79          
+     80          #if defined(MBEDTLS_CCM_C)
+     81          #include "mbedtls/ccm.h"
+     82          #endif
+     83          
+     84          #if defined(MBEDTLS_CIPHER_C)
+     85          #include "mbedtls/cipher.h"
+     86          #endif
+     87          
+     88          #if defined(MBEDTLS_CMAC_C)
+     89          #include "mbedtls/cmac.h"
+     90          #endif
+     91          
+     92          #if defined(MBEDTLS_CTR_DRBG_C)
+     93          #include "mbedtls/ctr_drbg.h"
+     94          #endif
+     95          
+     96          #if defined(MBEDTLS_DES_C)
+     97          #include "mbedtls/des.h"
+     98          #endif
+     99          
+    100          #if defined(MBEDTLS_DHM_C)
+    101          #include "mbedtls/dhm.h"
+    102          #endif
+    103          
+    104          #if defined(MBEDTLS_ECP_C)
+    105          #include "mbedtls/ecp.h"
+    106          #endif
+    107          
+    108          #if defined(MBEDTLS_ENTROPY_C)
+    109          #include "mbedtls/entropy.h"
+    110          #endif
+    111          
+    112          #if defined(MBEDTLS_GCM_C)
+    113          #include "mbedtls/gcm.h"
+    114          #endif
+    115          
+    116          #if defined(MBEDTLS_HMAC_DRBG_C)
+    117          #include "mbedtls/hmac_drbg.h"
+    118          #endif
+    119          
+    120          #if defined(MBEDTLS_MD_C)
+    121          #include "mbedtls/md.h"
+    122          #endif
+    123          
+    124          #if defined(MBEDTLS_MD2_C)
+    125          #include "mbedtls/md2.h"
+    126          #endif
+    127          
+    128          #if defined(MBEDTLS_MD4_C)
+    129          #include "mbedtls/md4.h"
+    130          #endif
+    131          
+    132          #if defined(MBEDTLS_MD5_C)
+    133          #include "mbedtls/md5.h"
+    134          #endif
+    135          
+    136          #if defined(MBEDTLS_NET_C)
+    137          #include "mbedtls/net_sockets.h"
+    138          #endif
+    139          
+    140          #if defined(MBEDTLS_OID_C)
+    141          #include "mbedtls/oid.h"
+    142          #endif
+    143          
+    144          #if defined(MBEDTLS_PADLOCK_C)
+    145          #include "mbedtls/padlock.h"
+    146          #endif
+    147          
+    148          #if defined(MBEDTLS_PEM_PARSE_C) || defined(MBEDTLS_PEM_WRITE_C)
+    149          #include "mbedtls/pem.h"
+    150          #endif
+    151          
+    152          #if defined(MBEDTLS_PK_C)
+    153          #include "mbedtls/pk.h"
+    154          #endif
+    155          
+    156          #if defined(MBEDTLS_PKCS12_C)
+    157          #include "mbedtls/pkcs12.h"
+    158          #endif
+    159          
+    160          #if defined(MBEDTLS_PKCS5_C)
+    161          #include "mbedtls/pkcs5.h"
+    162          #endif
+    163          
+    164          #if defined(MBEDTLS_RIPEMD160_C)
+    165          #include "mbedtls/ripemd160.h"
+    166          #endif
+    167          
+    168          #if defined(MBEDTLS_RSA_C)
+    169          #include "mbedtls/rsa.h"
+    170          #endif
+    171          
+    172          #if defined(MBEDTLS_SHA1_C)
+    173          #include "mbedtls/sha1.h"
+    174          #endif
+    175          
+    176          #if defined(MBEDTLS_SHA256_C)
+    177          #include "mbedtls/sha256.h"
+    178          #endif
+    179          
+    180          #if defined(MBEDTLS_SHA512_C)
+    181          #include "mbedtls/sha512.h"
+    182          #endif
+    183          
+    184          #if defined(MBEDTLS_SSL_TLS_C)
+    185          #include "mbedtls/ssl.h"
+    186          #endif
+    187          
+    188          #if defined(MBEDTLS_THREADING_C)
+    189          #include "mbedtls/threading.h"
+    190          #endif
+    191          
+    192          #if defined(MBEDTLS_X509_USE_C) || defined(MBEDTLS_X509_CREATE_C)
+    193          #include "mbedtls/x509.h"
+    194          #endif
+    195          
+    196          #if defined(MBEDTLS_XTEA_C)
+    197          #include "mbedtls/xtea.h"
+    198          #endif
+    199          
+    200          #if defined(__ICCARM__) && (__VER__ >= 8000000)
+    201          /*
+    202           * IAR 8 has trouble compiling this function in a reasonable time at high
+    203           * optimization.
+    204           * Suppress this warning: Optimization can only be lowered from the default,
+    205           *                        not raised.
+    206           */
+    207          #pragma diag_suppress=Go003
+    208          #pragma optimize=medium
+    209          #endif
+    210          
+    211          void mbedtls_strerror( int ret, char *buf, size_t buflen )
+    212          {
+    213              size_t len;
+    214              int use_ret;
+    215          
+    216              if( buflen == 0 )
+    217                  return;
+    218          
+    219              memset( buf, 0x00, buflen );
+    220          
+    221              if( ret < 0 )
+    222                  ret = -ret;
+    223          
+    224              if( ret & 0xFF80 )
+    225              {
+    226                  use_ret = ret & 0xFF80;
+    227          
+    228                  // High level error codes
+    229                  //
+    230                  // BEGIN generated code
+    231          #if defined(MBEDTLS_CIPHER_C)
+    232                  if( use_ret == -(MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE) )
+    233                      mbedtls_snprintf( buf, buflen, "CIPHER - The selected feature is not available" );
+    234                  if( use_ret == -(MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA) )
+    235                      mbedtls_snprintf( buf, buflen, "CIPHER - Bad input parameters" );
+    236                  if( use_ret == -(MBEDTLS_ERR_CIPHER_ALLOC_FAILED) )
+    237                      mbedtls_snprintf( buf, buflen, "CIPHER - Failed to allocate memory" );
+    238                  if( use_ret == -(MBEDTLS_ERR_CIPHER_INVALID_PADDING) )
+    239                      mbedtls_snprintf( buf, buflen, "CIPHER - Input data contains invalid padding and is rejected" );
+    240                  if( use_ret == -(MBEDTLS_ERR_CIPHER_FULL_BLOCK_EXPECTED) )
+    241                      mbedtls_snprintf( buf, buflen, "CIPHER - Decryption of block requires a full block" );
+    242                  if( use_ret == -(MBEDTLS_ERR_CIPHER_AUTH_FAILED) )
+    243                      mbedtls_snprintf( buf, buflen, "CIPHER - Authentication failed (for AEAD modes)" );
+    244                  if( use_ret == -(MBEDTLS_ERR_CIPHER_INVALID_CONTEXT) )
+    245                      mbedtls_snprintf( buf, buflen, "CIPHER - The context is invalid. For example, because it was freed" );
+    246                  if( use_ret == -(MBEDTLS_ERR_CIPHER_HW_ACCEL_FAILED) )
+    247                      mbedtls_snprintf( buf, buflen, "CIPHER - Cipher hardware accelerator failed" );
+    248          #endif /* MBEDTLS_CIPHER_C */
+    249          
+    250          #if defined(MBEDTLS_DHM_C)
+    251                  if( use_ret == -(MBEDTLS_ERR_DHM_BAD_INPUT_DATA) )
+    252                      mbedtls_snprintf( buf, buflen, "DHM - Bad input parameters" );
+    253                  if( use_ret == -(MBEDTLS_ERR_DHM_READ_PARAMS_FAILED) )
+    254                      mbedtls_snprintf( buf, buflen, "DHM - Reading of the DHM parameters failed" );
+    255                  if( use_ret == -(MBEDTLS_ERR_DHM_MAKE_PARAMS_FAILED) )
+    256                      mbedtls_snprintf( buf, buflen, "DHM - Making of the DHM parameters failed" );
+    257                  if( use_ret == -(MBEDTLS_ERR_DHM_READ_PUBLIC_FAILED) )
+    258                      mbedtls_snprintf( buf, buflen, "DHM - Reading of the public values failed" );
+    259                  if( use_ret == -(MBEDTLS_ERR_DHM_MAKE_PUBLIC_FAILED) )
+    260                      mbedtls_snprintf( buf, buflen, "DHM - Making of the public value failed" );
+    261                  if( use_ret == -(MBEDTLS_ERR_DHM_CALC_SECRET_FAILED) )
+    262                      mbedtls_snprintf( buf, buflen, "DHM - Calculation of the DHM secret failed" );
+    263                  if( use_ret == -(MBEDTLS_ERR_DHM_INVALID_FORMAT) )
+    264                      mbedtls_snprintf( buf, buflen, "DHM - The ASN.1 data is not formatted correctly" );
+    265                  if( use_ret == -(MBEDTLS_ERR_DHM_ALLOC_FAILED) )
+    266                      mbedtls_snprintf( buf, buflen, "DHM - Allocation of memory failed" );
+    267                  if( use_ret == -(MBEDTLS_ERR_DHM_FILE_IO_ERROR) )
+    268                      mbedtls_snprintf( buf, buflen, "DHM - Read or write of file failed" );
+    269                  if( use_ret == -(MBEDTLS_ERR_DHM_HW_ACCEL_FAILED) )
+    270                      mbedtls_snprintf( buf, buflen, "DHM - DHM hardware accelerator failed" );
+    271                  if( use_ret == -(MBEDTLS_ERR_DHM_SET_GROUP_FAILED) )
+    272                      mbedtls_snprintf( buf, buflen, "DHM - Setting the modulus and generator failed" );
+    273          #endif /* MBEDTLS_DHM_C */
+    274          
+    275          #if defined(MBEDTLS_ECP_C)
+    276                  if( use_ret == -(MBEDTLS_ERR_ECP_BAD_INPUT_DATA) )
+    277                      mbedtls_snprintf( buf, buflen, "ECP - Bad input parameters to function" );
+    278                  if( use_ret == -(MBEDTLS_ERR_ECP_BUFFER_TOO_SMALL) )
+    279                      mbedtls_snprintf( buf, buflen, "ECP - The buffer is too small to write to" );
+    280                  if( use_ret == -(MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE) )
+    281                      mbedtls_snprintf( buf, buflen, "ECP - Requested curve not available" );
+    282                  if( use_ret == -(MBEDTLS_ERR_ECP_VERIFY_FAILED) )
+    283                      mbedtls_snprintf( buf, buflen, "ECP - The signature is not valid" );
+    284                  if( use_ret == -(MBEDTLS_ERR_ECP_ALLOC_FAILED) )
+    285                      mbedtls_snprintf( buf, buflen, "ECP - Memory allocation failed" );
+    286                  if( use_ret == -(MBEDTLS_ERR_ECP_RANDOM_FAILED) )
+    287                      mbedtls_snprintf( buf, buflen, "ECP - Generation of random value, such as (ephemeral) key, failed" );
+    288                  if( use_ret == -(MBEDTLS_ERR_ECP_INVALID_KEY) )
+    289                      mbedtls_snprintf( buf, buflen, "ECP - Invalid private or public key" );
+    290                  if( use_ret == -(MBEDTLS_ERR_ECP_SIG_LEN_MISMATCH) )
+    291                      mbedtls_snprintf( buf, buflen, "ECP - The buffer contains a valid signature followed by more data" );
+    292                  if( use_ret == -(MBEDTLS_ERR_ECP_HW_ACCEL_FAILED) )
+    293                      mbedtls_snprintf( buf, buflen, "ECP - ECP hardware accelerator failed" );
+    294          #endif /* MBEDTLS_ECP_C */
+    295          
+    296          #if defined(MBEDTLS_MD_C)
+    297                  if( use_ret == -(MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE) )
+    298                      mbedtls_snprintf( buf, buflen, "MD - The selected feature is not available" );
+    299                  if( use_ret == -(MBEDTLS_ERR_MD_BAD_INPUT_DATA) )
+    300                      mbedtls_snprintf( buf, buflen, "MD - Bad input parameters to function" );
+    301                  if( use_ret == -(MBEDTLS_ERR_MD_ALLOC_FAILED) )
+    302                      mbedtls_snprintf( buf, buflen, "MD - Failed to allocate memory" );
+    303                  if( use_ret == -(MBEDTLS_ERR_MD_FILE_IO_ERROR) )
+    304                      mbedtls_snprintf( buf, buflen, "MD - Opening or reading of file failed" );
+    305                  if( use_ret == -(MBEDTLS_ERR_MD_HW_ACCEL_FAILED) )
+    306                      mbedtls_snprintf( buf, buflen, "MD - MD hardware accelerator failed" );
+    307          #endif /* MBEDTLS_MD_C */
+    308          
+    309          #if defined(MBEDTLS_PEM_PARSE_C) || defined(MBEDTLS_PEM_WRITE_C)
+    310                  if( use_ret == -(MBEDTLS_ERR_PEM_NO_HEADER_FOOTER_PRESENT) )
+    311                      mbedtls_snprintf( buf, buflen, "PEM - No PEM header or footer found" );
+    312                  if( use_ret == -(MBEDTLS_ERR_PEM_INVALID_DATA) )
+    313                      mbedtls_snprintf( buf, buflen, "PEM - PEM string is not as expected" );
+    314                  if( use_ret == -(MBEDTLS_ERR_PEM_ALLOC_FAILED) )
+    315                      mbedtls_snprintf( buf, buflen, "PEM - Failed to allocate memory" );
+    316                  if( use_ret == -(MBEDTLS_ERR_PEM_INVALID_ENC_IV) )
+    317                      mbedtls_snprintf( buf, buflen, "PEM - RSA IV is not in hex-format" );
+    318                  if( use_ret == -(MBEDTLS_ERR_PEM_UNKNOWN_ENC_ALG) )
+    319                      mbedtls_snprintf( buf, buflen, "PEM - Unsupported key encryption algorithm" );
+    320                  if( use_ret == -(MBEDTLS_ERR_PEM_PASSWORD_REQUIRED) )
+    321                      mbedtls_snprintf( buf, buflen, "PEM - Private key password can't be empty" );
+    322                  if( use_ret == -(MBEDTLS_ERR_PEM_PASSWORD_MISMATCH) )
+    323                      mbedtls_snprintf( buf, buflen, "PEM - Given private key password does not allow for correct decryption" );
+    324                  if( use_ret == -(MBEDTLS_ERR_PEM_FEATURE_UNAVAILABLE) )
+    325                      mbedtls_snprintf( buf, buflen, "PEM - Unavailable feature, e.g. hashing/encryption combination" );
+    326                  if( use_ret == -(MBEDTLS_ERR_PEM_BAD_INPUT_DATA) )
+    327                      mbedtls_snprintf( buf, buflen, "PEM - Bad input parameters to function" );
+    328          #endif /* MBEDTLS_PEM_PARSE_C || MBEDTLS_PEM_WRITE_C */
+    329          
+    330          #if defined(MBEDTLS_PK_C)
+    331                  if( use_ret == -(MBEDTLS_ERR_PK_ALLOC_FAILED) )
+    332                      mbedtls_snprintf( buf, buflen, "PK - Memory allocation failed" );
+    333                  if( use_ret == -(MBEDTLS_ERR_PK_TYPE_MISMATCH) )
+    334                      mbedtls_snprintf( buf, buflen, "PK - Type mismatch, eg attempt to encrypt with an ECDSA key" );
+    335                  if( use_ret == -(MBEDTLS_ERR_PK_BAD_INPUT_DATA) )
+    336                      mbedtls_snprintf( buf, buflen, "PK - Bad input parameters to function" );
+    337                  if( use_ret == -(MBEDTLS_ERR_PK_FILE_IO_ERROR) )
+    338                      mbedtls_snprintf( buf, buflen, "PK - Read/write of file failed" );
+    339                  if( use_ret == -(MBEDTLS_ERR_PK_KEY_INVALID_VERSION) )
+    340                      mbedtls_snprintf( buf, buflen, "PK - Unsupported key version" );
+    341                  if( use_ret == -(MBEDTLS_ERR_PK_KEY_INVALID_FORMAT) )
+    342                      mbedtls_snprintf( buf, buflen, "PK - Invalid key tag or value" );
+    343                  if( use_ret == -(MBEDTLS_ERR_PK_UNKNOWN_PK_ALG) )
+    344                      mbedtls_snprintf( buf, buflen, "PK - Key algorithm is unsupported (only RSA and EC are supported)" );
+    345                  if( use_ret == -(MBEDTLS_ERR_PK_PASSWORD_REQUIRED) )
+    346                      mbedtls_snprintf( buf, buflen, "PK - Private key password can't be empty" );
+    347                  if( use_ret == -(MBEDTLS_ERR_PK_PASSWORD_MISMATCH) )
+    348                      mbedtls_snprintf( buf, buflen, "PK - Given private key password does not allow for correct decryption" );
+    349                  if( use_ret == -(MBEDTLS_ERR_PK_INVALID_PUBKEY) )
+    350                      mbedtls_snprintf( buf, buflen, "PK - The pubkey tag or value is invalid (only RSA and EC are supported)" );
+    351                  if( use_ret == -(MBEDTLS_ERR_PK_INVALID_ALG) )
+    352                      mbedtls_snprintf( buf, buflen, "PK - The algorithm tag or value is invalid" );
+    353                  if( use_ret == -(MBEDTLS_ERR_PK_UNKNOWN_NAMED_CURVE) )
+    354                      mbedtls_snprintf( buf, buflen, "PK - Elliptic curve is unsupported (only NIST curves are supported)" );
+    355                  if( use_ret == -(MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE) )
+    356                      mbedtls_snprintf( buf, buflen, "PK - Unavailable feature, e.g. RSA disabled for RSA key" );
+    357                  if( use_ret == -(MBEDTLS_ERR_PK_SIG_LEN_MISMATCH) )
+    358                      mbedtls_snprintf( buf, buflen, "PK - The buffer contains a valid signature followed by more data" );
+    359                  if( use_ret == -(MBEDTLS_ERR_PK_HW_ACCEL_FAILED) )
+    360                      mbedtls_snprintf( buf, buflen, "PK - PK hardware accelerator failed" );
+    361          #endif /* MBEDTLS_PK_C */
+    362          
+    363          #if defined(MBEDTLS_PKCS12_C)
+    364                  if( use_ret == -(MBEDTLS_ERR_PKCS12_BAD_INPUT_DATA) )
+    365                      mbedtls_snprintf( buf, buflen, "PKCS12 - Bad input parameters to function" );
+    366                  if( use_ret == -(MBEDTLS_ERR_PKCS12_FEATURE_UNAVAILABLE) )
+    367                      mbedtls_snprintf( buf, buflen, "PKCS12 - Feature not available, e.g. unsupported encryption scheme" );
+    368                  if( use_ret == -(MBEDTLS_ERR_PKCS12_PBE_INVALID_FORMAT) )
+    369                      mbedtls_snprintf( buf, buflen, "PKCS12 - PBE ASN.1 data not as expected" );
+    370                  if( use_ret == -(MBEDTLS_ERR_PKCS12_PASSWORD_MISMATCH) )
+    371                      mbedtls_snprintf( buf, buflen, "PKCS12 - Given private key password does not allow for correct decryption" );
+    372          #endif /* MBEDTLS_PKCS12_C */
+    373          
+    374          #if defined(MBEDTLS_PKCS5_C)
+    375                  if( use_ret == -(MBEDTLS_ERR_PKCS5_BAD_INPUT_DATA) )
+    376                      mbedtls_snprintf( buf, buflen, "PKCS5 - Bad input parameters to function" );
+    377                  if( use_ret == -(MBEDTLS_ERR_PKCS5_INVALID_FORMAT) )
+    378                      mbedtls_snprintf( buf, buflen, "PKCS5 - Unexpected ASN.1 data" );
+    379                  if( use_ret == -(MBEDTLS_ERR_PKCS5_FEATURE_UNAVAILABLE) )
+    380                      mbedtls_snprintf( buf, buflen, "PKCS5 - Requested encryption or digest alg not available" );
+    381                  if( use_ret == -(MBEDTLS_ERR_PKCS5_PASSWORD_MISMATCH) )
+    382                      mbedtls_snprintf( buf, buflen, "PKCS5 - Given private key password does not allow for correct decryption" );
+    383          #endif /* MBEDTLS_PKCS5_C */
+    384          
+    385          #if defined(MBEDTLS_RSA_C)
+    386                  if( use_ret == -(MBEDTLS_ERR_RSA_BAD_INPUT_DATA) )
+    387                      mbedtls_snprintf( buf, buflen, "RSA - Bad input parameters to function" );
+    388                  if( use_ret == -(MBEDTLS_ERR_RSA_INVALID_PADDING) )
+    389                      mbedtls_snprintf( buf, buflen, "RSA - Input data contains invalid padding and is rejected" );
+    390                  if( use_ret == -(MBEDTLS_ERR_RSA_KEY_GEN_FAILED) )
+    391                      mbedtls_snprintf( buf, buflen, "RSA - Something failed during generation of a key" );
+    392                  if( use_ret == -(MBEDTLS_ERR_RSA_KEY_CHECK_FAILED) )
+    393                      mbedtls_snprintf( buf, buflen, "RSA - Key failed to pass the validity check of the library" );
+    394                  if( use_ret == -(MBEDTLS_ERR_RSA_PUBLIC_FAILED) )
+    395                      mbedtls_snprintf( buf, buflen, "RSA - The public key operation failed" );
+    396                  if( use_ret == -(MBEDTLS_ERR_RSA_PRIVATE_FAILED) )
+    397                      mbedtls_snprintf( buf, buflen, "RSA - The private key operation failed" );
+    398                  if( use_ret == -(MBEDTLS_ERR_RSA_VERIFY_FAILED) )
+    399                      mbedtls_snprintf( buf, buflen, "RSA - The PKCS#1 verification failed" );
+    400                  if( use_ret == -(MBEDTLS_ERR_RSA_OUTPUT_TOO_LARGE) )
+    401                      mbedtls_snprintf( buf, buflen, "RSA - The output buffer for decryption is not large enough" );
+    402                  if( use_ret == -(MBEDTLS_ERR_RSA_RNG_FAILED) )
+    403                      mbedtls_snprintf( buf, buflen, "RSA - The random generator failed to generate non-zeros" );
+    404                  if( use_ret == -(MBEDTLS_ERR_RSA_UNSUPPORTED_OPERATION) )
+    405                      mbedtls_snprintf( buf, buflen, "RSA - The implementation does not offer the requested operation, for example, because of security violations or lack of functionality" );
+    406                  if( use_ret == -(MBEDTLS_ERR_RSA_HW_ACCEL_FAILED) )
+    407                      mbedtls_snprintf( buf, buflen, "RSA - RSA hardware accelerator failed" );
+    408          #endif /* MBEDTLS_RSA_C */
+    409          
+    410          #if defined(MBEDTLS_SSL_TLS_C)
+    411                  if( use_ret == -(MBEDTLS_ERR_SSL_FEATURE_UNAVAILABLE) )
+    412                      mbedtls_snprintf( buf, buflen, "SSL - The requested feature is not available" );
+    413                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_INPUT_DATA) )
+    414                      mbedtls_snprintf( buf, buflen, "SSL - Bad input parameters to function" );
+    415                  if( use_ret == -(MBEDTLS_ERR_SSL_INVALID_MAC) )
+    416                      mbedtls_snprintf( buf, buflen, "SSL - Verification of the message MAC failed" );
+    417                  if( use_ret == -(MBEDTLS_ERR_SSL_INVALID_RECORD) )
+    418                      mbedtls_snprintf( buf, buflen, "SSL - An invalid SSL record was received" );
+    419                  if( use_ret == -(MBEDTLS_ERR_SSL_CONN_EOF) )
+    420                      mbedtls_snprintf( buf, buflen, "SSL - The connection indicated an EOF" );
+    421                  if( use_ret == -(MBEDTLS_ERR_SSL_UNKNOWN_CIPHER) )
+    422                      mbedtls_snprintf( buf, buflen, "SSL - An unknown cipher was received" );
+    423                  if( use_ret == -(MBEDTLS_ERR_SSL_NO_CIPHER_CHOSEN) )
+    424                      mbedtls_snprintf( buf, buflen, "SSL - The server has no ciphersuites in common with the client" );
+    425                  if( use_ret == -(MBEDTLS_ERR_SSL_NO_RNG) )
+    426                      mbedtls_snprintf( buf, buflen, "SSL - No RNG was provided to the SSL module" );
+    427                  if( use_ret == -(MBEDTLS_ERR_SSL_NO_CLIENT_CERTIFICATE) )
+    428                      mbedtls_snprintf( buf, buflen, "SSL - No client certification received from the client, but required by the authentication mode" );
+    429                  if( use_ret == -(MBEDTLS_ERR_SSL_CERTIFICATE_TOO_LARGE) )
+    430                      mbedtls_snprintf( buf, buflen, "SSL - Our own certificate(s) is/are too large to send in an SSL message" );
+    431                  if( use_ret == -(MBEDTLS_ERR_SSL_CERTIFICATE_REQUIRED) )
+    432                      mbedtls_snprintf( buf, buflen, "SSL - The own certificate is not set, but needed by the server" );
+    433                  if( use_ret == -(MBEDTLS_ERR_SSL_PRIVATE_KEY_REQUIRED) )
+    434                      mbedtls_snprintf( buf, buflen, "SSL - The own private key or pre-shared key is not set, but needed" );
+    435                  if( use_ret == -(MBEDTLS_ERR_SSL_CA_CHAIN_REQUIRED) )
+    436                      mbedtls_snprintf( buf, buflen, "SSL - No CA Chain is set, but required to operate" );
+    437                  if( use_ret == -(MBEDTLS_ERR_SSL_UNEXPECTED_MESSAGE) )
+    438                      mbedtls_snprintf( buf, buflen, "SSL - An unexpected message was received from our peer" );
+    439                  if( use_ret == -(MBEDTLS_ERR_SSL_FATAL_ALERT_MESSAGE) )
+    440                  {
+    441                      mbedtls_snprintf( buf, buflen, "SSL - A fatal alert message was received from our peer" );
+    442                      return;
+    443                  }
+    444                  if( use_ret == -(MBEDTLS_ERR_SSL_PEER_VERIFY_FAILED) )
+    445                      mbedtls_snprintf( buf, buflen, "SSL - Verification of our peer failed" );
+    446                  if( use_ret == -(MBEDTLS_ERR_SSL_PEER_CLOSE_NOTIFY) )
+    447                      mbedtls_snprintf( buf, buflen, "SSL - The peer notified us that the connection is going to be closed" );
+    448                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CLIENT_HELLO) )
+    449                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ClientHello handshake message failed" );
+    450                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_SERVER_HELLO) )
+    451                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ServerHello handshake message failed" );
+    452                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE) )
+    453                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the Certificate handshake message failed" );
+    454                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE_REQUEST) )
+    455                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the CertificateRequest handshake message failed" );
+    456                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_SERVER_KEY_EXCHANGE) )
+    457                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ServerKeyExchange handshake message failed" );
+    458                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_SERVER_HELLO_DONE) )
+    459                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ServerHelloDone handshake message failed" );
+    460                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CLIENT_KEY_EXCHANGE) )
+    461                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ClientKeyExchange handshake message failed" );
+    462                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CLIENT_KEY_EXCHANGE_RP) )
+    463                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ClientKeyExchange handshake message failed in DHM / ECDH Read Public" );
+    464                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CLIENT_KEY_EXCHANGE_CS) )
+    465                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ClientKeyExchange handshake message failed in DHM / ECDH Calculate Secret" );
+    466                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE_VERIFY) )
+    467                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the CertificateVerify handshake message failed" );
+    468                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_CHANGE_CIPHER_SPEC) )
+    469                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the ChangeCipherSpec handshake message failed" );
+    470                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_FINISHED) )
+    471                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the Finished handshake message failed" );
+    472                  if( use_ret == -(MBEDTLS_ERR_SSL_ALLOC_FAILED) )
+    473                      mbedtls_snprintf( buf, buflen, "SSL - Memory allocation failed" );
+    474                  if( use_ret == -(MBEDTLS_ERR_SSL_HW_ACCEL_FAILED) )
+    475                      mbedtls_snprintf( buf, buflen, "SSL - Hardware acceleration function returned with error" );
+    476                  if( use_ret == -(MBEDTLS_ERR_SSL_HW_ACCEL_FALLTHROUGH) )
+    477                      mbedtls_snprintf( buf, buflen, "SSL - Hardware acceleration function skipped / left alone data" );
+    478                  if( use_ret == -(MBEDTLS_ERR_SSL_COMPRESSION_FAILED) )
+    479                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the compression / decompression failed" );
+    480                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_PROTOCOL_VERSION) )
+    481                      mbedtls_snprintf( buf, buflen, "SSL - Handshake protocol not within min/max boundaries" );
+    482                  if( use_ret == -(MBEDTLS_ERR_SSL_BAD_HS_NEW_SESSION_TICKET) )
+    483                      mbedtls_snprintf( buf, buflen, "SSL - Processing of the NewSessionTicket handshake message failed" );
+    484                  if( use_ret == -(MBEDTLS_ERR_SSL_SESSION_TICKET_EXPIRED) )
+    485                      mbedtls_snprintf( buf, buflen, "SSL - Session ticket has expired" );
+    486                  if( use_ret == -(MBEDTLS_ERR_SSL_PK_TYPE_MISMATCH) )
+    487                      mbedtls_snprintf( buf, buflen, "SSL - Public key type mismatch (eg, asked for RSA key exchange and presented EC key)" );
+    488                  if( use_ret == -(MBEDTLS_ERR_SSL_UNKNOWN_IDENTITY) )
+    489                      mbedtls_snprintf( buf, buflen, "SSL - Unknown identity received (eg, PSK identity)" );
+    490                  if( use_ret == -(MBEDTLS_ERR_SSL_INTERNAL_ERROR) )
+    491                      mbedtls_snprintf( buf, buflen, "SSL - Internal error (eg, unexpected failure in lower-level module)" );
+    492                  if( use_ret == -(MBEDTLS_ERR_SSL_COUNTER_WRAPPING) )
+    493                      mbedtls_snprintf( buf, buflen, "SSL - A counter would wrap (eg, too many messages exchanged)" );
+    494                  if( use_ret == -(MBEDTLS_ERR_SSL_WAITING_SERVER_HELLO_RENEGO) )
+    495                      mbedtls_snprintf( buf, buflen, "SSL - Unexpected message at ServerHello in renegotiation" );
+    496                  if( use_ret == -(MBEDTLS_ERR_SSL_HELLO_VERIFY_REQUIRED) )
+    497                      mbedtls_snprintf( buf, buflen, "SSL - DTLS client must retry for hello verification" );
+    498                  if( use_ret == -(MBEDTLS_ERR_SSL_BUFFER_TOO_SMALL) )
+    499                      mbedtls_snprintf( buf, buflen, "SSL - A buffer is too small to receive or write a message" );
+    500                  if( use_ret == -(MBEDTLS_ERR_SSL_NO_USABLE_CIPHERSUITE) )
+    501                      mbedtls_snprintf( buf, buflen, "SSL - None of the common ciphersuites is usable (eg, no suitable certificate, see debug messages)" );
+    502                  if( use_ret == -(MBEDTLS_ERR_SSL_WANT_READ) )
+    503                      mbedtls_snprintf( buf, buflen, "SSL - Connection requires a read call" );
+    504                  if( use_ret == -(MBEDTLS_ERR_SSL_WANT_WRITE) )
+    505                      mbedtls_snprintf( buf, buflen, "SSL - Connection requires a write call" );
+    506                  if( use_ret == -(MBEDTLS_ERR_SSL_TIMEOUT) )
+    507                      mbedtls_snprintf( buf, buflen, "SSL - The operation timed out" );
+    508                  if( use_ret == -(MBEDTLS_ERR_SSL_CLIENT_RECONNECT) )
+    509                      mbedtls_snprintf( buf, buflen, "SSL - The client initiated a reconnect from the same port" );
+    510                  if( use_ret == -(MBEDTLS_ERR_SSL_UNEXPECTED_RECORD) )
+    511                      mbedtls_snprintf( buf, buflen, "SSL - Record header looks valid but is not expected" );
+    512                  if( use_ret == -(MBEDTLS_ERR_SSL_NON_FATAL) )
+    513                      mbedtls_snprintf( buf, buflen, "SSL - The alert message received indicates a non-fatal error" );
+    514                  if( use_ret == -(MBEDTLS_ERR_SSL_INVALID_VERIFY_HASH) )
+    515                      mbedtls_snprintf( buf, buflen, "SSL - Couldn't set the hash for verifying CertificateVerify" );
+    516          #endif /* MBEDTLS_SSL_TLS_C */
+    517          
+    518          #if defined(MBEDTLS_X509_USE_C) || defined(MBEDTLS_X509_CREATE_C)
+    519                  if( use_ret == -(MBEDTLS_ERR_X509_FEATURE_UNAVAILABLE) )
+    520                      mbedtls_snprintf( buf, buflen, "X509 - Unavailable feature, e.g. RSA hashing/encryption combination" );
+    521                  if( use_ret == -(MBEDTLS_ERR_X509_UNKNOWN_OID) )
+    522                      mbedtls_snprintf( buf, buflen, "X509 - Requested OID is unknown" );
+    523                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_FORMAT) )
+    524                      mbedtls_snprintf( buf, buflen, "X509 - The CRT/CRL/CSR format is invalid, e.g. different type expected" );
+    525                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_VERSION) )
+    526                      mbedtls_snprintf( buf, buflen, "X509 - The CRT/CRL/CSR version element is invalid" );
+    527                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_SERIAL) )
+    528                      mbedtls_snprintf( buf, buflen, "X509 - The serial tag or value is invalid" );
+    529                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_ALG) )
+    530                      mbedtls_snprintf( buf, buflen, "X509 - The algorithm tag or value is invalid" );
+    531                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_NAME) )
+    532                      mbedtls_snprintf( buf, buflen, "X509 - The name tag or value is invalid" );
+    533                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_DATE) )
+    534                      mbedtls_snprintf( buf, buflen, "X509 - The date tag or value is invalid" );
+    535                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_SIGNATURE) )
+    536                      mbedtls_snprintf( buf, buflen, "X509 - The signature tag or value invalid" );
+    537                  if( use_ret == -(MBEDTLS_ERR_X509_INVALID_EXTENSIONS) )
+    538                      mbedtls_snprintf( buf, buflen, "X509 - The extension tag or value is invalid" );
+    539                  if( use_ret == -(MBEDTLS_ERR_X509_UNKNOWN_VERSION) )
+    540                      mbedtls_snprintf( buf, buflen, "X509 - CRT/CRL/CSR has an unsupported version number" );
+    541                  if( use_ret == -(MBEDTLS_ERR_X509_UNKNOWN_SIG_ALG) )
+    542                      mbedtls_snprintf( buf, buflen, "X509 - Signature algorithm (oid) is unsupported" );
+    543                  if( use_ret == -(MBEDTLS_ERR_X509_SIG_MISMATCH) )
+    544                      mbedtls_snprintf( buf, buflen, "X509 - Signature algorithms do not match. (see \\c ::mbedtls_x509_crt sig_oid)" );
+    545                  if( use_ret == -(MBEDTLS_ERR_X509_CERT_VERIFY_FAILED) )
+    546                      mbedtls_snprintf( buf, buflen, "X509 - Certificate verification failed, e.g. CRL, CA or signature check failed" );
+    547                  if( use_ret == -(MBEDTLS_ERR_X509_CERT_UNKNOWN_FORMAT) )
+    548                      mbedtls_snprintf( buf, buflen, "X509 - Format not recognized as DER or PEM" );
+    549                  if( use_ret == -(MBEDTLS_ERR_X509_BAD_INPUT_DATA) )
+    550                      mbedtls_snprintf( buf, buflen, "X509 - Input invalid" );
+    551                  if( use_ret == -(MBEDTLS_ERR_X509_ALLOC_FAILED) )
+    552                      mbedtls_snprintf( buf, buflen, "X509 - Allocation of memory failed" );
+    553                  if( use_ret == -(MBEDTLS_ERR_X509_FILE_IO_ERROR) )
+    554                      mbedtls_snprintf( buf, buflen, "X509 - Read/write of file failed" );
+    555                  if( use_ret == -(MBEDTLS_ERR_X509_BUFFER_TOO_SMALL) )
+    556                      mbedtls_snprintf( buf, buflen, "X509 - Destination buffer is too small" );
+    557                  if( use_ret == -(MBEDTLS_ERR_X509_FATAL_ERROR) )
+    558                      mbedtls_snprintf( buf, buflen, "X509 - A fatal error occured, eg the chain is too long or the vrfy callback failed" );
+    559          #endif /* MBEDTLS_X509_USE_C || MBEDTLS_X509_CREATE_C */
+    560                  // END generated code
+    561          
+    562                  if( strlen( buf ) == 0 )
+    563                      mbedtls_snprintf( buf, buflen, "UNKNOWN ERROR CODE (%04X)", use_ret );
+    564              }
+    565          
+    566              use_ret = ret & ~0xFF80;
+    567          
+    568              if( use_ret == 0 )
+    569                  return;
+    570          
+    571              // If high level code is present, make a concatenation between both
+    572              // error strings.
+    573              //
+    574              len = strlen( buf );
+    575          
+    576              if( len > 0 )
+    577              {
+    578                  if( buflen - len < 5 )
+    579                      return;
+    580          
+    581                  mbedtls_snprintf( buf + len, buflen - len, " : " );
+    582          
+    583                  buf += len + 3;
+    584                  buflen -= len + 3;
+    585              }
+    586          
+    587              // Low level error codes
+    588              //
+    589              // BEGIN generated code
+    590          #if defined(MBEDTLS_AES_C)
+    591              if( use_ret == -(MBEDTLS_ERR_AES_INVALID_KEY_LENGTH) )
+    592                  mbedtls_snprintf( buf, buflen, "AES - Invalid key length" );
+    593              if( use_ret == -(MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH) )
+    594                  mbedtls_snprintf( buf, buflen, "AES - Invalid data input length" );
+    595              if( use_ret == -(MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE) )
+    596                  mbedtls_snprintf( buf, buflen, "AES - Feature not available. For example, an unsupported AES key size" );
+    597              if( use_ret == -(MBEDTLS_ERR_AES_HW_ACCEL_FAILED) )
+    598                  mbedtls_snprintf( buf, buflen, "AES - AES hardware accelerator failed" );
+    599          #endif /* MBEDTLS_AES_C */
+    600          
+    601          #if defined(MBEDTLS_ARC4_C)
+    602              if( use_ret == -(MBEDTLS_ERR_ARC4_HW_ACCEL_FAILED) )
+    603                  mbedtls_snprintf( buf, buflen, "ARC4 - ARC4 hardware accelerator failed" );
+    604          #endif /* MBEDTLS_ARC4_C */
+    605          
+    606          #if defined(MBEDTLS_ASN1_PARSE_C)
+    607              if( use_ret == -(MBEDTLS_ERR_ASN1_OUT_OF_DATA) )
+    608                  mbedtls_snprintf( buf, buflen, "ASN1 - Out of data when parsing an ASN1 data structure" );
+    609              if( use_ret == -(MBEDTLS_ERR_ASN1_UNEXPECTED_TAG) )
+    610                  mbedtls_snprintf( buf, buflen, "ASN1 - ASN1 tag was of an unexpected value" );
+    611              if( use_ret == -(MBEDTLS_ERR_ASN1_INVALID_LENGTH) )
+    612                  mbedtls_snprintf( buf, buflen, "ASN1 - Error when trying to determine the length or invalid length" );
+    613              if( use_ret == -(MBEDTLS_ERR_ASN1_LENGTH_MISMATCH) )
+    614                  mbedtls_snprintf( buf, buflen, "ASN1 - Actual length differs from expected length" );
+    615              if( use_ret == -(MBEDTLS_ERR_ASN1_INVALID_DATA) )
+    616                  mbedtls_snprintf( buf, buflen, "ASN1 - Data is invalid. (not used)" );
+    617              if( use_ret == -(MBEDTLS_ERR_ASN1_ALLOC_FAILED) )
+    618                  mbedtls_snprintf( buf, buflen, "ASN1 - Memory allocation failed" );
+    619              if( use_ret == -(MBEDTLS_ERR_ASN1_BUF_TOO_SMALL) )
+    620                  mbedtls_snprintf( buf, buflen, "ASN1 - Buffer too small when writing ASN.1 data structure" );
+    621          #endif /* MBEDTLS_ASN1_PARSE_C */
+    622          
+    623          #if defined(MBEDTLS_BASE64_C)
+    624              if( use_ret == -(MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL) )
+    625                  mbedtls_snprintf( buf, buflen, "BASE64 - Output buffer too small" );
+    626              if( use_ret == -(MBEDTLS_ERR_BASE64_INVALID_CHARACTER) )
+    627                  mbedtls_snprintf( buf, buflen, "BASE64 - Invalid character in input" );
+    628          #endif /* MBEDTLS_BASE64_C */
+    629          
+    630          #if defined(MBEDTLS_BIGNUM_C)
+    631              if( use_ret == -(MBEDTLS_ERR_MPI_FILE_IO_ERROR) )
+    632                  mbedtls_snprintf( buf, buflen, "BIGNUM - An error occurred while reading from or writing to a file" );
+    633              if( use_ret == -(MBEDTLS_ERR_MPI_BAD_INPUT_DATA) )
+    634                  mbedtls_snprintf( buf, buflen, "BIGNUM - Bad input parameters to function" );
+    635              if( use_ret == -(MBEDTLS_ERR_MPI_INVALID_CHARACTER) )
+    636                  mbedtls_snprintf( buf, buflen, "BIGNUM - There is an invalid character in the digit string" );
+    637              if( use_ret == -(MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL) )
+    638                  mbedtls_snprintf( buf, buflen, "BIGNUM - The buffer is too small to write to" );
+    639              if( use_ret == -(MBEDTLS_ERR_MPI_NEGATIVE_VALUE) )
+    640                  mbedtls_snprintf( buf, buflen, "BIGNUM - The input arguments are negative or result in illegal output" );
+    641              if( use_ret == -(MBEDTLS_ERR_MPI_DIVISION_BY_ZERO) )
+    642                  mbedtls_snprintf( buf, buflen, "BIGNUM - The input argument for division is zero, which is not allowed" );
+    643              if( use_ret == -(MBEDTLS_ERR_MPI_NOT_ACCEPTABLE) )
+    644                  mbedtls_snprintf( buf, buflen, "BIGNUM - The input arguments are not acceptable" );
+    645              if( use_ret == -(MBEDTLS_ERR_MPI_ALLOC_FAILED) )
+    646                  mbedtls_snprintf( buf, buflen, "BIGNUM - Memory allocation failed" );
+    647          #endif /* MBEDTLS_BIGNUM_C */
+    648          
+    649          #if defined(MBEDTLS_BLOWFISH_C)
+    650              if( use_ret == -(MBEDTLS_ERR_BLOWFISH_INVALID_KEY_LENGTH) )
+    651                  mbedtls_snprintf( buf, buflen, "BLOWFISH - Invalid key length" );
+    652              if( use_ret == -(MBEDTLS_ERR_BLOWFISH_HW_ACCEL_FAILED) )
+    653                  mbedtls_snprintf( buf, buflen, "BLOWFISH - Blowfish hardware accelerator failed" );
+    654              if( use_ret == -(MBEDTLS_ERR_BLOWFISH_INVALID_INPUT_LENGTH) )
+    655                  mbedtls_snprintf( buf, buflen, "BLOWFISH - Invalid data input length" );
+    656          #endif /* MBEDTLS_BLOWFISH_C */
+    657          
+    658          #if defined(MBEDTLS_CAMELLIA_C)
+    659              if( use_ret == -(MBEDTLS_ERR_CAMELLIA_INVALID_KEY_LENGTH) )
+    660                  mbedtls_snprintf( buf, buflen, "CAMELLIA - Invalid key length" );
+    661              if( use_ret == -(MBEDTLS_ERR_CAMELLIA_INVALID_INPUT_LENGTH) )
+    662                  mbedtls_snprintf( buf, buflen, "CAMELLIA - Invalid data input length" );
+    663              if( use_ret == -(MBEDTLS_ERR_CAMELLIA_HW_ACCEL_FAILED) )
+    664                  mbedtls_snprintf( buf, buflen, "CAMELLIA - Camellia hardware accelerator failed" );
+    665          #endif /* MBEDTLS_CAMELLIA_C */
+    666          
+    667          #if defined(MBEDTLS_CCM_C)
+    668              if( use_ret == -(MBEDTLS_ERR_CCM_BAD_INPUT) )
+    669                  mbedtls_snprintf( buf, buflen, "CCM - Bad input parameters to the function" );
+    670              if( use_ret == -(MBEDTLS_ERR_CCM_AUTH_FAILED) )
+    671                  mbedtls_snprintf( buf, buflen, "CCM - Authenticated decryption failed" );
+    672              if( use_ret == -(MBEDTLS_ERR_CCM_HW_ACCEL_FAILED) )
+    673                  mbedtls_snprintf( buf, buflen, "CCM - CCM hardware accelerator failed" );
+    674          #endif /* MBEDTLS_CCM_C */
+    675          
+    676          #if defined(MBEDTLS_CMAC_C)
+    677              if( use_ret == -(MBEDTLS_ERR_CMAC_HW_ACCEL_FAILED) )
+    678                  mbedtls_snprintf( buf, buflen, "CMAC - CMAC hardware accelerator failed" );
+    679          #endif /* MBEDTLS_CMAC_C */
+    680          
+    681          #if defined(MBEDTLS_CTR_DRBG_C)
+    682              if( use_ret == -(MBEDTLS_ERR_CTR_DRBG_ENTROPY_SOURCE_FAILED) )
+    683                  mbedtls_snprintf( buf, buflen, "CTR_DRBG - The entropy source failed" );
+    684              if( use_ret == -(MBEDTLS_ERR_CTR_DRBG_REQUEST_TOO_BIG) )
+    685                  mbedtls_snprintf( buf, buflen, "CTR_DRBG - The requested random buffer length is too big" );
+    686              if( use_ret == -(MBEDTLS_ERR_CTR_DRBG_INPUT_TOO_BIG) )
+    687                  mbedtls_snprintf( buf, buflen, "CTR_DRBG - The input (entropy + additional data) is too large" );
+    688              if( use_ret == -(MBEDTLS_ERR_CTR_DRBG_FILE_IO_ERROR) )
+    689                  mbedtls_snprintf( buf, buflen, "CTR_DRBG - Read or write error in file" );
+    690          #endif /* MBEDTLS_CTR_DRBG_C */
+    691          
+    692          #if defined(MBEDTLS_DES_C)
+    693              if( use_ret == -(MBEDTLS_ERR_DES_INVALID_INPUT_LENGTH) )
+    694                  mbedtls_snprintf( buf, buflen, "DES - The data input has an invalid length" );
+    695              if( use_ret == -(MBEDTLS_ERR_DES_HW_ACCEL_FAILED) )
+    696                  mbedtls_snprintf( buf, buflen, "DES - DES hardware accelerator failed" );
+    697          #endif /* MBEDTLS_DES_C */
+    698          
+    699          #if defined(MBEDTLS_ENTROPY_C)
+    700              if( use_ret == -(MBEDTLS_ERR_ENTROPY_SOURCE_FAILED) )
+    701                  mbedtls_snprintf( buf, buflen, "ENTROPY - Critical entropy source failure" );
+    702              if( use_ret == -(MBEDTLS_ERR_ENTROPY_MAX_SOURCES) )
+    703                  mbedtls_snprintf( buf, buflen, "ENTROPY - No more sources can be added" );
+    704              if( use_ret == -(MBEDTLS_ERR_ENTROPY_NO_SOURCES_DEFINED) )
+    705                  mbedtls_snprintf( buf, buflen, "ENTROPY - No sources have been added to poll" );
+    706              if( use_ret == -(MBEDTLS_ERR_ENTROPY_NO_STRONG_SOURCE) )
+    707                  mbedtls_snprintf( buf, buflen, "ENTROPY - No strong sources have been added to poll" );
+    708              if( use_ret == -(MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR) )
+    709                  mbedtls_snprintf( buf, buflen, "ENTROPY - Read/write error in file" );
+    710          #endif /* MBEDTLS_ENTROPY_C */
+    711          
+    712          #if defined(MBEDTLS_GCM_C)
+    713              if( use_ret == -(MBEDTLS_ERR_GCM_AUTH_FAILED) )
+    714                  mbedtls_snprintf( buf, buflen, "GCM - Authenticated decryption failed" );
+    715              if( use_ret == -(MBEDTLS_ERR_GCM_HW_ACCEL_FAILED) )
+    716                  mbedtls_snprintf( buf, buflen, "GCM - GCM hardware accelerator failed" );
+    717              if( use_ret == -(MBEDTLS_ERR_GCM_BAD_INPUT) )
+    718                  mbedtls_snprintf( buf, buflen, "GCM - Bad input parameters to function" );
+    719          #endif /* MBEDTLS_GCM_C */
+    720          
+    721          #if defined(MBEDTLS_HMAC_DRBG_C)
+    722              if( use_ret == -(MBEDTLS_ERR_HMAC_DRBG_REQUEST_TOO_BIG) )
+    723                  mbedtls_snprintf( buf, buflen, "HMAC_DRBG - Too many random requested in single call" );
+    724              if( use_ret == -(MBEDTLS_ERR_HMAC_DRBG_INPUT_TOO_BIG) )
+    725                  mbedtls_snprintf( buf, buflen, "HMAC_DRBG - Input too large (Entropy + additional)" );
+    726              if( use_ret == -(MBEDTLS_ERR_HMAC_DRBG_FILE_IO_ERROR) )
+    727                  mbedtls_snprintf( buf, buflen, "HMAC_DRBG - Read/write error in file" );
+    728              if( use_ret == -(MBEDTLS_ERR_HMAC_DRBG_ENTROPY_SOURCE_FAILED) )
+    729                  mbedtls_snprintf( buf, buflen, "HMAC_DRBG - The entropy source failed" );
+    730          #endif /* MBEDTLS_HMAC_DRBG_C */
+    731          
+    732          #if defined(MBEDTLS_MD2_C)
+    733              if( use_ret == -(MBEDTLS_ERR_MD2_HW_ACCEL_FAILED) )
+    734                  mbedtls_snprintf( buf, buflen, "MD2 - MD2 hardware accelerator failed" );
+    735          #endif /* MBEDTLS_MD2_C */
+    736          
+    737          #if defined(MBEDTLS_MD4_C)
+    738              if( use_ret == -(MBEDTLS_ERR_MD4_HW_ACCEL_FAILED) )
+    739                  mbedtls_snprintf( buf, buflen, "MD4 - MD4 hardware accelerator failed" );
+    740          #endif /* MBEDTLS_MD4_C */
+    741          
+    742          #if defined(MBEDTLS_MD5_C)
+    743              if( use_ret == -(MBEDTLS_ERR_MD5_HW_ACCEL_FAILED) )
+    744                  mbedtls_snprintf( buf, buflen, "MD5 - MD5 hardware accelerator failed" );
+    745          #endif /* MBEDTLS_MD5_C */
+    746          
+    747          #if defined(MBEDTLS_NET_C)
+    748              if( use_ret == -(MBEDTLS_ERR_NET_SOCKET_FAILED) )
+    749                  mbedtls_snprintf( buf, buflen, "NET - Failed to open a socket" );
+    750              if( use_ret == -(MBEDTLS_ERR_NET_CONNECT_FAILED) )
+    751                  mbedtls_snprintf( buf, buflen, "NET - The connection to the given server / port failed" );
+    752              if( use_ret == -(MBEDTLS_ERR_NET_BIND_FAILED) )
+    753                  mbedtls_snprintf( buf, buflen, "NET - Binding of the socket failed" );
+    754              if( use_ret == -(MBEDTLS_ERR_NET_LISTEN_FAILED) )
+    755                  mbedtls_snprintf( buf, buflen, "NET - Could not listen on the socket" );
+    756              if( use_ret == -(MBEDTLS_ERR_NET_ACCEPT_FAILED) )
+    757                  mbedtls_snprintf( buf, buflen, "NET - Could not accept the incoming connection" );
+    758              if( use_ret == -(MBEDTLS_ERR_NET_RECV_FAILED) )
+    759                  mbedtls_snprintf( buf, buflen, "NET - Reading information from the socket failed" );
+    760              if( use_ret == -(MBEDTLS_ERR_NET_SEND_FAILED) )
+    761                  mbedtls_snprintf( buf, buflen, "NET - Sending information through the socket failed" );
+    762              if( use_ret == -(MBEDTLS_ERR_NET_CONN_RESET) )
+    763                  mbedtls_snprintf( buf, buflen, "NET - Connection was reset by peer" );
+    764              if( use_ret == -(MBEDTLS_ERR_NET_UNKNOWN_HOST) )
+    765                  mbedtls_snprintf( buf, buflen, "NET - Failed to get an IP address for the given hostname" );
+    766              if( use_ret == -(MBEDTLS_ERR_NET_BUFFER_TOO_SMALL) )
+    767                  mbedtls_snprintf( buf, buflen, "NET - Buffer is too small to hold the data" );
+    768              if( use_ret == -(MBEDTLS_ERR_NET_INVALID_CONTEXT) )
+    769                  mbedtls_snprintf( buf, buflen, "NET - The context is invalid, eg because it was free()ed" );
+    770          #endif /* MBEDTLS_NET_C */
+    771          
+    772          #if defined(MBEDTLS_OID_C)
+    773              if( use_ret == -(MBEDTLS_ERR_OID_NOT_FOUND) )
+    774                  mbedtls_snprintf( buf, buflen, "OID - OID is not found" );
+    775              if( use_ret == -(MBEDTLS_ERR_OID_BUF_TOO_SMALL) )
+    776                  mbedtls_snprintf( buf, buflen, "OID - output buffer is too small" );
+    777          #endif /* MBEDTLS_OID_C */
+    778          
+    779          #if defined(MBEDTLS_PADLOCK_C)
+    780              if( use_ret == -(MBEDTLS_ERR_PADLOCK_DATA_MISALIGNED) )
+    781                  mbedtls_snprintf( buf, buflen, "PADLOCK - Input data should be aligned" );
+    782          #endif /* MBEDTLS_PADLOCK_C */
+    783          
+    784          #if defined(MBEDTLS_RIPEMD160_C)
+    785              if( use_ret == -(MBEDTLS_ERR_RIPEMD160_HW_ACCEL_FAILED) )
+    786                  mbedtls_snprintf( buf, buflen, "RIPEMD160 - RIPEMD160 hardware accelerator failed" );
+    787          #endif /* MBEDTLS_RIPEMD160_C */
+    788          
+    789          #if defined(MBEDTLS_SHA1_C)
+    790              if( use_ret == -(MBEDTLS_ERR_SHA1_HW_ACCEL_FAILED) )
+    791                  mbedtls_snprintf( buf, buflen, "SHA1 - SHA-1 hardware accelerator failed" );
+    792          #endif /* MBEDTLS_SHA1_C */
+    793          
+    794          #if defined(MBEDTLS_SHA256_C)
+    795              if( use_ret == -(MBEDTLS_ERR_SHA256_HW_ACCEL_FAILED) )
+    796                  mbedtls_snprintf( buf, buflen, "SHA256 - SHA-256 hardware accelerator failed" );
+    797          #endif /* MBEDTLS_SHA256_C */
+    798          
+    799          #if defined(MBEDTLS_SHA512_C)
+    800              if( use_ret == -(MBEDTLS_ERR_SHA512_HW_ACCEL_FAILED) )
+    801                  mbedtls_snprintf( buf, buflen, "SHA512 - SHA-512 hardware accelerator failed" );
+    802          #endif /* MBEDTLS_SHA512_C */
+    803          
+    804          #if defined(MBEDTLS_THREADING_C)
+    805              if( use_ret == -(MBEDTLS_ERR_THREADING_FEATURE_UNAVAILABLE) )
+    806                  mbedtls_snprintf( buf, buflen, "THREADING - The selected feature is not available" );
+    807              if( use_ret == -(MBEDTLS_ERR_THREADING_BAD_INPUT_DATA) )
+    808                  mbedtls_snprintf( buf, buflen, "THREADING - Bad input parameters to function" );
+    809              if( use_ret == -(MBEDTLS_ERR_THREADING_MUTEX_ERROR) )
+    810                  mbedtls_snprintf( buf, buflen, "THREADING - Locking / unlocking / free failed with error code" );
+    811          #endif /* MBEDTLS_THREADING_C */
+    812          
+    813          #if defined(MBEDTLS_XTEA_C)
+    814              if( use_ret == -(MBEDTLS_ERR_XTEA_INVALID_INPUT_LENGTH) )
+    815                  mbedtls_snprintf( buf, buflen, "XTEA - The data input has an invalid length" );
+    816              if( use_ret == -(MBEDTLS_ERR_XTEA_HW_ACCEL_FAILED) )
+    817                  mbedtls_snprintf( buf, buflen, "XTEA - XTEA hardware accelerator failed" );
+    818          #endif /* MBEDTLS_XTEA_C */
+    819              // END generated code
+    820          
+    821              if( strlen( buf ) != 0 )
+    822                  return;
+    823          
+    824              mbedtls_snprintf( buf, buflen, "UNKNOWN ERROR CODE (%04X)", use_ret );
+    825          }
+    826          
+    827          #else /* MBEDTLS_ERROR_C */
+    828          
+    829          #if defined(MBEDTLS_ERROR_STRERROR_DUMMY)
+    830          
+    831          /*
+    832           * Provide an non-function in case MBEDTLS_ERROR_C is not defined
+    833           */
+    834          void mbedtls_strerror( int ret, char *buf, size_t buflen )
+    835          {
+    836              ((void) ret);
+    837          
+    838              if( buflen > 0 )
+    839                  buf[0] = '\0';
+    840          }
+    841          
+    842          #endif /* MBEDTLS_ERROR_STRERROR_DUMMY */
+    843          
+    844          #endif /* MBEDTLS_ERROR_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

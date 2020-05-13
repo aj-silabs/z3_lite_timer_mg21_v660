@@ -1,0 +1,659 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:16
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\md.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWB674.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\md.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"md.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\md.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\md.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\md.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /**
+     14           * \file mbedtls_md.c
+     15           *
+     16           * \brief Generic message digest wrapper for mbed TLS
+     17           *
+     18           * \author Adriaan de Jong <dejong@fox-it.com>
+     19           *
+     20           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     21           *  SPDX-License-Identifier: Apache-2.0
+     22           *
+     23           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     24           *  not use this file except in compliance with the License.
+     25           *  You may obtain a copy of the License at
+     26           *
+     27           *  http://www.apache.org/licenses/LICENSE-2.0
+     28           *
+     29           *  Unless required by applicable law or agreed to in writing, software
+     30           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     31           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     32           *  See the License for the specific language governing permissions and
+     33           *  limitations under the License.
+     34           *
+     35           *  This file is part of mbed TLS (https://tls.mbed.org)
+     36           */
+     37          
+     38          #if !defined(MBEDTLS_CONFIG_FILE)
+     39          #include "mbedtls/config.h"
+     40          #else
+     41          #include MBEDTLS_CONFIG_FILE
+     42          #endif
+     43          
+     44          #if defined(MBEDTLS_MD_C)
+     45          
+     46          #include "mbedtls/md.h"
+     47          #include "mbedtls/md_internal.h"
+     48          
+     49          #if defined(MBEDTLS_PLATFORM_C)
+     50          #include "mbedtls/platform.h"
+     51          #else
+     52          #include <stdlib.h>
+     53          #define mbedtls_calloc    calloc
+     54          #define mbedtls_free       free
+     55          #endif
+     56          
+     57          #include <string.h>
+     58          
+     59          #if defined(MBEDTLS_FS_IO)
+     60          #include <stdio.h>
+     61          #endif
+     62          
+     63          /* Implementation that should never be optimized out by the compiler */
+     64          static void mbedtls_zeroize( void *v, size_t n ) {
+     65              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     66          }
+     67          
+     68          /*
+     69           * Reminder: update profiles in x509_crt.c when adding a new hash!
+     70           */
+     71          static const int supported_digests[] = {
+     72          
+     73          #if defined(MBEDTLS_SHA512_C)
+     74                  MBEDTLS_MD_SHA512,
+     75                  MBEDTLS_MD_SHA384,
+     76          #endif
+     77          
+     78          #if defined(MBEDTLS_SHA256_C)
+     79                  MBEDTLS_MD_SHA256,
+     80                  MBEDTLS_MD_SHA224,
+     81          #endif
+     82          
+     83          #if defined(MBEDTLS_SHA1_C)
+     84                  MBEDTLS_MD_SHA1,
+     85          #endif
+     86          
+     87          #if defined(MBEDTLS_RIPEMD160_C)
+     88                  MBEDTLS_MD_RIPEMD160,
+     89          #endif
+     90          
+     91          #if defined(MBEDTLS_MD5_C)
+     92                  MBEDTLS_MD_MD5,
+     93          #endif
+     94          
+     95          #if defined(MBEDTLS_MD4_C)
+     96                  MBEDTLS_MD_MD4,
+     97          #endif
+     98          
+     99          #if defined(MBEDTLS_MD2_C)
+    100                  MBEDTLS_MD_MD2,
+    101          #endif
+    102          
+    103                  MBEDTLS_MD_NONE
+    104          };
+    105          
+    106          const int *mbedtls_md_list( void )
+    107          {
+    108              return( supported_digests );
+    109          }
+    110          
+    111          const mbedtls_md_info_t *mbedtls_md_info_from_string( const char *md_name )
+    112          {
+    113              if( NULL == md_name )
+    114                  return( NULL );
+    115          
+    116              /* Get the appropriate digest information */
+    117          #if defined(MBEDTLS_MD2_C)
+    118              if( !strcmp( "MD2", md_name ) )
+    119                  return mbedtls_md_info_from_type( MBEDTLS_MD_MD2 );
+    120          #endif
+    121          #if defined(MBEDTLS_MD4_C)
+    122              if( !strcmp( "MD4", md_name ) )
+    123                  return mbedtls_md_info_from_type( MBEDTLS_MD_MD4 );
+    124          #endif
+    125          #if defined(MBEDTLS_MD5_C)
+    126              if( !strcmp( "MD5", md_name ) )
+    127                  return mbedtls_md_info_from_type( MBEDTLS_MD_MD5 );
+    128          #endif
+    129          #if defined(MBEDTLS_RIPEMD160_C)
+    130              if( !strcmp( "RIPEMD160", md_name ) )
+    131                  return mbedtls_md_info_from_type( MBEDTLS_MD_RIPEMD160 );
+    132          #endif
+    133          #if defined(MBEDTLS_SHA1_C)
+    134              if( !strcmp( "SHA1", md_name ) || !strcmp( "SHA", md_name ) )
+    135                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA1 );
+    136          #endif
+    137          #if defined(MBEDTLS_SHA256_C)
+    138              if( !strcmp( "SHA224", md_name ) )
+    139                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA224 );
+    140              if( !strcmp( "SHA256", md_name ) )
+    141                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA256 );
+    142          #endif
+    143          #if defined(MBEDTLS_SHA512_C)
+    144              if( !strcmp( "SHA384", md_name ) )
+    145                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA384 );
+    146              if( !strcmp( "SHA512", md_name ) )
+    147                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA512 );
+    148          #endif
+    149              return( NULL );
+    150          }
+    151          
+    152          const mbedtls_md_info_t *mbedtls_md_info_from_type( mbedtls_md_type_t md_type )
+    153          {
+    154              switch( md_type )
+    155              {
+    156          #if defined(MBEDTLS_MD2_C)
+    157                  case MBEDTLS_MD_MD2:
+    158                      return( &mbedtls_md2_info );
+    159          #endif
+    160          #if defined(MBEDTLS_MD4_C)
+    161                  case MBEDTLS_MD_MD4:
+    162                      return( &mbedtls_md4_info );
+    163          #endif
+    164          #if defined(MBEDTLS_MD5_C)
+    165                  case MBEDTLS_MD_MD5:
+    166                      return( &mbedtls_md5_info );
+    167          #endif
+    168          #if defined(MBEDTLS_RIPEMD160_C)
+    169                  case MBEDTLS_MD_RIPEMD160:
+    170                      return( &mbedtls_ripemd160_info );
+    171          #endif
+    172          #if defined(MBEDTLS_SHA1_C)
+    173                  case MBEDTLS_MD_SHA1:
+    174                      return( &mbedtls_sha1_info );
+    175          #endif
+    176          #if defined(MBEDTLS_SHA256_C)
+    177                  case MBEDTLS_MD_SHA224:
+    178                      return( &mbedtls_sha224_info );
+    179                  case MBEDTLS_MD_SHA256:
+    180                      return( &mbedtls_sha256_info );
+    181          #endif
+    182          #if defined(MBEDTLS_SHA512_C)
+    183                  case MBEDTLS_MD_SHA384:
+    184                      return( &mbedtls_sha384_info );
+    185                  case MBEDTLS_MD_SHA512:
+    186                      return( &mbedtls_sha512_info );
+    187          #endif
+    188                  default:
+    189                      return( NULL );
+    190              }
+    191          }
+    192          
+    193          void mbedtls_md_init( mbedtls_md_context_t *ctx )
+    194          {
+    195              memset( ctx, 0, sizeof( mbedtls_md_context_t ) );
+    196          }
+    197          
+    198          void mbedtls_md_free( mbedtls_md_context_t *ctx )
+    199          {
+    200              if( ctx == NULL || ctx->md_info == NULL )
+    201                  return;
+    202          
+    203              if( ctx->md_ctx != NULL )
+    204                  ctx->md_info->ctx_free_func( ctx->md_ctx );
+    205          
+    206              if( ctx->hmac_ctx != NULL )
+    207              {
+    208                  mbedtls_zeroize( ctx->hmac_ctx, 2 * ctx->md_info->block_size );
+    209                  mbedtls_free( ctx->hmac_ctx );
+    210              }
+    211          
+    212              mbedtls_zeroize( ctx, sizeof( mbedtls_md_context_t ) );
+    213          }
+    214          
+    215          int mbedtls_md_clone( mbedtls_md_context_t *dst,
+    216                                const mbedtls_md_context_t *src )
+    217          {
+    218              if( dst == NULL || dst->md_info == NULL ||
+    219                  src == NULL || src->md_info == NULL ||
+    220                  dst->md_info != src->md_info )
+    221              {
+    222                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    223              }
+    224          
+    225              dst->md_info->clone_func( dst->md_ctx, src->md_ctx );
+    226          
+    227              return( 0 );
+    228          }
+    229          
+    230          #if ! defined(MBEDTLS_DEPRECATED_REMOVED)
+    231          int mbedtls_md_init_ctx( mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info )
+    232          {
+    233              return mbedtls_md_setup( ctx, md_info, 1 );
+    234          }
+    235          #endif
+    236          
+    237          int mbedtls_md_setup( mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info, int hmac )
+    238          {
+    239              if( md_info == NULL || ctx == NULL )
+    240                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    241          
+    242              if( ( ctx->md_ctx = md_info->ctx_alloc_func() ) == NULL )
+    243                  return( MBEDTLS_ERR_MD_ALLOC_FAILED );
+    244          
+    245              if( hmac != 0 )
+    246              {
+    247                  ctx->hmac_ctx = mbedtls_calloc( 2, md_info->block_size );
+    248                  if( ctx->hmac_ctx == NULL )
+    249                  {
+    250                      md_info->ctx_free_func( ctx->md_ctx );
+    251                      return( MBEDTLS_ERR_MD_ALLOC_FAILED );
+    252                  }
+    253              }
+    254          
+    255              ctx->md_info = md_info;
+    256          
+    257              return( 0 );
+    258          }
+    259          
+    260          int mbedtls_md_starts( mbedtls_md_context_t *ctx )
+    261          {
+    262              if( ctx == NULL || ctx->md_info == NULL )
+    263                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    264          
+    265              return( ctx->md_info->starts_func( ctx->md_ctx ) );
+    266          }
+    267          
+    268          int mbedtls_md_update( mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen )
+    269          {
+    270              if( ctx == NULL || ctx->md_info == NULL )
+    271                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    272          
+    273              return( ctx->md_info->update_func( ctx->md_ctx, input, ilen ) );
+    274          }
+    275          
+    276          int mbedtls_md_finish( mbedtls_md_context_t *ctx, unsigned char *output )
+    277          {
+    278              if( ctx == NULL || ctx->md_info == NULL )
+    279                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    280          
+    281              return( ctx->md_info->finish_func( ctx->md_ctx, output ) );
+    282          }
+    283          
+    284          int mbedtls_md( const mbedtls_md_info_t *md_info, const unsigned char *input, size_t ilen,
+    285                      unsigned char *output )
+    286          {
+    287              if( md_info == NULL )
+    288                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    289          
+    290              return( md_info->digest_func( input, ilen, output ) );
+    291          }
+    292          
+    293          #if defined(MBEDTLS_FS_IO)
+    294          int mbedtls_md_file( const mbedtls_md_info_t *md_info, const char *path, unsigned char *output )
+    295          {
+    296              int ret;
+    297              FILE *f;
+    298              size_t n;
+    299              mbedtls_md_context_t ctx;
+    300              unsigned char buf[1024];
+    301          
+    302              if( md_info == NULL )
+    303                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    304          
+    305              if( ( f = fopen( path, "rb" ) ) == NULL )
+    306                  return( MBEDTLS_ERR_MD_FILE_IO_ERROR );
+    307          
+    308              mbedtls_md_init( &ctx );
+    309          
+    310              if( ( ret = mbedtls_md_setup( &ctx, md_info, 0 ) ) != 0 )
+    311                  goto cleanup;
+    312          
+    313              if( ( ret = md_info->starts_func( ctx.md_ctx ) ) != 0 )
+    314                  goto cleanup;
+    315          
+    316              while( ( n = fread( buf, 1, sizeof( buf ), f ) ) > 0 )
+    317                  if( ( ret = md_info->update_func( ctx.md_ctx, buf, n ) ) != 0 )
+    318                      goto cleanup;
+    319          
+    320              if( ferror( f ) != 0 )
+    321                  ret = MBEDTLS_ERR_MD_FILE_IO_ERROR;
+    322              else
+    323                  ret = md_info->finish_func( ctx.md_ctx, output );
+    324          
+    325          cleanup:
+    326              mbedtls_zeroize( buf, sizeof( buf ) );
+    327              fclose( f );
+    328              mbedtls_md_free( &ctx );
+    329          
+    330              return( ret );
+    331          }
+    332          #endif /* MBEDTLS_FS_IO */
+    333          
+    334          int mbedtls_md_hmac_starts( mbedtls_md_context_t *ctx, const unsigned char *key, size_t keylen )
+    335          {
+    336              int ret;
+    337              unsigned char sum[MBEDTLS_MD_MAX_SIZE];
+    338              unsigned char *ipad, *opad;
+    339              size_t i;
+    340          
+    341              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    342                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    343          
+    344              if( keylen > (size_t) ctx->md_info->block_size )
+    345              {
+    346                  if( ( ret = ctx->md_info->starts_func( ctx->md_ctx ) ) != 0 )
+    347                      goto cleanup;
+    348                  if( ( ret = ctx->md_info->update_func( ctx->md_ctx, key, keylen ) ) != 0 )
+    349                      goto cleanup;
+    350                  if( ( ret = ctx->md_info->finish_func( ctx->md_ctx, sum ) ) != 0 )
+    351                      goto cleanup;
+    352          
+    353                  keylen = ctx->md_info->size;
+    354                  key = sum;
+    355              }
+    356          
+    357              ipad = (unsigned char *) ctx->hmac_ctx;
+    358              opad = (unsigned char *) ctx->hmac_ctx + ctx->md_info->block_size;
+    359          
+    360              memset( ipad, 0x36, ctx->md_info->block_size );
+    361              memset( opad, 0x5C, ctx->md_info->block_size );
+    362          
+    363              for( i = 0; i < keylen; i++ )
+    364              {
+    365                  ipad[i] = (unsigned char)( ipad[i] ^ key[i] );
+    366                  opad[i] = (unsigned char)( opad[i] ^ key[i] );
+    367              }
+    368          
+    369              if( ( ret = ctx->md_info->starts_func( ctx->md_ctx ) ) != 0 )
+    370                  goto cleanup;
+    371              if( ( ret = ctx->md_info->update_func( ctx->md_ctx, ipad,
+    372                                                     ctx->md_info->block_size ) ) != 0 )
+    373                  goto cleanup;
+    374          
+    375          cleanup:
+    376              mbedtls_zeroize( sum, sizeof( sum ) );
+    377          
+    378              return( ret );
+    379          }
+    380          
+    381          int mbedtls_md_hmac_update( mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen )
+    382          {
+    383              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    384                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    385          
+    386              return( ctx->md_info->update_func( ctx->md_ctx, input, ilen ) );
+    387          }
+    388          
+    389          int mbedtls_md_hmac_finish( mbedtls_md_context_t *ctx, unsigned char *output )
+    390          {
+    391              int ret;
+    392              unsigned char tmp[MBEDTLS_MD_MAX_SIZE];
+    393              unsigned char *opad;
+    394          
+    395              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    396                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    397          
+    398              opad = (unsigned char *) ctx->hmac_ctx + ctx->md_info->block_size;
+    399          
+    400              if( ( ret = ctx->md_info->finish_func( ctx->md_ctx, tmp ) ) != 0 )
+    401                  return( ret );
+    402              if( ( ret = ctx->md_info->starts_func( ctx->md_ctx ) ) != 0 )
+    403                  return( ret );
+    404              if( ( ret = ctx->md_info->update_func( ctx->md_ctx, opad,
+    405                                                     ctx->md_info->block_size ) ) != 0 )
+    406                  return( ret );
+    407              if( ( ret = ctx->md_info->update_func( ctx->md_ctx, tmp,
+    408                                                     ctx->md_info->size ) ) != 0 )
+    409                  return( ret );
+    410              return( ctx->md_info->finish_func( ctx->md_ctx, output ) );
+    411          }
+    412          
+    413          int mbedtls_md_hmac_reset( mbedtls_md_context_t *ctx )
+    414          {
+    415              int ret;
+    416              unsigned char *ipad;
+    417          
+    418              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    419                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    420          
+    421              ipad = (unsigned char *) ctx->hmac_ctx;
+    422          
+    423              if( ( ret = ctx->md_info->starts_func( ctx->md_ctx ) ) != 0 )
+    424                  return( ret );
+    425              return( ctx->md_info->update_func( ctx->md_ctx, ipad,
+    426                                                 ctx->md_info->block_size ) );
+    427          }
+    428          
+    429          int mbedtls_md_hmac( const mbedtls_md_info_t *md_info,
+    430                               const unsigned char *key, size_t keylen,
+    431                               const unsigned char *input, size_t ilen,
+    432                               unsigned char *output )
+    433          {
+    434              mbedtls_md_context_t ctx;
+    435              int ret;
+    436          
+    437              if( md_info == NULL )
+    438                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    439          
+    440              mbedtls_md_init( &ctx );
+    441          
+    442              if( ( ret = mbedtls_md_setup( &ctx, md_info, 1 ) ) != 0 )
+    443                  goto cleanup;
+    444          
+    445              if( ( ret = mbedtls_md_hmac_starts( &ctx, key, keylen ) ) != 0 )
+    446                  goto cleanup;
+    447              if( ( ret = mbedtls_md_hmac_update( &ctx, input, ilen ) ) != 0 )
+    448                  goto cleanup;
+    449              if( ( ret = mbedtls_md_hmac_finish( &ctx, output ) ) != 0 )
+    450                  goto cleanup;
+    451          
+    452          cleanup:
+    453              mbedtls_md_free( &ctx );
+    454          
+    455              return( ret );
+    456          }
+    457          
+    458          int mbedtls_md_process( mbedtls_md_context_t *ctx, const unsigned char *data )
+    459          {
+    460              if( ctx == NULL || ctx->md_info == NULL )
+    461                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    462          
+    463              return( ctx->md_info->process_func( ctx->md_ctx, data ) );
+    464          }
+    465          
+    466          unsigned char mbedtls_md_get_size( const mbedtls_md_info_t *md_info )
+    467          {
+    468              if( md_info == NULL )
+    469                  return( 0 );
+    470          
+    471              return md_info->size;
+    472          }
+    473          
+    474          mbedtls_md_type_t mbedtls_md_get_type( const mbedtls_md_info_t *md_info )
+    475          {
+    476              if( md_info == NULL )
+    477                  return( MBEDTLS_MD_NONE );
+    478          
+    479              return md_info->type;
+    480          }
+    481          
+    482          const char *mbedtls_md_get_name( const mbedtls_md_info_t *md_info )
+    483          {
+    484              if( md_info == NULL )
+    485                  return( NULL );
+    486          
+    487              return md_info->name;
+    488          }
+    489          
+    490          #endif /* MBEDTLS_MD_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

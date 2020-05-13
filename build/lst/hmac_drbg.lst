@@ -1,0 +1,762 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:09
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\hmac_drbg.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW99BB.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\hmac_drbg.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"hmac_drbg.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\hmac_drbg.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\hmac_drbg.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\hmac_drbg.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  HMAC_DRBG implementation (NIST SP 800-90)
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          /*
+     35           *  The NIST SP 800-90A DRBGs are described in the following publication.
+     36           *  http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf
+     37           *  References below are based on rev. 1 (January 2012).
+     38           */
+     39          
+     40          #if !defined(MBEDTLS_CONFIG_FILE)
+     41          #include "mbedtls/config.h"
+     42          #else
+     43          #include MBEDTLS_CONFIG_FILE
+     44          #endif
+     45          
+     46          #if defined(MBEDTLS_HMAC_DRBG_C)
+     47          
+     48          #include "mbedtls/hmac_drbg.h"
+     49          
+     50          #include <string.h>
+     51          
+     52          #if defined(MBEDTLS_FS_IO)
+     53          #include <stdio.h>
+     54          #endif
+     55          
+     56          #if defined(MBEDTLS_SELF_TEST)
+     57          #if defined(MBEDTLS_PLATFORM_C)
+     58          #include "mbedtls/platform.h"
+     59          #else
+     60          #include <stdio.h>
+     61          #define mbedtls_printf printf
+     62          #endif /* MBEDTLS_SELF_TEST */
+     63          #endif /* MBEDTLS_PLATFORM_C */
+     64          
+     65          /* Implementation that should never be optimized out by the compiler */
+     66          static void mbedtls_zeroize( void *v, size_t n ) {
+     67              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     68          }
+     69          
+     70          /*
+     71           * HMAC_DRBG context initialization
+     72           */
+     73          void mbedtls_hmac_drbg_init( mbedtls_hmac_drbg_context *ctx )
+     74          {
+     75              memset( ctx, 0, sizeof( mbedtls_hmac_drbg_context ) );
+     76          
+     77          #if defined(MBEDTLS_THREADING_C)
+     78              mbedtls_mutex_init( &ctx->mutex );
+     79          #endif
+     80          }
+     81          
+     82          /*
+     83           * HMAC_DRBG update, using optional additional data (10.1.2.2)
+     84           */
+     85          int mbedtls_hmac_drbg_update_ret( mbedtls_hmac_drbg_context *ctx,
+     86                                            const unsigned char *additional,
+     87                                            size_t add_len )
+     88          {
+     89              size_t md_len = mbedtls_md_get_size( ctx->md_ctx.md_info );
+     90              unsigned char rounds = ( additional != NULL && add_len != 0 ) ? 2 : 1;
+     91              unsigned char sep[1];
+     92              unsigned char K[MBEDTLS_MD_MAX_SIZE];
+     93              int ret;
+     94          
+     95              for( sep[0] = 0; sep[0] < rounds; sep[0]++ )
+     96              {
+     97                  /* Step 1 or 4 */
+     98                  if( ( ret = mbedtls_md_hmac_reset( &ctx->md_ctx ) ) != 0 )
+     99                      goto exit;
+    100                  if( ( ret = mbedtls_md_hmac_update( &ctx->md_ctx,
+    101                                                      ctx->V, md_len ) ) != 0 )
+    102                      goto exit;
+    103                  if( ( ret = mbedtls_md_hmac_update( &ctx->md_ctx,
+    104                                                      sep, 1 ) ) != 0 )
+    105                      goto exit;
+    106                  if( rounds == 2 )
+    107                  {
+    108                      if( ( ret = mbedtls_md_hmac_update( &ctx->md_ctx,
+    109                                                          additional, add_len ) ) != 0 )
+    110                      goto exit;
+    111                  }
+    112                  if( ( ret = mbedtls_md_hmac_finish( &ctx->md_ctx, K ) ) != 0 )
+    113                      goto exit;
+    114          
+    115                  /* Step 2 or 5 */
+    116                  if( ( ret = mbedtls_md_hmac_starts( &ctx->md_ctx, K, md_len ) ) != 0 )
+    117                      goto exit;
+    118                  if( ( ret = mbedtls_md_hmac_update( &ctx->md_ctx,
+    119                                                      ctx->V, md_len ) ) != 0 )
+    120                      goto exit;
+    121                  if( ( ret = mbedtls_md_hmac_finish( &ctx->md_ctx, ctx->V ) ) != 0 )
+    122                      goto exit;
+    123              }
+    124          
+    125          exit:
+    126              mbedtls_zeroize( K, sizeof( K ) );
+    127              return( ret );
+    128          }
+    129          
+    130          void mbedtls_hmac_drbg_update( mbedtls_hmac_drbg_context *ctx,
+    131                                         const unsigned char *additional,
+    132                                         size_t add_len )
+    133          {
+    134              (void) mbedtls_hmac_drbg_update_ret( ctx, additional, add_len );
+    135          }
+    136          
+    137          /*
+    138           * Simplified HMAC_DRBG initialisation (for use with deterministic ECDSA)
+    139           */
+    140          int mbedtls_hmac_drbg_seed_buf( mbedtls_hmac_drbg_context *ctx,
+    141                                  const mbedtls_md_info_t * md_info,
+    142                                  const unsigned char *data, size_t data_len )
+    143          {
+    144              int ret;
+    145          
+    146              if( ( ret = mbedtls_md_setup( &ctx->md_ctx, md_info, 1 ) ) != 0 )
+    147                  return( ret );
+    148          
+    149              /*
+    150               * Set initial working state.
+    151               * Use the V memory location, which is currently all 0, to initialize the
+    152               * MD context with an all-zero key. Then set V to its initial value.
+    153               */
+    154              if( ( ret = mbedtls_md_hmac_starts( &ctx->md_ctx, ctx->V,
+    155                                                  mbedtls_md_get_size( md_info ) ) ) != 0 )
+    156                  return( ret );
+    157              memset( ctx->V, 0x01, mbedtls_md_get_size( md_info ) );
+    158          
+    159              if( ( ret = mbedtls_hmac_drbg_update_ret( ctx, data, data_len ) ) != 0 )
+    160                  return( ret );
+    161          
+    162              return( 0 );
+    163          }
+    164          
+    165          /*
+    166           * HMAC_DRBG reseeding: 10.1.2.4 (arabic) + 9.2 (Roman)
+    167           */
+    168          int mbedtls_hmac_drbg_reseed( mbedtls_hmac_drbg_context *ctx,
+    169                                const unsigned char *additional, size_t len )
+    170          {
+    171              unsigned char seed[MBEDTLS_HMAC_DRBG_MAX_SEED_INPUT];
+    172              size_t seedlen;
+    173              int ret;
+    174          
+    175              /* III. Check input length */
+    176              if( len > MBEDTLS_HMAC_DRBG_MAX_INPUT ||
+    177                  ctx->entropy_len + len > MBEDTLS_HMAC_DRBG_MAX_SEED_INPUT )
+    178              {
+    179                  return( MBEDTLS_ERR_HMAC_DRBG_INPUT_TOO_BIG );
+    180              }
+    181          
+    182              memset( seed, 0, MBEDTLS_HMAC_DRBG_MAX_SEED_INPUT );
+    183          
+    184              /* IV. Gather entropy_len bytes of entropy for the seed */
+    185              if( ( ret = ctx->f_entropy( ctx->p_entropy,
+    186                                          seed, ctx->entropy_len ) ) != 0 )
+    187                  return( MBEDTLS_ERR_HMAC_DRBG_ENTROPY_SOURCE_FAILED );
+    188          
+    189              seedlen = ctx->entropy_len;
+    190          
+    191              /* 1. Concatenate entropy and additional data if any */
+    192              if( additional != NULL && len != 0 )
+    193              {
+    194                  memcpy( seed + seedlen, additional, len );
+    195                  seedlen += len;
+    196              }
+    197          
+    198              /* 2. Update state */
+    199              if( ( ret = mbedtls_hmac_drbg_update_ret( ctx, seed, seedlen ) ) != 0 )
+    200                  goto exit;
+    201          
+    202              /* 3. Reset reseed_counter */
+    203              ctx->reseed_counter = 1;
+    204          
+    205          exit:
+    206              /* 4. Done */
+    207              mbedtls_zeroize( seed, seedlen );
+    208              return( ret );
+    209          }
+    210          
+    211          /*
+    212           * HMAC_DRBG initialisation (10.1.2.3 + 9.1)
+    213           */
+    214          int mbedtls_hmac_drbg_seed( mbedtls_hmac_drbg_context *ctx,
+    215                              const mbedtls_md_info_t * md_info,
+    216                              int (*f_entropy)(void *, unsigned char *, size_t),
+    217                              void *p_entropy,
+    218                              const unsigned char *custom,
+    219                              size_t len )
+    220          {
+    221              int ret;
+    222              size_t entropy_len, md_size;
+    223          
+    224              if( ( ret = mbedtls_md_setup( &ctx->md_ctx, md_info, 1 ) ) != 0 )
+    225                  return( ret );
+    226          
+    227              md_size = mbedtls_md_get_size( md_info );
+    228          
+    229              /*
+    230               * Set initial working state.
+    231               * Use the V memory location, which is currently all 0, to initialize the
+    232               * MD context with an all-zero key. Then set V to its initial value.
+    233               */
+    234              if( ( ret = mbedtls_md_hmac_starts( &ctx->md_ctx, ctx->V, md_size ) ) != 0 )
+    235                  return( ret );
+    236              memset( ctx->V, 0x01, md_size );
+    237          
+    238              ctx->f_entropy = f_entropy;
+    239              ctx->p_entropy = p_entropy;
+    240          
+    241              ctx->reseed_interval = MBEDTLS_HMAC_DRBG_RESEED_INTERVAL;
+    242          
+    243              /*
+    244               * See SP800-57 5.6.1 (p. 65-66) for the security strength provided by
+    245               * each hash function, then according to SP800-90A rev1 10.1 table 2,
+    246               * min_entropy_len (in bits) is security_strength.
+    247               *
+    248               * (This also matches the sizes used in the NIST test vectors.)
+    249               */
+    250              entropy_len = md_size <= 20 ? 16 : /* 160-bits hash -> 128 bits */
+    251                            md_size <= 28 ? 24 : /* 224-bits hash -> 192 bits */
+    252                                            32;  /* better (256+) -> 256 bits */
+    253          
+    254              /*
+    255               * For initialisation, use more entropy to emulate a nonce
+    256               * (Again, matches test vectors.)
+    257               */
+    258              ctx->entropy_len = entropy_len * 3 / 2;
+    259          
+    260              if( ( ret = mbedtls_hmac_drbg_reseed( ctx, custom, len ) ) != 0 )
+    261                  return( ret );
+    262          
+    263              ctx->entropy_len = entropy_len;
+    264          
+    265              return( 0 );
+    266          }
+    267          
+    268          /*
+    269           * Set prediction resistance
+    270           */
+    271          void mbedtls_hmac_drbg_set_prediction_resistance( mbedtls_hmac_drbg_context *ctx,
+    272                                                    int resistance )
+    273          {
+    274              ctx->prediction_resistance = resistance;
+    275          }
+    276          
+    277          /*
+    278           * Set entropy length grabbed for reseeds
+    279           */
+    280          void mbedtls_hmac_drbg_set_entropy_len( mbedtls_hmac_drbg_context *ctx, size_t len )
+    281          {
+    282              ctx->entropy_len = len;
+    283          }
+    284          
+    285          /*
+    286           * Set reseed interval
+    287           */
+    288          void mbedtls_hmac_drbg_set_reseed_interval( mbedtls_hmac_drbg_context *ctx, int interval )
+    289          {
+    290              ctx->reseed_interval = interval;
+    291          }
+    292          
+    293          /*
+    294           * HMAC_DRBG random function with optional additional data:
+    295           * 10.1.2.5 (arabic) + 9.3 (Roman)
+    296           */
+    297          int mbedtls_hmac_drbg_random_with_add( void *p_rng,
+    298                                         unsigned char *output, size_t out_len,
+    299                                         const unsigned char *additional, size_t add_len )
+    300          {
+    301              int ret;
+    302              mbedtls_hmac_drbg_context *ctx = (mbedtls_hmac_drbg_context *) p_rng;
+    303              size_t md_len = mbedtls_md_get_size( ctx->md_ctx.md_info );
+    304              size_t left = out_len;
+    305              unsigned char *out = output;
+    306          
+    307              /* II. Check request length */
+    308              if( out_len > MBEDTLS_HMAC_DRBG_MAX_REQUEST )
+    309                  return( MBEDTLS_ERR_HMAC_DRBG_REQUEST_TOO_BIG );
+    310          
+    311              /* III. Check input length */
+    312              if( add_len > MBEDTLS_HMAC_DRBG_MAX_INPUT )
+    313                  return( MBEDTLS_ERR_HMAC_DRBG_INPUT_TOO_BIG );
+    314          
+    315              /* 1. (aka VII and IX) Check reseed counter and PR */
+    316              if( ctx->f_entropy != NULL && /* For no-reseeding instances */
+    317                  ( ctx->prediction_resistance == MBEDTLS_HMAC_DRBG_PR_ON ||
+    318                    ctx->reseed_counter > ctx->reseed_interval ) )
+    319              {
+    320                  if( ( ret = mbedtls_hmac_drbg_reseed( ctx, additional, add_len ) ) != 0 )
+    321                      return( ret );
+    322          
+    323                  add_len = 0; /* VII.4 */
+    324              }
+    325          
+    326              /* 2. Use additional data if any */
+    327              if( additional != NULL && add_len != 0 )
+    328              {
+    329                  if( ( ret = mbedtls_hmac_drbg_update_ret( ctx,
+    330                                                            additional, add_len ) ) != 0 )
+    331                      goto exit;
+    332              }
+    333          
+    334              /* 3, 4, 5. Generate bytes */
+    335              while( left != 0 )
+    336              {
+    337                  size_t use_len = left > md_len ? md_len : left;
+    338          
+    339                  if( ( ret = mbedtls_md_hmac_reset( &ctx->md_ctx ) ) != 0 )
+    340                      goto exit;
+    341                  if( ( ret = mbedtls_md_hmac_update( &ctx->md_ctx,
+    342                                                      ctx->V, md_len ) ) != 0 )
+    343                      goto exit;
+    344                  if( ( ret = mbedtls_md_hmac_finish( &ctx->md_ctx, ctx->V ) ) != 0 )
+    345                      goto exit;
+    346          
+    347                  memcpy( out, ctx->V, use_len );
+    348                  out += use_len;
+    349                  left -= use_len;
+    350              }
+    351          
+    352              /* 6. Update */
+    353              if( ( ret = mbedtls_hmac_drbg_update_ret( ctx,
+    354                                                        additional, add_len ) ) != 0 )
+    355                  goto exit;
+    356          
+    357              /* 7. Update reseed counter */
+    358              ctx->reseed_counter++;
+    359          
+    360          exit:
+    361              /* 8. Done */
+    362              return( ret );
+    363          }
+    364          
+    365          /*
+    366           * HMAC_DRBG random function
+    367           */
+    368          int mbedtls_hmac_drbg_random( void *p_rng, unsigned char *output, size_t out_len )
+    369          {
+    370              int ret;
+    371              mbedtls_hmac_drbg_context *ctx = (mbedtls_hmac_drbg_context *) p_rng;
+    372          
+    373          #if defined(MBEDTLS_THREADING_C)
+    374              if( ( ret = mbedtls_mutex_lock( &ctx->mutex ) ) != 0 )
+    375                  return( ret );
+    376          #endif
+    377          
+    378              ret = mbedtls_hmac_drbg_random_with_add( ctx, output, out_len, NULL, 0 );
+    379          
+    380          #if defined(MBEDTLS_THREADING_C)
+    381              if( mbedtls_mutex_unlock( &ctx->mutex ) != 0 )
+    382                  return( MBEDTLS_ERR_THREADING_MUTEX_ERROR );
+    383          #endif
+    384          
+    385              return( ret );
+    386          }
+    387          
+    388          /*
+    389           * Free an HMAC_DRBG context
+    390           */
+    391          void mbedtls_hmac_drbg_free( mbedtls_hmac_drbg_context *ctx )
+    392          {
+    393              if( ctx == NULL )
+    394                  return;
+    395          
+    396          #if defined(MBEDTLS_THREADING_C)
+    397              mbedtls_mutex_free( &ctx->mutex );
+    398          #endif
+    399              mbedtls_md_free( &ctx->md_ctx );
+    400              mbedtls_zeroize( ctx, sizeof( mbedtls_hmac_drbg_context ) );
+    401          }
+    402          
+    403          #if defined(MBEDTLS_FS_IO)
+    404          int mbedtls_hmac_drbg_write_seed_file( mbedtls_hmac_drbg_context *ctx, const char *path )
+    405          {
+    406              int ret;
+    407              FILE *f;
+    408              unsigned char buf[ MBEDTLS_HMAC_DRBG_MAX_INPUT ];
+    409          
+    410              if( ( f = fopen( path, "wb" ) ) == NULL )
+    411                  return( MBEDTLS_ERR_HMAC_DRBG_FILE_IO_ERROR );
+    412          
+    413              if( ( ret = mbedtls_hmac_drbg_random( ctx, buf, sizeof( buf ) ) ) != 0 )
+    414                  goto exit;
+    415          
+    416              if( fwrite( buf, 1, sizeof( buf ), f ) != sizeof( buf ) )
+    417              {
+    418                  ret = MBEDTLS_ERR_HMAC_DRBG_FILE_IO_ERROR;
+    419                  goto exit;
+    420              }
+    421          
+    422              ret = 0;
+    423          
+    424          exit:
+    425              fclose( f );
+    426              mbedtls_zeroize( buf, sizeof( buf ) );
+    427          
+    428              return( ret );
+    429          }
+    430          
+    431          int mbedtls_hmac_drbg_update_seed_file( mbedtls_hmac_drbg_context *ctx, const char *path )
+    432          {
+    433              int ret = 0;
+    434              FILE *f;
+    435              size_t n;
+    436              unsigned char buf[ MBEDTLS_HMAC_DRBG_MAX_INPUT ];
+    437          
+    438              if( ( f = fopen( path, "rb" ) ) == NULL )
+    439                  return( MBEDTLS_ERR_HMAC_DRBG_FILE_IO_ERROR );
+    440          
+    441              fseek( f, 0, SEEK_END );
+    442              n = (size_t) ftell( f );
+    443              fseek( f, 0, SEEK_SET );
+    444          
+    445              if( n > MBEDTLS_HMAC_DRBG_MAX_INPUT )
+    446              {
+    447                  fclose( f );
+    448                  return( MBEDTLS_ERR_HMAC_DRBG_INPUT_TOO_BIG );
+    449              }
+    450          
+    451              if( fread( buf, 1, n, f ) != n )
+    452                  ret = MBEDTLS_ERR_HMAC_DRBG_FILE_IO_ERROR;
+    453              else
+    454                  ret = mbedtls_hmac_drbg_update_ret( ctx, buf, n );
+    455          
+    456              fclose( f );
+    457          
+    458              mbedtls_zeroize( buf, sizeof( buf ) );
+    459          
+    460              if( ret != 0 )
+    461                  return( ret );
+    462          
+    463              return( mbedtls_hmac_drbg_write_seed_file( ctx, path ) );
+    464          }
+    465          #endif /* MBEDTLS_FS_IO */
+    466          
+    467          
+    468          #if defined(MBEDTLS_SELF_TEST)
+    469          
+    470          #if !defined(MBEDTLS_SHA1_C)
+    471          /* Dummy checkup routine */
+    472          int mbedtls_hmac_drbg_self_test( int verbose )
+    473          {
+    474              (void) verbose;
+    475              return( 0 );
+    476          }
+    477          #else
+    478          
+    479          #define OUTPUT_LEN  80
+    480          
+    481          /* From a NIST PR=true test vector */
+    482          static const unsigned char entropy_pr[] = {
+    483              0xa0, 0xc9, 0xab, 0x58, 0xf1, 0xe2, 0xe5, 0xa4, 0xde, 0x3e, 0xbd, 0x4f,
+    484              0xf7, 0x3e, 0x9c, 0x5b, 0x64, 0xef, 0xd8, 0xca, 0x02, 0x8c, 0xf8, 0x11,
+    485              0x48, 0xa5, 0x84, 0xfe, 0x69, 0xab, 0x5a, 0xee, 0x42, 0xaa, 0x4d, 0x42,
+    486              0x17, 0x60, 0x99, 0xd4, 0x5e, 0x13, 0x97, 0xdc, 0x40, 0x4d, 0x86, 0xa3,
+    487              0x7b, 0xf5, 0x59, 0x54, 0x75, 0x69, 0x51, 0xe4 };
+    488          static const unsigned char result_pr[OUTPUT_LEN] = {
+    489              0x9a, 0x00, 0xa2, 0xd0, 0x0e, 0xd5, 0x9b, 0xfe, 0x31, 0xec, 0xb1, 0x39,
+    490              0x9b, 0x60, 0x81, 0x48, 0xd1, 0x96, 0x9d, 0x25, 0x0d, 0x3c, 0x1e, 0x94,
+    491              0x10, 0x10, 0x98, 0x12, 0x93, 0x25, 0xca, 0xb8, 0xfc, 0xcc, 0x2d, 0x54,
+    492              0x73, 0x19, 0x70, 0xc0, 0x10, 0x7a, 0xa4, 0x89, 0x25, 0x19, 0x95, 0x5e,
+    493              0x4b, 0xc6, 0x00, 0x1d, 0x7f, 0x4e, 0x6a, 0x2b, 0xf8, 0xa3, 0x01, 0xab,
+    494              0x46, 0x05, 0x5c, 0x09, 0xa6, 0x71, 0x88, 0xf1, 0xa7, 0x40, 0xee, 0xf3,
+    495              0xe1, 0x5c, 0x02, 0x9b, 0x44, 0xaf, 0x03, 0x44 };
+    496          
+    497          /* From a NIST PR=false test vector */
+    498          static const unsigned char entropy_nopr[] = {
+    499              0x79, 0x34, 0x9b, 0xbf, 0x7c, 0xdd, 0xa5, 0x79, 0x95, 0x57, 0x86, 0x66,
+    500              0x21, 0xc9, 0x13, 0x83, 0x11, 0x46, 0x73, 0x3a, 0xbf, 0x8c, 0x35, 0xc8,
+    501              0xc7, 0x21, 0x5b, 0x5b, 0x96, 0xc4, 0x8e, 0x9b, 0x33, 0x8c, 0x74, 0xe3,
+    502              0xe9, 0x9d, 0xfe, 0xdf };
+    503          static const unsigned char result_nopr[OUTPUT_LEN] = {
+    504              0xc6, 0xa1, 0x6a, 0xb8, 0xd4, 0x20, 0x70, 0x6f, 0x0f, 0x34, 0xab, 0x7f,
+    505              0xec, 0x5a, 0xdc, 0xa9, 0xd8, 0xca, 0x3a, 0x13, 0x3e, 0x15, 0x9c, 0xa6,
+    506              0xac, 0x43, 0xc6, 0xf8, 0xa2, 0xbe, 0x22, 0x83, 0x4a, 0x4c, 0x0a, 0x0a,
+    507              0xff, 0xb1, 0x0d, 0x71, 0x94, 0xf1, 0xc1, 0xa5, 0xcf, 0x73, 0x22, 0xec,
+    508              0x1a, 0xe0, 0x96, 0x4e, 0xd4, 0xbf, 0x12, 0x27, 0x46, 0xe0, 0x87, 0xfd,
+    509              0xb5, 0xb3, 0xe9, 0x1b, 0x34, 0x93, 0xd5, 0xbb, 0x98, 0xfa, 0xed, 0x49,
+    510              0xe8, 0x5f, 0x13, 0x0f, 0xc8, 0xa4, 0x59, 0xb7 };
+    511          
+    512          /* "Entropy" from buffer */
+    513          static size_t test_offset;
+    514          static int hmac_drbg_self_test_entropy( void *data,
+    515                                                  unsigned char *buf, size_t len )
+    516          {
+    517              const unsigned char *p = data;
+    518              memcpy( buf, p + test_offset, len );
+    519              test_offset += len;
+    520              return( 0 );
+    521          }
+    522          
+    523          #define CHK( c )    if( (c) != 0 )                          \
+    524                              {                                       \
+    525                                  if( verbose != 0 )                  \
+    526                                      mbedtls_printf( "failed\n" );  \
+    527                                  return( 1 );                        \
+    528                              }
+    529          
+    530          /*
+    531           * Checkup routine for HMAC_DRBG with SHA-1
+    532           */
+    533          int mbedtls_hmac_drbg_self_test( int verbose )
+    534          {
+    535              mbedtls_hmac_drbg_context ctx;
+    536              unsigned char buf[OUTPUT_LEN];
+    537              const mbedtls_md_info_t *md_info = mbedtls_md_info_from_type( MBEDTLS_MD_SHA1 );
+    538          
+    539              mbedtls_hmac_drbg_init( &ctx );
+    540          
+    541              /*
+    542               * PR = True
+    543               */
+    544              if( verbose != 0 )
+    545                  mbedtls_printf( "  HMAC_DRBG (PR = True) : " );
+    546          
+    547              test_offset = 0;
+    548              CHK( mbedtls_hmac_drbg_seed( &ctx, md_info,
+    549                                   hmac_drbg_self_test_entropy, (void *) entropy_pr,
+    550                                   NULL, 0 ) );
+    551              mbedtls_hmac_drbg_set_prediction_resistance( &ctx, MBEDTLS_HMAC_DRBG_PR_ON );
+    552              CHK( mbedtls_hmac_drbg_random( &ctx, buf, OUTPUT_LEN ) );
+    553              CHK( mbedtls_hmac_drbg_random( &ctx, buf, OUTPUT_LEN ) );
+    554              CHK( memcmp( buf, result_pr, OUTPUT_LEN ) );
+    555              mbedtls_hmac_drbg_free( &ctx );
+    556          
+    557              mbedtls_hmac_drbg_free( &ctx );
+    558          
+    559              if( verbose != 0 )
+    560                  mbedtls_printf( "passed\n" );
+    561          
+    562              /*
+    563               * PR = False
+    564               */
+    565              if( verbose != 0 )
+    566                  mbedtls_printf( "  HMAC_DRBG (PR = False) : " );
+    567          
+    568              mbedtls_hmac_drbg_init( &ctx );
+    569          
+    570              test_offset = 0;
+    571              CHK( mbedtls_hmac_drbg_seed( &ctx, md_info,
+    572                                   hmac_drbg_self_test_entropy, (void *) entropy_nopr,
+    573                                   NULL, 0 ) );
+    574              CHK( mbedtls_hmac_drbg_reseed( &ctx, NULL, 0 ) );
+    575              CHK( mbedtls_hmac_drbg_random( &ctx, buf, OUTPUT_LEN ) );
+    576              CHK( mbedtls_hmac_drbg_random( &ctx, buf, OUTPUT_LEN ) );
+    577              CHK( memcmp( buf, result_nopr, OUTPUT_LEN ) );
+    578              mbedtls_hmac_drbg_free( &ctx );
+    579          
+    580              mbedtls_hmac_drbg_free( &ctx );
+    581          
+    582              if( verbose != 0 )
+    583                  mbedtls_printf( "passed\n" );
+    584          
+    585              if( verbose != 0 )
+    586                  mbedtls_printf( "\n" );
+    587          
+    588              return( 0 );
+    589          }
+    590          #endif /* MBEDTLS_SHA1_C */
+    591          #endif /* MBEDTLS_SELF_TEST */
+    592          
+    593          #endif /* MBEDTLS_HMAC_DRBG_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

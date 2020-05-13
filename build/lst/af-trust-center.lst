@@ -1,0 +1,826 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:08
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\security\af-trust-center.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWA8D6.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\security\af-trust-center.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"af-trust-center.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\security\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\af-trust-center.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\af-trust-center.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\security\af-trust-center.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Security code for a Trust Center node.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "app/framework/include/af.h"
+     19          #define USE_REAL_SECURITY_PROTOTYPES
+     20          #include "app/framework/security/af-security.h"
+     21          #include "app/framework/util/af-main.h"
+     22          #include "app/framework/plugin/concentrator/source-route-common.h"
+     23          #include "app/framework/util/attribute-storage.h"
+     24          
+     25          #ifdef EMBER_AF_GENERATED_PLUGIN_TRUST_CENTER_JOIN_FUNCTION_DECLARATIONS
+     26          EMBER_AF_GENERATED_PLUGIN_TRUST_CENTER_JOIN_FUNCTION_DECLARATIONS
+     27          #endif
+     28          //------------------------------------------------------------------------------
+     29          // Globals
+     30          
+     31          #if defined(EMBER_AF_PRINT_SECURITY)
+     32          // Corresponds to the EmberJoinDecision status codes
+     33          static const char * joinDecisionText[] = {
+     34            EMBER_JOIN_DECISION_STRINGS
+     35          };
+     36          
+     37          // Corresponds to the EmberDeviceUpdate status codes
+     38          static const char * deviceUpdateText[] = {
+     39            EMBER_DEVICE_UPDATE_STRINGS
+     40          };
+     41          
+     42          #endif // EMBER_AF_PRINT_APP
+     43          
+     44          static EmberStatus permitRequestingTrustCenterLinkKey(void);
+     45          static EmberStatus permitRequestingApplicationLinkKey(void);
+     46          static EmberStatus setJoinPolicy(EmberJoinDecision decision);
+     47          
+     48          //----------------------------------------------------------------
+     49          // Helper Functions
+     50          
+     51          // Reverse the bits in a byte
+
+   \                                 In section .text, align 2, keep-with-next
+     52          static uint8_t reverse(uint8_t b)
+     53          {
+     54          #if defined(EZSP_HOST) || defined(BOARD_SIMULATION)
+     55            return ((b * 0x0802UL & 0x22110UL) | (b * 0x8020UL & 0x88440UL)) * 0x10101UL >> 16;
+     56          #else
+     57            return (__RBIT((uint32_t)b) >> 24); // Cortex function __RBIT uses uint32_t
+   \                     reverse: (+1)
+   \        0x0   0xFA90 0xF0A0      RBIT     R0,R0
+   \        0x4   0x0E00             LSRS     R0,R0,#+24
+   \        0x6   0x4770             BX       LR               ;; return
+     58          #endif // EZSP_HOST
+     59          }
+     60          
+     61          //------------------------------------------------------------------------------
+     62          
+
+   \                                 In section .text, align 2, keep-with-next
+     63          EmberStatus zaTrustCenterSetJoinPolicy(EmberJoinDecision decision)
+     64          {
+     65            // Call the platform specific method to do this.
+     66            return setJoinPolicy(decision);
+   \                     zaTrustCenterSetJoinPolicy: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable4
+   \        0x2   0x7008             STRB     R0,[R1, #+0]
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4770             BX       LR               ;; return
+     67          }
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          EmberStatus zaTrustCenterSecurityPolicyInit(void)
+     70          {
+   \                     zaTrustCenterSecurityPolicyInit: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     71            EmberStatus status = permitRequestingTrustCenterLinkKey();
+   \        0x2   0x....'....        BL       emAfGetCurrentSecurityProfileData
+   \        0x6   0xB908             CBNZ.N   R0,??zaTrustCenterSecurityPolicyInit_0
+     72            if (status == EMBER_SUCCESS) {
+     73              status = permitRequestingApplicationLinkKey();
+     74            }
+     75            if (status != EMBER_SUCCESS) {
+     76              return status;
+   \                     ??zaTrustCenterSecurityPolicyInit_1: (+1)
+   \        0x8   0x2001             MOVS     R0,#+1
+   \        0xA   0xBD02             POP      {R1,PC}
+     77            }
+   \                     ??zaTrustCenterSecurityPolicyInit_0: (+1)
+   \        0xC   0x7A80             LDRB     R0,[R0, #+10]
+   \        0xE   0x....             LDR.N    R1,??DataTable4_1
+   \       0x10   0x7008             STRB     R0,[R1, #+0]
+   \       0x12   0x....'....        BL       emAfGetCurrentSecurityProfileData
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD0F6             BEQ.N    ??zaTrustCenterSecurityPolicyInit_1
+   \       0x1A   0x7AC0             LDRB     R0,[R0, #+11]
+   \       0x1C   0x....             LDR.N    R1,??DataTable4_2
+     78          
+     79            // We always set the join policy to EMBER_USE_PRECONFIGURED_KEY
+     80            // even in the case where the joining device doesn't have one.  This
+     81            // is the safest thing to do.
+     82            // In cases where devices don't have a preconfigured key, the TC must be
+     83            // explicitly told to allow joining by calling the function below with
+     84            // EMBER_SEND_KEY_IN_THE_CLEAR.  Once the device finishes joining the TC
+     85            // should set the policy back to EMBER_USE_PRECONFIGURED_KEY.
+     86            return setJoinPolicy(EMBER_USE_PRECONFIGURED_KEY);
+   \       0x1E   0x2200             MOVS     R2,#+0
+   \       0x20   0x7008             STRB     R0,[R1, #+0]
+   \       0x22   0x....             LDR.N    R3,??DataTable4
+   \       0x24   0x701A             STRB     R2,[R3, #+0]
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0xBD02             POP      {R1,PC}          ;; return
+     87          }
+     88          
+
+   \                                 In section .text, align 2, keep-with-next
+     89          EmberStatus zaTrustCenterSecurityInit(bool centralizedNetwork)
+     90          {
+   \                     zaTrustCenterSecurityInit: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB08C             SUB      SP,SP,#+48
+   \        0x4   0x4605             MOV      R5,R0
+     91            EmberInitialSecurityState state;
+     92            EmberExtendedSecurityBitmask extended;
+     93            EmberStatus status;
+     94            const EmberAfSecurityProfileData *data = emAfGetCurrentSecurityProfileData();
+   \        0x6   0x....'....        BL       emAfGetCurrentSecurityProfileData
+   \        0xA   0x0004             MOVS     R4,R0
+     95          
+     96            if (data == NULL) {
+   \        0xC   0xBF08             IT       EQ 
+   \        0xE   0x2001             MOVEQ    R0,#+1
+     97              return EMBER_ERR_FATAL;
+   \       0x10   0xD03B             BEQ.N    ??zaTrustCenterSecurityInit_0
+     98            }
+     99          
+    100            MEMSET(&state, 0, sizeof(EmberInitialSecurityState));
+   \       0x12   0x222C             MOVS     R2,#+44
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0xA801             ADD      R0,SP,#+4
+   \       0x18   0x....'....        BL       halCommonMemSet
+    101            state.bitmask = data->tcBitmask;
+   \       0x1C   0x8861             LDRH     R1,[R4, #+2]
+    102            extended = data->tcExtendedBitmask;
+    103            MEMMOVE(emberKeyContents(&state.preconfiguredKey),
+    104                    emberKeyContents(&data->preconfiguredKey),
+    105                    EMBER_ENCRYPTION_KEY_SIZE);
+   \       0x1E   0xF10D 0x0006      ADD      R0,SP,#+6
+   \       0x22   0xF8AD 0x1004      STRH     R1,[SP, #+4]
+   \       0x26   0x88A2             LDRH     R2,[R4, #+4]
+   \       0x28   0xF104 0x010C      ADD      R1,R4,#+12
+   \       0x2C   0xF8AD 0x2000      STRH     R2,[SP, #+0]
+   \       0x30   0x2210             MOVS     R2,#+16
+   \       0x32   0x....'....        BL       halCommonMemMove
+    106          
+    107            // Random network key (highly recommended)
+    108            status = emberAfGenerateRandomKey(&(state.networkKey));
+   \       0x36   0xF10D 0x0016      ADD      R0,SP,#+22
+   \       0x3A   0x....'....        BL       emberGenerateRandomKey
+    109            if (status != EMBER_SUCCESS) {
+   \       0x3E   0x0001             MOVS     R1,R0
+   \       0x40   0xD123             BNE.N    ??zaTrustCenterSecurityInit_0
+    110              return status;
+    111            }
+    112          
+    113            // Check for distributed network.
+    114            if (!centralizedNetwork) {
+   \       0x42   0xB92D             CBNZ.N   R5,??zaTrustCenterSecurityInit_1
+    115              state.bitmask |= EMBER_DISTRIBUTED_TRUST_CENTER_MODE;
+   \       0x44   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x48   0xF040 0x0002      ORR      R0,R0,#0x2
+   \       0x4C   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+    116            }
+    117          
+    118          #if defined ZA_CLI_FULL
+    119            // These functions will only be called if the full CLI is enabled and key
+    120            // values have been previously set on the CLI via the "changekey" command.
+    121            getLinkKeyFromCli(&(state.preconfiguredKey));
+   \                     ??zaTrustCenterSecurityInit_1: (+1)
+   \       0x50   0xF10D 0x0006      ADD      R0,SP,#+6
+   \       0x54   0x....'....        BL       getLinkKeyFromCli
+    122            getNetworkKeyFromCli(&(state.networkKey));
+   \       0x58   0xF10D 0x0016      ADD      R0,SP,#+22
+   \       0x5C   0x....'....        BL       getNetworkKeyFromCli
+    123          #endif
+    124          
+    125            emberAfSecurityInitCallback(&state, &extended, true); // trust center?
+   \       0x60   0x2201             MOVS     R2,#+1
+   \       0x62   0x4669             MOV      R1,SP
+   \       0x64   0xA801             ADD      R0,SP,#+4
+   \       0x66   0x....'....        BL       emberAfSecurityInitCallback
+    126          
+    127            emberAfSecurityPrintln("set state to: 0x%2x", state.bitmask);
+    128            status = emberSetInitialSecurityState(&state);
+   \       0x6A   0xA801             ADD      R0,SP,#+4
+   \       0x6C   0x....'....        BL       emberSetInitialSecurityState
+    129            if (status != EMBER_SUCCESS) {
+   \       0x70   0x0001             MOVS     R1,R0
+   \       0x72   0xD10A             BNE.N    ??zaTrustCenterSecurityInit_0
+    130              emberAfSecurityPrintln("security init TC: 0x%x", status);
+    131              return status;
+    132            }
+    133          
+    134            // Don't need to check on the status here, emberSetExtendedSecurityBitmask
+    135            // always returns EMBER_SUCCESS.
+    136            emberAfSecurityPrintln("set extended security to: 0x%2x", extended);
+    137            emberSetExtendedSecurityBitmask(extended);
+   \       0x74   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x78   0x....'....        BL       emberSetExtendedSecurityBitmask
+    138          
+    139            status = zaTrustCenterSecurityPolicyInit();
+   \       0x7C   0x....'....        BL       zaTrustCenterSecurityPolicyInit
+    140            if (status != EMBER_SUCCESS) {
+   \       0x80   0x0001             MOVS     R1,R0
+   \       0x82   0xD102             BNE.N    ??zaTrustCenterSecurityInit_0
+    141              return status;
+    142            }
+    143          
+    144            emAfClearLinkKeyTable();
+   \       0x84   0x....'....        BL       emAfClearLinkKeyTable
+    145          
+    146            return EMBER_SUCCESS;
+   \       0x88   0x2000             MOVS     R0,#+0
+   \                     ??zaTrustCenterSecurityInit_0: (+1)
+   \       0x8A   0xB00D             ADD      SP,SP,#+52
+   \       0x8C   0xBD30             POP      {R4,R5,PC}       ;; return
+    147          }
+    148          
+    149          static void securityJoinNotify(EmberNodeId newNodeId,
+    150                                         EmberEUI64 newNodeEui64,
+    151                                         EmberNodeId parentOfNewNode,
+    152                                         EmberDeviceUpdate status,
+    153                                         EmberJoinDecision decision)
+    154          {
+    155            // Allow users of the framework an opportunity to see this notification.
+    156            emberAfTrustCenterJoinCallback(newNodeId,
+    157                                           newNodeEui64,
+    158                                           parentOfNewNode,
+    159                                           status,
+    160                                           decision);
+    161          
+    162          #ifdef EMBER_AF_GENERATED_PLUGIN_TRUST_CENTER_JOIN_FUNCTION_CALLS
+    163            EMBER_AF_GENERATED_PLUGIN_TRUST_CENTER_JOIN_FUNCTION_CALLS
+    164          #endif
+    165          
+    166          #if defined(EMBER_AF_PLUGIN_CONCENTRATOR)
+    167            if (parentOfNewNode != emberAfGetNodeId()) {
+    168              sourceRouteAddEntryWithCloserNextHop(newNodeId, parentOfNewNode);
+    169            }
+    170          #endif
+    171          
+    172          #if defined(EMBER_AF_PRINT_SECURITY)
+    173            emberAfSecurityPrintln("Trust Center Join Handler: status = %p, decision = %p (%x), shortid 0x%2x",
+    174                                   deviceUpdateText[status],
+    175                                   joinDecisionText[decision],
+    176                                   decision,
+    177                                   newNodeId);
+    178            emberAfSecurityFlush();
+    179          #endif
+    180          }
+    181          
+
+   \                                 In section .text, align 2, keep-with-next
+    182          EmberStatus emAfInstallCodeToKey(uint8_t* installCode, uint8_t length,
+    183                                           EmberKeyData *key)
+    184          {
+   \                     emAfInstallCodeToKey: (+1)
+   \        0x0   0xE92D 0x42FC      PUSH     {R2-R7,R9,LR}
+    185            EmberStatus status;
+    186            uint8_t index;
+    187            bool validInstallCodeSize = false;
+    188            uint16_t crc = 0xFFFF;
+    189            uint8_t installCodeSizes[EMBER_NUM_INSTALL_CODE_SIZES] =
+    190              EMBER_INSTALL_CODE_SIZES;
+   \        0x4   0x....             LDR.N    R3,??DataTable4_3
+   \        0x6   0x0006             MOVS     R6,R0
+   \        0x8   0x681C             LDR      R4,[R3, #+0]
+   \        0xA   0xF64F 0x77FF      MOVW     R7,#+65535
+    191          
+    192            if (!installCode || !key) {
+   \        0xE   0xBF18             IT       NE 
+   \       0x10   0xEA5F 0x0902      MOVSNE   R9,R2
+   \       0x14   0x9400             STR      R4,[SP, #+0]
+   \       0x16   0xD009             BEQ.N    ??emAfInstallCodeToKey_0
+    193              return EMBER_BAD_ARGUMENT;
+    194            }
+    195          
+    196            for (index = 0; index < EMBER_NUM_INSTALL_CODE_SIZES; index++) {
+   \       0x18   0x2000             MOVS     R0,#+0
+    197              if (length == installCodeSizes[index]) {
+   \                     ??emAfInstallCodeToKey_1: (+1)
+   \       0x1A   0xB2C4             UXTB     R4,R0
+   \       0x1C   0xF81D 0x2004      LDRB     R2,[SP, R4]
+   \       0x20   0x4291             CMP      R1,R2
+   \       0x22   0xD02D             BEQ.N    ??emAfInstallCodeToKey_2
+    198                validInstallCodeSize = true;
+    199                break;
+    200              }
+    201            }
+   \       0x24   0x1C40             ADDS     R0,R0,#+1
+   \       0x26   0xB2C2             UXTB     R2,R0
+   \       0x28   0x2A04             CMP      R2,#+4
+   \       0x2A   0xDBF6             BLT.N    ??emAfInstallCodeToKey_1
+    202          
+    203            if (!validInstallCodeSize) {
+    204              return EMBER_BAD_ARGUMENT;
+   \                     ??emAfInstallCodeToKey_0: (+1)
+   \       0x2C   0x2002             MOVS     R0,#+2
+   \       0x2E   0xE025             B.N      ??emAfInstallCodeToKey_3
+    205            }
+    206          
+    207            // Compute the CRC and verify that it matches.  The bit reversals, byte swap,
+    208            // and ones' complement are due to differences between halCommonCrc16 and the
+    209            // Smart Energy version.
+    210            for (index = 0; index < length - EMBER_INSTALL_CODE_CRC_SIZE; index++) {
+    211              crc = halCommonCrc16(reverse(installCode[index]), crc);
+   \                     ??emAfInstallCodeToKey_4: (+1)
+   \       0x30   0x5C30             LDRB     R0,[R6, R0]
+   \       0x32   0x1C6D             ADDS     R5,R5,#+1
+   \       0x34   0x....'....        BL       reverse
+   \       0x38   0x4639             MOV      R1,R7
+   \       0x3A   0x....'....        BL       halCommonCrc16
+   \       0x3E   0x4607             MOV      R7,R0
+    212            }
+   \                     ??emAfInstallCodeToKey_5: (+1)
+   \       0x40   0xB2E8             UXTB     R0,R5
+   \       0x42   0x1EA1             SUBS     R1,R4,#+2
+   \       0x44   0x4288             CMP      R0,R1
+   \       0x46   0xDBF3             BLT.N    ??emAfInstallCodeToKey_4
+    213            crc = ~HIGH_LOW_TO_INT(reverse(LOW_BYTE(crc)), reverse(HIGH_BYTE(crc)));
+   \       0x48   0xB2F8             UXTB     R0,R7
+   \       0x4A   0x....'....        BL       reverse
+   \       0x4E   0x0205             LSLS     R5,R0,#+8
+   \       0x50   0x0A38             LSRS     R0,R7,#+8
+   \       0x52   0x....'....        BL       reverse
+   \       0x56   0x1945             ADDS     R5,R0,R5
+    214            if (installCode[length - EMBER_INSTALL_CODE_CRC_SIZE] != LOW_BYTE(crc)
+    215                || installCode[length - EMBER_INSTALL_CODE_CRC_SIZE + 1] != HIGH_BYTE(crc)) {
+   \       0x58   0x1930             ADDS     R0,R6,R4
+   \       0x5A   0xF810 0x1D02      LDRB     R1,[R0, #-2]!
+   \       0x5E   0x43ED             MVNS     R5,R5
+   \       0x60   0xB2EA             UXTB     R2,R5
+   \       0x62   0x4291             CMP      R1,R2
+   \       0x64   0xBF03             ITTTE    EQ 
+   \       0x66   0x7840             LDRBEQ   R0,[R0, #+1]
+   \       0x68   0x042D             LSLEQ    R5,R5,#+16
+   \       0x6A   0xEBB0 0x6F15      CMPEQ    R0,R5, LSR #+24
+   \       0x6E   0x20BD             MOVNE    R0,#+189
+    216              return EMBER_SECURITY_DATA_INVALID;
+   \       0x70   0xD104             BNE.N    ??emAfInstallCodeToKey_3
+    217            }
+    218          
+    219            // Compute the key from the install code and CRC.
+    220            status = emberAesHashSimple(length, installCode, emberKeyContents(key));
+    221          
+    222            return status;
+   \       0x72   0x464A             MOV      R2,R9
+   \       0x74   0x4631             MOV      R1,R6
+   \       0x76   0x4620             MOV      R0,R4
+   \       0x78   0x....'....        BL       emberAesHashSimple
+   \                     ??emAfInstallCodeToKey_3: (+1)
+   \       0x7C   0xE8BD 0x82F6      POP      {R1,R2,R4-R7,R9,PC}  ;; return
+   \                     ??emAfInstallCodeToKey_2: (+1)
+   \       0x80   0x460C             MOV      R4,R1
+   \       0x82   0x2500             MOVS     R5,#+0
+   \       0x84   0xE7DC             B.N      ??emAfInstallCodeToKey_5
+    223          }
+    224          
+    225          //==============================================================================
+    226          // Platform Dependent Implementations
+    227          
+    228          #if defined (EZSP_HOST)
+    229          
+    230          static const char * ezspJoinPolicyText[] = {
+    231            "Allow Joins",
+    232            "Allow preconfigured key joins",
+    233            "Allow rejoins only",
+    234            "Disallow all joins and rejoins",
+    235            "Allow Joins, rejoins have link key",
+    236            "Allow Joins, ignore preconfigured key rejoins",
+    237          };
+    238          
+    239          void ezspTrustCenterJoinHandler(EmberNodeId newNodeId,
+    240                                          EmberEUI64 newNodeEui64,
+    241                                          EmberDeviceUpdate status,
+    242                                          EmberJoinDecision policyDecision,
+    243                                          EmberNodeId parentOfNewNode)
+    244          {
+    245          #if defined(EMBER_AF_PLUGIN_DELAYED_JOIN)
+    246            policyDecision = (status == EMBER_STANDARD_SECURITY_SECURED_REJOIN
+    247                              || status == EMBER_STANDARD_SECURITY_UNSECURED_REJOIN)
+    248                             ? EMBER_USE_PRECONFIGURED_KEY
+    249                             : EMBER_NO_ACTION;
+    250          #endif
+    251            //this would be the callback
+    252            securityJoinNotify(newNodeId,
+    253                               newNodeEui64,
+    254                               parentOfNewNode,
+    255                               status,
+    256                               policyDecision);
+    257          }
+    258          
+    259          static EmberStatus setJoinPolicy(EmberJoinDecision decision)
+    260          {
+    261            EzspDecisionId id;
+    262            if (decision == EMBER_USE_PRECONFIGURED_KEY) {
+    263              id = EZSP_ALLOW_PRECONFIGURED_KEY_JOINS;
+    264            } else if (decision == EMBER_SEND_KEY_IN_THE_CLEAR) {
+    265              id = EZSP_ALLOW_JOINS_REJOINS_HAVE_LINK_KEY;
+    266            } else {  // EMBER_DENY_JOIN or EMBER_NO_ACTION
+    267              id = EZSP_DISALLOW_ALL_JOINS_AND_REJOINS;
+    268            }
+    269            return emberAfSetEzspPolicy(EZSP_TRUST_CENTER_POLICY,
+    270                                        id,
+    271                                        "Trust Center Policy",
+    272                                        ezspJoinPolicyText[id]);
+    273          }
+    274          
+    275          static EmberStatus permitRequestingTrustCenterLinkKey(void)
+    276          {
+    277            const EmberAfSecurityProfileData *data = emAfGetCurrentSecurityProfileData();
+    278            if (data == NULL) {
+    279              return EMBER_ERR_FATAL;
+    280            }
+    281          
+    282            return emberAfSetEzspPolicy(EZSP_TC_KEY_REQUEST_POLICY,
+    283                                        data->tcLinkKeyRequestPolicy,
+    284                                        "TC Key Request",
+    285                                        (data->tcLinkKeyRequestPolicy
+    286                                         !=  EMBER_AF_DENY_TC_KEY_REQUESTS
+    287                                         ? "Allow"
+    288                                         : "Deny"));
+    289          }
+    290          
+    291          static EmberStatus permitRequestingApplicationLinkKey(void)
+    292          {
+    293            const EmberAfSecurityProfileData *data = emAfGetCurrentSecurityProfileData();
+    294            if (data == NULL) {
+    295              return EMBER_ERR_FATAL;
+    296            }
+    297            return emberAfSetEzspPolicy(EZSP_APP_KEY_REQUEST_POLICY,
+    298                                        data->appLinkKeyRequestPolicy,
+    299                                        "App. Key Request",
+    300                                        (data->appLinkKeyRequestPolicy
+    301                                         != EMBER_AF_DENY_APP_KEY_REQUESTS
+    302                                         ? "Allow"
+    303                                         : "Deny"));
+    304          }
+    305          
+    306          //------------------------------------------------------------------------------
+    307          // System-on-a-chip
+    308          
+    309          #else
+    310          
+
+   \                                 In section .bss, align 1
+    311          static EmberJoinDecision defaultDecision = EMBER_USE_PRECONFIGURED_KEY;
+   \                     defaultDecision:
+   \        0x0                      DS8 1
+    312          
+
+   \                                 In section .text, align 2, keep-with-next
+    313          EmberJoinDecision emberTrustCenterJoinHandler(EmberNodeId newNodeId,
+    314                                                        EmberEUI64 newNodeEui64,
+    315                                                        EmberDeviceUpdate status,
+    316                                                        EmberNodeId parentOfNewNode)
+    317          {
+   \                     emberTrustCenterJoinHandler: (+1)
+   \        0x0   0xE92D 0x41FF      PUSH     {R0-R8,LR}
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4604             MOV      R4,R0
+    318            EmberJoinDecision joinDecision = defaultDecision;
+   \        0x8   0x....             LDR.N    R1,??DataTable4
+   \        0xA   0x4617             MOV      R7,R2
+   \        0xC   0x4698             MOV      R8,R3
+   \        0xE   0x780E             LDRB     R6,[R1, #+0]
+    319            EmberCurrentSecurityState securityState;
+    320            EmberStatus securityStatus = emberGetCurrentSecurityState(&securityState);
+   \       0x10   0xA801             ADD      R0,SP,#+4
+   \       0x12   0x....'....        BL       emberGetCurrentSecurityState
+    321          
+    322            if (status == EMBER_STANDARD_SECURITY_SECURED_REJOIN
+    323                || status == EMBER_DEVICE_LEFT
+    324                // 4.6.3.3.2 - TC rejoins rejected in distributed TC mode
+    325                || ((EMBER_SUCCESS == securityStatus)
+    326                    && (securityState.bitmask & EMBER_DISTRIBUTED_TRUST_CENTER_MODE)
+    327                    && (status == EMBER_STANDARD_SECURITY_UNSECURED_REJOIN))) {
+   \       0x16   0x0039             MOVS     R1,R7
+   \       0x18   0xBF18             IT       NE 
+   \       0x1A   0x2F02             CMPNE    R7,#+2
+   \       0x1C   0xD006             BEQ.N    ??emberTrustCenterJoinHandler_0
+   \       0x1E   0xB930             CBNZ.N   R0,??emberTrustCenterJoinHandler_1
+   \       0x20   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x24   0x0781             LSLS     R1,R0,#+30
+   \       0x26   0xD502             BPL.N    ??emberTrustCenterJoinHandler_1
+   \       0x28   0x2F03             CMP      R7,#+3
+   \       0x2A   0xD100             BNE.N    ??emberTrustCenterJoinHandler_1
+    328              joinDecision = EMBER_NO_ACTION;
+   \                     ??emberTrustCenterJoinHandler_0: (+1)
+   \       0x2C   0x2603             MOVS     R6,#+3
+    329            }
+    330          #ifdef EMBER_AF_PLUGIN_NETWORK_CREATOR_SECURITY_BDB_JOIN_USES_INSTALL_CODE_KEY
+    331            else {
+    332              EmberTransientKeyData transientKeyData;
+    333              // Check in transient key table
+    334              if ((EMBER_STANDARD_SECURITY_UNSECURED_JOIN == status)
+    335                  && (EMBER_SUCCESS != emberGetTransientLinkKey(newNodeEui64,
+    336                                                                &transientKeyData))) {
+    337                joinDecision = EMBER_NO_ACTION;
+    338              }
+    339            }
+    340          #endif
+    341          
+    342          #if defined(EMBER_AF_PLUGIN_DELAYED_JOIN)
+    343            joinDecision = (status == EMBER_STANDARD_SECURITY_SECURED_REJOIN
+    344                            || status == EMBER_STANDARD_SECURITY_UNSECURED_REJOIN)
+    345                           ? EMBER_USE_PRECONFIGURED_KEY
+    346                           : EMBER_NO_ACTION;
+    347          #endif
+    348            //this would be the callback
+    349            securityJoinNotify(newNodeId,
+    350                               newNodeEui64,
+    351                               parentOfNewNode,
+    352                               status,
+    353                               joinDecision);
+   \                     ??emberTrustCenterJoinHandler_1: (+1)
+   \       0x2E   0x9600             STR      R6,[SP, #+0]
+   \       0x30   0x463B             MOV      R3,R7
+   \       0x32   0x4642             MOV      R2,R8
+   \       0x34   0x4629             MOV      R1,R5
+   \       0x36   0x4620             MOV      R0,R4
+   \       0x38   0x....'....        BL       emberAfTrustCenterJoinCallback
+    354          
+    355            //emzigbee-241-4
+    356          #if defined(EMBER_AF_PLUGIN_CONCENTRATOR)
+    357            if (joinDecision != EMBER_DENY_JOIN
+    358                && parentOfNewNode != emberAfGetNodeId()) {
+    359              bool deviceLeft = (status == EMBER_DEVICE_LEFT);
+    360              emberChangeSourceRouteHandler(newNodeId, parentOfNewNode, false, deviceLeft);
+    361            }
+    362          #endif
+    363            return joinDecision;
+   \       0x3C   0x4630             MOV      R0,R6
+   \       0x3E   0xB004             ADD      SP,SP,#+16
+   \       0x40   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    364          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     defaultDecision
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     emberTrustCenterLinkKeyRequestPolicy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x....'....        DC32     emberAppLinkKeyRequestPolicy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x08 0x0A          DC8 8, 10, 14, 18
+   \              0x0E 0x12    
+    365          
+    366          static EmberStatus setJoinPolicy(EmberJoinDecision decision)
+    367          {
+    368            defaultDecision = decision;
+    369            return EMBER_SUCCESS;
+    370          }
+    371          
+    372          static EmberStatus permitRequestingTrustCenterLinkKey(void)
+    373          {
+    374            const EmberAfSecurityProfileData *data = emAfGetCurrentSecurityProfileData();
+    375            if (data == NULL) {
+    376              return EMBER_ERR_FATAL;
+    377            }
+    378            emberTrustCenterLinkKeyRequestPolicy = data->tcLinkKeyRequestPolicy;
+    379          
+    380            return EMBER_SUCCESS;
+    381          }
+    382          
+    383          static EmberStatus permitRequestingApplicationLinkKey(void)
+    384          {
+    385            const EmberAfSecurityProfileData *data = emAfGetCurrentSecurityProfileData();
+    386            if (data == NULL) {
+    387              return EMBER_ERR_FATAL;
+    388            }
+    389            emberAppLinkKeyRequestPolicy = data->appLinkKeyRequestPolicy;
+    390            return EMBER_SUCCESS;
+    391          }
+    392          
+    393          #endif // EZSP_HOST
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   emAfInstallCodeToKey
+        32   -> emberAesHashSimple
+        32   -> halCommonCrc16
+        32   -> reverse
+      40   emberTrustCenterJoinHandler
+        40   -> emberAfTrustCenterJoinCallback
+        40   -> emberGetCurrentSecurityState
+       0   reverse
+      64   zaTrustCenterSecurityInit
+        64   -> emAfClearLinkKeyTable
+        64   -> emAfGetCurrentSecurityProfileData
+        64   -> emberAfSecurityInitCallback
+        64   -> emberGenerateRandomKey
+        64   -> emberSetExtendedSecurityBitmask
+        64   -> emberSetInitialSecurityState
+        64   -> getLinkKeyFromCli
+        64   -> getNetworkKeyFromCli
+        64   -> halCommonMemMove
+        64   -> halCommonMemSet
+        64   -> zaTrustCenterSecurityPolicyInit
+       8   zaTrustCenterSecurityPolicyInit
+         8   -> emAfGetCurrentSecurityProfileData
+       0   zaTrustCenterSetJoinPolicy
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ?_0
+       1  defaultDecision
+     134  emAfInstallCodeToKey
+      68  emberTrustCenterJoinHandler
+       8  reverse
+     142  zaTrustCenterSecurityInit
+      42  zaTrustCenterSecurityPolicyInit
+       8  zaTrustCenterSetJoinPolicy
+
+ 
+   1 byte  in section .bss
+   4 bytes in section .rodata
+ 418 bytes in section .text
+ 
+ 418 bytes of CODE  memory
+   4 bytes of CONST memory
+   1 byte  of DATA  memory
+
+Errors: none
+Warnings: none

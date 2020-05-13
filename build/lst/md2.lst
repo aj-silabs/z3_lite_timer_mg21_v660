@@ -1,0 +1,548 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:17
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\md2.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWB82B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\md2.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"md2.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\md2.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\md2.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\md2.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  RFC 1115/1319 compliant MD2 implementation
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          /*
+     34           *  The MD2 algorithm was designed by Ron Rivest in 1989.
+     35           *
+     36           *  http://www.ietf.org/rfc/rfc1115.txt
+     37           *  http://www.ietf.org/rfc/rfc1319.txt
+     38           */
+     39          
+     40          #if !defined(MBEDTLS_CONFIG_FILE)
+     41          #include "mbedtls/config.h"
+     42          #else
+     43          #include MBEDTLS_CONFIG_FILE
+     44          #endif
+     45          
+     46          #if defined(MBEDTLS_MD2_C)
+     47          
+     48          #include "mbedtls/md2.h"
+     49          
+     50          #include <string.h>
+     51          
+     52          #if defined(MBEDTLS_SELF_TEST)
+     53          #if defined(MBEDTLS_PLATFORM_C)
+     54          #include "mbedtls/platform.h"
+     55          #else
+     56          #include <stdio.h>
+     57          #define mbedtls_printf printf
+     58          #endif /* MBEDTLS_PLATFORM_C */
+     59          #endif /* MBEDTLS_SELF_TEST */
+     60          
+     61          #if !defined(MBEDTLS_MD2_ALT)
+     62          
+     63          /* Implementation that should never be optimized out by the compiler */
+     64          static void mbedtls_zeroize( void *v, size_t n ) {
+     65              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     66          }
+     67          
+     68          static const unsigned char PI_SUBST[256] =
+     69          {
+     70              0x29, 0x2E, 0x43, 0xC9, 0xA2, 0xD8, 0x7C, 0x01, 0x3D, 0x36,
+     71              0x54, 0xA1, 0xEC, 0xF0, 0x06, 0x13, 0x62, 0xA7, 0x05, 0xF3,
+     72              0xC0, 0xC7, 0x73, 0x8C, 0x98, 0x93, 0x2B, 0xD9, 0xBC, 0x4C,
+     73              0x82, 0xCA, 0x1E, 0x9B, 0x57, 0x3C, 0xFD, 0xD4, 0xE0, 0x16,
+     74              0x67, 0x42, 0x6F, 0x18, 0x8A, 0x17, 0xE5, 0x12, 0xBE, 0x4E,
+     75              0xC4, 0xD6, 0xDA, 0x9E, 0xDE, 0x49, 0xA0, 0xFB, 0xF5, 0x8E,
+     76              0xBB, 0x2F, 0xEE, 0x7A, 0xA9, 0x68, 0x79, 0x91, 0x15, 0xB2,
+     77              0x07, 0x3F, 0x94, 0xC2, 0x10, 0x89, 0x0B, 0x22, 0x5F, 0x21,
+     78              0x80, 0x7F, 0x5D, 0x9A, 0x5A, 0x90, 0x32, 0x27, 0x35, 0x3E,
+     79              0xCC, 0xE7, 0xBF, 0xF7, 0x97, 0x03, 0xFF, 0x19, 0x30, 0xB3,
+     80              0x48, 0xA5, 0xB5, 0xD1, 0xD7, 0x5E, 0x92, 0x2A, 0xAC, 0x56,
+     81              0xAA, 0xC6, 0x4F, 0xB8, 0x38, 0xD2, 0x96, 0xA4, 0x7D, 0xB6,
+     82              0x76, 0xFC, 0x6B, 0xE2, 0x9C, 0x74, 0x04, 0xF1, 0x45, 0x9D,
+     83              0x70, 0x59, 0x64, 0x71, 0x87, 0x20, 0x86, 0x5B, 0xCF, 0x65,
+     84              0xE6, 0x2D, 0xA8, 0x02, 0x1B, 0x60, 0x25, 0xAD, 0xAE, 0xB0,
+     85              0xB9, 0xF6, 0x1C, 0x46, 0x61, 0x69, 0x34, 0x40, 0x7E, 0x0F,
+     86              0x55, 0x47, 0xA3, 0x23, 0xDD, 0x51, 0xAF, 0x3A, 0xC3, 0x5C,
+     87              0xF9, 0xCE, 0xBA, 0xC5, 0xEA, 0x26, 0x2C, 0x53, 0x0D, 0x6E,
+     88              0x85, 0x28, 0x84, 0x09, 0xD3, 0xDF, 0xCD, 0xF4, 0x41, 0x81,
+     89              0x4D, 0x52, 0x6A, 0xDC, 0x37, 0xC8, 0x6C, 0xC1, 0xAB, 0xFA,
+     90              0x24, 0xE1, 0x7B, 0x08, 0x0C, 0xBD, 0xB1, 0x4A, 0x78, 0x88,
+     91              0x95, 0x8B, 0xE3, 0x63, 0xE8, 0x6D, 0xE9, 0xCB, 0xD5, 0xFE,
+     92              0x3B, 0x00, 0x1D, 0x39, 0xF2, 0xEF, 0xB7, 0x0E, 0x66, 0x58,
+     93              0xD0, 0xE4, 0xA6, 0x77, 0x72, 0xF8, 0xEB, 0x75, 0x4B, 0x0A,
+     94              0x31, 0x44, 0x50, 0xB4, 0x8F, 0xED, 0x1F, 0x1A, 0xDB, 0x99,
+     95              0x8D, 0x33, 0x9F, 0x11, 0x83, 0x14
+     96          };
+     97          
+     98          void mbedtls_md2_init( mbedtls_md2_context *ctx )
+     99          {
+    100              memset( ctx, 0, sizeof( mbedtls_md2_context ) );
+    101          }
+    102          
+    103          void mbedtls_md2_free( mbedtls_md2_context *ctx )
+    104          {
+    105              if( ctx == NULL )
+    106                  return;
+    107          
+    108              mbedtls_zeroize( ctx, sizeof( mbedtls_md2_context ) );
+    109          }
+    110          
+    111          void mbedtls_md2_clone( mbedtls_md2_context *dst,
+    112                                  const mbedtls_md2_context *src )
+    113          {
+    114              *dst = *src;
+    115          }
+    116          
+    117          /*
+    118           * MD2 context setup
+    119           */
+    120          int mbedtls_md2_starts_ret( mbedtls_md2_context *ctx )
+    121          {
+    122              memset( ctx->cksum, 0, 16 );
+    123              memset( ctx->state, 0, 46 );
+    124              memset( ctx->buffer, 0, 16 );
+    125              ctx->left = 0;
+    126          
+    127              return( 0 );
+    128          }
+    129          
+    130          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    131          void mbedtls_md2_starts( mbedtls_md2_context *ctx )
+    132          {
+    133              mbedtls_md2_starts_ret( ctx );
+    134          }
+    135          #endif
+    136          
+    137          #if !defined(MBEDTLS_MD2_PROCESS_ALT)
+    138          int mbedtls_internal_md2_process( mbedtls_md2_context *ctx )
+    139          {
+    140              int i, j;
+    141              unsigned char t = 0;
+    142          
+    143              for( i = 0; i < 16; i++ )
+    144              {
+    145                  ctx->state[i + 16] = ctx->buffer[i];
+    146                  ctx->state[i + 32] =
+    147                      (unsigned char)( ctx->buffer[i] ^ ctx->state[i]);
+    148              }
+    149          
+    150              for( i = 0; i < 18; i++ )
+    151              {
+    152                  for( j = 0; j < 48; j++ )
+    153                  {
+    154                      ctx->state[j] = (unsigned char)
+    155                         ( ctx->state[j] ^ PI_SUBST[t] );
+    156                      t  = ctx->state[j];
+    157                  }
+    158          
+    159                  t = (unsigned char)( t + i );
+    160              }
+    161          
+    162              t = ctx->cksum[15];
+    163          
+    164              for( i = 0; i < 16; i++ )
+    165              {
+    166                  ctx->cksum[i] = (unsigned char)
+    167                     ( ctx->cksum[i] ^ PI_SUBST[ctx->buffer[i] ^ t] );
+    168                  t  = ctx->cksum[i];
+    169              }
+    170          
+    171              return( 0 );
+    172          }
+    173          
+    174          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    175          void mbedtls_md2_process( mbedtls_md2_context *ctx )
+    176          {
+    177              mbedtls_internal_md2_process( ctx );
+    178          }
+    179          #endif
+    180          #endif /* !MBEDTLS_MD2_PROCESS_ALT */
+    181          
+    182          /*
+    183           * MD2 process buffer
+    184           */
+    185          int mbedtls_md2_update_ret( mbedtls_md2_context *ctx,
+    186                                      const unsigned char *input,
+    187                                      size_t ilen )
+    188          {
+    189              int ret;
+    190              size_t fill;
+    191          
+    192              while( ilen > 0 )
+    193              {
+    194                  if( ilen > 16 - ctx->left )
+    195                      fill = 16 - ctx->left;
+    196                  else
+    197                      fill = ilen;
+    198          
+    199                  memcpy( ctx->buffer + ctx->left, input, fill );
+    200          
+    201                  ctx->left += fill;
+    202                  input += fill;
+    203                  ilen  -= fill;
+    204          
+    205                  if( ctx->left == 16 )
+    206                  {
+    207                      ctx->left = 0;
+    208                      if( ( ret = mbedtls_internal_md2_process( ctx ) ) != 0 )
+    209                          return( ret );
+    210                  }
+    211              }
+    212          
+    213              return( 0 );
+    214          }
+    215          
+    216          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    217          void mbedtls_md2_update( mbedtls_md2_context *ctx,
+    218                                   const unsigned char *input,
+    219                                   size_t ilen )
+    220          {
+    221              mbedtls_md2_update_ret( ctx, input, ilen );
+    222          }
+    223          #endif
+    224          
+    225          /*
+    226           * MD2 final digest
+    227           */
+    228          int mbedtls_md2_finish_ret( mbedtls_md2_context *ctx,
+    229                                      unsigned char output[16] )
+    230          {
+    231              int ret;
+    232              size_t i;
+    233              unsigned char x;
+    234          
+    235              x = (unsigned char)( 16 - ctx->left );
+    236          
+    237              for( i = ctx->left; i < 16; i++ )
+    238                  ctx->buffer[i] = x;
+    239          
+    240              if( ( ret = mbedtls_internal_md2_process( ctx ) ) != 0 )
+    241                  return( ret );
+    242          
+    243              memcpy( ctx->buffer, ctx->cksum, 16 );
+    244              if( ( ret = mbedtls_internal_md2_process( ctx ) ) != 0 )
+    245                  return( ret );
+    246          
+    247              memcpy( output, ctx->state, 16 );
+    248          
+    249              return( 0 );
+    250          }
+    251          
+    252          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    253          void mbedtls_md2_finish( mbedtls_md2_context *ctx,
+    254                                   unsigned char output[16] )
+    255          {
+    256              mbedtls_md2_finish_ret( ctx, output );
+    257          }
+    258          #endif
+    259          
+    260          #endif /* !MBEDTLS_MD2_ALT */
+    261          
+    262          /*
+    263           * output = MD2( input buffer )
+    264           */
+    265          int mbedtls_md2_ret( const unsigned char *input,
+    266                               size_t ilen,
+    267                               unsigned char output[16] )
+    268          {
+    269              int ret;
+    270              mbedtls_md2_context ctx;
+    271          
+    272              mbedtls_md2_init( &ctx );
+    273          
+    274              if( ( ret = mbedtls_md2_starts_ret( &ctx ) ) != 0 )
+    275                  goto exit;
+    276          
+    277              if( ( ret = mbedtls_md2_update_ret( &ctx, input, ilen ) ) != 0 )
+    278                  goto exit;
+    279          
+    280              if( ( ret = mbedtls_md2_finish_ret( &ctx, output ) ) != 0 )
+    281                  goto exit;
+    282          
+    283          exit:
+    284              mbedtls_md2_free( &ctx );
+    285          
+    286              return( ret );
+    287          }
+    288          
+    289          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+    290          void mbedtls_md2( const unsigned char *input,
+    291                            size_t ilen,
+    292                            unsigned char output[16] )
+    293          {
+    294              mbedtls_md2_ret( input, ilen, output );
+    295          }
+    296          #endif
+    297          
+    298          #if defined(MBEDTLS_SELF_TEST)
+    299          
+    300          /*
+    301           * RFC 1319 test vectors
+    302           */
+    303          static const unsigned char md2_test_str[7][81] =
+    304          {
+    305              { "" },
+    306              { "a" },
+    307              { "abc" },
+    308              { "message digest" },
+    309              { "abcdefghijklmnopqrstuvwxyz" },
+    310              { "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" },
+    311              { "12345678901234567890123456789012345678901234567890123456789012"
+    312                "345678901234567890" }
+    313          };
+    314          
+    315          static const size_t md2_test_strlen[7] =
+    316          {
+    317              0, 1, 3, 14, 26, 62, 80
+    318          };
+    319          
+    320          static const unsigned char md2_test_sum[7][16] =
+    321          {
+    322              { 0x83, 0x50, 0xE5, 0xA3, 0xE2, 0x4C, 0x15, 0x3D,
+    323                0xF2, 0x27, 0x5C, 0x9F, 0x80, 0x69, 0x27, 0x73 },
+    324              { 0x32, 0xEC, 0x01, 0xEC, 0x4A, 0x6D, 0xAC, 0x72,
+    325                0xC0, 0xAB, 0x96, 0xFB, 0x34, 0xC0, 0xB5, 0xD1 },
+    326              { 0xDA, 0x85, 0x3B, 0x0D, 0x3F, 0x88, 0xD9, 0x9B,
+    327                0x30, 0x28, 0x3A, 0x69, 0xE6, 0xDE, 0xD6, 0xBB },
+    328              { 0xAB, 0x4F, 0x49, 0x6B, 0xFB, 0x2A, 0x53, 0x0B,
+    329                0x21, 0x9F, 0xF3, 0x30, 0x31, 0xFE, 0x06, 0xB0 },
+    330              { 0x4E, 0x8D, 0xDF, 0xF3, 0x65, 0x02, 0x92, 0xAB,
+    331                0x5A, 0x41, 0x08, 0xC3, 0xAA, 0x47, 0x94, 0x0B },
+    332              { 0xDA, 0x33, 0xDE, 0xF2, 0xA4, 0x2D, 0xF1, 0x39,
+    333                0x75, 0x35, 0x28, 0x46, 0xC3, 0x03, 0x38, 0xCD },
+    334              { 0xD5, 0x97, 0x6F, 0x79, 0xD8, 0x3D, 0x3A, 0x0D,
+    335                0xC9, 0x80, 0x6C, 0x3C, 0x66, 0xF3, 0xEF, 0xD8 }
+    336          };
+    337          
+    338          /*
+    339           * Checkup routine
+    340           */
+    341          int mbedtls_md2_self_test( int verbose )
+    342          {
+    343              int i, ret = 0;
+    344              unsigned char md2sum[16];
+    345          
+    346              for( i = 0; i < 7; i++ )
+    347              {
+    348                  if( verbose != 0 )
+    349                      mbedtls_printf( "  MD2 test #%d: ", i + 1 );
+    350          
+    351                  ret = mbedtls_md2_ret( md2_test_str[i], md2_test_strlen[i], md2sum );
+    352                  if( ret != 0 )
+    353                      goto fail;
+    354          
+    355                  if( memcmp( md2sum, md2_test_sum[i], 16 ) != 0 )
+    356                  {
+    357                      ret = 1;
+    358                      goto fail;
+    359                  }
+    360          
+    361                  if( verbose != 0 )
+    362                      mbedtls_printf( "passed\n" );
+    363              }
+    364          
+    365              if( verbose != 0 )
+    366                  mbedtls_printf( "\n" );
+    367          
+    368              return( 0 );
+    369          
+    370          fail:
+    371              if( verbose != 0 )
+    372                  mbedtls_printf( "failed\n" );
+    373          
+    374              return( ret );
+    375          }
+    376          
+    377          #endif /* MBEDTLS_SELF_TEST */
+    378          
+    379          #endif /* MBEDTLS_MD2_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1764 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:21
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\micro.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWC6CA.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\micro.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"micro.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\micro.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\micro.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\micro.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief EFM micro specific full HAL functions
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          #include PLATFORM_HEADER
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void __NVIC_SetPriority(IRQn_Type, uint32_t)
+   \                     __NVIC_SetPriority: (+1)
+   \        0x0   0x0109             LSLS     R1,R1,#+4
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xD403             BMI.N    ??__NVIC_SetPriority_0
+   \        0x6   0x....'....        LDR.W    R0,??DataTable3  ;; 0xe000e400
+   \        0xA   0x5481             STRB     R1,[R0, R2]
+   \        0xC   0x4770             BX       LR
+   \                     ??__NVIC_SetPriority_0: (+1)
+   \        0xE   0x....'....        LDR.W    R3,??DataTable3_1  ;; 0xe000ed18
+   \       0x12   0xF002 0x020F      AND      R2,R2,#0xF
+   \       0x16   0x441A             ADD      R2,R3,R2
+   \       0x18   0xF802 0x1C04      STRB     R1,[R2, #-4]
+   \       0x1C   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t NVIC_EncodePriority(uint32_t, uint32_t, uint32_t)
+   \                     NVIC_EncodePriority: (+1)
+   \        0x0   0xF000 0x0007      AND      R0,R0,#0x7
+   \        0x4   0xF1C0 0x0307      RSB      R3,R0,#+7
+   \        0x8   0x2B05             CMP      R3,#+5
+   \        0xA   0xB510             PUSH     {R4,LR}
+   \        0xC   0xBF28             IT       CS 
+   \        0xE   0x2304             MOVCS    R3,#+4
+   \       0x10   0x1D04             ADDS     R4,R0,#+4
+   \       0x12   0x2C07             CMP      R4,#+7
+   \       0x14   0xBF34             ITE      CC 
+   \       0x16   0x2000             MOVCC    R0,#+0
+   \       0x18   0x1EC0             SUBCS    R0,R0,#+3
+   \       0x1A   0x2401             MOVS     R4,#+1
+   \       0x1C   0xFA04 0xF303      LSL      R3,R4,R3
+   \       0x20   0x1E5B             SUBS     R3,R3,#+1
+   \       0x22   0x4019             ANDS     R1,R3,R1
+   \       0x24   0x4081             LSLS     R1,R1,R0
+   \       0x26   0xFA04 0xF000      LSL      R0,R4,R0
+   \       0x2A   0x1E40             SUBS     R0,R0,#+1
+   \       0x2C   0x4010             ANDS     R0,R0,R2
+   \       0x2E   0x4308             ORRS     R0,R0,R1
+   \       0x30   0xBD10             POP      {R4,PC}          ;; return
+     18          #include "em_device.h"
+     19          #include "em_chip.h"
+     20          #include "em_cmu.h"
+     21          #include "em_core.h"
+     22          #include "em_emu.h"
+     23          #include "em_gpio.h"
+     24          #include "em_prs.h"
+     25          #include "em_cryotimer.h"
+     26          #include "rtcdriver.h"
+     27          #include "em_chip.h"
+     28          #include "gpiointerrupt.h"
+     29          
+     30          #include "stack/include/ember.h"
+     31          #include "include/error.h"
+     32          #include "hal/hal.h"
+     33          #include "serial/serial.h"
+     34          #include "hal/micro/cortexm3/diagnostic.h"
+     35          #include "hal/micro/cortexm3/memmap.h"
+     36          #include "hal/micro/cortexm3/mpu.h"
+     37          #include "hal/micro/cortexm3/flash.h"
+     38          #include "cstartup-common.h"
+     39          #include "coexistence/protocol/ieee802154/coexistence-802154.h"
+     40          
+     41          #if defined (_EFR_DEVICE)
+     42          #include "hal/plugin/glib/graphics.h"
+     43          #include "tempdrv.h"
+     44          #include "sleep-efm32.h"
+     45          #endif
+     46          
+     47          #ifdef BSP_STK
+     48          #include "bsp.h"
+     49          #endif
+     50          
+     51          #ifdef RTOS
+     52            #include "rtos/rtos.h"
+     53          #endif
+     54          
+     55          #ifdef HAL_FEM_ENABLE
+     56            #include "util/plugin/plugin-common/fem-control/fem-control.h"
+     57          #endif
+     58          
+     59          extern void halStackRadioHoldOffPowerDown(void); // fwd ref
+     60          extern void halStackRadioHoldOffPowerUp(void);   // fwd ref
+     61          
+     62          // Declares the PA curves only if we're in RAIL
+     63          #if     (PHY_RAIL || PHY_DUALRAIL)
+     64          #include "../plugin/pa-conversions/pa_conversions_efr32.h"
+
+  typedef void *RAIL_Handle_t;
+                ^
+"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\radio\rail_lib\common\rail_types.h",85  Warning[Pe301]: 
+          typedef name has already been declared (with same type)
+     65          
+     66          #if !PHY_RAIL_MP && !PHY_RAILGB_MP && !defined(EMBER_STACK_CONNECT)
+     67          // Stubs to deadstrip RAIL code. This is not safe in mulitprotocol, since the
+     68          // other PHYs could be using old PHYs or frame-type PHYs. These stubs will be
+     69          // generated by the calculator in those cases.
+
+   \                                 In section .text, align 2, keep-with-next
+     70          uint32_t RAILCb_CalcSymbolRate(RAIL_Handle_t railHandle)
+     71          {
+     72            (void) railHandle;
+     73            return 0U;
+   \                     RAILCb_CalcSymbolRate: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+     74          }
+     75          
+
+   \                                 In section .text, align 2, keep-with-next
+     76          uint32_t RAILCb_CalcBitRate(RAIL_Handle_t railHandle)
+     77          {
+     78            (void) railHandle;
+     79            return 0U;
+   \                     RAILCb_CalcBitRate: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+     80          }
+     81          
+
+   \                                 In section .text, align 2, keep-with-next
+     82          void RAILCb_ConfigFrameTypeLength(RAIL_Handle_t railHandle,
+     83                                            const RAIL_FrameType_t *frameType)
+     84          {
+     85            (void) railHandle;
+     86            (void) frameType;
+     87          }
+   \                     RAILCb_ConfigFrameTypeLength: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+     88          #endif //!PHY_RAIL_MP && !PHY_RAILGB_MP && !defined(EMBER_STACK_CONNECT)
+     89          #else//!(PHY_RAIL || PHY_DUALRAIL)
+     90          #include "rail_chip_specific.h"
+     91          #endif//(PHY_RAIL || PHY_DUALRAIL)
+     92          
+     93          #if defined (_EFR_DEVICE)
+     94          
+     95          // Provide HAL pointers to board-header-defined PA configuration(s)
+     96          // for use by App, RAIL, or PHY library.
+     97          #ifdef  HAL_PA_ENABLE
+
+   \                                 In section .rodata, align 4
+     98          static const RAIL_TxPowerConfig_t paInit2p4 =
+   \                     paInit2p4:
+   \        0x0   0x01 0x00          DC8 1, 0
+   \        0x2   0x0CE4 0x000A      DC16 3300, 10
+   \        0x6   0x00 0x00          DC8 0, 0
+     99          {
+    100          #if defined (_SILICON_LABS_32B_SERIES_1)
+    101          #if HAL_PA_2P4_LOWPOWER
+    102            .mode = RAIL_TX_POWER_MODE_2P4_LP,   /* Power Amplifier mode */
+    103          #else
+    104            .mode = RAIL_TX_POWER_MODE_2P4_HP,   /* Power Amplifier mode */
+    105          #endif
+    106          #else
+    107          #ifdef HAL_PA_SELECTION
+    108            .mode = HAL_PA_SELECTION,            /* Power Amplifier mode */
+    109          #else
+    110            .mode = RAIL_TX_POWER_MODE_2P4_HIGHEST,
+    111          #endif
+    112          #endif
+    113            .voltage = BSP_PA_VOLTAGE,         /* Power Amplifier vPA Voltage mode */
+    114            .rampTime = HAL_PA_RAMP,           /* Desired ramp time in us */
+    115          };
+
+   \                                 In section .data, align 4
+    116          const RAIL_TxPowerConfig_t* halInternalPa2p4GHzInit = &paInit2p4;
+   \                     halInternalPa2p4GHzInit:
+   \        0x0   0x....'....        DC32 paInit2p4
+    117          
+    118          #if defined (_SILICON_LABS_32B_SERIES_1)
+    119          static const RAIL_TxPowerConfig_t paInitSub =
+    120          {
+    121            .mode = RAIL_TX_POWER_MODE_SUBGIG, /* Power Amplifier mode */
+    122            .voltage = BSP_PA_VOLTAGE,         /* Power Amplifier vPA Voltage mode */
+    123            .rampTime = HAL_PA_RAMP,           /* Desired ramp time in us */
+    124          };
+    125          
+    126          const RAIL_TxPowerConfig_t* halInternalPaSubGHzInit = &paInitSub;
+    127          #else
+
+   \                                 In section .bss, align 4
+    128          const RAIL_TxPowerConfig_t* halInternalPaSubGHzInit = NULL;
+   \                     halInternalPaSubGHzInit:
+   \        0x0                      DS8 4
+    129          #endif
+    130          
+    131          #else//!HAL_PA_ENABLE
+    132          const RAIL_TxPowerConfig_t* halInternalPa2p4GHzInit = NULL;
+    133          const RAIL_TxPowerConfig_t* halInternalPaSubGHzInit = NULL;
+    134          #endif//HAL_PA_ENABLE
+    135          #endif// _EFR_DEVICE
+    136          
+    137          #if HAL_EZRADIOPRO_ENABLE
+    138          #if BSP_EZRADIOPRO_USART == HAL_SPI_PORT_USART0
+    139          #define PRO2_USART USART0
+    140          #elif BSP_EZRADIOPRO_USART == HAL_SPI_PORT_USART1
+    141          #define PRO2_USART USART1
+    142          #elif BSP_EZRADIOPRO_USART == HAL_SPI_PORT_USART2
+    143          #define PRO2_USART USART2
+    144          #elif BSP_EZRADIOPRO_USART == HAL_SPI_PORT_USART3
+    145          #define PRO2_USART USART3
+    146          #else
+    147          #error "Invalid EZRADIOPRO USART"
+    148          #endif
+    149          const uint8_t pro2SpiClockMHz = HAL_EZRADIOPRO_FREQ / 1000000;
+    150          #ifdef  _EFR_DEVICE
+    151          #include "spidrv.h"
+    152          const SPIDRV_Init_t pro2SpiConfig = {
+    153            .port             = PRO2_USART,
+    154            .portLocationTx   = BSP_EZRADIOPRO_MOSI_LOC,
+    155            .portLocationRx   = BSP_EZRADIOPRO_MISO_LOC,
+    156            .portLocationClk  = BSP_EZRADIOPRO_CLK_LOC,
+    157            .portLocationCs   = 0, //not used by application
+    158            .bitRate          = HAL_EZRADIOPRO_FREQ,
+    159          /**** Below fields should NOT be modified by customers ****/
+    160            .frameLength      = 8,
+    161            .dummyTxValue     = 0xFF,
+    162            .type             = spidrvMaster,
+    163            .bitOrder         = spidrvBitOrderMsbFirst,
+    164            .clockMode        = spidrvClockMode0,
+    165            .csControl        = spidrvCsControlApplication,
+    166            .slaveStartMode   = spidrvSlaveStartImmediate,
+    167          };
+    168          #endif//_EFR_DEVICE
+    169          #endif
+    170          
+    171          // halInit is called on first initial boot, not on wakeup from sleep.
+
+   \                                 In section .text, align 2, keep-with-next
+    172          void halInit(void)
+    173          {
+   \                     halInit: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    174            //When the Cortex-M3 exits reset, interrupts are enable.  Explicitly
+    175            //disable them for the rest of Init.
+    176            __disable_irq();
+   \        0x2   0xB672             CPSID    I
+    177          
+    178            // Configure BASEPRI to be at the interrupts disabled level so that when we
+    179            // turn interrupts back on nothing fires immediately.
+    180            INTERRUPTS_OFF();
+   \        0x4   0x....'....        BL       CORE_AtomicDisableIrq
+    181          
+    182            // Bootloader might be at the base of flash, or even in the NULL_BTL case,
+    183            // the BAT/AAT will be at the beginning of the image.
+    184            // Setting the vectorTable is required.
+    185            SCB->VTOR =  (uint32_t)halAppAddressTable.baseTable.vectorTable;
+   \        0x8   0x....'....        LDR.W    R0,??DataTable3_2
+   \        0xC   0x6941             LDR      R1,[R0, #+20]
+   \        0xE   0x....'....        LDR.W    R4,??DataTable3_3  ;; 0xe000ed08
+    186          
+    187            // Always Configure Interrupt Priorities.  This is necessary for key behavior
+    188            // such as fault Handlers to be serviced at the correct priority levels.
+    189            #undef FIXED_EXCEPTION
+    190            #define FIXED_EXCEPTION(vectorNumber, functionName, deviceIrqn, deviceIrqHandler)
+    191            #define EXCEPTION(vectorNumber, functionName, deviceIrqn, deviceIrqHandler, priorityLevel, subpriority) \
+    192            NVIC_SetPriority(deviceIrqn, NVIC_EncodePriority(PRIGROUP_POSITION, priorityLevel, subpriority));
+    193              #include NVIC_CONFIG
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0x6021             STR      R1,[R4, #+0]
+   \       0x16   0x....'....        BL       ??Subroutine1_0
+   \                     ??CrossCallReturnLabel_60: (+1)
+   \       0x1A   0x4601             MOV      R1,R0
+   \       0x1C   0xF06F 0x000B      MVN      R0,#+11
+   \       0x20   0x....'....        BL       __NVIC_SetPriority
+   \       0x24   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_62: (+1)
+   \       0x28   0x4601             MOV      R1,R0
+   \       0x2A   0xF06F 0x000A      MVN      R0,#+10
+   \       0x2E   0x....'....        BL       __NVIC_SetPriority
+   \       0x32   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_61: (+1)
+   \       0x36   0x4601             MOV      R1,R0
+   \       0x38   0xF06F 0x0009      MVN      R0,#+9
+   \       0x3C   0x....'....        BL       __NVIC_SetPriority
+   \       0x40   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_72: (+1)
+   \       0x44   0x4601             MOV      R1,R0
+   \       0x46   0xF06F 0x0008      MVN      R0,#+8
+   \       0x4A   0x....'....        BL       __NVIC_SetPriority
+   \       0x4E   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_71: (+1)
+   \       0x52   0x4601             MOV      R1,R0
+   \       0x54   0xF06F 0x0007      MVN      R0,#+7
+   \       0x58   0x....'....        BL       __NVIC_SetPriority
+   \       0x5C   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_70: (+1)
+   \       0x60   0x4601             MOV      R1,R0
+   \       0x62   0xF06F 0x0006      MVN      R0,#+6
+   \       0x66   0x....'....        BL       __NVIC_SetPriority
+   \       0x6A   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_69: (+1)
+   \       0x6E   0x4601             MOV      R1,R0
+   \       0x70   0xF06F 0x0005      MVN      R0,#+5
+   \       0x74   0x....'....        BL       __NVIC_SetPriority
+   \       0x78   0x2200             MOVS     R2,#+0
+   \       0x7A   0x2102             MOVS     R1,#+2
+   \       0x7C   0x....'....        BL       ??Subroutine3_0
+   \                     ??CrossCallReturnLabel_67: (+1)
+   \       0x80   0x4601             MOV      R1,R0
+   \       0x82   0xF06F 0x0004      MVN      R0,#+4
+   \       0x86   0x....'....        BL       __NVIC_SetPriority
+   \       0x8A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_59: (+1)
+   \       0x8E   0x4601             MOV      R1,R0
+   \       0x90   0xF06F 0x0003      MVN      R0,#+3
+   \       0x94   0x....'....        BL       __NVIC_SetPriority
+   \       0x98   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_68: (+1)
+   \       0x9C   0x4601             MOV      R1,R0
+   \       0x9E   0xF06F 0x0002      MVN      R0,#+2
+   \       0xA2   0x....'....        BL       __NVIC_SetPriority
+   \       0xA6   0x2200             MOVS     R2,#+0
+   \       0xA8   0x2107             MOVS     R1,#+7
+   \       0xAA   0x....'....        BL       ??Subroutine3_0
+   \                     ??CrossCallReturnLabel_66: (+1)
+   \       0xAE   0x4601             MOV      R1,R0
+   \       0xB0   0xF06F 0x0001      MVN      R0,#+1
+   \       0xB4   0x....'....        BL       __NVIC_SetPriority
+   \       0xB8   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_58: (+1)
+   \       0xBC   0x4601             MOV      R1,R0
+   \       0xBE   0xF04F 0x30FF      MOV      R0,#-1
+   \       0xC2   0x....'....        BL       __NVIC_SetPriority
+   \       0xC6   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_57: (+1)
+   \       0xCA   0x4601             MOV      R1,R0
+   \       0xCC   0x2000             MOVS     R0,#+0
+   \       0xCE   0x....'....        BL       __NVIC_SetPriority
+   \       0xD2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_56: (+1)
+   \       0xD6   0x4601             MOV      R1,R0
+   \       0xD8   0x2001             MOVS     R0,#+1
+   \       0xDA   0x....'....        BL       __NVIC_SetPriority
+   \       0xDE   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_55: (+1)
+   \       0xE2   0x4601             MOV      R1,R0
+   \       0xE4   0x2002             MOVS     R0,#+2
+   \       0xE6   0x....'....        BL       __NVIC_SetPriority
+   \       0xEA   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_54: (+1)
+   \       0xEE   0x4601             MOV      R1,R0
+   \       0xF0   0x2003             MOVS     R0,#+3
+   \       0xF2   0x....'....        BL       __NVIC_SetPriority
+   \       0xF6   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_53: (+1)
+   \       0xFA   0x4601             MOV      R1,R0
+   \       0xFC   0x2004             MOVS     R0,#+4
+   \       0xFE   0x....'....        BL       __NVIC_SetPriority
+   \      0x102   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_52: (+1)
+   \      0x106   0x4601             MOV      R1,R0
+   \      0x108   0x2005             MOVS     R0,#+5
+   \      0x10A   0x....'....        BL       __NVIC_SetPriority
+   \      0x10E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_51: (+1)
+   \      0x112   0x4601             MOV      R1,R0
+   \      0x114   0x2006             MOVS     R0,#+6
+   \      0x116   0x....'....        BL       __NVIC_SetPriority
+   \      0x11A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_50: (+1)
+   \      0x11E   0x4601             MOV      R1,R0
+   \      0x120   0x2007             MOVS     R0,#+7
+   \      0x122   0x....'....        BL       __NVIC_SetPriority
+   \      0x126   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_49: (+1)
+   \      0x12A   0x4601             MOV      R1,R0
+   \      0x12C   0x2008             MOVS     R0,#+8
+   \      0x12E   0x....'....        BL       __NVIC_SetPriority
+   \      0x132   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_48: (+1)
+   \      0x136   0x4601             MOV      R1,R0
+   \      0x138   0x2009             MOVS     R0,#+9
+   \      0x13A   0x....'....        BL       __NVIC_SetPriority
+   \      0x13E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_47: (+1)
+   \      0x142   0x4601             MOV      R1,R0
+   \      0x144   0x200A             MOVS     R0,#+10
+   \      0x146   0x....'....        BL       __NVIC_SetPriority
+   \      0x14A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_46: (+1)
+   \      0x14E   0x4601             MOV      R1,R0
+   \      0x150   0x200B             MOVS     R0,#+11
+   \      0x152   0x....'....        BL       __NVIC_SetPriority
+   \      0x156   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_45: (+1)
+   \      0x15A   0x4601             MOV      R1,R0
+   \      0x15C   0x200C             MOVS     R0,#+12
+   \      0x15E   0x....'....        BL       __NVIC_SetPriority
+   \      0x162   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_44: (+1)
+   \      0x166   0x4601             MOV      R1,R0
+   \      0x168   0x200D             MOVS     R0,#+13
+   \      0x16A   0x....'....        BL       __NVIC_SetPriority
+   \      0x16E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_43: (+1)
+   \      0x172   0x4601             MOV      R1,R0
+   \      0x174   0x200E             MOVS     R0,#+14
+   \      0x176   0x....'....        BL       __NVIC_SetPriority
+   \      0x17A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_42: (+1)
+   \      0x17E   0x4601             MOV      R1,R0
+   \      0x180   0x200F             MOVS     R0,#+15
+   \      0x182   0x....'....        BL       __NVIC_SetPriority
+   \      0x186   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_41: (+1)
+   \      0x18A   0x4601             MOV      R1,R0
+   \      0x18C   0x2010             MOVS     R0,#+16
+   \      0x18E   0x....'....        BL       __NVIC_SetPriority
+   \      0x192   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_40: (+1)
+   \      0x196   0x4601             MOV      R1,R0
+   \      0x198   0x2011             MOVS     R0,#+17
+   \      0x19A   0x....'....        BL       __NVIC_SetPriority
+   \      0x19E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_39: (+1)
+   \      0x1A2   0x4601             MOV      R1,R0
+   \      0x1A4   0x2012             MOVS     R0,#+18
+   \      0x1A6   0x....'....        BL       __NVIC_SetPriority
+   \      0x1AA   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_38: (+1)
+   \      0x1AE   0x4601             MOV      R1,R0
+   \      0x1B0   0x2013             MOVS     R0,#+19
+   \      0x1B2   0x....'....        BL       __NVIC_SetPriority
+   \      0x1B6   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_37: (+1)
+   \      0x1BA   0x4601             MOV      R1,R0
+   \      0x1BC   0x2014             MOVS     R0,#+20
+   \      0x1BE   0x....'....        BL       __NVIC_SetPriority
+   \      0x1C2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_36: (+1)
+   \      0x1C6   0x4601             MOV      R1,R0
+   \      0x1C8   0x2015             MOVS     R0,#+21
+   \      0x1CA   0x....'....        BL       __NVIC_SetPriority
+   \      0x1CE   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_35: (+1)
+   \      0x1D2   0x4601             MOV      R1,R0
+   \      0x1D4   0x2016             MOVS     R0,#+22
+   \      0x1D6   0x....'....        BL       __NVIC_SetPriority
+   \      0x1DA   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_34: (+1)
+   \      0x1DE   0x4601             MOV      R1,R0
+   \      0x1E0   0x2017             MOVS     R0,#+23
+   \      0x1E2   0x....'....        BL       __NVIC_SetPriority
+   \      0x1E6   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_33: (+1)
+   \      0x1EA   0x4601             MOV      R1,R0
+   \      0x1EC   0x2018             MOVS     R0,#+24
+   \      0x1EE   0x....'....        BL       __NVIC_SetPriority
+   \      0x1F2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_32: (+1)
+   \      0x1F6   0x4601             MOV      R1,R0
+   \      0x1F8   0x2019             MOVS     R0,#+25
+   \      0x1FA   0x....'....        BL       __NVIC_SetPriority
+   \      0x1FE   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_31: (+1)
+   \      0x202   0x4601             MOV      R1,R0
+   \      0x204   0x201A             MOVS     R0,#+26
+   \      0x206   0x....'....        BL       __NVIC_SetPriority
+   \      0x20A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_30: (+1)
+   \      0x20E   0x4601             MOV      R1,R0
+   \      0x210   0x201B             MOVS     R0,#+27
+   \      0x212   0x....'....        BL       __NVIC_SetPriority
+   \      0x216   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_29: (+1)
+   \      0x21A   0x4601             MOV      R1,R0
+   \      0x21C   0x201C             MOVS     R0,#+28
+   \      0x21E   0x....'....        BL       __NVIC_SetPriority
+   \      0x222   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_28: (+1)
+   \      0x226   0x4601             MOV      R1,R0
+   \      0x228   0x201D             MOVS     R0,#+29
+   \      0x22A   0x....'....        BL       __NVIC_SetPriority
+   \      0x22E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_27: (+1)
+   \      0x232   0x4601             MOV      R1,R0
+   \      0x234   0x201E             MOVS     R0,#+30
+   \      0x236   0x....'....        BL       __NVIC_SetPriority
+   \      0x23A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_26: (+1)
+   \      0x23E   0x4601             MOV      R1,R0
+   \      0x240   0x201F             MOVS     R0,#+31
+   \      0x242   0x....'....        BL       __NVIC_SetPriority
+   \      0x246   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_25: (+1)
+   \      0x24A   0x4601             MOV      R1,R0
+   \      0x24C   0x2020             MOVS     R0,#+32
+   \      0x24E   0x....'....        BL       __NVIC_SetPriority
+   \      0x252   0x2200             MOVS     R2,#+0
+   \      0x254   0x2103             MOVS     R1,#+3
+   \      0x256   0x....'....        BL       ??Subroutine3_0
+   \                     ??CrossCallReturnLabel_65: (+1)
+   \      0x25A   0x4601             MOV      R1,R0
+   \      0x25C   0x2021             MOVS     R0,#+33
+   \      0x25E   0x....'....        BL       __NVIC_SetPriority
+   \      0x262   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_24: (+1)
+   \      0x266   0x4601             MOV      R1,R0
+   \      0x268   0x2022             MOVS     R0,#+34
+   \      0x26A   0x....'....        BL       __NVIC_SetPriority
+   \      0x26E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_23: (+1)
+   \      0x272   0x4601             MOV      R1,R0
+   \      0x274   0x2023             MOVS     R0,#+35
+   \      0x276   0x....'....        BL       __NVIC_SetPriority
+   \      0x27A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \      0x27E   0x4601             MOV      R1,R0
+   \      0x280   0x2024             MOVS     R0,#+36
+   \      0x282   0x....'....        BL       __NVIC_SetPriority
+   \      0x286   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \      0x28A   0x4601             MOV      R1,R0
+   \      0x28C   0x2025             MOVS     R0,#+37
+   \      0x28E   0x....'....        BL       __NVIC_SetPriority
+   \      0x292   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \      0x296   0x4601             MOV      R1,R0
+   \      0x298   0x2026             MOVS     R0,#+38
+   \      0x29A   0x....'....        BL       __NVIC_SetPriority
+   \      0x29E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \      0x2A2   0x4601             MOV      R1,R0
+   \      0x2A4   0x2027             MOVS     R0,#+39
+   \      0x2A6   0x....'....        BL       __NVIC_SetPriority
+   \      0x2AA   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \      0x2AE   0x4601             MOV      R1,R0
+   \      0x2B0   0x2028             MOVS     R0,#+40
+   \      0x2B2   0x....'....        BL       __NVIC_SetPriority
+   \      0x2B6   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \      0x2BA   0x4601             MOV      R1,R0
+   \      0x2BC   0x2029             MOVS     R0,#+41
+   \      0x2BE   0x....'....        BL       __NVIC_SetPriority
+   \      0x2C2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \      0x2C6   0x4601             MOV      R1,R0
+   \      0x2C8   0x202A             MOVS     R0,#+42
+   \      0x2CA   0x....'....        BL       __NVIC_SetPriority
+   \      0x2CE   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_64: (+1)
+   \      0x2D2   0x4601             MOV      R1,R0
+   \      0x2D4   0x202B             MOVS     R0,#+43
+   \      0x2D6   0x....'....        BL       __NVIC_SetPriority
+   \      0x2DA   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_63: (+1)
+   \      0x2DE   0x4601             MOV      R1,R0
+   \      0x2E0   0x202C             MOVS     R0,#+44
+   \      0x2E2   0x....'....        BL       __NVIC_SetPriority
+   \      0x2E6   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \      0x2EA   0x4601             MOV      R1,R0
+   \      0x2EC   0x202D             MOVS     R0,#+45
+   \      0x2EE   0x....'....        BL       __NVIC_SetPriority
+   \      0x2F2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \      0x2F6   0x4601             MOV      R1,R0
+   \      0x2F8   0x202E             MOVS     R0,#+46
+   \      0x2FA   0x....'....        BL       __NVIC_SetPriority
+   \      0x2FE   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \      0x302   0x4601             MOV      R1,R0
+   \      0x304   0x202F             MOVS     R0,#+47
+   \      0x306   0x....'....        BL       __NVIC_SetPriority
+   \      0x30A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \      0x30E   0x4601             MOV      R1,R0
+   \      0x310   0x2030             MOVS     R0,#+48
+   \      0x312   0x....'....        BL       __NVIC_SetPriority
+   \      0x316   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \      0x31A   0x4601             MOV      R1,R0
+   \      0x31C   0x2031             MOVS     R0,#+49
+   \      0x31E   0x....'....        BL       __NVIC_SetPriority
+   \      0x322   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \      0x326   0x4601             MOV      R1,R0
+   \      0x328   0x2032             MOVS     R0,#+50
+   \      0x32A   0x....'....        BL       __NVIC_SetPriority
+   \      0x32E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \      0x332   0x4601             MOV      R1,R0
+   \      0x334   0x2033             MOVS     R0,#+51
+   \      0x336   0x....'....        BL       __NVIC_SetPriority
+   \      0x33A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \      0x33E   0x4601             MOV      R1,R0
+   \      0x340   0x2034             MOVS     R0,#+52
+   \      0x342   0x....'....        BL       __NVIC_SetPriority
+   \      0x346   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \      0x34A   0x4601             MOV      R1,R0
+   \      0x34C   0x2035             MOVS     R0,#+53
+   \      0x34E   0x....'....        BL       __NVIC_SetPriority
+   \      0x352   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \      0x356   0x4601             MOV      R1,R0
+   \      0x358   0x2036             MOVS     R0,#+54
+   \      0x35A   0x....'....        BL       __NVIC_SetPriority
+   \      0x35E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \      0x362   0x4601             MOV      R1,R0
+   \      0x364   0x2037             MOVS     R0,#+55
+   \      0x366   0x....'....        BL       __NVIC_SetPriority
+   \      0x36A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \      0x36E   0x4601             MOV      R1,R0
+   \      0x370   0x2038             MOVS     R0,#+56
+   \      0x372   0x....'....        BL       __NVIC_SetPriority
+   \      0x376   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \      0x37A   0x4601             MOV      R1,R0
+   \      0x37C   0x2039             MOVS     R0,#+57
+   \      0x37E   0x....'....        BL       __NVIC_SetPriority
+   \      0x382   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \      0x386   0x4601             MOV      R1,R0
+   \      0x388   0x203A             MOVS     R0,#+58
+   \      0x38A   0x....'....        BL       __NVIC_SetPriority
+   \      0x38E   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \      0x392   0x4601             MOV      R1,R0
+   \      0x394   0x203B             MOVS     R0,#+59
+   \      0x396   0x....'....        BL       __NVIC_SetPriority
+   \      0x39A   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \      0x39E   0x4601             MOV      R1,R0
+   \      0x3A0   0x203C             MOVS     R0,#+60
+   \      0x3A2   0x....'....        BL       __NVIC_SetPriority
+    194            #undef EXCEPTION
+    195          
+    196            //Now that all the individual priority bits are set, we have to set the
+    197            //distinction between preemptive priority and non-preemptive subpriority
+    198            //This sets the priority grouping binary position.
+    199            //PRIGROUP_POSITION is defined inside of nvic-config.h.
+    200            NVIC_SetPriorityGrouping(PRIGROUP_POSITION);
+   \      0x3A6   0x6861             LDR      R1,[R4, #+4]
+   \      0x3A8   0xF64F 0x00FF      MOVW     R0,#+63743
+   \      0x3AC   0x4001             ANDS     R1,R0,R1
+   \      0x3AE   0xF041 0x61BF      ORR      R1,R1,#0x5F80000
+   \      0x3B2   0xF441 0x3101      ORR      R1,R1,#0x20400
+   \      0x3B6   0x6061             STR      R1,[R4, #+4]
+    201          
+    202            // Always Configure System Handlers Control and Configuration
+    203          #if defined(SCB_CCR_STKALIGN_Msk)
+    204            SCB->CCR |= SCB_CCR_STKALIGN_Msk;
+    205          #endif
+    206          
+    207          #if defined(SCB_CCR_DIV_0_TRP_Msk)
+    208            SCB->CCR |= SCB_CCR_DIV_0_TRP_Msk;
+   \      0x3B8   0x68E0             LDR      R0,[R4, #+12]
+    209          #endif
+    210          
+    211          #if defined(SCB_SHCSR_USGFAULTENA_Msk)
+    212            SCB->SHCSR = (SCB_SHCSR_USGFAULTENA_Msk
+    213                          | SCB_SHCSR_BUSFAULTENA_Msk
+    214                          | SCB_SHCSR_MEMFAULTENA_Msk);
+   \      0x3BA   0xF44F 0x21E0      MOV      R1,#+458752
+   \      0x3BE   0xF040 0x0010      ORR      R0,R0,#0x10
+   \      0x3C2   0x60E0             STR      R0,[R4, #+12]
+   \      0x3C4   0x61E1             STR      R1,[R4, #+28]
+    215          #endif
+    216          
+    217          #if defined(__MPU_PRESENT) && (__MPU_PRESENT == 1) && (__CORTEX_M <= 7)
+    218            halInternalEnableMPU();
+    219          #endif
+    220          
+    221            // Determine and record the reason for the reset.  Because this code uses
+    222            // static variables in RAM, it must be performed after RAM segements are
+    223            // initialized, but the RESETINFO segment is left uninitialized.
+    224            halInternalClassifyReset();
+   \      0x3C6   0x....'....        BL       halInternalClassifyReset
+    225          
+    226            // Zero out the EMHEAP segment.
+    227            {
+    228              // IAR warns about "integer conversion resulted in truncation" if
+    229              // _EMHEAP_SEGMENT_SIZE is used directly in MEMSET().  This segment
+    230              // should always be smaller than a 16bit size.
+    231              MEMSET(_EMHEAP_SEGMENT_BEGIN, 0, (_EMHEAP_SEGMENT_SIZE & 0xFFFFu));
+   \      0x3CA   0x....             LDR.N    R2,??DataTable3_4
+   \      0x3CC   0xB292             UXTH     R2,R2
+   \      0x3CE   0x2100             MOVS     R1,#+0
+   \      0x3D0   0x....             LDR.N    R0,??DataTable3_5
+   \      0x3D2   0x....'....        BL       halCommonMemSet
+    232            }
+    233          
+    234            __enable_irq();
+   \      0x3D6   0xB662             CPSIE    I
+    235          
+    236            /* Configure board. Select either EBI or SPI mode. */
+    237            CHIP_Init();
+   \      0x3D8   0x4668             MOV      R0,SP
+   \      0x3DA   0x....'....        BL       SYSTEM_ChipRevisionGet
+   \      0x3DE   0x....             LDR.N    R0,??DataTable3_6  ;; 0x4000c030
+   \      0x3E0   0x6A81             LDR      R1,[R0, #+40]
+   \      0x3E2   0x03CA             LSLS     R2,R1,#+15
+   \      0x3E4   0xD411             BMI.N    ??halInit_0
+   \      0x3E6   0x6841             LDR      R1,[R0, #+4]
+   \      0x3E8   0xF36F 0x2116      BFC      R1,#+8,#+15
+   \      0x3EC   0xF441 0x11B8      ORR      R1,R1,#0x170000
+   \      0x3F0   0xF441 0x4105      ORR      R1,R1,#0x8500
+   \      0x3F4   0x6041             STR      R1,[R0, #+4]
+   \      0x3F6   0x6801             LDR      R1,[R0, #+0]
+   \      0x3F8   0xF421 0x4170      BIC      R1,R1,#0xF000
+   \      0x3FC   0xF441 0x4140      ORR      R1,R1,#0xC000
+   \      0x400   0x6001             STR      R1,[R0, #+0]
+   \      0x402   0x6802             LDR      R2,[R0, #+0]
+   \      0x404   0xF442 0x62E0      ORR      R2,R2,#0x700
+   \      0x408   0x6002             STR      R2,[R0, #+0]
+   \                     ??halInit_0: (+1)
+   \      0x40A   0xF89D 0x0001      LDRB     R0,[SP, #+1]
+   \      0x40E   0x2801             CMP      R0,#+1
+   \      0x410   0xBF04             ITT      EQ 
+   \      0x412   0xF89D 0x0000      LDRBEQ   R0,[SP, #+0]
+   \      0x416   0x2800             CMPEQ    R0,#+0
+   \      0x418   0xD107             BNE.N    ??halInit_1
+   \      0x41A   0xF04F 0x5100      MOV      R1,#+536870912
+   \      0x41E   0x2006             MOVS     R0,#+6
+   \                     ??halInit_2: (+1)
+   \      0x420   0x680A             LDR      R2,[R1, #+0]
+   \      0x422   0xF501 0x4180      ADD      R1,R1,#+16384
+   \      0x426   0x1E40             SUBS     R0,R0,#+1
+   \      0x428   0xD1FA             BNE.N    ??halInit_2
+    238          #if defined (_EFR_DEVICE)
+    239            EMU_UnlatchPinRetention();
+   \                     ??halInit_1: (+1)
+   \      0x42A   0x2002             MOVS     R0,#+2
+   \      0x42C   0x....             LDR.N    R1,??DataTable3_7  ;; 0x40004070
+   \      0x42E   0x6008             STR      R0,[R1, #+0]
+    240          #endif
+    241            halConfigInit();
+   \      0x430   0x....'....        BL       halConfigInit
+    242            RTCDRV_Init();
+   \      0x434   0x....'....        BL       RTCDRV_Init
+    243          #if defined (_EFR_DEVICE)
+    244            #ifndef HAL_CONFIG
+    245            halInternalInitBoard();
+    246            #endif
+    247            TEMPDRV_Init();
+   \      0x438   0x....'....        BL       TEMPDRV_Init
+    248            EMU_EM4Init_TypeDef em4Init = EMU_EM4INIT_DEFAULT;
+   \      0x43C   0x....             LDR.N    R1,??DataTable3_8
+   \      0x43E   0xE9D1 0x2300      LDRD     R2,R3,[R1, #+0]
+    249            em4Init.em4State = emuEM4Hibernate;
+   \      0x442   0x2401             MOVS     R4,#+1
+    250            EMU_EM4Init(&em4Init);
+   \      0x444   0x4668             MOV      R0,SP
+   \      0x446   0xE9CD 0x2300      STRD     R2,R3,[SP, #+0]
+   \      0x44A   0xF88D 0x4003      STRB     R4,[SP, #+3]
+   \      0x44E   0x....'....        BL       EMU_EM4Init
+    251            halInternalEm4Wakeup();
+   \      0x452   0x....'....        BL       halInternalEm4Wakeup
+    252          #endif
+    253          
+    254            halInternalStartSystemTimer();
+   \      0x456   0x....'....        BL       halInternalStartSystemTimer
+    255          
+    256          #if (PHY_RAIL || PHY_DUALRAIL)
+    257          #if (BSP_PA_VOLTAGE > 1800) || defined (_SILICON_LABS_32B_SERIES_2)
+    258            RAIL_InitTxPowerCurvesAlt(&RAIL_TxPowerCurvesVbat);
+   \      0x45A   0x....             LDR.N    R0,??DataTable3_9
+   \      0x45C   0x....'....        BL       RAIL_InitTxPowerCurvesAlt
+    259          #else
+    260            RAIL_InitTxPowerCurvesAlt(&RAIL_TxPowerCurvesDcdc);
+    261          #endif
+    262          #endif//(PHY_RAIL || PHY_DUALRAIL)
+    263          }
+   \      0x460   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x22FF             MOVS     R2,#+255
+   \        0x2   0x21FF             MOVS     R1,#+255
+   \                     ??Subroutine3_0: (+1)
+   \        0x4   0x2004             MOVS     R0,#+4
+   \        0x6   0x....             B.N      NVIC_EncodePriority
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2200             MOVS     R2,#+0
+   \        0x2   0x2101             MOVS     R1,#+1
+   \        0x4   0x2004             MOVS     R0,#+4
+   \        0x6   0x....             B.N      NVIC_EncodePriority
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2200             MOVS     R2,#+0
+   \                     ??Subroutine1_0: (+1)
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x2004             MOVS     R0,#+4
+   \        0x6   0x....             B.N      NVIC_EncodePriority
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2200             MOVS     R2,#+0
+   \        0x2   0x2104             MOVS     R1,#+4
+   \        0x4   0x2004             MOVS     R0,#+4
+   \        0x6   0x....             B.N      NVIC_EncodePriority
+    264          
+
+   \                                 In section .text, align 2, keep-with-next
+    265          void halReboot(void)
+    266          {
+    267            halInternalSysReset(RESET_SOFTWARE_REBOOT);
+   \                     halReboot: (+1)
+   \        0x0   0xF240 0x6001      MOVW     R0,#+1537
+   \        0x4   0x....'....        B.W      halInternalSysReset
+    268          }
+    269          
+
+   \                                 In section .text, align 2, keep-with-next
+    270          void halPowerDown(void)
+    271          {
+    272            #if HAL_EZRADIOPRO_SHUTDOWN_SLEEP
+    273            extern void emRadioPowerDown(void);
+    274            emRadioPowerDown();
+    275            #endif
+    276            #if HAL_FEM_ENABLE
+    277            shutdownFem();
+    278            #endif
+    279            #ifndef HAL_CONFIG
+    280            halInternalPowerDownBoard();
+    281            #endif
+    282            halConfigPowerDownGpio();
+   \                     halPowerDown: (+1)
+   \        0x0   0x....'....        B.W      halConfigPowerDownGpio
+    283          }
+    284          
+    285          // halPowerUp is called from sleep state, not from first initial boot.
+
+   \                                 In section .text, align 2, keep-with-next
+    286          void halPowerUp(void)
+    287          {
+    288            halConfigPowerUpGpio();
+   \                     halPowerUp: (+1)
+   \        0x0   0x....'....        B.W      halConfigPowerUpGpio
+    289            #ifndef HAL_CONFIG
+    290            halInternalPowerUpBoard();
+    291            #endif
+    292            #if HAL_FEM_ENABLE
+    293            wakeupFem();
+    294            #endif
+    295            #if HAL_EZRADIOPRO_SHUTDOWN_SLEEP
+    296            extern void emRadioPowerUp(void);
+    297            emRadioPowerUp();
+    298            #endif
+    299          }
+    300          
+    301          #ifndef EMBER_APPLICATION_HAS_CUSTOM_SLEEP_CALLBACK
+
+   \                                 In section .text, align 2
+    302          WEAK(void halSleepCallback(boolean enter, SleepModes sleepMode))
+    303          {
+    304          }
+   \                     halSleepCallback: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    305          
+    306          #endif // EMBER_APPLICATION_HAS_CUSTOM_SLEEP_CALLBACK
+    307          
+
+   \                                 In section .text, align 2, keep-with-next
+    308          void halStackRadioPowerDownBoard(void)
+    309          {
+    310            // For EFM/EFR32 PHYs the PHY takes care of PTA on radio power-down
+    311            halStackRadioHoldOffPowerDown();
+   \                     halStackRadioPowerDownBoard: (+1)
+   \        0x0   0x....'....        B.W      halStackRadioHoldOffPowerDown
+    312          }
+    313          
+
+   \                                 In section .text, align 2, keep-with-next
+    314          void halStackRadio2PowerDownBoard(void)
+    315          {
+    316            // Neither PTA nor RHO are supported on Radio2
+    317          }
+   \                     halStackRadio2PowerDownBoard: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    318          
+
+   \                                 In section .text, align 2, keep-with-next
+    319          void halStackRadioPowerUpBoard(void)
+    320          {
+   \                     halStackRadioPowerUpBoard: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    321            (void) halPtaStackEvent(PTA_STACK_EVENT_RX_LISTEN, 0U);
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x200B             MOVS     R0,#+11
+   \        0x6   0x....'....        BL       halPtaStackEvent
+    322            halStackRadioHoldOffPowerUp();
+   \        0xA   0xE8BD 0x4001      POP      {R0,LR}
+   \        0xE   0x....'....        B.W      halStackRadioHoldOffPowerUp
+    323          }
+    324          
+
+   \                                 In section .text, align 2, keep-with-next
+    325          void halStackRadio2PowerUpBoard(void)
+    326          {
+    327            // Neither PTA nor RHO are supported on Radio2
+    328          }
+   \                     halStackRadio2PowerUpBoard: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    329          
+
+   \                                 In section .text, align 2, keep-with-next
+    330          void halStackRadioPowerMainControl(bool powerUp)
+    331          {
+    332            if (powerUp) {
+   \                     halStackRadioPowerMainControl: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF18             IT       NE 
+    333              halRadioPowerUpHandler();
+   \        0x4   0x....'....        BNE.W    halRadioPowerUpHandler
+    334            } else {
+    335              halRadioPowerDownHandler();
+   \        0x8   0x....'....        B.W      halRadioPowerDownHandler
+    336            }
+    337          }
+    338          
+
+   \                                 In section .text, align 2, keep-with-next
+    339          void halStackProcessBootCount(void)
+    340          {
+    341            //Note: Because this always counts up at every boot (called from emberInit),
+    342            //and non-volatile storage has a finite number of write cycles, this will
+    343            //eventually stop working.  Disable this token call if non-volatile write
+    344            //cycles need to be used sparingly.
+    345          #if defined(CREATOR_STACK_BOOT_COUNTER)
+    346            halCommonIncrementCounterToken(TOKEN_STACK_BOOT_COUNTER);
+   \                     halStackProcessBootCount: (+1)
+   \        0x0   0x2003             MOVS     R0,#+3
+   \        0x2   0x....'....        B.W      halInternalIncrementCounterToken
+    347          #endif
+    348          }
+    349          
+
+   \                                 In section .text, align 2, keep-with-next
+    350          PGM_P halGetResetString(void)
+    351          {
+   \                     halGetResetString: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    352            // Table used to convert from reset types to reset strings.
+    353            #define RESET_BASE_DEF(basename, value, string)  string,
+    354            #define RESET_EXT_DEF(basename, extname, extvalue, string)     /*nothing*/
+    355            static PGM char resetStringTable[][4] = {
+    356              #include "reset-def.h"
+    357            };
+    358            #undef RESET_BASE_DEF
+    359            #undef RESET_EXT_DEF
+    360            uint8_t resetInfo = halGetResetInfo();
+   \        0x2   0x....'....        BL       halGetResetInfo
+   \        0x6   0x4601             MOV      R1,R0
+    361            if (resetInfo >= (sizeof(resetStringTable) / sizeof(resetStringTable[0]))) {
+   \        0x8   0x....             LDR.N    R0,??DataTable3_10
+   \        0xA   0x290C             CMP      R1,#+12
+   \        0xC   0xBF38             IT       CC 
+   \        0xE   0xEB00 0x0081      ADDCC    R0,R0,R1, LSL #+2
+    362              return resetStringTable[0x00];   // return unknown
+    363            } else {
+    364              return resetStringTable[resetInfo];
+   \       0x12   0xBD02             POP      {R1,PC}          ;; return
+    365            }
+    366          }
+
+   \                                 In section .rodata, align 4
+   \                     `halGetResetString::resetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x46 0x49          DC8 "FIB"
+   \              0x42 0x00    
+   \        0x8   0x42 0x54          DC8 "BTL"
+   \              0x4C 0x00    
+   \        0xC   0x45 0x58          DC8 "EXT"
+   \              0x54 0x00    
+   \       0x10   0x50 0x57          DC8 "PWR"
+   \              0x52 0x00    
+   \       0x14   0x57 0x44          DC8 "WDG"
+   \              0x47 0x00    
+   \       0x18   0x20 0x53          DC8 " SW"
+   \              0x57 0x00    
+   \       0x1C   0x43 0x52          DC8 "CRS"
+   \              0x53 0x00    
+   \       0x20   0x46 0x53          DC8 "FSH"
+   \              0x48 0x00    
+   \       0x24   0x42 0x41          DC8 "BAD"
+   \              0x44 0x00    
+   \       0x28   0x46 0x4C          DC8 "FLT"
+   \              0x54 0x00    
+   \       0x2C   0x42 0x52          DC8 "BRO"
+   \              0x4F 0x00    
+    367          
+    368          // Note that this API should be used in conjunction with halGetResetString
+    369          //  to get the full information, as this API does not provide a string for
+    370          //  the base reset type
+
+   \                                 In section .text, align 2, keep-with-next
+    371          PGM_P halGetExtendedResetString(void)
+    372          {
+   \                     halGetExtendedResetString: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    373            // Create a table of reset strings for each extended reset type
+    374            typedef PGM char ResetStringTableType[][4];
+    375            #define RESET_BASE_DEF(basename, value, string) \
+    376            }; static ResetStringTableType basename##ResetStringTable = {
+    377            #define RESET_EXT_DEF(basename, extname, extvalue, string)  string,
+    378            {
+    379              #include "reset-def.h"
+    380            };
+    381            #undef RESET_BASE_DEF
+    382            #undef RESET_EXT_DEF
+    383          
+    384            // Create a table of pointers to each of the above tables
+    385            #define RESET_BASE_DEF(basename, value, string)  (ResetStringTableType *)basename##ResetStringTable,
+    386            #define RESET_EXT_DEF(basename, extname, extvalue, string)     /*nothing*/
+    387            static ResetStringTableType * PGM extendedResetStringTablePtrs[] = {
+    388              #include "reset-def.h"
+    389            };
+    390            #undef RESET_BASE_DEF
+    391            #undef RESET_EXT_DEF
+    392          
+    393            uint16_t extResetInfo = halGetExtendedResetInfo();
+   \        0x2   0x....'....        BL       halGetExtendedResetInfo
+    394            // access the particular table of extended strings we are interested in
+    395            ResetStringTableType *extendedResetStringTable =
+    396              extendedResetStringTablePtrs[RESET_BASE_TYPE(extResetInfo)];
+    397          
+    398            // return the string from within the proper table
+    399            return (*extendedResetStringTable)[((extResetInfo) & 0xFF)];
+   \        0x6   0x0402             LSLS     R2,R0,#+16
+   \        0x8   0x....             LDR.N    R1,??DataTable3_11
+   \        0xA   0x0E12             LSRS     R2,R2,#+24
+   \        0xC   0xF851 0x3022      LDR      R3,[R1, R2, LSL #+2]
+   \       0x10   0xF000 0x00FF      AND      R0,R0,#0xFF
+   \       0x14   0xEB03 0x0080      ADD      R0,R3,R0, LSL #+2
+   \       0x18   0xBD02             POP      {R1,PC}          ;; return
+    400          }
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const UNKNOWNResetStringTable[1][4]
+   \                     `halGetExtendedResetString::UNKNOWNResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const FIBResetStringTable[22][4]
+   \                     `halGetExtendedResetString::FIBResetStringTable`:
+   \        0x0   0x47 0x4F          DC8 "GO "
+   \              0x20 0x00    
+   \        0x4   0x42 0x54          DC8 "BTL"
+   \              0x4C 0x00    
+   \        0x8   0x47 0x4F          DC8 "GO2"
+   \              0x32 0x00    
+   \        0xC   0x47 0x4F          DC8 "GO3"
+   \              0x33 0x00    
+   \       0x10   0x47 0x4F          DC8 "GO4"
+   \              0x34 0x00    
+   \       0x14   0x47 0x4F          DC8 "GO5"
+   \              0x35 0x00    
+   \       0x18   0x47 0x4F          DC8 "GO6"
+   \              0x36 0x00    
+   \       0x1C   0x47 0x4F          DC8 "GO7"
+   \              0x37 0x00    
+   \       0x20   0x47 0x4F          DC8 "GO8"
+   \              0x38 0x00    
+   \       0x24   0x47 0x4F          DC8 "GO9"
+   \              0x39 0x00    
+   \       0x28   0x47 0x4F          DC8 "GOA"
+   \              0x41 0x00    
+   \       0x2C   0x47 0x4F          DC8 "GOB"
+   \              0x42 0x00    
+   \       0x30   0x47 0x4F          DC8 "GOC"
+   \              0x43 0x00    
+   \       0x34   0x47 0x4F          DC8 "GOD"
+   \              0x44 0x00    
+   \       0x38   0x47 0x4F          DC8 "GOE"
+   \              0x45 0x00    
+   \       0x3C   0x47 0x4F          DC8 "GOF"
+   \              0x46 0x00    
+   \       0x40   0x4A 0x4D          DC8 "JMP"
+   \              0x50 0x00    
+   \       0x44   0x42 0x44          DC8 "BDR"
+   \              0x52 0x00    
+   \       0x48   0x55 0x50          DC8 "UPR"
+   \              0x52 0x00    
+   \       0x4C   0x42 0x54          DC8 "BTM"
+   \              0x4D 0x00    
+   \       0x50   0x4D 0x53          DC8 "MSM"
+   \              0x4D 0x00    
+   \       0x54   0x46 0x54          DC8 "FTL"
+   \              0x4C 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const BOOTLOADERResetStringTable[8][4]
+   \                     `halGetExtendedResetString::BOOTLOADERResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x47 0x4F          DC8 "GO "
+   \              0x20 0x00    
+   \        0x8   0x42 0x54          DC8 "BTL"
+   \              0x4C 0x00    
+   \        0xC   0x42 0x41          DC8 "BAD"
+   \              0x44 0x00    
+   \       0x10   0x46 0x54          DC8 "FTL"
+   \              0x4C 0x00    
+   \       0x14   0x46 0x52          DC8 "FRC"
+   \              0x43 0x00    
+   \       0x18   0x4F 0x54          DC8 "OTA"
+   \              0x41 0x00    
+   \       0x1C   0x44 0x53          DC8 "DSL"
+   \              0x4C 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const EXTERNALResetStringTable[3][4]
+   \                     `halGetExtendedResetString::EXTERNALResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x50 0x49          DC8 "PIN"
+   \              0x4E 0x00    
+   \        0x8   0x45 0x4D          DC8 "EM4"
+   \              0x34 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const POWERONResetStringTable[2][4]
+   \                     `halGetExtendedResetString::POWERONResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x48 0x56          DC8 "HV "
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const WATCHDOGResetStringTable[3][4]
+   \                     `halGetExtendedResetString::WATCHDOGResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x45 0x58          DC8 "EXP"
+   \              0x50 0x00    
+   \        0x8   0x4C 0x57          DC8 "LWM"
+   \              0x4D 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const SOFTWAREResetStringTable[4][4]
+   \                     `halGetExtendedResetString::SOFTWAREResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x52 0x42          DC8 "RBT"
+   \              0x54 0x00    
+   \        0x8   0x44 0x53          DC8 "DSL"
+   \              0x4C 0x00    
+   \        0xC   0x45 0x4D          DC8 "EM4"
+   \              0x34 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const CRASHResetStringTable[2][4]
+   \                     `halGetExtendedResetString::CRASHResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x41 0x53          DC8 "AST"
+   \              0x54 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const FLASHResetStringTable[3][4]
+   \                     `halGetExtendedResetString::FLASHResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x56 0x46          DC8 "VFY"
+   \              0x59 0x00    
+   \        0x8   0x49 0x4E          DC8 "INH"
+   \              0x48 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const FATALResetStringTable[4][4]
+   \                     `halGetExtendedResetString::FATALResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x4C 0x43          DC8 "LCK"
+   \              0x4B 0x00    
+   \        0x8   0x58 0x54          DC8 "XTL"
+   \              0x4C 0x00    
+   \        0xC   0x4F 0x42          DC8 "OBF"
+   \              0x46 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const FAULTResetStringTable[8][4]
+   \                     `halGetExtendedResetString::FAULTResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x48 0x52          DC8 "HRD"
+   \              0x44 0x00    
+   \        0x8   0x4D 0x45          DC8 "MEM"
+   \              0x4D 0x00    
+   \        0xC   0x42 0x55          DC8 "BUS"
+   \              0x53 0x00    
+   \       0x10   0x55 0x53          DC8 "USG"
+   \              0x47 0x00    
+   \       0x14   0x44 0x42          DC8 "DBG"
+   \              0x47 0x00    
+   \       0x18   0x44 0x4D          DC8 "DMA"
+   \              0x41 0x00    
+   \       0x1C   0x56 0x43          DC8 "VCT"
+   \              0x54 0x00    
+
+   \                                 In section .rodata, align 4
+   \   __absolute char const BROWNOUTResetStringTable[8][4]
+   \                     `halGetExtendedResetString::BROWNOUTResetStringTable`:
+   \        0x0   0x55 0x4E          DC8 "UNK"
+   \              0x4B 0x00    
+   \        0x4   0x55 0x50          DC8 "UP "
+   \              0x20 0x00    
+   \        0x8   0x52 0x50          DC8 "RP "
+   \              0x20 0x00    
+   \        0xC   0x41 0x50          DC8 "AP0"
+   \              0x30 0x00    
+   \       0x10   0x41 0x50          DC8 "AP1"
+   \              0x31 0x00    
+   \       0x14   0x41 0x50          DC8 "AP "
+   \              0x20 0x00    
+   \       0x18   0x44 0x50          DC8 "DP "
+   \              0x20 0x00    
+   \       0x1C   0x44 0x45          DC8 "DEC"
+   \              0x43 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `halGetExtendedResetString::extendedResetStringTablePtrs`:
+   \        0x0   0x....'....        DC32 `halGetExtendedResetString::UNKNOWNResetStringTable`
+   \        0x4   0x....'....        DC32 `halGetExtendedResetString::FIBResetStringTable`
+   \        0x8   0x....'....        DC32 `halGetExtendedResetString::BOOTLOADERResetStringTable`
+   \        0xC   0x....'....        DC32 `halGetExtendedResetString::EXTERNALResetStringTable`
+   \       0x10   0x....'....        DC32 `halGetExtendedResetString::POWERONResetStringTable`
+   \       0x14   0x....'....        DC32 `halGetExtendedResetString::WATCHDOGResetStringTable`
+   \       0x18   0x....'....        DC32 `halGetExtendedResetString::SOFTWAREResetStringTable`
+   \       0x1C   0x....'....        DC32 `halGetExtendedResetString::CRASHResetStringTable`
+   \       0x20   0x....'....        DC32 `halGetExtendedResetString::FLASHResetStringTable`
+   \       0x24   0x....'....        DC32 `halGetExtendedResetString::FATALResetStringTable`
+   \       0x28   0x....'....        DC32 `halGetExtendedResetString::FAULTResetStringTable`
+   \       0x2C   0x....'....        DC32 `halGetExtendedResetString::BROWNOUTResetStringTable`
+    401          
+    402          // Translate EM3xx reset codes to the codes previously used by the EM2xx.
+    403          // If there is no corresponding code, return the EM3xx base code with bit 7 set.
+
+   \                                 In section .text, align 4, keep-with-next
+    404          uint8_t halGetEm2xxResetInfo(void)
+    405          {
+   \                     halGetEm2xxResetInfo: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    406            uint8_t reset = halGetResetInfo();
+   \        0x2   0x....'....        BL       halGetResetInfo
+   \        0x6   0x4604             MOV      R4,R0
+    407          
+    408            // Any reset with an extended value field of zero is considered an unknown
+    409            // reset, except for FIB resets.
+    410            if ((RESET_EXTENDED_FIELD(halGetExtendedResetInfo()) == 0)
+    411                && (reset != RESET_FIB)) {
+   \        0x8   0x....'....        BL       halGetExtendedResetInfo
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0xB908             CBNZ.N   R0,??halGetEm2xxResetInfo_1
+   \       0x10   0x2C01             CMP      R4,#+1
+   \       0x12   0xD107             BNE.N    ??halGetEm2xxResetInfo_2
+    412              return EM2XX_RESET_UNKNOWN;
+    413            }
+    414          
+    415            switch (reset) {
+   \                     ??halGetEm2xxResetInfo_1: (+1)
+   \       0x14   0x2C07             CMP      R4,#+7
+   \       0x16   0xD811             BHI.N    ??halGetEm2xxResetInfo_3
+   \       0x18   0xE8DF 0xF004      TBB      [PC, R4]
+   \                     ??halGetEm2xxResetInfo_0:
+   \       0x1C   0x04 0x10          DC8      0x4,0x10,0x6,0x8
+   \              0x06 0x08    
+   \       0x20   0x08 0x0A          DC8      0x8,0xA,0xC,0xE
+   \              0x0C 0x0E    
+    416              case RESET_UNKNOWN:
+    417                return EM2XX_RESET_UNKNOWN;
+   \                     ??halGetEm2xxResetInfo_2: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xBD10             POP      {R4,PC}
+    418              case RESET_BOOTLOADER:
+    419                return EM2XX_RESET_BOOTLOADER;
+   \                     ??halGetEm2xxResetInfo_4: (+1)
+   \       0x28   0x2009             MOVS     R0,#+9
+   \       0x2A   0xBD10             POP      {R4,PC}
+    420              case RESET_EXTERNAL:    // map pin resets to poweron for EM2xx compatibility
+    421          //    return EM2XX_RESET_EXTERNAL;
+    422              case RESET_POWERON:
+    423                return EM2XX_RESET_POWERON;
+   \                     ??halGetEm2xxResetInfo_5: (+1)
+   \       0x2C   0x2002             MOVS     R0,#+2
+   \       0x2E   0xBD10             POP      {R4,PC}
+    424              case RESET_WATCHDOG:
+    425                return EM2XX_RESET_WATCHDOG;
+   \                     ??halGetEm2xxResetInfo_6: (+1)
+   \       0x30   0x2003             MOVS     R0,#+3
+   \       0x32   0xBD10             POP      {R4,PC}
+    426              case RESET_SOFTWARE:
+    427                return EM2XX_RESET_SOFTWARE;
+   \                     ??halGetEm2xxResetInfo_7: (+1)
+   \       0x34   0x200B             MOVS     R0,#+11
+   \       0x36   0xBD10             POP      {R4,PC}
+    428              case RESET_CRASH:
+    429                return EM2XX_RESET_ASSERT;
+   \                     ??halGetEm2xxResetInfo_8: (+1)
+   \       0x38   0x2006             MOVS     R0,#+6
+   \       0x3A   0xBD10             POP      {R4,PC}
+    430              default:
+    431                return (reset | 0x80);    // set B7 for all other reset codes
+   \                     ??halGetEm2xxResetInfo_3: (+1)
+   \       0x3C   0xF044 0x0080      ORR      R0,R4,#0x80
+   \       0x40   0xBD10             POP      {R4,PC}          ;; return
+    432            }
+    433          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0xE000'E400        DC32     0xe000e400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0xE000'ED18        DC32     0xe000ed18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     halAppAddressTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0xE000'ED08        DC32     0xe000ed08
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x....'....        DC32     SIZEOF(EMHEAP)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \        0x0   0x....'....        DC32     SFB(EMHEAP)
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \        0x0   0x4000'C030        DC32     0x4000c030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_7:
+   \        0x0   0x4000'4070        DC32     0x40004070
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_8:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_9:
+   \        0x0   0x....'....        DC32     RAIL_TxPowerCurvesVbat
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_10:
+   \        0x0   0x....'....        DC32     `halGetResetString::resetStringTable`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_11:
+   \        0x0   0x....'....        DC32     `halGetExtendedResetString::extendedResetStringTablePtrs`
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    434          
+    435          #if defined(CRYOTIMER_PRESENT) && (CRYOTIMER_COUNT == 1)
+    436          
+    437          #define WORD_SIZE 32
+    438          #if defined(__IAR_SYSTEMS_ICC__)
+    439          #define binLog(value) (WORD_SIZE - 1 - __CLZ(value))
+    440          #elif defined(__GNUC__)
+    441          #define binLog(value) (WORD_SIZE - 1 - __builtin_clz(value))
+    442          #else
+    443          #define HIGHMASK 0x80000000
+    444          static uint32_t binLog(uint32_t value)
+    445          {
+    446            uint32_t count = 0;
+    447            while (!(value & HIGHMASK)) {
+    448              value = value << 1;
+    449              count++;
+    450            }
+    451            return WORD_SIZE - 1 - count;
+    452          }
+    453          #endif
+    454          
+    455          static uint32_t calculateTimerPeriod(uint32_t duration)
+    456          {
+    457            // Add 1 if not a power-of-2 or 0 to round up.
+    458            // https://graphics.stanford.edu/~seander/bithacks.html#DetermineIfPowerOf2
+    459            if (duration == 0) {
+    460              return 0;
+    461            }
+    462            uint32_t round = ((duration & (duration - 1U)) == 0U) ? 0U : 1U;
+    463            return round + binLog(duration);
+    464          }
+    465          
+    466          void setEm4WakeupTimer(uint32_t duration)
+    467          {
+    468            CRYOTIMER_Enable(false);
+    469            CRYOTIMER_Init_TypeDef cryotimerInit = CRYOTIMER_INIT_DEFAULT;
+    470            cryotimerInit.em4Wakeup = true;
+    471            cryotimerInit.osc = cryotimerOscULFRCO;
+    472            cryotimerInit.period = (CRYOTIMER_Period_TypeDef) calculateTimerPeriod(duration);
+    473          
+    474            CMU_ClockEnable(cmuClock_CORELE, true);
+    475            CMU_ClockEnable(cmuClock_CRYOTIMER, true);
+    476          
+    477            CRYOTIMER_IntClear(CRYOTIMER_IFC_PERIOD);
+    478            CRYOTIMER_Init(&cryotimerInit);
+    479            CRYOTIMER_Enable(true);
+    480          }
+    481          
+    482          void halCommonWriteRtccRam(uint8_t index, void* data, uint8_t len)
+    483          {
+    484            // for now we always assume it is an integer we write
+    485            uint32_t *ram = (uint32_t *) data;
+    486            RTCC->RET[index].REG = *ram;
+    487          }
+    488          
+    489          void halCommonReadRtccRam(uint8_t index, void* data, uint8_t len)
+    490          {
+    491            // for now we always assume it is an integer we read
+    492            uint32_t *ram = (uint32_t *) data;
+    493            *ram = RTCC->RET[index].REG;
+    494          }
+    495          
+    496          /*
+    497             1. write the outgoing nwk counter , incoming parent framecounter into rtcc ram
+    498             2. set wakeup timer
+    499           */
+    500          void halBeforeEM4(uint32_t duration, RTCCRamData input)
+    501          {
+    502            //read the outgoing NWK counter and write it into rtcc ram
+    503            //the first RTCC register is used for outgoing nwk counter
+    504            // and the second one could be used for incoming nwk counter
+    505            halCommonWriteRtccRam(0, &input.outgoingNwkFrameCounter, 4);
+    506            halCommonWriteRtccRam(1, &input.incomingParentNwkFrameCounter, 4);
+    507            halCommonWriteRtccRam(2, &input.outgoingLinkKeyFrameCounter, 4);
+    508            halCommonWriteRtccRam(3, &input.incomingLinkKeyFrameCounter, 4);
+    509            //set the wakeup timer
+    510            setEm4WakeupTimer(duration);
+    511          }
+    512          
+    513          /*
+    514             1. read the outgoing nwk counter, incoming parent framecounter from rtcc ram
+    515           */
+    516          RTCCRamData halAfterEM4(void)
+    517          {
+    518            RTCCRamData output;
+    519            output.outgoingNwkFrameCounter = 0;
+    520            output.incomingParentNwkFrameCounter = 0;
+    521            uint8_t index = 0;
+    522            halCommonReadRtccRam(index, &output.outgoingNwkFrameCounter, 4);
+    523            index++;
+    524            halCommonReadRtccRam(index, &output.incomingParentNwkFrameCounter, 4);
+    525            index++;
+    526            halCommonReadRtccRam(index, &output.outgoingLinkKeyFrameCounter, 4);
+    527            index++;
+    528            halCommonReadRtccRam(index, &output.incomingLinkKeyFrameCounter, 4);
+    529            return output;
+    530          }
+    531          #endif //defined(CRYOTIMER_PRESENT) && (CRYOTIMER_COUNT == 1)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   NVIC_EncodePriority
+       0   RAILCb_CalcBitRate
+       0   RAILCb_CalcSymbolRate
+       0   RAILCb_ConfigFrameTypeLength
+       0   __NVIC_SetPriority
+       8   halGetEm2xxResetInfo
+         8   -> halGetExtendedResetInfo
+         8   -> halGetResetInfo
+       8   halGetExtendedResetString
+         8   -> halGetExtendedResetInfo
+       8   halGetResetString
+         8   -> halGetResetInfo
+      16   halInit
+        16   -> CORE_AtomicDisableIrq
+        16   -> EMU_EM4Init
+        16   -> NVIC_EncodePriority
+        16   -> RAIL_InitTxPowerCurvesAlt
+        16   -> RTCDRV_Init
+        16   -> SYSTEM_ChipRevisionGet
+        16   -> TEMPDRV_Init
+        16   -> __NVIC_SetPriority
+        16   -> halCommonMemSet
+        16   -> halConfigInit
+        16   -> halInternalClassifyReset
+        16   -> halInternalEm4Wakeup
+        16   -> halInternalStartSystemTimer
+       0   halPowerDown
+         0   -> halConfigPowerDownGpio
+       0   halPowerUp
+         0   -> halConfigPowerUpGpio
+       0   halReboot
+         0   -> halInternalSysReset
+       0   halSleepCallback
+       0   halStackProcessBootCount
+         0   -> halInternalIncrementCounterToken
+       0   halStackRadio2PowerDownBoard
+       0   halStackRadio2PowerUpBoard
+       0   halStackRadioPowerDownBoard
+         0   -> halStackRadioHoldOffPowerDown
+       0   halStackRadioPowerMainControl
+         0   -> halRadioPowerDownHandler
+         0   -> halRadioPowerUpHandler
+       8   halStackRadioPowerUpBoard
+         8   -> halPtaStackEvent
+         0   -> halStackRadioHoldOffPowerUp
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_10
+       4  ??DataTable3_11
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable3_9
+       8  ?Subroutine0
+       8  ?Subroutine1
+       8  ?Subroutine2
+       8  ?Subroutine3
+       8  ?_0
+      32  BOOTLOADERResetStringTable
+      32  BROWNOUTResetStringTable
+       8  CRASHResetStringTable
+      12  EXTERNALResetStringTable
+      16  FATALResetStringTable
+      32  FAULTResetStringTable
+      88  FIBResetStringTable
+      12  FLASHResetStringTable
+      50  NVIC_EncodePriority
+       8  POWERONResetStringTable
+       4  RAILCb_CalcBitRate
+       4  RAILCb_CalcSymbolRate
+       2  RAILCb_ConfigFrameTypeLength
+      16  SOFTWAREResetStringTable
+       4  UNKNOWNResetStringTable
+      12  WATCHDOGResetStringTable
+      30  __NVIC_SetPriority
+      48  extendedResetStringTablePtrs
+      66  halGetEm2xxResetInfo
+      26  halGetExtendedResetString
+      20  halGetResetString
+    1122  halInit
+       4  halInternalPa2p4GHzInit
+       4  halInternalPaSubGHzInit
+       4  halPowerDown
+       4  halPowerUp
+       8  halReboot
+       2  halSleepCallback
+       6  halStackProcessBootCount
+       2  halStackRadio2PowerDownBoard
+       2  halStackRadio2PowerUpBoard
+       4  halStackRadioPowerDownBoard
+      12  halStackRadioPowerMainControl
+      18  halStackRadioPowerUpBoard
+       8  paInit2p4
+      48  resetStringTable
+
+ 
+     4 bytes in section .bss
+     4 bytes in section .data
+   384 bytes in section .rodata
+ 1 466 bytes in section .text
+ 
+ 1 464 bytes of CODE  memory (+ 2 bytes shared)
+   384 bytes of CONST memory
+     8 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

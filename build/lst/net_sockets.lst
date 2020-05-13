@@ -1,0 +1,773 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:22
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\net_sockets.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWCC4B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\net_sockets.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"net_sockets.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\net_sockets.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\net_sockets.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\net_sockets.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /*
+     14           *  TCP/IP or UDP/IP networking functions
+     15           *
+     16           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+     17           *  SPDX-License-Identifier: Apache-2.0
+     18           *
+     19           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     20           *  not use this file except in compliance with the License.
+     21           *  You may obtain a copy of the License at
+     22           *
+     23           *  http://www.apache.org/licenses/LICENSE-2.0
+     24           *
+     25           *  Unless required by applicable law or agreed to in writing, software
+     26           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     27           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     28           *  See the License for the specific language governing permissions and
+     29           *  limitations under the License.
+     30           *
+     31           *  This file is part of mbed TLS (https://tls.mbed.org)
+     32           */
+     33          
+     34          #if !defined(MBEDTLS_CONFIG_FILE)
+     35          #include "mbedtls/config.h"
+     36          #else
+     37          #include MBEDTLS_CONFIG_FILE
+     38          #endif
+     39          
+     40          #if defined(MBEDTLS_NET_C)
+     41          
+     42          #if !defined(unix) && !defined(__unix__) && !defined(__unix) && \
+     43              !defined(__APPLE__) && !defined(_WIN32)
+     44          #error "This module only works on Unix and Windows, see MBEDTLS_NET_C in config.h"
+     45          #endif
+     46          
+     47          #if defined(MBEDTLS_PLATFORM_C)
+     48          #include "mbedtls/platform.h"
+     49          #else
+     50          #include <stdlib.h>
+     51          #endif
+     52          
+     53          #include "mbedtls/net_sockets.h"
+     54          
+     55          #include <string.h>
+     56          
+     57          #if (defined(_WIN32) || defined(_WIN32_WCE)) && !defined(EFIX64) && \
+     58              !defined(EFI32)
+     59          
+     60          #if !defined(_WIN32_WINNT) || (_WIN32_WINNT < 0x0501)
+     61          #undef _WIN32_WINNT
+     62          /* Enables getaddrinfo() & Co */
+     63          #define _WIN32_WINNT 0x0501
+     64          #endif
+     65          
+     66          #include <ws2tcpip.h>
+     67          
+     68          #include <winsock2.h>
+     69          #include <windows.h>
+     70          
+     71          #if defined(_MSC_VER)
+     72          #if defined(_WIN32_WCE)
+     73          #pragma comment( lib, "ws2.lib" )
+     74          #else
+     75          #pragma comment( lib, "ws2_32.lib" )
+     76          #endif
+     77          #endif /* _MSC_VER */
+     78          
+     79          #define read(fd,buf,len)        recv( fd, (char*)( buf ), (int)( len ), 0 )
+     80          #define write(fd,buf,len)       send( fd, (char*)( buf ), (int)( len ), 0 )
+     81          #define close(fd)               closesocket(fd)
+     82          
+     83          static int wsa_init_done = 0;
+     84          
+     85          #else /* ( _WIN32 || _WIN32_WCE ) && !EFIX64 && !EFI32 */
+     86          
+     87          #include <sys/types.h>
+     88          #include <sys/socket.h>
+     89          #include <netinet/in.h>
+     90          #include <arpa/inet.h>
+     91          #include <sys/time.h>
+     92          #include <unistd.h>
+     93          #include <signal.h>
+     94          #include <fcntl.h>
+     95          #include <netdb.h>
+     96          #include <errno.h>
+     97          
+     98          #endif /* ( _WIN32 || _WIN32_WCE ) && !EFIX64 && !EFI32 */
+     99          
+    100          /* Some MS functions want int and MSVC warns if we pass size_t,
+    101           * but the standard functions use socklen_t, so cast only for MSVC */
+    102          #if defined(_MSC_VER)
+    103          #define MSVC_INT_CAST   (int)
+    104          #else
+    105          #define MSVC_INT_CAST
+    106          #endif
+    107          
+    108          #include <stdio.h>
+    109          
+    110          #include <time.h>
+    111          
+    112          #include <stdint.h>
+    113          
+    114          /*
+    115           * Prepare for using the sockets interface
+    116           */
+    117          static int net_prepare( void )
+    118          {
+    119          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    120              !defined(EFI32)
+    121              WSADATA wsaData;
+    122          
+    123              if( wsa_init_done == 0 )
+    124              {
+    125                  if( WSAStartup( MAKEWORD(2,0), &wsaData ) != 0 )
+    126                      return( MBEDTLS_ERR_NET_SOCKET_FAILED );
+    127          
+    128                  wsa_init_done = 1;
+    129              }
+    130          #else
+    131          #if !defined(EFIX64) && !defined(EFI32)
+    132              signal( SIGPIPE, SIG_IGN );
+    133          #endif
+    134          #endif
+    135              return( 0 );
+    136          }
+    137          
+    138          /*
+    139           * Initialize a context
+    140           */
+    141          void mbedtls_net_init( mbedtls_net_context *ctx )
+    142          {
+    143              ctx->fd = -1;
+    144          }
+    145          
+    146          /*
+    147           * Initiate a TCP connection with host:port and the given protocol
+    148           */
+    149          int mbedtls_net_connect( mbedtls_net_context *ctx, const char *host,
+    150                                   const char *port, int proto )
+    151          {
+    152              int ret;
+    153              struct addrinfo hints, *addr_list, *cur;
+    154          
+    155              if( ( ret = net_prepare() ) != 0 )
+    156                  return( ret );
+    157          
+    158              /* Do name resolution with both IPv6 and IPv4 */
+    159              memset( &hints, 0, sizeof( hints ) );
+    160              hints.ai_family = AF_UNSPEC;
+    161              hints.ai_socktype = proto == MBEDTLS_NET_PROTO_UDP ? SOCK_DGRAM : SOCK_STREAM;
+    162              hints.ai_protocol = proto == MBEDTLS_NET_PROTO_UDP ? IPPROTO_UDP : IPPROTO_TCP;
+    163          
+    164              if( getaddrinfo( host, port, &hints, &addr_list ) != 0 )
+    165                  return( MBEDTLS_ERR_NET_UNKNOWN_HOST );
+    166          
+    167              /* Try the sockaddrs until a connection succeeds */
+    168              ret = MBEDTLS_ERR_NET_UNKNOWN_HOST;
+    169              for( cur = addr_list; cur != NULL; cur = cur->ai_next )
+    170              {
+    171                  ctx->fd = (int) socket( cur->ai_family, cur->ai_socktype,
+    172                                      cur->ai_protocol );
+    173                  if( ctx->fd < 0 )
+    174                  {
+    175                      ret = MBEDTLS_ERR_NET_SOCKET_FAILED;
+    176                      continue;
+    177                  }
+    178          
+    179                  if( connect( ctx->fd, cur->ai_addr, MSVC_INT_CAST cur->ai_addrlen ) == 0 )
+    180                  {
+    181                      ret = 0;
+    182                      break;
+    183                  }
+    184          
+    185                  close( ctx->fd );
+    186                  ret = MBEDTLS_ERR_NET_CONNECT_FAILED;
+    187              }
+    188          
+    189              freeaddrinfo( addr_list );
+    190          
+    191              return( ret );
+    192          }
+    193          
+    194          /*
+    195           * Create a listening socket on bind_ip:port
+    196           */
+    197          int mbedtls_net_bind( mbedtls_net_context *ctx, const char *bind_ip, const char *port, int proto )
+    198          {
+    199              int n, ret;
+    200              struct addrinfo hints, *addr_list, *cur;
+    201          
+    202              if( ( ret = net_prepare() ) != 0 )
+    203                  return( ret );
+    204          
+    205              /* Bind to IPv6 and/or IPv4, but only in the desired protocol */
+    206              memset( &hints, 0, sizeof( hints ) );
+    207              hints.ai_family = AF_UNSPEC;
+    208              hints.ai_socktype = proto == MBEDTLS_NET_PROTO_UDP ? SOCK_DGRAM : SOCK_STREAM;
+    209              hints.ai_protocol = proto == MBEDTLS_NET_PROTO_UDP ? IPPROTO_UDP : IPPROTO_TCP;
+    210              if( bind_ip == NULL )
+    211                  hints.ai_flags = AI_PASSIVE;
+    212          
+    213              if( getaddrinfo( bind_ip, port, &hints, &addr_list ) != 0 )
+    214                  return( MBEDTLS_ERR_NET_UNKNOWN_HOST );
+    215          
+    216              /* Try the sockaddrs until a binding succeeds */
+    217              ret = MBEDTLS_ERR_NET_UNKNOWN_HOST;
+    218              for( cur = addr_list; cur != NULL; cur = cur->ai_next )
+    219              {
+    220                  ctx->fd = (int) socket( cur->ai_family, cur->ai_socktype,
+    221                                      cur->ai_protocol );
+    222                  if( ctx->fd < 0 )
+    223                  {
+    224                      ret = MBEDTLS_ERR_NET_SOCKET_FAILED;
+    225                      continue;
+    226                  }
+    227          
+    228                  n = 1;
+    229                  if( setsockopt( ctx->fd, SOL_SOCKET, SO_REUSEADDR,
+    230                                  (const char *) &n, sizeof( n ) ) != 0 )
+    231                  {
+    232                      close( ctx->fd );
+    233                      ret = MBEDTLS_ERR_NET_SOCKET_FAILED;
+    234                      continue;
+    235                  }
+    236          
+    237                  if( bind( ctx->fd, cur->ai_addr, MSVC_INT_CAST cur->ai_addrlen ) != 0 )
+    238                  {
+    239                      close( ctx->fd );
+    240                      ret = MBEDTLS_ERR_NET_BIND_FAILED;
+    241                      continue;
+    242                  }
+    243          
+    244                  /* Listen only makes sense for TCP */
+    245                  if( proto == MBEDTLS_NET_PROTO_TCP )
+    246                  {
+    247                      if( listen( ctx->fd, MBEDTLS_NET_LISTEN_BACKLOG ) != 0 )
+    248                      {
+    249                          close( ctx->fd );
+    250                          ret = MBEDTLS_ERR_NET_LISTEN_FAILED;
+    251                          continue;
+    252                      }
+    253                  }
+    254          
+    255                  /* Bind was successful */
+    256                  ret = 0;
+    257                  break;
+    258              }
+    259          
+    260              freeaddrinfo( addr_list );
+    261          
+    262              return( ret );
+    263          
+    264          }
+    265          
+    266          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    267              !defined(EFI32)
+    268          /*
+    269           * Check if the requested operation would be blocking on a non-blocking socket
+    270           * and thus 'failed' with a negative return value.
+    271           */
+    272          static int net_would_block( const mbedtls_net_context *ctx )
+    273          {
+    274              ((void) ctx);
+    275              return( WSAGetLastError() == WSAEWOULDBLOCK );
+    276          }
+    277          #else
+    278          /*
+    279           * Check if the requested operation would be blocking on a non-blocking socket
+    280           * and thus 'failed' with a negative return value.
+    281           *
+    282           * Note: on a blocking socket this function always returns 0!
+    283           */
+    284          static int net_would_block( const mbedtls_net_context *ctx )
+    285          {
+    286              int err = errno;
+    287          
+    288              /*
+    289               * Never return 'WOULD BLOCK' on a non-blocking socket
+    290               */
+    291              if( ( fcntl( ctx->fd, F_GETFL ) & O_NONBLOCK ) != O_NONBLOCK )
+    292              {
+    293                  errno = err;
+    294                  return( 0 );
+    295              }
+    296          
+    297              switch( errno = err )
+    298              {
+    299          #if defined EAGAIN
+    300                  case EAGAIN:
+    301          #endif
+    302          #if defined EWOULDBLOCK && EWOULDBLOCK != EAGAIN
+    303                  case EWOULDBLOCK:
+    304          #endif
+    305                      return( 1 );
+    306              }
+    307              return( 0 );
+    308          }
+    309          #endif /* ( _WIN32 || _WIN32_WCE ) && !EFIX64 && !EFI32 */
+    310          
+    311          /*
+    312           * Accept a connection from a remote client
+    313           */
+    314          int mbedtls_net_accept( mbedtls_net_context *bind_ctx,
+    315                                  mbedtls_net_context *client_ctx,
+    316                                  void *client_ip, size_t buf_size, size_t *ip_len )
+    317          {
+    318              int ret;
+    319              int type;
+    320          
+    321              struct sockaddr_storage client_addr;
+    322          
+    323          #if defined(__socklen_t_defined) || defined(_SOCKLEN_T) ||  \
+    324              defined(_SOCKLEN_T_DECLARED) || defined(__DEFINED_socklen_t)
+    325              socklen_t n = (socklen_t) sizeof( client_addr );
+    326              socklen_t type_len = (socklen_t) sizeof( type );
+    327          #else
+    328              int n = (int) sizeof( client_addr );
+    329              int type_len = (int) sizeof( type );
+    330          #endif
+    331          
+    332              /* Is this a TCP or UDP socket? */
+    333              if( getsockopt( bind_ctx->fd, SOL_SOCKET, SO_TYPE,
+    334                              (void *) &type, &type_len ) != 0 ||
+    335                  ( type != SOCK_STREAM && type != SOCK_DGRAM ) )
+    336              {
+    337                  return( MBEDTLS_ERR_NET_ACCEPT_FAILED );
+    338              }
+    339          
+    340              if( type == SOCK_STREAM )
+    341              {
+    342                  /* TCP: actual accept() */
+    343                  ret = client_ctx->fd = (int) accept( bind_ctx->fd,
+    344                                                       (struct sockaddr *) &client_addr, &n );
+    345              }
+    346              else
+    347              {
+    348                  /* UDP: wait for a message, but keep it in the queue */
+    349                  char buf[1] = { 0 };
+    350          
+    351                  ret = (int) recvfrom( bind_ctx->fd, buf, sizeof( buf ), MSG_PEEK,
+    352                                  (struct sockaddr *) &client_addr, &n );
+    353          
+    354          #if defined(_WIN32)
+    355                  if( ret == SOCKET_ERROR &&
+    356                      WSAGetLastError() == WSAEMSGSIZE )
+    357                  {
+    358                      /* We know buf is too small, thanks, just peeking here */
+    359                      ret = 0;
+    360                  }
+    361          #endif
+    362              }
+    363          
+    364              if( ret < 0 )
+    365              {
+    366                  if( net_would_block( bind_ctx ) != 0 )
+    367                      return( MBEDTLS_ERR_SSL_WANT_READ );
+    368          
+    369                  return( MBEDTLS_ERR_NET_ACCEPT_FAILED );
+    370              }
+    371          
+    372              /* UDP: hijack the listening socket to communicate with the client,
+    373               * then bind a new socket to accept new connections */
+    374              if( type != SOCK_STREAM )
+    375              {
+    376                  struct sockaddr_storage local_addr;
+    377                  int one = 1;
+    378          
+    379                  if( connect( bind_ctx->fd, (struct sockaddr *) &client_addr, n ) != 0 )
+    380                      return( MBEDTLS_ERR_NET_ACCEPT_FAILED );
+    381          
+    382                  client_ctx->fd = bind_ctx->fd;
+    383                  bind_ctx->fd   = -1; /* In case we exit early */
+    384          
+    385                  n = sizeof( struct sockaddr_storage );
+    386                  if( getsockname( client_ctx->fd,
+    387                                   (struct sockaddr *) &local_addr, &n ) != 0 ||
+    388                      ( bind_ctx->fd = (int) socket( local_addr.ss_family,
+    389                                                     SOCK_DGRAM, IPPROTO_UDP ) ) < 0 ||
+    390                      setsockopt( bind_ctx->fd, SOL_SOCKET, SO_REUSEADDR,
+    391                                  (const char *) &one, sizeof( one ) ) != 0 )
+    392                  {
+    393                      return( MBEDTLS_ERR_NET_SOCKET_FAILED );
+    394                  }
+    395          
+    396                  if( bind( bind_ctx->fd, (struct sockaddr *) &local_addr, n ) != 0 )
+    397                  {
+    398                      return( MBEDTLS_ERR_NET_BIND_FAILED );
+    399                  }
+    400              }
+    401          
+    402              if( client_ip != NULL )
+    403              {
+    404                  if( client_addr.ss_family == AF_INET )
+    405                  {
+    406                      struct sockaddr_in *addr4 = (struct sockaddr_in *) &client_addr;
+    407                      *ip_len = sizeof( addr4->sin_addr.s_addr );
+    408          
+    409                      if( buf_size < *ip_len )
+    410                          return( MBEDTLS_ERR_NET_BUFFER_TOO_SMALL );
+    411          
+    412                      memcpy( client_ip, &addr4->sin_addr.s_addr, *ip_len );
+    413                  }
+    414                  else
+    415                  {
+    416                      struct sockaddr_in6 *addr6 = (struct sockaddr_in6 *) &client_addr;
+    417                      *ip_len = sizeof( addr6->sin6_addr.s6_addr );
+    418          
+    419                      if( buf_size < *ip_len )
+    420                          return( MBEDTLS_ERR_NET_BUFFER_TOO_SMALL );
+    421          
+    422                      memcpy( client_ip, &addr6->sin6_addr.s6_addr, *ip_len);
+    423                  }
+    424              }
+    425          
+    426              return( 0 );
+    427          }
+    428          
+    429          /*
+    430           * Set the socket blocking or non-blocking
+    431           */
+    432          int mbedtls_net_set_block( mbedtls_net_context *ctx )
+    433          {
+    434          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    435              !defined(EFI32)
+    436              u_long n = 0;
+    437              return( ioctlsocket( ctx->fd, FIONBIO, &n ) );
+    438          #else
+    439              return( fcntl( ctx->fd, F_SETFL, fcntl( ctx->fd, F_GETFL ) & ~O_NONBLOCK ) );
+    440          #endif
+    441          }
+    442          
+    443          int mbedtls_net_set_nonblock( mbedtls_net_context *ctx )
+    444          {
+    445          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    446              !defined(EFI32)
+    447              u_long n = 1;
+    448              return( ioctlsocket( ctx->fd, FIONBIO, &n ) );
+    449          #else
+    450              return( fcntl( ctx->fd, F_SETFL, fcntl( ctx->fd, F_GETFL ) | O_NONBLOCK ) );
+    451          #endif
+    452          }
+    453          
+    454          /*
+    455           * Portable usleep helper
+    456           */
+    457          void mbedtls_net_usleep( unsigned long usec )
+    458          {
+    459          #if defined(_WIN32)
+    460              Sleep( ( usec + 999 ) / 1000 );
+    461          #else
+    462              struct timeval tv;
+    463              tv.tv_sec  = usec / 1000000;
+    464          #if defined(__unix__) || defined(__unix) || \
+    465              ( defined(__APPLE__) && defined(__MACH__) )
+    466              tv.tv_usec = (suseconds_t) usec % 1000000;
+    467          #else
+    468              tv.tv_usec = usec % 1000000;
+    469          #endif
+    470              select( 0, NULL, NULL, NULL, &tv );
+    471          #endif
+    472          }
+    473          
+    474          /*
+    475           * Read at most 'len' characters
+    476           */
+    477          int mbedtls_net_recv( void *ctx, unsigned char *buf, size_t len )
+    478          {
+    479              int ret;
+    480              int fd = ((mbedtls_net_context *) ctx)->fd;
+    481          
+    482              if( fd < 0 )
+    483                  return( MBEDTLS_ERR_NET_INVALID_CONTEXT );
+    484          
+    485              ret = (int) read( fd, buf, len );
+    486          
+    487              if( ret < 0 )
+    488              {
+    489                  if( net_would_block( ctx ) != 0 )
+    490                      return( MBEDTLS_ERR_SSL_WANT_READ );
+    491          
+    492          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    493              !defined(EFI32)
+    494                  if( WSAGetLastError() == WSAECONNRESET )
+    495                      return( MBEDTLS_ERR_NET_CONN_RESET );
+    496          #else
+    497                  if( errno == EPIPE || errno == ECONNRESET )
+    498                      return( MBEDTLS_ERR_NET_CONN_RESET );
+    499          
+    500                  if( errno == EINTR )
+    501                      return( MBEDTLS_ERR_SSL_WANT_READ );
+    502          #endif
+    503          
+    504                  return( MBEDTLS_ERR_NET_RECV_FAILED );
+    505              }
+    506          
+    507              return( ret );
+    508          }
+    509          
+    510          /*
+    511           * Read at most 'len' characters, blocking for at most 'timeout' ms
+    512           */
+    513          int mbedtls_net_recv_timeout( void *ctx, unsigned char *buf, size_t len,
+    514                                uint32_t timeout )
+    515          {
+    516              int ret;
+    517              struct timeval tv;
+    518              fd_set read_fds;
+    519              int fd = ((mbedtls_net_context *) ctx)->fd;
+    520          
+    521              if( fd < 0 )
+    522                  return( MBEDTLS_ERR_NET_INVALID_CONTEXT );
+    523          
+    524              FD_ZERO( &read_fds );
+    525              FD_SET( fd, &read_fds );
+    526          
+    527              tv.tv_sec  = timeout / 1000;
+    528              tv.tv_usec = ( timeout % 1000 ) * 1000;
+    529          
+    530              ret = select( fd + 1, &read_fds, NULL, NULL, timeout == 0 ? NULL : &tv );
+    531          
+    532              /* Zero fds ready means we timed out */
+    533              if( ret == 0 )
+    534                  return( MBEDTLS_ERR_SSL_TIMEOUT );
+    535          
+    536              if( ret < 0 )
+    537              {
+    538          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    539              !defined(EFI32)
+    540                  if( WSAGetLastError() == WSAEINTR )
+    541                      return( MBEDTLS_ERR_SSL_WANT_READ );
+    542          #else
+    543                  if( errno == EINTR )
+    544                      return( MBEDTLS_ERR_SSL_WANT_READ );
+    545          #endif
+    546          
+    547                  return( MBEDTLS_ERR_NET_RECV_FAILED );
+    548              }
+    549          
+    550              /* This call will not block */
+    551              return( mbedtls_net_recv( ctx, buf, len ) );
+    552          }
+    553          
+    554          /*
+    555           * Write at most 'len' characters
+    556           */
+    557          int mbedtls_net_send( void *ctx, const unsigned char *buf, size_t len )
+    558          {
+    559              int ret;
+    560              int fd = ((mbedtls_net_context *) ctx)->fd;
+    561          
+    562              if( fd < 0 )
+    563                  return( MBEDTLS_ERR_NET_INVALID_CONTEXT );
+    564          
+    565              ret = (int) write( fd, buf, len );
+    566          
+    567              if( ret < 0 )
+    568              {
+    569                  if( net_would_block( ctx ) != 0 )
+    570                      return( MBEDTLS_ERR_SSL_WANT_WRITE );
+    571          
+    572          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    573              !defined(EFI32)
+    574                  if( WSAGetLastError() == WSAECONNRESET )
+    575                      return( MBEDTLS_ERR_NET_CONN_RESET );
+    576          #else
+    577                  if( errno == EPIPE || errno == ECONNRESET )
+    578                      return( MBEDTLS_ERR_NET_CONN_RESET );
+    579          
+    580                  if( errno == EINTR )
+    581                      return( MBEDTLS_ERR_SSL_WANT_WRITE );
+    582          #endif
+    583          
+    584                  return( MBEDTLS_ERR_NET_SEND_FAILED );
+    585              }
+    586          
+    587              return( ret );
+    588          }
+    589          
+    590          /*
+    591           * Gracefully close the connection
+    592           */
+    593          void mbedtls_net_free( mbedtls_net_context *ctx )
+    594          {
+    595              if( ctx->fd == -1 )
+    596                  return;
+    597          
+    598              shutdown( ctx->fd, 2 );
+    599              close( ctx->fd );
+    600          
+    601              ctx->fd = -1;
+    602          }
+    603          
+    604          #endif /* MBEDTLS_NET_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

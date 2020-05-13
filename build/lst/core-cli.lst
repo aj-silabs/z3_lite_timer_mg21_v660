@@ -1,0 +1,2426 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:32
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\core-cli.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW36B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\core-cli.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"core-cli.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\core-cli.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\core-cli.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\core-cli.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Core CLI commands used by all applications regardless of profile.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          // Common include files:
+     19          #include "app/framework/util/common.h"
+     20          #include "app/framework/util/af-main.h"
+     21          
+     22          #include "app/util/serial/command-interpreter2.h"
+     23          #include "stack/include/library.h"
+     24          #include "app/framework/security/af-security.h"
+     25          
+     26          #if !defined(EZSP_HOST)
+     27            #include "stack/include/cbke-crypto-engine.h"  // emberGetCertificate()
+     28            #include "stack/include/child.h"
+     29          #endif
+     30          
+     31          #include "app/framework/cli/core-cli.h"
+     32          #include "app/framework/cli/custom-cli.h"
+     33          #include "app/framework/cli/network-cli.h"
+     34          #include "app/framework/cli/plugin-cli.h"
+     35          #include "app/framework/cli/security-cli.h"
+     36          #include "app/framework/cli/zdo-cli.h"
+     37          #include "app/framework/cli/option-cli.h"
+     38          #include "app/framework/plugin/test-harness/test-harness-cli.h"
+     39          #if defined(EMBER_AF_PLUGIN_COUNTERS)
+     40            #include "app/framework/plugin/counters/counters-cli.h"
+     41            #include "app/framework/plugin/counters/counters.h"
+     42          #endif
+     43          
+     44          #include "app/framework/util/af-event.h"
+     45          
+     46          #include "app/util/common/library.h"
+     47          
+     48          //------------------------------------------------------------------------------
+     49          
+
+   \                                 In section .text, align 2, keep-with-next
+     50          void emberCommandActionHandler(const CommandAction action)
+     51          {
+   \                     emberCommandActionHandler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     52            emberAfPushNetworkIndex(emAfCliNetworkIndex);
+   \        0x4   0x....'....        LDR.W    R1,??DataTable8
+   \        0x8   0x7808             LDRB     R0,[R1, #+0]
+   \        0xA   0x....'....        BL       emberAfPushNetworkIndex
+     53            (*action)();
+   \        0xE   0x47A0             BLX      R4
+     54            emberAfPopNetworkIndex();
+   \       0x10   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x14   0x....'....        B.W      emberAfPopNetworkIndex
+     55          
+     56          #if defined(EMBER_QA)
+     57            emberSerialPrintfLine(APP_SERIAL, "CLI Finished");
+     58          #endif
+     59          }
+     60          
+     61          extern EmberCommandEntry cbkeCommands[];
+     62          
+     63          #if !defined(ZA_CLI_FULL) && !defined(EMBER_AF_GENERATE_CLI)
+     64          // Define this to satisfy external references.
+     65          EmberCommandEntry emberCommandTable[] = { { NULL } };
+     66          #endif
+     67          
+     68          #if defined(ZA_CLI_FULL)
+     69          
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void printMfgString(void)
+     71          {
+   \                     printMfgString: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+     72            uint8_t mfgString[MFG_STRING_MAX_LENGTH + 1];
+     73            emberAfFormatMfgString(mfgString);
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x....'....        BL       emberAfFormatMfgString
+     74          
+     75            // Note: We use '%s' here because this is a RAM string. Normally,
+     76            // most strings are literals or constants in flash and use '%p'.
+     77            emberAfAppPrintln("MFG String: %s", mfgString);
+   \        0xA   0x466A             MOV      R2,SP
+   \        0xC   0x....'....        LDR.W    R1,??DataTable8_1
+   \       0x10   0x2002             MOVS     R0,#+2
+   \       0x12   0x....'....        BL       emberAfPrintln
+     78          }
+   \       0x16   0xB005             ADD      SP,SP,#+20
+   \       0x18   0xBD00             POP      {PC}             ;; return
+     79          
+     80          static void printPacketBuffers(void)
+     81          {
+     82            emberAfAppPrintln("Buffs: %d / %d",
+     83                              emAfGetPacketBufferFreeCount(),
+     84                              emAfGetPacketBufferTotalCount());
+     85          }
+     86          
+
+   \                                 In section .text, align 2, keep-with-next
+     87          bool printSmartEnergySecurityInfo(void)
+     88          {
+     89          #ifdef EMBER_AF_HAS_SECURITY_PROFILE_SE
+     90            bool securityGood = true;
+     91            emberAfAppPrint("SE Security Info [");
+     92            {
+     93              // For SE security, print the state of ECC, CBKE, and the programmed Cert.
+     94              EmberCertificateData cert;
+     95              EmberStatus status = emberGetCertificate(&cert);
+     96          
+     97              // Check the status of the ECC library.
+     98              if ((emberGetLibraryStatus(EMBER_ECC_LIBRARY_ID)
+     99                   & EMBER_LIBRARY_PRESENT_MASK) != 0U) {
+    100                emberAfAppPrint("Real163k1ECC ");
+    101              } else {
+    102                emberAfAppPrint("No163k1ECC ");
+    103                securityGood = false;
+    104              }
+    105          
+    106              // Status of EMBER_LIBRARY_NOT_PRESENT means the CBKE is not present
+    107              // in the image and that no information is known about the certificate.
+    108              if (status == EMBER_LIBRARY_NOT_PRESENT) {
+    109                emberAfAppPrint("No163k1Cbke UnknownCert ");
+    110                securityGood = false;
+    111              } else {
+    112                emberAfAppPrint("Real163k1Cbke ");
+    113          
+    114                // Status of EMBER_SUCCESS means the Cert is good.
+    115                if (status == EMBER_SUCCESS) {
+    116                  emberAfAppPrint("GoodCert");
+    117                }
+    118                // Status of EMBER_ERR_FATAL means the Cert failed.
+    119                else if (status == EMBER_ERR_FATAL) {
+    120                  emberAfAppPrint("BadCert");
+    121                  securityGood = false;
+    122                } else {
+    123                  // MISRA requires ..else if.. to have a terminating else.
+    124                }
+    125              }
+    126              emberAfAppPrintln("]");
+    127            }
+    128            emberAfAppFlush();
+    129            return securityGood;
+    130          #else
+    131            return false;
+   \                     printSmartEnergySecurityInfo: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+    132          #endif
+    133          }
+    134          
+
+   \                                 In section .text, align 2, keep-with-next
+    135          bool printSmartEnergySecurityInfo283k1(void)
+    136          {
+    137          #ifdef EMBER_AF_HAS_SECURITY_PROFILE_SE
+    138            bool securityGood = true;
+    139            emberAfAppPrint("SE Security 283k1 Info [");
+    140            {
+    141              // For SE security, print the state of ECC, CBKE, and the programmed Cert.
+    142              EmberCertificate283k1Data cert;
+    143              // This is a temporary step until the EZSP frames are added
+    144              // to the EZSP code.
+    145              EmberStatus status = EMBER_LIBRARY_NOT_PRESENT;
+    146              status = emberGetCertificate283k1(&cert);
+    147              // Check the status of the ECC library.
+    148              if ((emberGetLibraryStatus(EMBER_ECC_LIBRARY_283K1_ID)
+    149                   & EMBER_LIBRARY_PRESENT_MASK) != 0U) {
+    150                emberAfAppPrint("Real283k1ECC ");
+    151              } else {
+    152                emberAfAppPrint("No283k1ECC ");
+    153                securityGood = false;
+    154              }
+    155          
+    156              // Status of EMBER_LIBRARY_NOT_PRESENT means the CBKE is not present
+    157              // in the image and that no information is known about the certificate.
+    158              if (status == EMBER_LIBRARY_NOT_PRESENT) {
+    159                emberAfAppPrint("No283k1Cbke UnknownCert");
+    160                securityGood = false;
+    161              } else {
+    162                emberAfAppPrint("Real283k1Cbke ");
+    163          
+    164                // Status of EMBER_SUCCESS means the Cert is good.
+    165                if (status == EMBER_SUCCESS) {
+    166                  emberAfAppPrint("GoodCert");
+    167                }
+    168                // Status of EMBER_ERR_FATAL means the Cert failed.
+    169                else if (status == EMBER_ERR_FATAL) {
+    170                  emberAfAppPrint("BadCert");
+    171                  securityGood = false;
+    172                } else {
+    173                  // MISRA requires ..else if.. to have a terminating else.
+    174                }
+    175              }
+    176              emberAfAppPrintln("]");
+    177            }
+    178            emberAfAppFlush();
+    179            return securityGood;
+    180          #else
+    181            return false;
+   \                     printSmartEnergySecurityInfo283k1: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+    182          #endif
+    183          }
+    184          
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void emAfCliInfoCommand(void)
+    186          {
+   \                     emAfCliInfoCommand: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB08C             SUB      SP,SP,#+48
+    187            EmberNodeType nodeTypeResult = 0xFF;
+   \        0x6   0x23FF             MOVS     R3,#+255
+   \        0x8   0xF88D 0x3008      STRB     R3,[SP, #+8]
+    188            uint8_t commandLength;
+    189            EmberEUI64 myEui64;
+    190            EmberNetworkParameters networkParams = { 0 };
+   \        0xC   0xA806             ADD      R0,SP,#+24
+   \        0xE   0x2118             MOVS     R1,#+24
+   \       0x10   0x....'....        BL       __aeabi_memclr4
+    191            uint8_t numPhyInterfaces;
+    192          
+    193            emberStringCommandArgument(-1, &commandLength);
+   \       0x14   0xF10D 0x0109      ADD      R1,SP,#+9
+   \       0x18   0xF04F 0x30FF      MOV      R0,#-1
+   \       0x1C   0x....'....        BL       emberStringCommandArgument
+    194            printMfgString();
+   \       0x20   0x....'....        BL       printMfgString
+    195            emberAfAppPrintln("AppBuilder MFG Code: 0x%2X", EMBER_AF_MANUFACTURER_CODE);
+   \       0x24   0xF241 0x0202      MOVW     R2,#+4098
+   \       0x28   0x....'....        LDR.W    R1,??DataTable8_2
+   \       0x2C   0x....'....        BL       ?Subroutine1
+    196            emberAfGetEui64(myEui64);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x30   0xA803             ADD      R0,SP,#+12
+   \       0x32   0x....'....        BL       emberAfGetEui64
+    197            emberAfGetNetworkParameters(&nodeTypeResult, &networkParams);
+   \       0x36   0xA906             ADD      R1,SP,#+24
+   \       0x38   0xA802             ADD      R0,SP,#+8
+   \       0x3A   0x....'....        BL       emberAfGetNetworkParameters
+    198            emberAfAppPrint("node [");
+   \       0x3E   0x....'....        LDR.W    R1,??DataTable8_3
+   \       0x42   0x....'....        BL       ?Subroutine3
+    199            emberAfAppDebugExec(emberAfPrintBigEndianEui64(myEui64));
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x46   0x2002             MOVS     R0,#+2
+   \       0x48   0x....'....        BL       emberAfPrintEnabled
+   \       0x4C   0xB110             CBZ.N    R0,??emAfCliInfoCommand_0
+   \       0x4E   0xA803             ADD      R0,SP,#+12
+   \       0x50   0x....'....        BL       emberAfPrintBigEndianEui64
+    200            emberAfAppFlush();
+    201            emberAfAppPrintln("] chan [%d] pwr [%d]",
+    202                              networkParams.radioChannel,
+    203                              networkParams.radioTxPower);
+   \                     ??emAfCliInfoCommand_0: (+1)
+   \       0x54   0xF99D 0x3022      LDRSB    R3,[SP, #+34]
+   \       0x58   0xF89D 0x2023      LDRB     R2,[SP, #+35]
+   \       0x5C   0x....'....        LDR.W    R1,??DataTable8_4
+   \       0x60   0x....'....        BL       ?Subroutine4
+    204          
+    205            numPhyInterfaces = emberGetPhyInterfaceCount();
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x64   0x....'....        BL       emberGetPhyInterfaceCount
+   \       0x68   0x4606             MOV      R6,R0
+    206          
+    207            if ((numPhyInterfaces > 1) && (255 != numPhyInterfaces)) {
+   \       0x6A   0x2E02             CMP      R6,#+2
+   \       0x6C   0xF2C0 0x80CB      BLT.W    ??emAfCliInfoCommand_1
+   \       0x70   0x2EFF             CMP      R6,#+255
+   \       0x72   0xF000 0x80C8      BEQ.W    ??emAfCliInfoCommand_1
+    208              EmberMultiPhyRadioParameters multiPhyRadioParams;
+    209              uint8_t i;
+    210              EmberStatus status;
+    211          
+    212              emberAfAppPrintln("Additional interfaces");
+   \       0x76   0x....'....        LDR.W    R1,??DataTable8_5
+   \       0x7A   0x....'....        BL       ??Subroutine2_0
+    213              for (i = 1; i < numPhyInterfaces; ++i) {
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x7E   0x2501             MOVS     R5,#+1
+   \       0x80   0x....'....        LDR.W    R4,??DataTable8_6
+   \       0x84   0x....'....        LDR.W    R7,??DataTable8_7
+   \       0x88   0x....'....        LDR.W    R10,??DataTable8_8
+   \       0x8C   0x....'....        LDR.W    R11,??DataTable8_9
+   \       0x90   0xE008             B.N      ??emAfCliInfoCommand_2
+    214                emberAfAppPrint("  %d: ", i);
+    215                status = emberGetRadioParameters(i, &multiPhyRadioParams);
+    216                switch (status) {
+    217                  case EMBER_SUCCESS:
+    218                    emberAfAppPrintln("page [%d] chan [%d] pwr [%d]",
+    219                                      multiPhyRadioParams.radioPage,
+    220                                      multiPhyRadioParams.radioChannel,
+    221                                      multiPhyRadioParams.radioTxPower);
+    222                    break;
+    223                  case EMBER_NETWORK_DOWN:
+    224                  case EMBER_NOT_JOINED:
+    225                    emberAfAppPrintln("not active");
+    226                    break;
+    227                  default:
+    228                    emberAfAppPrintln("error 0x%x", status);
+   \                     ??emAfCliInfoCommand_3: (+1)
+   \       0x92   0x4602             MOV      R2,R0
+   \       0x94   0x4621             MOV      R1,R4
+   \       0x96   0x....'....        BL       ?Subroutine1
+    229                    break;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x9A   0xE002             B.N      ??CrossCallReturnLabel_7
+   \                     ??emAfCliInfoCommand_4: (+1)
+   \       0x9C   0x4651             MOV      R1,R10
+   \       0x9E   0x....'....        BL       ??Subroutine2_0
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0xA2   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??emAfCliInfoCommand_2: (+1)
+   \       0xA4   0xB2EA             UXTB     R2,R5
+   \       0xA6   0x42B2             CMP      R2,R6
+   \       0xA8   0xF280 0x80AD      BGE.W    ??emAfCliInfoCommand_1
+   \       0xAC   0x4659             MOV      R1,R11
+   \       0xAE   0x2002             MOVS     R0,#+2
+   \       0xB0   0x....'....        BL       emberAfPrint
+   \       0xB4   0xA901             ADD      R1,SP,#+4
+   \       0xB6   0xB2E8             UXTB     R0,R5
+   \       0xB8   0x....'....        BL       emberGetRadioParameters
+   \       0xBC   0x0001             MOVS     R1,R0
+   \       0xBE   0xD004             BEQ.N    ??emAfCliInfoCommand_5
+   \       0xC0   0x2891             CMP      R0,#+145
+   \       0xC2   0xBF18             IT       NE 
+   \       0xC4   0x2893             CMPNE    R0,#+147
+   \       0xC6   0xD0E9             BEQ.N    ??emAfCliInfoCommand_4
+   \       0xC8   0xE7E3             B.N      ??emAfCliInfoCommand_3
+   \                     ??emAfCliInfoCommand_5: (+1)
+   \       0xCA   0xF99D 0x0004      LDRSB    R0,[SP, #+4]
+   \       0xCE   0xF89D 0x3006      LDRB     R3,[SP, #+6]
+   \       0xD2   0xF89D 0x2005      LDRB     R2,[SP, #+5]
+   \       0xD6   0x9000             STR      R0,[SP, #+0]
+   \       0xD8   0x4639             MOV      R1,R7
+   \       0xDA   0x2002             MOVS     R0,#+2
+   \       0xDC   0x....'....        BL       emberAfPrintln
+   \       0xE0   0xE7DF             B.N      ??CrossCallReturnLabel_7
+    230                }
+    231              }
+    232            }
+    233          
+    234            emberAfAppPrint("panID [0x%2x] nodeID [0x%2x] ",
+    235                            networkParams.panId,
+    236                            emberAfGetNodeId());
+    237            emberAfAppFlush();
+    238            emberAfAppPrint("xpan [0x");
+    239            emberAfAppDebugExec(emberAfPrintBigEndianEui64(networkParams.extendedPanId));
+    240            emberAfAppPrintln("]");
+    241            emberAfAppFlush();
+    242          
+    243            #ifndef EZSP_HOST
+    244            emberAfAppPrintln("parentID [0x%2x] parentRssi [%d]", emberGetParentId(), emberGetAvgParentRssi());
+    245            emberAfAppFlush();
+    246            #endif // EZSP_HOST
+    247          
+    248            emAfCliVersionCommand();
+    249            emberAfAppFlush();
+    250          
+    251            emberAfAppPrint("nodeType [");
+    252            if (nodeTypeResult != 0xFF) {
+    253              emberAfAppPrint("0x%x", nodeTypeResult);
+    254            } else {
+    255              emberAfAppPrint("unknown");
+   \                     ??emAfCliInfoCommand_6: (+1)
+   \       0xE2   0x....'....        LDR.W    R1,??DataTable8_10
+   \       0xE6   0x....'....        BL       ?Subroutine3
+    256            }
+    257            emberAfAppPrintln("]");
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0xEA   0x....'....        BL       ?Subroutine2
+    258            emberAfAppFlush();
+    259          
+    260            emberAfAppPrintln("%p level [%x]", "Security", emberAfGetSecurityLevel());
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0xEE   0x....'....        BL       emberAfGetSecurityLevel
+   \       0xF2   0x4603             MOV      R3,R0
+   \       0xF4   0x....'....        LDR.W    R2,??DataTable8_11
+   \       0xF8   0x....'....        LDR.W    R1,??DataTable8_12
+   \       0xFC   0x....'....        BL       ?Subroutine4
+    261          
+    262            printSmartEnergySecurityInfo();
+    263            printSmartEnergySecurityInfo283k1();
+    264          
+    265            emberAfAppPrint("network state [%x] ", emberNetworkState());
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \      0x100   0x....'....        BL       emberNetworkState
+   \      0x104   0x4602             MOV      R2,R0
+   \      0x106   0x....             LDR.N    R1,??DataTable8_13
+   \      0x108   0x2002             MOVS     R0,#+2
+   \      0x10A   0x....'....        BL       emberAfPrint
+    266            printPacketBuffers();
+   \      0x10E   0x....'....        BL       emAfGetPacketBufferTotalCount
+   \      0x112   0x4604             MOV      R4,R0
+   \      0x114   0x....'....        BL       emAfGetPacketBufferFreeCount
+   \      0x118   0x4602             MOV      R2,R0
+   \      0x11A   0x4623             MOV      R3,R4
+   \      0x11C   0x....             LDR.N    R1,??DataTable8_14
+   \      0x11E   0x....'....        BL       ?Subroutine4
+    267            emberAfAppFlush();
+    268          
+    269            // Print the endpoint information.
+    270            {
+    271              uint8_t i, j;
+    272              emberAfAppPrintln("Ep cnt: %d", emberAfEndpointCount());
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \      0x122   0x....'....        BL       emberAfEndpointCount
+   \      0x126   0x4602             MOV      R2,R0
+   \      0x128   0x....             LDR.N    R1,??DataTable8_15
+   \      0x12A   0x....'....        BL       ?Subroutine1
+    273              // Loop for each endpoint.
+    274              for (i = 0; i < emberAfEndpointCount(); i++) {
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \      0x12E   0x2400             MOVS     R4,#+0
+   \      0x130   0x....'....        LDR.W    R9,??DataTable8_16
+   \      0x134   0x....'....        LDR.W    R10,??DataTable8_17
+   \      0x138   0x....'....        LDR.W    R11,??DataTable8_18
+   \      0x13C   0x....'....        LDR.W    R8,??DataTable8_19
+   \      0x140   0xE093             B.N      ??emAfCliInfoCommand_7
+    275                EmberAfEndpointType *et = emAfEndpoints[i].endpointType;
+    276                emberAfAppPrint("ep %d [endpoint %p, device %p] ",
+    277                                emberAfEndpointFromIndex(i),
+    278                                (emberAfEndpointIndexIsEnabled(i)
+    279                                 ? "enabled"
+    280                                 : "disabled"),
+    281                                emberAfIsDeviceEnabled(emberAfEndpointFromIndex(i))
+    282                                ? "enabled"
+    283                                : "disabled");
+   \                     ??emAfCliInfoCommand_8: (+1)
+   \      0x142   0x4620             MOV      R0,R4
+   \      0x144   0x....'....        BL       emberAfEndpointIndexIsEnabled
+   \      0x148   0x2800             CMP      R0,#+0
+   \      0x14A   0x4620             MOV      R0,R4
+   \      0x14C   0xBF14             ITE      NE 
+   \      0x14E   0x4647             MOVNE    R7,R8
+   \      0x150   0x465F             MOVEQ    R7,R11
+   \      0x152   0x....'....        BL       emberAfEndpointFromIndex
+   \      0x156   0x4602             MOV      R2,R0
+   \      0x158   0x9600             STR      R6,[SP, #+0]
+   \      0x15A   0x463B             MOV      R3,R7
+   \      0x15C   0x....             LDR.N    R1,??DataTable8_20
+   \      0x15E   0x2002             MOVS     R0,#+2
+   \      0x160   0x....'....        BL       emberAfPrint
+    284                emberAfAppPrintln("nwk [%d] profile [0x%2x] devId [0x%2x] ver [0x%x]",
+    285                                  emberAfNetworkIndexFromEndpointIndex(i),
+    286                                  emberAfProfileIdFromIndex(i),
+    287                                  emberAfDeviceIdFromIndex(i),
+    288                                  emberAfDeviceVersionFromIndex(i));
+   \      0x164   0x79A8             LDRB     R0,[R5, #+6]
+   \      0x166   0x2700             MOVS     R7,#+0
+   \      0x168   0x9001             STR      R0,[SP, #+4]
+   \      0x16A   0x88A9             LDRH     R1,[R5, #+4]
+   \      0x16C   0x2002             MOVS     R0,#+2
+   \      0x16E   0x9100             STR      R1,[SP, #+0]
+   \      0x170   0x886B             LDRH     R3,[R5, #+2]
+   \      0x172   0x7B2A             LDRB     R2,[R5, #+12]
+   \      0x174   0x....             LDR.N    R1,??DataTable8_21
+   \      0x176   0x....'....        BL       emberAfPrintln
+    289                // Loop for the clusters within the endpoint.
+    290                for (j = 0; j < et->clusterCount; j++) {
+   \      0x17A   0x9D05             LDR      R5,[SP, #+20]
+   \                     ??emAfCliInfoCommand_9: (+1)
+   \      0x17C   0x7929             LDRB     R1,[R5, #+4]
+   \      0x17E   0xB2F8             UXTB     R0,R7
+   \      0x180   0x4288             CMP      R0,R1
+   \      0x182   0xD270             BCS.N    ??emAfCliInfoCommand_10
+    291                  EmberAfCluster *zc = &(et->cluster[j]);
+   \      0x184   0xB2FA             UXTB     R2,R7
+   \      0x186   0x2314             MOVS     R3,#+20
+   \      0x188   0x6828             LDR      R0,[R5, #+0]
+   \      0x18A   0x435A             MULS     R2,R3,R2
+   \      0x18C   0x1886             ADDS     R6,R0,R2
+    292                  emberAfAppPrint("    %p cluster: 0x%2x ",
+    293                                  (emberAfClusterIsClient(zc)
+    294                                   ? "out(client)"
+    295                                   : "in (server)"),
+    296                                  zc->clusterId);
+   \      0x18E   0x7B31             LDRB     R1,[R6, #+12]
+   \      0x190   0x8833             LDRH     R3,[R6, #+0]
+   \      0x192   0x0608             LSLS     R0,R1,#+24
+   \      0x194   0x....             LDR.N    R1,??DataTable8_22
+   \      0x196   0xBF54             ITE      PL 
+   \      0x198   0x464A             MOVPL    R2,R9
+   \      0x19A   0x4652             MOVMI    R2,R10
+   \      0x19C   0x2002             MOVS     R0,#+2
+   \      0x19E   0x....'....        BL       emberAfPrint
+    297                  emberAfAppDebugExec(emberAfDecodeAndPrintClusterWithMfgCode(zc->clusterId, emAfGetManufacturerCodeForCluster(zc)));
+   \      0x1A2   0x2002             MOVS     R0,#+2
+   \      0x1A4   0x....'....        BL       emberAfPrintEnabled
+   \      0x1A8   0xB130             CBZ.N    R0,??emAfCliInfoCommand_11
+   \      0x1AA   0x4630             MOV      R0,R6
+   \      0x1AC   0x....'....        BL       emAfGetManufacturerCodeForCluster
+   \      0x1B0   0x4601             MOV      R1,R0
+   \      0x1B2   0x8830             LDRH     R0,[R6, #+0]
+   \      0x1B4   0x....'....        BL       emberAfDecodeAndPrintClusterWithMfgCode
+    298                  emberAfAppPrintln("");
+   \                     ??emAfCliInfoCommand_11: (+1)
+   \      0x1B8   0x....             LDR.N    R1,??DataTable8_23
+   \      0x1BA   0x....'....        BL       ??Subroutine2_0
+    299                  emberAfAppFlush();
+    300                }
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \      0x1BE   0x1C7F             ADDS     R7,R7,#+1
+   \      0x1C0   0xE7DC             B.N      ??emAfCliInfoCommand_9
+    301                emberAfAppFlush();
+    302              }
+    303            }
+    304          
+    305            {
+    306              const char * names[] = {
+    307                EM_AF_GENERATED_NETWORK_STRINGS
+    308              };
+   \                     ??emAfCliInfoCommand_12: (+1)
+   \      0x1C2   0x....             LDR.N    R1,??DataTable8_24
+   \      0x1C4   0x680A             LDR      R2,[R1, #+0]
+    309              uint8_t i;
+    310              emberAfAppPrintln("Nwk cnt: %d", EMBER_SUPPORTED_NETWORKS);
+   \      0x1C6   0x....             LDR.N    R1,??DataTable8_25
+   \      0x1C8   0x2002             MOVS     R0,#+2
+   \      0x1CA   0x9200             STR      R2,[SP, #+0]
+   \      0x1CC   0x2201             MOVS     R2,#+1
+   \      0x1CE   0x....'....        BL       emberAfPrintln
+    311              for (i = 0; i < EMBER_SUPPORTED_NETWORKS; i++) {
+    312                emberAfPushNetworkIndex(i);
+   \      0x1D2   0x2000             MOVS     R0,#+0
+   \      0x1D4   0x....'....        BL       emberAfPushNetworkIndex
+    313                emberAfAppPrintln("nwk %d [%p]", i, names[i]);
+   \      0x1D8   0x9B00             LDR      R3,[SP, #+0]
+   \      0x1DA   0x2200             MOVS     R2,#+0
+   \      0x1DC   0x....             LDR.N    R1,??DataTable8_26
+   \      0x1DE   0x2002             MOVS     R0,#+2
+   \      0x1E0   0x....             LDR.N    R4,??DataTable8_27
+   \      0x1E2   0x....'....        BL       emberAfPrintln
+   \      0x1E6   0x6820             LDR      R0,[R4, #+0]
+   \      0x1E8   0xB140             CBZ.N    R0,??CrossCallReturnLabel_1
+    314                if (emAfProIsCurrentNetwork()) {
+    315                  emberAfAppPrintln("  nodeType [0x%x]",
+    316                                    emAfCurrentZigbeeProNetwork->nodeType);
+   \      0x1EA   0x7802             LDRB     R2,[R0, #+0]
+   \      0x1EC   0x....             LDR.N    R1,??DataTable8_28
+   \      0x1EE   0x....'....        BL       ?Subroutine1
+    317                  emberAfAppPrintln("  securityProfile [0x%x]",
+    318                                    emAfCurrentZigbeeProNetwork->securityProfile);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \      0x1F2   0x6820             LDR      R0,[R4, #+0]
+   \      0x1F4   0x....             LDR.N    R1,??DataTable8_29
+   \      0x1F6   0x7842             LDRB     R2,[R0, #+1]
+   \      0x1F8   0x....'....        BL       ?Subroutine1
+    319                }
+    320                emberAfPopNetworkIndex();
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \      0x1FC   0x....'....        BL       emberAfPopNetworkIndex
+    321              }
+    322            }
+    323          }
+   \      0x200   0xB00D             ADD      SP,SP,#+52
+   \      0x202   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+   \                     ??emAfCliInfoCommand_1: (+1)
+   \      0x206   0x....'....        BL       emberAfGetNodeId
+   \      0x20A   0xF8BD 0x2020      LDRH     R2,[SP, #+32]
+   \      0x20E   0x4603             MOV      R3,R0
+   \      0x210   0x....             LDR.N    R1,??DataTable8_30
+   \      0x212   0x2002             MOVS     R0,#+2
+   \      0x214   0x....'....        BL       emberAfPrint
+   \      0x218   0x....             LDR.N    R1,??DataTable8_31
+   \      0x21A   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \      0x21E   0x2002             MOVS     R0,#+2
+   \      0x220   0x....'....        BL       emberAfPrintEnabled
+   \      0x224   0xB110             CBZ.N    R0,??emAfCliInfoCommand_13
+   \      0x226   0xA806             ADD      R0,SP,#+24
+   \      0x228   0x....'....        BL       emberAfPrintBigEndianEui64
+   \                     ??emAfCliInfoCommand_13: (+1)
+   \      0x22C   0x....             LDR.N    R4,??DataTable8_32
+   \      0x22E   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \      0x232   0x....'....        BL       emberGetAvgParentRssi
+   \      0x236   0x4605             MOV      R5,R0
+   \      0x238   0x....'....        BL       emberGetParentId
+   \      0x23C   0x4602             MOV      R2,R0
+   \      0x23E   0x462B             MOV      R3,R5
+   \      0x240   0x....             LDR.N    R1,??DataTable8_33
+   \      0x242   0x....'....        BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \      0x246   0x....'....        BL       emAfCliVersionCommand
+   \      0x24A   0x....             LDR.N    R1,??DataTable8_34
+   \      0x24C   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \      0x250   0xF89D 0x0008      LDRB     R0,[SP, #+8]
+   \      0x254   0x28FF             CMP      R0,#+255
+   \      0x256   0xF43F 0xAF44      BEQ.W    ??emAfCliInfoCommand_6
+   \      0x25A   0x4602             MOV      R2,R0
+   \      0x25C   0x....             LDR.N    R1,??DataTable8_35
+   \      0x25E   0x2002             MOVS     R0,#+2
+   \      0x260   0x....'....        BL       emberAfPrint
+   \      0x264   0xE741             B.N      ??CrossCallReturnLabel_13
+   \                     ??emAfCliInfoCommand_10: (+1)
+   \      0x266   0x1C64             ADDS     R4,R4,#+1
+   \      0x268   0xB2E4             UXTB     R4,R4
+   \                     ??emAfCliInfoCommand_7: (+1)
+   \      0x26A   0x....'....        BL       emberAfEndpointCount
+   \      0x26E   0x4284             CMP      R4,R0
+   \      0x270   0xDAA7             BGE.N    ??emAfCliInfoCommand_12
+   \      0x272   0x....             LDR.N    R0,??DataTable8_36
+   \      0x274   0xEB00 0x1504      ADD      R5,R0,R4, LSL #+4
+   \      0x278   0x4620             MOV      R0,R4
+   \      0x27A   0x68AA             LDR      R2,[R5, #+8]
+   \      0x27C   0x9205             STR      R2,[SP, #+20]
+   \      0x27E   0x....'....        BL       emberAfEndpointFromIndex
+   \      0x282   0x....'....        BL       emberAfIsDeviceEnabled
+   \      0x286   0x2800             CMP      R0,#+0
+   \      0x288   0xBF14             ITE      NE 
+   \      0x28A   0x4646             MOVNE    R6,R8
+   \      0x28C   0x465E             MOVEQ    R6,R11
+   \      0x28E   0xE758             B.N      ??emAfCliInfoCommand_8
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....'....        B.W      emberAfPrint
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4621             MOV      R1,R4
+   \                     ??Subroutine2_0: (+1)
+   \        0x2   0x2002             MOVS     R0,#+2
+   \        0x4   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .rodata, align 4
+   \                     ?_49:
+   \        0x0   0x....'....        DC32 ?_30
+    324          #endif
+    325          
+    326          #if defined(ZA_CLI_FULL)
+    327          
+    328          //------------------------------------------------------------------------------
+    329          // "debugprint" commands
+    330          
+    331          #ifdef ZA_CLI_FULL
+    332          
+
+   \                                 In section .text, align 2, keep-with-next
+    333          void printOnCommand(void)
+    334          {
+   \                     printOnCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    335            uint16_t area = (uint16_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+    336            emberAfPrintOn(area);
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \        0x6   0xB280             UXTH     R0,R0
+   \        0x8   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xC   0x....'....        B.W      emberAfPrintOn
+    337          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....'....        B.W      emberUnsignedCommandArgument
+    338          
+
+   \                                 In section .text, align 2, keep-with-next
+    339          void printOffCommand(void)
+    340          {
+   \                     printOffCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    341            uint16_t area = (uint16_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+    342            emberAfPrintOff(area);
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \        0x6   0xB280             UXTH     R0,R0
+   \        0x8   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xC   0x....'....        B.W      emberAfPrintOff
+    343          }
+    344          
+    345          #ifndef EMBER_AF_GENERATE_CLI
+    346          
+    347          static const char * debugPrintOnOffCommandArguments[] = {
+    348            "Number of the specified print area.",
+    349            NULL,
+    350          };
+    351          
+    352          static EmberCommandEntry debugPrintCommands[] = {
+    353            emberCommandEntryAction("status",
+    354                                    emberAfPrintStatus,
+    355                                    "",
+    356                                    "Print the status of all the debug print areas."),
+    357            emberCommandEntryAction("all_on",
+    358                                    emberAfPrintAllOn,
+    359                                    "",
+    360                                    "Turn all debug print areas on."),
+    361          
+    362            emberCommandEntryAction("all_off",
+    363                                    emberAfPrintAllOff,
+    364                                    "",
+    365                                    "Turn all debug print areas off."),
+    366          
+    367            emberCommandEntryActionWithDetails("on",
+    368                                               printOnCommand,
+    369                                               "v",
+    370                                               "Turn on the printing for the specified area.",
+    371                                               debugPrintOnOffCommandArguments),
+    372          
+    373            emberCommandEntryActionWithDetails("off",
+    374                                               printOffCommand,
+    375                                               "v",
+    376                                               "Turn off the printing for the specified area.",
+    377                                               debugPrintOnOffCommandArguments),
+    378            emberCommandEntryTerminator(),
+    379          };
+    380          #endif // EMBER_AF_GENERATE_CLI
+    381          
+    382          #endif
+    383          
+    384          //------------------------------------------------------------------------------
+    385          // Miscellaneous commands
+    386          
+
+   \                                 In section .text, align 2, keep-with-next
+    387          void helpCommand(void)
+    388          {
+   \                     helpCommand: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    389          #if defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_APP)
+    390            EmberCommandEntry *commandFinger = emberCommandTable;
+   \        0x2   0x....             LDR.N    R4,??DataTable8_37
+   \        0x4   0x....             LDR.N    R5,??DataTable8_38
+   \        0x6   0xE004             B.N      ??CrossCallReturnLabel_0
+    391            for (; commandFinger->name != NULL; commandFinger++) {
+    392              emberAfAppPrintln("%p", commandFinger->name);
+   \                     ??helpCommand_0: (+1)
+   \        0x8   0xF854 0x2B0C      LDR      R2,[R4], #+12
+   \        0xC   0x4629             MOV      R1,R5
+   \        0xE   0x....'....        BL       ?Subroutine1
+    393              emberAfAppFlush();
+    394            }
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD1F7             BNE.N    ??helpCommand_0
+    395          #endif //defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_APP)
+    396          }
+   \       0x18   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    397          
+
+   \                                 In section .text, align 2, keep-with-next
+    398          void resetCommand(void)
+    399          {
+    400            halReboot();
+   \                     resetCommand: (+1)
+   \        0x0   0x....'....        B.W      halReboot
+    401          }
+    402          
+
+   \                                 In section .text, align 2, keep-with-next
+    403          void echoCommand(void)
+    404          {
+   \                     echoCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    405            uint8_t echoOn = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+    406            if ( echoOn != 0U ) {
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \        0x6   0x....             LDR.N    R1,??DataTable8_39
+   \        0x8   0x780A             LDRB     R2,[R1, #+0]
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xBF14             ITE      NE 
+   \       0x10   0xF042 0x0201      ORRNE    R2,R2,#0x1
+   \       0x14   0xF002 0x02FE      ANDEQ    R2,R2,#0xFE
+    407              emberCommandInterpreterEchoOn();
+    408            } else {
+    409              emberCommandInterpreterEchoOff();
+   \       0x18   0x700A             STRB     R2,[R1, #+0]
+    410            }
+    411          }
+   \       0x1A   0xBD01             POP      {R0,PC}          ;; return
+    412          
+
+   \                                 In section .text, align 2, keep-with-next
+    413          void printEvents(void)
+    414          {
+   \                     printEvents: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+    415            uint8_t i = 0;
+    416            uint32_t nowMS32 = halCommonGetInt32uMillisecondTick();
+   \        0x4   0x....'....        BL       halCommonGetInt32uMillisecondTick
+   \        0x8   0x2600             MOVS     R6,#+0
+   \        0xA   0x4607             MOV      R7,R0
+   \        0xC   0x....             LDR.N    R5,??DataTable8_40
+   \        0xE   0x....'....        LDR.W    R10,??DataTable8_41
+   \       0x12   0x....'....        LDR.W    R11,??DataTable8_42
+   \       0x16   0x....'....        LDR.W    R8,??DataTable8_43
+   \       0x1A   0x....'....        LDR.W    R9,??DataTable8_44
+    417            while (emAfEvents[i].control != NULL) {
+   \                     ??printEvents_0: (+1)
+   \       0x1E   0xF859 0x4036      LDR      R4,[R9, R6, LSL #+3]
+   \       0x22   0xB1AC             CBZ.N    R4,??printEvents_1
+    418              emberAfCorePrint("%p  : ", emAfEventStrings[i]);
+   \       0x24   0xF858 0x2026      LDR      R2,[R8, R6, LSL #+2]
+   \       0x28   0x4659             MOV      R1,R11
+   \       0x2A   0x2001             MOVS     R0,#+1
+   \       0x2C   0x....'....        BL       emberAfPrint
+    419              if (emAfEvents[i].control->status == EMBER_EVENT_INACTIVE) {
+   \       0x30   0x7820             LDRB     R0,[R4, #+0]
+   \       0x32   0xB130             CBZ.N    R0,??printEvents_2
+    420                emberAfCorePrintln("inactive");
+    421              } else {
+    422                emberAfCorePrintln("%l ms", emAfEvents[i].control->timeToExecute - nowMS32);
+   \       0x34   0x6862             LDR      R2,[R4, #+4]
+   \       0x36   0x4629             MOV      R1,R5
+   \       0x38   0x2001             MOVS     R0,#+1
+   \       0x3A   0x1BD2             SUBS     R2,R2,R7
+   \       0x3C   0x....'....        BL       emberAfPrintln
+   \       0x40   0xE003             B.N      ??printEvents_3
+    423              }
+   \                     ??printEvents_2: (+1)
+   \       0x42   0x4651             MOV      R1,R10
+   \       0x44   0x2001             MOVS     R0,#+1
+   \       0x46   0x....'....        BL       emberAfPrintln
+    424              i++;
+   \                     ??printEvents_3: (+1)
+   \       0x4A   0x1C76             ADDS     R6,R6,#+1
+   \       0x4C   0xB2F6             UXTB     R6,R6
+   \       0x4E   0xE7E6             B.N      ??printEvents_0
+    425            }
+    426          }
+   \                     ??printEvents_1: (+1)
+   \       0x50   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}   ;; return
+    427          
+
+   \                                 In section .text, align 2, keep-with-next
+    428          void emberAfPrintEntropySource(void)
+    429          {
+   \                     emberAfPrintEntropySource: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    430            EmberEntropySource entropySource = emberGetTrueRandomEntropySource();
+   \        0x2   0x....'....        BL       emberGetStrongRandomEntropySource
+   \        0x6   0x4604             MOV      R4,R0
+    431            emberAfCorePrint("True random entropy source: ");
+   \        0x8   0x....             LDR.N    R1,??DataTable8_45
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0x....'....        BL       emberAfPrint
+    432            switch (entropySource) {
+   \       0x10   0x2C01             CMP      R4,#+1
+   \       0x12   0xD004             BEQ.N    ??emberAfPrintEntropySource_0
+   \       0x14   0xD309             BCC.N    ??emberAfPrintEntropySource_1
+   \       0x16   0x2C03             CMP      R4,#+3
+   \       0x18   0xD005             BEQ.N    ??emberAfPrintEntropySource_2
+   \       0x1A   0xD302             BCC.N    ??emberAfPrintEntropySource_3
+   \       0x1C   0xE005             B.N      ??emberAfPrintEntropySource_1
+    433              case EMBER_ENTROPY_SOURCE_RADIO:
+    434                emberAfCorePrint("Radio");
+   \                     ??emberAfPrintEntropySource_0: (+1)
+   \       0x1E   0x....             LDR.N    R1,??DataTable8_46
+   \       0x20   0xE004             B.N      ??emberAfPrintEntropySource_4
+    435                break;
+    436              case EMBER_ENTROPY_SOURCE_MBEDTLS_TRNG:
+    437                emberAfCorePrint("mbed TLS: TRNG");
+   \                     ??emberAfPrintEntropySource_3: (+1)
+   \       0x22   0x....             LDR.N    R1,??DataTable8_47
+   \       0x24   0xE002             B.N      ??emberAfPrintEntropySource_4
+    438                break;
+    439              case EMBER_ENTROPY_SOURCE_MBEDTLS:
+    440                emberAfCorePrint("mbed TLS: Other");
+   \                     ??emberAfPrintEntropySource_2: (+1)
+   \       0x26   0x....             LDR.N    R1,??DataTable8_48
+   \       0x28   0xE000             B.N      ??emberAfPrintEntropySource_4
+    441                break;
+    442              case EMBER_ENTROPY_SOURCE_ERROR:
+    443              default:
+    444                emberAfCorePrint("Unknown");
+   \                     ??emberAfPrintEntropySource_1: (+1)
+   \       0x2A   0x....             LDR.N    R1,??DataTable8_49
+   \                     ??emberAfPrintEntropySource_4: (+1)
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0x....'....        BL       emberAfPrint
+    445                break;
+    446            }
+    447            emberAfCorePrintln(".");
+   \       0x32   0x....             LDR.N    R1,??DataTable8_50
+   \       0x34                      REQUIRE ?Subroutine0
+   \       0x34                      ;; // Fall through to label ?Subroutine0
+    448          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0xE8BD 0x4010      POP      {R4,LR}
+   \        0x6   0x....'....        B.W      emberAfPrintln
+    449          
+    450          //------------------------------------------------------------------------------
+    451          // "endpoint" commands
+    452          
+
+   \                                 In section .text, align 2, keep-with-next
+    453          void endpointPrint(void)
+    454          {
+   \                     endpointPrint: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+    455            uint8_t i;
+    456            for (i = 0; i < emberAfEndpointCount(); i++) {
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x....             LDR.N    R5,??DataTable8_23
+   \        0x8   0x....'....        LDR.W    R10,??DataTable8_51
+   \        0xC   0x....             LDR.N    R7,??DataTable8_36
+   \        0xE   0x....'....        LDR.W    R8,??DataTable8_52
+   \       0x12   0x....'....        LDR.W    R9,??DataTable8_53
+   \                     ??endpointPrint_0: (+1)
+   \       0x16   0x....'....        BL       emberAfEndpointCount
+   \       0x1A   0xB2E1             UXTB     R1,R4
+   \       0x1C   0x4281             CMP      R1,R0
+   \       0x1E   0xD216             BCS.N    ??endpointPrint_1
+    457              emberAfCorePrint("EP %d: %p ",
+    458                               emAfEndpoints[i].endpoint,
+    459                               (emberAfEndpointIndexIsEnabled(i)
+    460                                ? "Enabled"
+    461                                : "Disabled"));
+   \       0x20   0xB2E0             UXTB     R0,R4
+   \       0x22   0x....'....        BL       emberAfEndpointIndexIsEnabled
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0x4651             MOV      R1,R10
+   \       0x2A   0xBF0C             ITE      EQ 
+   \       0x2C   0x4643             MOVEQ    R3,R8
+   \       0x2E   0x464B             MOVNE    R3,R9
+   \       0x30   0x0626             LSLS     R6,R4,#+24
+   \       0x32   0x0D36             LSRS     R6,R6,#+20
+   \       0x34   0x5DBA             LDRB     R2,[R7, R6]
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0x1C64             ADDS     R4,R4,#+1
+   \       0x3A   0x....'....        BL       emberAfPrint
+    462              emAfPrintEzspEndpointFlags(emAfEndpoints[i].endpoint);
+   \       0x3E   0x5DB8             LDRB     R0,[R7, R6]
+   \       0x40   0x....'....        BL       emAfPrintEzspEndpointFlags
+    463              emberAfCorePrintln("");
+   \       0x44   0x4629             MOV      R1,R5
+   \       0x46   0x2001             MOVS     R0,#+1
+   \       0x48   0x....'....        BL       emberAfPrintln
+    464            }
+   \       0x4C   0xE7E3             B.N      ??endpointPrint_0
+    465          }
+   \                     ??endpointPrint_1: (+1)
+   \       0x4E   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+    466          
+
+   \                                 In section .text, align 2, keep-with-next
+    467          void enableDisableEndpoint(void)
+    468          {
+   \                     enableDisableEndpoint: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    469            uint8_t endpoint = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine5
+    470            bool enable = (emberCurrentCommand->name[0] == 'e'
+    471                           ? true
+    472                           : false);
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \        0x6   0x....             LDR.N    R1,??DataTable8_54
+   \        0x8   0x680A             LDR      R2,[R1, #+0]
+    473            if (!emberAfEndpointEnableDisable(endpoint,
+    474                                              enable)) {
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x6813             LDR      R3,[R2, #+0]
+   \        0xE   0x781C             LDRB     R4,[R3, #+0]
+   \       0x10   0x2C65             CMP      R4,#+101
+   \       0x12   0xBF0C             ITE      EQ 
+   \       0x14   0x2101             MOVEQ    R1,#+1
+   \       0x16   0x2100             MOVNE    R1,#+0
+   \       0x18   0x....'....        BL       emberAfEndpointEnableDisable
+   \       0x1C   0xB908             CBNZ.N   R0,??enableDisableEndpoint_0
+    475              emberAfCorePrintln("Error:  Unknown endpoint.");
+   \       0x1E   0x....             LDR.N    R1,??DataTable8_55
+   \       0x20   0x....             B.N      ?Subroutine0
+    476            }
+    477          }
+   \                     ??enableDisableEndpoint_0: (+1)
+   \       0x22   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x....'....        DC32     emAfCliNetworkIndex
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_9:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_10:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_11:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_12:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_13:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_14:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_15:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_16:
+   \        0x0   0x....'....        DC32     ?_28
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_17:
+   \        0x0   0x....'....        DC32     ?_27
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_18:
+   \        0x0   0x....'....        DC32     ?_24
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_19:
+   \        0x0   0x....'....        DC32     ?_23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_20:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_21:
+   \        0x0   0x....'....        DC32     ?_25
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_22:
+   \        0x0   0x....'....        DC32     ?_26
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_23:
+   \        0x0   0x....'....        DC32     ?_29
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_24:
+   \        0x0   0x....'....        DC32     ?_49
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_25:
+   \        0x0   0x....'....        DC32     ?_31
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_26:
+   \        0x0   0x....'....        DC32     ?_32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_27:
+   \        0x0   0x....'....        DC32     emAfCurrentZigbeeProNetwork
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_28:
+   \        0x0   0x....'....        DC32     ?_33
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_29:
+   \        0x0   0x....'....        DC32     ?_34
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_30:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_31:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_32:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_33:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_34:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_35:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_36:
+   \        0x0   0x....'....        DC32     emAfEndpoints
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_37:
+   \        0x0   0x....'....        DC32     emberCommandTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_38:
+   \        0x0   0x....'....        DC32     ?_35
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_39:
+   \        0x0   0x....'....        DC32     emberCommandInterpreter2Configuration
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_40:
+   \        0x0   0x....'....        DC32     ?_38
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_41:
+   \        0x0   0x....'....        DC32     ?_37
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_42:
+   \        0x0   0x....'....        DC32     ?_36
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_43:
+   \        0x0   0x....'....        DC32     emAfEventStrings
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_44:
+   \        0x0   0x....'....        DC32     emAfEvents
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_45:
+   \        0x0   0x....'....        DC32     ?_39
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_46:
+   \        0x0   0x....'....        DC32     ?_40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_47:
+   \        0x0   0x....'....        DC32     ?_41
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_48:
+   \        0x0   0x....'....        DC32     ?_42
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_49:
+   \        0x0   0x....'....        DC32     ?_43
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_50:
+   \        0x0   0x....'....        DC32     ?_44
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_51:
+   \        0x0   0x....'....        DC32     ?_45
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_52:
+   \        0x0   0x....'....        DC32     ?_47
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_53:
+   \        0x0   0x....'....        DC32     ?_46
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_54:
+   \        0x0   0x....'....        DC32     emberCurrentCommand
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_55:
+   \        0x0   0x....'....        DC32     ?_48
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x4D 0x46          DC8 "MFG String: %s"
+   \              0x47 0x20    
+   \              0x53 0x74    
+   \              0x72 0x69    
+   \              0x6E 0x67    
+   \              0x3A 0x20    
+   \              0x25 0x73    
+   \              0x00         
+   \        0xF   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x42 0x75          DC8 "Buffs: %d / %d"
+   \              0x66 0x66    
+   \              0x73 0x3A    
+   \              0x20 0x25    
+   \              0x64 0x20    
+   \              0x2F 0x20    
+   \              0x25 0x64    
+   \              0x00         
+   \        0xF   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \        0x8   0x0000             DC16 0
+   \        0xA   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \        0xE   0x0000             DC16 0
+   \       0x10   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \       0x14   0x0000'0000        DC32 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x41 0x70          DC8 "AppBuilder MFG Code: 0x%2X"
+   \              0x70 0x42    
+   \              0x75 0x69    
+   \              0x6C 0x64    
+   \              0x65 0x72    
+   \              0x20 0x4D    
+   \              0x46 0x47    
+   \              0x20 0x43    
+   \              0x6F 0x64    
+   \              0x65 0x3A    
+   \              0x20 0x30    
+   \              0x78 0x25    
+   \              0x32 0x58    
+   \              0x00         
+   \       0x1B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x6E 0x6F          DC8 "node ["
+   \              0x64 0x65    
+   \              0x20 0x5B    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x5D 0x20          DC8 "] chan [%d] pwr [%d]"
+   \              0x63 0x68    
+   \              0x61 0x6E    
+   \              0x20 0x5B    
+   \              0x25 0x64    
+   \              0x5D 0x20    
+   \              0x70 0x77    
+   \              0x72 0x20    
+   \              0x5B 0x25    
+   \              0x64 0x5D    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x41 0x64          DC8 "Additional interfaces"
+   \              0x64 0x69    
+   \              0x74 0x69    
+   \              0x6F 0x6E    
+   \              0x61 0x6C    
+   \              0x20 0x69    
+   \              0x6E 0x74    
+   \              0x65 0x72    
+   \              0x66 0x61    
+   \              0x63 0x65    
+   \              0x73 0x00    
+   \       0x16   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x20 0x20          DC8 "  %d: "
+   \              0x25 0x64    
+   \              0x3A 0x20    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x70 0x61          DC8 "page [%d] chan [%d] pwr [%d]"
+   \              0x67 0x65    
+   \              0x20 0x5B    
+   \              0x25 0x64    
+   \              0x5D 0x20    
+   \              0x63 0x68    
+   \              0x61 0x6E    
+   \              0x20 0x5B    
+   \              0x25 0x64    
+   \              0x5D 0x20    
+   \              0x70 0x77    
+   \              0x72 0x20    
+   \              0x5B 0x25    
+   \              0x64 0x5D    
+   \              0x00         
+   \       0x1D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x6E 0x6F          DC8 "not active"
+   \              0x74 0x20    
+   \              0x61 0x63    
+   \              0x74 0x69    
+   \              0x76 0x65    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x65 0x72          DC8 "error 0x%x"
+   \              0x72 0x6F    
+   \              0x72 0x20    
+   \              0x30 0x78    
+   \              0x25 0x78    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x70 0x61          DC8 "panID [0x%2x] nodeID [0x%2x] "
+   \              0x6E 0x49    
+   \              0x44 0x20    
+   \              0x5B 0x30    
+   \              0x78 0x25    
+   \              0x32 0x78    
+   \              0x5D 0x20    
+   \              0x6E 0x6F    
+   \              0x64 0x65    
+   \              0x49 0x44    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x5D    
+   \              0x20 0x00    
+   \       0x1E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x78 0x70          DC8 "xpan [0x"
+   \              0x61 0x6E    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 2
+   \                     ?_13:
+   \        0x0   0x5D 0x00          DC8 "]"
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x70 0x61          DC8 "parentID [0x%2x] parentRssi [%d]"
+   \              0x72 0x65    
+   \              0x6E 0x74    
+   \              0x49 0x44    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x5D    
+   \              0x20 0x70    
+   \              0x61 0x72    
+   \              0x65 0x6E    
+   \              0x74 0x52    
+   \              0x73 0x73    
+   \              0x69 0x20    
+   \              0x5B 0x25    
+   \              0x64 0x5D    
+   \              0x00         
+   \       0x21   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x6E 0x6F          DC8 "nodeType ["
+   \              0x64 0x65    
+   \              0x54 0x79    
+   \              0x70 0x65    
+   \              0x20 0x5B    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x30 0x78          DC8 "0x%x"
+   \              0x25 0x78    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x75 0x6E          DC8 "unknown"
+   \              0x6B 0x6E    
+   \              0x6F 0x77    
+   \              0x6E 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x25 0x70          DC8 "%p level [%x]"
+   \              0x20 0x6C    
+   \              0x65 0x76    
+   \              0x65 0x6C    
+   \              0x20 0x5B    
+   \              0x25 0x78    
+   \              0x5D 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x53 0x65          DC8 "Security"
+   \              0x63 0x75    
+   \              0x72 0x69    
+   \              0x74 0x79    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x6E 0x65          DC8 "network state [%x] "
+   \              0x74 0x77    
+   \              0x6F 0x72    
+   \              0x6B 0x20    
+   \              0x73 0x74    
+   \              0x61 0x74    
+   \              0x65 0x20    
+   \              0x5B 0x25    
+   \              0x78 0x5D    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x45 0x70          DC8 "Ep cnt: %d"
+   \              0x20 0x63    
+   \              0x6E 0x74    
+   \              0x3A 0x20    
+   \              0x25 0x64    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x65 0x70          DC8 "ep %d [endpoint %p, device %p] "
+   \              0x20 0x25    
+   \              0x64 0x20    
+   \              0x5B 0x65    
+   \              0x6E 0x64    
+   \              0x70 0x6F    
+   \              0x69 0x6E    
+   \              0x74 0x20    
+   \              0x25 0x70    
+   \              0x2C 0x20    
+   \              0x64 0x65    
+   \              0x76 0x69    
+   \              0x63 0x65    
+   \              0x20 0x25    
+   \              0x70 0x5D    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_23:
+   \        0x0   0x65 0x6E          DC8 "enabled"
+   \              0x61 0x62    
+   \              0x6C 0x65    
+   \              0x64 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_24:
+   \        0x0   0x64 0x69          DC8 "disabled"
+   \              0x73 0x61    
+   \              0x62 0x6C    
+   \              0x65 0x64    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_25:
+   \        0x0   0x6E 0x77          DC8 "nwk [%d] profile [0x%2x] devId [0x%2x] ver [0x%x]"
+   \              0x6B 0x20    
+   \              0x5B 0x25    
+   \              0x64 0x5D    
+   \              0x20 0x70    
+   \              0x72 0x6F    
+   \              0x66 0x69    
+   \              0x6C 0x65    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x5D    
+   \              0x20 0x64    
+   \              0x65 0x76    
+   \              0x49 0x64    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x5D    
+   \              0x20 0x76    
+   \              0x65 0x72    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x25 0x78    
+   \              0x5D 0x00    
+   \       0x32   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_26:
+   \        0x0   0x20 0x20          DC8 "    %p cluster: 0x%2x "
+   \              0x20 0x20    
+   \              0x25 0x70    
+   \              0x20 0x63    
+   \              0x6C 0x75    
+   \              0x73 0x74    
+   \              0x65 0x72    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x32    
+   \              0x78 0x20    
+   \              0x00         
+   \       0x17   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_27:
+   \        0x0   0x6F 0x75          DC8 "out(client)"
+   \              0x74 0x28    
+   \              0x63 0x6C    
+   \              0x69 0x65    
+   \              0x6E 0x74    
+   \              0x29 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_28:
+   \        0x0   0x69 0x6E          DC8 "in (server)"
+   \              0x20 0x28    
+   \              0x73 0x65    
+   \              0x72 0x76    
+   \              0x65 0x72    
+   \              0x29 0x00    
+
+   \                                 In section .rodata, align 1
+   \                     ?_29:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_30:
+   \        0x0   0x50 0x72          DC8 "Primary (pro)"
+   \              0x69 0x6D    
+   \              0x61 0x72    
+   \              0x79 0x20    
+   \              0x28 0x70    
+   \              0x72 0x6F    
+   \              0x29 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_31:
+   \        0x0   0x4E 0x77          DC8 "Nwk cnt: %d"
+   \              0x6B 0x20    
+   \              0x63 0x6E    
+   \              0x74 0x3A    
+   \              0x20 0x25    
+   \              0x64 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_32:
+   \        0x0   0x6E 0x77          DC8 "nwk %d [%p]"
+   \              0x6B 0x20    
+   \              0x25 0x64    
+   \              0x20 0x5B    
+   \              0x25 0x70    
+   \              0x5D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_33:
+   \        0x0   0x20 0x20          DC8 "  nodeType [0x%x]"
+   \              0x6E 0x6F    
+   \              0x64 0x65    
+   \              0x54 0x79    
+   \              0x70 0x65    
+   \              0x20 0x5B    
+   \              0x30 0x78    
+   \              0x25 0x78    
+   \              0x5D 0x00    
+   \       0x12   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_34:
+   \        0x0   0x20 0x20          DC8 "  securityProfile [0x%x]"
+   \              0x73 0x65    
+   \              0x63 0x75    
+   \              0x72 0x69    
+   \              0x74 0x79    
+   \              0x50 0x72    
+   \              0x6F 0x66    
+   \              0x69 0x6C    
+   \              0x65 0x20    
+   \              0x5B 0x30    
+   \              0x78 0x25    
+   \              0x78 0x5D    
+   \              0x00         
+   \       0x19   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_35:
+   \        0x0   0x25 0x70          DC8 "%p"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_36:
+   \        0x0   0x25 0x70          DC8 "%p  : "
+   \              0x20 0x20    
+   \              0x3A 0x20    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_37:
+   \        0x0   0x69 0x6E          DC8 "inactive"
+   \              0x61 0x63    
+   \              0x74 0x69    
+   \              0x76 0x65    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_38:
+   \        0x0   0x25 0x6C          DC8 "%l ms"
+   \              0x20 0x6D    
+   \              0x73 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_39:
+   \        0x0   0x54 0x72          DC8 "True random entropy source: "
+   \              0x75 0x65    
+   \              0x20 0x72    
+   \              0x61 0x6E    
+   \              0x64 0x6F    
+   \              0x6D 0x20    
+   \              0x65 0x6E    
+   \              0x74 0x72    
+   \              0x6F 0x70    
+   \              0x79 0x20    
+   \              0x73 0x6F    
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x3A 0x20    
+   \              0x00         
+   \       0x1D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_40:
+   \        0x0   0x52 0x61          DC8 "Radio"
+   \              0x64 0x69    
+   \              0x6F 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_41:
+   \        0x0   0x6D 0x62          DC8 "mbed TLS: TRNG"
+   \              0x65 0x64    
+   \              0x20 0x54    
+   \              0x4C 0x53    
+   \              0x3A 0x20    
+   \              0x54 0x52    
+   \              0x4E 0x47    
+   \              0x00         
+   \        0xF   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_42:
+   \        0x0   0x6D 0x62          DC8 "mbed TLS: Other"
+   \              0x65 0x64    
+   \              0x20 0x54    
+   \              0x4C 0x53    
+   \              0x3A 0x20    
+   \              0x4F 0x74    
+   \              0x68 0x65    
+   \              0x72 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_43:
+   \        0x0   0x55 0x6E          DC8 "Unknown"
+   \              0x6B 0x6E    
+   \              0x6F 0x77    
+   \              0x6E 0x00    
+
+   \                                 In section .rodata, align 2
+   \                     ?_44:
+   \        0x0   0x2E 0x00          DC8 "."
+
+   \                                 In section .rodata, align 4
+   \                     ?_45:
+   \        0x0   0x45 0x50          DC8 "EP %d: %p "
+   \              0x20 0x25    
+   \              0x64 0x3A    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_46:
+   \        0x0   0x45 0x6E          DC8 "Enabled"
+   \              0x61 0x62    
+   \              0x6C 0x65    
+   \              0x64 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_47:
+   \        0x0   0x44 0x69          DC8 "Disabled"
+   \              0x73 0x61    
+   \              0x62 0x6C    
+   \              0x65 0x64    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_48:
+   \        0x0   0x45 0x72          DC8 "Error:  Unknown endpoint."
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x20    
+   \              0x55 0x6E    
+   \              0x6B 0x6E    
+   \              0x6F 0x77    
+   \              0x6E 0x20    
+   \              0x65 0x6E    
+   \              0x64 0x70    
+   \              0x6F 0x69    
+   \              0x6E 0x74    
+   \              0x2E 0x00    
+   \       0x1A   0x00 0x00          DC8 0, 0
+    478          
+    479          #ifndef EMBER_AF_GENERATE_CLI
+    480          static EmberCommandEntry endpointCommands[] = {
+    481            emberCommandEntryAction("print", endpointPrint, "",
+    482                                    "Print the status of all the endpoints."),
+    483            emberCommandEntryAction("enable", enableDisableEndpoint, "u",
+    484                                    "Enables the endpoint for processing ZCL messages."),
+    485            emberCommandEntryAction("disable", enableDisableEndpoint, "u",
+    486                                    "Disable the endpoint from processing ZCL messages."),
+    487          
+    488            emberCommandEntryTerminator(),
+    489          };
+    490          
+    491          //------------------------------------------------------------------------------
+    492          // Commands
+    493          
+    494          static const char * readCommandArguments[] = {
+    495            "Endpoint",
+    496            "Cluster ID",
+    497            "Attribute ID",
+    498            "Server Attribute (bool)",
+    499            NULL,
+    500          };
+    501          
+    502          static const char * timeSyncCommandArguments[] = {
+    503            "Node ID",
+    504            "source endpoint",
+    505            "dest endpoint",
+    506            NULL,
+    507          };
+    508          
+    509          static const char * writeCommandArguments[] = {
+    510            "Endpoint",
+    511            "Cluster ID",
+    512            "Attribute ID",
+    513            "Server Attribute (bool)",
+    514            "Data Bytes",
+    515            NULL,
+    516          };
+    517          
+    518          static const char * sendUsingMulticastBindingCommandArguments[] = {
+    519            "Use Multicast Binding",
+    520            NULL,
+    521          };
+    522          
+    523          static const char * bindSendCommandArguments[] = {
+    524            "Source Endpoint",
+    525            NULL,
+    526          };
+    527          
+    528          static const char * rawCommandArguments[] = {
+    529            "Cluster ID",
+    530            "Data Bytes",
+    531            NULL,
+    532          };
+    533          
+    534          static const char * sendCommandArguments[] = {
+    535            "Node ID",
+    536            "Source Endpoint",
+    537            "Dest Endpoint",
+    538            NULL,
+    539          };
+    540          
+    541          //static const char * sendZclIpCommandArguments[] = {
+    542          //  "Node EUI64",
+    543          //  "Source Endpoint",
+    544          //  "Dest Endpoint",
+    545          //  NULL,
+    546          //};
+    547          
+    548          static const char * sendMulticastCommandArguments[] = {
+    549            "Broadcast address",
+    550            "Group Address",
+    551            "Source Endpoint",
+    552            NULL,
+    553          };
+    554          
+    555          EmberCommandEntry emberCommandTable[] = {
+    556          #ifdef ZA_CLI_FULL
+    557              #if (defined(ZCL_USING_KEY_ESTABLISHMENT_CLUSTER_CLIENT) \
+    558            && defined(ZCL_USING_KEY_ESTABLISHMENT_CLUSTER_SERVER))
+    559            emberCommandEntrySubMenu("cbke",
+    560                                     emberAfPluginKeyEstablishmentCommands,
+    561                                     "Commands to initiate CBKE"),
+    562              #endif
+    563          
+    564              #ifdef EMBER_AF_PRINT_ENABLE
+    565            emberCommandEntrySubMenu("print", printCommands, ""),
+    566            emberCommandEntrySubMenu("debugprint", debugPrintCommands, ""),
+    567              #endif
+    568          
+    569              #if defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_APP)
+    570            emberCommandEntryAction("version",
+    571                                    emAfCliVersionCommand,
+    572                                    "",
+    573                                    "Print the version number of the ZNet software."),
+    574          
+    575            LIBRARY_COMMANDS           // Defined in app/util/common/library.h
+    576              #endif
+    577          
+    578            emberCommandEntrySubMenu("cha",
+    579                                     changeKeyCommands,
+    580                                     "Commands to change the default NWK or Link Key"),
+    581            emberCommandEntrySubMenu("interpan",
+    582                                     interpanCommands,
+    583                                     "Commands to send interpan ZCL messages."),
+    584            emberCommandEntrySubMenu("option",
+    585                                     emAfOptionCommands,
+    586                                     "Commands to change the application options"),
+    587          
+    588            emberCommandEntryActionWithDetails("read",
+    589                                               emAfCliReadCommand,
+    590                                               "uvvu",
+    591                                               "Construct a read attributes command to be sent.",
+    592                                               readCommandArguments),
+    593          
+    594            emberCommandEntryActionWithDetails("time",
+    595                                               emAfCliTimesyncCommand,
+    596                                               "vuu",
+    597                                               "Send a read attribute for the current time",
+    598                                               timeSyncCommandArguments),
+    599          
+    600            emberCommandEntryActionWithDetails("write",
+    601                                               emAfCliWriteCommand,
+    602                                               "uvvuub",
+    603                                               "Construct a write attributes command to send.",
+    604                                               writeCommandArguments),
+    605          
+    606            emberCommandEntrySubMenu("zcl",
+    607                                     zclCommands,
+    608                                     "Commands for constructing ZCL cluster commands."),
+    609          #endif // ZA_CLI_FULL
+    610          
+    611            emberCommandEntryActionWithDetails("send-using-multicast-binding",
+    612                                               emAfCliSendUsingMulticastBindingCommand,
+    613                                               "u",
+    614                                               "Use multicast binding when sending using binding",
+    615                                               sendUsingMulticastBindingCommandArguments),
+    616          
+    617            emberCommandEntryActionWithDetails("bsend",
+    618                                               emAfCliBsendCommand,
+    619                                               "u",
+    620                                               "Send using a binding.",
+    621                                               bindSendCommandArguments),
+    622          
+    623            emberCommandEntrySubMenu("keys",
+    624                                     keysCommands,
+    625                                     "Commands to print or set the security keys"),
+    626          
+    627            emberCommandEntrySubMenu("network",
+    628                                     networkCommands,
+    629                                     "Commands to form or join a network."),
+    630          
+    631            emberCommandEntryActionWithDetails("raw",
+    632                                               emAfCliRawCommand,
+    633                                               "vb",
+    634                                               "Create a manually formatted message.",
+    635                                               rawCommandArguments),
+    636          
+    637            emberCommandEntryActionWithDetails("send",
+    638                                               emAfCliSendCommand,
+    639                                               "vuu",
+    640                                               "Send the previously constructed command via unicast.",
+    641                                               sendCommandArguments),
+    642          
+    643            emberCommandEntryActionWithDetails("send_multicast",
+    644                                               emAfCliSendCommand,
+    645                                               "vu",
+    646                                               "Send the previously constructed command via multicast.",
+    647                                               sendMulticastCommandArguments),
+    648          
+    649          #ifndef EMBER_AF_HAS_SECURITY_PROFILE_NONE
+    650            emberCommandEntrySubMenu("security", emAfSecurityCommands,
+    651                                     "Commands for setting/getting security parameters."),
+    652          #endif
+    653          
+    654          #if defined(EMBER_AF_PLUGIN_COUNTERS)
+    655            emberCommandEntryAction("cnt_print", emberAfPluginCountersPrintCommand, "",                      \
+    656                                    "Print all stack counters"),                                             \
+    657            emberCommandEntryAction("cnt_clear", emberAfPluginCountersClear, "",                             \
+    658                                    "Clear all stack counters"),                                             \
+    659            emberCommandEntryAction("cnt_threshold_print", emberAfPluginCountersPrintThresholdsCommand, "",  \
+    660                                    "Print all stack counter thresholds"),                                   \
+    661            emberCommandEntryAction("set_counter_threshold", emberAfPluginCountersSetThresholdCommand, "uu", \
+    662                                    "Set Counter Threshold"),                                                \
+    663            emberCommandEntryAction("reset_counter_thresholds", emberAfPluginCountersResetThresholds, "",    \
+    664                                    "Reset_counter_thresholds"),
+    665          #endif
+    666          
+    667          #if defined(EMBER_AF_PLUGIN_COUNTERS_COUNTERSOTA)
+    668            emberCommandEntryAction("cnt_req", sendCountersRequestCommand, "vu", \
+    669                                    "Request stack counters from remote device"),
+    670          #endif
+    671          
+    672            emberCommandEntryAction("help", helpCommand, "",
+    673                                    "Print the list of commands."),
+    674            emberCommandEntryAction("reset", resetCommand, "",
+    675                                    "Perform a software reset of the device."),
+    676            emberCommandEntryAction("echo", echoCommand, "u",
+    677                                    "Turn on/off command interpreter echoing."),
+    678            emberCommandEntryAction("events", printEvents, "",
+    679                                    "Print the list of timer events."),
+    680            emberCommandEntrySubMenu("endpoint", endpointCommands,
+    681                                     "Commands to manipulate the endpoints."),
+    682          
+    683          #ifndef EMBER_AF_CLI_DISABLE_INFO
+    684            emberCommandEntryAction("info", emAfCliInfoCommand, "", \
+    685                                    "Print infomation about the network state, clusters, and endpoints"),
+    686          #endif
+    687          
+    688            EMBER_AF_PLUGIN_COMMANDS
+    689            ZDO_COMMANDS
+    690            CUSTOM_COMMANDS
+    691            TEST_HARNESS_CLI_COMMANDS
+    692          
+    693            emberCommandEntryTerminator(),
+    694          };
+    695          
+    696          #endif // EMBER_AF_GENERATE_CLI
+    697          
+    698          #else
+    699          // Stubs
+    700          void enableDisableEndpoint(void)
+    701          {
+    702          }
+    703          
+    704          void endpointPrint(void)
+    705          {
+    706          }
+    707          
+    708          void printOffCommand(void)
+    709          {
+    710          }
+    711          
+    712          void printOnCommand(void)
+    713          {
+    714          }
+    715          
+    716          void printEvents(void)
+    717          {
+    718          }
+    719          
+    720          void echoCommand(void)
+    721          {
+    722          }
+    723          
+    724          void emAfCliCountersCommand(void)
+    725          {
+    726          }
+    727          
+    728          void emAfCliInfoCommand(void)
+    729          {
+    730          }
+    731          
+    732          void helpCommand(void)
+    733          {
+    734          }
+    735          
+    736          void resetCommand(void)
+    737          {
+    738          }
+    739          #endif // defined(ZA_CLI_FULL)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   echoCommand
+         8   -> emberUnsignedCommandArgument
+      88   emAfCliInfoCommand
+        88   -> __aeabi_memclr4
+        88   -> emAfCliVersionCommand
+        88   -> emAfGetManufacturerCodeForCluster
+        88   -> emAfGetPacketBufferFreeCount
+        88   -> emAfGetPacketBufferTotalCount
+        88   -> emberAfDecodeAndPrintClusterWithMfgCode
+        88   -> emberAfEndpointCount
+        88   -> emberAfEndpointFromIndex
+        88   -> emberAfEndpointIndexIsEnabled
+        88   -> emberAfGetEui64
+        88   -> emberAfGetNetworkParameters
+        88   -> emberAfGetNodeId
+        88   -> emberAfGetSecurityLevel
+        88   -> emberAfIsDeviceEnabled
+        88   -> emberAfPopNetworkIndex
+        88   -> emberAfPrint
+        88   -> emberAfPrintBigEndianEui64
+        88   -> emberAfPrintEnabled
+        88   -> emberAfPrintln
+        88   -> emberAfPushNetworkIndex
+        88   -> emberGetAvgParentRssi
+        88   -> emberGetParentId
+        88   -> emberGetPhyInterfaceCount
+        88   -> emberGetRadioParameters
+        88   -> emberNetworkState
+        88   -> emberStringCommandArgument
+        88   -> printMfgString
+       8   emberAfPrintEntropySource
+         8   -> emberAfPrint
+         0   -> emberAfPrintln
+         8   -> emberGetStrongRandomEntropySource
+       8   emberCommandActionHandler
+         8   -- Indirect call
+         0   -> emberAfPopNetworkIndex
+         8   -> emberAfPushNetworkIndex
+       8   enableDisableEndpoint
+         8   -> emberAfEndpointEnableDisable
+         0   -> emberAfPrintln
+         8   -> emberUnsignedCommandArgument
+      32   endpointPrint
+        32   -> emAfPrintEzspEndpointFlags
+        32   -> emberAfEndpointCount
+        32   -> emberAfEndpointIndexIsEnabled
+        32   -> emberAfPrint
+        32   -> emberAfPrintln
+      16   helpCommand
+        16   -> emberAfPrintln
+      40   printEvents
+        40   -> emberAfPrint
+        40   -> emberAfPrintln
+        40   -> halCommonGetInt32uMillisecondTick
+      24   printMfgString
+        24   -> emberAfFormatMfgString
+        24   -> emberAfPrintln
+       8   printOffCommand
+         0   -> emberAfPrintOff
+         8   -> emberUnsignedCommandArgument
+       8   printOnCommand
+         0   -> emberAfPrintOn
+         8   -> emberUnsignedCommandArgument
+       0   printSmartEnergySecurityInfo
+       0   printSmartEnergySecurityInfo283k1
+       0   resetCommand
+         0   -> halReboot
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_10
+       4  ??DataTable8_11
+       4  ??DataTable8_12
+       4  ??DataTable8_13
+       4  ??DataTable8_14
+       4  ??DataTable8_15
+       4  ??DataTable8_16
+       4  ??DataTable8_17
+       4  ??DataTable8_18
+       4  ??DataTable8_19
+       4  ??DataTable8_2
+       4  ??DataTable8_20
+       4  ??DataTable8_21
+       4  ??DataTable8_22
+       4  ??DataTable8_23
+       4  ??DataTable8_24
+       4  ??DataTable8_25
+       4  ??DataTable8_26
+       4  ??DataTable8_27
+       4  ??DataTable8_28
+       4  ??DataTable8_29
+       4  ??DataTable8_3
+       4  ??DataTable8_30
+       4  ??DataTable8_31
+       4  ??DataTable8_32
+       4  ??DataTable8_33
+       4  ??DataTable8_34
+       4  ??DataTable8_35
+       4  ??DataTable8_36
+       4  ??DataTable8_37
+       4  ??DataTable8_38
+       4  ??DataTable8_39
+       4  ??DataTable8_4
+       4  ??DataTable8_40
+       4  ??DataTable8_41
+       4  ??DataTable8_42
+       4  ??DataTable8_43
+       4  ??DataTable8_44
+       4  ??DataTable8_45
+       4  ??DataTable8_46
+       4  ??DataTable8_47
+       4  ??DataTable8_48
+       4  ??DataTable8_49
+       4  ??DataTable8_5
+       4  ??DataTable8_50
+       4  ??DataTable8_51
+       4  ??DataTable8_52
+       4  ??DataTable8_53
+       4  ??DataTable8_54
+       4  ??DataTable8_55
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       4  ??DataTable8_9
+      10  ?Subroutine0
+       6  ?Subroutine1
+       8  ?Subroutine2
+       6  ?Subroutine3
+       6  ?Subroutine4
+       6  ?Subroutine5
+      16  ?_0
+      16  ?_1
+      12  ?_10
+      32  ?_11
+      12  ?_12
+       2  ?_13
+      36  ?_14
+      12  ?_15
+       8  ?_16
+       8  ?_17
+      16  ?_18
+      12  ?_19
+      24  ?_2
+      20  ?_20
+      12  ?_21
+      32  ?_22
+       8  ?_23
+      12  ?_24
+      52  ?_25
+      24  ?_26
+      12  ?_27
+      12  ?_28
+       1  ?_29
+      28  ?_3
+      16  ?_30
+      12  ?_31
+      12  ?_32
+      20  ?_33
+      28  ?_34
+       4  ?_35
+       8  ?_36
+      12  ?_37
+       8  ?_38
+      32  ?_39
+       8  ?_4
+       8  ?_40
+      16  ?_41
+      16  ?_42
+       8  ?_43
+       2  ?_44
+      12  ?_45
+       8  ?_46
+      12  ?_47
+      28  ?_48
+       4  ?_49
+      24  ?_5
+      24  ?_6
+       8  ?_7
+      32  ?_8
+      12  ?_9
+      28  echoCommand
+     656  emAfCliInfoCommand
+      52  emberAfPrintEntropySource
+      24  emberCommandActionHandler
+      36  enableDisableEndpoint
+      82  endpointPrint
+      26  helpCommand
+      84  printEvents
+      26  printMfgString
+      16  printOffCommand
+      16  printOnCommand
+       4  printSmartEnergySecurityInfo
+       4  printSmartEnergySecurityInfo283k1
+       4  resetCommand
+
+ 
+   793 bytes in section .rodata
+ 1 324 bytes in section .text
+ 
+ 1 324 bytes of CODE  memory
+   793 bytes of CONST memory
+
+Errors: none
+Warnings: none

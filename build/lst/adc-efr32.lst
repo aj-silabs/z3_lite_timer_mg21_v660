@@ -1,0 +1,649 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:00
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\adc\adc-efr32.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW8C7B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\adc\adc-efr32.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"adc-efr32.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\adc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\adc-efr32.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\adc-efr32.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\plugin\adc\adc-efr32.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief EFR32-specific ADC HAL functions
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          #include PLATFORM_HEADER
+     18          #include "stack/include/error.h"
+     19          #include "hal/micro/micro-common.h"
+     20          #include "hal/micro/cortexm3/efm32/micro-common.h"
+     21          #include "plugin/adc/adc.h"
+     22          
+     23          #include <limits.h>
+     24          #include "em_cmu.h"
+     25          #include "em_adc.h"
+     26          #include "em_bus.h"
+     27          
+     28          #if (NUM_ADC_USERS > 8)
+     29            #error NUM_ADC_USERS must not be greater than 8, or uint8_t variables in adc-efr32.c must be changed
+     30          #endif
+     31          
+     32          #if defined(CORTEXM3_EFR32_MICRO)
+     33          // EFR-only ADC HAL
+     34          
+     35          #if !defined (_SILICON_LABS_32B_SERIES_2)
+     36          // TODO: EMHAL-1454 "support series2 in adc-efr32.c"
+     37          typedef struct {
+     38            ADC_AcqTime_TypeDef acqTime;
+     39            ADC_Ref_TypeDef reference;
+     40            uint8_t channel;
+     41            bool diff;
+     42          } adcConfig_typeDef;
+     43          
+     44          static bool use1MHzClock = false;
+     45          static volatile uint8_t adcPendingRequests;               /* Bitmap of pending requests */
+     46          static volatile uint8_t adcPendingConversion;             /* ID of pending conversion */
+     47          static uint8_t adcReadingValid;                           /* Bitmap of valid adcReadings */
+     48          static adcConfig_typeDef adcConfig[NUM_ADC_USERS];
+     49          static uint8_t adcUserSel;
+     50          static uint16_t adcReadings[NUM_ADC_USERS];
+     51          
+     52          /* Fixed mapping of channel to APORT. Channel is 4 bits while there are 256 APORT channels available. */
+     53          const ADC_PosSel_TypeDef pChanAportPosSelMap[] =
+     54          { adcPosSelAVDD,                                  /* 0 - AVDD (single-ended only) */
+     55            adcPosSelAPORT3YCH27,                           /* 1 - PB11 (single-ended or diff) */
+     56            adcPosSelAPORT3XCH28,                           /* 2 - PB12 (single-ended or diff) */
+     57            adcPosSelAPORT3YCH5,                            /* 3 - PB13 (single-ended or diff) */
+     58            adcPosSelAPORT2YCH6,                            /* 4 - PC6  (single-ended or diff) */
+     59            adcPosSelAPORT3XCH12,                           /* 5 - PA4  (single-ended or diff) */
+     60            adcPosSelAPORT3YCH13,                           /* 6 - PA5  (single-ended or diff) */
+     61          };
+     62          const ADC_NegSel_TypeDef nChanAportNegSelMap[] =
+     63          { adcNegSelVSS,                                   /* 0 - GND  (single-ended only) */
+     64            adcNegSelAPORT3YCH27,                           /* 1 - PB11 (single-ended or diff) */
+     65            adcNegSelAPORT3XCH28,                           /* 2 - PB12 (single-ended or diff) */
+     66            adcNegSelAPORT3YCH5,                            /* 3 - PB13 (single-ended or diff) */
+     67            adcNegSelAPORT2YCH6,                            /* 4 - PC6  (single-ended or diff) */
+     68            adcNegSelAPORT3XCH12,                           /* 5 - PA4  (single-ended or diff) */
+     69            adcNegSelAPORT3YCH13,                           /* 6 - PA5  (single-ended or diff) */
+     70          };
+     71          
+     72          ADC_PosSel_TypeDef pChanToPosSel(uint8_t pChan)
+     73          {
+     74            if (pChan < sizeof(pChanAportPosSelMap)) {
+     75              return pChanAportPosSelMap[pChan];
+     76            } else {
+     77              EFM_ASSERT(false);
+     78              return adcPosSelDEFAULT;
+     79            }
+     80          }
+     81          #else // !defined (_SILICON_LABS_32B_SERIES_2)
+
+   \                                 In section .text, align 2, keep-with-next
+     82          uint32_t pChanToPosSel(uint8_t pChan)
+     83          {
+     84            return 0;
+   \                     pChanToPosSel: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+     85          }
+     86          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+     87          
+     88          #if !defined (_SILICON_LABS_32B_SERIES_2)
+     89          ADC_NegSel_TypeDef nChanToNegSel(uint8_t nChan)
+     90          {
+     91            if (nChan < sizeof(nChanAportNegSelMap)) {
+     92              return nChanAportNegSelMap[nChan];
+     93            } else {
+     94              EFM_ASSERT(false);
+     95              return adcNegSelDEFAULT;
+     96            }
+     97          }
+     98          #else // !defined (_SILICON_LABS_32B_SERIES_2)
+
+   \                                 In section .text, align 2, keep-with-next
+     99          uint32_t nChanToNegSel(uint8_t nChan)
+    100          {
+    101            return 0;
+   \                     nChanToNegSel: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+    102          }
+    103          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    104          
+
+   \                                 In section .text, align 2, keep-with-next
+    105          void halAdcSetClock(bool slow)
+    106          {
+    107          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    108            use1MHzClock = slow;
+    109          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    110          }
+   \                     halAdcSetClock: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    111          
+
+   \                                 In section .text, align 2, keep-with-next
+    112          bool halAdcGetClock(void)
+    113          {
+    114          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    115            return use1MHzClock;
+    116          #else // !defined (_SILICON_LABS_32B_SERIES_2)
+    117            return false;
+   \                     halAdcGetClock: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+    118          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    119          }
+    120          
+    121          /* Set user configuration and start ADC */
+    122          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    123          void adcInitStart(ADC_InitSingle_TypeDef *initSingle, uint8_t adcUser)
+    124          {
+    125            initSingle->posSel      = pChanToPosSel(adcConfig[adcUser].channel >> 4);
+    126            initSingle->negSel      = nChanToNegSel(adcConfig[adcUser].channel & 0xF);
+    127          
+    128            /* Configure for diff mode if negSel is not GND (VSS) */
+    129            adcConfig[adcUser].diff = (initSingle->negSel != adcNegSelVSS);
+    130            initSingle->diff        = adcConfig[adcUser].diff;
+    131          
+    132            initSingle->acqTime     = adcConfig[adcUser].acqTime;
+    133            initSingle->reference   = adcConfig[adcUser].reference;
+    134          
+    135            ADC_InitSingle(ADC0, initSingle);
+    136            ADC_Start(ADC0, adcStartSingle);
+    137          }
+    138          #else // !defined (_SILICON_LABS_32B_SERIES_2)
+
+   \                                 In section .text, align 2, keep-with-next
+    139          void adcInitStart(uint32_t *initSingle, uint8_t adcUser)
+    140          {
+    141          }
+   \                     adcInitStart: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    142          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    143          
+
+   \                                 In section .text, align 2, keep-with-next
+    144          void ADC0_IRQHandler(void)
+    145          {
+    146          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    147            ADC_InitSingle_TypeDef initSingle = ADC_INITSINGLE_DEFAULT;
+    148            uint8_t i;
+    149            uint8_t conversion = adcPendingConversion;
+    150            uint16_t adcSample;
+    151          
+    152            /* make sure data is ready and the desired conversion is valid */
+    153            if ((ADC_IntGetEnabled(ADC0) & ADC_IF_SINGLE) && (conversion < NUM_ADC_USERS)) {
+    154              adcSample = (uint16_t)ADC0->SINGLEDATA;
+    155              if ((adcConfig[conversion].diff) && ((int16_t)adcSample < 0)) {
+    156                /* ADC data in diff mode is 2's complement, but this API does not support
+    157                 *    both single-ended and differential measurements. Set result to zero if
+    158                 *    diff mode and V_nchan > V_pchan. */
+    159                adcReadings[conversion] = 0;
+    160              } else {
+    161                adcReadings[conversion] = adcSample;
+    162              }
+    163          
+    164              /* mark the reading as valid */
+    165              adcReadingValid |= BIT(conversion);
+    166          
+    167              /* setup the next conversion if any */
+    168              if (adcPendingRequests) {
+    169                for (i = 0; i < NUM_ADC_USERS; i++) {
+    170                  if (BIT(i) & adcPendingRequests) {
+    171                    adcPendingConversion = i;     /* set pending conversion */
+    172                    adcPendingRequests ^= BIT(i); /* clear request: conversion is starting */
+    173          
+    174                    adcInitStart(&initSingle, i);
+    175          
+    176                    /* conversion started, so we're done here (only one at a time) */
+    177                    break;
+    178                  }
+    179                }
+    180              } else {
+    181                /* nothing pending, so go "idle" */
+    182                adcPendingConversion = NUM_ADC_USERS;
+    183              }
+    184            }
+    185          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    186          }
+   \                     ADC0_IRQHandler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    187          
+    188          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    189          /* An internal support routine called from functions below.
+    190           * Returns the user number of the started conversion, or NUM_ADC_USERS
+    191           * otherwise. */
+    192          static ADCUser startNextConversion(void)
+    193          {
+    194            ADC_InitSingle_TypeDef initSingle = ADC_INITSINGLE_DEFAULT;
+    195            uint8_t i;
+    196          
+    197            {
+    198              DECLARE_INTERRUPT_STATE;
+    199              DISABLE_INTERRUPTS();
+    200          
+    201              /* start the next requested conversion if any */
+    202              if (adcPendingRequests && !(ADC0->STATUS & ADC_STATUS_SINGLEACT)) {
+    203                for (i = 0; i < NUM_ADC_USERS; i++) {
+    204                  if ( BIT(i) & adcPendingRequests) {
+    205                    adcPendingConversion = i;     /* set pending conversion */
+    206                    adcPendingRequests ^= BIT(i); /* clear request */
+    207          
+    208                    adcInitStart(&initSingle, i);
+    209          
+    210                    break;
+    211                  }
+    212                }
+    213              } else {
+    214                i = NUM_ADC_USERS;
+    215              }
+    216              RESTORE_INTERRUPTS();
+    217            }
+    218            return i;
+    219          }
+    220          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    221          
+
+   \                                 In section .text, align 2, keep-with-next
+    222          void halInternalInitAdc(void)
+    223          {
+    224          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    225            ADC_Init_TypeDef init = ADC_INIT_DEFAULT;
+    226          
+    227            if (use1MHzClock) {
+    228              init.prescale = ADC_PrescaleCalc(1000000, 0);
+    229            } else {
+    230              /* Use MAX ADC clock */
+    231              init.prescale = ADC_PrescaleCalc(UINT32_MAX, 0);
+    232            }
+    233          
+    234            CMU_ClockEnable(cmuClock_ADC0, true);
+    235            ADC_Init(ADC0, &init);
+    236          
+    237            for (adcUserSel = 0; adcUserSel < NUM_ADC_USERS; adcUserSel++) {
+    238              /* pChan = 0 (VDD), nChan = 0 (GND) */
+    239              adcConfig[adcUserSel].channel   = 0;
+    240              adcConfig[adcUserSel].acqTime   = adcAcqTime1;
+    241              adcConfig[adcUserSel].diff      = false;
+    242              adcConfig[adcUserSel].reference = adcRef5VDIFF;
+    243            }
+    244          
+    245            adcUserSel = 0;
+    246            adcPendingRequests = 0;
+    247            adcPendingConversion = 0;
+    248            adcReadingValid = 0;
+    249          
+    250            /* Enable SINGLE data interrupt */
+    251            NVIC_ClearPendingIRQ(ADC0_IRQn);
+    252            NVIC_EnableIRQ(ADC0_IRQn);
+    253            ADC_IntEnable(ADC0, ADC_IF_SINGLE);
+    254          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    255          }
+   \                     halInternalInitAdc: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    256          
+
+   \                                 In section .text, align 2, keep-with-next
+    257          void halInternalSleepAdc(void)
+    258          {
+    259          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    260            ADC_Reset(ADC0);
+    261            NVIC_DisableIRQ(ADC0_IRQn);
+    262            ADC_IntDisable(ADC0, ADC_IF_SINGLE);
+    263          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    264          }
+   \                     halInternalSleepAdc: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    265          
+
+   \                                 In section .text, align 2, keep-with-next
+    266          EmberStatus halStartAdcConversion(ADCUser id,
+    267                                            ADCReferenceType reference,
+    268                                            ADCChannelType channel,
+    269                                            ADCRateType rate)
+    270          {
+    271          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    272            /* Save config for this ID */
+    273            adcConfig[id].channel = channel;
+    274          
+    275            if (reference <= adcRefP) {
+    276              adcConfig[id].reference = (ADC_Ref_TypeDef)reference;
+    277            } else {
+    278              return EMBER_ERR_FATAL;
+    279            }
+    280          
+    281            if (rate <= adcAcqTime256) {
+    282              adcConfig[id].acqTime = (ADC_AcqTime_TypeDef)rate;
+    283            } else {
+    284              return EMBER_ERR_FATAL;
+    285            }
+    286          
+    287            /* if the user already has a pending request, overwrite params */
+    288            if (adcPendingRequests & BIT(id)) {
+    289              return EMBER_ADC_CONVERSION_DEFERRED;
+    290            }
+    291          
+    292            {
+    293              DECLARE_INTERRUPT_STATE;
+    294              DISABLE_INTERRUPTS();
+    295          
+    296              /* otherwise, queue the transaction */
+    297              adcPendingRequests |= BIT(id);
+    298          
+    299              /* try and start the conversion if there is not one happening */
+    300              adcReadingValid &= ~BIT(id);
+    301              RESTORE_INTERRUPTS();
+    302            }
+    303            if (startNextConversion() == id) {
+    304              return EMBER_ADC_CONVERSION_BUSY;
+    305            } else {
+    306              return EMBER_ADC_CONVERSION_DEFERRED;
+    307            }
+    308          #else // !defined (_SILICON_LABS_32B_SERIES_2)
+    309            return EMBER_ERR_FATAL;
+   \                     halStartAdcConversion: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4770             BX       LR               ;; return
+    310          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    311          }
+    312          
+
+   \                                 In section .text, align 2, keep-with-next
+    313          EmberStatus halRequestAdcData(ADCUser id, uint16_t *value)
+    314          {
+    315          #if !defined (_SILICON_LABS_32B_SERIES_2)
+    316            // If interrupts are disabled, the ADC ISR cannot be serviced
+    317            bool intsAreOff = INTERRUPTS_ARE_OFF();
+    318            EmberStatus status;
+    319          
+    320            {
+    321              DECLARE_INTERRUPT_STATE;
+    322              DISABLE_INTERRUPTS();
+    323              // If interupts are disabled but the flag is set, manually run the ISR
+    324              if (intsAreOff && (ADC_IntGet(ADC0) & ADC_IF_SINGLE)) {
+    325                ADC0_IRQHandler();
+    326              }
+    327          
+    328              /* check if we are done */
+    329              if (BIT(id) & adcReadingValid) {
+    330                *value = adcReadings[id];
+    331                adcReadingValid ^= BIT(id);
+    332                status = EMBER_ADC_CONVERSION_DONE;
+    333              } else if (adcPendingRequests & BIT(id)) {
+    334                status = EMBER_ADC_CONVERSION_DEFERRED;
+    335              } else if (adcPendingConversion == id) {
+    336                status = EMBER_ADC_CONVERSION_BUSY;
+    337              } else {
+    338                status = EMBER_ADC_NO_CONVERSION_PENDING;
+    339              }
+    340              RESTORE_INTERRUPTS();
+    341            }
+    342            return status;
+    343          #else // !defined (_SILICON_LABS_32B_SERIES_2)
+    344            return EMBER_ERR_FATAL;
+   \                     halRequestAdcData: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4770             BX       LR               ;; return
+    345          #endif // !defined (_SILICON_LABS_32B_SERIES_2)
+    346          }
+    347          
+
+   \                                 In section .text, align 2, keep-with-next
+    348          EmberStatus halReadAdcBlocking(ADCUser id, uint16_t *value)
+    349          {
+    350            EmberStatus status;
+    351          
+    352            do {
+    353              status = halRequestAdcData(id, value);
+    354              if (status == EMBER_ADC_NO_CONVERSION_PENDING) {
+    355                break;
+    356              }
+    357            } while (status != EMBER_ADC_CONVERSION_DONE);
+   \                     halReadAdcBlocking: (+1)
+   \                     ??halReadAdcBlocking_0: (+1)
+   \        0x0   0xE7FE             B.N      ??halReadAdcBlocking_0
+    358            return status;
+    359          }
+    360          
+
+   \                                 In section .text, align 2, keep-with-next
+    361          EmberStatus halAdcCalibrate(ADCUser id)
+    362          {
+    363            /* ADC is calibrated out of reset */
+    364            (void)id;
+    365            return 0;
+   \                     halAdcCalibrate: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+    366          }
+    367          
+
+   \                                 In section .text, align 2, keep-with-next
+    368          int32_t halConvertValueToVolts(uint16_t value)
+    369          {
+    370          #if (ADC_REF_INT == adcRef5VDIFF) && !defined(VFS_FACTOR)
+    371          #define REF_VFS_FACTOR      50000UL
+    372          #else
+    373          #error "REF_VFS_FACTOR is udefined"
+    374          #endif
+    375          
+    376            int32_t volts;
+    377            volts = (int32_t)(((uint32_t)value * REF_VFS_FACTOR) / 4096UL);
+    378            return volts;
+   \                     halConvertValueToVolts: (+1)
+   \        0x0   0xF24C 0x3150      MOVW     R1,#+50000
+   \        0x4   0x4348             MULS     R0,R1,R0
+   \        0x6   0x0B00             LSRS     R0,R0,#+12
+   \        0x8   0x4770             BX       LR               ;; return
+    379          }
+    380          
+    381          #endif // CORTEXM3_EFR32_MICRO
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ADC0_IRQHandler
+       0   adcInitStart
+       0   halAdcCalibrate
+       0   halAdcGetClock
+       0   halAdcSetClock
+       0   halConvertValueToVolts
+       0   halInternalInitAdc
+       0   halInternalSleepAdc
+       0   halReadAdcBlocking
+       0   halRequestAdcData
+       0   halStartAdcConversion
+       0   nChanToNegSel
+       0   pChanToPosSel
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  ADC0_IRQHandler
+       2  adcInitStart
+       4  halAdcCalibrate
+       4  halAdcGetClock
+       2  halAdcSetClock
+      10  halConvertValueToVolts
+       2  halInternalInitAdc
+       2  halInternalSleepAdc
+       2  halReadAdcBlocking
+       4  halRequestAdcData
+       4  halStartAdcConversion
+       4  nChanToNegSel
+       4  pChanToPosSel
+
+ 
+ 46 bytes in section .text
+ 
+ 46 bytes of CODE memory
+
+Errors: none
+Warnings: none

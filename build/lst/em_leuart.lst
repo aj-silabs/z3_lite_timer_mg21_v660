@@ -1,0 +1,894 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:51
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_leuart.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW531B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_leuart.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_leuart.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_leuart.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_leuart.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_leuart.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Low Energy Universal Asynchronous Receiver/Transmitter (LEUART)
+      4           *   Peripheral API
+      5           * @version 5.8.0
+      6           *******************************************************************************
+      7           * # License
+      8           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      9           *******************************************************************************
+     10           *
+     11           * SPDX-License-Identifier: Zlib
+     12           *
+     13           * The licensor of this software is Silicon Laboratories Inc.
+     14           *
+     15           * This software is provided 'as-is', without any express or implied
+     16           * warranty. In no event will the authors be held liable for any damages
+     17           * arising from the use of this software.
+     18           *
+     19           * Permission is granted to anyone to use this software for any purpose,
+     20           * including commercial applications, and to alter it and redistribute it
+     21           * freely, subject to the following restrictions:
+     22           *
+     23           * 1. The origin of this software must not be misrepresented; you must not
+     24           *    claim that you wrote the original software. If you use this software
+     25           *    in a product, an acknowledgment in the product documentation would be
+     26           *    appreciated but is not required.
+     27           * 2. Altered source versions must be plainly marked as such, and must not be
+     28           *    misrepresented as being the original software.
+     29           * 3. This notice may not be removed or altered from any source distribution.
+     30           *
+     31           ******************************************************************************/
+     32          
+     33          #include "em_leuart.h"
+     34          #if defined(LEUART_COUNT) && (LEUART_COUNT > 0)
+     35          
+     36          #include "em_cmu.h"
+     37          #include "em_assert.h"
+     38          
+     39          /***************************************************************************//**
+     40           * @addtogroup emlib
+     41           * @{
+     42           ******************************************************************************/
+     43          
+     44          /***************************************************************************//**
+     45           * @addtogroup LEUART
+     46           * @brief Low Energy Universal Asynchronous Receiver/Transmitter (LEUART)
+     47           *        Peripheral API
+     48           * @details
+     49           *  This module contains functions to control the LEUART peripheral of Silicon
+     50           *  Labs 32-bit MCUs and SoCs. The LEUART module provides the full UART communication using
+     51           *  a low frequency 32.768 kHz clock and has special features for communication
+     52           *  without the CPU intervention.
+     53           * @{
+     54           ******************************************************************************/
+     55          
+     56          /*******************************************************************************
+     57           *******************************   DEFINES   ***********************************
+     58           ******************************************************************************/
+     59          
+     60          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     61          
+     62          /** A validation of the LEUART register block pointer reference
+     63           *  for assert statements. */
+     64          #if (LEUART_COUNT == 1)
+     65          #define LEUART_REF_VALID(ref)    ((ref) == LEUART0)
+     66          #elif (LEUART_COUNT == 2)
+     67          #define LEUART_REF_VALID(ref)    (((ref) == LEUART0) || ((ref) == LEUART1))
+     68          #else
+     69          #error "Undefined number of low energy UARTs (LEUART)."
+     70          #endif
+     71          
+     72          /** @endcond */
+     73          
+     74          /*******************************************************************************
+     75           **************************   LOCAL FUNCTIONS   ********************************
+     76           ******************************************************************************/
+     77          
+     78          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     79          
+     80          /***************************************************************************//**
+     81           * @brief
+     82           *   Wait for ongoing sync of register(s) to the low-frequency domain to complete.
+     83           *
+     84           * @param[in] leuart
+     85           *   A pointer to the LEUART peripheral register block.
+     86           *
+     87           * @param[in] mask
+     88           *   A bitmask corresponding to SYNCBUSY register defined bits, indicating
+     89           *   registers that must complete any ongoing synchronization.
+     90           ******************************************************************************/
+     91          __STATIC_INLINE void LEUART_Sync(LEUART_TypeDef *leuart, uint32_t mask)
+     92          {
+     93            /* Avoid deadlock if modifying the same register twice when freeze mode is */
+     94            /* activated. */
+     95            if (leuart->FREEZE & LEUART_FREEZE_REGFREEZE) {
+     96              return;
+     97            }
+     98          
+     99            /* Wait for any pending previous write operation to have been completed */
+    100            /* in the low-frequency domai. */
+    101            while ((leuart->SYNCBUSY & mask) != 0U) {
+    102            }
+    103          }
+    104          
+    105          /** @endcond */
+    106          
+    107          /*******************************************************************************
+    108           **************************   GLOBAL FUNCTIONS   *******************************
+    109           ******************************************************************************/
+    110          
+    111          /***************************************************************************//**
+    112           * @brief
+    113           *   Calculate the baudrate for the LEUART given reference frequency and clock division.
+    114           *
+    115           * @details
+    116           *   This function returns the baudrate that a LEUART module will use if
+    117           *   configured with the given frequency and clock divisor. Notice that
+    118           *   this function will not use the hardware configuration. It can be used
+    119           *   to determine if a given configuration is sufficiently accurate for the
+    120           *   application.
+    121           *
+    122           * @param[in] refFreq
+    123           *   The LEUART peripheral frequency used.
+    124           *
+    125           * @param[in] clkdiv
+    126           *   The clock division factor to be used.
+    127           *
+    128           * @return
+    129           *   A baudrate with given settings.
+    130           ******************************************************************************/
+    131          uint32_t LEUART_BaudrateCalc(uint32_t refFreq, uint32_t clkdiv)
+    132          {
+    133            uint32_t divisor;
+    134            uint32_t remainder;
+    135            uint32_t quotient;
+    136            uint32_t br;
+    137          
+    138            /* Mask out unused bits. */
+    139            clkdiv &= _LEUART_CLKDIV_MASK;
+    140          
+    141            /* Use integer division to avoid forcing in float division */
+    142            /* utils, and yet keep rounding effect errors to a minimum. */
+    143          
+    144            /*
+    145             * Baudrate is given by:
+    146             *
+    147             * br = fLEUARTn/(1 + (CLKDIV / 256))
+    148             *
+    149             * which can be rewritten to
+    150             *
+    151             * br = (256 * fLEUARTn)/(256 + CLKDIV)
+    152             *
+    153             * Normally, with fLEUARTn appr 32768 Hz, there is no problem with overflow
+    154             * if using 32 bit arithmetic. However, since fLEUARTn may be derived from
+    155             * HFCORECLK, consider the overflow when using integer arithmetic.
+    156             */
+    157          
+    158            /*
+    159             * The basic problem with integer division in the above formula is that
+    160             * the dividend (256 * fLEUARTn) may become higher than the maximum 32 bit
+    161             * integer. Yet we want to evaluate the dividend first before dividing
+    162             * to get as small rounding effects as possible.
+    163             * Also, harsh restrictions should be avoided on the maximum fLEUARTn value.
+    164             *
+    165             * For division a/b:
+    166             *
+    167             * a = qb + r
+    168             *
+    169             * where q is the quotient and r is the remainder, both integers.
+    170             *
+    171             * The orignal baudrate formula can be rewritten as:
+    172             *
+    173             * br = 256a / b = 256(qb + r)/b = 256q + 256r/b
+    174             *
+    175             * where a is 'refFreq' and b is 'divisor', referring to variable names.
+    176             */
+    177          
+    178            divisor   = 256 + clkdiv;
+    179            quotient  = refFreq / divisor;
+    180            remainder = refFreq % divisor;
+    181          
+    182            /* Since the divisor >= 256, the below cannot exceed the maximum 32 bit value. */
+    183            br = 256 * quotient;
+    184          
+    185            /*
+    186             * A remainder < (256 + clkdiv), which means the dividend (256 * remainder) worst case is
+    187             * 256*(256 + 0x7ff8) = 0x80F800.
+    188             */
+    189            br += (256 * remainder) / divisor;
+    190          
+    191            return br;
+    192          }
+    193          
+    194          /***************************************************************************//**
+    195           * @brief
+    196           *   Get the current baudrate for LEUART.
+    197           *
+    198           * @details
+    199           *   This function returns the actual baudrate (not considering the oscillator
+    200           *   inaccuracies) used by the LEUART peripheral.
+    201           *
+    202           * @param[in] leuart
+    203           *   A pointer to the LEUART peripheral register block.
+    204           *
+    205           * @return
+    206           *   The current baudrate.
+    207           ******************************************************************************/
+    208          uint32_t LEUART_BaudrateGet(LEUART_TypeDef *leuart)
+    209          {
+    210            uint32_t          freq;
+    211            CMU_Clock_TypeDef clock;
+    212          
+    213            /* Get the current frequency. */
+    214            if (leuart == LEUART0) {
+    215              clock = cmuClock_LEUART0;
+    216            }
+    217          #if (LEUART_COUNT > 1)
+    218            else if (leuart == LEUART1) {
+    219              clock = cmuClock_LEUART1;
+    220            }
+    221          #endif
+    222            else {
+    223              EFM_ASSERT(0);
+    224              return 0;
+    225            }
+    226          
+    227            freq = CMU_ClockFreqGet(clock);
+    228          
+    229            return LEUART_BaudrateCalc(freq, leuart->CLKDIV);
+    230          }
+    231          
+    232          /***************************************************************************//**
+    233           * @brief
+    234           *   Configure the baudrate (or as close as possible to a specified baudrate).
+    235           *
+    236           * @note
+    237           *   The baudrate setting requires synchronization into the
+    238           *   low-frequency domain. If the same register is modified before a previous
+    239           *   update has completed, this function will stall until the previous
+    240           *   synchronization has completed.
+    241           *
+    242           * @param[in] leuart
+    243           *   A pointer to the LEUART peripheral register block.
+    244           *
+    245           * @param[in] refFreq
+    246           *   The LEUART reference clock frequency in Hz that will be used. If set to 0,
+    247           *   the currently configured reference clock is assumed.
+    248           *
+    249           * @param[in] baudrate
+    250           *   A baudrate to try to achieve for LEUART.
+    251           ******************************************************************************/
+    252          void LEUART_BaudrateSet(LEUART_TypeDef *leuart,
+    253                                  uint32_t refFreq,
+    254                                  uint32_t baudrate)
+    255          {
+    256            uint32_t          clkdiv;
+    257            CMU_Clock_TypeDef clock;
+    258          
+    259            /* Prevent dividing by 0. */
+    260            EFM_ASSERT(baudrate);
+    261          
+    262            /*
+    263             * Use integer division to avoid forcing in float division
+    264             * utils, and yet keep rounding effect errors to a minimum.
+    265             *
+    266             * CLKDIV in asynchronous mode is given by:
+    267             *
+    268             * CLKDIV = 256*(fLEUARTn/br - 1) = ((256*fLEUARTn)/br) - 256
+    269             *
+    270             * Normally, with fLEUARTn appr 32768 Hz, there is no problem with overflow
+    271             * if using 32 bit arithmetic. However, since fLEUARTn may be derived from
+    272             * HFCORECLK, consider the overflow when using integer arithmetic.
+    273             *
+    274             * The basic problem with integer division in the above formula is that
+    275             * the dividend (256 * fLEUARTn) may become higher than the maximum 32 bit
+    276             * integer. Yet, the dividend should be evaluated first before dividing
+    277             * to get as small rounding effects as possible.
+    278             * Also, harsh restrictions on the maximum fLEUARTn value should not be made.
+    279             *
+    280             * Since the last 3 bits of CLKDIV are don't care, base the
+    281             * integer arithmetic on the below formula:
+    282             *
+    283             * CLKDIV/8 = ((32*fLEUARTn)/br) - 32
+    284             *
+    285             * and calculate 1/8 of CLKDIV first. This allows for fLEUARTn
+    286             * up to 128 MHz without overflowing a 32 bit value.
+    287             */
+    288          
+    289            /* Get the current frequency. */
+    290            if (!refFreq) {
+    291              if (leuart == LEUART0) {
+    292                clock = cmuClock_LEUART0;
+    293              }
+    294          #if (LEUART_COUNT > 1)
+    295              else if (leuart == LEUART1) {
+    296                clock = cmuClock_LEUART1;
+    297              }
+    298          #endif
+    299              else {
+    300                EFM_ASSERT(0);
+    301                return;
+    302              }
+    303          
+    304              refFreq = CMU_ClockFreqGet(clock);
+    305            }
+    306          
+    307            /* Calculate and set the CLKDIV with fractional bits. */
+    308            clkdiv  = (32 * refFreq) / baudrate;
+    309            clkdiv -= 32;
+    310            clkdiv *= 8;
+    311          
+    312            /* Verify that the resulting clock divider is within limits. */
+    313            EFM_ASSERT(clkdiv <= _LEUART_CLKDIV_MASK);
+    314          
+    315            /* If the EFM_ASSERT is not enabled, make sure not to write to reserved bits. */
+    316            clkdiv &= _LEUART_CLKDIV_MASK;
+    317          
+    318            /* LF register about to be modified requires sync;  busy check. */
+    319            LEUART_Sync(leuart, LEUART_SYNCBUSY_CLKDIV);
+    320          
+    321            leuart->CLKDIV = clkdiv;
+    322          }
+    323          
+    324          /***************************************************************************//**
+    325           * @brief
+    326           *   Enable/disable the LEUART receiver and/or transmitter.
+    327           *
+    328           * @details
+    329           *   Notice that this function does not do any configuration. Enabling should
+    330           *   normally be done after the initialization is done (if not enabled as part
+    331           *   of initialization).
+    332           *
+    333           * @note
+    334           *   Enabling/disabling requires synchronization into the low-frequency domain.
+    335           *   If the same register is modified before a previous update has completed,
+    336           *   this function will stall until the previous synchronization has completed.
+    337           *
+    338           * @param[in] leuart
+    339           *   A pointer to the LEUART peripheral register block.
+    340           *
+    341           * @param[in] enable
+    342           *   Select status for receiver/transmitter.
+    343           ******************************************************************************/
+    344          void LEUART_Enable(LEUART_TypeDef *leuart, LEUART_Enable_TypeDef enable)
+    345          {
+    346            uint32_t tmp;
+    347          
+    348            /* Make sure that the module exists on the selected chip. */
+    349            EFM_ASSERT(LEUART_REF_VALID(leuart));
+    350          
+    351            /* Disable as specified. */
+    352            tmp   = ~((uint32_t)(enable));
+    353            tmp  &= (_LEUART_CMD_RXEN_MASK | _LEUART_CMD_TXEN_MASK);
+    354            tmp <<= 1;
+    355            /* Enable as specified. */
+    356            tmp |= (uint32_t)(enable);
+    357          
+    358            /* LF register about to be modified requires sync; busy check. */
+    359            LEUART_Sync(leuart, LEUART_SYNCBUSY_CMD);
+    360          
+    361            leuart->CMD = tmp;
+    362          }
+    363          
+    364          /***************************************************************************//**
+    365           * @brief
+    366           *   LEUART register synchronization freeze control.
+    367           *
+    368           * @details
+    369           *   Some LEUART registers require synchronization into the low-frequency (LF)
+    370           *   domain. The freeze feature allows for several such registers to be
+    371           *   modified before passing them to the LF domain simultaneously (which
+    372           *   takes place when the freeze mode is disabled).
+    373           *
+    374           * @note
+    375           *   When enabling freeze mode, this function will wait for all current
+    376           *   ongoing LEUART synchronization to the LF domain to complete (Normally
+    377           *   synchronization will not be in progress.) However, for this reason, when
+    378           *   using freeze mode, modifications of registers requiring LF synchronization
+    379           *   should be done within one freeze enable/disable block to avoid unnecessary
+    380           *   stalling.
+    381           *
+    382           * @param[in] leuart
+    383           *   A pointer to the LEUART peripheral register block.
+    384           *
+    385           * @param[in] enable
+    386           *   @li True - enable freeze, modified registers are not propagated to the
+    387           *       LF domain
+    388           *   @li False - disables freeze, modified registers are propagated to the LF
+    389           *       domain
+    390           ******************************************************************************/
+    391          void LEUART_FreezeEnable(LEUART_TypeDef *leuart, bool enable)
+    392          {
+    393            if (enable) {
+    394              /*
+    395               * Wait for any ongoing LF synchronization to complete to
+    396               * protect against the rare case when a user
+    397               * - modifies a register requiring LF sync
+    398               * - then enables freeze before LF sync completed
+    399               * - then modifies the same register again
+    400               * since modifying a register while it is in sync progress should be
+    401               * avoided.
+    402               */
+    403              while (leuart->SYNCBUSY != 0U) {
+    404              }
+    405          
+    406              leuart->FREEZE = LEUART_FREEZE_REGFREEZE;
+    407            } else {
+    408              leuart->FREEZE = 0;
+    409            }
+    410          }
+    411          
+    412          /***************************************************************************//**
+    413           * @brief
+    414           *   Initialize LEUART.
+    415           *
+    416           * @details
+    417           *   This function will configure basic settings to operate in normal
+    418           *   asynchronous mode. Consider using LEUART_Reset() prior to this function if
+    419           *   the state of configuration is not known, since only configuration settings
+    420           *   specified by @p init are set.
+    421           *
+    422           *   Special control setup not covered by this function may be done either
+    423           *   before or after using this function (but normally before enabling)
+    424           *   by direct modification of the CTRL register.
+    425           *
+    426           *   Notice that pins used by the LEUART module must be properly configured
+    427           *   by the user explicitly for the LEUART to work as intended.
+    428           *   (When configuring pins consider the sequence of
+    429           *   configuration to avoid unintended pulses/glitches on output
+    430           *   pins.)
+    431           *
+    432           * @note
+    433           *   Initializing requires synchronization into the low-frequency domain.
+    434           *   If the same register is modified before a previous update has completed,
+    435           *   this function will stall until the previous synchronization has completed.
+    436           *
+    437           * @param[in] leuart
+    438           *   A pointer to the LEUART peripheral register block.
+    439           *
+    440           * @param[in] init
+    441           *   A pointer to the initialization structure used to configure basic async setup.
+    442           ******************************************************************************/
+    443          void LEUART_Init(LEUART_TypeDef *leuart, LEUART_Init_TypeDef const *init)
+    444          {
+    445            /* Make sure the module exists on the selected chip. */
+    446            EFM_ASSERT(LEUART_REF_VALID(leuart));
+    447          
+    448            /* LF register about to be modified requires sync; busy check. */
+    449            LEUART_Sync(leuart, LEUART_SYNCBUSY_CMD);
+    450          
+    451            /* Ensure disabled while configuring. */
+    452            leuart->CMD = LEUART_CMD_RXDIS | LEUART_CMD_TXDIS;
+    453          
+    454            /* Freeze registers to avoid stalling for the LF synchronization. */
+    455            LEUART_FreezeEnable(leuart, true);
+    456          
+    457            /* Configure databits and stopbits. */
+    458            leuart->CTRL = (leuart->CTRL & ~(_LEUART_CTRL_PARITY_MASK
+    459                                             | _LEUART_CTRL_STOPBITS_MASK))
+    460                           | (uint32_t)(init->databits)
+    461                           | (uint32_t)(init->parity)
+    462                           | (uint32_t)(init->stopbits);
+    463          
+    464            /* Configure the baudrate. */
+    465            LEUART_BaudrateSet(leuart, init->refFreq, init->baudrate);
+    466          
+    467            /* Finally enable (as specified). */
+    468            leuart->CMD = (uint32_t)init->enable;
+    469          
+    470            /* Unfreeze registers and pass new settings on to LEUART. */
+    471            LEUART_FreezeEnable(leuart, false);
+    472          }
+    473          
+    474          /***************************************************************************//**
+    475           * @brief
+    476           *   Reset LEUART to the same state that it was in after a hardware reset.
+    477           *
+    478           * @param[in] leuart
+    479           *   A pointer to the LEUART peripheral register block.
+    480           ******************************************************************************/
+    481          void LEUART_Reset(LEUART_TypeDef *leuart)
+    482          {
+    483            /* Make sure the module exists on the selected chip. */
+    484            EFM_ASSERT(LEUART_REF_VALID(leuart));
+    485          
+    486            /* Freeze registers to avoid stalling for LF synchronization. */
+    487            LEUART_FreezeEnable(leuart, true);
+    488          
+    489            /* Make sure disabled first, before resetting other registers. */
+    490            leuart->CMD = LEUART_CMD_RXDIS | LEUART_CMD_TXDIS | LEUART_CMD_RXBLOCKDIS
+    491                          | LEUART_CMD_CLEARTX | LEUART_CMD_CLEARRX;
+    492            leuart->CTRL       = _LEUART_CTRL_RESETVALUE;
+    493            leuart->CLKDIV     = _LEUART_CLKDIV_RESETVALUE;
+    494            leuart->STARTFRAME = _LEUART_STARTFRAME_RESETVALUE;
+    495            leuart->SIGFRAME   = _LEUART_SIGFRAME_RESETVALUE;
+    496            leuart->IEN        = _LEUART_IEN_RESETVALUE;
+    497            leuart->IFC        = _LEUART_IFC_MASK;
+    498            leuart->PULSECTRL  = _LEUART_PULSECTRL_RESETVALUE;
+    499          #if defined(_LEUART_ROUTEPEN_MASK)
+    500            leuart->ROUTEPEN   = _LEUART_ROUTEPEN_RESETVALUE;
+    501            leuart->ROUTELOC0  = _LEUART_ROUTELOC0_RESETVALUE;
+    502          #else
+    503            leuart->ROUTE      = _LEUART_ROUTE_RESETVALUE;
+    504          #endif
+    505          
+    506            /* Unfreeze registers and pass new settings on to LEUART. */
+    507            LEUART_FreezeEnable(leuart, false);
+    508          }
+    509          
+    510          /***************************************************************************//**
+    511           * @brief
+    512           *   Receive one 8 bit frame, (or part of 9 bit frame).
+    513           *
+    514           * @details
+    515           *   This function is normally used to receive one frame when operating with
+    516           *   frame length 8 bits. See LEUART_RxExt() for reception of
+    517           *   9 bit frames.
+    518           *
+    519           *   Notice that possible parity/stop bits are not considered a part of the specified
+    520           *   frame bit length.
+    521           *
+    522           * @note
+    523           *   This function will stall if the buffer is empty until data is received.
+    524           *
+    525           * @param[in] leuart
+    526           *   A pointer to the LEUART peripheral register block.
+    527           *
+    528           * @return
+    529           *   Data received.
+    530           ******************************************************************************/
+    531          uint8_t LEUART_Rx(LEUART_TypeDef *leuart)
+    532          {
+    533            while (!(leuart->STATUS & LEUART_STATUS_RXDATAV)) {
+    534            }
+    535          
+    536            return (uint8_t)leuart->RXDATA;
+    537          }
+    538          
+    539          /***************************************************************************//**
+    540           * @brief
+    541           *   Receive one 8-9 bit frame with extended information.
+    542           *
+    543           * @details
+    544           *   This function is normally used to receive one frame and additional RX
+    545           *   status information is required.
+    546           *
+    547           * @note
+    548           *   This function will stall if buffer is empty until data is received.
+    549           *
+    550           * @param[in] leuart
+    551           *   A pointer to the LEUART peripheral register block.
+    552           *
+    553           * @return
+    554           *   Data received.
+    555           ******************************************************************************/
+    556          uint16_t LEUART_RxExt(LEUART_TypeDef *leuart)
+    557          {
+    558            while (!(leuart->STATUS & LEUART_STATUS_RXDATAV)) {
+    559            }
+    560          
+    561            return (uint16_t)leuart->RXDATAX;
+    562          }
+    563          
+    564          /***************************************************************************//**
+    565           * @brief
+    566           *   Transmit one frame.
+    567           *
+    568           * @details
+    569           *   Depending on the frame length configuration, 8 (least significant) bits from
+    570           *   @p data are transmitted. If the frame length is 9, 8 bits are transmitted from
+    571           *   @p data and one bit as specified by the CTRL register, BIT8DV field.
+    572           *   See LEUART_TxExt() for transmitting 9 bit frame with full control of
+    573           *   all 9 bits.
+    574           *
+    575           *   Notice that possible parity/stop bits in asynchronous mode are not
+    576           *   considered a part of the specified frame bit length.
+    577           *
+    578           * @note
+    579           *   This function will stall if buffer is full until the buffer becomes available.
+    580           *
+    581           * @param[in] leuart
+    582           *   A pointer to the LEUART peripheral register block.
+    583           *
+    584           * @param[in] data
+    585           *   Data to transmit. See details above for more info.
+    586           ******************************************************************************/
+    587          void LEUART_Tx(LEUART_TypeDef *leuart, uint8_t data)
+    588          {
+    589            /* Check that transmit buffer is empty. */
+    590            while (!(leuart->STATUS & LEUART_STATUS_TXBL)) {
+    591            }
+    592          
+    593            /* LF register about to be modified requires sync; busy check. */
+    594            LEUART_Sync(leuart, LEUART_SYNCBUSY_TXDATA);
+    595          
+    596            leuart->TXDATA = (uint32_t)data;
+    597          }
+    598          
+    599          /***************************************************************************//**
+    600           * @brief
+    601           *   Transmit one 8-9 bit frame with extended control.
+    602           *
+    603           * @details
+    604           *   Notice that possible parity/stop bits in asynchronous mode are not
+    605           *   considered a part of the specified frame bit length.
+    606           *
+    607           * @note
+    608           *   This function will stall if the buffer is full until the buffer becomes available.
+    609           *
+    610           * @param[in] leuart
+    611           *   A pointer to the LEUART peripheral register block.
+    612           *
+    613           * @param[in] data
+    614           *   Data to transmit with extended control. Least significant bit contains
+    615           *   frame bits and additional control bits are available as documented in
+    616           *   the reference manual (set to 0 if not used).
+    617           ******************************************************************************/
+    618          void LEUART_TxExt(LEUART_TypeDef *leuart, uint16_t data)
+    619          {
+    620            /* Check that transmit buffer is empty. */
+    621            while (!(leuart->STATUS & LEUART_STATUS_TXBL)) {
+    622            }
+    623          
+    624            /* LF register about to be modified requires sync; busy check. */
+    625            LEUART_Sync(leuart, LEUART_SYNCBUSY_TXDATAX);
+    626          
+    627            leuart->TXDATAX = (uint32_t)data;
+    628          }
+    629          
+    630          /***************************************************************************//**
+    631           * @brief
+    632           *   Enables handling of LEUART TX by DMA in EM2.
+    633           *
+    634           * @param[in] leuart
+    635           *   A pointer to the LEUART peripheral register block.
+    636           *
+    637           * @param[in] enable
+    638           *   True - enables functionality
+    639           *   False - disables functionality
+    640           *
+    641           ******************************************************************************/
+    642          void LEUART_TxDmaInEM2Enable(LEUART_TypeDef *leuart, bool enable)
+    643          {
+    644            /* LF register about to be modified requires sync; busy check. */
+    645            LEUART_Sync(leuart, LEUART_SYNCBUSY_CTRL | LEUART_SYNCBUSY_CMD);
+    646          
+    647          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+    648            /* LEUART_E201: Changing the value of TXDMAWU while TXEN=1 could potentially
+    649             * cause unpredictable behavior. */
+    650            bool txEnabled = (leuart->STATUS & _LEUART_STATUS_TXENS_MASK) != 0U;
+    651            if (txEnabled) {
+    652              /* Wait for potential transmit to complete. */
+    653              while ((leuart->STATUS & LEUART_STATUS_TXIDLE) == 0U) {
+    654              }
+    655          
+    656              leuart->CMD = LEUART_CMD_TXDIS;
+    657              LEUART_Sync(leuart, LEUART_SYNCBUSY_CMD);
+    658            }
+    659          
+    660            if (enable) {
+    661              leuart->CTRL |= LEUART_CTRL_TXDMAWU;
+    662            } else {
+    663              leuart->CTRL &= ~LEUART_CTRL_TXDMAWU;
+    664            }
+    665          
+    666            if (txEnabled) {
+    667              leuart->CMD = LEUART_CMD_TXEN;
+    668            }
+    669          #else
+    670            if (enable) {
+    671              leuart->CTRL |= LEUART_CTRL_TXDMAWU;
+    672            } else {
+    673              leuart->CTRL &= ~LEUART_CTRL_TXDMAWU;
+    674            }
+    675          #endif
+    676          }
+    677          
+    678          /***************************************************************************//**
+    679           * @brief
+    680           *   Enables handling of LEUART RX by DMA in EM2.
+    681           *
+    682           * @param[in] leuart
+    683           *   A pointer to the LEUART peripheral register block.
+    684           *
+    685           * @param[in] enable
+    686           *   True - enables functionality
+    687           *   False - disables functionality
+    688           *
+    689           ******************************************************************************/
+    690          void LEUART_RxDmaInEM2Enable(LEUART_TypeDef *leuart, bool enable)
+    691          {
+    692            /* LF register about to be modified requires sync; busy check. */
+    693            LEUART_Sync(leuart, LEUART_SYNCBUSY_CTRL | LEUART_SYNCBUSY_CMD);
+    694          
+    695          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)
+    696            /* LEUART_E201: Changing the value of RXDMAWU while RXEN=1 could potentially
+    697             * cause unpredictable behavior. */
+    698            bool rxEnabled = (leuart->STATUS & _LEUART_STATUS_RXENS_MASK) != 0U;
+    699          
+    700            if (rxEnabled) {
+    701              leuart->CMD = LEUART_CMD_RXDIS;
+    702              LEUART_Sync(leuart, LEUART_SYNCBUSY_CMD);
+    703            }
+    704          
+    705            if (enable) {
+    706              leuart->CTRL |= LEUART_CTRL_RXDMAWU;
+    707            } else {
+    708              leuart->CTRL &= ~LEUART_CTRL_RXDMAWU;
+    709            }
+    710          
+    711            if (rxEnabled) {
+    712              leuart->CMD = LEUART_CMD_RXEN;
+    713            }
+    714          #else
+    715            if (enable) {
+    716              leuart->CTRL |= LEUART_CTRL_RXDMAWU;
+    717            } else {
+    718              leuart->CTRL &= ~LEUART_CTRL_RXDMAWU;
+    719            }
+    720          #endif
+    721          }
+    722          
+    723          /** @} (end addtogroup LEUART) */
+    724          /** @} (end addtogroup emlib) */
+    725          #endif /* defined(LEUART_COUNT) && (LEUART_COUNT > 0) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,520 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         13/Jun/2019  15:39:40
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin-soc\bulb-pwm-cli\bulb-pwm-cli.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW8C9E.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin-soc\bulb-pwm-cli\bulb-pwm-cli.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"bulb-pwm-cli.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin-soc\bulb-pwm-cli\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\bulb-pwm-cli.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\bulb-pwm-cli.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin-soc\bulb-pwm-cli\bulb-pwm-cli.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief CLI for the Bulb PWN CLI plugin.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "app/framework/include/af.h"
+     19          #include "app/framework/util/af-main.h"
+     20          #include EMBER_AF_API_BULB_PWM_DRIVER
+     21          
+     22          // -----------------------------------------------------------------------------
+     23          // Defines
+     24          #ifdef EMBER_AF_PLUGIN_BULB_PWM_DRIVER_BLINK_PATTERN_MAX_LENGTH
+     25            #define BLINK_PATTERN_MAX_LENGTH EMBER_AF_PLUGIN_BULB_PWM_DRIVER_BLINK_PATTERN_MAX_LENGTH
+     26          #else
+     27            #define BLINK_PATTERN_MAX_LENGTH 20
+     28          #endif
+     29          
+     30          // -----------------------------------------------------------------------------
+     31          // Globals
+
+   \                                 In section .bss, align 4
+     32          static uint16_t ledPattern[BLINK_PATTERN_MAX_LENGTH];
+   \                     ledPattern:
+   \        0x0                      DS8 40
+
+   \                                 In section .bss, align 4
+     33          static uint16_t statusPattern[BLINK_PATTERN_MAX_LENGTH];
+   \                     statusPattern:
+   \        0x0                      DS8 40
+
+   \                                 In section .bss, align 4
+     34          static uint8_t patternBuffer8u[BLINK_PATTERN_MAX_LENGTH * 2];
+   \                     patternBuffer8u:
+   \        0x0                      DS8 40
+     35          
+     36          // -----------------------------------------------------------------------------
+     37          // Forward Declarations
+     38          
+     39          // -----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     40          void emAfBulbPwmSetCommand(void)
+     41          {
+   \                     emAfBulbPwmSetCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     42            uint8_t channel = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \        0x6   0x....'....        BL       ?Subroutine1
+     43            uint16_t value = (uint16_t)emberUnsignedCommandArgument(1);
+     44          
+     45            halBulbPwmDriverSetPwmLevel(value, channel);
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \        0xA   0xB2E1             UXTB     R1,R4
+   \        0xC   0xB280             UXTH     R0,R0
+   \        0xE   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x12   0x....'....        B.W      halBulbPwmDriverSetPwmLevel
+     46          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....'....        B.W      emberUnsignedCommandArgument
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4604             MOV      R4,R0
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....'....        B.W      emberUnsignedCommandArgument
+     47          
+
+   \                                 In section .text, align 2, keep-with-next
+     48          void emAfBulbPwmLedOnCommand(void)
+     49          {
+   \                     emAfBulbPwmLedOnCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     50            uint8_t time = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+     51          
+     52            halBulbPwmDriverLedOn(time);
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xC   0x....'....        B.W      halBulbPwmDriverLedOn
+     53          }
+     54          
+
+   \                                 In section .text, align 2, keep-with-next
+     55          void emAfBulbPwmStatusOnCommand(void)
+     56          {
+   \                     emAfBulbPwmStatusOnCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     57            uint8_t time = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+     58          
+     59            halBulbPwmDriverStatusOn(time);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xC   0x....'....        B.W      halBulbPwmDriverStatusOn
+     60          }
+     61          
+
+   \                                 In section .text, align 2, keep-with-next
+     62          void emAfBulbPwmLedOffCommand(void)
+     63          {
+   \                     emAfBulbPwmLedOffCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     64            uint8_t time = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+     65          
+     66            halBulbPwmDriverLedOff(time);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xC   0x....'....        B.W      halBulbPwmDriverLedOff
+     67          }
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          void emAfBulbPwmStatusOffCommand(void)
+     70          {
+   \                     emAfBulbPwmStatusOffCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     71            uint8_t time = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+     72          
+     73            halBulbPwmDriverStatusOff(time);
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xC   0x....'....        B.W      halBulbPwmDriverStatusOff
+     74          }
+     75          
+
+   \                                 In section .text, align 2, keep-with-next
+     76          void emAfBulbPwmLedBlinkCommand(void)
+     77          {
+   \                     emAfBulbPwmLedBlinkCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     78            uint8_t count = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \        0x6   0x....'....        BL       ?Subroutine1
+     79            uint16_t time = (uint16_t)emberUnsignedCommandArgument(1);
+     80          
+     81            halBulbPwmDriverLedBlink(count, time);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \        0xA   0xB281             UXTH     R1,R0
+   \        0xC   0xB2E0             UXTB     R0,R4
+   \        0xE   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x12   0x....'....        B.W      halBulbPwmDriverLedBlink
+     82          }
+     83          
+
+   \                                 In section .text, align 2, keep-with-next
+     84          void emAfBulbPwmStatusBlinkCommand(void)
+     85          {
+   \                     emAfBulbPwmStatusBlinkCommand: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     86            uint8_t count = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0x6   0x....'....        BL       ?Subroutine1
+     87            uint16_t time = (uint16_t)emberUnsignedCommandArgument(1);
+     88          
+     89            halBulbPwmDriverStatusBlink(count, time);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \        0xA   0xB281             UXTH     R1,R0
+   \        0xC   0xB2E0             UXTB     R0,R4
+   \        0xE   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x12   0x....'....        B.W      halBulbPwmDriverStatusBlink
+     90          }
+     91          
+
+   \                                 In section .text, align 2, keep-with-next
+     92          static uint8_t readPatternArgument(uint8_t argument, uint16_t *pattern)
+     93          {
+   \                     readPatternArgument: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460C             MOV      R4,R1
+     94            uint8_t bytesRead, patternLength, i;
+     95          
+     96            bytesRead = emberCopyStringArgument(argument,
+     97                                                patternBuffer8u,
+     98                                                BLINK_PATTERN_MAX_LENGTH,
+     99                                                FALSE);
+    100          
+    101            // convert incoming bytes into words.
+    102            patternLength = bytesRead / 2;
+   \        0x4   0x....             LDR.N    R5,??DataTable3
+   \        0x6   0x2300             MOVS     R3,#+0
+   \        0x8   0x2214             MOVS     R2,#+20
+   \        0xA   0x4629             MOV      R1,R5
+   \        0xC   0xB240             SXTB     R0,R0
+   \        0xE   0x....'....        BL       emberCopyStringArgument
+   \       0x12   0x0840             LSRS     R0,R0,#+1
+    103          
+    104            for (i = 0; i < patternLength; i++) {
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0xE009             B.N      ??readPatternArgument_0
+    105              pattern[i] = HIGH_LOW_TO_INT(patternBuffer8u[i * 2], patternBuffer8u[i * 2 + 1]);
+   \                     ??readPatternArgument_1: (+1)
+   \       0x18   0xEB05 0x0341      ADD      R3,R5,R1, LSL #+1
+   \       0x1C   0xF815 0x2011      LDRB     R2,[R5, R1, LSL #+1]
+   \       0x20   0x785E             LDRB     R6,[R3, #+1]
+   \       0x22   0xEB06 0x2602      ADD      R6,R6,R2, LSL #+8
+   \       0x26   0xF824 0x6011      STRH     R6,[R4, R1, LSL #+1]
+    106            }
+   \       0x2A   0x1C49             ADDS     R1,R1,#+1
+   \                     ??readPatternArgument_0: (+1)
+   \       0x2C   0x4281             CMP      R1,R0
+   \       0x2E   0xDBF3             BLT.N    ??readPatternArgument_1
+    107          
+    108            return patternLength;
+   \       0x30   0xBD70             POP      {R4-R6,PC}       ;; return
+    109          }
+    110          
+
+   \                                 In section .text, align 2, keep-with-next
+    111          void emAfBulbPwmLedPatternCommand(void)
+    112          {
+   \                     emAfBulbPwmLedPatternCommand: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    113            uint8_t count = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0x4604             MOV      R4,R0
+    114            uint8_t length = readPatternArgument(1, ledPattern);
+   \        0x8   0x....             LDR.N    R5,??DataTable3_1
+   \        0xA   0x4629             MOV      R1,R5
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x....'....        BL       readPatternArgument
+    115          
+    116            halBulbPwmDriverLedBlinkPattern(count, length, ledPattern);
+   \       0x12   0x4601             MOV      R1,R0
+   \       0x14   0x462A             MOV      R2,R5
+   \       0x16   0xB2E0             UXTB     R0,R4
+   \       0x18   0xE8BD 0x4038      POP      {R3-R5,LR}
+   \       0x1C   0x....'....        B.W      halBulbPwmDriverLedBlinkPattern
+    117          }
+    118          
+
+   \                                 In section .text, align 2, keep-with-next
+    119          void emAfBulbPwmStatusPatternCommand(void)
+    120          {
+   \                     emAfBulbPwmStatusPatternCommand: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    121            uint8_t count = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x....'....        BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0x4604             MOV      R4,R0
+    122            uint8_t length = readPatternArgument(1, statusPattern);
+   \        0x8   0x....             LDR.N    R5,??DataTable3_2
+   \        0xA   0x4629             MOV      R1,R5
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x....'....        BL       readPatternArgument
+    123          
+    124            halBulbPwmDriverStatusBlinkPattern(count, length, statusPattern);
+   \       0x12   0x4601             MOV      R1,R0
+   \       0x14   0x462A             MOV      R2,R5
+   \       0x16   0xB2E0             UXTB     R0,R4
+   \       0x18   0xE8BD 0x4038      POP      {R3-R5,LR}
+   \       0x1C   0x....'....        B.W      halBulbPwmDriverStatusBlinkPattern
+    125          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     patternBuffer8u
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     ledPattern
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     statusPattern
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   emAfBulbPwmLedBlinkCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverLedBlink
+       8   emAfBulbPwmLedOffCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverLedOff
+       8   emAfBulbPwmLedOnCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverLedOn
+      16   emAfBulbPwmLedPatternCommand
+        16   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverLedBlinkPattern
+        16   -> readPatternArgument
+       8   emAfBulbPwmSetCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverSetPwmLevel
+       8   emAfBulbPwmStatusBlinkCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverStatusBlink
+       8   emAfBulbPwmStatusOffCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverStatusOff
+       8   emAfBulbPwmStatusOnCommand
+         8   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverStatusOn
+      16   emAfBulbPwmStatusPatternCommand
+        16   -> emberUnsignedCommandArgument
+         0   -> halBulbPwmDriverStatusBlinkPattern
+        16   -> readPatternArgument
+      16   readPatternArgument
+        16   -> emberCopyStringArgument
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       6  ?Subroutine0
+       8  ?Subroutine1
+      22  emAfBulbPwmLedBlinkCommand
+      16  emAfBulbPwmLedOffCommand
+      16  emAfBulbPwmLedOnCommand
+      32  emAfBulbPwmLedPatternCommand
+      22  emAfBulbPwmSetCommand
+      22  emAfBulbPwmStatusBlinkCommand
+      16  emAfBulbPwmStatusOffCommand
+      16  emAfBulbPwmStatusOnCommand
+      32  emAfBulbPwmStatusPatternCommand
+      40  ledPattern
+      40  patternBuffer8u
+      50  readPatternArgument
+      40  statusPattern
+
+ 
+ 120 bytes in section .bss
+ 270 bytes in section .text
+ 
+ 270 bytes of CODE memory
+ 120 bytes of DATA memory
+
+Errors: none
+Warnings: none

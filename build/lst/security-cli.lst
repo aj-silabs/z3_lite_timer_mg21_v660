@@ -1,0 +1,1664 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:48
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\security-cli.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW2EE4.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\security-cli.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"security-cli.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\security-cli.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\security-cli.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\cli\security-cli.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Routines to initiate key establishment, handle key establishment callbacks,
+      4           * and print info about the security keys on the device.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     11           * software is governed by the terms of Silicon Labs Master Software License
+     12           * Agreement (MSLA) available at
+     13           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     14           * software is distributed to you in Source Code format and is governed by the
+     15           * sections of the MSLA applicable to Source Code.
+     16           *
+     17           ******************************************************************************/
+     18          
+     19          #include "app/framework/util/common.h"
+     20          
+     21          #include "app/framework/util/service-discovery.h"
+     22          
+     23          #include "app/util/serial/command-interpreter2.h"
+     24          #include "app/framework/cli/security-cli.h"
+     25          #include "app/framework/util/af-main.h"
+     26          
+     27          #include "app/framework/security/af-security.h"
+     28          #include "stack/include/packet-buffer.h"
+     29          
+     30          #ifdef EZSP_HOST
+     31           #define setTcRejoinsUsingWellKnownKeyAllowed(allow) \
+     32            (void)ezspSetPolicy(EZSP_TC_REJOINS_USING_WELL_KNOWN_KEY_POLICY, (allow))
+     33           #define setTcRejoinsUsingWellKnownKeyTimeout(timeout) \
+     34            (void)ezspSetConfigurationValue(EZSP_CONFIG_TC_REJOINS_USING_WELL_KNOWN_KEY_TIMEOUT_S, (timeout))
+     35           #define getTransientKeyTableEntry ezspGetTransientKeyTableEntry
+     36          #else  // SoC
+     37          extern uint16_t emAllowTcRejoinsUsingWellKnownKeyTimeoutSec;
+     38           #define setTcRejoinsUsingWellKnownKeyAllowed(allow) \
+     39            emberSetTcRejoinsUsingWellKnownKeyAllowed((allow))
+     40           #define setTcRejoinsUsingWellKnownKeyTimeout(timeout) \
+     41            emAllowTcRejoinsUsingWellKnownKeyTimeoutSec = (timeout)
+     42           #define getTransientKeyTableEntry emberGetTransientKeyTableEntry
+     43          #endif
+     44          
+     45          //------------------------------------------------------------------------------
+     46          // Globals
+     47          
+
+   \                                 In section .data, align 4
+     48          EmberKeyData cliPreconfiguredLinkKey = DUMMY_KEY;
+   \                     cliPreconfiguredLinkKey:
+   \        0x0   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF         
+   \        0xD   0xFF 0xFF          DC8 255, 255, 255
+   \              0xFF         
+
+   \                                 In section .data, align 4
+     49          EmberKeyData cliNetworkKey           = DUMMY_KEY;
+   \                     cliNetworkKey:
+   \        0x0   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF         
+   \        0xD   0xFF 0xFF          DC8 255, 255, 255
+   \              0xFF         
+     50          
+     51          /**
+     52           * @addtogroup cli
+     53           * @{
+     54           */
+     55          /**
+     56           * @brief Commands used to change the default link or network key
+     57           *        that will be used when forming or joining a network.
+     58           *
+     59           *        <b>changekey link &lt;key&gt;</b>
+     60           *        - key - 16 byte array. The Link Key provided as a
+     61           *          16 byte array.
+     62           *
+     63           *        <b>changekey network &lt;key&gt;</b>
+     64           *        - key - 16 byte array. The Network Key provided
+     65           *          as a 16 byte array.
+     66           *
+     67           */
+     68          #define EMBER_AF_DOXYGEN_CLI__SECURITY_CHANGEKEY_COMMANDS
+     69          /** @} END addtogroup */
+     70          
+     71          /**
+     72           * @addtogroup cli
+     73           * @{
+     74           */
+     75          /**
+     76           * @brief Command used for key establishment.
+     77           *
+     78           *        <b>cbke start &lt;new partner id&gt; &lt;destination endpoint&gt;</b>
+     79           *        - new partner ID - uint16_t. The 2 byte node ID of the partner
+     80           *          with whom to start cbke.
+     81           *
+     82           *        <b>cbke interpan &lt;pan id&gt; &lt;eui64&gt;</b>
+     83           *        - PAN ID - uint16_t. The 2 byte PAN ID that the target is located on.
+     84           *        - eui64 - EmberEUI64. The 8 byte EUI64 of the target (big endian)
+     85           *
+     86           *        <b>cbke partner &lt;node id&gt; &lt;endpoint&gt;</b>
+     87           *        - node ID - uint16_t. The two byte node ID of the device
+     88           *          with whom to initiate key establishment.
+     89           *        - endpoint - uint8_t. The endpoint on which to begin
+     90           *          key establishment.
+     91           *
+     92           */
+     93          #define EMBER_AF_DOXYGEN_CLI__SECURITY_CBKE_COMMANDS
+     94          /** @} END addtogroup */
+     95          
+     96          #ifndef EMBER_AF_GENERATE_CLI
+     97          
+     98          EmberCommandEntry changeKeyCommands[] = {
+     99            { "link", changeKeyCommand, "b" },
+    100            { "network", changeKeyCommand, "b" },
+    101            { NULL }
+    102          };
+    103          
+    104          #endif // EMBER_AF_GENERATE_CLI
+    105          
+    106          /**
+    107           * @addtogroup security
+    108           * @{
+    109           */
+    110          /** @brief Commands used for security.
+    111           *
+    112           * <b>security mfg-token get</b>
+    113           * <b>security mfg-token set &lt;Magic number&gt; &lt;EmberKeySettings value&gt;</b>
+    114           *   - Magic number - uint32_t.  The 4-byte magic number
+    115           *     EMBER_MFG_SECURITY_CONFIG_MAGIC_NUMBER to prevent accidental execution.
+    116           *   - EmberKeySettings value - uint16_t. The 2-byte value for EmberKeySettings
+    117           *     indicating key permissions.
+    118           *
+    119           */
+    120          #define EMBER_AF_DOXYGEN_CLI__SECURITY_MFG_TOKEN_COMMANDS
+    121          /** @} END addtogroup */
+    122          
+    123          #ifndef EMBER_AF_HAS_SECURITY_PROFILE_NONE
+    124          void getSetMfgToken(void);
+    125          
+
+   \                                 In section .rodata, align 4
+    126          EmberCommandEntry mfgToken[] = {
+   \                     mfgToken:
+   \        0x0   0x....'....        DC32 ?_0, getSetMfgToken, ?_1, ?_2, getSetMfgToken, ?_3, 0H, 0H, 0H
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+    127            emberCommandEntryAction("get", getSetMfgToken, "",
+    128                                    "Print the MFG security config token"),
+    129            emberCommandEntryAction("set", getSetMfgToken, "wv",
+    130                                    "Set the MFG Security config token.  CANNOT BE UNSET BY CLI."),
+    131            emberCommandEntryTerminator(),
+    132          };
+    133          
+
+   \                                 In section .rodata, align 4
+    134          EmberCommandEntry emAfSecurityCommands[] = {
+   \                     emAfSecurityCommands:
+   \        0x0   0x....'....        DC32 ?_4, 0H, mfgToken, 0H, 0H, 0H
+   \              0x0000'0000  
+   \              0x....'....  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+    135            emberCommandEntrySubMenu("mfg-token", mfgToken,
+    136                                     "Get/set the MFG Security config token"),
+    137            emberCommandEntryTerminator(),
+    138          };
+    139          
+    140          #endif
+    141          
+    142          //------------------------------------------------------------------------------
+    143          // Forward Declarations
+    144          
+    145          uint8_t printKeyTable(bool preconfiguredKey);
+    146          uint8_t printTransientKeyTable(void);
+    147          uint32_t getOutgoingApsFrameCounter(void);
+    148          
+    149          //------------------------------------------------------------------------------
+    150          
+    151          // ******************************************************
+    152          // changekey link    <16 byte key>
+    153          // changekey network <16 byte key>
+    154          // ******************************************************
+    155          
+    156          // Changes the default link or network key that will be used when
+    157          // forming or joining a network.
+
+   \                                 In section .text, align 2, keep-with-next
+    158          void changeKeyCommand(void)
+    159          {
+   \                     changeKeyCommand: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    160            if (EMBER_NO_NETWORK != emberNetworkState()) {
+   \        0x2   0x....'....        BL       emberNetworkState
+   \        0x6   0xB130             CBZ.N    R0,??changeKeyCommand_0
+    161              emberAfCorePrintln("%pstack must be down.", "ERROR: ");
+   \        0x8   0x....             LDR.N    R2,??DataTable7_3
+   \        0xA   0x....             LDR.N    R1,??DataTable7_4
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0xE8BD 0x4008      POP      {R3,LR}
+   \       0x12   0x....'....        B.W      emberAfPrintln
+    162            } else {
+    163              emberCopyKeyArgument(0,
+    164                                   emberCurrentCommand->name[0] == 'l'
+    165                                   ? &cliPreconfiguredLinkKey
+    166                                   : &cliNetworkKey);
+   \                     ??changeKeyCommand_0: (+1)
+   \       0x16   0x....'....        BL       ?Subroutine3
+    167              emberAfDebugPrintln("set key");
+    168            }
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x1A   0xE8BD 0x5000      POP      {R12,LR}
+   \       0x1E   0x2B6C             CMP      R3,#+108
+   \       0x20   0xBF0C             ITE      EQ 
+   \       0x22   0x....             LDREQ.N  R1,??DataTable7_5
+   \       0x24   0x....             LDRNE.N  R1,??DataTable7_6
+   \       0x26   0x2301             MOVS     R3,#+1
+   \       0x28   0x2210             MOVS     R2,#+16
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0x....'....        B.W      emberCopyStringArgument
+    169          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable7_27
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x7813             LDRB     R3,[R2, #+0]
+   \        0x8   0x4770             BX       LR
+    170          
+    171          // Key Establishment commands (cbke <command>) moved to
+    172          //   app/framework/plugin/key-establishment/key-establishment-cli.c
+    173          
+
+   \                                 In section .text, align 2, keep-with-next
+    174          void printKeyInfo(void)
+    175          {
+   \                     printKeyInfo: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB08C             SUB      SP,SP,#+48
+    176            uint8_t entriesUsed;
+    177            EmberKeyStruct nwkKey;
+    178          
+    179          #ifndef EMBER_AF_HAS_SECURITY_PROFILE_NONE
+    180            {
+    181              EmberMfgSecurityStruct config;
+    182              if (EMBER_SUCCESS == emberGetMfgSecurityConfig(&config)) {
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x....'....        BL       emberGetMfgSecurityConfig
+   \        0xA   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_11
+    183                if (!(config.keySettings & EMBER_KEY_PERMISSIONS_READING_ALLOWED)) {
+   \        0xC   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x10   0x07C1             LSLS     R1,R0,#+31
+   \       0x12   0xD402             BMI.N    ??CrossCallReturnLabel_11
+    184                  emberAfCorePrintln("\nWARNING:  READING OF KEY VALUES DISABLED BY MFG TOKEN\n");
+   \       0x14   0x....             LDR.N    R1,??DataTable7_7
+   \       0x16   0x....'....        BL       ?Subroutine1
+    185                  emberAfCoreFlush();
+    186                }
+    187              }
+    188            }
+    189          #endif
+    190          
+    191            if ( EMBER_SUCCESS != emberGetKey(EMBER_CURRENT_NETWORK_KEY,
+    192                                              &nwkKey)) {
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x1A   0xA902             ADD      R1,SP,#+8
+   \       0x1C   0x2003             MOVS     R0,#+3
+   \       0x1E   0x....'....        BL       emberGetKey
+   \       0x22   0xB120             CBZ.N    R0,??printKeyInfo_0
+    193              MEMSET((uint8_t*)&nwkKey, 0xFF, sizeof(EmberKeyStruct));
+   \       0x24   0x2228             MOVS     R2,#+40
+   \       0x26   0x21FF             MOVS     R1,#+255
+   \       0x28   0xA802             ADD      R0,SP,#+8
+   \       0x2A   0x....'....        BL       halCommonMemSet
+    194            }
+    195            emberAfCorePrintln("%p out FC: %4x",
+    196                               "NWK Key",
+    197                               nwkKey.outgoingFrameCounter);
+   \                     ??printKeyInfo_0: (+1)
+   \       0x2E   0x9B07             LDR      R3,[SP, #+28]
+   \       0x30   0x....             LDR.N    R4,??DataTable7_8
+   \       0x32   0x....             LDR.N    R5,??DataTable7_9
+   \       0x34   0x....'....        BL       ?Subroutine2
+    198            emberAfCorePrintln("%p seq num: 0x%x",
+    199                               "NWK Key",
+    200                               nwkKey.sequenceNumber);
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x38   0xF89D 0x3024      LDRB     R3,[SP, #+36]
+   \       0x3C   0x462A             MOV      R2,R5
+   \       0x3E   0x....             LDR.N    R1,??DataTable7_10
+   \       0x40   0x....'....        BL       ??Subroutine2_0
+    201            emberAfCorePrint("%p: ",
+    202                             "NWK Key");
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x44   0x462A             MOV      R2,R5
+   \       0x46   0x....             LDR.N    R1,??DataTable7_11
+   \       0x48   0x....'....        BL       ??Subroutine0_0
+    203            emberAfPrintZigbeeKey(emberKeyContents(&nwkKey.key));
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x4C   0xF10D 0x000B      ADD      R0,SP,#+11
+   \       0x50   0x....'....        BL       printZigbeeKey
+    204          
+    205            emberAfCorePrintln("%p out FC: %4x",
+    206                               "Link Key",
+    207                               getOutgoingApsFrameCounter());
+   \       0x54   0x....'....        BL       getOutgoingApsFrameCounter
+   \       0x58   0x4603             MOV      R3,R0
+   \       0x5A   0x....             LDR.N    R5,??DataTable7_12
+   \       0x5C   0x....'....        BL       ?Subroutine2
+    208          
+    209            emberAfCorePrintln("TC %p", "Link Key");
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x60   0x462A             MOV      R2,R5
+   \       0x62   0x....             LDR.N    R1,??DataTable7_13
+   \       0x64   0x....'....        BL       ??Subroutine4_0
+    210            emberAfCoreFlush();
+    211            printKeyTable(true);
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x68   0x2001             MOVS     R0,#+1
+   \       0x6A   0x....'....        BL       printKeyTable
+    212          
+    213            emberAfCorePrintln("%p Table", "Link Key");
+   \       0x6E   0x....             LDR.N    R4,??DataTable7_14
+   \       0x70   0x462A             MOV      R2,R5
+   \       0x72   0x....'....        BL       ?Subroutine4
+    214            emberAfCoreFlush();
+    215            entriesUsed = printKeyTable(false);
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \       0x76   0x2000             MOVS     R0,#+0
+   \       0x78   0x....'....        BL       printKeyTable
+   \       0x7C   0x4605             MOV      R5,R0
+    216            UNUSED_VAR(entriesUsed);
+    217          
+    218            emberAfCorePrintln("%d/%d entries used.",
+    219                               entriesUsed,
+    220                               emberAfGetKeyTableSize());
+   \       0x7E   0x....'....        BL       emberAfGetKeyTableSize
+   \       0x82   0x4603             MOV      R3,R0
+   \       0x84   0x462A             MOV      R2,R5
+   \       0x86   0x....             LDR.N    R1,??DataTable7_15
+   \       0x88   0x....'....        BL       ??Subroutine2_0
+    221            emberAfCoreFlush();
+    222          
+    223            emberAfCorePrintln("%p Table", "Transient Key");
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x8C   0x....             LDR.N    R2,??DataTable7_16
+   \       0x8E   0x....'....        BL       ?Subroutine4
+    224            emberAfCoreFlush();
+    225          
+    226            entriesUsed = printTransientKeyTable();
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0x92   0x....'....        BL       printTransientKeyTable
+    227            UNUSED_VAR(entriesUsed);
+    228          
+    229            emberAfCorePrintln("%d entr%s consuming %d packet buffer%s.",
+    230                               entriesUsed,
+    231                               entriesUsed > 1 ? "ies" : "y",
+    232                               entriesUsed,
+    233                               entriesUsed > 1 ? "s" : "");
+   \       0x96   0x2802             CMP      R0,#+2
+   \       0x98   0x9000             STR      R0,[SP, #+0]
+   \       0x9A   0x4602             MOV      R2,R0
+   \       0x9C   0xBFA7             ITTEE    GE 
+   \       0x9E   0x....             ADRGE.N  R1,??DataTable7  ;; "s"
+   \       0xA0   0x....             ADRGE.N  R3,??DataTable7_1  ;; "ies"
+   \       0xA2   0x....             LDRLT.N  R1,??DataTable7_17
+   \       0xA4   0x....             ADRLT.N  R3,??DataTable7_2  ;; "y"
+   \       0xA6   0x9101             STR      R1,[SP, #+4]
+   \       0xA8   0x....             LDR.N    R1,??DataTable7_18
+   \       0xAA   0x2001             MOVS     R0,#+1
+   \       0xAC   0x....'....        BL       emberAfPrintln
+    234            emberAfCoreFlush();
+    235          }
+   \       0xB0   0xB00D             ADD      SP,SP,#+52
+   \       0xB2   0xBD30             POP      {R4,R5,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4621             MOV      R1,R4
+   \                     ??Subroutine4_0: (+1)
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x462A             MOV      R2,R5
+   \        0x2   0x4621             MOV      R1,R4
+   \                     ??Subroutine2_0: (+1)
+   \        0x4   0x2001             MOVS     R0,#+1
+   \        0x6   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....'....        B.W      emberAfPrintln
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4649             MOV      R1,R9
+   \                     ??Subroutine0_0: (+1)
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....'....        B.W      emberAfPrint
+    236          
+
+   \                                 In section .text, align 2, keep-with-next
+    237          uint8_t printKeyTable(bool preconfiguredKey)
+    238          {
+   \                     printKeyTable: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB08B             SUB      SP,SP,#+44
+   \        0x6   0x4606             MOV      R6,R0
+    239            uint8_t i;
+    240            uint8_t entriesUsed = 0;
+   \        0x8   0x2500             MOVS     R5,#+0
+    241            uint8_t loopCount = (preconfiguredKey ? 1 : emberAfGetKeyTableSize());
+   \        0xA   0xB108             CBZ.N    R0,??printKeyTable_0
+   \        0xC   0x2401             MOVS     R4,#+1
+   \        0xE   0xE002             B.N      ??printKeyTable_1
+   \                     ??printKeyTable_0: (+1)
+   \       0x10   0x....'....        BL       emberAfGetKeyTableSize
+   \       0x14   0x4604             MOV      R4,R0
+    242          
+    243            emberAfCorePrintln("Index IEEE Address         In FC     Type  Auth  Key");
+   \                     ??printKeyTable_1: (+1)
+   \       0x16   0x....             LDR.N    R1,??DataTable7_19
+   \       0x18   0x....'....        BL       ?Subroutine1
+    244          
+    245            for (i = 0; i < loopCount; i++) {
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x1C   0xF88D 0x6000      STRB     R6,[SP, #+0]
+   \       0x20   0x....'....        LDR.W    R8,??DataTable7_20
+   \       0x24   0x....'....        LDR.W    R9,??DataTable7_21
+   \       0x28   0x....'....        LDR.W    R10,??DataTable7_22
+   \       0x2C   0x....'....        LDR.W    R11,??DataTable7_23
+   \       0x30   0x2600             MOVS     R6,#+0
+   \       0x32   0xE022             B.N      ??printKeyTable_2
+    246              EmberKeyStruct entry;
+    247          
+    248              if (preconfiguredKey) {
+    249                i = 0xFE; // last
+    250          
+    251                // Try to get whatever key type is stored in the pre-configured key slot.
+    252                if (EMBER_SUCCESS
+    253                    != emberGetKey(EMBER_TRUST_CENTER_LINK_KEY, &entry) ) {
+    254                  continue;
+    255                }
+    256              } else if ( EMBER_SUCCESS != emberGetKeyTableEntry(i, &entry) ) {
+   \                     ??printKeyTable_3: (+1)
+   \       0x34   0xA901             ADD      R1,SP,#+4
+   \       0x36   0xB2F0             UXTB     R0,R6
+   \       0x38   0x....'....        BL       emberGetKeyTableEntry
+   \       0x3C   0xB9E0             CBNZ.N   R0,??printKeyTable_4
+    257                continue;
+    258              } else {
+    259                // MISRA requires ..else if.. to have a terminating else.
+    260              }
+    261          
+    262              if (!preconfiguredKey) {
+    263                emberAfCorePrint("%d     ", i);
+   \       0x3E   0x463A             MOV      R2,R7
+   \       0x40   0x4651             MOV      R1,R10
+   \       0x42   0x....'....        BL       ??Subroutine0_0
+    264              } else {
+    265                emberAfCorePrint("-     ");
+    266              }
+    267              emberAfCoreDebugExec(emberAfPrintBigEndianEui64(entry.partnerEUI64));
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x46   0x2001             MOVS     R0,#+1
+   \       0x48   0x....'....        BL       emberAfPrintEnabled
+   \       0x4C   0xB118             CBZ.N    R0,??printKeyTable_5
+   \       0x4E   0xF10D 0x0021      ADD      R0,SP,#+33
+   \       0x52   0x....'....        BL       emberAfPrintBigEndianEui64
+    268              emberAfCorePrint("  %4x  ", entry.incomingFrameCounter);
+   \                     ??printKeyTable_5: (+1)
+   \       0x56   0x9A07             LDR      R2,[SP, #+28]
+   \       0x58   0x....'....        BL       ?Subroutine0
+    269              emberAfCorePrint("L     %c     ",
+    270                               (entry.bitmask & EMBER_KEY_IS_AUTHORIZED
+    271                                ? 'y'
+    272                                : 'n'));
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x5C   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \       0x60   0x06C1             LSLS     R1,R0,#+27
+   \       0x62   0x4641             MOV      R1,R8
+   \       0x64   0xBF54             ITE      PL 
+   \       0x66   0x226E             MOVPL    R2,#+110
+   \       0x68   0x2279             MOVMI    R2,#+121
+   \       0x6A   0x....'....        BL       ??Subroutine0_0
+    273          
+    274              emberAfPrintZigbeeKey(emberKeyContents(&(entry.key)));
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x6E   0xF10D 0x0007      ADD      R0,SP,#+7
+   \       0x72   0x....'....        BL       printZigbeeKey
+    275          
+    276              emberAfCoreFlush();
+    277              entriesUsed++;
+   \       0x76   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??printKeyTable_4: (+1)
+   \       0x78   0x1C76             ADDS     R6,R6,#+1
+   \                     ??printKeyTable_2: (+1)
+   \       0x7A   0xB2F7             UXTB     R7,R6
+   \       0x7C   0x42A7             CMP      R7,R4
+   \       0x7E   0xDA0F             BGE.N    ??printKeyTable_6
+   \       0x80   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x84   0x2800             CMP      R0,#+0
+   \       0x86   0xD0D5             BEQ.N    ??printKeyTable_3
+   \       0x88   0xA901             ADD      R1,SP,#+4
+   \       0x8A   0x2001             MOVS     R0,#+1
+   \       0x8C   0x26FE             MOVS     R6,#+254
+   \       0x8E   0x....'....        BL       emberGetKey
+   \       0x92   0x2800             CMP      R0,#+0
+   \       0x94   0xD1F0             BNE.N    ??printKeyTable_4
+   \       0x96   0x4659             MOV      R1,R11
+   \       0x98   0x2001             MOVS     R0,#+1
+   \       0x9A   0x....'....        BL       emberAfPrint
+   \       0x9E   0xE7D2             B.N      ??CrossCallReturnLabel_4
+    278            }
+    279          
+    280            return entriesUsed;
+   \                     ??printKeyTable_6: (+1)
+   \       0xA0   0xB2E8             UXTB     R0,R5
+   \       0xA2   0xB00B             ADD      SP,SP,#+44
+   \       0xA4   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    281          }
+    282          
+
+   \                                 In section .text, align 2, keep-with-next
+    283          uint8_t printTransientKeyTable(void)
+    284          {
+   \                     printTransientKeyTable: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0xB088             SUB      SP,SP,#+32
+    285            EmberStatus status;
+    286            EmberTransientKeyData transientKeyData;
+    287            uint8_t index = 0;
+    288          
+    289            emberAfCorePrintln("Index IEEE Address         In FC     TTL(s) Flag    Key    ");
+   \        0x6   0x....             LDR.N    R1,??DataTable7_24
+   \        0x8   0x....'....        BL       ?Subroutine1
+    290          
+    291            status = getTransientKeyTableEntry(index, &transientKeyData);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \        0xC   0x4669             MOV      R1,SP
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x2400             MOVS     R4,#+0
+   \       0x12   0x....'....        BL       emberGetTransientKeyTableEntry
+   \       0x16   0x....             LDR.N    R5,??DataTable7_17
+   \       0x18   0x....             LDR.N    R6,??DataTable7_25
+   \       0x1A   0x....             LDR.N    R7,??DataTable7_26
+   \       0x1C   0x....'....        LDR.W    R8,??DataTable7_21
+   \       0x20   0x....'....        LDR.W    R9,??DataTable7_22
+   \       0x24   0xE022             B.N      ??printTransientKeyTable_0
+    292          
+    293            while (status == EMBER_SUCCESS) {
+    294              emberAfCorePrint("%d     ", index);
+   \                     ??printTransientKeyTable_1: (+1)
+   \       0x26   0xB2E2             UXTB     R2,R4
+   \       0x28   0x....'....        BL       ?Subroutine0
+    295              emberAfCoreDebugExec(emberAfPrintBigEndianEui64(transientKeyData.eui64));
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0x....'....        BL       emberAfPrintEnabled
+   \       0x32   0xB110             CBZ.N    R0,??printTransientKeyTable_2
+   \       0x34   0x4668             MOV      R0,SP
+   \       0x36   0x....'....        BL       emberAfPrintBigEndianEui64
+    296              emberAfCorePrint("  %4x  ", transientKeyData.incomingFrameCounter);
+   \                     ??printTransientKeyTable_2: (+1)
+   \       0x3A   0x9A06             LDR      R2,[SP, #+24]
+   \       0x3C   0x4641             MOV      R1,R8
+   \       0x3E   0x....'....        BL       ??Subroutine0_0
+    297              emberAfCorePrint("0x%02X", transientKeyData.remainingTimeSeconds);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x42   0xF8BD 0x201E      LDRH     R2,[SP, #+30]
+   \       0x46   0x4639             MOV      R1,R7
+   \       0x48   0x....'....        BL       ??Subroutine0_0
+    298              emberAfCorePrint(" 0x%02X  ", transientKeyData.bitmask);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x4C   0xF8BD 0x201C      LDRH     R2,[SP, #+28]
+   \       0x50   0x4631             MOV      R1,R6
+   \       0x52   0x....'....        BL       ??Subroutine0_0
+    299              emberAfPrintZigbeeKey(emberKeyContents(&(transientKeyData.keyData)));
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x56   0xA802             ADD      R0,SP,#+8
+   \       0x58   0x....'....        BL       printZigbeeKey
+    300              emberAfCorePrintln("");
+   \       0x5C   0x4629             MOV      R1,R5
+   \       0x5E   0x....'....        BL       ?Subroutine1
+    301              emberAfCoreFlush();
+    302          
+    303              index += 1;
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x62   0x1C64             ADDS     R4,R4,#+1
+    304              status = getTransientKeyTableEntry(index, &transientKeyData);
+   \       0x64   0x4669             MOV      R1,SP
+   \       0x66   0xB2E0             UXTB     R0,R4
+   \       0x68   0x....'....        BL       emberGetTransientKeyTableEntry
+    305            }
+   \                     ??printTransientKeyTable_0: (+1)
+   \       0x6C   0x2800             CMP      R0,#+0
+   \       0x6E   0xD0DA             BEQ.N    ??printTransientKeyTable_1
+    306          
+    307            return index;
+   \       0x70   0xB2E0             UXTB     R0,R4
+   \       0x72   0xB009             ADD      SP,SP,#+36
+   \       0x74   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    308          }
+    309          
+
+   \                                 In section .text, align 2, keep-with-next
+    310          uint32_t getOutgoingApsFrameCounter(void)
+    311          {
+   \                     getOutgoingApsFrameCounter: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB08A             SUB      SP,SP,#+40
+    312            EmberKeyStruct entry;
+    313            if (emberGetKey(EMBER_TRUST_CENTER_LINK_KEY, &entry) != EMBER_SUCCESS) {
+   \        0x4   0x4669             MOV      R1,SP
+   \        0x6   0x2001             MOVS     R0,#+1
+   \        0x8   0x....'....        BL       emberGetKey
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xBF14             ITE      NE 
+   \       0x10   0xF04F 0x30FF      MOVNE    R0,#-1
+   \       0x14   0x9805             LDREQ    R0,[SP, #+20]
+    314              return 0xFFFFFFFFUL;
+    315            }
+    316            return entry.outgoingFrameCounter;
+   \       0x16   0xB00B             ADD      SP,SP,#+44
+   \       0x18   0xBD00             POP      {PC}             ;; return
+    317          }
+    318          
+    319          #ifndef EMBER_AF_HAS_SECURITY_PROFILE_NONE
+
+   \                                 In section .text, align 2, keep-with-next
+    320          void getSetMfgToken(void)
+    321          {
+   \                     getSetMfgToken: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    322            EmberMfgSecurityStruct config;
+    323            EmberStatus status;
+    324          
+    325            if (emberCurrentCommand->name[0] == 'g') {
+   \        0x2   0x....'....        BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \        0x6   0x2B67             CMP      R3,#+103
+   \        0x8   0xD103             BNE.N    ??getSetMfgToken_0
+    326              status = emberGetMfgSecurityConfig(&config);
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x....'....        BL       emberGetMfgSecurityConfig
+    327              if (status == EMBER_SUCCESS) {
+   \       0x10   0xBD13             POP      {R0,R1,R4,PC}
+    328                emberAfSecurityPrintln("EmberKeySettings: 0x%2X", config.keySettings);
+    329                emberAfSecurityPrintln("  Permissions: %p",
+    330                                       ((config.keySettings & EMBER_KEY_PERMISSIONS_READING_ALLOWED)
+    331                                        ? "Reading Allowed"
+    332                                        : ((config.keySettings & EMBER_KEY_PERMISSIONS_HASHING_ALLOWED)
+    333                                           ? "Hashing only"
+    334                                           : "NONE")));
+    335              } else {
+    336                emberAfSecurityPrintln("Error: Failed to get config, status: 0x%X", status);
+    337              }
+    338            } else {
+    339              uint32_t magicNumber = emberUnsignedCommandArgument(0);
+   \                     ??getSetMfgToken_0: (+1)
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x18   0x4604             MOV      R4,R0
+    340              config.keySettings = (EmberKeySettings)emberUnsignedCommandArgument(1);
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x20   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    341              status = emberSetMfgSecurityConfig(magicNumber, &config);
+   \       0x24   0x4669             MOV      R1,SP
+   \       0x26   0x4620             MOV      R0,R4
+   \       0x28   0x....'....        BL       emberSetMfgSecurityConfig
+    342            }
+    343          
+    344            if (status != EMBER_SUCCESS) {
+    345              emberAfSecurityPrintln("Failed: 0x%X", status);
+    346            }
+    347          }
+   \       0x2C   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    348          #endif
+    349          
+
+   \                                 In section .text, align 2, keep-with-next
+    350          void optionSecurityAllowTrustCenterRejoinUsingWellKnownKey(void)
+    351          {
+   \                     optionSecurityAllowTrustCenterRejoinUsingWellKnownKey: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    352            bool allow = (bool)emberUnsignedCommandArgument(0);
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        BL       emberUnsignedCommandArgument
+   \        0x8   0x0004             MOVS     R4,R0
+   \        0xA   0xBF18             IT       NE 
+   \        0xC   0x2401             MOVNE    R4,#+1
+    353            setTcRejoinsUsingWellKnownKeyAllowed(allow);
+   \        0xE   0xB2E0             UXTB     R0,R4
+   \       0x10   0x....'....        BL       emberSetTcRejoinsUsingWellKnownKeyAllowed
+    354            emberAfCorePrintln("Trust Center %p allow trust center rejoins using "
+    355                               "well-known key.",
+    356                               allow
+    357                               ? "WILL"
+    358                               : "WILL NOT");
+   \       0x14   0xB2E4             UXTB     R4,R4
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0x....             LDR.N    R1,??DataTable7_28
+   \       0x1A   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x1E   0xBF14             ITE      NE 
+   \       0x20   0x....             LDRNE.N  R2,??DataTable7_29
+   \       0x22   0x....             LDREQ.N  R2,??DataTable7_30
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x....'....        B.W      emberAfPrintln
+    359          }
+    360          
+
+   \                                 In section .text, align 2, keep-with-next
+    361          void optionSecurityAllowTrustCenterRejoinUsingWellKnownKeyTimeout(void)
+    362          {
+   \                     optionSecurityAllowTrustCenterRejoinUsingWellKnownKeyTimeout: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    363            uint16_t timeout = (uint16_t)emberUnsignedCommandArgument(0);
+    364            setTcRejoinsUsingWellKnownKeyTimeout(timeout);
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....             LDR.N    R4,??DataTable7_31
+   \        0x6   0x....'....        BL       emberUnsignedCommandArgument
+   \        0xA   0x8020             STRH     R0,[R4, #+0]
+    365            emberAfCorePrintln("Set timeout for Trust Center rejoins using well-known "
+    366                               "link key to %d seconds.",
+    367                               timeout);
+   \        0xC   0x8822             LDRH     R2,[R4, #+0]
+   \        0xE   0x....             LDR.N    R1,??DataTable7_32
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x16   0x....'....        B.W      emberAfPrintln
+    368          }
+    369          
+
+   \                                 In section .text, align 2, keep-with-next
+    370          void optionSecuritySetKeyRequestPolicy(void)
+    371          {
+   \                     optionSecuritySetKeyRequestPolicy: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    372          #ifdef EZSP_HOST
+    373            uint8_t tcPolicy = (uint8_t)emberUnsignedCommandArgument(0);
+    374            uint8_t appPolicy = (uint8_t)emberUnsignedCommandArgument(1);
+    375          
+    376            // The EZSP policies are offset by EZSP_DENY_TC_KEY_REQUESTS and
+    377            // EZSP_DENY_APP_KEY_REQUESTS, respectively
+    378            tcPolicy += EZSP_DENY_TC_KEY_REQUESTS;
+    379            appPolicy += EZSP_DENY_APP_KEY_REQUESTS;
+    380          
+    381            (void)ezspSetPolicy(EZSP_TC_KEY_REQUEST_POLICY, tcPolicy);
+    382            (void)ezspSetPolicy(EZSP_APP_KEY_REQUEST_POLICY, tcPolicy);
+    383          #else // EZSP_HOST
+    384            emberTrustCenterLinkKeyRequestPolicy = (uint8_t)emberUnsignedCommandArgument(0);
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        BL       emberUnsignedCommandArgument
+   \        0x8   0x....             LDR.N    R1,??DataTable7_33
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+    385            emberAppLinkKeyRequestPolicy = (uint8_t)emberUnsignedCommandArgument(1);
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x....'....        BL       emberUnsignedCommandArgument
+   \       0x12   0x....             LDR.N    R1,??DataTable7_34
+   \       0x14   0x7008             STRB     R0,[R1, #+0]
+    386          #endif // EZSP_HOST
+    387          }
+   \       0x16   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x73 0x00          DC8      "s",0x0,0x0
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x69 0x65          DC8      "ies"
+   \              0x73 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x79 0x00          DC8      "y",0x0,0x0
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     cliPreconfiguredLinkKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x....'....        DC32     cliNetworkKey
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_14:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_15:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_16:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_17:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_18:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_19:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_20:
+   \        0x0   0x....'....        DC32     ?_25
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_21:
+   \        0x0   0x....'....        DC32     ?_24
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_22:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_23:
+   \        0x0   0x....'....        DC32     ?_23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_24:
+   \        0x0   0x....'....        DC32     ?_26
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_25:
+   \        0x0   0x....'....        DC32     ?_28
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_26:
+   \        0x0   0x....'....        DC32     ?_27
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_27:
+   \        0x0   0x....'....        DC32     emberCurrentCommand
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_28:
+   \        0x0   0x....'....        DC32     ?_29
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_29:
+   \        0x0   0x....'....        DC32     ?_30
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_30:
+   \        0x0   0x....'....        DC32     ?_31
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_31:
+   \        0x0   0x....'....        DC32     emAllowTcRejoinsUsingWellKnownKeyTimeoutSec
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_32:
+   \        0x0   0x....'....        DC32     ?_32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_33:
+   \        0x0   0x....'....        DC32     emberTrustCenterLinkKeyRequestPolicy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_34:
+   \        0x0   0x....'....        DC32     emberAppLinkKeyRequestPolicy
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x67 0x65          DC8 "get"
+   \              0x74 0x00    
+
+   \                                 In section .rodata, align 1
+   \                     ?_1:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x73 0x65          DC8 "set"
+   \              0x74 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x77 0x76          DC8 "wv"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x6D 0x66          DC8 "mfg-token"
+   \              0x67 0x2D    
+   \              0x74 0x6F    
+   \              0x6B 0x65    
+   \              0x6E 0x00    
+   \        0xA   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x25 0x70          DC8 "%pstack must be down."
+   \              0x73 0x74    
+   \              0x61 0x63    
+   \              0x6B 0x20    
+   \              0x6D 0x75    
+   \              0x73 0x74    
+   \              0x20 0x62    
+   \              0x65 0x20    
+   \              0x64 0x6F    
+   \              0x77 0x6E    
+   \              0x2E 0x00    
+   \       0x16   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x45 0x52          DC8 "ERROR: "
+   \              0x52 0x4F    
+   \              0x52 0x3A    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x0A 0x57          DC8 0AH, 57H, 41H, 52H, 4EH, 49H, 4EH, 47H
+   \              0x41 0x52    
+   \              0x4E 0x49    
+   \              0x4E 0x47    
+   \        0x8   0x3A 0x20          DC8 3AH, 20H, 20H, 52H, 45H, 41H, 44H, 49H
+   \              0x20 0x52    
+   \              0x45 0x41    
+   \              0x44 0x49    
+   \       0x10   0x4E 0x47          DC8 4EH, 47H, 20H, 4FH, 46H, 20H, 4BH, 45H
+   \              0x20 0x4F    
+   \              0x46 0x20    
+   \              0x4B 0x45    
+   \       0x18   0x59 0x20          DC8 59H, 20H, 56H, 41H, 4CH, 55H, 45H, 53H
+   \              0x56 0x41    
+   \              0x4C 0x55    
+   \              0x45 0x53    
+   \       0x20   0x20 0x44          DC8 20H, 44H, 49H, 53H, 41H, 42H, 4CH, 45H
+   \              0x49 0x53    
+   \              0x41 0x42    
+   \              0x4C 0x45    
+   \       0x28   0x44 0x20          DC8 44H, 20H, 42H, 59H, 20H, 4DH, 46H, 47H
+   \              0x42 0x59    
+   \              0x20 0x4D    
+   \              0x46 0x47    
+   \       0x30   0x20 0x54          DC8 20H, 54H, 4FH, 4BH, 45H, 4EH, 0AH, 0
+   \              0x4F 0x4B    
+   \              0x45 0x4E    
+   \              0x0A 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x25 0x70          DC8 "%p out FC: %4x"
+   \              0x20 0x6F    
+   \              0x75 0x74    
+   \              0x20 0x46    
+   \              0x43 0x3A    
+   \              0x20 0x25    
+   \              0x34 0x78    
+   \              0x00         
+   \        0xF   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x4E 0x57          DC8 "NWK Key"
+   \              0x4B 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x25 0x70          DC8 "%p seq num: 0x%x"
+   \              0x20 0x73    
+   \              0x65 0x71    
+   \              0x20 0x6E    
+   \              0x75 0x6D    
+   \              0x3A 0x20    
+   \              0x30 0x78    
+   \              0x25 0x78    
+   \              0x00         
+   \       0x11   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x25 0x70          DC8 "%p: "
+   \              0x3A 0x20    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x4C 0x69          DC8 "Link Key"
+   \              0x6E 0x6B    
+   \              0x20 0x4B    
+   \              0x65 0x79    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x54 0x43          DC8 "TC %p"
+   \              0x20 0x25    
+   \              0x70 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x25 0x70          DC8 "%p Table"
+   \              0x20 0x54    
+   \              0x61 0x62    
+   \              0x6C 0x65    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x25 0x64          DC8 "%d/%d entries used."
+   \              0x2F 0x25    
+   \              0x64 0x20    
+   \              0x65 0x6E    
+   \              0x74 0x72    
+   \              0x69 0x65    
+   \              0x73 0x20    
+   \              0x75 0x73    
+   \              0x65 0x64    
+   \              0x2E 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x54 0x72          DC8 "Transient Key"
+   \              0x61 0x6E    
+   \              0x73 0x69    
+   \              0x65 0x6E    
+   \              0x74 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x25 0x64          DC8 "%d entr%s consuming %d packet buffer%s."
+   \              0x20 0x65    
+   \              0x6E 0x74    
+   \              0x72 0x25    
+   \              0x73 0x20    
+   \              0x63 0x6F    
+   \              0x6E 0x73    
+   \              0x75 0x6D    
+   \              0x69 0x6E    
+   \              0x67 0x20    
+   \              0x25 0x64    
+   \              0x20 0x70    
+   \              0x61 0x63    
+   \              0x6B 0x65    
+   \              0x74 0x20    
+   \              0x62 0x75    
+   \              0x66 0x66    
+   \              0x65 0x72    
+   \              0x25 0x73    
+   \              0x2E 0x00    
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x69 0x65          DC8 "ies"
+   \              0x73 0x00    
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x79 0x00          DC8 "y"
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x73 0x00          DC8 "s"
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x49 0x6E          DC8 49H, 6EH, 64H, 65H, 78H, 20H, 49H, 45H
+   \              0x64 0x65    
+   \              0x78 0x20    
+   \              0x49 0x45    
+   \        0x8   0x45 0x45          DC8 45H, 45H, 20H, 41H, 64H, 64H, 72H, 65H
+   \              0x20 0x41    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \       0x10   0x73 0x73          DC8 73H, 73H, 20H, 20H, 20H, 20H, 20H, 20H
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \       0x18   0x20 0x20          DC8 20H, 20H, 20H, 49H, 6EH, 20H, 46H, 43H
+   \              0x20 0x49    
+   \              0x6E 0x20    
+   \              0x46 0x43    
+   \       0x20   0x20 0x20          DC8 20H, 20H, 20H, 20H, 20H, 54H, 79H, 70H
+   \              0x20 0x20    
+   \              0x20 0x54    
+   \              0x79 0x70    
+   \       0x28   0x65 0x20          DC8 65H, 20H, 20H, 41H, 75H, 74H, 68H, 20H
+   \              0x20 0x41    
+   \              0x75 0x74    
+   \              0x68 0x20    
+   \       0x30   0x20 0x4B          DC8 20H, 4BH, 65H, 79H, 0
+   \              0x65 0x79    
+   \              0x00         
+   \       0x35   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x25 0x64          DC8 "%d     "
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_23:
+   \        0x0   0x2D 0x20          DC8 "-     "
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_24:
+   \        0x0   0x20 0x20          DC8 "  %4x  "
+   \              0x25 0x34    
+   \              0x78 0x20    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_25:
+   \        0x0   0x4C 0x20          DC8 "L     %c     "
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x25 0x63    
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x20 0x00    
+   \        0xE   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_26:
+   \        0x0   0x49 0x6E          DC8 49H, 6EH, 64H, 65H, 78H, 20H, 49H, 45H
+   \              0x64 0x65    
+   \              0x78 0x20    
+   \              0x49 0x45    
+   \        0x8   0x45 0x45          DC8 45H, 45H, 20H, 41H, 64H, 64H, 72H, 65H
+   \              0x20 0x41    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \       0x10   0x73 0x73          DC8 73H, 73H, 20H, 20H, 20H, 20H, 20H, 20H
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \       0x18   0x20 0x20          DC8 20H, 20H, 20H, 49H, 6EH, 20H, 46H, 43H
+   \              0x20 0x49    
+   \              0x6E 0x20    
+   \              0x46 0x43    
+   \       0x20   0x20 0x20          DC8 20H, 20H, 20H, 20H, 20H, 54H, 54H, 4CH
+   \              0x20 0x20    
+   \              0x20 0x54    
+   \              0x54 0x4C    
+   \       0x28   0x28 0x73          DC8 28H, 73H, 29H, 20H, 46H, 6CH, 61H, 67H
+   \              0x29 0x20    
+   \              0x46 0x6C    
+   \              0x61 0x67    
+   \       0x30   0x20 0x20          DC8 20H, 20H, 20H, 20H, 4BH, 65H, 79H, 20H
+   \              0x20 0x20    
+   \              0x4B 0x65    
+   \              0x79 0x20    
+   \       0x38   0x20 0x20          DC8 20H, 20H, 20H, 0
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_27:
+   \        0x0   0x30 0x78          DC8 "0x%02X"
+   \              0x25 0x30    
+   \              0x32 0x58    
+   \              0x00         
+   \        0x7   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_28:
+   \        0x0   0x20 0x30          DC8 " 0x%02X  "
+   \              0x78 0x25    
+   \              0x30 0x32    
+   \              0x58 0x20    
+   \              0x20 0x00    
+   \        0xA   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_29:
+   \        0x0   0x54 0x72          DC8 54H, 72H, 75H, 73H, 74H, 20H, 43H, 65H
+   \              0x75 0x73    
+   \              0x74 0x20    
+   \              0x43 0x65    
+   \        0x8   0x6E 0x74          DC8 6EH, 74H, 65H, 72H, 20H, 25H, 70H, 20H
+   \              0x65 0x72    
+   \              0x20 0x25    
+   \              0x70 0x20    
+   \       0x10   0x61 0x6C          DC8 61H, 6CH, 6CH, 6FH, 77H, 20H, 74H, 72H
+   \              0x6C 0x6F    
+   \              0x77 0x20    
+   \              0x74 0x72    
+   \       0x18   0x75 0x73          DC8 75H, 73H, 74H, 20H, 63H, 65H, 6EH, 74H
+   \              0x74 0x20    
+   \              0x63 0x65    
+   \              0x6E 0x74    
+   \       0x20   0x65 0x72          DC8 65H, 72H, 20H, 72H, 65H, 6AH, 6FH, 69H
+   \              0x20 0x72    
+   \              0x65 0x6A    
+   \              0x6F 0x69    
+   \       0x28   0x6E 0x73          DC8 6EH, 73H, 20H, 75H, 73H, 69H, 6EH, 67H
+   \              0x20 0x75    
+   \              0x73 0x69    
+   \              0x6E 0x67    
+   \       0x30   0x20 0x77          DC8 20H, 77H, 65H, 6CH, 6CH, 2DH, 6BH, 6EH
+   \              0x65 0x6C    
+   \              0x6C 0x2D    
+   \              0x6B 0x6E    
+   \       0x38   0x6F 0x77          DC8 6FH, 77H, 6EH, 20H, 6BH, 65H, 79H, 2EH
+   \              0x6E 0x20    
+   \              0x6B 0x65    
+   \              0x79 0x2E    
+   \       0x40   0x00               DC8 0
+   \       0x41   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_30:
+   \        0x0   0x57 0x49          DC8 "WILL"
+   \              0x4C 0x4C    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_31:
+   \        0x0   0x57 0x49          DC8 "WILL NOT"
+   \              0x4C 0x4C    
+   \              0x20 0x4E    
+   \              0x4F 0x54    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_32:
+   \        0x0   0x53 0x65          DC8 53H, 65H, 74H, 20H, 74H, 69H, 6DH, 65H
+   \              0x74 0x20    
+   \              0x74 0x69    
+   \              0x6D 0x65    
+   \        0x8   0x6F 0x75          DC8 6FH, 75H, 74H, 20H, 66H, 6FH, 72H, 20H
+   \              0x74 0x20    
+   \              0x66 0x6F    
+   \              0x72 0x20    
+   \       0x10   0x54 0x72          DC8 54H, 72H, 75H, 73H, 74H, 20H, 43H, 65H
+   \              0x75 0x73    
+   \              0x74 0x20    
+   \              0x43 0x65    
+   \       0x18   0x6E 0x74          DC8 6EH, 74H, 65H, 72H, 20H, 72H, 65H, 6AH
+   \              0x65 0x72    
+   \              0x20 0x72    
+   \              0x65 0x6A    
+   \       0x20   0x6F 0x69          DC8 6FH, 69H, 6EH, 73H, 20H, 75H, 73H, 69H
+   \              0x6E 0x73    
+   \              0x20 0x75    
+   \              0x73 0x69    
+   \       0x28   0x6E 0x67          DC8 6EH, 67H, 20H, 77H, 65H, 6CH, 6CH, 2DH
+   \              0x20 0x77    
+   \              0x65 0x6C    
+   \              0x6C 0x2D    
+   \       0x30   0x6B 0x6E          DC8 6BH, 6EH, 6FH, 77H, 6EH, 20H, 6CH, 69H
+   \              0x6F 0x77    
+   \              0x6E 0x20    
+   \              0x6C 0x69    
+   \       0x38   0x6E 0x6B          DC8 6EH, 6BH, 20H, 6BH, 65H, 79H, 20H, 74H
+   \              0x20 0x6B    
+   \              0x65 0x79    
+   \              0x20 0x74    
+   \       0x40   0x6F 0x20          DC8 6FH, 20H, 25H, 64H, 20H, 73H, 65H, 63H
+   \              0x25 0x64    
+   \              0x20 0x73    
+   \              0x65 0x63    
+   \       0x48   0x6F 0x6E          DC8 6FH, 6EH, 64H, 73H, 2EH, 0
+   \              0x64 0x73    
+   \              0x2E 0x00    
+   \       0x4E   0x00 0x00          DC8 0, 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   changeKeyCommand
+         0   -> emberAfPrintln
+         0   -> emberCopyStringArgument
+         8   -> emberNetworkState
+      48   getOutgoingApsFrameCounter
+        48   -> emberGetKey
+      16   getSetMfgToken
+        16   -> emberGetMfgSecurityConfig
+        16   -> emberSetMfgSecurityConfig
+        16   -> emberUnsignedCommandArgument
+       8   optionSecurityAllowTrustCenterRejoinUsingWellKnownKey
+         0   -> emberAfPrintln
+         8   -> emberSetTcRejoinsUsingWellKnownKeyAllowed
+         8   -> emberUnsignedCommandArgument
+       8   optionSecurityAllowTrustCenterRejoinUsingWellKnownKeyTimeout
+         0   -> emberAfPrintln
+         8   -> emberUnsignedCommandArgument
+       8   optionSecuritySetKeyRequestPolicy
+         8   -> emberUnsignedCommandArgument
+      64   printKeyInfo
+        64   -> emberAfGetKeyTableSize
+        64   -> emberAfPrint
+        64   -> emberAfPrintln
+        64   -> emberGetKey
+        64   -> emberGetMfgSecurityConfig
+        64   -> getOutgoingApsFrameCounter
+        64   -> halCommonMemSet
+        64   -> printKeyTable
+        64   -> printTransientKeyTable
+        64   -> printZigbeeKey
+      80   printKeyTable
+        80   -> emberAfGetKeyTableSize
+        80   -> emberAfPrint
+        80   -> emberAfPrintBigEndianEui64
+        80   -> emberAfPrintEnabled
+        80   -> emberAfPrintln
+        80   -> emberGetKey
+        80   -> emberGetKeyTableEntry
+        80   -> printZigbeeKey
+      64   printTransientKeyTable
+        64   -> emberAfPrint
+        64   -> emberAfPrintBigEndianEui64
+        64   -> emberAfPrintEnabled
+        64   -> emberAfPrintln
+        64   -> emberGetTransientKeyTableEntry
+        64   -> printZigbeeKey
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_14
+       4  ??DataTable7_15
+       4  ??DataTable7_16
+       4  ??DataTable7_17
+       4  ??DataTable7_18
+       4  ??DataTable7_19
+       4  ??DataTable7_2
+       4  ??DataTable7_20
+       4  ??DataTable7_21
+       4  ??DataTable7_22
+       4  ??DataTable7_23
+       4  ??DataTable7_24
+       4  ??DataTable7_25
+       4  ??DataTable7_26
+       4  ??DataTable7_27
+       4  ??DataTable7_28
+       4  ??DataTable7_29
+       4  ??DataTable7_3
+       4  ??DataTable7_30
+       4  ??DataTable7_31
+       4  ??DataTable7_32
+       4  ??DataTable7_33
+       4  ??DataTable7_34
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+       8  ?Subroutine0
+       6  ?Subroutine1
+      10  ?Subroutine2
+      10  ?Subroutine3
+       8  ?Subroutine4
+       4  ?_0
+       1  ?_1
+      20  ?_10
+       8  ?_11
+      12  ?_12
+       8  ?_13
+      12  ?_14
+      20  ?_15
+      16  ?_16
+      40  ?_17
+       4  ?_18
+       2  ?_19
+       4  ?_2
+       2  ?_20
+      56  ?_21
+       8  ?_22
+       8  ?_23
+       8  ?_24
+      16  ?_25
+      60  ?_26
+       8  ?_27
+      12  ?_28
+      68  ?_29
+       4  ?_3
+       8  ?_30
+      12  ?_31
+      80  ?_32
+      12  ?_4
+      24  ?_5
+       8  ?_6
+      56  ?_7
+      16  ?_8
+       8  ?_9
+      48  changeKeyCommand
+      16  cliNetworkKey
+      16  cliPreconfiguredLinkKey
+      24  emAfSecurityCommands
+      26  getOutgoingApsFrameCounter
+      46  getSetMfgToken
+      36  mfgToken
+      42  optionSecurityAllowTrustCenterRejoinUsingWellKnownKey
+      26  optionSecurityAllowTrustCenterRejoinUsingWellKnownKeyTimeout
+      24  optionSecuritySetKeyRequestPolicy
+     180  printKeyInfo
+     168  printKeyTable
+     120  printTransientKeyTable
+
+ 
+  32 bytes in section .data
+ 685 bytes in section .rodata
+ 862 bytes in section .text
+ 
+ 862 bytes of CODE  memory
+ 685 bytes of CONST memory
+  32 bytes of DATA  memory
+
+Errors: none
+Warnings: none

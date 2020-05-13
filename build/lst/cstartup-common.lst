@@ -1,0 +1,769 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:42
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\cstartup-common.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW2CD1.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\cstartup-common.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"cstartup-common.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\cstartup-common.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\cstartup-common.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\base\hal\micro\cortexm3\efm32\cstartup-common.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief This file defines the basic information needed to go from reset up to
+      4           * the main() found in C code.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     11           * software is governed by the terms of Silicon Labs Master Software License
+     12           * Agreement (MSLA) available at
+     13           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     14           * software is distributed to you in Source Code format and is governed by the
+     15           * sections of the MSLA applicable to Source Code.
+     16           *
+     17           ******************************************************************************/
+     18          #include PLATFORM_HEADER
+     19          #include "hal/micro/cortexm3/diagnostic.h"
+     20          #include "hal/micro/cortexm3/efm32/mpu.h"
+     21          #include "hal/micro/micro.h"
+     22          #include "hal/micro/cortexm3/memmap.h"
+     23          #include "hal/micro/cortexm3/efm32/cstartup-common.h"
+     24          #include "hal/micro/cortexm3/internal-storage.h"
+     25          
+     26          #include "stack/include/ember-types.h"
+     27          #include "hal/micro/bootloader-interface.h"
+     28          #include "em_device.h"
+     29          #include "em_rmu.h"
+     30          
+     31          // TODO: comments in this file relate to the em3xx instead of efr32. Should
+     32          // be cleaned up.
+     33          
+     34          // Pull in the SOFTWARE_VERSION and EMBER_BUILD_NUMBER from the stack
+     35          #include "stack/config/config.h"
+     36          
+     37          // Define the CUSTOMER_APPLICATION_VERSION if it wasn't set
+     38          #ifndef CUSTOMER_APPLICATION_VERSION
+     39            #define CUSTOMER_APPLICATION_VERSION 0
+     40          #endif
+     41          // Define the CUSTOMER_BOOTLOADER_VERSION if it wasn't set
+     42          #ifndef CUSTOMER_BOOTLOADER_VERSION
+     43            #define CUSTOMER_BOOTLOADER_VERSION 0
+     44          #endif
+     45          
+     46          // Verify the various bootloader options that may be specified.  Use of some
+     47          //   options is now deprecated and will be removed in a future release.
+     48          // On the 35x platform, the use of these options is only important to specify
+     49          //   the size of the bootloader, rather than the bootloader type.
+     50          // By default, the lack of any option will indicate an 8k bootloader size
+     51          // The NULL_BTL option indicates no bootloader is used.
+     52          #ifdef APP_BTL
+     53            #pragma message("The APP_BTL build option is deprecated.  Removing this option will build for any 16k bootloader type.")
+     54          #endif
+     55          #ifdef SERIAL_UART_BTL
+     56            #pragma message("The SERIAL_UART_BTL build option is deprecated.  Removing this option will build for any 16k bootloader type.")
+     57          #endif
+     58          #ifdef SERIAL_OTA_BTL
+     59            #pragma message("The SERIAL_UART_OTA build option is deprecated.  Removing this option will build for any 16k bootloader type.")
+     60          #endif
+     61          #ifdef NULL_BTL
+     62          // Fully supported, no error
+     63          #endif
+     64          #ifdef SMALL_BTL
+     65            #error SMALL_BTL is not supported
+     66          #endif
+     67          
+     68          #if defined GECKO_INFO_PAGE_BTL      \
+     69            || defined APP_GECKO_INFO_PAGE_BTL \
+     70            || defined STA_GECKO_INFO_PAGE_BTL \
+     71            || defined LOCAL_STORAGE_GECKO_INFO_PAGE_BTL
+     72            #define NO_BAT
+     73          #endif
+     74          
+     75          //=============================================================================
+     76          // Define the size of the call stack and define a block of memory for it.
+     77          //
+     78          // Place the cstack area in a segment named CSTACK.  This segment is
+     79          // defined soley for the purpose of placing the stack.  Refer to reset handler
+     80          // for the initialization code and iar-cfg-common.icf for segment placement
+     81          // in memory.
+     82          //=============================================================================
+     83          #ifndef CSTACK_SIZE
+     84            #if (defined(RTOS) || defined(MICRIUMOS))
+     85          // The RTOS will handle the actual CSTACK sizing per-task, but we must
+     86          // still allocate some space for startup and exceptions.
+     87              #define CSTACK_SIZE (128)  // *4 = 512 bytes
+     88            #else
+     89              #if (!defined(EMBER_STACK_IP))
+     90          // Pro Stack
+     91          
+     92          // Right now we define the stack size to be for the worst case scenario,
+     93          // ECC.  The ECC 163k1 library  and the ECC 283k1 Library both use the stack
+     94          // for calculations. Empirically I have seen it use as much as 1900 bytes
+     95          // for the 'key bit generate' operation.
+     96          // So we add a 25% buffer: 1900 * 1.25 = 2375
+     97              #define CSTACK_SIZE  (600)  // *4 = 2400 bytes
+     98          
+     99              #else
+    100          // IP Stack
+    101                #define CSTACK_SIZE (950) // *4 = 3800 bytes
+    102              #endif // !EMBER_STACK_IP
+    103            #endif
+    104          #endif
+
+   \                                 In section CSTACK, align 4, root
+    105          VAR_AT_SEGMENT(NO_STRIPPING uint32_t cstackMemory[CSTACK_SIZE], __CSTACK__);
+   \                     cstackMemory:
+   \        0x0                      DS8 2400
+    106          
+    107          #ifndef HTOL_EM3XX
+    108          // Create an array to hold space for the guard region. Do not actually use this
+    109          // array in code as we will move the guard region around programatically. This
+    110          // is only here so that the linker takes into account the size of the guard
+    111          // region when configuring the RAM.
+    112          ALIGNMENT(HEAP_GUARD_REGION_SIZE_BYTES)
+
+   \                                 In section GUARD_REGION, align 32, root
+    113          VAR_AT_SEGMENT(NO_STRIPPING uint8_t guardRegionPlaceHolder[HEAP_GUARD_REGION_SIZE_BYTES], __GUARD_REGION__);
+   \                     guardRegionPlaceHolder:
+   \        0x0                      DS8 32
+    114          #endif
+    115          
+    116          // Reset cause and crash info live in a special RAM segment that is
+    117          // not modified during startup.
+
+   \                                 In section RESETINFO, align 4, root
+    118          VAR_AT_SEGMENT(NO_STRIPPING HalResetInfoType halResetInfo, __RESETINFO__);
+   \                     halResetInfo:
+   \        0x0                      DS8 156
+    119          
+    120          // If space is needed in the flash for data storage like for the local storage
+    121          // bootloader then create an array here to hold a place for this data.
+    122          #if INTERNAL_STORAGE_SIZE_B > 0
+    123          // Define the storage region as an uninitialized array in the
+    124          // __INTERNAL_STORAGE__ region which the linker knows how to place.
+
+   \                                 In section INTERNAL_STORAGE, align 4, root
+    125          VAR_AT_SEGMENT(NO_STRIPPING uint8_t internalStorage[INTERNAL_STORAGE_SIZE_B], __INTERNAL_STORAGE__);
+   \                     internalStorage:
+   \        0x0                      DS8 507904
+    126          
+    127          // place a reference to the variable in the AAT to force the linker to keep it
+    128          #define INTERNAL_STORAGE_BEGIN  (&internalStorage)
+    129          
+    130          #else
+    131          
+    132          // no internal storage, place null pointer in the AAT
+    133          #define INTERNAL_STORAGE_BEGIN  (NULL)
+    134          
+    135          #endif
+    136          
+    137          #if defined(CORTEXM3_EFR32_MICRO) && !defined(NULL_BTL)
+    138            #define APP_PROPS   (&appProperties)
+    139          #else
+    140            #define APP_PROPS   (NULL)
+    141          #endif
+    142          
+    143          //=============================================================================
+    144          // Declare the address tables which will always live at well known addresses
+    145          //=============================================================================
+    146          #ifdef NULL_BTL
+    147          // In the case of a NULL_BTL application, we define a dummy BAT
+    148          VAR_AT_SEGMENT(NO_STRIPPING const HalBootloaderAddressTableType halBootloaderAddressTable, __BAT_INIT__) = {
+    149            { _CSTACK_SEGMENT_END,
+    150              Reset_Handler,
+    151              NMI_Handler,
+    152              HardFault_Handler,
+    153              BOOTLOADER_ADDRESS_TABLE_TYPE,
+    154              BAT_NULL_VERSION,
+    155              NULL                    // No other vector table.
+    156            },
+    157            BL_EXT_TYPE_NULL,           //uint16_t bootloaderType;
+    158            BOOTLOADER_INVALID_VERSION, //uint16_t bootloaderVersion;
+    159            &halAppAddressTable,
+    160            PLAT,   //uint8_t platInfo;   // type of platform, defined in micro.h
+    161            MICRO,  //uint8_t microInfo;  // type of micro, defined in micro.h
+    162            PHY,    //uint8_t phyInfo;    // type of phy, defined in micro.h
+    163            0,      //uint8_t reserved;   // reserved for future use
+    164            NULL,   // eblProcessInit
+    165            NULL,   // eblProcess
+    166            NULL,   // eblDataFuncs
+    167            NULL,   // eepromInit
+    168            NULL,   // eepromRead
+    169            NULL,   // eepromWrite
+    170            NULL,   // eepromShutdown
+    171            NULL,   // eepromInfo
+    172            NULL,   // eepromErase
+    173            NULL,   // eepromBusy
+    174            EMBER_BUILD_NUMBER, // uint16_t softwareBuild;
+    175            0,                  // uint16_t reserved2;
+    176            CUSTOMER_BOOTLOADER_VERSION  // uint32_t customerBootloaderVersion;
+    177          };
+    178          #elif !defined NO_BAT
+    179          // otherwise we just define a variable that maps to the real bootloader BAT
+
+   \                                 In section BAT, align 4, root
+    180          VAR_AT_SEGMENT(NO_STRIPPING __no_init const HalBootloaderAddressTableType halBootloaderAddressTable, __BAT__);
+   \                     halBootloaderAddressTable:
+   \        0x0                      DS8 84
+    181          #endif
+    182          
+
+   \                                 In section AAT, align 4, root
+    183          VAR_AT_SEGMENT(NO_STRIPPING const HalAppAddressTableType halAppAddressTable, __AAT__) = {
+   \                     halAppAddressTable:
+   \        0x0   0x....'....        DC32 SFE(CSTACK), Reset_Handler, NMI_Handler, HardFault_Handler
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \       0x10   0x0AA7 0x010A      DC16 2727, 266
+   \       0x14   0x....'....        DC32 __vector_table
+   \       0x18   0x04 0x18          DC8 4, 24, 15, 172
+   \              0x0F 0xAC    
+   \       0x1C   0x6600 0x0045      DC16 26112, 69
+   \       0x20   0x0000'0000        DC32 0
+   \       0x24   0x00               DC8 ""
+   \       0x25   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x34   0x....'....        DC32 appProperties
+   \       0x38   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \       0x44   0x0000'0000        DC32 0
+   \       0x48   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \       0x54   0x....'....        DC32 SFB(SIMEE), 0, internalStorage
+   \              0x0000'0000  
+   \              0x....'....  
+   \       0x60   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 128, 0
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0xFF 0xFF    
+   \              0x80 0x00    
+   \       0x6A   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \       0x80   0x....'....        DC32 SFB(DEBUG_CHANNEL), SFB(`.noinit`), SFE(`.bss`), SFE(`.bss`)
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \       0x90   0x....'....        DC32 SFE(CSTACK), SFE(`.data_init`), SFE(`.text`), SFB(CSTACK)
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \       0xA0   0x....'....        DC32 SFE(EMHEAP), SFE(SIMEE), SFE(DEBUG_CHANNEL)
+   \              0x....'....  
+   \              0x....'....  
+    184            { _CSTACK_SEGMENT_END,
+    185              Reset_Handler,
+    186              NMI_Handler,
+    187              HardFault_Handler,
+    188              APP_ADDRESS_TABLE_TYPE,
+    189              AAT_VERSION,
+    190              VECTOR_TABLE },
+    191            PLAT,  //uint8_t platInfo;   // type of platform, defined in micro.h
+    192            MICRO, //uint8_t microInfo;  // type of micro, defined in micro.h
+    193            PHY,   //uint8_t phyInfo;    // type of phy, defined in micro.h
+    194            sizeof(HalAppAddressTableType),  // size of aat itself
+    195            SOFTWARE_VERSION,   // uint16_t softwareVersion
+    196            EMBER_BUILD_NUMBER, // uint16_t softwareBuild
+    197            0,  //uint32_t timestamp; // Unix epoch time of .ebl file, filled in by ebl gen
+    198            "", //uint8_t imageInfo[IMAGE_INFO_MAXLEN];  // string, filled in by ebl generation
+    199            APP_PROPS, //const void *appProps;
+    200            { 0 }, //uint8_t reserved[] (zero fill)
+    201            0,  //uint32_t imageCrc;  // CRC over following pageRanges, filled in by ebl gen
+    202            { { UNUSED_AAT_PAGE_NUMBER, UNUSED_AAT_PAGE_NUMBER },   //pageRange_t pageRanges[NUM_AAT_PAGE_RANGES];
+    203              { UNUSED_AAT_PAGE_NUMBER, UNUSED_AAT_PAGE_NUMBER },   // Flash pages used by app, filled in by ebl gen
+    204              { UNUSED_AAT_PAGE_NUMBER, UNUSED_AAT_PAGE_NUMBER },
+    205              { UNUSED_AAT_PAGE_NUMBER, UNUSED_AAT_PAGE_NUMBER },
+    206              { UNUSED_AAT_PAGE_NUMBER, UNUSED_AAT_PAGE_NUMBER },
+    207              { UNUSED_AAT_PAGE_NUMBER, UNUSED_AAT_PAGE_NUMBER } },
+    208            _SIMEE_SEGMENT_BEGIN,                               //void *simeeBottom;
+    209            CUSTOMER_APPLICATION_VERSION,                       //uint32_t customerApplicationVersion;
+    210            INTERNAL_STORAGE_BEGIN,                             //void *internalStorageBottom;
+    211            { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0XFF },        // image stamp (filled in by em3xx_convert)
+    212            FAMILY,                                             //uint8_t familyInfo; (defined in micro.h)
+    213            { 0 },                                              //uint8_t bootloaderReserved[] (zero fill, previously was 0xFF fill)
+    214            _DEBUG_CHANNEL_SEGMENT_BEGIN,                       //void *debugChannelBottom;
+    215            _NO_INIT_SEGMENT_BEGIN,                             //void *noInitBottom;
+    216            _BSS_SEGMENT_END,                                   //void *appRamTop; NO LONGER USED! (set to __BSS__ for 3xx convert)
+    217            _BSS_SEGMENT_END,                                   //void *globalTop;
+    218            _CSTACK_SEGMENT_END,                                //void *cstackTop;
+    219            _DATA_INIT_SEGMENT_END,                             //void *initcTop;
+    220            _TEXT_SEGMENT_END,                                  //void *codeTop;
+    221            _CSTACK_SEGMENT_BEGIN,                              //void *cstackBottom;
+    222            _EMHEAP_SEGMENT_END,                                //void *heapTop;
+    223            _SIMEE_SEGMENT_END,                                 //void *simeeTop;
+    224            _DEBUG_CHANNEL_SEGMENT_END                          //void *debugChannelTop;
+    225          };
+    226          
+    227          // halInternalClassifyReset() records the cause of the last reset and any
+    228          // assert information here. If the last reset was not due to an assert,
+    229          // the saved assert filename and line number will be NULL and 0 respectively.
+
+   \                                 In section .bss, align 2
+    230          static uint16_t savedResetCause;
+   \                     savedResetCause:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 4
+    231          static HalAssertInfoType savedAssertInfo;
+   \                     savedAssertInfo:
+   \        0x0                      DS8 8
+    232          
+
+   \                                 In section .text, align 2, keep-with-next
+    233          void halInternalClassifyReset(void)
+    234          {
+   \                     halInternalClassifyReset: (+1)
+   \        0x0   0xB598             PUSH     {R3,R4,R7,LR}
+    235            // Table used to convert from RESET_EVENT register bits to reset types
+    236            static const uint16_t resetEventTable[] = {
+    237            #if defined (_SILICON_LABS_32B_SERIES_2)
+    238              RESET_POWERON_HV,                  // bit  0 : POR
+    239              RESET_EXTERNAL_PIN,                // bit  1 : PIN
+    240              RESET_SOFTWARE_EM4,                // bit  2 : EM4
+    241              RESET_WATCHDOG_EXPIRED,            // bit  3 : WDOG0
+    242              RESET_WATCHDOG_EXPIRED,            // bit  4 : WDOG1
+    243              RESET_FATAL_LOCKUP,                // bit  5 : LOCKUP
+    244              RESET_SOFTWARE,                    // bit  6 : SYSREQ
+    245              RESET_BROWNOUT_DVDD,               // bit  7 : DVDDBOD
+    246              RESET_UNKNOWN_UNKNOWN,             // bit  8 : DVDDLEBOD // TODO: make new reset cause?
+    247              RESET_BROWNOUT_DEC,                // bit  9 : DECBOD
+    248              RESET_BROWNOUT_AVDD,               // bit 10 : AVDDBOD
+    249              RESET_UNKNOWN_UNKNOWN,             // bit 11 : IOVDD0BOD // TODO: make new reset cause?
+    250              RESET_UNKNOWN_UNKNOWN,             // bit 12 : RESERVED
+    251              RESET_UNKNOWN_UNKNOWN,             // bit 13 : TAMPER // TODO: make new reset cause?
+    252              RESET_UNKNOWN_UNKNOWN,             // bit 14 : M0SYSREQ // TODO: make new reset cause?
+    253              RESET_UNKNOWN_UNKNOWN,             // bit 15 : M0LOCKUP // TODO: make new reset cause?
+    254            #elif defined (_EFR_DEVICE)
+    255              RESET_POWERON_HV,                  // bit  0: PORST
+    256              RESET_UNKNOWN_UNKNOWN,             // bit  1: RESERVED
+    257              RESET_BROWNOUT_AVDD,               // bit  2: AVDDBOD
+    258              RESET_BROWNOUT_DVDD,               // bit  3: DVDDBOD
+    259              RESET_BROWNOUT_DEC,                // bit  4: DECBOD
+    260              RESET_UNKNOWN_UNKNOWN,             // bit  5: RESERVED
+    261              RESET_UNKNOWN_UNKNOWN,             // bit  6: RESERVED
+    262              RESET_UNKNOWN_UNKNOWN,             // bit  7: RESERVED
+    263              RESET_EXTERNAL_PIN,                // bit  8: EXTRST
+    264              RESET_FATAL_LOCKUP,                // bit  9: LOCKUPRST
+    265              RESET_SOFTWARE,                    // bit 10: SYSREQRST
+    266              RESET_WATCHDOG_EXPIRED,            // bit 11: WDOGRST
+    267              RESET_UNKNOWN_UNKNOWN,             // bit 12: RESERVED
+    268              RESET_UNKNOWN_UNKNOWN,             // bit 13: RESERVED
+    269              RESET_UNKNOWN_UNKNOWN,             // bit 14: RESERVED
+    270              RESET_UNKNOWN_UNKNOWN,             // bit 15: RESERVED
+    271              RESET_SOFTWARE_EM4,                // bit 16: EM4RST
+    272            #endif
+    273            };
+    274          
+    275            uint32_t resetEvent = RMU_ResetCauseGet();
+   \        0x2   0x....'....        BL       RMU_ResetCauseGet
+   \        0x6   0x4604             MOV      R4,R0
+    276            RMU_ResetCauseClear();
+   \        0x8   0x....'....        BL       RMU_ResetCauseClear
+    277            uint16_t cause = RESET_UNKNOWN;
+   \        0xC   0x2000             MOVS     R0,#+0
+    278            uint16_t i;
+    279          
+    280            for (i = 0; i < sizeof(resetEventTable) / sizeof(resetEventTable[0]); i++) {
+   \        0xE   0x2100             MOVS     R1,#+0
+    281              if (resetEvent & (1 << i)) {
+   \                     ??halInternalClassifyReset_0: (+1)
+   \       0x10   0xFA24 0xF201      LSR      R2,R4,R1
+   \       0x14   0x07D2             LSLS     R2,R2,#+31
+   \       0x16   0xD411             BMI.N    ??halInternalClassifyReset_1
+   \       0x18   0x1C49             ADDS     R1,R1,#+1
+   \       0x1A   0xB28B             UXTH     R3,R1
+   \       0x1C   0x2B10             CMP      R3,#+16
+   \       0x1E   0xD3F7             BCC.N    ??halInternalClassifyReset_0
+    282                cause = resetEventTable[i];
+    283                break;
+    284              }
+    285            }
+    286          
+    287            if (cause == RESET_SOFTWARE) {
+    288              if ((halResetInfo.crash.resetSignature == RESET_VALID_SIGNATURE)
+    289                  && (RESET_BASE_TYPE(halResetInfo.crash.resetReason) < NUM_RESET_BASE_TYPES)) {
+    290                // The extended reset cause is recovered from RAM
+    291                // This can be trusted because the hardware reset event was software
+    292                //  and additionally because the signature is valid
+    293                savedResetCause = halResetInfo.crash.resetReason;
+    294              } else {
+    295                savedResetCause = RESET_SOFTWARE_UNKNOWN;
+    296              }
+    297              // mark the signature as invalid
+    298              halResetInfo.crash.resetSignature = RESET_INVALID_SIGNATURE;
+    299            } else if ((cause == RESET_BOOTLOADER_DEEPSLEEP)
+    300                       && (halResetInfo.crash.resetSignature == RESET_VALID_SIGNATURE)
+    301                       && (halResetInfo.crash.resetReason == RESET_BOOTLOADER_DEEPSLEEP)) {
+    302              // Save the crash info for bootloader deep sleep (even though it's not used
+    303              // yet) and invalidate the resetSignature.
+    304              halResetInfo.crash.resetSignature = RESET_INVALID_SIGNATURE;
+    305              savedResetCause = halResetInfo.crash.resetReason;
+    306            } else {
+    307              savedResetCause = cause;
+   \                     ??halInternalClassifyReset_2: (+1)
+   \       0x20   0x....             LDR.N    R1,??DataTable3
+   \       0x22   0x8008             STRH     R0,[R1, #+0]
+    308            }
+    309          
+    310            // If the last reset was due to an assert, save the assert info.
+    311            if (savedResetCause == RESET_CRASH_ASSERT) {
+   \       0x24   0x8808             LDRH     R0,[R1, #+0]
+   \       0x26   0xF240 0x7101      MOVW     R1,#+1793
+   \       0x2A   0x4288             CMP      R0,R1
+   \       0x2C   0xD105             BNE.N    ??halInternalClassifyReset_3
+    312              savedAssertInfo = halResetInfo.crash.data.assertInfo;
+   \       0x2E   0x....             LDR.N    R0,??DataTable3_1
+   \       0x30   0xE9D0 0x2300      LDRD     R2,R3,[R0, #+0]
+   \       0x34   0x....             LDR.N    R1,??DataTable3_2
+   \       0x36   0xE9C1 0x2300      STRD     R2,R3,[R1, #+0]
+    313            }
+    314          }
+   \                     ??halInternalClassifyReset_3: (+1)
+   \       0x3A   0xBD91             POP      {R0,R4,R7,PC}    ;; return
+   \                     ??halInternalClassifyReset_1: (+1)
+   \       0x3C   0x....             LDR.N    R0,??DataTable3_3
+   \       0x3E   0xB289             UXTH     R1,R1
+   \       0x40   0xF830 0x0011      LDRH     R0,[R0, R1, LSL #+1]
+   \       0x44   0xF24C 0x313C      MOVW     R1,#+49980
+   \       0x48   0xF24F 0x020F      MOVW     R2,#+61455
+   \       0x4C   0x....             LDR.N    R3,??DataTable3_4
+   \       0x4E   0x2806             CMP      R0,#+6
+   \       0x50   0xD10A             BNE.N    ??halInternalClassifyReset_4
+   \       0x52   0x8858             LDRH     R0,[R3, #+2]
+   \       0x54   0x4290             CMP      R0,R2
+   \       0x56   0xD103             BNE.N    ??halInternalClassifyReset_5
+   \       0x58   0x8818             LDRH     R0,[R3, #+0]
+   \       0x5A   0x0A02             LSRS     R2,R0,#+8
+   \       0x5C   0x2A0C             CMP      R2,#+12
+   \       0x5E   0xDB01             BLT.N    ??halInternalClassifyReset_6
+   \                     ??halInternalClassifyReset_5: (+1)
+   \       0x60   0xF44F 0x60C0      MOV      R0,#+1536
+   \                     ??halInternalClassifyReset_6: (+1)
+   \       0x64   0x8059             STRH     R1,[R3, #+2]
+   \       0x66   0xE7DB             B.N      ??halInternalClassifyReset_2
+   \                     ??halInternalClassifyReset_4: (+1)
+   \       0x68   0xF240 0x2407      MOVW     R4,#+519
+   \       0x6C   0x42A0             CMP      R0,R4
+   \       0x6E   0xBF01             ITTTT    EQ 
+   \       0x70   0x885F             LDRHEQ   R7,[R3, #+2]
+   \       0x72   0x4297             CMPEQ    R7,R2
+   \       0x74   0x881A             LDRHEQ   R2,[R3, #+0]
+   \       0x76   0x42A2             CMPEQ    R2,R4
+   \       0x78   0xD1D2             BNE.N    ??halInternalClassifyReset_2
+   \       0x7A   0x8059             STRH     R1,[R3, #+2]
+   \       0x7C   0x4620             MOV      R0,R4
+   \       0x7E   0xE7CF             B.N      ??halInternalClassifyReset_2
+
+   \                                 In section .rodata, align 4
+   \                     `halInternalClassifyReset::resetEventTable`:
+   \        0x0   0x0401 0x0301      DC16 1025, 769, 1539, 1281, 1281, 2305, 6, 2822, 0, 2823, 2821, 0, 0, 0
+   \               0x0603 0x050
+   \              1 0x0501 0x09
+   \              01 0x0006 0x0
+   \              B06 0x0000 0x
+   \              0B07 0x0B05 0
+   \              x0000 0x0000 
+   \              0x0000       
+   \       0x1C   0x0000 0x0000      DC16 0, 0
+    315          
+
+   \                                 In section .text, align 2, keep-with-next
+    316          uint8_t halGetResetInfo(void)
+    317          {
+    318            return RESET_BASE_TYPE(savedResetCause);
+   \                     halGetResetInfo: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable3
+   \        0x2   0x8800             LDRH     R0,[R0, #+0]
+   \        0x4   0x0A00             LSRS     R0,R0,#+8
+   \        0x6   0x4770             BX       LR               ;; return
+    319          }
+    320          
+
+   \                                 In section .text, align 2, keep-with-next
+    321          uint16_t halGetExtendedResetInfo(void)
+    322          {
+    323            return savedResetCause;
+   \                     halGetExtendedResetInfo: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable3
+   \        0x2   0x8800             LDRH     R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+    324          }
+    325          
+
+   \                                 In section .text, align 2, keep-with-next
+    326          const HalAssertInfoType *halGetAssertInfo(void)
+    327          {
+    328            return &savedAssertInfo;
+   \                     halGetAssertInfo: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable3_2
+   \        0x2   0x4770             BX       LR               ;; return
+    329          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     savedResetCause
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     halResetInfo+0x94
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     savedAssertInfo
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x....'....        DC32     `halInternalClassifyReset::resetEventTable`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x....'....        DC32     halResetInfo
+    330          
+    331          #ifdef INTERRUPT_DEBUGGING
+    332          //=============================================================================
+    333          // If interrupt debugging is enabled, the actual ISRs are listed in this
+    334          // secondary interrupt table.  The halInternalIntDebuggingIsr will use this
+    335          // table to jump to the appropriate handler
+    336          //=============================================================================
+    337          NO_STRIPPING const HalVectorTableType __real_vector_table[] =
+    338          {
+    339            { .topOfStack = _CSTACK_SEGMENT_END },
+    340            #define EXCEPTION(vectorNumber, functionName, deviceIrqn, deviceIrqHandler, priorityLevel, subpriority) \
+    341            functionName,
+    342              #include NVIC_CONFIG
+    343            #undef EXCEPTION
+    344          };
+    345          
+    346          #error INTERRUPT_DEBUGGING not yet supported on efm32!
+    347          
+    348          #endif //INTERRUPT_DEBUGGING
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   halGetAssertInfo
+       0   halGetExtendedResetInfo
+       0   halGetResetInfo
+      16   halInternalClassifyReset
+        16   -> RMU_ResetCauseClear
+        16   -> RMU_ResetCauseGet
+
+
+   Section sizes:
+
+   Bytes   Function/Label
+   -----   --------------
+        4  ??DataTable3
+        4  ??DataTable3_1
+        4  ??DataTable3_2
+        4  ??DataTable3_3
+        4  ??DataTable3_4
+     2400  cstackMemory
+       32  guardRegionPlaceHolder
+      172  halAppAddressTable
+       84  halBootloaderAddressTable
+        4  halGetAssertInfo
+        6  halGetExtendedResetInfo
+        8  halGetResetInfo
+      128  halInternalClassifyReset
+      156  halResetInfo
+   507904  internalStorage
+       32  resetEventTable
+        8  savedAssertInfo
+        2  savedResetCause
+
+ 
+      10 bytes in section .bss
+      32 bytes in section .rodata
+     166 bytes in section .text
+     172 bytes in section AAT
+      84 bytes in section BAT
+   2 400 bytes in section CSTACK
+      32 bytes in section GUARD_REGION
+ 507 904 bytes in section INTERNAL_STORAGE
+     156 bytes in section RESETINFO
+ 
+     166 bytes of CODE  memory
+     204 bytes of CONST memory
+ 510 586 bytes of DATA  memory
+
+Errors: none
+Warnings: none

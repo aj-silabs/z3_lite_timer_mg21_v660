@@ -1,0 +1,698 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:37
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\crypto_ble.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW1BBE.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\crypto_ble.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"crypto_ble.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\crypto_ble.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\crypto_ble.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\crypto_ble.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief BLE-specific cipher implementations optimized for Silicon Labs devices
+      4           *        with a CRYPTO peripheral.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: APACHE-2.0
+     11           *
+     12           * This software is subject to an open source license and is distributed by
+     13           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     14           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     15           * Such terms and conditions may be further supplemented by the Silicon Labs
+     16           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     17           * sections applicable to open source software.
+     18           *
+     19           ******************************************************************************/
+     20          
+     21          #include "crypto_ble.h"
+     22          #include "em_device.h"
+     23          
+     24          #if defined(CRYPTO_PRESENT)
+     25          
+     26          #include "crypto_management.h"
+     27          #include "em_crypto.h"
+     28          #include <string.h>
+     29          
+     30          /***************************************************************************//**
+     31           * @brief
+     32           *   Write a 128 bit value (optionally unaligned) into a crypto register.
+     33           *
+     34           * @note
+     35           *   This function provide a low-level api for writing to the multi-word
+     36           *   registers in the crypto peripheral. Applications should prefer to use
+     37           *   @ref CRYPTO_DataWrite, @ref CRYPTO_DDataWrite or @ref CRYPTO_QDataWrite
+     38           *   for writing to the DATA, DDATA and QDATA registers.
+     39           *
+     40           * @param[in]  reg
+     41           *   Pointer to the crypto register.
+     42           *
+     43           * @param[in]  val
+     44           *   This is a pointer to 4 32 bit integers that contains the 128 bit value
+     45           *   which will be written to the crypto register.
+     46           ******************************************************************************/
+     47          __STATIC_INLINE void CRYPTO_DataWriteUnaligned(volatile uint32_t * reg,
+     48                                                         const uint8_t * val)
+     49          {
+     50            /* Check data is 32bit aligned, if not move to temporary buffer before
+     51               writing.*/
+     52            if ((uint32_t)val & 0x3)
+     53            {
+     54              uint32_t temp[4];
+     55              memcpy(temp, val, 16);
+     56              CRYPTO_DataWrite(reg, temp);
+     57            }
+     58            else
+     59            {
+     60              CRYPTO_DataWrite(reg, (uint32_t*)val);
+     61            }
+     62          }
+     63          
+     64          /***************************************************************************//**
+     65           * @brief
+     66           *   Read a 128 bit value from a crypto register into optionally unaligned
+     67           *   buffer.
+     68           *
+     69           * @note
+     70           *   This function provide a low-level api for reading one of the multi-word
+     71           *   registers in the crypto peripheral. Applications should prefer to use
+     72           *   @ref CRYPTO_DataRead, @ref CRYPTO_DDataRead or @ref CRYPTO_QDataRead
+     73           *   for reading the value of the DATA, DDATA and QDATA registers.
+     74           *
+     75           * @param[in]  reg
+     76           *   Pointer to the crypto register.
+     77           *
+     78           * @param[out]  val
+     79           *   This is a pointer to an array that is capable of holding 4 32 bit integers
+     80           *   that will be filled with the 128 bit value from the crypto register.
+     81           ******************************************************************************/
+     82          __STATIC_INLINE void CRYPTO_DataReadUnaligned(volatile uint32_t * reg,
+     83                                                        uint8_t * val)
+     84          {
+     85            /* Check data is 32bit aligned, if not, read into temporary buffer and
+     86               then move to user buffer. */
+     87            if ((uint32_t)val & 0x3)
+     88            {
+     89              uint32_t temp[4];
+     90              CRYPTO_DataRead(reg, temp);
+     91              memcpy(val, temp, 16);
+     92            }
+     93            else
+     94            {
+     95              CRYPTO_DataRead(reg, (uint32_t*)val);
+     96            }
+     97          }
+     98          
+     99          /***************************************************************************//**
+    100           * @brief
+    101           *   Set the key value to be used by the CRYPTO module.
+    102           *
+    103           * @details
+    104           *   Write 128 or 256 bit key to the KEYBUF register in the crypto module.
+    105           *
+    106           * @param[in]  crypto
+    107           *   A pointer to the CRYPTO peripheral register block.
+    108           *
+    109           * @param[in]  val
+    110           *   Pointer to value to write to the KEYBUF register.
+    111           *
+    112           * @param[in]  keyWidth
+    113           *   Key width - 128 or 256 bits.
+    114           ******************************************************************************/
+    115          __STATIC_INLINE
+    116          void CRYPTO_KeyBufWriteUnaligned(CRYPTO_TypeDef          *crypto,
+    117                                           const uint8_t *          val,
+    118                                           CRYPTO_KeyWidth_TypeDef  keyWidth)
+    119          {
+    120            /* Check if key val buffer is 32bit aligned, if not move to temporary
+    121               aligned buffer before writing.*/
+    122            if ((uint32_t)val & 0x3) {
+    123              CRYPTO_KeyBuf_TypeDef temp;
+    124              if (keyWidth == cryptoKey128Bits) {
+    125                memcpy(temp, val, 16);
+    126              } else {
+    127                memcpy(temp, val, 32);
+    128              }
+    129              CRYPTO_KeyBufWrite(crypto, temp, keyWidth);
+    130            } else {
+    131              CRYPTO_KeyBufWrite(crypto, (uint32_t*)val, keyWidth);
+    132            }
+    133          }
+    134          
+    135          /*
+    136           * CCM buffer encryption optimized for BLE
+    137           */
+    138          int mbedtls_ccm_encrypt_and_tag_ble( unsigned char       *data,
+    139                                               size_t               length,
+    140                                               const unsigned char *key,
+    141                                               const unsigned char *iv,
+    142                                               unsigned char        header,
+    143                                               unsigned char       *tag )
+    144          {
+    145              /* Local variables used to optimize load/store sequences from memory to
+    146               crypto. We want to load all 4 32bit data words to local register
+    147               variables in the first sequence, then store them all in the second
+    148               sequence.*/
+    149              register uint32_t iv0;
+    150              register uint32_t iv1;
+    151              register uint32_t iv2;
+    152              register uint32_t iv3;
+    153              /* Mangling DDATA1 (KEY), DDATA2 (= DATA0/DATA1), DDATA3 (=DATA2/DATA3),
+    154                 DDATA4 (KEYBUF). Max execution length = 16 */
+    155              CRYPTO_TypeDef   *device = crypto_management_acquire_preemption(
+    156                                           CRYPTO_MANAGEMENT_SAVE_DDATA1
+    157                                           | CRYPTO_MANAGEMENT_SAVE_DDATA2
+    158                                           | CRYPTO_MANAGEMENT_SAVE_DDATA3
+    159                                           | CRYPTO_MANAGEMENT_SAVE_DDATA4
+    160                                           | CRYPTO_MANAGEMENT_SAVE_UPTO_SEQ4 );
+    161          
+    162              /* Setup CRYPTO for AES-128 mode (256 not supported) */
+    163              device->CTRL      = CRYPTO_CTRL_AES_AES128;
+    164              device->WAC       = 0UL;
+    165          
+    166              if (key)
+    167              {
+    168                  CRYPTO_KeyBuf128Write(device, (uint32_t *)key);
+    169              }
+    170          
+    171              /* Calculate Counter IV for encryption. */
+    172              iv0 = 0x01 | (*(uint32_t *)(&iv[0]) << 8);
+    173              iv1 = *(uint32_t *)(&iv[3]);
+    174              iv2 = *(uint32_t *)(&iv[7]);
+    175              iv3 = *(uint16_t *)(&iv[11]);
+    176          
+    177              /* Store Counter IV in crypto->DATA1 */
+    178              device->DATA1 = iv0;
+    179              device->DATA1 = iv1;
+    180              device->DATA1 = iv2;
+    181              device->DATA1 = iv3;
+    182          
+    183              /* Calculate CBC IV for authentication. */
+    184              iv0 |= 0x49;
+    185              iv3 |= __REV(length);
+    186          
+    187              /* Store CBC IV in device->DATA0 */
+    188              device->DATA0 = iv0;
+    189              device->DATA0 = iv1;
+    190              device->DATA0 = iv2;
+    191              device->DATA0 = iv3;
+    192          
+    193              /* Store header in device->DATA3 */
+    194              device->DATA3 = 0x0100 | (header << 16);
+    195              device->DATA3 = 0;
+    196              device->DATA3 = 0;
+    197              device->DATA3 = 0;
+    198          
+    199              device->SEQCTRL  = length;
+    200              device->SEQCTRLB = 0;
+    201          
+    202              /* The following code is tested to run faster than using instruction
+    203               sequences. */
+    204              device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    205              device->CMD = CRYPTO_CMD_INSTR_DATA3TODATA0XOR;
+    206              device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    207              device->CMD = CRYPTO_CMD_INSTR_DATA0TODATA3;
+    208          
+    209              CRYPTO_EXECUTE_16(device,
+    210                                CRYPTO_CMD_INSTR_EXECIFA,
+    211          
+    212                                // CRYPTO_CMD_INSTR_BUFTODATA0,
+    213                                CRYPTO_CMD_INSTR_DMA0TODATA,
+    214                                CRYPTO_CMD_INSTR_DATA0TODATA2, // save DMA value
+    215          
+    216                                CRYPTO_CMD_INSTR_DATA3TODATA0XOR,
+    217                                CRYPTO_CMD_INSTR_AESENC,
+    218                                CRYPTO_CMD_INSTR_DATA0TODATA3,
+    219                                CRYPTO_CMD_INSTR_DATA1INC,
+    220                                CRYPTO_CMD_INSTR_DATA1TODATA0,
+    221                                CRYPTO_CMD_INSTR_AESENC,
+    222                                //CRYPTO_CMD_INSTR_DATA0TOBUFXOR,
+    223                                CRYPTO_CMD_INSTR_DATA2TODATA0XOR,//data0 = data0 xor dma
+    224                                CRYPTO_CMD_INSTR_DATATODMA0,
+    225          
+    226                                CRYPTO_CMD_INSTR_EXECIFLAST,
+    227                                CRYPTO_CMD_INSTR_DATA1INCCLR,
+    228                                CRYPTO_CMD_INSTR_DATA1TODATA0,
+    229                                CRYPTO_CMD_INSTR_AESENC,
+    230                                CRYPTO_CMD_INSTR_DATA3TODATA0XOR
+    231                                );
+    232          
+    233              uint32_t tempBuf[4];
+    234          
+    235              while (length)
+    236              {
+    237                  if (length < 16) {
+    238                      /* Use temporary buffer for zero padding */
+    239                      memset( tempBuf, 0, 16 );
+    240                      memcpy( tempBuf, data, length );
+    241                      CRYPTO_DataWrite( &device->DATA0, tempBuf );
+    242                      CRYPTO_DataRead( &device->DATA0, tempBuf );
+    243                      memcpy( data, tempBuf, length );
+    244                      length = 0;
+    245                  } else {
+    246                      CRYPTO_DataWriteUnaligned( &device->DATA0, data );
+    247                      CRYPTO_DataReadUnaligned( &device->DATA0, data );
+    248                      length  -= 16;
+    249                      data    += 16;
+    250                  }
+    251              }
+    252          
+    253              /* Read authentication tag from DATA0 register. */
+    254              CRYPTO_DataRead( &device->DATA0, tempBuf );
+    255              *((uint32_t*)tag) = tempBuf[0];
+    256          
+    257              crypto_management_release_preemption( device );
+    258          
+    259              return 0;
+    260          }
+    261          
+    262          /*
+    263           * CCM buffer authenticated decryption optimized for BLE
+    264           */
+    265          int mbedtls_ccm_auth_decrypt_ble( unsigned char       *data,
+    266                                            size_t               length,
+    267                                            const unsigned char *key,
+    268                                            const unsigned char *iv,
+    269                                            unsigned char        header,
+    270                                            unsigned char       *tag )
+    271          {
+    272              /* Local variables used to optimize load/store sequences from memory to
+    273               crypto. We want to load all 4 32bit data words to local register
+    274               variables in the first sequence, then store them all in the second
+    275               sequence.*/
+    276              register uint32_t iv0;
+    277              register uint32_t iv1;
+    278              register uint32_t iv2;
+    279              register uint32_t iv3;
+    280              /* Mangling DDATA1 (KEY), DDATA2 (= DATA0/DATA1), DDATA3 (=DATA2/DATA3),
+    281                 DDATA4 (KEYBUF). Max execution length = 18 */
+    282              CRYPTO_TypeDef   *device = crypto_management_acquire_preemption(
+    283                                           CRYPTO_MANAGEMENT_SAVE_DDATA1
+    284                                           | CRYPTO_MANAGEMENT_SAVE_DDATA2
+    285                                           | CRYPTO_MANAGEMENT_SAVE_DDATA3
+    286                                           | CRYPTO_MANAGEMENT_SAVE_DDATA4
+    287                                           | CRYPTO_MANAGEMENT_SAVE_UPTO_SEQ4 );
+    288          
+    289              /* Setup CRYPTO for AES-128 mode (256 not supported) */
+    290              device->CTRL      = CRYPTO_CTRL_AES_AES128;
+    291              device->WAC       = 0UL;
+    292          
+    293              if (key)
+    294              {
+    295                  CRYPTO_KeyBuf128Write(device, (uint32_t *)key);
+    296              }
+    297          
+    298              /* Calculate Counter IV for encryption. */
+    299              iv0 = 0x01 | (*(uint32_t *)(&iv[0]) << 8);
+    300              iv1 = *(uint32_t *)(&iv[3]);
+    301              iv2 = *(uint32_t *)(&iv[7]);
+    302              iv3 = *(uint16_t *)(&iv[11]);
+    303          
+    304              /* Store Counter IV in crypto->DATA1 */
+    305              device->DATA1 = iv0;
+    306              device->DATA1 = iv1;
+    307              device->DATA1 = iv2;
+    308              device->DATA1 = iv3;
+    309          
+    310              /* Calculate CBC IV for authentication. */
+    311              iv0 |= 0x49;
+    312              iv3 |= __REV(length);
+    313          
+    314              /* Store CBC IV in device->DATA0 */
+    315              device->DATA0 = iv0;
+    316              device->DATA0 = iv1;
+    317              device->DATA0 = iv2;
+    318              device->DATA0 = iv3;
+    319          
+    320              /* Store header in device->DATA3 */
+    321              device->DATA3 = 0x0100 | (header << 16);
+    322              device->DATA3 = 0;
+    323              device->DATA3 = 0;
+    324              device->DATA3 = 0;
+    325          
+    326              device->SEQCTRL  = length;
+    327              device->SEQCTRLB = 0;
+    328          
+    329              /* The following code is tested to run faster than using instruction
+    330               sequences. */
+    331              device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    332              device->CMD = CRYPTO_CMD_INSTR_DATA3TODATA0XOR;
+    333              device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    334              device->CMD = CRYPTO_CMD_INSTR_DATA0TODATA3;
+    335          
+    336              CRYPTO_EXECUTE_18(device,
+    337                                CRYPTO_CMD_INSTR_EXECIFA,
+    338                                /* AESDRV_CTR_PREPARE_PROC */
+    339                                CRYPTO_CMD_INSTR_DATA1INC,
+    340                                CRYPTO_CMD_INSTR_DATA1TODATA0,
+    341                                CRYPTO_CMD_INSTR_AESENC,
+    342          
+    343                                // CRYPTO_CMD_INSTR_BUFTODATA0XOR,
+    344                                // CRYPTO_CMD_INSTR_DATA0TOBUF,
+    345                                CRYPTO_CMD_INSTR_DATA0TODATA2,
+    346                                CRYPTO_CMD_INSTR_DMA0TODATA,
+    347                                CRYPTO_CMD_INSTR_DATA2TODATA0XORLEN,
+    348                                CRYPTO_CMD_INSTR_DATATODMA0,
+    349          
+    350                                CRYPTO_CMD_INSTR_DATA0TODATA2,
+    351                                CRYPTO_CMD_INSTR_DATA3TODATA0,
+    352                                CRYPTO_CMD_INSTR_DATA2TODATA0XORLEN,
+    353          
+    354                                CRYPTO_CMD_INSTR_AESENC,
+    355                                CRYPTO_CMD_INSTR_DATA0TODATA3,
+    356          
+    357                                CRYPTO_CMD_INSTR_EXECIFLAST,
+    358                                CRYPTO_CMD_INSTR_DATA1INCCLR,
+    359                                CRYPTO_CMD_INSTR_DATA1TODATA0,
+    360                                CRYPTO_CMD_INSTR_AESENC,
+    361                                CRYPTO_CMD_INSTR_DATA3TODATA0XOR
+    362                                );
+    363          
+    364              uint32_t tempBuf[4];
+    365          
+    366              while (length)
+    367              {
+    368                  if (length < 16) {
+    369                      /* Use temporary buffer for zero padding */
+    370                      memset( tempBuf, 0, 16 );
+    371                      memcpy( tempBuf, data, length );
+    372                      CRYPTO_DataWrite( &device->DATA0, tempBuf );
+    373                      CRYPTO_DataRead( &device->DATA0, tempBuf );
+    374                      memcpy( data, tempBuf, length );
+    375                      length = 0;
+    376                  } else {
+    377                      CRYPTO_DataWriteUnaligned( &device->DATA0, data );
+    378                      CRYPTO_DataReadUnaligned( &device->DATA0, data );
+    379                      length  -= 16;
+    380                      data    += 16;
+    381                  }
+    382              }
+    383          
+    384              /* Read authentication tag from DATA0 register. */
+    385              CRYPTO_DataRead( &device->DATA0, tempBuf );
+    386              crypto_management_release_preemption( device );
+    387          
+    388              if ( *((uint32_t*)tag) == tempBuf[0] ) {
+    389                  return 0;
+    390              } else {
+    391                  return MBEDTLS_ERR_CCM_AUTH_FAILED;
+    392              }
+    393          }
+    394          
+    395          /*
+    396           * Process a table of BLE RPA device keys and look for a
+    397           * match against the supplied hash
+    398           */
+    399          int mbedtls_process_ble_rpa(  const unsigned char   keytable[],
+    400                                        uint32_t              keymask,
+    401                                        uint32_t              prand,
+    402                                        uint32_t              hash )
+    403          {
+    404              size_t index;
+    405              uint32_t data_register[4] = {0};
+    406              data_register[3] = __REV(prand);
+    407          
+    408              /* Mangling DDATA1 (KEY) and DDATA2 (= DATA0/DATA1). Max execution length = 2 */
+    409              CRYPTO_TypeDef *device = crypto_management_acquire_preemption(
+    410                                        CRYPTO_MANAGEMENT_SAVE_DDATA1
+    411                                        | CRYPTO_MANAGEMENT_SAVE_DDATA2
+    412                                        | CRYPTO_MANAGEMENT_SAVE_UPTO_SEQ0 );
+    413              /* Set up CRYPTO to do AES, and load prand */
+    414              device->CTRL     = CRYPTO_CTRL_AES_AES128 | CRYPTO_CTRL_KEYBUFDIS;
+    415              device->WAC      = 0UL;
+    416          
+    417              CRYPTO_DataWrite(&device->DATA1, (uint32_t*)data_register);
+    418          
+    419              /* For each key, execute AES encrypt operation and compare w hash */
+    420              /* Read result of previous iteration first to minimize stall while waiting
+    421                 for AES to finish */
+    422              int currentindex = -1;
+    423              for ( index = 0; index < 32; index++ ) {
+    424                  if ( (keymask & (1U << index)) == 0 ) {
+    425                      continue;
+    426                  }
+    427          
+    428                  CRYPTO_DataRead(&device->DATA0, data_register);
+    429                  CRYPTO_DataWrite(&device->KEY, (uint32_t*)(&keytable[index * 16]));
+    430                  CRYPTO_EXECUTE_2( device,
+    431                                    CRYPTO_CMD_INSTR_DATA1TODATA0,
+    432                                    CRYPTO_CMD_INSTR_AESENC );
+    433          
+    434                  if ( ( currentindex >= 0 )
+    435                       && ( (data_register[3] & 0xFFFFFF00UL) == __REV(hash) ) ) {
+    436                      crypto_management_release_preemption(device);
+    437                      return currentindex;
+    438                  }
+    439          
+    440                  currentindex = index;
+    441              }
+    442          
+    443              /* Read result of last encryption and check for hash */
+    444              CRYPTO_DataRead(&device->DATA0, data_register);
+    445              crypto_management_release_preemption(device);
+    446          
+    447              if ( (data_register[3] & 0xFFFFFF00UL) == __REV(hash) ) {
+    448                  return currentindex;
+    449              }
+    450          
+    451              return -1;
+    452          }
+    453          
+    454          int mbedtls_aes_crypt_ecb_radio(bool                   encrypt,
+    455                                          const unsigned char    *key,
+    456                                          unsigned int           keybits,
+    457                                          const unsigned char    input[16],
+    458                                          volatile unsigned char output[16])
+    459          {
+    460          /* process one ore more blocks of data */
+    461            CRYPTO_TypeDef *device = crypto_management_acquire_preemption(CRYPTO_MANAGEMENT_SAVE_DDATA1
+    462                                                                          | CRYPTO_MANAGEMENT_SAVE_DDATA2
+    463                                                                          | CRYPTO_MANAGEMENT_SAVE_DDATA4);
+    464            device->WAC = 0;
+    465            device->CTRL = 0;
+    466          
+    467            CRYPTO_KeyBufWriteUnaligned(device, key, (keybits == 128UL ? cryptoKey128Bits : cryptoKey256Bits));
+    468          
+    469            if (!encrypt) {
+    470              // Transform encryption to decryption key
+    471              device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    472              device->CMD = CRYPTO_CMD_INSTR_DDATA1TODDATA4;
+    473            }
+    474          
+    475            CRYPTO_DataWriteUnaligned(&device->DATA0, (const uint8_t *)input);
+    476          
+    477            if ( encrypt ) {
+    478                device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    479            } else {
+    480                device->CMD = CRYPTO_CMD_INSTR_AESDEC;
+    481            }
+    482          
+    483            CRYPTO_DataReadUnaligned(&device->DATA0, (uint8_t *)output);
+    484          
+    485            crypto_management_release_preemption(device);
+    486          
+    487            return 0;
+    488          }
+    489          
+    490          int mbedtls_aes_crypt_ctr_radio(const unsigned char   *key,
+    491                                          unsigned int           keybits,
+    492                                          const unsigned char    input[16],
+    493                                          const unsigned char    iv_in[16],
+    494                                          volatile unsigned char iv_out[16],
+    495                                          volatile unsigned char output[16])
+    496          {
+    497            /* process one ore more blocks of data */
+    498            CRYPTO_TypeDef *device = crypto_management_acquire_preemption(CRYPTO_MANAGEMENT_SAVE_DDATA1
+    499                                                                          | CRYPTO_MANAGEMENT_SAVE_DDATA2
+    500                                                                          | CRYPTO_MANAGEMENT_SAVE_DDATA4);
+    501            device->WAC = 0;
+    502            device->CTRL = 0;
+    503          
+    504            CRYPTO_KeyBufWriteUnaligned(device, key, (keybits == 128UL ? cryptoKey128Bits : cryptoKey256Bits));
+    505          
+    506            if ((uint32_t)iv_in != 0) {
+    507              CRYPTO_DataWriteUnaligned(&device->DATA1, (uint8_t *)iv_in);
+    508            } else {
+    509              uint32_t iv[4] = {0, 0, 0 , 0};
+    510              CRYPTO_DataWrite(&device->DATA1, iv);
+    511            }
+    512          
+    513            device->CMD = CRYPTO_CMD_INSTR_DATA1TODATA0;
+    514            device->CMD = CRYPTO_CMD_INSTR_AESENC;
+    515            device->CMD = CRYPTO_CMD_INSTR_DATA1INC;
+    516          
+    517            CRYPTO_DataWriteUnaligned(&device->DATA0XOR, (uint8_t *)(input));
+    518            CRYPTO_DataReadUnaligned(&device->DATA0, (uint8_t *)(output));
+    519          
+    520            if ((uint32_t)iv_out != 0) {
+    521              CRYPTO_DataReadUnaligned(&device->DATA1, (uint8_t *)iv_out);
+    522            }
+    523          
+    524            crypto_management_release_preemption(device);
+    525          
+    526            return 0;
+    527          }
+    528          
+    529          #endif /* CRYPTO_PRESENT */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

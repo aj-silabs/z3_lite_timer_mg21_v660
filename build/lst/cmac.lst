@@ -1,0 +1,1283 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:27
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\cmac.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWF3A7.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\cmac.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"cmac.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0 -D
+#        LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D EMBER_AF_USE_HWCONF
+#        -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\cmac.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\cmac.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\library\cmac.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          /**
+     14           * \file cmac.c
+     15           *
+     16           * \brief NIST SP800-38B compliant CMAC implementation for AES and 3DES
+     17           *
+     18           *  Copyright (C) 2006-2016, ARM Limited, All Rights Reserved
+     19           *  SPDX-License-Identifier: Apache-2.0
+     20           *
+     21           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     22           *  not use this file except in compliance with the License.
+     23           *  You may obtain a copy of the License at
+     24           *
+     25           *  http://www.apache.org/licenses/LICENSE-2.0
+     26           *
+     27           *  Unless required by applicable law or agreed to in writing, software
+     28           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     29           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     30           *  See the License for the specific language governing permissions and
+     31           *  limitations under the License.
+     32           *
+     33           *  This file is part of mbed TLS (https://tls.mbed.org)
+     34           */
+     35          
+     36          /*
+     37           * References:
+     38           *
+     39           * - NIST SP 800-38B Recommendation for Block Cipher Modes of Operation: The
+     40           *      CMAC Mode for Authentication
+     41           *   http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38b.pdf
+     42           *
+     43           * - RFC 4493 - The AES-CMAC Algorithm
+     44           *   https://tools.ietf.org/html/rfc4493
+     45           *
+     46           * - RFC 4615 - The Advanced Encryption Standard-Cipher-based Message
+     47           *      Authentication Code-Pseudo-Random Function-128 (AES-CMAC-PRF-128)
+     48           *      Algorithm for the Internet Key Exchange Protocol (IKE)
+     49           *   https://tools.ietf.org/html/rfc4615
+     50           *
+     51           *   Additional test vectors: ISO/IEC 9797-1
+     52           *
+     53           */
+     54          
+     55          #if !defined(MBEDTLS_CONFIG_FILE)
+     56          #include "mbedtls/config.h"
+     57          #else
+     58          #include MBEDTLS_CONFIG_FILE
+     59          #endif
+     60          
+     61          #if defined(MBEDTLS_CMAC_C)
+     62          
+     63          #include "mbedtls/cmac.h"
+     64          
+     65          #include <string.h>
+     66          
+     67          
+     68          #if defined(MBEDTLS_PLATFORM_C)
+     69          #include "mbedtls/platform.h"
+     70          #else
+     71          #include <stdlib.h>
+     72          #define mbedtls_calloc     calloc
+     73          #define mbedtls_free       free
+     74          #if defined(MBEDTLS_SELF_TEST)
+     75          #include <stdio.h>
+     76          #define mbedtls_printf     printf
+     77          #endif /* MBEDTLS_SELF_TEST */
+     78          #endif /* MBEDTLS_PLATFORM_C */
+     79          
+     80          #if !defined(MBEDTLS_CMAC_ALT) || defined(MBEDTLS_SELF_TEST)
+     81          
+     82          /* Implementation that should never be optimized out by the compiler */
+     83          static void mbedtls_zeroize( void *v, size_t n ) {
+     84              volatile unsigned char *p = (unsigned char*)v; while( n-- ) *p++ = 0;
+     85          }
+     86          
+     87          /*
+     88           * Multiplication by u in the Galois field of GF(2^n)
+     89           *
+     90           * As explained in NIST SP 800-38B, this can be computed:
+     91           *
+     92           *   If MSB(p) = 0, then p = (p << 1)
+     93           *   If MSB(p) = 1, then p = (p << 1) ^ R_n
+     94           *   with R_64 = 0x1B and  R_128 = 0x87
+     95           *
+     96           * Input and output MUST NOT point to the same buffer
+     97           * Block size must be 8 bytes or 16 bytes - the block sizes for DES and AES.
+     98           */
+     99          static int cmac_multiply_by_u( unsigned char *output,
+    100                                         const unsigned char *input,
+    101                                         size_t blocksize )
+    102          {
+    103              const unsigned char R_128 = 0x87;
+    104              const unsigned char R_64 = 0x1B;
+    105              unsigned char R_n, mask;
+    106              unsigned char overflow = 0x00;
+    107              int i;
+    108          
+    109              if( blocksize == MBEDTLS_AES_BLOCK_SIZE )
+    110              {
+    111                  R_n = R_128;
+    112              }
+    113              else if( blocksize == MBEDTLS_DES3_BLOCK_SIZE )
+    114              {
+    115                  R_n = R_64;
+    116              }
+    117              else
+    118              {
+    119                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    120              }
+    121          
+    122              for( i = (int)blocksize - 1; i >= 0; i-- )
+    123              {
+    124                  output[i] = input[i] << 1 | overflow;
+    125                  overflow = input[i] >> 7;
+    126              }
+    127          
+    128              /* mask = ( input[0] >> 7 ) ? 0xff : 0x00
+    129               * using bit operations to avoid branches */
+    130          
+    131              /* MSVC has a warning about unary minus on unsigned, but this is
+    132               * well-defined and precisely what we want to do here */
+    133          #if defined(_MSC_VER)
+    134          #pragma warning( push )
+    135          #pragma warning( disable : 4146 )
+    136          #endif
+    137              mask = - ( input[0] >> 7 );
+    138          #if defined(_MSC_VER)
+    139          #pragma warning( pop )
+    140          #endif
+    141          
+    142              output[ blocksize - 1 ] ^= R_n & mask;
+    143          
+    144              return( 0 );
+    145          }
+    146          
+    147          /*
+    148           * Generate subkeys
+    149           *
+    150           * - as specified by RFC 4493, section 2.3 Subkey Generation Algorithm
+    151           */
+    152          static int cmac_generate_subkeys( mbedtls_cipher_context_t *ctx,
+    153                                            unsigned char* K1, unsigned char* K2 )
+    154          {
+    155              int ret;
+    156              unsigned char L[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    157              size_t olen, block_size;
+    158          
+    159              mbedtls_zeroize( L, sizeof( L ) );
+    160          
+    161              block_size = ctx->cipher_info->block_size;
+    162          
+    163              /* Calculate Ek(0) */
+    164              if( ( ret = mbedtls_cipher_update( ctx, L, block_size, L, &olen ) ) != 0 )
+    165                  goto exit;
+    166          
+    167              /*
+    168               * Generate K1 and K2
+    169               */
+    170              if( ( ret = cmac_multiply_by_u( K1, L , block_size ) ) != 0 )
+    171                  goto exit;
+    172          
+    173              if( ( ret = cmac_multiply_by_u( K2, K1 , block_size ) ) != 0 )
+    174                  goto exit;
+    175          
+    176          exit:
+    177              mbedtls_zeroize( L, sizeof( L ) );
+    178          
+    179              return( ret );
+    180          }
+    181          #endif /* !defined(MBEDTLS_CMAC_ALT) || defined(MBEDTLS_SELF_TEST) */
+    182          
+    183          #if !defined(MBEDTLS_CMAC_ALT)
+    184          static void cmac_xor_block( unsigned char *output, const unsigned char *input1,
+    185                                      const unsigned char *input2,
+    186                                      const size_t block_size )
+    187          {
+    188              size_t idx;
+    189          
+    190              for( idx = 0; idx < block_size; idx++ )
+    191                  output[ idx ] = input1[ idx ] ^ input2[ idx ];
+    192          }
+    193          
+    194          /*
+    195           * Create padded last block from (partial) last block.
+    196           *
+    197           * We can't use the padding option from the cipher layer, as it only works for
+    198           * CBC and we use ECB mode, and anyway we need to XOR K1 or K2 in addition.
+    199           */
+    200          static void cmac_pad( unsigned char padded_block[MBEDTLS_CIPHER_BLKSIZE_MAX],
+    201                                size_t padded_block_len,
+    202                                const unsigned char *last_block,
+    203                                size_t last_block_len )
+    204          {
+    205              size_t j;
+    206          
+    207              for( j = 0; j < padded_block_len; j++ )
+    208              {
+    209                  if( j < last_block_len )
+    210                      padded_block[j] = last_block[j];
+    211                  else if( j == last_block_len )
+    212                      padded_block[j] = 0x80;
+    213                  else
+    214                      padded_block[j] = 0x00;
+    215              }
+    216          }
+    217          
+    218          int mbedtls_cipher_cmac_starts( mbedtls_cipher_context_t *ctx,
+    219                                          const unsigned char *key, size_t keybits )
+    220          {
+    221              mbedtls_cipher_type_t type;
+    222              mbedtls_cmac_context_t *cmac_ctx;
+    223              int retval;
+    224          
+    225              if( ctx == NULL || ctx->cipher_info == NULL || key == NULL )
+    226                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    227          
+    228              if( ( retval = mbedtls_cipher_setkey( ctx, key, (int)keybits,
+    229                                                    MBEDTLS_ENCRYPT ) ) != 0 )
+    230                  return( retval );
+    231          
+    232              type = ctx->cipher_info->type;
+    233          
+    234              switch( type )
+    235              {
+    236                  case MBEDTLS_CIPHER_AES_128_ECB:
+    237                  case MBEDTLS_CIPHER_AES_192_ECB:
+    238                  case MBEDTLS_CIPHER_AES_256_ECB:
+    239                  case MBEDTLS_CIPHER_DES_EDE3_ECB:
+    240                      break;
+    241                  default:
+    242                      return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    243              }
+    244          
+    245              /* Allocated and initialise in the cipher context memory for the CMAC
+    246               * context */
+    247              cmac_ctx = mbedtls_calloc( 1, sizeof( mbedtls_cmac_context_t ) );
+    248              if( cmac_ctx == NULL )
+    249                  return( MBEDTLS_ERR_CIPHER_ALLOC_FAILED );
+    250          
+    251              ctx->cmac_ctx = cmac_ctx;
+    252          
+    253              mbedtls_zeroize( cmac_ctx->state, sizeof( cmac_ctx->state ) );
+    254          
+    255              return 0;
+    256          }
+    257          
+    258          int mbedtls_cipher_cmac_update( mbedtls_cipher_context_t *ctx,
+    259                                          const unsigned char *input, size_t ilen )
+    260          {
+    261              mbedtls_cmac_context_t* cmac_ctx;
+    262              unsigned char *state;
+    263              int ret = 0;
+    264              size_t n, j, olen, block_size;
+    265          
+    266              if( ctx == NULL || ctx->cipher_info == NULL || input == NULL ||
+    267                  ctx->cmac_ctx == NULL )
+    268                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    269          
+    270              cmac_ctx = ctx->cmac_ctx;
+    271              block_size = ctx->cipher_info->block_size;
+    272              state = ctx->cmac_ctx->state;
+    273          
+    274              /* Is there data still to process from the last call, that's greater in
+    275               * size than a block? */
+    276              if( cmac_ctx->unprocessed_len > 0 &&
+    277                  ilen > block_size - cmac_ctx->unprocessed_len )
+    278              {
+    279                  memcpy( &cmac_ctx->unprocessed_block[cmac_ctx->unprocessed_len],
+    280                          input,
+    281                          block_size - cmac_ctx->unprocessed_len );
+    282          
+    283                  cmac_xor_block( state, cmac_ctx->unprocessed_block, state, block_size );
+    284          
+    285                  if( ( ret = mbedtls_cipher_update( ctx, state, block_size, state,
+    286                                                     &olen ) ) != 0 )
+    287                  {
+    288                     goto exit;
+    289                  }
+    290          
+    291                  input += block_size - cmac_ctx->unprocessed_len;
+    292                  ilen -= block_size - cmac_ctx->unprocessed_len;
+    293                  cmac_ctx->unprocessed_len = 0;
+    294              }
+    295          
+    296              /* n is the number of blocks including any final partial block */
+    297              n = ( ilen + block_size - 1 ) / block_size;
+    298          
+    299              /* Iterate across the input data in block sized chunks, excluding any
+    300               * final partial or complete block */
+    301              for( j = 1; j < n; j++ )
+    302              {
+    303                  cmac_xor_block( state, input, state, block_size );
+    304          
+    305                  if( ( ret = mbedtls_cipher_update( ctx, state, block_size, state,
+    306                                                     &olen ) ) != 0 )
+    307                     goto exit;
+    308          
+    309                  ilen -= block_size;
+    310                  input += block_size;
+    311              }
+    312          
+    313              /* If there is data left over that wasn't aligned to a block */
+    314              if( ilen > 0 )
+    315              {
+    316                  memcpy( &cmac_ctx->unprocessed_block[cmac_ctx->unprocessed_len],
+    317                          input,
+    318                          ilen );
+    319                  cmac_ctx->unprocessed_len += ilen;
+    320              }
+    321          
+    322          exit:
+    323              return( ret );
+    324          }
+    325          
+    326          int mbedtls_cipher_cmac_finish( mbedtls_cipher_context_t *ctx,
+    327                                          unsigned char *output )
+    328          {
+    329              mbedtls_cmac_context_t* cmac_ctx;
+    330              unsigned char *state, *last_block;
+    331              unsigned char K1[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    332              unsigned char K2[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    333              unsigned char M_last[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    334              int ret;
+    335              size_t olen, block_size;
+    336          
+    337              if( ctx == NULL || ctx->cipher_info == NULL || ctx->cmac_ctx == NULL ||
+    338                  output == NULL )
+    339                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    340          
+    341              cmac_ctx = ctx->cmac_ctx;
+    342              block_size = ctx->cipher_info->block_size;
+    343              state = cmac_ctx->state;
+    344          
+    345              mbedtls_zeroize( K1, sizeof( K1 ) );
+    346              mbedtls_zeroize( K2, sizeof( K2 ) );
+    347              cmac_generate_subkeys( ctx, K1, K2 );
+    348          
+    349              last_block = cmac_ctx->unprocessed_block;
+    350          
+    351              /* Calculate last block */
+    352              if( cmac_ctx->unprocessed_len < block_size )
+    353              {
+    354                  cmac_pad( M_last, block_size, last_block, cmac_ctx->unprocessed_len );
+    355                  cmac_xor_block( M_last, M_last, K2, block_size );
+    356              }
+    357              else
+    358              {
+    359                  /* Last block is complete block */
+    360                  cmac_xor_block( M_last, last_block, K1, block_size );
+    361              }
+    362          
+    363          
+    364              cmac_xor_block( state, M_last, state, block_size );
+    365              if( ( ret = mbedtls_cipher_update( ctx, state, block_size, state,
+    366                                                 &olen ) ) != 0 )
+    367              {
+    368                  goto exit;
+    369              }
+    370          
+    371              memcpy( output, state, block_size );
+    372          
+    373          exit:
+    374              /* Wipe the generated keys on the stack, and any other transients to avoid
+    375               * side channel leakage */
+    376              mbedtls_zeroize( K1, sizeof( K1 ) );
+    377              mbedtls_zeroize( K2, sizeof( K2 ) );
+    378          
+    379              cmac_ctx->unprocessed_len = 0;
+    380              mbedtls_zeroize( cmac_ctx->unprocessed_block,
+    381                               sizeof( cmac_ctx->unprocessed_block ) );
+    382          
+    383              mbedtls_zeroize( state, MBEDTLS_CIPHER_BLKSIZE_MAX );
+    384              return( ret );
+    385          }
+    386          
+    387          int mbedtls_cipher_cmac_reset( mbedtls_cipher_context_t *ctx )
+    388          {
+    389              mbedtls_cmac_context_t* cmac_ctx;
+    390          
+    391              if( ctx == NULL || ctx->cipher_info == NULL || ctx->cmac_ctx == NULL )
+    392                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    393          
+    394              cmac_ctx = ctx->cmac_ctx;
+    395          
+    396              /* Reset the internal state */
+    397              cmac_ctx->unprocessed_len = 0;
+    398              mbedtls_zeroize( cmac_ctx->unprocessed_block,
+    399                               sizeof( cmac_ctx->unprocessed_block ) );
+    400              mbedtls_zeroize( cmac_ctx->state,
+    401                               sizeof( cmac_ctx->state ) );
+    402          
+    403              return( 0 );
+    404          }
+    405          
+    406          int mbedtls_cipher_cmac( const mbedtls_cipher_info_t *cipher_info,
+    407                                   const unsigned char *key, size_t keylen,
+    408                                   const unsigned char *input, size_t ilen,
+    409                                   unsigned char *output )
+    410          {
+    411              mbedtls_cipher_context_t ctx;
+    412              int ret;
+    413          
+    414              if( cipher_info == NULL || key == NULL || input == NULL || output == NULL )
+    415                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    416          
+    417              mbedtls_cipher_init( &ctx );
+    418          
+    419              if( ( ret = mbedtls_cipher_setup( &ctx, cipher_info ) ) != 0 )
+    420                  goto exit;
+    421          
+    422              ret = mbedtls_cipher_cmac_starts( &ctx, key, keylen );
+    423              if( ret != 0 )
+    424                  goto exit;
+    425          
+    426              ret = mbedtls_cipher_cmac_update( &ctx, input, ilen );
+    427              if( ret != 0 )
+    428                  goto exit;
+    429          
+    430              ret = mbedtls_cipher_cmac_finish( &ctx, output );
+    431          
+    432          exit:
+    433              mbedtls_cipher_free( &ctx );
+    434          
+    435              return( ret );
+    436          }
+    437          
+    438          #if defined(MBEDTLS_AES_C)
+    439          /*
+    440           * Implementation of AES-CMAC-PRF-128 defined in RFC 4615
+    441           */
+    442          int mbedtls_aes_cmac_prf_128( const unsigned char *key, size_t key_length,
+    443                                        const unsigned char *input, size_t in_len,
+    444                                        unsigned char *output )
+    445          {
+    446              int ret;
+    447              const mbedtls_cipher_info_t *cipher_info;
+    448              unsigned char zero_key[MBEDTLS_AES_BLOCK_SIZE];
+    449              unsigned char int_key[MBEDTLS_AES_BLOCK_SIZE];
+    450          
+    451              if( key == NULL || input == NULL || output == NULL )
+    452                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+    453          
+    454              cipher_info = mbedtls_cipher_info_from_type( MBEDTLS_CIPHER_AES_128_ECB );
+    455              if( cipher_info == NULL )
+    456              {
+    457                  /* Failing at this point must be due to a build issue */
+    458                  ret = MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE;
+    459                  goto exit;
+    460              }
+    461          
+    462              if( key_length == MBEDTLS_AES_BLOCK_SIZE )
+    463              {
+    464                  /* Use key as is */
+    465                  memcpy( int_key, key, MBEDTLS_AES_BLOCK_SIZE );
+    466              }
+    467              else
+    468              {
+    469                  memset( zero_key, 0, MBEDTLS_AES_BLOCK_SIZE );
+    470          
+    471                  ret = mbedtls_cipher_cmac( cipher_info, zero_key, 128, key,
+    472                                             key_length, int_key );
+    473                  if( ret != 0 )
+    474                      goto exit;
+    475              }
+    476          
+    477              ret = mbedtls_cipher_cmac( cipher_info, int_key, 128, input, in_len,
+    478                                         output );
+    479          
+    480          exit:
+    481              mbedtls_zeroize( int_key, sizeof( int_key ) );
+    482          
+    483              return( ret );
+    484          }
+    485          #endif /* MBEDTLS_AES_C */
+    486          
+    487          #endif /* !MBEDTLS_CMAC_ALT */
+    488          
+    489          #if defined(MBEDTLS_SELF_TEST)
+    490          /*
+    491           * CMAC test data for SP800-38B
+    492           * http://csrc.nist.gov/groups/ST/toolkit/documents/Examples/AES_CMAC.pdf
+    493           * http://csrc.nist.gov/groups/ST/toolkit/documents/Examples/TDES_CMAC.pdf
+    494           *
+    495           * AES-CMAC-PRF-128 test data from RFC 4615
+    496           * https://tools.ietf.org/html/rfc4615#page-4
+    497           */
+    498          
+    499          #define NB_CMAC_TESTS_PER_KEY 4
+    500          #define NB_PRF_TESTS 3
+    501          
+    502          #if defined(MBEDTLS_AES_C) || defined(MBEDTLS_DES_C)
+    503          /* All CMAC test inputs are truncated from the same 64 byte buffer. */
+    504          static const unsigned char test_message[] = {
+    505              /* PT */
+    506              0x6b, 0xc1, 0xbe, 0xe2,     0x2e, 0x40, 0x9f, 0x96,
+    507              0xe9, 0x3d, 0x7e, 0x11,     0x73, 0x93, 0x17, 0x2a,
+    508              0xae, 0x2d, 0x8a, 0x57,     0x1e, 0x03, 0xac, 0x9c,
+    509              0x9e, 0xb7, 0x6f, 0xac,     0x45, 0xaf, 0x8e, 0x51,
+    510              0x30, 0xc8, 0x1c, 0x46,     0xa3, 0x5c, 0xe4, 0x11,
+    511              0xe5, 0xfb, 0xc1, 0x19,     0x1a, 0x0a, 0x52, 0xef,
+    512              0xf6, 0x9f, 0x24, 0x45,     0xdf, 0x4f, 0x9b, 0x17,
+    513              0xad, 0x2b, 0x41, 0x7b,     0xe6, 0x6c, 0x37, 0x10
+    514          };
+    515          #endif /* MBEDTLS_AES_C || MBEDTLS_DES_C */
+    516          
+    517          #if defined(MBEDTLS_AES_C)
+    518          /* Truncation point of message for AES CMAC tests  */
+    519          static const  unsigned int  aes_message_lengths[NB_CMAC_TESTS_PER_KEY] = {
+    520              /* Mlen */
+    521              0,
+    522              16,
+    523              20,
+    524              64
+    525          };
+    526          
+    527          /* CMAC-AES128 Test Data */
+    528          static const unsigned char aes_128_key[16] = {
+    529              0x2b, 0x7e, 0x15, 0x16,     0x28, 0xae, 0xd2, 0xa6,
+    530              0xab, 0xf7, 0x15, 0x88,     0x09, 0xcf, 0x4f, 0x3c
+    531          };
+    532          static const unsigned char aes_128_subkeys[2][MBEDTLS_AES_BLOCK_SIZE] = {
+    533              {
+    534                  /* K1 */
+    535                  0xfb, 0xee, 0xd6, 0x18,     0x35, 0x71, 0x33, 0x66,
+    536                  0x7c, 0x85, 0xe0, 0x8f,     0x72, 0x36, 0xa8, 0xde
+    537              },
+    538              {
+    539                  /* K2 */
+    540                  0xf7, 0xdd, 0xac, 0x30,     0x6a, 0xe2, 0x66, 0xcc,
+    541                  0xf9, 0x0b, 0xc1, 0x1e,     0xe4, 0x6d, 0x51, 0x3b
+    542              }
+    543          };
+    544          static const unsigned char aes_128_expected_result[NB_CMAC_TESTS_PER_KEY][MBEDTLS_AES_BLOCK_SIZE] = {
+    545              {
+    546                  /* Example #1 */
+    547                  0xbb, 0x1d, 0x69, 0x29,     0xe9, 0x59, 0x37, 0x28,
+    548                  0x7f, 0xa3, 0x7d, 0x12,     0x9b, 0x75, 0x67, 0x46
+    549              },
+    550              {
+    551                  /* Example #2 */
+    552                  0x07, 0x0a, 0x16, 0xb4,     0x6b, 0x4d, 0x41, 0x44,
+    553                  0xf7, 0x9b, 0xdd, 0x9d,     0xd0, 0x4a, 0x28, 0x7c
+    554              },
+    555              {
+    556                  /* Example #3 */
+    557                  0x7d, 0x85, 0x44, 0x9e,     0xa6, 0xea, 0x19, 0xc8,
+    558                  0x23, 0xa7, 0xbf, 0x78,     0x83, 0x7d, 0xfa, 0xde
+    559              },
+    560              {
+    561                  /* Example #4 */
+    562                  0x51, 0xf0, 0xbe, 0xbf,     0x7e, 0x3b, 0x9d, 0x92,
+    563                  0xfc, 0x49, 0x74, 0x17,     0x79, 0x36, 0x3c, 0xfe
+    564              }
+    565          };
+    566          
+    567          /* CMAC-AES192 Test Data */
+    568          static const unsigned char aes_192_key[24] = {
+    569              0x8e, 0x73, 0xb0, 0xf7,     0xda, 0x0e, 0x64, 0x52,
+    570              0xc8, 0x10, 0xf3, 0x2b,     0x80, 0x90, 0x79, 0xe5,
+    571              0x62, 0xf8, 0xea, 0xd2,     0x52, 0x2c, 0x6b, 0x7b
+    572          };
+    573          static const unsigned char aes_192_subkeys[2][MBEDTLS_AES_BLOCK_SIZE] = {
+    574              {
+    575                  /* K1 */
+    576                  0x44, 0x8a, 0x5b, 0x1c,     0x93, 0x51, 0x4b, 0x27,
+    577                  0x3e, 0xe6, 0x43, 0x9d,     0xd4, 0xda, 0xa2, 0x96
+    578              },
+    579              {
+    580                  /* K2 */
+    581                  0x89, 0x14, 0xb6, 0x39,     0x26, 0xa2, 0x96, 0x4e,
+    582                  0x7d, 0xcc, 0x87, 0x3b,     0xa9, 0xb5, 0x45, 0x2c
+    583              }
+    584          };
+    585          static const unsigned char aes_192_expected_result[NB_CMAC_TESTS_PER_KEY][MBEDTLS_AES_BLOCK_SIZE] = {
+    586              {
+    587                  /* Example #1 */
+    588                  0xd1, 0x7d, 0xdf, 0x46,     0xad, 0xaa, 0xcd, 0xe5,
+    589                  0x31, 0xca, 0xc4, 0x83,     0xde, 0x7a, 0x93, 0x67
+    590              },
+    591              {
+    592                  /* Example #2 */
+    593                  0x9e, 0x99, 0xa7, 0xbf,     0x31, 0xe7, 0x10, 0x90,
+    594                  0x06, 0x62, 0xf6, 0x5e,     0x61, 0x7c, 0x51, 0x84
+    595              },
+    596              {
+    597                  /* Example #3 */
+    598                  0x3d, 0x75, 0xc1, 0x94,     0xed, 0x96, 0x07, 0x04,
+    599                  0x44, 0xa9, 0xfa, 0x7e,     0xc7, 0x40, 0xec, 0xf8
+    600              },
+    601              {
+    602                  /* Example #4 */
+    603                  0xa1, 0xd5, 0xdf, 0x0e,     0xed, 0x79, 0x0f, 0x79,
+    604                  0x4d, 0x77, 0x58, 0x96,     0x59, 0xf3, 0x9a, 0x11
+    605              }
+    606          };
+    607          
+    608          /* CMAC-AES256 Test Data */
+    609          static const unsigned char aes_256_key[32] = {
+    610              0x60, 0x3d, 0xeb, 0x10,     0x15, 0xca, 0x71, 0xbe,
+    611              0x2b, 0x73, 0xae, 0xf0,     0x85, 0x7d, 0x77, 0x81,
+    612              0x1f, 0x35, 0x2c, 0x07,     0x3b, 0x61, 0x08, 0xd7,
+    613              0x2d, 0x98, 0x10, 0xa3,     0x09, 0x14, 0xdf, 0xf4
+    614          };
+    615          static const unsigned char aes_256_subkeys[2][MBEDTLS_AES_BLOCK_SIZE] = {
+    616              {
+    617                  /* K1 */
+    618                  0xca, 0xd1, 0xed, 0x03,     0x29, 0x9e, 0xed, 0xac,
+    619                  0x2e, 0x9a, 0x99, 0x80,     0x86, 0x21, 0x50, 0x2f
+    620              },
+    621              {
+    622                  /* K2 */
+    623                  0x95, 0xa3, 0xda, 0x06,     0x53, 0x3d, 0xdb, 0x58,
+    624                  0x5d, 0x35, 0x33, 0x01,     0x0c, 0x42, 0xa0, 0xd9
+    625              }
+    626          };
+    627          static const unsigned char aes_256_expected_result[NB_CMAC_TESTS_PER_KEY][MBEDTLS_AES_BLOCK_SIZE] = {
+    628              {
+    629                  /* Example #1 */
+    630                  0x02, 0x89, 0x62, 0xf6,     0x1b, 0x7b, 0xf8, 0x9e,
+    631                  0xfc, 0x6b, 0x55, 0x1f,     0x46, 0x67, 0xd9, 0x83
+    632              },
+    633              {
+    634                  /* Example #2 */
+    635                  0x28, 0xa7, 0x02, 0x3f,     0x45, 0x2e, 0x8f, 0x82,
+    636                  0xbd, 0x4b, 0xf2, 0x8d,     0x8c, 0x37, 0xc3, 0x5c
+    637              },
+    638              {
+    639                  /* Example #3 */
+    640                  0x15, 0x67, 0x27, 0xdc,     0x08, 0x78, 0x94, 0x4a,
+    641                  0x02, 0x3c, 0x1f, 0xe0,     0x3b, 0xad, 0x6d, 0x93
+    642              },
+    643              {
+    644                  /* Example #4 */
+    645                  0xe1, 0x99, 0x21, 0x90,     0x54, 0x9f, 0x6e, 0xd5,
+    646                  0x69, 0x6a, 0x2c, 0x05,     0x6c, 0x31, 0x54, 0x10
+    647              }
+    648          };
+    649          #endif /* MBEDTLS_AES_C */
+    650          
+    651          #if defined(MBEDTLS_DES_C)
+    652          /* Truncation point of message for 3DES CMAC tests  */
+    653          static const unsigned int des3_message_lengths[NB_CMAC_TESTS_PER_KEY] = {
+    654              0,
+    655              16,
+    656              20,
+    657              32
+    658          };
+    659          
+    660          /* CMAC-TDES (Generation) - 2 Key Test Data */
+    661          static const unsigned char des3_2key_key[24] = {
+    662              /* Key1 */
+    663              0x01, 0x23, 0x45, 0x67,     0x89, 0xab, 0xcd, 0xef,
+    664              /* Key2 */
+    665              0x23, 0x45, 0x67, 0x89,     0xab, 0xcd, 0xEF, 0x01,
+    666              /* Key3 */
+    667              0x01, 0x23, 0x45, 0x67,     0x89, 0xab, 0xcd, 0xef
+    668          };
+    669          static const unsigned char des3_2key_subkeys[2][8] = {
+    670              {
+    671                  /* K1 */
+    672                  0x0d, 0xd2, 0xcb, 0x7a,     0x3d, 0x88, 0x88, 0xd9
+    673              },
+    674              {
+    675                  /* K2 */
+    676                  0x1b, 0xa5, 0x96, 0xf4,     0x7b, 0x11, 0x11, 0xb2
+    677              }
+    678          };
+    679          static const unsigned char des3_2key_expected_result[NB_CMAC_TESTS_PER_KEY][MBEDTLS_DES3_BLOCK_SIZE] = {
+    680              {
+    681                  /* Sample #1 */
+    682                  0x79, 0xce, 0x52, 0xa7,     0xf7, 0x86, 0xa9, 0x60
+    683              },
+    684              {
+    685                  /* Sample #2 */
+    686                  0xcc, 0x18, 0xa0, 0xb7,     0x9a, 0xf2, 0x41, 0x3b
+    687              },
+    688              {
+    689                  /* Sample #3 */
+    690                  0xc0, 0x6d, 0x37, 0x7e,     0xcd, 0x10, 0x19, 0x69
+    691              },
+    692              {
+    693                  /* Sample #4 */
+    694                  0x9c, 0xd3, 0x35, 0x80,     0xf9, 0xb6, 0x4d, 0xfb
+    695              }
+    696          };
+    697          
+    698          /* CMAC-TDES (Generation) - 3 Key Test Data */
+    699          static const unsigned char des3_3key_key[24] = {
+    700              /* Key1 */
+    701              0x01, 0x23, 0x45, 0x67,     0x89, 0xaa, 0xcd, 0xef,
+    702              /* Key2 */
+    703              0x23, 0x45, 0x67, 0x89,     0xab, 0xcd, 0xef, 0x01,
+    704              /* Key3 */
+    705              0x45, 0x67, 0x89, 0xab,     0xcd, 0xef, 0x01, 0x23
+    706          };
+    707          static const unsigned char des3_3key_subkeys[2][8] = {
+    708              {
+    709                  /* K1 */
+    710                  0x9d, 0x74, 0xe7, 0x39,     0x33, 0x17, 0x96, 0xc0
+    711              },
+    712              {
+    713                  /* K2 */
+    714                  0x3a, 0xe9, 0xce, 0x72,     0x66, 0x2f, 0x2d, 0x9b
+    715              }
+    716          };
+    717          static const unsigned char des3_3key_expected_result[NB_CMAC_TESTS_PER_KEY][MBEDTLS_DES3_BLOCK_SIZE] = {
+    718              {
+    719                  /* Sample #1 */
+    720                  0x7d, 0xb0, 0xd3, 0x7d,     0xf9, 0x36, 0xc5, 0x50
+    721              },
+    722              {
+    723                  /* Sample #2 */
+    724                  0x30, 0x23, 0x9c, 0xf1,     0xf5, 0x2e, 0x66, 0x09
+    725              },
+    726              {
+    727                  /* Sample #3 */
+    728                  0x6c, 0x9f, 0x3e, 0xe4,     0x92, 0x3f, 0x6b, 0xe2
+    729              },
+    730              {
+    731                  /* Sample #4 */
+    732                  0x99, 0x42, 0x9b, 0xd0,     0xbF, 0x79, 0x04, 0xe5
+    733              }
+    734          };
+    735          
+    736          #endif /* MBEDTLS_DES_C */
+    737          
+    738          #if defined(MBEDTLS_AES_C)
+    739          /* AES AES-CMAC-PRF-128 Test Data */
+    740          static const unsigned char PRFK[] = {
+    741              /* Key */
+    742              0x00, 0x01, 0x02, 0x03,     0x04, 0x05, 0x06, 0x07,
+    743              0x08, 0x09, 0x0a, 0x0b,     0x0c, 0x0d, 0x0e, 0x0f,
+    744              0xed, 0xcb
+    745          };
+    746          
+    747          /* Sizes in bytes */
+    748          static const size_t PRFKlen[NB_PRF_TESTS] = {
+    749              18,
+    750              16,
+    751              10
+    752          };
+    753          
+    754          /* Message */
+    755          static const unsigned char PRFM[] = {
+    756              0x00, 0x01, 0x02, 0x03,     0x04, 0x05, 0x06, 0x07,
+    757              0x08, 0x09, 0x0a, 0x0b,     0x0c, 0x0d, 0x0e, 0x0f,
+    758              0x10, 0x11, 0x12, 0x13
+    759          };
+    760          
+    761          static const unsigned char PRFT[NB_PRF_TESTS][16] = {
+    762              {
+    763                  0x84, 0xa3, 0x48, 0xa4,     0xa4, 0x5d, 0x23, 0x5b,
+    764                  0xab, 0xff, 0xfc, 0x0d,     0x2b, 0x4d, 0xa0, 0x9a
+    765              },
+    766              {
+    767                  0x98, 0x0a, 0xe8, 0x7b,     0x5f, 0x4c, 0x9c, 0x52,
+    768                  0x14, 0xf5, 0xb6, 0xa8,     0x45, 0x5e, 0x4c, 0x2d
+    769              },
+    770              {
+    771                  0x29, 0x0d, 0x9e, 0x11,     0x2e, 0xdb, 0x09, 0xee,
+    772                  0x14, 0x1f, 0xcf, 0x64,     0xc0, 0xb7, 0x2f, 0x3d
+    773              }
+    774          };
+    775          #endif /* MBEDTLS_AES_C */
+    776          
+    777          static int cmac_test_subkeys( int verbose,
+    778                                        const char* testname,
+    779                                        const unsigned char* key,
+    780                                        int keybits,
+    781                                        const unsigned char* subkeys,
+    782                                        mbedtls_cipher_type_t cipher_type,
+    783                                        int block_size,
+    784                                        int num_tests )
+    785          {
+    786              int i, ret = 0;
+    787              mbedtls_cipher_context_t ctx;
+    788              const mbedtls_cipher_info_t *cipher_info;
+    789              unsigned char K1[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    790              unsigned char K2[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    791          
+    792              cipher_info = mbedtls_cipher_info_from_type( cipher_type );
+    793              if( cipher_info == NULL )
+    794              {
+    795                  /* Failing at this point must be due to a build issue */
+    796                  return( MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE );
+    797              }
+    798          
+    799              for( i = 0; i < num_tests; i++ )
+    800              {
+    801                  if( verbose != 0 )
+    802                      mbedtls_printf( "  %s CMAC subkey #%u: ", testname, i + 1 );
+    803          
+    804                  mbedtls_cipher_init( &ctx );
+    805          
+    806                  if( ( ret = mbedtls_cipher_setup( &ctx, cipher_info ) ) != 0 )
+    807                  {
+    808                      if( verbose != 0 )
+    809                          mbedtls_printf( "test execution failed\n" );
+    810          
+    811                      goto cleanup;
+    812                  }
+    813          
+    814                  if( ( ret = mbedtls_cipher_setkey( &ctx, key, keybits,
+    815                                                 MBEDTLS_ENCRYPT ) ) != 0 )
+    816                  {
+    817                      if( ret == -0x0020 || ret == -0x0023 )
+    818                      {
+    819                          if( verbose != 0 )
+    820                              mbedtls_printf( "not supported\n" );
+    821                          ret = 0;
+    822                          continue;
+    823                      }
+    824                      else
+    825                      {
+    826                          if( verbose != 0 )
+    827                              mbedtls_printf( "test execution failed\n" );
+    828          
+    829                          goto cleanup;
+    830                      }
+    831                  }
+    832          
+    833                  ret = cmac_generate_subkeys( &ctx, K1, K2 );
+    834                  if( ret != 0 )
+    835                  {
+    836                     if( verbose != 0 )
+    837                          mbedtls_printf( "failed\n" );
+    838          
+    839                      goto cleanup;
+    840                  }
+    841          
+    842                  if( ( ret = memcmp( K1, subkeys, block_size ) ) != 0  ||
+    843                      ( ret = memcmp( K2, &subkeys[block_size], block_size ) ) != 0 )
+    844                  {
+    845                      if( verbose != 0 )
+    846                          mbedtls_printf( "failed\n" );
+    847          
+    848                      goto cleanup;
+    849                  }
+    850          
+    851                  if( verbose != 0 )
+    852                      mbedtls_printf( "passed\n" );
+    853          
+    854                  mbedtls_cipher_free( &ctx );
+    855              }
+    856          
+    857              ret = 0;
+    858              goto exit;
+    859          
+    860          cleanup:
+    861              mbedtls_cipher_free( &ctx );
+    862          
+    863          exit:
+    864              return( ret );
+    865          }
+    866          
+    867          static int cmac_test_wth_cipher( int verbose,
+    868                                           const char* testname,
+    869                                           const unsigned char* key,
+    870                                           int keybits,
+    871                                           const unsigned char* messages,
+    872                                           const unsigned int message_lengths[4],
+    873                                           const unsigned char* expected_result,
+    874                                           mbedtls_cipher_type_t cipher_type,
+    875                                           int block_size,
+    876                                           int num_tests )
+    877          {
+    878              const mbedtls_cipher_info_t *cipher_info;
+    879              int i, ret = 0;
+    880              unsigned char output[MBEDTLS_CIPHER_BLKSIZE_MAX];
+    881          
+    882              cipher_info = mbedtls_cipher_info_from_type( cipher_type );
+    883              if( cipher_info == NULL )
+    884              {
+    885                  /* Failing at this point must be due to a build issue */
+    886                  ret = MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE;
+    887                  goto exit;
+    888              }
+    889          
+    890              for( i = 0; i < num_tests; i++ )
+    891              {
+    892                  if( verbose != 0 )
+    893                      mbedtls_printf( "  %s CMAC #%u: ", testname, i + 1 );
+    894          
+    895                  if( ( ret = mbedtls_cipher_cmac( cipher_info, key, keybits, messages,
+    896                                                   message_lengths[i], output ) ) != 0 )
+    897                  {
+    898                      if( ret == -0x0020 || ret == -0x0023)
+    899                      {
+    900                          if( verbose != 0 )
+    901                              mbedtls_printf( "not supported\n" );
+    902                          ret = 0;
+    903                          continue;
+    904                      }
+    905                      if( verbose != 0 )
+    906                          mbedtls_printf( "failed\n" );
+    907                      goto exit;
+    908                  }
+    909          
+    910                  if( ( ret = memcmp( output, &expected_result[i * block_size], block_size ) ) != 0 )
+    911                  {
+    912                      if( verbose != 0 )
+    913                          mbedtls_printf( "failed\n" );
+    914                      goto exit;
+    915                  }
+    916          
+    917                  if( verbose != 0 )
+    918                      mbedtls_printf( "passed\n" );
+    919              }
+    920              ret = 0;
+    921          
+    922          exit:
+    923              return( ret );
+    924          }
+    925          
+    926          #if defined(MBEDTLS_AES_C)
+    927          #include "mbedtls/aes.h"
+    928          static int test_aes128_cmac_prf( int verbose )
+    929          {
+    930              int i;
+    931              int ret;
+    932              unsigned char output[MBEDTLS_AES_BLOCK_SIZE];
+    933          
+    934              for( i = 0; i < NB_PRF_TESTS; i++ )
+    935              {
+    936                  mbedtls_printf( "  AES CMAC 128 PRF #%u: ", i );
+    937                  ret = mbedtls_aes_cmac_prf_128( PRFK, PRFKlen[i], PRFM, 20, output );
+    938                  if( ret != 0 ||
+    939                      memcmp( output, PRFT[i], MBEDTLS_AES_BLOCK_SIZE ) != 0 )
+    940                  {
+    941          
+    942                      if( verbose != 0 )
+    943                          mbedtls_printf( "failed\n" );
+    944          
+    945                      return( ret );
+    946                  }
+    947                  else if( verbose != 0 )
+    948                  {
+    949                      mbedtls_printf( "passed\n" );
+    950                  }
+    951              }
+    952              return( ret );
+    953          }
+    954          #endif /* MBEDTLS_AES_C */
+    955          
+    956          int mbedtls_cmac_self_test( int verbose )
+    957          {
+    958              int ret;
+    959          
+    960          #if defined(MBEDTLS_AES_C)
+    961              /* AES-128 */
+    962              if( ( ret = cmac_test_subkeys( verbose,
+    963                                             "AES 128",
+    964                                             aes_128_key,
+    965                                             128,
+    966                                             (const unsigned char*)aes_128_subkeys,
+    967                                             MBEDTLS_CIPHER_AES_128_ECB,
+    968                                             MBEDTLS_AES_BLOCK_SIZE,
+    969                                             NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+    970              {
+    971                  return( ret );
+    972              }
+    973          
+    974              if( ( ret = cmac_test_wth_cipher( verbose,
+    975                                                "AES 128",
+    976                                                aes_128_key,
+    977                                                128,
+    978                                                test_message,
+    979                                                aes_message_lengths,
+    980                                                (const unsigned char*)aes_128_expected_result,
+    981                                                MBEDTLS_CIPHER_AES_128_ECB,
+    982                                                MBEDTLS_AES_BLOCK_SIZE,
+    983                                                NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+    984              {
+    985                  return( ret );
+    986              }
+    987          
+    988              /* AES-192 */
+    989              if( ( ret = cmac_test_subkeys( verbose,
+    990                                             "AES 192",
+    991                                             aes_192_key,
+    992                                             192,
+    993                                             (const unsigned char*)aes_192_subkeys,
+    994                                             MBEDTLS_CIPHER_AES_192_ECB,
+    995                                             MBEDTLS_AES_BLOCK_SIZE,
+    996                                             NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+    997              {
+    998                  if ( ret != MBEDTLS_ERR_AES_INVALID_KEY_LENGTH )
+    999                      return( ret );
+   1000              }
+   1001          
+   1002              if( ( ret = cmac_test_wth_cipher( verbose,
+   1003                                                "AES 192",
+   1004                                                aes_192_key,
+   1005                                                192,
+   1006                                                test_message,
+   1007                                                aes_message_lengths,
+   1008                                                (const unsigned char*)aes_192_expected_result,
+   1009                                                MBEDTLS_CIPHER_AES_192_ECB,
+   1010                                                MBEDTLS_AES_BLOCK_SIZE,
+   1011                                                NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1012              {
+   1013                  if ( ret != MBEDTLS_ERR_AES_INVALID_KEY_LENGTH )
+   1014                      return( ret );
+   1015              }
+   1016          
+   1017              /* AES-256 */
+   1018              if( ( ret = cmac_test_subkeys( verbose,
+   1019                                             "AES 256",
+   1020                                             aes_256_key,
+   1021                                             256,
+   1022                                             (const unsigned char*)aes_256_subkeys,
+   1023                                             MBEDTLS_CIPHER_AES_256_ECB,
+   1024                                             MBEDTLS_AES_BLOCK_SIZE,
+   1025                                             NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1026              {
+   1027                  return( ret );
+   1028              }
+   1029          
+   1030              if( ( ret = cmac_test_wth_cipher ( verbose,
+   1031                                                 "AES 256",
+   1032                                                 aes_256_key,
+   1033                                                 256,
+   1034                                                 test_message,
+   1035                                                 aes_message_lengths,
+   1036                                                 (const unsigned char*)aes_256_expected_result,
+   1037                                                 MBEDTLS_CIPHER_AES_256_ECB,
+   1038                                                 MBEDTLS_AES_BLOCK_SIZE,
+   1039                                                 NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1040              {
+   1041                  return( ret );
+   1042              }
+   1043          #endif /* MBEDTLS_AES_C */
+   1044          
+   1045          #if defined(MBEDTLS_DES_C)
+   1046              /* 3DES 2 key */
+   1047              if( ( ret = cmac_test_subkeys( verbose,
+   1048                                             "3DES 2 key",
+   1049                                             des3_2key_key,
+   1050                                             192,
+   1051                                             (const unsigned char*)des3_2key_subkeys,
+   1052                                             MBEDTLS_CIPHER_DES_EDE3_ECB,
+   1053                                             MBEDTLS_DES3_BLOCK_SIZE,
+   1054                                             NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1055              {
+   1056                  return( ret );
+   1057              }
+   1058          
+   1059              if( ( ret = cmac_test_wth_cipher( verbose,
+   1060                                                "3DES 2 key",
+   1061                                                des3_2key_key,
+   1062                                                192,
+   1063                                                test_message,
+   1064                                                des3_message_lengths,
+   1065                                                (const unsigned char*)des3_2key_expected_result,
+   1066                                                MBEDTLS_CIPHER_DES_EDE3_ECB,
+   1067                                                MBEDTLS_DES3_BLOCK_SIZE,
+   1068                                                NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1069              {
+   1070                  return( ret );
+   1071              }
+   1072          
+   1073              /* 3DES 3 key */
+   1074              if( ( ret = cmac_test_subkeys( verbose,
+   1075                                             "3DES 3 key",
+   1076                                             des3_3key_key,
+   1077                                             192,
+   1078                                             (const unsigned char*)des3_3key_subkeys,
+   1079                                             MBEDTLS_CIPHER_DES_EDE3_ECB,
+   1080                                             MBEDTLS_DES3_BLOCK_SIZE,
+   1081                                             NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1082              {
+   1083                  return( ret );
+   1084              }
+   1085          
+   1086              if( ( ret = cmac_test_wth_cipher( verbose,
+   1087                                                "3DES 3 key",
+   1088                                                des3_3key_key,
+   1089                                                192,
+   1090                                                test_message,
+   1091                                                des3_message_lengths,
+   1092                                                (const unsigned char*)des3_3key_expected_result,
+   1093                                                MBEDTLS_CIPHER_DES_EDE3_ECB,
+   1094                                                MBEDTLS_DES3_BLOCK_SIZE,
+   1095                                                NB_CMAC_TESTS_PER_KEY ) ) != 0 )
+   1096              {
+   1097                  return( ret );
+   1098              }
+   1099          #endif /* MBEDTLS_DES_C */
+   1100          
+   1101          #if defined(MBEDTLS_AES_C)
+   1102              if( ( ret = test_aes128_cmac_prf( verbose ) ) != 0 )
+   1103                  return( ret );
+   1104          #endif /* MBEDTLS_AES_C */
+   1105          
+   1106              if( verbose != 0 )
+   1107                  mbedtls_printf( "\n" );
+   1108          
+   1109              return( 0 );
+   1110          }
+   1111          
+   1112          #endif /* MBEDTLS_SELF_TEST */
+   1113          
+   1114          #endif /* MBEDTLS_CMAC_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

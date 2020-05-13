@@ -1,0 +1,2259 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:54
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_usart.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW5EDB.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_usart.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"em_usart.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\em_usart.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\em_usart.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\platform\emlib\src\em_usart.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Universal synchronous/asynchronous receiver/transmitter (USART/UART)
+      4           *   Peripheral API
+      5           * @version 5.8.0
+      6           *******************************************************************************
+      7           * # License
+      8           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      9           *******************************************************************************
+     10           *
+     11           * SPDX-License-Identifier: Zlib
+     12           *
+     13           * The licensor of this software is Silicon Laboratories Inc.
+     14           *
+     15           * This software is provided 'as-is', without any express or implied
+     16           * warranty. In no event will the authors be held liable for any damages
+     17           * arising from the use of this software.
+     18           *
+     19           * Permission is granted to anyone to use this software for any purpose,
+     20           * including commercial applications, and to alter it and redistribute it
+     21           * freely, subject to the following restrictions:
+     22           *
+     23           * 1. The origin of this software must not be misrepresented; you must not
+     24           *    claim that you wrote the original software. If you use this software
+     25           *    in a product, an acknowledgment in the product documentation would be
+     26           *    appreciated but is not required.
+     27           * 2. Altered source versions must be plainly marked as such, and must not be
+     28           *    misrepresented as being the original software.
+     29           * 3. This notice may not be removed or altered from any source distribution.
+     30           *
+     31           ******************************************************************************/
+     32          
+     33          #include "em_usart.h"
+     34          #if defined(USART_COUNT) && (USART_COUNT > 0)
+     35          
+     36          #include "em_cmu.h"
+     37          #include "em_bus.h"
+     38          #include "em_assert.h"
+     39          #if defined(USART_CTRLX_CTSEN)
+     40          #include "em_gpio.h"
+     41          #endif
+     42          
+     43          /***************************************************************************//**
+     44           * @addtogroup emlib
+     45           * @{
+     46           ******************************************************************************/
+     47          
+     48          /***************************************************************************//**
+     49           * @addtogroup USART
+     50           * @{
+     51           ******************************************************************************/
+     52          
+     53          /*******************************************************************************
+     54           *******************************   DEFINES   ***********************************
+     55           ******************************************************************************/
+     56          
+     57          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     58          
+     59          /** Validation of USART register block pointer reference for assert statements. */
+     60          #if (USART_COUNT == 1) && defined(USART0)
+     61          #define USART_REF_VALID(ref)    ((ref) == USART0)
+     62          
+     63          #elif (USART_COUNT == 1) && defined(USART1)
+     64          #define USART_REF_VALID(ref)    ((ref) == USART1)
+     65          
+     66          #elif (USART_COUNT == 2) && defined(USART2)
+     67          #define USART_REF_VALID(ref)    (((ref) == USART1) || ((ref) == USART2))
+     68          
+     69          #elif (USART_COUNT == 2)
+     70          #define USART_REF_VALID(ref)    (((ref) == USART0) || ((ref) == USART1))
+     71          
+     72          #elif (USART_COUNT == 3)
+     73          #define USART_REF_VALID(ref)    (((ref) == USART0) || ((ref) == USART1) \
+     74                                           || ((ref) == USART2))
+     75          #elif (USART_COUNT == 4)
+     76          #define USART_REF_VALID(ref)    (((ref) == USART0) || ((ref) == USART1) \
+     77                                           || ((ref) == USART2) || ((ref) == USART3))
+     78          #elif (USART_COUNT == 5)
+     79          #define USART_REF_VALID(ref)    (((ref) == USART0) || ((ref) == USART1)    \
+     80                                           || ((ref) == USART2) || ((ref) == USART3) \
+     81                                           || ((ref) == USART4))
+     82          #elif (USART_COUNT == 6)
+     83          #define USART_REF_VALID(ref)    (((ref) == USART0) || ((ref) == USART1)    \
+     84                                           || ((ref) == USART2) || ((ref) == USART3) \
+     85                                           || ((ref) == USART4) || ((ref) == USART5))
+     86          #else
+     87          #error "Undefined number of USARTs."
+     88          #endif
+     89          
+     90          #if defined(USARTRF_COUNT) && (USARTRF_COUNT > 0)
+     91            #if (USARTRF_COUNT == 1) && defined(USARTRF0)
+     92              #define USARTRF_REF_VALID(ref)  ((ref) == USARTRF0)
+     93            #elif (USARTRF_COUNT == 1) && defined(USARTRF1)
+     94              #define USARTRF_REF_VALID(ref)  ((ref) == USARTRF1)
+     95            #else
+     96              #define USARTRF_REF_VALID(ref)  (0)
+     97            #endif
+     98          #else
+     99            #define USARTRF_REF_VALID(ref)  (0)
+    100          #endif
+    101          
+    102          #if (_SILICON_LABS_32B_SERIES == 2)
+    103            #define USART_IRDA_VALID(ref)      USART_REF_VALID(ref)
+    104          #elif defined(_SILICON_LABS_32B_SERIES_1)
+    105            #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_100) || defined(_SILICON_LABS_GECKO_INTERNAL_SDID_103)
+    106          // If GG11 or TG11
+    107              #define USART_IRDA_VALID(ref)    (((ref) == USART0) || ((ref) == USART2))
+    108            #elif defined(USART3)
+    109              #define USART_IRDA_VALID(ref)    (((ref) == USART0) || ((ref) == USART1) || ((ref) == USART2) || ((ref) == USART3))
+    110            #elif defined(USART2)
+    111              #define USART_IRDA_VALID(ref)    (((ref) == USART0) || ((ref) == USART1) || ((ref) == USART2))
+    112            #else
+    113              #define USART_IRDA_VALID(ref)    (((ref) == USART0) || ((ref) == USART1))
+    114            #endif
+    115          #elif defined(_SILICON_LABS_32B_SERIES_0)
+    116            #if defined(_EZR32_HAPPY_FAMILY)
+    117              #define USART_IRDA_VALID(ref)    ((ref) == USART0)
+    118            #elif defined(_EFM32_HAPPY_FAMILY)
+    119              #define USART_IRDA_VALID(ref)    (((ref) == USART0) || ((ref) == USART1))
+    120            #elif defined(USART0)
+    121              #define USART_IRDA_VALID(ref)    ((ref) == USART0)
+    122            #elif (USART_COUNT == 1) && defined(USART1)
+    123              #define USART_IRDA_VALID(ref)    ((ref) == USART1)
+    124            #elif defined(USARTRF0)
+    125              #define USART_IRDA_VALID(ref)    ((ref) == USARTRF0)
+    126            #else
+    127              #define USART_IRDA_VALID(ref)    (0)
+    128            #endif
+    129          #endif
+    130          
+    131          #if (_SILICON_LABS_32B_SERIES == 2)
+    132            #define USART_I2S_VALID(ref)      USART_REF_VALID(ref)
+    133          #elif defined(_SILICON_LABS_32B_SERIES_1)
+    134            #if defined(USART4)
+    135              #define USART_I2S_VALID(ref)    (((ref) == USART1) || ((ref) == USART3) || ((ref) == USART4))
+    136            #elif defined(USART3)
+    137              #define USART_I2S_VALID(ref)    (((ref) == USART1) || ((ref) == USART3))
+    138            #else
+    139              #define USART_I2S_VALID(ref)    ((ref) == USART1)
+    140            #endif
+    141          #elif defined(_SILICON_LABS_32B_SERIES_0)
+    142            #if defined(_EZR32_HAPPY_FAMILY)
+    143              #define USART_I2S_VALID(ref)    ((ref) == USART0)
+    144            #elif defined(_EFM32_HAPPY_FAMILY)
+    145              #define USART_I2S_VALID(ref)    (((ref) == USART0) || ((ref) == USART1))
+    146            #elif defined(_EFM32_TINY_FAMILY) || defined(_EFM32_ZERO_FAMILY)
+    147              #define USART_I2S_VALID(ref)    ((ref) == USART1)
+    148            #elif defined(_EFM32_GIANT_FAMILY) || defined(_EFM32_WONDER_FAMILY)
+    149              #define USART_I2S_VALID(ref)    (((ref) == USART1) || ((ref) == USART2))
+    150            #endif
+    151          #endif
+    152          
+    153          #if (UART_COUNT == 1) && !defined(_UART_IPVERSION_MASK)
+    154            #define UART_REF_VALID(ref)    ((ref) == UART0)
+    155          #elif (UART_COUNT == 2) && !defined(_UART_IPVERSION_MASK)
+    156            #define UART_REF_VALID(ref)    (((ref) == UART0) || ((ref) == UART1))
+    157          #else
+    158            #define UART_REF_VALID(ref)    (0)
+    159          #endif
+    160          
+    161          #if defined(_USART_CLKDIV_DIVEXT_MASK)
+    162            #define CLKDIV_MASK  (_USART_CLKDIV_DIV_MASK | _USART_CLKDIV_DIVEXT_MASK)
+    163          #else
+    164            #define CLKDIV_MASK  _USART_CLKDIV_DIV_MASK
+    165          #endif
+    166          
+    167          /** @endcond */
+    168          
+    169          /*******************************************************************************
+    170           **************************   LOCAL FUNCTIONS   ********************************
+    171           ******************************************************************************/
+    172          
+    173          #if !defined(_EFM32_GECKO_FAMILY)
+    174          /***************************************************************************//**
+    175           * @brief
+    176           *   Configure a PRS channel as USART Rx input
+    177           *
+    178           * @param[in] usart
+    179           *   A pointer to the USART/UART peripheral register block.
+    180           *
+    181           * @param[in] ch
+    182           *   PRS channel.
+    183           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    184          static void prsRxInput(USART_TypeDef *usart, USART_PRS_Channel_t ch)
+    185          {
+    186          #if defined(_USART_INPUT_MASK)
+    187            usart->INPUT = ((uint32_t)ch << _USART_INPUT_RXPRSSEL_SHIFT)
+    188                           | USART_INPUT_RXPRS;
+    189          #elif defined(USART_CTRLX_RXPRSEN)
+    190            if (usart == USART0) {
+   \                     prsRxInput: (+1)
+   \        0x0   0x....'....        LDR.W    R3,??DataTable6  ;; 0x40058000
+   \        0x4   0x....'....        LDR.W    R2,??DataTable6_1  ;; 0x40038184
+   \        0x8   0x4298             CMP      R0,R3
+   \        0xA   0xB510             PUSH     {R4,LR}
+   \        0xC   0xBF08             IT       EQ 
+   \        0xE   0x6011             STREQ    R1,[R2, #+0]
+    191              PRS->CONSUMER_USART0_RX = ch;
+   \       0x10   0xD00A             BEQ.N    ??prsRxInput_0
+    192            } else if (usart == USART1) {
+   \       0x12   0x....'....        LDR.W    R4,??DataTable6_2  ;; 0x4005c000
+   \       0x16   0x42A0             CMP      R0,R4
+   \       0x18   0xBF08             IT       EQ 
+   \       0x1A   0x6111             STREQ    R1,[R2, #+16]
+    193              PRS->CONSUMER_USART1_RX = ch;
+   \       0x1C   0xD004             BEQ.N    ??prsRxInput_0
+    194            }
+    195          #if USART_COUNT > 2
+    196            else if (usart == USART2) {
+   \       0x1E   0x....'....        LDR.W    R3,??DataTable6_3  ;; 0x40060000
+   \       0x22   0x4298             CMP      R0,R3
+   \       0x24   0xBF08             IT       EQ 
+   \       0x26   0x6211             STREQ    R1,[R2, #+32]
+    197              PRS->CONSUMER_USART2_RX = ch;
+    198            }
+    199          #endif
+    200            usart->CTRLX |= USART_CTRLX_RXPRSEN;
+   \                     ??prsRxInput_0: (+1)
+   \       0x28   0x6DC1             LDR      R1,[R0, #+92]
+   \       0x2A   0xF041 0x0180      ORR      R1,R1,#0x80
+   \       0x2E   0x65C1             STR      R1,[R0, #+92]
+    201          #endif
+    202          }
+   \       0x30   0xBD10             POP      {R4,PC}          ;; return
+    203          #endif
+    204          
+    205          /***************************************************************************//**
+    206           * @brief
+    207           *   Configure a PRS channel as USART Ir input
+    208           *
+    209           * @param[in] usart
+    210           *   A pointer to the USART/UART peripheral register block.
+    211           *
+    212           * @param[in] ch
+    213           *   PRS channel.
+    214           ******************************************************************************/
+    215          static void prsIrInput(USART_TypeDef *usart, USART_PRS_Channel_t ch)
+    216          {
+    217          #if defined(_USART_IRCTRL_IRPRSSEL_MASK)
+    218            usart->IRCTRL |= ((uint32_t)ch << _USART_IRCTRL_IRPRSSEL_SHIFT)
+    219                             | USART_IRCTRL_IRPRSEN;
+    220          #else
+    221            if (usart == USART0) {
+    222              PRS->CONSUMER_USART0_IR = ch;
+    223            } else if (usart == USART1) {
+    224              PRS->CONSUMER_USART1_IR = ch;
+    225            }
+    226          #if USART_COUNT > 2
+    227            else if (usart == USART2) {
+    228              PRS->CONSUMER_USART2_IR = ch;
+    229            }
+    230          #endif
+    231            usart->IRCTRL |= USART_IRCTRL_IRPRSEN;
+    232          #endif
+    233          }
+    234          
+    235          /***************************************************************************//**
+    236           * @brief
+    237           *   Configure a PRS channel as USART Trigger input
+    238           *
+    239           * @param[in] usart
+    240           *   A pointer to the USART/UART peripheral register block.
+    241           *
+    242           * @param[in] ch
+    243           *   PRS channel.
+    244           ******************************************************************************/
+    245          static void prsTriggerInput(USART_TypeDef *usart, USART_PRS_Channel_t ch)
+    246          {
+    247          #if defined(_USART_IRCTRL_IRPRSSEL_MASK)
+    248            usart->TRIGCTRL = (usart->TRIGCTRL & ~_USART_TRIGCTRL_TSEL_MASK)
+    249                              | (ch << _USART_TRIGCTRL_TSEL_SHIFT);
+    250          #else
+    251            if (usart == USART0) {
+    252              PRS->CONSUMER_USART0_TRIGGER = ch;
+    253            } else if (usart == USART1) {
+    254              PRS->CONSUMER_USART1_TRIGGER = ch;
+    255            }
+    256          #if USART_COUNT > 2
+    257            else if (usart == USART2) {
+    258              PRS->CONSUMER_USART2_TRIGGER = ch;
+    259            }
+    260          #endif
+    261          #endif
+    262          }
+    263          
+    264          /*******************************************************************************
+    265           **************************   GLOBAL FUNCTIONS   *******************************
+    266           ******************************************************************************/
+    267          
+    268          /***************************************************************************//**
+    269           * @brief
+    270           *   Configure USART/UART operating in asynchronous mode to use a given
+    271           *   baudrate (or as close as possible to a specified baudrate).
+    272           *
+    273           * @param[in] usart
+    274           *   A pointer to the USART/UART peripheral register block.
+    275           *
+    276           * @param[in] refFreq
+    277           *   USART/UART reference clock frequency in Hz. If set to 0,
+    278           *   the currently configured reference clock is assumed.
+    279           *
+    280           * @param[in] baudrate
+    281           *   Baudrate to try to achieve for USART/UART.
+    282           *
+    283           * @param[in] ovs
+    284           *   Oversampling to be used. Normal is 16x oversampling but lower oversampling
+    285           *   may be used to achieve higher rates or better baudrate accuracy in some
+    286           *   cases. Notice that lower oversampling frequency makes the channel more
+    287           *   vulnerable to bit faults during reception due to clock inaccuracies
+    288           *   compared to the link partner.
+    289           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    290          void USART_BaudrateAsyncSet(USART_TypeDef *usart,
+    291                                      uint32_t refFreq,
+    292                                      uint32_t baudrate,
+    293                                      USART_OVS_TypeDef ovs)
+    294          {
+   \                     USART_BaudrateAsyncSet: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4615             MOV      R5,R2
+   \        0x6   0x461E             MOV      R6,R3
+    295            uint32_t clkdiv;
+    296            uint32_t oversample;
+    297          
+    298            /* Inhibit divide by 0 */
+    299            EFM_ASSERT(baudrate);
+    300          
+    301            /*
+    302             * Use integer division to avoid forcing in float division
+    303             * utils and yet keep rounding effect errors to a minimum.
+    304             *
+    305             * CLKDIV in asynchronous mode is given by:
+    306             *
+    307             * CLKDIV = 256 * (fHFPERCLK/(oversample * br) - 1)
+    308             * or
+    309             * CLKDIV = (256 * fHFPERCLK)/(oversample * br) - 256
+    310             *
+    311             * The basic problem with integer division in the above formula is that
+    312             * the dividend (256 * fHFPERCLK) may become higher than max 32 bit
+    313             * integer. Yet, we want to evaluate the dividend first before dividing
+    314             * to get as small rounding effects as possible.
+    315             * Too harsh restrictions on maximum fHFPERCLK value should not be made.
+    316             *
+    317             * It is possible to factorize 256 and oversample/br. However,
+    318             * since the last 6 or 3 bits of CLKDIV are don't care, base the
+    319             * integer arithmetic on the below formula
+    320             *
+    321             * CLKDIV / 64 = (4 * fHFPERCLK)/(oversample * br) - 4 (3 bits dont care)
+    322             * or
+    323             * CLKDIV / 8  = (32 * fHFPERCLK)/(oversample * br) - 32 (6 bits dont care)
+    324             *
+    325             * and calculate 1/64 of CLKDIV first. This allows for fHFPERCLK
+    326             * up to 1 GHz without overflowing a 32 bit value.
+    327             */
+    328          
+    329            /* HFPERCLK/HFPERBCLK used to clock all USART/UART peripheral modules. */
+    330            if (!refFreq) {
+   \        0x8   0xB919             CBNZ.N   R1,??USART_BaudrateAsyncSet_0
+    331          #if defined(_SILICON_LABS_32B_SERIES_2)
+    332              refFreq = CMU_ClockFreqGet(cmuClock_PCLK);
+   \        0xA   0x2003             MOVS     R0,#+3
+   \        0xC   0x....'....        BL       CMU_ClockFreqGet
+   \       0x10   0x4601             MOV      R1,R0
+    333          #else
+    334          #if defined(_CMU_HFPERPRESCB_MASK)
+    335              if (usart == USART2) {
+    336                refFreq = CMU_ClockFreqGet(cmuClock_HFPERB);
+    337              } else {
+    338                refFreq = CMU_ClockFreqGet(cmuClock_HFPER);
+    339              }
+    340          #else
+    341              refFreq = CMU_ClockFreqGet(cmuClock_HFPER);
+    342          #endif
+    343          #endif
+    344            }
+    345          
+    346            /* Map oversampling. */
+    347            switch (ovs) {
+   \                     ??USART_BaudrateAsyncSet_0: (+1)
+   \       0x12   0x0030             MOVS     R0,R6
+   \       0x14   0xD006             BEQ.N    ??USART_BaudrateAsyncSet_1
+   \       0x16   0x2E20             CMP      R6,#+32
+   \       0x18   0xD019             BEQ.N    ??USART_BaudrateAsyncSet_2
+   \       0x1A   0x2E40             CMP      R6,#+64
+   \       0x1C   0xD019             BEQ.N    ??USART_BaudrateAsyncSet_3
+   \       0x1E   0x2E60             CMP      R6,#+96
+   \       0x20   0xD019             BEQ.N    ??USART_BaudrateAsyncSet_4
+   \       0x22   0xBD70             POP      {R4-R6,PC}
+    348              case usartOVS16:
+    349                EFM_ASSERT(baudrate <= (refFreq / 16));
+    350                oversample = 16;
+   \                     ??USART_BaudrateAsyncSet_1: (+1)
+   \       0x24   0x2010             MOVS     R0,#+16
+    351                break;
+    352          
+    353              case usartOVS8:
+    354                EFM_ASSERT(baudrate <= (refFreq / 8));
+    355                oversample = 8;
+    356                break;
+    357          
+    358              case usartOVS6:
+    359                EFM_ASSERT(baudrate <= (refFreq / 6));
+    360                oversample = 6;
+    361                break;
+    362          
+    363              case usartOVS4:
+    364                EFM_ASSERT(baudrate <= (refFreq / 4));
+    365                oversample = 4;
+    366                break;
+    367          
+    368              default:
+    369                /* Invalid input */
+    370                EFM_ASSERT(0);
+    371                return;
+    372            }
+    373          
+    374            /* Calculate and set CLKDIV with fractional bits.
+    375             * The added (oversample*baudrate)/2 in the first line is to round the
+    376             * divisor to the nearest fractional divisor. */
+    377          #if defined(_SILICON_LABS_32B_SERIES_0) && !defined(_EFM32_HAPPY_FAMILY)
+    378            /* Devices with 2 fractional bits. CLKDIV[7:6] */
+    379            clkdiv  = 4 * refFreq + (oversample * baudrate) / 2;
+    380            clkdiv /= oversample * baudrate;
+    381            clkdiv -= 4;
+    382            clkdiv *= 64;
+    383          #else
+    384            /* Devices with 5 fractional bits. CLKDIV[7:3] */
+    385            clkdiv  = 32 * refFreq + (oversample * baudrate) / 2;
+    386            clkdiv /= oversample * baudrate;
+    387            clkdiv -= 32;
+    388            clkdiv *= 8;
+    389          #endif
+    390          
+    391            /* Verify that the resulting clock divider is within limits. */
+    392            EFM_ASSERT(clkdiv <= CLKDIV_MASK);
+    393          
+    394            /* Make sure that reserved bits are not written to. */
+    395            clkdiv &= CLKDIV_MASK;
+    396          
+    397            usart->CTRL  &= ~_USART_CTRL_OVS_MASK;
+    398            usart->CTRL  |= ovs;
+    399            usart->CLKDIV = clkdiv;
+   \                     ??USART_BaudrateAsyncSet_5: (+1)
+   \       0x26   0x4345             MULS     R5,R5,R0
+   \       0x28   0x68A2             LDR      R2,[R4, #+8]
+   \       0x2A   0x0868             LSRS     R0,R5,#+1
+   \       0x2C   0xEB00 0x1041      ADD      R0,R0,R1, LSL #+5
+   \       0x30   0xF022 0x0260      BIC      R2,R2,#0x60
+   \       0x34   0x60A2             STR      R2,[R4, #+8]
+   \       0x36   0x68A2             LDR      R2,[R4, #+8]
+   \       0x38   0xFBB0 0xF0F5      UDIV     R0,R0,R5
+   \       0x3C   0x....'....        LDR.W    R1,??DataTable6_4  ;; 0x7ffff8
+   \       0x40   0x4316             ORRS     R6,R6,R2
+   \       0x42   0x3820             SUBS     R0,R0,#+32
+   \       0x44   0x60A6             STR      R6,[R4, #+8]
+   \       0x46   0xEA01 0x01C0      AND      R1,R1,R0, LSL #+3
+   \       0x4A   0x61E1             STR      R1,[R4, #+28]
+    400          }
+   \       0x4C   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??USART_BaudrateAsyncSet_2: (+1)
+   \       0x4E   0x2008             MOVS     R0,#+8
+   \       0x50   0xE7E9             B.N      ??USART_BaudrateAsyncSet_5
+   \                     ??USART_BaudrateAsyncSet_3: (+1)
+   \       0x52   0x2006             MOVS     R0,#+6
+   \       0x54   0xE7E7             B.N      ??USART_BaudrateAsyncSet_5
+   \                     ??USART_BaudrateAsyncSet_4: (+1)
+   \       0x56   0x2004             MOVS     R0,#+4
+   \       0x58   0xE7E5             B.N      ??USART_BaudrateAsyncSet_5
+    401          
+    402          /***************************************************************************//**
+    403           * @brief
+    404           *   Calculate baudrate for USART/UART given reference frequency, clock division,
+    405           *   and oversampling rate (if async mode).
+    406           *
+    407           * @details
+    408           *   This function returns the baudrate that a USART/UART module will use if
+    409           *   configured with the given frequency, clock divisor, and mode. Notice that
+    410           *   this function will not use the hardware configuration. It can be used
+    411           *   to determine if a given configuration is sufficiently accurate for the
+    412           *   application.
+    413           *
+    414           * @param[in] refFreq
+    415           *   USART/UART HF peripheral frequency used.
+    416           *
+    417           * @param[in] clkdiv
+    418           *   A clock division factor to be used.
+    419           *
+    420           * @param[in] syncmode
+    421           *   @li True - synchronous mode operation.
+    422           *   @li False - asynchronous mode operation.
+    423           *
+    424           * @param[in] ovs
+    425           *   Oversampling used if in asynchronous mode. Not used if @p syncmode is true.
+    426           *
+    427           * @return
+    428           *   Baudrate with given settings.
+    429           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    430          uint32_t USART_BaudrateCalc(uint32_t refFreq,
+    431                                      uint32_t clkdiv,
+    432                                      bool syncmode,
+    433                                      USART_OVS_TypeDef ovs)
+    434          {
+   \                     USART_BaudrateCalc: (+1)
+   \        0x0   0xE92D 0x41D0      PUSH     {R4,R6-R8,LR}
+    435            uint32_t oversample;
+    436            uint64_t divisor;
+    437            uint64_t factor;
+    438            uint64_t remainder;
+    439            uint64_t quotient;
+    440            uint32_t br;
+    441          
+    442            /* Out of bound clkdiv. */
+    443            EFM_ASSERT(clkdiv <= CLKDIV_MASK);
+    444          
+    445            /* Mask out unused bits */
+    446            clkdiv &= CLKDIV_MASK;
+   \        0x4   0x....'....        LDR.W    R4,??DataTable6_4  ;; 0x7ffff8
+   \        0x8   0x4021             ANDS     R1,R4,R1
+    447          
+    448            /* Use integer division to avoid forcing in float division */
+    449            /* utils and yet keep rounding effect errors to a minimum. */
+    450          
+    451            /* Baudrate calculation depends on if synchronous or asynchronous mode. */
+    452            if (syncmode) {
+   \        0xA   0x2780             MOVS     R7,#+128
+   \        0xC   0xB10A             CBZ.N    R2,??USART_BaudrateCalc_0
+    453              /*
+    454               * Baudrate is given by:
+    455               *
+    456               * br = fHFPERCLK/(2 * (1 + (CLKDIV / 256)))
+    457               *
+    458               * which can be rewritten to
+    459               *
+    460               * br = (128 * fHFPERCLK)/(256 + CLKDIV)
+    461               */
+    462              oversample = 1; /* Not used in sync mode, i.e., 1 */
+   \        0xE   0x2201             MOVS     R2,#+1
+    463              factor     = 128;
+   \       0x10   0xE00F             B.N      ??USART_BaudrateCalc_1
+    464            } else {
+    465              /*
+    466               * Baudrate in asynchronous mode is given by:
+    467               *
+    468               * br = fHFPERCLK/(oversample * (1 + (CLKDIV / 256)))
+    469               *
+    470               * which can be rewritten to
+    471               *
+    472               * br = (256 * fHFPERCLK)/(oversample * (256 + CLKDIV))
+    473               *
+    474               * 256 factor of the dividend is reduced with a
+    475               * (part of) oversample part of the divisor.
+    476               */
+    477          
+    478              switch (ovs) {
+   \                     ??USART_BaudrateCalc_0: (+1)
+   \       0x12   0xB123             CBZ.N    R3,??USART_BaudrateCalc_2
+   \       0x14   0x2B20             CMP      R3,#+32
+   \       0x16   0xD005             BEQ.N    ??USART_BaudrateCalc_3
+   \       0x18   0x2B40             CMP      R3,#+64
+   \       0x1A   0xD006             BEQ.N    ??USART_BaudrateCalc_4
+   \       0x1C   0xE007             B.N      ??USART_BaudrateCalc_5
+    479                case usartOVS16:
+    480                  oversample = 1;
+   \                     ??USART_BaudrateCalc_2: (+1)
+   \       0x1E   0x2201             MOVS     R2,#+1
+    481                  factor     = 256 / 16;
+   \       0x20   0x2710             MOVS     R7,#+16
+    482                  break;
+   \       0x22   0xE006             B.N      ??USART_BaudrateCalc_1
+    483          
+    484                case usartOVS8:
+    485                  oversample = 1;
+   \                     ??USART_BaudrateCalc_3: (+1)
+   \       0x24   0x2201             MOVS     R2,#+1
+    486                  factor     = 256 / 8;
+   \       0x26   0x2720             MOVS     R7,#+32
+    487                  break;
+   \       0x28   0xE003             B.N      ??USART_BaudrateCalc_1
+    488          
+    489                case usartOVS6:
+    490                  oversample = 3;
+   \                     ??USART_BaudrateCalc_4: (+1)
+   \       0x2A   0x2203             MOVS     R2,#+3
+    491                  factor     = 256 / 2;
+    492                  break;
+   \       0x2C   0xE001             B.N      ??USART_BaudrateCalc_1
+    493          
+    494                default:
+    495                  oversample = 1;
+   \                     ??USART_BaudrateCalc_5: (+1)
+   \       0x2E   0x2201             MOVS     R2,#+1
+    496                  factor     = 256 / 4;
+   \       0x30   0x2740             MOVS     R7,#+64
+    497                  break;
+    498              }
+    499            }
+    500          
+    501            /*
+    502             * The basic problem with integer division in the above formula is that
+    503             * the dividend (factor * fHFPERCLK) may become larger than a 32 bit
+    504             * integer. Yet we want to evaluate the dividend first before dividing
+    505             * to get as small rounding effects as possible. Too harsh restrictions
+    506             * should not be made on the maximum fHFPERCLK value either.
+    507             *
+    508             * For division a/b,
+    509             *
+    510             * a = qb + r
+    511             *
+    512             * where q is the quotient and r is the remainder, both integers.
+    513             *
+    514             * The original baudrate formula can be rewritten as
+    515             *
+    516             * br = xa / b = x(qb + r)/b = xq + xr/b
+    517             *
+    518             * where x is 'factor', a is 'refFreq' and b is 'divisor', referring to
+    519             * variable names.
+    520             */
+    521          
+    522            /*
+    523             * The divisor will never exceed max 32 bit value since
+    524             * clkdiv <= _USART_CLKDIV_DIV_MASK (currently 0x1FFFC0 or 0x7FFFF8)
+    525             * and 'oversample' has been reduced to <= 3.
+    526             */
+    527            divisor = oversample * (256 + clkdiv);
+   \                     ??USART_BaudrateCalc_1: (+1)
+   \       0x32   0xF501 0x7180      ADD      R1,R1,#+256
+   \       0x36   0xFB01 0xF402      MUL      R4,R1,R2
+    528          
+    529            quotient  = refFreq / divisor;
+    530            remainder = refFreq % divisor;
+    531          
+    532            /* The factor <= 128 and since divisor >= 256, the below cannot exceed the maximum */
+    533            /* 32 bit value. However, factor * remainder can become larger than 32-bit */
+    534            /* because of the size of _USART_CLKDIV_DIV_MASK on some families. */
+    535            br = (uint32_t)(factor * quotient);
+    536          
+    537            /*
+    538             * The factor <= 128 and remainder < (oversample*(256 + clkdiv)), which
+    539             * means dividend (factor * remainder) worst case is
+    540             * 128 * (3 * (256 + _USART_CLKDIV_DIV_MASK)) = 0x1_8001_7400.
+    541             */
+    542            br += (uint32_t)((factor * remainder) / divisor);
+    543          
+    544            return br;
+   \       0x3A   0x4606             MOV      R6,R0
+   \       0x3C   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x40   0x4680             MOV      R8,R0
+   \       0x42   0x4630             MOV      R0,R6
+   \       0x44   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x48   0xFBA2 0x0107      UMULL    R0,R1,R2,R7
+   \       0x4C   0x4622             MOV      R2,R4
+   \       0x4E   0xFB03 0x1107      MLA      R1,R3,R7,R1
+   \       0x52   0x2300             MOVS     R3,#+0
+   \       0x54   0x....'....        BL       __aeabi_uldivmod
+   \       0x58   0xFB08 0x0007      MLA      R0,R8,R7,R0
+   \       0x5C   0xE8BD 0x81D0      POP      {R4,R6-R8,PC}    ;; return
+    545          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x4622             MOV      R2,R4
+   \        0x4   0x2300             MOVS     R3,#+0
+   \        0x6   0x....'....        B.W      __aeabi_uldivmod
+    546          
+    547          /***************************************************************************//**
+    548           * @brief
+    549           *   Get the current baudrate for USART/UART.
+    550           *
+    551           * @details
+    552           *   This function returns the actual baudrate (not considering oscillator
+    553           *   inaccuracies) used by a USART/UART peripheral.
+    554           *
+    555           * @param[in] usart
+    556           *   A pointer to the USART/UART peripheral register block.
+    557           *
+    558           * @return
+    559           *   The current baudrate.
+    560           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    561          uint32_t USART_BaudrateGet(USART_TypeDef *usart)
+    562          {
+   \                     USART_BaudrateGet: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    563            uint32_t          freq;
+    564            USART_OVS_TypeDef ovs;
+    565            bool              syncmode;
+    566          
+    567            if (usart->CTRL & USART_CTRL_SYNC) {
+   \        0x4   0x68A5             LDR      R5,[R4, #+8]
+    568              syncmode = true;
+    569            } else {
+    570              syncmode = false;
+    571            }
+    572          
+    573            /* HFPERCLK/HFPERBCLK used to clock all USART/UART peripheral modules. */
+    574          #if defined(_SILICON_LABS_32B_SERIES_2)
+    575            freq = CMU_ClockFreqGet(cmuClock_PCLK);
+   \        0x6   0x2003             MOVS     R0,#+3
+   \        0x8   0x....'....        BL       CMU_ClockFreqGet
+    576          #else
+    577          #if defined(_CMU_HFPERPRESCB_MASK)
+    578            if (usart == USART2) {
+    579              freq = CMU_ClockFreqGet(cmuClock_HFPERB);
+    580            } else {
+    581              freq = CMU_ClockFreqGet(cmuClock_HFPER);
+    582            }
+    583          #else
+    584            freq = CMU_ClockFreqGet(cmuClock_HFPER);
+    585          #endif
+    586          #endif
+    587            ovs  = (USART_OVS_TypeDef)(usart->CTRL & _USART_CTRL_OVS_MASK);
+   \        0xC   0x68A3             LDR      R3,[R4, #+8]
+    588            return USART_BaudrateCalc(freq, usart->CLKDIV, syncmode, ovs);
+   \        0xE   0x69E1             LDR      R1,[R4, #+28]
+   \       0x10   0xF005 0x0201      AND      R2,R5,#0x1
+   \       0x14   0xB001             ADD      SP,SP,#+4
+   \       0x16   0xF003 0x0360      AND      R3,R3,#0x60
+   \       0x1A   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \       0x1E   0x....             B.N      USART_BaudrateCalc
+    589          }
+    590          
+    591          /***************************************************************************//**
+    592           * @brief
+    593           *   Configure the USART operating in synchronous mode to use a given baudrate
+    594           *   (or as close as possible to a specified baudrate).
+    595           *
+    596           * @details
+    597           *   The configuration will be set to use a baudrate <= the specified baudrate
+    598           *   to ensure that the baudrate does not exceed the specified value.
+    599           *
+    600           *   The fractional clock division is suppressed, although the hardware design allows it.
+    601           *   It could cause half clock cycles to exceed a specified limit and thus
+    602           *   potentially violate specifications for the slave device. In some special
+    603           *   situations, a fractional clock division may be useful even in synchronous
+    604           *   mode, but in those cases it must be directly adjusted, possibly assisted
+    605           *   by USART_BaudrateCalc():
+    606           *
+    607           * @param[in] usart
+    608           *   A pointer to the USART peripheral register block. (Cannot be used on UART
+    609           *   modules.)
+    610           *
+    611           * @param[in] refFreq
+    612           *   A USART reference clock frequency in Hz that will be used. If set to 0,
+    613           *   the currently-configured reference clock is assumed.
+    614           *
+    615           * @param[in] baudrate
+    616           *   Baudrate to try to achieve for USART.
+    617           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    618          void USART_BaudrateSyncSet(USART_TypeDef *usart, uint32_t refFreq, uint32_t baudrate)
+    619          {
+   \                     USART_BaudrateSyncSet: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x4615             MOV      R5,R2
+    620            uint32_t clkdiv;
+    621          
+    622            /* Prevent dividing by 0. */
+    623            EFM_ASSERT(baudrate);
+    624          
+    625            /*
+    626             * CLKDIV in synchronous mode is given by:
+    627             *
+    628             * CLKDIV = 256 * (fHFPERCLK/(2 * br) - 1)
+    629             */
+    630          
+    631            /* HFPERCLK/HFPERBCLK used to clock all USART/UART peripheral modules. */
+    632            if (!refFreq) {
+   \        0x8   0xBF04             ITT      EQ 
+    633          #if defined(_SILICON_LABS_32B_SERIES_2)
+    634              refFreq = CMU_ClockFreqGet(cmuClock_PCLK);
+   \        0xA   0x2003             MOVEQ    R0,#+3
+   \        0xC   0x....'....        BLEQ     CMU_ClockFreqGet
+    635          #else
+    636          #if defined(_CMU_HFPERPRESCB_MASK)
+    637              if (usart == USART2) {
+    638                refFreq = CMU_ClockFreqGet(cmuClock_HFPERB);
+    639              } else {
+    640                refFreq = CMU_ClockFreqGet(cmuClock_HFPER);
+    641              }
+    642          #else
+    643              refFreq = CMU_ClockFreqGet(cmuClock_HFPER);
+    644          #endif
+    645          #endif
+    646            }
+    647          
+    648            clkdiv = (refFreq - 1) / (2 * baudrate);
+    649            clkdiv = clkdiv << 8;
+    650          
+    651            /* Verify that resulting clock divider is within limits. */
+    652            EFM_ASSERT(!(clkdiv & ~CLKDIV_MASK));
+    653          
+    654            usart->CLKDIV = clkdiv;
+   \       0x10   0x1E40             SUBS     R0,R0,#+1
+   \       0x12   0x006D             LSLS     R5,R5,#+1
+   \       0x14   0xFBB0 0xF0F5      UDIV     R0,R0,R5
+   \       0x18   0x0200             LSLS     R0,R0,#+8
+   \       0x1A   0x61E0             STR      R0,[R4, #+28]
+    655          }
+   \       0x1C   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    656          
+    657          /***************************************************************************//**
+    658           * @brief
+    659           *   Enable/disable USART/UART receiver and/or transmitter.
+    660           *
+    661           * @details
+    662           *   Notice that this function does not do any configuration. Enabling should
+    663           *   normally be done after initialization (if not enabled as part
+    664           *   of initialization).
+    665           *
+    666           * @param[in] usart
+    667           *   A pointer to the USART/UART peripheral register block.
+    668           *
+    669           * @param[in] enable
+    670           *   Select the status for the receiver/transmitter.
+    671           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    672          void USART_Enable(USART_TypeDef *usart, USART_Enable_TypeDef enable)
+    673          {
+    674            uint32_t tmp;
+    675          
+    676            /* Make sure the module exists on the selected chip. */
+    677            EFM_ASSERT(USART_REF_VALID(usart)
+    678                       || USARTRF_REF_VALID(usart)
+    679                       || UART_REF_VALID(usart));
+    680          
+    681          #if defined(USART_EN_EN)
+    682            usart->EN_SET = USART_EN_EN;
+   \                     USART_Enable: (+1)
+   \        0x0   0x2201             MOVS     R2,#+1
+   \        0x2   0xF241 0x0304      MOVW     R3,#+4100
+   \        0x6   0x50C2             STR      R2,[R0, R3]
+    683          #endif
+    684          
+    685            /* Disable as specified. */
+    686            tmp        = ~((uint32_t)enable);
+    687            tmp       &= _USART_CMD_RXEN_MASK | _USART_CMD_TXEN_MASK;
+    688            usart->CMD = tmp << 1;
+   \        0x8   0x43CB             MVNS     R3,R1
+   \        0xA   0x005B             LSLS     R3,R3,#+1
+   \        0xC   0xF003 0x030A      AND      R3,R3,#0xA
+   \       0x10   0x6143             STR      R3,[R0, #+20]
+    689          
+    690            /* Enable as specified. */
+    691            usart->CMD = (uint32_t)enable;
+   \       0x12   0x6141             STR      R1,[R0, #+20]
+    692          
+    693          #if defined(USART_EN_EN)
+    694            if (enable == usartDisable) {
+   \       0x14   0xB919             CBNZ.N   R1,??USART_Enable_0
+    695              usart->EN_CLR = USART_EN_EN;
+   \       0x16   0x2101             MOVS     R1,#+1
+   \       0x18   0xF242 0x0204      MOVW     R2,#+8196
+   \       0x1C   0x5081             STR      R1,[R0, R2]
+    696            }
+    697          #endif
+    698          }
+   \                     ??USART_Enable_0: (+1)
+   \       0x1E   0x4770             BX       LR               ;; return
+    699          
+    700          /***************************************************************************//**
+    701           * @brief
+    702           *   Initialize USART/UART for normal asynchronous mode.
+    703           *
+    704           * @details
+    705           *   This function will configure basic settings to operate in normal
+    706           *   asynchronous mode.
+    707           *
+    708           *   A special control setup not covered by this function must be done after
+    709           *   using this function by direct modification of the CTRL register.
+    710           *
+    711           *   Notice that pins used by the USART/UART module must be properly configured
+    712           *   by the user explicitly for the USART/UART to work as intended.
+    713           *   (When configuring pins, remember to consider the sequence of
+    714           *   configuration to avoid unintended pulses/glitches on output
+    715           *   pins.)
+    716           *
+    717           * @param[in] usart
+    718           *   A pointer to the USART/UART peripheral register block.
+    719           *
+    720           * @param[in] init
+    721           *   A pointer to the initialization structure used to configure the basic async setup.
+    722           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    723          void USART_InitAsync(USART_TypeDef *usart, const USART_InitAsync_TypeDef *init)
+    724          {
+   \                     USART_InitAsync: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    725            /* Make sure the module exists on the selected chip. */
+    726            EFM_ASSERT(USART_REF_VALID(usart)
+    727                       || USARTRF_REF_VALID(usart)
+    728                       || UART_REF_VALID(usart));
+    729          
+    730            /* Initialize USART registers to hardware reset state. */
+    731            USART_Reset(usart);
+   \        0x6   0x....'....        BL       USART_Reset
+    732          
+    733          #if defined(USART_EN_EN)
+    734            usart->EN_SET = USART_EN_EN;
+   \        0xA   0xF241 0x0104      MOVW     R1,#+4100
+   \        0xE   0x1866             ADDS     R6,R4,R1
+   \       0x10   0x2201             MOVS     R2,#+1
+   \       0x12   0x6032             STR      R2,[R6, #+0]
+    735          #endif
+    736          
+    737          #if defined(USART_CTRL_MVDIS)
+    738            /* Disable the majority vote if specified. */
+    739            if (init->mvdis) {
+   \       0x14   0x7CA8             LDRB     R0,[R5, #+18]
+   \       0x16   0xB118             CBZ.N    R0,??USART_InitAsync_0
+    740              usart->CTRL |= USART_CTRL_MVDIS;
+   \       0x18   0x68A0             LDR      R0,[R4, #+8]
+   \       0x1A   0xF040 0x4080      ORR      R0,R0,#0x40000000
+   \       0x1E   0x60A0             STR      R0,[R4, #+8]
+    741            }
+    742          #endif
+    743          
+    744          #if !defined(_EFM32_GECKO_FAMILY)
+    745            /* Configure the PRS input mode. */
+    746            if (init->prsRxEnable) {
+   \                     ??USART_InitAsync_0: (+1)
+   \       0x20   0x7CE8             LDRB     R0,[R5, #+19]
+   \       0x22   0xB118             CBZ.N    R0,??USART_InitAsync_1
+    747              prsRxInput(usart, init->prsRxCh);
+   \       0x24   0x7D29             LDRB     R1,[R5, #+20]
+   \       0x26   0x4620             MOV      R0,R4
+   \       0x28   0x....'....        BL       prsRxInput
+    748            }
+    749          #endif
+    750          
+    751            /* Configure databits, stopbits, and parity. */
+    752            usart->FRAME = (uint32_t)init->databits
+    753                           | (uint32_t)init->stopbits
+    754                           | (uint32_t)init->parity;
+   \                     ??USART_InitAsync_1: (+1)
+   \       0x2C   0x7B6A             LDRB     R2,[R5, #+13]
+   \       0x2E   0xF9B5 0x1010      LDRSH    R1,[R5, #+16]
+   \       0x32   0xF9B5 0x000E      LDRSH    R0,[R5, #+14]
+   \       0x36   0x430A             ORRS     R2,R1,R2
+   \       0x38   0x4302             ORRS     R2,R0,R2
+   \       0x3A   0x60E2             STR      R2,[R4, #+12]
+    755          
+    756            /* Configure baudrate. */
+    757            USART_BaudrateAsyncSet(usart, init->refFreq, init->baudrate, init->oversampling);
+   \       0x3C   0x7B2B             LDRB     R3,[R5, #+12]
+   \       0x3E   0x68AA             LDR      R2,[R5, #+8]
+   \       0x40   0x6869             LDR      R1,[R5, #+4]
+   \       0x42   0x4620             MOV      R0,R4
+   \       0x44   0x....'....        BL       USART_BaudrateAsyncSet
+    758          
+    759            if (init->autoCsEnable) {
+   \       0x48   0x....'....        BL       ?Subroutine1
+    760              usart->CTRL |= USART_CTRL_AUTOCS;
+    761            }
+    762          #if defined(_USART_TIMING_CSHOLD_MASK)
+    763            usart->TIMING = ((init->autoCsHold << _USART_TIMING_CSHOLD_SHIFT)
+    764                             & _USART_TIMING_CSHOLD_MASK)
+    765                            | ((init->autoCsSetup << _USART_TIMING_CSSETUP_SHIFT)
+    766                               & _USART_TIMING_CSSETUP_MASK);
+    767          
+    768          #endif
+    769          
+    770          #if defined(_USART_ROUTEPEN_RTSPEN_MASK) && defined(_USART_ROUTEPEN_CTSPEN_MASK)
+    771            usart->ROUTEPEN &= ~(_USART_ROUTEPEN_RTSPEN_MASK | _USART_ROUTEPEN_CTSPEN_MASK);
+    772            usart->ROUTEPEN |= init->hwFlowControl;
+    773          
+    774          #elif defined(USART_CTRLX_CTSEN)
+    775            if ((init->hwFlowControl == usartHwFlowControlRts)
+    776                || (init->hwFlowControl == usartHwFlowControlCtsAndRts)) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x4C   0x7E28             LDRB     R0,[R5, #+24]
+   \       0x4E   0x....             LDR.N    R3,??DataTable6  ;; 0x40058000
+   \       0x50   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40060000
+   \       0x52   0x2802             CMP      R0,#+2
+   \       0x54   0x....             LDR.N    R2,??DataTable6_2  ;; 0x4005c000
+   \       0x56   0xBF16             ITET     NE 
+   \       0x58   0x2803             CMPNE    R0,#+3
+   \       0x5A   0x....             LDREQ.N  R0,??DataTable6_5  ;; 0x4003d58c
+   \       0x5C   0x....             LDRNE.N  R0,??DataTable6_6  ;; 0x4003e58c
+    777              GPIO->USARTROUTE_SET[USART_NUM(usart)].ROUTEEN = GPIO_USART_ROUTEEN_RTSPEN;
+    778            } else {
+    779              GPIO->USARTROUTE_CLR[USART_NUM(usart)].ROUTEEN = GPIO_USART_ROUTEEN_RTSPEN;
+   \       0x5E   0x429C             CMP      R4,R3
+   \       0x60   0xBF08             IT       EQ 
+   \       0x62   0x3020             ADDEQ    R0,R0,#+32
+   \       0x64   0xD006             BEQ.N    ??USART_InitAsync_2
+   \       0x66   0x4294             CMP      R4,R2
+   \       0x68   0xBF08             IT       EQ 
+   \       0x6A   0x3040             ADDEQ    R0,R0,#+64
+   \       0x6C   0xD002             BEQ.N    ??USART_InitAsync_2
+   \       0x6E   0x428C             CMP      R4,R1
+   \       0x70   0xBF08             IT       EQ 
+   \       0x72   0x3060             ADDEQ    R0,R0,#+96
+   \                     ??USART_InitAsync_2: (+1)
+   \       0x74   0x2102             MOVS     R1,#+2
+   \       0x76   0x6001             STR      R1,[R0, #+0]
+    780            }
+    781          
+    782            if ((init->hwFlowControl == usartHwFlowControlCts)
+    783                || (init->hwFlowControl == usartHwFlowControlCtsAndRts)) {
+   \       0x78   0x7E28             LDRB     R0,[R5, #+24]
+   \       0x7A   0x2801             CMP      R0,#+1
+   \       0x7C   0xBF18             IT       NE 
+   \       0x7E   0x2803             CMPNE    R0,#+3
+   \       0x80   0xD102             BNE.N    ??USART_InitAsync_3
+    784              usart->CTRLX_SET = USART_CTRLX_CTSEN;
+   \       0x82   0x2004             MOVS     R0,#+4
+   \       0x84   0x65B0             STR      R0,[R6, #+88]
+   \       0x86   0xE003             B.N      ??USART_InitAsync_4
+    785            } else {
+    786              usart->CTRLX_CLR = USART_CTRLX_CTSEN;
+   \                     ??USART_InitAsync_3: (+1)
+   \       0x88   0x2104             MOVS     R1,#+4
+   \       0x8A   0xF242 0x005C      MOVW     R0,#+8284
+   \       0x8E   0x5021             STR      R1,[R4, R0]
+    787            }
+    788          #endif
+    789          
+    790            /* Finally, enable (as specified). */
+    791            usart->CMD = (uint32_t)init->enable;
+   \                     ??USART_InitAsync_4: (+1)
+   \       0x90   0x782A             LDRB     R2,[R5, #+0]
+   \       0x92   0x6162             STR      R2,[R4, #+20]
+    792          }
+   \       0x94   0xBD70             POP      {R4-R6,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x7D68             LDRB     R0,[R5, #+21]
+   \        0x2   0xB118             CBZ.N    R0,??Subroutine1_0
+   \        0x4   0x68A0             LDR      R0,[R4, #+8]
+   \        0x6   0xF440 0x3080      ORR      R0,R0,#0x10000
+   \        0xA   0x60A0             STR      R0,[R4, #+8]
+   \                     ??Subroutine1_0: (+1)
+   \        0xC   0x7DA8             LDRB     R0,[R5, #+22]
+   \        0xE   0x7DE9             LDRB     R1,[R5, #+23]
+   \       0x10   0x0700             LSLS     R0,R0,#+28
+   \       0x12   0xF000 0x40E0      AND      R0,R0,#0x70000000
+   \       0x16   0x0509             LSLS     R1,R1,#+20
+   \       0x18   0xF401 0x01E0      AND      R1,R1,#0x700000
+   \       0x1C   0x4308             ORRS     R0,R1,R0
+   \       0x1E   0x65A0             STR      R0,[R4, #+88]
+   \       0x20   0x4770             BX       LR
+    793          
+    794          /***************************************************************************//**
+    795           * @brief
+    796           *   Initialize USART for synchronous mode.
+    797           *
+    798           * @details
+    799           *   This function will configure basic settings to operate in
+    800           *   synchronous mode.
+    801           *
+    802           *   A special control setup not covered by this function must be done after
+    803           *   using this function by direct modification of the CTRL register.
+    804           *
+    805           *   Notice that pins used by the USART module must be properly configured
+    806           *   by the user explicitly for the USART to work as intended.
+    807           *   (When configuring pins remember to consider the sequence of
+    808           *   configuration to avoid unintended pulses/glitches on output
+    809           *   pins.)
+    810           *
+    811           * @param[in] usart
+    812           *   A pointer to the USART peripheral register block. (UART does not support this
+    813           *   mode.)
+    814           *
+    815           * @param[in] init
+    816           *   A pointer to the initialization structure used to configure basic async setup.
+    817           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    818          void USART_InitSync(USART_TypeDef *usart, const USART_InitSync_TypeDef *init)
+    819          {
+   \                     USART_InitSync: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    820            /* Make sure the module exists on the selected chip. */
+    821            EFM_ASSERT(USART_REF_VALID(usart) || USARTRF_REF_VALID(usart) );
+    822          
+    823            /* Initialize USART registers to hardware reset state. */
+    824            USART_Reset(usart);
+   \        0x6   0x....'....        BL       USART_Reset
+    825          
+    826          #if defined(USART_EN_EN)
+    827            usart->EN_SET = USART_EN_EN;
+   \        0xA   0x2101             MOVS     R1,#+1
+   \        0xC   0xF241 0x0204      MOVW     R2,#+4100
+   \       0x10   0x50A1             STR      R1,[R4, R2]
+    828          #endif
+    829          
+    830            /* Set bits for synchronous mode. */
+    831            usart->CTRL |= (USART_CTRL_SYNC)
+    832                           | (uint32_t)init->clockMode
+    833                           | (init->msbf ? USART_CTRL_MSBF : 0);
+   \       0x12   0x7BA8             LDRB     R0,[R5, #+14]
+   \       0x14   0xB108             CBZ.N    R0,??USART_InitSync_0
+   \       0x16   0xF44F 0x6080      MOV      R0,#+1024
+   \                     ??USART_InitSync_0: (+1)
+   \       0x1A   0x68A1             LDR      R1,[R4, #+8]
+   \       0x1C   0xF9B5 0x2010      LDRSH    R2,[R5, #+16]
+   \       0x20   0x4310             ORRS     R0,R0,R2
+   \       0x22   0xF040 0x0001      ORR      R0,R0,#0x1
+   \       0x26   0x4308             ORRS     R0,R0,R1
+   \       0x28   0x60A0             STR      R0,[R4, #+8]
+    834          
+    835          #if defined(_USART_CTRL_AUTOTX_MASK)
+    836            usart->CTRL |= init->autoTx ? USART_CTRL_AUTOTX : 0;
+   \       0x2A   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x2C   0xB108             CBZ.N    R0,??USART_InitSync_1
+   \       0x2E   0xF04F 0x5000      MOV      R0,#+536870912
+   \                     ??USART_InitSync_1: (+1)
+   \       0x32   0x68A1             LDR      R1,[R4, #+8]
+   \       0x34   0x4308             ORRS     R0,R0,R1
+   \       0x36   0x60A0             STR      R0,[R4, #+8]
+    837          #endif
+    838          
+    839          #if !defined(_EFM32_GECKO_FAMILY)
+    840            if (init->prsRxEnable) {
+   \       0x38   0x7CA8             LDRB     R0,[R5, #+18]
+   \       0x3A   0xB118             CBZ.N    R0,??USART_InitSync_2
+    841              prsRxInput(usart, init->prsRxCh);
+   \       0x3C   0x7CE9             LDRB     R1,[R5, #+19]
+   \       0x3E   0x4620             MOV      R0,R4
+   \       0x40   0x....'....        BL       prsRxInput
+    842            }
+    843          #endif
+    844          
+    845            /* Configure databits, leave stopbits and parity at reset default (not used). */
+    846            usart->FRAME = (uint32_t)init->databits
+    847                           | USART_FRAME_STOPBITS_DEFAULT
+    848                           | USART_FRAME_PARITY_DEFAULT;
+   \                     ??USART_InitSync_2: (+1)
+   \       0x44   0x7B28             LDRB     R0,[R5, #+12]
+   \       0x46   0xF440 0x5080      ORR      R0,R0,#0x1000
+   \       0x4A   0x60E0             STR      R0,[R4, #+12]
+    849          
+    850            /* Configure the baudrate. */
+    851            USART_BaudrateSyncSet(usart, init->refFreq, init->baudrate);
+   \       0x4C   0x68AA             LDR      R2,[R5, #+8]
+   \       0x4E   0x6869             LDR      R1,[R5, #+4]
+   \       0x50   0x4620             MOV      R0,R4
+   \       0x52   0x....'....        BL       USART_BaudrateSyncSet
+    852          
+    853            /* Finally, enable (as specified). */
+    854            if (init->master) {
+   \       0x56   0x7B68             LDRB     R0,[R5, #+13]
+   \       0x58   0xB108             CBZ.N    R0,??USART_InitSync_3
+    855              usart->CMD = USART_CMD_MASTEREN;
+   \       0x5A   0x2110             MOVS     R1,#+16
+   \       0x5C   0x6161             STR      R1,[R4, #+20]
+    856            }
+    857          
+    858            if (init->autoCsEnable) {
+   \                     ??USART_InitSync_3: (+1)
+   \       0x5E   0x....'....        BL       ?Subroutine1
+    859              usart->CTRL |= USART_CTRL_AUTOCS;
+    860            }
+    861          #if defined(_USART_TIMING_CSHOLD_MASK)
+    862            usart->TIMING = ((init->autoCsHold << _USART_TIMING_CSHOLD_SHIFT)
+    863                             & _USART_TIMING_CSHOLD_MASK)
+    864                            | ((init->autoCsSetup << _USART_TIMING_CSSETUP_SHIFT)
+    865                               & _USART_TIMING_CSSETUP_MASK);
+    866          #endif
+    867          
+    868            usart->CMD = (uint32_t)init->enable;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x62   0x7828             LDRB     R0,[R5, #+0]
+   \       0x64   0x6160             STR      R0,[R4, #+20]
+    869          }
+   \       0x66   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    870          
+    871          /***************************************************************************//**
+    872           * @brief
+    873           *   Initialize USART for asynchronous IrDA mode.
+    874           *
+    875           * @details
+    876           *   This function will configure basic settings to operate in
+    877           *   asynchronous IrDA mode.
+    878           *
+    879           *   A special control setup not covered by this function must be done after
+    880           *   using this function by direct modification of the CTRL and IRCTRL
+    881           *   registers.
+    882           *
+    883           *   Notice that pins used by the USART/UART module must be properly configured
+    884           *   by the user explicitly for the USART/UART to work as intended.
+    885           *   (When configuring pins, remember to consider the sequence of
+    886           *   configuration to avoid unintended pulses/glitches on output
+    887           *   pins.)
+    888           *
+    889           * @param[in] usart
+    890           *   A pointer to the USART peripheral register block.
+    891           *
+    892           * @param[in] init
+    893           *   A pointer to the initialization structure used to configure async IrDA setup.
+    894           *
+    895           * @note
+    896           *   Not all USART instances support IrDA. See the data sheet for your device.
+    897           *
+    898           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    899          void USARTn_InitIrDA(USART_TypeDef *usart, const USART_InitIrDA_TypeDef *init)
+    900          {
+   \                     USARTn_InitIrDA: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    901            EFM_ASSERT(USART_IRDA_VALID(usart));
+    902          
+    903            /* Initialize USART as an async device. */
+    904            USART_InitAsync(usart, &(init->async));
+   \        0x6   0x....'....        BL       USART_InitAsync
+    905          
+    906            /* Set IrDA modulation to RZI (return-to-zero-inverted). */
+    907            usart->CTRL |= USART_CTRL_TXINV;
+   \        0xA   0x68A0             LDR      R0,[R4, #+8]
+   \        0xC   0xF440 0x4080      ORR      R0,R0,#0x4000
+   \       0x10   0x60A0             STR      R0,[R4, #+8]
+    908          
+    909            /* Invert the Rx signal before the demodulator if enabled. */
+    910            if (init->irRxInv) {
+   \       0x12   0x7F28             LDRB     R0,[R5, #+28]
+   \       0x14   0xB118             CBZ.N    R0,??USARTn_InitIrDA_0
+    911              usart->CTRL |= USART_CTRL_RXINV;
+   \       0x16   0x68A0             LDR      R0,[R4, #+8]
+   \       0x18   0xF440 0x5000      ORR      R0,R0,#0x2000
+   \       0x1C   0x60A0             STR      R0,[R4, #+8]
+    912            }
+    913          
+    914            /* Configure IrDA. */
+    915            usart->IRCTRL = (uint32_t)init->irPw
+    916                            | ((init->irFilt ? 1UL : 0UL) << _USART_IRCTRL_IRFILT_SHIFT);
+   \                     ??USARTn_InitIrDA_0: (+1)
+   \       0x1E   0x7F68             LDRB     R0,[R5, #+29]
+   \       0x20   0xB100             CBZ.N    R0,??USARTn_InitIrDA_1
+   \       0x22   0x2001             MOVS     R0,#+1
+   \                     ??USARTn_InitIrDA_1: (+1)
+   \       0x24   0x7FA9             LDRB     R1,[R5, #+30]
+   \       0x26   0xEA41 0x01C0      ORR      R1,R1,R0, LSL #+3
+   \       0x2A   0x6521             STR      R1,[R4, #+80]
+    917            if (init->irPrsEn) {
+   \       0x2C   0x7FE8             LDRB     R0,[R5, #+31]
+   \       0x2E   0xB1A0             CBZ.N    R0,??USARTn_InitIrDA_2
+    918              prsIrInput(usart, init->irPrsSel);
+   \       0x30   0xF895 0x0020      LDRB     R0,[R5, #+32]
+   \       0x34   0x....             LDR.N    R2,??DataTable6  ;; 0x40058000
+   \       0x36   0x....             LDR.N    R1,??DataTable6_7  ;; 0x40038180
+   \       0x38   0x4294             CMP      R4,R2
+   \       0x3A   0xBF08             IT       EQ 
+   \       0x3C   0x6008             STREQ    R0,[R1, #+0]
+   \       0x3E   0xD008             BEQ.N    ??USARTn_InitIrDA_3
+   \       0x40   0x....             LDR.N    R3,??DataTable6_2  ;; 0x4005c000
+   \       0x42   0x429C             CMP      R4,R3
+   \       0x44   0xBF08             IT       EQ 
+   \       0x46   0x6108             STREQ    R0,[R1, #+16]
+   \       0x48   0xD003             BEQ.N    ??USARTn_InitIrDA_3
+   \       0x4A   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40060000
+   \       0x4C   0x4294             CMP      R4,R2
+   \       0x4E   0xBF08             IT       EQ 
+   \       0x50   0x6208             STREQ    R0,[R1, #+32]
+   \                     ??USARTn_InitIrDA_3: (+1)
+   \       0x52   0x6D20             LDR      R0,[R4, #+80]
+   \       0x54   0xF040 0x0080      ORR      R0,R0,#0x80
+   \       0x58   0x6520             STR      R0,[R4, #+80]
+    919            }
+    920          
+    921            /* Enable IrDA. */
+    922            usart->IRCTRL |= USART_IRCTRL_IREN;
+   \                     ??USARTn_InitIrDA_2: (+1)
+   \       0x5A   0x6D20             LDR      R0,[R4, #+80]
+   \       0x5C   0xF040 0x0001      ORR      R0,R0,#0x1
+   \       0x60   0x6520             STR      R0,[R4, #+80]
+    923          }
+   \       0x62   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    924          
+    925          #if defined(_USART_I2SCTRL_MASK)
+    926          /***************************************************************************//**
+    927           * @brief
+    928           *   Initialize USART for I2S mode.
+    929           *
+    930           * @details
+    931           *   This function will configure basic settings to operate in I2S
+    932           *   mode.
+    933           *
+    934           *   A special control setup not covered by this function must be done after
+    935           *   using this function by direct modification of the CTRL and I2SCTRL
+    936           *   registers.
+    937           *
+    938           *   Notice that pins used by the USART module must be properly configured
+    939           *   by the user explicitly for the USART to work as intended.
+    940           *   (When configuring pins, remember to consider the sequence of
+    941           *   configuration to avoid unintended pulses/glitches on output
+    942           *   pins.)
+    943           *
+    944           * @param[in] usart
+    945           *   A pointer to the USART peripheral register block. (UART does not support this
+    946           *   mode.)
+    947           *
+    948           * @param[in] init
+    949           *   A pointer to the initialization structure used to configure the basic I2S setup.
+    950           *
+    951           * @note
+    952           *   This function does not apply to all USART's. See the chip Reference Manual.
+    953           *
+    954           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    955          void USART_InitI2s(USART_TypeDef *usart, USART_InitI2s_TypeDef *init)
+    956          {
+   \                     USART_InitI2s: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460E             MOV      R6,R1
+    957            USART_Enable_TypeDef enable;
+    958          
+    959            /* Make sure the module exists on the selected chip. */
+    960            EFM_ASSERT(USART_I2S_VALID(usart));
+    961          
+    962            /* Override the enable setting. */
+    963            enable            = init->sync.enable;
+   \        0x6   0x7835             LDRB     R5,[R6, #+0]
+    964            init->sync.enable = usartDisable;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x7030             STRB     R0,[R6, #+0]
+    965          
+    966            /* Initialize USART as a sync device. */
+    967            USART_InitSync(usart, &init->sync);
+   \        0xC   0x4620             MOV      R0,R4
+   \        0xE   0x....'....        BL       USART_InitSync
+    968          
+    969            /* Configure and enable I2CCTRL register according to the selected mode. */
+    970            usart->I2SCTRL = (uint32_t)init->format
+    971                             | (uint32_t)init->justify
+    972                             | (init->delay    ? USART_I2SCTRL_DELAY    : 0)
+    973                             | (init->dmaSplit ? USART_I2SCTRL_DMASPLIT : 0)
+    974                             | (init->mono     ? USART_I2SCTRL_MONO     : 0)
+    975                             | USART_I2SCTRL_EN;
+   \       0x12   0x7EB0             LDRB     R0,[R6, #+26]
+   \       0x14   0xF9B6 0x7018      LDRSH    R7,[R6, #+24]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0x7EF0             LDRB     R0,[R6, #+27]
+   \       0x1C   0xBF14             ITE      NE 
+   \       0x1E   0x2110             MOVNE    R1,#+16
+   \       0x20   0x2100             MOVEQ    R1,#+0
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0x7F70             LDRB     R0,[R6, #+29]
+   \       0x26   0xBF14             ITE      NE 
+   \       0x28   0x2208             MOVNE    R2,#+8
+   \       0x2A   0x2200             MOVEQ    R2,#+0
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0x7F30             LDRB     R0,[R6, #+28]
+   \       0x30   0xBF14             ITE      NE 
+   \       0x32   0x2302             MOVNE    R3,#+2
+   \       0x34   0x2300             MOVEQ    R3,#+0
+   \       0x36   0x4307             ORRS     R7,R0,R7
+   \       0x38   0x4339             ORRS     R1,R1,R7
+   \       0x3A   0x4311             ORRS     R1,R2,R1
+   \       0x3C   0x4319             ORRS     R1,R3,R1
+   \       0x3E   0xF041 0x0101      ORR      R1,R1,#0x1
+   \       0x42   0x6561             STR      R1,[R4, #+84]
+    976          
+    977            if (enable != usartDisable) {
+   \       0x44   0x0029             MOVS     R1,R5
+   \       0x46   0xD003             BEQ.N    ??USART_InitI2s_0
+    978              USART_Enable(usart, enable);
+   \       0x48   0x4620             MOV      R0,R4
+   \       0x4A   0xE8BD 0x40F4      POP      {R2,R4-R7,LR}
+   \       0x4E   0x....             B.N      USART_Enable
+    979            }
+    980          }
+   \                     ??USART_InitI2s_0: (+1)
+   \       0x50   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    981          #endif
+    982          
+    983          /***************************************************************************//**
+    984           * @brief
+    985           *   Initialize the automatic transmissions using PRS channel as a trigger.
+    986           * @note
+    987           *   Initialize USART with USART_Init() before setting up the PRS configuration.
+    988           *
+    989           * @param[in] usart A pointer to USART to configure.
+    990           * @param[in] init A pointer to the initialization structure.
+    991           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    992          void USART_InitPrsTrigger(USART_TypeDef *usart, const USART_PrsTriggerInit_TypeDef *init)
+    993          {
+   \                     USART_InitPrsTrigger: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    994            uint32_t trigctrl;
+    995          
+    996            prsTriggerInput(usart, init->prsTriggerChannel);
+   \        0x2   0x78CA             LDRB     R2,[R1, #+3]
+   \        0x4   0x....             LDR.N    R4,??DataTable6  ;; 0x40058000
+   \        0x6   0x....             LDR.N    R3,??DataTable6_8  ;; 0x40038188
+   \        0x8   0x42A0             CMP      R0,R4
+   \        0xA   0xBF08             IT       EQ 
+   \        0xC   0x601A             STREQ    R2,[R3, #+0]
+   \        0xE   0xD008             BEQ.N    ??USART_InitPrsTrigger_0
+   \       0x10   0x....             LDR.N    R5,??DataTable6_2  ;; 0x4005c000
+   \       0x12   0x42A8             CMP      R0,R5
+   \       0x14   0xBF08             IT       EQ 
+   \       0x16   0x611A             STREQ    R2,[R3, #+16]
+   \       0x18   0xD003             BEQ.N    ??USART_InitPrsTrigger_0
+   \       0x1A   0x....             LDR.N    R4,??DataTable6_3  ;; 0x40060000
+   \       0x1C   0x42A0             CMP      R0,R4
+   \       0x1E   0xBF08             IT       EQ 
+   \       0x20   0x621A             STREQ    R2,[R3, #+32]
+    997            /* Clear values that will be reconfigured. */
+    998            trigctrl = usart->TRIGCTRL & ~(_USART_TRIGCTRL_RXTEN_MASK
+    999                                           | _USART_TRIGCTRL_TXTEN_MASK
+   1000          #if defined(USART_TRIGCTRL_AUTOTXTEN)
+   1001                                           | _USART_TRIGCTRL_AUTOTXTEN_MASK
+   1002          #endif
+   1003                                           );
+   \                     ??USART_InitPrsTrigger_0: (+1)
+   \       0x22   0x6903             LDR      R3,[R0, #+16]
+   1004          
+   1005          #if defined(USART_TRIGCTRL_AUTOTXTEN)
+   1006            if (init->autoTxTriggerEnable) {
+   \       0x24   0x780A             LDRB     R2,[R1, #+0]
+   \       0x26   0xF023 0x0370      BIC      R3,R3,#0x70
+   \       0x2A   0xB10A             CBZ.N    R2,??USART_InitPrsTrigger_1
+   1007              trigctrl |= USART_TRIGCTRL_AUTOTXTEN;
+   \       0x2C   0xF043 0x0340      ORR      R3,R3,#0x40
+   1008            }
+   1009          #endif
+   1010            if (init->txTriggerEnable) {
+   \                     ??USART_InitPrsTrigger_1: (+1)
+   \       0x30   0x788A             LDRB     R2,[R1, #+2]
+   \       0x32   0xB10A             CBZ.N    R2,??USART_InitPrsTrigger_2
+   1011              trigctrl |= USART_TRIGCTRL_TXTEN;
+   \       0x34   0xF043 0x0320      ORR      R3,R3,#0x20
+   1012            }
+   1013            if (init->rxTriggerEnable) {
+   \                     ??USART_InitPrsTrigger_2: (+1)
+   \       0x38   0x7849             LDRB     R1,[R1, #+1]
+   \       0x3A   0xB109             CBZ.N    R1,??USART_InitPrsTrigger_3
+   1014              trigctrl |= USART_TRIGCTRL_RXTEN;
+   \       0x3C   0xF043 0x0310      ORR      R3,R3,#0x10
+   1015            }
+   1016            usart->TRIGCTRL = trigctrl;
+   \                     ??USART_InitPrsTrigger_3: (+1)
+   \       0x40   0x6103             STR      R3,[R0, #+16]
+   1017          }
+   \       0x42   0xBD30             POP      {R4,R5,PC}       ;; return
+   1018          
+   1019          /***************************************************************************//**
+   1020           * @brief
+   1021           *   Reset USART/UART to the same state that it was in after a hardware reset.
+   1022           *
+   1023           * @param[in] usart
+   1024           *   A pointer to USART/UART peripheral register block.
+   1025           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1026          void USART_Reset(USART_TypeDef *usart)
+   1027          {
+   \                     USART_Reset: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   1028            /* Make sure the module exists on the selected chip. */
+   1029            EFM_ASSERT(USART_REF_VALID(usart)
+   1030                       || USARTRF_REF_VALID(usart)
+   1031                       || UART_REF_VALID(usart) );
+   1032          
+   1033          #if defined(USART_EN_EN)
+   1034            usart->EN_SET = USART_EN_EN;
+   \        0x2   0x2101             MOVS     R1,#+1
+   \        0x4   0xF241 0x0204      MOVW     R2,#+4100
+   \        0x8   0x5081             STR      R1,[R0, R2]
+   1035            /* Make sure disabled first, before resetting other registers. */
+   1036            usart->CMD = USART_CMD_RXDIS | USART_CMD_TXDIS | USART_CMD_MASTERDIS
+   1037                         | USART_CMD_RXBLOCKDIS | USART_CMD_TXTRIDIS | USART_CMD_CLEARTX
+   1038                         | USART_CMD_CLEARRX;
+   \        0xA   0xF640 0x63AA      MOVW     R3,#+3754
+   \        0xE   0x6143             STR      R3,[R0, #+20]
+   1039          
+   1040            usart->CTRL      = _USART_CTRL_RESETVALUE;
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0x6081             STR      R1,[R0, #+8]
+   1041            usart->CTRLX     = _USART_CTRLX_RESETVALUE;
+   \       0x14   0x2200             MOVS     R2,#+0
+   \       0x16   0x65C2             STR      R2,[R0, #+92]
+   1042            usart->FRAME     = _USART_FRAME_RESETVALUE;
+   \       0x18   0xF241 0x0105      MOVW     R1,#+4101
+   \       0x1C   0x60C1             STR      R1,[R0, #+12]
+   1043            usart->TRIGCTRL  = _USART_TRIGCTRL_RESETVALUE;
+   \       0x1E   0x6102             STR      R2,[R0, #+16]
+   1044            usart->CLKDIV    = _USART_CLKDIV_RESETVALUE;
+   \       0x20   0x61C2             STR      R2,[R0, #+28]
+   1045            usart->IEN       = _USART_IEN_RESETVALUE;
+   1046            usart->IF_CLR    = _USART_IF_MASK;
+   \       0x22   0xF242 0x0104      MOVW     R1,#+8196
+   \       0x26   0x64C2             STR      R2,[R0, #+76]
+   \       0x28   0x4401             ADD      R1,R0,R1
+   \       0x2A   0x....             LDR.N    R3,??DataTable6_9  ;; 0x1ffff
+   1047            usart->TIMING    = _USART_TIMING_RESETVALUE;
+   1048          
+   1049            if (USART_IRDA_VALID(usart)) {
+   \       0x2C   0x....             LDR.N    R4,??DataTable6  ;; 0x40058000
+   \       0x2E   0x644B             STR      R3,[R1, #+68]
+   \       0x30   0x....             LDR.N    R3,??DataTable6_2  ;; 0x4005c000
+   \       0x32   0x42A0             CMP      R0,R4
+   \       0x34   0x6582             STR      R2,[R0, #+88]
+   \       0x36   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40060000
+   \       0x38   0xBF1C             ITT      NE 
+   \       0x3A   0x4298             CMPNE    R0,R3
+   \       0x3C   0x4290             CMPNE    R0,R2
+   \       0x3E   0xD105             BNE.N    ??USART_Reset_0
+   1050              usart->IRCTRL = _USART_IRCTRL_RESETVALUE;
+   \       0x40   0x2500             MOVS     R5,#+0
+   1051            }
+   1052          
+   1053            if (USART_I2S_VALID(usart)) {
+   \       0x42   0x42A0             CMP      R0,R4
+   \       0x44   0x6505             STR      R5,[R0, #+80]
+   \       0x46   0xBF18             IT       NE 
+   \       0x48   0x4298             CMPNE    R0,R3
+   \       0x4A   0xD001             BEQ.N    ??USART_Reset_1
+   \                     ??USART_Reset_0: (+1)
+   \       0x4C   0x4290             CMP      R0,R2
+   \       0x4E   0xD101             BNE.N    ??USART_Reset_2
+   1054              usart->I2SCTRL = _USART_I2SCTRL_RESETVALUE;
+   \                     ??USART_Reset_1: (+1)
+   \       0x50   0x2200             MOVS     R2,#+0
+   \       0x52   0x6542             STR      R2,[R0, #+84]
+   1055            }
+   1056            usart->EN_CLR = USART_EN_EN;
+   \                     ??USART_Reset_2: (+1)
+   \       0x54   0x2001             MOVS     R0,#+1
+   \       0x56   0x6008             STR      R0,[R1, #+0]
+   1057          
+   1058          #else
+   1059            /* Make sure disabled first, before resetting other registers */
+   1060            usart->CMD = USART_CMD_RXDIS | USART_CMD_TXDIS | USART_CMD_MASTERDIS
+   1061                         | USART_CMD_RXBLOCKDIS | USART_CMD_TXTRIDIS | USART_CMD_CLEARTX
+   1062                         | USART_CMD_CLEARRX;
+   1063          
+   1064            usart->CTRL      = _USART_CTRL_RESETVALUE;
+   1065            usart->FRAME     = _USART_FRAME_RESETVALUE;
+   1066            usart->TRIGCTRL  = _USART_TRIGCTRL_RESETVALUE;
+   1067            usart->CLKDIV    = _USART_CLKDIV_RESETVALUE;
+   1068            usart->IEN       = _USART_IEN_RESETVALUE;
+   1069            usart->IFC       = _USART_IFC_MASK;
+   1070          #if defined(_USART_TIMING_MASK)
+   1071            usart->TIMING    = _USART_TIMING_RESETVALUE;
+   1072          #endif
+   1073          #if defined(_USART_ROUTEPEN_MASK) || defined(_UART_ROUTEPEN_MASK)
+   1074            usart->ROUTEPEN  = _USART_ROUTEPEN_RESETVALUE;
+   1075            usart->ROUTELOC0 = _USART_ROUTELOC0_RESETVALUE;
+   1076            usart->ROUTELOC1 = _USART_ROUTELOC1_RESETVALUE;
+   1077          #else
+   1078            usart->ROUTE     = _USART_ROUTE_RESETVALUE;
+   1079          #endif
+   1080          
+   1081            if (USART_IRDA_VALID(usart)) {
+   1082              usart->IRCTRL = _USART_IRCTRL_RESETVALUE;
+   1083            }
+   1084          
+   1085          #if defined(_USART_INPUT_RESETVALUE)
+   1086            usart->INPUT = _USART_INPUT_RESETVALUE;
+   1087          #endif
+   1088          
+   1089          #if defined(_USART_I2SCTRL_RESETVALUE)
+   1090            if (USART_I2S_VALID(usart)) {
+   1091              usart->I2SCTRL = _USART_I2SCTRL_RESETVALUE;
+   1092            }
+   1093          #endif
+   1094          #endif
+   1095          }
+   \       0x58   0xBD30             POP      {R4,R5,PC}       ;; return
+   1096          
+   1097          /***************************************************************************//**
+   1098           * @brief
+   1099           *   Receive one 4-8 bit frame, (or part of 10-16 bit frame).
+   1100           *
+   1101           * @details
+   1102           *   This function is normally used to receive one frame when operating with
+   1103           *   frame length 4-8 bits. See @ref USART_RxExt() for reception of
+   1104           *   9 bit frames.
+   1105           *
+   1106           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1107           *   considered part of a specified frame bit length.
+   1108           *
+   1109           * @note
+   1110           *   This function will stall if the buffer is empty until data is received.
+   1111           *   Alternatively, the user can explicitly check whether data is available.
+   1112           *   If data is available, call @ref USART_RxDataGet() to read the RXDATA
+   1113           *   register directly.
+   1114           *
+   1115           * @param[in] usart
+   1116           *   A pointer to the USART/UART peripheral register block.
+   1117           *
+   1118           * @return
+   1119           *   Data received.
+   1120           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1121          uint8_t USART_Rx(USART_TypeDef *usart)
+   1122          {
+   1123            while (!(usart->STATUS & USART_STATUS_RXDATAV)) {
+   \                     USART_Rx: (+1)
+   \                     ??USART_Rx_0: (+1)
+   \        0x0   0x6981             LDR      R1,[R0, #+24]
+   \        0x2   0x060A             LSLS     R2,R1,#+24
+   \        0x4   0xD5FC             BPL.N    ??USART_Rx_0
+   1124            }
+   1125          
+   1126            return (uint8_t)usart->RXDATA;
+   \        0x6   0x....             B.N      ?Subroutine0
+   1127          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x6A40             LDR      R0,[R0, #+36]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+   1128          
+   1129          /***************************************************************************//**
+   1130           * @brief
+   1131           *   Receive two 4-8 bit frames or one 10-16 bit frame.
+   1132           *
+   1133           * @details
+   1134           *   This function is normally used to receive one frame when operating with
+   1135           *   frame length 10-16 bits. See @ref USART_RxDoubleExt() for
+   1136           *   reception of two 9 bit frames.
+   1137           *
+   1138           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1139           *   considered part of a specified frame bit length.
+   1140           *
+   1141           * @note
+   1142           *   This function will stall if the buffer is empty until data is received.
+   1143           *   Alternatively, the user can explicitly check whether data is available.
+   1144           *   If data is available, call @ref USART_RxDoubleGet() to read the RXDOUBLE
+   1145           *   register directly.
+   1146           *
+   1147           * @param[in] usart
+   1148           *   A pointer to the USART/UART peripheral register block.
+   1149           *
+   1150           * @return
+   1151           *   Data received.
+   1152           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1153          uint16_t USART_RxDouble(USART_TypeDef *usart)
+   1154          {
+   1155            while (!(usart->STATUS & USART_STATUS_RXFULL)) {
+   \                     USART_RxDouble: (+1)
+   \                     ??USART_RxDouble_0: (+1)
+   \        0x0   0x6981             LDR      R1,[R0, #+24]
+   \        0x2   0x05CA             LSLS     R2,R1,#+23
+   \        0x4   0xD5FC             BPL.N    ??USART_RxDouble_0
+   1156            }
+   1157          
+   1158            return (uint16_t)usart->RXDOUBLE;
+   \        0x6   0x6AC0             LDR      R0,[R0, #+44]
+   \        0x8   0xB280             UXTH     R0,R0
+   \        0xA   0x4770             BX       LR               ;; return
+   1159          }
+   1160          
+   1161          /***************************************************************************//**
+   1162           * @brief
+   1163           *   Receive two 4-9 bit frames, or one 10-16 bit frame with extended
+   1164           *   information.
+   1165           *
+   1166           * @details
+   1167           *   This function is normally used to receive one frame when operating with
+   1168           *   frame length 10-16 bits and additional RX status information is required.
+   1169           *
+   1170           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1171           *   considered part of a specified frame bit length.
+   1172           *
+   1173           * @note
+   1174           *   This function will stall if buffer is empty until data is received.
+   1175           *   Alternatively, the user can explicitly check whether data is available.
+   1176           *   If data is available, call @ref USART_RxDoubleXGet() to read the RXDOUBLEX
+   1177           *   register directly.
+   1178           *
+   1179           * @param[in] usart
+   1180           *   A pointer to the USART/UART peripheral register block.
+   1181           *
+   1182           * @return
+   1183           *   Data received.
+   1184           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1185          uint32_t USART_RxDoubleExt(USART_TypeDef *usart)
+   1186          {
+   1187            while (!(usart->STATUS & USART_STATUS_RXFULL)) {
+   \                     USART_RxDoubleExt: (+1)
+   \                     ??USART_RxDoubleExt_0: (+1)
+   \        0x0   0x6981             LDR      R1,[R0, #+24]
+   \        0x2   0x05CA             LSLS     R2,R1,#+23
+   \        0x4   0xD5FC             BPL.N    ??USART_RxDoubleExt_0
+   1188            }
+   1189          
+   1190            return usart->RXDOUBLEX;
+   \        0x6   0x6A80             LDR      R0,[R0, #+40]
+   \        0x8   0x4770             BX       LR               ;; return
+   1191          }
+   1192          
+   1193          /***************************************************************************//**
+   1194           * @brief
+   1195           *   Receive one 4-9 bit frame (or part of 10-16 bit frame) with extended
+   1196           *   information.
+   1197           *
+   1198           * @details
+   1199           *   This function is normally used to receive one frame when operating with
+   1200           *   frame length 4-9 bits and additional RX status information is required.
+   1201           *
+   1202           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1203           *   considered part of a specified frame bit length.
+   1204           *
+   1205           * @note
+   1206           *   This function will stall if the buffer is empty until data is received.
+   1207           *   Alternatively, the user can explicitly check whether data is available.
+   1208           *   If data is available, call @ref USART_RxDataXGet() to read the RXDATAX
+   1209           *   register directly.
+   1210           *
+   1211           * @param[in] usart
+   1212           *   A pointer to the USART/UART peripheral register block.
+   1213           *
+   1214           * @return
+   1215           *   Data received.
+   1216           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1217          uint16_t USART_RxExt(USART_TypeDef *usart)
+   1218          {
+   1219            while (!(usart->STATUS & USART_STATUS_RXDATAV)) {
+   \                     USART_RxExt: (+1)
+   \                     ??USART_RxExt_0: (+1)
+   \        0x0   0x6981             LDR      R1,[R0, #+24]
+   \        0x2   0x060A             LSLS     R2,R1,#+24
+   \        0x4   0xD5FC             BPL.N    ??USART_RxExt_0
+   1220            }
+   1221          
+   1222            return (uint16_t)usart->RXDATAX;
+   \        0x6   0x6A00             LDR      R0,[R0, #+32]
+   \        0x8   0xB280             UXTH     R0,R0
+   \        0xA   0x4770             BX       LR               ;; return
+   1223          }
+   1224          
+   1225          /***************************************************************************//**
+   1226           * @brief
+   1227           *   Perform one 8 bit frame SPI transfer.
+   1228           *
+   1229           * @note
+   1230           *   This function will stall if the transmit buffer is full. When a transmit
+   1231           *   buffer becomes available, data is written and the function will wait until
+   1232           *   data is fully transmitted. The SPI return value is then read out and
+   1233           *   returned.
+   1234           *
+   1235           * @param[in] usart
+   1236           *   A pointer to the USART peripheral register block.
+   1237           *
+   1238           * @param[in] data
+   1239           *   Data to transmit.
+   1240           *
+   1241           * @return
+   1242           *   Data received.
+   1243           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1244          uint8_t USART_SpiTransfer(USART_TypeDef *usart, uint8_t data)
+   1245          {
+   1246            while (!(usart->STATUS & USART_STATUS_TXBL)) {
+   \                     USART_SpiTransfer: (+1)
+   \                     ??USART_SpiTransfer_0: (+1)
+   \        0x0   0x6982             LDR      R2,[R0, #+24]
+   \        0x2   0x0653             LSLS     R3,R2,#+25
+   \        0x4   0xD5FC             BPL.N    ??USART_SpiTransfer_0
+   1247            }
+   1248            usart->TXDATA = (uint32_t)data;
+   \        0x6   0x63C1             STR      R1,[R0, #+60]
+   1249            while (!(usart->STATUS & USART_STATUS_TXC)) {
+   \                     ??USART_SpiTransfer_1: (+1)
+   \        0x8   0x6981             LDR      R1,[R0, #+24]
+   \        0xA   0x068A             LSLS     R2,R1,#+26
+   \        0xC   0xD5FC             BPL.N    ??USART_SpiTransfer_1
+   1250            }
+   1251            return (uint8_t)usart->RXDATA;
+   \        0xE                      REQUIRE ?Subroutine0
+   \        0xE                      ;; // Fall through to label ?Subroutine0
+   1252          }
+   1253          
+   1254          /***************************************************************************//**
+   1255           * @brief
+   1256           *   Transmit one 4-9 bit frame.
+   1257           *
+   1258           * @details
+   1259           *   Depending on the frame length configuration, 4-8 (least significant) bits from
+   1260           *   @p data are transmitted. If the frame length is 9, 8 bits are transmitted from
+   1261           *   @p data and one bit as specified by CTRL register, BIT8DV field.
+   1262           *   See USART_TxExt() for transmitting 9 bit frame with full control of
+   1263           *   all 9 bits.
+   1264           *
+   1265           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1266           *   considered part of a specified frame bit length.
+   1267           *
+   1268           * @note
+   1269           *   This function will stall if the buffer is full until the buffer becomes available.
+   1270           *
+   1271           * @param[in] usart
+   1272           *   A pointer to the USART/UART peripheral register block.
+   1273           *
+   1274           * @param[in] data
+   1275           *   Data to transmit. See details above for more information.
+   1276           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1277          void USART_Tx(USART_TypeDef *usart, uint8_t data)
+   1278          {
+   1279            /* Check that transmit buffer is empty */
+   1280            while (!(usart->STATUS & USART_STATUS_TXBL)) {
+   \                     USART_Tx: (+1)
+   \                     ??USART_Tx_0: (+1)
+   \        0x0   0x6982             LDR      R2,[R0, #+24]
+   \        0x2   0x0653             LSLS     R3,R2,#+25
+   \        0x4   0xD5FC             BPL.N    ??USART_Tx_0
+   1281            }
+   1282            usart->TXDATA = (uint32_t)data;
+   \        0x6   0x63C1             STR      R1,[R0, #+60]
+   1283          }
+   \        0x8   0x4770             BX       LR               ;; return
+   1284          
+   1285          /***************************************************************************//**
+   1286           * @brief
+   1287           *   Transmit two 4-9 bit frames or one 10-16 bit frame.
+   1288           *
+   1289           * @details
+   1290           *   Depending on the frame length configuration, 4-8 (least significant) bits from
+   1291           *   each byte in @p data are transmitted. If frame length is 9, 8 bits are
+   1292           *   transmitted from each byte in @p data adding one bit as specified by the CTRL
+   1293           *   register, BIT8DV field, to each byte. See USART_TxDoubleExt()
+   1294           *   for transmitting two 9 bit frames with full control of all 9 bits.
+   1295           *
+   1296           *   If the frame length is 10-16, 10-16 (least significant) bits from @p data
+   1297           *   are transmitted.
+   1298           *
+   1299           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1300           *   considered part of a specified frame bit length.
+   1301           *
+   1302           * @note
+   1303           *   This function will stall if the buffer is full until the buffer becomes available.
+   1304           *
+   1305           * @param[in] usart
+   1306           *   A pointer to the USART/UART peripheral register block.
+   1307           *
+   1308           * @param[in] data
+   1309           *   Data to transmit, the least significant byte holds the frame transmitted
+   1310           *   first. See details above for more info.
+   1311           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1312          void USART_TxDouble(USART_TypeDef *usart, uint16_t data)
+   1313          {
+   1314            /* Check that transmit buffer is empty */
+   1315            while (!(usart->STATUS & USART_STATUS_TXBL)) {
+   \                     USART_TxDouble: (+1)
+   \                     ??USART_TxDouble_0: (+1)
+   \        0x0   0x6982             LDR      R2,[R0, #+24]
+   \        0x2   0x0653             LSLS     R3,R2,#+25
+   \        0x4   0xD5FC             BPL.N    ??USART_TxDouble_0
+   1316            }
+   1317            usart->TXDOUBLE = (uint32_t)data;
+   \        0x6   0x6441             STR      R1,[R0, #+68]
+   1318          }
+   \        0x8   0x4770             BX       LR               ;; return
+   1319          
+   1320          /***************************************************************************//**
+   1321           * @brief
+   1322           *   Transmit two 4-9 bit frames or one 10-16 bit frame with extended control.
+   1323           *
+   1324           * @details
+   1325           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1326           *   considered part of a specified frame bit length.
+   1327           *
+   1328           * @note
+   1329           *   This function will stall if the buffer is full until the buffer becomes available.
+   1330           *
+   1331           * @param[in] usart
+   1332           *   A pointer to the USART/UART peripheral register block.
+   1333           *
+   1334           * @param[in] data
+   1335           *   Data to transmit with extended control. Contains two 16 bit words
+   1336           *   concatenated. Least significant word holds the frame transmitted first. If the frame
+   1337           *   length is 4-9, two frames with 4-9 least significant bits from each 16 bit
+   1338           *   word are transmitted.
+   1339           * @par
+   1340           *   If the frame length is 10-16 bits, 8 data bits are taken from the least
+   1341           *   significant 16 bit word and the remaining bits from the other 16 bit word.
+   1342           * @par
+   1343           *   Additional control bits are available as documented in the reference
+   1344           *   manual (set to 0 if not used). For 10-16 bit frame length, these control
+   1345           *   bits are taken from the most significant 16 bit word.
+   1346           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1347          void USART_TxDoubleExt(USART_TypeDef *usart, uint32_t data)
+   1348          {
+   1349            /* Check that transmit buffer is empty. */
+   1350            while (!(usart->STATUS & USART_STATUS_TXBL)) {
+   \                     USART_TxDoubleExt: (+1)
+   \                     ??USART_TxDoubleExt_0: (+1)
+   \        0x0   0x6982             LDR      R2,[R0, #+24]
+   \        0x2   0x0653             LSLS     R3,R2,#+25
+   \        0x4   0xD5FC             BPL.N    ??USART_TxDoubleExt_0
+   1351            }
+   1352            usart->TXDOUBLEX = data;
+   \        0x6   0x6401             STR      R1,[R0, #+64]
+   1353          }
+   \        0x8   0x4770             BX       LR               ;; return
+   1354          
+   1355          /***************************************************************************//**
+   1356           * @brief
+   1357           *   Transmit one 4-9 bit frame with extended control.
+   1358           *
+   1359           * @details
+   1360           *   Notice that possible parity/stop bits in asynchronous mode are not
+   1361           *   considered part of a specified frame bit length.
+   1362           *
+   1363           * @note
+   1364           *   This function will stall if the buffer is full until the buffer becomes available.
+   1365           *
+   1366           * @param[in] usart
+   1367           *   A pointer to the USART/UART peripheral register block.
+   1368           *
+   1369           * @param[in] data
+   1370           *   Data to transmit with extended control. Least significant bit contains
+   1371           *   frame bits. Additional control bits are available as documented in
+   1372           *   the reference manual (set to 0 if not used).
+   1373           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1374          void USART_TxExt(USART_TypeDef *usart, uint16_t data)
+   1375          {
+   1376            /* Check that the transmit buffer is empty. */
+   1377            while (!(usart->STATUS & USART_STATUS_TXBL)) {
+   \                     USART_TxExt: (+1)
+   \                     ??USART_TxExt_0: (+1)
+   \        0x0   0x6982             LDR      R2,[R0, #+24]
+   \        0x2   0x0653             LSLS     R3,R2,#+25
+   \        0x4   0xD5FC             BPL.N    ??USART_TxExt_0
+   1378            }
+   1379            usart->TXDATAX = (uint32_t)data;
+   \        0x6   0x6381             STR      R1,[R0, #+56]
+   1380          }
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x4005'8000        DC32     0x40058000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x4003'8184        DC32     0x40038184
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x4005'C000        DC32     0x4005c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x4006'0000        DC32     0x40060000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x007F'FFF8        DC32     0x7ffff8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x4003'D58C        DC32     0x4003d58c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x4003'E58C        DC32     0x4003e58c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x4003'8180        DC32     0x40038180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x4003'8188        DC32     0x40038188
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x0001'FFFF        DC32     0x1ffff
+   1381          
+   1382          /** @} (end addtogroup USART) */
+   1383          /** @} (end addtogroup emlib) */
+   1384          #endif /* defined(USART_COUNT) && (USART_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   USART_BaudrateAsyncSet
+        16   -> CMU_ClockFreqGet
+      20   USART_BaudrateCalc
+        20 __aeabi_uldivmod
+      16   USART_BaudrateGet
+        16   -> CMU_ClockFreqGet
+         0   -> USART_BaudrateCalc
+      16   USART_BaudrateSyncSet
+        16   -> CMU_ClockFreqGet
+       0   USART_Enable
+      16   USART_InitAsync
+        16   -> USART_BaudrateAsyncSet
+        16   -> USART_Reset
+        16   -> prsRxInput
+      24   USART_InitI2s
+         0   -> USART_Enable
+        24   -> USART_InitSync
+      12   USART_InitPrsTrigger
+      16   USART_InitSync
+        16   -> USART_BaudrateSyncSet
+        16   -> USART_Reset
+        16   -> prsRxInput
+      12   USART_Reset
+       0   USART_Rx
+       0   USART_RxDouble
+       0   USART_RxDoubleExt
+       0   USART_RxExt
+       0   USART_SpiTransfer
+       0   USART_Tx
+       0   USART_TxDouble
+       0   USART_TxDoubleExt
+       0   USART_TxExt
+      16   USARTn_InitIrDA
+        16   -> USART_InitAsync
+       8   prsRxInput
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+       6  ?Subroutine0
+      34  ?Subroutine1
+      10  ?Subroutine2
+      90  USART_BaudrateAsyncSet
+      96  USART_BaudrateCalc
+      32  USART_BaudrateGet
+      30  USART_BaudrateSyncSet
+      32  USART_Enable
+     150  USART_InitAsync
+      82  USART_InitI2s
+      68  USART_InitPrsTrigger
+     104  USART_InitSync
+      90  USART_Reset
+       8  USART_Rx
+      12  USART_RxDouble
+      10  USART_RxDoubleExt
+      12  USART_RxExt
+      14  USART_SpiTransfer
+      10  USART_Tx
+      10  USART_TxDouble
+      10  USART_TxDoubleExt
+      10  USART_TxExt
+     100  USARTn_InitIrDA
+      50  prsRxInput
+
+ 
+ 1 110 bytes in section .text
+ 
+ 1 110 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,2935 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:31
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\util\serial\command-interpreter2.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW232.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\util\serial\command-interpreter2.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"command-interpreter2.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\util\serial\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\command-interpreter2.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\command-interpreter2.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\util\serial\command-interpreter2.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief processes commands incoming over the serial port.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include PLATFORM_HEADER
+     19          
+     20          #ifdef EZSP_HOST
+     21          // Includes needed for ember related functions for the EZSP host
+     22            #include "stack/include/error.h"
+     23            #include "stack/include/ember-types.h"
+     24            #include "app/util/ezsp/ezsp-protocol.h"
+     25            #include "app/util/ezsp/ezsp.h"
+     26            #include "app/util/ezsp/serial-interface.h"
+     27          extern uint8_t emberEndpointCount;
+     28          #else
+     29            #include "stack/include/ember.h"
+     30            #include "hal/micro/token.h"
+     31          #endif
+     32          
+     33          #include "hal/hal.h"
+     34          #include "plugin/serial/serial.h"
+     35          #include "app/util/serial/command-interpreter2.h"
+     36          #include "stack/include/event.h"
+     37          
+     38          #define ASCII_0 48u  // for MISRA
+     39          
+     40          #if defined(EMBER_REQUIRE_FULL_COMMAND_NAME) \
+     41            || defined(EMBER_REQUIRE_EXACT_COMMAND_NAME)
+     42            #undef EMBER_REQUIRE_EXACT_COMMAND_NAME
+     43            #define EMBER_REQUIRE_EXACT_COMMAND_NAME true
+     44          #else
+     45            #define EMBER_REQUIRE_EXACT_COMMAND_NAME false
+     46          #endif
+     47          
+     48          #if !defined APP_SERIAL
+     49          extern uint8_t serialPort;
+     50            #define APP_SERIAL serialPort
+     51          #endif
+     52          
+     53          #if defined EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD
+     54            #define printIfEntryHasDescription(entry, ...) \
+     55            if ((entry)->description != NULL) {            \
+     56              emberSerialPrintf(APP_SERIAL,                \
+     57                                __VA_ARGS__);              \
+     58            }
+     59            #define printIfEntryHasArgumentDescriptions(entry, ...) \
+     60            if ((entry)->argumentDescriptions != NULL) {            \
+     61              emberSerialPrintf(APP_SERIAL,                         \
+     62                                __VA_ARGS__);                       \
+     63            }
+     64          #else
+     65            #define printIfEntryHasDescription(entry, ...)
+     66            #define printIfEntryHasArgumentDescriptions(entry, ...)
+     67          #endif
+     68          
+     69          //------------------------------------------------------------------------------
+     70          // Forward declarations.
+     71          static void callCommandAction(void);
+     72          static uint32_t stringToUnsignedInt(uint8_t argNum, bool swallowLeadingSign);
+     73          static uint8_t charDowncase(uint8_t c);
+     74          
+     75          //------------------------------------------------------------------------------
+     76          // Command parsing state
+     77          
+     78          typedef struct {
+     79            // Finite-state machine's current state.
+     80            uint8_t state;
+     81          
+     82            // The command line is stored in this buffer.
+     83            // Spaces and trailing '"' and '}' characters are removed,
+     84            // and hex strings are converted to bytes.
+     85            uint8_t buffer[EMBER_COMMAND_BUFFER_LENGTH];
+     86          
+     87            // Indices of the tokens (command(s) and arguments) in the above buffer.
+     88            // The (+ 1) lets us store the ending index.
+     89            uint8_t tokenIndices[MAX_TOKEN_COUNT + 1];
+     90          
+     91            // The number of tokens read in, including the command(s).
+     92            uint8_t tokenCount;
+     93          
+     94            // Used while reading in the command line.
+     95            uint8_t index;
+     96          
+     97            // First error found in this command.
+     98            uint8_t error;
+     99          
+    100            // Storage for reading in a hex string. A value of 0xFF means unused.
+    101            uint8_t hexHighNibble;
+    102          
+    103            // The token number of the first true argument after possible nested commands.
+    104            uint8_t argOffset;
+    105          } EmberCommandState;
+    106          
+
+   \                                 In section .bss, align 4
+    107          static EmberCommandState commandState;
+   \                     commandState:
+   \        0x0                      DS8 124
+    108          
+
+   \                                 In section .data, align 1
+    109          static uint8_t defaultBase = 10;
+   \                     defaultBase:
+   \        0x0   0x0A               DC8 10
+    110          
+    111          // Remember the previous character seen by emberProcessCommandString() to ignore
+    112          // an LF following a CR.
+
+   \                                 In section .bss, align 1
+    113          static uint8_t previousCharacter = 0;
+   \                     previousCharacter:
+   \        0x0                      DS8 1
+    114          
+
+   \                                 In section .bss, align 4
+    115          EmberCommandEntry *emberCurrentCommand;
+   \                     emberCurrentCommand:
+   \        0x0                      DS8 4
+    116          
+    117          enum {
+    118            CMD_AWAITING_ARGUMENT,
+    119            CMD_READING_ARGUMENT,
+    120            CMD_READING_STRING,                  // have read opening " but not closing "
+    121            CMD_READING_HEX_STRING,              // have read opening { but not closing }
+    122            CMD_READING_TO_EOL,                   // clean up after error
+    123            CMD_AWAITING_TIMER
+    124          };
+    125          
+    126          // This byte is used to toggle certain internal features on or off.
+    127          // By default all are off.
+
+   \                                 In section .bss, align 1
+    128          uint8_t emberCommandInterpreter2Configuration = 0x00;
+   \                     emberCommandInterpreter2Configuration:
+   \        0x0                      DS8 1
+    129          
+    130          //--------------------------------------------------------------------
+    131          //Password protction
+    132          
+    133          #if defined(EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION)  && !defined(EZSP_HOST)
+    134          extern EmberEventControl emberAfPluginCliPasswordProtectionTimingEventControl;
+    135          enum {
+    136            CMD_SET_NEW_PASSWORD,
+    137            CMD_CONFIRM_NEW_PASSWORD,
+    138            CMD_WAITING_FOR_PASSWORD,
+    139            CMD_PASSWORD_LOCKOUT,
+    140            CMD_PASSWORD_IS_SET
+    141          };
+    142          
+    143          static uint8_t waitingForPassword = CMD_PASSWORD_IS_SET;
+    144          
+    145          static passwordTokType currPassword;
+    146          static uint32_t tmpPassword;
+    147          static uint8_t wrongPasswordsEntered = 0;
+    148          static uint16_t passwordTick = 0; //in Qsecond
+    149          static uint8_t passwordEntryWaitTime =  EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION_PASSWORD_ENTRY_INTERVAL_SECONDS;
+    150          static uint8_t wrongPasswordThreshold = EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION_UNSUCCESSFUL_PASSWORD_ATTEMPTS;
+    151          static uint8_t passwordLockoutPeriod = EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION_PASSWORD_LOCKOUT_PERIOD_MINUTES;
+    152          static EmberKeyData nullKey = { { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 } };
+    153          static EmberKeyData passwordProtectionKey;
+    154          static bool initPhase = false;
+    155          #endif
+    156          
+    157          //--------------------------------------------------------------------
+    158          
+    159          #ifdef EMBER_TEST
+    160          char *stateNames[] =
+    161          {
+    162            "awaiting argument",
+    163            "reading argument",
+    164            "reading string",
+    165            "reading hex string",
+    166            "reading to eol"
+    167          };
+    168          #endif
+    169          
+    170          // We provide a way of overriding the default base for numbers on the
+    171          // command line for backwards compatibility.
+    172          // This function is intentionally NOT documented in the .h file so it
+    173          // isn't used anywhere it shouldn't be.
+
+   \                                 In section .text, align 2, keep-with-next
+    174          void emberCommandReaderSetDefaultBase(uint8_t base)
+    175          {
+    176            defaultBase = base;
+   \                     emberCommandReaderSetDefaultBase: (+1)
+   \        0x0   0x....'....        LDR.W    R1,??DataTable18_2
+   \        0x4   0x7008             STRB     R0,[R1, #+0]
+    177          }
+   \        0x6   0x4770             BX       LR               ;; return
+    178          
+    179          // Some users of command-interpreter2 need the command buffer to be set to 0
+    180          // so the command arg is NULL terminated when a pointer is returned.
+    181          // It might be better to always zero out the buffer when we reset
+    182          // commandState.state to CMD_AWAITING_ARGUMENT, but I don't want to break any
+    183          // other existing apps, so I'm letting the app decide if it wants to zero out
+    184          // the buffer.
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void emberCommandClearBuffer(void)
+    186          {
+    187            MEMSET(commandState.buffer, 0, EMBER_COMMAND_BUFFER_LENGTH);
+   \                     emberCommandClearBuffer: (+1)
+   \        0x0   0x2264             MOVS     R2,#+100
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x....'....        LDR.W    R0,??DataTable18_3
+   \        0x8   0x....'....        B.W      halCommonMemSet
+    188          }
+    189          
+
+   \                                 In section .text, align 2, keep-with-next
+    190          const char *emberCommandName(void)
+    191          {
+    192            return emberCurrentCommand->name;
+   \                     emberCommandName: (+1)
+   \        0x0   0x....'....        LDR.W    R0,??DataTable18_4
+   \        0x4   0x6801             LDR      R1,[R0, #+0]
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+    193          }
+    194          
+
+   \                                 In section .text, align 2, keep-with-next
+    195          boolean emberCommandInterpreterBusy(void)
+    196          {
+    197            return (commandState.index > 0 || commandState.state > CMD_AWAITING_ARGUMENT);
+   \                     emberCommandInterpreterBusy: (+1)
+   \        0x0   0x....'....        LDR.W    R1,??DataTable18_5
+   \        0x4   0xF891 0x0078      LDRB     R0,[R1, #+120]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xBF06             ITTE     EQ 
+   \        0xC   0x7808             LDRBEQ   R0,[R1, #+0]
+   \        0xE   0x2800             CMPEQ    R0,#+0
+   \       0x10   0x2001             MOVNE    R0,#+1
+   \       0x12   0x4770             BX       LR               ;; return
+    198          }
+    199          
+    200          //----------------------------------------------------------------
+    201          // Per new line initialization of the state machine.
+    202          
+
+   \                                 In section .text, align 2, keep-with-next
+    203          static void commandReaderInit(void)
+    204          {
+    205            commandState.state = CMD_AWAITING_ARGUMENT;
+   \                     commandReaderInit: (+1)
+   \        0x0   0x....'....        LDR.W    R0,??DataTable18_5
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0xF800 0x1B65      STRB     R1,[R0], #+101
+    206            commandState.index = 0;
+    207            commandState.tokenIndices[0] = 0;
+   \        0xA   0x7001             STRB     R1,[R0, #+0]
+    208            commandState.tokenCount = 0;
+   \        0xC   0x7481             STRB     R1,[R0, #+18]
+    209            commandState.error = EMBER_CMD_SUCCESS;
+    210            commandState.hexHighNibble = 0xFF;
+   \        0xE   0x21FF             MOVS     R1,#+255
+   \       0x10   0x2200             MOVS     R2,#+0
+   \       0x12   0x7541             STRB     R1,[R0, #+21]
+   \       0x14   0x74C2             STRB     R2,[R0, #+19]
+   \       0x16   0x7502             STRB     R2,[R0, #+20]
+    211            commandState.argOffset = 0;
+   \       0x18   0x7582             STRB     R2,[R0, #+22]
+    212            emberCurrentCommand = NULL;
+   \       0x1A   0x....'....        LDR.W    R1,??DataTable18_4
+   \       0x1E   0x600A             STR      R2,[R1, #+0]
+    213          }
+   \       0x20   0x4770             BX       LR               ;; return
+    214          
+    215          //----------------------------------------------------------------
+    216          #if defined(EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION) && !defined(EZSP_HOST)
+    217          static bool isPasswordCorrect(uint32_t inputPass)
+    218          {
+    219            uint8_t result[16];
+    220            uint8_t bytes[4];
+    221            MEMCOPY(bytes, &inputPass, 4);
+    222            emberHmacAesHash(passwordProtectionKey.contents, bytes, 4, result);
+    223            return !(MEMCOMPARE((uint8_t*)currPassword.password, (uint8_t*)result, EMBER_ENCRYPTION_KEY_SIZE));
+    224          }
+    225          static bool isPassOrKeyNull(uint8_t* value)
+    226          {
+    227            return !(MEMCOMPARE(value, (uint8_t*)nullKey.contents, EMBER_ENCRYPTION_KEY_SIZE));
+    228          }
+    229          static void setPasswordTick(void)
+    230          {
+    231            if (waitingForPassword == CMD_PASSWORD_LOCKOUT) {
+    232              passwordTick = passwordLockoutPeriod * 60 * 4;
+    233            } else if (waitingForPassword == CMD_WAITING_FOR_PASSWORD) {
+    234              passwordTick = passwordEntryWaitTime * 4;
+    235            } else {
+    236              passwordTick = 0;
+    237            }
+    238          }
+    239          #endif
+    240          //----------------------------------------------------------------
+    241          // universal Initialization of the state machine.
+    242          
+
+   \                                 In section .text, align 2, keep-with-next
+    243          void emberCommandReaderInit(void)
+    244          {
+    245          #if defined(EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION) && !defined(EZSP_HOST)
+    246            waitingForPassword = CMD_WAITING_FOR_PASSWORD;
+    247            halCommonGetToken(&currPassword, TOKEN_PLUGIN_CLI_PASSWORD);
+    248            halCommonGetToken(&wrongPasswordsEntered, TOKEN_PLUGIN_CLI_PASSWORD_LOCKOUT);
+    249            halCommonGetToken(&passwordProtectionKey, TOKEN_PLUGIN_CLI_PASSWORD_KEY);
+    250          
+    251            while (isPassOrKeyNull((uint8_t*)passwordProtectionKey.contents)) { // just a precaution: this should never loop more than once
+    252              emberGenerateRandomKey(&passwordProtectionKey);
+    253              initPhase = true;
+    254            }
+    255            if (isPassOrKeyNull((uint8_t*)currPassword.password)) {
+    256              initPhase = true;
+    257            }
+    258            if (initPhase) {
+    259              // password is not set, need to set the password
+    260              waitingForPassword = CMD_SET_NEW_PASSWORD;
+    261              emberSerialPrintfLine(APP_SERIAL, "\nEnter new PASSWORD (A number between 1 and 0xFFFFFFFE):\n");
+    262            } else if (wrongPasswordsEntered >= wrongPasswordThreshold) {
+    263              waitingForPassword = CMD_PASSWORD_LOCKOUT;
+    264              emberSerialPrintfLine(APP_SERIAL, "\nIn password lockout mode, need to wait %d mins\n", passwordLockoutPeriod);
+    265            } else {
+    266              waitingForPassword = CMD_WAITING_FOR_PASSWORD;
+    267              emberSerialPrintfLine(APP_SERIAL, "\nEnter password:\n");
+    268            }
+    269          
+    270            setPasswordTick();
+    271          
+    272            if (waitingForPassword == CMD_PASSWORD_LOCKOUT) {
+    273              emberEventControlSetDelayQS(emberAfPluginCliPasswordProtectionTimingEventControl, passwordTick);
+    274            } else
+    275          #endif
+    276            {
+    277              commandReaderInit();
+   \                     emberCommandReaderInit: (+1)
+   \        0x0   0x....             B.N      commandReaderInit
+    278            }
+    279          }
+    280          
+
+   \                                 In section .text, align 2, keep-with-next
+    281          void emCliPasswordProtectionEventHandler(void)
+    282          {
+    283            #if defined(EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION) && !defined(EZSP_HOST)
+    284            emberCommandClearBuffer();
+    285            if (emberEventControlGetActive(emberAfPluginCliPasswordProtectionTimingEventControl)) {
+    286              emberEventControlSetInactive(emberAfPluginCliPasswordProtectionTimingEventControl);
+    287              if (waitingForPassword == CMD_PASSWORD_LOCKOUT) {
+    288                wrongPasswordsEntered = 0;
+    289                halCommonSetToken(TOKEN_PLUGIN_CLI_PASSWORD_LOCKOUT, &wrongPasswordsEntered);
+    290                waitingForPassword = CMD_WAITING_FOR_PASSWORD;
+    291                setPasswordTick();
+    292              }
+    293              if (waitingForPassword == CMD_SET_NEW_PASSWORD) {
+    294                emberSerialPrintfLine(APP_SERIAL, "\nEnter new password (A number between 1 and 0xFFFFFFFE):\n");
+    295              } else if (waitingForPassword == CMD_CONFIRM_NEW_PASSWORD) {
+    296                emberSerialPrintfLine(APP_SERIAL, "\nRe-enter new password:\n");
+    297              } else if (waitingForPassword == CMD_WAITING_FOR_PASSWORD) {
+    298                emberSerialPrintfLine(APP_SERIAL, "\nEnter password:\n");
+    299              }
+    300            }
+    301            commandReaderInit();
+    302            #endif
+    303          }
+   \                     emCliPasswordProtectionEventHandler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    304          
+    305          // Returns a value > 15 if ch is not a hex digit.
+
+   \                                 In section .text, align 2, keep-with-next
+    306          static uint8_t hexToInt(uint8_t ch)
+    307          {
+    308            return ch - (ch >= 'a' ? 'a' - 10
+    309                         : (ch >= 'A' ? 'A' - 10
+    310                            : (ch <= '9' ? '0'
+    311                               : 0)));
+   \                     hexToInt: (+1)
+   \        0x0   0x2861             CMP      R0,#+97
+   \        0x2   0xBFA8             IT       GE 
+   \        0x4   0x2157             MOVGE    R1,#+87
+   \        0x6   0xDA07             BGE.N    ??hexToInt_0
+   \        0x8   0x2841             CMP      R0,#+65
+   \        0xA   0xBFA8             IT       GE 
+   \        0xC   0x2137             MOVGE    R1,#+55
+   \        0xE   0xDA03             BGE.N    ??hexToInt_0
+   \       0x10   0x283A             CMP      R0,#+58
+   \       0x12   0xBFB4             ITE      LT 
+   \       0x14   0x2130             MOVLT    R1,#+48
+   \       0x16   0x2100             MOVGE    R1,#+0
+   \                     ??hexToInt_0: (+1)
+   \       0x18   0x....             B.N      ?Subroutine0
+    312          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x1A40             SUBS     R0,R0,R1
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+    313          
+
+   \                                 In section .text, align 2, keep-with-next
+    314          static uint8_t tokenLength(uint8_t num)
+    315          {
+    316            return (commandState.tokenIndices[num + 1]
+    317                    - commandState.tokenIndices[num]);
+   \                     tokenLength: (+1)
+   \        0x0   0x....'....        LDR.W    R1,??DataTable18_5
+   \        0x4   0x4408             ADD      R0,R1,R0
+   \        0x6   0xF100 0x0165      ADD      R1,R0,#+101
+   \        0xA   0x7848             LDRB     R0,[R1, #+1]
+   \        0xC   0x7809             LDRB     R1,[R1, #+0]
+   \        0xE                      REQUIRE ?Subroutine0
+   \        0xE                      ;; // Fall through to label ?Subroutine0
+    318          }
+    319          
+
+   \                                 In section .text, align 2, keep-with-next
+    320          static uint8_t *tokenPointer(int8_t tokenNum)
+    321          {
+    322            return commandState.buffer + commandState.tokenIndices[tokenNum];
+   \                     tokenPointer: (+1)
+   \        0x0   0x....'....        LDR.W    R1,??DataTable18_5
+   \        0x4   0x4408             ADD      R0,R1,R0
+   \        0x6   0xF890 0x2065      LDRB     R2,[R0, #+101]
+   \        0xA   0x4411             ADD      R1,R1,R2
+   \        0xC   0x1C48             ADDS     R0,R1,#+1
+   \        0xE   0x4770             BX       LR               ;; return
+    323          }
+    324          
+    325          //----------------------------------------------------------------
+    326          // This is a state machine for parsing commands.  If 'input' is NULL
+    327          // 'sizeOrPort' is treated as a port and characters are read from there.
+    328          //
+    329          // Goto's are used where one parse state naturally falls into another,
+    330          // and to save flash.
+    331          
+
+   \                                 In section .text, align 4, keep-with-next
+    332          bool emberProcessCommandString(uint8_t *input, uint8_t sizeOrPort)
+    333          {
+   \                     emberProcessCommandString: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+    334            bool isEol = false;
+   \        0x4   0x....'....        LDR.W    R7,??DataTable18_5
+   \        0x8   0x2400             MOVS     R4,#+0
+   \        0xA   0xF107 0x0677      ADD      R6,R7,#+119
+   \        0xE   0x4680             MOV      R8,R0
+   \       0x10   0x4689             MOV      R9,R1
+   \       0x12   0xE016             B.N      ??emberProcessCommandString_1
+    335            bool isSpace, isQuote;
+    336          
+    337            while (true) {
+    338              uint8_t next;
+    339          
+    340              if (input == NULL) {
+    341                switch (emberSerialReadByte(sizeOrPort, &next)) {
+    342                  case EMBER_SUCCESS:
+    343                    break;
+    344                  case EMBER_SERIAL_RX_EMPTY:
+    345                    return isEol;
+    346                  default:
+    347                    commandState.error = EMBER_CMD_ERR_PORT_PROBLEM;
+    348                    goto READING_TO_EOL;
+    349                }
+    350              } else if (sizeOrPort == 0) {
+   \                     ??emberProcessCommandString_2: (+1)
+   \       0x14   0xFA5F 0xF089      UXTB     R0,R9
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD01D             BEQ.N    ??emberProcessCommandString_3
+    351                return isEol;
+    352              } else {
+    353                next = *input;
+   \       0x1C   0xF818 0x0B01      LDRB     R0,[R8], #+1
+    354                input += 1;
+    355                sizeOrPort -= 1;
+   \       0x20   0xF1A9 0x0901      SUB      R9,R9,#+1
+   \       0x24   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    356              }
+    357          
+    358              //   fprintf(stderr, "[processing '%c' (%s)]\n", next, stateNames[commandState.state]);
+    359          
+    360              if (previousCharacter == '\r' && next == '\n') {
+   \                     ??emberProcessCommandString_4: (+1)
+   \       0x28   0x....'....        LDR.W    R0,??DataTable18_6
+   \       0x2C   0x7801             LDRB     R1,[R0, #+0]
+   \       0x2E   0x290D             CMP      R1,#+13
+   \       0x30   0xBF04             ITT      EQ 
+   \       0x32   0xF89D 0x0000      LDRBEQ   R0,[SP, #+0]
+   \       0x36   0x280A             CMPEQ    R0,#+10
+   \       0x38   0xD11D             BNE.N    ??emberProcessCommandString_5
+    361                previousCharacter = next;
+   \       0x3A   0x210A             MOVS     R1,#+10
+   \       0x3C   0x....'....        LDR.W    R0,??DataTable18_6
+   \       0x40   0x7001             STRB     R1,[R0, #+0]
+    362                continue;
+    363              }
+   \                     ??emberProcessCommandString_1: (+1)
+   \       0x42   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x46   0xD1E5             BNE.N    ??emberProcessCommandString_2
+   \       0x48   0x4669             MOV      R1,SP
+   \       0x4A   0xFA5F 0xF089      UXTB     R0,R9
+   \       0x4E   0x....'....        BL       emberSerialReadByte
+   \       0x52   0x2800             CMP      R0,#+0
+   \       0x54   0xD0E8             BEQ.N    ??emberProcessCommandString_4
+   \       0x56   0x2826             CMP      R0,#+38
+   \                     ??emberProcessCommandString_3: (+1)
+   \       0x58   0xF000 0x808F      BEQ.W    ??emberProcessCommandString_6
+   \       0x5C   0x2201             MOVS     R2,#+1
+   \       0x5E   0x70B2             STRB     R2,[R6, #+2]
+    364              previousCharacter = next;
+    365              isEol = ((next == '\r') || (next == '\n'));
+    366              isSpace = (next == ' ');
+    367              isQuote = (next == '"');
+    368          
+    369              switch (commandState.state) {
+    370                case CMD_AWAITING_ARGUMENT:
+    371                  if (isEol) {
+    372                    callCommandAction();
+    373                  } else if (!isSpace) {
+    374                    if (isQuote) {
+    375                      commandState.state = CMD_READING_STRING;
+    376                    } else if (next == '{') {
+    377                      commandState.state = CMD_READING_HEX_STRING;
+    378                    } else {
+    379                      commandState.state = CMD_READING_ARGUMENT;
+    380                    }
+    381                    goto WRITE_TO_BUFFER;
+    382                  } else {
+    383                    // MISRA requires ..else if.. to have terminating else.
+    384                  }
+    385                  break;
+    386          
+    387                case CMD_READING_ARGUMENT:
+    388                  if (isEol || isSpace) {
+    389                    goto END_ARGUMENT;
+    390                  } else {
+    391                    goto WRITE_TO_BUFFER;
+    392                  }
+    393          
+    394                case CMD_READING_STRING:
+    395                  if (isQuote) {
+    396                    goto END_ARGUMENT;
+    397                  } else if (isEol) {
+    398                    commandState.error = EMBER_CMD_ERR_ARGUMENT_SYNTAX_ERROR;
+    399                    goto READING_TO_EOL;
+    400                  } else {
+    401                    goto WRITE_TO_BUFFER;
+    402                  }
+    403          
+    404                case CMD_READING_HEX_STRING: {
+    405                  bool waitingForLowNibble = (commandState.hexHighNibble != 0xFF);
+    406                  if (next == '}') {
+    407                    if (waitingForLowNibble) {
+    408                      commandState.error = EMBER_CMD_ERR_ARGUMENT_SYNTAX_ERROR;
+    409                      goto READING_TO_EOL;
+    410                    }
+    411                    goto END_ARGUMENT;
+    412                  } else {
+    413                    uint8_t value = hexToInt(next);
+    414                    if (value < 16) {
+    415                      if (waitingForLowNibble) {
+    416                        next = (commandState.hexHighNibble << 4) + value;
+    417                        commandState.hexHighNibble = 0xFF;
+    418                        goto WRITE_TO_BUFFER;
+    419                      } else {
+    420                        commandState.hexHighNibble = value;
+    421                      }
+    422                    } else if (!isSpace) {
+    423                      commandState.error = EMBER_CMD_ERR_ARGUMENT_SYNTAX_ERROR;
+    424                      goto READING_TO_EOL;
+    425                    } else {
+    426                      // MISRA requires ..else if.. to have terminating else.
+    427                    }
+    428                  }
+    429                  break;
+    430                }
+    431          
+    432                  END_ARGUMENT:
+    433                  if (commandState.tokenCount == MAX_TOKEN_COUNT) {
+    434                    commandState.error = EMBER_CMD_ERR_WRONG_NUMBER_OF_ARGUMENTS;
+    435                    goto READING_TO_EOL;
+    436                  }
+    437                  commandState.tokenCount += 1;
+    438                  commandState.tokenIndices[commandState.tokenCount] = commandState.index;
+    439                  commandState.state = CMD_AWAITING_ARGUMENT;
+    440                  if (isEol) {
+    441                    callCommandAction();
+    442                  }
+    443                  break;
+    444          
+    445                  WRITE_TO_BUFFER:
+    446                  if (commandState.index == EMBER_COMMAND_BUFFER_LENGTH) {
+    447                    commandState.error = EMBER_CMD_ERR_STRING_TOO_LONG;
+    448                    goto READING_TO_EOL;
+    449                  }
+    450                  if (commandState.state == CMD_READING_ARGUMENT) {
+    451                    next = charDowncase(next);
+    452                  }
+    453                  commandState.buffer[commandState.index] = next;
+    454                  commandState.index += 1;
+    455                  break;
+    456          
+    457                  READING_TO_EOL:
+    458                  commandState.state = CMD_READING_TO_EOL;
+   \                     ??emberProcessCommandString_7: (+1)
+   \       0x60   0x2004             MOVS     R0,#+4
+   \       0x62   0x7038             STRB     R0,[R7, #+0]
+    459                //lint -fallthrough
+    460          
+    461                case CMD_READING_TO_EOL:
+    462                  if (isEol) {
+   \                     ??emberProcessCommandString_8: (+1)
+   \       0x64   0x2C00             CMP      R4,#+0
+   \       0x66   0xD0EC             BEQ.N    ??emberProcessCommandString_1
+    463                    if (commandState.error != EMBER_CMD_SUCCESS) {
+   \       0x68   0x78B0             LDRB     R0,[R6, #+2]
+   \       0x6A   0xB108             CBZ.N    R0,??emberProcessCommandString_9
+    464                      emberCommandErrorHandler(commandState.error);
+   \       0x6C   0x....'....        BL       emberCommandErrorHandler
+    465                    }
+    466                    commandReaderInit();
+   \                     ??emberProcessCommandString_9: (+1)
+   \       0x70   0x....'....        BL       commandReaderInit
+   \       0x74   0xE7E5             B.N      ??emberProcessCommandString_1
+    467                  }
+   \                     ??emberProcessCommandString_5: (+1)
+   \       0x76   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x7A   0xF89D 0x2000      LDRB     R2,[SP, #+0]
+   \       0x7E   0x....'....        LDR.W    R1,??DataTable18_6
+   \       0x82   0x7008             STRB     R0,[R1, #+0]
+   \       0x84   0x2A0D             CMP      R2,#+13
+   \       0x86   0xD105             BNE.N    ??emberProcessCommandString_10
+   \                     ??emberProcessCommandString_11: (+1)
+   \       0x88   0x2401             MOVS     R4,#+1
+   \                     ??emberProcessCommandString_12: (+1)
+   \       0x8A   0x2500             MOVS     R5,#+0
+   \       0x8C   0x2A22             CMP      R2,#+34
+   \       0x8E   0xD107             BNE.N    ??emberProcessCommandString_13
+   \       0x90   0x2001             MOVS     R0,#+1
+   \       0x92   0xE006             B.N      ??emberProcessCommandString_14
+   \                     ??emberProcessCommandString_10: (+1)
+   \       0x94   0x2A0A             CMP      R2,#+10
+   \       0x96   0xD0F7             BEQ.N    ??emberProcessCommandString_11
+   \       0x98   0x2400             MOVS     R4,#+0
+   \       0x9A   0x2A20             CMP      R2,#+32
+   \       0x9C   0xD1F5             BNE.N    ??emberProcessCommandString_12
+   \       0x9E   0x2501             MOVS     R5,#+1
+   \                     ??emberProcessCommandString_13: (+1)
+   \       0xA0   0x2000             MOVS     R0,#+0
+   \                     ??emberProcessCommandString_14: (+1)
+   \       0xA2   0x7839             LDRB     R1,[R7, #+0]
+   \       0xA4   0x2904             CMP      R1,#+4
+   \       0xA6   0xD8CC             BHI.N    ??emberProcessCommandString_1
+   \       0xA8   0xE8DF 0xF001      TBB      [PC, R1]
+   \                     ??emberProcessCommandString_0:
+   \       0xAC   0x05 0x1B          DC8      0x5,0x1B,0x22,0x26
+   \              0x22 0x26    
+   \       0xB0   0x04 0x00          DC8      0x4,0x0
+   \                     ??emberProcessCommandString_15: (+1)
+   \       0xB2   0xE7C6             B.N      ??emberProcessCommandString_1
+   \                     ??emberProcessCommandString_16: (+1)
+   \       0xB4   0xE7D6             B.N      ??emberProcessCommandString_8
+   \                     ??emberProcessCommandString_17: (+1)
+   \       0xB6   0xB114             CBZ.N    R4,??emberProcessCommandString_18
+   \                     ??emberProcessCommandString_19: (+1)
+   \       0xB8   0x....'....        BL       callCommandAction
+   \       0xBC   0xE7C1             B.N      ??emberProcessCommandString_1
+   \                     ??emberProcessCommandString_18: (+1)
+   \       0xBE   0x2D00             CMP      R5,#+0
+   \       0xC0   0xD1BF             BNE.N    ??emberProcessCommandString_1
+   \       0xC2   0xB138             CBZ.N    R0,??emberProcessCommandString_20
+   \       0xC4   0x2002             MOVS     R0,#+2
+   \                     ??emberProcessCommandString_21: (+1)
+   \       0xC6   0x7038             STRB     R0,[R7, #+0]
+   \                     ??emberProcessCommandString_22: (+1)
+   \       0xC8   0x7875             LDRB     R5,[R6, #+1]
+   \       0xCA   0x2D64             CMP      R5,#+100
+   \       0xCC   0xD144             BNE.N    ??emberProcessCommandString_23
+   \       0xCE   0x2006             MOVS     R0,#+6
+   \                     ??emberProcessCommandString_24: (+1)
+   \       0xD0   0x70B0             STRB     R0,[R6, #+2]
+   \       0xD2   0xE7C5             B.N      ??emberProcessCommandString_7
+   \                     ??emberProcessCommandString_20: (+1)
+   \       0xD4   0x2A7B             CMP      R2,#+123
+   \       0xD6   0xD102             BNE.N    ??emberProcessCommandString_25
+   \       0xD8   0x2103             MOVS     R1,#+3
+   \       0xDA   0x7039             STRB     R1,[R7, #+0]
+   \       0xDC   0xE7F4             B.N      ??emberProcessCommandString_22
+   \                     ??emberProcessCommandString_25: (+1)
+   \       0xDE   0x2001             MOVS     R0,#+1
+   \       0xE0   0xE7F1             B.N      ??emberProcessCommandString_21
+   \                     ??emberProcessCommandString_26: (+1)
+   \       0xE2   0x4325             ORRS     R5,R5,R4
+   \       0xE4   0xD0F0             BEQ.N    ??emberProcessCommandString_22
+   \                     ??emberProcessCommandString_27: (+1)
+   \       0xE6   0x7830             LDRB     R0,[R6, #+0]
+   \       0xE8   0x2811             CMP      R0,#+17
+   \       0xEA   0xD129             BNE.N    ??emberProcessCommandString_28
+   \       0xEC   0x2003             MOVS     R0,#+3
+   \       0xEE   0xE7EF             B.N      ??emberProcessCommandString_24
+   \                     ??emberProcessCommandString_29: (+1)
+   \       0xF0   0x2800             CMP      R0,#+0
+   \       0xF2   0xD1F8             BNE.N    ??emberProcessCommandString_27
+   \       0xF4   0xBB14             CBNZ.N   R4,??emberProcessCommandString_30
+   \       0xF6   0xE7E7             B.N      ??emberProcessCommandString_22
+   \                     ??emberProcessCommandString_31: (+1)
+   \       0xF8   0xF896 0xA003      LDRB     R10,[R6, #+3]
+   \       0xFC   0x4610             MOV      R0,R2
+   \       0xFE   0xF1BA 0x0FFF      CMP      R10,#+255
+   \      0x102   0xBF14             ITE      NE 
+   \      0x104   0xF04F 0x0B01      MOVNE    R11,#+1
+   \      0x108   0xF04F 0x0B00      MOVEQ    R11,#+0
+   \      0x10C   0x287D             CMP      R0,#+125
+   \      0x10E   0xD103             BNE.N    ??emberProcessCommandString_32
+   \      0x110   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x114   0xD112             BNE.N    ??emberProcessCommandString_30
+   \      0x116   0xE7E6             B.N      ??emberProcessCommandString_27
+   \                     ??emberProcessCommandString_32: (+1)
+   \      0x118   0x....'....        BL       hexToInt
+   \      0x11C   0x2810             CMP      R0,#+16
+   \      0x11E   0xDA0B             BGE.N    ??emberProcessCommandString_33
+   \      0x120   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x124   0xD006             BEQ.N    ??emberProcessCommandString_34
+   \      0x126   0xEB00 0x100A      ADD      R0,R0,R10, LSL #+4
+   \      0x12A   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \      0x12E   0x20FF             MOVS     R0,#+255
+   \      0x130   0x70F0             STRB     R0,[R6, #+3]
+   \      0x132   0xE7C9             B.N      ??emberProcessCommandString_22
+   \                     ??emberProcessCommandString_34: (+1)
+   \      0x134   0x70F0             STRB     R0,[R6, #+3]
+   \                     ??emberProcessCommandString_35: (+1)
+   \      0x136   0xE784             B.N      ??emberProcessCommandString_1
+   \                     ??emberProcessCommandString_33: (+1)
+   \      0x138   0x2D00             CMP      R5,#+0
+   \      0x13A   0xD1FC             BNE.N    ??emberProcessCommandString_35
+   \                     ??emberProcessCommandString_30: (+1)
+   \      0x13C   0x2005             MOVS     R0,#+5
+   \      0x13E   0xE7C7             B.N      ??emberProcessCommandString_24
+   \                     ??emberProcessCommandString_28: (+1)
+   \      0x140   0x1C40             ADDS     R0,R0,#+1
+   \      0x142   0x7030             STRB     R0,[R6, #+0]
+   \      0x144   0x7871             LDRB     R1,[R6, #+1]
+   \      0x146   0xB2C0             UXTB     R0,R0
+   \      0x148   0x4438             ADD      R0,R7,R0
+   \      0x14A   0xF880 0x1065      STRB     R1,[R0, #+101]
+   \      0x14E   0x2200             MOVS     R2,#+0
+   \      0x150   0x703A             STRB     R2,[R7, #+0]
+   \      0x152   0x2C00             CMP      R4,#+0
+   \      0x154   0xD0EF             BEQ.N    ??emberProcessCommandString_35
+   \      0x156   0xE7AF             B.N      ??emberProcessCommandString_19
+   \                     ??emberProcessCommandString_23: (+1)
+   \      0x158   0x7838             LDRB     R0,[R7, #+0]
+   \      0x15A   0x2801             CMP      R0,#+1
+   \      0x15C   0xD105             BNE.N    ??emberProcessCommandString_36
+   \      0x15E   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \      0x162   0x....'....        BL       charDowncase
+   \      0x166   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \                     ??emberProcessCommandString_36: (+1)
+   \      0x16A   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \      0x16E   0x1979             ADDS     R1,R7,R5
+   \      0x170   0x7048             STRB     R0,[R1, #+1]
+   \      0x172   0x7872             LDRB     R2,[R6, #+1]
+   \      0x174   0x1C52             ADDS     R2,R2,#+1
+   \      0x176   0x7072             STRB     R2,[R6, #+1]
+   \      0x178   0xE763             B.N      ??emberProcessCommandString_1
+    468                  break;
+    469          
+    470                default: {
+    471                }
+    472              } //close switch.
+   \                     ??emberProcessCommandString_6: (+1)
+   \      0x17A   0x4620             MOV      R0,R4
+   \      0x17C   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+    473            }
+    474          }
+    475          
+    476          //----------------------------------------------------------------
+    477          // Command lookup and processing
+    478          
+    479          // Returs true if entry is a nested command, and in this case
+    480          // it populates the nestedCommand pointer.
+    481          // Otherwise it returns false, and does nothing with nestedCommand
+    482          //
+    483          // Nested commands are implemented by setting the action
+    484          // field to NULL, and the argumentTypes field is a pointer
+    485          // to a nested EmberCommandEntry array. The older mechanism is
+    486          // to set argumentTypes to "n" and then the action field
+    487          // contains the EmberCommandEntry, but that approach has a problem
+    488          // on AVR128, therefore it is technically deprecated. If you have
+    489          // a choice, put NULL for action and a table under argumentTypes.
+
+   \                                 In section .text, align 2, keep-with-next
+    490          static bool getNestedCommand(EmberCommandEntry *entry,
+    491                                       EmberCommandEntry **nestedCommand)
+    492          {
+    493            if ( entry->action == NULL ) {
+   \                     getNestedCommand: (+1)
+   \        0x0   0x6882             LDR      R2,[R0, #+8]
+   \        0x2   0x6840             LDR      R0,[R0, #+4]
+   \        0x4   0xB908             CBNZ.N   R0,??getNestedCommand_0
+    494              *nestedCommand = (EmberCommandEntry*)entry->argumentTypes;
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+    495              return true;
+   \        0x8   0xE003             B.N      ??getNestedCommand_1
+    496            } else if ( entry->argumentTypes[0] == 'n' ) {
+   \                     ??getNestedCommand_0: (+1)
+   \        0xA   0x7812             LDRB     R2,[R2, #+0]
+   \        0xC   0x2A6E             CMP      R2,#+110
+   \        0xE   0xD102             BNE.N    ??getNestedCommand_2
+    497              *nestedCommand = (EmberCommandEntry*)(void*)entry->action;
+   \       0x10   0x6008             STR      R0,[R1, #+0]
+    498              return true;
+   \                     ??getNestedCommand_1: (+1)
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0x4770             BX       LR
+    499            } else {
+    500              return false;
+   \                     ??getNestedCommand_2: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x4770             BX       LR               ;; return
+    501            }
+    502          }
+    503          
+
+   \                                 In section .text, align 2, keep-with-next
+    504          static uint8_t charDowncase(uint8_t c)
+    505          {
+    506            if ('A' <= c && c <= 'Z') {
+   \                     charDowncase: (+1)
+   \        0x0   0xF1A0 0x0141      SUB      R1,R0,#+65
+   \        0x4   0x291A             CMP      R1,#+26
+   \        0x6   0xBF3C             ITT      CC 
+   \        0x8   0x3020             ADDCC    R0,R0,#+32
+   \        0xA   0xB2C0             UXTBCC   R0,R0
+    507              return c + 'a' - 'A';
+    508            } else {
+    509              return c;
+   \        0xC   0x4770             BX       LR               ;; return
+    510            }
+    511          }
+    512          
+
+   \                                 In section .text, align 2, keep-with-next
+    513          static uint8_t firstByteOfArg(uint8_t argNum)
+    514          {
+    515            uint8_t tokenNum = argNum + commandState.argOffset;
+    516            return commandState.buffer[commandState.tokenIndices[tokenNum]];
+   \                     firstByteOfArg: (+1)
+   \        0x0   0x....'....        LDR.W    R2,??DataTable18_5
+   \        0x4   0xF892 0x107B      LDRB     R1,[R2, #+123]
+   \        0x8   0x1808             ADDS     R0,R1,R0
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x4410             ADD      R0,R2,R0
+   \        0xE   0xF890 0x3065      LDRB     R3,[R0, #+101]
+   \       0x12   0x441A             ADD      R2,R2,R3
+   \       0x14   0x7850             LDRB     R0,[R2, #+1]
+   \       0x16   0x4770             BX       LR               ;; return
+    517          }
+    518          
+    519          // To support existing lazy-typer functionality in the app framework,
+    520          // we allow the user to shorten the entered command so long as the
+    521          // substring matches no more than one command in the table.
+    522          //
+    523          // To allow CONST savings by storing abbreviated command names, we also
+    524          // allow matching if the input command is longer than the stored command.
+    525          // To reduce complexity, we do not handle multiple inexact matches.
+    526          // For example, if there are commands 'A' and 'AB', and the user enters
+    527          // 'ABC', nothing will match.
+    528          
+    529          static EmberCommandEntry *commandLookup(EmberCommandEntry *commandFinger,
+    530                                                  uint8_t tokenNum)
+    531          {
+    532            EmberCommandEntry *inexactMatch = NULL;
+    533            uint8_t *inputCommand = tokenPointer(tokenNum);
+    534            uint8_t inputLength = tokenLength(tokenNum);
+    535            bool multipleMatches = false;
+    536          
+    537            for (; commandFinger->name != NULL; commandFinger++) {
+    538              const char * entryFinger = commandFinger->name;
+    539              uint8_t *inputFinger = inputCommand;
+    540              while (true) {
+    541                bool endInput = (inputFinger - inputCommand == inputLength);
+    542                bool endEntry = (*entryFinger == 0);
+    543                if (endInput && endEntry) {
+    544                  return commandFinger;  // Exact match.
+    545                } else if (endInput || endEntry) {
+    546                  if (inexactMatch != NULL) {
+    547                    multipleMatches = true;  // Multiple matches.
+    548                    break;
+    549                  } else {
+    550                    inexactMatch = commandFinger;
+    551                    break;
+    552                  }
+    553                } else if (charDowncase(*inputFinger) != charDowncase(*entryFinger)) {
+    554                  break;
+    555                } else {
+    556                  // MISRA requires ..else if.. to have terminating else.
+    557                }
+    558                entryFinger++;
+    559                inputFinger++;
+    560              }
+    561            }
+    562            return (multipleMatches || EMBER_REQUIRE_EXACT_COMMAND_NAME ? NULL : inexactMatch);
+    563          }
+    564          
+    565          static void echoPrint(void)
+    566          {
+    567            uint8_t tokenNum = 0;
+    568            for (; tokenNum < commandState.tokenCount; tokenNum++ ) {
+    569              uint8_t *ptr = tokenPointer(tokenNum);
+    570              uint8_t len = tokenLength(tokenNum);
+    571              emberSerialWriteData(APP_SERIAL, ptr, len);
+    572              emberSerialPrintf(APP_SERIAL, " ");
+    573            }
+    574            emberSerialPrintf(APP_SERIAL, "\r\n");
+    575          }
+    576          
+
+   \                                 In section .text, align 2, keep-with-next
+    577          static void callCommandAction(void)
+    578          {
+   \                     callCommandAction: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+    579            EmberCommandEntry *commandFinger = emberCommandTable;
+    580            uint8_t tokenNum = 0;
+    581            // We need a separate argTypeNum index because of the '*' arg type.
+    582            uint8_t argTypeNum, argNum;
+    583          
+    584            if (commandState.tokenCount == 0) {
+   \        0x4   0x....'....        LDR.W    R6,??DataTable18_7
+   \        0x8   0x7830             LDRB     R0,[R6, #+0]
+   \        0xA   0x....'....        LDR.W    R1,??DataTable18_8
+   \        0xE   0x2200             MOVS     R2,#+0
+   \       0x10   0x9101             STR      R1,[SP, #+4]
+   \       0x12   0xF88D 0x2000      STRB     R2,[SP, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD075             BEQ.N    ??callCommandAction_0
+    585              goto kickout2;
+    586            }
+    587          
+    588            // If we have echo, we echo here.
+    589            if ( emberCommandInterpreterIsEchoOn() ) {
+   \       0x1A   0x....'....        LDR.W    R1,??DataTable18_9
+   \       0x1E   0x7808             LDRB     R0,[R1, #+0]
+   \       0x20   0x07C2             LSLS     R2,R0,#+31
+   \       0x22   0xD51B             BPL.N    ??CrossCallReturnLabel_5
+    590              echoPrint();
+   \       0x24   0x2400             MOVS     R4,#+0
+   \       0x26   0x....'....        LDR.W    R5,??DataTable18_10
+   \       0x2A   0xE00F             B.N      ??callCommandAction_1
+   \                     ??callCommandAction_2: (+1)
+   \       0x2C   0xB260             SXTB     R0,R4
+   \       0x2E   0x....'....        BL       tokenPointer
+   \       0x32   0x4607             MOV      R7,R0
+   \       0x34   0xB2E0             UXTB     R0,R4
+   \       0x36   0x....'....        BL       tokenLength
+   \       0x3A   0x4602             MOV      R2,R0
+   \       0x3C   0x4639             MOV      R1,R7
+   \       0x3E   0x2020             MOVS     R0,#+32
+   \       0x40   0x....'....        BL       emberSerialWriteData
+   \       0x44   0x4629             MOV      R1,R5
+   \       0x46   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x4A   0x1C64             ADDS     R4,R4,#+1
+   \                     ??callCommandAction_1: (+1)
+   \       0x4C   0x7831             LDRB     R1,[R6, #+0]
+   \       0x4E   0xB2E0             UXTB     R0,R4
+   \       0x50   0x4288             CMP      R0,R1
+   \       0x52   0xD3EB             BCC.N    ??callCommandAction_2
+   \       0x54   0x....'....        LDR.W    R1,??DataTable18_11
+   \       0x58   0x....'....        BL       ?Subroutine1
+    591            }
+    592            // If password is wrong put the state to CMD_AWAITING_TIMER and schedule an event
+    593            #if defined(EMBER_AF_PLUGIN_CLI_PASSWORD_PROTECTION) && !defined(EZSP_HOST)
+    594            if (waitingForPassword == CMD_SET_NEW_PASSWORD) {
+    595              tmpPassword = (uint32_t)emberUnsignedCommandArgument(0);
+    596              if (tmpPassword && tmpPassword < 0xFFFFFFFF) {
+    597                waitingForPassword = CMD_CONFIRM_NEW_PASSWORD;
+    598              } else {
+    599                emberSerialPrintf(APP_SERIAL, "\r Invalid password value \n");
+    600              }
+    601              emberEventControlSetDelayQS(emberAfPluginCliPasswordProtectionTimingEventControl, passwordTick);
+    602          
+    603              return;
+    604            } else if (waitingForPassword == CMD_CONFIRM_NEW_PASSWORD) {
+    605              if (tmpPassword != (uint32_t)emberUnsignedCommandArgument(0)) {
+    606                waitingForPassword = CMD_SET_NEW_PASSWORD;
+    607              } else {
+    608                uint8_t bytes[4];
+    609                MEMCOPY(bytes, &tmpPassword, 4);
+    610                emberHmacAesHash(passwordProtectionKey.contents, bytes, 4, currPassword.password);
+    611                halCommonSetToken(TOKEN_PLUGIN_CLI_PASSWORD_KEY, &passwordProtectionKey);
+    612                halCommonSetToken(TOKEN_PLUGIN_CLI_PASSWORD, &currPassword);
+    613                waitingForPassword = CMD_PASSWORD_IS_SET;
+    614                emberSerialPrintf(APP_SERIAL, "\r password is set, proceed to enter any CLI command\n");
+    615              }
+    616              emberEventControlSetDelayQS(emberAfPluginCliPasswordProtectionTimingEventControl, passwordTick);
+    617          
+    618              return;
+    619            } else if (waitingForPassword == CMD_PASSWORD_LOCKOUT) {
+    620              emberSerialPrintf(APP_SERIAL, "\r CLI is locked untill the wait time of %d seconds is expired.\n", passwordTick / 4);
+    621              return;
+    622            } else if (waitingForPassword == CMD_WAITING_FOR_PASSWORD) {
+    623              if (!isPasswordCorrect((uint32_t) emberUnsignedCommandArgument(0))) {
+    624                commandState.state = CMD_AWAITING_TIMER;
+    625                wrongPasswordsEntered++;
+    626                if (wrongPasswordsEntered >= wrongPasswordThreshold) {
+    627          #ifdef  EMBER_DO_NOT_ALLOW_CLI_PASSWORD_LOCKOUT
+    628                  waitingForPassword = CMD_SET_NEW_PASSWORD;
+    629                  wrongPasswordsEntered = 0;
+    630                  setPasswordTick();
+    631          #else
+    632                  waitingForPassword = CMD_PASSWORD_LOCKOUT;
+    633                  setPasswordTick();
+    634                  emberSerialPrintf(APP_SERIAL, "\r Password lockout: Need to wait for %d min to try again.\n",
+    635                                    passwordTick / (4 * 60));
+    636          #endif
+    637                } else {
+    638                  emberSerialPrintf(APP_SERIAL, "\r Need to wait for %d seconds to try %d remaining password attempts.\n",
+    639                                    passwordTick / 4, wrongPasswordThreshold - wrongPasswordsEntered);
+    640                }
+    641                halCommonSetToken(TOKEN_PLUGIN_CLI_PASSWORD_LOCKOUT, &wrongPasswordsEntered);
+    642                emberEventControlSetDelayQS(emberAfPluginCliPasswordProtectionTimingEventControl, passwordTick);
+    643          
+    644                return;
+    645              } else {
+    646                wrongPasswordsEntered = 0;
+    647                setPasswordTick();
+    648                waitingForPassword = CMD_PASSWORD_IS_SET;
+    649                emberSerialPrintf(APP_SERIAL, "\r Correct password, proceed to enter any CLI command\n");
+    650                goto kickout2;
+    651              }
+    652            }
+    653             #endif
+    654            // Lookup the command.
+    655            while (true) {
+    656              commandFinger = commandLookup(commandFinger, tokenNum);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x5C   0x9F01             LDR      R7,[SP, #+4]
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \       0x60   0x9002             STR      R0,[SP, #+8]
+   \       0x62   0xF99D 0x0000      LDRSB    R0,[SP, #+0]
+   \       0x66   0x2500             MOVS     R5,#+0
+   \       0x68   0x....'....        BL       tokenPointer
+   \       0x6C   0x4680             MOV      R8,R0
+   \       0x6E   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x72   0x....'....        BL       tokenLength
+   \       0x76   0x4681             MOV      R9,R0
+   \       0x78   0xE000             B.N      ??callCommandAction_3
+   \                     ??callCommandAction_4: (+1)
+   \       0x7A   0x370C             ADDS     R7,R7,#+12
+   \                     ??callCommandAction_3: (+1)
+   \       0x7C   0x683C             LDR      R4,[R7, #+0]
+   \       0x7E   0xB30C             CBZ.N    R4,??callCommandAction_5
+   \       0x80   0x46C2             MOV      R10,R8
+   \                     ??callCommandAction_6: (+1)
+   \       0x82   0xEBAA 0x0008      SUB      R0,R10,R8
+   \       0x86   0x4548             CMP      R0,R9
+   \       0x88   0x7820             LDRB     R0,[R4, #+0]
+   \       0x8A   0xBF0C             ITE      EQ 
+   \       0x8C   0x2101             MOVEQ    R1,#+1
+   \       0x8E   0x2100             MOVNE    R1,#+0
+   \       0x90   0x1E42             SUBS     R2,R0,#+1
+   \       0x92   0x4192             SBCS     R2,R2,R2
+   \       0x94   0xEA11 0x7FD2      TST      R1,R2, LSR #+31
+   \       0x98   0xD118             BNE.N    ??callCommandAction_7
+   \       0x9A   0xEA51 0x71D2      ORRS     R1,R1,R2, LSR #+31
+   \       0x9E   0xD10B             BNE.N    ??callCommandAction_8
+   \       0xA0   0xF81A 0x0B01      LDRB     R0,[R10], #+1
+   \       0xA4   0x....'....        BL       charDowncase
+   \       0xA8   0x4683             MOV      R11,R0
+   \       0xAA   0xF814 0x0B01      LDRB     R0,[R4], #+1
+   \       0xAE   0x....'....        BL       charDowncase
+   \       0xB2   0x4583             CMP      R11,R0
+   \       0xB4   0xD0E5             BEQ.N    ??callCommandAction_6
+   \       0xB6   0xE7E0             B.N      ??callCommandAction_4
+   \                     ??callCommandAction_8: (+1)
+   \       0xB8   0x9802             LDR      R0,[SP, #+8]
+   \       0xBA   0x2800             CMP      R0,#+0
+   \       0xBC   0xBF14             ITE      NE 
+   \       0xBE   0x2501             MOVNE    R5,#+1
+   \       0xC0   0x9702             STREQ    R7,[SP, #+8]
+   \       0xC2   0xE7DA             B.N      ??callCommandAction_4
+   \                     ??callCommandAction_5: (+1)
+   \       0xC4   0x2D00             CMP      R5,#+0
+   \       0xC6   0xBF14             ITE      NE 
+   \       0xC8   0x2700             MOVNE    R7,#+0
+   \       0xCA   0x9F02             LDREQ    R7,[SP, #+8]
+   \                     ??callCommandAction_7: (+1)
+   \       0xCC   0x9701             STR      R7,[SP, #+4]
+    657              if (commandFinger == NULL) {
+   \       0xCE   0xB1AF             CBZ.N    R7,??callCommandAction_9
+    658                commandState.error = EMBER_CMD_ERR_NO_SUCH_COMMAND;
+    659                goto kickout;
+    660              } else {
+    661                emberCurrentCommand = commandFinger;
+   \       0xD0   0x....'....        LDR.W    R1,??DataTable18_4
+   \       0xD4   0x600F             STR      R7,[R1, #+0]
+    662                tokenNum += 1;
+    663                commandState.argOffset += 1;
+   \       0xD6   0x7930             LDRB     R0,[R6, #+4]
+   \       0xD8   0xF89D 0x2000      LDRB     R2,[SP, #+0]
+    664          
+    665                if ( getNestedCommand(commandFinger, &commandFinger) ) {
+   \       0xDC   0xA901             ADD      R1,SP,#+4
+   \       0xDE   0x1C40             ADDS     R0,R0,#+1
+   \       0xE0   0x7130             STRB     R0,[R6, #+4]
+   \       0xE2   0x9801             LDR      R0,[SP, #+4]
+   \       0xE4   0x1C52             ADDS     R2,R2,#+1
+   \       0xE6   0xF88D 0x2000      STRB     R2,[SP, #+0]
+   \       0xEA   0x....'....        BL       getNestedCommand
+   \       0xEE   0xB170             CBZ.N    R0,??callCommandAction_10
+    666                  if (tokenNum >= commandState.tokenCount) {
+   \       0xF0   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0xF4   0x7831             LDRB     R1,[R6, #+0]
+   \       0xF6   0x4288             CMP      R0,R1
+   \       0xF8   0xD3B0             BCC.N    ??CrossCallReturnLabel_5
+   \       0xFA   0xE079             B.N      ??callCommandAction_11
+    667                    commandState.error = EMBER_CMD_ERR_WRONG_NUMBER_OF_ARGUMENTS;
+    668                    goto kickout;
+    669                  }
+    670                } else {
+   \                     ??callCommandAction_9: (+1)
+   \       0xFC   0x2202             MOVS     R2,#+2
+   \       0xFE   0x70B2             STRB     R2,[R6, #+2]
+    671                  break;
+    672                }
+    673              }
+    674            }
+    675          
+    676            // If you put '?' as the first character
+    677            // of the argument format string, then you effectivelly
+    678            // prevent the argument validation, and the command gets executed.
+    679            // At that point it is down to the command to deal with whatever
+    680            // arguments it got.
+    681            if ( commandFinger->argumentTypes[0] == '?' ) {
+    682              goto kickout;
+    683            }
+    684          
+    685            // Validate the arguments.
+    686            argTypeNum = 0;
+    687            argNum = 0;
+    688            while (tokenNum < commandState.tokenCount) {
+    689              uint8_t type = commandFinger->argumentTypes[argTypeNum];
+    690              uint8_t firstChar = firstByteOfArg(argNum);
+    691              switch (type) {
+    692                // Integers
+    693                case 'u':
+    694                case 'v':
+    695                case 'w':
+    696                case 's':
+    697                case 'r':
+    698                case 'q': {
+    699                  uint32_t limit = (type == 'u' ? 0xFF
+    700                                    : (type == 'v' ? 0xFFFF
+    701                                       : (type == 's' ? 0x7F
+    702                                          : (type == 'r' ? 0x7FFF : 0xFFFFFFFFUL))));
+    703                  if (stringToUnsignedInt(argNum, true) > limit) {
+    704                    commandState.error = EMBER_CMD_ERR_ARGUMENT_OUT_OF_RANGE;
+    705                  }
+    706                  break;
+    707                }
+    708          
+    709                // String
+    710                case 'b':
+    711                  if (firstChar != '"' && firstChar != '{') {
+    712                    commandState.error = EMBER_CMD_ERR_ARGUMENT_SYNTAX_ERROR;
+    713                  }
+    714                  break;
+    715          
+    716                case '!':
+    717                  //Do nothing, we just need a marker to delimit a valid stopping point
+    718                  break;
+    719          
+    720                case 0:
+    721                  commandState.error = EMBER_CMD_ERR_WRONG_NUMBER_OF_ARGUMENTS;
+    722                  break;
+    723          
+    724                default:
+    725                  commandState.error = EMBER_CMD_ERR_INVALID_ARGUMENT_TYPE;
+    726                  break;
+    727              }
+    728          
+    729              if (commandFinger->argumentTypes[argTypeNum + 1] != '*') {
+    730                argTypeNum += 1;
+    731              }
+    732          
+    733              if (commandState.error != EMBER_CMD_SUCCESS) {
+    734                goto kickout;
+    735              }
+    736              if (type != '!') {
+    737                tokenNum++;
+    738                argNum++;
+    739              }
+    740            }
+    741          
+    742            if (!(commandFinger->argumentTypes[argTypeNum] == 0
+    743                  || commandFinger->argumentTypes[argTypeNum + 1] == '*'
+    744                  || commandFinger->argumentTypes[argTypeNum] == '!')) {
+    745              commandState.error = EMBER_CMD_ERR_WRONG_NUMBER_OF_ARGUMENTS;
+    746            }
+    747          
+    748            kickout:
+    749          
+    750            if (commandState.error == EMBER_CMD_SUCCESS) {
+    751              emberCommandActionHandler(commandFinger->action);
+    752            } else {
+    753              emberCommandErrorHandler(commandState.error);
+   \                     ??callCommandAction_12: (+1)
+   \      0x100   0x78B0             LDRB     R0,[R6, #+2]
+   \      0x102   0x....'....        BL       emberCommandErrorHandler
+    754            }
+    755          
+    756            kickout2:
+    757          
+    758            commandReaderInit();
+   \                     ??callCommandAction_0: (+1)
+   \      0x106   0x....'....        BL       commandReaderInit
+    759          }
+   \      0x10A   0xE8BD 0x8FF7      POP      {R0-R2,R4-R11,PC}  ;; return
+   \                     ??callCommandAction_10: (+1)
+   \      0x10E   0x9801             LDR      R0,[SP, #+4]
+   \      0x110   0x6881             LDR      R1,[R0, #+8]
+   \      0x112   0x780A             LDRB     R2,[R1, #+0]
+   \      0x114   0x2A3F             CMP      R2,#+63
+   \      0x116   0xD05A             BEQ.N    ??callCommandAction_13
+   \      0x118   0xF04F 0x0900      MOV      R9,#+0
+   \      0x11C   0x2500             MOVS     R5,#+0
+   \      0x11E   0xF89D 0x4000      LDRB     R4,[SP, #+0]
+   \      0x122   0xE013             B.N      ??callCommandAction_14
+   \                     ??callCommandAction_15: (+1)
+   \      0x124   0x2007             MOVS     R0,#+7
+   \                     ??callCommandAction_16: (+1)
+   \      0x126   0x70B0             STRB     R0,[R6, #+2]
+   \                     ??callCommandAction_17: (+1)
+   \      0x128   0x9801             LDR      R0,[SP, #+4]
+   \      0x12A   0x6881             LDR      R1,[R0, #+8]
+   \      0x12C   0x4449             ADD      R1,R1,R9
+   \      0x12E   0x7848             LDRB     R0,[R1, #+1]
+   \      0x130   0x282A             CMP      R0,#+42
+   \      0x132   0xBF1C             ITT      NE 
+   \      0x134   0xF109 0x0001      ADDNE    R0,R9,#+1
+   \      0x138   0xFA5F 0xF980      UXTBNE   R9,R0
+   \      0x13C   0x78B0             LDRB     R0,[R6, #+2]
+   \      0x13E   0x2800             CMP      R0,#+0
+   \      0x140   0xD145             BNE.N    ??callCommandAction_13
+   \      0x142   0xF1B8 0x0F21      CMP      R8,#+33
+   \      0x146   0xBF1C             ITT      NE 
+   \      0x148   0x1C64             ADDNE    R4,R4,#+1
+   \      0x14A   0x1C6D             ADDNE    R5,R5,#+1
+   \                     ??callCommandAction_14: (+1)
+   \      0x14C   0x7831             LDRB     R1,[R6, #+0]
+   \      0x14E   0xB2E0             UXTB     R0,R4
+   \      0x150   0x4288             CMP      R0,R1
+   \      0x152   0x9801             LDR      R0,[SP, #+4]
+   \      0x154   0x6881             LDR      R1,[R0, #+8]
+   \      0x156   0xD242             BCS.N    ??callCommandAction_18
+   \      0x158   0xF811 0x8009      LDRB     R8,[R1, R9]
+   \      0x15C   0xB2E8             UXTB     R0,R5
+   \      0x15E   0x....'....        BL       firstByteOfArg
+   \      0x162   0xEA5F 0x0108      MOVS     R1,R8
+   \      0x166   0xD02F             BEQ.N    ??callCommandAction_19
+   \      0x168   0xF1B8 0x0121      SUBS     R1,R8,#+33
+   \      0x16C   0xD0DC             BEQ.N    ??callCommandAction_17
+   \      0x16E   0x3941             SUBS     R1,R1,#+65
+   \      0x170   0xD024             BEQ.N    ??callCommandAction_20
+   \      0x172   0x390F             SUBS     R1,R1,#+15
+   \      0x174   0x2902             CMP      R1,#+2
+   \      0x176   0xBF84             ITT      HI 
+   \      0x178   0x1F09             SUBHI    R1,R1,#+4
+   \      0x17A   0x2902             CMPHI    R1,#+2
+   \      0x17C   0xD8D2             BHI.N    ??callCommandAction_15
+   \      0x17E   0xF1B8 0x0F75      CMP      R8,#+117
+   \      0x182   0xBF08             IT       EQ 
+   \      0x184   0x27FF             MOVEQ    R7,#+255
+   \      0x186   0xD011             BEQ.N    ??callCommandAction_21
+   \      0x188   0xF1B8 0x0F76      CMP      R8,#+118
+   \      0x18C   0xBF08             IT       EQ 
+   \      0x18E   0xF64F 0x77FF      MOVWEQ   R7,#+65535
+   \      0x192   0xD00B             BEQ.N    ??callCommandAction_21
+   \      0x194   0xF1B8 0x0F73      CMP      R8,#+115
+   \      0x198   0xBF08             IT       EQ 
+   \      0x19A   0x277F             MOVEQ    R7,#+127
+   \      0x19C   0xD006             BEQ.N    ??callCommandAction_21
+   \      0x19E   0xF1B8 0x0F72      CMP      R8,#+114
+   \      0x1A2   0xBF0C             ITE      EQ 
+   \      0x1A4   0xF647 0x77FF      MOVWEQ   R7,#+32767
+   \      0x1A8   0xF04F 0x37FF      MOVNE    R7,#-1
+   \                     ??callCommandAction_21: (+1)
+   \      0x1AC   0x2101             MOVS     R1,#+1
+   \      0x1AE   0xB2E8             UXTB     R0,R5
+   \      0x1B0   0x....'....        BL       stringToUnsignedInt
+   \      0x1B4   0x4287             CMP      R7,R0
+   \      0x1B6   0xD2B7             BCS.N    ??callCommandAction_17
+   \      0x1B8   0x2004             MOVS     R0,#+4
+   \      0x1BA   0xE7B4             B.N      ??callCommandAction_16
+   \                     ??callCommandAction_20: (+1)
+   \      0x1BC   0x2822             CMP      R0,#+34
+   \      0x1BE   0xBF18             IT       NE 
+   \      0x1C0   0x287B             CMPNE    R0,#+123
+   \      0x1C2   0xD0B1             BEQ.N    ??callCommandAction_17
+   \      0x1C4   0x2005             MOVS     R0,#+5
+   \      0x1C6   0xE7AE             B.N      ??callCommandAction_16
+   \                     ??callCommandAction_19: (+1)
+   \      0x1C8   0x2103             MOVS     R1,#+3
+   \      0x1CA   0x70B1             STRB     R1,[R6, #+2]
+   \      0x1CC   0xE7AC             B.N      ??callCommandAction_17
+   \                     ??callCommandAction_13: (+1)
+   \      0x1CE   0x78B0             LDRB     R0,[R6, #+2]
+   \      0x1D0   0x2800             CMP      R0,#+0
+   \      0x1D2   0xD195             BNE.N    ??callCommandAction_12
+   \      0x1D4   0x9801             LDR      R0,[SP, #+4]
+   \      0x1D6   0x6840             LDR      R0,[R0, #+4]
+   \      0x1D8   0x....'....        BL       emberCommandActionHandler
+   \      0x1DC   0xE793             B.N      ??callCommandAction_0
+   \                     ??callCommandAction_18: (+1)
+   \      0x1DE   0xF811 0x0009      LDRB     R0,[R1, R9]
+   \      0x1E2   0x2800             CMP      R0,#+0
+   \      0x1E4   0xBF1F             ITTTT    NE 
+   \      0x1E6   0x4449             ADDNE    R1,R1,R9
+   \      0x1E8   0x7849             LDRBNE   R1,[R1, #+1]
+   \      0x1EA   0x292A             CMPNE    R1,#+42
+   \      0x1EC   0x2821             CMPNE    R0,#+33
+   \      0x1EE   0xD0EE             BEQ.N    ??callCommandAction_13
+   \                     ??callCommandAction_11: (+1)
+   \      0x1F0   0x2003             MOVS     R0,#+3
+   \      0x1F2   0x70B0             STRB     R0,[R6, #+2]
+   \      0x1F4   0xE784             B.N      ??callCommandAction_12
+    760          
+    761          //----------------------------------------------------------------
+    762          // Retrieving arguments
+    763          
+
+   \                                 In section .text, align 2, keep-with-next
+    764          uint8_t emberCommandArgumentCount(void)
+    765          {
+    766            return (commandState.tokenCount - commandState.argOffset);
+   \                     emberCommandArgumentCount: (+1)
+   \        0x0   0x....'....        LDR.W    R1,??DataTable18_7
+   \        0x4   0x7808             LDRB     R0,[R1, #+0]
+   \        0x6   0x7909             LDRB     R1,[R1, #+4]
+   \        0x8   0x....             B.N      ?Subroutine0
+    767          }
+    768          
+
+   \                                 In section .text, align 2, keep-with-next
+    769          static uint32_t stringToUnsignedInt(uint8_t argNum, bool swallowLeadingSign)
+    770          {
+   \                     stringToUnsignedInt: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+    771            uint8_t tokenNum = argNum + commandState.argOffset;
+   \        0x4   0x....'....        LDR.W    R2,??DataTable18_5
+   \        0x8   0x4688             MOV      R8,R1
+   \        0xA   0xF102 0x0679      ADD      R6,R2,#+121
+   \        0xE   0x78B1             LDRB     R1,[R6, #+2]
+    772            uint8_t *string = commandState.buffer + commandState.tokenIndices[tokenNum];
+    773            uint8_t length = tokenLength(tokenNum);
+   \       0x10   0x2400             MOVS     R4,#+0
+   \       0x12   0x2500             MOVS     R5,#+0
+   \       0x14   0x1808             ADDS     R0,R1,R0
+   \       0x16   0xB2C1             UXTB     R1,R0
+   \       0x18   0x4411             ADD      R1,R2,R1
+   \       0x1A   0xF891 0x3065      LDRB     R3,[R1, #+101]
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x441A             ADD      R2,R2,R3
+   \       0x22   0x1C57             ADDS     R7,R2,#+1
+   \       0x24   0x....'....        BL       tokenLength
+   \       0x28   0x4681             MOV      R9,R0
+    774            uint32_t result = 0;
+    775            uint8_t base = defaultBase;
+   \       0x2A   0x....'....        LDR.W    R0,??DataTable18_2
+   \       0x2E   0xF890 0xA000      LDRB     R10,[R0, #+0]
+    776            uint8_t i;
+    777            for (i = 0; i < length; i++) {
+   \                     ??stringToUnsignedInt_0: (+1)
+   \       0x32   0x454D             CMP      R5,R9
+   \       0x34   0xDA1B             BGE.N    ??stringToUnsignedInt_1
+    778              uint8_t next = string[i];
+   \       0x36   0x5D78             LDRB     R0,[R7, R5]
+    779              if (swallowLeadingSign && i == 0 && next == '-') {
+   \       0x38   0xEA5F 0x0108      MOVS     R1,R8
+   \       0x3C   0xD003             BEQ.N    ??stringToUnsignedInt_2
+   \       0x3E   0x2D00             CMP      R5,#+0
+   \       0x40   0xBF08             IT       EQ 
+   \       0x42   0x282D             CMPEQ    R0,#+45
+   \       0x44   0xD011             BEQ.N    ??stringToUnsignedInt_3
+    780                // do nothing
+    781              } else if ((next == 'x' || next == 'X')
+    782                         && result == 0
+    783                         && (i == 1 || i == 2)) {
+   \                     ??stringToUnsignedInt_2: (+1)
+   \       0x46   0x2878             CMP      R0,#+120
+   \       0x48   0xD107             BNE.N    ??stringToUnsignedInt_4
+   \                     ??stringToUnsignedInt_5: (+1)
+   \       0x4A   0xB944             CBNZ.N   R4,??stringToUnsignedInt_6
+   \       0x4C   0x2D01             CMP      R5,#+1
+   \       0x4E   0xBF18             IT       NE 
+   \       0x50   0x2D02             CMPNE    R5,#+2
+   \       0x52   0xD104             BNE.N    ??stringToUnsignedInt_6
+    784                base = 16;
+   \       0x54   0xF04F 0x0A10      MOV      R10,#+16
+   \       0x58   0xE007             B.N      ??stringToUnsignedInt_3
+    785              } else {
+   \                     ??stringToUnsignedInt_4: (+1)
+   \       0x5A   0x2858             CMP      R0,#+88
+   \       0x5C   0xD0F5             BEQ.N    ??stringToUnsignedInt_5
+    786                uint8_t value = hexToInt(next);
+   \                     ??stringToUnsignedInt_6: (+1)
+   \       0x5E   0x....'....        BL       hexToInt
+    787                if (value < base) {
+   \       0x62   0x4550             CMP      R0,R10
+   \       0x64   0xDA06             BGE.N    ??stringToUnsignedInt_7
+    788                  result = result * base + value;
+   \       0x66   0xFB0A 0x0404      MLA      R4,R10,R4,R0
+    789                } else {
+   \                     ??stringToUnsignedInt_3: (+1)
+   \       0x6A   0x1C6D             ADDS     R5,R5,#+1
+   \       0x6C   0xE7E1             B.N      ??stringToUnsignedInt_0
+    790                  commandState.error = EMBER_CMD_ERR_ARGUMENT_SYNTAX_ERROR;
+    791                  return 0;
+    792                }
+    793              }
+    794            }
+    795            return result;
+   \                     ??stringToUnsignedInt_1: (+1)
+   \       0x6E   0x4620             MOV      R0,R4
+   \                     ??stringToUnsignedInt_8: (+1)
+   \       0x70   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+   \                     ??stringToUnsignedInt_7: (+1)
+   \       0x74   0x2005             MOVS     R0,#+5
+   \       0x76   0x7030             STRB     R0,[R6, #+0]
+   \       0x78   0x2000             MOVS     R0,#+0
+   \       0x7A   0xE7F9             B.N      ??stringToUnsignedInt_8
+    796          }
+    797          
+
+   \                                 In section .text, align 2, keep-with-next
+    798          uint32_t emberUnsignedCommandArgument(uint8_t argNum)
+    799          {
+    800            return stringToUnsignedInt(argNum, false);
+   \                     emberUnsignedCommandArgument: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x....             B.N      stringToUnsignedInt
+    801          }
+    802          
+
+   \                                 In section .text, align 2, keep-with-next
+    803          int32_t emberSignedCommandArgument(uint8_t argNum)
+    804          {
+   \                     emberSignedCommandArgument: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    805            bool negative = (firstByteOfArg(argNum) == '-');
+   \        0x4   0x....'....        BL       firstByteOfArg
+   \        0x8   0x282D             CMP      R0,#+45
+    806            int32_t result = stringToUnsignedInt(argNum, negative);
+   \        0xA   0x4620             MOV      R0,R4
+   \        0xC   0xBF0C             ITE      EQ 
+   \        0xE   0x2501             MOVEQ    R5,#+1
+   \       0x10   0x2500             MOVNE    R5,#+0
+   \       0x12   0x4629             MOV      R1,R5
+   \       0x14   0x....'....        BL       stringToUnsignedInt
+    807            return (negative ? -result : result);
+   \       0x18   0xB105             CBZ.N    R5,??emberSignedCommandArgument_0
+   \       0x1A   0x4240             RSBS     R0,R0,#+0
+   \                     ??emberSignedCommandArgument_0: (+1)
+   \       0x1C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    808          }
+    809          
+
+   \                                 In section .text, align 2, keep-with-next
+    810          uint8_t *emberStringCommandArgument(int8_t argNum, uint8_t *length)
+    811          {
+   \                     emberStringCommandArgument: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    812            uint8_t tokenNum = argNum + commandState.argOffset;
+   \        0x4   0x....             LDR.N    R1,??DataTable18_5
+   \        0x6   0xF891 0x507B      LDRB     R5,[R1, #+123]
+    813            uint8_t leadingQuote = (argNum < 0 ? 0 : 1);
+   \        0xA   0x43C6             MVNS     R6,R0
+   \        0xC   0x182D             ADDS     R5,R5,R0
+    814            if (length != NULL) {
+   \        0xE   0xB12C             CBZ.N    R4,??emberStringCommandArgument_0
+    815              *length = tokenLength(tokenNum) - leadingQuote;
+   \       0x10   0xB2E8             UXTB     R0,R5
+   \       0x12   0x....'....        BL       tokenLength
+   \       0x16   0xEBA0 0x70D6      SUB      R0,R0,R6, LSR #+31
+   \       0x1A   0x7020             STRB     R0,[R4, #+0]
+    816            }
+    817            return tokenPointer(tokenNum) + leadingQuote;
+   \                     ??emberStringCommandArgument_0: (+1)
+   \       0x1C   0xB268             SXTB     R0,R5
+   \       0x1E   0x....'....        BL       tokenPointer
+   \       0x22   0xEB00 0x70D6      ADD      R0,R0,R6, LSR #+31
+   \       0x26   0xBD70             POP      {R4-R6,PC}       ;; return
+    818          }
+    819          
+
+   \                                 In section .text, align 2, keep-with-next
+    820          bool emberStringToHostOrderIpv4Address(const uint8_t* string, uint32_t* hostOrderIpv4Address)
+    821          {
+   \                     emberStringToHostOrderIpv4Address: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    822            uint8_t quadCount = 0;
+    823            uint16_t quad = 0;  // 16-bit so we can catch errors where quad > 255.
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x2500             MOVS     R5,#+0
+    824            bool valueFound = false;
+   \        0x6   0x2600             MOVS     R6,#+0
+    825            *hostOrderIpv4Address = 0;
+   \        0x8   0x600A             STR      R2,[R1, #+0]
+   \        0xA   0xE017             B.N      ??emberStringToHostOrderIpv4Address_0
+    826            while (*string != '\0' && *string != '"') {
+    827              if (*string == '.') {
+    828                if (!valueFound) {
+   \                     ??emberStringToHostOrderIpv4Address_1: (+1)
+   \        0xC   0xB146             CBZ.N    R6,??emberStringToHostOrderIpv4Address_2
+    829                  emberSerialPrintfLine(APP_SERIAL, "Error: No value found before '.'");
+    830                  return false;
+    831                }
+    832                *hostOrderIpv4Address += (uint8_t)quad;
+    833                *hostOrderIpv4Address <<= 8;
+   \        0xE   0x680B             LDR      R3,[R1, #+0]
+   \       0x10   0xB2D2             UXTB     R2,R2
+    834          //      emberSerialPrintfLine(APP_SERIAL, "Debug: Finished quad %d. IP: 0x%4X", quad, *hostOrderIpv4Address);
+    835                quad = 0;
+    836                quadCount++;
+   \       0x12   0x4625             MOV      R5,R4
+   \       0x14   0x18D2             ADDS     R2,R2,R3
+   \       0x16   0x0212             LSLS     R2,R2,#+8
+   \       0x18   0x600A             STR      R2,[R1, #+0]
+   \       0x1A   0x2200             MOVS     R2,#+0
+    837                valueFound = false;
+   \       0x1C   0x2600             MOVS     R6,#+0
+   \       0x1E   0xE00C             B.N      ??emberStringToHostOrderIpv4Address_3
+   \                     ??emberStringToHostOrderIpv4Address_2: (+1)
+   \       0x20   0x....             LDR.N    R1,??DataTable18_12
+   \       0x22   0x....'....        BL       ??Subroutine2_0
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x26   0xE01B             B.N      ??emberStringToHostOrderIpv4Address_4
+    838              } else if (*string < '0' || *string > '9') {
+    839                emberSerialPrintfLine(APP_SERIAL, "Error: Invalid char '%c' in IP address", *string);
+    840                return false;
+    841              } else {
+    842                valueFound = true;
+    843                quad *= 10;
+    844                quad += (*string - ASCII_0);
+   \                     ??emberStringToHostOrderIpv4Address_5: (+1)
+   \       0x28   0x240A             MOVS     R4,#+10
+   \       0x2A   0xFB04 0x3202      MLA      R2,R4,R2,R3
+   \       0x2E   0x2601             MOVS     R6,#+1
+   \       0x30   0x3A30             SUBS     R2,R2,#+48
+   \       0x32   0xB292             UXTH     R2,R2
+    845          //      emberSerialPrintfLine(APP_SERIAL, "Debug: Quad is %d", quad);
+    846                if (quad > 255) {
+   \       0x34   0xF5B2 0x7F80      CMP      R2,#+256
+   \       0x38   0xDA0E             BGE.N    ??emberStringToHostOrderIpv4Address_6
+    847                  emberSerialPrintfLine(APP_SERIAL, "Error: Invalid value of %d in IP address", quad);
+    848                  return false;
+    849                }
+    850              }
+    851              string++;
+   \                     ??emberStringToHostOrderIpv4Address_3: (+1)
+   \       0x3A   0x1C40             ADDS     R0,R0,#+1
+   \                     ??emberStringToHostOrderIpv4Address_0: (+1)
+   \       0x3C   0x7803             LDRB     R3,[R0, #+0]
+   \       0x3E   0x1C6C             ADDS     R4,R5,#+1
+   \       0x40   0xB1B3             CBZ.N    R3,??emberStringToHostOrderIpv4Address_7
+   \       0x42   0x2B22             CMP      R3,#+34
+   \       0x44   0xD014             BEQ.N    ??emberStringToHostOrderIpv4Address_7
+   \       0x46   0x2B2E             CMP      R3,#+46
+   \       0x48   0xD0E0             BEQ.N    ??emberStringToHostOrderIpv4Address_1
+   \       0x4A   0xF1A3 0x0430      SUB      R4,R3,#+48
+   \       0x4E   0x2C0A             CMP      R4,#+10
+   \       0x50   0xD3EA             BCC.N    ??emberStringToHostOrderIpv4Address_5
+   \       0x52   0x461A             MOV      R2,R3
+   \       0x54   0x....             LDR.N    R1,??DataTable18_13
+   \       0x56   0xE000             B.N      ??emberStringToHostOrderIpv4Address_8
+   \                     ??emberStringToHostOrderIpv4Address_6: (+1)
+   \       0x58   0x....             LDR.N    R1,??DataTable18_14
+   \                     ??emberStringToHostOrderIpv4Address_8: (+1)
+   \       0x5A   0x2020             MOVS     R0,#+32
+   \       0x5C   0x....'....        BL       emberSerialPrintfLine
+   \                     ??emberStringToHostOrderIpv4Address_4: (+1)
+   \       0x60   0x2000             MOVS     R0,#+0
+   \       0x62   0xBD70             POP      {R4-R6,PC}
+    852            }
+    853          
+    854            if (valueFound) {
+    855              quadCount++;
+    856            }
+    857          
+    858            if (quadCount != 4) {
+    859              emberSerialPrintfLine(APP_SERIAL, "Error: Expected 4 quads, got %d.", quadCount);
+    860              return false;
+    861            }
+    862          //  emberSerialPrintfLine(APP_SERIAL, "Debug: Finished IP parsing.");
+    863            *hostOrderIpv4Address += (uint8_t)quad;
+   \                     ??emberStringToHostOrderIpv4Address_9: (+1)
+   \       0x64   0x6808             LDR      R0,[R1, #+0]
+   \       0x66   0xB2D2             UXTB     R2,R2
+   \       0x68   0x1812             ADDS     R2,R2,R0
+   \       0x6A   0x600A             STR      R2,[R1, #+0]
+    864            return true;
+   \       0x6C   0x2001             MOVS     R0,#+1
+   \       0x6E   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??emberStringToHostOrderIpv4Address_7: (+1)
+   \       0x70   0xB106             CBZ.N    R6,??emberStringToHostOrderIpv4Address_10
+   \       0x72   0x4625             MOV      R5,R4
+   \                     ??emberStringToHostOrderIpv4Address_10: (+1)
+   \       0x74   0xB2E8             UXTB     R0,R5
+   \       0x76   0x2804             CMP      R0,#+4
+   \       0x78   0xD0F4             BEQ.N    ??emberStringToHostOrderIpv4Address_9
+   \       0x7A   0xB2EA             UXTB     R2,R5
+   \       0x7C   0x....             LDR.N    R1,??DataTable18_15
+   \       0x7E   0xE7EC             B.N      ??emberStringToHostOrderIpv4Address_8
+    865          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x4639             MOV      R1,R7
+   \                     ??Subroutine2_0: (+1)
+   \        0x2   0x2020             MOVS     R0,#+32
+   \        0x4   0x....'....        B.W      emberSerialPrintfLine
+    866          
+
+   \                                 In section .text, align 2, keep-with-next
+    867          bool emberStringArgumentToHostOrderIpv4Address(uint8_t argNum, uint32_t* hostOrderIpv4Address)
+    868          {
+   \                     emberStringArgumentToHostOrderIpv4Address: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    869            uint8_t argLength;
+    870            uint8_t *contents = emberStringCommandArgument(argNum,
+    871                                                           &argLength);
+   \        0x4   0x4669             MOV      R1,SP
+   \        0x6   0xB240             SXTB     R0,R0
+   \        0x8   0x....'....        BL       emberStringCommandArgument
+    872            return emberStringToHostOrderIpv4Address(contents, hostOrderIpv4Address);
+   \        0xC   0x4621             MOV      R1,R4
+   \        0xE   0x....'....        BL       emberStringToHostOrderIpv4Address
+   \       0x12   0xBD16             POP      {R1,R2,R4,PC}    ;; return
+    873          }
+    874          
+
+   \                                 In section .text, align 2, keep-with-next
+    875          uint8_t emberCopyStringArgument(int8_t argNum,
+    876                                          uint8_t *destination,
+    877                                          uint8_t maxLength,
+    878                                          bool leftPad)
+    879          {
+   \                     emberCopyStringArgument: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x460C             MOV      R4,R1
+   \        0x4   0x4615             MOV      R5,R2
+   \        0x6   0x461E             MOV      R6,R3
+    880            uint8_t padLength;
+    881            uint8_t argLength;
+    882            uint8_t *contents = emberStringCommandArgument(argNum, &argLength);
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x....'....        BL       emberStringCommandArgument
+    883            if (argLength > maxLength) {
+   \        0xE   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x12   0x4607             MOV      R7,R0
+   \       0x14   0x4628             MOV      R0,R5
+   \       0x16   0x4288             CMP      R0,R1
+   \       0x18   0xBF88             IT       HI 
+   \       0x1A   0x4608             MOVHI    R0,R1
+    884              argLength = maxLength;
+    885            }
+    886            padLength = leftPad ? maxLength - argLength : 0;
+   \       0x1C   0x2E00             CMP      R6,#+0
+   \       0x1E   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \       0x22   0xBF1A             ITTE     NE 
+   \       0x24   0xF89D 0x0000      LDRBNE   R0,[SP, #+0]
+   \       0x28   0x1A2D             SUBNE    R5,R5,R0
+   \       0x2A   0x2500             MOVEQ    R5,#+0
+    887            MEMSET(destination, 0, padLength);
+   \       0x2C   0xB2EA             UXTB     R2,R5
+   \       0x2E   0x2100             MOVS     R1,#+0
+   \       0x30   0x4620             MOV      R0,R4
+   \       0x32   0x....'....        BL       halCommonMemSet
+    888            MEMMOVE(destination + padLength, contents, argLength);
+   \       0x36   0xF89D 0x2000      LDRB     R2,[SP, #+0]
+   \       0x3A   0xB2ED             UXTB     R5,R5
+   \       0x3C   0x4639             MOV      R1,R7
+   \       0x3E   0x1960             ADDS     R0,R4,R5
+   \       0x40   0x....'....        BL       halCommonMemMove
+    889            return argLength;
+   \       0x44   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \       0x48   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    890          }
+    891          
+
+   \                                 In section .text, align 2, keep-with-next
+    892          uint8_t emberCopyBigEndianEui64Argument(int8_t index, EmberEUI64 destination)
+    893          {
+   \                     emberCopyBigEndianEui64Argument: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    894            // emberReverseMemCopy may not be available, so we have to do it ourselves.
+    895            uint8_t i, length = emberCopyEui64Argument(index, destination);
+   \        0x4   0x2301             MOVS     R3,#+1
+   \        0x6   0x2208             MOVS     R2,#+8
+   \        0x8   0x....'....        BL       emberCopyStringArgument
+    896            for (i = 0; i < EUI64_SIZE / 2; i++) {
+   \        0xC   0x2100             MOVS     R1,#+0
+    897              uint8_t tmp = destination[EUI64_SIZE - i - 1];
+   \                     ??emberCopyBigEndianEui64Argument_0: (+1)
+   \        0xE   0x424A             RSBS     R2,R1,#+0
+    898              destination[EUI64_SIZE - i - 1] = destination[i];
+   \       0x10   0x5C65             LDRB     R5,[R4, R1]
+   \       0x12   0x4422             ADD      R2,R4,R2
+   \       0x14   0x79D3             LDRB     R3,[R2, #+7]
+   \       0x16   0x71D5             STRB     R5,[R2, #+7]
+    899              destination[i] = tmp;
+   \       0x18   0x5463             STRB     R3,[R4, R1]
+    900            }
+   \       0x1A   0x1C49             ADDS     R1,R1,#+1
+   \       0x1C   0x2904             CMP      R1,#+4
+   \       0x1E   0xDBF6             BLT.N    ??emberCopyBigEndianEui64Argument_0
+    901            return length;
+   \       0x20   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    902          }
+    903          
+    904          #if !defined(EMBER_APPLICATION_HAS_COMMAND_ACTION_HANDLER)
+    905          void emberCommandActionHandler(const CommandAction action)
+    906          {
+    907            (*action)();
+    908          }
+    909          #endif
+    910          
+    911          #if !defined(EMBER_APPLICATION_HAS_COMMAND_ERROR_HANDLER)
+
+   \                                 In section .data, align 4
+    912          const char * emberCommandErrorNames[] =
+   \                     emberCommandErrorNames:
+   \        0x0   0x....'....        DC32 ?_0, ?_1, ?_2, ?_3, ?_4, ?_5, ?_6, ?_7
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....  
+    913          {
+    914            "",
+    915            "Serial port error",
+    916            "No such command",
+    917            "Wrong number of args",
+    918            "Arg out of range",
+    919            "Arg syntax error",
+    920            "Too long",
+    921            "Bad arg type"
+    922          };
+    923          
+
+   \                                 In section .text, align 2, keep-with-next
+    924          static void printCommandUsage(bool singleCommandUsage,
+    925                                        EmberCommandEntry *entry)
+    926          {
+   \                     printCommandUsage: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    927            const char * arg = entry->argumentTypes;
+    928            emberSerialPrintf(APP_SERIAL, "%p", entry->name);
+   \        0x6   0x682A             LDR      R2,[R5, #+0]
+   \        0x8   0x68AE             LDR      R6,[R5, #+8]
+   \        0xA   0x....             LDR.N    R1,??DataTable18_16
+   \        0xC   0x2020             MOVS     R0,#+32
+   \        0xE   0x....'....        BL       emberSerialPrintf
+    929          
+    930            if ( entry->action == NULL ) {
+   \       0x12   0x6868             LDR      R0,[R5, #+4]
+   \       0x14   0x....             LDR.N    R7,??DataTable18_17
+   \       0x16   0xB918             CBNZ.N   R0,??printCommandUsage_0
+    931              emberSerialPrintf(APP_SERIAL, "...");
+   \       0x18   0x....             LDR.N    R1,??DataTable18_18
+   \       0x1A   0x....'....        BL       ?Subroutine1
+    932            } else if (singleCommandUsage) {
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x1E   0xE031             B.N      ??CrossCallReturnLabel_9
+   \                     ??printCommandUsage_0: (+1)
+   \       0x20   0xB90C             CBNZ.N   R4,??printCommandUsage_1
+   \       0x22   0xE02F             B.N      ??CrossCallReturnLabel_9
+    933              uint8_t argumentIndex = 0;
+    934              printIfEntryHasDescription(entry, " (args) \n");
+    935              while (*arg != '\0') {
+    936                uint8_t c = *arg;
+    937                printIfEntryHasArgumentDescriptions(entry,
+    938                                                    "  ");
+    939                emberSerialPrintf(APP_SERIAL,
+    940                                  (c == 'u' ? " <uint8_t>"
+    941                                   : c == 'v' ? " <uint16_t>"
+    942                                   : c == 'w' ? " <uint32_t>"
+    943                                   : c == 's' ? " <int8_t>"
+    944                                   : c == 'r' ? " <int16_t>"
+    945                                   : c == 'q' ? " <int32_t>"
+    946                                   : c == 'b' ? " <string>"
+    947                                   : c == 'n' ? " ..."
+    948                                   : c == '*' ? " *"
+    949                                   : c == '!' ? " Optional Arguments Below\n"
+    950                                   : " ?"));
+    951                // Skip '!'. There are no attributes associated with this.
+    952                // We move onto the next arg in the arg string.
+    953                if ( c == '!' ) {
+    954                  arg++;
+   \                     ??printCommandUsage_2: (+1)
+   \       0x24   0x1C76             ADDS     R6,R6,#+1
+    955                } else {
+   \                     ??printCommandUsage_1: (+1)
+   \       0x26   0x7834             LDRB     R4,[R6, #+0]
+   \       0x28   0xB354             CBZ.N    R4,??printCommandUsage_3
+   \       0x2A   0x2C75             CMP      R4,#+117
+   \       0x2C   0xBF08             IT       EQ 
+   \       0x2E   0x....             LDREQ.N  R1,??DataTable18_19
+   \       0x30   0xD023             BEQ.N    ??printCommandUsage_4
+   \       0x32   0x2C76             CMP      R4,#+118
+   \       0x34   0xBF08             IT       EQ 
+   \       0x36   0x....             LDREQ.N  R1,??DataTable18_20
+   \       0x38   0xD01F             BEQ.N    ??printCommandUsage_4
+   \       0x3A   0x2C77             CMP      R4,#+119
+   \       0x3C   0xBF08             IT       EQ 
+   \       0x3E   0x....             LDREQ.N  R1,??DataTable18_21
+   \       0x40   0xD01B             BEQ.N    ??printCommandUsage_4
+   \       0x42   0x2C73             CMP      R4,#+115
+   \       0x44   0xBF08             IT       EQ 
+   \       0x46   0x....             LDREQ.N  R1,??DataTable18_22
+   \       0x48   0xD017             BEQ.N    ??printCommandUsage_4
+   \       0x4A   0x2C72             CMP      R4,#+114
+   \       0x4C   0xBF08             IT       EQ 
+   \       0x4E   0x....             LDREQ.N  R1,??DataTable18_23
+   \       0x50   0xD013             BEQ.N    ??printCommandUsage_4
+   \       0x52   0x2C71             CMP      R4,#+113
+   \       0x54   0xBF08             IT       EQ 
+   \       0x56   0x....             LDREQ.N  R1,??DataTable18_24
+   \       0x58   0xD00F             BEQ.N    ??printCommandUsage_4
+   \       0x5A   0x2C62             CMP      R4,#+98
+   \       0x5C   0xBF08             IT       EQ 
+   \       0x5E   0x....             LDREQ.N  R1,??DataTable18_25
+   \       0x60   0xD00B             BEQ.N    ??printCommandUsage_4
+   \       0x62   0x2C6E             CMP      R4,#+110
+   \       0x64   0xBF08             IT       EQ 
+   \       0x66   0x....             LDREQ.N  R1,??DataTable18_26
+   \       0x68   0xD007             BEQ.N    ??printCommandUsage_4
+   \       0x6A   0x2C2A             CMP      R4,#+42
+   \       0x6C   0xBF08             IT       EQ 
+   \       0x6E   0x....             ADREQ.N  R1,??DataTable18  ;; 0x20, 0x2A, 0x00, 0x00
+   \       0x70   0xD003             BEQ.N    ??printCommandUsage_4
+   \       0x72   0x2C21             CMP      R4,#+33
+   \       0x74   0xBF0C             ITE      EQ 
+   \       0x76   0x....             LDREQ.N  R1,??DataTable18_27
+   \       0x78   0x....             ADRNE.N  R1,??DataTable18_1  ;; 0x20, 0x3F, 0x00, 0x00
+   \                     ??printCommandUsage_4: (+1)
+   \       0x7A   0x....'....        BL       ?Subroutine1
+    956                  printIfEntryHasArgumentDescriptions(entry,
+    957                                                      "  %p\n",
+    958                                                      entry->argumentDescriptions[argumentIndex]);
+    959                  argumentIndex++;
+    960                  arg += 1;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x7E   0xE7D1             B.N      ??printCommandUsage_2
+    961                }
+    962              }
+    963              emberSerialPrintfLine(APP_SERIAL, "");
+   \                     ??printCommandUsage_3: (+1)
+   \       0x80   0x....'....        BL       ?Subroutine2
+    964            } else {
+    965              // MISRA requires ..else if.. to have terminating else.
+    966            }
+    967            emberSerialWaitSend(APP_SERIAL);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x84   0x2020             MOVS     R0,#+32
+   \       0x86   0x....'....        BL       emberSerialWaitSend
+    968            printIfEntryHasDescription(entry, " - %p", entry->description);
+    969          
+    970            emberSerialPrintfLine(APP_SERIAL, "");
+   \       0x8A   0x....'....        BL       ?Subroutine2
+    971            emberSerialWaitSend(APP_SERIAL);
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x8E   0x2020             MOVS     R0,#+32
+   \       0x90   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \       0x94   0x....'....        B.W      emberSerialWaitSend
+    972          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2020             MOVS     R0,#+32
+   \        0x2   0x....'....        B.W      emberSerialPrintf
+    973          
+
+   \                                 In section .text, align 2, keep-with-next
+    974          void emberPrintCommandUsage(EmberCommandEntry *entry)
+    975          {
+   \                     emberPrintCommandUsage: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    976            EmberCommandEntry *commandFinger;
+    977            printCommandUsage(true,
+    978                              entry);
+   \        0x4   0x4621             MOV      R1,R4
+   \        0x6   0x2001             MOVS     R0,#+1
+   \        0x8   0x....'....        BL       printCommandUsage
+    979          
+    980            if ( getNestedCommand(entry, &commandFinger) ) {
+   \        0xC   0x4669             MOV      R1,SP
+   \        0xE   0x4620             MOV      R0,R4
+   \       0x10   0x....'....        BL       getNestedCommand
+   \       0x14   0xB958             CBNZ.N   R0,??emberPrintCommandUsage_0
+   \       0x16   0xBD13             POP      {R0,R1,R4,PC}
+    981              for (; commandFinger->name != NULL; commandFinger++) {
+    982                emberSerialPrintf(APP_SERIAL, "  ");
+   \                     ??emberPrintCommandUsage_1: (+1)
+   \       0x18   0x....             LDR.N    R1,??DataTable18_28
+   \       0x1A   0x....'....        BL       ?Subroutine1
+    983                printCommandUsage(false,
+    984                                  commandFinger);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x1E   0x9900             LDR      R1,[SP, #+0]
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x....'....        BL       printCommandUsage
+    985              }
+   \       0x26   0x9800             LDR      R0,[SP, #+0]
+   \       0x28   0xF100 0x010C      ADD      R1,R0,#+12
+   \       0x2C   0x9100             STR      R1,[SP, #+0]
+   \                     ??emberPrintCommandUsage_0: (+1)
+   \       0x2E   0x9900             LDR      R1,[SP, #+0]
+   \       0x30   0x6808             LDR      R0,[R1, #+0]
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD1F0             BNE.N    ??emberPrintCommandUsage_1
+    986            }
+    987          }
+   \       0x36   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    988          
+
+   \                                 In section .text, align 2, keep-with-next
+    989          void emberPrintCommandUsageNotes(void)
+    990          {
+   \                     emberPrintCommandUsageNotes: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    991            emberSerialPrintf(APP_SERIAL,
+    992                              "Usage:\r\n"
+    993                              "<int>: 123 or 0x1ABC\r\n"
+    994                              "<string>: \"foo\" or {0A 1B 2C}\r\n\r\n");
+   \        0x2   0x....             LDR.N    R1,??DataTable18_29
+   \        0x4   0x....'....        BL       ?Subroutine1
+    995            emberSerialWaitSend(APP_SERIAL);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x8   0x2020             MOVS     R0,#+32
+   \        0xA   0xE8BD 0x4002      POP      {R1,LR}
+   \        0xE   0x....'....        B.W      emberSerialWaitSend
+    996          }
+    997          
+
+   \                                 In section .text, align 2, keep-with-next
+    998          void emberPrintCommandTable(void)
+    999          {
+   \                     emberPrintCommandTable: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   1000            EmberCommandEntry *commandFinger = emberCommandTable;
+   \        0x2   0x....             LDR.N    R4,??DataTable18_8
+   1001            emberPrintCommandUsageNotes();
+   \        0x4   0x....'....        BL       emberPrintCommandUsageNotes
+   \        0x8   0xE004             B.N      ??emberPrintCommandTable_0
+   1002            for (; commandFinger->name != NULL; commandFinger++) {
+   1003              printCommandUsage(false, commandFinger);
+   \                     ??emberPrintCommandTable_1: (+1)
+   \        0xA   0x4621             MOV      R1,R4
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x....'....        BL       printCommandUsage
+   1004            }
+   \       0x12   0x340C             ADDS     R4,R4,#+12
+   \                     ??emberPrintCommandTable_0: (+1)
+   \       0x14   0x6820             LDR      R0,[R4, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD1F7             BNE.N    ??emberPrintCommandTable_1
+   1005          }
+   \       0x1A   0xBD10             POP      {R4,PC}          ;; return
+   1006          
+
+   \                                 In section .text, align 2, keep-with-next
+   1007          void emberCommandErrorHandler(EmberCommandStatus status)
+   1008          {
+   \                     emberCommandErrorHandler: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   1009            emberSerialPrintf(APP_SERIAL, "%p\r\n", emberCommandErrorNames[status]);
+   \        0x4   0x....             LDR.N    R3,??DataTable18_30
+   \        0x6   0xF853 0x2020      LDR      R2,[R3, R0, LSL #+2]
+   \        0xA   0x....             LDR.N    R1,??DataTable18_31
+   \        0xC   0x2020             MOVS     R0,#+32
+   \        0xE   0x....'....        BL       emberSerialPrintf
+   1010          
+   1011            if (emberCurrentCommand == NULL) {
+   \       0x12   0x....             LDR.N    R4,??DataTable18_4
+   \       0x14   0x6820             LDR      R0,[R4, #+0]
+   \       0x16   0xB910             CBNZ.N   R0,??emberCommandErrorHandler_0
+   1012              emberPrintCommandTable();
+   \       0x18   0xE8BD 0x47F0      POP      {R4-R10,LR}
+   \       0x1C   0x....             B.N      emberPrintCommandTable
+   1013            } else {
+   1014              uint8_t *finger;
+   1015              uint8_t tokenNum, i;
+   1016              emberPrintCommandUsageNotes();
+   \                     ??emberCommandErrorHandler_0: (+1)
+   \       0x1E   0x....'....        BL       emberPrintCommandUsageNotes
+   1017              // Reconstruct any parent commands from the buffer.
+   1018              for (tokenNum = 0; tokenNum < commandState.argOffset - 1; tokenNum++) {
+   \       0x22   0x2500             MOVS     R5,#+0
+   \       0x24   0x....'....        LDR.W    R8,??DataTable18_10
+   \       0x28   0x....'....        LDR.W    R9,??DataTable18_32
+   \       0x2C   0x....'....        LDR.W    R10,??DataTable18_5
+   \       0x30   0xE010             B.N      ??emberCommandErrorHandler_1
+   1019                finger = tokenPointer(tokenNum);
+   1020                for (i = 0; i < tokenLength(tokenNum); i++) {
+   1021                  emberSerialPrintf(APP_SERIAL, "%c", finger[i]);
+   \                     ??emberCommandErrorHandler_2: (+1)
+   \       0x32   0xB2F8             UXTB     R0,R7
+   \       0x34   0x5C32             LDRB     R2,[R6, R0]
+   \       0x36   0x4649             MOV      R1,R9
+   \       0x38   0x2020             MOVS     R0,#+32
+   \       0x3A   0x....'....        BL       emberSerialPrintf
+   1022                }
+   \       0x3E   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??emberCommandErrorHandler_3: (+1)
+   \       0x40   0xB2E8             UXTB     R0,R5
+   \       0x42   0x....'....        BL       tokenLength
+   \       0x46   0xB2F9             UXTB     R1,R7
+   \       0x48   0x4281             CMP      R1,R0
+   \       0x4A   0xD3F2             BCC.N    ??emberCommandErrorHandler_2
+   1023                emberSerialPrintf(APP_SERIAL, " ");
+   \       0x4C   0x4641             MOV      R1,R8
+   \       0x4E   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x52   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??emberCommandErrorHandler_1: (+1)
+   \       0x54   0xF89A 0x107B      LDRB     R1,[R10, #+123]
+   \       0x58   0xB2E8             UXTB     R0,R5
+   \       0x5A   0x1E49             SUBS     R1,R1,#+1
+   \       0x5C   0x4288             CMP      R0,R1
+   \       0x5E   0xDA05             BGE.N    ??emberCommandErrorHandler_4
+   \       0x60   0xB268             SXTB     R0,R5
+   \       0x62   0x....'....        BL       tokenPointer
+   \       0x66   0x4606             MOV      R6,R0
+   \       0x68   0x2700             MOVS     R7,#+0
+   \       0x6A   0xE7E9             B.N      ??emberCommandErrorHandler_3
+   1024              }
+   1025              emberPrintCommandUsage(emberCurrentCommand);
+   \                     ??emberCommandErrorHandler_4: (+1)
+   \       0x6C   0x6820             LDR      R0,[R4, #+0]
+   \       0x6E   0xE8BD 0x47F0      POP      {R4-R10,LR}
+   \       0x72   0x....             B.N      emberPrintCommandUsage
+   1026            }
+   1027          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18:
+   \        0x0   0x20 0x2A          DC8      0x20, 0x2A, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_1:
+   \        0x0   0x20 0x3F          DC8      0x20, 0x3F, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_2:
+   \        0x0   0x....'....        DC32     defaultBase
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_3:
+   \        0x0   0x....'....        DC32     commandState+0x1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_4:
+   \        0x0   0x....'....        DC32     emberCurrentCommand
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_5:
+   \        0x0   0x....'....        DC32     commandState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_6:
+   \        0x0   0x....'....        DC32     previousCharacter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_7:
+   \        0x0   0x....'....        DC32     commandState+0x77
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_8:
+   \        0x0   0x....'....        DC32     emberCommandTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_9:
+   \        0x0   0x....'....        DC32     emberCommandInterpreter2Configuration
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_10:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_11:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_12:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_13:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_14:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_15:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_16:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_17:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_18:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_19:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_20:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_21:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_22:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_23:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_24:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_25:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_26:
+   \        0x0   0x....'....        DC32     ?_23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_27:
+   \        0x0   0x....'....        DC32     ?_25
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_28:
+   \        0x0   0x....'....        DC32     ?_27
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_29:
+   \        0x0   0x....'....        DC32     ?_28
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_30:
+   \        0x0   0x....'....        DC32     emberCommandErrorNames
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_31:
+   \        0x0   0x....'....        DC32     ?_29
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_32:
+   \        0x0   0x....'....        DC32     ?_30
+
+   \                                 In section .rodata, align 1
+   \                     ?_0:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x53 0x65          DC8 "Serial port error"
+   \              0x72 0x69    
+   \              0x61 0x6C    
+   \              0x20 0x70    
+   \              0x6F 0x72    
+   \              0x74 0x20    
+   \              0x65 0x72    
+   \              0x72 0x6F    
+   \              0x72 0x00    
+   \       0x12   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x4E 0x6F          DC8 "No such command"
+   \              0x20 0x73    
+   \              0x75 0x63    
+   \              0x68 0x20    
+   \              0x63 0x6F    
+   \              0x6D 0x6D    
+   \              0x61 0x6E    
+   \              0x64 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x57 0x72          DC8 "Wrong number of args"
+   \              0x6F 0x6E    
+   \              0x67 0x20    
+   \              0x6E 0x75    
+   \              0x6D 0x62    
+   \              0x65 0x72    
+   \              0x20 0x6F    
+   \              0x66 0x20    
+   \              0x61 0x72    
+   \              0x67 0x73    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x41 0x72          DC8 "Arg out of range"
+   \              0x67 0x20    
+   \              0x6F 0x75    
+   \              0x74 0x20    
+   \              0x6F 0x66    
+   \              0x20 0x72    
+   \              0x61 0x6E    
+   \              0x67 0x65    
+   \              0x00         
+   \       0x11   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x41 0x72          DC8 "Arg syntax error"
+   \              0x67 0x20    
+   \              0x73 0x79    
+   \              0x6E 0x74    
+   \              0x61 0x78    
+   \              0x20 0x65    
+   \              0x72 0x72    
+   \              0x6F 0x72    
+   \              0x00         
+   \       0x11   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x54 0x6F          DC8 "Too long"
+   \              0x6F 0x20    
+   \              0x6C 0x6F    
+   \              0x6E 0x67    
+   \              0x00         
+   \        0x9   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x42 0x61          DC8 "Bad arg type"
+   \              0x64 0x20    
+   \              0x61 0x72    
+   \              0x67 0x20    
+   \              0x74 0x79    
+   \              0x70 0x65    
+   \              0x00         
+   \        0xD   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 2
+   \                     ?_8:
+   \        0x0   0x20 0x00          DC8 " "
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x0D 0x0A          DC8 "\015\012"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x45 0x72          DC8 "Error: No value found before '.'"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x4E    
+   \              0x6F 0x20    
+   \              0x76 0x61    
+   \              0x6C 0x75    
+   \              0x65 0x20    
+   \              0x66 0x6F    
+   \              0x75 0x6E    
+   \              0x64 0x20    
+   \              0x62 0x65    
+   \              0x66 0x6F    
+   \              0x72 0x65    
+   \              0x20 0x27    
+   \              0x2E 0x27    
+   \              0x00         
+   \       0x21   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x45 0x72          DC8 "Error: Invalid char '%c' in IP address"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x49    
+   \              0x6E 0x76    
+   \              0x61 0x6C    
+   \              0x69 0x64    
+   \              0x20 0x63    
+   \              0x68 0x61    
+   \              0x72 0x20    
+   \              0x27 0x25    
+   \              0x63 0x27    
+   \              0x20 0x69    
+   \              0x6E 0x20    
+   \              0x49 0x50    
+   \              0x20 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x00         
+   \       0x27   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x45 0x72          DC8 "Error: Invalid value of %d in IP address"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x49    
+   \              0x6E 0x76    
+   \              0x61 0x6C    
+   \              0x69 0x64    
+   \              0x20 0x76    
+   \              0x61 0x6C    
+   \              0x75 0x65    
+   \              0x20 0x6F    
+   \              0x66 0x20    
+   \              0x25 0x64    
+   \              0x20 0x69    
+   \              0x6E 0x20    
+   \              0x49 0x50    
+   \              0x20 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x00         
+   \       0x29   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x45 0x72          DC8 "Error: Expected 4 quads, got %d."
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x45    
+   \              0x78 0x70    
+   \              0x65 0x63    
+   \              0x74 0x65    
+   \              0x64 0x20    
+   \              0x34 0x20    
+   \              0x71 0x75    
+   \              0x61 0x64    
+   \              0x73 0x2C    
+   \              0x20 0x67    
+   \              0x6F 0x74    
+   \              0x20 0x25    
+   \              0x64 0x2E    
+   \              0x00         
+   \       0x21   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x25 0x70          DC8 "%p"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x2E 0x2E          DC8 "..."
+   \              0x2E 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x20 0x3C          DC8 " <uint8_t>"
+   \              0x75 0x69    
+   \              0x6E 0x74    
+   \              0x38 0x5F    
+   \              0x74 0x3E    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x20 0x3C          DC8 " <uint16_t>"
+   \              0x75 0x69    
+   \              0x6E 0x74    
+   \              0x31 0x36    
+   \              0x5F 0x74    
+   \              0x3E 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x20 0x3C          DC8 " <uint32_t>"
+   \              0x75 0x69    
+   \              0x6E 0x74    
+   \              0x33 0x32    
+   \              0x5F 0x74    
+   \              0x3E 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x20 0x3C          DC8 " <int8_t>"
+   \              0x69 0x6E    
+   \              0x74 0x38    
+   \              0x5F 0x74    
+   \              0x3E 0x00    
+   \        0xA   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x20 0x3C          DC8 " <int16_t>"
+   \              0x69 0x6E    
+   \              0x74 0x31    
+   \              0x36 0x5F    
+   \              0x74 0x3E    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x20 0x3C          DC8 " <int32_t>"
+   \              0x69 0x6E    
+   \              0x74 0x33    
+   \              0x32 0x5F    
+   \              0x74 0x3E    
+   \              0x00         
+   \        0xB   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x20 0x3C          DC8 " <string>"
+   \              0x73 0x74    
+   \              0x72 0x69    
+   \              0x6E 0x67    
+   \              0x3E 0x00    
+   \        0xA   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_23:
+   \        0x0   0x20 0x2E          DC8 " ..."
+   \              0x2E 0x2E    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x20 0x2A          DC8 " *"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_25:
+   \        0x0   0x20 0x4F          DC8 " Optional Arguments Below\012"
+   \              0x70 0x74    
+   \              0x69 0x6F    
+   \              0x6E 0x61    
+   \              0x6C 0x20    
+   \              0x41 0x72    
+   \              0x67 0x75    
+   \              0x6D 0x65    
+   \              0x6E 0x74    
+   \              0x73 0x20    
+   \              0x42 0x65    
+   \              0x6C 0x6F    
+   \              0x77 0x0A    
+   \              0x00         
+   \       0x1B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x20 0x3F          DC8 " ?"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_27:
+   \        0x0   0x20 0x20          DC8 "  "
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_28:
+   \        0x0   0x55 0x73          DC8 55H, 73H, 61H, 67H, 65H, 3AH, 0DH, 0AH
+   \              0x61 0x67    
+   \              0x65 0x3A    
+   \              0x0D 0x0A    
+   \        0x8   0x3C 0x69          DC8 3CH, 69H, 6EH, 74H, 3EH, 3AH, 20H, 31H
+   \              0x6E 0x74    
+   \              0x3E 0x3A    
+   \              0x20 0x31    
+   \       0x10   0x32 0x33          DC8 32H, 33H, 20H, 6FH, 72H, 20H, 30H, 78H
+   \              0x20 0x6F    
+   \              0x72 0x20    
+   \              0x30 0x78    
+   \       0x18   0x31 0x41          DC8 31H, 41H, 42H, 43H, 0DH, 0AH, 3CH, 73H
+   \              0x42 0x43    
+   \              0x0D 0x0A    
+   \              0x3C 0x73    
+   \       0x20   0x74 0x72          DC8 74H, 72H, 69H, 6EH, 67H, 3EH, 3AH, 20H
+   \              0x69 0x6E    
+   \              0x67 0x3E    
+   \              0x3A 0x20    
+   \       0x28   0x22 0x66          DC8 22H, 66H, 6FH, 6FH, 22H, 20H, 6FH, 72H
+   \              0x6F 0x6F    
+   \              0x22 0x20    
+   \              0x6F 0x72    
+   \       0x30   0x20 0x7B          DC8 20H, 7BH, 30H, 41H, 20H, 31H, 42H, 20H
+   \              0x30 0x41    
+   \              0x20 0x31    
+   \              0x42 0x20    
+   \       0x38   0x32 0x43          DC8 32H, 43H, 7DH, 0DH, 0AH, 0DH, 0AH, 0
+   \              0x7D 0x0D    
+   \              0x0A 0x0D    
+   \              0x0A 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_29:
+   \        0x0   0x25 0x70          DC8 "%p\015\012"
+   \              0x0D 0x0A    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_30:
+   \        0x0   0x25 0x63          DC8 "%c"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+   1028          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   callCommandAction
+        48   -> charDowncase
+        48   -> commandReaderInit
+        48   -> emberCommandActionHandler
+        48   -> emberCommandErrorHandler
+        48   -> emberSerialPrintf
+        48   -> emberSerialWriteData
+        48   -> firstByteOfArg
+        48   -> getNestedCommand
+        48   -> stringToUnsignedInt
+        48   -> tokenLength
+        48   -> tokenPointer
+       0   charDowncase
+       0   commandReaderInit
+       0   emCliPasswordProtectionEventHandler
+       0   emberCommandArgumentCount
+       0   emberCommandClearBuffer
+         0   -> halCommonMemSet
+      32   emberCommandErrorHandler
+         0   -> emberPrintCommandTable
+         0   -> emberPrintCommandUsage
+        32   -> emberPrintCommandUsageNotes
+        32   -> emberSerialPrintf
+        32   -> tokenLength
+        32   -> tokenPointer
+       0   emberCommandInterpreterBusy
+       0   emberCommandName
+       0   emberCommandReaderInit
+         0   -> commandReaderInit
+       0   emberCommandReaderSetDefaultBase
+      16   emberCopyBigEndianEui64Argument
+        16   -> emberCopyStringArgument
+      24   emberCopyStringArgument
+        24   -> emberStringCommandArgument
+        24   -> halCommonMemMove
+        24   -> halCommonMemSet
+       8   emberPrintCommandTable
+         8   -> emberPrintCommandUsageNotes
+         8   -> printCommandUsage
+      16   emberPrintCommandUsage
+        16   -> emberSerialPrintf
+        16   -> getNestedCommand
+        16   -> printCommandUsage
+       8   emberPrintCommandUsageNotes
+         8   -> emberSerialPrintf
+         0   -> emberSerialWaitSend
+      40   emberProcessCommandString
+        40   -> callCommandAction
+        40   -> charDowncase
+        40   -> commandReaderInit
+        40   -> emberCommandErrorHandler
+        40   -> emberSerialReadByte
+        40   -> hexToInt
+      16   emberSignedCommandArgument
+        16   -> firstByteOfArg
+        16   -> stringToUnsignedInt
+      16   emberStringArgumentToHostOrderIpv4Address
+        16   -> emberStringCommandArgument
+        16   -> emberStringToHostOrderIpv4Address
+      16   emberStringCommandArgument
+        16   -> tokenLength
+        16   -> tokenPointer
+      16   emberStringToHostOrderIpv4Address
+        16   -> emberSerialPrintfLine
+       0   emberUnsignedCommandArgument
+         0   -> stringToUnsignedInt
+       0   firstByteOfArg
+       0   getNestedCommand
+       0   hexToInt
+      24   printCommandUsage
+        24   -> emberSerialPrintf
+        24   -> emberSerialPrintfLine
+         0   -> emberSerialWaitSend
+        24   -> emberSerialWaitSend
+      32   stringToUnsignedInt
+        32   -> hexToInt
+        32   -> tokenLength
+       0   tokenLength
+       0   tokenPointer
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable18
+       4  ??DataTable18_1
+       4  ??DataTable18_10
+       4  ??DataTable18_11
+       4  ??DataTable18_12
+       4  ??DataTable18_13
+       4  ??DataTable18_14
+       4  ??DataTable18_15
+       4  ??DataTable18_16
+       4  ??DataTable18_17
+       4  ??DataTable18_18
+       4  ??DataTable18_19
+       4  ??DataTable18_2
+       4  ??DataTable18_20
+       4  ??DataTable18_21
+       4  ??DataTable18_22
+       4  ??DataTable18_23
+       4  ??DataTable18_24
+       4  ??DataTable18_25
+       4  ??DataTable18_26
+       4  ??DataTable18_27
+       4  ??DataTable18_28
+       4  ??DataTable18_29
+       4  ??DataTable18_3
+       4  ??DataTable18_30
+       4  ??DataTable18_31
+       4  ??DataTable18_32
+       4  ??DataTable18_4
+       4  ??DataTable18_5
+       4  ??DataTable18_6
+       4  ??DataTable18_7
+       4  ??DataTable18_8
+       4  ??DataTable18_9
+       6  ?Subroutine0
+       6  ?Subroutine1
+       8  ?Subroutine2
+       1  ?_0
+      20  ?_1
+      36  ?_10
+      40  ?_11
+      44  ?_12
+      36  ?_13
+       4  ?_14
+       4  ?_15
+      12  ?_16
+      12  ?_17
+      12  ?_18
+      12  ?_19
+      16  ?_2
+      12  ?_20
+      12  ?_21
+      12  ?_22
+       8  ?_23
+       4  ?_24
+      28  ?_25
+       4  ?_26
+       4  ?_27
+      64  ?_28
+       8  ?_29
+      24  ?_3
+       4  ?_30
+      20  ?_4
+      20  ?_5
+      12  ?_6
+      16  ?_7
+       2  ?_8
+       4  ?_9
+     502  callCommandAction
+      14  charDowncase
+      34  commandReaderInit
+     124  commandState
+       1  defaultBase
+       2  emCliPasswordProtectionEventHandler
+      10  emberCommandArgumentCount
+      12  emberCommandClearBuffer
+     116  emberCommandErrorHandler
+      32  emberCommandErrorNames
+       1  emberCommandInterpreter2Configuration
+      20  emberCommandInterpreterBusy
+      10  emberCommandName
+       2  emberCommandReaderInit
+       8  emberCommandReaderSetDefaultBase
+      34  emberCopyBigEndianEui64Argument
+      74  emberCopyStringArgument
+       4  emberCurrentCommand
+      28  emberPrintCommandTable
+      56  emberPrintCommandUsage
+      18  emberPrintCommandUsageNotes
+     384  emberProcessCommandString
+      30  emberSignedCommandArgument
+      20  emberStringArgumentToHostOrderIpv4Address
+      40  emberStringCommandArgument
+     128  emberStringToHostOrderIpv4Address
+       4  emberUnsignedCommandArgument
+      24  firstByteOfArg
+      26  getNestedCommand
+      26  hexToInt
+       1  previousCharacter
+     152  printCommandUsage
+     124  stringToUnsignedInt
+      14  tokenLength
+      16  tokenPointer
+
+ 
+   130 bytes in section .bss
+    33 bytes in section .data
+   507 bytes in section .rodata
+ 2 080 bytes in section .text
+ 
+ 2 080 bytes of CODE  memory
+   507 bytes of CONST memory
+   163 bytes of DATA  memory
+
+Errors: none
+Warnings: none

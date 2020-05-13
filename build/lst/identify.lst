@@ -1,0 +1,572 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:11
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\identify\identify.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW9F2C.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\identify\identify.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"identify.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\identify\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\identify.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\identify.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\identify\identify.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Routines for the Identify plugin, which implements the Identify
+      4           *        cluster.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     11           * software is governed by the terms of Silicon Labs Master Software License
+     12           * Agreement (MSLA) available at
+     13           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     14           * software is distributed to you in Source Code format and is governed by the
+     15           * sections of the MSLA applicable to Source Code.
+     16           *
+     17           ******************************************************************************/
+     18          
+     19          // *******************************************************************
+     20          // * identify.c
+     21          // *
+     22          // *
+     23          // * Copyright 2007 by Ember Corporation. All rights reserved.              *80*
+     24          // *******************************************************************
+     25          
+     26          // this file contains all the common includes for clusters in the util
+     27          #include "app/framework/include/af.h"
+     28          #include "app/framework/util/common.h"
+     29          
+     30          typedef struct {
+     31            bool identifying;
+     32            uint16_t identifyTime;
+     33          } EmAfIdentifyState;
+     34          
+
+   \                                 In section .bss, align 4
+     35          static EmAfIdentifyState stateTable[EMBER_AF_IDENTIFY_CLUSTER_SERVER_ENDPOINT_COUNT];
+   \                     stateTable:
+   \        0x0                      DS8 8
+     36          
+     37          static EmberAfStatus readIdentifyTime(uint8_t endpoint, uint16_t *identifyTime);
+     38          static EmberAfStatus writeIdentifyTime(uint8_t endpoint, uint16_t identifyTime);
+     39          static EmberStatus scheduleIdentifyTick(uint8_t endpoint);
+     40          
+     41          static EmAfIdentifyState *getIdentifyState(uint8_t endpoint);
+     42          
+     43          static EmAfIdentifyState *getIdentifyState(uint8_t endpoint)
+     44          {
+     45            uint8_t ep = emberAfFindClusterServerEndpointIndex(endpoint, ZCL_IDENTIFY_CLUSTER_ID);
+     46            return (ep == 0xFF ? NULL : &stateTable[ep]);
+     47          }
+     48          
+
+   \                                 In section .text, align 2, keep-with-next
+     49          void emberAfIdentifyClusterServerInitCallback(uint8_t endpoint)
+     50          {
+     51            scheduleIdentifyTick(endpoint);
+   \                     emberAfIdentifyClusterServerInitCallback: (+1)
+   \        0x0   0x....             B.N      scheduleIdentifyTick
+     52          }
+     53          
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void emberAfIdentifyClusterServerTickCallback(uint8_t endpoint)
+     55          {
+   \                     emberAfIdentifyClusterServerTickCallback: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     56            uint16_t identifyTime;
+     57            if (readIdentifyTime(endpoint, &identifyTime) == EMBER_ZCL_STATUS_SUCCESS) {
+   \        0x4   0x4669             MOV      R1,SP
+   \        0x6   0x....'....        BL       readIdentifyTime
+   \        0xA   0xB948             CBNZ.N   R0,??emberAfIdentifyClusterServerTickCallback_0
+     58              // This tick writes the new attribute, which will trigger the Attribute
+     59              // Changed callback below, which in turn will schedule or cancel the tick.
+     60              // Because of this, the tick does not have to be scheduled here.
+     61              writeIdentifyTime(endpoint, (identifyTime == 0 ? 0 : identifyTime - 1));
+   \        0xC   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xBF0C             ITE      EQ 
+   \       0x14   0x2100             MOVEQ    R1,#+0
+   \       0x16   0x1E41             SUBNE    R1,R0,#+1
+   \       0x18   0xB289             UXTH     R1,R1
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x....'....        BL       writeIdentifyTime
+     62            }
+     63          }
+   \                     ??emberAfIdentifyClusterServerTickCallback_0: (+1)
+   \       0x20   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+     64          
+
+   \                                 In section .text, align 2, keep-with-next
+     65          void emberAfIdentifyClusterServerAttributeChangedCallback(uint8_t endpoint,
+     66                                                                    EmberAfAttributeId attributeId)
+     67          {
+     68            if (attributeId == ZCL_IDENTIFY_TIME_ATTRIBUTE_ID) {
+   \                     emberAfIdentifyClusterServerAttributeChangedCallback: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF08             IT       EQ 
+     69              scheduleIdentifyTick(endpoint);
+   \        0x4   0x....'....        BEQ.W    scheduleIdentifyTick
+     70            }
+     71          }
+   \        0x8   0x4770             BX       LR               ;; return
+     72          
+
+   \                                 In section .text, align 2, keep-with-next
+     73          bool emberAfIdentifyClusterIdentifyCallback(uint16_t time)
+     74          {
+   \                     emberAfIdentifyClusterIdentifyCallback: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xB580             PUSH     {R7,LR}
+     75            EmberStatus sendStatus;
+     76            // This Identify callback writes the new attribute, which will trigger the
+     77            // Attribute Changed callback above, which in turn will schedule or cancel the
+     78            // tick.  Because of this, the tick does not have to be scheduled here.
+     79            emberAfIdentifyClusterPrintln("RX identify:IDENTIFY 0x%2x", time);
+     80            sendStatus = emberAfSendImmediateDefaultResponse(
+     81              writeIdentifyTime(emberAfCurrentEndpoint(), time));
+   \        0x4   0x....             LDR.N    R0,??DataTable3
+   \        0x6   0x6802             LDR      R2,[R0, #+0]
+   \        0x8   0x6813             LDR      R3,[R2, #+0]
+   \        0xA   0x7958             LDRB     R0,[R3, #+5]
+   \        0xC   0x....'....        BL       writeIdentifyTime
+   \       0x10   0x....'....        BL       emberAfSendImmediateDefaultResponse
+     82            if (EMBER_SUCCESS != sendStatus) {
+     83              emberAfIdentifyClusterPrintln("Identify: failed to send %s response: "
+     84                                            "0x%x",
+     85                                            "default",
+     86                                            sendStatus);
+     87            }
+     88            return true;
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0xBD02             POP      {R1,PC}          ;; return
+     89          }
+     90          
+
+   \                                 In section .text, align 2, keep-with-next
+     91          bool emberAfIdentifyClusterIdentifyQueryCallback(void)
+     92          {
+     93            EmberAfStatus status;
+     94            EmberStatus sendStatus;
+     95            uint16_t identifyTime;
+     96          
+     97            emberAfIdentifyClusterPrintln("RX identify:QUERY");
+     98          
+     99            // According to the 075123r02ZB, a device shall not send an Identify Query
+    100            // Response if it is not currently identifying.  Instead, or if reading the
+    101            // Identify Time attribute fails, send a Default Response.
+    102            status = readIdentifyTime(emberAfCurrentEndpoint(), &identifyTime);
+   \                     emberAfIdentifyClusterIdentifyQueryCallback: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable3
+   \        0x2   0xB5E0             PUSH     {R5-R7,LR}
+   \        0x4   0x6802             LDR      R2,[R0, #+0]
+   \        0x6   0xA901             ADD      R1,SP,#+4
+   \        0x8   0x6813             LDR      R3,[R2, #+0]
+   \        0xA   0x7958             LDRB     R0,[R3, #+5]
+   \        0xC   0x....'....        BL       readIdentifyTime
+    103            if (status != EMBER_ZCL_STATUS_SUCCESS || identifyTime == 0) {
+   \       0x10   0x0001             MOVS     R1,R0
+   \       0x12   0xD102             BNE.N    ??emberAfIdentifyClusterIdentifyQueryCallback_0
+   \       0x14   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \       0x18   0xB911             CBNZ.N   R1,??emberAfIdentifyClusterIdentifyQueryCallback_1
+    104              sendStatus = emberAfSendImmediateDefaultResponse(status);
+   \                     ??emberAfIdentifyClusterIdentifyQueryCallback_0: (+1)
+   \       0x1A   0x....'....        BL       emberAfSendImmediateDefaultResponse
+    105              if (EMBER_SUCCESS != sendStatus) {
+    106                emberAfIdentifyClusterPrintln("Identify: failed to send %s response: "
+    107                                              "0x%x",
+    108                                              "default",
+    109                                              sendStatus);
+    110              }
+    111              return true;
+   \       0x1E   0xE008             B.N      ??emberAfIdentifyClusterIdentifyQueryCallback_2
+    112            }
+    113          
+    114            emberAfFillCommandIdentifyClusterIdentifyQueryResponse(identifyTime);
+   \                     ??emberAfIdentifyClusterIdentifyQueryCallback_1: (+1)
+   \       0x20   0x9100             STR      R1,[SP, #+0]
+   \       0x22   0x....             LDR.N    R3,??DataTable3_1
+   \       0x24   0x2200             MOVS     R2,#+0
+   \       0x26   0x2103             MOVS     R1,#+3
+   \       0x28   0x2009             MOVS     R0,#+9
+   \       0x2A   0x....'....        BL       emberAfFillExternalBuffer
+    115            sendStatus = emberAfSendResponse();
+   \       0x2E   0x....'....        BL       emberAfSendResponse
+    116            if (EMBER_SUCCESS != sendStatus) {
+    117              emberAfIdentifyClusterPrintln("Identify: failed to send %s response: 0x%x",
+    118                                            "query",
+    119                                            sendStatus);
+    120            }
+    121            return true;
+   \                     ??emberAfIdentifyClusterIdentifyQueryCallback_2: (+1)
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0xBD0E             POP      {R1-R3,PC}       ;; return
+    122          }
+    123          
+
+   \                                 In section .text, align 2, keep-with-next
+    124          EmberAfStatus readIdentifyTime(uint8_t endpoint,
+    125                                         uint16_t *identifyTime)
+    126          {
+    127            EmberAfStatus status = emberAfReadAttribute(endpoint,
+    128                                                        ZCL_IDENTIFY_CLUSTER_ID,
+    129                                                        ZCL_IDENTIFY_TIME_ATTRIBUTE_ID,
+    130                                                        CLUSTER_MASK_SERVER,
+    131                                                        (uint8_t *)identifyTime,
+    132                                                        sizeof(*identifyTime),
+    133                                                        NULL); // data type
+    134          #if defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_IDENTIFY_CLUSTER)
+    135            if (status != EMBER_ZCL_STATUS_SUCCESS) {
+    136              emberAfIdentifyClusterPrintln("ERR: reading identify time %x", status);
+    137            }
+    138          #endif //defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_IDENTIFY_CLUSTER)
+    139            return status;
+   \                     readIdentifyTime: (+1)
+   \        0x0   0x2302             MOVS     R3,#+2
+   \        0x2   0xB5E0             PUSH     {R5-R7,LR}
+   \        0x4   0x2200             MOVS     R2,#+0
+   \        0x6   0x9301             STR      R3,[SP, #+4]
+   \        0x8   0x9100             STR      R1,[SP, #+0]
+   \        0xA   0x9202             STR      R2,[SP, #+8]
+   \        0xC   0x2340             MOVS     R3,#+64
+   \        0xE   0x2103             MOVS     R1,#+3
+   \       0x10   0x....'....        BL       emberAfReadAttribute
+   \       0x14   0xBD0E             POP      {R1-R3,PC}       ;; return
+    140          }
+    141          
+
+   \                                 In section .text, align 2, keep-with-next
+    142          static EmberAfStatus writeIdentifyTime(uint8_t endpoint, uint16_t identifyTime)
+    143          {
+   \                     writeIdentifyTime: (+1)
+   \        0x0   0xB502             PUSH     {R1,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+    144            EmberAfStatus status = emberAfWriteAttribute(endpoint,
+    145                                                         ZCL_IDENTIFY_CLUSTER_ID,
+    146                                                         ZCL_IDENTIFY_TIME_ATTRIBUTE_ID,
+    147                                                         CLUSTER_MASK_SERVER,
+    148                                                         (uint8_t *)&identifyTime,
+    149                                                         ZCL_INT16U_ATTRIBUTE_TYPE);
+    150          #if defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_IDENTIFY_CLUSTER)
+    151            if (status != EMBER_ZCL_STATUS_SUCCESS) {
+    152              emberAfIdentifyClusterPrintln("ERR: writing identify time %x", status);
+    153            }
+    154          #endif //defined(EMBER_AF_PRINT_ENABLE) && defined(EMBER_AF_PRINT_IDENTIFY_CLUSTER)
+    155            return status;
+   \        0x4   0x2121             MOVS     R1,#+33
+   \        0x6   0xAA02             ADD      R2,SP,#+8
+   \        0x8   0x9101             STR      R1,[SP, #+4]
+   \        0xA   0x9200             STR      R2,[SP, #+0]
+   \        0xC   0x2340             MOVS     R3,#+64
+   \        0xE   0x2200             MOVS     R2,#+0
+   \       0x10   0x2103             MOVS     R1,#+3
+   \       0x12   0x....'....        BL       emberAfWriteAttribute
+   \       0x16   0xBD0E             POP      {R1-R3,PC}       ;; return
+    156          }
+    157          
+
+   \                                 In section .text, align 2, keep-with-next
+    158          static EmberStatus scheduleIdentifyTick(uint8_t endpoint)
+    159          {
+   \                     scheduleIdentifyTick: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    160            EmberAfStatus status;
+    161            EmAfIdentifyState *state = getIdentifyState(endpoint);
+   \        0x4   0x2103             MOVS     R1,#+3
+   \        0x6   0x....'....        BL       emberAfFindClusterServerEndpointIndex
+   \        0xA   0x28FF             CMP      R0,#+255
+   \        0xC   0xBF0E             ITEE     EQ 
+   \        0xE   0x2400             MOVEQ    R4,#+0
+   \       0x10   0x....             LDRNE.N  R1,??DataTable3_2
+   \       0x12   0xEB01 0x0480      ADDNE    R4,R1,R0, LSL #+2
+    162            uint16_t identifyTime;
+    163          
+    164            if (state == NULL) {
+   \       0x16   0xB90C             CBNZ.N   R4,??scheduleIdentifyTick_0
+    165              return EMBER_BAD_ARGUMENT;
+   \       0x18   0x2002             MOVS     R0,#+2
+   \       0x1A   0xBD32             POP      {R1,R4,R5,PC}
+    166            }
+    167          
+    168            status = readIdentifyTime(endpoint, &identifyTime);
+    169            if (status == EMBER_ZCL_STATUS_SUCCESS) {
+   \                     ??scheduleIdentifyTick_0: (+1)
+   \       0x1C   0x4669             MOV      R1,SP
+   \       0x1E   0x4628             MOV      R0,R5
+   \       0x20   0x....'....        BL       readIdentifyTime
+   \       0x24   0xB9A8             CBNZ.N   R0,??scheduleIdentifyTick_1
+    170              if (!state->identifying) {
+   \       0x26   0x7820             LDRB     R0,[R4, #+0]
+   \       0x28   0xB948             CBNZ.N   R0,??scheduleIdentifyTick_2
+    171                state->identifying = true;
+   \       0x2A   0x2101             MOVS     R1,#+1
+   \       0x2C   0x7021             STRB     R1,[R4, #+0]
+    172                state->identifyTime = identifyTime;
+   \       0x2E   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x32   0x8060             STRH     R0,[R4, #+2]
+    173                emberAfPluginIdentifyStartFeedbackCallback(endpoint,
+    174                                                           identifyTime);
+   \       0x34   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \       0x38   0x4628             MOV      R0,R5
+   \       0x3A   0x....'....        BL       emberAfPluginIdentifyStartFeedbackCallback
+    175              }
+    176              if (identifyTime > 0) {
+   \                     ??scheduleIdentifyTick_2: (+1)
+   \       0x3E   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x42   0xB130             CBZ.N    R0,??scheduleIdentifyTick_1
+    177                return emberAfScheduleServerTick(endpoint,
+    178                                                 ZCL_IDENTIFY_CLUSTER_ID,
+    179                                                 MILLISECOND_TICKS_PER_SECOND);
+   \       0x44   0xF44F 0x727A      MOV      R2,#+1000
+   \       0x48   0x2103             MOVS     R1,#+3
+   \       0x4A   0x4628             MOV      R0,R5
+   \       0x4C   0x....'....        BL       emberAfScheduleServerTick
+   \       0x50   0xBD32             POP      {R1,R4,R5,PC}
+    180              }
+    181            }
+    182          
+    183            state->identifying = false;
+   \                     ??scheduleIdentifyTick_1: (+1)
+   \       0x52   0x2000             MOVS     R0,#+0
+   \       0x54   0x7020             STRB     R0,[R4, #+0]
+    184            emberAfPluginIdentifyStopFeedbackCallback(endpoint);
+   \       0x56   0x4628             MOV      R0,R5
+   \       0x58   0x....'....        BL       emberAfPluginIdentifyStopFeedbackCallback
+    185            return emberAfDeactivateServerTick(endpoint, ZCL_IDENTIFY_CLUSTER_ID);
+   \       0x5C   0x2103             MOVS     R1,#+3
+   \       0x5E   0x4628             MOV      R0,R5
+   \       0x60   0x....'....        BL       emberAfDeactivateServerTick
+   \       0x64   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    186          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     emAfCurrentCommand
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     stateTable
+
+   \                                 In section .rodata, align 2
+   \                     ?_0:
+   \        0x0   0x76 0x00          DC8 "v"
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   emberAfIdentifyClusterIdentifyCallback
+         8   -> emberAfSendImmediateDefaultResponse
+         8   -> writeIdentifyTime
+      16   emberAfIdentifyClusterIdentifyQueryCallback
+        16   -> emberAfFillExternalBuffer
+        16   -> emberAfSendImmediateDefaultResponse
+        16   -> emberAfSendResponse
+        16   -> readIdentifyTime
+       0   emberAfIdentifyClusterServerAttributeChangedCallback
+         0   -> scheduleIdentifyTick
+       0   emberAfIdentifyClusterServerInitCallback
+         0   -> scheduleIdentifyTick
+      16   emberAfIdentifyClusterServerTickCallback
+        16   -> readIdentifyTime
+        16   -> writeIdentifyTime
+      16   readIdentifyTime
+        16   -> emberAfReadAttribute
+      16   scheduleIdentifyTick
+        16   -> emberAfDeactivateServerTick
+        16   -> emberAfFindClusterServerEndpointIndex
+        16   -> emberAfPluginIdentifyStartFeedbackCallback
+        16   -> emberAfPluginIdentifyStopFeedbackCallback
+        16   -> emberAfScheduleServerTick
+        16   -> readIdentifyTime
+      16   writeIdentifyTime
+        16   -> emberAfWriteAttribute
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       2  ?_0
+      24  emberAfIdentifyClusterIdentifyCallback
+      54  emberAfIdentifyClusterIdentifyQueryCallback
+      10  emberAfIdentifyClusterServerAttributeChangedCallback
+       2  emberAfIdentifyClusterServerInitCallback
+      34  emberAfIdentifyClusterServerTickCallback
+      22  readIdentifyTime
+     102  scheduleIdentifyTick
+       8  stateTable
+      24  writeIdentifyTime
+
+ 
+   8 bytes in section .bss
+   2 bytes in section .rodata
+ 284 bytes in section .text
+ 
+ 284 bytes of CODE  memory
+   2 bytes of CONST memory
+   8 bytes of DATA  memory
+
+Errors: none
+Warnings: none

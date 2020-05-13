@@ -1,0 +1,894 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:34
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\print-formatter.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWF970.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\print-formatter.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"print-formatter.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\print-formatter.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\print-formatter.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\print-formatter.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Utilities for printing in common formats: buffers, EUI64s, keys
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "app/framework/include/af.h"
+     19          #include "app/util/serial/command-interpreter2.h"
+     20          
+     21          //------------------------------------------------------------------------------
+     22          
+
+   \                                 In section .text, align 2, keep-with-next
+     23          static void emAfPrintBuffer(uint16_t area,
+     24                                      const uint8_t *buffer,
+     25                                      uint16_t bufferLen,
+     26                                      const char * formatString)
+     27          {
+   \                     emAfPrintBuffer: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x4698             MOV      R8,R3
+     28            if (emberAfPrintEnabled(area)) {
+   \        0xC   0x....'....        BL       emberAfPrintEnabled
+   \       0x10   0xB150             CBZ.N    R0,??emAfPrintBuffer_0
+     29              uint16_t index = 0;
+   \       0x12   0x2700             MOVS     R7,#+0
+   \       0x14   0xE005             B.N      ??emAfPrintBuffer_1
+     30              for (; index < bufferLen; index++) {
+     31                emberAfPrint(area, formatString, buffer[index]);
+   \                     ??emAfPrintBuffer_2: (+1)
+   \       0x16   0x5C2A             LDRB     R2,[R5, R0]
+   \       0x18   0x4641             MOV      R1,R8
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x....'....        BL       emberAfPrint
+     32              }
+   \       0x20   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??emAfPrintBuffer_1: (+1)
+   \       0x22   0xB2B8             UXTH     R0,R7
+   \       0x24   0x42B0             CMP      R0,R6
+   \       0x26   0xD3F6             BCC.N    ??emAfPrintBuffer_2
+     33            }
+     34          }
+   \                     ??emAfPrintBuffer_0: (+1)
+   \       0x28   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+     35          
+
+   \                                 In section .text, align 2, keep-with-next
+     36          void emberAfPrintBuffer(uint16_t area,
+     37                                  const uint8_t *buffer,
+     38                                  uint16_t bufferLen,
+     39                                  bool withSpace)
+     40          {
+     41            emAfPrintBuffer(area, buffer, bufferLen, (withSpace ? "%x " : "%x"));
+   \                     emberAfPrintBuffer: (+1)
+   \        0x0   0x2B00             CMP      R3,#+0
+   \        0x2   0xBF14             ITE      NE 
+   \        0x4   0x....             ADRNE.N  R3,??DataTable12  ;; "%x "
+   \        0x6   0x....             ADREQ.N  R3,??DataTable12_1  ;; 0x25, 0x78, 0x00, 0x00
+   \        0x8   0x....             B.N      emAfPrintBuffer
+     42          }
+     43          
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void emberAfPrintString(uint16_t area, const uint8_t *buffer)
+     45          {
+   \                     emberAfPrintString: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+     46            emAfPrintBuffer(area, buffer + 1, emberAfStringLength(buffer), "%c");
+   \        0x6   0x4628             MOV      R0,R5
+   \        0x8   0x....'....        BL       emberAfStringLength
+   \        0xC   0x4602             MOV      R2,R0
+   \        0xE   0x1C69             ADDS     R1,R5,#+1
+   \       0x10   0x....             B.N      ?Subroutine0
+     47          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4620             MOV      R0,R4
+   \        0x2   0xB001             ADD      SP,SP,#+4
+   \        0x4   0x....             LDR.N    R3,??DataTable12_4
+   \        0x6   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \        0xA   0x....             B.N      emAfPrintBuffer
+     48          
+
+   \                                 In section .text, align 2, keep-with-next
+     49          void emberAfPrintLongString(uint16_t area, const uint8_t *buffer)
+     50          {
+   \                     emberAfPrintLongString: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+     51            emAfPrintBuffer(area, buffer + 2, emberAfLongStringLength(buffer), "%c");
+   \        0x6   0x4628             MOV      R0,R5
+   \        0x8   0x....'....        BL       emberAfLongStringLength
+   \        0xC   0x4602             MOV      R2,R0
+   \        0xE   0x1CA9             ADDS     R1,R5,#+2
+   \       0x10                      REQUIRE ?Subroutine0
+   \       0x10                      ;; // Fall through to label ?Subroutine0
+     52          }
+     53          
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void emberAfPrintLittleEndianEui64(const EmberEUI64 eui64)
+     55          {
+   \                     emberAfPrintLittleEndianEui64: (+1)
+   \        0x0   0xB518             PUSH     {R3,R4,LR}
+   \        0x2   0xB087             SUB      SP,SP,#+28
+     56            emberAfPrint(emberAfPrintActiveArea,
+     57                         "(%c)%X%X%X%X%X%X%X%X",
+     58                         '<',
+     59                         eui64[0],
+     60                         eui64[1],
+     61                         eui64[2],
+     62                         eui64[3],
+     63                         eui64[4],
+     64                         eui64[5],
+     65                         eui64[6],
+     66                         eui64[7]);
+   \        0x4   0x79C1             LDRB     R1,[R0, #+7]
+   \        0x6   0x9106             STR      R1,[SP, #+24]
+   \        0x8   0x7982             LDRB     R2,[R0, #+6]
+   \        0xA   0x9205             STR      R2,[SP, #+20]
+   \        0xC   0x7941             LDRB     R1,[R0, #+5]
+   \        0xE   0x9104             STR      R1,[SP, #+16]
+   \       0x10   0x7902             LDRB     R2,[R0, #+4]
+   \       0x12   0x9203             STR      R2,[SP, #+12]
+   \       0x14   0x78C1             LDRB     R1,[R0, #+3]
+   \       0x16   0x9102             STR      R1,[SP, #+8]
+   \       0x18   0x7882             LDRB     R2,[R0, #+2]
+   \       0x1A   0x....             LDR.N    R1,??DataTable12_5
+   \       0x1C   0x9201             STR      R2,[SP, #+4]
+   \       0x1E   0x7844             LDRB     R4,[R0, #+1]
+   \       0x20   0x223C             MOVS     R2,#+60
+   \       0x22   0x9400             STR      R4,[SP, #+0]
+   \       0x24   0x7803             LDRB     R3,[R0, #+0]
+   \       0x26   0x....             LDR.N    R4,??DataTable12_6
+   \       0x28   0x8820             LDRH     R0,[R4, #+0]
+   \       0x2A   0x....             B.N      ?Subroutine1
+     67          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....'....        BL       emberAfPrint
+   \        0x4   0xB008             ADD      SP,SP,#+32
+   \        0x6   0xBD10             POP      {R4,PC}          ;; return
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          void emberAfPrintBigEndianEui64(const EmberEUI64 eui64)
+     70          {
+   \                     emberAfPrintBigEndianEui64: (+1)
+   \        0x0   0xB518             PUSH     {R3,R4,LR}
+   \        0x2   0xB087             SUB      SP,SP,#+28
+     71            emberAfPrint(emberAfPrintActiveArea,
+     72                         "(%c)%X%X%X%X%X%X%X%X",
+     73                         '>',
+     74                         eui64[7],
+     75                         eui64[6],
+     76                         eui64[5],
+     77                         eui64[4],
+     78                         eui64[3],
+     79                         eui64[2],
+     80                         eui64[1],
+     81                         eui64[0]);
+   \        0x4   0x7801             LDRB     R1,[R0, #+0]
+   \        0x6   0x....             LDR.N    R4,??DataTable12_6
+   \        0x8   0x9106             STR      R1,[SP, #+24]
+   \        0xA   0x7842             LDRB     R2,[R0, #+1]
+   \        0xC   0x9205             STR      R2,[SP, #+20]
+   \        0xE   0x7881             LDRB     R1,[R0, #+2]
+   \       0x10   0x9104             STR      R1,[SP, #+16]
+   \       0x12   0x78C2             LDRB     R2,[R0, #+3]
+   \       0x14   0x9203             STR      R2,[SP, #+12]
+   \       0x16   0x7901             LDRB     R1,[R0, #+4]
+   \       0x18   0x9102             STR      R1,[SP, #+8]
+   \       0x1A   0x7942             LDRB     R2,[R0, #+5]
+   \       0x1C   0x9201             STR      R2,[SP, #+4]
+   \       0x1E   0x7981             LDRB     R1,[R0, #+6]
+   \       0x20   0x223E             MOVS     R2,#+62
+   \       0x22   0x9100             STR      R1,[SP, #+0]
+   \       0x24   0x79C3             LDRB     R3,[R0, #+7]
+   \       0x26   0x8820             LDRH     R0,[R4, #+0]
+   \       0x28   0x....             LDR.N    R1,??DataTable12_5
+   \       0x2A                      REQUIRE ?Subroutine1
+   \       0x2A                      ;; // Fall through to label ?Subroutine1
+     82          }
+     83          
+
+   \                                 In section .text, align 2, keep-with-next
+     84          void emberAfPrintZigbeeKey(const uint8_t *key)
+     85          {
+   \                     printZigbeeKey: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+     86            // Zigbee Keys are 16 bytes long
+     87            emberAfPrint8ByteBlocks(2, key, false);
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0x....             B.N      emberAfPrint8ByteBlocks
+     88          }
+     89          
+
+   \                                 In section .text, align 2, keep-with-next
+     90          void emberAfPrintCert(const uint8_t *cert)
+     91          {
+   \                     printCert: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+     92            // Certificates are 48 bytes long
+     93            emberAfPrint8ByteBlocks(6, cert, true);
+   \        0x2   0x2201             MOVS     R2,#+1
+   \        0x4   0x2006             MOVS     R0,#+6
+   \        0x6   0x....             B.N      emberAfPrint8ByteBlocks
+     94          }
+     95          
+
+   \                                 In section .text, align 2, keep-with-next
+     96          void emberAfPrintKey(bool publicKey, const uint8_t *key)
+     97          {
+   \                     printKey: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     98            // ECC Public Keys are 22 bytes
+     99            // ECC Private Keys are 21 bytes
+    100          
+    101            emberAfPrintZigbeeKey(key);
+   \        0x4   0x....             LDR.N    R6,??DataTable12_6
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x2200             MOVS     R2,#+0
+   \        0xA   0x2002             MOVS     R0,#+2
+   \        0xC   0x....'....        BL       emberAfPrint8ByteBlocks
+    102            emberAfPrintBuffer(emberAfPrintActiveArea, key + 16, 5, true);
+   \       0x10   0x8830             LDRH     R0,[R6, #+0]
+   \       0x12   0x2301             MOVS     R3,#+1
+   \       0x14   0x2205             MOVS     R2,#+5
+   \       0x16   0xF105 0x0110      ADD      R1,R5,#+16
+   \       0x1A   0x....'....        BL       emberAfPrintBuffer
+    103            emberAfPrintln(emberAfPrintActiveArea, (publicKey ? "%X" : ""), key[21]);
+   \       0x1E   0x2C00             CMP      R4,#+0
+   \       0x20   0x7D6A             LDRB     R2,[R5, #+21]
+   \       0x22   0x8830             LDRH     R0,[R6, #+0]
+   \       0x24   0xBF14             ITE      NE 
+   \       0x26   0x....             ADRNE.N  R1,??DataTable12_2  ;; 0x25, 0x58, 0x00, 0x00
+   \       0x28   0x....             LDREQ.N  R1,??DataTable12_7
+   \       0x2A   0x....             B.N      ?Subroutine2
+    104          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \        0x4   0x....'....        B.W      emberAfPrintln
+    105          
+
+   \                                 In section .text, align 2, keep-with-next
+    106          void emberAfPrintKey283k1(bool publicKey, const uint8_t *key)
+    107          {
+   \                     emberAfPrintKey283k1: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    108            // ECC Public 283k1 Keys are 37 bytes
+    109            // ECC Private 283k1 Keys are 36 bytes
+    110            emberAfPrint8ByteBlocks(4, key, true);
+   \        0x4   0x....             LDR.N    R6,??DataTable12_6
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x2201             MOVS     R2,#+1
+   \        0xA   0x2004             MOVS     R0,#+4
+   \        0xC   0x....'....        BL       emberAfPrint8ByteBlocks
+    111            emberAfPrintBuffer(emberAfPrintActiveArea, key + 32, 4, true);
+   \       0x10   0x8830             LDRH     R0,[R6, #+0]
+   \       0x12   0x2301             MOVS     R3,#+1
+   \       0x14   0x2204             MOVS     R2,#+4
+   \       0x16   0xF105 0x0120      ADD      R1,R5,#+32
+   \       0x1A   0x....'....        BL       emberAfPrintBuffer
+    112            emberAfPrintln(emberAfPrintActiveArea, (publicKey ? "%X" : ""), key[36]);
+   \       0x1E   0x2C00             CMP      R4,#+0
+   \       0x20   0xF895 0x2024      LDRB     R2,[R5, #+36]
+   \       0x24   0x8830             LDRH     R0,[R6, #+0]
+   \       0x26   0xBF14             ITE      NE 
+   \       0x28   0x....             ADRNE.N  R1,??DataTable12_2  ;; 0x25, 0x58, 0x00, 0x00
+   \       0x2A   0x....             LDREQ.N  R1,??DataTable12_7
+   \       0x2C                      REQUIRE ?Subroutine2
+   \       0x2C                      ;; // Fall through to label ?Subroutine2
+    113          }
+    114          
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void emberAfPrintCert283k1(const uint8_t *cert)
+    116          {
+   \                     emberAfPrintCert283k1: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    117            // ECC 283k1 certificates are 74 bytes long
+    118            emberAfPrint8ByteBlocks(9, cert, true);
+   \        0x4   0x2201             MOVS     R2,#+1
+   \        0x6   0x4621             MOV      R1,R4
+   \        0x8   0x2009             MOVS     R0,#+9
+   \        0xA   0x....'....        BL       emberAfPrint8ByteBlocks
+    119            emberAfPrintln(emberAfPrintActiveArea, "%X %X", cert[72], cert[73]);
+   \        0xE   0xF104 0x0048      ADD      R0,R4,#+72
+   \       0x12   0x7843             LDRB     R3,[R0, #+1]
+   \       0x14   0x7802             LDRB     R2,[R0, #+0]
+   \       0x16   0x....             LDR.N    R0,??DataTable12_6
+   \       0x18   0x8800             LDRH     R0,[R0, #+0]
+   \       0x1A   0x....             LDR.N    R1,??DataTable12_8
+   \       0x1C   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x20   0x....'....        B.W      emberAfPrintln
+    120          }
+    121          
+
+   \                                 In section .text, align 2, keep-with-next
+    122          void emberAfPrintIeeeLine(const EmberEUI64 ieee)
+    123          {
+   \                     printIeeeLine: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    124            emberAfPrintBigEndianEui64(ieee);
+   \        0x2   0x....'....        BL       emberAfPrintBigEndianEui64
+    125            emberAfPrintln(emberAfPrintActiveArea, "");
+   \        0x6   0x....             LDR.N    R0,??DataTable12_6
+   \        0x8   0x8800             LDRH     R0,[R0, #+0]
+   \        0xA   0x....             LDR.N    R1,??DataTable12_7
+   \        0xC   0xE8BD 0x4004      POP      {R2,LR}
+   \       0x10   0x....'....        B.W      emberAfPrintln
+    126          }
+    127          
+
+   \                                 In section .text, align 2, keep-with-next
+    128          void emberAfPrintTextLine(const char * text)
+    129          {
+   \                     printTextLine: (+1)
+   \        0x0   0x4602             MOV      R2,R0
+    130            emberAfPrintln(emberAfPrintActiveArea, "%p", text);
+   \        0x2   0x....             LDR.N    R0,??DataTable12_6
+   \        0x4   0x8800             LDRH     R0,[R0, #+0]
+   \        0x6   0x....             LDR.N    R1,??DataTable12_9
+   \        0x8   0x....'....        B.W      emberAfPrintln
+    131          }
+    132          
+
+   \                                 In section .text, align 2, keep-with-next
+    133          void emberAfPrint8ByteBlocks(uint8_t numBlocks,
+    134                                       const uint8_t *block,
+    135                                       bool crBetweenBlocks)
+    136          {
+   \                     emberAfPrint8ByteBlocks: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x460C             MOV      R4,R1
+   \        0x6   0x4690             MOV      R8,R2
+    137            uint8_t i;
+    138            for (i = 0; i < numBlocks; i++) {
+   \        0x8   0x2600             MOVS     R6,#+0
+   \        0xA   0x....'....        LDR.W    R10,??DataTable12_10
+   \        0xE   0x....             ADR.N    R5,??DataTable12_3  ;; 0x0D, 0x0A, 0x00, 0x00
+   \       0x10   0x....'....        LDR.W    R9,??DataTable12_7
+   \       0x14   0x....             LDR.N    R7,??DataTable12_6
+   \       0x16   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \                     ??emberAfPrint8ByteBlocks_0: (+1)
+   \       0x1A   0xF89D 0xB000      LDRB     R11,[SP, #+0]
+   \       0x1E   0x455E             CMP      R6,R11
+   \       0x20   0xDA15             BGE.N    ??emberAfPrint8ByteBlocks_1
+    139              emberAfPrintBuffer(emberAfPrintActiveArea, block + 8 * i, 8, true);
+   \       0x22   0x8838             LDRH     R0,[R7, #+0]
+   \       0x24   0x2301             MOVS     R3,#+1
+   \       0x26   0x2208             MOVS     R2,#+8
+   \       0x28   0xEB04 0x01C6      ADD      R1,R4,R6, LSL #+3
+   \       0x2C   0x....'....        BL       emberAfPrintBuffer
+    140              // By moving the '%p' to a separate function call, we can
+    141              // save CONST space.  The above string is duplicated elsewhere in the
+    142              // code and therefore will be deadstripped.
+    143              emberAfPrint(emberAfPrintActiveArea,
+    144                           " %p",
+    145                           (crBetweenBlocks || ((i + 1) == numBlocks) ? "\r\n" : ""));
+   \       0x30   0xEA5F 0x0008      MOVS     R0,R8
+   \       0x34   0xD104             BNE.N    ??emberAfPrint8ByteBlocks_2
+   \       0x36   0x1C70             ADDS     R0,R6,#+1
+   \       0x38   0x4558             CMP      R0,R11
+   \       0x3A   0xBF18             IT       NE 
+   \       0x3C   0x464A             MOVNE    R2,R9
+   \       0x3E   0xD100             BNE.N    ??emberAfPrint8ByteBlocks_3
+   \                     ??emberAfPrint8ByteBlocks_2: (+1)
+   \       0x40   0x462A             MOV      R2,R5
+   \                     ??emberAfPrint8ByteBlocks_3: (+1)
+   \       0x42   0x8838             LDRH     R0,[R7, #+0]
+   \       0x44   0x4651             MOV      R1,R10
+   \       0x46   0x1C76             ADDS     R6,R6,#+1
+   \       0x48   0x....'....        BL       emberAfPrint
+    146            }
+   \       0x4C   0xE7E5             B.N      ??emberAfPrint8ByteBlocks_0
+    147          }
+   \                     ??emberAfPrint8ByteBlocks_1: (+1)
+   \       0x4E   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}   ;; return
+    148          
+
+   \                                 In section .text, align 2, keep-with-next
+    149          void emberAfPrintIssuer(const uint8_t* issuer)
+    150          {
+   \                     emberAfPrintIssuer: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    151            // The issuer field in the certificate is in big-endian form.
+    152            emberAfPrint(emberAfPrintActiveArea, "(>) ");
+   \        0x4   0x....             LDR.N    R2,??DataTable12_6
+   \        0x6   0x8810             LDRH     R0,[R2, #+0]
+   \        0x8   0x....             LDR.N    R1,??DataTable12_11
+   \        0xA   0x....'....        BL       emberAfPrint
+    153            emberAfPrint8ByteBlocks(1, issuer, true);
+   \        0xE   0x4621             MOV      R1,R4
+   \       0x10   0x2201             MOVS     R2,#+1
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x18   0x....             B.N      emberAfPrint8ByteBlocks
+    154          }
+    155          
+
+   \                                 In section .text, align 2, keep-with-next
+    156          void emberAfPrintChannelListFromMask(uint32_t channelMask)
+    157          {
+   \                     emberAfPrintChannelListFromMask: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    158            if (emberAfPrintEnabled(emberAfPrintActiveArea)) {
+   \        0x6   0x....             LDR.N    R5,??DataTable12_6
+   \        0x8   0x8828             LDRH     R0,[R5, #+0]
+   \        0xA   0x....'....        BL       emberAfPrintEnabled
+   \        0xE   0xB1B0             CBZ.N    R0,??emberAfPrintChannelListFromMask_0
+    159              uint8_t i;
+    160              bool firstPrint = true;
+   \       0x10   0x2001             MOVS     R0,#+1
+    161              for (i = 0;
+   \       0x12   0x2600             MOVS     R6,#+0
+   \       0x14   0x....             LDR.N    R7,??DataTable12_12
+   \       0x16   0x....'....        LDR.W    R8,??DataTable12_13
+    162                   i < EMBER_MAX_CHANNELS_PER_PAGE;
+    163                   i++) {
+    164                if ((channelMask & 0x01UL) != 0U) {
+   \                     ??emberAfPrintChannelListFromMask_1: (+1)
+   \       0x1A   0x07E1             LSLS     R1,R4,#+31
+   \       0x1C   0xD50A             BPL.N    ??emberAfPrintChannelListFromMask_2
+    165                  if (!firstPrint) {
+   \       0x1E   0xB918             CBNZ.N   R0,??emberAfPrintChannelListFromMask_3
+    166                    emberAfPrint(emberAfPrintActiveArea, ", ");
+   \       0x20   0x8828             LDRH     R0,[R5, #+0]
+   \       0x22   0x4641             MOV      R1,R8
+   \       0x24   0x....'....        BL       emberAfPrint
+    167                  }
+    168                  emberAfPrint(emberAfPrintActiveArea, "%d", i);
+   \                     ??emberAfPrintChannelListFromMask_3: (+1)
+   \       0x28   0x8828             LDRH     R0,[R5, #+0]
+   \       0x2A   0xB2F2             UXTB     R2,R6
+   \       0x2C   0x4639             MOV      R1,R7
+   \       0x2E   0x....'....        BL       emberAfPrint
+    169                  firstPrint = false;
+   \       0x32   0x2000             MOVS     R0,#+0
+    170                }
+    171                channelMask >>= 1;
+    172              }
+   \                     ??emberAfPrintChannelListFromMask_2: (+1)
+   \       0x34   0x1C76             ADDS     R6,R6,#+1
+   \       0x36   0x0864             LSRS     R4,R4,#+1
+   \       0x38   0xB2F1             UXTB     R1,R6
+   \       0x3A   0x291B             CMP      R1,#+27
+   \       0x3C   0xDBED             BLT.N    ??emberAfPrintChannelListFromMask_1
+    173            }
+    174          }
+   \                     ??emberAfPrintChannelListFromMask_0: (+1)
+   \       0x3E   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \        0x0   0x25 0x78          DC8      "%x "
+   \              0x20 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \        0x0   0x25 0x78          DC8      0x25, 0x78, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_2:
+   \        0x0   0x25 0x58          DC8      0x25, 0x58, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_3:
+   \        0x0   0x0D 0x0A          DC8      0x0D, 0x0A, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_4:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_6:
+   \        0x0   0x....'....        DC32     emberAfPrintActiveArea
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_7:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_8:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_9:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_10:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_11:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_12:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_13:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x25 0x78          DC8 "%x "
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x25 0x78          DC8 "%x"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x25 0x63          DC8 "%c"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x28 0x25          DC8 "(%c)%X%X%X%X%X%X%X%X"
+   \              0x63 0x29    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x25 0x58    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x25 0x58          DC8 "%X"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \                     ?_5:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x25 0x58          DC8 "%X %X"
+   \              0x20 0x25    
+   \              0x58 0x00    
+   \        0x6   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x25 0x70          DC8 "%p"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x20 0x25          DC8 " %p"
+   \              0x70 0x00    
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0D 0x0A          DC8 "\015\012"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x28 0x3E          DC8 "(>) "
+   \              0x29 0x20    
+   \              0x00         
+   \        0x5   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x2C 0x20          DC8 ", "
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x25 0x64          DC8 "%d"
+   \              0x00         
+   \        0x3   0x00               DC8 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   emAfPrintBuffer
+        24   -> emberAfPrint
+        24   -> emberAfPrintEnabled
+      40   emberAfPrint8ByteBlocks
+        40   -> emberAfPrint
+        40   -> emberAfPrintBuffer
+      40   emberAfPrintBigEndianEui64
+        40   -> emberAfPrint
+       0   emberAfPrintBuffer
+         0   -> emAfPrintBuffer
+       8   emberAfPrintCert283k1
+         8   -> emberAfPrint8ByteBlocks
+         0   -> emberAfPrintln
+      24   emberAfPrintChannelListFromMask
+        24   -> emberAfPrint
+        24   -> emberAfPrintEnabled
+       8   emberAfPrintIssuer
+         8   -> emberAfPrint
+         0   -> emberAfPrint8ByteBlocks
+      16   emberAfPrintKey283k1
+        16   -> emberAfPrint8ByteBlocks
+        16   -> emberAfPrintBuffer
+         0   -> emberAfPrintln
+      40   emberAfPrintLittleEndianEui64
+        40   -> emberAfPrint
+      16   emberAfPrintLongString
+         0   -> emAfPrintBuffer
+        16   -> emberAfLongStringLength
+      16   emberAfPrintString
+         0   -> emAfPrintBuffer
+        16   -> emberAfStringLength
+       0   printCert
+         0   -> emberAfPrint8ByteBlocks
+       8   printIeeeLine
+         8   -> emberAfPrintBigEndianEui64
+         0   -> emberAfPrintln
+      16   printKey
+        16   -> emberAfPrint8ByteBlocks
+        16   -> emberAfPrintBuffer
+         0   -> emberAfPrintln
+       0   printTextLine
+         0   -> emberAfPrintln
+       0   printZigbeeKey
+         0   -> emberAfPrint8ByteBlocks
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable12_10
+       4  ??DataTable12_11
+       4  ??DataTable12_12
+       4  ??DataTable12_13
+       4  ??DataTable12_2
+       4  ??DataTable12_3
+       4  ??DataTable12_4
+       4  ??DataTable12_5
+       4  ??DataTable12_6
+       4  ??DataTable12_7
+       4  ??DataTable12_8
+       4  ??DataTable12_9
+      12  ?Subroutine0
+       8  ?Subroutine1
+       8  ?Subroutine2
+       4  ?_0
+       4  ?_1
+       8  ?_10
+       4  ?_11
+       4  ?_12
+       4  ?_2
+      24  ?_3
+       4  ?_4
+       1  ?_5
+       8  ?_6
+       4  ?_7
+       4  ?_8
+       4  ?_9
+      44  emAfPrintBuffer
+      82  emberAfPrint8ByteBlocks
+      42  emberAfPrintBigEndianEui64
+      10  emberAfPrintBuffer
+      36  emberAfPrintCert283k1
+      66  emberAfPrintChannelListFromMask
+      26  emberAfPrintIssuer
+      44  emberAfPrintKey283k1
+      44  emberAfPrintLittleEndianEui64
+      16  emberAfPrintLongString
+      18  emberAfPrintString
+       8  printCert
+      20  printIeeeLine
+      44  printKey
+      12  printTextLine
+       8  printZigbeeKey
+
+ 
+  77 bytes in section .rodata
+ 604 bytes in section .text
+ 
+ 604 bytes of CODE  memory
+  77 bytes of CONST memory
+
+Errors: none
+Warnings: none

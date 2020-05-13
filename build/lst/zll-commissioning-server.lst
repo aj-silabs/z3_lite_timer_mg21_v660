@@ -1,0 +1,852 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:20:11
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-server\zll-commissioning-server.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW898B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-server\zll-commissioning-server.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"zll-commissioning-server.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-server\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\zll-commissioning-server.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\zll-commissioning-server.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\plugin\zll-commissioning-server\zll-commissioning-server.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Routines for the ZLL Commissioning Server plugin, which implement the
+      4           *        server side of the ZLL protocol.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     11           * software is governed by the terms of Silicon Labs Master Software License
+     12           * Agreement (MSLA) available at
+     13           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     14           * software is distributed to you in Source Code format and is governed by the
+     15           * sections of the MSLA applicable to Source Code.
+     16           *
+     17           ******************************************************************************/
+     18          
+     19          #include "app/framework/include/af.h"
+     20          #include "app/framework/util/af-main.h"
+     21          #include "app/framework/util/common.h"
+     22          #include "app/framework/plugin/zll-commissioning-common/zll-commissioning.h"
+     23          
+     24          // AppBuilder already prevents multi-network ZLL configurations.  This is here
+     25          // as a reminder that the code below assumes that there is exactly one network
+     26          // and that it is ZigBee PRO.
+     27          #if EMBER_SUPPORTED_NETWORKS != 1
+     28            #error ZLL is not supported with multiple networks.
+     29          #endif
+     30          
+     31          //------------------------------------------------------------------------------
+     32          // Globals
+     33          
+     34          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER_STEALING_ALLOWED
+     35            #define STEALING_ALLOWED (true)
+     36          #else
+     37            #define STEALING_ALLOWED (false)
+     38          #endif
+     39          static const boolean stealingAllowed = STEALING_ALLOWED;
+     40          
+     41          #ifdef PLUGIN_DEBUG
+     42          static const uint8_t emAfZllCommissioningPluginName[] = "ZLL Commissioning Server";
+     43          #define PLUGIN_NAME emAfZllCommissioningPluginName
+     44          #endif
+     45          
+     46          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER_RX_ALWAYS_ON
+     47            #define RX_ON_PERIOD_MS 0xFFFFFFFFUL
+     48          #else
+     49            #define RX_ON_PERIOD_MS (EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER_RX_ON_AT_STARTUP_PERIOD * 1000UL)
+     50          #endif // EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER_RX_ALWAYS_ON
+     51          
+     52          // Radio power modes.
+     53          enum {
+     54            EMBER_RADIO_POWER_MODE_RX_ON,
+     55            EMBER_RADIO_POWER_MODE_OFF
+     56          };
+     57          
+     58          // The target network - used here for the deviceInformationRequestHandler to
+     59          // determine if the request was from a legacy device.
+     60          extern EmberZllNetwork emAfZllNetwork;
+     61          
+     62          // Private ZLL commissioning functions
+     63          bool emAfZllAmFactoryNew(void);
+     64          EmberNodeType emAfZllGetLogicalNodeType(void);
+     65          
+     66          //------------------------------------------------------------------------------
+     67          // Module private functions
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          static void deviceInformationRequestHandler(const EmberEUI64 source,
+     70                                                      uint32_t transaction,
+     71                                                      uint8_t startIndex)
+     72          {
+   \                     deviceInformationRequestHandler: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0x4616             MOV      R6,R2
+     73            EmberEUI64 eui64;
+     74            EmberStatus status;
+     75            uint8_t total = emberAfEndpointCount();
+   \        0xC   0x....'....        BL       emberAfEndpointCount
+   \       0x10   0x4680             MOV      R8,R0
+     76            uint8_t i, *count;
+     77          
+     78            emberAfZllCommissioningClusterPrintln("RX: DeviceInformationRequest 0x%4x, 0x%x",
+     79                                                  transaction,
+     80                                                  startIndex);
+     81          
+     82            emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND
+     83                                       | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT
+     84                                       | ZCL_DISABLE_DEFAULT_RESPONSE_MASK),
+     85                                      ZCL_ZLL_COMMISSIONING_CLUSTER_ID,
+     86                                      ZCL_DEVICE_INFORMATION_RESPONSE_COMMAND_ID,
+     87                                      "wuu",
+     88                                      transaction,
+     89                                      total,
+     90                                      startIndex);
+   \       0x12   0x9602             STR      R6,[SP, #+8]
+   \       0x14   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \       0x18   0x9500             STR      R5,[SP, #+0]
+   \       0x1A   0x....             LDR.N    R3,??DataTable2
+   \       0x1C   0x2203             MOVS     R2,#+3
+   \       0x1E   0xF44F 0x5180      MOV      R1,#+4096
+   \       0x22   0x2019             MOVS     R0,#+25
+   \       0x24   0x....'....        BL       emberAfFillExternalBuffer
+     91          
+     92            emberAfGetEui64(eui64);
+   \       0x28   0xA803             ADD      R0,SP,#+12
+   \       0x2A   0x....'....        BL       emberAfGetEui64
+     93            count = &appResponseData[appResponseLength];
+   \       0x2E   0x....             LDR.N    R1,??DataTable2_1
+   \       0x30   0x880A             LDRH     R2,[R1, #+0]
+   \       0x32   0x....             LDR.N    R0,??DataTable2_2
+   \       0x34   0x1885             ADDS     R5,R0,R2
+     94            emberAfPutInt8uInResp(0); // temporary count
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x....'....        BL       emberAfPutInt8uInResp
+     95            // EMAPPFWKV2-1450: only send up to 4 endpoint information chunks at a time.
+     96            // Otherwise, the payload will be too large. ZCL6 says the following in
+     97            // 13.3.2.2.2.4 regarding the device information record count field:
+     98            //   "This value shall be in the range 0x00 – 0x05."
+     99          
+    100            for (i = startIndex; i < total && *count < 4; i++) {
+   \                     ??deviceInformationRequestHandler_0: (+1)
+   \       0x3C   0xB2F0             UXTB     R0,R6
+   \       0x3E   0x4540             CMP      R0,R8
+   \       0x40   0xF24C 0x075E      MOVW     R7,#+49246
+   \       0x44   0xBFBC             ITT      LT 
+   \       0x46   0x7829             LDRBLT   R1,[R5, #+0]
+   \       0x48   0x2904             CMPLT    R1,#+4
+   \       0x4A   0xDA2A             BGE.N    ??deviceInformationRequestHandler_1
+    101              // If the profile interop bit in the ZllInformation bitmask is cleared,
+    102              // then we know this is a legacy ZLL app, so we set the profile ID in our
+    103              // response to the ZLL profile ID. If the bit is set, then we use the profile
+    104              // ID specified for the endpoint.
+    105              uint8_t deviceVersion = emberAfDeviceVersionFromIndex(i);
+   \       0x4C   0x....             LDR.N    R2,??DataTable2_3
+   \       0x4E   0xEB02 0x1400      ADD      R4,R2,R0, LSL #+4
+   \       0x52   0xF894 0x9006      LDRB     R9,[R4, #+6]
+    106              uint8_t endpoint = emberAfEndpointFromIndex(i);
+   \       0x56   0x....'....        BL       emberAfEndpointFromIndex
+   \       0x5A   0x4682             MOV      R10,R0
+    107              EmberAfProfileId profileId = (emAfZllNetwork.state & EMBER_ZLL_STATE_PROFILE_INTEROP
+    108                                            ? emberAfProfileIdFromIndex(i)
+    109                                            : EMBER_ZLL_PROFILE_ID);
+   \       0x5C   0x....             LDR.N    R0,??DataTable2_4
+   \       0x5E   0xF890 0x1026      LDRB     R1,[R0, #+38]
+   \       0x62   0x0608             LSLS     R0,R1,#+24
+    110              emberAfPutBlockInResp(eui64, EUI64_SIZE);
+   \       0x64   0xA803             ADD      R0,SP,#+12
+   \       0x66   0xBF48             IT       MI 
+   \       0x68   0x8867             LDRHMI   R7,[R4, #+2]
+   \       0x6A   0x2108             MOVS     R1,#+8
+   \       0x6C   0x....'....        BL       emberAfPutBlockInResp
+    111              emberAfPutInt8uInResp(endpoint);
+   \       0x70   0x4650             MOV      R0,R10
+   \       0x72   0x....'....        BL       emberAfPutInt8uInResp
+    112              emberAfPutInt16uInResp(profileId);
+   \       0x76   0x4638             MOV      R0,R7
+   \       0x78   0x....'....        BL       emberAfPutInt16uInResp
+    113          
+    114              // Note that certain legacy initiators require a ZLL 1.0 device
+    115              // ID for Endpoint 1.
+    116              emberAfPutInt16uInResp(emberAfDeviceIdFromIndex(i));
+   \       0x7C   0x88A0             LDRH     R0,[R4, #+4]
+   \       0x7E   0x....'....        BL       emberAfPutInt16uInResp
+    117              emberAfPutInt8uInResp(deviceVersion);
+   \       0x82   0x4648             MOV      R0,R9
+   \       0x84   0x....'....        BL       emberAfPutInt8uInResp
+    118              emberAfPutInt8uInResp(emberAfPluginZllCommissioningServerGroupIdentifierCountCallback(endpoint));
+   \       0x88   0x4650             MOV      R0,R10
+   \       0x8A   0x....'....        BL       emberAfPluginZllCommissioningServerGroupIdentifierCountCallback
+   \       0x8E   0x....'....        BL       emberAfPutInt8uInResp
+    119              emberAfPutInt8uInResp(i); // sort order
+   \       0x92   0xB2F0             UXTB     R0,R6
+   \       0x94   0x....'....        BL       emberAfPutInt8uInResp
+    120              (*count)++;
+   \       0x98   0x7828             LDRB     R0,[R5, #+0]
+    121            }
+   \       0x9A   0x1C76             ADDS     R6,R6,#+1
+   \       0x9C   0x1C40             ADDS     R0,R0,#+1
+   \       0x9E   0x7028             STRB     R0,[R5, #+0]
+   \       0xA0   0xE7CC             B.N      ??deviceInformationRequestHandler_0
+    122          
+    123            status = emberAfSendCommandInterPan(0xFFFF,                // destination pan id
+    124                                                source,
+    125                                                EMBER_NULL_NODE_ID,    // node id - ignored
+    126                                                0x0000,                // group id - ignored
+    127                                                EMBER_ZLL_PROFILE_ID);
+   \                     ??deviceInformationRequestHandler_1: (+1)
+   \       0xA2   0xF64F 0x70FF      MOVW     R0,#+65535
+   \       0xA6   0x4659             MOV      R1,R11
+   \       0xA8   0x9700             STR      R7,[SP, #+0]
+   \       0xAA   0x2300             MOVS     R3,#+0
+   \       0xAC   0x4602             MOV      R2,R0
+   \       0xAE   0x....'....        BL       emberAfSendCommandInterPan
+    128            if (status != EMBER_SUCCESS) {
+    129              emberAfZllCommissioningClusterPrintln("%p%p failed 0x%x",
+    130                                                    "Error: ",
+    131                                                    "Device information response",
+    132                                                    status);
+    133            }
+    134          }
+   \       0xB2   0xB005             ADD      SP,SP,#+20
+   \       0xB4   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    135          
+    136          static bool isZllDecisionId(EmberZllPolicy decisionId)
+    137          {
+    138          #ifdef EZSP_HOST
+    139            if (ezspGetPolicy(EZSP_ZLL_POLICY, &decisionId) != EZSP_SUCCESS) {
+    140              return false;
+    141            }
+    142            return (decisionId == EMBER_ZLL_POLICY_NO_TOUCHLINK_FOR_NFN);
+    143          #else
+    144            return (decisionId == emberZllGetPolicy());
+    145          #endif
+    146          }
+    147          
+    148          static void identifyRequestHandler(const EmberEUI64 source,
+    149                                             uint32_t transaction,
+    150                                             uint16_t identifyDurationS)
+    151          {
+    152            if (!isZllDecisionId(EMBER_ZLL_POLICY_NO_TOUCHLINK_FOR_NFN)
+    153                || emAfZllAmFactoryNew()) {
+    154              emberAfZllCommissioningClusterPrintln("RX: IdentifyRequest 0x%4x, 0x%2x",
+    155                                                    transaction,
+    156                                                    identifyDurationS);
+    157              emberAfPluginZllCommissioningServerIdentifyCallback(identifyDurationS);
+    158            } else {
+    159              emberAfZllCommissioningClusterPrintln("ignoring identify request as touchlinking policy is disabled for NFN");
+    160            }
+    161          }
+    162          
+    163          static void resetToFactoryNewRequestHandler(const EmberEUI64 source,
+    164                                                      uint32_t transaction)
+    165          {
+    166            emberAfZllCommissioningClusterPrintln("RX: ResetToFactoryNewRequest 0x%4x",
+    167                                                  transaction);
+    168            if (!emAfZllAmFactoryNew()) {
+    169              emberAfZllResetToFactoryNew();
+    170            }
+    171          }
+    172          
+    173          //------------------------------------------------------------------------------
+    174          // ZLL commissioning private functions
+    175          
+
+   \                                 In section .text, align 2, keep-with-next
+    176          bool emAfZllStealingAllowed(void)
+    177          {
+    178            return stealingAllowed;
+   \                     emAfZllStealingAllowed: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x4770             BX       LR               ;; return
+    179          }
+    180          
+
+   \                                 In section .text, align 2, keep-with-next
+    181          void emAfZllInitializeRadio(void)
+    182          {
+   \                     emAfZllInitializeRadio: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    183            // Turn the receiver on for a user-specified period, in order to allow incoming.
+    184            // scan requests, but cancel any outstanding rx on period first, in case we've
+    185            // got here by a touchlink reset.
+    186            emberZllCancelRxOnWhenIdle(); // cancel rx on
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        BL       emberZllSetRxOnWhenIdle
+    187          #if RX_ON_PERIOD_MS != 0
+    188            emberAfAppPrintln("Setting rx on period to %d", RX_ON_PERIOD_MS);
+   \        0x8   0x....             LDR.N    R4,??DataTable2_5  ;; 0x493e0
+   \        0xA   0x4622             MOV      R2,R4
+   \        0xC   0x....             LDR.N    R1,??DataTable2_6
+   \        0xE   0x2002             MOVS     R0,#+2
+   \       0x10   0x....'....        BL       emberAfPrintln
+    189            emberZllSetRxOnWhenIdle(RX_ON_PERIOD_MS);
+   \       0x14   0x4620             MOV      R0,R4
+   \       0x16   0x....'....        BL       emberZllSetRxOnWhenIdle
+    190          #endif
+    191          
+    192            // Tune the radio to the user-specified default channel - this will be used
+    193            // to listen for an incoming scan request. (Note that the original ZLL specification
+    194            // mandates a random primary channel, but the new BDB spec appears not to)
+    195            emberSetLogicalAndRadioChannel(EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER_DEFAULT_RADIO_CHANNEL);
+   \       0x1A   0x200B             MOVS     R0,#+11
+   \       0x1C   0x....'....        BL       emberSetLogicalAndRadioChannel
+    196            emberAfAppPrintln("Setting default channel to %d", EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SERVER_DEFAULT_RADIO_CHANNEL);
+   \       0x20   0x220B             MOVS     R2,#+11
+   \       0x22   0x....             LDR.N    R1,??DataTable2_7
+   \       0x24   0x2002             MOVS     R0,#+2
+   \       0x26   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x2A   0x....'....        B.W      emberAfPrintln
+    197          }
+    198          
+
+   \                                 In section .text, align 2, keep-with-next
+    199          bool emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback(const EmberAfInterpanHeader *header,
+    200                                                                                  uint8_t msgLen,
+    201                                                                                  uint8_t *message)
+    202          {
+   \                     emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    203            uint32_t transaction;
+    204            uint8_t frameControl, commandId, msgIndex;
+    205          
+    206            // If the message isn't for the ZLL Commissioning cluster, drop it with an
+    207            // indication that we didn't handle it.
+    208            if (header->profileId != EMBER_ZLL_PROFILE_ID
+    209                || header->clusterId != ZCL_ZLL_COMMISSIONING_CLUSTER_ID) {
+   \        0x4   0x89E0             LDRH     R0,[R4, #+14]
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0xF24C 0x015E      MOVW     R1,#+49246
+   \        0xC   0x4288             CMP      R0,R1
+   \        0xE   0x4616             MOV      R6,R2
+   \       0x10   0xBF01             ITTTT    EQ 
+   \       0x12   0x8A22             LDRHEQ   R2,[R4, #+16]
+   \       0x14   0xF5B2 0x5F80      CMPEQ    R2,#+4096
+   \       0x18   0x7820             LDRBEQ   R0,[R4, #+0]
+   \       0x1A   0x2800             CMPEQ    R0,#+0
+    210              return false;
+    211            }
+    212          
+    213            if (header->messageType != EMBER_AF_INTER_PAN_UNICAST
+    214                || !(header->options & EMBER_AF_INTERPAN_OPTION_MAC_HAS_LONG_ADDRESS)
+    215                || msgLen < ZLL_HEADER_OVERHEAD) {
+   \       0x1C   0xD13C             BNE.N    ??emAfPluginZllCommissioningServerInterpanPreMe_0
+   \       0x1E   0x7D20             LDRB     R0,[R4, #+20]
+   \       0x20   0x0781             LSLS     R1,R0,#+30
+   \       0x22   0xD539             BPL.N    ??emAfPluginZllCommissioningServerInterpanPreMe_0
+   \       0x24   0x2D07             CMP      R5,#+7
+   \       0x26   0xDB37             BLT.N    ??emAfPluginZllCommissioningServerInterpanPreMe_0
+    216              return false;
+    217            }
+    218          
+    219            // Verify that the frame control byte makes sense.  Accept only the legacy
+    220            // format or simple client-to-server or server-to-client messages (i.e., no
+    221            // manufacturer-specific commands, etc.)  For non-legacy messages, check that
+    222            // the frame control is correct for the command.  The check is based on
+    223            // DeviceInformationResponse because it is the only server-to-client command
+    224            // we care about.
+    225            frameControl = message[ZLL_HEADER_FRAME_CONTROL_OFFSET];
+   \       0x28   0x7830             LDRB     R0,[R6, #+0]
+    226            commandId = message[ZLL_HEADER_COMMAND_ID_OFFSET];
+   \       0x2A   0x78B7             LDRB     R7,[R6, #+2]
+    227            if (frameControl != ZLL_FRAME_CONTROL_LEGACY
+    228                && frameControl != ZLL_FRAME_CONTROL_CLIENT_TO_SERVER) {
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xBF18             IT       NE 
+   \       0x30   0x2811             CMPNE    R0,#+17
+   \       0x32   0xD131             BNE.N    ??emAfPluginZllCommissioningServerInterpanPreMe_0
+    229              return false;
+    230            }
+    231          
+    232            msgIndex = ZLL_HEADER_TRANSACTION_ID_OFFSET;
+    233            transaction = emberAfGetInt32u(message, msgIndex, msgLen);
+   \       0x34   0x462A             MOV      R2,R5
+   \       0x36   0x2103             MOVS     R1,#+3
+   \       0x38   0x4630             MOV      R0,R6
+   \       0x3A   0x....'....        BL       emberAfGetInt32u
+    234            msgIndex += 4;
+    235          
+    236            switch (commandId) {
+   \       0x3E   0x2F02             CMP      R7,#+2
+   \       0x40   0xD004             BEQ.N    ??emAfPluginZllCommissioningServerInterpanPreMe_1
+   \       0x42   0x2F06             CMP      R7,#+6
+   \       0x44   0xD00A             BEQ.N    ??emAfPluginZllCommissioningServerInterpanPreMe_2
+   \       0x46   0x2F07             CMP      R7,#+7
+   \       0x48   0xD01B             BEQ.N    ??emAfPluginZllCommissioningServerInterpanPreMe_3
+   \       0x4A   0xE025             B.N      ??emAfPluginZllCommissioningServerInterpanPreMe_0
+    237              case ZCL_DEVICE_INFORMATION_REQUEST_COMMAND_ID:
+    238                if (msgIndex + 1 <= msgLen) {
+   \                     ??emAfPluginZllCommissioningServerInterpanPreMe_1: (+1)
+   \       0x4C   0x2D07             CMP      R5,#+7
+   \       0x4E   0xDD21             BLE.N    ??emAfPluginZllCommissioningServerInterpanPreMe_4
+    239                  uint8_t startIndex = emberAfGetInt8u(message, msgIndex, msgLen);
+    240                  deviceInformationRequestHandler(header->longAddress,
+    241                                                  transaction,
+    242                                                  startIndex);
+   \       0x50   0x79F2             LDRB     R2,[R6, #+7]
+   \       0x52   0x4601             MOV      R1,R0
+   \       0x54   0x1C60             ADDS     R0,R4,#+1
+   \       0x56   0x....'....        BL       deviceInformationRequestHandler
+   \       0x5A   0xE01B             B.N      ??emAfPluginZllCommissioningServerInterpanPreMe_4
+    243                }
+    244                return true;
+    245              case ZCL_IDENTIFY_REQUEST_COMMAND_ID:
+    246                if (msgIndex + 2 <= msgLen) {
+   \                     ??emAfPluginZllCommissioningServerInterpanPreMe_2: (+1)
+   \       0x5C   0x2D08             CMP      R5,#+8
+   \       0x5E   0xDD19             BLE.N    ??emAfPluginZllCommissioningServerInterpanPreMe_4
+    247                  uint16_t identifyDurationS = emberAfGetInt16u(message, msgIndex, msgLen);
+   \       0x60   0x462A             MOV      R2,R5
+   \       0x62   0x2107             MOVS     R1,#+7
+   \       0x64   0x4630             MOV      R0,R6
+   \       0x66   0x....'....        BL       emberAfGetInt16u
+   \       0x6A   0x4604             MOV      R4,R0
+    248                  identifyRequestHandler(header->longAddress,
+    249                                         transaction,
+    250                                         identifyDurationS);
+   \       0x6C   0x....'....        BL       emberZllGetPolicy
+   \       0x70   0x2802             CMP      R0,#+2
+   \       0x72   0xD102             BNE.N    ??emAfPluginZllCommissioningServerInterpanPreMe_5
+   \       0x74   0x....'....        BL       emAfZllAmFactoryNew
+   \       0x78   0xB160             CBZ.N    R0,??emAfPluginZllCommissioningServerInterpanPreMe_4
+   \                     ??emAfPluginZllCommissioningServerInterpanPreMe_5: (+1)
+   \       0x7A   0x4620             MOV      R0,R4
+   \       0x7C   0x....'....        BL       emberAfPluginZllCommissioningServerIdentifyCallback
+   \       0x80   0xE008             B.N      ??emAfPluginZllCommissioningServerInterpanPreMe_4
+    251                }
+    252                return true;
+    253              case ZCL_RESET_TO_FACTORY_NEW_REQUEST_COMMAND_ID:
+    254                // Ignore reset request if we are a co-ordinator
+    255                if (emAfZllGetLogicalNodeType() != EMBER_COORDINATOR) {
+   \                     ??emAfPluginZllCommissioningServerInterpanPreMe_3: (+1)
+   \       0x82   0x....'....        BL       emAfZllGetLogicalNodeType
+   \       0x86   0x2801             CMP      R0,#+1
+   \       0x88   0xD004             BEQ.N    ??emAfPluginZllCommissioningServerInterpanPreMe_4
+    256                  resetToFactoryNewRequestHandler(header->longAddress, transaction);
+   \       0x8A   0x....'....        BL       emAfZllAmFactoryNew
+   \       0x8E   0xB908             CBNZ.N   R0,??emAfPluginZllCommissioningServerInterpanPreMe_4
+   \       0x90   0x....'....        BL       emberAfZllResetToFactoryNew
+    257                }
+    258                return true;
+   \                     ??emAfPluginZllCommissioningServerInterpanPreMe_4: (+1)
+   \       0x94   0x2001             MOVS     R0,#+1
+   \       0x96   0xBDF2             POP      {R1,R4-R7,PC}
+    259            }
+    260          
+    261            // Return false for unhandled messages, since we are multiplexing the pre-message handler.
+    262            return false;
+   \                     ??emAfPluginZllCommissioningServerInterpanPreMe_0: (+1)
+   \       0x98   0x2000             MOVS     R0,#+0
+   \       0x9A   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    263          }
+    264          
+    265          //------------------------------------------------------------------------------
+    266          // Public functions
+    267          
+
+   \                                 In section .text, align 2, keep-with-next
+    268          void emberAfZllNoTouchlinkForNFN(void)
+    269          {
+    270          #ifndef EZSP_HOST
+    271            emberZllSetPolicy(EMBER_ZLL_POLICY_NO_TOUCHLINK_FOR_NFN);
+   \                     emberAfZllNoTouchlinkForNFN: (+1)
+   \        0x0   0x2002             MOVS     R0,#+2
+   \        0x2   0x....'....        B.W      emberZllSetPolicy
+    272          #else
+    273            emberAfSetEzspPolicy(EZSP_ZLL_POLICY,
+    274                                 EMBER_ZLL_POLICY_NO_TOUCHLINK_FOR_NFN,
+    275                                 "ZLL policy with no touchlink for NFN",
+    276                                 "enable");
+    277          #endif
+    278          }
+    279          
+
+   \                                 In section .text, align 2, keep-with-next
+    280          void emberAfZllDisable(void)
+    281          {
+    282          #ifndef EZSP_HOST
+    283            emberZllSetPolicy(EMBER_ZLL_POLICY_DISABLED);
+   \                     emberAfZllDisable: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x....'....        B.W      emberZllSetPolicy
+    284          #else
+    285            emberAfSetEzspPolicy(EZSP_ZLL_POLICY,
+    286                                 EMBER_ZLL_POLICY_DISABLED,
+    287                                 "ZLL processing",
+    288                                 "disable");
+    289          #endif
+    290          }
+    291          
+
+   \                                 In section .text, align 2, keep-with-next
+    292          void emberAfZllEnable(void)
+    293          {
+    294          #ifndef EZSP_HOST
+    295            emberZllSetPolicy(EMBER_ZLL_POLICY_ENABLED);
+   \                     emberAfZllEnable: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....'....        B.W      emberZllSetPolicy
+    296          #else
+    297            emberAfSetEzspPolicy(EZSP_ZLL_POLICY,
+    298                                 EMBER_ZLL_POLICY_ENABLED,
+    299                                 "ZLL processing",
+    300                                 "enable");
+    301          #endif
+    302          }
+    303          
+
+   \                                 In section .text, align 2, keep-with-next
+    304          void ezspZllTouchLinkTargetHandler(EmberZllNetwork *networkInfo)
+    305          {
+   \                     ezspZllTouchLinkTargetHandler: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xB580             PUSH     {R7,LR}
+    306            debugPrintln("%p: touchlink target handler", PLUGIN_NAME);
+    307            MEMMOVE(&emAfZllNetwork, networkInfo, sizeof(EmberZllNetwork));
+   \        0x4   0x....             B.N      ?Subroutine0
+    308          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    309            emAfZllSubDeviceCount = 0;
+    310          #endif
+    311            emAfZllFlags = TOUCH_LINK_TARGET;
+    312          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x222C             MOVS     R2,#+44
+   \        0x2   0x....             LDR.N    R0,??DataTable2_4
+   \        0x4   0x....'....        BL       halCommonMemMove
+   \        0x8   0x2180             MOVS     R1,#+128
+   \        0xA   0x....             LDR.N    R0,??DataTable2_8
+   \        0xC   0x8001             STRH     R1,[R0, #+0]
+   \        0xE   0xBD01             POP      {R0,PC}          ;; return
+    313          
+
+   \                                 In section .text, align 2, keep-with-next
+    314          void emberZllTouchLinkTargetHandler(const EmberZllNetwork *networkInfo)
+    315          {
+   \                     emberZllTouchLinkTargetHandler: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xB580             PUSH     {R7,LR}
+    316            debugPrintln("%p: touchlink target handler", PLUGIN_NAME);
+    317            MEMMOVE(&emAfZllNetwork, networkInfo, sizeof(EmberZllNetwork));
+   \        0x4                      REQUIRE ?Subroutine0
+   \        0x4                      ;; // Fall through to label ?Subroutine0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     appResponseLength
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     appResponseData
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x....'....        DC32     emAfEndpoints
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x....'....        DC32     emAfZllNetwork
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x0004'93E0        DC32     0x493e0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_8:
+   \        0x0   0x....'....        DC32     emAfZllFlags
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x77 0x75          DC8 "wuu"
+   \              0x75 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x53 0x65          DC8 "Setting rx on period to %d"
+   \              0x74 0x74    
+   \              0x69 0x6E    
+   \              0x67 0x20    
+   \              0x72 0x78    
+   \              0x20 0x6F    
+   \              0x6E 0x20    
+   \              0x70 0x65    
+   \              0x72 0x69    
+   \              0x6F 0x64    
+   \              0x20 0x74    
+   \              0x6F 0x20    
+   \              0x25 0x64    
+   \              0x00         
+   \       0x1B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x53 0x65          DC8 "Setting default channel to %d"
+   \              0x74 0x74    
+   \              0x69 0x6E    
+   \              0x67 0x20    
+   \              0x64 0x65    
+   \              0x66 0x61    
+   \              0x75 0x6C    
+   \              0x74 0x20    
+   \              0x63 0x68    
+   \              0x61 0x6E    
+   \              0x6E 0x65    
+   \              0x6C 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x25    
+   \              0x64 0x00    
+   \       0x1E   0x00 0x00          DC8 0, 0
+    318          #ifdef EMBER_AF_PLUGIN_ZLL_COMMISSIONING_CLIENT
+    319            emAfZllSubDeviceCount = 0;
+    320          #endif
+    321            emAfZllFlags = TOUCH_LINK_TARGET;
+    322          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      56   deviceInformationRequestHandler
+        56   -> emberAfEndpointCount
+        56   -> emberAfEndpointFromIndex
+        56   -> emberAfFillExternalBuffer
+        56   -> emberAfGetEui64
+        56   -> emberAfPluginZllCommissioningServerGroupIdentifierCountCallback
+        56   -> emberAfPutBlockInResp
+        56   -> emberAfPutInt16uInResp
+        56   -> emberAfPutInt8uInResp
+        56   -> emberAfSendCommandInterPan
+      24   emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback
+        24   -> deviceInformationRequestHandler
+        24   -> emAfZllAmFactoryNew
+        24   -> emAfZllGetLogicalNodeType
+        24   -> emberAfGetInt16u
+        24   -> emberAfGetInt32u
+        24   -> emberAfPluginZllCommissioningServerIdentifyCallback
+        24   -> emberAfZllResetToFactoryNew
+        24   -> emberZllGetPolicy
+       8   emAfZllInitializeRadio
+         0   -> emberAfPrintln
+         8   -> emberAfPrintln
+         8   -> emberSetLogicalAndRadioChannel
+         8   -> emberZllSetRxOnWhenIdle
+       0   emAfZllStealingAllowed
+       0   emberAfZllDisable
+         0   -> emberZllSetPolicy
+       0   emberAfZllEnable
+         0   -> emberZllSetPolicy
+       0   emberAfZllNoTouchlinkForNFN
+         0   -> emberZllSetPolicy
+       0   emberZllTouchLinkTargetHandler
+         8   -> halCommonMemMove
+       8   ezspZllTouchLinkTargetHandler
+         8   -> halCommonMemMove
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+      16  ?Subroutine0
+       4  ?_0
+      28  ?_1
+      32  ?_2
+     184  deviceInformationRequestHandler
+     156  emAfPluginZllCommissioningServerInterpanPreMessageReceivedCallback
+      46  emAfZllInitializeRadio
+       4  emAfZllStealingAllowed
+       6  emberAfZllDisable
+       6  emberAfZllEnable
+       6  emberAfZllNoTouchlinkForNFN
+       4  emberZllTouchLinkTargetHandler
+       6  ezspZllTouchLinkTargetHandler
+
+ 
+  64 bytes in section .rodata
+ 470 bytes in section .text
+ 
+ 470 bytes of CODE  memory
+  64 bytes of CONST memory
+
+Errors: none
+Warnings: none

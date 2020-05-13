@@ -1,0 +1,1091 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:58
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\time-util.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW563B.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\time-util.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"time-util.c\"" -D PSSTORE_SIZE=0 -D LONGTOKEN_SIZE=0
+#        -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\time-util.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\time-util.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\protocol\zigbee\app\framework\util\time-util.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+     10           * software is governed by the terms of Silicon Labs Master Software License
+     11           * Agreement (MSLA) available at
+     12           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+     13           * software is distributed to you in Source Code format and is governed by the
+     14           * sections of the MSLA applicable to Source Code.
+     15           *
+     16           ******************************************************************************/
+     17          
+     18          #include "../include/af.h"
+     19          #include "af-main.h"
+     20          #include "common.h"
+     21          #include "time-util.h"
+     22          
+     23          #ifdef EMBER_AF_PLUGIN_TIME_SERVER
+     24          #include "app/framework/plugin/time-server/time-server.h"
+     25          #endif
+     26          
+     27          #define mYEAR_IS_LEAP_YEAR(year)  ( ((year) % 4 == 0) && (((year) % 100 != 0) || ((year) % 400 == 0)) )
+     28          
+
+   \                                 In section .rodata, align 4
+     29          const uint8_t emberAfDaysInMonth[] =
+   \                     emberAfDaysInMonth:
+   \        0x0   0x1F 0x1C          DC8 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+   \              0x1F 0x1E    
+   \              0x1F 0x1E    
+   \              0x1F 0x1F    
+   \              0x1E 0x1F    
+   \              0x1E 0x1F    
+     30          { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+     31          
+
+   \                                 In section .text, align 2, keep-with-next
+     32          uint8_t emberAfGetNumberDaysInMonth(EmberAfTimeStruct *time)
+     33          {
+   \                     emberAfGetNumberDaysInMonth: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+     34            uint8_t daysInMonth = 0;
+     35            if ( (time->month > 0) && (time->month < 13) ) {
+   \        0x2   0x7881             LDRB     R1,[R0, #+2]
+   \        0x4   0x2200             MOVS     R2,#+0
+   \        0x6   0xB309             CBZ.N    R1,??emberAfGetNumberDaysInMonth_0
+   \        0x8   0x290D             CMP      R1,#+13
+   \        0xA   0xDA1F             BGE.N    ??emberAfGetNumberDaysInMonth_0
+     36              daysInMonth = emberAfDaysInMonth[time->month - 1];
+     37              if ( mYEAR_IS_LEAP_YEAR(time->year) && (time->month == 2) ) {
+   \        0xC   0x8803             LDRH     R3,[R0, #+0]
+   \        0xE   0x....'....        LDR.W    R2,??DataTable7_1
+   \       0x12   0x440A             ADD      R2,R2,R1
+   \       0x14   0x085C             LSRS     R4,R3,#+1
+   \       0x16   0xEB03 0x7594      ADD      R5,R3,R4, LSR #+30
+   \       0x1A   0xF812 0x2C01      LDRB     R2,[R2, #-1]
+   \       0x1E   0x08AD             LSRS     R5,R5,#+2
+   \       0x20   0xEBB3 0x0085      SUBS     R0,R3,R5, LSL #+2
+   \       0x24   0xD112             BNE.N    ??emberAfGetNumberDaysInMonth_0
+   \       0x26   0x2464             MOVS     R4,#+100
+   \       0x28   0xFB93 0xF4F4      SDIV     R4,R3,R4
+   \       0x2C   0x2064             MOVS     R0,#+100
+   \       0x2E   0xFB00 0x3414      MLS      R4,R0,R4,R3
+   \       0x32   0xB944             CBNZ.N   R4,??emberAfGetNumberDaysInMonth_1
+   \       0x34   0xF44F 0x74C8      MOV      R4,#+400
+   \       0x38   0xFB93 0xF4F4      SDIV     R4,R3,R4
+   \       0x3C   0xF44F 0x70C8      MOV      R0,#+400
+   \       0x40   0xFB00 0x3314      MLS      R3,R0,R4,R3
+   \       0x44   0xB913             CBNZ.N   R3,??emberAfGetNumberDaysInMonth_0
+   \                     ??emberAfGetNumberDaysInMonth_1: (+1)
+   \       0x46   0x2902             CMP      R1,#+2
+   \       0x48   0xBF08             IT       EQ 
+   \       0x4A   0x1C52             ADDEQ    R2,R2,#+1
+     38                daysInMonth++;
+     39              }
+     40            }
+     41            return daysInMonth;
+   \                     ??emberAfGetNumberDaysInMonth_0: (+1)
+   \       0x4C   0xB2D0             UXTB     R0,R2
+   \       0x4E   0xBD30             POP      {R4,R5,PC}       ;; return
+     42          }
+     43          
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void emberAfCopyDate(uint8_t *data, uint16_t index, EmberAfDate *src)
+     45          {
+     46            data[index]   = src->year;
+   \                     emberAfCopyDate: (+1)
+   \        0x0   0x4408             ADD      R0,R0,R1
+   \        0x2   0x7811             LDRB     R1,[R2, #+0]
+   \        0x4   0x7001             STRB     R1,[R0, #+0]
+     47            data[index + 1] = src->month;
+   \        0x6   0x7853             LDRB     R3,[R2, #+1]
+   \        0x8   0x7043             STRB     R3,[R0, #+1]
+     48            data[index + 2] = src->dayOfMonth;
+   \        0xA   0x7891             LDRB     R1,[R2, #+2]
+   \        0xC   0x7081             STRB     R1,[R0, #+2]
+     49            data[index + 3] = src->dayOfWeek;
+   \        0xE   0x78D2             LDRB     R2,[R2, #+3]
+   \       0x10   0x70C2             STRB     R2,[R0, #+3]
+     50          }
+   \       0x12   0x4770             BX       LR               ;; return
+     51          
+
+   \                                 In section .text, align 2, keep-with-next
+     52          int8_t emberAfCompareDates(EmberAfDate* date1, EmberAfDate* date2)
+     53          {
+   \                     emberAfCompareDates: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x460C             MOV      R4,R1
+     54            uint32_t val1 = emberAfEncodeDate(date1);
+   \        0x4   0x....'....        BL       emberAfEncodeDate
+   \        0x8   0x4605             MOV      R5,R0
+     55            uint32_t val2 = emberAfEncodeDate(date2);
+   \        0xA   0x4620             MOV      R0,R4
+   \        0xC   0x....'....        BL       emberAfEncodeDate
+     56            return (val1 == val2) ? 0 : ((val1 < val2) ? -1 : 1);
+   \       0x10   0x4285             CMP      R5,R0
+   \       0x12   0xD101             BNE.N    ??emberAfCompareDates_0
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+   \                     ??emberAfCompareDates_0: (+1)
+   \       0x18   0xD202             BCS.N    ??emberAfCompareDates_1
+   \       0x1A   0xF04F 0x30FF      MOV      R0,#-1
+   \       0x1E   0xBD32             POP      {R1,R4,R5,PC}
+   \                     ??emberAfCompareDates_1: (+1)
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     57          }
+     58          
+
+   \                                 In section .text, align 2, keep-with-next
+     59          void emberAfFillTimeStructFromUtc(uint32_t utcTime,
+     60                                            EmberAfTimeStruct* returnTime)
+     61          {
+   \                     emberAfFillTimeStructFromUtc: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+     62            bool isLeapYear = true; // 2000 was a leap year
+     63            uint32_t i;
+     64            uint32_t daysSince2000 = utcTime / SECONDS_IN_DAY;
+   \        0x2   0x....             LDR.N    R4,??DataTable7_2  ;; 0x15180
+   \        0x4   0xFBB0 0xF4F4      UDIV     R4,R0,R4
+   \        0x8   0x460A             MOV      R2,R1
+     65            uint32_t secToday = utcTime - (daysSince2000 * SECONDS_IN_DAY);
+   \        0xA   0x....             LDR.N    R1,??DataTable7_2  ;; 0x15180
+   \        0xC   0xFB01 0x0014      MLS      R0,R1,R4,R0
+     66            returnTime->hours = (uint8_t)(secToday / SECONDS_IN_HOUR);
+   \       0x10   0xF44F 0x6561      MOV      R5,#+3600
+     67            returnTime->minutes = (uint8_t)((secToday
+     68                                             - (returnTime->hours * SECONDS_IN_HOUR)) / 60);
+   \       0x14   0xF44F 0x6161      MOV      R1,#+3600
+   \       0x18   0xFBB0 0xF5F5      UDIV     R5,R0,R5
+   \       0x1C   0x263C             MOVS     R6,#+60
+   \       0x1E   0x2301             MOVS     R3,#+1
+   \       0x20   0x7115             STRB     R5,[R2, #+4]
+   \       0x22   0x7915             LDRB     R5,[R2, #+4]
+   \       0x24   0x434D             MULS     R5,R1,R5
+   \       0x26   0x1B41             SUBS     R1,R0,R5
+   \       0x28   0xFBB1 0xF6F6      UDIV     R6,R1,R6
+     69            returnTime->seconds = (uint8_t)(secToday
+     70                                            - ((returnTime->hours * SECONDS_IN_HOUR)
+     71                                               + (returnTime->minutes * 60)));
+   \       0x2C   0x213C             MOVS     R1,#+60
+   \       0x2E   0x7156             STRB     R6,[R2, #+5]
+   \       0x30   0x7957             LDRB     R7,[R2, #+5]
+     72            returnTime->year = 2000;
+     73            returnTime->month = 1;
+     74            returnTime->day = 1;
+     75          
+     76            // march through the calendar, counting months, days and years
+     77            // being careful to account for leapyears.
+     78            for (i = 0; i < daysSince2000; i++) {
+   \       0x32   0x2600             MOVS     R6,#+0
+   \       0x34   0xFB01 0x5507      MLA      R5,R1,R7,R5
+   \       0x38   0x1B40             SUBS     R0,R0,R5
+   \       0x3A   0x7190             STRB     R0,[R2, #+6]
+   \       0x3C   0xF44F 0x60FA      MOV      R0,#+2000
+   \       0x40   0x8010             STRH     R0,[R2, #+0]
+   \       0x42   0x7093             STRB     R3,[R2, #+2]
+   \       0x44   0x70D3             STRB     R3,[R2, #+3]
+   \       0x46   0x....             LDR.N    R5,??DataTable7_1
+   \       0x48   0xE003             B.N      ??emberAfFillTimeStructFromUtc_0
+     79              uint8_t daysInMonth;
+     80              if (isLeapYear && (returnTime->month == 2)) {
+     81                daysInMonth = 29;
+     82              } else {
+     83                daysInMonth = emberAfDaysInMonth[returnTime->month - 1];
+     84              }
+     85              if (daysInMonth == returnTime->day) {
+     86                returnTime->month++;
+     87                returnTime->day = 1;
+     88              } else {
+     89                returnTime->day++;
+     90              }
+     91              if (returnTime->month == 13) {
+     92                returnTime->year++;
+     93                returnTime->month = 1;
+     94                if (returnTime->year % 4 == 0
+     95                    && (returnTime->year % 100 != 0
+     96                        || (returnTime->year % 400 == 0))) {
+     97                  isLeapYear = true;
+     98                } else {
+     99                  isLeapYear = false;
+   \                     ??emberAfFillTimeStructFromUtc_1: (+1)
+   \       0x4A   0x2300             MOVS     R3,#+0
+   \       0x4C   0xE000             B.N      ??emberAfFillTimeStructFromUtc_2
+    100                }
+   \                     ??emberAfFillTimeStructFromUtc_3: (+1)
+   \       0x4E   0x2301             MOVS     R3,#+1
+   \                     ??emberAfFillTimeStructFromUtc_2: (+1)
+   \       0x50   0x1C76             ADDS     R6,R6,#+1
+   \                     ??emberAfFillTimeStructFromUtc_0: (+1)
+   \       0x52   0x42A6             CMP      R6,R4
+   \       0x54   0xD235             BCS.N    ??emberAfFillTimeStructFromUtc_4
+   \       0x56   0x7890             LDRB     R0,[R2, #+2]
+   \       0x58   0x0019             MOVS     R1,R3
+   \       0x5A   0xD003             BEQ.N    ??emberAfFillTimeStructFromUtc_5
+   \       0x5C   0x2802             CMP      R0,#+2
+   \       0x5E   0xBF08             IT       EQ 
+   \       0x60   0x211D             MOVEQ    R1,#+29
+   \       0x62   0xD002             BEQ.N    ??emberAfFillTimeStructFromUtc_6
+   \                     ??emberAfFillTimeStructFromUtc_5: (+1)
+   \       0x64   0x1829             ADDS     R1,R5,R0
+   \       0x66   0xF811 0x1C01      LDRB     R1,[R1, #-1]
+   \                     ??emberAfFillTimeStructFromUtc_6: (+1)
+   \       0x6A   0x78D7             LDRB     R7,[R2, #+3]
+   \       0x6C   0x42B9             CMP      R1,R7
+   \       0x6E   0xBF03             ITTTE    EQ 
+   \       0x70   0x1C40             ADDEQ    R0,R0,#+1
+   \       0x72   0x7090             STRBEQ   R0,[R2, #+2]
+   \       0x74   0x2701             MOVEQ    R7,#+1
+   \       0x76   0x1C7F             ADDNE    R7,R7,#+1
+   \       0x78   0x7890             LDRB     R0,[R2, #+2]
+   \       0x7A   0x70D7             STRB     R7,[R2, #+3]
+   \       0x7C   0x280D             CMP      R0,#+13
+   \       0x7E   0xD1E7             BNE.N    ??emberAfFillTimeStructFromUtc_2
+   \       0x80   0x8813             LDRH     R3,[R2, #+0]
+   \       0x82   0x2001             MOVS     R0,#+1
+   \       0x84   0x1C5B             ADDS     R3,R3,#+1
+   \       0x86   0x8013             STRH     R3,[R2, #+0]
+   \       0x88   0xB29B             UXTH     R3,R3
+   \       0x8A   0x7090             STRB     R0,[R2, #+2]
+   \       0x8C   0x085F             LSRS     R7,R3,#+1
+   \       0x8E   0xEB03 0x7097      ADD      R0,R3,R7, LSR #+30
+   \       0x92   0x0880             LSRS     R0,R0,#+2
+   \       0x94   0xEBB3 0x0180      SUBS     R1,R3,R0, LSL #+2
+   \       0x98   0xD1D7             BNE.N    ??emberAfFillTimeStructFromUtc_1
+   \       0x9A   0x2064             MOVS     R0,#+100
+   \       0x9C   0xFB93 0xF0F0      SDIV     R0,R3,R0
+   \       0xA0   0x2164             MOVS     R1,#+100
+   \       0xA2   0xFB01 0x3010      MLS      R0,R1,R0,R3
+   \       0xA6   0x2800             CMP      R0,#+0
+   \       0xA8   0xD1D1             BNE.N    ??emberAfFillTimeStructFromUtc_3
+   \       0xAA   0xF44F 0x70C8      MOV      R0,#+400
+   \       0xAE   0xFB93 0xF0F0      SDIV     R0,R3,R0
+   \       0xB2   0xF44F 0x71C8      MOV      R1,#+400
+   \       0xB6   0xFB01 0x3310      MLS      R3,R1,R0,R3
+   \       0xBA   0x1E5B             SUBS     R3,R3,#+1
+   \       0xBC   0x419B             SBCS     R3,R3,R3
+   \       0xBE   0x0FDB             LSRS     R3,R3,#+31
+   \       0xC0   0xE7C6             B.N      ??emberAfFillTimeStructFromUtc_2
+    101              }
+    102            }
+    103          }
+   \                     ??emberAfFillTimeStructFromUtc_4: (+1)
+   \       0xC2   0xBDF0             POP      {R4-R7,PC}       ;; return
+    104          
+
+   \                                 In section .text, align 2, keep-with-next
+    105          uint32_t emberAfGetUtcFromTimeStruct(EmberAfTimeStruct *time)
+    106          {
+   \                     emberAfGetUtcFromTimeStruct: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x4607             MOV      R7,R0
+    107            // Construct a UTC timestamp given an EmberAfTimeStruct structure.
+    108            uint32_t utcTime = 0;
+   \        0x6   0x2600             MOVS     R6,#+0
+    109            uint16_t daysThisYear;
+    110            uint32_t i;
+    111          
+    112            if ( (time == NULL) || (time->year < 2000) || (time->month == 0)
+    113                 || (time->month > 12) || (time->day == 0) || (time->day > 31) ) {
+   \        0x8   0xB15F             CBZ.N    R7,??emberAfGetUtcFromTimeStruct_0
+   \        0xA   0x8838             LDRH     R0,[R7, #+0]
+   \        0xC   0xF5B0 0x6FFA      CMP      R0,#+2000
+   \       0x10   0xDB07             BLT.N    ??emberAfGetUtcFromTimeStruct_0
+   \       0x12   0x78B8             LDRB     R0,[R7, #+2]
+   \       0x14   0xB128             CBZ.N    R0,??emberAfGetUtcFromTimeStruct_0
+   \       0x16   0x280D             CMP      R0,#+13
+   \       0x18   0xDA03             BGE.N    ??emberAfGetUtcFromTimeStruct_0
+   \       0x1A   0x78F8             LDRB     R0,[R7, #+3]
+   \       0x1C   0xB108             CBZ.N    R0,??emberAfGetUtcFromTimeStruct_0
+   \       0x1E   0x2820             CMP      R0,#+32
+   \       0x20   0xDB02             BLT.N    ??emberAfGetUtcFromTimeStruct_1
+    114              return 0xFFFFFFFFU;    // Invalid parameters
+   \                     ??emberAfGetUtcFromTimeStruct_0: (+1)
+   \       0x22   0xF04F 0x30FF      MOV      R0,#-1
+   \       0x26   0xE064             B.N      ??emberAfGetUtcFromTimeStruct_2
+    115            }
+    116          
+    117            for ( i = 2000; i < time->year; i++ ) {
+   \                     ??emberAfGetUtcFromTimeStruct_1: (+1)
+   \       0x28   0xF44F 0x62FA      MOV      R2,#+2000
+   \       0x2C   0x....'....        LDR.W    R8,??DataTable7_2  ;; 0x15180
+   \       0x30   0xE012             B.N      ??emberAfGetUtcFromTimeStruct_3
+    118              utcTime += (365 * SECONDS_IN_DAY);
+   \                     ??emberAfGetUtcFromTimeStruct_4: (+1)
+   \       0x32   0x....             LDR.N    R0,??DataTable7_3  ;; 0x1e13380
+   \       0x34   0x1986             ADDS     R6,R0,R6
+    119              if ( mYEAR_IS_LEAP_YEAR(i) ) {
+   \       0x36   0xF012 0x0F03      TST      R2,#0x3
+   \       0x3A   0xD10C             BNE.N    ??emberAfGetUtcFromTimeStruct_5
+   \       0x3C   0x2064             MOVS     R0,#+100
+   \       0x3E   0xFBB2 0xF0F0      UDIV     R0,R2,R0
+   \       0x42   0xFB05 0x2510      MLS      R5,R5,R0,R2
+   \       0x46   0xB92D             CBNZ.N   R5,??emberAfGetUtcFromTimeStruct_6
+   \       0x48   0x4621             MOV      R1,R4
+   \       0x4A   0xFBB2 0xF1F1      UDIV     R1,R2,R1
+   \       0x4E   0xFB04 0x2411      MLS      R4,R4,R1,R2
+   \       0x52   0xB904             CBNZ.N   R4,??emberAfGetUtcFromTimeStruct_5
+    120                utcTime += SECONDS_IN_DAY;
+   \                     ??emberAfGetUtcFromTimeStruct_6: (+1)
+   \       0x54   0x4446             ADD      R6,R8,R6
+    121              }
+    122            }
+   \                     ??emberAfGetUtcFromTimeStruct_5: (+1)
+   \       0x56   0x1C52             ADDS     R2,R2,#+1
+   \                     ??emberAfGetUtcFromTimeStruct_3: (+1)
+   \       0x58   0x8838             LDRH     R0,[R7, #+0]
+   \       0x5A   0x2564             MOVS     R5,#+100
+   \       0x5C   0xF44F 0x74C8      MOV      R4,#+400
+   \       0x60   0x4282             CMP      R2,R0
+   \       0x62   0xD3E6             BCC.N    ??emberAfGetUtcFromTimeStruct_4
+    123            emberAfAppPrintln("Seconds in %d years=%d", i, utcTime);
+   \       0x64   0x4633             MOV      R3,R6
+   \       0x66   0x....             LDR.N    R1,??DataTable7_4
+   \       0x68   0x2002             MOVS     R0,#+2
+   \       0x6A   0x....'....        BL       emberAfPrintln
+    124            // Utc Time now reflects seconds up to Jan 1 00:00:00 of current year.
+    125            daysThisYear = 0;
+   \       0x6E   0xF04F 0x0C00      MOV      R12,#+0
+    126            for ( i = 0; i < time->month - 1; i++ ) {
+   \       0x72   0x46E6             MOV      LR,R12
+   \       0x74   0x....             LDR.N    R3,??DataTable7_1
+   \       0x76   0xE01D             B.N      ??emberAfGetUtcFromTimeStruct_7
+    127              daysThisYear += emberAfDaysInMonth[i];
+   \                     ??emberAfGetUtcFromTimeStruct_8: (+1)
+   \       0x78   0xF813 0x000E      LDRB     R0,[R3, LR]
+    128              if ( (i == 1) && (mYEAR_IS_LEAP_YEAR(time->year)) ) {
+   \       0x7C   0xF1BE 0x0F01      CMP      LR,#+1
+   \       0x80   0x4484             ADD      R12,R0,R12
+   \       0x82   0xD115             BNE.N    ??emberAfGetUtcFromTimeStruct_9
+   \       0x84   0x8838             LDRH     R0,[R7, #+0]
+   \       0x86   0x0841             LSRS     R1,R0,#+1
+   \       0x88   0xEB00 0x7191      ADD      R1,R0,R1, LSR #+30
+   \       0x8C   0x0889             LSRS     R1,R1,#+2
+   \       0x8E   0xEBB0 0x0281      SUBS     R2,R0,R1, LSL #+2
+   \       0x92   0xD10D             BNE.N    ??emberAfGetUtcFromTimeStruct_9
+   \       0x94   0x2164             MOVS     R1,#+100
+   \       0x96   0xFB90 0xF1F1      SDIV     R1,R0,R1
+   \       0x9A   0xFB05 0x0111      MLS      R1,R5,R1,R0
+   \       0x9E   0xB929             CBNZ.N   R1,??emberAfGetUtcFromTimeStruct_10
+   \       0xA0   0x4622             MOV      R2,R4
+   \       0xA2   0xFB90 0xF2F2      SDIV     R2,R0,R2
+   \       0xA6   0xFB04 0x0012      MLS      R0,R4,R2,R0
+   \       0xAA   0xB908             CBNZ.N   R0,??emberAfGetUtcFromTimeStruct_9
+    129                daysThisYear++;
+   \                     ??emberAfGetUtcFromTimeStruct_10: (+1)
+   \       0xAC   0xF10C 0x0C01      ADD      R12,R12,#+1
+    130              }
+    131            }
+   \                     ??emberAfGetUtcFromTimeStruct_9: (+1)
+   \       0xB0   0xF10E 0x0E01      ADD      LR,LR,#+1
+   \                     ??emberAfGetUtcFromTimeStruct_7: (+1)
+   \       0xB4   0x78B8             LDRB     R0,[R7, #+2]
+   \       0xB6   0x1E40             SUBS     R0,R0,#+1
+   \       0xB8   0x4586             CMP      LR,R0
+   \       0xBA   0xD3DD             BCC.N    ??emberAfGetUtcFromTimeStruct_8
+    132            daysThisYear += time->day - 1;
+   \       0xBC   0x78F9             LDRB     R1,[R7, #+3]
+   \       0xBE   0x1E48             SUBS     R0,R1,#+1
+   \       0xC0   0x4460             ADD      R0,R0,R12
+    133            utcTime += SECONDS_IN_DAY * daysThisYear;
+   \       0xC2   0xB280             UXTH     R0,R0
+   \       0xC4   0xFB08 0x6600      MLA      R6,R8,R0,R6
+    134            emberAfAppPrintln("daysThisYear=%d, total Sec=%d (0x%4x)", daysThisYear, utcTime, utcTime);
+   \       0xC8   0x4602             MOV      R2,R0
+   \       0xCA   0x....             LDR.N    R1,??DataTable7_5
+   \       0xCC   0x9600             STR      R6,[SP, #+0]
+   \       0xCE   0x4633             MOV      R3,R6
+   \       0xD0   0x2002             MOVS     R0,#+2
+   \       0xD2   0x....'....        BL       emberAfPrintln
+    135          
+    136            // Utc Time now reflects seconds up to last completed day of current year.
+    137            for ( i = 0; i < time->hours; i++ ) {
+   \       0xD6   0x2000             MOVS     R0,#+0
+   \       0xD8   0xE002             B.N      ??emberAfGetUtcFromTimeStruct_11
+    138              utcTime += SECONDS_IN_HOUR;
+   \                     ??emberAfGetUtcFromTimeStruct_12: (+1)
+   \       0xDA   0xF506 0x6661      ADD      R6,R6,#+3600
+    139            }
+   \       0xDE   0x1C40             ADDS     R0,R0,#+1
+   \                     ??emberAfGetUtcFromTimeStruct_11: (+1)
+   \       0xE0   0x7939             LDRB     R1,[R7, #+4]
+   \       0xE2   0x4288             CMP      R0,R1
+   \       0xE4   0xD3F9             BCC.N    ??emberAfGetUtcFromTimeStruct_12
+    140            //for( i=0; i<time->minutes; i++ ){
+    141            //iutcTime += 60;
+    142            //}
+    143            utcTime += (60 * time->minutes);
+    144            utcTime += time->seconds;
+    145            return utcTime;
+   \       0xE6   0x797A             LDRB     R2,[R7, #+5]
+   \       0xE8   0x203C             MOVS     R0,#+60
+   \       0xEA   0x79B9             LDRB     R1,[R7, #+6]
+   \       0xEC   0xFB00 0x6602      MLA      R6,R0,R2,R6
+   \       0xF0   0x1988             ADDS     R0,R1,R6
+   \                     ??emberAfGetUtcFromTimeStruct_2: (+1)
+   \       0xF2   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}  ;; return
+    146          }
+    147          
+    148          #define SECONDS_IN_WEEK  (SECONDS_IN_DAY * 7)
+    149          // Determine which day of the week it is, from a given utc timestamp.
+    150          // Return 0=MON, 1=TUES, etc.
+
+   \                                 In section .text, align 2, keep-with-next
+    151          uint8_t emberAfGetWeekdayFromUtc(uint32_t utcTime)
+    152          {
+   \                     emberAfGetWeekdayFromUtc: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    153            uint8_t dayIndex;
+    154            utcTime %= SECONDS_IN_WEEK;
+   \        0x2   0x....             LDR.N    R2,??DataTable7_6  ;; 0x93a80
+   \        0x4   0xFBB1 0xF2F2      UDIV     R2,R1,R2
+   \        0x8   0x....             LDR.N    R0,??DataTable7_6  ;; 0x93a80
+   \        0xA   0xB510             PUSH     {R4,LR}
+   \        0xC   0xFB00 0x1112      MLS      R1,R0,R2,R1
+    155          
+    156            for ( dayIndex = 0; dayIndex < 7; dayIndex++ ) {
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x....             LDR.N    R2,??DataTable7_2  ;; 0x15180
+   \       0x14   0x....             LDR.N    R3,??DataTable7_7  ;; 0xfffeae80
+    157              if ( utcTime < SECONDS_IN_DAY ) {
+   \                     ??emberAfGetWeekdayFromUtc_0: (+1)
+   \       0x16   0x4291             CMP      R1,R2
+   \       0x18   0xD304             BCC.N    ??emberAfGetWeekdayFromUtc_1
+    158                break;
+    159              }
+    160              utcTime -= SECONDS_IN_DAY;
+    161            }
+   \       0x1A   0x1C40             ADDS     R0,R0,#+1
+   \       0x1C   0x1859             ADDS     R1,R3,R1
+   \       0x1E   0xB2C4             UXTB     R4,R0
+   \       0x20   0x2C07             CMP      R4,#+7
+   \       0x22   0xDBF8             BLT.N    ??emberAfGetWeekdayFromUtc_0
+    162            // Note:  Jan 1, 2000 is a SATURDAY.
+    163            // Do some translation work so 0=MONDAY, 5=SATURDAY, 6=SUNDAY
+    164            if ( dayIndex < 2 ) {
+   \                     ??emberAfGetWeekdayFromUtc_1: (+1)
+   \       0x24   0xB2C1             UXTB     R1,R0
+   \       0x26   0x2902             CMP      R1,#+2
+   \       0x28   0xBFB4             ITE      LT 
+   \       0x2A   0x1D40             ADDLT    R0,R0,#+5
+   \       0x2C   0x1E80             SUBGE    R0,R0,#+2
+    165              dayIndex += 5;
+    166            } else {
+    167              dayIndex -= 2;
+    168            }
+    169            return dayIndex;
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0xBD10             POP      {R4,PC}          ;; return
+    170          }
+    171          
+
+   \                                 In section .text, align 2, keep-with-next
+    172          void emberAfDecodeDate(uint32_t src, EmberAfDate* dest)
+    173          {
+   \                     emberAfDecodeDate: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    174            dest->year       = (uint8_t)((src & 0xFF000000U) >> 24);
+   \        0x2   0x0E02             LSRS     R2,R0,#+24
+   \        0x4   0x700A             STRB     R2,[R1, #+0]
+    175            dest->month      = (uint8_t)((src & 0x00FF0000U) >> 16);
+   \        0x6   0x0C03             LSRS     R3,R0,#+16
+    176            dest->dayOfMonth = (uint8_t)((src & 0x0000FF00U) >>  8);
+   \        0x8   0x0A04             LSRS     R4,R0,#+8
+   \        0xA   0x704B             STRB     R3,[R1, #+1]
+   \        0xC   0x708C             STRB     R4,[R1, #+2]
+    177            dest->dayOfWeek  = (uint8_t) (src & 0x000000FFU);
+   \        0xE   0x70C8             STRB     R0,[R1, #+3]
+    178          }
+   \       0x10   0xBD10             POP      {R4,PC}          ;; return
+    179          
+
+   \                                 In section .text, align 2, keep-with-next
+    180          uint32_t emberAfEncodeDate(EmberAfDate* date)
+    181          {
+   \                     emberAfEncodeDate: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    182            uint32_t result = ((((uint32_t)date->year) << 24)
+    183                               + (((uint32_t)date->month) << 16)
+    184                               + (((uint32_t)date->dayOfMonth) << 8)
+    185                               + (((uint32_t)date->dayOfWeek)));
+    186            return result;
+   \        0x2   0x7848             LDRB     R0,[R1, #+1]
+   \        0x4   0x780A             LDRB     R2,[R1, #+0]
+   \        0x6   0x0400             LSLS     R0,R0,#+16
+   \        0x8   0xEB00 0x6002      ADD      R0,R0,R2, LSL #+24
+   \        0xC   0x788A             LDRB     R2,[R1, #+2]
+   \        0xE   0x78C9             LDRB     R1,[R1, #+3]
+   \       0x10   0xEB00 0x2002      ADD      R0,R0,R2, LSL #+8
+   \       0x14   0x1808             ADDS     R0,R1,R0
+   \       0x16   0x4770             BX       LR               ;; return
+    187          }
+    188          
+    189          // emberAfPrintTime expects to be passed a ZigBee time which is the number
+    190          // of seconds since the year 2000, it prints out a human readable time
+    191          // from that value.
+
+   \                                 In section .text, align 2, keep-with-next
+    192          void emberAfPrintTime(uint32_t utcTime)
+    193          {
+   \                     emberAfPrintTime: (+1)
+   \        0x0   0xB518             PUSH     {R3,R4,LR}
+   \        0x2   0xB087             SUB      SP,SP,#+28
+   \        0x4   0x4604             MOV      R4,R0
+    194          #ifdef EMBER_AF_PRINT_ENABLE
+    195            EmberAfTimeStruct time;
+    196            emberAfFillTimeStructFromUtc(utcTime, &time);
+   \        0x6   0xA905             ADD      R1,SP,#+20
+   \        0x8   0x....'....        BL       emberAfFillTimeStructFromUtc
+    197            emberAfPrintln(emberAfPrintActiveArea,
+    198                           "UTC time: %d/%d/%d %d:%d:%d (%4x)",
+    199                           time.month,
+    200                           time.day,
+    201                           time.year,
+    202                           time.hours,
+    203                           time.minutes,
+    204                           time.seconds,
+    205                           utcTime);
+   \        0xC   0xF89D 0x001A      LDRB     R0,[SP, #+26]
+   \       0x10   0xF89D 0x1019      LDRB     R1,[SP, #+25]
+   \       0x14   0xF89D 0x3017      LDRB     R3,[SP, #+23]
+   \       0x18   0x9003             STR      R0,[SP, #+12]
+   \       0x1A   0xF89D 0x0018      LDRB     R0,[SP, #+24]
+   \       0x1E   0x9102             STR      R1,[SP, #+8]
+   \       0x20   0xF8BD 0x1014      LDRH     R1,[SP, #+20]
+   \       0x24   0x9001             STR      R0,[SP, #+4]
+   \       0x26   0x....             LDR.N    R0,??DataTable7_8
+   \       0x28   0xF89D 0x2016      LDRB     R2,[SP, #+22]
+   \       0x2C   0x8800             LDRH     R0,[R0, #+0]
+   \       0x2E   0x9100             STR      R1,[SP, #+0]
+   \       0x30   0x9404             STR      R4,[SP, #+16]
+   \       0x32   0x....             LDR.N    R1,??DataTable7_9
+   \       0x34   0x....'....        BL       emberAfPrintln
+    206          #endif //EMBER_AF_PRINT_ENABLE
+    207          }
+   \       0x38   0xB008             ADD      SP,SP,#+32
+   \       0x3A   0xBD10             POP      {R4,PC}          ;; return
+    208          
+
+   \                                 In section .text, align 2, keep-with-next
+    209          void emberAfPrintTimeIsoFormat(uint32_t utcTime)
+    210          {
+   \                     emberAfPrintTimeIsoFormat: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+    211          #ifdef EMBER_AF_PRINT_ENABLE
+    212            EmberAfTimeStruct time;
+    213            emberAfFillTimeStructFromUtc(utcTime, &time);
+   \        0x4   0xA904             ADD      R1,SP,#+16
+   \        0x6   0x....'....        BL       emberAfFillTimeStructFromUtc
+    214            emberAfPrint(emberAfPrintActiveArea,
+    215                         "%d-%d-%d %d:%d:%d",
+    216                         time.year,
+    217                         time.month,
+    218                         time.day,
+    219                         time.hours,
+    220                         time.minutes,
+    221                         time.seconds);
+   \        0xA   0xF89D 0x0016      LDRB     R0,[SP, #+22]
+   \        0xE   0xF89D 0x1015      LDRB     R1,[SP, #+21]
+   \       0x12   0xF89D 0x3012      LDRB     R3,[SP, #+18]
+   \       0x16   0x9003             STR      R0,[SP, #+12]
+   \       0x18   0xF89D 0x0014      LDRB     R0,[SP, #+20]
+   \       0x1C   0x9102             STR      R1,[SP, #+8]
+   \       0x1E   0xF89D 0x1013      LDRB     R1,[SP, #+19]
+   \       0x22   0x9001             STR      R0,[SP, #+4]
+   \       0x24   0x....             LDR.N    R0,??DataTable7_8
+   \       0x26   0xF8BD 0x2010      LDRH     R2,[SP, #+16]
+   \       0x2A   0x8800             LDRH     R0,[R0, #+0]
+   \       0x2C   0x9100             STR      R1,[SP, #+0]
+   \       0x2E   0x....             LDR.N    R1,??DataTable7_10
+   \       0x30   0x....'....        BL       emberAfPrint
+    222          #endif //EMBER_AF_PRINT_ENABLE
+    223          }
+   \       0x34   0xB007             ADD      SP,SP,#+28
+   \       0x36   0xBD00             POP      {PC}             ;; return
+    224          
+
+   \                                 In section .text, align 2, keep-with-next
+    225          void emberAfPrintDate(const EmberAfDate * date)
+    226          {
+   \                     emberAfPrintDate: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+    227          #ifdef EMBER_AF_PRINT_ENABLE
+    228            uint32_t zigbeeDate = ((((uint32_t)date->year) << 24)
+    229                                   + (((uint32_t)date->month) << 16)
+    230                                   + (((uint32_t)date->dayOfMonth) << 8)
+    231                                   + (((uint32_t)date->dayOfWeek)));
+   \        0x2   0x7844             LDRB     R4,[R0, #+1]
+   \        0x4   0x7803             LDRB     R3,[R0, #+0]
+   \        0x6   0x7881             LDRB     R1,[R0, #+2]
+   \        0x8   0x0422             LSLS     R2,R4,#+16
+   \        0xA   0xEB02 0x6203      ADD      R2,R2,R3, LSL #+24
+   \        0xE   0x78C0             LDRB     R0,[R0, #+3]
+    232          
+    233            emberAfPrint(emberAfPrintActiveArea,
+    234                         "0x%4X (%d/%p%d/%p%d)",
+    235                         zigbeeDate,
+    236                         date->year + 1900,
+    237                         (date->month < 10 ? "0" : ""),
+    238                         date->month,
+    239                         (date->dayOfMonth < 10 ? "0" : ""),
+    240                         date->dayOfMonth);
+   \       0x10   0x....             ADR.N    R5,??DataTable7  ;; "0"
+   \       0x12   0xEB02 0x2201      ADD      R2,R2,R1, LSL #+8
+   \       0x16   0x9401             STR      R4,[SP, #+4]
+   \       0x18   0x9103             STR      R1,[SP, #+12]
+   \       0x1A   0x1882             ADDS     R2,R0,R2
+   \       0x1C   0x290A             CMP      R1,#+10
+   \       0x1E   0x....             LDR.N    R0,??DataTable7_11
+   \       0x20   0xF203 0x736C      ADDW     R3,R3,#+1900
+   \       0x24   0xBFB4             ITE      LT 
+   \       0x26   0x462E             MOVLT    R6,R5
+   \       0x28   0x4606             MOVGE    R6,R0
+   \       0x2A   0x2C0A             CMP      R4,#+10
+   \       0x2C   0x....             LDR.N    R4,??DataTable7_8
+   \       0x2E   0x9602             STR      R6,[SP, #+8]
+   \       0x30   0xBFB8             IT       LT 
+   \       0x32   0x4628             MOVLT    R0,R5
+   \       0x34   0x9000             STR      R0,[SP, #+0]
+   \       0x36   0x8820             LDRH     R0,[R4, #+0]
+   \       0x38   0x....             LDR.N    R1,??DataTable7_12
+   \       0x3A   0x....'....        BL       emberAfPrint
+    241          #endif //EMBER_AF_PRINT_ENABLE
+    242          }
+   \       0x3E   0xBD7F             POP      {R0-R6,PC}       ;; return
+    243          
+
+   \                                 In section .text, align 2, keep-with-next
+    244          void emberAfPrintDateln(const EmberAfDate * date)
+    245          {
+   \                     emberAfPrintDateln: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    246            emberAfPrintDate(date);
+   \        0x2   0x....'....        BL       emberAfPrintDate
+    247            emberAfPrintln(emberAfPrintActiveArea, "");
+   \        0x6   0x....             LDR.N    R0,??DataTable7_8
+   \        0x8   0x8800             LDRH     R0,[R0, #+0]
+   \        0xA   0x....             LDR.N    R1,??DataTable7_11
+   \        0xC   0xE8BD 0x4004      POP      {R2,LR}
+   \       0x10   0x....'....        B.W      emberAfPrintln
+    248          }
+    249          
+    250          // *******************************************************
+    251          // emberAfPrintTime and emberAfSetTime are convienience methods for setting
+    252          // and displaying human readable times.
+    253          
+    254          // Expects to be passed a ZigBee time which is the number of seconds
+    255          // since the year 2000
+
+   \                                 In section .text, align 2, keep-with-next
+    256          void emberAfSetTime(uint32_t utcTime)
+    257          {
+    258          #ifdef EMBER_AF_PLUGIN_TIME_SERVER
+    259            emAfTimeClusterServerSetCurrentTime(utcTime);
+    260          #endif //EMBER_AF_PLUGIN_TIME_SERVER
+    261            emberAfSetTimeCallback(utcTime);
+   \                     emberAfSetTime: (+1)
+   \        0x0   0x....'....        B.W      emberAfSetTimeCallback
+    262          }
+    263          
+
+   \                                 In section .text, align 2, keep-with-next
+    264          uint32_t emberAfGetCurrentTime(void)
+    265          {
+    266          #ifdef EMBER_AF_PLUGIN_TIME_SERVER
+    267            return emAfTimeClusterServerGetCurrentTime();
+    268          #else
+    269            return emberAfGetCurrentTimeCallback();
+   \                     emberAfGetCurrentTime: (+1)
+   \        0x0   0x....'....        B.W      emberAfGetCurrentTimeCallback
+    270          #endif
+    271          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x30 0x00          DC8      "0",0x0,0x0
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x....'....        DC32     emberAfDaysInMonth
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x0001'5180        DC32     0x15180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x01E1'3380        DC32     0x1e13380
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x0009'3A80        DC32     0x93a80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0xFFFE'AE80        DC32     0xfffeae80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0x....'....        DC32     emberAfPrintActiveArea
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x53 0x65          DC8 "Seconds in %d years=%d"
+   \              0x63 0x6F    
+   \              0x6E 0x64    
+   \              0x73 0x20    
+   \              0x69 0x6E    
+   \              0x20 0x25    
+   \              0x64 0x20    
+   \              0x79 0x65    
+   \              0x61 0x72    
+   \              0x73 0x3D    
+   \              0x25 0x64    
+   \              0x00         
+   \       0x17   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x64 0x61          DC8 "daysThisYear=%d, total Sec=%d (0x%4x)"
+   \              0x79 0x73    
+   \              0x54 0x68    
+   \              0x69 0x73    
+   \              0x59 0x65    
+   \              0x61 0x72    
+   \              0x3D 0x25    
+   \              0x64 0x2C    
+   \              0x20 0x74    
+   \              0x6F 0x74    
+   \              0x61 0x6C    
+   \              0x20 0x53    
+   \              0x65 0x63    
+   \              0x3D 0x25    
+   \              0x64 0x20    
+   \              0x28 0x30    
+   \              0x78 0x25    
+   \              0x34 0x78    
+   \              0x29 0x00    
+   \       0x26   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x55 0x54          DC8 "UTC time: %d/%d/%d %d:%d:%d (%4x)"
+   \              0x43 0x20    
+   \              0x74 0x69    
+   \              0x6D 0x65    
+   \              0x3A 0x20    
+   \              0x25 0x64    
+   \              0x2F 0x25    
+   \              0x64 0x2F    
+   \              0x25 0x64    
+   \              0x20 0x25    
+   \              0x64 0x3A    
+   \              0x25 0x64    
+   \              0x3A 0x25    
+   \              0x64 0x20    
+   \              0x28 0x25    
+   \              0x34 0x78    
+   \              0x29 0x00    
+   \       0x22   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x25 0x64          DC8 "%d-%d-%d %d:%d:%d"
+   \              0x2D 0x25    
+   \              0x64 0x2D    
+   \              0x25 0x64    
+   \              0x20 0x25    
+   \              0x64 0x3A    
+   \              0x25 0x64    
+   \              0x3A 0x25    
+   \              0x64 0x00    
+   \       0x12   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x30 0x78          DC8 "0x%4X (%d/%p%d/%p%d)"
+   \              0x25 0x34    
+   \              0x58 0x20    
+   \              0x28 0x25    
+   \              0x64 0x2F    
+   \              0x25 0x70    
+   \              0x25 0x64    
+   \              0x2F 0x25    
+   \              0x70 0x25    
+   \              0x64 0x29    
+   \              0x00         
+   \       0x15   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x30 0x00          DC8 "0"
+
+   \                                 In section .rodata, align 1
+   \                     ?_6:
+   \        0x0   0x00               DC8 ""
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   emberAfCompareDates
+        16   -> emberAfEncodeDate
+       0   emberAfCopyDate
+       8   emberAfDecodeDate
+       0   emberAfEncodeDate
+      20   emberAfFillTimeStructFromUtc
+       0   emberAfGetCurrentTime
+         0   -> emberAfGetCurrentTimeCallback
+      12   emberAfGetNumberDaysInMonth
+      32   emberAfGetUtcFromTimeStruct
+        32   -> emberAfPrintln
+       8   emberAfGetWeekdayFromUtc
+      32   emberAfPrintDate
+        32   -> emberAfPrint
+       8   emberAfPrintDateln
+         8   -> emberAfPrintDate
+         0   -> emberAfPrintln
+      40   emberAfPrintTime
+        40   -> emberAfFillTimeStructFromUtc
+        40   -> emberAfPrintln
+      32   emberAfPrintTimeIsoFormat
+        32   -> emberAfFillTimeStructFromUtc
+        32   -> emberAfPrint
+       0   emberAfSetTime
+         0   -> emberAfSetTimeCallback
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+      24  ?_0
+      40  ?_1
+      36  ?_2
+      20  ?_3
+      24  ?_4
+       2  ?_5
+       1  ?_6
+      36  emberAfCompareDates
+      20  emberAfCopyDate
+      12  emberAfDaysInMonth
+      18  emberAfDecodeDate
+      24  emberAfEncodeDate
+     196  emberAfFillTimeStructFromUtc
+       4  emberAfGetCurrentTime
+      80  emberAfGetNumberDaysInMonth
+     246  emberAfGetUtcFromTimeStruct
+      50  emberAfGetWeekdayFromUtc
+      64  emberAfPrintDate
+      20  emberAfPrintDateln
+      60  emberAfPrintTime
+      56  emberAfPrintTimeIsoFormat
+       4  emberAfSetTime
+
+ 
+ 159 bytes in section .rodata
+ 930 bytes in section .text
+ 
+ 930 bytes of CODE  memory
+ 159 bytes of CONST memory
+
+Errors: none
+Warnings: none

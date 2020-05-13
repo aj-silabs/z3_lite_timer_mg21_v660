@@ -1,0 +1,651 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:40
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_gcm.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW2720.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_gcm.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"cryptoacc_gcm.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\cryptoacc_gcm.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\cryptoacc_gcm.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_gcm.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief AES-CMAC abstraction based on CRYPTOACC
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: APACHE-2.0
+     10           *
+     11           * This software is subject to an open source license and is distributed by
+     12           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     13           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     14           * Such terms and conditions may be further supplemented by the Silicon Labs
+     15           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     16           * sections applicable to open source software.
+     17           *
+     18           ******************************************************************************/
+     19          
+     20          /*
+     21           * This file includes alternative plugin implementations of various
+     22           * functions in gmac.c using the CRYPTOACC accelerator incorporated
+     23           * in MCU devices from Silicon Laboratories.
+     24           */
+     25          
+     26          /*
+     27           * http://csrc.nist.gov/publications/nistpubs/800-38D/SP-800-38D.pdf
+     28           *
+     29           * See also:
+     30           * [MGV] http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/gcm/gcm-revised-spec.pdf
+     31           *
+     32           * We use the algorithm described as Shoup's method with 4-bit tables in
+     33           * [MGV] 4.1, pp. 12-13, to enhance speed without using too much memory.
+     34           */
+     35          
+     36          #include "em_device.h"
+     37          
+     38          #if defined(CRYPTOACC_PRESENT)
+     39          
+     40          #if !defined(MBEDTLS_CONFIG_FILE)
+     41          #include "mbedtls/config.h"
+     42          #else
+     43          #include MBEDTLS_CONFIG_FILE
+     44          #endif
+     45          
+     46          #if defined(MBEDTLS_GCM_ALT) && defined(MBEDTLS_GCM_C)
+     47          #include "cryptoacc_management.h"
+     48          #include "mbedtls/gcm.h"
+     49          #include "mbedtls/aes.h"
+     50          #include "sx_aes.h"
+     51          #include "sx_math.h"
+     52          #include "sx_errors.h"
+     53          #include "cryptolib_def.h"
+     54          #include <string.h>
+     55          
+     56          /* Implementation that should never be optimized out by the compiler */
+     57          static void mbedtls_zeroize( void *v, size_t n ) {
+     58              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     59          }
+     60          
+     61          /*
+     62           * Initialize a context
+     63           */
+     64          void mbedtls_gcm_init( mbedtls_gcm_context *ctx )
+     65          {
+     66              memset( ctx, 0, sizeof( mbedtls_gcm_context ) );
+     67          }
+     68          
+     69          int mbedtls_gcm_setkey( mbedtls_gcm_context *ctx,
+     70                                  mbedtls_cipher_id_t cipher,
+     71                                  const unsigned char *key,
+     72                                  unsigned int keybits )
+     73          {
+     74              const mbedtls_cipher_info_t *cipher_info;
+     75              int ret;
+     76          
+     77              if( ctx == NULL || key == NULL ) {
+     78                  return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+     79              }
+     80              
+     81              cipher_info = mbedtls_cipher_info_from_values( cipher, keybits, MBEDTLS_MODE_ECB );
+     82              if( cipher_info == NULL )
+     83                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+     84          
+     85              if( cipher_info->block_size != 16 )
+     86                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+     87          
+     88              switch( cipher_info->type )
+     89              {
+     90                  case MBEDTLS_CIPHER_AES_128_ECB:
+     91                  case MBEDTLS_CIPHER_AES_192_ECB:
+     92                  case MBEDTLS_CIPHER_AES_256_ECB:
+     93                  case MBEDTLS_CIPHER_DES_EDE3_ECB:
+     94                      break;
+     95                  default:
+     96                      return( MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA );
+     97              }
+     98          
+     99              /* Store key in gcm context */
+    100              ctx->keybits = keybits;
+    101              memcpy(ctx->key, key, keybits/8);
+    102          
+    103              mbedtls_cipher_free( &ctx->cipher_ctx );
+    104          
+    105              if( ( ret = mbedtls_cipher_setup( &ctx->cipher_ctx, cipher_info ) ) != 0 )
+    106                  return( ret );
+    107          
+    108              if( ( ret = mbedtls_cipher_setkey( &ctx->cipher_ctx, key, keybits,
+    109                                         MBEDTLS_ENCRYPT ) ) != 0 )
+    110              {
+    111                  return( ret );
+    112              }
+    113          
+    114              return( 0 );
+    115          }
+    116          
+    117          int mbedtls_gcm_starts( mbedtls_gcm_context *ctx,
+    118                          int mode,
+    119                          const unsigned char *iv,
+    120                          size_t iv_len,
+    121                          const unsigned char *add,
+    122                          size_t add_len )
+    123          {
+    124              int status;
+    125              uint32_t sx_ret;
+    126              block_t  key;
+    127              block_t  aad;
+    128              block_t  nonce;
+    129          
+    130              /* Check input parameters. */
+    131              if( ctx == NULL || iv == NULL ) {
+    132                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    133              }
+    134              if (add_len > 0 && add == NULL ) {
+    135                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    136              }
+    137              if ( (iv_len != AES_IV_GCM_SIZE) ||
+    138                   /* AD are limited to 2^64 bits, so 2^61 bytes */
+    139                   ( (uint64_t) add_len ) >> 61 != 0 )
+    140              {
+    141                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    142              }
+    143          
+    144              /* Store input in context data structure. */
+    145              ctx->dir = mode == MBEDTLS_AES_ENCRYPT ? ENC : DEC_WITH_TAG;
+    146              ctx->add_len    = add_len;
+    147          
+    148              ctx->sx_ctx_blk.addr  = ctx->sx_ctx;
+    149              ctx->sx_ctx_blk.len   = sizeof(ctx->sx_ctx);
+    150              ctx->sx_ctx_blk.flags = 0;
+    151          
+    152              if (add_len == 0) {
+    153                  memcpy(ctx->iv, iv, sizeof(ctx->iv));
+    154              } else {
+    155                  key = block_t_convert(ctx->key, ctx->keybits / 8);
+    156                  nonce = block_t_convert(iv, AES_IV_GCM_SIZE);
+    157                  aad = block_t_convert(add, add_len);
+    158          
+    159                  status = cryptoacc_management_acquire();
+    160                  if (status != 0) {
+    161                      return status;
+    162                  }
+    163                  /* Execute GCM operation */
+    164                  sx_ret = sx_aes_blk(GCM, ctx->dir, CTX_BEGIN, key, NULL_blk, nonce,
+    165                                      NULL_blk, NULL_blk, aad, NULL_blk, ctx->sx_ctx_blk,
+    166                                      NULL_blk);
+    167                  cryptoacc_management_release();
+    168          
+    169                  if (sx_ret != CRYPTOLIB_SUCCESS) {
+    170                      return MBEDTLS_ERR_AES_HW_ACCEL_FAILED;
+    171                  }
+    172              }
+    173              return 0;
+    174          }
+    175          
+    176          int mbedtls_gcm_update( mbedtls_gcm_context *ctx,
+    177                          size_t length,
+    178                          const unsigned char *input,
+    179                          unsigned char *output )
+    180          {
+    181              int status;
+    182              uint32_t sx_ret;
+    183              block_t  data_in;
+    184              block_t  data_out;
+    185              block_t  key;
+    186              block_t  nonce;
+    187          
+    188              if( ctx == NULL ) {
+    189                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    190              }
+    191              if (length == 0) {
+    192                  return 0;
+    193              }
+    194              if( length > 0 && (input == NULL || output == NULL) ) {
+    195                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    196              }
+    197              /* Total length is restricted to 2^39 - 256 bits, ie 2^36 - 2^5 bytes
+    198               * Also check for possible overflow */
+    199              if( ctx->len + length < ctx->len ||
+    200                  (uint64_t) ctx->len + length > 0xFFFFFFFE0ull )
+    201              {
+    202                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    203              }
+    204          
+    205              key = block_t_convert(ctx->key, ctx->keybits / 8);
+    206              data_in = block_t_convert(input, length);
+    207              data_out = block_t_convert(output, length);
+    208              
+    209              if (ctx->add_len == 0 && ctx->len == 0) {
+    210                  /* If there were no additional authentcation data then
+    211                     mbedtls_gcm_starts did not 'CTX_BEGIN' the GCM operation
+    212                     in the CRYPTOACC, so we need to 'CTX_BEGIN' now. */
+    213                  nonce.addr      = (uint8_t*)ctx->iv;
+    214                  nonce.len       = AES_IV_GCM_SIZE;
+    215                  nonce.flags     = 0;
+    216          
+    217                  status = cryptoacc_management_acquire();
+    218                  if (status != 0) {
+    219                      return status;
+    220                  }
+    221                  /* Execute GCM operation */
+    222                  sx_ret = sx_aes_blk(GCM, ctx->dir, CTX_BEGIN, key, NULL_blk, nonce,
+    223                                      data_in,  data_out, NULL_blk, NULL_blk,
+    224                                      ctx->sx_ctx_blk, NULL_blk);
+    225                  cryptoacc_management_release();
+    226              }
+    227              else {
+    228                  status = cryptoacc_management_acquire();
+    229                  if (status != 0) {
+    230                      return status;
+    231                  }
+    232                  /* Execute GCM operation */
+    233                  sx_ret = sx_aes_blk(GCM, ctx->dir, CTX_MIDDLE, key, NULL_blk, ctx->sx_ctx_blk,
+    234                                      data_in,  data_out, NULL_blk, NULL_blk,
+    235                                      ctx->sx_ctx_blk, NULL_blk);
+    236                  cryptoacc_management_release();
+    237              }
+    238          
+    239              ctx->len += length;
+    240          
+    241              if (sx_ret != CRYPTOLIB_SUCCESS) {
+    242                  return MBEDTLS_ERR_AES_HW_ACCEL_FAILED;
+    243              }
+    244              else {
+    245                  return 0;
+    246              }
+    247          }
+    248          
+    249          int mbedtls_gcm_finish( mbedtls_gcm_context *ctx,
+    250                          unsigned char *tag,
+    251                          size_t tag_len )
+    252          {
+    253              int status;
+    254              uint32_t sx_ret;
+    255              block_t key;
+    256              block_t _tag;
+    257              uint8_t tagbuf[16];
+    258              uint8_t lena_lenc[16];
+    259              block_t lena_lenc_blk = NULL_blk;
+    260              int     diff;
+    261              size_t  i;
+    262          
+    263              if( ctx == NULL || tag == NULL ) {
+    264                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    265              }
+    266          
+    267              if (ctx->add_len == 0 && ctx->len == 0) {
+    268                  /* If there were no data and additional authentcation data then
+    269                     mbedtls_gcm_starts and update did not start the GCM operation,
+    270                     so we need to run the whole GCM now. */
+    271                  return mbedtls_gcm_crypt_and_tag( ctx,
+    272                                                    ctx->dir == ENC ? MBEDTLS_GCM_ENCRYPT :
+    273                                                    MBEDTLS_GCM_DECRYPT,
+    274                                                    0, ctx->iv, AES_IV_GCM_SIZE, 0, 0, 0, 0,
+    275                                                    tag_len, tag);
+    276              }
+    277              else {
+    278                  key = block_t_convert(ctx->key, ctx->keybits / 8);
+    279                  _tag = block_t_convert(tagbuf, 16); // CRYPTOACC supports only 128bits tags
+    280          
+    281                  // build lena_lenc block as big endian byte array
+    282                  sx_math_u64_to_u8array(ctx->add_len<<3, &lena_lenc[0], sx_big_endian);
+    283                  sx_math_u64_to_u8array(ctx->len<<3,   &lena_lenc[8], sx_big_endian);
+    284                  lena_lenc_blk = block_t_convert(lena_lenc, 16);
+    285                  status = cryptoacc_management_acquire();
+    286                  if (status != 0) {
+    287                      return status;
+    288                  }
+    289                  /* Execute GCM operation */
+    290                  sx_ret = sx_aes_blk(GCM, ctx->dir, CTX_END, key, NULL_blk, ctx->sx_ctx_blk,
+    291                                      NULL_blk, NULL_blk, NULL_blk, _tag, NULL_blk,
+    292                                      lena_lenc_blk);
+    293                  cryptoacc_management_release();
+    294          
+    295                  if (sx_ret != CRYPTOLIB_SUCCESS) {
+    296                      return( MBEDTLS_ERR_AES_HW_ACCEL_FAILED );
+    297                  }
+    298          
+    299                  if ( ctx->dir == DEC_WITH_TAG ) {
+    300                      // For decryption, verify tag, in "constant-time".
+    301                      for( diff = 0, i = 0; i < tag_len; i++ ) {
+    302                          diff |= tag[i] ^ tagbuf[i];
+    303                      }
+    304                      if ( diff != 0 ) {
+    305                          return( MBEDTLS_ERR_GCM_AUTH_FAILED );
+    306                      }
+    307                  }
+    308                  else {
+    309                      // For encryption, copy requested tag size to output tag buffer.
+    310                      memcpy(tag, tagbuf, tag_len);
+    311                  }
+    312                  return( 0 );
+    313              }
+    314          }
+    315          
+    316          int mbedtls_gcm_crypt_and_tag( mbedtls_gcm_context *ctx,
+    317                                 int mode,
+    318                                 size_t length,
+    319                                 const unsigned char *iv,
+    320                                 size_t iv_len,
+    321                                 const unsigned char *add,
+    322                                 size_t add_len,
+    323                                 const unsigned char *input,
+    324                                 unsigned char *output,
+    325                                 size_t tag_len,
+    326                                 unsigned char *tag )
+    327          {
+    328              int status;
+    329              uint32_t sx_ret;
+    330              sx_aes_mode_t dir = mode == MBEDTLS_AES_ENCRYPT ? ENC : DEC_WITH_TAG;
+    331              block_t key;
+    332              block_t aad;
+    333              block_t _tag;
+    334              block_t nonce;
+    335              block_t data_in;
+    336              block_t data_out;
+    337              uint8_t tagbuf[16];
+    338              int     diff;
+    339              size_t  i;
+    340          
+    341              /* Check input parameters. */ 
+    342              if( ctx == NULL || tag == NULL || iv == NULL ) {
+    343                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    344              }
+    345              if (add_len > 0 && add == NULL ) {
+    346                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    347              }
+    348              if( length > 0 && (input == NULL || output == NULL) ) {
+    349                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    350              }
+    351              if ( /* IV length is required to be 96 bits for CRYPTOACC.*/
+    352                  (iv_len != AES_IV_GCM_SIZE)
+    353                   /* AD are limited to 2^64 bits, so 2^61 bytes */
+    354                  || ( ( (uint64_t) add_len ) >> 61 != 0 ) ) {
+    355                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    356              }
+    357          
+    358              key = block_t_convert(ctx->key, ctx->keybits / 8);
+    359              nonce = block_t_convert(iv, iv_len);
+    360              aad = block_t_convert(add, add_len);    
+    361              _tag = block_t_convert(tagbuf, 16); // CRYPTOACC supports only 128bits tags
+    362              data_in = block_t_convert(input, length);
+    363              data_out = block_t_convert(output, length);
+    364          
+    365              status = cryptoacc_management_acquire();
+    366              if (status != 0) {
+    367                  return status;
+    368              }
+    369              /* Execute GCM operation */
+    370              sx_ret = sx_aes_blk(GCM, dir, CTX_WHOLE, key, NULL_blk, nonce,
+    371                                  data_in, data_out, aad, _tag, NULL_blk, NULL_blk);
+    372              cryptoacc_management_release();
+    373          
+    374              if (sx_ret != CRYPTOLIB_SUCCESS) {
+    375                  mbedtls_zeroize( output, length );
+    376                  return( MBEDTLS_ERR_AES_HW_ACCEL_FAILED );
+    377              }
+    378          
+    379              if ( dir == DEC_WITH_TAG ) {
+    380                  // For decryption, verify tag, in "constant-time".
+    381                  for( diff = 0, i = 0; i < tag_len; i++ ) {
+    382                      diff |= tag[i] ^ tagbuf[i];
+    383                  }
+    384                  if ( diff != 0 ) {
+    385                      mbedtls_zeroize( output, length );
+    386                      return( MBEDTLS_ERR_GCM_AUTH_FAILED );
+    387                  }
+    388              }
+    389              else {
+    390                  // For encryption, copy requested tag size to output tag buffer.
+    391                  memcpy(tag, tagbuf, tag_len);
+    392              }
+    393              return( 0 );
+    394          }
+    395          
+    396          int mbedtls_gcm_auth_decrypt( mbedtls_gcm_context *ctx,
+    397                                size_t length,
+    398                                const unsigned char *iv,
+    399                                size_t iv_len,
+    400                                const unsigned char *add,
+    401                                size_t add_len,
+    402                                const unsigned char *tag,
+    403                                size_t tag_len,
+    404                                const unsigned char *input,
+    405                                unsigned char *output )
+    406          {
+    407              int status;
+    408              uint32_t sx_ret;
+    409              block_t key;
+    410              block_t aad;
+    411              block_t _tag;
+    412              block_t nonce;
+    413              block_t data_in;
+    414              block_t data_out;
+    415              uint8_t tagbuf[16];
+    416              int     diff;
+    417              size_t  i;
+    418          
+    419              /* Check input parameters. */
+    420              if( ctx == NULL || tag == NULL || iv == NULL ) {
+    421                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    422              }
+    423              if (add_len > 0 && add == NULL ) {
+    424                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    425              }
+    426          
+    427              if( length > 0 && (input == NULL || output == NULL) ) {
+    428                  return ( MBEDTLS_ERR_GCM_BAD_INPUT );
+    429              }
+    430              if ( /* IV length is required to be 96 bits for CRYPTOACC.*/
+    431                   (iv_len != AES_IV_GCM_SIZE)
+    432                   /* AD are limited to 2^64 bits, so 2^61 bytes */
+    433                   || ( ( (uint64_t) add_len ) >> 61 != 0 ) ) {
+    434                  return( MBEDTLS_ERR_GCM_BAD_INPUT );
+    435              }
+    436          
+    437              key = block_t_convert(ctx->key, ctx->keybits / 8);
+    438              nonce = block_t_convert(iv, iv_len);
+    439              aad = block_t_convert(add, add_len);
+    440              _tag = block_t_convert(tagbuf, 16); // CRYPTOACC supports only 128bits tags
+    441              data_in = block_t_convert(input, length);
+    442              data_out = block_t_convert(output, length);
+    443          
+    444              status = cryptoacc_management_acquire();
+    445              if (status != 0) {
+    446                  return status;
+    447              }
+    448              /* Execute GCM operation */
+    449              sx_ret = sx_aes_blk(GCM, DEC_WITH_TAG, CTX_WHOLE, key, NULL_blk, nonce,
+    450                                  data_in, data_out, aad, _tag, NULL_blk, NULL_blk);
+    451              cryptoacc_management_release();
+    452          
+    453              if (sx_ret == CRYPTOLIB_SUCCESS) {
+    454                  /* Check tag in "constant-time" */
+    455                  for( diff = 0, i = 0; i < tag_len; i++ ) {
+    456                      diff |= tag[i] ^ tagbuf[i];
+    457                  }
+    458                  if ( diff != 0 ) {
+    459                      mbedtls_zeroize( output, length );
+    460                      return( MBEDTLS_ERR_GCM_AUTH_FAILED );
+    461                  } else {
+    462                      return( 0 );
+    463                  }
+    464              } else {
+    465                  mbedtls_zeroize( output, length );
+    466                  if (sx_ret == CRYPTOLIB_INVALID_SIGN_ERR) {
+    467                      return( MBEDTLS_ERR_GCM_AUTH_FAILED );
+    468                  } else {
+    469                      return( MBEDTLS_ERR_AES_HW_ACCEL_FAILED );
+    470                  }
+    471              }
+    472          }
+    473          
+    474          void mbedtls_gcm_free( mbedtls_gcm_context *ctx )
+    475          {
+    476              mbedtls_cipher_free( &ctx->cipher_ctx );
+    477              mbedtls_zeroize( ctx, sizeof( mbedtls_gcm_context ) );
+    478          }
+    479          
+    480          #endif /* MBEDTLS_GCM_ALT && MBEDTLS_GCM_C */
+    481          
+    482          #endif /* CRYPTOACC_PRESENT */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1200 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:19:38
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\radioaes_ble.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EWA30.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\radioaes_ble.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"radioaes_ble.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\radioaes_ble.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\radioaes_ble.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\radioaes_ble.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief BLE-specific cipher implementations optimized for Silicon Labs devices
+      4           *        with a Radio AES peripheral.
+      5           *******************************************************************************
+      6           * # License
+      7           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      8           *******************************************************************************
+      9           *
+     10           * SPDX-License-Identifier: APACHE-2.0
+     11           *
+     12           * This software is subject to an open source license and is distributed by
+     13           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     14           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     15           * Such terms and conditions may be further supplemented by the Silicon Labs
+     16           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     17           * sections applicable to open source software.
+     18           *
+     19           ******************************************************************************/
+     20          
+     21          #include "crypto_ble.h"
+     22          
+     23          #include "em_device.h"
+     24          
+     25          #if defined(RADIOAES_PRESENT)
+     26          #include "radioaes.h"
+     27          
+     28          #include <stddef.h>
+     29          #include <stdbool.h>
+     30          
+     31          #define AES_BLOCK_BYTES       16U
+     32          
+     33          #define BLE_CCM_NONCE_BYTES   13U
+     34          #define BLE_CCM_KEY_BYTES     16U
+     35          #define BLE_CCM_B_BYTES       16U
+     36          #define BLE_CCM_TAG_BYTES      4U
+     37          #define BLE_CCM_VER_BYTES      1U
+     38          #define BLE_CCM_B0_FLAGS    0x49U
+     39          #define BLE_CCM_AUTH_BLOCKS    1U
+     40          
+     41          #define BLE_RPA_KEY_BYTES     16U
+     42          #define BLE_RPA_DATA_BYTES    16U
+     43          
+     44          #define RADIOAES_CONFIG_BYTES  4U
+     45          
+     46          #ifndef RADIOAES_BLE_RPA_MAX_KEYS
+     47          #define RADIOAES_BLE_RPA_MAX_KEYS 32
+     48          #endif
+     49          
+     50          // Local CCM variables
+
+   \                                 In section .rodata, align 4
+     51          static const uint32_t aesCcmConfigEncrypt = AES_MODEID_CCM
+   \                     aesCcmConfigEncrypt:
+   \        0x0   0x0000'2000        DC32 8192
+     52                                                    | AES_MODEID_NO_CX
+     53                                                    | AES_MODEID_AES128
+     54                                                    | AES_MODEID_ENCRYPT;
+     55          
+
+   \                                 In section .rodata, align 4
+     56          static const uint32_t aesCcmConfigDecrypt = AES_MODEID_CCM
+   \                     aesCcmConfigDecrypt:
+   \        0x0   0x0000'2001        DC32 8193
+     57                                                    | AES_MODEID_NO_CX
+     58                                                    | AES_MODEID_AES128
+     59                                                    | AES_MODEID_DECRYPT;
+
+   \                                 In section .rodata, align 4
+     60          static const uint32_t zeros = 0;
+   \                     zeros:
+   \        0x0   0x0000'0000        DC32 0
+     61          
+     62          // CONST FETCHERS
+
+   \                                 In section .rodata, align 4
+     63          static const struct radioaesDmaSgDescr ccmDescFetcherTagPadding =
+   \                     ccmDescFetcherTagPadding:
+   \        0x0   0x....'....        DC32 zeros, 1, 268435468, 3105
+   \              0x0000'0001  
+   \              0x1000'000C  
+   \              0x0000'0C21  
+     64          {
+     65            .address       = (uint32_t) &zeros,
+     66            .nextDescr     = DMA_AXI_DESCR_NEXT_STOP,
+     67            .lengthAndIrq  = (AES_BLOCK_BYTES - BLE_CCM_TAG_BYTES) | (BLOCK_S_CONST_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+     68            .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISDATA | DMA_SG_TAG_ISLAST | DMA_SG_TAG_DATATYPE_AESPAYLOAD | DMA_SG_TAG_SETINVALIDBYTES(AES_BLOCK_BYTES - BLE_CCM_TAG_BYTES)
+     69          };
+     70          
+     71          // CONST PUSHERS
+
+   \                                 In section .rodata, align 4
+     72          static const struct radioaesDmaSgDescr ccmDescPusherVerPadding =
+   \                     ccmDescPusherVerPadding:
+   \        0x0   0x0000'0000        DC32 0, 1, 1073741839
+   \              0x0000'0001  
+   \              0x4000'000F  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+     73          {
+     74            .address       = (uint32_t) NULL,
+     75            .nextDescr     = DMA_AXI_DESCR_NEXT_STOP,
+     76            .lengthAndIrq  = (AES_BLOCK_BYTES - BLE_CCM_VER_BYTES) | DMA_AXI_DESCR_DISCARD
+     77          };
+     78          
+
+   \                                 In section .text, align 2, keep-with-next
+     79          static int aes_ccm_ble(bool                 encrypt,
+     80                                 unsigned char       *data,
+     81                                 size_t               length,
+     82                                 const unsigned char *key,
+     83                                 const unsigned char *iv,
+     84                                 unsigned char        header,
+     85                                 unsigned char       *tag)
+     86          
+     87          {
+   \                     aes_ccm_ble: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB0C1             SUB      SP,SP,#+260
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x4688             MOV      R8,R1
+   \        0xA   0x4617             MOV      R7,R2
+   \        0xC   0x461D             MOV      R5,R3
+   \        0xE   0x9E4A             LDR      R6,[SP, #+296]
+     88            volatile uint8_t verFailed;
+     89            volatile uint8_t b0b1[BLE_CCM_B_BYTES * 2] = { 0 };
+   \       0x10   0xA831             ADD      R0,SP,#+196
+   \       0x12   0x2120             MOVS     R1,#+32
+   \       0x14   0x....'....        BL       __aeabi_memclr4
+     90          
+     91            size_t dataPadBytes = AES_BLOCK_BYTES - 1 - ((length - 1) % AES_BLOCK_BYTES);
+     92          
+     93            // fetchers
+     94            struct radioaesDmaSgDescr ccmDescFetcherTag =
+     95            {
+     96              .address       = (uint32_t) tag,
+     97              .nextDescr     = (uint32_t) &ccmDescFetcherTagPadding,
+     98              .lengthAndIrq  = BLE_CCM_TAG_BYTES,
+     99              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISDATA | DMA_SG_TAG_DATATYPE_AESPAYLOAD
+    100            };
+   \       0x18   0xA82D             ADD      R0,SP,#+180
+   \       0x1A   0x....             LDR.N    R1,??DataTable1
+   \       0x1C   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x20   0x962D             STR      R6,[SP, #+180]
+    101          
+    102            struct radioaesDmaSgDescr ccmDescFetcherDataPadding =
+    103            {
+    104              .address       = (uint32_t) &zeros,
+    105              .nextDescr     = (encrypt ? DMA_AXI_DESCR_NEXT_STOP : (uint32_t) &ccmDescFetcherTag),
+    106              .lengthAndIrq  = (uint32_t) dataPadBytes | (BLOCK_S_CONST_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    107              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISDATA | DMA_SG_TAG_DATATYPE_AESPAYLOAD | (encrypt ? DMA_SG_TAG_ISLAST : 0) | DMA_SG_TAG_SETINVALIDBYTES(dataPadBytes),
+    108            };
+   \       0x22   0xA81D             ADD      R0,SP,#+116
+   \       0x24   0x....             LDR.N    R1,??DataTable1_1
+   \       0x26   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x2A   0x1E7C             SUBS     R4,R7,#+1
+   \       0x2C   0xEA5F 0x0009      MOVS     R0,R9
+   \       0x30   0xF004 0x040F      AND      R4,R4,#0xF
+   \       0x34   0xF1C4 0x040F      RSB      R4,R4,#+15
+   \       0x38   0xBF14             ITE      NE 
+   \       0x3A   0x2101             MOVNE    R1,#+1
+   \       0x3C   0xA92D             ADDEQ    R1,SP,#+180
+   \       0x3E   0xEA5F 0x0309      MOVS     R3,R9
+   \       0x42   0x911E             STR      R1,[SP, #+120]
+   \       0x44   0xF044 0x5280      ORR      R2,R4,#0x10000000
+   \       0x48   0x921F             STR      R2,[SP, #+124]
+   \       0x4A   0xBF14             ITE      NE 
+   \       0x4C   0x2220             MOVNE    R2,#+32
+   \       0x4E   0x2200             MOVEQ    R2,#+0
+   \       0x50   0x0223             LSLS     R3,R4,#+8
+   \       0x52   0xF042 0x0201      ORR      R2,R2,#0x1
+   \       0x56   0xF403 0x53F8      AND      R3,R3,#0x1F00
+   \       0x5A   0x431A             ORRS     R2,R3,R2
+    109          
+    110            struct radioaesDmaSgDescr ccmDescFetcherData =
+    111            {
+    112              .address       = (uint32_t) data,
+    113              .nextDescr     = ((dataPadBytes != 0) ? (uint32_t) &ccmDescFetcherDataPadding : (encrypt ? DMA_AXI_DESCR_NEXT_STOP : (uint32_t) &ccmDescFetcherTag)),
+    114              .lengthAndIrq  = length | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    115              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISDATA | DMA_SG_TAG_DATATYPE_AESPAYLOAD | (((dataPadBytes == 0) && encrypt) ? DMA_SG_TAG_ISLAST : 0),
+    116            };
+   \       0x5C   0x2C00             CMP      R4,#+0
+   \       0x5E   0x9220             STR      R2,[SP, #+128]
+   \       0x60   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \       0x64   0xBF18             IT       NE 
+   \       0x66   0xA91D             ADDNE    R1,SP,#+116
+   \       0x68   0x9102             STR      R1,[SP, #+8]
+   \       0x6A   0x9703             STR      R7,[SP, #+12]
+   \       0x6C   0xD104             BNE.N    ??aes_ccm_ble_0
+   \       0x6E   0xEA5F 0x0009      MOVS     R0,R9
+   \       0x72   0xBF18             IT       NE 
+   \       0x74   0x2020             MOVNE    R0,#+32
+   \       0x76   0xD100             BNE.N    ??aes_ccm_ble_1
+   \                     ??aes_ccm_ble_0: (+1)
+   \       0x78   0x2000             MOVS     R0,#+0
+   \                     ??aes_ccm_ble_1: (+1)
+   \       0x7A   0xF040 0x0001      ORR      R0,R0,#0x1
+   \       0x7E   0x9004             STR      R0,[SP, #+16]
+    117          
+    118            struct radioaesDmaSgDescr ccmDescFetcherB0B1 =
+    119            {
+    120              .address       = (uint32_t) b0b1,
+    121              .nextDescr     = (uint32_t) &ccmDescFetcherData,
+    122              .lengthAndIrq  = BLE_CCM_B_BYTES * 2 | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    123              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISDATA | DMA_SG_TAG_DATATYPE_AESHEADER
+    124            };
+   \       0x80   0xA819             ADD      R0,SP,#+100
+   \       0x82   0x....             LDR.N    R1,??DataTable1_2
+   \       0x84   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x88   0xA831             ADD      R0,SP,#+196
+   \       0x8A   0x9019             STR      R0,[SP, #+100]
+   \       0x8C   0xA901             ADD      R1,SP,#+4
+   \       0x8E   0x911A             STR      R1,[SP, #+104]
+    125          
+    126            struct radioaesDmaSgDescr ccmDescFetcherKey =
+    127            {
+    128              .address       = (uint32_t) key,
+    129              .nextDescr     = (uint32_t) &ccmDescFetcherB0B1,
+    130              .lengthAndIrq  = BLE_CCM_KEY_BYTES | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    131              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISCONFIG | DMA_SG_TAG_SETCFGOFFSET(AES_OFFSET_KEY)
+    132            };
+   \       0x90   0xA815             ADD      R0,SP,#+84
+   \       0x92   0x....             LDR.N    R1,??DataTable1_3
+   \       0x94   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x98   0x9515             STR      R5,[SP, #+84]
+   \       0x9A   0xA919             ADD      R1,SP,#+100
+   \       0x9C   0x9116             STR      R1,[SP, #+88]
+    133          
+    134            struct radioaesDmaSgDescr ccmDescFetcherConfig =
+    135            {
+    136              .address       = (uint32_t) (encrypt ? &aesCcmConfigEncrypt : &aesCcmConfigDecrypt),
+    137              .nextDescr     = (uint32_t) &ccmDescFetcherKey,
+    138              .lengthAndIrq  = RADIOAES_CONFIG_BYTES,
+    139              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISCONFIG | DMA_SG_TAG_SETCFGOFFSET(AES_OFFSET_CFG)
+    140            };
+   \       0x9E   0xA811             ADD      R0,SP,#+68
+   \       0xA0   0x....             LDR.N    R1,??DataTable1_4
+   \       0xA2   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0xA6   0xEA5F 0x0109      MOVS     R1,R9
+    141          
+    142            // Pushers
+    143            struct radioaesDmaSgDescr ccmDescPusherVer =
+    144            {
+    145              .address       = (uint32_t) &verFailed,
+    146              .nextDescr     = (uint32_t) &ccmDescPusherVerPadding,
+    147              .lengthAndIrq  = BLE_CCM_VER_BYTES
+    148            };
+   \       0xAA   0xA829             ADD      R0,SP,#+164
+   \       0xAC   0xBF14             ITE      NE 
+   \       0xAE   0x....             LDRNE.N  R1,??DataTable1_5
+   \       0xB0   0x....             LDREQ.N  R1,??DataTable1_6
+   \       0xB2   0x9111             STR      R1,[SP, #+68]
+   \       0xB4   0xA915             ADD      R1,SP,#+84
+   \       0xB6   0x9112             STR      R1,[SP, #+72]
+   \       0xB8   0x....             LDR.N    R1,??DataTable1_7
+   \       0xBA   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0xBE   0xF8CD 0xD0A4      STR      SP,[SP, #+164]
+    149          
+    150            struct radioaesDmaSgDescr ccmDescPusherTagPadding =
+    151            {
+    152              .address       = (uint32_t) NULL,
+    153              .nextDescr     = DMA_AXI_DESCR_NEXT_STOP,
+    154              .lengthAndIrq  = (AES_BLOCK_BYTES - BLE_CCM_TAG_BYTES) | DMA_AXI_DESCR_DISCARD
+    155            };
+   \       0xC2   0xA825             ADD      R0,SP,#+148
+   \       0xC4   0x....             LDR.N    R1,??DataTable1_8
+   \       0xC6   0x....'....        BL       ?Subroutine1
+    156          
+    157            struct radioaesDmaSgDescr ccmDescPusherTag =
+    158            {
+    159              .address       = (uint32_t) tag,
+    160              .nextDescr     = (uint32_t) &ccmDescPusherTagPadding,
+    161              .lengthAndIrq  = BLE_CCM_TAG_BYTES
+    162            };
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0xCA   0xA80D             ADD      R0,SP,#+52
+   \       0xCC   0x....             LDR.N    R1,??DataTable1_9
+   \       0xCE   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0xD2   0x960D             STR      R6,[SP, #+52]
+   \       0xD4   0xA925             ADD      R1,SP,#+148
+   \       0xD6   0x910E             STR      R1,[SP, #+56]
+    163          
+    164            struct radioaesDmaSgDescr ccmDescPusherDataPadding =
+    165            {
+    166              .address       = (uint32_t) NULL,
+    167              .nextDescr     = (uint32_t) (encrypt ? &ccmDescPusherTag : &ccmDescPusherVer),
+    168              .lengthAndIrq  = (uint32_t) dataPadBytes | DMA_AXI_DESCR_DISCARD,
+    169            };
+   \       0xD8   0xA809             ADD      R0,SP,#+36
+   \       0xDA   0x2110             MOVS     R1,#+16
+   \       0xDC   0x....'....        BL       __aeabi_memclr4
+   \       0xE0   0xEA5F 0x0109      MOVS     R1,R9
+   \       0xE4   0xF044 0x4180      ORR      R1,R4,#0x40000000
+    170          
+    171            struct radioaesDmaSgDescr ccmDescPusherData =
+    172            {
+    173              .address       = (uint32_t) data,
+    174              .nextDescr     = (uint32_t) ((dataPadBytes != 0) ? &ccmDescPusherDataPadding : (encrypt ? &ccmDescPusherTag : &ccmDescPusherVer)),
+    175              .lengthAndIrq  = (uint32_t) length | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    176            };
+   \       0xE8   0xA805             ADD      R0,SP,#+20
+   \       0xEA   0xBF14             ITE      NE 
+   \       0xEC   0xAD0D             ADDNE    R5,SP,#+52
+   \       0xEE   0xAD29             ADDEQ    R5,SP,#+164
+   \       0xF0   0x950A             STR      R5,[SP, #+40]
+   \       0xF2   0x910B             STR      R1,[SP, #+44]
+   \       0xF4   0x2110             MOVS     R1,#+16
+   \       0xF6   0x....'....        BL       __aeabi_memclr4
+   \       0xFA   0xF8CD 0x8014      STR      R8,[SP, #+20]
+   \       0xFE   0xB104             CBZ.N    R4,??aes_ccm_ble_2
+   \      0x100   0xAD09             ADD      R5,SP,#+36
+   \                     ??aes_ccm_ble_2: (+1)
+   \      0x102   0x9506             STR      R5,[SP, #+24]
+   \      0x104   0x9707             STR      R7,[SP, #+28]
+    177          
+    178            struct radioaesDmaSgDescr ccmDescPusherB0B1 =
+    179            {
+    180              .address       = (uint32_t) NULL,
+    181              .nextDescr     = (uint32_t) &ccmDescPusherData,
+    182              .lengthAndIrq  = (BLE_CCM_B_BYTES * 2) | DMA_AXI_DESCR_DISCARD
+    183            };
+   \      0x106   0xA821             ADD      R0,SP,#+132
+   \      0x108   0x....             LDR.N    R1,??DataTable1_10
+   \      0x10A   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \      0x10E   0xA905             ADD      R1,SP,#+20
+   \      0x110   0x9122             STR      R1,[SP, #+136]
+    184          
+    185            // Fill in B0 block according to BLE spec
+    186            b0b1[0] = BLE_CCM_B0_FLAGS;
+   \      0x112   0x2249             MOVS     R2,#+73
+   \      0x114   0xF88D 0x20C4      STRB     R2,[SP, #+196]
+    187          
+    188            for (size_t i = 0; i < BLE_CCM_NONCE_BYTES; i++) {
+   \      0x118   0x2100             MOVS     R1,#+0
+   \      0x11A   0x9848             LDR      R0,[SP, #+288]
+    189              b0b1[i + 1] = iv[i];
+   \                     ??aes_ccm_ble_3: (+1)
+   \      0x11C   0x5C42             LDRB     R2,[R0, R1]
+   \      0x11E   0xAB31             ADD      R3,SP,#+196
+   \      0x120   0x440B             ADD      R3,R3,R1
+    190            }
+   \      0x122   0x1C49             ADDS     R1,R1,#+1
+   \      0x124   0x705A             STRB     R2,[R3, #+1]
+   \      0x126   0x290D             CMP      R1,#+13
+   \      0x128   0xD3F8             BCC.N    ??aes_ccm_ble_3
+    191          
+    192            b0b1[14] = (uint8_t) length >> 8;
+   \      0x12A   0x2000             MOVS     R0,#+0
+   \      0x12C   0xF88D 0x00D2      STRB     R0,[SP, #+210]
+    193            b0b1[15] = (uint8_t) length;
+   \      0x130   0xA831             ADD      R0,SP,#+196
+   \      0x132   0x73C7             STRB     R7,[R0, #+15]
+    194          
+    195            // Fill in B1 block according to BLE spec
+    196            for (size_t i = BLE_CCM_B_BYTES; i < BLE_CCM_B_BYTES * 2; i++) {
+   \      0x134   0x2110             MOVS     R1,#+16
+   \      0x136   0x2200             MOVS     R2,#+0
+    197              b0b1[i] = 0;
+   \                     ??aes_ccm_ble_4: (+1)
+   \      0x138   0x5442             STRB     R2,[R0, R1]
+    198            }
+   \      0x13A   0x1C49             ADDS     R1,R1,#+1
+   \      0x13C   0x2920             CMP      R1,#+32
+   \      0x13E   0xD3FB             BCC.N    ??aes_ccm_ble_4
+   \      0x140   0x9849             LDR      R0,[SP, #+292]
+    199            b0b1[BLE_CCM_B_BYTES + 1] = BLE_CCM_AUTH_BLOCKS;
+   \      0x142   0x2201             MOVS     R2,#+1
+   \      0x144   0xF88D 0x20D5      STRB     R2,[SP, #+213]
+    200            b0b1[BLE_CCM_B_BYTES + 2] = header;
+   \      0x148   0xF88D 0x00D6      STRB     R0,[SP, #+214]
+    201          
+    202            radioaes_state_t aes_ctx;
+    203            int aq = radioaes_acquire();
+   \      0x14C   0x....'....        BL       radioaes_acquire
+   \      0x150   0x4604             MOV      R4,R0
+    204            if (aq > 0) {
+   \      0x152   0x2C00             CMP      R4,#+0
+   \      0x154   0xDD03             BLE.N    ??aes_ccm_ble_5
+    205              radioaes_saveState(&aes_ctx);
+   \      0x156   0xA839             ADD      R0,SP,#+228
+   \      0x158   0x....'....        BL       radioaes_saveState
+   \      0x15C   0xE000             B.N      ??aes_ccm_ble_6
+    206            } else if (aq < 0) {
+   \                     ??aes_ccm_ble_5: (+1)
+   \      0x15E   0xD41D             BMI.N    ??aes_ccm_ble_7
+    207              return aq;
+    208            }
+    209          
+    210            RADIOAES->CTRL = AES_CTRL_FETCHERSCATTERGATHER | AES_CTRL_PUSHERSCATTERGATHER;
+   \                     ??aes_ccm_ble_6: (+1)
+   \      0x160   0xF04F 0x4088      MOV      R0,#+1140850688
+   \      0x164   0x2103             MOVS     R1,#+3
+   \      0x166   0x6341             STR      R1,[R0, #+52]
+    211            RADIOAES->FETCHADDR = (uint32_t) &ccmDescFetcherConfig;
+   \      0x168   0xAA11             ADD      R2,SP,#+68
+   \      0x16A   0x6002             STR      R2,[R0, #+0]
+    212            RADIOAES->PUSHADDR  = (uint32_t) &ccmDescPusherB0B1;
+   \      0x16C   0xAB21             ADD      R3,SP,#+132
+   \      0x16E   0x6103             STR      R3,[R0, #+16]
+    213          
+    214            RADIOAES->CMD = AES_CMD_STARTPUSHER | AES_CMD_STARTFETCHER;
+   \      0x170   0x6381             STR      R1,[R0, #+56]
+    215            while (RADIOAES->STATUS & (AES_STATUS_FETCHERBSY | AES_STATUS_PUSHERBSY)) ;
+   \                     ??aes_ccm_ble_8: (+1)
+   \      0x172   0x6BC1             LDR      R1,[R0, #+60]
+   \      0x174   0xF011 0x0F03      TST      R1,#0x3
+   \      0x178   0xD1FB             BNE.N    ??aes_ccm_ble_8
+    216          
+    217            if (aq > 0) {
+   \      0x17A   0x2C00             CMP      R4,#+0
+   \      0x17C   0xBFC4             ITT      GT 
+    218              radioaes_restoreState(&aes_ctx);
+   \      0x17E   0xA839             ADDGT    R0,SP,#+228
+   \      0x180   0x....'....        BLGT     radioaes_restoreState
+    219            }
+    220          
+    221            aq = radioaes_release();
+   \      0x184   0x....'....        BL       radioaes_release
+   \      0x188   0x4604             MOV      R4,R0
+    222          
+    223            // Check MIC
+    224            if (!encrypt && (verFailed != 0)) {
+   \      0x18A   0xF1B9 0x0F00      CMP      R9,#+0
+   \      0x18E   0xD105             BNE.N    ??aes_ccm_ble_7
+   \      0x190   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \      0x194   0xB110             CBZ.N    R0,??aes_ccm_ble_7
+    225              return MBEDTLS_ERR_CCM_AUTH_FAILED;
+   \      0x196   0xF06F 0x000E      MVN      R0,#+14
+   \      0x19A   0xE000             B.N      ??aes_ccm_ble_9
+    226            }
+    227            return aq;
+   \                     ??aes_ccm_ble_7: (+1)
+   \      0x19C   0x4620             MOV      R0,R4
+   \                     ??aes_ccm_ble_9: (+1)
+   \      0x19E   0xB041             ADD      SP,SP,#+260
+   \      0x1A0   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    228          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x2210             MOVS     R2,#+16
+   \        0x2   0x....'....        B.W      __aeabi_memcpy4
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x0000'0000        DC32 0, ccmDescFetcherTagPadding, 4, 1
+   \              0x....'....  
+   \              0x0000'0004  
+   \              0x0000'0001  
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x....'....        DC32 zeros, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x0000'0000        DC32 0, 0, 32, 65
+   \              0x0000'0000  
+   \              0x0000'0020  
+   \              0x0000'0041  
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x0000'0000        DC32 0, 0, 16, 2065
+   \              0x0000'0000  
+   \              0x0000'0010  
+   \              0x0000'0811  
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x0000'0000        DC32 0, 0, 4, 17
+   \              0x0000'0000  
+   \              0x0000'0004  
+   \              0x0000'0011  
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x0000'0000        DC32 0, ccmDescPusherVerPadding, 1
+   \              0x....'....  
+   \              0x0000'0001  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x0000'0000        DC32 0, 1, 1073741836
+   \              0x0000'0001  
+   \              0x4000'000C  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x0000'0000        DC32 0, 0, 4
+   \              0x0000'0000  
+   \              0x0000'0004  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x0000'0000        DC32 0, 0, 1073741856
+   \              0x0000'0000  
+   \              0x4000'0020  
+   \        0xC   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    229          
+    230          /*
+    231           * CCM buffer encryption optimized for BLE
+    232           */
+
+   \                                 In section .text, align 2, keep-with-next
+    233          int mbedtls_ccm_encrypt_and_tag_ble(unsigned char       *data,
+    234                                              size_t               length,
+    235                                              const unsigned char *key,
+    236                                              const unsigned char *iv,
+    237                                              unsigned char        header,
+    238                                              unsigned char       *tag)
+    239          {
+   \                     mbedtls_ccm_encrypt_and_tag_ble: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+    240            return aes_ccm_ble(true,
+    241                               data,
+    242                               length,
+    243                               key,
+    244                               iv,
+    245                               header,
+    246                               tag);
+   \        0x2   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \        0x6   0x2001             MOVS     R0,#+1
+   \        0x8   0x....             B.N      ?Subroutine0
+    247          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....'....        BL       aes_ccm_ble
+   \        0x4   0xBD3E             POP      {R1-R5,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x9300             STR      R3,[SP, #+0]
+   \        0x2   0x9C06             LDR      R4,[SP, #+24]
+   \        0x4   0x9D07             LDR      R5,[SP, #+28]
+   \        0x6   0x4613             MOV      R3,R2
+   \        0x8   0x460A             MOV      R2,R1
+   \        0xA   0x4601             MOV      R1,R0
+   \        0xC   0x9502             STR      R5,[SP, #+8]
+   \        0xE   0x9401             STR      R4,[SP, #+4]
+   \       0x10   0x4770             BX       LR
+    248          
+    249          /*
+    250           * CCM buffer authenticated decryption optimized for BLE
+    251           */
+
+   \                                 In section .text, align 2, keep-with-next
+    252          int mbedtls_ccm_auth_decrypt_ble(unsigned char       *data,
+    253                                           size_t               length,
+    254                                           const unsigned char *key,
+    255                                           const unsigned char *iv,
+    256                                           unsigned char        header,
+    257                                           unsigned char *tag)
+    258          {
+   \                     mbedtls_ccm_auth_decrypt_ble: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+    259            return aes_ccm_ble(false,
+    260                               data,
+    261                               length,
+    262                               key,
+    263                               iv,
+    264                               header,
+    265                               (uint8_t *) tag);
+   \        0x2   0x....'....        BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8                      REQUIRE ?Subroutine0
+   \        0x8                      ;; // Fall through to label ?Subroutine0
+    266          }
+    267          
+    268          /*
+    269           * Process a table of BLE RPA device keys and look for a
+    270           * match against the supplied hash
+    271           */
+
+   \                                 In section .text, align 2, keep-with-next
+    272          int mbedtls_process_ble_rpa(const unsigned char   keytable[],
+    273                                      uint32_t              keymask,
+    274                                      uint32_t              prand,
+    275                                      uint32_t              hash)
+    276          {
+   \                     mbedtls_process_ble_rpa: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0xB0A0             SUB      SP,SP,#+128
+   \        0x6   0x4680             MOV      R8,R0
+   \        0x8   0x468A             MOV      R10,R1
+   \        0xA   0x4614             MOV      R4,R2
+   \        0xC   0x461E             MOV      R6,R3
+    277            int block;
+    278            int previousBlock = -1, result = -1;
+    279            static const uint32_t  aesRpaConfig = AES_MODEID_ECB
+    280                                                | AES_MODEID_NO_CX
+    281                                                | AES_MODEID_AES128
+    282                                                | AES_MODEID_ENCRYPT;
+    283          
+    284            uint32_t rpaDataIn[BLE_RPA_DATA_BYTES / 4] = { 0 };
+   \        0xE   0xA814             ADD      R0,SP,#+80
+   \       0x10   0x2110             MOVS     R1,#+16
+   \       0x12   0x....'....        BL       __aeabi_memclr4
+    285            volatile uint32_t rpaDataOut[BLE_RPA_DATA_BYTES / 4];
+    286            radioaes_state_t aes_ctx;
+    287          
+    288            rpaDataIn[3] = __REV(prand);
+   \       0x16   0xBA21             REV      R1,R4
+   \       0x18   0x9117             STR      R1,[SP, #+92]
+    289          
+    290            struct radioaesDmaSgDescr aesDescPusherData =
+    291            {
+    292              .address       = (uint32_t) rpaDataOut,
+    293              .nextDescr     = DMA_AXI_DESCR_NEXT_STOP,
+    294              .lengthAndIrq  = AES_BLOCK_BYTES | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    295              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISLAST
+    296            };
+   \       0x1A   0xA80C             ADD      R0,SP,#+48
+   \       0x1C   0x....             LDR.N    R1,??DataTable1_11
+   \       0x1E   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x22   0xA910             ADD      R1,SP,#+64
+   \       0x24   0x910C             STR      R1,[SP, #+48]
+    297          
+    298            struct radioaesDmaSgDescr aesDescFetcherData =
+    299            {
+    300              .address       = (uint32_t) rpaDataIn,
+    301              .nextDescr     = DMA_AXI_DESCR_NEXT_STOP,
+    302              .lengthAndIrq  = AES_BLOCK_BYTES | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    303              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISLAST | DMA_SG_TAG_ISDATA | DMA_SG_TAG_DATATYPE_AESPAYLOAD
+    304            };
+   \       0x26   0xA808             ADD      R0,SP,#+32
+   \       0x28   0x....             LDR.N    R1,??DataTable1_12
+   \       0x2A   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x2E   0xA814             ADD      R0,SP,#+80
+   \       0x30   0x9008             STR      R0,[SP, #+32]
+    305          
+    306            struct radioaesDmaSgDescr aesDescFetcherConfig =
+    307            {
+    308              .address       = (uint32_t) &aesRpaConfig,
+    309              .nextDescr     = (uint32_t) &aesDescFetcherData,
+    310              .lengthAndIrq  = sizeof(aesRpaConfig),
+    311              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISCONFIG | DMA_SG_TAG_SETCFGOFFSET(AES_OFFSET_CFG)
+    312            };
+   \       0x32   0xA804             ADD      R0,SP,#+16
+   \       0x34   0x....             LDR.N    R1,??DataTable1_13
+   \       0x36   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x3A   0xA808             ADD      R0,SP,#+32
+   \       0x3C   0x9005             STR      R0,[SP, #+20]
+    313          
+    314            volatile struct radioaesDmaSgDescr aesDescFetcherKey =
+    315            {
+    316              .address       = (uint32_t) NULL, // Filled out in each round of RPA check
+    317              .nextDescr     = (uint32_t) &aesDescFetcherConfig,
+    318              .lengthAndIrq  = (uint32_t) BLE_RPA_KEY_BYTES | (BLOCK_S_INCR_ADDR & BLOCK_S_FLAG_MASK_DMA_PROPS),
+    319              .tag           = DMA_SG_ENGINESELECT_BA411E | DMA_SG_TAG_ISCONFIG | DMA_SG_TAG_SETCFGOFFSET(AES_OFFSET_KEY)
+    320            };
+   \       0x3E   0x4668             MOV      R0,SP
+   \       0x40   0x....             LDR.N    R1,??DataTable1_14
+   \       0x42   0x....'....        BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x46   0xA804             ADD      R0,SP,#+16
+   \       0x48   0x9001             STR      R0,[SP, #+4]
+    321          
+    322            // Start operation
+    323            int aq = radioaes_acquire();
+   \       0x4A   0x....'....        BL       radioaes_acquire
+   \       0x4E   0xF04F 0x35FF      MOV      R5,#-1
+   \       0x52   0x4604             MOV      R4,R0
+   \       0x54   0x46A9             MOV      R9,R5
+    324            if (aq > 0) {
+   \       0x56   0x2C00             CMP      R4,#+0
+   \       0x58   0xDD3C             BLE.N    ??mbedtls_process_ble_rpa_0
+    325              radioaes_saveState(&aes_ctx);
+   \       0x5A   0xA818             ADD      R0,SP,#+96
+   \       0x5C   0x....'....        BL       radioaes_saveState
+    326            } else if (aq < 0) {
+    327              return aq;
+    328            }
+    329          
+    330            RADIOAES->CTRL = AES_CTRL_FETCHERSCATTERGATHER | AES_CTRL_PUSHERSCATTERGATHER;
+   \                     ??mbedtls_process_ble_rpa_1: (+1)
+   \       0x60   0xF04F 0x4088      MOV      R0,#+1140850688
+   \       0x64   0x2103             MOVS     R1,#+3
+   \       0x66   0x6341             STR      R1,[R0, #+52]
+    331          
+    332            // Data output contains hash in the most significant word (WORD3).
+    333            // Descriptors for blocks that are not included in key mask will be skipped.
+    334            for (block = 0; block < RADIOAES_BLE_RPA_MAX_KEYS; block++) {
+   \       0x68   0x2100             MOVS     R1,#+0
+   \       0x6A   0xAF10             ADD      R7,SP,#+64
+    335              if ( keymask & (1U << block) ) {  // Skip masked keys
+   \                     ??mbedtls_process_ble_rpa_2: (+1)
+   \       0x6C   0xFA2A 0xF201      LSR      R2,R10,R1
+   \       0x70   0x07D2             LSLS     R2,R2,#+31
+   \       0x72   0xD51A             BPL.N    ??mbedtls_process_ble_rpa_3
+    336                // Write key address and start operation
+    337                while (RADIOAES->STATUS & AES_STATUS_FETCHERBSY) ;
+   \                     ??mbedtls_process_ble_rpa_4: (+1)
+   \       0x74   0x6BC3             LDR      R3,[R0, #+60]
+   \       0x76   0x07DA             LSLS     R2,R3,#+31
+   \       0x78   0xD4FC             BMI.N    ??mbedtls_process_ble_rpa_4
+    338                aesDescFetcherKey.address = (uint32_t) &keytable[block * BLE_RPA_KEY_BYTES];
+   \       0x7A   0xEB08 0x1301      ADD      R3,R8,R1, LSL #+4
+    339                RADIOAES->FETCHADDR = (uint32_t) &aesDescFetcherKey;
+    340          
+    341                RADIOAES->CMD = AES_CMD_STARTFETCHER;
+   \       0x7E   0x2201             MOVS     R2,#+1
+   \       0x80   0x9300             STR      R3,[SP, #+0]
+   \       0x82   0xF8C0 0xD000      STR      SP,[R0, #+0]
+   \       0x86   0x6382             STR      R2,[R0, #+56]
+    342          
+    343                // Wait for pusher from previous round to finish
+    344                while (RADIOAES->STATUS & AES_STATUS_PUSHERBSY) ;
+   \                     ??mbedtls_process_ble_rpa_5: (+1)
+   \       0x88   0x6BC2             LDR      R2,[R0, #+60]
+   \       0x8A   0x0793             LSLS     R3,R2,#+30
+   \       0x8C   0xD4FC             BMI.N    ??mbedtls_process_ble_rpa_5
+    345                RADIOAES->PUSHADDR  = (uint32_t) &aesDescPusherData;
+   \       0x8E   0xAA0C             ADD      R2,SP,#+48
+   \       0x90   0x6102             STR      R2,[R0, #+16]
+    346          
+    347                // Check previous results while AES is processing
+    348                if ((previousBlock >= 0) && ((rpaDataOut[3] & 0xFFFFFF00) == __REV(hash)) ) {
+   \       0x92   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0x96   0xD405             BMI.N    ??mbedtls_process_ble_rpa_6
+   \       0x98   0x68FA             LDR      R2,[R7, #+12]
+   \       0x9A   0xBA33             REV      R3,R6
+   \       0x9C   0x0A12             LSRS     R2,R2,#+8
+   \       0x9E   0x0212             LSLS     R2,R2,#+8
+   \       0xA0   0x429A             CMP      R2,R3
+   \       0xA2   0xD013             BEQ.N    ??mbedtls_process_ble_rpa_7
+    349                  // Make sure AES is finished before returning
+    350                  RADIOAES->CMD = AES_CMD_STARTPUSHER;
+    351                  result = previousBlock;
+    352                  break;
+    353                }
+    354          
+    355                // Start pusher so it is ready to push results when encryption is done
+    356                RADIOAES->CMD = AES_CMD_STARTPUSHER;
+   \                     ??mbedtls_process_ble_rpa_6: (+1)
+   \       0xA4   0x2202             MOVS     R2,#+2
+   \       0xA6   0x6382             STR      R2,[R0, #+56]
+    357                previousBlock = block;
+   \       0xA8   0x4689             MOV      R9,R1
+   \                     ??mbedtls_process_ble_rpa_3: (+1)
+   \       0xAA   0x1C49             ADDS     R1,R1,#+1
+   \       0xAC   0x2920             CMP      R1,#+32
+   \       0xAE   0xDBDD             BLT.N    ??mbedtls_process_ble_rpa_2
+    358              }
+    359            }
+    360          
+    361            // Wait for last data and check it
+    362            while (RADIOAES->STATUS & AES_STATUS_PUSHERBSY) ;
+   \                     ??mbedtls_process_ble_rpa_8: (+1)
+   \       0xB0   0x6BC1             LDR      R1,[R0, #+60]
+   \       0xB2   0x078A             LSLS     R2,R1,#+30
+   \       0xB4   0xD4FC             BMI.N    ??mbedtls_process_ble_rpa_8
+    363          
+    364            if (aq > 0) {
+   \       0xB6   0x2C00             CMP      R4,#+0
+   \       0xB8   0xBFC4             ITT      GT 
+    365              radioaes_restoreState(&aes_ctx);
+   \       0xBA   0xA818             ADDGT    R0,SP,#+96
+   \       0xBC   0x....'....        BLGT     radioaes_restoreState
+    366            }
+    367          
+    368            radioaes_release();
+   \       0xC0   0x....'....        BL       radioaes_release
+    369          
+    370            if (result >= 0) {
+   \       0xC4   0x2D00             CMP      R5,#+0
+   \       0xC6   0xD407             BMI.N    ??mbedtls_process_ble_rpa_9
+    371              return result;
+   \       0xC8   0x4628             MOV      R0,R5
+   \       0xCA   0xE00E             B.N      ??mbedtls_process_ble_rpa_10
+    372            }
+   \                     ??mbedtls_process_ble_rpa_7: (+1)
+   \       0xCC   0x2102             MOVS     R1,#+2
+   \       0xCE   0x6381             STR      R1,[R0, #+56]
+   \       0xD0   0x464D             MOV      R5,R9
+   \       0xD2   0xE7ED             B.N      ??mbedtls_process_ble_rpa_8
+   \                     ??mbedtls_process_ble_rpa_0: (+1)
+   \       0xD4   0xD5C4             BPL.N    ??mbedtls_process_ble_rpa_1
+   \       0xD6   0xE008             B.N      ??mbedtls_process_ble_rpa_10
+    373          
+    374            if ((rpaDataOut[3] & 0xFFFFFF00) == __REV(hash) ) {
+   \                     ??mbedtls_process_ble_rpa_9: (+1)
+   \       0xD8   0x68F8             LDR      R0,[R7, #+12]
+   \       0xDA   0xBA31             REV      R1,R6
+   \       0xDC   0x0A00             LSRS     R0,R0,#+8
+   \       0xDE   0x0200             LSLS     R0,R0,#+8
+   \       0xE0   0x4288             CMP      R0,R1
+   \       0xE2   0xBF0C             ITE      EQ 
+   \       0xE4   0x4648             MOVEQ    R0,R9
+   \       0xE6   0xF04F 0x30FF      MOVNE    R0,#-1
+    375              return previousBlock;
+    376            }
+    377          
+    378            // No match
+    379            return -1;
+   \                     ??mbedtls_process_ble_rpa_10: (+1)
+   \       0xEA   0xB020             ADD      SP,SP,#+128
+   \       0xEC   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+    380          }
+
+   \                                 In section .rodata, align 4
+   \                     `mbedtls_process_ble_rpa::aesRpaConfig`:
+   \        0x0   0x0000'0100        DC32 256
+
+   \                                 In section .rodata, align 4
+   \                     ?_13:
+   \        0x0   0x0000'0000        DC32 0, 1, 16, 33
+   \              0x0000'0001  
+   \              0x0000'0010  
+   \              0x0000'0021  
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x0000'0000        DC32 0, 1, 16, 33
+   \              0x0000'0001  
+   \              0x0000'0010  
+   \              0x0000'0021  
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x....'....        DC32 `mbedtls_process_ble_rpa::aesRpaConfig`, 0, 4, 17
+   \              0x0000'0000  
+   \              0x0000'0004  
+   \              0x0000'0011  
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x0000'0000        DC32 0, 0, 16, 2065
+   \              0x0000'0000  
+   \              0x0000'0010  
+   \              0x0000'0811  
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \        0x0   0x....'....        DC32     aesCcmConfigEncrypt
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \        0x0   0x....'....        DC32     aesCcmConfigDecrypt
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_9:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_10:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_11:
+   \        0x0   0x....'....        DC32     ?_13
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_12:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_13:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_14:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \       0x17   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+    381          #endif //defined(RADIOAES_PRESENT)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     288   aes_ccm_ble
+       288   -> __aeabi_memclr4
+       288   -> __aeabi_memcpy4
+       288   -> radioaes_acquire
+       288   -> radioaes_release
+       288   -> radioaes_restoreState
+       288   -> radioaes_saveState
+      24   mbedtls_ccm_auth_decrypt_ble
+        24   -> aes_ccm_ble
+      24   mbedtls_ccm_encrypt_and_tag_ble
+        24   -> aes_ccm_ble
+     160   mbedtls_process_ble_rpa
+       160   -> __aeabi_memclr4
+       160   -> __aeabi_memcpy4
+       160   -> radioaes_acquire
+       160   -> radioaes_release
+       160   -> radioaes_restoreState
+       160   -> radioaes_saveState
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_10
+       4  ??DataTable1_11
+       4  ??DataTable1_12
+       4  ??DataTable1_13
+       4  ??DataTable1_14
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable1_9
+       6  ?Subroutine0
+       6  ?Subroutine1
+      18  ?Subroutine2
+      32  ?_0
+      16  ?_1
+      16  ?_10
+      16  ?_11
+      16  ?_12
+      16  ?_13
+      16  ?_14
+      16  ?_15
+      16  ?_16
+      16  ?_2
+      16  ?_3
+      16  ?_4
+      16  ?_5
+      16  ?_6
+      16  ?_7
+      16  ?_8
+      16  ?_9
+       4  aesCcmConfigDecrypt
+       4  aesCcmConfigEncrypt
+       4  aesRpaConfig
+     420  aes_ccm_ble
+      16  ccmDescFetcherTagPadding
+      16  ccmDescPusherVerPadding
+       8  mbedtls_ccm_auth_decrypt_ble
+      10  mbedtls_ccm_encrypt_and_tag_ble
+     240  mbedtls_process_ble_rpa
+       4  zeros
+
+ 
+ 336 bytes in section .rodata
+ 768 bytes in section .text
+ 
+ 768 bytes of CODE  memory
+ 336 bytes of CONST memory
+
+Errors: none
+Warnings: none

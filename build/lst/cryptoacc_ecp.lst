@@ -1,0 +1,605 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.32.2.178/W32 for ARM         14/Jun/2019  13:18:39
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_ecp.c
+#    Command line =  
+#        -f C:\Users\alji\AppData\Local\Temp\EW25A8.tmp
+#        (C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_ecp.c
+#        -D LOCAL_STORAGE_BTL -D CORTEXM3 -D CORTEXM3_EFR32 -D
+#        CORTEXM3_EFR32_MICRO -D CORTEXM3_EFM32_MICRO -D
+#        EFR32_SERIES2_CONFIG1_MICRO -D EFR32MG21 -D EFR32MG21A010F1024IM32 -D
+#        "ATTRIBUTE_STORAGE_CONFIGURATION=\"z3_lite_timer_mg21_v660_endpoint_config.h\""
+#        -D "CONFIGURATION_HEADER=\"app/framework/util/config.h\"" -D
+#        "GENERATED_TOKEN_HEADER=\"z3_lite_timer_mg21_v660_tokens.h\"" -D
+#        "PLATFORM_HEADER=\"platform/base/hal/micro/cortexm3/compiler/iar.h\""
+#        -D "ZA_GENERATED_HEADER=\"z3_lite_timer_mg21_v660.h\"" -D
+#        "__SOURCEFILE__=\"cryptoacc_ecp.c\"" -D PSSTORE_SIZE=0 -D
+#        LONGTOKEN_SIZE=0 -D LOCKBITS_IN_MAINFLASH_SIZE=8192 -D HAL_CONFIG=1 -D
+#        EMBER_AF_USE_HWCONF -D LED_BLINK_PERIOD_MS=1000 -D NO_LED=1 -D
+#        "EMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\"" -D
+#        "EMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\"" -D
+#        "EMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\"" -D
+#        "EMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\""
+#        -D EMBER_STACK_ZIGBEE -D
+#        "MBEDTLS_CONFIG_FILE=\"mbedtls-config-generated.h\"" -D USE_NVM3 -D
+#        NVM3_DEFAULT_NVM_SIZE=NVM3_FLASH_PAGES*FLASH_PAGE_SIZE -D
+#        EMLIB_USER_CONFIG -D HAL_BULBPWM_ENABLE=1 -D
+#        HAL_BULBPWM_FREQUENCY=1000 -D
+#        "APPLICATION_TOKEN_HEADER=\"znet-token.h\"" -D
+#        "APPLICATION_MFG_TOKEN_HEADER=\"znet-mfg-token.h\"" -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_FILE=\"configs/config-device-acceleration.h\""
+#        -D
+#        "MBEDTLS_DEVICE_ACCELERATION_CONFIG_APP_FILE=\"config-device-acceleration-app.h\""
+#        -D NVM3_FLASH_PAGES=4 -D NVM3_DEFAULT_CACHE_SIZE=200 -D
+#        NVM3_MAX_OBJECT_SIZE=254 -D NVM3_DEFAULT_REPACK_HEADROOM=0 -D
+#        PHY_RAIL=1 -lC
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst
+#        --diag_suppress Pa050 -o
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj
+#        --no_unroll --no_clustering --debug --endian=little
+#        --cpu=Cortex-M33.no_dsp --cmse --no_path_in_file_macros
+#        --separate_cluster_for_initialized_variables -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\..\stack\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\..\util\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\protocol\zigbee\app\framework\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\micro\cortexm3\efm32\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\CMSIS\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\Device\SiliconLabs\efr32mg21\Include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\common\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\dmadrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\gpiointerrupt\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\rtcdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\sleep\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\spidrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\tempdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\uartdrv\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emdrv\ustimer\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\emlib\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\middleware\glib\glib\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\plugin\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\common\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\base\hal\..\..\radio\rail_lib\chip\efr32\rf\rfprotocol\ieee802154\cortex\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\halconfig\inc\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\module\config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\halconfig\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\hardware\kit\common\bsp\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\hal-config\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\bootloader\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\common\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\hal\efr32\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\plugin\coexistence\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\plugin\plugin-common\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\include\mbedtls\
+#        -I
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\..\..\v2.6\util\third_party\mbedtls\sl_crypto\include\
+#        -Ohz --use_c++_inline)
+#    Locale       =  C
+#    List file    =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\lst\cryptoacc_ecp.lst
+#    Object file  =  
+#        C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.5\z3_lite_timer_mg21_v660\build\obj\cryptoacc_ecp.o
+#
+###############################################################################
+
+C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.6\util\third_party\mbedtls\sl_crypto\src\cryptoacc_ecp.c
+      1          /***************************************************************************//**
+      2           * @brief SE-accelerated elliptic curve (Diffie-Helman) operations
+      3           *******************************************************************************
+      4           * # License
+      5           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      6           *******************************************************************************
+      7           *
+      8           * SPDX-License-Identifier: APACHE-2.0
+      9           *
+     10           * This software is subject to an open source license and is distributed by
+     11           * Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+     12           * Version 2.0 available at https://www.apache.org/licenses/LICENSE-2.0.
+     13           * Such terms and conditions may be further supplemented by the Silicon Labs
+     14           * Master Software License Agreement (MSLA) available at www.silabs.com and its
+     15           * sections applicable to open source software.
+     16           *
+     17           ******************************************************************************/
+     18          /*
+     19           * This file includes an alternative implementation of ECDH using the
+     20           * CRYPTOACC incorporated in MCU devices from Silicon Laboratories.
+     21           */
+     22          
+     23          #include "em_device.h"
+     24          
+     25          #if defined(CRYPTOACC_PRESENT)
+     26          
+     27          #if !defined(MBEDTLS_CONFIG_FILE)
+     28          #include "mbedtls/config.h"
+     29          #else
+     30          #include MBEDTLS_CONFIG_FILE
+     31          #endif
+     32          
+     33          #if defined(MBEDTLS_ECP_C)
+     34          
+     35          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) \
+     36              || defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) \
+     37              || defined(MBEDTLS_ECDSA_GENKEY_ALT) \
+     38              || defined(MBEDTLS_ECDSA_VERIFY_ALT) \
+     39              || defined(MBEDTLS_ECDSA_SIGN_ALT)
+     40          #include "cryptoacc_management.h"
+     41          #include "ba414ep_config.h"
+     42          #include "sx_ecc_keygen_alg.h"
+     43          #include "sx_dh_alg.h"
+     44          #include "sx_ecc_curves.h"
+     45          #include "sx_errors.h"
+     46          #include "sx_trng.h"
+     47          #include "sx_ecdsa_alg.h"
+     48          #include "mbedtls/ecdh.h"
+     49          #include "mbedtls/ecdsa.h"
+     50          #include "mbedtls/entropy.h"
+     51          
+     52          #define CRYPTOACC_ECP_MAX_BYTES ((((MBEDTLS_ECP_MAX_BYTES) + 3) / 4) * 4)
+     53          
+     54          #define DO_TRNG_COND_TEST  (1)
+     55          extern bool trng_initialized;
+     56          
+     57          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) \
+     58              || defined(MBEDTLS_ECDSA_GENKEY_ALT)
+     59          static int ecc_keygen(mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q)
+     60          {
+     61              int status;
+     62              uint32_t res;
+     63              uint32_t keylen;
+     64              uint32_t curve_flags;
+     65              block_t  _domain;
+     66              block_t  _priv;
+     67              block_t  _pub;
+     68              uint32_t pub[CRYPTOACC_ECP_MAX_BYTES*2/sizeof(uint32_t)] = { 0 };
+     69              uint32_t priv[CRYPTOACC_ECP_MAX_BYTES/sizeof(uint32_t)] = { 0 };
+     70              struct sx_rng trng = { NULL, sx_trng_fill_blk };
+     71          
+     72              if ( grp == NULL || d == NULL || Q == NULL ) {
+     73                  return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+     74              }
+     75          
+     76              switch(grp->id) {
+     77                  case MBEDTLS_ECP_DP_SECP192R1:
+     78                      keylen       = sx_ecc_curve_p192.bytesize;
+     79                      curve_flags  = sx_ecc_curve_p192.pk_flags;
+     80                      _domain = block_t_convert(sx_ecc_curve_p192.params.addr, 6*keylen);
+     81                      break;
+     82          
+     83                  case MBEDTLS_ECP_DP_SECP224R1:
+     84                      keylen       = sx_ecc_curve_p224.bytesize;
+     85                      curve_flags  = sx_ecc_curve_p224.pk_flags;
+     86                      _domain = block_t_convert(sx_ecc_curve_p224.params.addr, 6*keylen);
+     87                      break;
+     88          
+     89                  case MBEDTLS_ECP_DP_SECP256R1:
+     90                      keylen       = sx_ecc_curve_p256.bytesize;
+     91                      curve_flags  = sx_ecc_curve_p256.pk_flags;
+     92                      _domain = block_t_convert(sx_ecc_curve_p256.params.addr, 6*keylen);
+     93                      break;
+     94          
+     95                  default:
+     96                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+     97              }
+     98          
+     99              if (keylen > (MBEDTLS_ECP_MAX_BITS+7)/8) {
+    100                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    101              }
+    102          
+    103              status = cryptoacc_management_acquire();
+    104              if (status != 0) {
+    105                  return status;
+    106              }
+    107              if(!trng_initialized) {
+    108                  res = sx_trng_init(DO_TRNG_COND_TEST);
+    109                  if (res != CRYPTOLIB_SUCCESS) {
+    110                      return MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+    111                  }
+    112                  trng_initialized = true;
+    113              }
+    114              cryptoacc_management_release();
+    115          
+    116              _priv = block_t_convert(priv, keylen);
+    117              _pub = block_t_convert(pub, keylen * 2);
+    118          
+    119              status = cryptoacc_management_acquire();
+    120              if (status != 0) {
+    121                  return status;
+    122              }
+    123              res = ecc_generate_keypair(_domain, _pub, _priv, keylen, curve_flags, trng);
+    124              cryptoacc_management_release();
+    125          
+    126              if ( res == CRYPTOLIB_SUCCESS ) {
+    127                  mbedtls_mpi_read_binary(d, _priv.addr, keylen);
+    128                  mbedtls_mpi_read_binary(&Q->X, _pub.addr, keylen);
+    129                  mbedtls_mpi_read_binary(&Q->Y, &(_pub.addr[keylen]), keylen);
+    130                  mbedtls_mpi_lset(&Q->Z, 1);
+    131                  return 0;
+    132              } else {
+    133                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    134              }
+    135          }
+    136          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)
+    137                    || defined(MBEDTLS_ECDSA_GENKEY_ALT) */
+    138          
+    139          #if defined(MBEDTLS_ECDSA_GENKEY_ALT)
+    140          /*
+    141           * Generate key pair
+    142           */
+    143          int mbedtls_ecdsa_genkey( mbedtls_ecdsa_context *ctx, mbedtls_ecp_group_id gid,
+    144                            int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    145          {
+    146              /* CRYPTOACC uses internal entropy */
+    147              (void)f_rng;
+    148              (void)p_rng;
+    149          
+    150              mbedtls_ecp_group_load( &ctx->grp, gid );
+    151          
+    152              return ecc_keygen(&ctx->grp, &ctx->d, &ctx->Q);
+    153          }
+    154          #endif /* MBEDTLS_ECDSA_GENKEY_ALT */
+    155          
+    156          #if defined(MBEDTLS_ECDSA_SIGN_ALT)
+    157          int mbedtls_ecdsa_sign( mbedtls_ecp_group *grp, mbedtls_mpi *r, mbedtls_mpi *s,
+    158                          const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
+    159                          int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
+    160          {
+    161              /* CRYPTOACC uses internal entropy */
+    162              (void)f_rng;
+    163              (void)p_rng;
+    164          
+    165              if ( d == NULL || buf == NULL || grp == NULL || s == NULL || r == NULL) {
+    166                  return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    167              }
+    168              int status;
+    169              uint32_t res;
+    170              uint32_t keylen = 0;
+    171          
+    172              struct sx_rng trng = { NULL, sx_trng_fill_blk };
+    173          
+    174              uint32_t priv[CRYPTOACC_ECP_MAX_BYTES/sizeof(uint32_t)] = { 0 };
+    175              uint32_t signature[CRYPTOACC_ECP_MAX_BYTES*2/sizeof(uint32_t)] = { 0 };
+    176          
+    177              block_t _priv = { 0 };
+    178              block_t _digest = { 0 };
+    179              block_t _signature = { 0 };
+    180          
+    181              /* Make sure d is in range 1..n-1 */
+    182              if( mbedtls_mpi_cmp_int( d, 1 ) < 0 || mbedtls_mpi_cmp_mpi( d, &grp->N ) >= 0 )
+    183                  return( MBEDTLS_ERR_ECP_INVALID_KEY );
+    184          
+    185              switch(grp->id) {
+    186                  case MBEDTLS_ECP_DP_SECP192R1:
+    187                      keylen       = 24;
+    188                      break;
+    189          
+    190                  case MBEDTLS_ECP_DP_SECP224R1:
+    191                      keylen       = 28;
+    192                      break;
+    193          
+    194                  case MBEDTLS_ECP_DP_SECP256R1:
+    195                      keylen       = 32;
+    196                      break;
+    197          
+    198                  default:
+    199                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    200              }
+    201          
+    202              if (keylen > CRYPTOACC_ECP_MAX_BYTES) {
+    203                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    204              }
+    205          
+    206              mbedtls_mpi_write_binary(d, ((uint8_t*)priv), keylen);
+    207          
+    208              _priv = block_t_convert(priv, keylen);
+    209              _digest = block_t_convert(buf, blen);
+    210              _signature = block_t_convert(signature, keylen*2);
+    211          
+    212              status = cryptoacc_management_acquire();
+    213              if (status != 0) {
+    214                  return status;
+    215              }
+    216          
+    217              switch(keylen) {
+    218                  case 24:
+    219                      res = ecdsa_generate_signature_digest(&sx_ecc_curve_p192, _digest, _priv, _signature, trng);
+    220                      break;
+    221          
+    222                  case 28:
+    223                      res = ecdsa_generate_signature_digest(&sx_ecc_curve_p224, _digest, _priv, _signature, trng);
+    224                      break;
+    225          
+    226                  case 32:
+    227                      res = ecdsa_generate_signature_digest(&sx_ecc_curve_p256, _digest, _priv, _signature, trng);
+    228                      break;
+    229          
+    230                  default:
+    231                      cryptoacc_management_release();
+    232                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    233              }
+    234              cryptoacc_management_release();
+    235          
+    236              if (res == CRYPTOLIB_SUCCESS) {
+    237                  mbedtls_mpi_read_binary(r, _signature.addr, keylen);
+    238                  mbedtls_mpi_read_binary(s, &(_signature.addr[keylen]), keylen);
+    239                  return 0;
+    240              } else {
+    241                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    242              }
+    243          }
+    244          #endif /* MBEDTLS_ECDSA_SIGN_ALT */
+    245          
+    246          #if defined(MBEDTLS_ECDSA_VERIFY_ALT)
+    247          int mbedtls_ecdsa_verify( mbedtls_ecp_group *grp,
+    248                            const unsigned char *buf, size_t blen,
+    249                            const mbedtls_ecp_point *Q, const mbedtls_mpi *r, const mbedtls_mpi *s)
+    250          {
+    251              if ( buf == NULL || grp == NULL || s == NULL || r == NULL || Q == NULL ) {
+    252                  return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    253              }
+    254          
+    255              /* Make sure r and s is in range 1..n-1 */
+    256              if( mbedtls_mpi_cmp_int( r, 1 ) < 0 || mbedtls_mpi_cmp_mpi( r, &grp->N ) >= 0 )
+    257                  return( MBEDTLS_ERR_ECP_VERIFY_FAILED );
+    258          
+    259              if( mbedtls_mpi_cmp_int( s, 1 ) < 0 || mbedtls_mpi_cmp_mpi( s, &grp->N ) >= 0 )
+    260                  return( MBEDTLS_ERR_ECP_VERIFY_FAILED );
+    261          
+    262              int status;
+    263              uint32_t res;
+    264              uint32_t pub[CRYPTOACC_ECP_MAX_BYTES*2/sizeof(uint32_t)] = { 0 };
+    265              uint32_t signature[CRYPTOACC_ECP_MAX_BYTES*2/sizeof(uint32_t)] = { 0 };
+    266          
+    267              block_t  _pub = { 0 };
+    268              block_t  _signature = { 0 };
+    269              block_t  _digest = { 0 };
+    270          
+    271              uint32_t keylen = 0;
+    272          
+    273              switch(grp->id) {
+    274                  case MBEDTLS_ECP_DP_SECP192R1:
+    275                      keylen       = 24;
+    276                      break;
+    277          
+    278                  case MBEDTLS_ECP_DP_SECP224R1:
+    279                      keylen       = 28;
+    280                      break;
+    281          
+    282                  case MBEDTLS_ECP_DP_SECP256R1:
+    283                      keylen       = 32;
+    284                      break;
+    285          
+    286                  default:
+    287                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    288              }
+    289          
+    290              if (keylen > CRYPTOACC_ECP_MAX_BYTES) {
+    291                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    292              }
+    293          
+    294              /* pull out signature info from mbedtls structures */
+    295              mbedtls_mpi_write_binary(r, ((uint8_t*)signature), keylen);
+    296              mbedtls_mpi_write_binary(s, ((uint8_t*)signature)+keylen, keylen);
+    297          
+    298              mbedtls_mpi_write_binary(&Q->X, ((uint8_t*)pub), keylen);
+    299              mbedtls_mpi_write_binary(&Q->Y, ((uint8_t*)&pub)+keylen, keylen);
+    300          
+    301              _pub = block_t_convert(pub, keylen * 2);
+    302              _signature = block_t_convert(signature, keylen * 2);
+    303              _digest = block_t_convert(buf, blen);
+    304          
+    305              status = cryptoacc_management_acquire();
+    306              if (status != 0) {
+    307                  return status;
+    308              }
+    309              switch(keylen) {
+    310                  case 24:
+    311                      res = ecdsa_verify_signature_digest(&sx_ecc_curve_p192, _digest, _pub, _signature);
+    312                      break;
+    313          
+    314                  case 28:
+    315                      res = ecdsa_verify_signature_digest(&sx_ecc_curve_p224, _digest, _pub, _signature);
+    316                      break;
+    317          
+    318                  case 32:
+    319                      res = ecdsa_verify_signature_digest(&sx_ecc_curve_p256, _digest, _pub, _signature);
+    320                      break;
+    321          
+    322                  default:
+    323                      cryptoacc_management_release();
+    324                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    325              }
+    326              cryptoacc_management_release();
+    327          
+    328              if (res == CRYPTOLIB_SUCCESS) {
+    329                  return 0;
+    330              } else if (res == CRYPTOLIB_INVALID_SIGN_ERR) {
+    331                  return MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    332              } else {
+    333                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    334              }
+    335          }
+    336          #endif /* MBEDTLS_ECDSA_VERIFY_ALT */
+    337          
+    338          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)
+    339          int mbedtls_ecdh_gen_public( mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q,
+    340                               int (*f_rng)(void *, unsigned char *, size_t),
+    341                               void *p_rng )
+    342          {
+    343              /* CRYPTOACC uses internal entropy */
+    344              (void)f_rng;
+    345              (void)p_rng;
+    346          
+    347              return ecc_keygen(grp, d, Q);
+    348          }
+    349          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) */
+    350          
+    351          #if defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT)
+    352          int mbedtls_ecdh_compute_shared( mbedtls_ecp_group *grp, mbedtls_mpi *z,
+    353                                   const mbedtls_ecp_point *Q, const mbedtls_mpi *d,
+    354                                   int (*f_rng)(void *, unsigned char *, size_t),
+    355                                   void *p_rng )
+    356          {
+    357              int      status;
+    358              uint32_t res;
+    359              uint32_t keylen;
+    360              uint32_t curve_flags;
+    361              uint32_t pub[CRYPTOACC_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+    362              uint32_t priv[CRYPTOACC_ECP_MAX_BYTES/sizeof(uint32_t)] = {0};
+    363              uint32_t zbuf[CRYPTOACC_ECP_MAX_BYTES*2/sizeof(uint32_t)] = {0};
+    364              block_t  _domain;
+    365              block_t  _priv;
+    366              block_t  _pub;
+    367              block_t  _z;
+    368          
+    369              (void)p_rng;
+    370              if (f_rng) {
+    371                  /* CRYPTOACC on EFR32XG22 does not support randomization of
+    372                     projective coordinates (counter-measure against timing attacks). */
+    373                  return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    374              }
+    375          
+    376              if ( grp == NULL || z == NULL || d == NULL || Q == NULL ) {
+    377                  return( MBEDTLS_ERR_ECP_BAD_INPUT_DATA );
+    378              }
+    379          
+    380              switch(grp->id) {
+    381                  case MBEDTLS_ECP_DP_SECP192R1:
+    382                      keylen       = sx_ecc_curve_p192.bytesize;
+    383                      curve_flags  = sx_ecc_curve_p192.pk_flags;
+    384                      _domain = block_t_convert(sx_ecc_curve_p192.params.addr, 6*keylen);
+    385                      break;
+    386          
+    387                  case MBEDTLS_ECP_DP_SECP224R1:
+    388                      keylen       = sx_ecc_curve_p224.bytesize;
+    389                      curve_flags  = sx_ecc_curve_p224.pk_flags;
+    390                      _domain = block_t_convert(sx_ecc_curve_p224.params.addr, 6*keylen);
+    391                      break;
+    392          
+    393                  case MBEDTLS_ECP_DP_SECP256R1:
+    394                      keylen       = sx_ecc_curve_p256.bytesize;
+    395                      curve_flags  = sx_ecc_curve_p256.pk_flags;
+    396                      _domain = block_t_convert(sx_ecc_curve_p256.params.addr, 6*keylen);
+    397                      break;
+    398          
+    399                  default:
+    400                      return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    401              }
+    402          
+    403              if (keylen > (MBEDTLS_ECP_MAX_BITS+7)/8) {
+    404                  return MBEDTLS_ERR_ECP_FEATURE_UNAVAILABLE;
+    405              }
+    406          
+    407              /* pull out key info from mbedtls structures */
+    408              mbedtls_mpi_write_binary(d, ((uint8_t*)priv), keylen);
+    409              mbedtls_mpi_write_binary(&Q->X, ((uint8_t*)pub), keylen);
+    410              mbedtls_mpi_write_binary(&Q->Y, ((uint8_t*)pub)+keylen, keylen);
+    411          
+    412              _priv = block_t_convert(priv, keylen);
+    413              _pub = block_t_convert(pub, keylen * 2);
+    414              _z = block_t_convert(zbuf, keylen * 2);
+    415          
+    416              status = cryptoacc_management_acquire();
+    417              if (status != 0) {
+    418                  return status;
+    419              }
+    420              res = dh_shared_key_ecdh(_domain, _priv, _pub, _z, keylen, curve_flags);
+    421              cryptoacc_management_release();
+    422          
+    423              if ( res == CRYPTOLIB_SUCCESS ) {
+    424                  mbedtls_mpi_read_binary(z, _z.addr, keylen);
+    425                  return 0;
+    426              } else {
+    427                  return MBEDTLS_ERR_ECP_HW_ACCEL_FAILED;
+    428              }
+    429          }
+    430          #endif /* #if defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) */
+    431          
+    432          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) || defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) */
+    433          
+    434          #endif // #if defined(MBEDTLS_ECP_C)
+    435          
+    436          #endif /* #if defined(CRYPTOACC_PRESENT) */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none
